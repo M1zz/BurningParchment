@@ -172,7 +172,7 @@ struct BurningParchmentView: View {
             }
             .padding(.horizontal, 32)
 
-            Text("\(Int(progress * 100))% 소진")
+            Text("\(Int((1.0 - progress) * 100))% 남음")
                 .font(.system(size: 12, weight: .medium, design: .serif))
                 .foregroundColor(.gray.opacity(0.6))
         }

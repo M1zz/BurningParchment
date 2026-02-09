@@ -73,7 +73,7 @@ struct BedtimeLiveActivity: Widget {
                 
                 DynamicIslandExpandedRegion(.bottom) {
                     HStack {
-                        Text("🔥 양피지 \(Int(context.state.progress * 100))% 소진")
+                        Text("🔥 양피지 \(Int((1.0 - context.state.progress) * 100))% 남음")
                             .font(.system(size: 11))
                             .foregroundColor(.gray)
                     }

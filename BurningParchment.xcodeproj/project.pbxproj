@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B299B0E070DB70F2D6FB5AD /* BedtimeActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */; };
+		3B469923EFE09812D31D3858 /* BedtimeActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */; };
+		5BBE9589F3D41B5C48441AD0 /* BedtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C186AA161229FC7933070 /* BedtimeManager.swift */; };
+		66D6D9631304A0D99C8807E0 /* BurningParchmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */; };
+		6F0D7E8A801C4F5A7C637273 /* BurningParchmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */; };
+		80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02478518C92DBEC5E15B33C5 /* SettingsView.swift */; };
+		A07823718B4AD4BBDBF9ED96 /* BurningParchmentWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCBDF2B91CB414AA67F087B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC700E65FDA28935E4EB72B5 /* Assets.xcassets */; };
+		D3D28D4E5AF111DAAFD0915F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C24016F79235C3EAFE2D5F /* ContentView.swift */; };
+		F43B85F32130EAC6AFC9D0E7 /* BedtimeLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */; };
+		FCF5BCE791CF19AF4513B04D /* BurningParchmentWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0349092BC80355E9E992567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BDA15C61691BEA08A2D9BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F3EE0CAB48EE6023C2E2E12;
+			remoteInfo = BurningParchmentWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B057953FF409D2855B27A261 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A07823718B4AD4BBDBF9ED96 /* BurningParchmentWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02478518C92DBEC5E15B33C5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		048805690EF286B13912D40A /* BurningParchment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BurningParchment.entitlements; sourceTree = "<group>"; };
+		066C186AA161229FC7933070 /* BedtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeManager.swift; sourceTree = "<group>"; };
+		2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeLiveActivity.swift; sourceTree = "<group>"; };
+		227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BurningParchmentWidgets.entitlements; sourceTree = "<group>"; };
+		2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BurningParchmentWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentApp.swift; sourceTree = "<group>"; };
+		36C24016F79235C3EAFE2D5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
+		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentView.swift; sourceTree = "<group>"; };
+		F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentWidgetsBundle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		39EC316FADCCDA4DC5875847 = {
+			isa = PBXGroup;
+			children = (
+				6D84BCD1D8610908FFE6398C /* BurningParchment */,
+				B42985E66001AE4B457D8BDA /* BurningParchmentWidgets */,
+				BF24919328B731B150CC6B15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D84BCD1D8610908FFE6398C /* BurningParchment */ = {
+			isa = PBXGroup;
+			children = (
+				AC700E65FDA28935E4EB72B5 /* Assets.xcassets */,
+				048805690EF286B13912D40A /* BurningParchment.entitlements */,
+				312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */,
+				916E0DEA4D4FEE77171661E8 /* Info.plist */,
+				9934137934554BDF839CE66F /* Models */,
+				74D32DA31306A16309580D06 /* Views */,
+			);
+			path = BurningParchment;
+			sourceTree = "<group>";
+		};
+		74D32DA31306A16309580D06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */,
+				36C24016F79235C3EAFE2D5F /* ContentView.swift */,
+				02478518C92DBEC5E15B33C5 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9934137934554BDF839CE66F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */,
+				066C186AA161229FC7933070 /* BedtimeManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B42985E66001AE4B457D8BDA /* BurningParchmentWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */,
+				227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */,
+				F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */,
+			);
+			path = BurningParchmentWidgets;
+			sourceTree = "<group>";
+		};
+		BF24919328B731B150CC6B15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92793D17E30FD0433FA70BC3 /* BurningParchment.app */,
+				2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CA12BD7B5C66FC538B02F0F /* BurningParchment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5577674B92E357A87188481B /* Build configuration list for PBXNativeTarget "BurningParchment" */;
+			buildPhases = (
+				B9063296C996788C824C8C5A /* Sources */,
+				F513A57B49D5A2573A047950 /* Resources */,
+				B057953FF409D2855B27A261 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F30FBA97F712366C6F477337 /* PBXTargetDependency */,
+			);
+			name = BurningParchment;
+			packageProductDependencies = (
+			);
+			productName = BurningParchment;
+			productReference = 92793D17E30FD0433FA70BC3 /* BurningParchment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F3EE0CAB48EE6023C2E2E12 /* BurningParchmentWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 999CABBB7ACA272E213E5F94 /* Build configuration list for PBXNativeTarget "BurningParchmentWidgets" */;
+			buildPhases = (
+				1C94BC572E504AC916AA1D43 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurningParchmentWidgets;
+			packageProductDependencies = (
+			);
+			productName = BurningParchmentWidgets;
+			productReference = 2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BDA15C61691BEA08A2D9BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0CA12BD7B5C66FC538B02F0F = {
+						ProvisioningStyle = Automatic;
+					};
+					7F3EE0CAB48EE6023C2E2E12 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFA0C3B758D74FCCDA9DF233 /* Build configuration list for PBXProject "BurningParchment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 39EC316FADCCDA4DC5875847;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CA12BD7B5C66FC538B02F0F /* BurningParchment */,
+				7F3EE0CAB48EE6023C2E2E12 /* BurningParchmentWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F513A57B49D5A2573A047950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBDF2B91CB414AA67F087B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C94BC572E504AC916AA1D43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B469923EFE09812D31D3858 /* BedtimeActivityAttributes.swift in Sources */,
+				F43B85F32130EAC6AFC9D0E7 /* BedtimeLiveActivity.swift in Sources */,
+				FCF5BCE791CF19AF4513B04D /* BurningParchmentWidgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9063296C996788C824C8C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B299B0E070DB70F2D6FB5AD /* BedtimeActivityAttributes.swift in Sources */,
+				5BBE9589F3D41B5C48441AD0 /* BedtimeManager.swift in Sources */,
+				6F0D7E8A801C4F5A7C637273 /* BurningParchmentApp.swift in Sources */,
+				66D6D9631304A0D99C8807E0 /* BurningParchmentView.swift in Sources */,
+				D3D28D4E5AF111DAAFD0915F /* ContentView.swift in Sources */,
+				80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F30FBA97F712366C6F477337 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F3EE0CAB48EE6023C2E2E12 /* BurningParchmentWidgets */;
+			targetProxy = B0349092BC80355E9E992567 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BE2CEE66B469A61EA42AE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BurningParchmentWidgets/BurningParchmentWidgets.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				INFOPLIST_FILE = BurningParchmentWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E3F82DDF4DFF65CAC4CD2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6F6622E7AFD2684C408DA3A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BurningParchment/BurningParchment.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				INFOPLIST_FILE = BurningParchment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD867BAD0E0C778AD4E7C902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BurningParchment/BurningParchment.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				INFOPLIST_FILE = BurningParchment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1106831A2D7A25A434E0891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F360ED7F0F242DBC331D3F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BurningParchmentWidgets/BurningParchmentWidgets.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				INFOPLIST_FILE = BurningParchmentWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5577674B92E357A87188481B /* Build configuration list for PBXNativeTarget "BurningParchment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD867BAD0E0C778AD4E7C902 /* Debug */,
+				6F6622E7AFD2684C408DA3A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		999CABBB7ACA272E213E5F94 /* Build configuration list for PBXNativeTarget "BurningParchmentWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE2CEE66B469A61EA42AE48 /* Debug */,
+				F360ED7F0F242DBC331D3F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FFA0C3B758D74FCCDA9DF233 /* Build configuration list for PBXProject "BurningParchment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3F82DDF4DFF65CAC4CD2C8 /* Debug */,
+				D1106831A2D7A25A434E0891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BDA15C61691BEA08A2D9BBA /* Project object */;
+}

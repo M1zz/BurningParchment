@@ -1,0 +1,65 @@
+name: BurningParchment
+options:
+  bundleIdPrefix: com.burningparchment
+  deploymentTarget:
+    iOS: "16.2"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1"
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  BurningParchment:
+    type: application
+    platform: iOS
+    sources:
+      - path: BurningParchment
+        excludes:
+          - "**/.DS_Store"
+    info:
+      path: BurningParchment/Info.plist
+      properties:
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSSupportsLiveActivities: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "1.0"
+    dependencies:
+      - target: BurningParchmentWidgets
+
+  BurningParchmentWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: BurningParchmentWidgets
+        excludes:
+          - "**/.DS_Store"
+          - Info.plist
+      - path: BurningParchment/Models/BedtimeActivityAttributes.swift
+    info:
+      path: BurningParchmentWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: BurningParchmentWidgets
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app.widgets
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "1.0"
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"

@@ -1,0 +1,209 @@
+// BedtimeManager.swift
+// 기상시간~취침시간 기준으로 하루 남은 시간을 관리
+
+import SwiftUI
+import Combine
+import ActivityKit
+
+class BedtimeManager: ObservableObject {
+    // MARK: - Published Properties
+    @Published var bedtimeHour: Int {
+        didSet { save() }
+    }
+    @Published var bedtimeMinute: Int {
+        didSet { save() }
+    }
+    @Published var wakeHour: Int {
+        didSet { save() }
+    }
+    @Published var wakeMinute: Int {
+        didSet { save() }
+    }
+    @Published var remainingSeconds: TimeInterval = 0
+    @Published var totalSeconds: TimeInterval = 0
+    @Published var progress: Double = 0.0
+    @Published var isCountdownActive: Bool = false
+    @Published var isBeforeWakeTime: Bool = true
+
+    private var timer: Timer?
+
+    // MARK: - UserDefaults Keys
+    private let keyBedH = "bedtimeHour"
+    private let keyBedM = "bedtimeMinute"
+    private let keyWakeH = "wakeHour"
+    private let keyWakeM = "wakeMinute"
+
+    // MARK: - Computed Properties
+    var bedtimeString: String { formatTime(hour: bedtimeHour, minute: bedtimeMinute) }
+    var wakeTimeString: String { formatTime(hour: wakeHour, minute: wakeMinute) }
+
+    var remainingTimeString: String {
+        let h = Int(remainingSeconds) / 3600
+        let m = (Int(remainingSeconds) % 3600) / 60
+        let s = Int(remainingSeconds) % 60
+        return String(format: "%02d:%02d:%02d", h, m, s)
+    }
+
+    var remainingHours: Int { Int(remainingSeconds) / 3600 }
+    var remainingMinutes: Int { (Int(remainingSeconds) % 3600) / 60 }
+    var remainingSecs: Int { Int(remainingSeconds) % 60 }
+
+    // MARK: - Init
+    init() {
+        let ud = UserDefaults.standard
+        self.wakeHour = ud.object(forKey: keyWakeH) as? Int ?? 7
+        self.wakeMinute = ud.object(forKey: keyWakeM) as? Int ?? 0
+        self.bedtimeHour = ud.object(forKey: keyBedH) as? Int ?? 23
+        self.bedtimeMinute = ud.object(forKey: keyBedM) as? Int ?? 0
+        startMonitoring()
+    }
+
+    // MARK: - Save
+    private func save() {
+        let ud = UserDefaults.standard
+        ud.set(bedtimeHour, forKey: keyBedH)
+        ud.set(bedtimeMinute, forKey: keyBedM)
+        ud.set(wakeHour, forKey: keyWakeH)
+        ud.set(wakeMinute, forKey: keyWakeM)
+        recalculate()
+    }
+
+    // MARK: - Timer
+    func startMonitoring() {
+        timer?.invalidate()
+        recalculate()
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.recalculate()
+        }
+    }
+
+    func recalculate() {
+        let now = Date()
+        let cal = Calendar.current
+
+        // 오늘 기상시간
+        var wakeComps = cal.dateComponents([.year, .month, .day], from: now)
+        wakeComps.hour = wakeHour
+        wakeComps.minute = wakeMinute
+        wakeComps.second = 0
+        guard let todayWake = cal.date(from: wakeComps) else { return }
+
+        let wakeDate: Date
+        let bedDate: Date
+
+        if now >= todayWake {
+            // 오늘 기상 이후
+            wakeDate = todayWake
+
+            var bedComps = cal.dateComponents([.year, .month, .day], from: todayWake)
+            bedComps.hour = bedtimeHour
+            bedComps.minute = bedtimeMinute
+            bedComps.second = 0
+            guard var bd = cal.date(from: bedComps) else { return }
+
+            // 취침시간이 기상시간 이전이면 다음날
+            if bd <= wakeDate {
+                bd = cal.date(byAdding: .day, value: 1, to: bd)!
+            }
+            bedDate = bd
+        } else {
+            // 오늘 기상 전 — 어제 사이클이 아직 진행 중인지 확인
+            let yesterdayWake = cal.date(byAdding: .day, value: -1, to: todayWake)!
+
+            var bedComps = cal.dateComponents([.year, .month, .day], from: yesterdayWake)
+            bedComps.hour = bedtimeHour
+            bedComps.minute = bedtimeMinute
+            bedComps.second = 0
+            guard var bd = cal.date(from: bedComps) else { return }
+
+            if bd <= yesterdayWake {
+                bd = cal.date(byAdding: .day, value: 1, to: bd)!
+            }
+
+            if now < bd {
+                // 어제 사이클 진행 중 (자정~취침 사이)
+                wakeDate = yesterdayWake
+                bedDate = bd
+            } else {
+                // 어제 사이클 종료, 오늘 기상 전
+                isBeforeWakeTime = true
+                isCountdownActive = false
+                progress = 0
+                remainingSeconds = todayWake.timeIntervalSince(now)
+                totalSeconds = 0
+                return
+            }
+        }
+
+        let total = bedDate.timeIntervalSince(wakeDate)
+        let remaining = bedDate.timeIntervalSince(now)
+
+        if remaining <= 0 {
+            isCountdownActive = false
+            isBeforeWakeTime = false
+            progress = 1.0
+            remainingSeconds = 0
+            totalSeconds = total
+        } else {
+            isCountdownActive = true
+            isBeforeWakeTime = false
+            remainingSeconds = remaining
+            totalSeconds = max(total, 1)
+            progress = min(max(1.0 - (remaining / total), 0.0), 1.0)
+        }
+    }
+
+    // MARK: - Helpers
+    private func formatTime(hour: Int, minute: Int) -> String {
+        let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
+        let ampm = hour >= 12 ? "PM" : "AM"
+        return String(format: "%d:%02d %@", h12, minute, ampm)
+    }
+
+    // MARK: - Live Activity
+    @available(iOS 16.2, *)
+    func startLiveActivity() {
+        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
+
+        let attributes = BedtimeActivityAttributes(bedtimeString: bedtimeString)
+        let state = BedtimeActivityAttributes.ContentState(
+            remainingSeconds: remainingSeconds,
+            progress: progress
+        )
+        let content = ActivityContent(state: state, staleDate: nil)
+
+        do {
+            let activity = try Activity<BedtimeActivityAttributes>.request(
+                attributes: attributes, content: content, pushType: nil
+            )
+            print("Live Activity started: \(activity.id)")
+            startLiveActivityUpdates()
+        } catch {
+            print("Failed to start Live Activity: \(error)")
+        }
+    }
+
+    @available(iOS 16.2, *)
+    func startLiveActivityUpdates() {
+        Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] t in
+            guard let self = self else { t.invalidate(); return }
+            Task { @MainActor in
+                let state = BedtimeActivityAttributes.ContentState(
+                    remainingSeconds: self.remainingSeconds, progress: self.progress
+                )
+                let content = ActivityContent(state: state, staleDate: nil)
+                for activity in Activity<BedtimeActivityAttributes>.activities {
+                    await activity.update(content)
+                }
+                if self.remainingSeconds <= 0 {
+                    t.invalidate()
+                    for activity in Activity<BedtimeActivityAttributes>.activities {
+                        await activity.end(content, dismissalPolicy: .immediate)
+                    }
+                }
+            }
+        }
+    }
+
+    deinit { timer?.invalidate() }
+}

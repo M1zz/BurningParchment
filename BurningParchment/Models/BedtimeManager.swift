@@ -4,6 +4,7 @@
 import SwiftUI
 import Combine
 import ActivityKit
+import UserNotifications
 
 class BedtimeManager: ObservableObject {
     // MARK: - Published Properties
@@ -26,6 +27,10 @@ class BedtimeManager: ObservableObject {
     @Published var isBeforeWakeTime: Bool = true
 
     private var timer: Timer?
+    private var liveActivityRunning = false
+    private var lastLAUpdate: Date = .distantPast
+    private var scheduledNotifBedDate: Date?
+    private var currentBedDate: Date = .distantFuture
 
     // MARK: - UserDefaults Keys
     private let keyBedH = "bedtimeHour"
@@ -55,6 +60,8 @@ class BedtimeManager: ObservableObject {
         self.wakeMinute = ud.object(forKey: keyWakeM) as? Int ?? 0
         self.bedtimeHour = ud.object(forKey: keyBedH) as? Int ?? 23
         self.bedtimeMinute = ud.object(forKey: keyBedM) as? Int ?? 0
+
+        requestNotificationPermission()
         startMonitoring()
     }
 
@@ -65,6 +72,13 @@ class BedtimeManager: ObservableObject {
         ud.set(bedtimeMinute, forKey: keyBedM)
         ud.set(wakeHour, forKey: keyWakeH)
         ud.set(wakeMinute, forKey: keyWakeM)
+
+        // 설정 변경 시 알림 & LA 재설정
+        scheduledNotifBedDate = nil
+        if liveActivityRunning {
+            if #available(iOS 16.2, *) { endAllLiveActivities() }
+            liveActivityRunning = false
+        }
         recalculate()
     }
 
@@ -81,7 +95,6 @@ class BedtimeManager: ObservableObject {
         let now = Date()
         let cal = Calendar.current
 
-        // 오늘 기상시간
         var wakeComps = cal.dateComponents([.year, .month, .day], from: now)
         wakeComps.hour = wakeHour
         wakeComps.minute = wakeMinute
@@ -92,40 +105,27 @@ class BedtimeManager: ObservableObject {
         let bedDate: Date
 
         if now >= todayWake {
-            // 오늘 기상 이후
             wakeDate = todayWake
-
             var bedComps = cal.dateComponents([.year, .month, .day], from: todayWake)
             bedComps.hour = bedtimeHour
             bedComps.minute = bedtimeMinute
             bedComps.second = 0
             guard var bd = cal.date(from: bedComps) else { return }
-
-            // 취침시간이 기상시간 이전이면 다음날
-            if bd <= wakeDate {
-                bd = cal.date(byAdding: .day, value: 1, to: bd)!
-            }
+            if bd <= wakeDate { bd = cal.date(byAdding: .day, value: 1, to: bd)! }
             bedDate = bd
         } else {
-            // 오늘 기상 전 — 어제 사이클이 아직 진행 중인지 확인
             let yesterdayWake = cal.date(byAdding: .day, value: -1, to: todayWake)!
-
             var bedComps = cal.dateComponents([.year, .month, .day], from: yesterdayWake)
             bedComps.hour = bedtimeHour
             bedComps.minute = bedtimeMinute
             bedComps.second = 0
             guard var bd = cal.date(from: bedComps) else { return }
-
-            if bd <= yesterdayWake {
-                bd = cal.date(byAdding: .day, value: 1, to: bd)!
-            }
+            if bd <= yesterdayWake { bd = cal.date(byAdding: .day, value: 1, to: bd)! }
 
             if now < bd {
-                // 어제 사이클 진행 중 (자정~취침 사이)
                 wakeDate = yesterdayWake
                 bedDate = bd
             } else {
-                // 어제 사이클 종료, 오늘 기상 전
                 isBeforeWakeTime = true
                 isCountdownActive = false
                 progress = 0
@@ -135,6 +135,7 @@ class BedtimeManager: ObservableObject {
             }
         }
 
+        currentBedDate = bedDate
         let total = bedDate.timeIntervalSince(wakeDate)
         let remaining = bedDate.timeIntervalSince(now)
 
@@ -144,12 +145,32 @@ class BedtimeManager: ObservableObject {
             progress = 1.0
             remainingSeconds = 0
             totalSeconds = total
+
+            if liveActivityRunning {
+                if #available(iOS 16.2, *) { endAllLiveActivities() }
+                liveActivityRunning = false
+            }
         } else {
             isCountdownActive = true
             isBeforeWakeTime = false
             remainingSeconds = remaining
             totalSeconds = max(total, 1)
             progress = min(max(1.0 - (remaining / total), 0.0), 1.0)
+
+            // Live Activity 자동 시작 & 업데이트
+            if #available(iOS 16.2, *) {
+                if !liveActivityRunning {
+                    autoStartLiveActivity()
+                } else if Date().timeIntervalSince(lastLAUpdate) > 60 {
+                    updateLiveActivityState()
+                }
+            }
+
+            // 1시간 전 알림 예약
+            if scheduledNotifBedDate != bedDate {
+                scheduleNotification(bedDate: bedDate)
+                scheduledNotifBedDate = bedDate
+            }
         }
     }
 
@@ -160,49 +181,90 @@ class BedtimeManager: ObservableObject {
         return String(format: "%d:%02d %@", h12, minute, ampm)
     }
 
+    // MARK: - Notifications
+    private func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in }
+    }
+
+    private func scheduleNotification(bedDate: Date) {
+        let center = UNUserNotificationCenter.current()
+        center.removePendingNotificationRequests(withIdentifiers: ["bedtime-1h"])
+
+        let notifDate = bedDate.addingTimeInterval(-3600)
+        guard notifDate > Date() else { return }
+
+        let content = UNMutableNotificationContent()
+        content.title = "불타는 내인생 🔥"
+        content.body = "취침 1시간 전입니다. 오늘 하루도 수고했어요!"
+        content.sound = .default
+
+        let comps = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: notifDate)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: false)
+        let request = UNNotificationRequest(identifier: "bedtime-1h", content: content, trigger: trigger)
+        center.add(request)
+    }
+
     // MARK: - Live Activity
     @available(iOS 16.2, *)
-    func startLiveActivity() {
+    private func autoStartLiveActivity() {
         guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
+        guard Activity<BedtimeActivityAttributes>.activities.isEmpty else {
+            liveActivityRunning = true
+            return
+        }
 
         let attributes = BedtimeActivityAttributes(bedtimeString: bedtimeString)
         let state = BedtimeActivityAttributes.ContentState(
             remainingSeconds: remainingSeconds,
-            progress: progress
+            progress: progress,
+            bedtimeDate: currentBedDate
         )
         let content = ActivityContent(state: state, staleDate: nil)
 
         do {
-            let activity = try Activity<BedtimeActivityAttributes>.request(
+            _ = try Activity<BedtimeActivityAttributes>.request(
                 attributes: attributes, content: content, pushType: nil
             )
-            print("Live Activity started: \(activity.id)")
-            startLiveActivityUpdates()
+            liveActivityRunning = true
+            lastLAUpdate = Date()
         } catch {
             print("Failed to start Live Activity: \(error)")
         }
     }
 
     @available(iOS 16.2, *)
-    func startLiveActivityUpdates() {
-        Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] t in
-            guard let self = self else { t.invalidate(); return }
-            Task { @MainActor in
-                let state = BedtimeActivityAttributes.ContentState(
-                    remainingSeconds: self.remainingSeconds, progress: self.progress
-                )
-                let content = ActivityContent(state: state, staleDate: nil)
-                for activity in Activity<BedtimeActivityAttributes>.activities {
-                    await activity.update(content)
-                }
-                if self.remainingSeconds <= 0 {
-                    t.invalidate()
-                    for activity in Activity<BedtimeActivityAttributes>.activities {
-                        await activity.end(content, dismissalPolicy: .immediate)
-                    }
-                }
+    private func updateLiveActivityState() {
+        let state = BedtimeActivityAttributes.ContentState(
+            remainingSeconds: remainingSeconds,
+            progress: progress,
+            bedtimeDate: currentBedDate
+        )
+        let content = ActivityContent(state: state, staleDate: nil)
+        lastLAUpdate = Date()
+
+        Task {
+            for activity in Activity<BedtimeActivityAttributes>.activities {
+                await activity.update(content)
             }
         }
+    }
+
+    @available(iOS 16.2, *)
+    private func endAllLiveActivities() {
+        let state = BedtimeActivityAttributes.ContentState(
+            remainingSeconds: 0, progress: 1.0, bedtimeDate: currentBedDate
+        )
+        let content = ActivityContent(state: state, staleDate: nil)
+        Task {
+            for activity in Activity<BedtimeActivityAttributes>.activities {
+                await activity.end(content, dismissalPolicy: .immediate)
+            }
+        }
+    }
+
+    @available(iOS 16.2, *)
+    func startLiveActivity() {
+        autoStartLiveActivity()
     }
 
     deinit { timer?.invalidate() }

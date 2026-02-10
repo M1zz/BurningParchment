@@ -107,19 +107,95 @@ struct BurningParchmentView: View {
         }
     }
 
-    // MARK: - Bedtime Reached
+    // MARK: - Bedtime Reached (불타는 하트)
 
     private func bedtimeReachedView(size: CGSize) -> some View {
-        VStack {
-            Spacer()
-            Image(systemName: "moon.zzz.fill")
-                .font(.system(size: 50))
-                .foregroundColor(.orange.opacity(0.3))
-            Text("취침 시간입니다")
-                .font(.system(size: 20, weight: .medium, design: .serif))
-                .foregroundColor(.orange.opacity(0.5))
-                .padding(.top, 8)
-            Spacer()
+        ZStack {
+            // 배경 따뜻한 글로우
+            RadialGradient(
+                colors: [
+                    Color.red.opacity(0.12 + 0.05 * sin(phase * 1.5)),
+                    Color.orange.opacity(0.05),
+                    Color.clear
+                ],
+                center: .center,
+                startRadius: 20,
+                endRadius: 200
+            )
+            .ignoresSafeArea()
+
+            VStack(spacing: 24) {
+                Spacer()
+
+                // 불타는 하트
+                ZStack {
+                    // 외부 글로우
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 90))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.red.opacity(0.4), .orange.opacity(0.3)],
+                                startPoint: .bottom, endPoint: .top
+                            )
+                        )
+                        .blur(radius: 25)
+                        .scaleEffect(1.05 + 0.05 * sin(phase * 2.0))
+
+                    // 하트 본체
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 75))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.8, green: 0.1, blue: 0.1),
+                                    Color(red: 0.95, green: 0.4, blue: 0.1),
+                                    Color(red: 1.0, green: 0.75, blue: 0.2)
+                                ],
+                                startPoint: .bottom, endPoint: .top
+                            )
+                        )
+                        .scaleEffect(1.0 + 0.02 * sin(phase * 2.5))
+
+                    // 중앙 불꽃
+                    Image(systemName: "flame.fill")
+                        .font(.system(size: 36))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.yellow, .orange.opacity(0.8), .red.opacity(0.4)],
+                                startPoint: .bottom, endPoint: .top
+                            )
+                        )
+                        .offset(y: -46 + sin(phase * 3.0) * 3)
+                        .scaleEffect(0.9 + 0.15 * sin(phase * 4.0))
+                        .blur(radius: 1)
+
+                    // 좌측 불꽃
+                    Image(systemName: "flame")
+                        .font(.system(size: 20))
+                        .foregroundColor(.orange.opacity(0.6))
+                        .offset(x: -28, y: -30)
+                        .scaleEffect(0.8 + 0.2 * sin(phase * 3.5))
+                        .opacity(0.5 + 0.3 * sin(phase * 2.5))
+
+                    // 우측 불꽃
+                    Image(systemName: "flame")
+                        .font(.system(size: 18))
+                        .foregroundColor(.orange.opacity(0.5))
+                        .offset(x: 30, y: -35)
+                        .scaleEffect(0.7 + 0.25 * sin(phase * 4.0))
+                        .opacity(0.4 + 0.3 * cos(phase * 3.0))
+                }
+
+                Text("취침 시간입니다")
+                    .font(.system(size: 22, weight: .medium, design: .serif))
+                    .foregroundColor(.orange.opacity(0.7))
+
+                Text("🌙 좋은 꿈 꾸세요")
+                    .font(.system(size: 15, design: .serif))
+                    .foregroundColor(.gray.opacity(0.5))
+
+                Spacer()
+            }
         }
     }
 

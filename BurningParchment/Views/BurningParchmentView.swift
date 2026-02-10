@@ -111,35 +111,68 @@ struct BurningParchmentView: View {
 
     private func bedtimeReachedView(size: CGSize) -> some View {
         ZStack {
-            // 배경 따뜻한 글로우
+            // 배경 강렬한 글로우 (1층)
             RadialGradient(
                 colors: [
-                    Color.red.opacity(0.12 + 0.05 * sin(phase * 1.5)),
-                    Color.orange.opacity(0.05),
+                    Color.red.opacity(0.2 + 0.1 * sin(phase * 2.5)),
+                    Color.orange.opacity(0.12 + 0.06 * sin(phase * 3.0)),
+                    Color.red.opacity(0.04),
                     Color.clear
                 ],
                 center: .center,
-                startRadius: 20,
-                endRadius: 200
+                startRadius: 10,
+                endRadius: 250
             )
             .ignoresSafeArea()
+
+            // 배경 글로우 (2층 - 흔들리는 불빛)
+            RadialGradient(
+                colors: [
+                    Color.orange.opacity(0.15 + 0.1 * sin(phase * 4.0)),
+                    Color.clear
+                ],
+                center: UnitPoint(
+                    x: 0.5 + 0.02 * sin(phase * 2.3),
+                    y: 0.38 + 0.02 * cos(phase * 1.8)
+                ),
+                startRadius: 30,
+                endRadius: 180
+            )
+            .ignoresSafeArea()
+
+            // 하트 불씨 파티클 (Canvas)
+            heartEmberCanvas(size: size)
 
             VStack(spacing: 24) {
                 Spacer()
 
                 // 불타는 하트
                 ZStack {
-                    // 외부 글로우
+                    // 외부 대형 글로우 (넓은 범위)
                     Image(systemName: "heart.fill")
-                        .font(.system(size: 90))
+                        .font(.system(size: 120))
+                        .foregroundStyle(
+                            RadialGradient(
+                                colors: [.orange.opacity(0.3), .red.opacity(0.15), .clear],
+                                center: .center,
+                                startRadius: 5,
+                                endRadius: 60
+                            )
+                        )
+                        .blur(radius: 35)
+                        .scaleEffect(1.1 + 0.08 * sin(phase * 2.0))
+
+                    // 중간 글로우
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 95))
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [.red.opacity(0.4), .orange.opacity(0.3)],
+                                colors: [.red.opacity(0.5), .orange.opacity(0.4), .yellow.opacity(0.2)],
                                 startPoint: .bottom, endPoint: .top
                             )
                         )
-                        .blur(radius: 25)
-                        .scaleEffect(1.05 + 0.05 * sin(phase * 2.0))
+                        .blur(radius: 18)
+                        .scaleEffect(1.05 + 0.06 * sin(phase * 2.8))
 
                     // 하트 본체
                     Image(systemName: "heart.fill")
@@ -147,43 +180,100 @@ struct BurningParchmentView: View {
                         .foregroundStyle(
                             LinearGradient(
                                 colors: [
-                                    Color(red: 0.8, green: 0.1, blue: 0.1),
-                                    Color(red: 0.95, green: 0.4, blue: 0.1),
-                                    Color(red: 1.0, green: 0.75, blue: 0.2)
+                                    Color(red: 0.7, green: 0.05, blue: 0.05),
+                                    Color(red: 0.95, green: 0.3, blue: 0.05),
+                                    Color(red: 1.0, green: 0.6, blue: 0.1),
+                                    Color(red: 1.0, green: 0.85, blue: 0.3)
                                 ],
                                 startPoint: .bottom, endPoint: .top
                             )
                         )
-                        .scaleEffect(1.0 + 0.02 * sin(phase * 2.5))
+                        .scaleEffect(1.0 + 0.03 * sin(phase * 3.0))
 
-                    // 중앙 불꽃
+                    // 중앙 대형 불꽃
                     Image(systemName: "flame.fill")
-                        .font(.system(size: 36))
+                        .font(.system(size: 44))
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [.yellow, .orange.opacity(0.8), .red.opacity(0.4)],
+                                colors: [
+                                    Color(red: 1.0, green: 0.95, blue: 0.7),
+                                    .yellow,
+                                    .orange.opacity(0.7),
+                                    .red.opacity(0.2)
+                                ],
                                 startPoint: .bottom, endPoint: .top
                             )
                         )
-                        .offset(y: -46 + sin(phase * 3.0) * 3)
-                        .scaleEffect(0.9 + 0.15 * sin(phase * 4.0))
-                        .blur(radius: 1)
+                        .offset(y: -50 + sin(phase * 3.5) * 5)
+                        .scaleEffect(1.0 + 0.2 * sin(phase * 4.5))
+                        .blur(radius: 1.5)
 
-                    // 좌측 불꽃
-                    Image(systemName: "flame")
-                        .font(.system(size: 20))
-                        .foregroundColor(.orange.opacity(0.6))
-                        .offset(x: -28, y: -30)
-                        .scaleEffect(0.8 + 0.2 * sin(phase * 3.5))
-                        .opacity(0.5 + 0.3 * sin(phase * 2.5))
+                    // 좌상 불꽃 (크게)
+                    Image(systemName: "flame.fill")
+                        .font(.system(size: 28))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.yellow.opacity(0.9), .orange, .red.opacity(0.3)],
+                                startPoint: .bottom, endPoint: .top
+                            )
+                        )
+                        .offset(x: -22, y: -42 + sin(phase * 4.0) * 4)
+                        .scaleEffect(0.85 + 0.25 * sin(phase * 3.8))
+                        .opacity(0.7 + 0.3 * sin(phase * 3.2))
+                        .blur(radius: 0.5)
 
-                    // 우측 불꽃
-                    Image(systemName: "flame")
+                    // 우상 불꽃 (크게)
+                    Image(systemName: "flame.fill")
+                        .font(.system(size: 26))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.yellow.opacity(0.8), .orange, .red.opacity(0.3)],
+                                startPoint: .bottom, endPoint: .top
+                            )
+                        )
+                        .offset(x: 25, y: -45 + cos(phase * 3.7) * 5)
+                        .scaleEffect(0.8 + 0.3 * sin(phase * 4.2))
+                        .opacity(0.6 + 0.35 * cos(phase * 3.5))
+                        .blur(radius: 0.5)
+
+                    // 좌측 측면 불꽃
+                    Image(systemName: "flame.fill")
                         .font(.system(size: 18))
-                        .foregroundColor(.orange.opacity(0.5))
-                        .offset(x: 30, y: -35)
-                        .scaleEffect(0.7 + 0.25 * sin(phase * 4.0))
-                        .opacity(0.4 + 0.3 * cos(phase * 3.0))
+                        .foregroundColor(.orange.opacity(0.7))
+                        .offset(x: -35, y: -18 + sin(phase * 5.0) * 3)
+                        .scaleEffect(0.7 + 0.3 * sin(phase * 4.5))
+                        .opacity(0.4 + 0.4 * sin(phase * 3.0))
+                        .rotationEffect(.degrees(-15 + sin(phase * 2.5) * 10))
+
+                    // 우측 측면 불꽃
+                    Image(systemName: "flame.fill")
+                        .font(.system(size: 16))
+                        .foregroundColor(.orange.opacity(0.6))
+                        .offset(x: 37, y: -22 + cos(phase * 4.8) * 3)
+                        .scaleEffect(0.65 + 0.35 * cos(phase * 5.0))
+                        .opacity(0.35 + 0.4 * cos(phase * 2.8))
+                        .rotationEffect(.degrees(15 + cos(phase * 2.3) * 10))
+
+                    // 상단 떠오르는 작은 불씨
+                    Image(systemName: "flame")
+                        .font(.system(size: 12))
+                        .foregroundColor(.yellow.opacity(0.6))
+                        .offset(
+                            x: -10 + sin(phase * 2.0) * 5,
+                            y: -65 + sin(phase * 3.0) * 6
+                        )
+                        .scaleEffect(0.6 + 0.4 * sin(phase * 5.5))
+                        .opacity(0.3 + 0.4 * sin(phase * 4.0))
+
+                    Image(systemName: "flame")
+                        .font(.system(size: 10))
+                        .foregroundColor(.yellow.opacity(0.5))
+                        .offset(
+                            x: 12 + cos(phase * 2.5) * 4,
+                            y: -70 + cos(phase * 3.5) * 5
+                        )
+                        .scaleEffect(0.5 + 0.4 * cos(phase * 6.0))
+                        .opacity(0.25 + 0.35 * cos(phase * 4.5))
                 }
 
                 Text("취침 시간입니다")
@@ -197,6 +287,59 @@ struct BurningParchmentView: View {
                 Spacer()
             }
         }
+    }
+
+    // MARK: - Heart Ember Canvas (하트 불씨 파티클)
+
+    private func heartEmberCanvas(size: CGSize) -> some View {
+        Canvas { ctx, canvasSize in
+            let cx = canvasSize.width / 2
+            let cy = canvasSize.height * 0.38
+
+            for i in 0..<35 {
+                let fi = Double(i)
+                let seed = fi * 137.508
+
+                let cycle = (phase * 0.8 + seed)
+                    .truncatingRemainder(dividingBy: 4.0) / 4.0
+
+                let startX = cx + CGFloat(sin(seed) * 30 + cos(seed * 0.7) * 15)
+                let startY = cy + CGFloat(cos(seed * 0.5) * 20)
+
+                let px = startX + CGFloat(sin(fi * 0.9 + phase * 1.5) * 12 * cycle)
+                let py = startY - CGFloat(cycle * 80 + cycle * cycle * 40)
+
+                let opacity = (1.0 - cycle) * (0.5 + 0.5 * sin(fi * 2.3 + phase * 3.0))
+                let pSize = (1.0 - cycle) * (2.0 + sin(fi * 1.7) * 1.5)
+
+                guard opacity > 0.05 && pSize > 0.3 else { continue }
+
+                // 글로우
+                let gr = pSize * 2.0
+                ctx.opacity = opacity * 0.3
+                ctx.fill(
+                    Path(ellipseIn: CGRect(
+                        x: px - CGFloat(gr), y: py - CGFloat(gr),
+                        width: CGFloat(gr * 2), height: CGFloat(gr * 2)
+                    )),
+                    with: .color(.orange)
+                )
+
+                // 코어
+                ctx.opacity = opacity
+                let r = pSize / 2
+                let colors: [Color] = [.yellow, .orange, Color(red: 1, green: 0.85, blue: 0.4)]
+                ctx.fill(
+                    Path(ellipseIn: CGRect(
+                        x: px - CGFloat(r), y: py - CGFloat(r),
+                        width: CGFloat(pSize), height: CGFloat(pSize)
+                    )),
+                    with: .color(colors[i % colors.count])
+                )
+            }
+        }
+        .blendMode(.screen)
+        .allowsHitTesting(false)
     }
 
     // MARK: - Timer Section (하단)

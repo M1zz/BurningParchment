@@ -73,6 +73,35 @@ struct SettingsView: View {
                         }
                         .padding(.horizontal, 20)
 
+                        // 표시 설정
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("표시 설정")
+                                .font(.system(size: 13, weight: .medium))
+                                .foregroundColor(.gray)
+
+                            Toggle(isOn: $bedtimeManager.showParchmentInWidget) {
+                                HStack(spacing: 8) {
+                                    Image(systemName: "rectangle.on.rectangle")
+                                        .foregroundColor(.orange.opacity(0.6))
+                                    Text("위젯에 양피지 표시")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.white.opacity(0.85))
+                                }
+                            }
+                            .tint(.orange)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 12)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.white.opacity(0.03))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .stroke(Color.orange.opacity(0.1), lineWidth: 1)
+                                    )
+                            )
+                        }
+                        .padding(.horizontal, 20)
+
                         // 안내
                         VStack(spacing: 8) {
                             Label("기상시간부터 자동 카운트다운", systemImage: "flame.fill")

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2B3C4D5E6F7A8B9C0D1E2F /* BedtimeHomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* BedtimeHomeWidget.swift */; };
 		2B299B0E070DB70F2D6FB5AD /* BedtimeActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */; };
 		3B469923EFE09812D31D3858 /* BedtimeActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */; };
 		5BBE9589F3D41B5C48441AD0 /* BedtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C186AA161229FC7933070 /* BedtimeManager.swift */; };
@@ -50,12 +51,13 @@
 		066C186AA161229FC7933070 /* BedtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeManager.swift; sourceTree = "<group>"; };
 		2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeLiveActivity.swift; sourceTree = "<group>"; };
 		227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BurningParchmentWidgets.entitlements; sourceTree = "<group>"; };
-		2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BurningParchmentWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
+		2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BurningParchmentWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentApp.swift; sourceTree = "<group>"; };
 		36C24016F79235C3EAFE2D5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentView.swift; sourceTree = "<group>"; };
 		F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentWidgetsBundle.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		B42985E66001AE4B457D8BDA /* BurningParchmentWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* BedtimeHomeWidget.swift */,
 				2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */,
 				227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */,
 				F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */,
@@ -189,7 +192,6 @@
 			);
 			mainGroup = 39EC316FADCCDA4DC5875847;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -216,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B469923EFE09812D31D3858 /* BedtimeActivityAttributes.swift in Sources */,
+				1A2B3C4D5E6F7A8B9C0D1E2F /* BedtimeHomeWidget.swift in Sources */,
 				F43B85F32130EAC6AFC9D0E7 /* BedtimeLiveActivity.swift in Sources */,
 				FCF5BCE791CF19AF4513B04D /* BurningParchmentWidgetsBundle.swift in Sources */,
 			);
@@ -248,9 +251,15 @@
 		0BE2CEE66B469A61EA42AE48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BurningParchmentWidgets/BurningParchmentWidgets.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchmentWidgets/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app.widgets;
 				SDKROOT = iphoneos;
@@ -328,8 +337,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BurningParchment/BurningParchment.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,7 +349,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -347,8 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BurningParchment/BurningParchment.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,7 +372,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,9 +439,15 @@
 		F360ED7F0F242DBC331D3F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BurningParchmentWidgets/BurningParchmentWidgets.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchmentWidgets/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app.widgets;
 				SDKROOT = iphoneos;

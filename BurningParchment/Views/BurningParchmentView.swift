@@ -24,11 +24,14 @@ struct BurningParchmentView: View {
             let progress = bedtimeManager.progress
 
             ZStack {
-                if bedtimeManager.isBeforeWakeTime {
+                if bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
+                    // 기상 30분 전: 온전한 양피지
                     beforeWakeView(pw: pw, ph: ph, oy: oy, size: size)
-                } else if !bedtimeManager.isCountdownActive && progress >= 1.0 {
+                } else if bedtimeManager.isBeforeWakeTime || (!bedtimeManager.isCountdownActive && progress >= 1.0) {
+                    // 수면 중: 불타는 하트
                     bedtimeReachedView(size: size)
                 } else {
+                    // 기상~취침: 양피지 연소
                     burningView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                 }
             }
@@ -97,9 +100,13 @@ struct BurningParchmentView: View {
                     Image(systemName: "sunrise.fill")
                         .font(.system(size: 32))
                         .foregroundColor(.orange.opacity(0.5))
-                    Text("기상시간에 양피지가\n타기 시작합니다")
+                    Text("곧 기상 시간이에요")
                         .font(.system(size: 15, weight: .medium, design: .serif))
                         .foregroundColor(.gray.opacity(0.7))
+                        .multilineTextAlignment(.center)
+                    Text("\(sleepRemainingString) 후 양피지가 타기 시작합니다")
+                        .font(.system(size: 12, design: .serif))
+                        .foregroundColor(.gray.opacity(0.5))
                         .multilineTextAlignment(.center)
                 }
                 .padding(.bottom, 60)
@@ -276,13 +283,20 @@ struct BurningParchmentView: View {
                         .opacity(0.25 + 0.35 * cos(phase * 4.5))
                 }
 
-                Text("취침 시간입니다")
+                Text("수면 중")
                     .font(.system(size: 22, weight: .medium, design: .serif))
                     .foregroundColor(.orange.opacity(0.7))
 
                 Text("🌙 좋은 꿈 꾸세요")
                     .font(.system(size: 15, design: .serif))
                     .foregroundColor(.gray.opacity(0.5))
+
+                if bedtimeManager.isBeforeWakeTime {
+                    Text("기상까지 \(sleepRemainingString)")
+                        .font(.system(size: 13, design: .serif))
+                        .foregroundColor(.gray.opacity(0.4))
+                        .padding(.top, 4)
+                }
 
                 Spacer()
             }
@@ -396,6 +410,15 @@ struct BurningParchmentView: View {
                 .foregroundColor(.gray.opacity(0.6))
         }
         .padding(.bottom, 28)
+    }
+
+    // MARK: - Sleep Remaining String
+    private var sleepRemainingString: String {
+        let totalSec = Int(bedtimeManager.remainingSeconds)
+        let h = totalSec / 3600
+        let m = (totalSec % 3600) / 60
+        if h > 0 { return "\(h)시간 \(m)분" }
+        return "\(m)분"
     }
 
     // MARK: - Parchment Gradient
@@ -579,6 +602,35 @@ struct BurningParchmentView: View {
         .allowsHitTesting(false)
     }
 
+    // MARK: - 2D Value Noise & fBm
+
+    private static func hash2D(_ x: Double, _ y: Double) -> Double {
+        var v = sin(x * 127.1 + y * 311.7) * 43758.5453123
+        v = v - floor(v)
+        return v
+    }
+
+    private static func valueNoise2D(_ x: Double, _ y: Double) -> Double {
+        let ix = floor(x), iy = floor(y)
+        let fx = x - ix, fy = y - iy
+        let ux = fx * fx * (3.0 - 2.0 * fx)
+        let uy = fy * fy * (3.0 - 2.0 * fy)
+        let a = hash2D(ix, iy)
+        let b = hash2D(ix + 1, iy)
+        let c = hash2D(ix, iy + 1)
+        let d = hash2D(ix + 1, iy + 1)
+        return a + (b - a) * ux + (c - a) * uy + (a - b - c + d) * ux * uy
+    }
+
+    private static func fbm(_ x: Double, _ y: Double, octaves: Int = 5) -> Double {
+        var value = 0.0, amp = 0.5, freq = 1.0
+        for _ in 0..<octaves {
+            value += amp * (valueNoise2D(x * freq, y * freq) * 2.0 - 1.0)
+            amp *= 0.5; freq *= 2.0
+        }
+        return value
+    }
+
     // MARK: - Burn Line Points
 
     static func burnLinePoints(pw: CGFloat, ph: CGFloat, progress: Double, phase: Double) -> [CGPoint] {
@@ -601,7 +653,7 @@ struct BurningParchmentView: View {
         let nx = H / nLen
         let ny = W / nLen
 
-        let segments = 50
+        let segments = 80
         var points: [CGPoint] = []
 
         for i in 0...segments {
@@ -609,12 +661,18 @@ struct BurningParchmentView: View {
             let bx = startPt.0 + (endPt.0 - startPt.0) * t
             let by = startPt.1 + (endPt.1 - startPt.1) * t
 
-            let edgeFade = min(Double(i), Double(segments - i)) / 4.0
+            let edgeFade = min(Double(i), Double(segments - i)) / 6.0
             let fade = min(edgeFade, 1.0)
 
-            let noise = (sin(Double(i) * 0.7 + phase * 1.5) * 8.0
-                       + cos(Double(i) * 1.4 + phase * 2.2) * 5.0
-                       + sin(Double(i) * 2.3 + phase * 3.0) * 3.0) * fade
+            // 위치 기반 2D fBm → 종이 밀도/두께 시뮬레이션 (안정적 패턴)
+            let scale = 0.018
+            let staticNoise = fbm(bx * scale + 3.7, by * scale + 7.1)
+
+            // 작은 애니메이션 노이즈 → 불꽃이 살아있는 느낌
+            let flicker = sin(Double(i) * 0.6 + phase * 2.0) * 2.5
+                        + cos(Double(i) * 1.1 + phase * 3.0) * 1.5
+
+            let noise = (staticNoise * 45.0 + flicker) * fade
 
             let px = max(0, min(W, bx + nx * noise))
             let py = max(0, min(H, by + ny * noise))

@@ -9,6 +9,7 @@ struct BedtimeActivityAttributes: ActivityAttributes {
         var remainingSeconds: TimeInterval
         var progress: Double
         var bedtimeDate: Date
+        var showMiniParchment: Bool
 
         var remainingTimeString: String {
             let hours = Int(remainingSeconds) / 3600

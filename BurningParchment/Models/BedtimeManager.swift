@@ -5,6 +5,7 @@ import SwiftUI
 import Combine
 import ActivityKit
 import UserNotifications
+import WidgetKit
 
 class BedtimeManager: ObservableObject {
     // MARK: - Published Properties
@@ -25,18 +26,30 @@ class BedtimeManager: ObservableObject {
     @Published var progress: Double = 0.0
     @Published var isCountdownActive: Bool = false
     @Published var isBeforeWakeTime: Bool = true
+    @Published var showParchmentInWidget: Bool = true {
+        didSet {
+            UserDefaults.standard.set(showParchmentInWidget, forKey: keyParchmentInWidget)
+            if liveActivityRunning {
+                if #available(iOS 16.2, *) { updateLiveActivityState() }
+            }
+        }
+    }
 
     private var timer: Timer?
     private var liveActivityRunning = false
     private var lastLAUpdate: Date = .distantPast
+    private var lastWidgetReload: Date = .distantPast
     private var scheduledNotifBedDate: Date?
     private var currentBedDate: Date = .distantFuture
+
+    private let sharedDefaults = UserDefaults(suiteName: "group.com.burningparchment.app")
 
     // MARK: - UserDefaults Keys
     private let keyBedH = "bedtimeHour"
     private let keyBedM = "bedtimeMinute"
     private let keyWakeH = "wakeHour"
     private let keyWakeM = "wakeMinute"
+    private let keyParchmentInWidget = "parchmentInWidget"
 
     // MARK: - Computed Properties
     var bedtimeString: String { formatTime(hour: bedtimeHour, minute: bedtimeMinute) }
@@ -60,6 +73,7 @@ class BedtimeManager: ObservableObject {
         self.wakeMinute = ud.object(forKey: keyWakeM) as? Int ?? 0
         self.bedtimeHour = ud.object(forKey: keyBedH) as? Int ?? 23
         self.bedtimeMinute = ud.object(forKey: keyBedM) as? Int ?? 0
+        self.showParchmentInWidget = ud.object(forKey: keyParchmentInWidget) as? Bool ?? true
 
         requestNotificationPermission()
         startMonitoring()
@@ -80,6 +94,26 @@ class BedtimeManager: ObservableObject {
             liveActivityRunning = false
         }
         recalculate()
+        WidgetCenter.shared.reloadAllTimelines()
+    }
+
+    // MARK: - Shared UserDefaults (위젯용)
+    private func saveSharedData() {
+        guard let sd = sharedDefaults else { return }
+        sd.set(progress, forKey: "shared_progress")
+        sd.set(remainingSeconds, forKey: "shared_remainingSeconds")
+        sd.set(bedtimeHour, forKey: "shared_bedtimeHour")
+        sd.set(bedtimeMinute, forKey: "shared_bedtimeMinute")
+        sd.set(wakeHour, forKey: "shared_wakeHour")
+        sd.set(wakeMinute, forKey: "shared_wakeMinute")
+        sd.set(isCountdownActive, forKey: "shared_isCountdownActive")
+        sd.set(isBeforeWakeTime, forKey: "shared_isBeforeWakeTime")
+
+        // 1분 간격으로 위젯 타임라인 리로드
+        if Date().timeIntervalSince(lastWidgetReload) > 60 {
+            lastWidgetReload = Date()
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
 
     // MARK: - Timer
@@ -131,6 +165,7 @@ class BedtimeManager: ObservableObject {
                 progress = 0
                 remainingSeconds = todayWake.timeIntervalSince(now)
                 totalSeconds = 0
+                saveSharedData()
                 return
             }
         }
@@ -172,6 +207,8 @@ class BedtimeManager: ObservableObject {
                 scheduledNotifBedDate = bedDate
             }
         }
+
+        saveSharedData()
     }
 
     // MARK: - Helpers
@@ -217,7 +254,8 @@ class BedtimeManager: ObservableObject {
         let state = BedtimeActivityAttributes.ContentState(
             remainingSeconds: remainingSeconds,
             progress: progress,
-            bedtimeDate: currentBedDate
+            bedtimeDate: currentBedDate,
+            showMiniParchment: showParchmentInWidget
         )
         let content = ActivityContent(state: state, staleDate: nil)
 
@@ -237,7 +275,8 @@ class BedtimeManager: ObservableObject {
         let state = BedtimeActivityAttributes.ContentState(
             remainingSeconds: remainingSeconds,
             progress: progress,
-            bedtimeDate: currentBedDate
+            bedtimeDate: currentBedDate,
+            showMiniParchment: showParchmentInWidget
         )
         let content = ActivityContent(state: state, staleDate: nil)
         lastLAUpdate = Date()
@@ -252,7 +291,8 @@ class BedtimeManager: ObservableObject {
     @available(iOS 16.2, *)
     private func endAllLiveActivities() {
         let state = BedtimeActivityAttributes.ContentState(
-            remainingSeconds: 0, progress: 1.0, bedtimeDate: currentBedDate
+            remainingSeconds: 0, progress: 1.0, bedtimeDate: currentBedDate,
+            showMiniParchment: showParchmentInWidget
         )
         let content = ActivityContent(state: state, staleDate: nil)
         Task {

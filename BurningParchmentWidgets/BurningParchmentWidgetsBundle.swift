@@ -8,6 +8,5 @@ import WidgetKit
 struct BurningParchmentWidgetsBundle: WidgetBundle {
     var body: some Widget {
         BedtimeHomeWidget()
-        BedtimeLiveActivity()
     }
 }

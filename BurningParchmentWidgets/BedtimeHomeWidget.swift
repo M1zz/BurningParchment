@@ -60,37 +60,66 @@ struct BedtimeHomeProvider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (BedtimeHomeEntry) -> Void) {
-        completion(currentEntry())
+        completion(calculateEntry(for: Date()))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<BedtimeHomeEntry>) -> Void) {
-        let entry = currentEntry()
-        let nextUpdate = Calendar.current.date(byAdding: .second, value: 60, to: entry.date)!
-        let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
+        let now = Date()
+        var entries: [BedtimeHomeEntry] = []
+        // 15분 간격으로 25시간치 엔트리 사전 생성 → 최소 15분마다 갱신 보장
+        for i in 0..<100 {
+            let entryDate = now.addingTimeInterval(Double(i) * 900)
+            entries.append(calculateEntry(for: entryDate))
+        }
+        // 1시간마다 새 타임라인 요청
+        let nextRefresh = now.addingTimeInterval(3600)
+        let timeline = Timeline(entries: entries, policy: .after(nextRefresh))
         completion(timeline)
     }
 
-    private func currentEntry() -> BedtimeHomeEntry {
+    private func calculateEntry(for date: Date) -> BedtimeHomeEntry {
         let sd = sharedDefaults
-        let progress = sd?.double(forKey: "shared_progress") ?? 0
-        let remaining = sd?.double(forKey: "shared_remainingSeconds") ?? 0
         let bedH = sd?.integer(forKey: "shared_bedtimeHour") ?? 23
         let bedM = sd?.integer(forKey: "shared_bedtimeMinute") ?? 0
-        let isActive = sd?.bool(forKey: "shared_isCountdownActive") ?? false
-        let isBeforeWake = sd?.bool(forKey: "shared_isBeforeWakeTime") ?? false
+        let wakeH = sd?.integer(forKey: "shared_wakeHour") ?? 7
+        let wakeM = sd?.integer(forKey: "shared_wakeMinute") ?? 0
 
         let h12 = bedH > 12 ? bedH - 12 : (bedH == 0 ? 12 : bedH)
         let ampm = bedH >= 12 ? "PM" : "AM"
         let bedtimeStr = String(format: "%d:%02d %@", h12, bedM, ampm)
 
-        return BedtimeHomeEntry(
-            date: Date(),
-            progress: progress,
-            remainingSeconds: remaining,
-            bedtimeString: bedtimeStr,
-            isActive: isActive,
-            isBeforeWakeTime: isBeforeWake
-        )
+        let cal = Calendar.current
+        var wakeComps = cal.dateComponents([.year, .month, .day], from: date)
+        wakeComps.hour = wakeH; wakeComps.minute = wakeM; wakeComps.second = 0
+        guard let todayWake = cal.date(from: wakeComps) else {
+            return BedtimeHomeEntry(date: date, progress: 0, remainingSeconds: 0,
+                                    bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: true)
+        }
+
+        if date >= todayWake {
+            var bedComps = cal.dateComponents([.year, .month, .day], from: date)
+            bedComps.hour = bedH; bedComps.minute = bedM; bedComps.second = 0
+            guard var bedDate = cal.date(from: bedComps) else {
+                return BedtimeHomeEntry(date: date, progress: 0, remainingSeconds: 0,
+                                        bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: false)
+            }
+            if bedDate <= todayWake { bedDate = cal.date(byAdding: .day, value: 1, to: bedDate)! }
+
+            let total = bedDate.timeIntervalSince(todayWake)
+            let remaining = bedDate.timeIntervalSince(date)
+
+            if remaining <= 0 {
+                return BedtimeHomeEntry(date: date, progress: 1.0, remainingSeconds: 0,
+                                        bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: false)
+            }
+            let progress = min(max(1.0 - remaining / total, 0), 1)
+            return BedtimeHomeEntry(date: date, progress: progress, remainingSeconds: remaining,
+                                    bedtimeString: bedtimeStr, isActive: true, isBeforeWakeTime: false)
+        } else {
+            let remaining = todayWake.timeIntervalSince(date)
+            return BedtimeHomeEntry(date: date, progress: 0, remainingSeconds: remaining,
+                                    bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: true)
+        }
     }
 }
 
@@ -201,32 +230,36 @@ private struct SmallWidgetContent: View {
     let entry: BedtimeHomeEntry
 
     var body: some View {
-        VStack(spacing: 8) {
-            switch entry.displayMode {
-            case .awake:
-                MiniParchmentView(progress: entry.progress)
-                    .frame(width: 80, height: 100)
-                Text(entry.shortTimeString)
-                    .font(.system(size: 16, weight: .medium, design: .monospaced))
-                    .foregroundColor(.orange)
-                    .monospacedDigit()
+        GeometryReader { geo in
+            let side = min(geo.size.width, geo.size.height) * 0.68
 
-            case .sleepingHeart:
-                BurningHeartView()
-                    .frame(width: 80, height: 90)
-                Text("수면 중")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.7))
+            VStack(spacing: 6) {
+                switch entry.displayMode {
+                case .awake:
+                    MiniParchmentView(progress: entry.progress)
+                        .frame(width: side, height: side)
+                    Text(entry.shortTimeString)
+                        .font(.system(size: 15, weight: .medium, design: .monospaced))
+                        .foregroundColor(.orange)
+                        .monospacedDigit()
 
-            case .wakeUpSoon:
-                MiniParchmentView(progress: 0)
-                    .frame(width: 80, height: 100)
-                Text("기상 \(entry.shortTimeString)")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.yellow)
+                case .sleepingHeart:
+                    BurningHeartView()
+                        .frame(width: side, height: side)
+                    Text("수면 중")
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundColor(.orange.opacity(0.7))
+
+                case .wakeUpSoon:
+                    MiniParchmentView(progress: 0)
+                        .frame(width: side, height: side)
+                    Text("기상 \(entry.shortTimeString)")
+                        .font(.system(size: 13, weight: .medium))
+                        .foregroundColor(.yellow)
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .padding(.vertical, 8)
     }
 }
 
@@ -236,28 +269,33 @@ private struct MediumWidgetContent: View {
     let entry: BedtimeHomeEntry
 
     var body: some View {
-        HStack(spacing: 16) {
-            switch entry.displayMode {
-            case .awake:
-                MiniParchmentView(progress: entry.progress)
-                    .frame(width: 90, height: 110)
-                awakeInfo
+        GeometryReader { geo in
+            let side = geo.size.height * 0.78
 
-            case .sleepingHeart:
-                BurningHeartView()
-                    .frame(width: 90, height: 100)
-                sleepInfo
+            HStack(spacing: 14) {
+                switch entry.displayMode {
+                case .awake:
+                    MiniParchmentView(progress: entry.progress)
+                        .frame(width: side, height: side)
+                    awakeInfo
 
-            case .wakeUpSoon:
-                MiniParchmentView(progress: 0)
-                    .frame(width: 90, height: 110)
-                wakeUpInfo
+                case .sleepingHeart:
+                    BurningHeartView()
+                        .frame(width: side, height: side)
+                    sleepInfo
+
+                case .wakeUpSoon:
+                    MiniParchmentView(progress: 0)
+                        .frame(width: side, height: side)
+                    wakeUpInfo
+                }
+
+                Spacer()
             }
-
-            Spacer()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
     }
 
     private var awakeInfo: some View {
@@ -348,25 +386,30 @@ private struct LargeWidgetContent: View {
     let entry: BedtimeHomeEntry
 
     var body: some View {
-        VStack(spacing: 12) {
-            switch entry.displayMode {
-            case .awake:
-                MiniParchmentView(progress: entry.progress)
-                    .frame(width: 140, height: 180)
-                awakeInfo
+        GeometryReader { geo in
+            let side = geo.size.width * 0.52
 
-            case .sleepingHeart:
-                BurningHeartView()
-                    .frame(width: 140, height: 150)
-                sleepInfo
+            VStack(spacing: 12) {
+                switch entry.displayMode {
+                case .awake:
+                    MiniParchmentView(progress: entry.progress)
+                        .frame(width: side, height: side)
+                    awakeInfo
 
-            case .wakeUpSoon:
-                MiniParchmentView(progress: 0)
-                    .frame(width: 140, height: 180)
-                wakeUpInfo
+                case .sleepingHeart:
+                    BurningHeartView()
+                        .frame(width: side, height: side)
+                    sleepInfo
+
+                case .wakeUpSoon:
+                    MiniParchmentView(progress: 0)
+                        .frame(width: side, height: side)
+                    wakeUpInfo
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.vertical, 16)
         }
-        .padding(.vertical, 16)
     }
 
     private var awakeInfo: some View {

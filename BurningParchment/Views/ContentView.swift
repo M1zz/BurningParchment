@@ -13,6 +13,7 @@ struct ContentView: View {
 
             VStack(spacing: 0) {
                 headerBar
+                periodPicker
                 BurningParchmentView()
                     .environmentObject(bedtimeManager)
             }
@@ -21,6 +22,24 @@ struct ContentView: View {
             SettingsView()
                 .environmentObject(bedtimeManager)
         }
+    }
+
+    // MARK: - Period Picker
+    private var periodPicker: some View {
+        HStack(spacing: 0) {
+            ForEach(PeriodType.allCases) { period in
+                Button(action: { bedtimeManager.selectedPeriod = period }) {
+                    Text(period.rawValue)
+                        .font(.system(size: 13, weight: bedtimeManager.selectedPeriod == period ? .semibold : .regular, design: .serif))
+                        .foregroundColor(bedtimeManager.selectedPeriod == period ? .orange : .gray.opacity(0.4))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 7)
+                }
+            }
+        }
+        .background(Color.white.opacity(0.05), in: RoundedRectangle(cornerRadius: 8))
+        .padding(.horizontal, 24)
+        .padding(.bottom, 6)
     }
 
     // MARK: - Header

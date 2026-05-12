@@ -3,9 +3,16 @@
 
 import SwiftUI
 import Combine
-import ActivityKit
 import UserNotifications
 import WidgetKit
+
+enum PeriodType: String, CaseIterable, Identifiable {
+    case day = "1일"
+    case week = "1주"
+    case month = "1달"
+    case year = "1년"
+    var id: String { rawValue }
+}
 
 class BedtimeManager: ObservableObject {
     // MARK: - Published Properties
@@ -26,18 +33,11 @@ class BedtimeManager: ObservableObject {
     @Published var progress: Double = 0.0
     @Published var isCountdownActive: Bool = false
     @Published var isBeforeWakeTime: Bool = true
-    @Published var showParchmentInWidget: Bool = true {
-        didSet {
-            UserDefaults.standard.set(showParchmentInWidget, forKey: keyParchmentInWidget)
-            if liveActivityRunning {
-                if #available(iOS 16.2, *) { updateLiveActivityState() }
-            }
-        }
-    }
+    @Published var selectedPeriod: PeriodType = .day
+    // 수면 구간 진행률: 0 = 취침 직후, 1 = 기상 직전
+    @Published var sleepProgress: Double = 0
 
     private var timer: Timer?
-    private var liveActivityRunning = false
-    private var lastLAUpdate: Date = .distantPast
     private var lastWidgetReload: Date = .distantPast
     private var scheduledNotifBedDate: Date?
     private var currentBedDate: Date = .distantFuture
@@ -49,11 +49,94 @@ class BedtimeManager: ObservableObject {
     private let keyBedM = "bedtimeMinute"
     private let keyWakeH = "wakeHour"
     private let keyWakeM = "wakeMinute"
-    private let keyParchmentInWidget = "parchmentInWidget"
 
     // MARK: - Computed Properties
     var bedtimeString: String { formatTime(hour: bedtimeHour, minute: bedtimeMinute) }
     var wakeTimeString: String { formatTime(hour: wakeHour, minute: wakeMinute) }
+
+    var periodProgress: Double {
+        switch selectedPeriod {
+        case .day: return progress
+        case .week: return weekProgress
+        case .month: return monthProgress
+        case .year: return yearProgress
+        }
+    }
+
+    var periodRemainingString: String {
+        switch selectedPeriod {
+        case .day: return remainingTimeString
+        case .week: return formatRemainingDays(weekRemainingDays)
+        case .month: return formatRemainingDays(monthRemainingDays)
+        case .year: return formatRemainingDays(yearRemainingDays)
+        }
+    }
+
+    var periodLabel: String {
+        switch selectedPeriod {
+        case .day: return "취침까지 남은 시간"
+        case .week: return "이번 주 남은 시간"
+        case .month: return "이번 달 남은 시간"
+        case .year: return "올해 남은 시간"
+        }
+    }
+
+    private var todayFraction: Double {
+        isCountdownActive ? progress : (progress >= 1.0 ? 1.0 : 0.0)
+    }
+
+    private var weekProgress: Double {
+        let cal = Calendar.current
+        let weekday = cal.component(.weekday, from: Date()) // 1=Sun, 2=Mon ... 7=Sat
+        let daysFromMonday = Double((weekday - 2 + 7) % 7)
+        return min((daysFromMonday + todayFraction) / 7.0, 1.0)
+    }
+
+    private var weekRemainingDays: Double {
+        let cal = Calendar.current
+        let weekday = cal.component(.weekday, from: Date())
+        let daysFromMonday = Double((weekday - 2 + 7) % 7)
+        return max(7.0 - daysFromMonday - todayFraction, 0)
+    }
+
+    private var monthProgress: Double {
+        let cal = Calendar.current
+        let now = Date()
+        let dayOfMonth = Double(cal.component(.day, from: now) - 1)
+        let daysInMonth = Double(cal.range(of: .day, in: .month, for: now)?.count ?? 30)
+        return min((dayOfMonth + todayFraction) / daysInMonth, 1.0)
+    }
+
+    private var monthRemainingDays: Double {
+        let cal = Calendar.current
+        let now = Date()
+        let dayOfMonth = Double(cal.component(.day, from: now) - 1)
+        let daysInMonth = Double(cal.range(of: .day, in: .month, for: now)?.count ?? 30)
+        return max(daysInMonth - dayOfMonth - todayFraction, 0)
+    }
+
+    private var yearProgress: Double {
+        let cal = Calendar.current
+        let now = Date()
+        let dayOfYear = Double((cal.ordinality(of: .day, in: .year, for: now) ?? 1) - 1)
+        let daysInYear = Double(cal.range(of: .day, in: .year, for: now)?.count ?? 365)
+        return min((dayOfYear + todayFraction) / daysInYear, 1.0)
+    }
+
+    private var yearRemainingDays: Double {
+        let cal = Calendar.current
+        let now = Date()
+        let dayOfYear = Double((cal.ordinality(of: .day, in: .year, for: now) ?? 1) - 1)
+        let daysInYear = Double(cal.range(of: .day, in: .year, for: now)?.count ?? 365)
+        return max(daysInYear - dayOfYear - todayFraction, 0)
+    }
+
+    private func formatRemainingDays(_ remaining: Double) -> String {
+        let days = Int(remaining)
+        let hours = Int((remaining - Double(days)) * 24)
+        if days > 0 { return "\(days)일 \(hours)시간" }
+        return "\(hours)시간"
+    }
 
     var remainingTimeString: String {
         let h = Int(remainingSeconds) / 3600
@@ -73,7 +156,6 @@ class BedtimeManager: ObservableObject {
         self.wakeMinute = ud.object(forKey: keyWakeM) as? Int ?? 0
         self.bedtimeHour = ud.object(forKey: keyBedH) as? Int ?? 23
         self.bedtimeMinute = ud.object(forKey: keyBedM) as? Int ?? 0
-        self.showParchmentInWidget = ud.object(forKey: keyParchmentInWidget) as? Bool ?? true
 
         requestNotificationPermission()
         startMonitoring()
@@ -87,12 +169,7 @@ class BedtimeManager: ObservableObject {
         ud.set(wakeHour, forKey: keyWakeH)
         ud.set(wakeMinute, forKey: keyWakeM)
 
-        // 설정 변경 시 알림 & LA 재설정
         scheduledNotifBedDate = nil
-        if liveActivityRunning {
-            if #available(iOS 16.2, *) { endAllLiveActivities() }
-            liveActivityRunning = false
-        }
         recalculate()
         WidgetCenter.shared.reloadAllTimelines()
     }
@@ -160,11 +237,17 @@ class BedtimeManager: ObservableObject {
                 wakeDate = yesterdayWake
                 bedDate = bd
             } else {
+                // 수면 구간: 어제 취침 ~ 오늘 기상
                 isBeforeWakeTime = true
                 isCountdownActive = false
+                sleepProgress = 0
                 progress = 0
                 remainingSeconds = todayWake.timeIntervalSince(now)
                 totalSeconds = 0
+                let totalSleep = todayWake.timeIntervalSince(bd)
+                if totalSleep > 0 {
+                    sleepProgress = min(max(now.timeIntervalSince(bd) / totalSleep, 0), 1)
+                }
                 saveSharedData()
                 return
             }
@@ -175,33 +258,23 @@ class BedtimeManager: ObservableObject {
         let remaining = bedDate.timeIntervalSince(now)
 
         if remaining <= 0 {
+            // 수면 구간: 오늘 취침 ~ 내일 기상
             isCountdownActive = false
             isBeforeWakeTime = false
             progress = 1.0
             remainingSeconds = 0
             totalSeconds = total
-
-            if liveActivityRunning {
-                if #available(iOS 16.2, *) { endAllLiveActivities() }
-                liveActivityRunning = false
-            }
+            let nextWake = cal.date(byAdding: .day, value: 1, to: wakeDate)!
+            let totalSleep = nextWake.timeIntervalSince(bedDate)
+            sleepProgress = totalSleep > 0 ? min(max(now.timeIntervalSince(bedDate) / totalSleep, 0), 1) : 0
         } else {
             isCountdownActive = true
             isBeforeWakeTime = false
+            sleepProgress = 0
             remainingSeconds = remaining
             totalSeconds = max(total, 1)
             progress = min(max(1.0 - (remaining / total), 0.0), 1.0)
 
-            // Live Activity 자동 시작 & 업데이트
-            if #available(iOS 16.2, *) {
-                if !liveActivityRunning {
-                    autoStartLiveActivity()
-                } else if Date().timeIntervalSince(lastLAUpdate) > 60 {
-                    updateLiveActivityState()
-                }
-            }
-
-            // 1시간 전 알림 예약
             if scheduledNotifBedDate != bedDate {
                 scheduleNotification(bedDate: bedDate)
                 scheduledNotifBedDate = bedDate
@@ -239,72 +312,6 @@ class BedtimeManager: ObservableObject {
         let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: false)
         let request = UNNotificationRequest(identifier: "bedtime-1h", content: content, trigger: trigger)
         center.add(request)
-    }
-
-    // MARK: - Live Activity
-    @available(iOS 16.2, *)
-    private func autoStartLiveActivity() {
-        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
-        guard Activity<BedtimeActivityAttributes>.activities.isEmpty else {
-            liveActivityRunning = true
-            return
-        }
-
-        let attributes = BedtimeActivityAttributes(bedtimeString: bedtimeString)
-        let state = BedtimeActivityAttributes.ContentState(
-            remainingSeconds: remainingSeconds,
-            progress: progress,
-            bedtimeDate: currentBedDate,
-            showMiniParchment: showParchmentInWidget
-        )
-        let content = ActivityContent(state: state, staleDate: nil)
-
-        do {
-            _ = try Activity<BedtimeActivityAttributes>.request(
-                attributes: attributes, content: content, pushType: nil
-            )
-            liveActivityRunning = true
-            lastLAUpdate = Date()
-        } catch {
-            print("Failed to start Live Activity: \(error)")
-        }
-    }
-
-    @available(iOS 16.2, *)
-    private func updateLiveActivityState() {
-        let state = BedtimeActivityAttributes.ContentState(
-            remainingSeconds: remainingSeconds,
-            progress: progress,
-            bedtimeDate: currentBedDate,
-            showMiniParchment: showParchmentInWidget
-        )
-        let content = ActivityContent(state: state, staleDate: nil)
-        lastLAUpdate = Date()
-
-        Task {
-            for activity in Activity<BedtimeActivityAttributes>.activities {
-                await activity.update(content)
-            }
-        }
-    }
-
-    @available(iOS 16.2, *)
-    private func endAllLiveActivities() {
-        let state = BedtimeActivityAttributes.ContentState(
-            remainingSeconds: 0, progress: 1.0, bedtimeDate: currentBedDate,
-            showMiniParchment: showParchmentInWidget
-        )
-        let content = ActivityContent(state: state, staleDate: nil)
-        Task {
-            for activity in Activity<BedtimeActivityAttributes>.activities {
-                await activity.end(content, dismissalPolicy: .immediate)
-            }
-        }
-    }
-
-    @available(iOS 16.2, *)
-    func startLiveActivity() {
-        autoStartLiveActivity()
     }
 
     deinit { timer?.invalidate() }

@@ -21,27 +21,28 @@ struct BurningParchmentView: View {
             let ph = size.height * 0.48
             let ox = (size.width - pw) / 2
             let oy: CGFloat = 8
-            let progress = bedtimeManager.progress
+            let isDayPeriod = bedtimeManager.selectedPeriod == .day
+            let displayProgress = isDayPeriod ? bedtimeManager.progress : bedtimeManager.periodProgress
 
             ZStack {
-                if bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
-                    // 기상 30분 전: 온전한 양피지
+                if isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
                     beforeWakeView(pw: pw, ph: ph, oy: oy, size: size)
-                } else if bedtimeManager.isBeforeWakeTime || (!bedtimeManager.isCountdownActive && progress >= 1.0) {
-                    // 수면 중: 불타는 하트
+                } else if isDayPeriod && (bedtimeManager.isBeforeWakeTime || (!bedtimeManager.isCountdownActive && bedtimeManager.progress >= 1.0)) {
                     bedtimeReachedView(size: size)
                 } else {
-                    // 기상~취침: 양피지 연소
-                    burningView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
+                    burningView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, progress: displayProgress)
                 }
             }
             .onReceive(timer) { _ in
                 phase += 0.05
-                if bedtimeManager.isCountdownActive {
+                if bedtimeManager.isCountdownActive || !isDayPeriod {
                     updateParticles(pw: pw, ph: ph, ox: ox, oy: oy)
                 }
             }
             .onAppear {
+                initParticles(pw: pw, ph: ph, ox: ox, oy: oy)
+            }
+            .onChange(of: bedtimeManager.selectedPeriod) { _ in
                 initParticles(pw: pw, ph: ph, ox: ox, oy: oy)
             }
         }
@@ -65,7 +66,7 @@ struct BurningParchmentView: View {
 
             // 불꽃
             if progress > 0.005 && progress < 0.995 {
-                flameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
+                diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
             }
 
             // 불씨 파티클
@@ -83,13 +84,10 @@ struct BurningParchmentView: View {
 
     private func beforeWakeView(pw: CGFloat, ph: CGFloat, oy: CGFloat, size: CGSize) -> some View {
         ZStack {
-            DiagonalBurnShape(progress: 0, phase: 0)
+            Rectangle()
                 .fill(parchmentGradient)
                 .frame(width: pw, height: ph)
-                .overlay(
-                    DiagonalBurnShape(progress: 0, phase: 0)
-                        .stroke(Color.brown.opacity(0.25), lineWidth: 1)
-                )
+                .overlay(Rectangle().stroke(Color.brown.opacity(0.25), lineWidth: 1))
                 .shadow(color: .black.opacity(0.4), radius: 12, y: 8)
                 .position(x: size.width / 2, y: oy + ph / 2)
 
@@ -360,47 +358,42 @@ struct BurningParchmentView: View {
 
     private func timerSection(progress: Double, size: CGSize) -> some View {
         VStack(spacing: 14) {
-            // 남은 시간
             VStack(spacing: 4) {
-                Text("취침까지 남은 시간")
+                Text(bedtimeManager.periodLabel)
                     .font(.system(size: 13, weight: .medium, design: .serif))
                     .foregroundColor(.orange.opacity(0.6))
 
-                HStack(alignment: .firstTextBaseline, spacing: 3) {
-                    TimeDigitView(value: bedtimeManager.remainingHours, label: "h")
-                    Text(":")
-                        .font(.system(size: 34, weight: .light, design: .serif))
-                        .foregroundColor(.orange.opacity(0.5))
-                    TimeDigitView(value: bedtimeManager.remainingMinutes, label: "m")
-                    Text(":")
-                        .font(.system(size: 34, weight: .light, design: .serif))
-                        .foregroundColor(.orange.opacity(0.5))
-                    TimeDigitView(value: bedtimeManager.remainingSecs, label: "s")
+                if bedtimeManager.selectedPeriod == .day {
+                    HStack(alignment: .firstTextBaseline, spacing: 3) {
+                        TimeDigitView(value: bedtimeManager.remainingHours, label: "h")
+                        Text(":").font(.system(size: 34, weight: .light, design: .serif))
+                            .foregroundColor(.orange.opacity(0.5))
+                        TimeDigitView(value: bedtimeManager.remainingMinutes, label: "m")
+                        Text(":").font(.system(size: 34, weight: .light, design: .serif))
+                            .foregroundColor(.orange.opacity(0.5))
+                        TimeDigitView(value: bedtimeManager.remainingSecs, label: "s")
+                    }
+                } else {
+                    Text(bedtimeManager.periodRemainingString)
+                        .font(.system(size: 36, weight: .ultraLight, design: .serif))
+                        .foregroundColor(.orange.opacity(0.9))
                 }
             }
 
             // 게이지 바
             HStack(spacing: 8) {
                 Text("🔥").font(.system(size: 13))
-
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {
                         RoundedRectangle(cornerRadius: 4)
                             .fill(Color.white.opacity(0.08))
                             .frame(height: 8)
                         RoundedRectangle(cornerRadius: 4)
-                            .fill(
-                                LinearGradient(
-                                    colors: [.orange, .red],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
+                            .fill(LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing))
                             .frame(width: geo.size.width * progress, height: 8)
                     }
                 }
                 .frame(height: 8)
-
                 Text("🌙").font(.system(size: 13))
             }
             .padding(.horizontal, 32)
@@ -445,8 +438,8 @@ struct BurningParchmentView: View {
 
         return RadialGradient(
             colors: [
-                Color.orange.opacity(0.18 + 0.06 * sin(phase * 2.0)),
-                Color.red.opacity(0.07),
+                Color.orange.opacity(0.28 + 0.10 * sin(phase * 2.0)),
+                Color.red.opacity(0.14),
                 Color.clear
             ],
             center: UnitPoint(x: cx, y: cy),
@@ -484,19 +477,10 @@ struct BurningParchmentView: View {
 
     private func parchmentGroup(pw: CGFloat, ph: CGFloat, progress: Double) -> some View {
         let shape = DiagonalBurnShape(progress: progress, phase: phase)
-
         return ZStack {
             shape.fill(parchmentGradient)
-
-            if progress > 0 {
-                scorchOverlay(progress: progress, shape: shape)
-            }
-
+            if progress > 0 { scorchOverlay(progress: progress, shape: shape) }
             shape.stroke(Color.brown.opacity(0.2), lineWidth: 1)
-
-            if progress > 0.005 && progress < 0.995 {
-                edgeGlow(progress: progress, shape: shape)
-            }
         }
         .frame(width: pw, height: ph)
         .shadow(color: .black.opacity(0.5), radius: 15, y: 8)
@@ -508,37 +492,20 @@ struct BurningParchmentView: View {
         let t = 1.0 - progress
         return LinearGradient(
             stops: [
-                .init(color: .clear, location: 0),
-                .init(color: .clear, location: max(0, t - 0.18)),
-                .init(color: Color(red: 0.38, green: 0.22, blue: 0.08).opacity(0.5), location: max(0, t - 0.06)),
-                .init(color: Color(red: 0.15, green: 0.07, blue: 0.02).opacity(0.92), location: max(0.001, t)),
-                .init(color: Color.black.opacity(0.95), location: min(1, t + 0.01)),
+                .init(color: .clear,                                                         location: 0),
+                .init(color: .clear,                                                         location: max(0, t - 0.18)),
+                .init(color: Color(red: 0.38, green: 0.22, blue: 0.08).opacity(0.5),        location: max(0, t - 0.06)),
+                .init(color: Color(red: 0.15, green: 0.07, blue: 0.02).opacity(0.92),       location: max(0.001, t)),
+                .init(color: Color.black.opacity(0.95),                                      location: min(1, t + 0.01)),
             ],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
+            startPoint: .topLeading, endPoint: .bottomTrailing
         )
         .clipShape(shape)
     }
 
-    // MARK: - Edge Glow
+    // MARK: - Diagonal Flame Canvas (유기적 불꽃 - 직선 그라디언트 없음)
 
-    private func edgeGlow(progress: Double, shape: DiagonalBurnShape) -> some View {
-        let t = 1.0 - progress
-        return LinearGradient(
-            stops: [
-                .init(color: .clear, location: max(0, t - 0.07)),
-                .init(color: Color.orange.opacity(0.6 + 0.25 * sin(phase * 3.0)), location: max(0.001, t - 0.012)),
-                .init(color: Color.red.opacity(0.35), location: t),
-            ],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
-        .clipShape(shape)
-    }
-
-    // MARK: - Flame Canvas
-
-    private func flameCanvas(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
+    private func diagonalFlameCanvas(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
         Canvas { ctx, _ in
             let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: progress, phase: phase)
 
@@ -546,58 +513,52 @@ struct BurningParchmentView: View {
             let nx = Double(ph) / nLen
             let ny = Double(pw) / nLen
             let tx = -ny
-            let ty = nx
+            let ty =  nx
 
             for i in stride(from: 0, to: pts.count, by: 2) {
                 let pt = pts[i]
                 let fi = Double(i)
 
-                let n1 = sin(fi * 0.5 + phase * 4.0) * 0.5 + 0.5
-                let n2 = cos(fi * 0.9 + phase * 3.0)
-                let n3 = sin(fi * 1.7 + phase * 5.0)
+                let n1 = sin(fi * 0.55 + phase * 4.0) * 0.5 + 0.5
+                let n2 = cos(fi * 0.90 + phase * 3.0)
+                let n3 = sin(fi * 1.70 + phase * 5.5)
 
-                let flameH = 16.0 + n1 * 24.0 + n3 * 6.0
-                let flameW = 5.0 + n1 * 4.0
+                let flameH = 14.0 + n1 * 26.0 + n3 * 7.0
+                let flameW =  5.0 + n1 *  4.5
+                let sway   = n2 * 3.0
 
-                let bx = Double(pt.x) + Double(ox)
-                let by = Double(pt.y) + Double(oy)
-                let tipX = bx + nx * flameH
-                let tipY = by + ny * flameH
-                let midX = bx + nx * flameH * 0.5
-                let midY = by + ny * flameH * 0.5
+                let bx  = Double(pt.x) + Double(ox)
+                let by  = Double(pt.y) + Double(oy)
+                let tipX = bx + nx * flameH + tx * sway
+                let tipY = by + ny * flameH + ty * sway
+
+                let midX = bx + nx * flameH * 0.45
+                let midY = by + ny * flameH * 0.45
+                let ctrl1 = CGPoint(x: midX + tx * (flameW * 0.25 + sway * 0.5),
+                                    y: midY + ty * (flameW * 0.25 + sway * 0.5))
+                let ctrl2 = CGPoint(x: midX - tx * (flameW * 0.25 - sway * 0.5),
+                                    y: midY - ty * (flameW * 0.25 - sway * 0.5))
 
                 var flame = Path()
                 flame.move(to: CGPoint(x: bx + tx * flameW * 0.5, y: by + ty * flameW * 0.5))
-                flame.addQuadCurve(
-                    to: CGPoint(x: tipX, y: tipY),
-                    control: CGPoint(
-                        x: midX + tx * flameW * 0.3 + nx * flameH * 0.12,
-                        y: midY + ty * flameW * 0.3 + ny * flameH * 0.12
-                    )
-                )
-                flame.addQuadCurve(
-                    to: CGPoint(x: bx - tx * flameW * 0.5, y: by - ty * flameW * 0.5),
-                    control: CGPoint(
-                        x: midX - tx * flameW * 0.3 + nx * flameH * 0.12,
-                        y: midY - ty * flameW * 0.3 + ny * flameH * 0.12
-                    )
-                )
+                flame.addQuadCurve(to: CGPoint(x: tipX, y: tipY), control: ctrl1)
+                flame.addQuadCurve(to: CGPoint(x: bx - tx * flameW * 0.5, y: by - ty * flameW * 0.5), control: ctrl2)
                 flame.closeSubpath()
 
-                ctx.opacity = 0.55 + n1 * 0.45 + n2 * 0.1
+                ctx.opacity = 0.55 + n1 * 0.45 + n2 * 0.10
                 ctx.fill(flame, with: .linearGradient(
                     Gradient(colors: [
-                        Color(red: 1.0, green: 0.97, blue: 0.7),
-                        Color(red: 1.0, green: 0.7, blue: 0.15),
-                        Color(red: 0.95, green: 0.3, blue: 0.05).opacity(0.5),
-                        Color.red.opacity(0),
+                        Color(red: 1.0, green: 0.97, blue: 0.72),
+                        Color(red: 1.0, green: 0.68, blue: 0.12),
+                        Color(red: 0.95, green: 0.28, blue: 0.04).opacity(0.50),
+                        .clear,
                     ]),
                     startPoint: CGPoint(x: bx, y: by),
-                    endPoint: CGPoint(x: tipX, y: tipY)
+                    endPoint:   CGPoint(x: tipX, y: tipY)
                 ))
             }
         }
-        .blur(radius: 2)
+        .blur(radius: 2.5)
         .blendMode(.screen)
         .allowsHitTesting(false)
     }
@@ -682,16 +643,33 @@ struct BurningParchmentView: View {
         return points
     }
 
+    // MARK: - Horizontal Burn Points
+
+    static func horizontalBurnPoints(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double, phase: Double) -> [CGPoint] {
+        let burnY = ph * (1.0 - progress)
+        let count = 40
+        var pts: [CGPoint] = []
+        for i in 0...count {
+            let t = Double(i) / Double(count)
+            let jitter = sin(Double(i) * 1.4 + phase * 2.2) * 2.5
+                       + cos(Double(i) * 0.8 + phase * 1.7) * 1.5
+            pts.append(CGPoint(x: ox + pw * t, y: oy + burnY + CGFloat(jitter)))
+        }
+        return pts
+    }
+
     // MARK: - Particles
 
     private func initParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
-        let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: bedtimeManager.progress, phase: phase)
+        let p = bedtimeManager.periodProgress
+        let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
         embers = (0..<25).map { _ in Ember.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
-        ashes = (0..<20).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
+        ashes  = (0..<20).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
     }
 
     private func updateParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
-        let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: bedtimeManager.progress, phase: phase)
+        let p = bedtimeManager.periodProgress
+        let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
 
         let nLen = sqrt(Double(ph * ph + pw * pw))
         let nx = Double(ph) / nLen
@@ -703,7 +681,7 @@ struct BurningParchmentView: View {
             embers[i].pos.x += CGFloat(sin(phase + Double(i) * 0.7) * 0.6)
             embers[i].pos.y += CGFloat(cos(phase + Double(i) * 0.5) * 0.4)
             embers[i].opacity -= 0.012
-            embers[i].size *= 0.997
+            embers[i].size    *= 0.997
             if embers[i].opacity <= 0 {
                 embers[i] = Ember.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph)
             }
@@ -713,7 +691,7 @@ struct BurningParchmentView: View {
             ashes[i].pos.y += CGFloat(ashes[i].speed)
             ashes[i].pos.x += CGFloat(sin(phase * 0.4 + Double(i)) * 0.3)
             ashes[i].opacity -= 0.006
-            if ashes[i].opacity <= 0 || ashes[i].pos.y > ph + oy + 50 {
+            if ashes[i].opacity <= 0 || ashes[i].pos.y > oy + ph + 50 {
                 ashes[i] = Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph)
             }
         }

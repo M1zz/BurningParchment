@@ -4,6 +4,32 @@ options:
   deploymentTarget:
     iOS: "16.2"
   xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+schemes:
+  BurningParchment:
+    build:
+      targets:
+        BurningParchment: all
+        BurningParchmentWidgets: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  BurningParchmentWidgets:
+    build:
+      targets:
+        BurningParchmentWidgets: all
+    run:
+      config: Debug
+    archive:
+      config: Release
 
 settings:
   base:

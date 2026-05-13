@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보 처리방침 — 불타는 내인생</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← 지원 페이지로 돌아가기</a>
+  <h1>개인정보 처리방침</h1>
+  <p>최종 업데이트: 2025년 5월 13일</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>요약</h2>
+    <div class="card">
+      <h3>불타는 내인생은 개인정보를 수집하지 않습니다</h3>
+      <p>앱이 동작하는 데 필요한 모든 데이터는 사용자의 기기 내에서만 처리되며, 외부 서버로 전송되거나 제3자와 공유되지 않습니다.</p>
+      <span class="highlight">🔒 인터넷 연결 불필요 · 수집 데이터 없음</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>수집 및 저장 정보</h2>
+    <div class="card">
+      <h3>기기에 저장되는 정보</h3>
+      <p>앱은 아래 항목만 사용자의 기기 내부(UserDefaults)에 저장합니다.</p>
+      <ul>
+        <li>기상 시간 (시, 분)</li>
+        <li>취침 시간 (시, 분)</li>
+      </ul>
+      <p style="margin-top: 10px;">이 값들은 앱과 홈 화면 위젯 간 데이터 공유를 위해 기기 내 App Group 저장소를 통해서만 사용됩니다.</p>
+    </div>
+    <div class="card">
+      <h3>수집하지 않는 정보</h3>
+      <ul>
+        <li>이름, 이메일, 전화번호 등 신원 정보</li>
+        <li>위치 정보</li>
+        <li>연락처, 사진, 건강 데이터</li>
+        <li>기기 식별자 (IDFA, IDFV 등)</li>
+        <li>사용 행태 분석 데이터</li>
+        <li>광고 관련 데이터</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>제3자 공유</h2>
+    <div class="card">
+      <h3>데이터를 공유하지 않습니다</h3>
+      <p>앱은 어떠한 분석 SDK, 광고 네트워크, 제3자 서비스도 사용하지 않습니다. 사용자 데이터는 외부로 전송되지 않습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>알림</h2>
+    <div class="card">
+      <h3>로컬 알림만 사용합니다</h3>
+      <p>취침 1시간 전 알림은 기기 내에서 예약되는 로컬 알림으로, 외부 서버를 거치지 않습니다. 알림 권한은 사용자가 언제든지 iOS 설정에서 변경할 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>아동 개인정보 보호</h2>
+    <div class="card">
+      <h3>만 14세 미만 아동</h3>
+      <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>방침 변경</h2>
+    <div class="card">
+      <h3>변경 시 이 페이지를 통해 안내합니다</h3>
+      <p>개인정보 처리방침이 변경될 경우 이 페이지의 최종 업데이트 날짜를 수정하고 내용을 업데이트합니다. 중요한 변경이 있을 경우 앱 업데이트 노트를 통해 별도로 안내할 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>문의</h2>
+    <div class="card">
+      <h3>개인정보 관련 문의</h3>
+      <p>개인정보 처리방침에 대한 질문이 있으시면 아래 이메일로 문의해주세요.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:mizzking75@gmail.com" style="color: var(--orange); text-decoration: none;">mizzking75@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 불타는 내인생 &nbsp;·&nbsp; <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

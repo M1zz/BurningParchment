@@ -55,6 +55,7 @@ targets:
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: true
         CFBundleDisplayName: "불타는 내인생"
         NSSupportsLiveActivities: true
     settings:

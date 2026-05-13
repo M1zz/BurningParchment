@@ -5,6 +5,7 @@ import SwiftUI
 import Combine
 import UserNotifications
 import WidgetKit
+import ActivityKit
 
 enum PeriodType: String, CaseIterable, Identifiable {
     case day = "1일"
@@ -41,6 +42,8 @@ class BedtimeManager: ObservableObject {
     private var lastWidgetReload: Date = .distantPast
     private var scheduledNotifBedDate: Date?
     private var currentBedDate: Date = .distantFuture
+    private var liveActivity: Activity<BedtimeActivityAttributes>?
+    private var lastLiveActivityUpdate: Date = .distantPast
 
     private let sharedDefaults = UserDefaults(suiteName: "group.com.burningparchment.app")
 
@@ -158,6 +161,7 @@ class BedtimeManager: ObservableObject {
         self.bedtimeMinute = ud.object(forKey: keyBedM) as? Int ?? 0
 
         requestNotificationPermission()
+        reconnectLiveActivity()
         startMonitoring()
     }
 
@@ -267,6 +271,7 @@ class BedtimeManager: ObservableObject {
             let nextWake = cal.date(byAdding: .day, value: 1, to: wakeDate)!
             let totalSleep = nextWake.timeIntervalSince(bedDate)
             sleepProgress = totalSleep > 0 ? min(max(now.timeIntervalSince(bedDate) / totalSleep, 0), 1) : 0
+            endLiveActivity()
         } else {
             isCountdownActive = true
             isBeforeWakeTime = false
@@ -278,6 +283,11 @@ class BedtimeManager: ObservableObject {
             if scheduledNotifBedDate != bedDate {
                 scheduleNotification(bedDate: bedDate)
                 scheduledNotifBedDate = bedDate
+            }
+            if liveActivity == nil {
+                startLiveActivity(bedDate: bedDate)
+            } else {
+                updateLiveActivity(bedDate: bedDate)
             }
         }
 
@@ -312,6 +322,58 @@ class BedtimeManager: ObservableObject {
         let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: false)
         let request = UNNotificationRequest(identifier: "bedtime-1h", content: content, trigger: trigger)
         center.add(request)
+    }
+
+    // MARK: - Live Activity
+
+    private func startLiveActivity(bedDate: Date) {
+        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
+        guard liveActivity == nil else { return }
+
+        let attrs = BedtimeActivityAttributes(bedtimeString: bedtimeString)
+        let state = BedtimeActivityAttributes.ContentState(
+            remainingSeconds: remainingSeconds,
+            progress: progress,
+            bedtimeDate: bedDate,
+            showMiniParchment: true
+        )
+        do {
+            liveActivity = try Activity<BedtimeActivityAttributes>.request(
+                attributes: attrs,
+                contentState: state,
+                pushType: nil
+            )
+        } catch {}
+    }
+
+    private func updateLiveActivity(bedDate: Date) {
+        guard let activity = liveActivity else { return }
+        guard Date().timeIntervalSince(lastLiveActivityUpdate) >= 30 else { return }
+        lastLiveActivityUpdate = Date()
+
+        let state = BedtimeActivityAttributes.ContentState(
+            remainingSeconds: remainingSeconds,
+            progress: progress,
+            bedtimeDate: bedDate,
+            showMiniParchment: true
+        )
+        Task { await activity.update(using: state) }
+    }
+
+    private func endLiveActivity() {
+        guard let activity = liveActivity else { return }
+        let final = BedtimeActivityAttributes.ContentState(
+            remainingSeconds: 0, progress: 1.0,
+            bedtimeDate: Date(), showMiniParchment: false
+        )
+        Task {
+            await activity.end(using: final, dismissalPolicy: .after(Date().addingTimeInterval(30)))
+        }
+        liveActivity = nil
+    }
+
+    private func reconnectLiveActivity() {
+        liveActivity = Activity<BedtimeActivityAttributes>.activities.first
     }
 
     deinit { timer?.invalidate() }

@@ -1,129 +1,214 @@
 // BedtimeHomeWidget.swift
-// 홈 화면 양피지 연소 썸네일 위젯 (Small / Medium / Large)
+// 홈 화면 양피지 연소 위젯 (일간 / 주간 / 월간 / 연간)
 
 import SwiftUI
 import WidgetKit
 
-// MARK: - Timeline Entry
+// MARK: - Period
 
-struct BedtimeHomeEntry: TimelineEntry {
-    let date: Date
-    let progress: Double
-    let remainingSeconds: TimeInterval
-    let bedtimeString: String
-    let isActive: Bool
-    let isBeforeWakeTime: Bool
+enum WidgetPeriod: String {
+    case daily, weekly, monthly, yearly
 
-    /// 위젯 표시 상태
-    enum DisplayMode {
-        case awake          // 기상~취침: 양피지 연소 중
-        case sleepingHeart  // 취침~기상30분전: 불타는 하트
-        case wakeUpSoon     // 기상30분전~기상: 온전한 양피지
-    }
-
-    var displayMode: DisplayMode {
-        if isActive { return .awake }
-        if isBeforeWakeTime {
-            return remainingSeconds <= 1800 ? .wakeUpSoon : .sleepingHeart
+    var label: String {
+        switch self {
+        case .daily:   return "취침까지"
+        case .weekly:  return "이번 주"
+        case .monthly: return "이번 달"
+        case .yearly:  return "올해"
         }
-        // 취침 직후 (progress == 1.0, isActive false, isBeforeWakeTime false)
-        return .sleepingHeart
     }
 
-    var shortTimeString: String {
-        let totalSec = Int(remainingSeconds)
-        let h = totalSec / 3600
-        let m = (totalSec % 3600) / 60
-        if h > 0 { return "\(h)h \(m)m" }
-        return "\(m)m"
-    }
-
-    var percentRemaining: Int {
-        Int((1.0 - progress) * 100)
+    var fullLabel: String {
+        switch self {
+        case .daily:   return "취침까지 남은 시간"
+        case .weekly:  return "이번 주 남은 시간"
+        case .monthly: return "이번 달 남은 시간"
+        case .yearly:  return "올해 남은 시간"
+        }
     }
 }
 
-// MARK: - Timeline Provider
+// MARK: - Entry
 
-struct BedtimeHomeProvider: TimelineProvider {
-    private let sharedDefaults = UserDefaults(suiteName: "group.com.burningparchment.app")
+struct ParchmentEntry: TimelineEntry {
+    let date: Date
+    let period: WidgetPeriod
+    let progress: Double
+    let remainingText: String
+    let bedtimeString: String
+    let isActive: Bool
+    let isBeforeWakeTime: Bool
+    let remainingSeconds: TimeInterval
 
-    func placeholder(in context: Context) -> BedtimeHomeEntry {
-        BedtimeHomeEntry(
-            date: Date(),
-            progress: 0.3,
-            remainingSeconds: 5 * 3600 + 24 * 60,
-            bedtimeString: "11:00 PM",
-            isActive: true,
-            isBeforeWakeTime: false
+    var percentRemaining: Int { Int((1.0 - progress) * 100) }
+
+    var shortTimeString: String {
+        let s = Int(remainingSeconds)
+        let h = s / 3600
+        let m = (s % 3600) / 60
+        return h > 0 ? "\(h)h \(m)m" : "\(m)m"
+    }
+
+    enum DisplayMode { case burning, sleeping, wakeUpSoon }
+
+    var displayMode: DisplayMode {
+        guard period == .daily else { return .burning }
+        if isActive { return .burning }
+        if isBeforeWakeTime { return remainingSeconds <= 1800 ? .wakeUpSoon : .sleeping }
+        return .sleeping
+    }
+}
+
+// MARK: - Provider
+
+struct ParchmentProvider: TimelineProvider {
+    let period: WidgetPeriod
+    private let sd = UserDefaults(suiteName: "group.com.burningparchment.app")
+
+    func placeholder(in context: Context) -> ParchmentEntry {
+        ParchmentEntry(
+            date: .now, period: period, progress: 0.35,
+            remainingText: period == .daily ? "5h 24m" : "3일 4시간",
+            bedtimeString: "11:00 PM", isActive: true,
+            isBeforeWakeTime: false, remainingSeconds: 5 * 3600 + 24 * 60
         )
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (BedtimeHomeEntry) -> Void) {
-        completion(calculateEntry(for: Date()))
+    func getSnapshot(in context: Context, completion: @escaping (ParchmentEntry) -> Void) {
+        completion(calculate(for: .now))
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<BedtimeHomeEntry>) -> Void) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<ParchmentEntry>) -> Void) {
         let now = Date()
-        var entries: [BedtimeHomeEntry] = []
-        // 15분 간격으로 25시간치 엔트리 사전 생성 → 최소 15분마다 갱신 보장
-        for i in 0..<100 {
-            let entryDate = now.addingTimeInterval(Double(i) * 900)
-            entries.append(calculateEntry(for: entryDate))
+        let stepSec: Double  = period == .daily ? 900   : 3600
+        let count:   Int     = period == .daily ? 100   : 24
+        let refresh: Double  = period == .daily ? 3600  : 21600
+
+        var entries: [ParchmentEntry] = []
+
+        if period == .daily,
+           let sharedRem = sd?.object(forKey: "shared_remainingSeconds") as? TimeInterval,
+           let isActive  = sd?.object(forKey: "shared_isCountdownActive") as? Bool,
+           sharedRem > 0, isActive {
+            // 앱이 계산한 취침 시각을 역산 → 오차 없이 앱과 동일한 기준점 사용
+            let bedDate = now.addingTimeInterval(sharedRem)
+            let bedH    = sd?.object(forKey: "shared_bedtimeHour")   as? Int ?? 23
+            let bedM    = sd?.object(forKey: "shared_bedtimeMinute") as? Int ?? 0
+            let wakeH   = sd?.object(forKey: "shared_wakeHour")      as? Int ?? 7
+            let wakeM   = sd?.object(forKey: "shared_wakeMinute")    as? Int ?? 0
+
+            let cal = Calendar.current
+            var wc = cal.dateComponents([.year, .month, .day], from: now)
+            wc.hour = wakeH; wc.minute = wakeM; wc.second = 0
+            let wakeDate = cal.date(from: wc) ?? now.addingTimeInterval(-sharedRem)
+            let total = max(bedDate.timeIntervalSince(wakeDate), 1)
+
+            let h12 = bedH > 12 ? bedH - 12 : (bedH == 0 ? 12 : bedH)
+            let ampm = bedH >= 12 ? "PM" : "AM"
+            let bedtimeStr = String(format: "%d:%02d %@", h12, bedM, ampm)
+
+            for i in 0..<count {
+                let t   = now.addingTimeInterval(Double(i) * stepSec)
+                let rem = max(bedDate.timeIntervalSince(t), 0)
+                let prog = min(max(1.0 - rem / total, 0), 1)
+                let h = Int(rem) / 3600
+                let m = (Int(rem) % 3600) / 60
+                entries.append(ParchmentEntry(
+                    date: t, period: .daily, progress: prog,
+                    remainingText: h > 0 ? "\(h)h \(m)m" : "\(m)m",
+                    bedtimeString: bedtimeStr,
+                    isActive: rem > 0, isBeforeWakeTime: false, remainingSeconds: rem
+                ))
+            }
+        } else {
+            for i in 0..<count {
+                entries.append(calculate(for: now.addingTimeInterval(Double(i) * stepSec)))
+            }
         }
-        // 1시간마다 새 타임라인 요청
-        let nextRefresh = now.addingTimeInterval(3600)
-        let timeline = Timeline(entries: entries, policy: .after(nextRefresh))
-        completion(timeline)
+
+        completion(Timeline(entries: entries, policy: .after(now.addingTimeInterval(refresh))))
     }
 
-    private func calculateEntry(for date: Date) -> BedtimeHomeEntry {
-        let sd = sharedDefaults
-        let bedH = sd?.integer(forKey: "shared_bedtimeHour") ?? 23
-        let bedM = sd?.integer(forKey: "shared_bedtimeMinute") ?? 0
-        let wakeH = sd?.integer(forKey: "shared_wakeHour") ?? 7
-        let wakeM = sd?.integer(forKey: "shared_wakeMinute") ?? 0
+    private func calculate(for date: Date) -> ParchmentEntry {
+        let bedH  = sd?.object(forKey: "shared_bedtimeHour")   as? Int ?? 23
+        let bedM  = sd?.object(forKey: "shared_bedtimeMinute") as? Int ?? 0
+        let wakeH = sd?.object(forKey: "shared_wakeHour")      as? Int ?? 7
+        let wakeM = sd?.object(forKey: "shared_wakeMinute")    as? Int ?? 0
 
         let h12 = bedH > 12 ? bedH - 12 : (bedH == 0 ? 12 : bedH)
         let ampm = bedH >= 12 ? "PM" : "AM"
         let bedtimeStr = String(format: "%d:%02d %@", h12, bedM, ampm)
 
+        let (dailyProg, remSec, isActive, isBeforeWake) = dailyProgress(
+            date: date, wakeH: wakeH, wakeM: wakeM, bedH: bedH, bedM: bedM
+        )
+        let todayFrac = isActive ? dailyProg : (dailyProg >= 1.0 ? 1.0 : 0.0)
         let cal = Calendar.current
-        var wakeComps = cal.dateComponents([.year, .month, .day], from: date)
-        wakeComps.hour = wakeH; wakeComps.minute = wakeM; wakeComps.second = 0
-        guard let todayWake = cal.date(from: wakeComps) else {
-            return BedtimeHomeEntry(date: date, progress: 0, remainingSeconds: 0,
-                                    bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: true)
+
+        var prog: Double = 0
+        var remText: String = ""
+
+        switch period {
+        case .daily:
+            prog = dailyProg
+            let h = Int(remSec) / 3600
+            let m = (Int(remSec) % 3600) / 60
+            remText = h > 0 ? "\(h)h \(m)m" : "\(m)m"
+
+        case .weekly:
+            let weekday = cal.component(.weekday, from: date)
+            let daysFromMon = Double((weekday - 2 + 7) % 7)
+            prog = min((daysFromMon + todayFrac) / 7.0, 1.0)
+            remText = formatDays(max(7.0 - daysFromMon - todayFrac, 0))
+
+        case .monthly:
+            let dom = Double(cal.component(.day, from: date) - 1)
+            let dim = Double(cal.range(of: .day, in: .month, for: date)?.count ?? 30)
+            prog = min((dom + todayFrac) / dim, 1.0)
+            remText = formatDays(max(dim - dom - todayFrac, 0))
+
+        case .yearly:
+            let doy = Double((cal.ordinality(of: .day, in: .year, for: date) ?? 1) - 1)
+            let diy = Double(cal.range(of: .day, in: .year, for: date)?.count ?? 365)
+            prog = min((doy + todayFrac) / diy, 1.0)
+            remText = formatDays(max(diy - doy - todayFrac, 0))
         }
+
+        return ParchmentEntry(
+            date: date, period: period, progress: prog,
+            remainingText: remText, bedtimeString: bedtimeStr,
+            isActive: isActive, isBeforeWakeTime: isBeforeWake, remainingSeconds: remSec
+        )
+    }
+
+    private func dailyProgress(date: Date, wakeH: Int, wakeM: Int, bedH: Int, bedM: Int) -> (Double, TimeInterval, Bool, Bool) {
+        let cal = Calendar.current
+        var wc = cal.dateComponents([.year, .month, .day], from: date)
+        wc.hour = wakeH; wc.minute = wakeM; wc.second = 0
+        guard let todayWake = cal.date(from: wc) else { return (0, 0, false, true) }
 
         if date >= todayWake {
-            var bedComps = cal.dateComponents([.year, .month, .day], from: date)
-            bedComps.hour = bedH; bedComps.minute = bedM; bedComps.second = 0
-            guard var bedDate = cal.date(from: bedComps) else {
-                return BedtimeHomeEntry(date: date, progress: 0, remainingSeconds: 0,
-                                        bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: false)
-            }
-            if bedDate <= todayWake { bedDate = cal.date(byAdding: .day, value: 1, to: bedDate)! }
-
-            let total = bedDate.timeIntervalSince(todayWake)
-            let remaining = bedDate.timeIntervalSince(date)
-
-            if remaining <= 0 {
-                return BedtimeHomeEntry(date: date, progress: 1.0, remainingSeconds: 0,
-                                        bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: false)
-            }
-            let progress = min(max(1.0 - remaining / total, 0), 1)
-            return BedtimeHomeEntry(date: date, progress: progress, remainingSeconds: remaining,
-                                    bedtimeString: bedtimeStr, isActive: true, isBeforeWakeTime: false)
+            var bc = cal.dateComponents([.year, .month, .day], from: date)
+            bc.hour = bedH; bc.minute = bedM; bc.second = 0
+            guard var bed = cal.date(from: bc) else { return (0, 0, false, false) }
+            if bed <= todayWake { bed = cal.date(byAdding: .day, value: 1, to: bed)! }
+            let total = bed.timeIntervalSince(todayWake)
+            let rem = bed.timeIntervalSince(date)
+            if rem <= 0 { return (1.0, 0, false, false) }
+            return (min(max(1.0 - rem / total, 0), 1), rem, true, false)
         } else {
-            let remaining = todayWake.timeIntervalSince(date)
-            return BedtimeHomeEntry(date: date, progress: 0, remainingSeconds: remaining,
-                                    bedtimeString: bedtimeStr, isActive: false, isBeforeWakeTime: true)
+            return (0, todayWake.timeIntervalSince(date), false, true)
         }
+    }
+
+    private func formatDays(_ rem: Double) -> String {
+        let days = Int(rem)
+        let hours = Int((rem - Double(days)) * 24)
+        return days > 0 ? "\(days)일 \(hours)시간" : "\(hours)시간"
     }
 }
 
-// MARK: - Burning Heart View (수면 중 표시)
+// MARK: - Burning Heart View
 
 struct BurningHeartView: View {
     var body: some View {
@@ -132,17 +217,13 @@ struct BurningHeartView: View {
             let H = size.height
             let cx = W / 2
             let cy = H * 0.45
-
             let heartSize = min(W, H) * 0.4
 
-            // 하트 경로
-            let heartPath = makeHeartPath(cx: cx, cy: cy, size: heartSize)
+            let heartPath = makeHeart(cx: cx, cy: cy, size: heartSize)
 
-            // 외곽 glow
             ctx.blendMode = .screen
             ctx.fill(heartPath, with: .color(.orange.opacity(0.3)))
 
-            // 하트 본체 — 불꽃 그라디언트
             ctx.blendMode = .normal
             ctx.fill(heartPath, with: .linearGradient(
                 Gradient(colors: [
@@ -154,39 +235,21 @@ struct BurningHeartView: View {
                 endPoint: CGPoint(x: cx, y: cy + heartSize * 0.8)
             ))
 
-            // 하트 중심 밝은 영역
             let innerSize = heartSize * 0.55
-            let innerPath = makeHeartPath(cx: cx, cy: cy + heartSize * 0.05, size: innerSize)
+            let innerPath = makeHeart(cx: cx, cy: cy + heartSize * 0.05, size: innerSize)
             ctx.blendMode = .screen
             ctx.fill(innerPath, with: .linearGradient(
-                Gradient(colors: [
-                    Color.yellow.opacity(0.7),
-                    Color.orange.opacity(0.2),
-                ]),
+                Gradient(colors: [Color.yellow.opacity(0.7), Color.orange.opacity(0.2)]),
                 startPoint: CGPoint(x: cx, y: cy - innerSize),
                 endPoint: CGPoint(x: cx, y: cy + innerSize * 0.6)
-            ))
-
-            // 상단 불꽃 이펙트
-            ctx.blendMode = .screen
-            let flamePath = makeFlameHaloPath(cx: cx, cy: cy - heartSize * 0.5, width: heartSize * 0.6, height: heartSize * 0.5)
-            ctx.fill(flamePath, with: .linearGradient(
-                Gradient(colors: [
-                    Color.yellow.opacity(0.4),
-                    Color.orange.opacity(0.15),
-                    Color.clear,
-                ]),
-                startPoint: CGPoint(x: cx, y: cy - heartSize * 1.0),
-                endPoint: CGPoint(x: cx, y: cy - heartSize * 0.1)
             ))
         }
     }
 
-    private func makeHeartPath(cx: Double, cy: Double, size: Double) -> Path {
+    private func makeHeart(cx: Double, cy: Double, size: Double) -> Path {
         var path = Path()
         let w = size
         let h = size * 0.9
-
         path.move(to: CGPoint(x: cx, y: cy + h * 0.7))
         path.addCurve(
             to: CGPoint(x: cx - w, y: cy - h * 0.1),
@@ -211,39 +274,33 @@ struct BurningHeartView: View {
         path.closeSubpath()
         return path
     }
-
-    private func makeFlameHaloPath(cx: Double, cy: Double, width: Double, height: Double) -> Path {
-        var path = Path()
-        path.addEllipse(in: CGRect(
-            x: cx - width / 2,
-            y: cy - height / 2,
-            width: width,
-            height: height
-        ))
-        return path
-    }
 }
 
-// MARK: - Small Widget View
+// MARK: - Small Widget Content
 
 private struct SmallWidgetContent: View {
-    let entry: BedtimeHomeEntry
+    let entry: ParchmentEntry
 
     var body: some View {
         GeometryReader { geo in
-            let side = min(geo.size.width, geo.size.height) * 0.68
-
-            VStack(spacing: 6) {
+            let side = min(geo.size.width, geo.size.height) * 0.65
+            VStack(spacing: 5) {
                 switch entry.displayMode {
-                case .awake:
+                case .burning:
                     MiniParchmentView(progress: entry.progress)
                         .frame(width: side, height: side)
-                    Text(entry.shortTimeString)
-                        .font(.system(size: 15, weight: .medium, design: .monospaced))
+                    Text(entry.remainingText)
+                        .font(.system(size: 13, weight: .medium, design: .monospaced))
                         .foregroundColor(.orange)
-                        .monospacedDigit()
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
+                    if entry.period != .daily {
+                        Text(entry.period.label)
+                            .font(.system(size: 10))
+                            .foregroundColor(.gray.opacity(0.6))
+                    }
 
-                case .sleepingHeart:
+                case .sleeping:
                     BurningHeartView()
                         .frame(width: side, height: side)
                     Text("수면 중")
@@ -263,23 +320,22 @@ private struct SmallWidgetContent: View {
     }
 }
 
-// MARK: - Medium Widget View
+// MARK: - Medium Widget Content
 
 private struct MediumWidgetContent: View {
-    let entry: BedtimeHomeEntry
+    let entry: ParchmentEntry
 
     var body: some View {
         GeometryReader { geo in
             let side = geo.size.height * 0.78
-
             HStack(spacing: 14) {
                 switch entry.displayMode {
-                case .awake:
+                case .burning:
                     MiniParchmentView(progress: entry.progress)
                         .frame(width: side, height: side)
-                    awakeInfo
+                    burningInfo
 
-                case .sleepingHeart:
+                case .sleeping:
                     BurningHeartView()
                         .frame(width: side, height: side)
                     sleepInfo
@@ -289,7 +345,6 @@ private struct MediumWidgetContent: View {
                         .frame(width: side, height: side)
                     wakeUpInfo
                 }
-
                 Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -298,46 +353,54 @@ private struct MediumWidgetContent: View {
         }
     }
 
-    private var awakeInfo: some View {
+    private var burningInfo: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("취침까지")
-                .font(.system(size: 12, weight: .medium))
+            Text(entry.period.fullLabel)
+                .font(.system(size: 11, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            Text(entry.shortTimeString)
-                .font(.system(size: 28, weight: .light, design: .monospaced))
+            Text(entry.remainingText)
+                .font(.system(
+                    size: entry.period == .daily ? 28 : 20,
+                    weight: .light,
+                    design: entry.period == .daily ? .monospaced : .serif
+                ))
                 .foregroundColor(.white)
-                .monospacedDigit()
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
 
-            HStack(spacing: 6) {
-                GeometryReader { geo in
-                    ZStack(alignment: .leading) {
-                        RoundedRectangle(cornerRadius: 2)
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(height: 4)
-                        RoundedRectangle(cornerRadius: 2)
-                            .fill(
-                                LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing)
-                            )
-                            .frame(width: geo.size.width * (1.0 - entry.progress), height: 4)
-                    }
+            progressBar
+
+            if entry.period == .daily {
+                HStack(spacing: 4) {
+                    Image(systemName: "moon.fill")
+                        .font(.system(size: 10))
+                        .foregroundColor(.yellow.opacity(0.6))
+                    Text(entry.bedtimeString)
+                        .font(.system(size: 11))
+                        .foregroundColor(.gray)
                 }
-                .frame(height: 4)
-
-                Text("\(entry.percentRemaining)%")
-                    .font(.system(size: 11))
-                    .foregroundColor(.gray)
-                    .frame(width: 32, alignment: .trailing)
             }
+        }
+    }
 
-            HStack(spacing: 4) {
-                Image(systemName: "moon.fill")
-                    .font(.system(size: 10))
-                    .foregroundColor(.yellow.opacity(0.6))
-                Text(entry.bedtimeString)
-                    .font(.system(size: 11))
-                    .foregroundColor(.gray)
+    private var progressBar: some View {
+        HStack(spacing: 6) {
+            GeometryReader { geo in
+                ZStack(alignment: .leading) {
+                    RoundedRectangle(cornerRadius: 2)
+                        .fill(Color.gray.opacity(0.3))
+                        .frame(height: 4)
+                    RoundedRectangle(cornerRadius: 2)
+                        .fill(LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing))
+                        .frame(width: geo.size.width * (1.0 - entry.progress), height: 4)
+                }
             }
+            .frame(height: 4)
+            Text("\(entry.percentRemaining)%")
+                .font(.system(size: 11))
+                .foregroundColor(.gray)
+                .frame(width: 32, alignment: .trailing)
         }
     }
 
@@ -346,11 +409,9 @@ private struct MediumWidgetContent: View {
             Text("수면 중")
                 .font(.system(size: 18, weight: .medium))
                 .foregroundColor(.orange)
-
             Text("좋은 꿈 꾸세요")
                 .font(.system(size: 12))
                 .foregroundColor(.gray.opacity(0.7))
-
             HStack(spacing: 4) {
                 Image(systemName: "moon.zzz.fill")
                     .font(.system(size: 10))
@@ -367,12 +428,9 @@ private struct MediumWidgetContent: View {
             Text("곧 기상")
                 .font(.system(size: 18, weight: .medium))
                 .foregroundColor(.yellow)
-
             Text(entry.shortTimeString)
                 .font(.system(size: 28, weight: .light, design: .monospaced))
                 .foregroundColor(.white)
-                .monospacedDigit()
-
             Text("새로운 하루가 시작돼요")
                 .font(.system(size: 12))
                 .foregroundColor(.gray.opacity(0.7))
@@ -380,23 +438,22 @@ private struct MediumWidgetContent: View {
     }
 }
 
-// MARK: - Large Widget View
+// MARK: - Large Widget Content
 
 private struct LargeWidgetContent: View {
-    let entry: BedtimeHomeEntry
+    let entry: ParchmentEntry
 
     var body: some View {
         GeometryReader { geo in
             let side = geo.size.width * 0.52
-
             VStack(spacing: 12) {
                 switch entry.displayMode {
-                case .awake:
+                case .burning:
                     MiniParchmentView(progress: entry.progress)
                         .frame(width: side, height: side)
-                    awakeInfo
+                    burningInfo
 
-                case .sleepingHeart:
+                case .sleeping:
                     BurningHeartView()
                         .frame(width: side, height: side)
                     sleepInfo
@@ -412,16 +469,21 @@ private struct LargeWidgetContent: View {
         }
     }
 
-    private var awakeInfo: some View {
+    private var burningInfo: some View {
         VStack(spacing: 8) {
-            Text("취침까지")
+            Text(entry.period.fullLabel)
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            Text(entry.shortTimeString)
-                .font(.system(size: 36, weight: .light, design: .monospaced))
+            Text(entry.remainingText)
+                .font(.system(
+                    size: entry.period == .daily ? 36 : 26,
+                    weight: .light,
+                    design: entry.period == .daily ? .monospaced : .serif
+                ))
                 .foregroundColor(.white)
-                .monospacedDigit()
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
 
             HStack(spacing: 8) {
                 GeometryReader { geo in
@@ -430,14 +492,11 @@ private struct LargeWidgetContent: View {
                             .fill(Color.gray.opacity(0.3))
                             .frame(height: 6)
                         RoundedRectangle(cornerRadius: 3)
-                            .fill(
-                                LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing)
-                            )
+                            .fill(LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing))
                             .frame(width: geo.size.width * (1.0 - entry.progress), height: 6)
                     }
                 }
                 .frame(height: 6)
-
                 Text("\(entry.percentRemaining)%")
                     .font(.system(size: 13))
                     .foregroundColor(.gray)
@@ -445,13 +504,15 @@ private struct LargeWidgetContent: View {
             }
             .padding(.horizontal, 24)
 
-            HStack(spacing: 6) {
-                Image(systemName: "moon.fill")
-                    .font(.system(size: 12))
-                    .foregroundColor(.yellow.opacity(0.6))
-                Text("취침 \(entry.bedtimeString)")
-                    .font(.system(size: 13))
-                    .foregroundColor(.gray)
+            if entry.period == .daily {
+                HStack(spacing: 6) {
+                    Image(systemName: "moon.fill")
+                        .font(.system(size: 12))
+                        .foregroundColor(.yellow.opacity(0.6))
+                    Text("취침 \(entry.bedtimeString)")
+                        .font(.system(size: 13))
+                        .foregroundColor(.gray)
+                }
             }
         }
     }
@@ -461,11 +522,9 @@ private struct LargeWidgetContent: View {
             Text("수면 중")
                 .font(.system(size: 22, weight: .medium))
                 .foregroundColor(.orange)
-
             Text("좋은 꿈 꾸세요")
                 .font(.system(size: 14))
                 .foregroundColor(.gray.opacity(0.7))
-
             HStack(spacing: 6) {
                 Image(systemName: "moon.zzz.fill")
                     .font(.system(size: 12))
@@ -482,12 +541,9 @@ private struct LargeWidgetContent: View {
             Text("곧 기상")
                 .font(.system(size: 22, weight: .medium))
                 .foregroundColor(.yellow)
-
             Text(entry.shortTimeString)
                 .font(.system(size: 36, weight: .light, design: .monospaced))
                 .foregroundColor(.white)
-                .monospacedDigit()
-
             Text("새로운 하루가 시작돼요")
                 .font(.system(size: 14))
                 .foregroundColor(.gray.opacity(0.7))
@@ -499,46 +555,89 @@ private struct LargeWidgetContent: View {
 
 struct BedtimeHomeWidgetView: View {
     @Environment(\.widgetFamily) var family
-    let entry: BedtimeHomeEntry
-
-    @ViewBuilder
-    var content: some View {
-        switch family {
-        case .systemMedium:
-            MediumWidgetContent(entry: entry)
-        case .systemLarge:
-            LargeWidgetContent(entry: entry)
-        default:
-            SmallWidgetContent(entry: entry)
-        }
-    }
+    let entry: ParchmentEntry
 
     var body: some View {
-        content
+        switch family {
+        case .systemMedium: MediumWidgetContent(entry: entry)
+        case .systemLarge:  LargeWidgetContent(entry: entry)
+        default:            SmallWidgetContent(entry: entry)
+        }
     }
 }
 
-// MARK: - Widget Configuration
+// MARK: - Widget Background Modifier
+
+private struct WidgetBackground: ViewModifier {
+    @ViewBuilder
+    func body(content: Content) -> some View {
+        if #available(iOSApplicationExtension 17.0, *) {
+            content.containerBackground(for: .widget) {
+                Color(red: 0.08, green: 0.06, blue: 0.04)
+            }
+        } else {
+            ZStack {
+                Color(red: 0.08, green: 0.06, blue: 0.04)
+                content
+            }
+        }
+    }
+}
+
+// MARK: - Widget Configurations
 
 struct BedtimeHomeWidget: Widget {
     let kind = "BedtimeHomeWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: BedtimeHomeProvider()) { entry in
-            if #available(iOSApplicationExtension 17.0, *) {
-                BedtimeHomeWidgetView(entry: entry)
-                    .containerBackground(for: .widget) {
-                        Color(red: 0.08, green: 0.06, blue: 0.04)
-                    }
-            } else {
-                ZStack {
-                    Color(red: 0.08, green: 0.06, blue: 0.04)
-                    BedtimeHomeWidgetView(entry: entry)
-                }
-            }
+        StaticConfiguration(kind: kind, provider: ParchmentProvider(period: .daily)) { entry in
+            BedtimeHomeWidgetView(entry: entry)
+                .modifier(WidgetBackground())
         }
-        .configurationDisplayName("양피지")
-        .description("오늘 남은 시간")
+        .configurationDisplayName("일간 양피지")
+        .description("오늘 취침까지 남은 시간")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+    }
+}
+
+struct WeeklyParchmentWidget: Widget {
+    let kind = "WeeklyParchmentWidget"
+
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: ParchmentProvider(period: .weekly)) { entry in
+            BedtimeHomeWidgetView(entry: entry)
+                .modifier(WidgetBackground())
+        }
+        .configurationDisplayName("주간 양피지")
+        .description("이번 주 남은 시간")
+        .supportedFamilies([.systemSmall, .systemMedium])
+    }
+}
+
+struct MonthlyParchmentWidget: Widget {
+    let kind = "MonthlyParchmentWidget"
+
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: ParchmentProvider(period: .monthly)) { entry in
+            BedtimeHomeWidgetView(entry: entry)
+                .modifier(WidgetBackground())
+        }
+        .configurationDisplayName("월간 양피지")
+        .description("이번 달 남은 시간")
+        .supportedFamilies([.systemSmall, .systemMedium])
+    }
+}
+
+struct YearlyParchmentWidget: Widget {
+    let kind = "YearlyParchmentWidget"
+
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: ParchmentProvider(period: .yearly)) { entry in
+            BedtimeHomeWidgetView(entry: entry)
+                .modifier(WidgetBackground())
+        }
+        .configurationDisplayName("연간 양피지")
+        .description("올해 남은 시간")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

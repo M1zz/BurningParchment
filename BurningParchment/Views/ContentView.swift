@@ -2,9 +2,11 @@
 // 메인 화면
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
+    @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings = false
 
     var body: some View {
@@ -21,6 +23,12 @@ struct ContentView: View {
         .sheet(isPresented: $showSettings) {
             SettingsView()
                 .environmentObject(bedtimeManager)
+        }
+        .onChange(of: scenePhase) { phase in
+            if phase == .active {
+                bedtimeManager.recalculate()
+                WidgetCenter.shared.reloadAllTimelines()
+            }
         }
     }
 

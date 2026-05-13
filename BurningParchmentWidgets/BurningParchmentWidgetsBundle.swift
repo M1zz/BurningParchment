@@ -1,5 +1,5 @@
 // BurningParchmentWidgetsBundle.swift
-// 위젯 번들 (Live Activity)
+// 위젯 번들 (일간 / 주간 / 월간 / 연간)
 
 import SwiftUI
 import WidgetKit
@@ -8,5 +8,8 @@ import WidgetKit
 struct BurningParchmentWidgetsBundle: WidgetBundle {
     var body: some Widget {
         BedtimeHomeWidget()
+        WeeklyParchmentWidget()
+        MonthlyParchmentWidget()
+        YearlyParchmentWidget()
     }
 }

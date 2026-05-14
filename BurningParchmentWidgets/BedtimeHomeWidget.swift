@@ -142,7 +142,6 @@ struct ParchmentProvider: TimelineProvider {
         let (dailyProg, remSec, isActive, isBeforeWake) = dailyProgress(
             date: date, wakeH: wakeH, wakeM: wakeM, bedH: bedH, bedM: bedM
         )
-        let todayFrac = isActive ? dailyProg : (dailyProg >= 1.0 ? 1.0 : 0.0)
         let cal = Calendar.current
 
         var prog: Double = 0
@@ -156,22 +155,28 @@ struct ParchmentProvider: TimelineProvider {
             remText = h > 0 ? "\(h)h \(m)m" : "\(m)m"
 
         case .weekly:
-            let weekday = cal.component(.weekday, from: date)
-            let daysFromMon = Double((weekday - 2 + 7) % 7)
-            prog = min((daysFromMon + todayFrac) / 7.0, 1.0)
-            remText = formatDays(max(7.0 - daysFromMon - todayFrac, 0))
+            let start = thisMondayMidnight(from: date, cal: cal)
+            let end   = nextMondayMidnight(from: date, cal: cal)
+            let total = max(end.timeIntervalSince(start), 1)
+            let rem   = max(end.timeIntervalSince(date), 0)
+            prog = min(max(1.0 - rem / total, 0), 1)
+            remText = formatSeconds(rem)
 
         case .monthly:
-            let dom = Double(cal.component(.day, from: date) - 1)
-            let dim = Double(cal.range(of: .day, in: .month, for: date)?.count ?? 30)
-            prog = min((dom + todayFrac) / dim, 1.0)
-            remText = formatDays(max(dim - dom - todayFrac, 0))
+            let start = firstOfThisMonth(from: date, cal: cal)
+            let end   = firstOfNextMonth(from: date, cal: cal)
+            let total = max(end.timeIntervalSince(start), 1)
+            let rem   = max(end.timeIntervalSince(date), 0)
+            prog = min(max(1.0 - rem / total, 0), 1)
+            remText = formatSeconds(rem)
 
         case .yearly:
-            let doy = Double((cal.ordinality(of: .day, in: .year, for: date) ?? 1) - 1)
-            let diy = Double(cal.range(of: .day, in: .year, for: date)?.count ?? 365)
-            prog = min((doy + todayFrac) / diy, 1.0)
-            remText = formatDays(max(diy - doy - todayFrac, 0))
+            let start = jan1ThisYear(from: date, cal: cal)
+            let end   = jan1NextYear(from: date, cal: cal)
+            let total = max(end.timeIntervalSince(start), 1)
+            let rem   = max(end.timeIntervalSince(date), 0)
+            prog = min(max(1.0 - rem / total, 0), 1)
+            remText = formatSeconds(rem)
         }
 
         return ParchmentEntry(
@@ -201,10 +206,60 @@ struct ParchmentProvider: TimelineProvider {
         }
     }
 
-    private func formatDays(_ rem: Double) -> String {
-        let days = Int(rem)
-        let hours = Int((rem - Double(days)) * 24)
-        return days > 0 ? "\(days)일 \(hours)시간" : "\(hours)시간"
+    private func formatSeconds(_ seconds: TimeInterval) -> String {
+        let total = Int(seconds)
+        let days  = total / 86400
+        let hours = (total % 86400) / 3600
+        let mins  = (total % 3600) / 60
+        if days > 0  { return "\(days)일 \(hours)시간" }
+        if hours > 0 { return "\(hours)시간 \(mins)분" }
+        return "\(mins)분"
+    }
+
+    // MARK: - Calendar Boundary Helpers
+
+    private func midnight(of date: Date, cal: Calendar) -> Date {
+        var c = cal.dateComponents([.year, .month, .day], from: date)
+        c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func nextMondayMidnight(from date: Date, cal: Calendar) -> Date {
+        let weekday = cal.component(.weekday, from: date)
+        let days = weekday == 2 ? 7 : (9 - weekday) % 7
+        return cal.date(byAdding: .day, value: days, to: midnight(of: date, cal: cal))!
+    }
+
+    private func thisMondayMidnight(from date: Date, cal: Calendar) -> Date {
+        let weekday = cal.component(.weekday, from: date)
+        let days = weekday == 1 ? 6 : weekday - 2
+        return cal.date(byAdding: .day, value: -days, to: midnight(of: date, cal: cal))!
+    }
+
+    private func firstOfNextMonth(from date: Date, cal: Calendar) -> Date {
+        var c = cal.dateComponents([.year, .month], from: date)
+        c.month! += 1; c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func firstOfThisMonth(from date: Date, cal: Calendar) -> Date {
+        var c = cal.dateComponents([.year, .month], from: date)
+        c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func jan1NextYear(from date: Date, cal: Calendar) -> Date {
+        var c = DateComponents()
+        c.year = cal.component(.year, from: date) + 1
+        c.month = 1; c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func jan1ThisYear(from date: Date, cal: Calendar) -> Date {
+        var c = DateComponents()
+        c.year = cal.component(.year, from: date)
+        c.month = 1; c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
     }
 }
 

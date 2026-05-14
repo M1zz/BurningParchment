@@ -84,61 +84,99 @@ class BedtimeManager: ObservableObject {
         }
     }
 
-    private var todayFraction: Double {
-        isCountdownActive ? progress : (progress >= 1.0 ? 1.0 : 0.0)
+    // MARK: - Calendar Boundary Helpers
+
+    private func midnight(of date: Date, cal: Calendar) -> Date {
+        var c = cal.dateComponents([.year, .month, .day], from: date)
+        c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func nextMondayMidnight(from now: Date, cal: Calendar) -> Date {
+        let weekday = cal.component(.weekday, from: now) // 1=Sun…7=Sat
+        let days = weekday == 2 ? 7 : (9 - weekday) % 7
+        return cal.date(byAdding: .day, value: days, to: midnight(of: now, cal: cal))!
+    }
+
+    private func thisMondayMidnight(from now: Date, cal: Calendar) -> Date {
+        let weekday = cal.component(.weekday, from: now)
+        let days = weekday == 1 ? 6 : weekday - 2
+        return cal.date(byAdding: .day, value: -days, to: midnight(of: now, cal: cal))!
+    }
+
+    private func firstOfNextMonth(from now: Date, cal: Calendar) -> Date {
+        var c = cal.dateComponents([.year, .month], from: now)
+        c.month! += 1; c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func firstOfThisMonth(from now: Date, cal: Calendar) -> Date {
+        var c = cal.dateComponents([.year, .month], from: now)
+        c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func jan1NextYear(from now: Date, cal: Calendar) -> Date {
+        var c = DateComponents()
+        c.year = cal.component(.year, from: now) + 1
+        c.month = 1; c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
+    }
+
+    private func jan1ThisYear(from now: Date, cal: Calendar) -> Date {
+        var c = DateComponents()
+        c.year = cal.component(.year, from: now)
+        c.month = 1; c.day = 1; c.hour = 0; c.minute = 0; c.second = 0
+        return cal.date(from: c)!
     }
 
     private var weekProgress: Double {
-        let cal = Calendar.current
-        let weekday = cal.component(.weekday, from: Date()) // 1=Sun, 2=Mon ... 7=Sat
-        let daysFromMonday = Double((weekday - 2 + 7) % 7)
-        return min((daysFromMonday + todayFraction) / 7.0, 1.0)
+        let cal = Calendar.current; let now = Date()
+        let start = thisMondayMidnight(from: now, cal: cal)
+        let end   = nextMondayMidnight(from: now, cal: cal)
+        let total = max(end.timeIntervalSince(start), 1)
+        return min(max(1.0 - end.timeIntervalSince(now) / total, 0), 1)
     }
 
     private var weekRemainingDays: Double {
         let cal = Calendar.current
-        let weekday = cal.component(.weekday, from: Date())
-        let daysFromMonday = Double((weekday - 2 + 7) % 7)
-        return max(7.0 - daysFromMonday - todayFraction, 0)
+        return max(nextMondayMidnight(from: Date(), cal: cal).timeIntervalSince(Date()), 0) / 86400.0
     }
 
     private var monthProgress: Double {
-        let cal = Calendar.current
-        let now = Date()
-        let dayOfMonth = Double(cal.component(.day, from: now) - 1)
-        let daysInMonth = Double(cal.range(of: .day, in: .month, for: now)?.count ?? 30)
-        return min((dayOfMonth + todayFraction) / daysInMonth, 1.0)
+        let cal = Calendar.current; let now = Date()
+        let start = firstOfThisMonth(from: now, cal: cal)
+        let end   = firstOfNextMonth(from: now, cal: cal)
+        let total = max(end.timeIntervalSince(start), 1)
+        return min(max(1.0 - end.timeIntervalSince(now) / total, 0), 1)
     }
 
     private var monthRemainingDays: Double {
         let cal = Calendar.current
-        let now = Date()
-        let dayOfMonth = Double(cal.component(.day, from: now) - 1)
-        let daysInMonth = Double(cal.range(of: .day, in: .month, for: now)?.count ?? 30)
-        return max(daysInMonth - dayOfMonth - todayFraction, 0)
+        return max(firstOfNextMonth(from: Date(), cal: cal).timeIntervalSince(Date()), 0) / 86400.0
     }
 
     private var yearProgress: Double {
-        let cal = Calendar.current
-        let now = Date()
-        let dayOfYear = Double((cal.ordinality(of: .day, in: .year, for: now) ?? 1) - 1)
-        let daysInYear = Double(cal.range(of: .day, in: .year, for: now)?.count ?? 365)
-        return min((dayOfYear + todayFraction) / daysInYear, 1.0)
+        let cal = Calendar.current; let now = Date()
+        let start = jan1ThisYear(from: now, cal: cal)
+        let end   = jan1NextYear(from: now, cal: cal)
+        let total = max(end.timeIntervalSince(start), 1)
+        return min(max(1.0 - end.timeIntervalSince(now) / total, 0), 1)
     }
 
     private var yearRemainingDays: Double {
         let cal = Calendar.current
-        let now = Date()
-        let dayOfYear = Double((cal.ordinality(of: .day, in: .year, for: now) ?? 1) - 1)
-        let daysInYear = Double(cal.range(of: .day, in: .year, for: now)?.count ?? 365)
-        return max(daysInYear - dayOfYear - todayFraction, 0)
+        return max(jan1NextYear(from: Date(), cal: cal).timeIntervalSince(Date()), 0) / 86400.0
     }
 
     private func formatRemainingDays(_ remaining: Double) -> String {
-        let days = Int(remaining)
-        let hours = Int((remaining - Double(days)) * 24)
-        if days > 0 { return "\(days)일 \(hours)시간" }
-        return "\(hours)시간"
+        let total = Int(remaining * 86400)
+        let days  = total / 86400
+        let hours = (total % 86400) / 3600
+        let mins  = (total % 3600) / 60
+        if days > 0  { return "\(days)일 \(hours)시간" }
+        if hours > 0 { return "\(hours)시간 \(mins)분" }
+        return "\(mins)분"
     }
 
     var remainingTimeString: String {

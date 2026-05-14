@@ -5,9 +5,11 @@ import SwiftUI
 import WidgetKit
 
 struct ContentView: View {
-    @EnvironmentObject var bedtimeManager: BedtimeManager
+    @EnvironmentObject var bedtimeManager:  BedtimeManager
+    @EnvironmentObject var deadlineManager: DeadlineManager
     @Environment(\.scenePhase) private var scenePhase
-    @State private var showSettings = false
+    @State private var showSettings  = false
+    @State private var showDeadlines = false
 
     var body: some View {
         ZStack {
@@ -23,6 +25,10 @@ struct ContentView: View {
         .sheet(isPresented: $showSettings) {
             SettingsView()
                 .environmentObject(bedtimeManager)
+        }
+        .sheet(isPresented: $showDeadlines) {
+            DeadlineListView()
+                .environmentObject(deadlineManager)
         }
         .onChange(of: scenePhase) { phase in
             if phase == .active {
@@ -67,6 +73,20 @@ struct ContentView: View {
             }
 
             Spacer()
+
+            Button(action: { showDeadlines = true }) {
+                ZStack(alignment: .topTrailing) {
+                    Image(systemName: "flag.fill")
+                        .font(.system(size: 18))
+                        .foregroundColor(.orange.opacity(0.6))
+                    if !deadlineManager.deadlines.isEmpty {
+                        Circle()
+                            .fill(Color.red)
+                            .frame(width: 7, height: 7)
+                            .offset(x: 2, y: -2)
+                    }
+                }
+            }
 
             Button(action: { showSettings = true }) {
                 Image(systemName: "gearshape.fill")

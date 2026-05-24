@@ -168,7 +168,6 @@ struct ContentView: View {
                 .foregroundColor(.orange.opacity(0.9))
                 .animation(reduceMotion ? nil : .easeInOut(duration: 0.2), value: bedtimeManager.selectedPeriod)
                 .accessibilityAddTraits(.isHeader)
-                .accessibilityAddTraits(.isAdjustable)
                 .accessibilityValue("페이지 \(currentIndex + 1) / \(pages.count)")
                 .accessibilityHint("위아래로 스와이프해 페이지 이동")
                 .accessibilityAdjustableAction { direction in

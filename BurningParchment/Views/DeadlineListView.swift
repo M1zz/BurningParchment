@@ -154,6 +154,7 @@ struct DeadlineFormView: View {
     @State private var title = ""
     @State private var emoji = "🎯"
     @State private var targetDate: Date
+    @State private var startDate: Date
 
     private let emojis = ["🎯", "🚀", "📚", "💼", "🏆", "❤️", "🔥", "⭐️", "🎓", "✈️", "🎮", "💡", "🎵", "🌏", "💪", "🖥️"]
 
@@ -163,8 +164,10 @@ struct DeadlineFormView: View {
             _title      = State(initialValue: d.title)
             _emoji      = State(initialValue: d.emoji)
             _targetDate = State(initialValue: d.targetDate)
+            _startDate  = State(initialValue: d.startDate)
         } else {
             _targetDate = State(initialValue: Calendar.current.date(byAdding: .day, value: 7, to: Date()) ?? Date())
+            _startDate  = State(initialValue: Date())
         }
     }
 
@@ -224,6 +227,28 @@ struct DeadlineFormView: View {
                         }
                         .padding(.horizontal, 20)
 
+                        // 시작 시간
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("시작 시간")
+                                .font(.system(size: 13, weight: .medium))
+                                .foregroundColor(.gray.opacity(0.6))
+                            DatePicker("", selection: $startDate, displayedComponents: [.date, .hourAndMinute])
+                                .datePickerStyle(.compact)
+                                .colorScheme(.dark)
+                                .tint(.orange)
+                                .labelsHidden()
+                                .padding(.horizontal, 14)
+                                .padding(.vertical, 10)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .fill(Color.white.opacity(0.04))
+                                        .overlay(RoundedRectangle(cornerRadius: 12)
+                                            .stroke(Color.orange.opacity(0.15), lineWidth: 1))
+                                )
+                        }
+                        .padding(.horizontal, 20)
+
                         // 마감일
                         VStack(alignment: .leading, spacing: 8) {
                             Text("마감일")
@@ -256,9 +281,10 @@ struct DeadlineFormView: View {
                             updated.title = title
                             updated.emoji = emoji
                             updated.targetDate = targetDate
+                            updated.startDate = startDate
                             deadlineManager.update(updated)
                         } else {
-                            deadlineManager.add(Deadline(title: title, emoji: emoji, targetDate: targetDate))
+                            deadlineManager.add(Deadline(title: title, emoji: emoji, targetDate: targetDate, startDate: startDate))
                         }
                         dismiss()
                     }

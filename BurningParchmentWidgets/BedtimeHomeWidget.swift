@@ -35,7 +35,6 @@ struct ParchmentEntry: TimelineEntry {
     let period: WidgetPeriod
     let progress: Double
     let remainingText: String
-    // 일간 활성 상태에서 실시간 카운트다운에 사용 (Text(timerInterval:))
     let bedtimeDate: Date?
     let bedtimeString: String
     let isActive: Bool
@@ -72,7 +71,7 @@ struct ParchmentProvider: TimelineProvider {
         return ParchmentEntry(
             date: .now, period: period, progress: 0.35,
             remainingText: period == .daily ? "5h 24m" : "3일 4시간",
-            bedtimeDate: period == .daily ? Date().addingTimeInterval(rem) : nil,
+            bedtimeDate: nil,
             bedtimeString: "11:00 PM", isActive: true,
             isBeforeWakeTime: false, remainingSeconds: rem
         )
@@ -84,51 +83,20 @@ struct ParchmentProvider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<ParchmentEntry>) -> Void) {
         let now = Date()
-        let stepSec: Double  = period == .daily ? 900   : 3600
-        let count:   Int     = period == .daily ? 100   : 24
-        let refresh: Double  = period == .daily ? 3600  : 21600
+        let refresh: Double = period == .daily ? 3600 : 21600
 
         var entries: [ParchmentEntry] = []
 
-        if period == .daily,
-           let sharedRem = sd?.object(forKey: "shared_remainingSeconds") as? TimeInterval,
-           let isActive  = sd?.object(forKey: "shared_isCountdownActive") as? Bool,
-           sharedRem > 0, isActive {
-            // 앱이 계산한 취침 시각을 역산 → 오차 없이 앱과 동일한 기준점 사용
-            let bedDate = now.addingTimeInterval(sharedRem)
-            let bedH    = sd?.object(forKey: "shared_bedtimeHour")   as? Int ?? 23
-            let bedM    = sd?.object(forKey: "shared_bedtimeMinute") as? Int ?? 0
-            let wakeH   = sd?.object(forKey: "shared_wakeHour")      as? Int ?? 7
-            let wakeM   = sd?.object(forKey: "shared_wakeMinute")    as? Int ?? 0
-
-            let cal = Calendar.current
-            var wc = cal.dateComponents([.year, .month, .day], from: now)
-            wc.hour = wakeH; wc.minute = wakeM; wc.second = 0
-            let wakeDate = cal.date(from: wc) ?? now.addingTimeInterval(-sharedRem)
-            let total = max(bedDate.timeIntervalSince(wakeDate), 1)
-
-            let h12 = bedH > 12 ? bedH - 12 : (bedH == 0 ? 12 : bedH)
-            let ampm = bedH >= 12 ? "PM" : "AM"
-            let bedtimeStr = String(format: "%d:%02d %@", h12, bedM, ampm)
-
-            for i in 0..<count {
-                let t    = now.addingTimeInterval(Double(i) * stepSec)
-                let rem  = max(bedDate.timeIntervalSince(t), 0)
-                let prog = min(max(1.0 - rem / total, 0), 1)
-                let h    = Int(rem) / 3600
-                let m    = (Int(rem) % 3600) / 60
-                // bedtimeDate 포함 → 뷰에서 Text(timerInterval:)로 실시간 표시
-                entries.append(ParchmentEntry(
-                    date: t, period: .daily, progress: prog,
-                    remainingText: h > 0 ? "\(h)h \(m)m" : "\(m)m",
-                    bedtimeDate: rem > 0 ? bedDate : nil,
-                    bedtimeString: bedtimeStr,
-                    isActive: rem > 0, isBeforeWakeTime: false, remainingSeconds: rem
-                ))
+        // 단일 경로: App Group의 bedtimeHour/bedtimeMinute에서 직접 계산
+        // 이전의 shared_bedtimeDate 경로는 타이밍 경쟁으로 불일치 발생 — 제거
+        switch period {
+        case .daily:
+            for i in 0..<120 {
+                entries.append(calculate(for: now.addingTimeInterval(Double(i) * 60)))
             }
-        } else {
-            for i in 0..<count {
-                entries.append(calculate(for: now.addingTimeInterval(Double(i) * stepSec)))
+        default:
+            for i in 0..<24 {
+                entries.append(calculate(for: now.addingTimeInterval(Double(i) * 3600)))
             }
         }
 
@@ -136,10 +104,10 @@ struct ParchmentProvider: TimelineProvider {
     }
 
     private func calculate(for date: Date) -> ParchmentEntry {
-        let bedH  = sd?.object(forKey: "shared_bedtimeHour")   as? Int ?? 23
-        let bedM  = sd?.object(forKey: "shared_bedtimeMinute") as? Int ?? 0
-        let wakeH = sd?.object(forKey: "shared_wakeHour")      as? Int ?? 7
-        let wakeM = sd?.object(forKey: "shared_wakeMinute")    as? Int ?? 0
+        let bedH  = sd?.object(forKey: "bedtimeHour")   as? Int ?? 23
+        let bedM  = sd?.object(forKey: "bedtimeMinute") as? Int ?? 0
+        let wakeH = sd?.object(forKey: "wakeHour")      as? Int ?? 7
+        let wakeM = sd?.object(forKey: "wakeMinute")    as? Int ?? 0
 
         let h12 = bedH > 12 ? bedH - 12 : (bedH == 0 ? 12 : bedH)
         let ampm = bedH >= 12 ? "PM" : "AM"
@@ -347,44 +315,35 @@ private struct SmallWidgetContent: View {
 
     var body: some View {
         GeometryReader { geo in
-            let side = min(geo.size.width, geo.size.height) * 0.65
-            VStack(spacing: 5) {
+            let side = min(geo.size.width, geo.size.height) * 0.55
+            VStack(spacing: 6) {
                 switch entry.displayMode {
                 case .burning:
                     MiniParchmentView(progress: entry.progress)
                         .frame(width: side, height: side)
-                    // daily 활성: 실시간 자동 카운트다운
-                    if let bedDate = entry.bedtimeDate, entry.period == .daily, bedDate > Date() {
-                        Text(timerInterval: Date()...bedDate, countsDown: true)
-                            .font(.system(size: 13, weight: .medium, design: .monospaced))
-                            .foregroundColor(.orange)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
-                    } else {
-                        Text(entry.remainingText)
-                            .font(.system(size: 13, weight: .medium, design: .monospaced))
-                            .foregroundColor(.orange)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.8)
-                        if entry.period != .daily {
-                            Text(entry.period.label)
-                                .font(.system(size: 10))
-                                .foregroundColor(.gray.opacity(0.6))
-                        }
+                    Text(entry.remainingText)
+                        .font(.system(size: 19, weight: .medium, design: .monospaced))
+                        .foregroundColor(.orange)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                    if entry.period != .daily {
+                        Text(entry.period.label)
+                            .font(.system(size: 10))
+                            .foregroundColor(.gray.opacity(0.6))
                     }
 
                 case .sleeping:
                     BurningHeartView()
                         .frame(width: side, height: side)
                     Text("수면 중")
-                        .font(.system(size: 14, weight: .medium))
+                        .font(.system(size: 16, weight: .medium))
                         .foregroundColor(.orange.opacity(0.7))
 
                 case .wakeUpSoon:
                     MiniParchmentView(progress: 0)
                         .frame(width: side, height: side)
                     Text("기상 \(entry.shortTimeString)")
-                        .font(.system(size: 13, weight: .medium))
+                        .font(.system(size: 16, weight: .medium))
                         .foregroundColor(.yellow)
                 }
             }
@@ -432,24 +391,15 @@ private struct MediumWidgetContent: View {
                 .font(.system(size: 11, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            // daily 활성: 실시간 자동 카운트다운
-            if let bedDate = entry.bedtimeDate, entry.period == .daily, bedDate > Date() {
-                Text(timerInterval: Date()...bedDate, countsDown: true)
-                    .font(.system(size: 28, weight: .light, design: .monospaced))
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-            } else {
-                Text(entry.remainingText)
-                    .font(.system(
-                        size: entry.period == .daily ? 28 : 20,
-                        weight: .light,
-                        design: entry.period == .daily ? .monospaced : .serif
-                    ))
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-            }
+            Text(entry.remainingText)
+                .font(.system(
+                    size: entry.period == .daily ? 28 : 20,
+                    weight: .light,
+                    design: entry.period == .daily ? .monospaced : .serif
+                ))
+                .foregroundColor(.white)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
 
             progressBar
 
@@ -557,24 +507,15 @@ private struct LargeWidgetContent: View {
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            // daily 활성: 실시간 자동 카운트다운
-            if let bedDate = entry.bedtimeDate, entry.period == .daily, bedDate > Date() {
-                Text(timerInterval: Date()...bedDate, countsDown: true)
-                    .font(.system(size: 36, weight: .light, design: .monospaced))
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-            } else {
-                Text(entry.remainingText)
-                    .font(.system(
-                        size: entry.period == .daily ? 36 : 26,
-                        weight: .light,
-                        design: entry.period == .daily ? .monospaced : .serif
-                    ))
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-            }
+            Text(entry.remainingText)
+                .font(.system(
+                    size: entry.period == .daily ? 36 : 26,
+                    weight: .light,
+                    design: entry.period == .daily ? .monospaced : .serif
+                ))
+                .foregroundColor(.white)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
 
             HStack(spacing: 8) {
                 GeometryReader { geo in

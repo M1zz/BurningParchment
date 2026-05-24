@@ -12,23 +12,42 @@ enum PeriodType: String, CaseIterable, Identifiable {
     case week = "1주"
     case month = "1달"
     case year = "1년"
+    case deadline = "D-Day"
     var id: String { rawValue }
+}
+
+enum IndicatorShape: String, CaseIterable, Identifiable {
+    case dot  = "dot"
+    case pill = "pill"
+    case line = "line"
+    case bar  = "bar"
+    var id: String { rawValue }
+    var label: String {
+        switch self {
+        case .dot:  return "점"
+        case .pill: return "캡슐"
+        case .line: return "선"
+        case .bar:  return "바"
+        }
+    }
 }
 
 class BedtimeManager: ObservableObject {
     // MARK: - Published Properties
     @Published var bedtimeHour: Int {
-        didSet { save() }
+        didSet { if !isBatchUpdating { save() } }
     }
     @Published var bedtimeMinute: Int {
-        didSet { save() }
+        didSet { if !isBatchUpdating { save() } }
     }
     @Published var wakeHour: Int {
-        didSet { save() }
+        didSet { if !isBatchUpdating { save() } }
     }
     @Published var wakeMinute: Int {
-        didSet { save() }
+        didSet { if !isBatchUpdating { save() } }
     }
+
+    private var isBatchUpdating = false
     @Published var remainingSeconds: TimeInterval = 0
     @Published var totalSeconds: TimeInterval = 0
     @Published var progress: Double = 0.0
@@ -37,6 +56,18 @@ class BedtimeManager: ObservableObject {
     @Published var selectedPeriod: PeriodType = .day
     // 수면 구간 진행률: 0 = 취침 직후, 1 = 기상 직전
     @Published var sleepProgress: Double = 0
+    @Published var hiddenPeriods: Set<String> = [] {
+        didSet { saveHiddenPeriods() }
+    }
+    @Published var indicatorVisible: Bool = true {
+        didSet { saveIndicatorSettings() }
+    }
+    @Published var indicatorShape: IndicatorShape = .dot {
+        didSet { saveIndicatorSettings() }
+    }
+    @Published var indicatorSymbol: String = "" {
+        didSet { saveIndicatorSettings() }
+    }
 
     private var timer: Timer?
     private var lastWidgetReload: Date = .distantPast
@@ -52,6 +83,7 @@ class BedtimeManager: ObservableObject {
     private let keyBedM = "bedtimeMinute"
     private let keyWakeH = "wakeHour"
     private let keyWakeM = "wakeMinute"
+    private let keyHiddenPeriods = "hiddenPeriods"
 
     // MARK: - Computed Properties
     var bedtimeString: String { formatTime(hour: bedtimeHour, minute: bedtimeMinute) }
@@ -63,6 +95,7 @@ class BedtimeManager: ObservableObject {
         case .week: return weekProgress
         case .month: return monthProgress
         case .year: return yearProgress
+        case .deadline: return 0
         }
     }
 
@@ -72,6 +105,7 @@ class BedtimeManager: ObservableObject {
         case .week: return formatRemainingDays(weekRemainingDays)
         case .month: return formatRemainingDays(monthRemainingDays)
         case .year: return formatRemainingDays(yearRemainingDays)
+        case .deadline: return ""
         }
     }
 
@@ -81,7 +115,57 @@ class BedtimeManager: ObservableObject {
         case .week: return "이번 주 남은 시간"
         case .month: return "이번 달 남은 시간"
         case .year: return "올해 남은 시간"
+        case .deadline: return "데드라인까지"
         }
+    }
+
+    var periodStartLabel: String {
+        let cal = Calendar.current
+        let now = Date()
+        switch selectedPeriod {
+        case .day:      return wakeTimeString
+        case .week:     return shortDateString(thisMondayMidnight(from: now, cal: cal))
+        case .month:    return shortDateString(firstOfThisMonth(from: now, cal: cal))
+        case .year:     return "1/1"
+        case .deadline: return shortDateString(now)
+        }
+    }
+
+    var periodEndLabel: String {
+        let cal = Calendar.current
+        let now = Date()
+        switch selectedPeriod {
+        case .day: return bedtimeString
+        case .week:
+            let sun = cal.date(byAdding: .day, value: -1, to: nextMondayMidnight(from: now, cal: cal))!
+            return shortDateString(sun)
+        case .month:
+            let lastDay = cal.date(byAdding: .day, value: -1, to: firstOfNextMonth(from: now, cal: cal))!
+            return shortDateString(lastDay)
+        case .year:     return "12/31"
+        case .deadline: return ""
+        }
+    }
+
+    var periodStartIcon: String {
+        switch selectedPeriod {
+        case .day:      return "sunrise.fill"
+        case .deadline: return "flag"
+        default:        return "calendar"
+        }
+    }
+
+    var periodEndIcon: String {
+        switch selectedPeriod {
+        case .day:      return "moon.fill"
+        case .deadline: return "flag.fill"
+        default:        return "flag.checkered"
+        }
+    }
+
+    private func shortDateString(_ date: Date) -> String {
+        let cal = Calendar.current
+        return "\(cal.component(.month, from: date))/\(cal.component(.day, from: date))"
     }
 
     // MARK: - Calendar Boundary Helpers
@@ -170,13 +254,27 @@ class BedtimeManager: ObservableObject {
     }
 
     private func formatRemainingDays(_ remaining: Double) -> String {
-        let total = Int(remaining * 86400)
+        let total = Int(max(remaining, 0) * 86400)
         let days  = total / 86400
         let hours = (total % 86400) / 3600
         let mins  = (total % 3600) / 60
-        if days > 0  { return "\(days)일 \(hours)시간" }
-        if hours > 0 { return "\(hours)시간 \(mins)분" }
-        return "\(mins)분"
+        let secs  = total % 60
+        var parts: [String] = []
+        if days > 0 { parts.append("\(days)일") }
+        parts += ["\(hours)시간", "\(mins)분", "\(secs)초"]
+        return parts.joined(separator: " ")
+    }
+
+    var remainingKoreanString: String {
+        let total = Int(max(remainingSeconds, 0))
+        let d = total / 86400
+        let h = (total % 86400) / 3600
+        let m = (total % 3600) / 60
+        let s = total % 60
+        var parts: [String] = []
+        if d > 0 { parts.append("\(d)일") }
+        parts += ["\(h)시간", "\(m)분", "\(s)초"]
+        return parts.joined(separator: " ")
     }
 
     var remainingTimeString: String {
@@ -192,41 +290,123 @@ class BedtimeManager: ObservableObject {
 
     // MARK: - Init
     init() {
+        let sd = UserDefaults(suiteName: "group.com.burningparchment.app")
         let ud = UserDefaults.standard
-        self.wakeHour = ud.object(forKey: keyWakeH) as? Int ?? 7
-        self.wakeMinute = ud.object(forKey: keyWakeM) as? Int ?? 0
-        self.bedtimeHour = ud.object(forKey: keyBedH) as? Int ?? 23
-        self.bedtimeMinute = ud.object(forKey: keyBedM) as? Int ?? 0
+
+        // 마이그레이션 먼저 실행 — 구버전 사용자 데이터가 App Group으로 복원됨
+        Self.runMigrations(appGroup: sd, standard: ud)
+
+        // App Group에서 읽기 (마이그레이션 완료 후 반드시 값이 있음)
+        self.wakeHour      = sd?.object(forKey: "wakeHour")      as? Int ?? ud.object(forKey: "wakeHour")      as? Int ?? 7
+        self.wakeMinute    = sd?.object(forKey: "wakeMinute")    as? Int ?? ud.object(forKey: "wakeMinute")    as? Int ?? 0
+        self.bedtimeHour   = sd?.object(forKey: "bedtimeHour")   as? Int ?? ud.object(forKey: "bedtimeHour")   as? Int ?? 23
+        self.bedtimeMinute = sd?.object(forKey: "bedtimeMinute") as? Int ?? ud.object(forKey: "bedtimeMinute") as? Int ?? 0
+
+        if let arr = sd?.object(forKey: "hiddenPeriods") as? [String]
+            ?? ud.object(forKey: "hiddenPeriods") as? [String] {
+            self.hiddenPeriods = Set(arr)
+        }
+        self.indicatorVisible = sd?.object(forKey: "indicatorVisible") as? Bool
+            ?? ud.object(forKey: "indicatorVisible") as? Bool ?? true
+        if let shapeRaw = sd?.string(forKey: "indicatorShape")
+            ?? ud.string(forKey: "indicatorShape") {
+            self.indicatorShape = IndicatorShape(rawValue: shapeRaw) ?? .dot
+        }
+        self.indicatorSymbol = sd?.string(forKey: "indicatorSymbol")
+            ?? ud.string(forKey: "indicatorSymbol") ?? ""
+
+        // 기본값 포함 현재 설정을 App Group에 즉시 확정 기록
+        sd?.set(self.bedtimeHour,   forKey: "bedtimeHour")
+        sd?.set(self.bedtimeMinute, forKey: "bedtimeMinute")
+        sd?.set(self.wakeHour,      forKey: "wakeHour")
+        sd?.set(self.wakeMinute,    forKey: "wakeMinute")
+        sd?.synchronize()
 
         requestNotificationPermission()
         reconnectLiveActivity()
         startMonitoring()
     }
 
+    // MARK: - 마이그레이션 (구버전 UserDefaults.standard → App Group)
+    //
+    // 버전별 마이그레이션 계획:
+    //   v1 [현재, 앱 v1.1.x]: standard → App Group 복사   REMOVE AFTER: 앱 v2.0.0
+    //   v2 [예약, 앱 v2.0.x]: standard 잔여 데이터 정리   REMOVE AFTER: 앱 v3.0.0
+    //
+    // 각 단계는 완료 플래그("migration_vN_done")를 App Group에 기록해 한 번만 실행됨.
+    // 충분한 사용자가 업데이트한 시점에 해당 블록을 삭제하면 마이그레이션 코드가 사라짐.
+
+    private static func runMigrations(appGroup sd: UserDefaults?, standard ud: UserDefaults) {
+
+        // ── v1: UserDefaults.standard → App Group ──────────────────────────────
+        // 앱 v1.0.x 사용자는 설정이 standard에 저장되어 위젯이 기본값을 표시하는 버그가 있었음.
+        // 이 단계에서 App Group으로 복사해 위젯 데이터 연동을 정상화함.
+        // REMOVE AFTER: 앱 v2.0.0 출시 후 (대부분 사용자 업데이트 완료 시점)
+        if sd?.bool(forKey: "migration_v1_done") != true {
+            let settingsKeys = ["bedtimeHour", "bedtimeMinute", "wakeHour", "wakeMinute", "hiddenPeriods"]
+            for key in settingsKeys {
+                // App Group에 이미 값이 있으면 덮어쓰지 않음 (새 설정 보존)
+                if sd?.object(forKey: key) == nil, let value = ud.object(forKey: key) {
+                    sd?.set(value, forKey: key)
+                }
+            }
+            // 데드라인 데이터 마이그레이션
+            if sd?.data(forKey: "shared_deadlines") == nil,
+               let data = ud.data(forKey: "deadlines_v1") {
+                sd?.set(data, forKey: "shared_deadlines")
+            }
+            sd?.set(true, forKey: "migration_v1_done")
+        }
+
+        // ── v2: standard 잔여 데이터 정리 (예약) ───────────────────────────────
+        // 충분한 사용자가 v1 마이그레이션을 완료한 뒤 아래 주석을 해제해 활성화.
+        // REMOVE AFTER: 앱 v3.0.0 출시 후
+        //
+        // if sd?.bool(forKey: "migration_v2_done") != true {
+        //     for key in ["bedtimeHour", "bedtimeMinute", "wakeHour", "wakeMinute",
+        //                 "hiddenPeriods", "deadlines_v1"] {
+        //         ud.removeObject(forKey: key)
+        //     }
+        //     sd?.set(true, forKey: "migration_v2_done")
+        // }
+    }
+
+    // MARK: - Batch Settings Update
+    // 4개 프로퍼티를 한 번에 갱신해 중간 상태 save() 호출을 방지
+    func updateSettings(wakeHour: Int, wakeMinute: Int, bedHour: Int, bedMinute: Int) {
+        isBatchUpdating = true
+        self.wakeHour = wakeHour
+        self.wakeMinute = wakeMinute
+        self.bedtimeHour = bedHour
+        self.bedtimeMinute = bedMinute
+        isBatchUpdating = false
+        save()
+    }
+
     // MARK: - Save
     private func save() {
-        let ud = UserDefaults.standard
-        ud.set(bedtimeHour, forKey: keyBedH)
-        ud.set(bedtimeMinute, forKey: keyBedM)
-        ud.set(wakeHour, forKey: keyWakeH)
-        ud.set(wakeMinute, forKey: keyWakeM)
+        // App Group에 저장 — 위젯이 동일한 컨테이너에서 바로 읽음
+        sharedDefaults?.set(bedtimeHour,   forKey: keyBedH)
+        sharedDefaults?.set(bedtimeMinute, forKey: keyBedM)
+        sharedDefaults?.set(wakeHour,      forKey: keyWakeH)
+        sharedDefaults?.set(wakeMinute,    forKey: keyWakeM)
+        // 위젯 프로세스가 읽기 전에 공유 파일에 즉시 반영
+        sharedDefaults?.synchronize()
 
         scheduledNotifBedDate = nil
         recalculate()
         WidgetCenter.shared.reloadAllTimelines()
     }
 
-    // MARK: - Shared UserDefaults (위젯용)
+    // MARK: - Shared UserDefaults (위젯용 계산값)
     private func saveSharedData() {
         guard let sd = sharedDefaults else { return }
-        sd.set(progress, forKey: "shared_progress")
-        sd.set(remainingSeconds, forKey: "shared_remainingSeconds")
-        sd.set(bedtimeHour, forKey: "shared_bedtimeHour")
-        sd.set(bedtimeMinute, forKey: "shared_bedtimeMinute")
-        sd.set(wakeHour, forKey: "shared_wakeHour")
-        sd.set(wakeMinute, forKey: "shared_wakeMinute")
+        // 계산된 값만 업데이트 — 설정값(bedtimeHour 등)은 save()에서 이미 App Group에 저장됨
+        sd.set(progress,          forKey: "shared_progress")
+        sd.set(remainingSeconds,  forKey: "shared_remainingSeconds")
+        sd.set(currentBedDate,    forKey: "shared_bedtimeDate")
         sd.set(isCountdownActive, forKey: "shared_isCountdownActive")
-        sd.set(isBeforeWakeTime, forKey: "shared_isBeforeWakeTime")
+        sd.set(isBeforeWakeTime,  forKey: "shared_isBeforeWakeTime")
 
         // 1분 간격으로 위젯 타임라인 리로드
         if Date().timeIntervalSince(lastWidgetReload) > 60 {
@@ -330,6 +510,21 @@ class BedtimeManager: ObservableObject {
         }
 
         saveSharedData()
+    }
+
+    // MARK: - Hidden Periods Persistence
+    private func saveHiddenPeriods() {
+        sharedDefaults?.set(Array(hiddenPeriods), forKey: keyHiddenPeriods)
+        if hiddenPeriods.contains(selectedPeriod.rawValue) {
+            let visible = [PeriodType.day, .week, .month, .year].first { !hiddenPeriods.contains($0.rawValue) }
+            selectedPeriod = visible ?? .day
+        }
+    }
+
+    private func saveIndicatorSettings() {
+        sharedDefaults?.set(indicatorVisible, forKey: "indicatorVisible")
+        sharedDefaults?.set(indicatorShape.rawValue, forKey: "indicatorShape")
+        sharedDefaults?.set(indicatorSymbol, forKey: "indicatorSymbol")
     }
 
     // MARK: - Helpers

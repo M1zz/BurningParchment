@@ -8,11 +8,23 @@ import SwiftUI
 
 struct BurningParchmentView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
+    @EnvironmentObject var deadlineManager: DeadlineManager
     @State private var phase: Double = 0
     @State private var embers: [Ember] = []
     @State private var ashes: [Ash] = []
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private let timer = Timer.publish(every: 1.0 / 30.0, on: .main, in: .common).autoconnect()
+
+    private var currentDisplayProgress: Double {
+        switch bedtimeManager.selectedPeriod {
+        case .day: return bedtimeManager.progress
+        case .deadline:
+            return deadlineManager.deadlines.first(where: { !$0.isExpired() })?.progress() ?? 0
+        default:
+            return bedtimeManager.periodProgress
+        }
+    }
 
     var body: some View {
         GeometryReader { geo in
@@ -22,7 +34,7 @@ struct BurningParchmentView: View {
             let ox = (size.width - pw) / 2
             let oy: CGFloat = 8
             let isDayPeriod = bedtimeManager.selectedPeriod == .day
-            let displayProgress = isDayPeriod ? bedtimeManager.progress : bedtimeManager.periodProgress
+            let displayProgress = currentDisplayProgress
 
             ZStack {
                 if isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
@@ -34,6 +46,7 @@ struct BurningParchmentView: View {
                 }
             }
             .onReceive(timer) { _ in
+                guard !reduceMotion else { return }
                 phase += 0.05
                 if bedtimeManager.isCountdownActive || !isDayPeriod {
                     updateParticles(pw: pw, ph: ph, ox: ox, oy: oy)
@@ -52,27 +65,21 @@ struct BurningParchmentView: View {
 
     private func burningView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
         ZStack {
-            // 배경 글로우
-            if progress > 0 {
-                burnGlow(size: size, progress: progress)
-            }
-
-            // 재 파티클
             particleCanvas(items: ashes, withGlow: false)
+                .accessibilityHidden(true)
 
-            // 양피지 (상단 배치)
             parchmentGroup(pw: pw, ph: ph, progress: progress)
                 .position(x: size.width / 2, y: oy + ph / 2)
+                .accessibilityHidden(true)
 
-            // 불꽃
             if progress > 0.005 && progress < 0.995 {
                 diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
+                    .accessibilityHidden(true)
             }
 
-            // 불씨 파티클
             particleCanvas(items: embers, withGlow: true)
+                .accessibilityHidden(true)
 
-            // 하단: 타이머 + 게이지
             VStack {
                 Spacer()
                 timerSection(progress: progress, size: size)
@@ -90,6 +97,7 @@ struct BurningParchmentView: View {
                 .overlay(Rectangle().stroke(Color.brown.opacity(0.25), lineWidth: 1))
                 .shadow(color: .black.opacity(0.4), radius: 12, y: 8)
                 .position(x: size.width / 2, y: oy + ph / 2)
+                .accessibilityHidden(true)
 
             VStack {
                 Spacer()
@@ -107,9 +115,13 @@ struct BurningParchmentView: View {
                         .foregroundColor(.gray.opacity(0.5))
                         .multilineTextAlignment(.center)
                 }
+                .accessibilityElement(children: .combine)
                 .padding(.bottom, 60)
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("기상 전")
+        .accessibilityValue("\(sleepRemainingString) 후 시작")
     }
 
     // MARK: - Bedtime Reached (불타는 하트)
@@ -299,6 +311,11 @@ struct BurningParchmentView: View {
                 Spacer()
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("수면 중")
+        .accessibilityValue(bedtimeManager.isBeforeWakeTime
+            ? "기상까지 \(sleepRemainingString)"
+            : "좋은 꿈 꾸세요")
     }
 
     // MARK: - Heart Ember Canvas (하트 불씨 파티클)
@@ -357,52 +374,99 @@ struct BurningParchmentView: View {
     // MARK: - Timer Section (하단)
 
     private func timerSection(progress: Double, size: CGSize) -> some View {
-        VStack(spacing: 14) {
-            VStack(spacing: 4) {
-                Text(bedtimeManager.periodLabel)
-                    .font(.system(size: 13, weight: .medium, design: .serif))
-                    .foregroundColor(.orange.opacity(0.6))
+        let nearestDeadline: Deadline? = bedtimeManager.selectedPeriod == .deadline
+            ? deadlineManager.deadlines.first(where: { !$0.isExpired() })
+            : nil
 
-                if bedtimeManager.selectedPeriod == .day {
-                    HStack(alignment: .firstTextBaseline, spacing: 3) {
-                        TimeDigitView(value: bedtimeManager.remainingHours, label: "h")
-                        Text(":").font(.system(size: 34, weight: .light, design: .serif))
-                            .foregroundColor(.orange.opacity(0.5))
-                        TimeDigitView(value: bedtimeManager.remainingMinutes, label: "m")
-                        Text(":").font(.system(size: 34, weight: .light, design: .serif))
-                            .foregroundColor(.orange.opacity(0.5))
-                        TimeDigitView(value: bedtimeManager.remainingSecs, label: "s")
-                    }
-                } else {
-                    Text(bedtimeManager.periodRemainingString)
+        let startLabel = bedtimeManager.periodStartLabel
+        let endLabel   = nearestDeadline?.targetDateString ?? bedtimeManager.periodEndLabel
+        let startIcon  = bedtimeManager.periodStartIcon
+        let endIcon    = nearestDeadline != nil ? "flag.fill" : bedtimeManager.periodEndIcon
+        let remaining  = 1.0 - progress
+
+        return VStack(spacing: 12) {
+            // 타이머 텍스트
+            VStack(spacing: 4) {
+                if let dl = nearestDeadline {
+                    Text("\(dl.emoji) \(dl.title)")
+                        .font(.system(size: 13, weight: .medium, design: .serif))
+                        .foregroundColor(.orange.opacity(0.6))
+                        .lineLimit(1)
+                    Text(dl.remainingString())
                         .font(.system(size: 36, weight: .ultraLight, design: .serif))
                         .foregroundColor(.orange.opacity(0.9))
+                } else {
+                    Text(bedtimeManager.periodLabel)
+                        .font(.system(size: 13, weight: .medium, design: .serif))
+                        .foregroundColor(.orange.opacity(0.6))
+
+                    Text(bedtimeManager.selectedPeriod == .day
+                            ? bedtimeManager.remainingKoreanString
+                            : bedtimeManager.periodRemainingString)
+                        .font(.system(size: 30, weight: .ultraLight, design: .serif))
+                        .foregroundColor(.orange.opacity(0.9))
+                        .monospacedDigit()
+                        .minimumScaleFactor(0.7)
+                        .lineLimit(1)
                 }
             }
 
-            // 게이지 바
-            HStack(spacing: 8) {
-                Text("🔥").font(.system(size: 13))
-                GeometryReader { geo in
-                    ZStack(alignment: .leading) {
-                        RoundedRectangle(cornerRadius: 4)
-                            .fill(Color.white.opacity(0.08))
-                            .frame(height: 8)
-                        RoundedRectangle(cornerRadius: 4)
-                            .fill(LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing))
-                            .frame(width: geo.size.width * progress, height: 8)
-                    }
+            // 게이지 바 — 왼쪽부터 사라지는 방향 (trailing 정렬)
+            GeometryReader { geo in
+                ZStack(alignment: .trailing) {
+                    RoundedRectangle(cornerRadius: 4)
+                        .fill(Color.white.opacity(0.08))
+                        .frame(height: 8)
+                    RoundedRectangle(cornerRadius: 4)
+                        .fill(LinearGradient(
+                            colors: [.orange, .red.opacity(0.85)],
+                            startPoint: .leading, endPoint: .trailing
+                        ))
+                        .frame(width: geo.size.width * remaining, height: 8)
+                        .animation(.linear(duration: 1.0), value: remaining)
                 }
-                .frame(height: 8)
-                Text("🌙").font(.system(size: 13))
             }
+            .frame(height: 8)
             .padding(.horizontal, 32)
 
-            Text("\(Int((1.0 - progress) * 100))% 남음")
-                .font(.system(size: 12, weight: .medium, design: .serif))
-                .foregroundColor(.gray.opacity(0.6))
+            // 날짜 범위 + 남은 비율 (바 바로 아래)
+            VStack(spacing: 4) {
+                HStack {
+                    HStack(spacing: 3) {
+                        Image(systemName: startIcon).font(.system(size: 10))
+                        Text(startLabel).font(.system(size: 10, design: .serif))
+                    }
+                    .foregroundColor(.orange.opacity(0.45))
+
+                    Spacer()
+
+                    HStack(spacing: 3) {
+                        Text(endLabel).font(.system(size: 10, design: .serif))
+                        Image(systemName: endIcon).font(.system(size: 10))
+                    }
+                    .foregroundColor(.orange.opacity(0.45))
+                }
+                .padding(.horizontal, 32)
+
+                Text("\(Int(remaining * 100))% 남음")
+                    .font(.system(size: 12, weight: .medium, design: .serif))
+                    .foregroundColor(.gray.opacity(0.6))
+            }
         }
         .padding(.bottom, 28)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel({
+            if let dl = nearestDeadline { return "\(dl.emoji) \(dl.title) 데드라인" }
+            return bedtimeManager.periodLabel
+        }())
+        .accessibilityValue({
+            let pct = Int(remaining * 100)
+            if let dl = nearestDeadline { return "\(dl.remainingString()), \(pct)% 남음" }
+            let time = bedtimeManager.selectedPeriod == .day
+                ? bedtimeManager.remainingKoreanString
+                : bedtimeManager.periodRemainingString
+            return "\(time), \(pct)% 남음"
+        }())
     }
 
     // MARK: - Sleep Remaining String
@@ -661,14 +725,14 @@ struct BurningParchmentView: View {
     // MARK: - Particles
 
     private func initParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
-        let p = bedtimeManager.periodProgress
+        let p = currentDisplayProgress
         let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
         embers = (0..<25).map { _ in Ember.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
         ashes  = (0..<20).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
     }
 
     private func updateParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
-        let p = bedtimeManager.periodProgress
+        let p = currentDisplayProgress
         let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
 
         let nLen = sqrt(Double(ph * ph + pw * pw))
@@ -857,5 +921,6 @@ struct TimeDigitView: View {
         Color.black.ignoresSafeArea()
         BurningParchmentView()
             .environmentObject(BedtimeManager())
+            .environmentObject(DeadlineManager())
     }
 }

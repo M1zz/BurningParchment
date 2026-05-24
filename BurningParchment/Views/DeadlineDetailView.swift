@@ -169,9 +169,13 @@ struct DeadlineDetailView: View {
                 .font(.system(size: 12, weight: .medium, design: .serif))
                 .foregroundColor(.gray.opacity(0.6))
 
-            Text(deadline.targetDateString)
-                .font(.system(size: 12, design: .serif))
-                .foregroundColor(.gray.opacity(0.35))
+            HStack(spacing: 6) {
+                Text(deadline.startDateString)
+                Text("→")
+                Text(deadline.targetDateString)
+            }
+            .font(.system(size: 11, design: .serif))
+            .foregroundColor(.gray.opacity(0.35))
         }
         .padding(.bottom, 28)
     }

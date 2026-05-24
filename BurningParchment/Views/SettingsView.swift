@@ -12,6 +12,11 @@ struct SettingsView: View {
     @State private var selWakeH: Int = 7
     @State private var selWakeM: Int = 0
 
+    @ScaledMetric private var headerIconSize: CGFloat = 44
+    @ScaledMetric private var sectionIconSize: CGFloat = 14
+    @ScaledMetric private var rowFontSize: CGFloat = 15
+    @ScaledMetric private var captionFontSize: CGFloat = 11
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -73,6 +78,12 @@ struct SettingsView: View {
                         }
                         .padding(.horizontal, 20)
 
+                        // 탭 표시 설정
+                        tabVisibilitySection
+
+                        // 인디케이터 설정
+                        indicatorSection
+
                         // 안내
                         VStack(spacing: 8) {
                             Label("기상시간부터 자동 카운트다운", systemImage: "flame.fill")
@@ -89,10 +100,10 @@ struct SettingsView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("완료") {
-                        bedtimeManager.wakeHour = selWakeH
-                        bedtimeManager.wakeMinute = selWakeM
-                        bedtimeManager.bedtimeHour = selBedH
-                        bedtimeManager.bedtimeMinute = selBedM
+                        bedtimeManager.updateSettings(
+                            wakeHour: selWakeH, wakeMinute: selWakeM,
+                            bedHour: selBedH, bedMinute: selBedM
+                        )
                         dismiss()
                     }
                     .font(.system(size: 16, weight: .semibold))
@@ -104,11 +115,269 @@ struct SettingsView: View {
                 }
             }
         }
+        .dynamicTypeSize(.small...(.accessibility2))
         .onAppear {
             selBedH = bedtimeManager.bedtimeHour
             selBedM = bedtimeManager.bedtimeMinute
             selWakeH = bedtimeManager.wakeHour
             selWakeM = bedtimeManager.wakeMinute
+        }
+    }
+
+    // MARK: - Tab Visibility Section
+
+    private let standardPeriods: [PeriodType] = [.day, .week, .month, .year]
+
+    private var tabVisibilitySection: some View {
+        let visibleCount = standardPeriods.filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }.count
+
+        return VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "square.grid.2x2")
+                    .foregroundColor(.orange.opacity(0.6))
+                Text("탭 표시")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.orange.opacity(0.5))
+            }
+
+            VStack(spacing: 0) {
+                ForEach(standardPeriods) { period in
+                    let isVisible = !bedtimeManager.hiddenPeriods.contains(period.rawValue)
+
+                    HStack {
+                        Text(period.rawValue)
+                            .font(.system(size: 15, design: .serif))
+                            .foregroundColor(isVisible ? .orange.opacity(0.85) : .gray.opacity(0.4))
+                        Spacer()
+                        Toggle("", isOn: Binding(
+                            get: { isVisible },
+                            set: { newValue in
+                                if newValue {
+                                    bedtimeManager.hiddenPeriods.remove(period.rawValue)
+                                } else if visibleCount > 1 {
+                                    bedtimeManager.hiddenPeriods.insert(period.rawValue)
+                                }
+                            }
+                        ))
+                        .tint(.orange)
+                    }
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 10)
+
+                    if period != standardPeriods.last {
+                        Divider().background(Color.orange.opacity(0.08))
+                            .padding(.leading, 14)
+                    }
+                }
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.white.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+            )
+
+            Text("데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다")
+                .font(.system(size: 11))
+                .foregroundColor(.gray.opacity(0.4))
+                .padding(.horizontal, 4)
+        }
+        .padding(.horizontal, 20)
+    }
+
+    // MARK: - Indicator Section
+
+    private let symbolOptions: [(name: String, label: String)] = [
+        ("circle.fill",   "원"),
+        ("flame.fill",    "불꽃"),
+        ("star.fill",     "별"),
+        ("heart.fill",    "하트"),
+        ("moon.fill",     "달"),
+        ("sun.max.fill",  "해"),
+        ("bolt.fill",     "번개"),
+        ("leaf.fill",     "잎"),
+        ("drop.fill",     "방울"),
+        ("sparkle",       "반짝"),
+    ]
+
+    private var isSymbolMode: Bool { !bedtimeManager.indicatorSymbol.isEmpty }
+
+    private var indicatorSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "circle.grid.3x3")
+                    .foregroundColor(.orange.opacity(0.6))
+                Text("페이지 인디케이터")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.orange.opacity(0.5))
+            }
+
+            VStack(spacing: 0) {
+                // 표시 여부
+                HStack {
+                    Text("표시")
+                        .font(.system(size: 15, design: .serif))
+                        .foregroundColor(bedtimeManager.indicatorVisible ? .orange.opacity(0.85) : .gray.opacity(0.4))
+                    Spacer()
+                    Toggle("", isOn: $bedtimeManager.indicatorVisible)
+                        .tint(.orange)
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+
+                Divider().background(Color.orange.opacity(0.08)).padding(.leading, 14)
+
+                // 모드 선택 (도형 / 심볼)
+                HStack(spacing: 0) {
+                    modeTab(title: "도형", isSelected: !isSymbolMode) {
+                        bedtimeManager.indicatorSymbol = ""
+                    }
+                    modeTab(title: "심볼", isSelected: isSymbolMode) {
+                        if bedtimeManager.indicatorSymbol.isEmpty {
+                            bedtimeManager.indicatorSymbol = symbolOptions[0].name
+                        }
+                    }
+                }
+                .padding(.horizontal, 14)
+                .padding(.top, 12)
+                .padding(.bottom, 6)
+                .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
+                .disabled(!bedtimeManager.indicatorVisible)
+
+                if isSymbolMode {
+                    // SF 심볼 그리드
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 5), spacing: 8) {
+                        ForEach(symbolOptions, id: \.name) { opt in
+                            let isSelected = bedtimeManager.indicatorSymbol == opt.name
+                            Button {
+                                bedtimeManager.indicatorSymbol = opt.name
+                            } label: {
+                                VStack(spacing: 6) {
+                                    Image(systemName: opt.name)
+                                        .font(.system(size: 20))
+                                        .foregroundColor(isSelected ? .orange : .gray.opacity(0.45))
+                                    Text(opt.label)
+                                        .font(.system(size: 10))
+                                        .foregroundColor(isSelected ? .orange : .gray.opacity(0.4))
+                                }
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 10)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(isSelected ? Color.orange.opacity(0.12) : Color.white.opacity(0.03))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .stroke(isSelected ? Color.orange.opacity(0.4) : Color.clear, lineWidth: 1)
+                                        )
+                                )
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 14)
+                    .padding(.bottom, 14)
+                    .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
+                    .disabled(!bedtimeManager.indicatorVisible)
+                } else {
+                    // 도형 선택
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack(spacing: 8) {
+                            ForEach(IndicatorShape.allCases) { shape in
+                                Button {
+                                    bedtimeManager.indicatorShape = shape
+                                } label: {
+                                    VStack(spacing: 8) {
+                                        indicatorPreview(for: shape)
+                                            .frame(height: 14)
+                                        Text(shape.label)
+                                            .font(.system(size: 11))
+                                            .foregroundColor(
+                                                bedtimeManager.indicatorShape == shape
+                                                    ? .orange : .gray.opacity(0.4)
+                                            )
+                                    }
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 10)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(
+                                                bedtimeManager.indicatorShape == shape
+                                                    ? Color.orange.opacity(0.12)
+                                                    : Color.white.opacity(0.03)
+                                            )
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 8)
+                                                    .stroke(
+                                                        bedtimeManager.indicatorShape == shape
+                                                            ? Color.orange.opacity(0.4) : Color.clear,
+                                                        lineWidth: 1
+                                                    )
+                                            )
+                                    )
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 14)
+                        .padding(.bottom, 12)
+                        .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
+                        .disabled(!bedtimeManager.indicatorVisible)
+                    }
+                }
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.white.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+            )
+        }
+        .padding(.horizontal, 20)
+    }
+
+    private func modeTab(title: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(title)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundColor(isSelected ? .orange : .gray.opacity(0.45))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 7)
+                .background(
+                    RoundedRectangle(cornerRadius: 7)
+                        .fill(isSelected ? Color.orange.opacity(0.12) : Color.clear)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 7)
+                                .stroke(isSelected ? Color.orange.opacity(0.3) : Color.clear, lineWidth: 1)
+                        )
+                )
+        }
+    }
+
+    @ViewBuilder
+    private func indicatorPreview(for shape: IndicatorShape) -> some View {
+        switch shape {
+        case .dot:
+            HStack(spacing: 4) {
+                Circle().fill(Color.orange).frame(width: 8, height: 8)
+                Circle().fill(Color.gray.opacity(0.3)).frame(width: 6, height: 6)
+                Circle().fill(Color.gray.opacity(0.3)).frame(width: 6, height: 6)
+            }
+        case .pill:
+            HStack(spacing: 4) {
+                Capsule().fill(Color.orange).frame(width: 18, height: 7)
+                Circle().fill(Color.gray.opacity(0.3)).frame(width: 7, height: 7)
+                Circle().fill(Color.gray.opacity(0.3)).frame(width: 7, height: 7)
+            }
+        case .line:
+            HStack(spacing: 3) {
+                RoundedRectangle(cornerRadius: 2).fill(Color.orange).frame(width: 16, height: 3)
+                RoundedRectangle(cornerRadius: 2).fill(Color.gray.opacity(0.25)).frame(width: 6, height: 3)
+                RoundedRectangle(cornerRadius: 2).fill(Color.gray.opacity(0.25)).frame(width: 6, height: 3)
+            }
+        case .bar:
+            HStack(spacing: 3) {
+                RoundedRectangle(cornerRadius: 3).fill(Color.orange).frame(width: 12, height: 5)
+                RoundedRectangle(cornerRadius: 3).fill(Color.gray.opacity(0.25)).frame(width: 12, height: 5)
+                RoundedRectangle(cornerRadius: 3).fill(Color.gray.opacity(0.25)).frame(width: 12, height: 5)
+            }
         }
     }
 
@@ -166,24 +435,26 @@ struct SettingsView: View {
     // MARK: - Preset Button
 
     private func presetButton(hour: Int, minute: Int, label: String) -> some View {
-        Button {
+        let isSelected = selBedH == hour && selBedM == minute
+        let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
+        let ampm = hour >= 12 ? "오후" : "오전"
+        let minStr = minute > 0 ? " \(minute)분" : ""
+        return Button {
             selBedH = hour
             selBedM = minute
         } label: {
             Text(label)
-                .font(.system(size: 13, weight: .medium))
-                .foregroundColor(
-                    selBedH == hour && selBedM == minute ? .black : .orange.opacity(0.7)
-                )
+                .font(.system(size: captionFontSize, weight: .medium))
+                .foregroundColor(isSelected ? .black : .orange.opacity(0.7))
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
                 .background(
-                    Capsule().fill(
-                        selBedH == hour && selBedM == minute
-                            ? Color.orange : Color.orange.opacity(0.1)
-                    )
+                    Capsule().fill(isSelected ? Color.orange : Color.orange.opacity(0.1))
                 )
         }
+        .accessibilityLabel("취침 시간 \(ampm) \(h12)시\(minStr)")
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+        .accessibilityHint(isSelected ? "선택됨" : "탭하여 선택")
     }
 
     private func hourLabel(_ hour: Int) -> String {

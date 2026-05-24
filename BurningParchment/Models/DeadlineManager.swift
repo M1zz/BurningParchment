@@ -32,13 +32,18 @@ class DeadlineManager: ObservableObject {
 
     private func save() {
         guard let data = try? JSONEncoder().encode(deadlines) else { return }
-        UserDefaults.standard.set(data, forKey: key)
         sharedDefaults?.set(data, forKey: "shared_deadlines")
         WidgetCenter.shared.reloadAllTimelines()
     }
 
     private func load() {
-        guard let data = UserDefaults.standard.data(forKey: key),
+        // App Group 우선 읽기.
+        // BedtimeManager.runMigrations()가 먼저 실행되면 App Group에 데이터가 있음.
+        // 초기화 순서에 따라 마이그레이션 전에 호출될 수 있으므로 standard 폴백 유지.
+        // REMOVE standard fallback AFTER: 앱 v2.0.0 (v2 마이그레이션 완료 시점)
+        let data = sharedDefaults?.data(forKey: "shared_deadlines")
+            ?? UserDefaults.standard.data(forKey: key)
+        guard let data,
               let decoded = try? JSONDecoder().decode([Deadline].self, from: data)
         else { return }
         deadlines = decoded

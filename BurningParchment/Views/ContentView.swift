@@ -5,12 +5,21 @@ import SwiftUI
 import WidgetKit
 
 struct ContentView: View {
-    @EnvironmentObject var bedtimeManager:  BedtimeManager
-    @EnvironmentObject var deadlineManager: DeadlineManager
+    @EnvironmentObject var bedtimeManager:    BedtimeManager
+    @EnvironmentObject var deadlineManager:   DeadlineManager
+    @EnvironmentObject var reflectionManager: ReflectionManager
     @Environment(\.scenePhase) private var scenePhase
-    @State private var showSettings  = false
-    @State private var showDeadlines = false
+    @State private var showSettings    = false
+    @State private var showDeadlines   = false
+    @State private var showReflections = false
+    @State private var autoOpenReflectionInput = false
+    @State private var showReflectionNudge = false
+    @State private var nudgeEvaluatedThisSession = false
+    @AppStorage("reflectionNudgeDismissedDate") private var nudgeDismissedISO: String = ""
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    private static let nudgeWindowSeconds: Double = 5400  // 취침 90분 전부터
+    private static let nudgeAutoHideSeconds: Double = 9
 
     private var pages: [PeriodType] {
         let basePeriods: [PeriodType] = [.day, .week, .month, .year]
@@ -50,37 +59,45 @@ struct ContentView: View {
     }
 
     var body: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
+        NavigationStack {
+            ZStack {
+                Color.black.ignoresSafeArea()
 
-            if bedtimeManager.selectedPeriod != .day || bedtimeManager.isCountdownActive {
-                fullScreenGlow
-                    .accessibilityHidden(true)
-            }
+                if bedtimeManager.selectedPeriod != .day || bedtimeManager.isCountdownActive {
+                    fullScreenGlow
+                        .accessibilityHidden(true)
+                }
 
-            VStack(spacing: 0) {
-                headerBar
-                BurningParchmentView()
-                    .environmentObject(bedtimeManager)
-                    .gesture(
-                        DragGesture(minimumDistance: 30)
-                            .onEnded { value in
-                                let dx = value.translation.width
-                                let dy = value.translation.height
-                                guard abs(dx) > abs(dy) * 1.5 else { return }
-                                let idx = currentIndex
-                                if dx < 0, idx < pages.count - 1 {
-                                    withAnimation(.easeInOut(duration: 0.2)) {
-                                        bedtimeManager.selectedPeriod = pages[idx + 1]
-                                    }
-                                } else if dx > 0, idx > 0 {
-                                    withAnimation(.easeInOut(duration: 0.2)) {
-                                        bedtimeManager.selectedPeriod = pages[idx - 1]
+                VStack(spacing: 0) {
+                    headerBar
+                    BurningParchmentView()
+                        .environmentObject(bedtimeManager)
+                        .gesture(
+                            DragGesture(minimumDistance: 30)
+                                .onEnded { value in
+                                    let dx = value.translation.width
+                                    let dy = value.translation.height
+                                    guard abs(dx) > abs(dy) * 1.5 else { return }
+                                    let idx = currentIndex
+                                    if dx < 0, idx < pages.count - 1 {
+                                        withAnimation(.easeInOut(duration: 0.2)) {
+                                            bedtimeManager.selectedPeriod = pages[idx + 1]
+                                        }
+                                    } else if dx > 0, idx > 0 {
+                                        withAnimation(.easeInOut(duration: 0.2)) {
+                                            bedtimeManager.selectedPeriod = pages[idx - 1]
+                                        }
                                     }
                                 }
-                            }
-                    )
-                pageIndicator
+                        )
+                    reflectionNudgeBanner
+                    pageIndicator
+                }
+            }
+            .toolbar(.hidden, for: .navigationBar)
+            .navigationDestination(isPresented: $showReflections) {
+                ReflectionUrnView(autoOpenInput: autoOpenReflectionInput)
+                    .environmentObject(reflectionManager)
             }
         }
         .sheet(isPresented: $showSettings) {
@@ -99,8 +116,106 @@ struct ContentView: View {
                    deadlineManager.deadlines.filter({ !$0.isExpired() }).isEmpty {
                     bedtimeManager.selectedPeriod = .day
                 }
+                nudgeEvaluatedThisSession = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                    evaluateReflectionNudge()
+                }
             }
         }
+        .onChange(of: bedtimeManager.isCountdownActive) { active in
+            if active { evaluateReflectionNudge() }
+        }
+        .onChange(of: showReflections) { isShowing in
+            if !isShowing { autoOpenReflectionInput = false }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                evaluateReflectionNudge()
+            }
+        }
+    }
+
+    // MARK: - Reflection Nudge
+
+    @ViewBuilder
+    private var reflectionNudgeBanner: some View {
+        if showReflectionNudge {
+            Button {
+                autoOpenReflectionInput = true
+                showReflections = true
+                markNudgeDismissedToday()
+                withAnimation(.easeIn(duration: 0.3)) { showReflectionNudge = false }
+            } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "moon.stars.fill")
+                        .font(.system(size: 13))
+                        .foregroundColor(.orange.opacity(0.85))
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("오늘 한 줄, 남기고 잘까요?")
+                            .font(.system(size: 13, weight: .medium, design: .serif))
+                            .foregroundColor(.orange.opacity(0.92))
+                        Text("재 항아리에 담아주세요")
+                            .font(.system(size: 10))
+                            .foregroundColor(.gray.opacity(0.6))
+                    }
+                    Spacer(minLength: 8)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundColor(.orange.opacity(0.55))
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal, 14)
+                .background(
+                    Capsule()
+                        .fill(.ultraThinMaterial)
+                        .overlay(Capsule().stroke(Color.orange.opacity(0.35), lineWidth: 1))
+                )
+                .shadow(color: .orange.opacity(0.2), radius: 10, y: 2)
+            }
+            .padding(.horizontal, 24)
+            .padding(.bottom, 6)
+            .transition(.move(edge: .bottom).combined(with: .opacity))
+            .accessibilityLabel("오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다")
+        }
+    }
+
+    private var shouldShowReflectionNudge: Bool {
+        !reflectionManager.urns.isEmpty
+        && !reflectionManager.hasReflectionToday
+        && !isNudgeDismissedToday
+        && bedtimeManager.isCountdownActive
+        && bedtimeManager.remainingSeconds > 0
+        && bedtimeManager.remainingSeconds < Self.nudgeWindowSeconds
+    }
+
+    private func evaluateReflectionNudge() {
+        guard !nudgeEvaluatedThisSession,
+              !showReflectionNudge,
+              shouldShowReflectionNudge else { return }
+        nudgeEvaluatedThisSession = true
+        withAnimation(reduceMotion ? .easeOut(duration: 0.2) : .spring(response: 0.55, dampingFraction: 0.85)) {
+            showReflectionNudge = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + Self.nudgeAutoHideSeconds) {
+            withAnimation(.easeIn(duration: 0.4)) {
+                showReflectionNudge = false
+            }
+        }
+    }
+
+    private var isNudgeDismissedToday: Bool {
+        nudgeDismissedISO == Self.todayKey()
+    }
+
+    private func markNudgeDismissedToday() {
+        nudgeDismissedISO = Self.todayKey()
+    }
+
+    private static func todayKey() -> String {
+        let f = DateFormatter()
+        f.dateFormat = "yyyy-MM-dd"
+        f.calendar = Calendar(identifier: .gregorian)
+        return f.string(from: Date())
     }
 
     // MARK: - Page Indicator
@@ -188,18 +303,13 @@ struct ContentView: View {
             Spacer()
 
             HStack(spacing: 18) {
+                AshUrnButton { showReflections = true }
+                    .environmentObject(reflectionManager)
+
                 Button(action: { showDeadlines = true }) {
-                    ZStack(alignment: .topTrailing) {
-                        Image(systemName: "flag.fill")
-                            .font(.system(size: 18))
-                            .foregroundColor(.orange.opacity(0.6))
-                        if !deadlineManager.deadlines.isEmpty {
-                            Circle()
-                                .fill(Color.red)
-                                .frame(width: 7, height: 7)
-                                .offset(x: 2, y: -2)
-                        }
-                    }
+                    Image(systemName: "flag.fill")
+                        .font(.system(size: 18))
+                        .foregroundColor(.orange.opacity(0.6))
                 }
                 .accessibilityLabel("데드라인")
                 .accessibilityValue(
@@ -239,4 +349,5 @@ struct ContentView: View {
     ContentView()
         .environmentObject(BedtimeManager())
         .environmentObject(DeadlineManager())
+        .environmentObject(ReflectionManager())
 }

@@ -6,14 +6,16 @@ import SwiftUI
 
 @main
 struct BurningParchmentApp: App {
-    @StateObject private var bedtimeManager  = BedtimeManager()
-    @StateObject private var deadlineManager = DeadlineManager()
+    @StateObject private var bedtimeManager    = BedtimeManager()
+    @StateObject private var deadlineManager   = DeadlineManager()
+    @StateObject private var reflectionManager = ReflectionManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(bedtimeManager)
                 .environmentObject(deadlineManager)
+                .environmentObject(reflectionManager)
                 .preferredColorScheme(.dark)
         }
     }

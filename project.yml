@@ -48,7 +48,7 @@ targets:
     info:
       path: BurningParchment/Info.plist
       properties:
-        CFBundleShortVersionString: "1.0.3"
+        CFBundleShortVersionString: "1.0.4"
         CFBundleVersion: "1"
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
@@ -85,7 +85,7 @@ targets:
       path: BurningParchmentWidgets/Info.plist
       properties:
         CFBundleDisplayName: BurningParchmentWidgets
-        CFBundleShortVersionString: "1.0.3"
+        CFBundleShortVersionString: "1.0.4"
         CFBundleVersion: "1"
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension

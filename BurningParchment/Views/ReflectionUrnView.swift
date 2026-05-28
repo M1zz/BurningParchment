@@ -73,6 +73,90 @@ struct UrnInteriorShape: Shape {
     }
 }
 
+// MARK: - Urn Engraving Shape
+// 채움 비율에 따라 단계적으로 드러나는 선각 문양.
+// 각 단계는 이전 단계를 포함 — 항아리를 "완성해가는" 느낌.
+
+struct UrnEngravingShape: Shape {
+    let fillLevel: Double
+
+    func path(in rect: CGRect) -> Path {
+        var p = Path()
+        let w = rect.width
+        let h = rect.height
+
+        // 단계 1 (≥ 5%): 하단부 가로선 한 줄 — 가장 먼저 드러남
+        if fillLevel >= 0.05 {
+            let y = h * 0.72
+            p.move(to: CGPoint(x: w * 0.22, y: y))
+            p.addLine(to: CGPoint(x: w * 0.78, y: y))
+        }
+
+        // 단계 2 (≥ 30%): 가로선 + 작은 마름모 3개
+        if fillLevel >= 0.30 {
+            let y = h * 0.62
+            p.move(to: CGPoint(x: w * 0.24, y: y))
+            p.addLine(to: CGPoint(x: w * 0.76, y: y))
+
+            let diaY = h * 0.67
+            for cx in [w * 0.32, w * 0.50, w * 0.68] {
+                let s: CGFloat = 3.5
+                p.move(to: CGPoint(x: cx, y: diaY - s))
+                p.addLine(to: CGPoint(x: cx + s, y: diaY))
+                p.addLine(to: CGPoint(x: cx, y: diaY + s))
+                p.addLine(to: CGPoint(x: cx - s, y: diaY))
+                p.closeSubpath()
+            }
+        }
+
+        // 단계 3 (≥ 55%): 식물 덩굴 같은 곡선 (몸체 중간)
+        if fillLevel >= 0.55 {
+            // 왼쪽 덩굴
+            p.move(to: CGPoint(x: w * 0.24, y: h * 0.50))
+            p.addQuadCurve(
+                to: CGPoint(x: w * 0.48, y: h * 0.44),
+                control: CGPoint(x: w * 0.30, y: h * 0.42)
+            )
+            // 작은 잎
+            p.move(to: CGPoint(x: w * 0.36, y: h * 0.45))
+            p.addQuadCurve(
+                to: CGPoint(x: w * 0.40, y: h * 0.40),
+                control: CGPoint(x: w * 0.34, y: h * 0.40)
+            )
+            // 오른쪽 덩굴
+            p.move(to: CGPoint(x: w * 0.76, y: h * 0.50))
+            p.addQuadCurve(
+                to: CGPoint(x: w * 0.52, y: h * 0.44),
+                control: CGPoint(x: w * 0.70, y: h * 0.42)
+            )
+            // 작은 잎
+            p.move(to: CGPoint(x: w * 0.64, y: h * 0.45))
+            p.addQuadCurve(
+                to: CGPoint(x: w * 0.60, y: h * 0.40),
+                control: CGPoint(x: w * 0.66, y: h * 0.40)
+            )
+        }
+
+        // 단계 4 (≥ 85%): 어깨/입구 띠 — 항아리 전체를 감싸는 마감 문양
+        if fillLevel >= 0.85 {
+            // 어깨 띠 (목 아래)
+            let topY = h * 0.32
+            p.move(to: CGPoint(x: w * 0.26, y: topY))
+            p.addLine(to: CGPoint(x: w * 0.74, y: topY))
+            // 작은 점 장식
+            for cx in [w * 0.30, w * 0.50, w * 0.70] {
+                p.addEllipse(in: CGRect(x: cx - 1.5, y: topY + 4, width: 3, height: 3))
+            }
+            // 바닥 마감선
+            let baseY = h * 0.82
+            p.move(to: CGPoint(x: w * 0.28, y: baseY))
+            p.addLine(to: CGPoint(x: w * 0.72, y: baseY))
+        }
+
+        return p
+    }
+}
+
 // MARK: - Seeded RNG
 
 struct SeededRNG: RandomNumberGenerator {
@@ -119,6 +203,20 @@ struct MixedAshUrnVisual: View {
                 ashLayer(in: size)
                     .clipShape(UrnInteriorShape())
 
+                // 선각 문양 — 채울수록 진해지고 확장됨, 항아리 본체 위에만 보이게 클립
+                UrnEngravingShape(fillLevel: fillLevel)
+                    .stroke(
+                        Color(red: 0.98, green: 0.72, blue: 0.32)
+                            .opacity(0.20 + 0.55 * min(fillLevel, 1.0)),
+                        style: StrokeStyle(lineWidth: 0.9, lineCap: .round, lineJoin: .round)
+                    )
+                    .shadow(
+                        color: Color.orange.opacity(fillLevel >= 0.85 ? 0.45 : 0.0),
+                        radius: fillLevel >= 0.85 ? 3 : 0
+                    )
+                    .clipShape(UrnShape())
+                    .allowsHitTesting(false)
+
                 // 입구 빛
                 UrnShape()
                     .stroke(Color.orange.opacity(0.55), lineWidth: 0.8)
@@ -157,14 +255,13 @@ struct MixedAshUrnVisual: View {
                 .frame(height: interiorBottom - ashTopY)
                 .offset(y: (ashTopY + interiorBottom) / 2 - size.height / 2)
 
-            // 4색 입자 — 카테고리별 개수에 비례
+            // 4색 입자 — 카테고리별 개수에 비례 (바닥에 쌓임)
             Canvas { ctx, cSize in
                 let baseSeed = UInt64(truncatingIfNeeded: urn.id.uuidString.hashValue)
                 var rng = SeededRNG(seed: baseSeed == 0 ? 0xDEADBEEF : baseSeed)
 
-                // 카테고리별로 그릴 입자 개수 (회고 1개 = 입자 약 4개)
-                let categoriesInOrder: [ReflectionCategory] = [.forged, .accept, .missed, .stop, .uncategorized]
-                for cat in categoriesInOrder {
+                let settledOrder: [ReflectionCategory] = [.forged, .accept, .missed, .stop, .uncategorized]
+                for cat in settledOrder {
                     let count = counts[cat] ?? 0
                     guard count > 0 else { continue }
                     let particles = min(count * 4, 60)
@@ -175,6 +272,28 @@ struct MixedAshUrnVisual: View {
                         let y = ashTopY + (interiorBottom - ashTopY) * yRel
                         let r = CGFloat.random(in: 0.7...1.8, using: &rng)
                         let alpha = Double.random(in: 0.45...0.95, using: &rng)
+                        ctx.fill(
+                            Path(ellipseIn: CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)),
+                            with: .color(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(alpha))
+                        )
+                    }
+                }
+
+                // scattered — 회색 먼지.  쌓이지 않고 항아리 상단 빈 공간에 가볍게 떠다님.
+                let scatteredCount = counts[.scattered] ?? 0
+                if scatteredCount > 0 {
+                    let dust = min(scatteredCount * 3, 40)
+                    let rgb = ReflectionCategory.scattered.particleColor
+                    // 떠다니는 영역: 입구 근처(interiorTop) ~ ashTopY 사이 + 약간 위로 겹침
+                    let dustTop = interiorTop + 4
+                    let dustBottom = max(dustTop + 8, ashTopY - 2)
+                    for _ in 0..<dust {
+                        let x = CGFloat.random(in: 0...cSize.width, using: &rng)
+                        let yRel = CGFloat.random(in: 0...1, using: &rng)
+                        // 위쪽일수록 밀도가 약간 낮아지게
+                        let y = dustTop + (dustBottom - dustTop) * yRel
+                        let r = CGFloat.random(in: 0.5...1.2, using: &rng)
+                        let alpha = Double.random(in: 0.18...0.40, using: &rng)
                         ctx.fill(
                             Path(ellipseIn: CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)),
                             with: .color(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(alpha))
@@ -267,21 +386,33 @@ struct ReflectionUrnView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    showAddUrn = true
-                } label: {
-                    ZStack(alignment: .topTrailing) {
-                        Image(systemName: "archivebox.fill")
+                HStack(spacing: 16) {
+                    NavigationLink {
+                        ReflectionBookView()
+                            .environmentObject(reflectionManager)
+                    } label: {
+                        Image(systemName: "book.closed.fill")
                             .font(.system(size: 17))
                             .foregroundColor(.orange)
-                        Image(systemName: "plus.circle.fill")
-                            .font(.system(size: 10, weight: .bold))
-                            .foregroundColor(.orange)
-                            .background(Circle().fill(Color(red: 0.08, green: 0.06, blue: 0.04)))
-                            .offset(x: 4, y: -4)
                     }
+                    .accessibilityLabel("회고 책으로 보기")
+
+                    Button {
+                        showAddUrn = true
+                    } label: {
+                        ZStack(alignment: .topTrailing) {
+                            Image(systemName: "archivebox.fill")
+                                .font(.system(size: 17))
+                                .foregroundColor(.orange)
+                            Image(systemName: "plus.circle.fill")
+                                .font(.system(size: 10, weight: .bold))
+                                .foregroundColor(.orange)
+                                .background(Circle().fill(Color(red: 0.08, green: 0.06, blue: 0.04)))
+                                .offset(x: 4, y: -4)
+                        }
+                    }
+                    .accessibilityLabel("새 항아리 만들기")
                 }
-                .accessibilityLabel("새 항아리 만들기")
             }
         }
         .sheet(isPresented: $showInput) {
@@ -351,9 +482,25 @@ struct ReflectionUrnView: View {
             ForEach(reflectionManager.urns) { urn in
                 urnCell(urn)
                     .onTapGesture { selectedUrn = urn }
+                    .dropDestination(for: String.self) { items, _ in
+                        // 드래그된 회고 ID(들)를 이 항아리로 이동
+                        var moved = false
+                        for idStr in items {
+                            guard let uuid = UUID(uuidString: idStr),
+                                  var ref = reflectionManager.reflections.first(where: { $0.id == uuid })
+                            else { continue }
+                            ref.urnId = urn.id
+                            reflectionManager.update(ref)
+                            moved = true
+                        }
+                        if moved {
+                            let gen = UINotificationFeedbackGenerator()
+                            gen.notificationOccurred(.success)
+                        }
+                        return moved
+                    } isTargeted: { _ in }
                     .contextMenu {
                         Button {
-                            // 편집은 UrnDetailView 안에서. 여기선 빠른 액션만.
                             selectedUrn = urn
                         } label: {
                             Label("열기", systemImage: "arrow.up.right.square")
@@ -417,6 +564,14 @@ struct ReflectionUrnView: View {
                     ForEach(recent) { item in
                         ReflectionRow(item: item,
                                       urn: reflectionManager.urns.first(where: { $0.id == item.urnId }))
+                            .draggable(item.id.uuidString) {
+                                ReflectionRow(
+                                    item: item,
+                                    urn: reflectionManager.urns.first(where: { $0.id == item.urnId })
+                                )
+                                .opacity(0.85)
+                                .frame(maxWidth: 280)
+                            }
                             .onTapGesture { editing = item }
                             .contextMenu {
                                 Button(role: .destructive) {
@@ -428,6 +583,12 @@ struct ReflectionUrnView: View {
                     }
                 }
                 .padding(.horizontal, 16)
+
+                Text("회고를 항아리로 끌어다 옮길 수 있어요")
+                    .font(.system(size: 10, design: .serif))
+                    .foregroundColor(.gray.opacity(0.4))
+                    .padding(.horizontal, 16)
+                    .padding(.top, 4)
             }
         }
     }
@@ -616,8 +777,8 @@ struct UrnDetailView: View {
 
     private var countsBreakdown: some View {
         let counts = reflectionManager.categoryCounts(for: urn)
-        return HStack(spacing: 10) {
-            ForEach([ReflectionCategory.forged, .missed, .stop, .accept], id: \.self) { cat in
+        return HStack(spacing: 8) {
+            ForEach([ReflectionCategory.forged, .missed, .stop, .accept, .scattered], id: \.self) { cat in
                 VStack(spacing: 4) {
                     Circle()
                         .fill(Color(red: cat.particleColor.0, green: cat.particleColor.1, blue: cat.particleColor.2))
@@ -766,15 +927,23 @@ struct ReflectionInputView: View {
 
     @State private var text: String = ""
     @State private var keyword: String = ""
+    @State private var tomorrowIntent: String = ""
     @State private var date: Date = Date()
     @State private var selectedUrnId: UUID? = nil
     @State private var hasIntent: Bool? = nil
     @State private var spentTime: Bool? = nil
     @State private var driftFeeling: DriftFeeling? = nil
+    @State private var currentStep: InputStep = .text
+    @State private var sheetDetent: PresentationDetent = .height(460)
+    @State private var savedReflectionId: UUID? = nil
+    @State private var saveStatus: SaveStatus = .idle
+    @State private var saveWorkItem: DispatchWorkItem? = nil
+    @State private var classificationPoint: CGPoint? = nil
     @FocusState private var focused: Bool
 
-    @State private var showDriftBranchAlert = false
-    @State private var showSkipNotice = false
+    private enum SaveStatus { case idle, scheduled, saved }
+    private enum InputStep: Int, CaseIterable { case text = 0, category, tomorrow }
+
     @State private var showCreateUrn = false
 
     private let suggestions = ["성장", "감사", "도전", "휴식", "배움", "관계", "실수", "기쁨"]
@@ -784,27 +953,36 @@ struct ReflectionInputView: View {
     }
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+        ZStack(alignment: .top) {
+            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
 
+            VStack(spacing: 0) {
+                chromeBar
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 22) {
-                        Text(existing == nil ? "오늘을 보내고 얻은 것, 얻지 못 한 것은 무엇인가요?" : "회고 수정")
-                            .font(.system(size: 20, weight: .semibold, design: .serif))
-                            .foregroundColor(.orange.opacity(0.9))
-                            .padding(.horizontal, 20)
-                            .padding(.top, 8)
+                    VStack(alignment: .leading, spacing: 12) {
+                        stepContent
+                            .padding(.horizontal, 22)
+                            .padding(.top, 4)
+                            .id(currentStep)
+                            .transition(.opacity.combined(with: .move(edge: .trailing)))
 
-                        textEditor.padding(.horizontal, 20)
+                        HStack {
+                            if currentStep == .tomorrow {
+                                newEntryButton
+                                Spacer()
+                                closeButton
+                            } else {
+                                Spacer()
+                                nextButton
+                            }
+                        }
+                        .padding(.horizontal, 22)
+                        .padding(.top, 6)
 
-                        urnPicker.padding(.horizontal, 20)
+                        stepDots
+                            .padding(.top, 2)
 
-                        classificationSection.padding(.horizontal, 20)
-
-                        keywordSection.padding(.horizontal, 20)
-
-                        if existing != nil {
+                        if existing != nil && currentStep == .text {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("날짜")
                                     .font(.system(size: 12, weight: .medium))
@@ -815,75 +993,359 @@ struct ReflectionInputView: View {
                                     .tint(.orange)
                                     .labelsHidden()
                             }
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 22)
+                            .padding(.top, 8)
                         }
                     }
-                    .padding(.bottom, 40)
+                    .padding(.bottom, 24)
                 }
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("취소") { dismiss() }
-                        .foregroundColor(.gray)
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("담기") { trySave() }
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(canSave ? .orange : .gray)
-                        .disabled(!canSave)
-                }
-            }
-            .alert("의지 없이 흘러간 시간이네요", isPresented: $showDriftBranchAlert) {
-                Button("그만둘 것") {
-                    driftFeeling = .stop
-                    finalizeSave()
-                }
-                Button("받아들일 것") {
-                    driftFeeling = .accept
-                    finalizeSave()
-                }
-                Button("취소", role: .cancel) {}
-            } message: {
-                Text("이 시간을 어떻게 받아들일까요?")
-            }
-            .alert("그냥 흘러간 시간", isPresented: $showSkipNotice) {
-                Button("닫기") { dismiss() }
-            } message: {
-                Text("원하지도, 시간을 들이지도 않은 일은 항아리에 담기지 않아요. 그냥 양피지와 함께 타버린 시간이에요.")
             }
         }
         .sheet(isPresented: $showCreateUrn) {
             UrnEditView(editing: nil)
                 .environmentObject(reflectionManager)
         }
+        .presentationDetents(detentSet, selection: $sheetDetent)
+        .presentationDragIndicator(.visible)
         .onAppear { setup() }
+        .onDisappear { flushPendingSave() }
+        .onChange(of: text) { _ in scheduleAutoSave() }
+        .onChange(of: keyword) { _ in scheduleAutoSave() }
+        .onChange(of: tomorrowIntent) { _ in scheduleAutoSave() }
+        .onChange(of: hasIntent) { _ in scheduleAutoSave() }
+        .onChange(of: spentTime) { _ in scheduleAutoSave() }
+        .onChange(of: driftFeeling) { _ in scheduleAutoSave() }
+        .onChange(of: selectedUrnId) { _ in scheduleAutoSave() }
+        .onChange(of: classificationPoint) { _ in scheduleAutoSave() }
+    }
+
+    private var detentSet: Set<PresentationDetent> {
+        [.height(340), .large]
+    }
+
+    // MARK: - Chrome Bar (작은 상단)
+
+    private var chromeBar: some View {
+        HStack {
+            Button {
+                flushPendingSave()
+                dismiss()
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundColor(.gray.opacity(0.75))
+                    .frame(width: 38, height: 38)
+            }
+            .accessibilityLabel("닫기 — 지금까지 적은 내용은 저장됩니다")
+
+            Spacer()
+
+            saveIndicator
+                .padding(.trailing, 6)
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 22)
+        .padding(.bottom, 6)
+    }
+
+    @ViewBuilder
+    private var saveIndicator: some View {
+        switch saveStatus {
+        case .idle:
+            // 비어 있을 때 — 자리를 잡고 있되 거의 안 보이게
+            HStack(spacing: 5) {
+                Image(systemName: "circle.dotted")
+                    .font(.system(size: 15))
+                Text("자동 저장")
+                    .font(.system(size: 11, design: .serif))
+            }
+            .foregroundColor(.gray.opacity(0.35))
+            .accessibilityLabel("아직 적힌 내용이 없습니다")
+
+        case .scheduled:
+            HStack(spacing: 5) {
+                Image(systemName: "circle.dotted")
+                    .font(.system(size: 15))
+                Text("저장 중…")
+                    .font(.system(size: 11, design: .serif))
+            }
+            .foregroundColor(.orange.opacity(0.7))
+            .accessibilityLabel("저장 중")
+
+        case .saved:
+            HStack(spacing: 5) {
+                Image(systemName: "checkmark.circle.fill")
+                    .font(.system(size: 16))
+                Text("저장됨")
+                    .font(.system(size: 11, weight: .medium, design: .serif))
+            }
+            .foregroundColor(Color(red: 0.30, green: 0.78, blue: 0.42))
+            .accessibilityLabel("저장됨")
+        }
+    }
+
+    // MARK: - Wizard Steps
+
+    @ViewBuilder
+    private var stepContent: some View {
+        switch currentStep {
+        case .text:
+            textEditor
+        case .category:
+            classificationSection
+        case .tomorrow:
+            tomorrowIntentSection
+        }
+    }
+
+    private var stepDots: some View {
+        HStack(spacing: 6) {
+            ForEach(InputStep.allCases, id: \.rawValue) { step in
+                Button {
+                    goTo(step)
+                } label: {
+                    Circle()
+                        .fill(step == currentStep ? Color.orange : Color.orange.opacity(0.18))
+                        .frame(width: step == currentStep ? 8 : 5,
+                               height: step == currentStep ? 8 : 5)
+                }
+                .accessibilityLabel(accessibilityLabel(for: step))
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private func accessibilityLabel(for step: InputStep) -> String {
+        switch step {
+        case .text: return "본문 단계"
+        case .category: return "분류 단계"
+        case .tomorrow: return "내일 메모 단계"
+        }
+    }
+
+    private var nextButton: some View {
+        Button {
+            advance()
+        } label: {
+            HStack(spacing: 6) {
+                Text(nextLabel)
+                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                Image(systemName: nextIcon)
+                    .font(.system(size: 11, weight: .semibold))
+            }
+            .foregroundColor(canAdvance ? .white : .gray.opacity(0.4))
+            .padding(.horizontal, 14)
+            .padding(.vertical, 7)
+            .background(
+                Capsule()
+                    .fill(canAdvance ? Color.orange.opacity(0.85) : Color.white.opacity(0.04))
+            )
+        }
+        .disabled(!canAdvance)
+        .accessibilityLabel(nextLabel)
+        .accessibilityHint(nextHint)
+    }
+
+    /// .tomorrow step 좌측 — 현재 입력을 저장하고 새 회고 시작
+    private var newEntryButton: some View {
+        Button {
+            startNewEntry()
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: "plus.circle")
+                    .font(.system(size: 11, weight: .semibold))
+                Text("새 회고")
+                    .font(.system(size: 14, weight: .semibold, design: .serif))
+            }
+            .foregroundColor(canAdvance ? .orange.opacity(0.9) : .gray.opacity(0.4))
+            .padding(.horizontal, 14)
+            .padding(.vertical, 7)
+            .background(
+                Capsule()
+                    .fill(Color.white.opacity(0.04))
+                    .overlay(
+                        Capsule().stroke(
+                            canAdvance ? Color.orange.opacity(0.45) : Color.orange.opacity(0.15),
+                            lineWidth: 1
+                        )
+                    )
+            )
+        }
+        .disabled(!canAdvance)
+        .accessibilityLabel("새 회고")
+        .accessibilityHint("지금까지 적은 회고를 저장하고 빈 입력칸으로 넘어갑니다")
+    }
+
+    /// .tomorrow step 우측 — 시트를 닫고 마침
+    private var closeButton: some View {
+        Button {
+            flushPendingSave()
+            dismiss()
+        } label: {
+            HStack(spacing: 6) {
+                Text("닫기")
+                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                Image(systemName: "checkmark")
+                    .font(.system(size: 11, weight: .semibold))
+            }
+            .foregroundColor(.white)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 7)
+            .background(
+                Capsule().fill(Color.orange.opacity(0.85))
+            )
+        }
+        .accessibilityLabel("닫기")
+        .accessibilityHint("저장하고 시트를 닫습니다")
+    }
+
+    private var nextLabel: String {
+        currentStep == .tomorrow ? "새 회고" : "다음"
+    }
+
+    private var nextIcon: String {
+        currentStep == .tomorrow ? "plus.circle" : "arrow.right"
+    }
+
+    private var nextHint: String {
+        switch currentStep {
+        case .text:     return "본문을 저장하고 분류 단계로 이동합니다"
+        case .category: return "분류를 저장하고 내일 메모 단계로 이동합니다"
+        case .tomorrow: return "저장하고 새 회고를 시작합니다"
+        }
+    }
+
+    private var canAdvance: Bool {
+        // text 단계에서만 본문 필수. 나머지는 비워두고 건너뛰기 가능.
+        if currentStep == .text {
+            return !trimmed.isEmpty && selectedUrnId != nil
+        }
+        return selectedUrnId != nil
+    }
+
+    private func advance() {
+        flushPendingSave()
+
+        if let next = InputStep(rawValue: currentStep.rawValue + 1) {
+            let gen = UISelectionFeedbackGenerator()
+            gen.selectionChanged()
+            withAnimation(.easeInOut(duration: 0.22)) {
+                currentStep = next
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
+                focused = true
+            }
+        } else {
+            // .tomorrow → 새 회고
+            startNewEntry()
+        }
+    }
+
+    private func goTo(_ step: InputStep) {
+        guard step != currentStep else { return }
+        flushPendingSave()
+        let gen = UISelectionFeedbackGenerator()
+        gen.selectionChanged()
+        withAnimation(.easeInOut(duration: 0.22)) {
+            currentStep = step
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
+            focused = true
+        }
+    }
+
+    private func startNewEntry() {
+        flushPendingSave()
+
+        let gen = UINotificationFeedbackGenerator()
+        gen.notificationOccurred(.success)
+
+        withAnimation(.easeInOut(duration: 0.2)) {
+            text = ""
+            keyword = ""
+            tomorrowIntent = ""
+            hasIntent = nil
+            spentTime = nil
+            driftFeeling = nil
+            classificationPoint = nil
+            currentStep = .text
+        }
+
+        savedReflectionId = nil
+        saveStatus = .idle
+
+        focused = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) {
+            focused = true
+        }
     }
 
     // MARK: - Sections
 
     private var textEditor: some View {
-        ZStack(alignment: .topLeading) {
-            if text.isEmpty {
-                Text("한 줄로 남겨보세요. 한 일, 배운 것, 후회 무엇이든 좋아요.")
-                    .font(.system(size: 15, design: .serif))
-                    .foregroundColor(.gray.opacity(0.35))
-                    .padding(16)
-            }
-            TextEditor(text: $text)
-                .focused($focused)
-                .font(.system(size: 15, design: .serif))
-                .foregroundColor(.orange.opacity(0.92))
-                .scrollContentBackground(.hidden)
-                .frame(minHeight: 100)
-                .padding(10)
-        }
+        TextField(
+            existing == nil ? "오늘 하루, 한 줄로 남겨봐요." : "회고를 수정합니다.",
+            text: $text,
+            axis: .vertical
+        )
+        .lineLimit(1...8)
+        .focused($focused)
+        .font(.system(size: 20, design: .serif))
+        .foregroundColor(.orange.opacity(0.95))
+        .tint(.orange)
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white.opacity(0.04))
-                .overlay(RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.orange.opacity(0.18), lineWidth: 1))
+                .fill(Color.white.opacity(0.05))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.orange.opacity(focused ? 0.35 : 0.18), lineWidth: 1)
+                )
         )
+    }
+
+    // MARK: - Urn Hint (작은 라벨)
+
+    @ViewBuilder
+    private var urnHintLabel: some View {
+        if let urn = reflectionManager.urns.first(where: { $0.id == selectedUrnId }) {
+            Button {
+                // 현재 입력한 옵션이 어디까지인지 한눈에 볼 수 있게 본문 단계로 돌아감
+                goTo(.text)
+            } label: {
+                HStack(spacing: 6) {
+                    Text(urn.emoji).font(.system(size: 13))
+                    Text(urn.name)
+                        .font(.system(size: 13, weight: .medium, design: .serif))
+
+                    if let cat = previewCategory {
+                        let rgb = cat.particleColor
+                        Circle()
+                            .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
+                            .frame(width: 6, height: 6)
+                    }
+                    if !keyword.isEmpty {
+                        Text("#")
+                            .font(.system(size: 11, weight: .semibold))
+                    }
+                    if !tomorrowIntent.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                        Image(systemName: "sunrise")
+                            .font(.system(size: 10))
+                    }
+                }
+                .foregroundColor(.orange.opacity(0.7))
+                .padding(.horizontal, 10)
+                .padding(.vertical, 6)
+                .background(
+                    Capsule()
+                        .fill(Color.white.opacity(0.04))
+                        .overlay(Capsule().stroke(Color.orange.opacity(0.22), lineWidth: 1))
+                )
+            }
+            .accessibilityLabel("\(urn.name) 항아리")
+            .accessibilityHint("탭하여 본문 단계로 돌아감")
+        }
     }
 
     private var urnPicker: some View {
@@ -939,48 +1401,42 @@ struct ReflectionInputView: View {
     }
 
     private var classificationSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("어떤 재가 될까요?")
-                .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.55))
+        VStack(alignment: .leading, spacing: 8) {
+            // 헤더 자리에 안내 또는 카테고리 미리보기 — 그래프 아래엔 아무것도 추가 안 함
+            classificationHeader
 
-            classificationToggle(
-                title: "원해서 한 일이었나요?",
-                yesLabel: "원했어요",
-                noLabel: "그냥 흘렀어요",
-                value: $hasIntent
+            ClassificationGraph(
+                point: $classificationPoint,
+                onPick: applyClassificationPoint
             )
-
-            classificationToggle(
-                title: "시간을 들였나요?",
-                yesLabel: "들였어요",
-                noLabel: "안 들였어요",
-                value: $spentTime
-            )
-
-            if let cat = previewCategory {
-                HStack(spacing: 8) {
-                    let rgb = cat.particleColor
-                    Circle()
-                        .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
-                        .frame(width: 10, height: 10)
-                    Text("→ \(cat.title)")
-                        .font(.system(size: 13, design: .serif))
-                        .foregroundColor(.orange.opacity(0.85))
-                }
-                .padding(.top, 4)
-            } else if hasIntent == false && spentTime == false {
-                Text("→ 항아리에 담기지 않아요 (그냥 흘러간 시간)")
-                    .font(.system(size: 12, design: .serif))
-                    .foregroundColor(.gray.opacity(0.55))
-                    .padding(.top, 4)
-            } else if hasIntent == false && spentTime == true {
-                Text("→ 담을 때 \"그만둘 것 / 받아들일 것\"을 여쭤볼게요")
-                    .font(.system(size: 12, design: .serif))
-                    .foregroundColor(.gray.opacity(0.55))
-                    .padding(.top, 4)
-            }
+            .frame(height: 220)
         }
+    }
+
+    @ViewBuilder
+    private var classificationHeader: some View {
+        if let cat = previewCategory {
+            HStack(spacing: 6) {
+                let rgb = cat.particleColor
+                Circle()
+                    .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
+                    .frame(width: 9, height: 9)
+                Text("→ \(cat.title)")
+                    .font(.system(size: 13, weight: .medium, design: .serif))
+                    .foregroundColor(.orange.opacity(0.85))
+            }
+        } else {
+            Text("오늘은 어떤 하루였나요? — 콕 찍어보세요")
+                .font(.system(size: 12, weight: .medium))
+                .foregroundColor(.gray.opacity(0.6))
+        }
+    }
+
+    private func applyClassificationPoint(_ p: CGPoint) {
+        hasIntent = p.x > 0.5
+        spentTime = p.y > 0.5
+        // 좌상 분면 (의지❌ 시간⭕️)은 accept 고정.  stop은 신규 작성에서 더 이상 만들어지지 않음.
+        driftFeeling = (p.x < 0.5 && p.y > 0.5) ? .accept : nil
     }
 
     private func classificationToggle(title: String,
@@ -1051,6 +1507,61 @@ struct ReflectionInputView: View {
         }
     }
 
+    // MARK: - Tomorrow Intent
+
+    private var tomorrowIntentSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 6) {
+                Image(systemName: "sunrise")
+                    .font(.system(size: 11))
+                    .foregroundColor(.orange.opacity(0.7))
+                Text(tomorrowQuestion)
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.gray.opacity(0.65))
+            }
+
+            TextField(tomorrowPlaceholder, text: $tomorrowIntent)
+                .font(.system(size: 14, design: .serif))
+                .foregroundColor(.orange.opacity(0.9))
+                .padding(12)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.white.opacity(0.04))
+                        .overlay(RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.orange.opacity(0.18), lineWidth: 1))
+                )
+
+            Text("내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요.")
+                .font(.system(size: 10))
+                .foregroundColor(.gray.opacity(0.45))
+        }
+    }
+
+    /// 사용자가 그래프에서 찍은 분류에 따라 "내일 어떻게?" 질문 자체가 달라짐.
+    private var tomorrowQuestion: String {
+        guard let cat = previewCategory else { return "내일 어떻게 해볼까요?" }
+        switch cat {
+        case .forged:    return "더 잘 하려면 내일 무엇을 할까요?"
+        case .missed:    return "내일 새롭게 어떤 걸 시도해볼까요?"
+        case .accept:    return "이 시간을 내일은 어떻게 다룰까요?"
+        case .stop:      return "내일은 무엇을 끊어낼까요?"
+        case .scattered: return "내일은 어떻게 다르게 보낼까요?"
+        case .uncategorized: return "내일 어떻게 해볼까요?"
+        }
+    }
+
+    private var tomorrowPlaceholder: String {
+        guard let cat = previewCategory else { return "예: 점심 직후 운동 30분" }
+        switch cat {
+        case .forged:    return "예: 운동 시간을 30분 늘리기"
+        case .missed:    return "예: 점심 직후 운동 30분"
+        case .accept:    return "예: 산책 20분으로 바꾸기"
+        case .stop:      return "예: SNS 사용 15분 제한"
+        case .scattered: return "예: 책 한 챕터 읽기"
+        case .uncategorized: return "예: 점심 직후 운동 30분"
+        }
+    }
+
     // MARK: - Helpers
 
     private var trimmed: String {
@@ -1062,15 +1573,14 @@ struct ReflectionInputView: View {
         switch (i, t) {
         case (true, true):   return .forged
         case (true, false):  return .missed
-        case (false, true):  return nil  // 분기 필요
-        case (false, false): return nil
+        case (false, true):  return nil  // 분기 필요 (stop/accept)
+        case (false, false): return .scattered
         }
     }
 
     private var canSave: Bool {
         guard !trimmed.isEmpty else { return false }
         guard selectedUrnId != nil else { return false }
-        guard hasIntent != nil, spentTime != nil else { return false }
         return true
     }
 
@@ -1081,17 +1591,35 @@ struct ReflectionInputView: View {
             date = e.date
             selectedUrnId = e.urnId
             switch e.category {
-            case .forged: hasIntent = true;  spentTime = true
-            case .missed: hasIntent = true;  spentTime = false
-            case .stop:   hasIntent = false; spentTime = true; driftFeeling = .stop
-            case .accept: hasIntent = false; spentTime = true; driftFeeling = .accept
+            case .forged:    hasIntent = true;  spentTime = true
+            case .missed:    hasIntent = true;  spentTime = false
+            case .stop:      hasIntent = false; spentTime = true; driftFeeling = .stop
+            case .accept:    hasIntent = false; spentTime = true; driftFeeling = .accept
+            case .scattered: hasIntent = false; spentTime = false
             case .uncategorized: break
+            }
+            tomorrowIntent = e.tomorrowIntent ?? ""
+            savedReflectionId = e.id
+            saveStatus = .saved
+            // 저장된 정확한 좌표가 있으면 그걸 복원.  없으면 카테고리에서 분면 대표 좌표로 역산.
+            if let saved = e.classificationPoint {
+                classificationPoint = saved
+            } else {
+                switch e.category {
+                case .forged:    classificationPoint = CGPoint(x: 0.75, y: 0.75)
+                case .missed:    classificationPoint = CGPoint(x: 0.75, y: 0.25)
+                case .stop, .accept:
+                                    classificationPoint = CGPoint(x: 0.25, y: 0.75)
+                case .scattered: classificationPoint = CGPoint(x: 0.25, y: 0.25)
+                case .uncategorized: classificationPoint = nil
+                }
             }
         } else {
             date = Date()
-            // 항아리가 1개면 자동 선택
             if reflectionManager.urns.count == 1 {
                 selectedUrnId = reflectionManager.urns.first?.id
+            } else if let first = reflectionManager.urns.first {
+                selectedUrnId = first.id
             }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
@@ -1099,45 +1627,290 @@ struct ReflectionInputView: View {
         }
     }
 
-    private func trySave() {
-        guard !trimmed.isEmpty, let urnId = selectedUrnId else { return }
-        guard let intent = hasIntent, let time = spentTime else { return }
 
-        switch (intent, time) {
-        case (true, true), (true, false):
-            finalizeSave()
-        case (false, true):
-            if driftFeeling == nil {
-                showDriftBranchAlert = true
-            } else {
-                finalizeSave()
-            }
-        case (false, false):
-            showSkipNotice = true
+    // MARK: - Autosave
+
+    private func canAutoSave() -> Bool {
+        guard !trimmed.isEmpty, selectedUrnId != nil else { return false }
+        // 분류가 (의지❌, 시간⭕️)인데 drift 미선택이면 카테고리 확정 불가 → 저장 보류
+        if hasIntent == false, spentTime == true, driftFeeling == nil {
+            return false
         }
-        _ = urnId  // silence warning
+        return true
     }
 
-    private func finalizeSave() {
-        guard let urnId = selectedUrnId,
-              let cat = ReflectionCategory.from(
-                intent: hasIntent ?? false,
-                spentTime: spentTime ?? false,
-                drift: driftFeeling)
-        else { return }
+    private func scheduleAutoSave() {
+        saveWorkItem?.cancel()
 
-        if let e = existing {
-            var updated = e
+        guard canAutoSave() else {
+            // 텍스트가 비어 있거나 조건 미충족이면 인디케이터를 idle로 되돌림
+            // 단, 이미 저장된 회고가 있고 사용자가 더 입력 중이면 saved 상태 유지
+            if savedReflectionId == nil {
+                saveStatus = .idle
+            }
+            return
+        }
+
+        saveStatus = .scheduled
+        let work = DispatchWorkItem { performAutoSave() }
+        saveWorkItem = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7, execute: work)
+    }
+
+    private func flushPendingSave() {
+        // 시트가 닫히거나 명시적 flush가 필요할 때 debounce를 건너뛰고 즉시 저장
+        saveWorkItem?.cancel()
+        saveWorkItem = nil
+        guard canAutoSave() else { return }
+        performAutoSave()
+    }
+
+    private func performAutoSave() {
+        guard let urnId = selectedUrnId, !trimmed.isEmpty else { return }
+
+        let cat: ReflectionCategory = {
+            if let i = hasIntent, let t = spentTime,
+               let resolved = ReflectionCategory.from(intent: i, spentTime: t, drift: driftFeeling) {
+                return resolved
+            }
+            return .uncategorized
+        }()
+
+        let trimmedIntent = tomorrowIntent.trimmingCharacters(in: .whitespacesAndNewlines)
+        let intentToSave: String? = trimmedIntent.isEmpty ? nil : trimmedIntent
+        let kw = keyword.isEmpty ? nil : keyword
+
+        if let id = savedReflectionId,
+           let existingRec = reflectionManager.reflections.first(where: { $0.id == id }) {
+            // 이미 저장된 회고를 갱신
+            var updated = existingRec
             updated.text = trimmed
             updated.urnId = urnId
             updated.category = cat
-            updated.keyword = keyword.isEmpty ? nil : keyword
+            updated.keyword = kw
+            updated.tomorrowIntent = intentToSave
+            updated.classificationPoint = classificationPoint
             updated.date = DayReflection.normalize(date)
             reflectionManager.update(updated)
         } else {
-            reflectionManager.add(text: trimmed, urnId: urnId, category: cat, keyword: keyword, date: date)
+            // 새 회고 생성
+            let created = reflectionManager.add(
+                text: trimmed,
+                urnId: urnId,
+                category: cat,
+                keyword: keyword,
+                tomorrowIntent: intentToSave,
+                classificationPoint: classificationPoint,
+                date: date
+            )
+            savedReflectionId = created.id
         }
-        dismiss()
+
+        saveStatus = .saved
+    }
+}
+
+// MARK: - Classification Graph
+// 2D 그래프에 손가락으로 콕 찍어 분류.
+// X축: 의지 (좌 없음 → 우 있음), Y축: 시간 (하 없음 → 상 들임).
+// 4분면 각각 카테고리 색으로 옅게 칠해 사용자가 어느 영역인지 인지하게.
+
+struct ClassificationGraph: View {
+    @Binding var point: CGPoint?
+    let onPick: (CGPoint) -> Void
+
+    @State private var lastCellX: Int = -1
+    @State private var lastCellY: Int = -1
+    @State private var isDragging: Bool = false
+
+    private static let cellsPerAxis: Int = 4  // 4×4 = 16칸
+
+    private func cellIndex(of p: CGPoint) -> (Int, Int) {
+        let n = Self.cellsPerAxis
+        let cx = min(n - 1, max(0, Int(p.x * CGFloat(n))))
+        let cy = min(n - 1, max(0, Int(p.y * CGFloat(n))))
+        return (cx, cy)
+    }
+
+    var body: some View {
+        GeometryReader { geo in
+            let s = min(geo.size.width, geo.size.height)
+            ZStack {
+                quadrants(size: s)
+                quadrantLabels(size: s)
+                axisLines(size: s)
+                axisLabels(size: s)
+
+                if let p = point {
+                    pinView
+                        .position(x: p.x * s, y: (1 - p.y) * s)
+                }
+            }
+            .frame(width: s, height: s)
+            .frame(maxWidth: .infinity, alignment: .center)
+            .contentShape(Rectangle())
+            .gesture(
+                DragGesture(minimumDistance: 0)
+                    .onChanged { value in
+                        let x = max(0.04, min(0.96, value.location.x / s))
+                        let y = max(0.04, min(0.96, 1 - value.location.y / s))
+                        let np = CGPoint(x: x, y: y)
+
+                        // 4×4 = 16칸 격자.  셀 경계를 넘을 때마다 짧은 selection 햅틱.
+                        let (cx, cy) = cellIndex(of: np)
+                        if !isDragging {
+                            isDragging = true
+                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        } else if cx != lastCellX || cy != lastCellY {
+                            UISelectionFeedbackGenerator().selectionChanged()
+                        }
+                        lastCellX = cx
+                        lastCellY = cy
+
+                        point = np
+                        onPick(np)
+                    }
+                    .onEnded { _ in
+                        isDragging = false
+                        // 손가락 떼면 soft impact 으로 확정 느낌
+                        UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    }
+            )
+            .accessibilityElement()
+            .accessibilityLabel("분류 그래프")
+            .accessibilityHint("두 축에 따라 손가락으로 콕 찍어 분류합니다")
+        }
+    }
+
+    private func quadrants(size: CGFloat) -> some View {
+        let half = size / 2
+        return ZStack {
+            // 좌상: accept (의지❌ 시간⭕️) — 황금빛
+            Rectangle()
+                .fill(Color(red: 0.95, green: 0.78, blue: 0.42).opacity(0.14))
+                .frame(width: half, height: half)
+                .position(x: half / 2, y: half / 2)
+
+            // 우상: forged (의지⭕️ 시간⭕️) — 따뜻한 주황
+            Rectangle()
+                .fill(Color(red: 0.92, green: 0.55, blue: 0.25).opacity(0.18))
+                .frame(width: half, height: half)
+                .position(x: half + half / 2, y: half / 2)
+
+            // 좌하: scattered (의지❌ 시간❌) — 옅은 회색
+            Rectangle()
+                .fill(Color(red: 0.68, green: 0.66, blue: 0.62).opacity(0.12))
+                .frame(width: half, height: half)
+                .position(x: half / 2, y: half + half / 2)
+
+            // 우하: missed (의지⭕️ 시간❌) — 옅은 갈색
+            Rectangle()
+                .fill(Color(red: 0.72, green: 0.62, blue: 0.42).opacity(0.15))
+                .frame(width: half, height: half)
+                .position(x: half + half / 2, y: half + half / 2)
+        }
+        .overlay(
+            Rectangle()
+                .stroke(Color.orange.opacity(0.20), lineWidth: 1)
+                .frame(width: size, height: size)
+        )
+    }
+
+    private func axisLines(size: CGFloat) -> some View {
+        ZStack {
+            // 16칸 격자 — 1/4, 3/4 위치의 옅은 분할선
+            Path { p in
+                let step = size / CGFloat(Self.cellsPerAxis)
+                for i in 1..<Self.cellsPerAxis where i != Self.cellsPerAxis / 2 {
+                    let v = step * CGFloat(i)
+                    p.move(to: CGPoint(x: v, y: 0))
+                    p.addLine(to: CGPoint(x: v, y: size))
+                    p.move(to: CGPoint(x: 0, y: v))
+                    p.addLine(to: CGPoint(x: size, y: v))
+                }
+            }
+            .stroke(Color.orange.opacity(0.10), style: StrokeStyle(lineWidth: 0.4, dash: [1, 3]))
+
+            // 4분면 주축 — 더 진하게
+            Path { p in
+                p.move(to: CGPoint(x: size / 2, y: 0))
+                p.addLine(to: CGPoint(x: size / 2, y: size))
+                p.move(to: CGPoint(x: 0, y: size / 2))
+                p.addLine(to: CGPoint(x: size, y: size / 2))
+            }
+            .stroke(Color.orange.opacity(0.22), style: StrokeStyle(lineWidth: 0.6, dash: [3, 3]))
+        }
+    }
+
+    private func quadrantLabels(size: CGFloat) -> some View {
+        ZStack {
+            // 우상: forged — 잘 하고 있어
+            quadrantLabel("잘 하고 있어",
+                          rgb: (0.92, 0.55, 0.25),
+                          at: CGPoint(x: size * 0.74, y: size * 0.32))
+            // 좌상: accept — 의지 없이 시간만 들였음
+            quadrantLabel("받아들임",
+                          rgb: (0.95, 0.78, 0.42),
+                          at: CGPoint(x: size * 0.26, y: size * 0.32))
+            // 우하: missed — 의지는 있는데 시간을 못 냈음
+            quadrantLabel("못 하고 있어",
+                          rgb: (0.78, 0.66, 0.46),
+                          at: CGPoint(x: size * 0.74, y: size * 0.68))
+            // 좌하: scattered — 흘려보낸 시간
+            quadrantLabel("흘려보냄",
+                          rgb: (0.72, 0.70, 0.66),
+                          at: CGPoint(x: size * 0.26, y: size * 0.68))
+        }
+        .allowsHitTesting(false)
+    }
+
+    private func quadrantLabel(_ text: String,
+                               rgb: (Double, Double, Double),
+                               at: CGPoint) -> some View {
+        Text(text)
+            .font(.system(size: 10, weight: .semibold, design: .serif))
+            .foregroundColor(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(0.85))
+            .position(at)
+    }
+
+    private func axisLabels(size: CGFloat) -> some View {
+        ZStack {
+            Text("시간을 들였다")
+                .font(.system(size: 10, design: .serif))
+                .foregroundColor(.gray.opacity(0.7))
+                .position(x: size / 2, y: 12)
+
+            Text("시간을 안 들였다")
+                .font(.system(size: 10, design: .serif))
+                .foregroundColor(.gray.opacity(0.7))
+                .position(x: size / 2, y: size - 12)
+
+            Text("의지\n없음")
+                .font(.system(size: 10, design: .serif))
+                .foregroundColor(.gray.opacity(0.7))
+                .multilineTextAlignment(.center)
+                .position(x: 22, y: size / 2)
+
+            Text("의지\n있음")
+                .font(.system(size: 10, design: .serif))
+                .foregroundColor(.gray.opacity(0.7))
+                .multilineTextAlignment(.center)
+                .position(x: size - 22, y: size / 2)
+        }
+    }
+
+    private var pinView: some View {
+        ZStack {
+            Circle()
+                .fill(Color.orange.opacity(0.35))
+                .frame(width: 28, height: 28)
+                .blur(radius: 4)
+            Circle()
+                .fill(Color.white)
+                .frame(width: 14, height: 14)
+                .overlay(Circle().stroke(Color.orange, lineWidth: 2.5))
+                .shadow(color: .orange.opacity(0.6), radius: 4)
+        }
     }
 }
 

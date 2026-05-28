@@ -70,6 +70,7 @@ struct ContentView: View {
 
                 VStack(spacing: 0) {
                     headerBar
+                    tomorrowIntentStrip
                     BurningParchmentView()
                         .environmentObject(bedtimeManager)
                         .gesture(
@@ -132,6 +133,73 @@ struct ContentView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                 evaluateReflectionNudge()
             }
+        }
+    }
+
+    // MARK: - Tomorrow Intent Strip
+    // 어제 missed로 분류한 회고들의 "내일 어떻게?" 한 줄을 양피지 위에 띠로 띄움.
+    // day 페이지에서만 노출하고, 양피지가 타들어갈수록 함께 페이드아웃.
+
+    @ViewBuilder
+    private var tomorrowIntentStrip: some View {
+        let intents = reflectionManager.yesterdayPendingIntents
+        if bedtimeManager.selectedPeriod == .day,
+           !bedtimeManager.isBeforeWakeTime,
+           bedtimeManager.isCountdownActive,
+           !intents.isEmpty {
+            let fade = max(0.0, 1.0 - bedtimeManager.progress * 1.3)
+            VStack(alignment: .leading, spacing: 4) {
+                HStack(spacing: 5) {
+                    Image(systemName: "scroll")
+                        .font(.system(size: 10))
+                        .foregroundColor(.orange.opacity(0.75))
+                    Text("어제 못한 것")
+                        .font(.system(size: 11, weight: .medium, design: .serif))
+                        .foregroundColor(.orange.opacity(0.75))
+                }
+                ForEach(Array(intents.prefix(3).enumerated()), id: \.offset) { _, item in
+                    HStack(alignment: .top, spacing: 6) {
+                        Text("·")
+                            .font(.system(size: 12, weight: .bold))
+                            .foregroundColor(.orange.opacity(0.6))
+                        Text(item.intent)
+                            .font(.system(size: 12, design: .serif))
+                            .foregroundColor(Color(red: 0.45, green: 0.32, blue: 0.18))
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                    }
+                }
+                if intents.count > 3 {
+                    Text("외 \(intents.count - 3)개")
+                        .font(.system(size: 10, design: .serif))
+                        .foregroundColor(.orange.opacity(0.5))
+                }
+            }
+            .padding(.vertical, 8)
+            .padding(.horizontal, 14)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(LinearGradient(
+                        colors: [
+                            Color(red: 0.86, green: 0.78, blue: 0.62).opacity(0.85),
+                            Color(red: 0.78, green: 0.68, blue: 0.50).opacity(0.78)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.brown.opacity(0.25), lineWidth: 1)
+                    )
+                    .shadow(color: .black.opacity(0.25), radius: 4, y: 2)
+            )
+            .padding(.horizontal, 28)
+            .padding(.top, 4)
+            .opacity(fade)
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("어제 못한 것 \(intents.count)개")
+            .accessibilityValue(intents.prefix(3).map { $0.intent }.joined(separator: ", "))
         }
     }
 

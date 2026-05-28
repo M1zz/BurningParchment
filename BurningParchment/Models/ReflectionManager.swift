@@ -52,17 +52,23 @@ class ReflectionManager: ObservableObject {
              urnId: UUID,
              category: ReflectionCategory,
              keyword: String? = nil,
+             tomorrowIntent: String? = nil,
+             classificationPoint: CGPoint? = nil,
              date: Date = Date()) -> DayReflection {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         let kw = keyword?.trimmingCharacters(in: .whitespacesAndNewlines)
         let finalKeyword = (kw?.isEmpty ?? true) ? nil : kw
+        let ti = tomorrowIntent?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let finalIntent = (ti?.isEmpty ?? true) ? nil : ti
 
         let new = DayReflection(
             urnId: urnId,
             date: DayReflection.normalize(date),
             text: trimmed,
             category: category,
-            keyword: finalKeyword
+            keyword: finalKeyword,
+            tomorrowIntent: finalIntent,
+            classificationPoint: classificationPoint
         )
         reflections.insert(new, at: 0)
         reflections.sort { $0.createdAt > $1.createdAt }
@@ -93,8 +99,13 @@ class ReflectionManager: ObservableObject {
     }
 
     /// 한 항아리의 채움 비율 — 30개에서 가득 차는 느낌.
+    /// scattered(흘려보낸 시간)는 가벼운 먼지로 취급해 일반 재의 0.3배 가중치만 부여.
     func fillLevel(for urn: Urn) -> Double {
-        min(Double(reflections(in: urn).count) / 30.0, 1.0)
+        let inUrn = reflections(in: urn)
+        let settled = inUrn.filter { $0.category != .scattered }.count
+        let scattered = inUrn.filter { $0.category == .scattered }.count
+        let weighted = Double(settled) + Double(scattered) * 0.3
+        return min(weighted / 30.0, 1.0)
     }
 
     /// 한 항아리에서 각 카테고리의 개수.
@@ -111,6 +122,19 @@ class ReflectionManager: ObservableObject {
     var hasReflectionToday: Bool {
         let cal = Calendar.current
         return reflections.contains { cal.isDateInToday($0.date) }
+    }
+
+    /// 어제 적은 회고들 중 "내일 어떻게?" 의도가 적힌 항목들.
+    /// 오늘 양피지 상단 띠에 노출하기 위한 쿼리.  카테고리와 무관하게 의도만 있으면 노출.
+    var yesterdayPendingIntents: [(text: String, intent: String)] {
+        let cal = Calendar.current
+        let todayStart = cal.startOfDay(for: Date())
+        guard let yesterdayStart = cal.date(byAdding: .day, value: -1, to: todayStart) else { return [] }
+        return reflections.compactMap { r in
+            guard let intent = r.tomorrowIntent, !intent.isEmpty,
+                  r.date >= yesterdayStart, r.date < todayStart else { return nil }
+            return (r.text, intent)
+        }
     }
 
     // MARK: - Persistence

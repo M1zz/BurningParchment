@@ -23,6 +23,7 @@
 		94D0963350865F4CDDEC53D6 /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9062A5518028E5E6F7CCB7 /* Deadline.swift */; };
 		A07823718B4AD4BBDBF9ED96 /* BurningParchmentWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A35E2E75E37DBD4D39BBA9AA /* DeadlineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */; };
+		A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */; };
 		C273B9F2010771609AAE445B /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9062A5518028E5E6F7CCB7 /* Deadline.swift */; };
 		C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */; };
 		CCBDF2B91CB414AA67F087B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC700E65FDA28935E4EB72B5 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionManager.swift; sourceTree = "<group>"; };
 		5E9062A5518028E5E6F7CCB7 /* Deadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadline.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
+		8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBookView.swift; sourceTree = "<group>"; };
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D60B5770EF62427A47B171 /* FireShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FireShader.metal; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				36C24016F79235C3EAFE2D5F /* ContentView.swift */,
 				013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */,
 				2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */,
+				8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */,
 				DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */,
 				02478518C92DBEC5E15B33C5 /* SettingsView.swift */,
 			);
@@ -285,6 +288,7 @@
 				C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */,
 				4E0A8DD3CED8F25008E35F16 /* DeadlineManager.swift in Sources */,
 				8D03A9304999EBE1A2BC1300 /* FireShader.metal in Sources */,
+				A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */,
 				8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */,
 				1F521ADAB0DC4F051433A917 /* ReflectionUrnView.swift in Sources */,
 				80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */,

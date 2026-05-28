@@ -2,15 +2,17 @@
 // 항아리(Urn)에 담기는 한 줌의 재. 각 회고는 어느 항아리에 속하는지 + 어떤 색의 재인지를 가짐.
 
 import Foundation
+import CoreGraphics
 
 /// 재의 색을 결정하는 분류.  의지 × 시간 2축에서 파생.
 /// 의지 ❌ + 시간 ⭕️ 분면은 사용자 판단으로 stop / accept로 갈라짐.
 /// 의지 ❌ + 시간 ❌ 분면은 항아리에 담기지 않음 (그냥 흘러간 시간).
 enum ReflectionCategory: String, Codable, CaseIterable, Identifiable {
-    case forged  // 의지 ⭕️ + 시간 ⭕️ — 잘 하고 있는 것
-    case missed  // 의지 ⭕️ + 시간 ❌ — 못 하고 있는 것
-    case stop    // 의지 ❌ + 시간 ⭕️ — 그만둘 것
-    case accept  // 의지 ❌ + 시간 ⭕️ — 받아들일 것
+    case forged     // 의지 ⭕️ + 시간 ⭕️ — 잘 하고 있는 것
+    case missed     // 의지 ⭕️ + 시간 ❌ — 못 하고 있는 것
+    case stop       // 의지 ❌ + 시간 ⭕️ — 그만둘 것
+    case accept     // 의지 ❌ + 시간 ⭕️ — 받아들일 것
+    case scattered  // 의지 ❌ + 시간 ❌ — 흘려보낸 시간 (가벼운 먼지)
     case uncategorized  // 구버전 마이그레이션 잔여물
 
     var id: String { rawValue }
@@ -21,16 +23,18 @@ enum ReflectionCategory: String, Codable, CaseIterable, Identifiable {
         case .missed:        return "못 하고 있는 것"
         case .stop:          return "그만둘 것"
         case .accept:        return "받아들일 것"
+        case .scattered:     return "흘려보낸 시간"
         case .uncategorized: return "분류 안 됨"
         }
     }
 
     var shortLabel: String {
         switch self {
-        case .forged: return "잘함"
-        case .missed: return "부족"
-        case .stop:   return "멈춰"
-        case .accept: return "받아"
+        case .forged:    return "잘함"
+        case .missed:    return "부족"
+        case .stop:      return "멈춰"
+        case .accept:    return "받아"
+        case .scattered: return "흩어"
         case .uncategorized: return "?"
         }
     }
@@ -38,10 +42,11 @@ enum ReflectionCategory: String, Codable, CaseIterable, Identifiable {
     /// 재 입자의 색.
     var particleColor: (Double, Double, Double) {
         switch self {
-        case .forged: return (0.92, 0.55, 0.25)   // 따뜻한 주황 — 단단한 잔열
-        case .missed: return (0.72, 0.62, 0.42)   // 옅은 갈색 — 미련
-        case .stop:   return (0.55, 0.60, 0.66)   // 식은 회청색 — 낭비
-        case .accept: return (0.95, 0.78, 0.42)   // 황금빛 — 우연한 몰입
+        case .forged:    return (0.92, 0.55, 0.25)   // 따뜻한 주황 — 단단한 잔열
+        case .missed:    return (0.72, 0.62, 0.42)   // 옅은 갈색 — 미련
+        case .stop:      return (0.55, 0.60, 0.66)   // 식은 회청색 — 낭비
+        case .accept:    return (0.95, 0.78, 0.42)   // 황금빛 — 우연한 몰입
+        case .scattered: return (0.68, 0.66, 0.62)   // 옅은 회색 — 가벼운 먼지
         case .uncategorized: return (0.55, 0.50, 0.45)
         }
     }
@@ -53,7 +58,7 @@ enum ReflectionCategory: String, Codable, CaseIterable, Identifiable {
         case (false, true):
             guard let drift else { return nil }
             return drift == .stop ? .stop : .accept
-        case (false, false): return nil
+        case (false, false): return .scattered
         }
     }
 }
@@ -92,6 +97,10 @@ struct DayReflection: Codable, Identifiable, Hashable {
     var text: String
     var category: ReflectionCategory
     var keyword: String?
+    /// "내일 어떻게?" 한 줄.  다음날 양피지 상단 띠에 노출.
+    var tomorrowIntent: String?
+    /// 2D 분류 그래프에서 사용자가 찍은 정확한 좌표 (0~1 정규화).  사분면만이 아니라 강도까지 기억.
+    var classificationPoint: CGPoint?
     let createdAt: Date
 
     init(id: UUID = UUID(),
@@ -100,6 +109,8 @@ struct DayReflection: Codable, Identifiable, Hashable {
          text: String,
          category: ReflectionCategory = .uncategorized,
          keyword: String? = nil,
+         tomorrowIntent: String? = nil,
+         classificationPoint: CGPoint? = nil,
          createdAt: Date = Date()) {
         self.id = id
         self.urnId = urnId
@@ -107,11 +118,13 @@ struct DayReflection: Codable, Identifiable, Hashable {
         self.text = text
         self.category = category
         self.keyword = keyword
+        self.tomorrowIntent = tomorrowIntent
+        self.classificationPoint = classificationPoint
         self.createdAt = createdAt
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, urnId, date, text, category, keyword, createdAt
+        case id, urnId, date, text, category, keyword, tomorrowIntent, classificationPoint, createdAt
     }
 
     init(from decoder: Decoder) throws {
@@ -121,6 +134,8 @@ struct DayReflection: Codable, Identifiable, Hashable {
         date      = try c.decode(Date.self,   forKey: .date)
         text      = try c.decode(String.self, forKey: .text)
         keyword   = try c.decodeIfPresent(String.self, forKey: .keyword)
+        tomorrowIntent = try c.decodeIfPresent(String.self, forKey: .tomorrowIntent)
+        classificationPoint = try c.decodeIfPresent(CGPoint.self, forKey: .classificationPoint)
         createdAt = try c.decode(Date.self,   forKey: .createdAt)
         let raw = try c.decodeIfPresent(String.self, forKey: .category)
             ?? ReflectionCategory.uncategorized.rawValue

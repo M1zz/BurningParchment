@@ -939,10 +939,19 @@ struct ReflectionInputView: View {
     @State private var saveStatus: SaveStatus = .idle
     @State private var saveWorkItem: DispatchWorkItem? = nil
     @State private var classificationPoint: CGPoint? = nil
-    @FocusState private var focused: Bool
+    @FocusState private var focusedField: FocusField?
 
     private enum SaveStatus { case idle, scheduled, saved }
     private enum InputStep: Int, CaseIterable { case text = 0, category, tomorrow }
+    private enum FocusField: Hashable { case body, keepAlive, tomorrow }
+
+    private func focusField(for step: InputStep) -> FocusField {
+        switch step {
+        case .text: return .body
+        case .category: return .keepAlive
+        case .tomorrow: return .tomorrow
+        }
+    }
 
     @State private var showCreateUrn = false
 
@@ -955,6 +964,15 @@ struct ReflectionInputView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+
+            // 키보드를 step 사이에 끊김 없이 같은 자리에 잡아두기 위한 invisible 필드.
+            // step 2(분류 그래프)에서는 사용자 입력 영역이 없지만 이 필드가 활성이라 키보드 유지.
+            TextField("keep-alive", text: .constant(""))
+                .focused($focusedField, equals: .keepAlive)
+                .frame(width: 1, height: 1)
+                .opacity(0.001)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
 
             VStack(spacing: 0) {
                 chromeBar
@@ -1229,11 +1247,10 @@ struct ReflectionInputView: View {
         if let next = InputStep(rawValue: currentStep.rawValue + 1) {
             let gen = UISelectionFeedbackGenerator()
             gen.selectionChanged()
+            // 키보드를 같은 자리에 유지하기 위해 transition 전에 다음 step의 focus로 미리 전환
+            focusedField = focusField(for: next)
             withAnimation(.easeInOut(duration: 0.22)) {
                 currentStep = next
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
-                focused = true
             }
         } else {
             // .tomorrow → 새 회고
@@ -1246,11 +1263,9 @@ struct ReflectionInputView: View {
         flushPendingSave()
         let gen = UISelectionFeedbackGenerator()
         gen.selectionChanged()
+        focusedField = focusField(for: step)
         withAnimation(.easeInOut(duration: 0.22)) {
             currentStep = step
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
-            focused = true
         }
     }
 
@@ -1274,10 +1289,7 @@ struct ReflectionInputView: View {
         savedReflectionId = nil
         saveStatus = .idle
 
-        focused = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) {
-            focused = true
-        }
+        focusedField = .body
     }
 
     // MARK: - Sections
@@ -1289,7 +1301,7 @@ struct ReflectionInputView: View {
             axis: .vertical
         )
         .lineLimit(1...8)
-        .focused($focused)
+        .focused($focusedField, equals: .body)
         .font(.system(size: 20, design: .serif))
         .foregroundColor(.orange.opacity(0.95))
         .tint(.orange)
@@ -1300,7 +1312,7 @@ struct ReflectionInputView: View {
                 .fill(Color.white.opacity(0.05))
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.orange.opacity(focused ? 0.35 : 0.18), lineWidth: 1)
+                        .stroke(Color.orange.opacity(focusedField == .body ? 0.35 : 0.18), lineWidth: 1)
                 )
         )
     }
@@ -1523,6 +1535,7 @@ struct ReflectionInputView: View {
             TextField(tomorrowPlaceholder, text: $tomorrowIntent)
                 .font(.system(size: 14, design: .serif))
                 .foregroundColor(.orange.opacity(0.9))
+                .focused($focusedField, equals: .tomorrow)
                 .padding(12)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
@@ -1623,7 +1636,7 @@ struct ReflectionInputView: View {
             }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            focused = true
+            focusedField = focusField(for: currentStep)
         }
     }
 

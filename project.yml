@@ -68,6 +68,7 @@ targets:
         TARGETED_DEVICE_FAMILY: "1"
         SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
         SUPPORTS_MACCATALYST: NO
+        CODE_SIGN_ENTITLEMENTS: BurningParchment/BurningParchment.entitlements
     dependencies:
       - target: BurningParchmentWidgets
 
@@ -95,3 +96,4 @@ targets:
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: "1.0.4"
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
+        CODE_SIGN_ENTITLEMENTS: BurningParchmentWidgets/BurningParchmentWidgets.entitlements

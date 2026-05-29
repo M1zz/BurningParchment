@@ -100,7 +100,9 @@ struct ParchmentProvider: TimelineProvider {
             }
         }
 
-        completion(Timeline(entries: entries, policy: .after(now.addingTimeInterval(refresh))))
+        // 마지막 엔트리 소진 후 즉시 갱신 (policy를 entries 범위 이내로 설정해 공백 방지)
+        let policyDate = entries.last?.date ?? now.addingTimeInterval(refresh)
+        completion(Timeline(entries: entries, policy: .after(policyDate)))
     }
 
     private func calculate(for date: Date) -> ParchmentEntry {
@@ -153,10 +155,23 @@ struct ParchmentProvider: TimelineProvider {
             remText = formatSeconds(rem)
         }
 
+        // 앱이 App Group에 저장한 취침 Date를 우선 사용 — 앱과 동일한 기준점 보장
+        let appBedDate = sd?.object(forKey: "shared_bedtimeDate") as? Date
+        let finalBedDate: Date?
+        if period == .daily && isActive {
+            if let saved = appBedDate, saved > date {
+                finalBedDate = saved
+            } else {
+                finalBedDate = dailyBedDate
+            }
+        } else {
+            finalBedDate = nil
+        }
+
         return ParchmentEntry(
             date: date, period: period, progress: prog,
             remainingText: remText,
-            bedtimeDate: (period == .daily && isActive) ? dailyBedDate : nil,
+            bedtimeDate: finalBedDate,
             bedtimeString: bedtimeStr,
             isActive: isActive, isBeforeWakeTime: isBeforeWake, remainingSeconds: remSec
         )
@@ -321,11 +336,17 @@ private struct SmallWidgetContent: View {
                 case .burning:
                     MiniParchmentView(progress: entry.progress)
                         .frame(width: side, height: side)
-                    Text(entry.remainingText)
-                        .font(.system(size: 19, weight: .medium, design: .monospaced))
-                        .foregroundColor(.orange)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
+                    Group {
+                        if let bd = entry.bedtimeDate {
+                            Text(bd, style: .timer)
+                        } else {
+                            Text(entry.remainingText)
+                        }
+                    }
+                    .font(.system(size: 19, weight: .medium, design: .monospaced))
+                    .foregroundColor(.orange)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
                     if entry.period != .daily {
                         Text(entry.period.label)
                             .font(.system(size: 10))
@@ -391,15 +412,21 @@ private struct MediumWidgetContent: View {
                 .font(.system(size: 11, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            Text(entry.remainingText)
-                .font(.system(
-                    size: entry.period == .daily ? 28 : 20,
-                    weight: .light,
-                    design: entry.period == .daily ? .monospaced : .serif
-                ))
-                .foregroundColor(.white)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
+            Group {
+                if let bd = entry.bedtimeDate {
+                    Text(bd, style: .timer)
+                } else {
+                    Text(entry.remainingText)
+                }
+            }
+            .font(.system(
+                size: entry.period == .daily ? 28 : 20,
+                weight: .light,
+                design: entry.period == .daily ? .monospaced : .serif
+            ))
+            .foregroundColor(.white)
+            .lineLimit(1)
+            .minimumScaleFactor(0.8)
 
             progressBar
 
@@ -507,15 +534,21 @@ private struct LargeWidgetContent: View {
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            Text(entry.remainingText)
-                .font(.system(
-                    size: entry.period == .daily ? 36 : 26,
-                    weight: .light,
-                    design: entry.period == .daily ? .monospaced : .serif
-                ))
-                .foregroundColor(.white)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
+            Group {
+                if let bd = entry.bedtimeDate {
+                    Text(bd, style: .timer)
+                } else {
+                    Text(entry.remainingText)
+                }
+            }
+            .font(.system(
+                size: entry.period == .daily ? 36 : 26,
+                weight: .light,
+                design: entry.period == .daily ? .monospaced : .serif
+            ))
+            .foregroundColor(.white)
+            .lineLimit(1)
+            .minimumScaleFactor(0.8)
 
             HStack(spacing: 8) {
                 GeometryReader { geo in

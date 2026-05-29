@@ -338,6 +338,17 @@ class BedtimeManager: ObservableObject {
 
     private static func runMigrations(appGroup sd: UserDefaults?, standard ud: UserDefaults) {
 
+        // ── v0: 앱 로컬 컨테이너 → App Group 복구 마이그레이션 ─────────────────
+        // xcodegen이 CODE_SIGN_ENTITLEMENTS를 누락시킨 빌드에서는 App Group 엔타이틀먼트 없이
+        // 실행되어, UserDefaults(suiteName:)가 앱 자체 컨테이너에 데이터를 저장했음.
+        // App Group 복구 후 첫 실행 시 해당 plist 파일에서 데이터를 App Group으로 이전.
+        // REMOVE AFTER: 앱 v2.0.0 출시 후
+        if sd?.bool(forKey: "migration_v0_done") != true {
+            recoverFromLocalSuite(to: sd)
+            sd?.set(true, forKey: "migration_v0_done")
+            sd?.synchronize()
+        }
+
         // ── v1: UserDefaults.standard → App Group ──────────────────────────────
         // 앱 v1.0.x 사용자는 설정이 standard에 저장되어 위젯이 기본값을 표시하는 버그가 있었음.
         // 이 단계에서 App Group으로 복사해 위젯 데이터 연동을 정상화함.
@@ -369,6 +380,38 @@ class BedtimeManager: ObservableObject {
         //     }
         //     sd?.set(true, forKey: "migration_v2_done")
         // }
+    }
+
+    // MARK: - v0 복구: 로컬 plist → App Group
+
+    // App Group 엔타이틀먼트 없이 빌드된 버전이 앱 자체 컨테이너에 저장한 데이터를 복구.
+    // UserDefaults(suiteName:)는 엔타이틀먼트가 없을 때 앱 샌드박스의
+    // Library/Preferences/{suiteName}.plist 에 저장하므로, 그 파일을 직접 읽어 이전.
+    private static func recoverFromLocalSuite(to sd: UserDefaults?) {
+        guard let sd else { return }
+
+        guard let libraryURL = FileManager.default.urls(
+            for: .libraryDirectory, in: .userDomainMask
+        ).first else { return }
+
+        let plistURL = libraryURL
+            .appendingPathComponent("Preferences")
+            .appendingPathComponent("group.com.burningparchment.app.plist")
+
+        guard FileManager.default.fileExists(atPath: plistURL.path),
+              let rawData = try? Data(contentsOf: plistURL),
+              let dict = try? PropertyListSerialization.propertyList(
+                  from: rawData, options: [], format: nil
+              ) as? [String: Any]
+        else { return }
+
+        // App Group에 없는 키만 복사 (새 데이터를 덮어쓰지 않음)
+        for (key, value) in dict {
+            if sd.object(forKey: key) == nil {
+                sd.set(value, forKey: key)
+            }
+        }
+        sd.synchronize()
     }
 
     // MARK: - Batch Settings Update

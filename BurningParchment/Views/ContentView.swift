@@ -8,6 +8,7 @@ struct ContentView: View {
     @EnvironmentObject var bedtimeManager:    BedtimeManager
     @EnvironmentObject var deadlineManager:   DeadlineManager
     @EnvironmentObject var reflectionManager: ReflectionManager
+    @EnvironmentObject var excuseManager:     BedtimeExcuseManager
     @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings    = false
     @State private var showDeadlines   = false
@@ -15,6 +16,8 @@ struct ContentView: View {
     @State private var autoOpenReflectionInput = false
     @State private var showReflectionNudge = false
     @State private var nudgeEvaluatedThisSession = false
+    @State private var showExcuseSheet = false
+    @State private var excuseShownThisSession = false
     @AppStorage("reflectionNudgeDismissedDate") private var nudgeDismissedISO: String = ""
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
@@ -73,28 +76,28 @@ struct ContentView: View {
                     tomorrowIntentStrip
                     BurningParchmentView()
                         .environmentObject(bedtimeManager)
-                        .gesture(
-                            DragGesture(minimumDistance: 30)
-                                .onEnded { value in
-                                    let dx = value.translation.width
-                                    let dy = value.translation.height
-                                    guard abs(dx) > abs(dy) * 1.5 else { return }
-                                    let idx = currentIndex
-                                    if dx < 0, idx < pages.count - 1 {
-                                        withAnimation(.easeInOut(duration: 0.2)) {
-                                            bedtimeManager.selectedPeriod = pages[idx + 1]
-                                        }
-                                    } else if dx > 0, idx > 0 {
-                                        withAnimation(.easeInOut(duration: 0.2)) {
-                                            bedtimeManager.selectedPeriod = pages[idx - 1]
-                                        }
-                                    }
-                                }
-                        )
                     reflectionNudgeBanner
                     pageIndicator
                 }
             }
+            .gesture(
+                DragGesture(minimumDistance: 30)
+                    .onEnded { value in
+                        let dx = value.translation.width
+                        let dy = value.translation.height
+                        guard abs(dx) > abs(dy) * 1.5 else { return }
+                        let idx = currentIndex
+                        if dx < 0, idx < pages.count - 1 {
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                bedtimeManager.selectedPeriod = pages[idx + 1]
+                            }
+                        } else if dx > 0, idx > 0 {
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                bedtimeManager.selectedPeriod = pages[idx - 1]
+                            }
+                        }
+                    }
+            )
             .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(isPresented: $showReflections) {
                 ReflectionUrnView(autoOpenInput: autoOpenReflectionInput)
@@ -109,6 +112,10 @@ struct ContentView: View {
             DeadlineListView()
                 .environmentObject(deadlineManager)
         }
+        .sheet(isPresented: $showExcuseSheet) {
+            BedtimeExcuseSheetView()
+                .environmentObject(excuseManager)
+        }
         .onChange(of: scenePhase) { phase in
             if phase == .active {
                 bedtimeManager.recalculate()
@@ -118,20 +125,24 @@ struct ContentView: View {
                     bedtimeManager.selectedPeriod = .day
                 }
                 nudgeEvaluatedThisSession = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                excuseShownThisSession = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     evaluateReflectionNudge()
+                    evaluateExcusePrompt()
                 }
             }
         }
         .onChange(of: bedtimeManager.isCountdownActive) { active in
             if active { evaluateReflectionNudge() }
+            if !active { evaluateExcusePrompt() }
         }
         .onChange(of: showReflections) { isShowing in
             if !isShowing { autoOpenReflectionInput = false }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 evaluateReflectionNudge()
+                evaluateExcusePrompt()
             }
         }
     }
@@ -269,6 +280,22 @@ struct ContentView: View {
                 showReflectionNudge = false
             }
         }
+    }
+
+    // MARK: - Excuse Prompt
+
+    private var shouldShowExcuse: Bool {
+        bedtimeManager.selectedPeriod == .day
+        && !bedtimeManager.isCountdownActive
+        && !bedtimeManager.isBeforeWakeTime
+        && bedtimeManager.progress >= 1.0
+        && !excuseManager.hasExcuseToday
+    }
+
+    private func evaluateExcusePrompt() {
+        guard !excuseShownThisSession, shouldShowExcuse else { return }
+        excuseShownThisSession = true
+        showExcuseSheet = true
     }
 
     private var isNudgeDismissedToday: Bool {
@@ -418,4 +445,5 @@ struct ContentView: View {
         .environmentObject(BedtimeManager())
         .environmentObject(DeadlineManager())
         .environmentObject(ReflectionManager())
+        .environmentObject(BedtimeExcuseManager())
 }

@@ -39,11 +39,37 @@ struct DeadlineProvider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<DeadlineEntry>) -> Void) {
         let now = Date()
-        var entries: [DeadlineEntry] = []
-        for i in 0..<8 {
-            entries.append(makeEntry(for: now.addingTimeInterval(Double(i) * 3600)))
+
+        // 남은 시간에 따라 갱신 단위 결정
+        let nextRemaining: TimeInterval = {
+            guard
+                let data = sd?.data(forKey: "shared_deadlines"),
+                let deadlines = try? JSONDecoder().decode([Deadline].self, from: data),
+                let d = deadlines.filter({ !$0.isExpired(at: now) })
+                                 .sorted(by: { $0.targetDate < $1.targetDate })
+                                 .first
+            else { return .infinity }
+            return d.targetDate.timeIntervalSince(now)
+        }()
+
+        let interval: TimeInterval
+        let count: Int
+        if nextRemaining <= 86400 {
+            // 1일 미만: 1분 단위로 정밀 갱신
+            interval = 60
+            count = min(Int(nextRemaining / 60) + 5, 120)
+        } else {
+            // 1일 초과: 1시간 단위
+            interval = 3600
+            count = 8
         }
-        completion(Timeline(entries: entries, policy: .after(now.addingTimeInterval(3600))))
+
+        var entries: [DeadlineEntry] = []
+        for i in 0..<max(count, 1) {
+            entries.append(makeEntry(for: now.addingTimeInterval(Double(i) * interval)))
+        }
+        let refreshDate = entries.last?.date ?? now.addingTimeInterval(interval)
+        completion(Timeline(entries: entries, policy: .after(refreshDate)))
     }
 
     private func makeEntry(for date: Date) -> DeadlineEntry {
@@ -74,9 +100,11 @@ struct DeadlineProvider: TimelineProvider {
         let days  = total / 86400
         let hours = (total % 86400) / 3600
         let mins  = (total % 3600) / 60
+        let secs  = total % 60
         if days > 0  { return "\(days)일 \(hours)시간" }
         if hours > 0 { return "\(hours)시간 \(mins)분" }
-        return "\(mins)분"
+        if mins > 0  { return "\(mins)분 \(secs)초" }
+        return "\(secs)초"
     }
 }
 

@@ -1017,6 +1017,7 @@ struct ReflectionInputView: View {
                     }
                     .padding(.bottom, 24)
                 }
+                .scrollDismissesKeyboard(.interactively)
             }
         }
         .sheet(isPresented: $showCreateUrn) {
@@ -1038,7 +1039,10 @@ struct ReflectionInputView: View {
     }
 
     private var detentSet: Set<PresentationDetent> {
-        [.height(340), .large]
+        switch currentStep {
+        case .category: return [.large]
+        default: return [.height(340), .large]
+        }
     }
 
     // MARK: - Chrome Bar (작은 상단)
@@ -1247,13 +1251,18 @@ struct ReflectionInputView: View {
         if let next = InputStep(rawValue: currentStep.rawValue + 1) {
             let gen = UISelectionFeedbackGenerator()
             gen.selectionChanged()
-            // 키보드를 같은 자리에 유지하기 위해 transition 전에 다음 step의 focus로 미리 전환
-            focusedField = focusField(for: next)
+            if next == .category {
+                // 분류 단계: 키보드 내리고 시트 풀스크린으로 펼침
+                focusedField = nil
+                sheetDetent = .large
+            } else {
+                focusedField = focusField(for: next)
+                if next == .tomorrow { sheetDetent = .large }
+            }
             withAnimation(.easeInOut(duration: 0.22)) {
                 currentStep = next
             }
         } else {
-            // .tomorrow → 새 회고
             startNewEntry()
         }
     }
@@ -1263,7 +1272,12 @@ struct ReflectionInputView: View {
         flushPendingSave()
         let gen = UISelectionFeedbackGenerator()
         gen.selectionChanged()
-        focusedField = focusField(for: step)
+        if step == .category {
+            focusedField = nil
+            sheetDetent = .large
+        } else {
+            focusedField = focusField(for: step)
+        }
         withAnimation(.easeInOut(duration: 0.22)) {
             currentStep = step
         }
@@ -1315,6 +1329,15 @@ struct ReflectionInputView: View {
                         .stroke(Color.orange.opacity(focusedField == .body ? 0.35 : 0.18), lineWidth: 1)
                 )
         )
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("다음") { if canAdvance { advance() } }
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundColor(canAdvance ? .orange : .gray.opacity(0.4))
+                    .disabled(!canAdvance)
+            }
+        }
     }
 
     // MARK: - Urn Hint (작은 라벨)
@@ -1536,6 +1559,8 @@ struct ReflectionInputView: View {
                 .font(.system(size: 14, design: .serif))
                 .foregroundColor(.orange.opacity(0.9))
                 .focused($focusedField, equals: .tomorrow)
+                .submitLabel(.done)
+                .onSubmit { flushPendingSave(); dismiss() }
                 .padding(12)
                 .background(
                     RoundedRectangle(cornerRadius: 10)

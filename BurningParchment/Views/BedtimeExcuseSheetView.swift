@@ -102,14 +102,14 @@ struct BedtimeExcuseSheetView: View {
     private var newEntrySection: some View {
         VStack(spacing: 18) {
             excuseField(
-                title: "오늘 마치지 못한 이유",
-                placeholder: "솔직하게 적어보세요...",
+                title: String(localized: "오늘 마치지 못한 이유"),
+                placeholder: String(localized: "솔직하게 적어보세요..."),
                 text: $reason,
                 field: .reason
             )
             excuseField(
-                title: "다음엔 어떻게 하면 마칠 수 있을까요?",
-                placeholder: "작은 변화부터 시작해도 괜찮아요...",
+                title: String(localized: "다음엔 어떻게 하면 마칠 수 있을까요?"),
+                placeholder: String(localized: "작은 변화부터 시작해도 괜찮아요..."),
                 text: $nextAction,
                 field: .nextAction
             )

@@ -459,16 +459,16 @@ struct BurningParchmentView: View {
         .padding(.bottom, 28)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel({
-            if let dl = nearestDeadline { return "\(dl.emoji) \(dl.title) 데드라인" }
+            if let dl = nearestDeadline { return String(localized: "\(dl.emoji) \(dl.title) 데드라인") }
             return bedtimeManager.periodLabel
         }())
         .accessibilityValue({
             let pct = Int(remaining * 100)
-            if let dl = nearestDeadline { return "\(dl.remainingString()), \(pct)% 남음" }
+            if let dl = nearestDeadline { return String(localized: "\(dl.remainingString()), \(pct)% 남음") }
             let time = bedtimeManager.selectedPeriod == .day
                 ? bedtimeManager.remainingKoreanString
                 : bedtimeManager.periodRemainingString
-            return "\(time), \(pct)% 남음"
+            return String(localized: "\(time), \(pct)% 남음")
         }())
     }
 
@@ -477,8 +477,8 @@ struct BurningParchmentView: View {
         let totalSec = Int(bedtimeManager.remainingSeconds)
         let h = totalSec / 3600
         let m = (totalSec % 3600) / 60
-        if h > 0 { return "\(h)시간 \(m)분" }
-        return "\(m)분"
+        if h > 0 { return String(localized: "\(h)시간 \(m)분") }
+        return String(localized: "\(m)분")
     }
 
     // MARK: - Parchment Gradient

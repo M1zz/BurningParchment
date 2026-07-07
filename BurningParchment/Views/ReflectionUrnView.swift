@@ -681,12 +681,16 @@ struct EmberCalendarView: View {
 
     private var cal: Calendar {
         var c = Calendar.current
-        c.locale = Locale(identifier: "ko_KR")
+        c.locale = Locale.current
         c.firstWeekday = 2  // 월요일 시작
         return c
     }
 
-    private static let weekdaySymbols = ["월", "화", "수", "목", "금", "토", "일"]
+    private var weekdaySymbols: [String] {
+        let symbols = cal.veryShortWeekdaySymbols
+        let first = cal.firstWeekday - 1
+        return Array(symbols[first...]) + Array(symbols[..<first])
+    }
 
     private var byDay: [Date: [DayReflection]] {
         Dictionary(grouping: reflectionManager.reflections) { cal.startOfDay(for: $0.date) }
@@ -714,8 +718,8 @@ struct EmberCalendarView: View {
 
     private var monthTitle: String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "yyyy년 M월"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("yMMMM")
         return f.string(from: displayedMonth)
     }
 
@@ -779,7 +783,7 @@ struct EmberCalendarView: View {
 
     private var weekdayHeader: some View {
         HStack(spacing: 4) {
-            ForEach(Self.weekdaySymbols, id: \.self) { symbol in
+            ForEach(weekdaySymbols, id: \.self) { symbol in
                 Text(symbol)
                     .font(.system(size: 10, design: .serif))
                     .foregroundColor(.gray.opacity(0.45))
@@ -890,10 +894,10 @@ struct EmberCalendarView: View {
 
     private func dayAccessibilityLabel(_ day: Date, count: Int, isToday: Bool) -> String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "M월 d일"
-        let base = (isToday ? "오늘, " : "") + f.string(from: day)
-        return count > 0 ? "\(base), 회고 \(count)개" : "\(base), 기록 없음"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("Md")
+        let base = (isToday ? String(localized: "오늘, ") : "") + f.string(from: day)
+        return count > 0 ? String(localized: "\(base), 회고 \(count)개") : String(localized: "\(base), 기록 없음")
     }
 
     // MARK: Selected Day Detail
@@ -948,8 +952,8 @@ struct EmberCalendarView: View {
 
     private func selectedDayTitle(_ day: Date) -> String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "M월 d일 (E)"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("MdE")
         return f.string(from: day)
     }
 }
@@ -1093,7 +1097,7 @@ struct UrnEditView: View {
 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 22) {
-                        Text(editing == nil ? "새 항아리" : "항아리 수정")
+                        Text(editing == nil ? String(localized: "새 항아리") : String(localized: "항아리 수정"))
                             .font(.system(size: 20, weight: .semibold, design: .serif))
                             .foregroundColor(.orange.opacity(0.9))
 
@@ -1151,7 +1155,7 @@ struct UrnEditView: View {
                         .foregroundColor(.gray)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(editing == nil ? "만들기" : "저장") { save() }
+                    Button(editing == nil ? String(localized: "만들기") : String(localized: "저장")) { save() }
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(canSave ? .orange : .gray)
                         .disabled(!canSave)
@@ -1225,7 +1229,10 @@ struct ReflectionInputView: View {
 
     @State private var showCreateUrn = false
 
-    private let suggestions = ["성장", "감사", "도전", "휴식", "배움", "관계", "실수", "기쁨"]
+    private let suggestions = [
+        String(localized: "성장"), String(localized: "감사"), String(localized: "도전"), String(localized: "휴식"),
+        String(localized: "배움"), String(localized: "관계"), String(localized: "실수"), String(localized: "기쁨")
+    ]
 
     init(existing: DayReflection?) {
         self.existing = existing
@@ -1400,9 +1407,9 @@ struct ReflectionInputView: View {
 
     private func accessibilityLabel(for step: InputStep) -> String {
         switch step {
-        case .text: return "본문 단계"
-        case .category: return "분류 단계"
-        case .tomorrow: return "내일 메모 단계"
+        case .text: return String(localized: "본문 단계")
+        case .category: return String(localized: "분류 단계")
+        case .tomorrow: return String(localized: "내일 메모 단계")
         }
     }
 
@@ -1483,7 +1490,7 @@ struct ReflectionInputView: View {
     }
 
     private var nextLabel: String {
-        currentStep == .tomorrow ? "새 회고" : "다음"
+        currentStep == .tomorrow ? String(localized: "새 회고") : String(localized: "다음")
     }
 
     private var nextIcon: String {
@@ -1492,9 +1499,9 @@ struct ReflectionInputView: View {
 
     private var nextHint: String {
         switch currentStep {
-        case .text:     return "본문을 저장하고 분류 단계로 이동합니다"
-        case .category: return "분류를 저장하고 내일 메모 단계로 이동합니다"
-        case .tomorrow: return "저장하고 새 회고를 시작합니다"
+        case .text:     return String(localized: "본문을 저장하고 분류 단계로 이동합니다")
+        case .category: return String(localized: "분류를 저장하고 내일 메모 단계로 이동합니다")
+        case .tomorrow: return String(localized: "저장하고 새 회고를 시작합니다")
         }
     }
 
@@ -1575,7 +1582,7 @@ struct ReflectionInputView: View {
 
     private var textEditor: some View {
         TextField(
-            existing == nil ? "오늘 하루, 한 줄로 남겨봐요." : "회고를 수정합니다.",
+            existing == nil ? String(localized: "오늘 하루, 한 줄로 남겨봐요.") : String(localized: "회고를 수정합니다."),
             text: $text,
             axis: .vertical
         )
@@ -1842,26 +1849,26 @@ struct ReflectionInputView: View {
 
     /// 사용자가 그래프에서 찍은 분류에 따라 "내일 어떻게?" 질문 자체가 달라짐.
     private var tomorrowQuestion: String {
-        guard let cat = previewCategory else { return "내일 어떻게 해볼까요?" }
+        guard let cat = previewCategory else { return String(localized: "내일 어떻게 해볼까요?") }
         switch cat {
-        case .forged:    return "더 잘 하려면 내일 무엇을 할까요?"
-        case .missed:    return "내일 새롭게 어떤 걸 시도해볼까요?"
-        case .accept:    return "이 시간을 내일은 어떻게 다룰까요?"
-        case .stop:      return "내일은 무엇을 끊어낼까요?"
-        case .scattered: return "내일은 어떻게 다르게 보낼까요?"
-        case .uncategorized: return "내일 어떻게 해볼까요?"
+        case .forged:    return String(localized: "더 잘 하려면 내일 무엇을 할까요?")
+        case .missed:    return String(localized: "내일 새롭게 어떤 걸 시도해볼까요?")
+        case .accept:    return String(localized: "이 시간을 내일은 어떻게 다룰까요?")
+        case .stop:      return String(localized: "내일은 무엇을 끊어낼까요?")
+        case .scattered: return String(localized: "내일은 어떻게 다르게 보낼까요?")
+        case .uncategorized: return String(localized: "내일 어떻게 해볼까요?")
         }
     }
 
     private var tomorrowPlaceholder: String {
-        guard let cat = previewCategory else { return "예: 점심 직후 운동 30분" }
+        guard let cat = previewCategory else { return String(localized: "예: 점심 직후 운동 30분") }
         switch cat {
-        case .forged:    return "예: 운동 시간을 30분 늘리기"
-        case .missed:    return "예: 점심 직후 운동 30분"
-        case .accept:    return "예: 산책 20분으로 바꾸기"
-        case .stop:      return "예: SNS 사용 15분 제한"
-        case .scattered: return "예: 책 한 챕터 읽기"
-        case .uncategorized: return "예: 점심 직후 운동 30분"
+        case .forged:    return String(localized: "예: 운동 시간을 30분 늘리기")
+        case .missed:    return String(localized: "예: 점심 직후 운동 30분")
+        case .accept:    return String(localized: "예: 산책 20분으로 바꾸기")
+        case .stop:      return String(localized: "예: SNS 사용 15분 제한")
+        case .scattered: return String(localized: "예: 책 한 챕터 읽기")
+        case .uncategorized: return String(localized: "예: 점심 직후 운동 30분")
         }
     }
 
@@ -2178,19 +2185,19 @@ struct ClassificationGraphBackground: View {
     private var quadrantLabels: some View {
         ZStack {
             // 우상: forged — 의지⭕️ 시간⭕️
-            quadrantLabel("마음먹은 대로 했어",
+            quadrantLabel(String(localized: "마음먹은 대로 했어"),
                           rgb: (0.92, 0.55, 0.25),
                           at: CGPoint(x: size * 0.74, y: size * 0.32))
             // 좌상: accept — 의지 없이 시간만 들였음
-            quadrantLabel("어쩌다 하게 됐어",
+            quadrantLabel(String(localized: "어쩌다 하게 됐어"),
                           rgb: (0.95, 0.78, 0.42),
                           at: CGPoint(x: size * 0.26, y: size * 0.32))
             // 우하: missed — 의지는 있는데 시간을 못 냈음
-            quadrantLabel("하려 했는데 못 했어",
+            quadrantLabel(String(localized: "하려 했는데 못 했어"),
                           rgb: (0.78, 0.66, 0.46),
                           at: CGPoint(x: size * 0.74, y: size * 0.68))
             // 좌하: scattered — 그냥 흘러간 시간
-            quadrantLabel("그냥 흘러갔어",
+            quadrantLabel(String(localized: "그냥 흘러갔어"),
                           rgb: (0.72, 0.70, 0.66),
                           at: CGPoint(x: size * 0.26, y: size * 0.68))
         }
@@ -2244,6 +2251,13 @@ struct ReflectionDistributionView: View {
     private enum Scope: String, CaseIterable {
         case all = "전체"
         case recent30 = "최근 30일"
+
+        var title: String {
+            switch self {
+            case .all: return String(localized: "전체")
+            case .recent30: return String(localized: "최근 30일")
+            }
+        }
     }
     @State private var scope: Scope = .all
 
@@ -2368,7 +2382,7 @@ struct ReflectionDistributionView: View {
                     Button {
                         withAnimation(.easeInOut(duration: 0.18)) { scope = s }
                     } label: {
-                        Text(s.rawValue)
+                        Text(s.title)
                             .font(.system(size: 11, weight: scope == s ? .semibold : .regular))
                             .foregroundColor(scope == s ? .orange : .gray.opacity(0.55))
                             .padding(.vertical, 5)
@@ -2505,10 +2519,7 @@ struct ReflectionDistributionView: View {
         let counts = quadrantCounts
         let total = max(1, plotted.count)
         func pct(_ n: Int) -> Int { Int(round(Double(n) / Double(total) * 100)) }
-        return "회고 \(plotted.count)개. 마음먹은 대로 했어 \(pct(counts.tr))퍼센트, "
-             + "어쩌다 하게 됐어 \(pct(counts.tl))퍼센트, "
-             + "하려 했는데 못 했어 \(pct(counts.br))퍼센트, "
-             + "그냥 흘러갔어 \(pct(counts.bl))퍼센트"
+        return String(localized: "회고 \(plotted.count)개. 마음먹은 대로 했어 \(pct(counts.tr))퍼센트, 어쩌다 하게 됐어 \(pct(counts.tl))퍼센트, 하려 했는데 못 했어 \(pct(counts.br))퍼센트, 그냥 흘러갔어 \(pct(counts.bl))퍼센트")
     }
 }
 

@@ -19,22 +19,22 @@ enum ReflectionCategory: String, Codable, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .forged:        return "마음먹은 대로 한 일"
-        case .missed:        return "하려 했지만 못 한 일"
-        case .stop:          return "그만둘 것"
-        case .accept:        return "어쩌다 하게 된 일"
-        case .scattered:     return "그냥 흘러간 시간"
-        case .uncategorized: return "분류 안 됨"
+        case .forged:        return String(localized: "마음먹은 대로 한 일")
+        case .missed:        return String(localized: "하려 했지만 못 한 일")
+        case .stop:          return String(localized: "그만둘 것")
+        case .accept:        return String(localized: "어쩌다 하게 된 일")
+        case .scattered:     return String(localized: "그냥 흘러간 시간")
+        case .uncategorized: return String(localized: "분류 안 됨")
         }
     }
 
     var shortLabel: String {
         switch self {
-        case .forged:    return "해냄"
-        case .missed:    return "못함"
-        case .stop:      return "멈춰"
-        case .accept:    return "어쩌다"
-        case .scattered: return "흘러감"
+        case .forged:    return String(localized: "해냄")
+        case .missed:    return String(localized: "못함")
+        case .stop:      return String(localized: "멈춰")
+        case .accept:    return String(localized: "어쩌다")
+        case .scattered: return String(localized: "흘러감")
         case .uncategorized: return "?"
         }
     }
@@ -148,8 +148,8 @@ struct DayReflection: Codable, Identifiable, Hashable {
 
     var dateString: String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "yyyy.MM.dd (E)"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("yMdE")
         return f.string(from: date)
     }
 }

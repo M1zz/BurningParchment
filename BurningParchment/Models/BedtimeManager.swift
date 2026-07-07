@@ -14,6 +14,17 @@ enum PeriodType: String, CaseIterable, Identifiable {
     case year = "1년"
     case deadline = "D-Day"
     var id: String { rawValue }
+
+    /// UI 표시용 이름.  rawValue는 UserDefaults(hiddenPeriods)에 저장되는 키라 로컬라이즈하지 않음.
+    var displayName: String {
+        switch self {
+        case .day:      return String(localized: "1일")
+        case .week:     return String(localized: "1주")
+        case .month:    return String(localized: "1달")
+        case .year:     return String(localized: "1년")
+        case .deadline: return "D-Day"
+        }
+    }
 }
 
 enum IndicatorShape: String, CaseIterable, Identifiable {
@@ -24,10 +35,10 @@ enum IndicatorShape: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var label: String {
         switch self {
-        case .dot:  return "점"
-        case .pill: return "캡슐"
-        case .line: return "선"
-        case .bar:  return "바"
+        case .dot:  return String(localized: "점")
+        case .pill: return String(localized: "캡슐")
+        case .line: return String(localized: "선")
+        case .bar:  return String(localized: "바")
         }
     }
 }
@@ -111,11 +122,11 @@ class BedtimeManager: ObservableObject {
 
     var periodLabel: String {
         switch selectedPeriod {
-        case .day: return "취침까지 남은 시간"
-        case .week: return "이번 주 남은 시간"
-        case .month: return "이번 달 남은 시간"
-        case .year: return "올해 남은 시간"
-        case .deadline: return "데드라인까지"
+        case .day: return String(localized: "취침까지 남은 시간")
+        case .week: return String(localized: "이번 주 남은 시간")
+        case .month: return String(localized: "이번 달 남은 시간")
+        case .year: return String(localized: "올해 남은 시간")
+        case .deadline: return String(localized: "데드라인까지")
         }
     }
 
@@ -260,8 +271,8 @@ class BedtimeManager: ObservableObject {
         let mins  = (total % 3600) / 60
         let secs  = total % 60
         var parts: [String] = []
-        if days > 0 { parts.append("\(days)일") }
-        parts += ["\(hours)시간", "\(mins)분", "\(secs)초"]
+        if days > 0 { parts.append(String(localized: "\(days)일")) }
+        parts += [String(localized: "\(hours)시간"), String(localized: "\(mins)분"), String(localized: "\(secs)초")]
         return parts.joined(separator: " ")
     }
 
@@ -272,8 +283,8 @@ class BedtimeManager: ObservableObject {
         let m = (total % 3600) / 60
         let s = total % 60
         var parts: [String] = []
-        if d > 0 { parts.append("\(d)일") }
-        parts += ["\(h)시간", "\(m)분", "\(s)초"]
+        if d > 0 { parts.append(String(localized: "\(d)일")) }
+        parts += [String(localized: "\(h)시간"), String(localized: "\(m)분"), String(localized: "\(s)초")]
         return parts.joined(separator: " ")
     }
 
@@ -590,8 +601,8 @@ class BedtimeManager: ObservableObject {
         guard notifDate > Date() else { return }
 
         let content = UNMutableNotificationContent()
-        content.title = "불타는 내인생 🔥"
-        content.body = "취침 1시간 전입니다. 오늘 하루도 수고했어요!"
+        content.title = String(localized: "불타는 내인생 🔥")
+        content.body = String(localized: "취침 1시간 전입니다. 오늘 하루도 수고했어요!")
         content.sound = .default
 
         let comps = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: notifDate)

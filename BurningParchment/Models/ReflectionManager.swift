@@ -23,7 +23,7 @@ class ReflectionManager: ObservableObject {
     @discardableResult
     func createUrn(name: String, emoji: String = "🏺") -> Urn {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        let finalName = trimmed.isEmpty ? "이름 없는 항아리" : trimmed
+        let finalName = trimmed.isEmpty ? String(localized: "이름 없는 항아리") : trimmed
         let urn = Urn(name: finalName, emoji: emoji)
         urns.append(urn)
         urns.sort { $0.createdAt < $1.createdAt }

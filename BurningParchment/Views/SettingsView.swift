@@ -44,7 +44,7 @@ struct SettingsView: View {
 
                         // 기상시간 피커
                         timePickerSection(
-                            title: "기상 시간",
+                            title: String(localized: "기상 시간"),
                             icon: "sunrise.fill",
                             hour: $selWakeH,
                             minute: $selWakeM
@@ -52,7 +52,7 @@ struct SettingsView: View {
 
                         // 취침시간 피커
                         timePickerSection(
-                            title: "취침 시간",
+                            title: String(localized: "취침 시간"),
                             icon: "moon.fill",
                             hour: $selBedH,
                             minute: $selBedM
@@ -148,7 +148,7 @@ struct SettingsView: View {
                     let isVisible = !bedtimeManager.hiddenPeriods.contains(period.rawValue)
 
                     HStack {
-                        Text(period.rawValue)
+                        Text(period.displayName)
                             .font(.system(size: 15, design: .serif))
                             .foregroundColor(isVisible ? .orange.opacity(0.85) : .gray.opacity(0.4))
                         Spacer()
@@ -191,16 +191,16 @@ struct SettingsView: View {
     // MARK: - Indicator Section
 
     private let symbolOptions: [(name: String, label: String)] = [
-        ("circle.fill",   "원"),
-        ("flame.fill",    "불꽃"),
-        ("star.fill",     "별"),
-        ("heart.fill",    "하트"),
-        ("moon.fill",     "달"),
-        ("sun.max.fill",  "해"),
-        ("bolt.fill",     "번개"),
-        ("leaf.fill",     "잎"),
-        ("drop.fill",     "방울"),
-        ("sparkle",       "반짝"),
+        ("circle.fill",   String(localized: "원")),
+        ("flame.fill",    String(localized: "불꽃")),
+        ("star.fill",     String(localized: "별")),
+        ("heart.fill",    String(localized: "하트")),
+        ("moon.fill",     String(localized: "달")),
+        ("sun.max.fill",  String(localized: "해")),
+        ("bolt.fill",     String(localized: "번개")),
+        ("leaf.fill",     String(localized: "잎")),
+        ("drop.fill",     String(localized: "방울")),
+        ("sparkle",       String(localized: "반짝")),
     ]
 
     private var isSymbolMode: Bool { !bedtimeManager.indicatorSymbol.isEmpty }
@@ -232,10 +232,10 @@ struct SettingsView: View {
 
                 // 모드 선택 (도형 / 심볼)
                 HStack(spacing: 0) {
-                    modeTab(title: "도형", isSelected: !isSymbolMode) {
+                    modeTab(title: String(localized: "도형"), isSelected: !isSymbolMode) {
                         bedtimeManager.indicatorSymbol = ""
                     }
-                    modeTab(title: "심볼", isSelected: isSymbolMode) {
+                    modeTab(title: String(localized: "심볼"), isSelected: isSymbolMode) {
                         if bedtimeManager.indicatorSymbol.isEmpty {
                             bedtimeManager.indicatorSymbol = symbolOptions[0].name
                         }
@@ -350,7 +350,7 @@ struct SettingsView: View {
 
             VStack(spacing: 0) {
                 contactRow(
-                    title: "이메일로 문의하기",
+                    title: String(localized: "이메일로 문의하기"),
                     icon: "envelope",
                     url: "mailto:leeo@kakao.com"
                 )
@@ -359,7 +359,7 @@ struct SettingsView: View {
                     .padding(.leading, 14)
 
                 contactRow(
-                    title: "인스타그램 DM (@lee25_ios)",
+                    title: String(localized: "인스타그램 DM (@lee25_ios)"),
                     icon: "paperplane",
                     url: "https://instagram.com/lee25_ios"
                 )
@@ -505,8 +505,8 @@ struct SettingsView: View {
     private func presetButton(hour: Int, minute: Int, label: String) -> some View {
         let isSelected = selBedH == hour && selBedM == minute
         let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
-        let ampm = hour >= 12 ? "오후" : "오전"
-        let minStr = minute > 0 ? " \(minute)분" : ""
+        let ampm = hour >= 12 ? String(localized: "오후") : String(localized: "오전")
+        let minStr = minute > 0 ? String(localized: " \(minute)분") : ""
         return Button {
             selBedH = hour
             selBedM = minute

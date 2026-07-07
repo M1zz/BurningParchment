@@ -247,8 +247,8 @@ struct ReflectionBookView: View {
 
     private func headerDateString(_ date: Date) -> String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "yyyy년 M월 d일 (EEEE)"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("yMdEEEE")
         return f.string(from: date)
     }
 

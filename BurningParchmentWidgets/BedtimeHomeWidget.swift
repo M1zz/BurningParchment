@@ -11,19 +11,19 @@ enum WidgetPeriod: String {
 
     var label: String {
         switch self {
-        case .daily:   return "취침까지"
-        case .weekly:  return "이번 주"
-        case .monthly: return "이번 달"
-        case .yearly:  return "올해"
+        case .daily:   return String(localized: "취침까지")
+        case .weekly:  return String(localized: "이번 주")
+        case .monthly: return String(localized: "이번 달")
+        case .yearly:  return String(localized: "올해")
         }
     }
 
     var fullLabel: String {
         switch self {
-        case .daily:   return "취침까지 남은 시간"
-        case .weekly:  return "이번 주 남은 시간"
-        case .monthly: return "이번 달 남은 시간"
-        case .yearly:  return "올해 남은 시간"
+        case .daily:   return String(localized: "취침까지 남은 시간")
+        case .weekly:  return String(localized: "이번 주 남은 시간")
+        case .monthly: return String(localized: "이번 달 남은 시간")
+        case .yearly:  return String(localized: "올해 남은 시간")
         }
     }
 }
@@ -70,7 +70,7 @@ struct ParchmentProvider: TimelineProvider {
         let rem: TimeInterval = 5 * 3600 + 24 * 60
         return ParchmentEntry(
             date: .now, period: period, progress: 0.35,
-            remainingText: period == .daily ? "5h 24m" : "3일 4시간",
+            remainingText: period == .daily ? "5h 24m" : String(localized: "3일 4시간"),
             bedtimeDate: nil,
             bedtimeString: "11:00 PM", isActive: true,
             isBeforeWakeTime: false, remainingSeconds: rem
@@ -203,9 +203,9 @@ struct ParchmentProvider: TimelineProvider {
         let days  = total / 86400
         let hours = (total % 86400) / 3600
         let mins  = (total % 3600) / 60
-        if days > 0  { return "\(days)일 \(hours)시간" }
-        if hours > 0 { return "\(hours)시간 \(mins)분" }
-        return "\(mins)분"
+        if days > 0  { return String(localized: "\(days)일 \(hours)시간") }
+        if hours > 0 { return String(localized: "\(hours)시간 \(mins)분") }
+        return String(localized: "\(mins)분")
     }
 
     // MARK: - Calendar Boundary Helpers

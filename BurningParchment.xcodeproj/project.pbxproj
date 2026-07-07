@@ -30,6 +30,9 @@
 		C273B9F2010771609AAE445B /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9062A5518028E5E6F7CCB7 /* Deadline.swift */; };
 		C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */; };
 		CCBDF2B91CB414AA67F087B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC700E65FDA28935E4EB72B5 /* Assets.xcassets */; };
+		A11A0001000000000000B001 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F001 /* Localizable.xcstrings */; };
+		A11A0001000000000000B002 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F002 /* InfoPlist.xcstrings */; };
+		A11A0001000000000000B003 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F003 /* Localizable.xcstrings */; };
 		D3D28D4E5AF111DAAFD0915F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C24016F79235C3EAFE2D5F /* ContentView.swift */; };
 		F43B85F32130EAC6AFC9D0E7 /* BedtimeLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */; };
 		FCF5BCE791CF19AF4513B04D /* BurningParchmentWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */; };
@@ -80,6 +83,9 @@
 		95D60B5770EF62427A47B171 /* FireShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FireShader.metal; sourceTree = "<group>"; };
 		A9E108371E99FC1B2998C2CF /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A11A0001000000000000F001 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A11A0001000000000000F002 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		A11A0001000000000000F003 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B1E46A4404E4D469BD9E3474 /* DeadlineWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineWidget.swift; sourceTree = "<group>"; };
 		B84B5CD9701830C1165EDE4C /* DayReflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayReflection.swift; sourceTree = "<group>"; };
 		BC6749D3031663D06A84E3FF /* BedtimeExcuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeExcuse.swift; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				AC700E65FDA28935E4EB72B5 /* Assets.xcassets */,
+				A11A0001000000000000F001 /* Localizable.xcstrings */,
+				A11A0001000000000000F002 /* InfoPlist.xcstrings */,
 				048805690EF286B13912D40A /* BurningParchment.entitlements */,
 				312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */,
 				916E0DEA4D4FEE77171661E8 /* Info.plist */,
@@ -160,6 +168,7 @@
 				227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */,
 				F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */,
 				B1E46A4404E4D469BD9E3474 /* DeadlineWidget.swift */,
+				A11A0001000000000000F003 /* Localizable.xcstrings */,
 			);
 			path = BurningParchmentWidgets;
 			sourceTree = "<group>";
@@ -201,6 +210,7 @@
 			buildConfigurationList = 999CABBB7ACA272E213E5F94 /* Build configuration list for PBXNativeTarget "BurningParchmentWidgets" */;
 			buildPhases = (
 				1C94BC572E504AC916AA1D43 /* Sources */,
+				A11A0001000000000000C001 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -232,11 +242,12 @@
 			};
 			buildConfigurationList = FFA0C3B758D74FCCDA9DF233 /* Build configuration list for PBXProject "BurningParchment" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
+				ko,
 			);
 			mainGroup = 39EC316FADCCDA4DC5875847;
 			minimizedProjectReferenceProxies = 1;
@@ -250,11 +261,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A11A0001000000000000C001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11A0001000000000000B003 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F513A57B49D5A2573A047950 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CCBDF2B91CB414AA67F087B4 /* Assets.xcassets in Resources */,
+				A11A0001000000000000B001 /* Localizable.xcstrings in Resources */,
+				A11A0001000000000000B002 /* InfoPlist.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

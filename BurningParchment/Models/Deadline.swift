@@ -52,23 +52,23 @@ struct Deadline: Codable, Identifiable {
         let hours = (total % 86400) / 3600
         let mins  = (total % 3600) / 60
         let secs  = total % 60
-        if days > 0  { return "\(days)일 \(hours)시간" }
-        if hours > 0 { return "\(hours)시간 \(mins)분" }
-        if mins > 0  { return "\(mins)분 \(secs)초" }
-        return "\(secs)초"
+        if days > 0  { return String(localized: "\(days)일 \(hours)시간") }
+        if hours > 0 { return String(localized: "\(hours)시간 \(mins)분") }
+        if mins > 0  { return String(localized: "\(mins)분 \(secs)초") }
+        return String(localized: "\(secs)초")
     }
 
     var targetDateString: String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "yyyy.MM.dd (E) HH:mm"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("yMdEHm")
         return f.string(from: targetDate)
     }
 
     var startDateString: String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "yyyy.MM.dd (E) HH:mm"
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("yMdEHm")
         return f.string(from: startDate)
     }
 }

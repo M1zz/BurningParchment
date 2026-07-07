@@ -431,11 +431,11 @@ struct ContentView: View {
 
     private var periodTitle: String {
         switch bedtimeManager.selectedPeriod {
-        case .day:      return "오늘"
-        case .week:     return "이번 주"
-        case .month:    return "이번 달"
-        case .year:     return "올해"
-        case .deadline: return "나의 목표"
+        case .day:      return String(localized: "오늘")
+        case .week:     return String(localized: "이번 주")
+        case .month:    return String(localized: "이번 달")
+        case .year:     return String(localized: "올해")
+        case .deadline: return String(localized: "나의 목표")
         }
     }
 }

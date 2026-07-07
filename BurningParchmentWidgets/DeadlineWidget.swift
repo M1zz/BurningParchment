@@ -26,9 +26,9 @@ struct DeadlineProvider: TimelineProvider {
 
     func placeholder(in context: Context) -> DeadlineEntry {
         DeadlineEntry(
-            date: .now, title: "프로젝트 제출", emoji: "🎯",
-            progress: 0.55, remainingText: "3일 4시간",
-            targetDateString: "2025.12.31 (수) 23:59",
+            date: .now, title: String(localized: "프로젝트 제출"), emoji: "🎯",
+            progress: 0.55, remainingText: String(localized: "3일 4시간"),
+            targetDateString: String(localized: "2025.12.31 (수) 23:59"),
             isExpired: false, hasDeadline: true
         )
     }
@@ -101,10 +101,10 @@ struct DeadlineProvider: TimelineProvider {
         let hours = (total % 86400) / 3600
         let mins  = (total % 3600) / 60
         let secs  = total % 60
-        if days > 0  { return "\(days)일 \(hours)시간" }
-        if hours > 0 { return "\(hours)시간 \(mins)분" }
-        if mins > 0  { return "\(mins)분 \(secs)초" }
-        return "\(secs)초"
+        if days > 0  { return String(localized: "\(days)일 \(hours)시간") }
+        if hours > 0 { return String(localized: "\(hours)시간 \(mins)분") }
+        if mins > 0  { return String(localized: "\(mins)분 \(secs)초") }
+        return String(localized: "\(secs)초")
     }
 }
 

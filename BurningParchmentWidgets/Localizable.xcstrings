@@ -1,10 +1,9 @@
 {
   "sourceLanguage": "ko",
   "strings": {
-    "%lld%%": {
-      "shouldTranslate": false
-    },
+    "%@%%": {},
     "%lld분": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -15,6 +14,7 @@
       }
     },
     "%lld분 %lld초": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -25,6 +25,7 @@
       }
     },
     "%lld시간 %lld분": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -35,6 +36,7 @@
       }
     },
     "%lld일 %lld시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -45,6 +47,7 @@
       }
     },
     "%lld초": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -55,6 +58,7 @@
       }
     },
     "2025.12.31 (수) 23:59": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -65,6 +69,7 @@
       }
     },
     "3일 4시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -104,7 +109,28 @@
         }
       }
     },
+    "기상까지 남은 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time left until wake-up"
+          }
+        }
+      }
+    },
+    "남은 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Left"
+          }
+        }
+      }
+    },
     "다음 마감까지 남은 시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -115,6 +141,7 @@
       }
     },
     "데드라인 양피지": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -165,6 +192,7 @@
       }
     },
     "연간 양피지": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -175,6 +203,7 @@
       }
     },
     "오늘 취침까지 남은 시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -185,6 +214,7 @@
       }
     },
     "올해": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -195,6 +225,7 @@
       }
     },
     "올해 남은 시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -205,6 +236,7 @@
       }
     },
     "월간 양피지": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -215,6 +247,7 @@
       }
     },
     "이번 달": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -225,6 +258,7 @@
       }
     },
     "이번 달 남은 시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -235,6 +269,7 @@
       }
     },
     "이번 주": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -245,6 +280,7 @@
       }
     },
     "이번 주 남은 시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -255,11 +291,22 @@
       }
     },
     "일간 양피지": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Daily Parchment"
+          }
+        }
+      }
+    },
+    "잠금 화면에서 취침까지 남은 시간을 확인해요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See how much time is left until bedtime, right on your Lock Screen"
           }
         }
       }
@@ -275,6 +322,7 @@
       }
     },
     "주간 양피지": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -305,6 +353,7 @@
       }
     },
     "취침까지 남은 시간": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -315,6 +364,7 @@
       }
     },
     "프로젝트 제출": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -324,12 +374,44 @@
         }
       }
     },
+    "🌅 곧 기상 · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🌅 Waking soon · %@"
+          }
+        }
+      }
+    },
+    "🔥 %@%% 남음": {},
     "🔥 %lld%% 남음": {
+      "extractionState": "stale",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "🔥 %lld%% left"
+          }
+        }
+      }
+    },
+    "🔥 취침까지 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🔥 %@ until bedtime"
+          }
+        }
+      }
+    },
+    "😴 기상까지 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "😴 %@ until wake-up"
           }
         }
       }

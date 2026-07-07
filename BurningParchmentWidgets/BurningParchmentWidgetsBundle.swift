@@ -1,5 +1,5 @@
 // BurningParchmentWidgetsBundle.swift
-// 위젯 번들 (일간 / 주간 / 월간 / 연간 / 데드라인)
+// 위젯 번들 (일간 / 주간 / 월간 / 연간 / 데드라인 / 잠금 화면)
 
 import SwiftUI
 import WidgetKit
@@ -12,5 +12,6 @@ struct BurningParchmentWidgetsBundle: WidgetBundle {
         MonthlyParchmentWidget()
         YearlyParchmentWidget()
         DeadlineWidget()
+        BedtimeLockScreenWidget()
     }
 }

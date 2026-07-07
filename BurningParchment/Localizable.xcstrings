@@ -348,6 +348,16 @@
         }
       }
     },
+    "개인정보처리방침": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy"
+          }
+        }
+      }
+    },
     "곧 기상 시간이에요": {
       "localizations": {
         "en": {
@@ -1861,6 +1871,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "It's repeating this week too"
+          }
+        }
+      }
+    },
+    "이용약관 (EULA)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms of Use (EULA)"
           }
         }
       }

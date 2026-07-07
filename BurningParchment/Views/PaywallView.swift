@@ -21,6 +21,7 @@ struct PaywallView: View {
                         header
                         featureList
                         purchaseSection
+                        legalSection
                     }
                     .padding(.horizontal, 24)
                     .padding(.bottom, 32)
@@ -190,6 +191,21 @@ struct PaywallView: View {
             }
             .disabled(storeManager.purchaseInProgress)
         }
+    }
+
+    // MARK: - Legal
+
+    private var legalSection: some View {
+        HStack(spacing: 8) {
+            Link("이용약관 (EULA)",
+                 destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
+            Text("·")
+            Link("개인정보처리방침",
+                 destination: URL(string: "https://github.com/M1zz/BurningParchment/blob/main/PRIVACY.md")!)
+        }
+        .font(.system(size: 11))
+        .foregroundColor(.gray.opacity(0.5))
+        .tint(.gray.opacity(0.5))
     }
 
     private var purchaseButtonTitle: String {

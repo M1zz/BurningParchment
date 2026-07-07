@@ -9,6 +9,7 @@ struct ContentView: View {
     @EnvironmentObject var deadlineManager:   DeadlineManager
     @EnvironmentObject var reflectionManager: ReflectionManager
     @EnvironmentObject var excuseManager:     BedtimeExcuseManager
+    @EnvironmentObject var storeManager:      StoreManager
     @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings    = false
     @State private var showDeadlines   = false
@@ -102,15 +103,18 @@ struct ContentView: View {
             .navigationDestination(isPresented: $showReflections) {
                 ReflectionUrnView(autoOpenInput: autoOpenReflectionInput)
                     .environmentObject(reflectionManager)
+                    .environmentObject(storeManager)
             }
         }
         .sheet(isPresented: $showSettings) {
             SettingsView()
                 .environmentObject(bedtimeManager)
+                .environmentObject(storeManager)
         }
         .sheet(isPresented: $showDeadlines) {
             DeadlineListView()
                 .environmentObject(deadlineManager)
+                .environmentObject(storeManager)
         }
         .sheet(isPresented: $showExcuseSheet) {
             BedtimeExcuseSheetView()
@@ -444,6 +448,7 @@ struct ContentView: View {
     ContentView()
         .environmentObject(BedtimeManager())
         .environmentObject(DeadlineManager())
+        .environmentObject(StoreManager())
         .environmentObject(ReflectionManager())
         .environmentObject(BedtimeExcuseManager())
 }

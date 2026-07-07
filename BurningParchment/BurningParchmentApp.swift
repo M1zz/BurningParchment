@@ -10,6 +10,7 @@ struct BurningParchmentApp: App {
     @StateObject private var deadlineManager   = DeadlineManager()
     @StateObject private var reflectionManager = ReflectionManager()
     @StateObject private var excuseManager     = BedtimeExcuseManager()
+    @StateObject private var storeManager      = StoreManager()
 
     var body: some Scene {
         WindowGroup {
@@ -18,6 +19,7 @@ struct BurningParchmentApp: App {
                 .environmentObject(deadlineManager)
                 .environmentObject(reflectionManager)
                 .environmentObject(excuseManager)
+                .environmentObject(storeManager)
                 .preferredColorScheme(.dark)
         }
     }

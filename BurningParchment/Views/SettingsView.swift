@@ -5,8 +5,10 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
+    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
 
+    @State private var showPaywall = false
     @State private var selBedH: Int = 23
     @State private var selBedM: Int = 0
     @State private var selWakeH: Int = 7
@@ -83,6 +85,9 @@ struct SettingsView: View {
 
                         // 인디케이터 설정
                         indicatorSection
+
+                        // 프로
+                        proSection
 
                         // 개발자 문의
                         developerContactSection
@@ -334,6 +339,91 @@ struct SettingsView: View {
             )
         }
         .padding(.horizontal, 20)
+    }
+
+    // MARK: - 프로
+
+    private var proSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "flame.fill")
+                    .foregroundColor(.orange.opacity(0.6))
+                Text("프로")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.orange.opacity(0.5))
+            }
+
+            if storeManager.isPro {
+                HStack(spacing: 10) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 16))
+                        .foregroundColor(.orange.opacity(0.85))
+                    Text("프로 이용 중이에요. 감사합니다 🔥")
+                        .font(.system(size: 14, design: .serif))
+                        .foregroundColor(.orange.opacity(0.85))
+                    Spacer()
+                }
+                .padding(14)
+                .background(
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color.white.opacity(0.03))
+                        .overlay(RoundedRectangle(cornerRadius: 14)
+                            .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                )
+            } else {
+                VStack(spacing: 0) {
+                    Button { showPaywall = true } label: {
+                        HStack(spacing: 10) {
+                            Image(systemName: "sparkles")
+                                .font(.system(size: 14))
+                                .foregroundColor(.orange.opacity(0.7))
+                            Text("프로로 업그레이드")
+                                .font(.system(size: 15))
+                                .foregroundColor(.orange.opacity(0.9))
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray.opacity(0.4))
+                        }
+                        .padding(14)
+                    }
+
+                    Divider().background(Color.orange.opacity(0.08))
+                        .padding(.leading, 14)
+
+                    Button {
+                        Task { await storeManager.restorePurchases() }
+                    } label: {
+                        HStack(spacing: 10) {
+                            Image(systemName: "arrow.clockwise")
+                                .font(.system(size: 14))
+                                .foregroundColor(.orange.opacity(0.7))
+                            Text("구매 복원")
+                                .font(.system(size: 15))
+                                .foregroundColor(.orange.opacity(0.9))
+                            Spacer()
+                        }
+                        .padding(14)
+                    }
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color.white.opacity(0.03))
+                        .overlay(RoundedRectangle(cornerRadius: 14)
+                            .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                )
+
+                Text("항아리·데드라인 무제한을 이용해보세요.")
+                    .font(.system(size: 11))
+                    .foregroundColor(.gray.opacity(0.4))
+                    .padding(.horizontal, 4)
+            }
+        }
+        .padding(.horizontal, 20)
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+                .environmentObject(storeManager)
+        }
     }
 
     // MARK: - 개발자 문의

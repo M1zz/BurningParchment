@@ -351,11 +351,13 @@ struct AshUrnButton: View {
 
 struct ReflectionUrnView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
+    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
 
     var autoOpenInput: Bool = false
 
     @State private var showInput = false
+    @State private var showPaywall = false
     @State private var selectedUrn: Urn? = nil
     @State private var editing: DayReflection? = nil
     @State private var showAddUrn = false
@@ -399,7 +401,11 @@ struct ReflectionUrnView: View {
                     .accessibilityLabel("회고 책으로 보기")
 
                     Button {
-                        showAddUrn = true
+                        if storeManager.canAddUrn(currentCount: reflectionManager.urns.count) {
+                            showAddUrn = true
+                        } else {
+                            showPaywall = true
+                        }
                     } label: {
                         ZStack(alignment: .topTrailing) {
                             Image(systemName: "archivebox.fill")
@@ -419,10 +425,16 @@ struct ReflectionUrnView: View {
         .sheet(isPresented: $showInput) {
             ReflectionInputView(existing: nil)
                 .environmentObject(reflectionManager)
+                .environmentObject(storeManager)
         }
         .sheet(item: $editing) { item in
             ReflectionInputView(existing: item)
                 .environmentObject(reflectionManager)
+                .environmentObject(storeManager)
+        }
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+                .environmentObject(storeManager)
         }
         .sheet(item: $selectedUrn) { urn in
             UrnDetailView(urn: urn) { ref in editing = ref }
@@ -1195,6 +1207,7 @@ struct UrnEditView: View {
 
 struct ReflectionInputView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
+    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
 
     let existing: DayReflection?
@@ -1228,6 +1241,7 @@ struct ReflectionInputView: View {
     }
 
     @State private var showCreateUrn = false
+    @State private var showPaywall = false
 
     private let suggestions = [
         String(localized: "성장"), String(localized: "감사"), String(localized: "도전"), String(localized: "휴식"),
@@ -1291,6 +1305,10 @@ struct ReflectionInputView: View {
         .sheet(isPresented: $showCreateUrn) {
             UrnEditView(editing: nil)
                 .environmentObject(reflectionManager)
+        }
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+                .environmentObject(storeManager)
         }
         .presentationDetents(detentSet, selection: $sheetDetent)
         .presentationDragIndicator(.visible)
@@ -1686,7 +1704,13 @@ struct ReflectionInputView: View {
                             )
                         }
                     }
-                    Button { showCreateUrn = true } label: {
+                    Button {
+                        if storeManager.canAddUrn(currentCount: reflectionManager.urns.count) {
+                            showCreateUrn = true
+                        } else {
+                            showPaywall = true
+                        }
+                    } label: {
                         HStack(spacing: 4) {
                             Image(systemName: "plus")
                                 .font(.system(size: 12, weight: .semibold))
@@ -2526,5 +2550,6 @@ struct ReflectionDistributionView: View {
 #Preview {
     ReflectionUrnView()
         .environmentObject(ReflectionManager())
+        .environmentObject(StoreManager())
         .preferredColorScheme(.dark)
 }

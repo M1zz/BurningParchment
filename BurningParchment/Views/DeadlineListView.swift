@@ -6,8 +6,10 @@ import SwiftUI
 
 struct DeadlineListView: View {
     @EnvironmentObject var deadlineManager: DeadlineManager
+    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
     @State private var showAdd = false
+    @State private var showPaywall = false
     @State private var selectedDeadline: Deadline?
 
     var body: some View {
@@ -41,7 +43,13 @@ struct DeadlineListView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button { showAdd = true } label: {
+                    Button {
+                        if storeManager.canAddDeadline(currentCount: deadlineManager.deadlines.count) {
+                            showAdd = true
+                        } else {
+                            showPaywall = true
+                        }
+                    } label: {
                         Image(systemName: "plus")
                             .foregroundColor(.orange)
                             .font(.system(size: 16, weight: .semibold))
@@ -56,6 +64,10 @@ struct DeadlineListView: View {
         .sheet(isPresented: $showAdd) {
             DeadlineFormView()
                 .environmentObject(deadlineManager)
+        }
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+                .environmentObject(storeManager)
         }
         .sheet(item: $selectedDeadline) { deadline in
             DeadlineDetailView(deadline: deadline)

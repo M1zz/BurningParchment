@@ -31,6 +31,8 @@
 		C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */; };
 		CCBDF2B91CB414AA67F087B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC700E65FDA28935E4EB72B5 /* Assets.xcassets */; };
 		A11A0001000000000000B004 /* BedtimeLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F004 /* BedtimeLockScreenWidget.swift */; };
+		A11A0001000000000000B005 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F005 /* StoreManager.swift */; };
+		A11A0001000000000000B006 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F006 /* PaywallView.swift */; };
 		A11A0001000000000000B001 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F001 /* Localizable.xcstrings */; };
 		A11A0001000000000000B002 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F002 /* InfoPlist.xcstrings */; };
 		A11A0001000000000000B003 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A11A0001000000000000F003 /* Localizable.xcstrings */; };
@@ -85,6 +87,8 @@
 		A9E108371E99FC1B2998C2CF /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11A0001000000000000F004 /* BedtimeLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeLockScreenWidget.swift; sourceTree = "<group>"; };
+		A11A0001000000000000F005 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		A11A0001000000000000F006 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		A11A0001000000000000F001 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A11A0001000000000000F002 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		A11A0001000000000000F003 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				36C24016F79235C3EAFE2D5F /* ContentView.swift */,
 				013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */,
 				2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */,
+				A11A0001000000000000F006 /* PaywallView.swift */,
 				8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */,
 				DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */,
 				02478518C92DBEC5E15B33C5 /* SettingsView.swift */,
@@ -158,6 +163,7 @@
 				5E9062A5518028E5E6F7CCB7 /* Deadline.swift */,
 				25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */,
 				38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */,
+				A11A0001000000000000F005 /* StoreManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +327,8 @@
 				8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */,
 				1F521ADAB0DC4F051433A917 /* ReflectionUrnView.swift in Sources */,
 				80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */,
+				A11A0001000000000000B005 /* StoreManager.swift in Sources */,
+				A11A0001000000000000B006 /* PaywallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

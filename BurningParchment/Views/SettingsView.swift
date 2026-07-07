@@ -84,6 +84,9 @@ struct SettingsView: View {
                         // 인디케이터 설정
                         indicatorSection
 
+                        // 개발자 문의
+                        developerContactSection
+
                         // 안내
                         VStack(spacing: 8) {
                             Label("기상시간부터 자동 카운트다운", systemImage: "flame.fill")
@@ -331,6 +334,71 @@ struct SettingsView: View {
             )
         }
         .padding(.horizontal, 20)
+    }
+
+    // MARK: - 개발자 문의
+
+    private var developerContactSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "envelope")
+                    .foregroundColor(.orange.opacity(0.6))
+                Text("개발자에게 문의")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.orange.opacity(0.5))
+            }
+
+            VStack(spacing: 0) {
+                contactRow(
+                    title: "이메일로 문의하기",
+                    icon: "envelope",
+                    url: "mailto:leeo@kakao.com"
+                )
+
+                Divider().background(Color.orange.opacity(0.08))
+                    .padding(.leading, 14)
+
+                contactRow(
+                    title: "인스타그램 DM (@lee25_ios)",
+                    icon: "paperplane",
+                    url: "https://instagram.com/lee25_ios"
+                )
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.white.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+            )
+
+            Text("버그 제보와 기능 제안을 환영합니다.")
+                .font(.system(size: 11))
+                .foregroundColor(.gray.opacity(0.4))
+                .padding(.horizontal, 4)
+        }
+        .padding(.horizontal, 20)
+    }
+
+    @ViewBuilder
+    private func contactRow(title: String, icon: String, url: String) -> some View {
+        if let destination = URL(string: url) {
+            Link(destination: destination) {
+                HStack {
+                    Image(systemName: icon)
+                        .font(.system(size: sectionIconSize))
+                        .foregroundColor(.orange.opacity(0.6))
+                    Text(title)
+                        .font(.system(size: rowFontSize, design: .serif))
+                        .foregroundColor(.orange.opacity(0.85))
+                    Spacer()
+                    Image(systemName: "arrow.up.right")
+                        .font(.system(size: 11))
+                        .foregroundColor(.gray.opacity(0.4))
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
+            }
+        }
     }
 
     private func modeTab(title: String, isSelected: Bool, action: @escaping () -> Void) -> some View {

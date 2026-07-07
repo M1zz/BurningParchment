@@ -8,33 +8,33 @@ import CoreGraphics
 /// 의지 ❌ + 시간 ⭕️ 분면은 사용자 판단으로 stop / accept로 갈라짐.
 /// 의지 ❌ + 시간 ❌ 분면은 항아리에 담기지 않음 (그냥 흘러간 시간).
 enum ReflectionCategory: String, Codable, CaseIterable, Identifiable {
-    case forged     // 의지 ⭕️ + 시간 ⭕️ — 잘 하고 있는 것
-    case missed     // 의지 ⭕️ + 시간 ❌ — 못 하고 있는 것
+    case forged     // 의지 ⭕️ + 시간 ⭕️ — 마음먹은 대로 한 일
+    case missed     // 의지 ⭕️ + 시간 ❌ — 하려 했지만 못 한 일
     case stop       // 의지 ❌ + 시간 ⭕️ — 그만둘 것
-    case accept     // 의지 ❌ + 시간 ⭕️ — 받아들일 것
-    case scattered  // 의지 ❌ + 시간 ❌ — 흘려보낸 시간 (가벼운 먼지)
+    case accept     // 의지 ❌ + 시간 ⭕️ — 어쩌다 하게 된 일
+    case scattered  // 의지 ❌ + 시간 ❌ — 그냥 흘러간 시간 (가벼운 먼지)
     case uncategorized  // 구버전 마이그레이션 잔여물
 
     var id: String { rawValue }
 
     var title: String {
         switch self {
-        case .forged:        return "잘 하고 있는 것"
-        case .missed:        return "못 하고 있는 것"
+        case .forged:        return "마음먹은 대로 한 일"
+        case .missed:        return "하려 했지만 못 한 일"
         case .stop:          return "그만둘 것"
-        case .accept:        return "받아들일 것"
-        case .scattered:     return "흘려보낸 시간"
+        case .accept:        return "어쩌다 하게 된 일"
+        case .scattered:     return "그냥 흘러간 시간"
         case .uncategorized: return "분류 안 됨"
         }
     }
 
     var shortLabel: String {
         switch self {
-        case .forged:    return "잘함"
-        case .missed:    return "부족"
+        case .forged:    return "해냄"
+        case .missed:    return "못함"
         case .stop:      return "멈춰"
-        case .accept:    return "받아"
-        case .scattered: return "흩어"
+        case .accept:    return "어쩌다"
+        case .scattered: return "흘러감"
         case .uncategorized: return "?"
         }
     }

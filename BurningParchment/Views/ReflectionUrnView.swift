@@ -373,7 +373,8 @@ struct ReflectionUrnView: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         urnGrid
-                        recentList
+                        distributionSection
+                        emberCalendar
                     }
                     .padding(.top, 8)
                     .padding(.bottom, 100)
@@ -548,48 +549,23 @@ struct ReflectionUrnView: View {
         )
     }
 
-    // MARK: - Recent
+    // MARK: - Distribution (재의 분포)
 
     @ViewBuilder
-    private var recentList: some View {
-        let recent = Array(reflectionManager.reflections.prefix(6))
-        if !recent.isEmpty {
-            VStack(alignment: .leading, spacing: 10) {
-                Text("최근")
-                    .font(.system(size: 12, weight: .medium, design: .serif))
-                    .foregroundColor(.gray.opacity(0.5))
-                    .padding(.horizontal, 16)
-
-                VStack(spacing: 8) {
-                    ForEach(recent) { item in
-                        ReflectionRow(item: item,
-                                      urn: reflectionManager.urns.first(where: { $0.id == item.urnId }))
-                            .draggable(item.id.uuidString) {
-                                ReflectionRow(
-                                    item: item,
-                                    urn: reflectionManager.urns.first(where: { $0.id == item.urnId })
-                                )
-                                .opacity(0.85)
-                                .frame(maxWidth: 280)
-                            }
-                            .onTapGesture { editing = item }
-                            .contextMenu {
-                                Button(role: .destructive) {
-                                    reflectionManager.delete(id: item.id)
-                                } label: {
-                                    Label("삭제", systemImage: "trash")
-                                }
-                            }
-                    }
-                }
+    private var distributionSection: some View {
+        if !reflectionManager.reflections.isEmpty {
+            ReflectionDistributionView()
                 .padding(.horizontal, 16)
+        }
+    }
 
-                Text("회고를 항아리로 끌어다 옮길 수 있어요")
-                    .font(.system(size: 10, design: .serif))
-                    .foregroundColor(.gray.opacity(0.4))
-                    .padding(.horizontal, 16)
-                    .padding(.top, 4)
-            }
+    // MARK: - Ember Calendar (잔불 달력)
+
+    @ViewBuilder
+    private var emberCalendar: some View {
+        if !reflectionManager.reflections.isEmpty {
+            EmberCalendarView(onEdit: { editing = $0 })
+                .padding(.horizontal, 16)
         }
     }
 
@@ -681,6 +657,300 @@ struct ReflectionRow: View {
     private var rowDotColor: Color {
         let c = item.category.particleColor
         return Color(red: c.0, green: c.1, blue: c.2)
+    }
+}
+
+// MARK: - Ember Calendar (잔불 달력)
+// 한 달 격자에 하루 = 잔불 하나.
+// 회고가 있는 날은 그날의 대표 카테고리 색으로 빛나고, 없는 날은 꺼진 재.
+// 날을 탭하면 그날의 회고가 아래에 펼쳐짐.
+
+struct EmberCalendarView: View {
+    @EnvironmentObject var reflectionManager: ReflectionManager
+    let onEdit: (DayReflection) -> Void
+
+    @State private var displayedMonth: Date
+    @State private var selectedDay: Date?
+
+    init(onEdit: @escaping (DayReflection) -> Void) {
+        self.onEdit = onEdit
+        let cal = Calendar.current
+        _displayedMonth = State(initialValue: cal.dateInterval(of: .month, for: Date())?.start ?? Date())
+        _selectedDay = State(initialValue: cal.startOfDay(for: Date()))
+    }
+
+    private var cal: Calendar {
+        var c = Calendar.current
+        c.locale = Locale(identifier: "ko_KR")
+        c.firstWeekday = 2  // 월요일 시작
+        return c
+    }
+
+    private static let weekdaySymbols = ["월", "화", "수", "목", "금", "토", "일"]
+
+    private var byDay: [Date: [DayReflection]] {
+        Dictionary(grouping: reflectionManager.reflections) { cal.startOfDay(for: $0.date) }
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            header
+            weekdayHeader
+            dayGrid
+            Divider()
+                .background(Color.orange.opacity(0.12))
+            selectedDayDetail
+        }
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color.white.opacity(0.03))
+                .overlay(RoundedRectangle(cornerRadius: 14)
+                    .stroke(Color.orange.opacity(0.10), lineWidth: 1))
+        )
+    }
+
+    // MARK: Header
+
+    private var monthTitle: String {
+        let f = DateFormatter()
+        f.locale = Locale(identifier: "ko_KR")
+        f.dateFormat = "yyyy년 M월"
+        return f.string(from: displayedMonth)
+    }
+
+    private var canGoNext: Bool {
+        guard let next = cal.date(byAdding: .month, value: 1, to: displayedMonth) else { return false }
+        return next <= Date()
+    }
+
+    private var header: some View {
+        HStack {
+            HStack(spacing: 6) {
+                Image(systemName: "flame")
+                    .font(.system(size: 11))
+                    .foregroundColor(.orange.opacity(0.6))
+                Text(monthTitle)
+                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .foregroundColor(.orange.opacity(0.85))
+            }
+
+            Spacer()
+
+            HStack(spacing: 4) {
+                Button { moveMonth(-1) } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.orange.opacity(0.7))
+                        .frame(width: 30, height: 30)
+                        .background(Circle().fill(Color.white.opacity(0.04)))
+                }
+                .accessibilityLabel("이전 달")
+
+                Button { moveMonth(1) } label: {
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(canGoNext ? .orange.opacity(0.7) : .gray.opacity(0.25))
+                        .frame(width: 30, height: 30)
+                        .background(Circle().fill(Color.white.opacity(0.04)))
+                }
+                .disabled(!canGoNext)
+                .accessibilityLabel("다음 달")
+            }
+        }
+    }
+
+    private func moveMonth(_ delta: Int) {
+        guard let next = cal.date(byAdding: .month, value: delta, to: displayedMonth) else { return }
+        let gen = UISelectionFeedbackGenerator()
+        gen.selectionChanged()
+        withAnimation(.easeInOut(duration: 0.18)) {
+            displayedMonth = next
+            // 이동한 달에 오늘이 있으면 오늘을, 아니면 선택 해제
+            if cal.isDate(next, equalTo: Date(), toGranularity: .month) {
+                selectedDay = cal.startOfDay(for: Date())
+            } else {
+                selectedDay = nil
+            }
+        }
+    }
+
+    // MARK: Grid
+
+    private var weekdayHeader: some View {
+        HStack(spacing: 4) {
+            ForEach(Self.weekdaySymbols, id: \.self) { symbol in
+                Text(symbol)
+                    .font(.system(size: 10, design: .serif))
+                    .foregroundColor(.gray.opacity(0.45))
+                    .frame(maxWidth: .infinity)
+            }
+        }
+    }
+
+    private var monthDays: [Date?] {
+        guard let interval = cal.dateInterval(of: .month, for: displayedMonth),
+              let dayCount = cal.range(of: .day, in: .month, for: displayedMonth)?.count
+        else { return [] }
+        let first = interval.start
+        let leadingBlanks = (cal.component(.weekday, from: first) - cal.firstWeekday + 7) % 7
+        var result: [Date?] = Array(repeating: nil, count: leadingBlanks)
+        for d in 0..<dayCount {
+            result.append(cal.date(byAdding: .day, value: d, to: first))
+        }
+        return result
+    }
+
+    private var dayGrid: some View {
+        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 4) {
+            ForEach(Array(monthDays.enumerated()), id: \.offset) { _, day in
+                if let day {
+                    dayCell(day)
+                } else {
+                    Color.clear.frame(height: 40)
+                }
+            }
+        }
+    }
+
+    private func dayCell(_ day: Date) -> some View {
+        let items = byDay[cal.startOfDay(for: day)] ?? []
+        let isToday = cal.isDateInToday(day)
+        let isSelected = selectedDay.map { cal.isDate($0, inSameDayAs: day) } ?? false
+        let isFuture = day > Date() && !isToday
+
+        return Button {
+            let gen = UISelectionFeedbackGenerator()
+            gen.selectionChanged()
+            withAnimation(.easeInOut(duration: 0.15)) {
+                selectedDay = cal.startOfDay(for: day)
+            }
+        } label: {
+            VStack(spacing: 4) {
+                Text("\(cal.component(.day, from: day))")
+                    .font(.system(size: 9, design: .monospaced))
+                    .foregroundColor(isToday
+                        ? .orange.opacity(0.95)
+                        : .gray.opacity(isFuture ? 0.2 : 0.5))
+
+                ZStack {
+                    if items.isEmpty {
+                        // 꺼진 재
+                        Circle()
+                            .fill(Color.white.opacity(isFuture ? 0.03 : 0.10))
+                            .frame(width: 6, height: 6)
+                    } else {
+                        // 잔불 — 대표 카테고리 색으로 빛남, 개수만큼 커짐
+                        let color = emberColor(for: items)
+                        let size = emberSize(count: items.count)
+                        Circle()
+                            .fill(color)
+                            .frame(width: size, height: size)
+                            .shadow(color: color.opacity(0.9), radius: 3)
+                            .shadow(color: .orange.opacity(0.5), radius: 6)
+                    }
+                }
+                .frame(height: 12)
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 40)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(isSelected ? Color.orange.opacity(0.10) : Color.clear)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(
+                        isToday ? Color.orange.opacity(0.55)
+                        : (isSelected ? Color.orange.opacity(0.30) : Color.clear),
+                        lineWidth: 1
+                    )
+            )
+        }
+        .disabled(isFuture)
+        .accessibilityLabel(dayAccessibilityLabel(day, count: items.count, isToday: isToday))
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+
+    private func emberColor(for items: [DayReflection]) -> Color {
+        var counts: [ReflectionCategory: Int] = [:]
+        for r in items { counts[r.category, default: 0] += 1 }
+        let cat = counts.max { $0.value < $1.value }?.key ?? .uncategorized
+        let c = cat.particleColor
+        return Color(red: c.0, green: c.1, blue: c.2)
+    }
+
+    private func emberSize(count: Int) -> CGFloat {
+        switch count {
+        case 1:  return 7
+        case 2:  return 9
+        default: return 11
+        }
+    }
+
+    private func dayAccessibilityLabel(_ day: Date, count: Int, isToday: Bool) -> String {
+        let f = DateFormatter()
+        f.locale = Locale(identifier: "ko_KR")
+        f.dateFormat = "M월 d일"
+        let base = (isToday ? "오늘, " : "") + f.string(from: day)
+        return count > 0 ? "\(base), 회고 \(count)개" : "\(base), 기록 없음"
+    }
+
+    // MARK: Selected Day Detail
+
+    @ViewBuilder
+    private var selectedDayDetail: some View {
+        if let sel = selectedDay {
+            let items = (byDay[sel] ?? []).sorted { $0.createdAt > $1.createdAt }
+            VStack(alignment: .leading, spacing: 8) {
+                Text(selectedDayTitle(sel))
+                    .font(.system(size: 12, weight: .medium, design: .serif))
+                    .foregroundColor(.orange.opacity(0.7))
+
+                if items.isEmpty {
+                    Text("이 날의 재는 남아 있지 않아요")
+                        .font(.system(size: 12, design: .serif))
+                        .foregroundColor(.gray.opacity(0.45))
+                        .padding(.vertical, 4)
+                } else {
+                    ForEach(items) { item in
+                        ReflectionRow(item: item,
+                                      urn: reflectionManager.urns.first(where: { $0.id == item.urnId }))
+                            .draggable(item.id.uuidString) {
+                                ReflectionRow(
+                                    item: item,
+                                    urn: reflectionManager.urns.first(where: { $0.id == item.urnId })
+                                )
+                                .opacity(0.85)
+                                .frame(maxWidth: 280)
+                            }
+                            .onTapGesture { onEdit(item) }
+                            .contextMenu {
+                                Button(role: .destructive) {
+                                    reflectionManager.delete(id: item.id)
+                                } label: {
+                                    Label("삭제", systemImage: "trash")
+                                }
+                            }
+                    }
+
+                    Text("회고를 항아리로 끌어다 옮길 수 있어요")
+                        .font(.system(size: 10, design: .serif))
+                        .foregroundColor(.gray.opacity(0.4))
+                }
+            }
+        } else {
+            Text("잔불을 탭하면 그날의 회고가 나와요")
+                .font(.system(size: 11, design: .serif))
+                .foregroundColor(.gray.opacity(0.4))
+        }
+    }
+
+    private func selectedDayTitle(_ day: Date) -> String {
+        let f = DateFormatter()
+        f.locale = Locale(identifier: "ko_KR")
+        f.dateFormat = "M월 d일 (E)"
+        return f.string(from: day)
     }
 }
 
@@ -934,7 +1204,7 @@ struct ReflectionInputView: View {
     @State private var spentTime: Bool? = nil
     @State private var driftFeeling: DriftFeeling? = nil
     @State private var currentStep: InputStep = .text
-    @State private var sheetDetent: PresentationDetent = .height(460)
+    @State private var sheetDetent: PresentationDetent = .height(340)
     @State private var savedReflectionId: UUID? = nil
     @State private var saveStatus: SaveStatus = .idle
     @State private var saveWorkItem: DispatchWorkItem? = nil
@@ -943,12 +1213,12 @@ struct ReflectionInputView: View {
 
     private enum SaveStatus { case idle, scheduled, saved }
     private enum InputStep: Int, CaseIterable { case text = 0, category, tomorrow }
-    private enum FocusField: Hashable { case body, keepAlive, tomorrow }
+    private enum FocusField: Hashable { case body, tomorrow }
 
-    private func focusField(for step: InputStep) -> FocusField {
+    private func focusField(for step: InputStep) -> FocusField? {
         switch step {
         case .text: return .body
-        case .category: return .keepAlive
+        case .category: return nil  // 분류 그래프가 키보드에 가리지 않도록 키보드를 내림
         case .tomorrow: return .tomorrow
         }
     }
@@ -964,15 +1234,6 @@ struct ReflectionInputView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
-
-            // 키보드를 step 사이에 끊김 없이 같은 자리에 잡아두기 위한 invisible 필드.
-            // step 2(분류 그래프)에서는 사용자 입력 영역이 없지만 이 필드가 활성이라 키보드 유지.
-            TextField("keep-alive", text: .constant(""))
-                .focused($focusedField, equals: .keepAlive)
-                .frame(width: 1, height: 1)
-                .opacity(0.001)
-                .allowsHitTesting(false)
-                .accessibilityHidden(true)
 
             VStack(spacing: 0) {
                 chromeBar
@@ -1261,6 +1522,8 @@ struct ReflectionInputView: View {
             }
             withAnimation(.easeInOut(duration: 0.22)) {
                 currentStep = next
+                // 분류 그래프 단계는 하프모달로는 다 안 보임 — 시트를 끝까지 올림
+                if next == .category { sheetDetent = .large }
             }
         } else {
             startNewEntry()
@@ -1280,6 +1543,8 @@ struct ReflectionInputView: View {
         }
         withAnimation(.easeInOut(duration: 0.22)) {
             currentStep = step
+            // 분류 그래프 단계는 하프모달로는 다 안 보임 — 시트를 끝까지 올림
+            if step == .category { sheetDetent = .large }
         }
     }
 
@@ -1774,10 +2039,7 @@ struct ClassificationGraph: View {
         GeometryReader { geo in
             let s = min(geo.size.width, geo.size.height)
             ZStack {
-                quadrants(size: s)
-                quadrantLabels(size: s)
-                axisLines(size: s)
-                axisLabels(size: s)
+                ClassificationGraphBackground(size: s)
 
                 if let p = point {
                     pinView
@@ -1820,7 +2082,40 @@ struct ClassificationGraph: View {
         }
     }
 
-    private func quadrants(size: CGFloat) -> some View {
+    private var pinView: some View {
+        ZStack {
+            Circle()
+                .fill(Color.orange.opacity(0.35))
+                .frame(width: 28, height: 28)
+                .blur(radius: 4)
+            Circle()
+                .fill(Color.white)
+                .frame(width: 14, height: 14)
+                .overlay(Circle().stroke(Color.orange, lineWidth: 2.5))
+                .shadow(color: .orange.opacity(0.6), radius: 4)
+        }
+    }
+}
+
+// MARK: - Classification Graph Background
+// 4분면 배경 + 축 + 라벨.  입력 그래프(ClassificationGraph)와
+// 분포 뷰(ReflectionDistributionView)가 공유.
+
+struct ClassificationGraphBackground: View {
+    let size: CGFloat
+
+    private static let cellsPerAxis: Int = 4
+
+    var body: some View {
+        ZStack {
+            quadrants
+            quadrantLabels
+            axisLines
+            axisLabels
+        }
+    }
+
+    private var quadrants: some View {
         let half = size / 2
         return ZStack {
             // 좌상: accept (의지❌ 시간⭕️) — 황금빛
@@ -1854,7 +2149,7 @@ struct ClassificationGraph: View {
         )
     }
 
-    private func axisLines(size: CGFloat) -> some View {
+    private var axisLines: some View {
         ZStack {
             // 16칸 격자 — 1/4, 3/4 위치의 옅은 분할선
             Path { p in
@@ -1880,22 +2175,22 @@ struct ClassificationGraph: View {
         }
     }
 
-    private func quadrantLabels(size: CGFloat) -> some View {
+    private var quadrantLabels: some View {
         ZStack {
-            // 우상: forged — 잘 하고 있어
-            quadrantLabel("잘 하고 있어",
+            // 우상: forged — 의지⭕️ 시간⭕️
+            quadrantLabel("마음먹은 대로 했어",
                           rgb: (0.92, 0.55, 0.25),
                           at: CGPoint(x: size * 0.74, y: size * 0.32))
             // 좌상: accept — 의지 없이 시간만 들였음
-            quadrantLabel("받아들임",
+            quadrantLabel("어쩌다 하게 됐어",
                           rgb: (0.95, 0.78, 0.42),
                           at: CGPoint(x: size * 0.26, y: size * 0.32))
             // 우하: missed — 의지는 있는데 시간을 못 냈음
-            quadrantLabel("못 하고 있어",
+            quadrantLabel("하려 했는데 못 했어",
                           rgb: (0.78, 0.66, 0.46),
                           at: CGPoint(x: size * 0.74, y: size * 0.68))
-            // 좌하: scattered — 흘려보낸 시간
-            quadrantLabel("흘려보냄",
+            // 좌하: scattered — 그냥 흘러간 시간
+            quadrantLabel("그냥 흘러갔어",
                           rgb: (0.72, 0.70, 0.66),
                           at: CGPoint(x: size * 0.26, y: size * 0.68))
         }
@@ -1911,7 +2206,7 @@ struct ClassificationGraph: View {
             .position(at)
     }
 
-    private func axisLabels(size: CGFloat) -> some View {
+    private var axisLabels: some View {
         ZStack {
             Text("시간을 들였다")
                 .font(.system(size: 10, design: .serif))
@@ -1936,19 +2231,284 @@ struct ClassificationGraph: View {
                 .position(x: size - 22, y: size / 2)
         }
     }
+}
 
-    private var pinView: some View {
+// MARK: - Reflection Distribution (재의 분포)
+// 모아온 회고들을 2D 분류 그래프 위에 점으로 뿌려 분포를 보여줌.
+// 좌표가 저장된 회고는 정확한 위치에, 좌표 없는 옛 회고는 해당 사분면 안에
+// 결정적(seeded) 지터로 흩어 놓음.
+
+struct ReflectionDistributionView: View {
+    @EnvironmentObject var reflectionManager: ReflectionManager
+
+    private enum Scope: String, CaseIterable {
+        case all = "전체"
+        case recent30 = "최근 30일"
+    }
+    @State private var scope: Scope = .all
+
+    private struct PlotPoint {
+        let point: CGPoint
+        let category: ReflectionCategory
+        let isDerived: Bool
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            header
+
+            if plotted.isEmpty {
+                Text("아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요.")
+                    .font(.system(size: 12, design: .serif))
+                    .foregroundColor(.gray.opacity(0.45))
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity, alignment: .center)
+            } else {
+                graph
+                    .frame(height: 250)
+                caption
+            }
+        }
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color.white.opacity(0.03))
+                .overlay(RoundedRectangle(cornerRadius: 14)
+                    .stroke(Color.orange.opacity(0.10), lineWidth: 1))
+        )
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("재의 분포")
+        .accessibilityValue(accessibilitySummary)
+    }
+
+    // MARK: Data
+
+    private var scopedReflections: [DayReflection] {
+        switch scope {
+        case .all:
+            return reflectionManager.reflections
+        case .recent30:
+            guard let cutoff = Calendar.current.date(byAdding: .day, value: -30, to: Date()) else {
+                return reflectionManager.reflections
+            }
+            return reflectionManager.reflections.filter { $0.date >= cutoff }
+        }
+    }
+
+    private var plotted: [PlotPoint] {
+        scopedReflections.compactMap { r in
+            if let p = r.classificationPoint {
+                return PlotPoint(point: p, category: r.category, isDerived: false)
+            }
+            // 좌표 없는 옛 회고 — 카테고리 사분면 안에 seeded 지터로 배치
+            guard let range = Self.quadrantRange(for: r.category) else { return nil }
+            var rng = SeededRNG(seed: UInt64(truncatingIfNeeded: r.id.uuidString.hashValue))
+            let x = CGFloat.random(in: range.x, using: &rng)
+            let y = CGFloat.random(in: range.y, using: &rng)
+            return PlotPoint(point: CGPoint(x: x, y: y), category: r.category, isDerived: true)
+        }
+    }
+
+    private static func quadrantRange(for cat: ReflectionCategory)
+        -> (x: ClosedRange<CGFloat>, y: ClosedRange<CGFloat>)? {
+        switch cat {
+        case .forged:       return (0.56...0.90, 0.56...0.90)
+        case .missed:       return (0.56...0.90, 0.10...0.44)
+        case .accept, .stop: return (0.10...0.44, 0.56...0.90)
+        case .scattered:    return (0.10...0.44, 0.10...0.44)
+        case .uncategorized: return nil
+        }
+    }
+
+    /// 사분면별 개수 — (좌상 accept, 우상 forged, 좌하 scattered, 우하 missed)
+    private var quadrantCounts: (tl: Int, tr: Int, bl: Int, br: Int) {
+        var tl = 0, tr = 0, bl = 0, br = 0
+        for p in plotted {
+            let right = p.point.x > 0.5
+            let top = p.point.y > 0.5
+            switch (right, top) {
+            case (false, true):  tl += 1
+            case (true, true):   tr += 1
+            case (false, false): bl += 1
+            case (true, false):  br += 1
+            }
+        }
+        return (tl, tr, bl, br)
+    }
+
+    private var centroid: CGPoint? {
+        guard plotted.count >= 3 else { return nil }
+        let sx = plotted.reduce(0.0) { $0 + $1.point.x }
+        let sy = plotted.reduce(0.0) { $0 + $1.point.y }
+        let n = CGFloat(plotted.count)
+        return CGPoint(x: sx / n, y: sy / n)
+    }
+
+    private var derivedCount: Int {
+        plotted.filter(\.isDerived).count
+    }
+
+    // MARK: Header
+
+    private var header: some View {
+        HStack {
+            HStack(spacing: 6) {
+                Image(systemName: "chart.dots.scatter")
+                    .font(.system(size: 11))
+                    .foregroundColor(.orange.opacity(0.6))
+                Text("재의 분포")
+                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .foregroundColor(.orange.opacity(0.85))
+            }
+
+            Spacer()
+
+            HStack(spacing: 6) {
+                ForEach(Scope.allCases, id: \.rawValue) { s in
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.18)) { scope = s }
+                    } label: {
+                        Text(s.rawValue)
+                            .font(.system(size: 11, weight: scope == s ? .semibold : .regular))
+                            .foregroundColor(scope == s ? .orange : .gray.opacity(0.55))
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 10)
+                            .background(
+                                Capsule()
+                                    .fill(scope == s ? Color.orange.opacity(0.14) : Color.white.opacity(0.04))
+                                    .overlay(Capsule().stroke(
+                                        scope == s ? Color.orange.opacity(0.40) : Color.clear,
+                                        lineWidth: 1))
+                            )
+                    }
+                }
+            }
+        }
+    }
+
+    // MARK: Graph
+
+    private var graph: some View {
+        GeometryReader { geo in
+            let s = min(geo.size.width, geo.size.height)
+            ZStack {
+                ClassificationGraphBackground(size: s)
+                dotCanvas(size: s)
+                quadrantPercentages(size: s)
+
+                if let c = centroid {
+                    centroidMarker
+                        .position(x: c.x * s, y: (1 - c.y) * s)
+                }
+            }
+            .frame(width: s, height: s)
+            .frame(maxWidth: .infinity, alignment: .center)
+        }
+    }
+
+    private func dotCanvas(size: CGFloat) -> some View {
+        Canvas { ctx, _ in
+            for item in plotted {
+                let x = item.point.x * size
+                let y = (1 - item.point.y) * size
+                let rgb = item.category.particleColor
+                let color = Color(red: rgb.0, green: rgb.1, blue: rgb.2)
+                let r: CGFloat = 3.0
+
+                // 글로우
+                ctx.opacity = (item.isDerived ? 0.40 : 0.85) * 0.35
+                ctx.fill(
+                    Path(ellipseIn: CGRect(x: x - r * 2.2, y: y - r * 2.2,
+                                           width: r * 4.4, height: r * 4.4)),
+                    with: .color(color)
+                )
+                // 코어
+                ctx.opacity = item.isDerived ? 0.40 : 0.85
+                ctx.fill(
+                    Path(ellipseIn: CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)),
+                    with: .color(color)
+                )
+            }
+        }
+        .frame(width: size, height: size)
+        .allowsHitTesting(false)
+    }
+
+    private func quadrantPercentages(size: CGFloat) -> some View {
+        let counts = quadrantCounts
+        let total = max(1, plotted.count)
+        func pct(_ n: Int) -> String { "\(Int(round(Double(n) / Double(total) * 100)))%" }
+
+        return ZStack {
+            percentLabel(pct(counts.tl), rgb: (0.95, 0.78, 0.42),
+                         at: CGPoint(x: size * 0.26, y: size * 0.42), count: counts.tl)
+            percentLabel(pct(counts.tr), rgb: (0.92, 0.55, 0.25),
+                         at: CGPoint(x: size * 0.74, y: size * 0.42), count: counts.tr)
+            percentLabel(pct(counts.bl), rgb: (0.72, 0.70, 0.66),
+                         at: CGPoint(x: size * 0.26, y: size * 0.58), count: counts.bl)
+            percentLabel(pct(counts.br), rgb: (0.78, 0.66, 0.46),
+                         at: CGPoint(x: size * 0.74, y: size * 0.58), count: counts.br)
+        }
+        .allowsHitTesting(false)
+    }
+
+    @ViewBuilder
+    private func percentLabel(_ text: String,
+                              rgb: (Double, Double, Double),
+                              at: CGPoint,
+                              count: Int) -> some View {
+        if count > 0 {
+            Text(text)
+                .font(.system(size: 15, weight: .bold, design: .serif))
+                .foregroundColor(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(0.50))
+                .position(at)
+        }
+    }
+
+    private var centroidMarker: some View {
         ZStack {
             Circle()
-                .fill(Color.orange.opacity(0.35))
-                .frame(width: 28, height: 28)
-                .blur(radius: 4)
-            Circle()
-                .fill(Color.white)
-                .frame(width: 14, height: 14)
-                .overlay(Circle().stroke(Color.orange, lineWidth: 2.5))
-                .shadow(color: .orange.opacity(0.6), radius: 4)
+                .stroke(Color.white.opacity(0.7), lineWidth: 1.2)
+                .frame(width: 11, height: 11)
+            Path { p in
+                p.move(to: CGPoint(x: 5.5, y: -3))
+                p.addLine(to: CGPoint(x: 5.5, y: 2))
+                p.move(to: CGPoint(x: 5.5, y: 9))
+                p.addLine(to: CGPoint(x: 5.5, y: 14))
+                p.move(to: CGPoint(x: -3, y: 5.5))
+                p.addLine(to: CGPoint(x: 2, y: 5.5))
+                p.move(to: CGPoint(x: 9, y: 5.5))
+                p.addLine(to: CGPoint(x: 14, y: 5.5))
+            }
+            .stroke(Color.white.opacity(0.5), lineWidth: 1)
+            .frame(width: 11, height: 11)
         }
+    }
+
+    // MARK: Caption
+
+    private var caption: some View {
+        HStack(spacing: 4) {
+            Text("재 \(plotted.count)개 기준")
+            if derivedCount > 0 {
+                Text("· 좌표 없는 옛 회고 \(derivedCount)개는 사분면 안에 흩어 표시")
+            }
+            if centroid != nil {
+                Text("· ⊕ 무게중심")
+            }
+        }
+        .font(.system(size: 10, design: .serif))
+        .foregroundColor(.gray.opacity(0.4))
+    }
+
+    private var accessibilitySummary: String {
+        let counts = quadrantCounts
+        let total = max(1, plotted.count)
+        func pct(_ n: Int) -> Int { Int(round(Double(n) / Double(total) * 100)) }
+        return "회고 \(plotted.count)개. 마음먹은 대로 했어 \(pct(counts.tr))퍼센트, "
+             + "어쩌다 하게 됐어 \(pct(counts.tl))퍼센트, "
+             + "하려 했는데 못 했어 \(pct(counts.br))퍼센트, "
+             + "그냥 흘러갔어 \(pct(counts.bl))퍼센트"
     }
 }
 

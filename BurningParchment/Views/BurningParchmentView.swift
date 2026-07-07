@@ -72,6 +72,9 @@ struct BurningParchmentView: View {
                 .position(x: size.width / 2, y: oy + ph / 2)
                 .accessibilityHidden(true)
 
+            ashPileCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
+                .accessibilityHidden(true)
+
             if progress > 0.005 && progress < 0.995 {
                 diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                     .accessibilityHidden(true)
@@ -567,6 +570,119 @@ struct BurningParchmentView: View {
         .clipShape(shape)
     }
 
+    // MARK: - Ash Pile (쌓이는 재 무더기)
+
+    /// 양피지 바닥에서 재 더미 바닥(보이지 않는 지면)까지의 거리
+    static let ashPileDropOffset: Double = 58
+
+    /// 재 더미 표면 높이 — t(0~1, 가로 위치)와 진행도로 결정.
+    /// 연소가 시작되는 오른쪽에 먼저 쌓이다가, 다 타면 중앙 쪽에 한 줌의 봉우리로 남는다.
+    static func ashPileHeight(t: Double, progress: Double) -> Double {
+        guard progress > 0.02 else { return 0 }
+        let center = 0.80 - 0.22 * progress
+        let sigma  = 0.15 + 0.11 * progress
+        let gauss  = exp(-pow(t - center, 2) / (2 * sigma * sigma))
+        let lump   = fbm(t * 6.3 + 11.3, 3.7, octaves: 3)
+        let maxH   = 10.0 + 30.0 * progress
+        return max(0, maxH * gauss * (1.0 + 0.35 * lump))
+    }
+
+    private func ashPileCanvas(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
+        Canvas { ctx, _ in
+            guard progress > 0.02 else { return }
+            let baseY = Double(oy + ph) + Self.ashPileDropOffset
+            let W = Double(pw)
+            let X = Double(ox)
+            let segments = 64
+
+            // 바닥 그림자 — 무더기가 지면 위에 놓인 느낌
+            let center = 0.80 - 0.22 * progress
+            let shadowW = W * (0.30 + 0.45 * progress)
+            let shadowH = 7.0 + 5.0 * progress
+            ctx.drawLayer { layer in
+                layer.addFilter(.blur(radius: 5))
+                layer.opacity = 0.35
+                layer.fill(
+                    Path(ellipseIn: CGRect(
+                        x: X + W * center - shadowW / 2,
+                        y: baseY - shadowH / 2,
+                        width: shadowW, height: shadowH
+                    )),
+                    with: .color(.black)
+                )
+            }
+
+            // 무더기 본체
+            var mound = Path()
+            mound.move(to: CGPoint(x: X, y: baseY))
+            for i in 0...segments {
+                let t = Double(i) / Double(segments)
+                let h = Self.ashPileHeight(t: t, progress: progress)
+                mound.addLine(to: CGPoint(x: X + W * t, y: baseY - h))
+            }
+            mound.addLine(to: CGPoint(x: X + W, y: baseY))
+            mound.closeSubpath()
+
+            let peakH = 10.0 + 30.0 * progress
+            ctx.opacity = 1.0
+            ctx.fill(mound, with: .linearGradient(
+                Gradient(colors: [
+                    Color(red: 0.44, green: 0.40, blue: 0.36),
+                    Color(red: 0.28, green: 0.24, blue: 0.20),
+                    Color(red: 0.10, green: 0.08, blue: 0.06),
+                ]),
+                startPoint: CGPoint(x: X + W * 0.5, y: baseY - peakH),
+                endPoint:   CGPoint(x: X + W * 0.5, y: baseY)
+            ))
+
+            // 표면 잔재 얼룩 (밝은 재 조각들)
+            for j in 0..<18 {
+                let fj = Double(j)
+                let tx = Self.hash2D(fj, 1.0)
+                let h = Self.ashPileHeight(t: tx, progress: progress)
+                guard h > 5 else { continue }
+                let depth = Self.hash2D(fj, 2.0) * 0.65
+                let px = X + W * tx
+                let py = baseY - h * (1.0 - depth) + 1.5
+                let s = 1.0 + Self.hash2D(fj, 3.0) * 1.8
+                let g = 0.40 + Self.hash2D(fj, 4.0) * 0.22
+                ctx.opacity = 0.5 + Self.hash2D(fj, 5.0) * 0.3
+                ctx.fill(
+                    Path(ellipseIn: CGRect(x: px - s / 2, y: py - s / 2, width: s, height: s)),
+                    with: .color(Color(red: g, green: g * 0.94, blue: g * 0.86))
+                )
+            }
+
+            // 아직 타는 중이면 무더기 속 잔불이 깜빡인다
+            if progress < 0.995 {
+                let leadT = min(0.92, 0.85 - 0.20 * progress)
+                for j in 0..<6 {
+                    let fj = Double(j)
+                    let tx = leadT + (Self.hash2D(fj, 7.0) - 0.5) * 0.35
+                    guard tx > 0, tx < 1 else { continue }
+                    let h = Self.ashPileHeight(t: tx, progress: progress)
+                    guard h > 4 else { continue }
+                    let flicker = 0.5 + 0.5 * sin(phase * 3.0 + fj * 2.1)
+                    let px = X + W * tx
+                    let py = baseY - h + 2.0 + Self.hash2D(fj, 8.0) * 3.0
+                    let s = 1.2 + flicker * 1.2
+
+                    ctx.opacity = flicker * 0.25
+                    ctx.fill(
+                        Path(ellipseIn: CGRect(x: px - s * 1.6, y: py - s * 1.6, width: s * 3.2, height: s * 3.2)),
+                        with: .color(.orange)
+                    )
+                    ctx.opacity = 0.25 + flicker * 0.55
+                    ctx.fill(
+                        Path(ellipseIn: CGRect(x: px - s / 2, y: py - s / 2, width: s, height: s)),
+                        with: .color(Color(red: 1.0, green: 0.55 + flicker * 0.3, blue: 0.15))
+                    )
+                }
+            }
+        }
+        .allowsHitTesting(false)
+    }
+
     // MARK: - Diagonal Flame Canvas (유기적 불꽃 - 직선 그라디언트 없음)
 
     private func diagonalFlameCanvas(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
@@ -728,7 +844,7 @@ struct BurningParchmentView: View {
         let p = currentDisplayProgress
         let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
         embers = (0..<25).map { _ in Ember.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
-        ashes  = (0..<20).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
+        ashes  = (0..<30).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
     }
 
     private func updateParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
@@ -751,11 +867,20 @@ struct BurningParchmentView: View {
             }
         }
 
+        let pileBaseY = Double(oy + ph) + Self.ashPileDropOffset
         for i in ashes.indices {
-            ashes[i].pos.y += CGFloat(ashes[i].speed)
-            ashes[i].pos.x += CGFloat(sin(phase * 0.4 + Double(i)) * 0.3)
-            ashes[i].opacity -= 0.006
-            if ashes[i].opacity <= 0 || ashes[i].pos.y > oy + ph + 50 {
+            let a = ashes[i]
+            // 나풀거리며 낙하 — 좌우로 흔들리고, 낙하 속도도 함께 출렁인다
+            ashes[i].pos.y += a.speed * (0.7 + 0.3 * CGFloat(sin(phase * a.swayFreq * 1.6 + a.swayPhase)))
+            ashes[i].pos.x += a.swayAmp * 0.35 * CGFloat(sin(phase * a.swayFreq + a.swayPhase))
+            ashes[i].opacity -= 0.0025
+
+            // 재 더미 표면에 닿으면 그 자리에 스며든다
+            let t = Double((ashes[i].pos.x - ox) / pw)
+            let surfaceY = pileBaseY - Self.ashPileHeight(t: min(max(t, 0), 1), progress: p)
+            let landed = Double(ashes[i].pos.y) >= surfaceY
+
+            if ashes[i].opacity <= 0 || landed || Double(ashes[i].pos.y) > pileBaseY + 20 {
                 ashes[i] = Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph)
             }
         }
@@ -880,6 +1005,9 @@ struct Ash: Particle, Identifiable {
     var opacity: Double
     var speed: CGFloat
     var color: Color
+    var swayPhase: Double = 0
+    var swayFreq: Double = 1.0
+    var swayAmp: CGFloat = 2.0
 
     static func spawn(on burnPts: [CGPoint], ox: CGFloat, oy: CGFloat, pw: CGFloat, ph: CGFloat) -> Ash {
         let pt = burnPts.randomElement() ?? CGPoint(x: pw * 0.5, y: ph * 0.5)
@@ -893,9 +1021,12 @@ struct Ash: Particle, Identifiable {
                 y: pt.y + oy + CGFloat(ny * drift) + .random(in: -10...10)
             ),
             size: .random(in: 1.5...4),
-            opacity: .random(in: 0.15...0.4),
-            speed: .random(in: 0.3...1.0),
-            color: Color(red: .random(in: 0.2...0.4), green: .random(in: 0.15...0.25), blue: .random(in: 0.1...0.18))
+            opacity: .random(in: 0.25...0.55),
+            speed: .random(in: 0.35...1.1),
+            color: Color(red: .random(in: 0.2...0.42), green: .random(in: 0.15...0.3), blue: .random(in: 0.1...0.22)),
+            swayPhase: .random(in: 0...(2 * .pi)),
+            swayFreq: .random(in: 0.6...1.8),
+            swayAmp: .random(in: 1.2...3.6)
         )
     }
 }

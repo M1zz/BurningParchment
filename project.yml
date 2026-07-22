@@ -2,9 +2,13 @@ name: BurningParchment
 options:
   bundleIdPrefix: com.burningparchment
   deploymentTarget:
-    iOS: "16.2"
+    iOS: "17.0"
   xcodeVersion: "15.0"
   generateEmptyDirectories: true
+
+packages:
+  LeeoKit:
+    path: ../LeeoKit
 
 schemes:
   BurningParchment:
@@ -71,6 +75,7 @@ targets:
         CODE_SIGN_ENTITLEMENTS: BurningParchment/BurningParchment.entitlements
     dependencies:
       - target: BurningParchmentWidgets
+      - package: LeeoKit
 
   BurningParchmentWidgets:
     type: app-extension

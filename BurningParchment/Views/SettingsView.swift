@@ -2,6 +2,7 @@
 // 기상시간 + 취침시간 설정
 
 import SwiftUI
+import LeeoKit
 
 struct SettingsView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
@@ -91,6 +92,9 @@ struct SettingsView: View {
 
                         // 개발자 문의
                         developerContactSection
+
+                        // 지원 (리뷰/피드백)
+                        leeoSupportSection
 
                         // 안내
                         VStack(spacing: 8) {
@@ -253,82 +257,9 @@ struct SettingsView: View {
                 .disabled(!bedtimeManager.indicatorVisible)
 
                 if isSymbolMode {
-                    // SF 심볼 그리드
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 5), spacing: 8) {
-                        ForEach(symbolOptions, id: \.name) { opt in
-                            let isSelected = bedtimeManager.indicatorSymbol == opt.name
-                            Button {
-                                bedtimeManager.indicatorSymbol = opt.name
-                            } label: {
-                                VStack(spacing: 6) {
-                                    Image(systemName: opt.name)
-                                        .font(.system(size: 20))
-                                        .foregroundColor(isSelected ? .orange : .gray.opacity(0.45))
-                                    Text(opt.label)
-                                        .font(.system(size: 10))
-                                        .foregroundColor(isSelected ? .orange : .gray.opacity(0.4))
-                                }
-                                .frame(maxWidth: .infinity)
-                                .padding(.vertical, 10)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .fill(isSelected ? Color.orange.opacity(0.12) : Color.white.opacity(0.03))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 8)
-                                                .stroke(isSelected ? Color.orange.opacity(0.4) : Color.clear, lineWidth: 1)
-                                        )
-                                )
-                            }
-                        }
-                    }
-                    .padding(.horizontal, 14)
-                    .padding(.bottom, 14)
-                    .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
-                    .disabled(!bedtimeManager.indicatorVisible)
+                    symbolGridSelector
                 } else {
-                    // 도형 선택
-                    VStack(alignment: .leading, spacing: 10) {
-                        HStack(spacing: 8) {
-                            ForEach(IndicatorShape.allCases) { shape in
-                                Button {
-                                    bedtimeManager.indicatorShape = shape
-                                } label: {
-                                    VStack(spacing: 8) {
-                                        indicatorPreview(for: shape)
-                                            .frame(height: 14)
-                                        Text(shape.label)
-                                            .font(.system(size: 11))
-                                            .foregroundColor(
-                                                bedtimeManager.indicatorShape == shape
-                                                    ? .orange : .gray.opacity(0.4)
-                                            )
-                                    }
-                                    .frame(maxWidth: .infinity)
-                                    .padding(.vertical, 10)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .fill(
-                                                bedtimeManager.indicatorShape == shape
-                                                    ? Color.orange.opacity(0.12)
-                                                    : Color.white.opacity(0.03)
-                                            )
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 8)
-                                                    .stroke(
-                                                        bedtimeManager.indicatorShape == shape
-                                                            ? Color.orange.opacity(0.4) : Color.clear,
-                                                        lineWidth: 1
-                                                    )
-                                            )
-                                    )
-                                }
-                            }
-                        }
-                        .padding(.horizontal, 14)
-                        .padding(.bottom, 12)
-                        .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
-                        .disabled(!bedtimeManager.indicatorVisible)
-                    }
+                    shapeSelector
                 }
             }
             .background(
@@ -339,6 +270,77 @@ struct SettingsView: View {
             )
         }
         .padding(.horizontal, 20)
+    }
+
+    // SF 심볼 그리드
+    private var symbolGridSelector: some View {
+        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 5), spacing: 8) {
+            ForEach(symbolOptions, id: \.name) { opt in
+                let isSelected = bedtimeManager.indicatorSymbol == opt.name
+                Button {
+                    bedtimeManager.indicatorSymbol = opt.name
+                } label: {
+                    VStack(spacing: 6) {
+                        Image(systemName: opt.name)
+                            .font(.system(size: 20))
+                            .foregroundColor(isSelected ? .orange : .gray.opacity(0.45))
+                        Text(opt.label)
+                            .font(.system(size: 10))
+                            .foregroundColor(isSelected ? .orange : .gray.opacity(0.4))
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(isSelected ? Color.orange.opacity(0.12) : Color.white.opacity(0.03))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(isSelected ? Color.orange.opacity(0.4) : Color.clear, lineWidth: 1)
+                            )
+                    )
+                }
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.bottom, 14)
+        .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
+        .disabled(!bedtimeManager.indicatorVisible)
+    }
+
+    // 도형 선택
+    private var shapeSelector: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 8) {
+                ForEach(IndicatorShape.allCases) { shape in
+                    let isSelected = bedtimeManager.indicatorShape == shape
+                    Button {
+                        bedtimeManager.indicatorShape = shape
+                    } label: {
+                        VStack(spacing: 8) {
+                            indicatorPreview(for: shape)
+                                .frame(height: 14)
+                            Text(shape.label)
+                                .font(.system(size: 11))
+                                .foregroundColor(isSelected ? .orange : .gray.opacity(0.4))
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(isSelected ? Color.orange.opacity(0.12) : Color.white.opacity(0.03))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(isSelected ? Color.orange.opacity(0.4) : Color.clear, lineWidth: 1)
+                                )
+                        )
+                    }
+                }
+            }
+            .padding(.horizontal, 14)
+            .padding(.bottom, 12)
+            .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
+            .disabled(!bedtimeManager.indicatorVisible)
+        }
     }
 
     // MARK: - 프로
@@ -427,6 +429,34 @@ struct SettingsView: View {
     }
 
     // MARK: - 개발자 문의
+
+    // MARK: - Support Section (리뷰/피드백)
+
+    private var leeoSupportSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "hands.sparkles")
+                    .foregroundColor(.orange.opacity(0.6))
+                Text("지원")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.orange.opacity(0.5))
+            }
+
+            VStack(spacing: 0) {
+                LeeoSupportSection<BurningParchmentSpec>()
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 6)
+            .tint(.orange)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.white.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+            )
+        }
+        .padding(.horizontal, 20)
+    }
 
     private var developerContactSection: some View {
         VStack(alignment: .leading, spacing: 12) {

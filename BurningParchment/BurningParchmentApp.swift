@@ -3,6 +3,7 @@
 // 밤 9시 이후 취침시간까지 남은 시간을 양피지가 타들어가는 효과로 보여줍니다.
 
 import SwiftUI
+import LeeoKit
 
 @main
 struct BurningParchmentApp: App {
@@ -11,6 +12,10 @@ struct BurningParchmentApp: App {
     @StateObject private var reflectionManager = ReflectionManager()
     @StateObject private var excuseManager     = BedtimeExcuseManager()
     @StateObject private var storeManager      = StoreManager()
+
+    init() {
+        LeeoEngagement.shared.registerLaunch()
+    }
 
     var body: some Scene {
         WindowGroup {
@@ -21,6 +26,7 @@ struct BurningParchmentApp: App {
                 .environmentObject(excuseManager)
                 .environmentObject(storeManager)
                 .preferredColorScheme(.dark)
+                .leeoSatisfactionCheck(BurningParchmentSpec.self)
         }
     }
 }

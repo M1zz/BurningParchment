@@ -15,6 +15,7 @@
 앱 전체가 영어로도 표시됩니다. 기기 언어에 맞춰 자동으로 바뀌어요.
 
 🛠 개선
+• 한국어 기기에서 위젯 문구가 영어로 표시되던 문제를 고쳤어요.
 • 위젯의 남은 시간 타이머가 왼쪽으로 치우쳐 보이던 문제를 고쳤어요.
 • 결제 화면에 이용약관·개인정보처리방침 링크를 추가했습니다.
 • 내부 구조를 정리해 앱이 조금 더 가볍고 안정적으로 동작합니다.
@@ -33,6 +34,7 @@ Check the time left before bed straight from your Lock Screen. Three shapes: cir
 The whole app now speaks English, switching automatically with your device language.
 
 🛠 Improvements
+• Fixed widgets showing English text on Korean-language devices.
 • Fixed the remaining-time timer in widgets appearing shifted to the left.
 • Added Terms of Use and Privacy Policy links to the purchase screen.
 • Internal cleanup for a lighter, more stable app.
@@ -48,6 +50,8 @@ The whole app now speaks English, switching automatically with your device langu
 - 페이월에 이용약관(Apple 표준 EULA)·개인정보처리방침 링크 추가
 
 **버그 수정**
+- 한국어 기기에서 앱·위젯이 영어로 표시되던 문제 수정 — String Catalog 의 `sourceLanguage` 는 `ko` 인데 프로젝트 `developmentRegion` 이 `en` 이었고, 위젯 카탈로그에 명시적 `ko` 항목이 없어 `ko.lproj` 자체가 만들어지지 않아 한국어 기기가 `en.lproj` 로 떨어졌다. `developmentLanguage: ko` + 두 타깃 `CFBundleDevelopmentRegion: ko` 지정, 앱·위젯 카탈로그에 `ko` 항목 명시로 해결
+- 누락돼 있던 영어 번역 6건 보강 (`%lld` → `%@` 로 재추출되며 짝을 잃은 항목들), 설정의 "지원" 섹션 라벨 영어 번역 추가
 - 홈 화면 위젯(Small/Large)의 `Text(_:style:.timer)`가 예약 폭 안에서 leading으로 붙어 왼쪽으로 치우쳐 보이던 문제 수정 — 명시적 `multilineTextAlignment` 지정
 - Medium 위젯·잠금 화면 직사각형 위젯 타이머의 좌측 들여쓰기 제거
 

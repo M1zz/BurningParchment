@@ -5,6 +5,9 @@ options:
     iOS: "17.0"
   xcodeVersion: "15.0"
   generateEmptyDirectories: true
+  # String Catalog 의 sourceLanguage 가 ko 다. 이 값이 en 이면 한국어 기기에서도
+  # 개발 지역(en) 리소스가 선택돼 앱·위젯이 영어로 뜬다.
+  developmentLanguage: ko
 
 packages:
   LeeoKit:
@@ -55,6 +58,7 @@ targets:
       properties:
         CFBundleShortVersionString: "1.0.7"
         CFBundleVersion: "1"
+        CFBundleDevelopmentRegion: ko
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UILaunchScreen: {}
@@ -94,6 +98,7 @@ targets:
         CFBundleDisplayName: BurningParchmentWidgets
         CFBundleShortVersionString: "1.0.7"
         CFBundleVersion: "1"
+        CFBundleDevelopmentRegion: ko
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     settings:

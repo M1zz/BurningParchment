@@ -347,6 +347,9 @@ private struct SmallWidgetContent: View {
                     .foregroundColor(.orange)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
+                    // .timer 스타일은 최대 자릿수만큼 폭을 예약하므로 명시적으로 가운데 정렬해야 안 치우친다
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity, alignment: .center)
                     if entry.period != .daily {
                         Text(entry.period.label)
                             .font(.system(size: 10))
@@ -427,6 +430,9 @@ private struct MediumWidgetContent: View {
             .foregroundColor(.white)
             .lineLimit(1)
             .minimumScaleFactor(0.8)
+            // .timer 스타일 예약 폭 안에서 왼쪽 기준으로 붙여, 위아래 요소와 좌측 라인을 맞춘다
+            .multilineTextAlignment(.leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
 
             progressBar
 
@@ -549,6 +555,9 @@ private struct LargeWidgetContent: View {
             .foregroundColor(.white)
             .lineLimit(1)
             .minimumScaleFactor(0.8)
+            // .timer 스타일은 최대 자릿수만큼 폭을 예약하므로 명시적으로 가운데 정렬해야 안 치우친다
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity, alignment: .center)
 
             HStack(spacing: 8) {
                 GeometryReader { geo in

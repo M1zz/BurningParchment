@@ -14,7 +14,9 @@ struct BurningParchmentApp: App {
     @StateObject private var storeManager      = StoreManager()
 
     init() {
-        LeeoEngagement.shared.registerLaunch()
+        // 계약(BurningParchmentSpec)에 선언한 것을 전부 켠다 —
+        // 사용량 기록·분석 싱크·MetricKit 크래시 진단·사용현황 스냅샷, DEBUG 에선 프리플라이트 감사까지.
+        LeeoKit.bootstrap(BurningParchmentSpec.self)
     }
 
     var body: some Scene {

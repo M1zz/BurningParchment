@@ -15,9 +15,9 @@ import LeeoKit
 final class StoreManager: ObservableObject {
     static let proProductID = "com.burningparchment.app.pro"
 
-    /// 무료 사용 한도
-    static let freeUrnLimit = 1
-    static let freeDeadlineLimit = 1
+    /// 무료 사용 한도 — 선언은 BurningParchmentSpec.monetization 의 게이트 정책 한 곳에만 있다.
+    static let freeUrnLimit = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.urn] ?? 1
+    static let freeDeadlineLimit = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.deadline] ?? 1
 
     private let store: LeeoStore
     private var cancellable: AnyCancellable?

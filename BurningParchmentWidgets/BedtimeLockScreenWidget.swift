@@ -94,6 +94,9 @@ struct BedtimeLockScreenWidgetView: View {
                 .font(.system(size: 21, weight: .semibold, design: .monospaced))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
+                // .timer 예약 폭 때문에 생기는 좌측 여백 방지
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
 
                 ProgressView(value: Double(entry.percentRemaining), total: 100)
                     .progressViewStyle(.linear)

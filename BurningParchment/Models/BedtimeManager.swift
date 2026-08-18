@@ -583,9 +583,7 @@ class BedtimeManager: ObservableObject {
 
     // MARK: - Helpers
     private func formatTime(hour: Int, minute: Int) -> String {
-        let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
-        let ampm = hour >= 12 ? "PM" : "AM"
-        return String(format: "%d:%02d %@", h12, minute, ampm)
+        TimeFormat.short(hour: hour, minute: minute)
     }
 
     // MARK: - Notifications

@@ -47,7 +47,7 @@ struct ParchmentEntry: TimelineEntry {
         let s = Int(remainingSeconds)
         let h = s / 3600
         let m = (s % 3600) / 60
-        return h > 0 ? "\(h)h \(m)m" : "\(m)m"
+        return h > 0 ? String(localized: "\(h)시간 \(m)분") : String(localized: "\(m)분")
     }
 
     enum DisplayMode { case burning, sleeping, wakeUpSoon }
@@ -70,9 +70,11 @@ struct ParchmentProvider: TimelineProvider {
         let rem: TimeInterval = 5 * 3600 + 24 * 60
         return ParchmentEntry(
             date: .now, period: period, progress: 0.35,
-            remainingText: period == .daily ? "5h 24m" : String(localized: "3일 4시간"),
+            remainingText: period == .daily
+                ? String(localized: "5시간 24분")
+                : String(localized: "3일 4시간"),
             bedtimeDate: nil,
-            bedtimeString: "11:00 PM", isActive: true,
+            bedtimeString: TimeFormat.short(hour: 23, minute: 0), isActive: true,
             isBeforeWakeTime: false, remainingSeconds: rem
         )
     }
@@ -111,9 +113,7 @@ struct ParchmentProvider: TimelineProvider {
         let wakeH = sd?.object(forKey: "wakeHour")      as? Int ?? 7
         let wakeM = sd?.object(forKey: "wakeMinute")    as? Int ?? 0
 
-        let h12 = bedH > 12 ? bedH - 12 : (bedH == 0 ? 12 : bedH)
-        let ampm = bedH >= 12 ? "PM" : "AM"
-        let bedtimeStr = String(format: "%d:%02d %@", h12, bedM, ampm)
+        let bedtimeStr = TimeFormat.short(hour: bedH, minute: bedM)
 
         let (dailyProg, remSec, isActive, isBeforeWake, dailyBedDate) = dailyProgress(
             date: date, wakeH: wakeH, wakeM: wakeM, bedH: bedH, bedM: bedM
@@ -128,7 +128,7 @@ struct ParchmentProvider: TimelineProvider {
             prog = dailyProg
             let h = Int(remSec) / 3600
             let m = (Int(remSec) % 3600) / 60
-            remText = h > 0 ? "\(h)h \(m)m" : "\(m)m"
+            remText = h > 0 ? String(localized: "\(h)시간 \(m)분") : String(localized: "\(m)분")
 
         case .weekly:
             let start = thisMondayMidnight(from: date, cal: cal)

@@ -22,9 +22,9 @@ struct BedtimeActivityAttributes: ActivityAttributes {
             let hours = Int(remainingSeconds) / 3600
             let minutes = (Int(remainingSeconds) % 3600) / 60
             if hours > 0 {
-                return "\(hours)h \(minutes)m"
+                return String(localized: "\(hours)시간 \(minutes)분")
             }
-            return "\(minutes)m"
+            return String(localized: "\(minutes)분")
         }
     }
 

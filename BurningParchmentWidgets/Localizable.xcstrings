@@ -200,6 +200,23 @@
         }
       }
     },
+    "5시간 24분" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5h 24m"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5시간 24분"
+          }
+        }
+      }
+    },
     "2025.12.31 (수) 23:59" : {
       "extractionState" : "stale",
       "localizations" : {

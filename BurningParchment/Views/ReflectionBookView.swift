@@ -254,8 +254,8 @@ struct ReflectionBookView: View {
 
     private func timeString(_ date: Date) -> String {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "ko_KR")
-        f.dateFormat = "HH:mm"
+        f.locale = .current
+        f.setLocalizedDateFormatFromTemplate("jm")
         return f.string(from: date)
     }
 }

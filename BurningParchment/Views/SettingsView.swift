@@ -68,15 +68,15 @@ struct SettingsView: View {
                                 .foregroundColor(.gray)
 
                             HStack(spacing: 10) {
-                                presetButton(hour: 22, minute: 0, label: "10 PM")
-                                presetButton(hour: 22, minute: 30, label: "10:30")
-                                presetButton(hour: 23, minute: 0, label: "11 PM")
-                                presetButton(hour: 23, minute: 30, label: "11:30")
+                                presetButton(hour: 22, minute: 0)
+                                presetButton(hour: 22, minute: 30)
+                                presetButton(hour: 23, minute: 0)
+                                presetButton(hour: 23, minute: 30)
                             }
                             HStack(spacing: 10) {
-                                presetButton(hour: 0, minute: 0, label: "12 AM")
-                                presetButton(hour: 0, minute: 30, label: "12:30")
-                                presetButton(hour: 1, minute: 0, label: "1 AM")
+                                presetButton(hour: 0, minute: 0)
+                                presetButton(hour: 0, minute: 30)
+                                presetButton(hour: 1, minute: 0)
                             }
                         }
                         .padding(.horizontal, 20)
@@ -622,8 +622,9 @@ struct SettingsView: View {
 
     // MARK: - Preset Button
 
-    private func presetButton(hour: Int, minute: Int, label: String) -> some View {
+    private func presetButton(hour: Int, minute: Int) -> some View {
         let isSelected = selBedH == hour && selBedM == minute
+        let label = TimeFormat.short(hour: hour, minute: minute)
         let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
         let ampm = hour >= 12 ? String(localized: "오후") : String(localized: "오전")
         let minStr = minute > 0 ? String(localized: " \(minute)분") : ""
@@ -646,9 +647,7 @@ struct SettingsView: View {
     }
 
     private func hourLabel(_ hour: Int) -> String {
-        let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
-        let ampm = hour >= 12 ? "PM" : "AM"
-        return "\(ampm) \(h12)"
+        TimeFormat.hourLabel(hour)
     }
 }
 

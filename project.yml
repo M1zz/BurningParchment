@@ -92,6 +92,7 @@ targets:
           - Info.plist
       - path: BurningParchment/Models/BedtimeActivityAttributes.swift
       - path: BurningParchment/Models/Deadline.swift
+      - path: BurningParchment/Models/TimeFormat.swift
     info:
       path: BurningParchmentWidgets/Info.plist
       properties:

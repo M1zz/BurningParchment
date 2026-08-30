@@ -3,7 +3,7 @@ import LeeoKit
 
 enum BurningParchmentSpec: LeeoAppSpec {
     static let appName = "불타는 내인생"
-    static let developerEmail = "mizzking75@gmail.com"
+    static let developerEmail = "leeo@kakao.com"
     static let feedback = LeeoFeedbackConfig(containerIdentifier: "iCloud.com.Ysoup.FeedbackHub", appIdentifier: "com.burningparchment.app")
 
     /// 무료 한도를 거는 기능 키. StoreManager 의 한도 판정과 아래 게이트 선언이 같은 값을 보게 한다.

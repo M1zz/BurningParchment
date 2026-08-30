@@ -70,7 +70,7 @@ The whole app now speaks English, switching automatically with your device langu
 - 익명 사용 통계와 크래시 진단을 켜면서 `PRIVACY.md`·`docs/privacy.html`의 "분석 도구를 사용하지 않습니다 / 수집 데이터 없음" 문구가 사실과 달라져 전면 개정했다.
 - 실제 전송 항목: ① 익명 사용 통계(무작위 설치 UUID·앱 버전·플랫폼/OS·로케일·실행 횟수·이벤트 이름) ② 크래시·행 진단(MetricKit) ③ 사용자가 직접 보낸 피드백(본문·기기 정보, 입력한 경우 이름·이메일). 모두 개발자 본인의 CloudKit으로만 전송되며 제3자 SDK·광고·추적은 없다.
 - ⚠️ **제출 전 App Store Connect의 앱 개인정보(Privacy Nutrition Label)를 "수집 안 함" → 제품 상호작용·식별자·진단·사용자 콘텐츠 수집으로 갱신해야 한다.**
-- PRIVACY.md의 문의 이메일을 `leeo@kakao.com` → `mizzking75@gmail.com`으로 통일 (지원 페이지·앱 내 문의처와 일치)
+- PRIVACY.md의 문의 이메일을 `leeo@kakao.com` → `leeo@kakao.com`으로 통일 (지원 페이지·앱 내 문의처와 일치)
 
 **버전 관리 메모**
 - 버전의 소스 오브 트루스는 `project.yml`입니다. Info.plist는 XcodeGen이 생성하므로, plist만 고치면 `xcodegen` 재실행 시 되돌아갑니다. 반드시 `project.yml`의 `CFBundleShortVersionString`과 `MARKETING_VERSION`을 함께 올리세요.

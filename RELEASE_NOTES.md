@@ -1,5 +1,75 @@
 # 릴리즈 노트
 
+## 1.0.8 (build 1)
+
+### App Store "이번 버전의 새로운 기능" — 한국어
+
+```
+🏺 월별·주별 항아리
+항아리를 직접 만들 필요가 없어졌어요. 재를 담으면 그 날짜의 주 항아리에 저절로 쌓입니다. 선반에서 달을 열면 1주차, 2주차… 그 달의 항아리들이 나와요.
+
+✍️ 의미는 당신이 붙이는 것
+항아리 안의 재는 당신이 이름을 붙이기 전까진 그냥 재예요. 열어보면 "이 주는 당신에게 어떤 의미였나요?"라고 물어봅니다. 한 마디를 새기는 순간 잿빛이던 재에 색이 돌아와요.
+
+🔓 프로에서 지난 항아리 열기
+무료로도 재는 계속 쌓입니다. 프로를 구매하면 몇 달 전 항아리까지 거슬러 올라가 다시 읽을 수 있어요.
+
+🛠 개선
+• 시각 표기가 기기 언어와 지역 설정을 따라갑니다.
+• 항아리 속 재의 모양이 열 때마다 달라지던 문제를 고쳤어요.
+• 문의 이메일 주소를 정리했습니다.
+```
+
+### App Store "What's New" — English
+
+```
+🏺 Urns by Month and Week
+No more creating urns by hand. Whatever you write settles into that date's weekly urn on its own. Open a month on the shelf and its urns are waiting — week 1, week 2, and so on.
+
+✍️ You Give It Meaning
+Ash in an urn stays just ash until you name it. Open one and it asks: what did this week mean to you? Inscribe a word and the color returns to the ash.
+
+🔓 Reach Back with Pro
+Ash keeps collecting for free. Pro opens every urn from months past, to read again.
+
+🛠 Improvements
+• Times now follow your device's language and region settings.
+• Fixed ash rearranging itself inside an urn every time you opened it.
+• Cleaned up the contact email address.
+```
+
+### 변경 내역 (개발용)
+
+**기능 — 기간 항아리로 전환**
+- 사용자 생성 항아리(`Urn`) 폐지. 항아리는 회고의 `date` 에서 파생되는 값(`UrnPeriod`)이 됐다
+- 주차는 달력 주가 아니라 날짜 기준으로 끊는다 (1~7일 = 1주차, 8~14일 = 2주차 …) — 한 주가 두 달에 걸치지 않아 모든 재가 정확히 하나의 주 항아리에만 담긴다
+- 선반에 달 항아리가 놓이고, 달을 열면 그 달의 주 항아리 그리드가 나온다. 맨 위에는 지금 재가 담기는 이번 주 항아리 바로가기
+- 회고 입력에서 항아리 선택기 제거 — 어디에 담기는지만 상단에 표시
+- 잔불 달력의 드래그 앤 드랍 이동 제거 (담기는 항아리를 날짜가 정하므로 옮길 대상이 없다)
+
+**기능 — 의미 부여 (`UrnMeaning`)**
+- 항아리마다 "새길 한 마디 + 본문"을 남길 수 있다. 주 항아리·달 항아리 모두 대상
+- 의미가 없는 항아리는 재가 색을 잃는다 — 입자·카테고리 점·재 목록·선각 문양이 모두 잿빛. 의미를 적는 순간 4색이 돌아온다
+- 재는 쌓였는데 아직 이름이 없는 지난 주 항아리가 있으면 목록 맨 위에서 한 번 물어본다
+- 의미 작성 화면은 담긴 재를 먼저 보여준 뒤 질문한다
+
+**과금 게이트 변경**
+- 항아리가 자동 생성되면서 "개수 한도" 게이트가 무의미해져 **열람 가능한 달 수**로 전환. `BurningParchmentSpec.gate.freeLimits[.urn]` 값을 그대로 개월 수로 읽는다 (1 = 이번 달만)
+- 무료에서도 재는 계속 쌓이므로 결제 시 지난 항아리가 그대로 열린다 — 잃는 데이터 없음
+- 페이월·설정 문구를 "항아리 무제한" → "지난 항아리 모두 열기"로 교체
+
+**마이그레이션**
+- v1 사용자가 지은 항아리 이름은 갈 곳이 없어지므로, 해당 회고의 키워드가 비어 있으면 항아리 이름을 키워드로 옮겨 보존하고 `shared_urns` 만 지운다. 회고 본문·분류·날짜는 그대로 남아 날짜에 따라 담긴다
+
+**버그 수정**
+- 항아리 재 입자의 배치 씨앗이 `String.hashValue` 라 실행할 때마다 재 모양이 바뀌던 문제 수정 — FNV-1a 로 고정
+- 시각 표기의 하드코딩된 AM/PM·h/m 제거, 로케일 대응 (`TimeFormat`)
+
+**내부**
+- `Urn` → `LegacyUrn` (마이그레이션 전용으로만 잔존), `ReflectionManager` 는 회고와 의미 두 가지만 저장
+- 신규 한국어 문자열 41건 영어 번역 포함 String Catalog 반영
+- 문의 이메일을 `leeo@kakao.com` 으로 통일
+
 ## 1.0.7 (build 1)
 
 ### App Store "이번 버전의 새로운 기능" — 한국어

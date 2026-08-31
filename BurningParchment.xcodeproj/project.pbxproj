@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -83,7 +83,7 @@
 		18F256B31A77A4442890FB7D /* BurningParchmentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentSpec.swift; sourceTree = "<group>"; };
 		2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeLiveActivity.swift; sourceTree = "<group>"; };
 		227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BurningParchmentWidgets.entitlements; sourceTree = "<group>"; };
-		2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BurningParchmentWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BurningParchmentWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineManager.swift; sourceTree = "<group>"; };
 		2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineListView.swift; sourceTree = "<group>"; };
 		312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentApp.swift; sourceTree = "<group>"; };
@@ -91,12 +91,12 @@
 		36C24016F79235C3EAFE2D5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionManager.swift; sourceTree = "<group>"; };
 		41345BE06092DAE95A36C816 /* UrnMeaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnMeaning.swift; sourceTree = "<group>"; };
-		4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5E9062A5518028E5E6F7CCB7 /* Deadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadline.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
 		8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBookView.swift; sourceTree = "<group>"; };
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D60B5770EF62427A47B171 /* FireShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FireShader.metal; sourceTree = "<group>"; };
 		A9E108371E99FC1B2998C2CF /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		BF7DA3AEFB15B10715D4D4F5 /* TimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormat.swift; sourceTree = "<group>"; };
 		C1D3645BC9A44C34139BA62A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentView.swift; sourceTree = "<group>"; };
-		D1888FBD73088238AA4AA51A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D1888FBD73088238AA4AA51A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionUrnView.swift; sourceTree = "<group>"; };
 		DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnPeriod.swift; sourceTree = "<group>"; };
 		E6DE822A78BE0EC73DE29837 /* BedtimeExcuseSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeExcuseSheetView.swift; sourceTree = "<group>"; };
@@ -304,7 +304,6 @@
 			packageReferences = (
 				3E1529200DE9068AF96419FE /* XCRemoteSwiftPackageReference "LeeoKit" */,
 			);
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -400,9 +399,14 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BurningParchmentWidgets/BurningParchmentWidgets.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchmentWidgets/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.0.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app.widgets;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,12 +486,13 @@
 				CODE_SIGN_ENTITLEMENTS = BurningParchment/BurningParchment.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -504,12 +509,13 @@
 				CODE_SIGN_ENTITLEMENTS = BurningParchment/BurningParchment.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -581,9 +587,14 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BurningParchmentWidgets/BurningParchmentWidgets.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = BurningParchmentWidgets/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.0.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burningparchment.app.widgets;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

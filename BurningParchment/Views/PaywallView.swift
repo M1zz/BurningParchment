@@ -97,8 +97,8 @@ struct PaywallView: View {
         VStack(spacing: 14) {
             featureRow(
                 icon: "archivebox.fill",
-                title: "항아리 무제한",
-                detail: "주제별로 원하는 만큼 재 항아리를 만들어요"
+                title: "지난 항아리 모두 열기",
+                detail: "몇 달 전 항아리까지 거슬러 올라가 다시 읽어요"
             )
             featureRow(
                 icon: "flag.fill",

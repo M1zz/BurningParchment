@@ -263,8 +263,7 @@ struct ContentView: View {
     }
 
     private var shouldShowReflectionNudge: Bool {
-        !reflectionManager.urns.isEmpty
-        && !reflectionManager.hasReflectionToday
+        !reflectionManager.hasReflectionToday
         && !isNudgeDismissedToday
         && bedtimeManager.isCountdownActive
         && bedtimeManager.remainingSeconds > 0

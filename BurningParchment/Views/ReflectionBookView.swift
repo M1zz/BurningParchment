@@ -148,19 +148,18 @@ struct ReflectionBookView: View {
     }
 
     private func reflectionCard(_ item: DayReflection) -> some View {
-        let urn = reflectionManager.urns.first(where: { $0.id == item.urnId })
-        let rgb = item.category.particleColor
+        let period = item.weekPeriod
+        let hasMeaning = reflectionManager.hasMeaning(period)
+        let rgb: (Double, Double, Double) = hasMeaning ? item.category.particleColor : (0.60, 0.58, 0.55)
         return VStack(alignment: .leading, spacing: 6) {
-            // 항아리 + 카테고리 + 시간
+            // 담긴 항아리 + 카테고리 + 시간
             HStack(spacing: 6) {
                 Circle()
                     .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                     .frame(width: 6, height: 6)
-                if let urn {
-                    Text("\(urn.emoji) \(urn.name)")
-                        .font(.system(size: 10, weight: .medium))
-                        .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.75))
-                }
+                Text(period.title)
+                    .font(.system(size: 10, weight: .medium))
+                    .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.75))
                 if item.category != .uncategorized {
                     Text(item.category.shortLabel)
                         .font(.system(size: 10))
@@ -226,7 +225,7 @@ struct ReflectionBookView: View {
             }
         }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(urn?.name ?? "") 회고")
+        .accessibilityLabel("\(period.title) 회고")
         .accessibilityValue(item.text)
         .accessibilityHint("탭하여 수정")
     }

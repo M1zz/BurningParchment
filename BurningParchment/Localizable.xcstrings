@@ -1,4201 +1,4818 @@
 {
-  "sourceLanguage" : "ko",
-  "strings" : {
-    " %lld분" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ":%lld"
+  "sourceLanguage": "ko",
+  "strings": {
+    "": {
+      "shouldTranslate": false
+    },
+    " %lld분": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ":%lld"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " %lld분"
+          }
+        }
+      }
+    },
+    "#": {
+      "shouldTranslate": false
+    },
+    "#%@": {
+      "shouldTranslate": false
+    },
+    "%@": {
+      "shouldTranslate": false
+    },
+    "%@ %@": {
+      "shouldTranslate": false
+    },
+    "%@ %@ 데드라인": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %@ deadline"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %@ 데드라인"
+          }
+        }
+      }
+    },
+    "%@ %lld주차": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · Week %lld"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %lld주차"
+          }
+        }
+      }
+    },
+    "%@ / %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ / %2$@"
+          }
+        }
+      }
+    },
+    "%@ 항아리": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ urn"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 항아리"
+          }
+        }
+      }
+    },
+    "%@ 항아리에 담깁니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goes into the %@ urn"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 항아리에 담깁니다"
+          }
+        }
+      }
+    },
+    "%@ 항아리에 의미 적기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Give the %@ urn its meaning"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 항아리에 의미 적기"
+          }
+        }
+      }
+    },
+    "%@ 항아리에 재 %lld톨이 남았어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The %@ urn holds %lld specks of ash"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 항아리에 재 %lld톨이 남았어요"
+          }
+        }
+      }
+    },
+    "%@ 회고": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ reflections"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 회고"
+          }
+        }
+      }
+    },
+    "%@ 후 시작": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starts in %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 후 시작"
+          }
+        }
+      }
+    },
+    "%@ 후 양피지가 타기 시작합니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The parchment starts burning in %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 후 양피지가 타기 시작합니다"
+          }
+        }
+      }
+    },
+    "%@%% 남음": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@%% left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@%% 남음"
+          }
+        }
+      }
+    },
+    "%@, %lld%% 남음": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld%% left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld%% 남음"
+          }
+        }
+      }
+    },
+    "%@, 기록 없음": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, no entries"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, 기록 없음"
+          }
+        }
+      }
+    },
+    "%@, 재 %lld톨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld specks of ash"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, 재 %lld톨"
+          }
+        }
+      }
+    },
+    "%@, 회고 %lld개": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld reflections"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, 회고 %lld개"
+          }
+        }
+      }
+    },
+    "%@개": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@개"
+          }
+        }
+      }
+    },
+    "%lld": {
+      "shouldTranslate": false
+    },
+    "%lld / %lld": {
+      "shouldTranslate": false
+    },
+    "%lld%% 남음": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% 남음"
+          }
+        }
+      }
+    },
+    "%lld개": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : " %lld분"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld개"
           }
         }
       }
     },
-    ":" : {
-      "shouldTranslate" : false
+    "%lld분": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldm"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld분"
+          }
+        }
+      }
+    },
+    "%lld분 %lld초": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldm %llds"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld분 %lld초"
+          }
+        }
+      }
+    },
+    "%lld시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldh"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld시간"
+          }
+        }
+      }
+    },
+    "%lld시간 %lld분": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldh %lldm"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld시간 %lld분"
+          }
+        }
+      }
+    },
+    "%lld일": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldd"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld일"
+          }
+        }
+      }
+    },
+    "%lld일 %lld시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldd %lldh"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld일 %lld시간"
+          }
+        }
+      }
+    },
+    "%lld주차": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Week %lld"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld주차"
+          }
+        }
+      }
+    },
+    "%lld초": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%llds"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld초"
+          }
+        }
+      }
+    },
+    "'%@'을(를) 삭제할까요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete '%@'?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'%@'을(를) 삭제할까요?"
+          }
+        }
+      }
+    },
+    "+ 버튼으로 새 데드라인을 추가하세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add one with the + button"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+ 버튼으로 새 데드라인을 추가하세요"
+          }
+        }
+      }
+    },
+    "1년": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Year"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1년"
+          }
+        }
+      }
     },
-    "…" : {
-      "shouldTranslate" : false
+    "1달": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Month"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1달"
+          }
+        }
+      }
     },
-    "·" : {
-      "shouldTranslate" : false
+    "1일": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1일"
+          }
+        }
+      }
     },
-    "· ⊕ 무게중심" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· ⊕ center of mass"
+    "1주": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Week"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· ⊕ 무게중심"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1주"
           }
         }
       }
     },
-    "· 좌표 없는 옛 회고 %@개는 사분면 안에 흩어 표시" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· %@ older entries without saved points are scattered within their quadrant"
+    ":": {
+      "shouldTranslate": false
+    },
+    "·": {
+      "shouldTranslate": false
+    },
+    "· ⊕ 무게중심": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· ⊕ center of mass"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· 좌표 없는 옛 회고 %@개는 사분면 안에 흩어 표시"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· ⊕ 무게중심"
           }
         }
       }
     },
-    "· 좌표 없는 옛 회고 %lld개는 사분면 안에 흩어 표시" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· %lld older entries without saved points are scattered within their quadrant"
+    "· 좌표 없는 옛 회고 %@개는 사분면 안에 흩어 표시": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· %@ older entries without saved points are scattered within their quadrant"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· 좌표 없는 옛 회고 %lld개는 사분면 안에 흩어 표시"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 좌표 없는 옛 회고 %@개는 사분면 안에 흩어 표시"
           }
         }
       }
     },
-    "'%@'을(를) 삭제할까요?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete '%@'?"
+    "· 좌표 없는 옛 회고 %lld개는 사분면 안에 흩어 표시": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· %lld older entries without saved points are scattered within their quadrant"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "'%@'을(를) 삭제할까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 좌표 없는 옛 회고 %lld개는 사분면 안에 흩어 표시"
           }
         }
       }
     },
-    "#" : {
-      "shouldTranslate" : false
+    "…": {
+      "shouldTranslate": false
     },
-    "#%@" : {
-      "shouldTranslate" : false
+    "→": {
+      "shouldTranslate": false
     },
-    "%@" : {
-      "shouldTranslate" : false
+    "→ %@": {
+      "shouldTranslate": false
+    },
+    "감사": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratitude"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감사"
+          }
+        }
+      }
     },
-    "%@ / %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ / %@"
+    "개발자에게 문의": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contact the developer"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ / %2$@"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개발자에게 문의"
           }
         }
       }
     },
-    "%@ %@" : {
-      "shouldTranslate" : false
+    "개인정보처리방침": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개인정보처리방침"
+          }
+        }
+      }
     },
-    "%@ %@ 데드라인" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ %@ deadline"
+    "고쳐 적기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rewrite"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ %@ 데드라인"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고쳐 적기"
           }
         }
       }
     },
-    "%@ 항아리" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ urn"
+    "곧 기상 시간이에요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almost time to wake up"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ 항아리"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "곧 기상 시간이에요"
           }
         }
       }
     },
-    "%@ 회고" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ reflections"
+    "관계": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relationships"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ 회고"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "관계"
           }
         }
       }
     },
-    "%@ 후 시작" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Starts in %@"
+    "구매 복원": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore Purchases"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ 후 시작"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "구매 복원"
           }
         }
       }
     },
-    "%@ 후 양피지가 타기 시작합니다" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The parchment starts burning in %@"
+    "구매를 완료하지 못했어요": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchase could not be completed"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ 후 양피지가 타기 시작합니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "구매를 완료하지 못했어요"
           }
         }
       }
     },
-    "%@, %lld%% 남음" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld%% left"
+    "그냥 흘러간 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time that slipped away"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld%% 남음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그냥 흘러간 시간"
           }
         }
       }
     },
-    "%@, 기록 없음" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, no entries"
+    "그냥 흘러갔어": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Just slipped away"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, 기록 없음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그냥 흘러갔어"
           }
         }
       }
     },
-    "%@, 회고 %lld개" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld reflections"
+    "그만둘 것": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Things to stop"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, 회고 %lld개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그만둘 것"
           }
         }
       }
     },
-    "%@%% 남음" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@%% left"
+    "기록하기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@%% 남음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기록하기"
           }
         }
       }
     },
-    "%@개" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@"
+    "기쁨": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joy"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기쁨"
           }
         }
       }
     },
-    "%lld%% 남음" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%% left"
+    "기상 및 취침 시간 설정": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wake & bedtime settings"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%% 남음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기상 및 취침 시간 설정"
           }
         }
       }
     },
-    "%lld개" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld"
+    "기상 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wake-up time"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기상 시간"
           }
         }
       }
     },
-    "%lld분" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldm"
+    "기상 전": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Before wake-up"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld분"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기상 전"
           }
         }
       }
     },
-    "%lld분 %lld초" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldm %llds"
+    "기상까지 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ until wake-up"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld분 %lld초"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기상까지 %@"
           }
         }
       }
     },
-    "%lld시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldh"
+    "기상시간부터 자동 카운트다운": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto countdown from wake-up"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기상시간부터 자동 카운트다운"
           }
         }
       }
     },
-    "%lld시간 %lld분" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldh %lldm"
+    "기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From wake-up to bedtime,\nthe parchment slowly burns away"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld시간 %lld분"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다"
           }
         }
       }
     },
-    "%lld일" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldd"
+    "나의 목표": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My Goals"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나의 목표"
           }
         }
       }
     },
-    "%lld일 %lld시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldd %lldh"
+    "날짜": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld일 %lld시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "날짜"
           }
         }
       }
     },
-    "%lld초" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%llds"
+    "남음": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "left"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld초"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남음"
           }
         }
       }
     },
-    "→" : {
-      "shouldTranslate" : false
+    "내일 메모 단계": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow note step"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일 메모 단계"
+          }
+        }
+      }
     },
-    "→ %@" : {
-      "shouldTranslate" : false
+    "내일 새롭게 어떤 걸 시도해볼까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What new thing will you try tomorrow?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일 새롭게 어떤 걸 시도해볼까요?"
+          }
+        }
+      }
     },
-    "+ 버튼으로 새 데드라인을 추가하세요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add one with the + button"
+    "내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow morning it appears as a band atop the parchment and burns along with your day."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "+ 버튼으로 새 데드라인을 추가하세요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요."
           }
         }
       }
     },
-    "🌙 좋은 꿈 꾸세요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🌙 Sweet dreams"
+    "내일 어떻게 해볼까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How will you approach tomorrow?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🌙 좋은 꿈 꾸세요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일 어떻게 해볼까요?"
           }
         }
       }
     },
-    "🏁" : {
-      "shouldTranslate" : false
+    "내일은 무엇을 끊어낼까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What will you cut out tomorrow?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일은 무엇을 끊어낼까요?"
+          }
+        }
+      }
     },
-    "🔥" : {
-      "shouldTranslate" : false
+    "내일은 어떻게 다르게 보낼까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How will you spend tomorrow differently?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일은 어떻게 다르게 보낼까요?"
+          }
+        }
+      }
     },
-    "🕯️" : {
-      "shouldTranslate" : false
+    "네트워크 상태를 확인하고 다시 시도해주세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please check your network connection and try again."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "네트워크 상태를 확인하고 다시 시도해주세요."
+          }
+        }
+      }
     },
-    "1년" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Year"
+    "다음": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1년"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음"
           }
         }
       }
     },
-    "1달" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Month"
+    "다음 달": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next month"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1달"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 달"
           }
         }
       }
     },
-    "1일" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Day"
+    "다음엔 어떻게 하면 마칠 수 있을까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How could you finish next time?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음엔 어떻게 하면 마칠 수 있을까요?"
           }
         }
       }
     },
-    "1주" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Week"
+    "다이나믹 아일랜드로 실시간 확인": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live updates in Dynamic Island"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1주"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다이나믹 아일랜드로 실시간 확인"
           }
         }
       }
     },
-    "감사" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gratitude"
+    "닫기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "감사"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "닫기"
           }
         }
       }
     },
-    "개발자에게 문의" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contact the developer"
+    "닫기 — 지금까지 적은 내용은 저장됩니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close — everything you've written is saved"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "개발자에게 문의"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "닫기 — 지금까지 적은 내용은 저장됩니다"
           }
         }
       }
     },
-    "개인정보처리방침" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Privacy Policy"
+    "달": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moon"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "개인정보처리방침"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달"
           }
         }
       }
     },
-    "곧 기상 시간이에요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Almost time to wake up"
+    "달을 열면 그 달의 주 항아리가 나와요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open a month to find its weekly urns"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "곧 기상 시간이에요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달을 열면 그 달의 주 항아리가 나와요"
           }
         }
       }
     },
-    "관계" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Relationships"
+    "담긴 재": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash inside"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "관계"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "담긴 재"
           }
         }
       }
     },
-    "구매 복원" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restore Purchases"
+    "더 잘 하려면 내일 무엇을 할까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What will you do tomorrow to do even better?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "구매 복원"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 잘 하려면 내일 무엇을 할까요?"
           }
         }
       }
     },
-    "구매를 완료하지 못했어요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Purchase could not be completed"
+    "데드라인": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deadlines"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "구매를 완료하지 못했어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인"
           }
         }
       }
     },
-    "그냥 흘러간 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time that slipped away"
+    "데드라인 무제한": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlimited deadlines"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "그냥 흘러간 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 무제한"
           }
         }
       }
     },
-    "그냥 흘러갔어" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Just slipped away"
+    "데드라인 삭제": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Deadline"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "그냥 흘러갔어"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 삭제"
           }
         }
       }
     },
-    "그만둘 것" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Things to stop"
+    "데드라인 수정": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit Deadline"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "그만둘 것"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 수정"
           }
         }
       }
     },
-    "기록하기" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save"
+    "데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The deadline tab appears automatically once you add a deadline"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기록하기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다"
           }
         }
       }
     },
-    "기쁨" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joy"
+    "데드라인까지": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Until deadline"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기쁨"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인까지"
           }
         }
       }
     },
-    "기상 및 취침 시간 설정" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wake & bedtime settings"
+    "데드라인이 없어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No deadlines"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기상 및 취침 시간 설정"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인이 없어요"
           }
         }
       }
     },
-    "기상 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wake-up time"
+    "도전": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기상 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도전"
           }
         }
       }
     },
-    "기상 전" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Before wake-up"
+    "도형": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shape"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기상 전"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도형"
           }
         }
       }
     },
-    "기상까지 %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ until wake-up"
+    "두 축에 따라 손가락으로 콕 찍어 분류합니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classify by tapping a point along the two axes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기상까지 %@"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두 축에 따라 손가락으로 콕 찍어 분류합니다"
           }
         }
       }
     },
-    "기상시간부터 자동 카운트다운" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto countdown from wake-up"
+    "마감 완료 🏁": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deadline passed 🏁"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기상시간부터 자동 카운트다운"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마감 완료 🏁"
           }
         }
       }
     },
-    "기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "From wake-up to bedtime,\nthe parchment slowly burns away"
+    "마감까지 남은 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time left until deadline"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마감까지 남은 시간"
           }
         }
       }
     },
-    "나의 목표" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "My Goals"
+    "마감일": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due date"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "나의 목표"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마감일"
           }
         }
       }
     },
-    "날짜" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Date"
+    "마음먹은 대로 한 일": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Did as I intended"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "날짜"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마음먹은 대로 한 일"
           }
         }
       }
     },
-    "남음" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "left"
+    "마음먹은 대로 했어": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Did what I intended"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "남음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마음먹은 대로 했어"
           }
         }
       }
     },
-    "내일 메모 단계" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tomorrow note step"
+    "만들기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "내일 메모 단계"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "만들기"
           }
         }
       }
     },
-    "내일 새롭게 어떤 걸 시도해볼까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What new thing will you try tomorrow?"
+    "멈춰": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "내일 새롭게 어떤 걸 시도해볼까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "멈춰"
           }
         }
       }
     },
-    "내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tomorrow morning it appears as a band atop the parchment and burns along with your day."
+    "몇 달 전 항아리까지 거슬러 올라가 다시 읽어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reach back months and reread every urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "몇 달 전 항아리까지 거슬러 올라가 다시 읽어요"
           }
         }
       }
     },
-    "내일 어떻게 해볼까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How will you approach tomorrow?"
+    "못함": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Missed"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "내일 어떻게 해볼까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "못함"
           }
         }
       }
     },
-    "내일은 무엇을 끊어낼까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What will you cut out tomorrow?"
+    "바": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bar"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "내일은 무엇을 끊어낼까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "바"
           }
         }
       }
     },
-    "내일은 어떻게 다르게 보낼까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How will you spend tomorrow differently?"
+    "반짝": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sparkle"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "내일은 어떻게 다르게 보낼까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "반짝"
           }
         }
       }
     },
-    "네트워크 상태를 확인하고 다시 시도해주세요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Please check your network connection and try again."
+    "방울": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drop"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "네트워크 상태를 확인하고 다시 시도해주세요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "방울"
           }
         }
       }
     },
-    "다음" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Next"
+    "배움": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learning"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "다음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "배움"
           }
         }
       }
     },
-    "닫기" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close"
+    "버그 제보와 기능 제안을 환영합니다.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bug reports and feature ideas are welcome."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "닫기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버그 제보와 기능 제안을 환영합니다."
           }
         }
       }
     },
-    "달" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Moon"
+    "번개": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bolt"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "달"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "번개"
           }
         }
       }
     },
-    "다음 달" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Next month"
+    "별": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Star"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "다음 달"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "별"
           }
         }
       }
     },
-    "다음엔 어떻게 하면 마칠 수 있을까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How could you finish next time?"
+    "본문 단계": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Writing step"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "다음엔 어떻게 하면 마칠 수 있을까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "본문 단계"
           }
         }
       }
     },
-    "다이나믹 아일랜드로 실시간 확인" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Live updates in Dynamic Island"
+    "본문을 저장하고 분류 단계로 이동합니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save the text and go to the classify step"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "다이나믹 아일랜드로 실시간 확인"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "본문을 저장하고 분류 단계로 이동합니다"
           }
         }
       }
     },
-    "닫기 — 지금까지 적은 내용은 저장됩니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close — everything you've written is saved"
+    "분": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "min"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "닫기 — 지금까지 적은 내용은 저장됩니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "분"
           }
         }
       }
     },
-    "더 잘 하려면 내일 무엇을 할까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What will you do tomorrow to do even better?"
+    "분류 그래프": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classification graph"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "더 잘 하려면 내일 무엇을 할까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "분류 그래프"
           }
         }
       }
     },
-    "데드라인" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deadlines"
+    "분류 단계": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classify step"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "분류 단계"
           }
         }
       }
     },
-    "데드라인 무제한" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlimited deadlines"
+    "분류 안 됨": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uncategorized"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인 무제한"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "분류 안 됨"
           }
         }
       }
     },
-    "데드라인 삭제" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete Deadline"
+    "분류를 저장하고 내일 메모 단계로 이동합니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save the classification and go to the tomorrow note"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인 삭제"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "분류를 저장하고 내일 메모 단계로 이동합니다"
           }
         }
       }
     },
-    "데드라인 수정" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit Deadline"
+    "불꽃": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flame"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인 수정"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불꽃"
           }
         }
       }
     },
-    "데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The deadline tab appears automatically once you add a deadline"
+    "불타는 내인생 프로": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burning Parchment Pro"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불타는 내인생 프로"
           }
         }
       }
     },
-    "데드라인까지" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Until deadline"
+    "불타는 내인생 🔥": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burning Parchment 🔥"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인까지"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불타는 내인생 🔥"
           }
         }
       }
     },
-    "데드라인이 없어요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No deadlines"
+    "삭제": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "데드라인이 없어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "삭제"
           }
         }
       }
     },
-    "도전" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Challenge"
+    "새 데드라인": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Deadline"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "도전"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 데드라인"
           }
         }
       }
     },
-    "도형" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shape"
+    "새 항아리": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "도형"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 항아리"
           }
         }
       }
     },
-    "두 축에 따라 손가락으로 콕 찍어 분류합니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Classify by tapping a point along the two axes"
+    "새 항아리 만들기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create new urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "두 축에 따라 손가락으로 콕 찍어 분류합니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 항아리 만들기"
           }
         }
       }
     },
-    "마감 완료 🏁" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deadline passed 🏁"
+    "새 회고": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Entry"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "마감 완료 🏁"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 회고"
           }
         }
       }
     },
-    "마감까지 남은 시간" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time left until deadline"
+    "새 회고 적기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write a new reflection"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "마감까지 남은 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 회고 적기"
           }
         }
       }
     },
-    "마감일" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Due date"
+    "새기기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inscribe"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "마감일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새기기"
           }
         }
       }
     },
-    "마음먹은 대로 한 일" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Did as I intended"
+    "새로 추가되는 프로 기능도 모두 포함돼요": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Includes every Pro feature we add later"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "마음먹은 대로 한 일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로 추가되는 프로 기능도 모두 포함돼요"
           }
         }
       }
     },
-    "마음먹은 대로 했어" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Did what I intended"
+    "선": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Line"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "마음먹은 대로 했어"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선"
           }
         }
       }
     },
-    "만들기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create"
+    "선택됨": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "만들기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택됨"
           }
         }
       }
     },
-    "멈춰" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop"
+    "성장": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Growth"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "멈춰"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "성장"
           }
         }
       }
     },
-    "못함" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Missed"
+    "솔직하게 적어보세요...": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Be honest..."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "못함"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "솔직하게 적어보세요..."
           }
         }
       }
     },
-    "바" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bar"
+    "수면 중": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sleeping"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "바"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수면 중"
           }
         }
       }
     },
-    "반짝" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sparkle"
+    "수정": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "반짝"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수정"
           }
         }
       }
     },
-    "방울" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Drop"
+    "시": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hr"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "방울"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시"
           }
         }
       }
     },
-    "배움" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Learning"
+    "시간 설정": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Settings"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "배움"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시간 설정"
           }
         }
       }
     },
-    "버그 제보와 기능 제안을 환영합니다." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bug reports and feature ideas are welcome."
+    "시간을 들였다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time spent"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "버그 제보와 기능 제안을 환영합니다."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시간을 들였다"
           }
         }
       }
     },
-    "번개" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bolt"
+    "시간을 안 들였다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No time spent"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "번개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시간을 안 들였다"
           }
         }
       }
     },
-    "별" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Star"
+    "시작 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start time"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "별"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시작 시간"
           }
         }
       }
     },
-    "본문 단계" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Writing step"
+    "실수": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mistakes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "본문 단계"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실수"
           }
         }
       }
     },
-    "본문을 저장하고 분류 단계로 이동합니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save the text and go to the classify step"
+    "심볼": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Symbol"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "본문을 저장하고 분류 단계로 이동합니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "심볼"
           }
         }
       }
     },
-    "분" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "min"
+    "아직 담긴 재가 없어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No ash yet"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "분"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 담긴 재가 없어요"
           }
         }
       }
     },
-    "분류 그래프" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Classification graph"
+    "아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No classified ashes yet. Tap the graph when writing a reflection."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "분류 그래프"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요."
           }
         }
       }
     },
-    "분류 단계" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Classify step"
+    "아직 비어 있어요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empty so far."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "분류 단계"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 비어 있어요."
           }
         }
       }
     },
-    "분류 안 됨" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uncategorized"
+    "아직 이름 없는 재": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash with no name yet"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "분류 안 됨"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 이름 없는 재"
           }
         }
       }
     },
-    "분류를 저장하고 내일 메모 단계로 이동합니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save the classification and go to the tomorrow note"
+    "아직 적힌 내용이 없습니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing written yet"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "분류를 저장하고 내일 메모 단계로 이동합니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 적힌 내용이 없습니다"
           }
         }
       }
     },
-    "불꽃" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flame"
+    "아직 첫 페이지에요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Still on the first page"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불꽃"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 첫 페이지에요"
           }
         }
       }
     },
-    "불타는 내인생 🔥" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Burning Parchment 🔥"
+    "아직 항아리가 없어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No urns yet"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불타는 내인생 🔥"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 항아리가 없어요"
           }
         }
       }
     },
-    "불타는 내인생 프로" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Burning Parchment Pro"
+    "아직은 그냥 재예요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Still just ash"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불타는 내인생 프로"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직은 그냥 재예요"
           }
         }
       }
     },
-    "삭제" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete"
+    "앞으로의 프로 기능": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Future Pro features"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "삭제"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앞으로의 프로 기능"
           }
         }
       }
     },
-    "새 데드라인" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Deadline"
+    "어느 항아리에 담을까요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which urn should hold this?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새 데드라인"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어느 항아리에 담을까요?"
           }
         }
       }
     },
-    "새 항아리" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Urn"
+    "어제 못한 것": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yesterday's unfinished"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새 항아리"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어제 못한 것"
           }
         }
       }
     },
-    "새 항아리 만들기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create new urn"
+    "어제 못한 것 %lld개": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld unfinished from yesterday"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새 항아리 만들기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어제 못한 것 %lld개"
           }
         }
       }
     },
-    "새 회고" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Entry"
+    "어쩌다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unplanned"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새 회고"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어쩌다"
           }
         }
       }
     },
-    "새 회고 적기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write a new reflection"
+    "어쩌다 하게 됐어": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ended up doing it"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새 회고 적기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어쩌다 하게 됐어"
           }
         }
       }
     },
-    "새로 추가되는 프로 기능도 모두 포함돼요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Includes every Pro feature we add later"
+    "어쩌다 하게 된 일": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ended up doing"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새로 추가되는 프로 기능도 모두 포함돼요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어쩌다 하게 된 일"
           }
         }
       }
     },
-    "선" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Line"
+    "없음": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "None"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "선"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "없음"
           }
         }
       }
     },
-    "선택됨" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selected"
+    "여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is in here stays just ash until you name it."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "선택됨"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요."
           }
         }
       }
     },
-    "성장" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Growth"
+    "여기 쌓인 재가 나에게 무엇이었는지…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What this ash meant to me…"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "성장"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "여기 쌓인 재가 나에게 무엇이었는지…"
           }
         }
       }
     },
-    "솔직하게 적어보세요..." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Be honest..."
+    "여러 목표를 동시에 카운트다운해요": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Count down multiple goals at once"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "솔직하게 적어보세요..."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "여러 목표를 동시에 카운트다운해요"
           }
         }
       }
     },
-    "수면 중" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sleeping"
+    "열기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "수면 중"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "열기"
           }
         }
       }
     },
-    "수정" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit"
+    "예: SNS 사용 15분 제한": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Limit social media to 15 minutes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "수정"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: SNS 사용 15분 제한"
           }
         }
       }
     },
-    "시" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "hr"
+    "예: 버텨낸 주": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. The week I held on"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "시"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 버텨낸 주"
           }
         }
       }
     },
-    "시간 설정" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time Settings"
+    "예: 산책 20분으로 바꾸기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Switch to a 20-min walk"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "시간 설정"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 산책 20분으로 바꾸기"
           }
         }
       }
     },
-    "시간을 들였다" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time spent"
+    "예: 운동 시간을 30분 늘리기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Extend workout by 30 minutes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "시간을 들였다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 운동 시간을 30분 늘리기"
           }
         }
       }
     },
-    "시간을 안 들였다" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No time spent"
+    "예: 운동, 관계, 올해의 도전": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Fitness, Relationships, This year's challenge"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "시간을 안 들였다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 운동, 관계, 올해의 도전"
           }
         }
       }
     },
-    "시작 시간" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start time"
+    "예: 점심 직후 운동 30분": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. 30-min workout right after lunch"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "시작 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 점심 직후 운동 30분"
           }
         }
       }
     },
-    "실수" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mistakes"
+    "예: 책 한 챕터 읽기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Read one chapter"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "실수"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 책 한 챕터 읽기"
           }
         }
       }
     },
-    "심볼" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Symbol"
+    "예: 프로젝트 제출": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Submit project"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "심볼"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 프로젝트 제출"
           }
         }
       }
     },
-    "아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No classified ashes yet. Tap the graph when writing a reflection."
+    "오늘": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘"
           }
         }
       }
     },
-    "아직 비어 있어요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Empty so far."
+    "오늘 마치지 못한 이유": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Why today went unfinished"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아직 비어 있어요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 마치지 못한 이유"
           }
         }
       }
     },
-    "아직 적힌 내용이 없습니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nothing written yet"
+    "오늘 하루, 한 줄로 남겨봐요.": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave one line about your day."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아직 적힌 내용이 없습니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 하루, 한 줄로 남겨봐요."
           }
         }
       }
     },
-    "아직 첫 페이지에요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Still on the first page"
+    "오늘 하루를\n마치지 못 했군요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You couldn't finish\nyour day today"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아직 첫 페이지에요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 하루를\n마치지 못 했군요"
           }
         }
       }
     },
-    "아직 항아리가 없어요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No urns yet"
+    "오늘 하루를 마치지 못 한 이유는\n무엇인가요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What kept you from\nfinishing your day?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아직 항아리가 없어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 하루를 마치지 못 한 이유는\n무엇인가요?"
           }
         }
       }
     },
-    "앞으로의 프로 기능" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Future Pro features"
+    "오늘 한 줄, 남기고 잘까요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One line before bed?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "앞으로의 프로 기능"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 한 줄, 남기고 잘까요?"
           }
         }
       }
     },
-    "어느 항아리에 담을까요?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Which urn should hold this?"
+    "오늘, ": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today, "
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "어느 항아리에 담을까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘, "
           }
         }
       }
     },
-    "어제 못한 것" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yesterday's unfinished"
+    "오늘은 건너뛸게요": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip today"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "어제 못한 것"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘은 건너뛸게요"
           }
         }
       }
     },
-    "어제 못한 것 %lld개" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld unfinished from yesterday"
+    "오늘은 어떤 하루였나요? — 콕 찍어보세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How was your day? — Tap to place it"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "어제 못한 것 %lld개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘은 어떤 하루였나요? — 콕 찍어보세요"
           }
         }
       }
     },
-    "어쩌다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unplanned"
+    "오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write today's reflection? Tap to open the editor"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "어쩌다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다"
           }
         }
       }
     },
-    "어쩌다 하게 됐어" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ended up doing it"
+    "오전": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AM"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "어쩌다 하게 됐어"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오전"
           }
         }
       }
     },
-    "어쩌다 하게 된 일" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ended up doing"
+    "오후": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PM"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "어쩌다 하게 된 일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오후"
           }
         }
       }
     },
-    "없음" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "None"
+    "올해": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Year"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "없음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올해"
           }
         }
       }
     },
-    "여러 목표를 동시에 카운트다운해요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Count down multiple goals at once"
+    "올해 남은 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time left this year"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "여러 목표를 동시에 카운트다운해요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올해 남은 시간"
           }
         }
       }
     },
-    "열기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open"
+    "완료": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "열기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료"
           }
         }
       }
     },
-    "예: SNS 사용 15분 제한" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. Limit social media to 15 minutes"
+    "외 %@개": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%@ more"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: SNS 사용 15분 제한"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "외 %@개"
           }
         }
       }
     },
-    "예: 산책 20분으로 바꾸기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. Switch to a 20-min walk"
+    "외 %lld개": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%lld more"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: 산책 20분으로 바꾸기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "외 %lld개"
           }
         }
       }
     },
-    "예: 운동 시간을 30분 늘리기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. Extend workout by 30 minutes"
+    "외 %lld톨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "and %lld more"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: 운동 시간을 30분 늘리기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "외 %lld톨"
           }
         }
       }
     },
-    "예: 운동, 관계, 올해의 도전" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. Fitness, Relationships, This year's challenge"
+    "원": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Circle"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: 운동, 관계, 올해의 도전"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원"
           }
         }
       }
     },
-    "예: 점심 직후 운동 30분" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. 30-min workout right after lunch"
+    "위아래로 스와이프해 페이지 이동": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swipe up or down to change pages"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: 점심 직후 운동 30분"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "위아래로 스와이프해 페이지 이동"
           }
         }
       }
     },
-    "예: 책 한 챕터 읽기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. Read one chapter"
+    "의미 적기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write its meaning"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: 책 한 챕터 읽기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "의미 적기"
           }
         }
       }
     },
-    "예: 프로젝트 제출" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "e.g. Submit project"
+    "의미 지우기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase the meaning"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "예: 프로젝트 제출"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "의미 지우기"
           }
         }
       }
     },
-    "오늘" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Today"
+    "의지\n없음": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No\nintent"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "의지\n없음"
           }
         }
       }
     },
-    "오늘 마치지 못한 이유" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Why today went unfinished"
+    "의지\n있음": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With\nintent"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘 마치지 못한 이유"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "의지\n있음"
           }
         }
       }
     },
-    "오늘 하루, 한 줄로 남겨봐요." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leave one line about your day."
+    "이 날의 재는 남아 있지 않아요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No ashes remain from this day"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘 하루, 한 줄로 남겨봐요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 날의 재는 남아 있지 않아요"
           }
         }
       }
     },
-    "오늘 하루를\n마치지 못 했군요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You couldn't finish\nyour day today"
+    "이 달은 당신에게 어떤 의미였나요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What did this month mean to you?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘 하루를\n마치지 못 했군요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 달은 당신에게 어떤 의미였나요?"
           }
         }
       }
     },
-    "오늘 하루를 마치지 못 한 이유는\n무엇인가요?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What kept you from\nfinishing your day?"
+    "이 달의 주 항아리": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekly urns in this month"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘 하루를 마치지 못 한 이유는\n무엇인가요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 달의 주 항아리"
           }
         }
       }
     },
-    "오늘 한 줄, 남기고 잘까요?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "One line before bed?"
+    "이 시간을 내일은 어떻게 다룰까요?": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How will you handle this time tomorrow?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘 한 줄, 남기고 잘까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 시간을 내일은 어떻게 다룰까요?"
           }
         }
       }
     },
-    "오늘, " : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Today, "
+    "이 주는 당신에게 어떤 의미였나요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What did this week mean to you?"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘, "
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 주는 당신에게 어떤 의미였나요?"
           }
         }
       }
     },
-    "오늘은 건너뛸게요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skip today"
+    "이 항아리는 비어 있어요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This urn is empty."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘은 건너뛸게요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 항아리는 비어 있어요."
           }
         }
       }
     },
-    "오늘은 어떤 하루였나요? — 콕 찍어보세요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How was your day? — Tap to place it"
+    "이 항아리를 다시 이름 없는 재로 되돌립니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Returns this urn to nameless ash"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘은 어떤 하루였나요? — 콕 찍어보세요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 항아리를 다시 이름 없는 재로 되돌립니다"
           }
         }
       }
     },
-    "오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write today's reflection? Tap to open the editor"
+    "이 항아리에 남은 것들": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is left in this urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 항아리에 남은 것들"
           }
         }
       }
     },
-    "오전" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AM"
+    "이름": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오전"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이름"
           }
         }
       }
     },
-    "오후" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PM"
+    "이름 변경": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오후"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이름 변경"
           }
         }
       }
     },
-    "올해" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This Year"
+    "이름 없는 항아리": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Untitled Urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "올해"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이름 없는 항아리"
           }
         }
       }
     },
-    "올해 남은 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time left this year"
+    "이메일로 문의하기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email us"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "올해 남은 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이메일로 문의하기"
           }
         }
       }
     },
-    "완료" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done"
+    "이모지": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emoji"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "완료"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이모지"
           }
         }
       }
     },
-    "외 %@개" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "+%@ more"
+    "이번 달": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Month"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "외 %@개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 달"
           }
         }
       }
     },
-    "외 %lld개" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "+%lld more"
+    "이번 달 남은 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time left this month"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "외 %lld개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 달 남은 시간"
           }
         }
       }
     },
-    "원" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Circle"
+    "이번 주": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Week"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "원"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주"
           }
         }
       }
     },
-    "위아래로 스와이프해 페이지 이동" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Swipe up or down to change pages"
+    "이번 주 남은 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time left this week"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "위아래로 스와이프해 페이지 이동"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주 남은 시간"
           }
         }
       }
     },
-    "의지\n없음" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No\nintent"
+    "이번 주에도 반복되고 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's repeating this week too"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "의지\n없음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주에도 반복되고 있어요"
           }
         }
       }
     },
-    "의지\n있음" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "With\nintent"
+    "이용약관 (EULA)": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms of Use (EULA)"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "의지\n있음"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이용약관 (EULA)"
           }
         }
       }
     },
-    "이 날의 재는 남아 있지 않아요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No ashes remain from this day"
+    "이전 달": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous month"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이 날의 재는 남아 있지 않아요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 달"
           }
         }
       }
     },
-    "이 시간을 내일은 어떻게 다룰까요?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How will you handle this time tomorrow?"
+    "인스타그램 DM (@lee25_ios)": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instagram DM (@lee25_ios)"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이 시간을 내일은 어떻게 다룰까요?"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인스타그램 DM (@lee25_ios)"
           }
         }
       }
     },
-    "이름 없는 항아리" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Untitled Urn"
+    "잎": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leaf"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이름 없는 항아리"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잎"
           }
         }
       }
     },
-    "이메일로 문의하기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Email us"
+    "자동 저장": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autosave"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이메일로 문의하기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 저장"
           }
         }
       }
     },
-    "이번 달" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This Month"
+    "작은 변화부터 시작해도 괜찮아요...": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Small changes are a fine start..."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이번 달"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작은 변화부터 시작해도 괜찮아요..."
           }
         }
       }
     },
-    "이번 주" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This Week"
+    "잔불을 탭하면 그날의 회고가 나와요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap an ember to see that day's reflections"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이번 주"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잔불을 탭하면 그날의 회고가 나와요"
           }
         }
       }
     },
-    "이번 주 남은 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time left this week"
+    "잠김 — 프로에서 열려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locked — opens with Pro"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이번 주 남은 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잠김 — 프로에서 열려요"
           }
         }
       }
     },
-    "이번 주에도 반복되고 있어요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It's repeating this week too"
+    "재 %@개 기준": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on %@ ashes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이번 주에도 반복되고 있어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재 %@개 기준"
           }
         }
       }
     },
-    "인스타그램 DM (@lee25_ios)" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Instagram DM (@lee25_ios)"
+    "재 %lld개 기준": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on %lld ashes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "인스타그램 DM (@lee25_ios)"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재 %lld개 기준"
           }
         }
       }
     },
-    "잎" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leaf"
+    "재 %lld톨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld specks of ash"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잎"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재 %lld톨"
           }
         }
       }
     },
-    "이름" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Name"
+    "재 항아리": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash Urns"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이름"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재 항아리"
           }
         }
       }
     },
-    "이름 변경" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rename"
+    "재 항아리에 담아주세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add it to your ash urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이름 변경"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재 항아리에 담아주세요"
           }
         }
       }
     },
-    "이모지" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Emoji"
+    "재의 분포": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash Distribution"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이모지"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재의 분포"
           }
         }
       }
     },
-    "이번 달 남은 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time left this month"
+    "저장": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이번 달 남은 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장"
           }
         }
       }
     },
-    "이용약관 (EULA)" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Terms of Use (EULA)"
+    "저장 중": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이용약관 (EULA)"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장 중"
           }
         }
       }
     },
-    "이전 달" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Previous month"
+    "저장 중…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving…"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이전 달"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장 중…"
           }
         }
       }
     },
-    "자동 저장" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Autosave"
+    "저장됨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "자동 저장"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장됨"
           }
         }
       }
     },
-    "작은 변화부터 시작해도 괜찮아요..." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Small changes are a fine start..."
+    "저장하고 새 회고를 시작합니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save and start a new reflection"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "작은 변화부터 시작해도 괜찮아요..."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장하고 새 회고를 시작합니다"
           }
         }
       }
     },
-    "잔불을 탭하면 그날의 회고가 나와요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap an ember to see that day's reflections"
+    "저장하고 시트를 닫습니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save and close"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잔불을 탭하면 그날의 회고가 나와요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장하고 시트를 닫습니다"
           }
         }
       }
     },
-    "재 %@개 기준" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Based on %@ ashes"
+    "전체": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "재 %@개 기준"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체"
           }
         }
       }
     },
-    "재 %lld개 기준" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Based on %lld ashes"
+    "점": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dot"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "재 %lld개 기준"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "점"
           }
         }
       }
     },
-    "재 항아리" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ash Urns"
+    "제목": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "재 항아리"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제목"
           }
         }
       }
     },
-    "재 항아리에 담아주세요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add it to your ash urn"
+    "조금 더 적어두고 싶다면 (선택)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Want to say more? (optional)"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "재 항아리에 담아주세요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조금 더 적어두고 싶다면 (선택)"
           }
         }
       }
     },
-    "재의 분포" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ash Distribution"
+    "좋은 꿈 꾸세요": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sweet dreams"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "재의 분포"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "좋은 꿈 꾸세요"
           }
         }
       }
     },
-    "저장" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save"
+    "주제별로 원하는 만큼 재 항아리를 만들어요": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create as many ash urns as you like, by topic"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저장"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "주제별로 원하는 만큼 재 항아리를 만들어요"
           }
         }
       }
     },
-    "점" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dot"
+    "지금 담기는 항아리": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filling right now"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "점"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 담기는 항아리"
           }
         }
       }
     },
-    "저장 중" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving"
+    "지금까지 적은 회고를 저장하고 빈 입력칸으로 넘어갑니다": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saves this reflection and starts a blank one"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저장 중"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금까지 적은 회고를 저장하고 빈 입력칸으로 넘어갑니다"
           }
         }
       }
     },
-    "저장 중…" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving…"
+    "지난 항아리 모두 열기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open every past urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저장 중…"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지난 항아리 모두 열기"
           }
         }
       }
     },
-    "저장됨" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saved"
+    "지난 항아리 열람·데드라인 무제한을 이용해보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock past urns and unlimited deadlines."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저장됨"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지난 항아리 열람·데드라인 무제한을 이용해보세요."
           }
         }
       }
     },
-    "저장하고 새 회고를 시작합니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save and start a new reflection"
+    "지원": {
+      "comment": "A label for the support section.",
+      "isCommentAutoGenerated": true,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저장하고 새 회고를 시작합니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원"
           }
         }
       }
     },
-    "저장하고 시트를 닫습니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save and close"
+    "첫 재 담기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add the first ash"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저장하고 시트를 닫습니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 재 담기"
           }
         }
       }
     },
-    "전체" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All"
+    "첫 항아리 만들기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create your first urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "전체"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 항아리 만들기"
           }
         }
       }
     },
-    "제목" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Title"
+    "첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start by creating your first urn.\nNaming it by topic or area works well."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "제목"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요."
           }
         }
       }
     },
-    "좋은 꿈 꾸세요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sweet dreams"
+    "최근 30일": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 30 days"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "좋은 꿈 꾸세요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최근 30일"
           }
         }
       }
     },
-    "주제별로 원하는 만큼 재 항아리를 만들어요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create as many ash urns as you like, by topic"
+    "추가": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "주제별로 원하는 만큼 재 항아리를 만들어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가"
           }
         }
       }
     },
-    "지원" : {
-      "comment" : "A label for the support section.",
-      "isCommentAutoGenerated" : true,
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Support"
+    "추천 취침 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggested bedtimes"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "지원"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추천 취침 시간"
           }
         }
       }
     },
-    "지금까지 적은 회고를 저장하고 빈 입력칸으로 넘어갑니다" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saves this reflection and starts a blank one"
+    "취소": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "지금까지 적은 회고를 저장하고 빈 입력칸으로 넘어갑니다"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
           }
         }
       }
     },
-    "첫 항아리 만들기" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create your first urn"
+    "취침 1시간 전입니다. 오늘 하루도 수고했어요!": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 hour until bedtime. Great job today!"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "첫 항아리 만들기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취침 1시간 전입니다. 오늘 하루도 수고했어요!"
           }
         }
       }
     },
-    "첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start by creating your first urn.\nNaming it by topic or area works well."
+    "취침 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedtime"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취침 시간"
           }
         }
       }
     },
-    "최근 30일" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Last 30 days"
+    "취침 시간 %@ %lld시%@": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedtime %2$lld%3$@ %1$@"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "최근 30일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취침 시간 %@ %lld시%@"
           }
         }
       }
     },
-    "추가" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add"
+    "취침까지 남은 시간": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time left until bedtime"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "추가"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취침까지 남은 시간"
           }
         }
       }
     },
-    "추천 취침 시간" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suggested bedtimes"
+    "캡슐": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capsule"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "추천 취침 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "캡슐"
           }
         }
       }
     },
-    "취소" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancel"
+    "키워드 (선택)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyword (optional)"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "취소"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키워드 (선택)"
           }
         }
       }
     },
-    "취침 1시간 전입니다. 오늘 하루도 수고했어요!" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1 hour until bedtime. Great job today!"
+    "탭 표시": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show tabs"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "취침 1시간 전입니다. 오늘 하루도 수고했어요!"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭 표시"
           }
         }
       }
     },
-    "취침 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bedtime"
+    "탭하여 데드라인 관리": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to manage deadlines"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "취침 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 데드라인 관리"
           }
         }
       }
     },
-    "취침 시간 %@ %lld시%@" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bedtime %2$lld%3$@ %1$@"
+    "탭하여 본문 단계로 돌아감": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to return to the writing step"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "취침 시간 %@ %lld시%@"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 본문 단계로 돌아감"
           }
         }
       }
     },
-    "취침까지 남은 시간" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time left until bedtime"
+    "탭하여 선택": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to select"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "취침까지 남은 시간"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 선택"
           }
         }
       }
     },
-    "캡슐" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capsule"
+    "탭하여 수정": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to edit"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "캡슐"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 수정"
           }
         }
       }
     },
-    "키워드 (선택)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keyword (optional)"
+    "탭하여 항아리 관리": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to manage urns"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "키워드 (선택)"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 항아리 관리"
           }
         }
       }
     },
-    "탭 표시" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show tabs"
+    "탭하여 항아리 열기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to open the urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "탭 표시"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 항아리 열기"
           }
         }
       }
     },
-    "탭하여 데드라인 관리" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap to manage deadlines"
+    "페이지 %lld / %lld": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page %lld of %lld"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "탭하여 데드라인 관리"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "페이지 %lld / %lld"
           }
         }
       }
     },
-    "탭하여 본문 단계로 돌아감" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap to return to the writing step"
+    "페이지 인디케이터": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page indicator"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "탭하여 본문 단계로 돌아감"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "페이지 인디케이터"
           }
         }
       }
     },
-    "탭하여 선택" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap to select"
+    "평생 이용권 · %@": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lifetime access · %@"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "탭하여 선택"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "평생 이용권 · %@"
           }
         }
       }
     },
-    "탭하여 수정" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap to edit"
+    "평생 이용권 구매": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy lifetime access"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "탭하여 수정"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "평생 이용권 구매"
           }
         }
       }
     },
-    "탭하여 항아리 관리" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap to manage urns"
+    "표시": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "탭하여 항아리 관리"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표시"
           }
         }
       }
     },
-    "페이지 %lld / %lld" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Page %lld of %lld"
+    "프로": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "페이지 %lld / %lld"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로"
           }
         }
       }
     },
-    "페이지 인디케이터" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Page indicator"
+    "프로 이용 중이에요. 감사합니다 🔥": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're on Pro. Thank you 🔥"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "페이지 인디케이터"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로 이용 중이에요. 감사합니다 🔥"
           }
         }
       }
     },
-    "평생 이용권 · %@" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lifetime access · %@"
+    "프로로 업그레이드": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upgrade to Pro"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "평생 이용권 · %@"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로로 업그레이드"
           }
         }
       }
     },
-    "평생 이용권 구매" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buy lifetime access"
+    "프로에서 지난 항아리가 열려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro opens past urns"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "평생 이용권 구매"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로에서 지난 항아리가 열려요"
           }
         }
       }
     },
-    "표시" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show"
+    "하려 했는데 못 했어": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tried to, but didn't"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "표시"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하려 했는데 못 했어"
           }
         }
       }
     },
-    "프로" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pro"
+    "하려 했지만 못 한 일": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meant to, but didn't"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "프로"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하려 했지만 못 한 일"
           }
         }
       }
     },
-    "프로 이용 중이에요. 감사합니다 🔥" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You're on Pro. Thank you 🔥"
+    "하루를 남김없이 담아보세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture your day, nothing left behind"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "프로 이용 중이에요. 감사합니다 🔥"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하루를 남김없이 담아보세요"
           }
         }
       }
     },
-    "프로로 업그레이드" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Upgrade to Pro"
+    "하트": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heart"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "프로로 업그레이드"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하트"
           }
         }
       }
     },
-    "하려 했는데 못 했어" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tried to, but didn't"
+    "한 번 결제로 평생 이용할 수 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pay once, use forever"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "하려 했는데 못 했어"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 번 결제로 평생 이용할 수 있어요"
           }
         }
       }
     },
-    "하려 했지만 못 한 일" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Meant to, but didn't"
+    "항아리 %lld개, 회고 %lld개": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld urns, %lld reflections"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "하려 했지만 못 한 일"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리 %lld개, 회고 %lld개"
           }
         }
       }
     },
-    "하루를 남김없이 담아보세요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture your day, nothing left behind"
+    "항아리 무제한": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlimited urns"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "하루를 남김없이 담아보세요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리 무제한"
           }
         }
       }
     },
-    "하트" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Heart"
+    "항아리 삭제": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "하트"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리 삭제"
           }
         }
       }
     },
-    "한 번 결제로 평생 이용할 수 있어요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pay once, use forever"
+    "항아리 선반": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The urn shelf"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "한 번 결제로 평생 이용할 수 있어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리 선반"
           }
         }
       }
     },
-    "항아리 %lld개, 회고 %lld개" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld urns, %lld reflections"
+    "항아리 수정": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit Urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "항아리 %lld개, 회고 %lld개"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리 수정"
           }
         }
       }
     },
-    "항아리 무제한" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlimited urns"
+    "항아리·데드라인 무제한을 이용해보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock unlimited urns and deadlines."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "항아리 무제한"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리·데드라인 무제한을 이용해보세요."
           }
         }
       }
     },
-    "항아리 삭제" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete Urn"
+    "항아리는 이미 준비돼 있어요.\n첫 재는 %@ 항아리에 담깁니다.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The urn is already waiting.\nYour first ash goes into %@."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "항아리 삭제"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리는 이미 준비돼 있어요.\n첫 재는 %@ 항아리에 담깁니다."
           }
         }
       }
     },
-    "항아리 수정" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit Urn"
+    "항아리에 새길 한 마디": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A word to inscribe on the urn"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "항아리 수정"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리에 새길 한 마디"
           }
         }
       }
     },
-    "항아리·데드라인 무제한을 이용해보세요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlock unlimited urns and deadlines."
+    "해": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sun"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "항아리·데드라인 무제한을 이용해보세요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해"
           }
         }
       }
     },
-    "해" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sun"
+    "해냄": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "해"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해냄"
           }
         }
       }
     },
-    "해냄" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done"
+    "확인": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "해냄"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인"
           }
         }
       }
     },
-    "확인" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
+    "회고 %lld개. 마음먹은 대로 했어 %lld퍼센트, 어쩌다 하게 됐어 %lld퍼센트, 하려 했는데 못 했어 %lld퍼센트, 그냥 흘러갔어 %lld퍼센트": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reflections: %lld. Did what I intended %lld percent, ended up doing it %lld percent, tried but didn't %lld percent, just slipped away %lld percent"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "확인"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고 %lld개. 마음먹은 대로 했어 %lld퍼센트, 어쩌다 하게 됐어 %lld퍼센트, 하려 했는데 못 했어 %lld퍼센트, 그냥 흘러갔어 %lld퍼센트"
           }
         }
       }
     },
-    "회고 %lld개. 마음먹은 대로 했어 %lld퍼센트, 어쩌다 하게 됐어 %lld퍼센트, 하려 했는데 못 했어 %lld퍼센트, 그냥 흘러갔어 %lld퍼센트" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reflections: %lld. Did what I intended %lld percent, ended up doing it %lld percent, tried but didn't %lld percent, just slipped away %lld percent"
+    "회고 책": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reflection Book"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "회고 %lld개. 마음먹은 대로 했어 %lld퍼센트, 어쩌다 하게 됐어 %lld퍼센트, 하려 했는데 못 했어 %lld퍼센트, 그냥 흘러갔어 %lld퍼센트"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고 책"
           }
         }
       }
     },
-    "회고 책" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reflection Book"
+    "회고 책으로 보기": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View as book"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "회고 책"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고 책으로 보기"
           }
         }
       }
     },
-    "회고 책으로 보기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "View as book"
+    "회고를 수정합니다.": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit your reflection."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "회고 책으로 보기"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 수정합니다."
           }
         }
       }
     },
-    "회고를 수정합니다." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit your reflection."
+    "회고를 하나라도 담으면\n이 책이 채워져요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add a reflection\nand this book starts to fill."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "회고를 수정합니다."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 하나라도 담으면\n이 책이 채워져요."
           }
         }
       }
     },
-    "회고를 하나라도 담으면\n이 책이 채워져요." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add a reflection\nand this book starts to fill."
+    "회고를 항아리로 끌어다 옮길 수 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag reflections into an urn to move them"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "회고를 하나라도 담으면\n이 책이 채워져요."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 항아리로 끌어다 옮길 수 있어요"
           }
         }
       }
     },
-    "회고를 항아리로 끌어다 옮길 수 있어요" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Drag reflections into an urn to move them"
+    "휴식": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rest"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "회고를 항아리로 끌어다 옮길 수 있어요"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "휴식"
           }
         }
       }
     },
-    "휴식" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rest"
+    "흘러감": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slipped"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "휴식"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "흘러감"
           }
         }
       }
     },
-    "흘러감" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slipped"
+    "🌙 좋은 꿈 꾸세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🌙 Sweet dreams"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "흘러감"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🌙 좋은 꿈 꾸세요"
           }
         }
       }
+    },
+    "🏁": {
+      "shouldTranslate": false
+    },
+    "🔥": {
+      "shouldTranslate": false
+    },
+    "🕯️": {
+      "shouldTranslate": false
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

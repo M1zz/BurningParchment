@@ -1,5 +1,5 @@
 // DayReflection.swift
-// 항아리(Urn)에 담기는 한 줌의 재. 각 회고는 어느 항아리에 속하는지 + 어떤 색의 재인지를 가짐.
+// 항아리에 담기는 한 줌의 재. 어느 항아리에 담기는지는 date 가 정한다 (UrnPeriod 참고).
 
 import Foundation
 import CoreGraphics
@@ -67,31 +67,24 @@ enum DriftFeeling: String, Codable {
     case stop, accept
 }
 
-// MARK: - Urn
+// MARK: - Legacy Urn
+// v1 의 사용자 생성 항아리.  지금은 항아리가 날짜에서 파생되므로(UrnPeriod) 더 만들지 않는다.
+// 이 타입은 예전에 저장된 항아리 이름을 읽어 회고 키워드로 옮기기 위해서만 남아 있다.
+// REMOVE AFTER: 기간 항아리 마이그레이션이 충분히 퍼진 시점.
 
-/// 사용자가 직접 이름 짓는 컨테이너.  여러 항아리를 만들 수 있고, 각 항아리에 4색 재가 섞여 쌓임.
-struct Urn: Codable, Identifiable, Hashable {
+struct LegacyUrn: Codable, Identifiable, Hashable {
     let id: UUID
     var name: String
     var emoji: String
     let createdAt: Date
-
-    init(id: UUID = UUID(),
-         name: String,
-         emoji: String = "🏺",
-         createdAt: Date = Date()) {
-        self.id = id
-        self.name = name
-        self.emoji = emoji
-        self.createdAt = createdAt
-    }
 }
 
 // MARK: - Reflection
 
 struct DayReflection: Codable, Identifiable, Hashable {
     let id: UUID
-    /// 속한 항아리.  마이그레이션 호환을 위해 옵셔널 — 비어있으면 기본 항아리로 자동 배정.
+    /// v1 의 사용자 생성 항아리 id.  기간 항아리로 넘어오면서 더 이상 쓰지 않는다 —
+    /// 예전 데이터를 한 번 읽어 키워드로 옮기기 위해서만 남겨둔다.
     var urnId: UUID?
     var date: Date
     var text: String
@@ -145,6 +138,12 @@ struct DayReflection: Codable, Identifiable, Hashable {
     static func normalize(_ date: Date) -> Date {
         Calendar.current.startOfDay(for: date)
     }
+
+    /// 이 재가 담기는 주 항아리.  날짜에서 바로 나온다.
+    var weekPeriod: UrnPeriod { UrnPeriod.week(of: date) }
+
+    /// 이 재가 담기는 달 항아리.
+    var monthPeriod: UrnPeriod { UrnPeriod.month(of: date) }
 
     var dateString: String {
         let f = DateFormatter()

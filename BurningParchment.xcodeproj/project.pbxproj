@@ -19,9 +19,11 @@
 		4E0A8DD3CED8F25008E35F16 /* DeadlineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */; };
 		576888F777C587D1DA064C92 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C1D3645BC9A44C34139BA62A /* Localizable.xcstrings */; };
 		5BBE9589F3D41B5C48441AD0 /* BedtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C186AA161229FC7933070 /* BedtimeManager.swift */; };
+		62B51921A3B13E60C4BE4D60 /* UrnMeaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41345BE06092DAE95A36C816 /* UrnMeaning.swift */; };
 		66D6D9631304A0D99C8807E0 /* BurningParchmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */; };
 		6A1E29DE8A8783C199F3C683 /* BurningParchmentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F256B31A77A4442890FB7D /* BurningParchmentSpec.swift */; };
 		6F0D7E8A801C4F5A7C637273 /* BurningParchmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */; };
+		775B24E76AAD210FFD64FF2D /* UrnPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */; };
 		79905F785A9E6CA7EA01146A /* BedtimeExcuseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD73BA3FB29FEB20A91785 /* BedtimeExcuseManager.swift */; };
 		80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02478518C92DBEC5E15B33C5 /* SettingsView.swift */; };
 		8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */; };
@@ -86,6 +88,7 @@
 		358CB6FF2098200B3878326E /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		36C24016F79235C3EAFE2D5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionManager.swift; sourceTree = "<group>"; };
+		41345BE06092DAE95A36C816 /* UrnMeaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnMeaning.swift; sourceTree = "<group>"; };
 		4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5E9062A5518028E5E6F7CCB7 /* Deadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadline.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 		C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentView.swift; sourceTree = "<group>"; };
 		D1888FBD73088238AA4AA51A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionUrnView.swift; sourceTree = "<group>"; };
+		DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnPeriod.swift; sourceTree = "<group>"; };
 		E6DE822A78BE0EC73DE29837 /* BedtimeExcuseSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeExcuseSheetView.swift; sourceTree = "<group>"; };
 		EBCD73BA3FB29FEB20A91785 /* BedtimeExcuseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeExcuseManager.swift; sourceTree = "<group>"; };
 		EEC577EC675B374BA1DCFF27 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 				25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */,
 				38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */,
 				18E813AB837B41DC4EFA2B33 /* StoreManager.swift */,
+				41345BE06092DAE95A36C816 /* UrnMeaning.swift */,
+				DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -367,6 +373,8 @@
 				1F521ADAB0DC4F051433A917 /* ReflectionUrnView.swift in Sources */,
 				80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */,
 				1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */,
+				62B51921A3B13E60C4BE4D60 /* UrnMeaning.swift in Sources */,
+				775B24E76AAD210FFD64FF2D /* UrnPeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

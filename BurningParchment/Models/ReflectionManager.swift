@@ -1,55 +1,31 @@
 // ReflectionManager.swift
-// 항아리(Urn)와 회고(DayReflection)를 함께 관리.
-// 한 항아리에 4종 카테고리의 재 입자가 섞여 쌓임.
+// 회고(DayReflection)와 항아리에 부여된 의미(UrnMeaning)를 관리.
+//
+// 항아리는 저장하지 않는다.  회고의 날짜에서 파생될 뿐이다 (UrnPeriod).
+// 저장되는 건 "언제 무슨 재가 쌓였나"(reflections)와 "그 기간이 나에게 무슨 의미였나"(meanings) 둘뿐.
 
 import Foundation
 import SwiftUI
 
 class ReflectionManager: ObservableObject {
-    @Published var urns: [Urn] = []
     @Published var reflections: [DayReflection] = []
+    /// periodId → 의미
+    @Published var meanings: [String: UrnMeaning] = [:]
 
     private let keyReflections = "shared_reflections"
-    private let keyUrns        = "shared_urns"
+    private let keyMeanings    = "shared_urn_meanings"
+    private let keyLegacyUrns  = "shared_urns"
     private let sharedDefaults = UserDefaults(suiteName: "group.com.burningparchment.app")
 
     init() {
         load()
-        migrateLegacyReflectionsIfNeeded()
-    }
-
-    // MARK: - Urn CRUD
-
-    @discardableResult
-    func createUrn(name: String, emoji: String = "🏺") -> Urn {
-        let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        let finalName = trimmed.isEmpty ? String(localized: "이름 없는 항아리") : trimmed
-        let urn = Urn(name: finalName, emoji: emoji)
-        urns.append(urn)
-        urns.sort { $0.createdAt < $1.createdAt }
-        saveUrns()
-        return urn
-    }
-
-    func updateUrn(_ urn: Urn) {
-        guard let idx = urns.firstIndex(where: { $0.id == urn.id }) else { return }
-        urns[idx] = urn
-        saveUrns()
-    }
-
-    func deleteUrn(id: UUID) {
-        urns.removeAll { $0.id == id }
-        // 해당 항아리의 회고도 함께 삭제
-        reflections.removeAll { $0.urnId == id }
-        saveUrns()
-        saveReflections()
+        migrateLegacyUrnsIfNeeded()
     }
 
     // MARK: - Reflection CRUD
 
     @discardableResult
     func add(text: String,
-             urnId: UUID,
              category: ReflectionCategory,
              keyword: String? = nil,
              tomorrowIntent: String? = nil,
@@ -62,7 +38,6 @@ class ReflectionManager: ObservableObject {
         let finalIntent = (ti?.isEmpty ?? true) ? nil : ti
 
         let new = DayReflection(
-            urnId: urnId,
             date: DayReflection.normalize(date),
             text: trimmed,
             category: category,
@@ -88,34 +63,104 @@ class ReflectionManager: ObservableObject {
         saveReflections()
     }
 
-    // MARK: - Queries
+    // MARK: - 항아리 열람 (기간에서 파생)
 
-    func reflections(in urn: Urn) -> [DayReflection] {
-        reflections.filter { $0.urnId == urn.id }
+    /// 재가 한 톨이라도 담긴 달 항아리 — 최신 달이 먼저.
+    var monthPeriods: [UrnPeriod] {
+        let set = Set(reflections.map { UrnPeriod.month(of: $0.date) })
+        return set.sorted { ($0.year, $0.month) > ($1.year, $1.month) }
     }
 
-    func reflections(in urn: Urn, category: ReflectionCategory) -> [DayReflection] {
-        reflections.filter { $0.urnId == urn.id && $0.category == category }
+    /// 한 달 안의 주 항아리 — 1주차가 먼저.
+    /// 재가 없는 주도 그 달이 이미 지나갔다면 빈 항아리로 함께 보여준다 (달의 모양이 유지되도록).
+    func weekPeriods(in month: UrnPeriod) -> [UrnPeriod] {
+        let all = (1...5)
+            .map { UrnPeriod(scope: .week, year: month.year, month: month.month, week: $0) }
+            .filter { $0.isValid }
+        // 아직 오지 않은 미래의 주는 감춘다.
+        return all.filter { period in
+            guard let start = period.startDate else { return false }
+            return start <= Date() || !reflections(in: period).isEmpty
+        }
     }
 
-    /// 한 항아리의 채움 비율 — 30개에서 가득 차는 느낌.
-    /// scattered(흘려보낸 시간)는 가벼운 먼지로 취급해 일반 재의 0.3배 가중치만 부여.
-    func fillLevel(for urn: Urn) -> Double {
-        let inUrn = reflections(in: urn)
+    /// 지금 이 순간의 주 항아리 — 새 재가 담기는 곳.
+    var currentWeekPeriod: UrnPeriod { UrnPeriod.week(of: Date()) }
+
+    func reflections(in period: UrnPeriod) -> [DayReflection] {
+        reflections
+            .filter { period.contains($0.date) }
+            .sorted { $0.date == $1.date ? $0.createdAt > $1.createdAt : $0.date > $1.date }
+    }
+
+    func reflectionCount(in period: UrnPeriod) -> Int {
+        reflections.reduce(0) { $0 + (period.contains($1.date) ? 1 : 0) }
+    }
+
+    /// 항아리의 채움 비율.  주 항아리는 7톨, 달 항아리는 30톨에서 가득 찬 느낌.
+    /// scattered(흘려보낸 시간)는 가벼운 먼지로 취급해 0.3배 가중치만 준다.
+    func fillLevel(for period: UrnPeriod) -> Double {
+        let inUrn = reflections(in: period)
         let settled = inUrn.filter { $0.category != .scattered }.count
-        let scattered = inUrn.filter { $0.category == .scattered }.count
+        let scattered = inUrn.count - settled
         let weighted = Double(settled) + Double(scattered) * 0.3
-        return min(weighted / 30.0, 1.0)
+        let capacity = period.scope == .week ? 7.0 : 30.0
+        return min(weighted / capacity, 1.0)
     }
 
-    /// 한 항아리에서 각 카테고리의 개수.
-    func categoryCounts(for urn: Urn) -> [ReflectionCategory: Int] {
+    func categoryCounts(for period: UrnPeriod) -> [ReflectionCategory: Int] {
         var result: [ReflectionCategory: Int] = [:]
-        for r in reflections(in: urn) {
+        for r in reflections(in: period) {
             result[r.category, default: 0] += 1
         }
         return result
     }
+
+    // MARK: - 의미
+
+    func meaning(for period: UrnPeriod) -> UrnMeaning? {
+        guard let m = meanings[period.id], !m.isBlank else { return nil }
+        return m
+    }
+
+    /// 의미가 붙기 전까지 항아리 안의 것들은 그냥 재다.
+    func hasMeaning(_ period: UrnPeriod) -> Bool {
+        meaning(for: period) != nil
+    }
+
+    func setMeaning(name: String, text: String, for period: UrnPeriod) {
+        let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        let trimmedText = text.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        guard !(trimmedName.isEmpty && trimmedText.isEmpty) else {
+            removeMeaning(for: period)
+            return
+        }
+
+        var m = meanings[period.id] ?? UrnMeaning(periodId: period.id)
+        m.name = trimmedName
+        m.text = trimmedText
+        m.updatedAt = Date()
+        meanings[period.id] = m
+        saveMeanings()
+    }
+
+    func removeMeaning(for period: UrnPeriod) {
+        guard meanings[period.id] != nil else { return }
+        meanings.removeValue(forKey: period.id)
+        saveMeanings()
+    }
+
+    /// 재는 쌓였는데 아직 의미가 없는 항아리들 — "무엇이었는지 적어달라"고 물을 대상.
+    /// 아직 진행 중인 항아리는 재촉하지 않는다.
+    var unnamedSealedWeeks: [UrnPeriod] {
+        let weeks = Set(reflections.map { UrnPeriod.week(of: $0.date) })
+        return weeks
+            .filter { $0.isSealed && !hasMeaning($0) }
+            .sorted { ($0.year, $0.month, $0.week) > ($1.year, $1.month, $1.week) }
+    }
+
+    // MARK: - Queries
 
     var totalReflectionCount: Int { reflections.count }
 
@@ -144,9 +189,9 @@ class ReflectionManager: ObservableObject {
         sharedDefaults?.set(data, forKey: keyReflections)
     }
 
-    private func saveUrns() {
-        guard let data = try? JSONEncoder().encode(urns) else { return }
-        sharedDefaults?.set(data, forKey: keyUrns)
+    private func saveMeanings() {
+        guard let data = try? JSONEncoder().encode(meanings) else { return }
+        sharedDefaults?.set(data, forKey: keyMeanings)
     }
 
     private func load() {
@@ -154,31 +199,38 @@ class ReflectionManager: ObservableObject {
            let decoded = try? JSONDecoder().decode([DayReflection].self, from: data) {
             reflections = decoded.sorted { $0.createdAt > $1.createdAt }
         }
-        if let data = sharedDefaults?.data(forKey: keyUrns),
-           let decoded = try? JSONDecoder().decode([Urn].self, from: data) {
-            urns = decoded.sorted { $0.createdAt < $1.createdAt }
+        if let data = sharedDefaults?.data(forKey: keyMeanings),
+           let decoded = try? JSONDecoder().decode([String: UrnMeaning].self, from: data) {
+            meanings = decoded
         }
     }
 
     // MARK: - Migration
-    // 구버전 회고(urnId 없음)들이 있으면 "기본" 항아리를 자동 생성해 일괄 배정.
-    // 이 단계는 v1 사용자가 다중 항아리 모델로 자연스럽게 전환되게 해줌.
-    // REMOVE AFTER: 충분한 사용자가 새 모델로 넘어간 시점.
+    // v1 은 사용자가 항아리를 직접 만들고 이름을 붙였다.  기간 항아리로 넘어오면서 그 이름들이
+    // 갈 곳이 없어지므로, 회고의 키워드가 비어 있으면 항아리 이름을 키워드로 옮겨 보존한다.
+    // 회고 자체(본문·분류·날짜)는 그대로 남고, 날짜에 따라 알아서 주/달 항아리에 담긴다.
+    // REMOVE AFTER: 충분한 사용자가 기간 항아리로 넘어온 시점.
 
-    private func migrateLegacyReflectionsIfNeeded() {
-        let legacy = reflections.filter { $0.urnId == nil }
-        guard !legacy.isEmpty else { return }
+    private func migrateLegacyUrnsIfNeeded() {
+        guard let data = sharedDefaults?.data(forKey: keyLegacyUrns),
+              let legacyUrns = try? JSONDecoder().decode([LegacyUrn].self, from: data) else { return }
 
-        let defaultUrn: Urn
-        if let existing = urns.first(where: { $0.name == "기본" }) {
-            defaultUrn = existing
-        } else {
-            defaultUrn = createUrn(name: "기본", emoji: "🏺")
+        let placeholderNames: Set<String> = ["기본", "이름 없는 항아리", "Default", "Untitled Urn"]
+        let nameById = Dictionary(uniqueKeysWithValues: legacyUrns.map { ($0.id, $0.name) })
+
+        var changed = false
+        for i in reflections.indices {
+            guard let urnId = reflections[i].urnId,
+                  let name = nameById[urnId],
+                  !placeholderNames.contains(name) else { continue }
+            let existing = reflections[i].keyword?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            guard existing.isEmpty else { continue }
+            reflections[i].keyword = name
+            changed = true
         }
+        if changed { saveReflections() }
 
-        for i in reflections.indices where reflections[i].urnId == nil {
-            reflections[i].urnId = defaultUrn.id
-        }
-        saveReflections()
+        // 항아리 목록 자체는 더 이상 쓰지 않는다.
+        sharedDefaults?.removeObject(forKey: keyLegacyUrns)
     }
 }

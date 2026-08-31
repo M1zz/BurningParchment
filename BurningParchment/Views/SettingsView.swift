@@ -415,7 +415,7 @@ struct SettingsView: View {
                             .stroke(Color.orange.opacity(0.1), lineWidth: 1))
                 )
 
-                Text("항아리·데드라인 무제한을 이용해보세요.")
+                Text("지난 항아리 열람·데드라인 무제한을 이용해보세요.")
                     .font(.system(size: 11))
                     .foregroundColor(.gray.opacity(0.4))
                     .padding(.horizontal, 4)

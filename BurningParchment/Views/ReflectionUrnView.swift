@@ -173,11 +173,40 @@ struct SeededRNG: RandomNumberGenerator {
 
 // MARK: - Mixed-Ash Urn Visual
 
-/// 4색 입자가 섞여 쌓이는 항아리.  카테고리별 개수에 비례해 입자 수가 결정됨.
+/// 재가 쌓이는 항아리.  카테고리별 개수에 비례해 입자 수가 결정된다.
+///
+/// 의미가 부여되기 전(`hasMeaning == false`)에는 모든 입자가 잿빛 하나로만 그려진다 —
+/// 무슨 재인지는 사용자가 적어주기 전까지 정해지지 않기 때문.
 struct MixedAshUrnVisual: View {
-    let urn: Urn
+    /// 입자 배치를 고정하는 씨앗 — 같은 항아리는 언제 열어봐도 같은 모양이다.
+    let seed: String
     let fillLevel: Double
     let counts: [ReflectionCategory: Int]
+    var hasMeaning: Bool = true
+
+    /// 의미가 없는 항아리의 재 — 색이 아직 없는 그냥 재.
+    private static let plainAsh: (Double, Double, Double) = (0.60, 0.58, 0.55)
+
+    private func particleRGB(_ cat: ReflectionCategory) -> (Double, Double, Double) {
+        hasMeaning ? cat.particleColor : Self.plainAsh
+    }
+
+    /// 의미가 붙기 전엔 문양도 식은 잿빛이다.
+    private var engravingColor: Color {
+        hasMeaning
+            ? Color(red: 0.98, green: 0.72, blue: 0.32)
+            : Color(red: 0.60, green: 0.58, blue: 0.55)
+    }
+
+    /// String.hashValue 는 실행마다 달라져 재 배치가 매번 바뀐다 — FNV-1a 로 고정한다.
+    static func stableSeed(_ s: String) -> UInt64 {
+        var h: UInt64 = 0xCBF29CE484222325
+        for byte in s.utf8 {
+            h ^= UInt64(byte)
+            h = h &* 0x100000001B3
+        }
+        return h == 0 ? 0xDEADBEEF : h
+    }
 
     var body: some View {
         GeometryReader { geo in
@@ -206,13 +235,12 @@ struct MixedAshUrnVisual: View {
                 // 선각 문양 — 채울수록 진해지고 확장됨, 항아리 본체 위에만 보이게 클립
                 UrnEngravingShape(fillLevel: fillLevel)
                     .stroke(
-                        Color(red: 0.98, green: 0.72, blue: 0.32)
-                            .opacity(0.20 + 0.55 * min(fillLevel, 1.0)),
+                        engravingColor.opacity((hasMeaning ? 0.20 : 0.12) + 0.55 * min(fillLevel, 1.0)),
                         style: StrokeStyle(lineWidth: 0.9, lineCap: .round, lineJoin: .round)
                     )
                     .shadow(
-                        color: Color.orange.opacity(fillLevel >= 0.85 ? 0.45 : 0.0),
-                        radius: fillLevel >= 0.85 ? 3 : 0
+                        color: Color.orange.opacity(hasMeaning && fillLevel >= 0.85 ? 0.45 : 0.0),
+                        radius: hasMeaning && fillLevel >= 0.85 ? 3 : 0
                     )
                     .clipShape(UrnShape())
                     .allowsHitTesting(false)
@@ -241,14 +269,15 @@ struct MixedAshUrnVisual: View {
             // 빈 안쪽
             Rectangle().fill(Color.black.opacity(0.55))
 
-            // 재 베이스 (어두운 회갈색 — 입자들이 그 위에 올라감)
+            // 재 베이스 (입자들이 그 위에 올라감).  의미가 없으면 온기 없는 잿더미로 깔린다.
             Rectangle()
                 .fill(
                     LinearGradient(
-                        colors: [
-                            Color(red: 0.30, green: 0.22, blue: 0.16),
-                            Color(red: 0.18, green: 0.12, blue: 0.08)
-                        ],
+                        colors: hasMeaning
+                            ? [Color(red: 0.30, green: 0.22, blue: 0.16),
+                               Color(red: 0.18, green: 0.12, blue: 0.08)]
+                            : [Color(red: 0.24, green: 0.23, blue: 0.22),
+                               Color(red: 0.13, green: 0.12, blue: 0.12)],
                         startPoint: .top, endPoint: .bottom
                     )
                 )
@@ -257,15 +286,14 @@ struct MixedAshUrnVisual: View {
 
             // 4색 입자 — 카테고리별 개수에 비례 (바닥에 쌓임)
             Canvas { ctx, cSize in
-                let baseSeed = UInt64(truncatingIfNeeded: urn.id.uuidString.hashValue)
-                var rng = SeededRNG(seed: baseSeed == 0 ? 0xDEADBEEF : baseSeed)
+                var rng = SeededRNG(seed: Self.stableSeed(seed))
 
                 let settledOrder: [ReflectionCategory] = [.forged, .accept, .missed, .stop, .uncategorized]
                 for cat in settledOrder {
                     let count = counts[cat] ?? 0
                     guard count > 0 else { continue }
                     let particles = min(count * 4, 60)
-                    let rgb = cat.particleColor
+                    let rgb = particleRGB(cat)
                     for _ in 0..<particles {
                         let x = CGFloat.random(in: 0...cSize.width, using: &rng)
                         let yRel = CGFloat.random(in: 0...1, using: &rng)
@@ -283,7 +311,7 @@ struct MixedAshUrnVisual: View {
                 let scatteredCount = counts[.scattered] ?? 0
                 if scatteredCount > 0 {
                     let dust = min(scatteredCount * 3, 40)
-                    let rgb = ReflectionCategory.scattered.particleColor
+                    let rgb = particleRGB(.scattered)
                     // 떠다니는 영역: 입구 근처(interiorTop) ~ ashTopY 사이 + 약간 위로 겹침
                     let dustTop = interiorTop + 4
                     let dustBottom = max(dustTop + 8, ashTopY - 2)
@@ -309,29 +337,27 @@ struct MixedAshUrnVisual: View {
 
 // MARK: - Header Mini Button
 
+/// 헤더의 작은 항아리 — 지금 재가 담기고 있는 이번 주 항아리를 보여준다.
 struct AshUrnButton: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
     let action: () -> Void
 
     var body: some View {
+        let period = reflectionManager.currentWeekPeriod
+        let count = reflectionManager.reflectionCount(in: period)
+
         Button(action: action) {
             ZStack(alignment: .topTrailing) {
-                if let urn = reflectionManager.urns.first {
-                    MixedAshUrnVisual(
-                        urn: urn,
-                        fillLevel: reflectionManager.fillLevel(for: urn),
-                        counts: reflectionManager.categoryCounts(for: urn)
-                    )
-                    .frame(width: 22, height: 24)
-                } else {
-                    Image(systemName: "archivebox")
-                        .font(.system(size: 17))
-                        .foregroundColor(.orange.opacity(0.5))
-                        .frame(width: 22, height: 24)
-                }
+                MixedAshUrnVisual(
+                    seed: period.id,
+                    fillLevel: reflectionManager.fillLevel(for: period),
+                    counts: reflectionManager.categoryCounts(for: period),
+                    hasMeaning: reflectionManager.hasMeaning(period)
+                )
+                .frame(width: 22, height: 24)
 
-                if reflectionManager.urns.count > 1 {
-                    Text("\(reflectionManager.urns.count)")
+                if count > 0 {
+                    Text("\(count)")
                         .font(.system(size: 9, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.horizontal, 4)
@@ -342,12 +368,15 @@ struct AshUrnButton: View {
             }
         }
         .accessibilityLabel("재 항아리")
-        .accessibilityValue("항아리 \(reflectionManager.urns.count)개, 회고 \(reflectionManager.totalReflectionCount)개")
-        .accessibilityHint("탭하여 항아리 관리")
+        .accessibilityValue("\(period.title), 재 \(count)톨")
+        .accessibilityHint("탭하여 항아리 열기")
     }
 }
 
 // MARK: - Main View
+//
+// 항아리는 사용자가 만들지 않는다.  날짜가 만든다.
+// 선반에는 달 항아리가 놓이고, 달을 열면 그 달의 주 항아리가 나온다.
 
 struct ReflectionUrnView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
@@ -358,23 +387,22 @@ struct ReflectionUrnView: View {
 
     @State private var showInput = false
     @State private var showPaywall = false
-    @State private var selectedUrn: Urn? = nil
     @State private var editing: DayReflection? = nil
-    @State private var showAddUrn = false
+    @State private var meaningTarget: UrnPeriod? = nil
     @State private var autoOpenTriggered = false
-
-    private let columns = [GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
         ZStack {
             Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
 
-            if reflectionManager.urns.isEmpty {
+            if reflectionManager.reflections.isEmpty {
                 emptyState
             } else {
                 ScrollView {
                     VStack(spacing: 20) {
-                        urnGrid
+                        meaningPrompt
+                        currentWeekCard
+                        monthShelf
                         distributionSection
                         emberCalendar
                     }
@@ -389,63 +417,35 @@ struct ReflectionUrnView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                HStack(spacing: 16) {
-                    NavigationLink {
-                        ReflectionBookView()
-                            .environmentObject(reflectionManager)
-                    } label: {
-                        Image(systemName: "book.closed.fill")
-                            .font(.system(size: 17))
-                            .foregroundColor(.orange)
-                    }
-                    .accessibilityLabel("회고 책으로 보기")
-
-                    Button {
-                        if storeManager.canAddUrn(currentCount: reflectionManager.urns.count) {
-                            showAddUrn = true
-                        } else {
-                            showPaywall = true
-                        }
-                    } label: {
-                        ZStack(alignment: .topTrailing) {
-                            Image(systemName: "archivebox.fill")
-                                .font(.system(size: 17))
-                                .foregroundColor(.orange)
-                            Image(systemName: "plus.circle.fill")
-                                .font(.system(size: 10, weight: .bold))
-                                .foregroundColor(.orange)
-                                .background(Circle().fill(Color(red: 0.08, green: 0.06, blue: 0.04)))
-                                .offset(x: 4, y: -4)
-                        }
-                    }
-                    .accessibilityLabel("새 항아리 만들기")
+                NavigationLink {
+                    ReflectionBookView()
+                        .environmentObject(reflectionManager)
+                } label: {
+                    Image(systemName: "book.closed.fill")
+                        .font(.system(size: 17))
+                        .foregroundColor(.orange)
                 }
+                .accessibilityLabel("회고 책으로 보기")
             }
         }
         .sheet(isPresented: $showInput) {
             ReflectionInputView(existing: nil)
                 .environmentObject(reflectionManager)
-                .environmentObject(storeManager)
         }
         .sheet(item: $editing) { item in
             ReflectionInputView(existing: item)
                 .environmentObject(reflectionManager)
-                .environmentObject(storeManager)
         }
         .sheet(isPresented: $showPaywall) {
             PaywallView()
                 .environmentObject(storeManager)
         }
-        .sheet(item: $selectedUrn) { urn in
-            UrnDetailView(urn: urn) { ref in editing = ref }
-                .environmentObject(reflectionManager)
-        }
-        .sheet(isPresented: $showAddUrn) {
-            UrnEditView(editing: nil)
+        .sheet(item: $meaningTarget) { period in
+            UrnMeaningEditView(period: period)
                 .environmentObject(reflectionManager)
         }
         .onAppear {
-            guard autoOpenInput, !autoOpenTriggered, !reflectionManager.urns.isEmpty else { return }
+            guard autoOpenInput, !autoOpenTriggered else { return }
             autoOpenTriggered = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
                 showInput = true
@@ -456,24 +456,26 @@ struct ReflectionUrnView: View {
     // MARK: - Empty
 
     private var emptyState: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "archivebox")
-                .font(.system(size: 56))
-                .foregroundColor(.orange.opacity(0.25))
-            Text("아직 항아리가 없어요")
+        let period = reflectionManager.currentWeekPeriod
+        return VStack(spacing: 16) {
+            MixedAshUrnVisual(seed: period.id, fillLevel: 0, counts: [:], hasMeaning: false)
+                .frame(width: 90, height: 100)
+                .accessibilityHidden(true)
+
+            Text("아직 담긴 재가 없어요")
                 .font(.system(size: 17, weight: .medium, design: .serif))
                 .foregroundColor(.gray.opacity(0.55))
-            Text("첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요.")
-                .font(.system(size: 12))
+            Text("항아리는 이미 준비돼 있어요.\n첫 재는 \(period.title) 항아리에 담깁니다.")
+                .font(.system(size: 12, design: .serif))
                 .foregroundColor(.gray.opacity(0.4))
                 .multilineTextAlignment(.center)
 
             Button {
-                showAddUrn = true
+                showInput = true
             } label: {
                 HStack(spacing: 6) {
-                    Image(systemName: "plus")
-                    Text("첫 항아리 만들기")
+                    Image(systemName: "square.and.pencil")
+                    Text("첫 재 담기")
                 }
                 .font(.system(size: 14, weight: .semibold))
                 .foregroundColor(.orange)
@@ -488,77 +490,189 @@ struct ReflectionUrnView: View {
         }
     }
 
-    // MARK: - Grid
+    // MARK: - 의미를 기다리는 항아리
+    // 다 채워진(더는 재가 안 늘어나는) 주 항아리인데 아직 이름이 없으면 한 번 물어본다.
 
-    private var urnGrid: some View {
-        LazyVGrid(columns: columns, spacing: 16) {
-            ForEach(reflectionManager.urns) { urn in
-                urnCell(urn)
-                    .onTapGesture { selectedUrn = urn }
-                    .dropDestination(for: String.self) { items, _ in
-                        // 드래그된 회고 ID(들)를 이 항아리로 이동
-                        var moved = false
-                        for idStr in items {
-                            guard let uuid = UUID(uuidString: idStr),
-                                  var ref = reflectionManager.reflections.first(where: { $0.id == uuid })
-                            else { continue }
-                            ref.urnId = urn.id
-                            reflectionManager.update(ref)
-                            moved = true
-                        }
-                        if moved {
-                            let gen = UINotificationFeedbackGenerator()
-                            gen.notificationOccurred(.success)
-                        }
-                        return moved
-                    } isTargeted: { _ in }
-                    .contextMenu {
-                        Button {
-                            selectedUrn = urn
-                        } label: {
-                            Label("열기", systemImage: "arrow.up.right.square")
-                        }
-                        Button(role: .destructive) {
-                            reflectionManager.deleteUrn(id: urn.id)
-                        } label: {
-                            Label("삭제", systemImage: "trash")
-                        }
+    @ViewBuilder
+    private var meaningPrompt: some View {
+        if let period = reflectionManager.unnamedSealedWeeks.first(where: { storeManager.canOpenUrn($0) }) {
+            let count = reflectionManager.reflectionCount(in: period)
+            Button {
+                meaningTarget = period
+            } label: {
+                HStack(spacing: 14) {
+                    MixedAshUrnVisual(
+                        seed: period.id,
+                        fillLevel: reflectionManager.fillLevel(for: period),
+                        counts: reflectionManager.categoryCounts(for: period),
+                        hasMeaning: false
+                    )
+                    .frame(width: 40, height: 46)
+                    .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("\(period.title) 항아리에 재 \(count)톨이 남았어요")
+                            .font(.system(size: 13, weight: .semibold, design: .serif))
+                            .foregroundColor(.orange.opacity(0.9))
+                            .multilineTextAlignment(.leading)
+                        Text("이 주는 당신에게 어떤 의미였나요?")
+                            .font(.system(size: 12, design: .serif))
+                            .foregroundColor(.gray.opacity(0.6))
                     }
+                    Spacer(minLength: 0)
+                    Image(systemName: "square.and.pencil")
+                        .font(.system(size: 14))
+                        .foregroundColor(.orange.opacity(0.7))
+                }
+                .padding(14)
+                .background(
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color.orange.opacity(0.07))
+                        .overlay(RoundedRectangle(cornerRadius: 14)
+                            .stroke(Color.orange.opacity(0.22), lineWidth: 1))
+                )
+            }
+            .buttonStyle(.plain)
+            .padding(.horizontal, 16)
+            .accessibilityLabel("\(period.title) 항아리에 의미 적기")
+        }
+    }
+
+    // MARK: - 이번 주 항아리 (재가 지금 담기는 곳)
+
+    private var currentWeekCard: some View {
+        let period = reflectionManager.currentWeekPeriod
+        return VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(String(localized: "지금 담기는 항아리"), period.rangeLabel)
+
+            NavigationLink {
+                UrnDetailView(period: period)
+                    .environmentObject(reflectionManager)
+                    .environmentObject(storeManager)
+            } label: {
+                urnRowLabel(period, locked: false)
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.horizontal, 16)
+    }
+
+    // MARK: - 선반 (달 항아리)
+
+    private var monthShelf: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(String(localized: "항아리 선반"),
+                          String(localized: "달을 열면 그 달의 주 항아리가 나와요"))
+
+            LazyVStack(spacing: 10) {
+                ForEach(reflectionManager.monthPeriods) { month in
+                    monthRow(month)
+                }
             }
         }
         .padding(.horizontal, 16)
     }
 
-    private func urnCell(_ urn: Urn) -> some View {
-        let count = reflectionManager.reflections(in: urn).count
-        return VStack(spacing: 8) {
-            MixedAshUrnVisual(
-                urn: urn,
-                fillLevel: reflectionManager.fillLevel(for: urn),
-                counts: reflectionManager.categoryCounts(for: urn)
-            )
-            .frame(width: 100, height: 110)
-
-            HStack(spacing: 4) {
-                Text(urn.emoji)
-                    .font(.system(size: 13))
-                Text(urn.name)
-                    .font(.system(size: 13, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.88))
-                    .lineLimit(1)
+    @ViewBuilder
+    private func monthRow(_ month: UrnPeriod) -> some View {
+        if storeManager.canOpenUrn(month) {
+            NavigationLink {
+                UrnDetailView(period: month)
+                    .environmentObject(reflectionManager)
+                    .environmentObject(storeManager)
+            } label: {
+                urnRowLabel(month, locked: false)
             }
-            Text("\(count)개")
-                .font(.system(size: 10, design: .monospaced))
-                .foregroundColor(.gray.opacity(0.5))
+            .buttonStyle(.plain)
+        } else {
+            Button { showPaywall = true } label: {
+                urnRowLabel(month, locked: true)
+            }
+            .buttonStyle(.plain)
         }
+    }
+
+    private func sectionHeader(_ title: String, _ subtitle: String) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(title)
+                .font(.system(size: 13, weight: .semibold, design: .serif))
+                .foregroundColor(.orange.opacity(0.8))
+            if !subtitle.isEmpty {
+                Text(subtitle)
+                    .font(.system(size: 11, design: .serif))
+                    .foregroundColor(.gray.opacity(0.45))
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// 선반에 놓인 항아리 한 줄.
+    private func urnRowLabel(_ period: UrnPeriod, locked: Bool) -> some View {
+        let count = reflectionManager.reflectionCount(in: period)
+        let meaning = reflectionManager.meaning(for: period)
+
+        return HStack(spacing: 14) {
+            MixedAshUrnVisual(
+                seed: period.id,
+                fillLevel: reflectionManager.fillLevel(for: period),
+                counts: reflectionManager.categoryCounts(for: period),
+                hasMeaning: meaning != nil
+            )
+            .frame(width: 46, height: 52)
+            .opacity(locked ? 0.4 : 1)
+            .blur(radius: locked ? 2.5 : 0)
+            .accessibilityHidden(true)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(period.title)
+                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .foregroundColor(.orange.opacity(locked ? 0.5 : 0.88))
+
+                if locked {
+                    Text("프로에서 지난 항아리가 열려요")
+                        .font(.system(size: 11, design: .serif))
+                        .foregroundColor(.gray.opacity(0.5))
+                } else if let meaning {
+                    Text(meaning.displayName)
+                        .font(.system(size: 12, design: .serif))
+                        .foregroundColor(.gray.opacity(0.65))
+                        .lineLimit(1)
+                } else {
+                    Text("아직 이름 없는 재")
+                        .font(.system(size: 12, design: .serif))
+                        .foregroundColor(.gray.opacity(0.4))
+                }
+            }
+
+            Spacer(minLength: 0)
+
+            VStack(alignment: .trailing, spacing: 6) {
+                Text("재 \(count)톨")
+                    .font(.system(size: 11, design: .monospaced))
+                    .foregroundColor(.gray.opacity(0.5))
+                Image(systemName: locked ? "lock.fill" : "chevron.right")
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundColor(locked ? .gray.opacity(0.45) : .orange.opacity(0.5))
+            }
+        }
+        .padding(14)
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 14)
         .background(
             RoundedRectangle(cornerRadius: 14)
                 .fill(Color.white.opacity(0.03))
                 .overlay(RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.orange.opacity(0.10), lineWidth: 1))
+                    .stroke(Color.orange.opacity(locked ? 0.05 : 0.10), lineWidth: 1))
         )
+        .contentShape(RoundedRectangle(cornerRadius: 14))
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(period.accessibilityLabel)
+        .accessibilityValue(
+            locked
+                ? String(localized: "잠김 — 프로에서 열려요")
+                : (reflectionManager.meaning(for: period)?.displayName
+                    ?? String(localized: "아직 이름 없는 재")) + ", " + String(localized: "재 \(count)톨")
+        )
+        .accessibilityAddTraits(.isButton)
     }
 
     // MARK: - Distribution (재의 분포)
@@ -588,25 +702,23 @@ struct ReflectionUrnView: View {
             Spacer()
             HStack {
                 Spacer()
-                if !reflectionManager.urns.isEmpty {
-                    Button { showInput = true } label: {
-                        Image(systemName: "square.and.pencil")
-                            .font(.system(size: 20, weight: .semibold))
-                            .foregroundColor(.white)
-                            .frame(width: 56, height: 56)
-                            .background(
-                                Circle()
-                                    .fill(LinearGradient(
-                                        colors: [Color.orange, Color(red: 0.85, green: 0.40, blue: 0.20)],
-                                        startPoint: .topLeading, endPoint: .bottomTrailing
-                                    ))
-                            )
-                            .shadow(color: .orange.opacity(0.35), radius: 14, y: 4)
-                    }
-                    .padding(.trailing, 22)
-                    .padding(.bottom, 22)
-                    .accessibilityLabel("새 회고 적기")
+                Button { showInput = true } label: {
+                    Image(systemName: "square.and.pencil")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundColor(.white)
+                        .frame(width: 56, height: 56)
+                        .background(
+                            Circle()
+                                .fill(LinearGradient(
+                                    colors: [Color.orange, Color(red: 0.85, green: 0.40, blue: 0.20)],
+                                    startPoint: .topLeading, endPoint: .bottomTrailing
+                                ))
+                        )
+                        .shadow(color: .orange.opacity(0.35), radius: 14, y: 4)
                 }
+                .padding(.trailing, 22)
+                .padding(.bottom, 22)
+                .accessibilityLabel("새 회고 적기")
             }
         }
     }
@@ -616,7 +728,10 @@ struct ReflectionUrnView: View {
 
 struct ReflectionRow: View {
     let item: DayReflection
-    let urn: Urn?
+    /// 어느 항아리의 재인지 — 항아리 안에서 볼 땐 굳이 다시 안 보여준다.
+    var periodLabel: String? = nil
+    /// 아직 의미가 부여되지 않은 항아리의 재는 색 없이 잿빛으로 보인다.
+    var muted: Bool = false
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -633,8 +748,8 @@ struct ReflectionRow: View {
                     .fixedSize(horizontal: false, vertical: true)
 
                 HStack(spacing: 8) {
-                    if let urn {
-                        Text("\(urn.emoji) \(urn.name)")
+                    if let periodLabel {
+                        Text(periodLabel)
                             .font(.system(size: 10, weight: .medium))
                             .foregroundColor(.orange.opacity(0.65))
                     }
@@ -667,6 +782,7 @@ struct ReflectionRow: View {
     }
 
     private var rowDotColor: Color {
+        guard !muted else { return Color(red: 0.60, green: 0.58, blue: 0.55) }
         let c = item.category.particleColor
         return Color(red: c.0, green: c.1, blue: c.2)
     }
@@ -930,16 +1046,10 @@ struct EmberCalendarView: View {
                         .padding(.vertical, 4)
                 } else {
                     ForEach(items) { item in
+                        let period = item.weekPeriod
                         ReflectionRow(item: item,
-                                      urn: reflectionManager.urns.first(where: { $0.id == item.urnId }))
-                            .draggable(item.id.uuidString) {
-                                ReflectionRow(
-                                    item: item,
-                                    urn: reflectionManager.urns.first(where: { $0.id == item.urnId })
-                                )
-                                .opacity(0.85)
-                                .frame(maxWidth: 280)
-                            }
+                                      periodLabel: period.title,
+                                      muted: !reflectionManager.hasMeaning(period))
                             .onTapGesture { onEdit(item) }
                             .contextMenu {
                                 Button(role: .destructive) {
@@ -949,10 +1059,6 @@ struct EmberCalendarView: View {
                                 }
                             }
                     }
-
-                    Text("회고를 항아리로 끌어다 옮길 수 있어요")
-                        .font(.system(size: 10, design: .serif))
-                        .foregroundColor(.gray.opacity(0.4))
                 }
             }
         } else {
@@ -971,107 +1077,179 @@ struct EmberCalendarView: View {
 }
 
 // MARK: - Urn Detail
+//
+// 달 항아리를 열면 그 달의 주 항아리들이, 주 항아리를 열면 담긴 재들이 나온다.
+// 어느 쪽이든 맨 위에는 "이건 당신에게 무엇이었나"를 묻는 자리가 있다.
 
 struct UrnDetailView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
-    @Environment(\.dismiss) private var dismiss
-    let urn: Urn
-    var onEdit: (DayReflection) -> Void
+    @EnvironmentObject var storeManager: StoreManager
 
-    @State private var showEditUrn = false
+    let period: UrnPeriod
+
+    @State private var editing: DayReflection? = nil
+    @State private var meaningTarget: UrnPeriod? = nil
+
+    private var meaning: UrnMeaning? { reflectionManager.meaning(for: period) }
+    private var hasMeaning: Bool { meaning != nil }
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+        ZStack {
+            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
 
-                ScrollView {
-                    VStack(spacing: 18) {
-                        MixedAshUrnVisual(
-                            urn: urn,
-                            fillLevel: reflectionManager.fillLevel(for: urn),
-                            counts: reflectionManager.categoryCounts(for: urn)
-                        )
-                        .frame(width: 180, height: 200)
-                        .padding(.top, 8)
+            ScrollView {
+                VStack(spacing: 18) {
+                    hero
+                    meaningCard
+                    countsBreakdown
 
-                        countsBreakdown
-
-                        let items = reflectionManager.reflections(in: urn)
-                        if items.isEmpty {
-                            Text("아직 비어 있어요.")
-                                .font(.system(size: 13))
-                                .foregroundColor(.gray.opacity(0.5))
-                                .padding(.top, 12)
-                        } else {
-                            VStack(spacing: 8) {
-                                ForEach(items) { item in
-                                    ReflectionRow(item: item, urn: urn)
-                                        .onTapGesture {
-                                            dismiss()
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                                onEdit(item)
-                                            }
-                                        }
-                                        .contextMenu {
-                                            Button(role: .destructive) {
-                                                reflectionManager.delete(id: item.id)
-                                            } label: {
-                                                Label("삭제", systemImage: "trash")
-                                            }
-                                        }
-                                }
-                            }
-                            .padding(.horizontal, 16)
-                        }
-                    }
-                    .padding(.bottom, 40)
-                }
-            }
-            .navigationTitle("\(urn.emoji) \(urn.name)")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("닫기") { dismiss() }
-                        .foregroundColor(.gray)
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Menu {
-                        Button {
-                            showEditUrn = true
-                        } label: {
-                            Label("이름 변경", systemImage: "pencil")
-                        }
-                        Button(role: .destructive) {
-                            reflectionManager.deleteUrn(id: urn.id)
-                            dismiss()
-                        } label: {
-                            Label("항아리 삭제", systemImage: "trash")
-                        }
-                    } label: {
-                        Image(systemName: "ellipsis.circle")
-                            .foregroundColor(.orange)
+                    if period.scope == .month {
+                        weekShelf
+                    } else {
+                        ashList
                     }
                 }
+                .padding(.bottom, 40)
             }
         }
-        .sheet(isPresented: $showEditUrn) {
-            UrnEditView(editing: urn)
+        .navigationTitle(period.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $editing) { item in
+            ReflectionInputView(existing: item)
+                .environmentObject(reflectionManager)
+        }
+        .sheet(item: $meaningTarget) { p in
+            UrnMeaningEditView(period: p)
                 .environmentObject(reflectionManager)
         }
     }
 
+    // MARK: Hero
+
+    private var hero: some View {
+        VStack(spacing: 8) {
+            MixedAshUrnVisual(
+                seed: period.id,
+                fillLevel: reflectionManager.fillLevel(for: period),
+                counts: reflectionManager.categoryCounts(for: period),
+                hasMeaning: hasMeaning
+            )
+            .frame(width: 180, height: 200)
+            .padding(.top, 8)
+            .accessibilityHidden(true)
+
+            Text(period.rangeLabel)
+                .font(.system(size: 12, design: .serif))
+                .foregroundColor(.gray.opacity(0.5))
+        }
+    }
+
+    // MARK: 의미
+    // 재는 저절로 쌓이지만, 그게 무엇이었는지는 사용자만 정할 수 있다.
+
+    @ViewBuilder
+    private var meaningCard: some View {
+        if let m = meaning {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text(m.displayName)
+                        .font(.system(size: 17, weight: .semibold, design: .serif))
+                        .foregroundColor(.orange.opacity(0.92))
+                    Spacer(minLength: 8)
+                    Button {
+                        meaningTarget = period
+                    } label: {
+                        Text("고쳐 적기")
+                            .font(.system(size: 12, weight: .medium))
+                            .foregroundColor(.orange.opacity(0.7))
+                    }
+                }
+
+                if !m.trimmedText.isEmpty, m.trimmedText != m.displayName {
+                    Text(m.trimmedText)
+                        .font(.system(size: 14, design: .serif))
+                        .foregroundColor(.gray.opacity(0.8))
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.orange.opacity(0.07))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.orange.opacity(0.22), lineWidth: 1))
+            )
+            .padding(.horizontal, 16)
+        } else {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("아직은 그냥 재예요")
+                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .foregroundColor(.gray.opacity(0.7))
+
+                Text("여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요.")
+                    .font(.system(size: 12, design: .serif))
+                    .foregroundColor(.gray.opacity(0.5))
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Text(meaningQuestion)
+                    .font(.system(size: 15, weight: .medium, design: .serif))
+                    .foregroundColor(.orange.opacity(0.88))
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.top, 2)
+
+                Button {
+                    meaningTarget = period
+                } label: {
+                    HStack(spacing: 6) {
+                        Image(systemName: "square.and.pencil")
+                            .font(.system(size: 12, weight: .semibold))
+                        Text("의미 적기")
+                            .font(.system(size: 14, weight: .semibold, design: .serif))
+                    }
+                    .foregroundColor(.orange)
+                    .padding(.vertical, 9)
+                    .padding(.horizontal, 16)
+                    .background(
+                        Capsule().fill(Color.orange.opacity(0.15))
+                            .overlay(Capsule().stroke(Color.orange.opacity(0.35), lineWidth: 1))
+                    )
+                }
+                .padding(.top, 2)
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.white.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.gray.opacity(0.15), style: StrokeStyle(lineWidth: 1, dash: [4])))
+            )
+            .padding(.horizontal, 16)
+        }
+    }
+
+    private var meaningQuestion: String {
+        period.scope == .week
+            ? String(localized: "이 주는 당신에게 어떤 의미였나요?")
+            : String(localized: "이 달은 당신에게 어떤 의미였나요?")
+    }
+
+    // MARK: 재의 구성
+
     private var countsBreakdown: some View {
-        let counts = reflectionManager.categoryCounts(for: urn)
+        let counts = reflectionManager.categoryCounts(for: period)
         return HStack(spacing: 8) {
             ForEach([ReflectionCategory.forged, .missed, .stop, .accept, .scattered], id: \.self) { cat in
+                let rgb: (Double, Double, Double) = hasMeaning ? cat.particleColor : (0.60, 0.58, 0.55)
                 VStack(spacing: 4) {
                     Circle()
-                        .fill(Color(red: cat.particleColor.0, green: cat.particleColor.1, blue: cat.particleColor.2))
+                        .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                         .frame(width: 10, height: 10)
                     Text("\(counts[cat] ?? 0)")
                         .font(.system(size: 14, weight: .semibold, design: .monospaced))
-                        .foregroundColor(.orange.opacity(0.85))
+                        .foregroundColor(.orange.opacity(hasMeaning ? 0.85 : 0.45))
                     Text(cat.shortLabel)
                         .font(.system(size: 10))
                         .foregroundColor(.gray.opacity(0.55))
@@ -1086,21 +1264,128 @@ struct UrnDetailView: View {
         }
         .padding(.horizontal, 16)
     }
+
+    // MARK: 달 항아리 → 주 항아리 선반
+
+    private var weekShelf: some View {
+        let weeks = reflectionManager.weekPeriods(in: period)
+        return VStack(alignment: .leading, spacing: 10) {
+            Text("이 달의 주 항아리")
+                .font(.system(size: 13, weight: .semibold, design: .serif))
+                .foregroundColor(.orange.opacity(0.8))
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())],
+                      spacing: 12) {
+                ForEach(weeks) { week in
+                    NavigationLink {
+                        UrnDetailView(period: week)
+                            .environmentObject(reflectionManager)
+                            .environmentObject(storeManager)
+                    } label: {
+                        weekCell(week)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .padding(.horizontal, 16)
+    }
+
+    private func weekCell(_ week: UrnPeriod) -> some View {
+        let count = reflectionManager.reflectionCount(in: week)
+        let m = reflectionManager.meaning(for: week)
+        return VStack(spacing: 6) {
+            MixedAshUrnVisual(
+                seed: week.id,
+                fillLevel: reflectionManager.fillLevel(for: week),
+                counts: reflectionManager.categoryCounts(for: week),
+                hasMeaning: m != nil
+            )
+            .frame(width: 62, height: 70)
+            .accessibilityHidden(true)
+
+            Text(week.shortTitle)
+                .font(.system(size: 12, weight: .semibold, design: .serif))
+                .foregroundColor(.orange.opacity(0.85))
+
+            Text(m?.displayName ?? String(localized: "재 \(count)톨"))
+                .font(.system(size: 10, design: .serif))
+                .foregroundColor(.gray.opacity(m == nil ? 0.45 : 0.7))
+                .lineLimit(1)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.white.opacity(0.03))
+                .overlay(RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color.orange.opacity(0.08), lineWidth: 1))
+        )
+        .contentShape(RoundedRectangle(cornerRadius: 12))
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(week.accessibilityLabel)
+        .accessibilityValue((m?.displayName ?? String(localized: "아직 이름 없는 재"))
+            + ", " + String(localized: "재 \(count)톨"))
+        .accessibilityAddTraits(.isButton)
+    }
+
+    // MARK: 주 항아리 → 재 목록
+
+    @ViewBuilder
+    private var ashList: some View {
+        let items = reflectionManager.reflections(in: period)
+        if items.isEmpty {
+            Text("이 항아리는 비어 있어요.")
+                .font(.system(size: 13, design: .serif))
+                .foregroundColor(.gray.opacity(0.5))
+                .padding(.top, 12)
+        } else {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("담긴 재")
+                    .font(.system(size: 13, weight: .semibold, design: .serif))
+                    .foregroundColor(.orange.opacity(0.8))
+
+                ForEach(items) { item in
+                    ReflectionRow(item: item, muted: !hasMeaning)
+                        .onTapGesture { editing = item }
+                        .contextMenu {
+                            Button(role: .destructive) {
+                                reflectionManager.delete(id: item.id)
+                            } label: {
+                                Label("삭제", systemImage: "trash")
+                            }
+                        }
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+    }
 }
 
-// MARK: - Urn Edit
+// MARK: - Urn Meaning Edit
+//
+// 항아리에 의미를 새기는 화면.  담긴 재를 다시 보여주면서 "이건 당신에게 무엇이었나"를 묻는다.
 
-struct UrnEditView: View {
+struct UrnMeaningEditView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
     @Environment(\.dismiss) private var dismiss
 
-    let editing: Urn?
+    let period: UrnPeriod
 
     @State private var name: String = ""
-    @State private var emoji: String = "🏺"
-    @FocusState private var focused: Bool
+    @State private var text: String = ""
+    @FocusState private var focusedField: Field?
 
-    private let emojis = ["🏺", "🔥", "🌱", "💪", "📚", "💼", "❤️", "🎯", "🏃", "✍️", "🧘", "🎨", "🎵", "💡", "🌙", "⭐️"]
+    private enum Field: Hashable { case name, body }
+
+    private var existing: UrnMeaning? { reflectionManager.meaning(for: period) }
+
+    private var question: String {
+        period.scope == .week
+            ? String(localized: "이 주는 당신에게 어떤 의미였나요?")
+            : String(localized: "이 달은 당신에게 어떤 의미였나요?")
+    }
 
     var body: some View {
         NavigationView {
@@ -1108,57 +1393,17 @@ struct UrnEditView: View {
                 Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
 
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 22) {
-                        Text(editing == nil ? String(localized: "새 항아리") : String(localized: "항아리 수정"))
-                            .font(.system(size: 20, weight: .semibold, design: .serif))
-                            .foregroundColor(.orange.opacity(0.9))
-
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text("이모지")
-                                .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(.gray.opacity(0.6))
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: 8) {
-                                    ForEach(emojis, id: \.self) { e in
-                                        Button { emoji = e } label: {
-                                            Text(e)
-                                                .font(.system(size: 24))
-                                                .padding(8)
-                                                .background(
-                                                    Circle().fill(emoji == e
-                                                        ? Color.orange.opacity(0.2)
-                                                        : Color.white.opacity(0.05))
-                                                )
-                                                .overlay(
-                                                    Circle().stroke(emoji == e
-                                                        ? Color.orange.opacity(0.5)
-                                                        : Color.clear, lineWidth: 2)
-                                                )
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("이름")
-                                .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(.gray.opacity(0.6))
-                            TextField("예: 운동, 관계, 올해의 도전", text: $name)
-                                .font(.system(size: 16))
-                                .foregroundColor(.orange.opacity(0.9))
-                                .focused($focused)
-                                .padding(14)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color.white.opacity(0.04))
-                                        .overlay(RoundedRectangle(cornerRadius: 12)
-                                            .stroke(Color.orange.opacity(0.15), lineWidth: 1))
-                                )
-                        }
+                    VStack(alignment: .leading, spacing: 20) {
+                        header
+                        ashPreview
+                        nameField
+                        bodyField
+                        if existing != nil { clearButton }
                     }
                     .padding(20)
+                    .padding(.bottom, 40)
                 }
+                .scrollDismissesKeyboard(.interactively)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -1167,7 +1412,7 @@ struct UrnEditView: View {
                         .foregroundColor(.gray)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(editing == nil ? String(localized: "만들기") : String(localized: "저장")) { save() }
+                    Button("새기기") { save() }
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(canSave ? .orange : .gray)
                         .disabled(!canSave)
@@ -1175,30 +1420,165 @@ struct UrnEditView: View {
             }
         }
         .onAppear {
-            if let e = editing {
-                name = e.name
-                emoji = e.emoji
+            if let m = existing {
+                name = m.name
+                text = m.text
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                focused = true
+                focusedField = .name
             }
         }
+    }
+
+    // MARK: Header
+
+    private var header: some View {
+        let count = reflectionManager.reflectionCount(in: period)
+        return HStack(spacing: 14) {
+            MixedAshUrnVisual(
+                seed: period.id,
+                fillLevel: reflectionManager.fillLevel(for: period),
+                counts: reflectionManager.categoryCounts(for: period),
+                hasMeaning: existing != nil
+            )
+            .frame(width: 54, height: 60)
+            .accessibilityHidden(true)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(period.title)
+                    .font(.system(size: 17, weight: .semibold, design: .serif))
+                    .foregroundColor(.orange.opacity(0.9))
+                Text(period.rangeLabel)
+                    .font(.system(size: 11, design: .serif))
+                    .foregroundColor(.gray.opacity(0.5))
+                Text("재 \(count)톨")
+                    .font(.system(size: 11, design: .monospaced))
+                    .foregroundColor(.gray.opacity(0.5))
+            }
+            Spacer(minLength: 0)
+        }
+    }
+
+    // MARK: 담긴 재 미리보기
+    // 무엇에 의미를 붙이는지 눈앞에 두고 적게 한다.
+
+    @ViewBuilder
+    private var ashPreview: some View {
+        let items = reflectionManager.reflections(in: period)
+        if !items.isEmpty {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("이 항아리에 남은 것들")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.gray.opacity(0.55))
+
+                ForEach(items.prefix(6)) { item in
+                    HStack(alignment: .top, spacing: 8) {
+                        Circle()
+                            .fill(Color(red: 0.60, green: 0.58, blue: 0.55))
+                            .frame(width: 5, height: 5)
+                            .padding(.top, 6)
+                        Text(item.text)
+                            .font(.system(size: 13, design: .serif))
+                            .foregroundColor(.gray.opacity(0.75))
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: 0)
+                    }
+                }
+
+                if items.count > 6 {
+                    Text("외 \(items.count - 6)톨")
+                        .font(.system(size: 11, design: .serif))
+                        .foregroundColor(.gray.opacity(0.4))
+                        .padding(.leading, 13)
+                }
+            }
+            .padding(14)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.white.opacity(0.025))
+            )
+        }
+    }
+
+    // MARK: 입력
+
+    private var nameField: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(question)
+                .font(.system(size: 15, weight: .semibold, design: .serif))
+                .foregroundColor(.orange.opacity(0.9))
+                .fixedSize(horizontal: false, vertical: true)
+
+            Text("항아리에 새길 한 마디")
+                .font(.system(size: 12, weight: .medium))
+                .foregroundColor(.gray.opacity(0.55))
+
+            TextField("예: 버텨낸 주", text: $name)
+                .font(.system(size: 17, design: .serif))
+                .foregroundColor(.orange.opacity(0.95))
+                .tint(.orange)
+                .focused($focusedField, equals: .name)
+                .submitLabel(.next)
+                .onSubmit { focusedField = .body }
+                .padding(14)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.white.opacity(0.05))
+                        .overlay(RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.orange.opacity(focusedField == .name ? 0.35 : 0.18), lineWidth: 1))
+                )
+        }
+    }
+
+    private var bodyField: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("조금 더 적어두고 싶다면 (선택)")
+                .font(.system(size: 12, weight: .medium))
+                .foregroundColor(.gray.opacity(0.55))
+
+            TextField("여기 쌓인 재가 나에게 무엇이었는지…", text: $text, axis: .vertical)
+                .lineLimit(3...10)
+                .font(.system(size: 15, design: .serif))
+                .foregroundColor(.orange.opacity(0.9))
+                .tint(.orange)
+                .focused($focusedField, equals: .body)
+                .padding(14)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.white.opacity(0.04))
+                        .overlay(RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.orange.opacity(focusedField == .body ? 0.35 : 0.15), lineWidth: 1))
+                )
+        }
+    }
+
+    private var clearButton: some View {
+        Button(role: .destructive) {
+            reflectionManager.removeMeaning(for: period)
+            dismiss()
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: "eraser")
+                    .font(.system(size: 12))
+                Text("의미 지우기")
+                    .font(.system(size: 13, weight: .medium))
+            }
+            .foregroundColor(.red.opacity(0.7))
+        }
+        .accessibilityHint("이 항아리를 다시 이름 없는 재로 되돌립니다")
     }
 
     private var canSave: Bool {
         !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        || !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
     private func save() {
-        let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return }
-        if var e = editing {
-            e.name = trimmed
-            e.emoji = emoji
-            reflectionManager.updateUrn(e)
-        } else {
-            reflectionManager.createUrn(name: trimmed, emoji: emoji)
-        }
+        guard canSave else { return }
+        reflectionManager.setMeaning(name: name, text: text, for: period)
+        let gen = UINotificationFeedbackGenerator()
+        gen.notificationOccurred(.success)
         dismiss()
     }
 }
@@ -1207,7 +1587,6 @@ struct UrnEditView: View {
 
 struct ReflectionInputView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
-    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
 
     let existing: DayReflection?
@@ -1216,7 +1595,6 @@ struct ReflectionInputView: View {
     @State private var keyword: String = ""
     @State private var tomorrowIntent: String = ""
     @State private var date: Date = Date()
-    @State private var selectedUrnId: UUID? = nil
     @State private var hasIntent: Bool? = nil
     @State private var spentTime: Bool? = nil
     @State private var driftFeeling: DriftFeeling? = nil
@@ -1239,9 +1617,6 @@ struct ReflectionInputView: View {
         case .tomorrow: return .tomorrow
         }
     }
-
-    @State private var showCreateUrn = false
-    @State private var showPaywall = false
 
     private let suggestions = [
         String(localized: "성장"), String(localized: "감사"), String(localized: "도전"), String(localized: "휴식"),
@@ -1302,14 +1677,6 @@ struct ReflectionInputView: View {
                 .scrollDismissesKeyboard(.interactively)
             }
         }
-        .sheet(isPresented: $showCreateUrn) {
-            UrnEditView(editing: nil)
-                .environmentObject(reflectionManager)
-        }
-        .sheet(isPresented: $showPaywall) {
-            PaywallView()
-                .environmentObject(storeManager)
-        }
         .presentationDetents(detentSet, selection: $sheetDetent)
         .presentationDragIndicator(.visible)
         .onAppear { setup() }
@@ -1320,7 +1687,7 @@ struct ReflectionInputView: View {
         .onChange(of: hasIntent) { _ in scheduleAutoSave() }
         .onChange(of: spentTime) { _ in scheduleAutoSave() }
         .onChange(of: driftFeeling) { _ in scheduleAutoSave() }
-        .onChange(of: selectedUrnId) { _ in scheduleAutoSave() }
+        .onChange(of: date) { _ in scheduleAutoSave() }
         .onChange(of: classificationPoint) { _ in scheduleAutoSave() }
     }
 
@@ -1345,6 +1712,10 @@ struct ReflectionInputView: View {
                     .frame(width: 38, height: 38)
             }
             .accessibilityLabel("닫기 — 지금까지 적은 내용은 저장됩니다")
+
+            Spacer()
+
+            destinationUrnLabel
 
             Spacer()
 
@@ -1525,10 +1896,7 @@ struct ReflectionInputView: View {
 
     private var canAdvance: Bool {
         // text 단계에서만 본문 필수. 나머지는 비워두고 건너뛰기 가능.
-        if currentStep == .text {
-            return !trimmed.isEmpty && selectedUrnId != nil
-        }
-        return selectedUrnId != nil
+        currentStep != .text || !trimmed.isEmpty
     }
 
     private func advance() {
@@ -1630,105 +1998,28 @@ struct ReflectionInputView: View {
         }
     }
 
-    // MARK: - Urn Hint (작은 라벨)
+    // MARK: - 담길 항아리 (작은 라벨)
+    // 이제 항아리는 고르는 게 아니라 날짜가 정한다.  어디 담기는지만 조용히 알려준다.
 
-    @ViewBuilder
-    private var urnHintLabel: some View {
-        if let urn = reflectionManager.urns.first(where: { $0.id == selectedUrnId }) {
-            Button {
-                // 현재 입력한 옵션이 어디까지인지 한눈에 볼 수 있게 본문 단계로 돌아감
-                goTo(.text)
-            } label: {
-                HStack(spacing: 6) {
-                    Text(urn.emoji).font(.system(size: 13))
-                    Text(urn.name)
-                        .font(.system(size: 13, weight: .medium, design: .serif))
+    private var destinationPeriod: UrnPeriod { UrnPeriod.week(of: date) }
 
-                    if let cat = previewCategory {
-                        let rgb = cat.particleColor
-                        Circle()
-                            .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
-                            .frame(width: 6, height: 6)
-                    }
-                    if !keyword.isEmpty {
-                        Text("#")
-                            .font(.system(size: 11, weight: .semibold))
-                    }
-                    if !tomorrowIntent.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                        Image(systemName: "sunrise")
-                            .font(.system(size: 10))
-                    }
-                }
-                .foregroundColor(.orange.opacity(0.7))
-                .padding(.horizontal, 10)
-                .padding(.vertical, 6)
-                .background(
-                    Capsule()
-                        .fill(Color.white.opacity(0.04))
-                        .overlay(Capsule().stroke(Color.orange.opacity(0.22), lineWidth: 1))
-                )
-            }
-            .accessibilityLabel("\(urn.name) 항아리")
-            .accessibilityHint("탭하여 본문 단계로 돌아감")
+    private var destinationUrnLabel: some View {
+        HStack(spacing: 5) {
+            Image(systemName: "archivebox.fill")
+                .font(.system(size: 10))
+            Text(destinationPeriod.title)
+                .font(.system(size: 12, weight: .medium, design: .serif))
+                .lineLimit(1)
         }
-    }
-
-    private var urnPicker: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("어느 항아리에 담을까요?")
-                .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.55))
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    ForEach(reflectionManager.urns) { urn in
-                        Button {
-                            selectedUrnId = urn.id
-                        } label: {
-                            HStack(spacing: 5) {
-                                Text(urn.emoji).font(.system(size: 14))
-                                Text(urn.name)
-                                    .font(.system(size: 13, weight: selectedUrnId == urn.id ? .semibold : .regular))
-                            }
-                            .foregroundColor(selectedUrnId == urn.id ? .orange : .gray.opacity(0.65))
-                            .padding(.vertical, 8)
-                            .padding(.horizontal, 14)
-                            .background(
-                                Capsule()
-                                    .fill(selectedUrnId == urn.id
-                                          ? Color.orange.opacity(0.15)
-                                          : Color.white.opacity(0.04))
-                                    .overlay(Capsule().stroke(selectedUrnId == urn.id
-                                        ? Color.orange.opacity(0.45)
-                                        : Color.orange.opacity(0.10), lineWidth: 1))
-                            )
-                        }
-                    }
-                    Button {
-                        if storeManager.canAddUrn(currentCount: reflectionManager.urns.count) {
-                            showCreateUrn = true
-                        } else {
-                            showPaywall = true
-                        }
-                    } label: {
-                        HStack(spacing: 4) {
-                            Image(systemName: "plus")
-                                .font(.system(size: 12, weight: .semibold))
-                            Text("새 항아리")
-                                .font(.system(size: 13))
-                        }
-                        .foregroundColor(.gray.opacity(0.7))
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 14)
-                        .background(
-                            Capsule()
-                                .fill(Color.white.opacity(0.03))
-                                .overlay(Capsule().stroke(Color.gray.opacity(0.25), style: StrokeStyle(lineWidth: 1, dash: [3])))
-                        )
-                    }
-                }
-            }
-        }
+        .foregroundColor(.orange.opacity(0.6))
+        .padding(.horizontal, 10)
+        .padding(.vertical, 5)
+        .background(
+            Capsule()
+                .fill(Color.white.opacity(0.04))
+                .overlay(Capsule().stroke(Color.orange.opacity(0.16), lineWidth: 1))
+        )
+        .accessibilityLabel("\(destinationPeriod.title) 항아리에 담깁니다")
     }
 
     private var classificationSection: some View {
@@ -1912,18 +2203,13 @@ struct ReflectionInputView: View {
         }
     }
 
-    private var canSave: Bool {
-        guard !trimmed.isEmpty else { return false }
-        guard selectedUrnId != nil else { return false }
-        return true
-    }
+    private var canSave: Bool { !trimmed.isEmpty }
 
     private func setup() {
         if let e = existing {
             text = e.text
             keyword = e.keyword ?? ""
             date = e.date
-            selectedUrnId = e.urnId
             switch e.category {
             case .forged:    hasIntent = true;  spentTime = true
             case .missed:    hasIntent = true;  spentTime = false
@@ -1950,11 +2236,6 @@ struct ReflectionInputView: View {
             }
         } else {
             date = Date()
-            if reflectionManager.urns.count == 1 {
-                selectedUrnId = reflectionManager.urns.first?.id
-            } else if let first = reflectionManager.urns.first {
-                selectedUrnId = first.id
-            }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
             focusedField = focusField(for: currentStep)
@@ -1965,7 +2246,7 @@ struct ReflectionInputView: View {
     // MARK: - Autosave
 
     private func canAutoSave() -> Bool {
-        guard !trimmed.isEmpty, selectedUrnId != nil else { return false }
+        guard !trimmed.isEmpty else { return false }
         // 분류가 (의지❌, 시간⭕️)인데 drift 미선택이면 카테고리 확정 불가 → 저장 보류
         if hasIntent == false, spentTime == true, driftFeeling == nil {
             return false
@@ -2000,7 +2281,7 @@ struct ReflectionInputView: View {
     }
 
     private func performAutoSave() {
-        guard let urnId = selectedUrnId, !trimmed.isEmpty else { return }
+        guard !trimmed.isEmpty else { return }
 
         let cat: ReflectionCategory = {
             if let i = hasIntent, let t = spentTime,
@@ -2019,7 +2300,6 @@ struct ReflectionInputView: View {
             // 이미 저장된 회고를 갱신
             var updated = existingRec
             updated.text = trimmed
-            updated.urnId = urnId
             updated.category = cat
             updated.keyword = kw
             updated.tomorrowIntent = intentToSave
@@ -2030,7 +2310,6 @@ struct ReflectionInputView: View {
             // 새 회고 생성
             let created = reflectionManager.add(
                 text: trimmed,
-                urnId: urnId,
                 category: cat,
                 keyword: keyword,
                 tomorrowIntent: intentToSave,

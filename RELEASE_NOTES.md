@@ -2,36 +2,28 @@
 
 ## 1.0.9 (build 1)
 
+App Store Connect v1.0.9 에 실제로 올린 문구입니다.
+릴리즈노트 규칙(특수기호·이모지 없이, 한 줄 한 문장, 40자 이내)을 따릅니다.
+
 ### App Store "이번 버전의 새로운 기능" — 한국어
 
 ```
-💨 자리를 비운 동안의 재
-며칠 만에 돌아오면 그 사이의 시간을 어떻게 할지 물어봅니다. 의미를 적어 담거나, 그냥 날려버리세요 — 재가 바람에 실려 흩어집니다.
-
-📊 재의 흐름
-분포 그래프와 잔불 달력이 별도 화면으로 옮겨졌습니다. 선반은 "무엇이 담겼나", 재의 흐름은 "어떻게 흘러왔나"를 보여줍니다.
-
-🔓 무료 열람이 1년으로
-이번 달만 열리던 지난 항아리가 이제 최근 1년치까지 열립니다. 그보다 오래된 항아리는 프로에서 열려요.
-
-🛠 개선
-• 아직 한 톨도 담기지 않은 항아리는 이제 정말로 비어 보입니다.
+며칠 만에 돌아와도 그 사이의 시간을 담거나 날릴 수 있어요
+분포 그래프와 잔불 달력을 재의 흐름 화면에 모았습니다
+지난 항아리를 최근 1년까지 무료로 열어볼 수 있어요
+아무것도 담기지 않은 항아리가 이제 비어 보입니다
 ```
 
 ### App Store "What's New" — English
 
+⚠️ App Store 페이지에 영어 현지화가 없어 **아직 올릴 자리가 없습니다.**
+App Store Connect ▸ 앱 정보 ▸ 현지화에서 영어를 추가하면 그대로 쓸 수 있습니다.
+
 ```
-💨 The ash from while you were away
-Come back after a few days and the app asks what to do with that time. Write down what it meant, or blow it away and watch it scatter on the wind.
-
-📊 Ash Flow
-The distribution graph and ember calendar moved to their own screen. The shelf shows what you kept; Ash Flow shows how it drifted.
-
-🔓 A free year of urns
-Past urns used to close after the current month. Now the last twelve months stay open — anything older opens with Pro.
-
-🛠 Improvements
-• An urn with nothing in it now truly looks empty.
+Keep or scatter the time you were away
+The graph and calendar moved to Ash Flow
+Past urns stay open for a year, free
+An empty urn now really looks empty
 ```
 
 ## 1.0.8 (build 1)

@@ -7,7 +7,7 @@
 // 그대로 동작한다.
 //
 // 항아리는 이제 사용자가 만드는 게 아니라 기간에서 파생되므로(UrnPeriod) "개수" 한도가 아니라
-// "얼마나 거슬러 올라가 열어볼 수 있나"로 게이트한다. 무료: 이번 달 항아리만. 프로: 전부.
+// "얼마나 거슬러 올라가 열어볼 수 있나"로 게이트한다. 무료: 최근 1년치 항아리. 프로: 전부.
 // 재는 무료에서도 계속 쌓이므로 결제하면 지난 항아리가 그대로 열린다 — 잃는 데이터는 없다.
 
 import Foundation
@@ -20,8 +20,8 @@ final class StoreManager: ObservableObject {
     static let proProductID = "com.burningparchment.app.pro"
 
     /// 무료 사용 한도 — 선언은 BurningParchmentSpec.monetization 의 게이트 정책 한 곳에만 있다.
-    /// 항아리 한도는 "무료로 열람 가능한 달 수"로 읽는다 (1 = 이번 달만).
-    static let freeUrnHistoryMonths = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.urn] ?? 1
+    /// 항아리 한도는 "무료로 열람 가능한 달 수"로 읽는다 (12 = 최근 1년).
+    static let freeUrnHistoryMonths = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.urn] ?? 12
     static let freeDeadlineLimit = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.deadline] ?? 1
 
     private let store: LeeoStore
@@ -43,7 +43,7 @@ final class StoreManager: ObservableObject {
 
     // MARK: - Gates
 
-    /// 이 항아리를 열어볼 수 있는가.  무료는 최근 freeUrnHistoryMonths 개월치만 열린다.
+    /// 이 항아리를 열어볼 수 있는가.  무료는 최근 freeUrnHistoryMonths 개월치(1년)만 열린다.
     func canOpenUrn(_ period: UrnPeriod) -> Bool {
         guard !isPro else { return true }
         return Self.monthsAgo(period) < Self.freeUrnHistoryMonths

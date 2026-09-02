@@ -8,6 +8,8 @@ enum BurningParchmentSpec: LeeoAppSpec {
 
     /// 무료 한도를 거는 기능 키. StoreManager 의 한도 판정과 아래 게이트 선언이 같은 값을 보게 한다.
     enum GateKey {
+        /// 무료로 거슬러 올라가 열어볼 수 있는 달 수 (12 = 최근 1년).
+        /// 재는 무료에서도 계속 쌓이고, 프로를 사면 그 이전 항아리가 그대로 열린다.
         static let urn = "urn"
         static let deadline = "deadline"
     }
@@ -25,7 +27,7 @@ enum BurningParchmentSpec: LeeoAppSpec {
     static let monetization = LeeoMonetization.freemium(
         LeeoPurchaseConfig(
             productIDs: ["com.burningparchment.app.pro"],
-            gate: LeeoGatePolicy(freeLimits: [GateKey.urn: 1, GateKey.deadline: 1]),
+            gate: LeeoGatePolicy(freeLimits: [GateKey.urn: 12, GateKey.deadline: 1]),
             cacheSuiteName: "group.com.burningparchment.app"
         )
     )

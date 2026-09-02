@@ -263,7 +263,11 @@ struct MixedAshUrnVisual: View {
         let interiorTop: CGFloat = size.height * 0.18
         let interiorBottom: CGFloat = size.height * 0.94
         let interiorHeight = interiorBottom - interiorTop
-        let ashTopY = interiorBottom - interiorHeight * CGFloat(max(0.04, fillLevel))
+        // 담긴 재가 한 톨도 없으면 바닥 한 줄도 그리지 않는다 — 빈 항아리는 정말 비어 보여야 한다.
+        let hasAsh = counts.values.reduce(0, +) > 0
+        let ashTopY = hasAsh
+            ? interiorBottom - interiorHeight * CGFloat(max(0.04, fillLevel))
+            : interiorBottom
 
         ZStack {
             // 빈 안쪽
@@ -335,6 +339,71 @@ struct MixedAshUrnVisual: View {
     }
 }
 
+// MARK: - Ash Pile (날아가는 재)
+// 아직 어느 항아리에도 담기지 않은 재 더미.  `blow` 를 0 → 1 로 애니메이션하면
+// 입자들이 제각기 다른 시점에 떠올라 바람을 타고 오른쪽 위로 흩어지며 사라진다.
+//
+// Animatable 을 직접 채택해야 한다 — Canvas 에 넘긴 Double 은 그냥은 보간되지 않고 툭 튄다.
+
+struct AshPile: View, Animatable {
+    let seed: Double
+    let count: Int
+    var blow: Double
+
+    var animatableData: Double {
+        get { blow }
+        set { blow = newValue }
+    }
+
+    /// 아직 이름 붙지 않은 재의 색 — 잿빛에서 아주 살짝 따뜻한 쪽까지.
+    private static let palette: [(Double, Double, Double)] = [
+        (0.62, 0.60, 0.57),
+        (0.72, 0.68, 0.62),
+        (0.55, 0.53, 0.51),
+        (0.78, 0.66, 0.50)
+    ]
+
+    var body: some View {
+        Canvas { ctx, size in
+            let bits = UInt64(bitPattern: Int64(seed.rounded()))
+            var rng = SeededRNG(seed: bits == 0 ? 0xA511_0000 : bits)
+
+            for _ in 0..<count {
+                // 바닥에 얕게 깔린 더미
+                let x0 = CGFloat.random(in: 0...size.width, using: &rng)
+                let y0 = size.height - CGFloat.random(in: 0...(size.height * 0.5), using: &rng)
+
+                // 입자마다 다른 바람 — 뜨는 시점도, 실려가는 거리도 제각각이다.
+                let delay  = Double.random(in: 0...0.45, using: &rng)
+                let drift  = CGFloat.random(in: 0.5...2.4, using: &rng)
+                let lift   = CGFloat.random(in: 0.4...2.6, using: &rng)
+                let wobble = CGFloat.random(in: -1...1, using: &rng)
+                let radius = CGFloat.random(in: 0.7...1.9, using: &rng)
+                let baseAlpha = Double.random(in: 0.30...0.85, using: &rng)
+                let rgb = Self.palette[Int.random(in: 0..<Self.palette.count, using: &rng)]
+
+                let local = blow <= delay ? 0 : min(1, (blow - delay) / (1 - delay))
+                // 처음엔 머뭇거리다 점점 빨라진다.
+                let ease = local * local
+                let x = x0 + size.width * drift * ease
+                let y = y0
+                      - size.height * lift * ease
+                      + wobble * 5 * sin(local * .pi * 2.2)
+                let alpha = baseAlpha * (1 - local)
+                guard alpha > 0.02 else { continue }
+
+                ctx.fill(
+                    Path(ellipseIn: CGRect(x: x - radius, y: y - radius,
+                                           width: radius * 2, height: radius * 2)),
+                    with: .color(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(alpha))
+                )
+            }
+        }
+        .drawingGroup()
+        .allowsHitTesting(false)
+    }
+}
+
 // MARK: - Header Mini Button
 
 /// 헤더의 작은 항아리 — 지금 재가 담기고 있는 이번 주 항아리를 보여준다.
@@ -382,6 +451,16 @@ struct ReflectionUrnView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
     @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    /// 기록 공백 구간.
+    struct SweepRange: Identifiable {
+        let start: Date
+        let end: Date
+        var id: String {
+            "\(start.timeIntervalSinceReferenceDate)-\(end.timeIntervalSinceReferenceDate)"
+        }
+    }
 
     var autoOpenInput: Bool = false
 
@@ -390,6 +469,12 @@ struct ReflectionUrnView: View {
     @State private var editing: DayReflection? = nil
     @State private var meaningTarget: UrnPeriod? = nil
     @State private var autoOpenTriggered = false
+    /// 기록 공백 회수로 연 입력. 시트에 값을 직접 실어 보내야 첫 렌더에서 날짜가 제대로 잡힌다.
+    @State private var sweepInput: SweepRange? = nil
+    /// onDismiss 시점엔 위 값이 이미 비므로, 정리 판정용으로 같은 구간을 따로 들고 있는다.
+    @State private var pendingSweep: SweepRange? = nil
+    /// 재가 날아가는 중 (0 → 그대로, 1 → 다 날아감).
+    @State private var blowAway: Double = 0
 
     var body: some View {
         ZStack {
@@ -400,11 +485,10 @@ struct ReflectionUrnView: View {
             } else {
                 ScrollView {
                     VStack(spacing: 20) {
+                        sweepPrompt
                         meaningPrompt
                         currentWeekCard
                         monthShelf
-                        distributionSection
-                        emberCalendar
                     }
                     .padding(.top, 8)
                     .padding(.bottom, 100)
@@ -417,19 +501,35 @@ struct ReflectionUrnView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink {
-                    ReflectionBookView()
-                        .environmentObject(reflectionManager)
-                } label: {
-                    Image(systemName: "book.closed.fill")
-                        .font(.system(size: 17))
-                        .foregroundColor(.orange)
+                HStack(spacing: 16) {
+                    NavigationLink {
+                        AshInsightsView()
+                            .environmentObject(reflectionManager)
+                    } label: {
+                        Image(systemName: "chart.dots.scatter")
+                            .font(.system(size: 17))
+                            .foregroundColor(.orange)
+                    }
+                    .accessibilityLabel("재의 흐름 보기")
+
+                    NavigationLink {
+                        ReflectionBookView()
+                            .environmentObject(reflectionManager)
+                    } label: {
+                        Image(systemName: "book.closed.fill")
+                            .font(.system(size: 17))
+                            .foregroundColor(.orange)
+                    }
+                    .accessibilityLabel("회고 책으로 보기")
                 }
-                .accessibilityLabel("회고 책으로 보기")
             }
         }
         .sheet(isPresented: $showInput) {
             ReflectionInputView(existing: nil)
+                .environmentObject(reflectionManager)
+        }
+        .sheet(item: $sweepInput, onDismiss: finishSweepIfCollected) { range in
+            ReflectionInputView(existing: nil, initialDate: range.end)
                 .environmentObject(reflectionManager)
         }
         .sheet(item: $editing) { item in
@@ -487,6 +587,146 @@ struct ReflectionUrnView: View {
                 )
             }
             .padding(.top, 8)
+        }
+    }
+
+    // MARK: - 모아둔 재 (기록 공백 회수)
+    // 앱을 며칠 안 연 사이의 시간은 어느 항아리에도 담기지 않는다.
+    // 돌아왔을 때 한 번에 날려버리거나, 의미를 적어 담게 한다.
+
+    @ViewBuilder
+    private var sweepPrompt: some View {
+        if let gap = reflectionManager.unrecordedAshGap {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(spacing: 6) {
+                    Image(systemName: "wind")
+                        .font(.system(size: 12))
+                    Text("모아둔 재")
+                        .font(.system(size: 12, weight: .semibold))
+                }
+                .foregroundColor(.orange.opacity(0.75))
+
+                Text(gapQuestion(gap.days))
+                    .font(.system(size: 16, weight: .semibold, design: .serif))
+                    .foregroundColor(.orange.opacity(0.92))
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Text("\(rangeLabel(gap)) — 아직 어느 항아리에도 담기지 않은 시간이에요.")
+                    .font(.system(size: 11, design: .serif))
+                    .foregroundColor(.gray.opacity(0.5))
+                    .fixedSize(horizontal: false, vertical: true)
+
+                // 흩어져 있는 재 더미 — 날려버리면 이게 날아간다.
+                AshPile(seed: gap.start.timeIntervalSinceReferenceDate,
+                        count: min(gap.days * 14, 220),
+                        blow: blowAway)
+                    .frame(height: 34)
+                    .padding(.top, 2)
+                    .accessibilityHidden(true)
+
+                HStack(spacing: 8) {
+                    Button {
+                        blowAwayGap(gap)
+                    } label: {
+                        HStack(spacing: 5) {
+                            Image(systemName: "wind")
+                            Text("날려버리기")
+                        }
+                        .font(.system(size: 13, weight: .medium))
+                        .foregroundColor(.gray.opacity(0.75))
+                        .padding(.vertical, 9)
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            Capsule().fill(Color.white.opacity(0.05))
+                                .overlay(Capsule().stroke(Color.gray.opacity(0.28), lineWidth: 1))
+                        )
+                    }
+
+                    Button {
+                        collectGap(gap)
+                    } label: {
+                        HStack(spacing: 5) {
+                            Image(systemName: "square.and.pencil")
+                            Text("의미 적어 담기")
+                        }
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(Color(red: 0.10, green: 0.07, blue: 0.05))
+                        .padding(.vertical, 9)
+                        .frame(maxWidth: .infinity)
+                        .background(Capsule().fill(Color.orange.opacity(0.9)))
+                    }
+                }
+                .padding(.top, 2)
+                .opacity(1 - blowAway)
+                .disabled(blowAway > 0)
+            }
+            .padding(14)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.white.opacity(0.035))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.orange.opacity(0.20 * (1 - blowAway)), lineWidth: 1))
+            )
+            .padding(.horizontal, 16)
+            .transition(.opacity.combined(with: .move(edge: .top)))
+        }
+    }
+
+    /// 2주 이상은 주 단위로, 그보다 짧으면 일 단위로 묻는다.
+    private func gapQuestion(_ days: Int) -> String {
+        days >= 14
+            ? String(localized: "지난 \(days / 7)주간의 재를 어떻게 할까요?")
+            : String(localized: "지난 \(days)일간의 재를 어떻게 할까요?")
+    }
+
+    private func rangeLabel(_ gap: (start: Date, end: Date, days: Int)) -> String {
+        let f = DateFormatter()
+        f.locale = Locale.current
+        f.setLocalizedDateFormatFromTemplate("Md")
+        return "\(f.string(from: gap.start)) ~ \(f.string(from: gap.end))"
+    }
+
+    /// 재가 바람에 실려 날아간 뒤에야 카드가 사라진다.
+    private func blowAwayGap(_ gap: (start: Date, end: Date, days: Int)) {
+        guard blowAway == 0 else { return }
+        UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+
+        guard !reduceMotion else {
+            withAnimation(.easeOut(duration: 0.3)) {
+                reflectionManager.sweepAsh(through: gap.end)
+            }
+            return
+        }
+
+        withAnimation(.easeIn(duration: Self.blowDuration)) { blowAway = 1 }
+        DispatchQueue.main.asyncAfter(deadline: .now() + Self.blowDuration * 0.85) {
+            withAnimation(.easeOut(duration: 0.35)) {
+                reflectionManager.sweepAsh(through: gap.end)
+            }
+            blowAway = 0
+        }
+    }
+
+    private static let blowDuration: Double = 1.15
+
+    private func collectGap(_ gap: (start: Date, end: Date, days: Int)) {
+        let range = SweepRange(start: gap.start, end: gap.end)
+        pendingSweep = range
+        sweepInput = range
+    }
+
+    /// 공백 구간에 실제로 재가 담겼을 때만 정리 처리한다.
+    /// 그냥 시트를 닫았다면 다음에 다시 물어본다.
+    private func finishSweepIfCollected() {
+        guard let range = pendingSweep else { return }
+        pendingSweep = nil
+        let collected = reflectionManager.reflections.contains {
+            $0.date >= range.start && $0.date <= range.end
+        }
+        if collected {
+            withAnimation(.easeOut(duration: 0.3)) {
+                reflectionManager.sweepAsh(through: range.end)
+            }
         }
     }
 
@@ -629,7 +869,7 @@ struct ReflectionUrnView: View {
                     .foregroundColor(.orange.opacity(locked ? 0.5 : 0.88))
 
                 if locked {
-                    Text("프로에서 지난 항아리가 열려요")
+                    Text("1년보다 오래된 항아리는 프로에서 열려요")
                         .font(.system(size: 11, design: .serif))
                         .foregroundColor(.gray.opacity(0.5))
                 } else if let meaning {
@@ -675,26 +915,6 @@ struct ReflectionUrnView: View {
         .accessibilityAddTraits(.isButton)
     }
 
-    // MARK: - Distribution (재의 분포)
-
-    @ViewBuilder
-    private var distributionSection: some View {
-        if !reflectionManager.reflections.isEmpty {
-            ReflectionDistributionView()
-                .padding(.horizontal, 16)
-        }
-    }
-
-    // MARK: - Ember Calendar (잔불 달력)
-
-    @ViewBuilder
-    private var emberCalendar: some View {
-        if !reflectionManager.reflections.isEmpty {
-            EmberCalendarView(onEdit: { editing = $0 })
-                .padding(.horizontal, 16)
-        }
-    }
-
     // MARK: - Floating Action
 
     private var floatingActions: some View {
@@ -720,6 +940,56 @@ struct ReflectionUrnView: View {
                 .padding(.bottom, 22)
                 .accessibilityLabel("새 회고 적기")
             }
+        }
+    }
+}
+
+// MARK: - Ash Insights (재의 흐름)
+// 선반과 분리된 화면. 선반은 "무엇이 담겼나", 이 화면은 "어떻게 흘러왔나"를 맡는다.
+
+struct AshInsightsView: View {
+    @EnvironmentObject var reflectionManager: ReflectionManager
+
+    @State private var editing: DayReflection? = nil
+
+    var body: some View {
+        ZStack {
+            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+
+            if reflectionManager.reflections.isEmpty {
+                emptyState
+            } else {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        ReflectionDistributionView()
+                        EmberCalendarView(onEdit: { editing = $0 })
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                    .padding(.bottom, 40)
+                }
+            }
+        }
+        .navigationTitle("재의 흐름")
+        .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $editing) { item in
+            ReflectionInputView(existing: item)
+                .environmentObject(reflectionManager)
+        }
+    }
+
+    private var emptyState: some View {
+        VStack(spacing: 12) {
+            Image(systemName: "chart.dots.scatter")
+                .font(.system(size: 48))
+                .foregroundColor(.orange.opacity(0.22))
+            Text("아직 흘러간 재가 없어요")
+                .font(.system(size: 16, weight: .medium, design: .serif))
+                .foregroundColor(.gray.opacity(0.55))
+            Text("재를 몇 톨 담으면\n분포와 잔불 달력이 여기에 나타나요.")
+                .font(.system(size: 12, design: .serif))
+                .foregroundColor(.gray.opacity(0.4))
+                .multilineTextAlignment(.center)
         }
     }
 }
@@ -1590,6 +1860,8 @@ struct ReflectionInputView: View {
     @Environment(\.dismiss) private var dismiss
 
     let existing: DayReflection?
+    /// 새 재를 과거 날짜로 시작할 때 쓰인다 (기록 공백 회수). nil 이면 오늘.
+    let initialDate: Date?
 
     @State private var text: String = ""
     @State private var keyword: String = ""
@@ -1623,8 +1895,9 @@ struct ReflectionInputView: View {
         String(localized: "배움"), String(localized: "관계"), String(localized: "실수"), String(localized: "기쁨")
     ]
 
-    init(existing: DayReflection?) {
+    init(existing: DayReflection?, initialDate: Date? = nil) {
         self.existing = existing
+        self.initialDate = initialDate
     }
 
     var body: some View {
@@ -1657,7 +1930,7 @@ struct ReflectionInputView: View {
                         stepDots
                             .padding(.top, 2)
 
-                        if existing != nil && currentStep == .text {
+                        if (existing != nil || initialDate != nil) && currentStep == .text {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("날짜")
                                     .font(.system(size: 12, weight: .medium))
@@ -2235,7 +2508,7 @@ struct ReflectionInputView: View {
                 }
             }
         } else {
-            date = Date()
+            date = initialDate ?? Date()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
             focusedField = focusField(for: currentStep)

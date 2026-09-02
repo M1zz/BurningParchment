@@ -98,7 +98,7 @@ struct PaywallView: View {
             featureRow(
                 icon: "archivebox.fill",
                 title: "지난 항아리 모두 열기",
-                detail: "몇 달 전 항아리까지 거슬러 올라가 다시 읽어요"
+                detail: "1년보다 오래된 항아리까지 거슬러 올라가 다시 읽어요"
             )
             featureRow(
                 icon: "flag.fill",

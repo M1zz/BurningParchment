@@ -12,8 +12,12 @@ class ReflectionManager: ObservableObject {
     /// periodId → 의미
     @Published var meanings: [String: UrnMeaning] = [:]
 
+    /// 기록 공백을 마지막으로 정리한 날 (그 날까지는 담았거나 날려버렸다).
+    @Published private(set) var ashSweptUntil: Date? = nil
+
     private let keyReflections = "shared_reflections"
     private let keyMeanings    = "shared_urn_meanings"
+    private let keySweptUntil  = "shared_ash_swept_until"
     private let keyLegacyUrns  = "shared_urns"
     private let sharedDefaults = UserDefaults(suiteName: "group.com.burningparchment.app")
 
@@ -182,6 +186,41 @@ class ReflectionManager: ObservableObject {
         }
     }
 
+    // MARK: - 기록 공백 회수
+    // 며칠 앱을 안 열면 그 사이의 시간은 어느 항아리에도 담기지 않고 흩어진다.
+    // 돌아왔을 때 그 구간을 통째로 "날려버릴지 / 의미를 적어 담을지" 한 번 묻고 넘어간다.
+
+    /// 이 일수 이상 비어 있어야 회수를 묻는다. 하루 이틀 건너뛴 것까지 붙잡지는 않는다.
+    static let minimumGapDays = 3
+
+    /// 지금 물어볼 만한 공백 구간. 없으면 nil.
+    var unrecordedAshGap: (start: Date, end: Date, days: Int)? {
+        let cal = Calendar.current
+        let todayStart = cal.startOfDay(for: Date())
+        guard let end = cal.date(byAdding: .day, value: -1, to: todayStart) else { return nil }
+
+        // 기준점: 마지막으로 재가 담긴 날과 마지막으로 정리한 날 중 나중.
+        var anchors: [Date] = []
+        if let last = reflections.map({ cal.startOfDay(for: $0.date) }).max() { anchors.append(last) }
+        if let swept = ashSweptUntil { anchors.append(cal.startOfDay(for: swept)) }
+        // 아직 한 톨도 담지 않았다면 물을 것이 없다 — 빈 화면이 먼저 안내한다.
+        guard let anchor = anchors.max() else { return nil }
+
+        guard let start = cal.date(byAdding: .day, value: 1, to: anchor), start <= end else { return nil }
+        let days = (cal.dateComponents([.day], from: start, to: end).day ?? 0) + 1
+        guard days >= Self.minimumGapDays else { return nil }
+        return (start, end, days)
+    }
+
+    /// 공백을 정리했다고 표시. 담았든 날려버렸든 다시 묻지 않는다.
+    func sweepAsh(through date: Date) {
+        let day = Calendar.current.startOfDay(for: date)
+        // 되돌아가지 않게 — 항상 앞으로만 움직인다.
+        if let current = ashSweptUntil, current >= day { return }
+        ashSweptUntil = day
+        sharedDefaults?.set(day.timeIntervalSince1970, forKey: keySweptUntil)
+    }
+
     // MARK: - Persistence
 
     private func saveReflections() {
@@ -202,6 +241,9 @@ class ReflectionManager: ObservableObject {
         if let data = sharedDefaults?.data(forKey: keyMeanings),
            let decoded = try? JSONDecoder().decode([String: UrnMeaning].self, from: data) {
             meanings = decoded
+        }
+        if let ts = sharedDefaults?.object(forKey: keySweptUntil) as? Double {
+            ashSweptUntil = Date(timeIntervalSince1970: ts)
         }
     }
 

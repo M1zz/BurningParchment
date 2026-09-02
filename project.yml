@@ -9,6 +9,13 @@ options:
   # 개발 지역(en) 리소스가 선택돼 앱·위젯이 영어로 뜬다.
   developmentLanguage: ko
 
+# 버전·빌드번호의 단일 소스. 프로젝트 레벨 baseConfiguration 이라
+# 앱·위젯 두 타겟이 같은 값을 쓴다. 아래 타겟 설정에 MARKETING_VERSION 을
+# 다시 적으면 그쪽이 이 파일을 이겨 버리므로 적지 말 것.
+configFiles:
+  Debug: Config/Version.xcconfig
+  Release: Config/Version.xcconfig
+
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
@@ -41,6 +48,7 @@ schemes:
 
 settings:
   base:
+    DEVELOPMENT_TEAM: QGAQ3AY3R3
     SWIFT_VERSION: "5.9"
     TARGETED_DEVICE_FAMILY: "1"
     CODE_SIGN_STYLE: Automatic
@@ -56,8 +64,8 @@ targets:
     info:
       path: BurningParchment/Info.plist
       properties:
-        CFBundleShortVersionString: "1.0.9"
-        CFBundleVersion: "1"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         CFBundleDevelopmentRegion: ko
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
@@ -72,8 +80,6 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        CURRENT_PROJECT_VERSION: 1
-        MARKETING_VERSION: "1.0.9"
         TARGETED_DEVICE_FAMILY: "1"
         SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
         SUPPORTS_MACCATALYST: NO
@@ -97,15 +103,13 @@ targets:
       path: BurningParchmentWidgets/Info.plist
       properties:
         CFBundleDisplayName: BurningParchmentWidgets
-        CFBundleShortVersionString: "1.0.9"
-        CFBundleVersion: "1"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         CFBundleDevelopmentRegion: ko
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app.widgets
-        CURRENT_PROJECT_VERSION: 1
-        MARKETING_VERSION: "1.0.9"
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
         CODE_SIGN_ENTITLEMENTS: BurningParchmentWidgets/BurningParchmentWidgets.entitlements

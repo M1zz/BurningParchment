@@ -71,7 +71,7 @@
         },
         "ko": {
           "stringUnit": {
-            "state": "new",
+            "state": "translated",
             "value": "%1$@ / %2$@"
           }
         }
@@ -147,9 +147,15 @@
     },
     "%@ 항아리에 재 %@톨이 남았어요": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The %1$@ urn holds %2$@ specks of ash"
+          }
+        },
         "ko": {
           "stringUnit": {
-            "state": "new",
+            "state": "translated",
             "value": "%1$@ 항아리에 재 %2$@톨이 남았어요"
           }
         }
@@ -3065,7 +3071,16 @@
         }
       }
     },
-    "외 %@톨": {},
+    "외 %@톨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "and %@ more"
+          }
+        }
+      }
+    },
     "외 %lld개": {
       "extractionState": "stale",
       "localizations": {
@@ -3664,7 +3679,16 @@
         }
       }
     },
-    "재 %@톨": {},
+    "재 %@톨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ specks of ash"
+          }
+        }
+      }
+    },
     "재 %lld개 기준": {
       "extractionState": "stale",
       "localizations": {

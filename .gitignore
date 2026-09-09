@@ -6,3 +6,7 @@ build/
 *.xcuserdatad/
 xcuserdata/
 **/xcshareddata/IDEWorkspaceChecks.plist
+
+# 마케팅 스크린샷을 만들 때 Chrome 에 먹이는 중간 HTML·크롭 이미지.
+# scripts/make_marketing_screenshots.py 가 매번 다시 만든다.
+docs/screenshots/.build/

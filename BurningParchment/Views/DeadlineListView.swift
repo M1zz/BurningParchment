@@ -15,7 +15,7 @@ struct DeadlineListView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+                Color.appBackgroundWarm.ignoresSafeArea()
 
                 if deadlineManager.deadlines.isEmpty {
                     emptyState
@@ -51,13 +51,13 @@ struct DeadlineListView: View {
                         }
                     } label: {
                         Image(systemName: "plus")
-                            .foregroundColor(.orange)
+                            .foregroundColor(.ember)
                             .font(.system(size: 16, weight: .semibold))
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("닫기") { dismiss() }
-                        .foregroundColor(.gray)
+                        .foregroundColor(.inkMuted)
                 }
             }
         }
@@ -79,13 +79,13 @@ struct DeadlineListView: View {
         VStack(spacing: 16) {
             Image(systemName: "flag.fill")
                 .font(.system(size: 52))
-                .foregroundColor(.orange.opacity(0.25))
+                .foregroundColor(.ember.opacity(0.25))
             Text("데드라인이 없어요")
                 .font(.system(size: 18, weight: .medium, design: .serif))
-                .foregroundColor(.gray.opacity(0.5))
+                .foregroundColor(.inkMuted.opacity(0.5))
             Text("+ 버튼으로 새 데드라인을 추가하세요")
                 .font(.system(size: 13))
-                .foregroundColor(.gray.opacity(0.35))
+                .foregroundColor(.inkMuted.opacity(0.35))
         }
     }
 }
@@ -106,11 +106,11 @@ struct DeadlineRow: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(deadline.title)
                     .font(.system(size: 15, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.9))
+                    .foregroundColor(.ember.opacity(0.9))
                     .lineLimit(1)
                 Text(deadline.targetDateString)
                     .font(.system(size: 11))
-                    .foregroundColor(.gray.opacity(0.45))
+                    .foregroundColor(.inkMuted.opacity(0.45))
             }
 
             Spacer()
@@ -119,25 +119,25 @@ struct DeadlineRow: View {
                 if deadline.isExpired(at: now) {
                     Text("완료")
                         .font(.system(size: 13, weight: .medium))
-                        .foregroundColor(.gray.opacity(0.45))
+                        .foregroundColor(.inkMuted.opacity(0.45))
                 } else {
                     Text(deadline.remainingString(at: now))
                         .font(.system(size: 13, weight: .medium, design: .monospaced))
-                        .foregroundColor(.orange)
+                        .foregroundColor(.ember)
                         .lineLimit(1)
                     Text("남음")
                         .font(.system(size: 10))
-                        .foregroundColor(.gray.opacity(0.45))
+                        .foregroundColor(.inkMuted.opacity(0.45))
                 }
             }
 
             // 미니 프로그레스 링
             ZStack {
                 Circle()
-                    .stroke(Color.orange.opacity(0.12), lineWidth: 3)
+                    .stroke(Color.ember.opacity(0.12), lineWidth: 3)
                 Circle()
                     .trim(from: 0, to: min(deadline.progress(at: now), 1))
-                    .stroke(Color.orange.opacity(0.6), style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                    .stroke(Color.ember.opacity(0.6), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                     .rotationEffect(.degrees(-90))
             }
             .frame(width: 28, height: 28)
@@ -145,10 +145,10 @@ struct DeadlineRow: View {
         .padding(16)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(Color.white.opacity(0.04))
+                .fill(Color.ink.opacity(0.04))
                 .overlay(
                     RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.10), lineWidth: 1)
+                        .stroke(Color.ember.opacity(0.10), lineWidth: 1)
                 )
         )
         .onReceive(ticker) { now = $0 }
@@ -186,7 +186,7 @@ struct DeadlineFormView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+                Color.appBackgroundWarm.ignoresSafeArea()
 
                 ScrollView {
                     VStack(spacing: 24) {
@@ -194,7 +194,7 @@ struct DeadlineFormView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("이모지")
                                 .font(.system(size: 13, weight: .medium))
-                                .foregroundColor(.gray.opacity(0.6))
+                                .foregroundColor(.inkMuted.opacity(0.6))
                                 .padding(.horizontal, 20)
 
                             ScrollView(.horizontal, showsIndicators: false) {
@@ -206,12 +206,12 @@ struct DeadlineFormView: View {
                                                 .padding(9)
                                                 .background(
                                                     Circle().fill(emoji == e
-                                                        ? Color.orange.opacity(0.2)
-                                                        : Color.white.opacity(0.05))
+                                                        ? Color.ember.opacity(0.2)
+                                                        : Color.ink.opacity(0.05))
                                                 )
                                                 .overlay(
                                                     Circle().stroke(emoji == e
-                                                        ? Color.orange.opacity(0.5)
+                                                        ? Color.ember.opacity(0.5)
                                                         : Color.clear, lineWidth: 2)
                                                 )
                                         }
@@ -225,16 +225,16 @@ struct DeadlineFormView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("제목")
                                 .font(.system(size: 13, weight: .medium))
-                                .foregroundColor(.gray.opacity(0.6))
+                                .foregroundColor(.inkMuted.opacity(0.6))
                             TextField("예: 프로젝트 제출", text: $title)
                                 .font(.system(size: 17))
-                                .foregroundColor(.orange.opacity(0.9))
+                                .foregroundColor(.ember.opacity(0.9))
                                 .padding(14)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color.white.opacity(0.04))
+                                        .fill(Color.ink.opacity(0.04))
                                         .overlay(RoundedRectangle(cornerRadius: 12)
-                                            .stroke(Color.orange.opacity(0.15), lineWidth: 1))
+                                            .stroke(Color.ember.opacity(0.15), lineWidth: 1))
                                 )
                         }
                         .padding(.horizontal, 20)
@@ -243,20 +243,19 @@ struct DeadlineFormView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("시작 시간")
                                 .font(.system(size: 13, weight: .medium))
-                                .foregroundColor(.gray.opacity(0.6))
+                                .foregroundColor(.inkMuted.opacity(0.6))
                             DatePicker("", selection: $startDate, displayedComponents: [.date, .hourAndMinute])
                                 .datePickerStyle(.compact)
-                                .colorScheme(.dark)
-                                .tint(.orange)
+                                .tint(.ember)
                                 .labelsHidden()
                                 .padding(.horizontal, 14)
                                 .padding(.vertical, 10)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color.white.opacity(0.04))
+                                        .fill(Color.ink.opacity(0.04))
                                         .overlay(RoundedRectangle(cornerRadius: 12)
-                                            .stroke(Color.orange.opacity(0.15), lineWidth: 1))
+                                            .stroke(Color.ember.opacity(0.15), lineWidth: 1))
                                 )
                         }
                         .padding(.horizontal, 20)
@@ -265,15 +264,14 @@ struct DeadlineFormView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("마감일")
                                 .font(.system(size: 13, weight: .medium))
-                                .foregroundColor(.gray.opacity(0.6))
+                                .foregroundColor(.inkMuted.opacity(0.6))
                             DatePicker("", selection: $targetDate)
                                 .datePickerStyle(.graphical)
-                                .colorScheme(.dark)
-                                .tint(.orange)
+                                .tint(.ember)
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color.white.opacity(0.04))
+                                        .fill(Color.ink.opacity(0.04))
                                 )
                         }
                         .padding(.horizontal, 20)
@@ -301,12 +299,12 @@ struct DeadlineFormView: View {
                         dismiss()
                     }
                     .font(.system(size: 16, weight: .semibold))
-                    .foregroundColor(title.isEmpty ? .gray : .orange)
+                    .foregroundColor(title.isEmpty ? .inkMuted : .ember)
                     .disabled(title.isEmpty)
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("취소") { dismiss() }
-                        .foregroundColor(.gray)
+                        .foregroundColor(.inkMuted)
                 }
             }
         }

@@ -17,13 +17,16 @@ struct SettingsView: View {
 
     @ScaledMetric private var headerIconSize: CGFloat = 44
     @ScaledMetric private var sectionIconSize: CGFloat = 14
+    @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
+    private var appTheme: AppTheme { AppTheme(rawValue: appThemeRaw) ?? .system }
+
     @ScaledMetric private var rowFontSize: CGFloat = 15
     @ScaledMetric private var captionFontSize: CGFloat = 11
 
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04)
+                Color.appBackgroundWarm
                     .ignoresSafeArea()
 
                 ScrollView {
@@ -32,15 +35,15 @@ struct SettingsView: View {
                         VStack(spacing: 10) {
                             Image(systemName: "flame.fill")
                                 .font(.system(size: 44))
-                                .foregroundColor(.orange.opacity(0.6))
+                                .foregroundColor(.ember.opacity(0.6))
 
                             Text("시간 설정")
                                 .font(.system(size: 22, weight: .semibold, design: .serif))
-                                .foregroundColor(.orange.opacity(0.8))
+                                .foregroundColor(.ember.opacity(0.8))
 
                             Text("기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다")
                                 .font(.system(size: 14))
-                                .foregroundColor(.gray)
+                                .foregroundColor(.inkMuted)
                                 .multilineTextAlignment(.center)
                         }
                         .padding(.top, 16)
@@ -65,7 +68,7 @@ struct SettingsView: View {
                         VStack(alignment: .leading, spacing: 12) {
                             Text("추천 취침 시간")
                                 .font(.system(size: 13, weight: .medium))
-                                .foregroundColor(.gray)
+                                .foregroundColor(.inkMuted)
 
                             HStack(spacing: 10) {
                                 presetButton(hour: 22, minute: 0)
@@ -87,6 +90,9 @@ struct SettingsView: View {
                         // 인디케이터 설정
                         indicatorSection
 
+                        // 화면 테마
+                        appearanceSection
+
                         // 프로
                         proSection
 
@@ -102,7 +108,7 @@ struct SettingsView: View {
                             Label("다이나믹 아일랜드로 실시간 확인", systemImage: "island.fill")
                         }
                         .font(.system(size: 12))
-                        .foregroundColor(.gray.opacity(0.6))
+                        .foregroundColor(.inkMuted.opacity(0.6))
                         .padding(.top, 8)
                         .padding(.bottom, 20)
                     }
@@ -119,11 +125,11 @@ struct SettingsView: View {
                         dismiss()
                     }
                     .font(.system(size: 16, weight: .semibold))
-                    .foregroundColor(.orange)
+                    .foregroundColor(.ember)
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("취소") { dismiss() }
-                        .foregroundColor(.gray)
+                        .foregroundColor(.inkMuted)
                 }
             }
         }
@@ -146,10 +152,10 @@ struct SettingsView: View {
         return VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 6) {
                 Image(systemName: "square.grid.2x2")
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text("탭 표시")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
 
             VStack(spacing: 0) {
@@ -159,7 +165,7 @@ struct SettingsView: View {
                     HStack {
                         Text(period.displayName)
                             .font(.system(size: 15, design: .serif))
-                            .foregroundColor(isVisible ? .orange.opacity(0.85) : .gray.opacity(0.4))
+                            .foregroundColor(isVisible ? .ember.opacity(0.85) : .inkMuted.opacity(0.4))
                         Spacer()
                         Toggle("", isOn: Binding(
                             get: { isVisible },
@@ -171,27 +177,27 @@ struct SettingsView: View {
                                 }
                             }
                         ))
-                        .tint(.orange)
+                        .tint(.ember)
                     }
                     .padding(.horizontal, 14)
                     .padding(.vertical, 10)
 
                     if period != standardPeriods.last {
-                        Divider().background(Color.orange.opacity(0.08))
+                        Divider().background(Color.ember.opacity(0.08))
                             .padding(.leading, 14)
                     }
                 }
             }
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(Color.ink.opacity(0.03))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
             )
 
             Text("데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다")
                 .font(.system(size: 11))
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.inkMuted.opacity(0.4))
                 .padding(.horizontal, 4)
         }
         .padding(.horizontal, 20)
@@ -214,14 +220,75 @@ struct SettingsView: View {
 
     private var isSymbolMode: Bool { !bedtimeManager.indicatorSymbol.isEmpty }
 
+    // MARK: - Appearance Section (화면 테마)
+
+    private var appearanceSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "circle.lefthalf.filled")
+                    .foregroundColor(.ember.opacity(0.6))
+                Text("화면 테마")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.ember.opacity(0.5))
+            }
+
+            HStack(spacing: 8) {
+                ForEach(AppTheme.allCases) { theme in
+                    themeTab(theme)
+                }
+            }
+            .padding(14)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.ink.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
+            )
+
+            Text("시스템 설정을 고르면 기기의 다크 모드를 그대로 따라갑니다")
+                .font(.system(size: captionFontSize))
+                .foregroundColor(.inkMuted.opacity(0.4))
+                .padding(.horizontal, 4)
+        }
+        .padding(.horizontal, 20)
+    }
+
+    private func themeTab(_ theme: AppTheme) -> some View {
+        let isSelected = appTheme == theme
+        return Button {
+            appThemeRaw = theme.rawValue
+        } label: {
+            VStack(spacing: 8) {
+                Image(systemName: theme.icon)
+                    .font(.system(size: 18))
+                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.45))
+                Text(theme.label)
+                    .font(.system(size: 11))
+                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.4))
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 12)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(isSelected ? Color.ember.opacity(0.12) : Color.ink.opacity(0.03))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1)
+                    )
+            )
+        }
+        .accessibilityLabel(theme.label)
+        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+    }
+
     private var indicatorSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 6) {
                 Image(systemName: "circle.grid.3x3")
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text("페이지 인디케이터")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
 
             VStack(spacing: 0) {
@@ -229,15 +296,15 @@ struct SettingsView: View {
                 HStack {
                     Text("표시")
                         .font(.system(size: 15, design: .serif))
-                        .foregroundColor(bedtimeManager.indicatorVisible ? .orange.opacity(0.85) : .gray.opacity(0.4))
+                        .foregroundColor(bedtimeManager.indicatorVisible ? .ember.opacity(0.85) : .inkMuted.opacity(0.4))
                     Spacer()
                     Toggle("", isOn: $bedtimeManager.indicatorVisible)
-                        .tint(.orange)
+                        .tint(.ember)
                 }
                 .padding(.horizontal, 14)
                 .padding(.vertical, 10)
 
-                Divider().background(Color.orange.opacity(0.08)).padding(.leading, 14)
+                Divider().background(Color.ember.opacity(0.08)).padding(.leading, 14)
 
                 // 모드 선택 (도형 / 심볼)
                 HStack(spacing: 0) {
@@ -264,9 +331,9 @@ struct SettingsView: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(Color.ink.opacity(0.03))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
             )
         }
         .padding(.horizontal, 20)
@@ -283,19 +350,19 @@ struct SettingsView: View {
                     VStack(spacing: 6) {
                         Image(systemName: opt.name)
                             .font(.system(size: 20))
-                            .foregroundColor(isSelected ? .orange : .gray.opacity(0.45))
+                            .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.45))
                         Text(opt.label)
                             .font(.system(size: 10))
-                            .foregroundColor(isSelected ? .orange : .gray.opacity(0.4))
+                            .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.4))
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 10)
                     .background(
                         RoundedRectangle(cornerRadius: 8)
-                            .fill(isSelected ? Color.orange.opacity(0.12) : Color.white.opacity(0.03))
+                            .fill(isSelected ? Color.ember.opacity(0.12) : Color.ink.opacity(0.03))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 8)
-                                    .stroke(isSelected ? Color.orange.opacity(0.4) : Color.clear, lineWidth: 1)
+                                    .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1)
                             )
                     )
                 }
@@ -321,16 +388,16 @@ struct SettingsView: View {
                                 .frame(height: 14)
                             Text(shape.label)
                                 .font(.system(size: 11))
-                                .foregroundColor(isSelected ? .orange : .gray.opacity(0.4))
+                                .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.4))
                         }
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 10)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
-                                .fill(isSelected ? Color.orange.opacity(0.12) : Color.white.opacity(0.03))
+                                .fill(isSelected ? Color.ember.opacity(0.12) : Color.ink.opacity(0.03))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 8)
-                                        .stroke(isSelected ? Color.orange.opacity(0.4) : Color.clear, lineWidth: 1)
+                                        .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1)
                                 )
                         )
                     }
@@ -349,28 +416,28 @@ struct SettingsView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 6) {
                 Image(systemName: "flame.fill")
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text("프로")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
 
             if storeManager.isPro {
                 HStack(spacing: 10) {
                     Image(systemName: "checkmark.seal.fill")
                         .font(.system(size: 16))
-                        .foregroundColor(.orange.opacity(0.85))
+                        .foregroundColor(.ember.opacity(0.85))
                     Text("프로 이용 중이에요. 감사합니다 🔥")
                         .font(.system(size: 14, design: .serif))
-                        .foregroundColor(.orange.opacity(0.85))
+                        .foregroundColor(.ember.opacity(0.85))
                     Spacer()
                 }
                 .padding(14)
                 .background(
                     RoundedRectangle(cornerRadius: 14)
-                        .fill(Color.white.opacity(0.03))
+                        .fill(Color.ink.opacity(0.03))
                         .overlay(RoundedRectangle(cornerRadius: 14)
-                            .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                            .stroke(Color.ember.opacity(0.1), lineWidth: 1))
                 )
             } else {
                 VStack(spacing: 0) {
@@ -378,19 +445,19 @@ struct SettingsView: View {
                         HStack(spacing: 10) {
                             Image(systemName: "sparkles")
                                 .font(.system(size: 14))
-                                .foregroundColor(.orange.opacity(0.7))
+                                .foregroundColor(.ember.opacity(0.7))
                             Text("프로로 업그레이드")
                                 .font(.system(size: 15))
-                                .foregroundColor(.orange.opacity(0.9))
+                                .foregroundColor(.ember.opacity(0.9))
                             Spacer()
                             Image(systemName: "chevron.right")
                                 .font(.system(size: 12))
-                                .foregroundColor(.gray.opacity(0.4))
+                                .foregroundColor(.inkMuted.opacity(0.4))
                         }
                         .padding(14)
                     }
 
-                    Divider().background(Color.orange.opacity(0.08))
+                    Divider().background(Color.ember.opacity(0.08))
                         .padding(.leading, 14)
 
                     Button {
@@ -399,10 +466,10 @@ struct SettingsView: View {
                         HStack(spacing: 10) {
                             Image(systemName: "arrow.clockwise")
                                 .font(.system(size: 14))
-                                .foregroundColor(.orange.opacity(0.7))
+                                .foregroundColor(.ember.opacity(0.7))
                             Text("구매 복원")
                                 .font(.system(size: 15))
-                                .foregroundColor(.orange.opacity(0.9))
+                                .foregroundColor(.ember.opacity(0.9))
                             Spacer()
                         }
                         .padding(14)
@@ -410,14 +477,14 @@ struct SettingsView: View {
                 }
                 .background(
                     RoundedRectangle(cornerRadius: 14)
-                        .fill(Color.white.opacity(0.03))
+                        .fill(Color.ink.opacity(0.03))
                         .overlay(RoundedRectangle(cornerRadius: 14)
-                            .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                            .stroke(Color.ember.opacity(0.1), lineWidth: 1))
                 )
 
                 Text("지난 항아리 열람·데드라인 무제한을 이용해보세요.")
                     .font(.system(size: 11))
-                    .foregroundColor(.gray.opacity(0.4))
+                    .foregroundColor(.inkMuted.opacity(0.4))
                     .padding(.horizontal, 4)
             }
         }
@@ -436,10 +503,10 @@ struct SettingsView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 6) {
                 Image(systemName: "hands.sparkles")
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text("지원")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
 
             VStack(spacing: 0) {
@@ -447,12 +514,12 @@ struct SettingsView: View {
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 6)
-            .tint(.orange)
+            .tint(.ember)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(Color.ink.opacity(0.03))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
             )
         }
         .padding(.horizontal, 20)
@@ -462,10 +529,10 @@ struct SettingsView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 6) {
                 Image(systemName: "envelope")
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text("개발자에게 문의")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
 
             VStack(spacing: 0) {
@@ -475,7 +542,7 @@ struct SettingsView: View {
                     url: "mailto:leeo@kakao.com"
                 )
 
-                Divider().background(Color.orange.opacity(0.08))
+                Divider().background(Color.ember.opacity(0.08))
                     .padding(.leading, 14)
 
                 contactRow(
@@ -486,14 +553,14 @@ struct SettingsView: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(Color.ink.opacity(0.03))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.1), lineWidth: 1))
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
             )
 
             Text("버그 제보와 기능 제안을 환영합니다.")
                 .font(.system(size: 11))
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.inkMuted.opacity(0.4))
                 .padding(.horizontal, 4)
         }
         .padding(.horizontal, 20)
@@ -506,14 +573,14 @@ struct SettingsView: View {
                 HStack {
                     Image(systemName: icon)
                         .font(.system(size: sectionIconSize))
-                        .foregroundColor(.orange.opacity(0.6))
+                        .foregroundColor(.ember.opacity(0.6))
                     Text(title)
                         .font(.system(size: rowFontSize, design: .serif))
-                        .foregroundColor(.orange.opacity(0.85))
+                        .foregroundColor(.ember.opacity(0.85))
                     Spacer()
                     Image(systemName: "arrow.up.right")
                         .font(.system(size: 11))
-                        .foregroundColor(.gray.opacity(0.4))
+                        .foregroundColor(.inkMuted.opacity(0.4))
                 }
                 .padding(.horizontal, 14)
                 .padding(.vertical, 12)
@@ -525,15 +592,15 @@ struct SettingsView: View {
         Button(action: action) {
             Text(title)
                 .font(.system(size: 13, weight: .medium))
-                .foregroundColor(isSelected ? .orange : .gray.opacity(0.45))
+                .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.45))
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 7)
                 .background(
                     RoundedRectangle(cornerRadius: 7)
-                        .fill(isSelected ? Color.orange.opacity(0.12) : Color.clear)
+                        .fill(isSelected ? Color.ember.opacity(0.12) : Color.clear)
                         .overlay(
                             RoundedRectangle(cornerRadius: 7)
-                                .stroke(isSelected ? Color.orange.opacity(0.3) : Color.clear, lineWidth: 1)
+                                .stroke(isSelected ? Color.ember.opacity(0.3) : Color.clear, lineWidth: 1)
                         )
                 )
         }
@@ -544,27 +611,27 @@ struct SettingsView: View {
         switch shape {
         case .dot:
             HStack(spacing: 4) {
-                Circle().fill(Color.orange).frame(width: 8, height: 8)
-                Circle().fill(Color.gray.opacity(0.3)).frame(width: 6, height: 6)
-                Circle().fill(Color.gray.opacity(0.3)).frame(width: 6, height: 6)
+                Circle().fill(Color.ember).frame(width: 8, height: 8)
+                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 6, height: 6)
+                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 6, height: 6)
             }
         case .pill:
             HStack(spacing: 4) {
-                Capsule().fill(Color.orange).frame(width: 18, height: 7)
-                Circle().fill(Color.gray.opacity(0.3)).frame(width: 7, height: 7)
-                Circle().fill(Color.gray.opacity(0.3)).frame(width: 7, height: 7)
+                Capsule().fill(Color.ember).frame(width: 18, height: 7)
+                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 7, height: 7)
+                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 7, height: 7)
             }
         case .line:
             HStack(spacing: 3) {
-                RoundedRectangle(cornerRadius: 2).fill(Color.orange).frame(width: 16, height: 3)
-                RoundedRectangle(cornerRadius: 2).fill(Color.gray.opacity(0.25)).frame(width: 6, height: 3)
-                RoundedRectangle(cornerRadius: 2).fill(Color.gray.opacity(0.25)).frame(width: 6, height: 3)
+                RoundedRectangle(cornerRadius: 2).fill(Color.ember).frame(width: 16, height: 3)
+                RoundedRectangle(cornerRadius: 2).fill(Color.inkMuted.opacity(0.25)).frame(width: 6, height: 3)
+                RoundedRectangle(cornerRadius: 2).fill(Color.inkMuted.opacity(0.25)).frame(width: 6, height: 3)
             }
         case .bar:
             HStack(spacing: 3) {
-                RoundedRectangle(cornerRadius: 3).fill(Color.orange).frame(width: 12, height: 5)
-                RoundedRectangle(cornerRadius: 3).fill(Color.gray.opacity(0.25)).frame(width: 12, height: 5)
-                RoundedRectangle(cornerRadius: 3).fill(Color.gray.opacity(0.25)).frame(width: 12, height: 5)
+                RoundedRectangle(cornerRadius: 3).fill(Color.ember).frame(width: 12, height: 5)
+                RoundedRectangle(cornerRadius: 3).fill(Color.inkMuted.opacity(0.25)).frame(width: 12, height: 5)
+                RoundedRectangle(cornerRadius: 3).fill(Color.inkMuted.opacity(0.25)).frame(width: 12, height: 5)
             }
         }
     }
@@ -575,17 +642,17 @@ struct SettingsView: View {
         VStack(spacing: 10) {
             HStack(spacing: 6) {
                 Image(systemName: icon)
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text(title)
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
 
             HStack(spacing: 0) {
                 Picker("시", selection: hour) {
                     ForEach(0..<24, id: \.self) { h in
                         Text(hourLabel(h))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.ember)
                             .tag(h)
                     }
                 }
@@ -594,12 +661,12 @@ struct SettingsView: View {
 
                 Text(":")
                     .font(.system(size: 30, weight: .light))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
 
                 Picker("분", selection: minute) {
                     ForEach(0..<12, id: \.self) { idx in
                         Text(String(format: "%02d", idx * 5))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.ember)
                             .tag(idx * 5)
                     }
                 }
@@ -610,10 +677,10 @@ struct SettingsView: View {
             .padding(.vertical, 8)
             .background(
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(Color.ink.opacity(0.03))
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
-                            .stroke(Color.orange.opacity(0.1), lineWidth: 1)
+                            .stroke(Color.ember.opacity(0.1), lineWidth: 1)
                     )
             )
         }
@@ -634,11 +701,11 @@ struct SettingsView: View {
         } label: {
             Text(label)
                 .font(.system(size: captionFontSize, weight: .medium))
-                .foregroundColor(isSelected ? .black : .orange.opacity(0.7))
+                .foregroundColor(isSelected ? .onEmber : .ember.opacity(0.7))
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
                 .background(
-                    Capsule().fill(isSelected ? Color.orange : Color.orange.opacity(0.1))
+                    Capsule().fill(isSelected ? Color.ember : Color.ember.opacity(0.1))
                 )
         }
         .accessibilityLabel("취침 시간 \(ampm) \(h12)시\(minStr)")

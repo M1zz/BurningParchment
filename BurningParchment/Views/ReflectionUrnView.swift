@@ -225,8 +225,8 @@ struct MixedAshUrnVisual: View {
                             endPoint: .bottomTrailing
                         )
                     )
-                    .overlay(UrnShape().stroke(Color.orange.opacity(0.3), lineWidth: 1))
-                    .shadow(color: .orange.opacity(0.15), radius: 12)
+                    .overlay(UrnShape().stroke(Color.ember.opacity(0.3), lineWidth: 1))
+                    .shadow(color: .ember.opacity(0.15), radius: 12)
 
                 // 재 (안쪽 클립)
                 ashLayer(in: size)
@@ -239,7 +239,7 @@ struct MixedAshUrnVisual: View {
                         style: StrokeStyle(lineWidth: 0.9, lineCap: .round, lineJoin: .round)
                     )
                     .shadow(
-                        color: Color.orange.opacity(hasMeaning && fillLevel >= 0.85 ? 0.45 : 0.0),
+                        color: Color.ember.opacity(hasMeaning && fillLevel >= 0.85 ? 0.45 : 0.0),
                         radius: hasMeaning && fillLevel >= 0.85 ? 3 : 0
                     )
                     .clipShape(UrnShape())
@@ -247,7 +247,7 @@ struct MixedAshUrnVisual: View {
 
                 // 입구 빛
                 UrnShape()
-                    .stroke(Color.orange.opacity(0.55), lineWidth: 0.8)
+                    .stroke(Color.ember.opacity(0.55), lineWidth: 0.8)
                     .blur(radius: 0.5)
                     .mask(
                         Rectangle()
@@ -431,7 +431,7 @@ struct AshUrnButton: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 1)
-                        .background(Capsule().fill(Color.orange))
+                        .background(Capsule().fill(Color.ember))
                         .offset(x: 6, y: -2)
                 }
             }
@@ -478,7 +478,7 @@ struct ReflectionUrnView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+            Color.appBackgroundWarm.ignoresSafeArea()
 
             if reflectionManager.reflections.isEmpty {
                 emptyState
@@ -508,7 +508,7 @@ struct ReflectionUrnView: View {
                     } label: {
                         Image(systemName: "chart.dots.scatter")
                             .font(.system(size: 17))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.ember)
                     }
                     .accessibilityLabel("재의 흐름 보기")
 
@@ -518,7 +518,7 @@ struct ReflectionUrnView: View {
                     } label: {
                         Image(systemName: "book.closed.fill")
                             .font(.system(size: 17))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.ember)
                     }
                     .accessibilityLabel("회고 책으로 보기")
                 }
@@ -564,10 +564,10 @@ struct ReflectionUrnView: View {
 
             Text("아직 담긴 재가 없어요")
                 .font(.system(size: 17, weight: .medium, design: .serif))
-                .foregroundColor(.gray.opacity(0.55))
+                .foregroundColor(.inkMuted.opacity(0.55))
             Text("항아리는 이미 준비돼 있어요.\n첫 재는 \(period.title) 항아리에 담깁니다.")
                 .font(.system(size: 12, design: .serif))
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.inkMuted.opacity(0.4))
                 .multilineTextAlignment(.center)
 
             Button {
@@ -578,12 +578,12 @@ struct ReflectionUrnView: View {
                     Text("첫 재 담기")
                 }
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(.orange)
+                .foregroundColor(.ember)
                 .padding(.vertical, 10)
                 .padding(.horizontal, 18)
                 .background(
-                    Capsule().fill(Color.orange.opacity(0.15))
-                        .overlay(Capsule().stroke(Color.orange.opacity(0.35), lineWidth: 1))
+                    Capsule().fill(Color.ember.opacity(0.15))
+                        .overlay(Capsule().stroke(Color.ember.opacity(0.35), lineWidth: 1))
                 )
             }
             .padding(.top, 8)
@@ -604,16 +604,16 @@ struct ReflectionUrnView: View {
                     Text("모아둔 재")
                         .font(.system(size: 12, weight: .semibold))
                 }
-                .foregroundColor(.orange.opacity(0.75))
+                .foregroundColor(.ember.opacity(0.75))
 
                 Text(gapQuestion(gap.days))
                     .font(.system(size: 16, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.92))
+                    .foregroundColor(.ember.opacity(0.92))
                     .fixedSize(horizontal: false, vertical: true)
 
                 Text("\(rangeLabel(gap)) — 아직 어느 항아리에도 담기지 않은 시간이에요.")
                     .font(.system(size: 11, design: .serif))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
                     .fixedSize(horizontal: false, vertical: true)
 
                 // 흩어져 있는 재 더미 — 날려버리면 이게 날아간다.
@@ -633,12 +633,12 @@ struct ReflectionUrnView: View {
                             Text("날려버리기")
                         }
                         .font(.system(size: 13, weight: .medium))
-                        .foregroundColor(.gray.opacity(0.75))
+                        .foregroundColor(.inkMuted.opacity(0.75))
                         .padding(.vertical, 9)
                         .frame(maxWidth: .infinity)
                         .background(
-                            Capsule().fill(Color.white.opacity(0.05))
-                                .overlay(Capsule().stroke(Color.gray.opacity(0.28), lineWidth: 1))
+                            Capsule().fill(Color.ink.opacity(0.05))
+                                .overlay(Capsule().stroke(Color.inkMuted.opacity(0.28), lineWidth: 1))
                         )
                     }
 
@@ -653,7 +653,7 @@ struct ReflectionUrnView: View {
                         .foregroundColor(Color(red: 0.10, green: 0.07, blue: 0.05))
                         .padding(.vertical, 9)
                         .frame(maxWidth: .infinity)
-                        .background(Capsule().fill(Color.orange.opacity(0.9)))
+                        .background(Capsule().fill(Color.ember.opacity(0.9)))
                     }
                 }
                 .padding(.top, 2)
@@ -663,9 +663,9 @@ struct ReflectionUrnView: View {
             .padding(14)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.035))
+                    .fill(Color.ink.opacity(0.035))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.20 * (1 - blowAway)), lineWidth: 1))
+                        .stroke(Color.ember.opacity(0.20 * (1 - blowAway)), lineWidth: 1))
             )
             .padding(.horizontal, 16)
             .transition(.opacity.combined(with: .move(edge: .top)))
@@ -753,23 +753,23 @@ struct ReflectionUrnView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("\(period.title) 항아리에 재 \(count)톨이 남았어요")
                             .font(.system(size: 13, weight: .semibold, design: .serif))
-                            .foregroundColor(.orange.opacity(0.9))
+                            .foregroundColor(.ember.opacity(0.9))
                             .multilineTextAlignment(.leading)
                         Text("이 주는 당신에게 어떤 의미였나요?")
                             .font(.system(size: 12, design: .serif))
-                            .foregroundColor(.gray.opacity(0.6))
+                            .foregroundColor(.inkMuted.opacity(0.6))
                     }
                     Spacer(minLength: 0)
                     Image(systemName: "square.and.pencil")
                         .font(.system(size: 14))
-                        .foregroundColor(.orange.opacity(0.7))
+                        .foregroundColor(.ember.opacity(0.7))
                 }
                 .padding(14)
                 .background(
                     RoundedRectangle(cornerRadius: 14)
-                        .fill(Color.orange.opacity(0.07))
+                        .fill(Color.ember.opacity(0.07))
                         .overlay(RoundedRectangle(cornerRadius: 14)
-                            .stroke(Color.orange.opacity(0.22), lineWidth: 1))
+                            .stroke(Color.ember.opacity(0.22), lineWidth: 1))
                 )
             }
             .buttonStyle(.plain)
@@ -836,11 +836,11 @@ struct ReflectionUrnView: View {
         VStack(alignment: .leading, spacing: 2) {
             Text(title)
                 .font(.system(size: 13, weight: .semibold, design: .serif))
-                .foregroundColor(.orange.opacity(0.8))
+                .foregroundColor(.ember.opacity(0.8))
             if !subtitle.isEmpty {
                 Text(subtitle)
                     .font(.system(size: 11, design: .serif))
-                    .foregroundColor(.gray.opacity(0.45))
+                    .foregroundColor(.inkMuted.opacity(0.45))
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -866,21 +866,21 @@ struct ReflectionUrnView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(period.title)
                     .font(.system(size: 15, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(locked ? 0.5 : 0.88))
+                    .foregroundColor(.ember.opacity(locked ? 0.5 : 0.88))
 
                 if locked {
                     Text("1년보다 오래된 항아리는 프로에서 열려요")
                         .font(.system(size: 11, design: .serif))
-                        .foregroundColor(.gray.opacity(0.5))
+                        .foregroundColor(.inkMuted.opacity(0.5))
                 } else if let meaning {
                     Text(meaning.displayName)
                         .font(.system(size: 12, design: .serif))
-                        .foregroundColor(.gray.opacity(0.65))
+                        .foregroundColor(.inkMuted.opacity(0.65))
                         .lineLimit(1)
                 } else {
                     Text("아직 이름 없는 재")
                         .font(.system(size: 12, design: .serif))
-                        .foregroundColor(.gray.opacity(0.4))
+                        .foregroundColor(.inkMuted.opacity(0.4))
                 }
             }
 
@@ -889,19 +889,19 @@ struct ReflectionUrnView: View {
             VStack(alignment: .trailing, spacing: 6) {
                 Text("재 \(count)톨")
                     .font(.system(size: 11, design: .monospaced))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
                 Image(systemName: locked ? "lock.fill" : "chevron.right")
                     .font(.system(size: 11, weight: .semibold))
-                    .foregroundColor(locked ? .gray.opacity(0.45) : .orange.opacity(0.5))
+                    .foregroundColor(locked ? .inkMuted.opacity(0.45) : .ember.opacity(0.5))
             }
         }
         .padding(14)
         .frame(maxWidth: .infinity)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
                 .overlay(RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.orange.opacity(locked ? 0.05 : 0.10), lineWidth: 1))
+                    .stroke(Color.ember.opacity(locked ? 0.05 : 0.10), lineWidth: 1))
         )
         .contentShape(RoundedRectangle(cornerRadius: 14))
         .accessibilityElement(children: .ignore)
@@ -930,11 +930,11 @@ struct ReflectionUrnView: View {
                         .background(
                             Circle()
                                 .fill(LinearGradient(
-                                    colors: [Color.orange, Color(red: 0.85, green: 0.40, blue: 0.20)],
+                                    colors: [Color.ember, Color(red: 0.85, green: 0.40, blue: 0.20)],
                                     startPoint: .topLeading, endPoint: .bottomTrailing
                                 ))
                         )
-                        .shadow(color: .orange.opacity(0.35), radius: 14, y: 4)
+                        .shadow(color: .ember.opacity(0.35), radius: 14, y: 4)
                 }
                 .padding(.trailing, 22)
                 .padding(.bottom, 22)
@@ -954,7 +954,7 @@ struct AshInsightsView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+            Color.appBackgroundWarm.ignoresSafeArea()
 
             if reflectionManager.reflections.isEmpty {
                 emptyState
@@ -982,13 +982,13 @@ struct AshInsightsView: View {
         VStack(spacing: 12) {
             Image(systemName: "chart.dots.scatter")
                 .font(.system(size: 48))
-                .foregroundColor(.orange.opacity(0.22))
+                .foregroundColor(.ember.opacity(0.22))
             Text("아직 흘러간 재가 없어요")
                 .font(.system(size: 16, weight: .medium, design: .serif))
-                .foregroundColor(.gray.opacity(0.55))
+                .foregroundColor(.inkMuted.opacity(0.55))
             Text("재를 몇 톨 담으면\n분포와 잔불 달력이 여기에 나타나요.")
                 .font(.system(size: 12, design: .serif))
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.inkMuted.opacity(0.4))
                 .multilineTextAlignment(.center)
         }
     }
@@ -1013,7 +1013,7 @@ struct ReflectionRow: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.text)
                     .font(.system(size: 14, design: .serif))
-                    .foregroundColor(.orange.opacity(0.88))
+                    .foregroundColor(.ember.opacity(0.88))
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: true)
 
@@ -1021,7 +1021,7 @@ struct ReflectionRow: View {
                     if let periodLabel {
                         Text(periodLabel)
                             .font(.system(size: 10, weight: .medium))
-                            .foregroundColor(.orange.opacity(0.65))
+                            .foregroundColor(.ember.opacity(0.65))
                     }
                     if item.category != .uncategorized {
                         Text(item.category.shortLabel)
@@ -1030,14 +1030,14 @@ struct ReflectionRow: View {
                     }
                     Text(item.dateString)
                         .font(.system(size: 10))
-                        .foregroundColor(.gray.opacity(0.45))
+                        .foregroundColor(.inkMuted.opacity(0.45))
                     if let kw = item.keyword, !kw.isEmpty {
                         Text("#\(kw)")
                             .font(.system(size: 10, weight: .medium))
-                            .foregroundColor(.orange.opacity(0.7))
+                            .foregroundColor(.ember.opacity(0.7))
                             .padding(.vertical, 2)
                             .padding(.horizontal, 6)
-                            .background(Capsule().fill(Color.orange.opacity(0.10)))
+                            .background(Capsule().fill(Color.ember.opacity(0.10)))
                     }
                 }
             }
@@ -1047,7 +1047,7 @@ struct ReflectionRow: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
         )
     }
 
@@ -1100,15 +1100,15 @@ struct EmberCalendarView: View {
             weekdayHeader
             dayGrid
             Divider()
-                .background(Color.orange.opacity(0.12))
+                .background(Color.ember.opacity(0.12))
             selectedDayDetail
         }
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
                 .overlay(RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.orange.opacity(0.10), lineWidth: 1))
+                    .stroke(Color.ember.opacity(0.10), lineWidth: 1))
         )
     }
 
@@ -1131,10 +1131,10 @@ struct EmberCalendarView: View {
             HStack(spacing: 6) {
                 Image(systemName: "flame")
                     .font(.system(size: 11))
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text(monthTitle)
                     .font(.system(size: 14, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.85))
+                    .foregroundColor(.ember.opacity(0.85))
             }
 
             Spacer()
@@ -1143,18 +1143,18 @@ struct EmberCalendarView: View {
                 Button { moveMonth(-1) } label: {
                     Image(systemName: "chevron.left")
                         .font(.system(size: 12, weight: .semibold))
-                        .foregroundColor(.orange.opacity(0.7))
+                        .foregroundColor(.ember.opacity(0.7))
                         .frame(width: 30, height: 30)
-                        .background(Circle().fill(Color.white.opacity(0.04)))
+                        .background(Circle().fill(Color.ink.opacity(0.04)))
                 }
                 .accessibilityLabel("이전 달")
 
                 Button { moveMonth(1) } label: {
                     Image(systemName: "chevron.right")
                         .font(.system(size: 12, weight: .semibold))
-                        .foregroundColor(canGoNext ? .orange.opacity(0.7) : .gray.opacity(0.25))
+                        .foregroundColor(canGoNext ? .ember.opacity(0.7) : .inkMuted.opacity(0.25))
                         .frame(width: 30, height: 30)
-                        .background(Circle().fill(Color.white.opacity(0.04)))
+                        .background(Circle().fill(Color.ink.opacity(0.04)))
                 }
                 .disabled(!canGoNext)
                 .accessibilityLabel("다음 달")
@@ -1184,7 +1184,7 @@ struct EmberCalendarView: View {
             ForEach(weekdaySymbols, id: \.self) { symbol in
                 Text(symbol)
                     .font(.system(size: 10, design: .serif))
-                    .foregroundColor(.gray.opacity(0.45))
+                    .foregroundColor(.inkMuted.opacity(0.45))
                     .frame(maxWidth: .infinity)
             }
         }
@@ -1232,14 +1232,14 @@ struct EmberCalendarView: View {
                 Text("\(cal.component(.day, from: day))")
                     .font(.system(size: 9, design: .monospaced))
                     .foregroundColor(isToday
-                        ? .orange.opacity(0.95)
-                        : .gray.opacity(isFuture ? 0.2 : 0.5))
+                        ? .ember.opacity(0.95)
+                        : .inkMuted.opacity(isFuture ? 0.2 : 0.5))
 
                 ZStack {
                     if items.isEmpty {
                         // 꺼진 재
                         Circle()
-                            .fill(Color.white.opacity(isFuture ? 0.03 : 0.10))
+                            .fill(Color.ink.opacity(isFuture ? 0.03 : 0.10))
                             .frame(width: 6, height: 6)
                     } else {
                         // 잔불 — 대표 카테고리 색으로 빛남, 개수만큼 커짐
@@ -1249,7 +1249,7 @@ struct EmberCalendarView: View {
                             .fill(color)
                             .frame(width: size, height: size)
                             .shadow(color: color.opacity(0.9), radius: 3)
-                            .shadow(color: .orange.opacity(0.5), radius: 6)
+                            .shadow(color: .ember.opacity(0.5), radius: 6)
                     }
                 }
                 .frame(height: 12)
@@ -1258,13 +1258,13 @@ struct EmberCalendarView: View {
             .frame(height: 40)
             .background(
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(isSelected ? Color.orange.opacity(0.10) : Color.clear)
+                    .fill(isSelected ? Color.ember.opacity(0.10) : Color.clear)
             )
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(
-                        isToday ? Color.orange.opacity(0.55)
-                        : (isSelected ? Color.orange.opacity(0.30) : Color.clear),
+                        isToday ? Color.ember.opacity(0.55)
+                        : (isSelected ? Color.ember.opacity(0.30) : Color.clear),
                         lineWidth: 1
                     )
             )
@@ -1307,12 +1307,12 @@ struct EmberCalendarView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(selectedDayTitle(sel))
                     .font(.system(size: 12, weight: .medium, design: .serif))
-                    .foregroundColor(.orange.opacity(0.7))
+                    .foregroundColor(.ember.opacity(0.7))
 
                 if items.isEmpty {
                     Text("이 날의 재는 남아 있지 않아요")
                         .font(.system(size: 12, design: .serif))
-                        .foregroundColor(.gray.opacity(0.45))
+                        .foregroundColor(.inkMuted.opacity(0.45))
                         .padding(.vertical, 4)
                 } else {
                     ForEach(items) { item in
@@ -1334,7 +1334,7 @@ struct EmberCalendarView: View {
         } else {
             Text("잔불을 탭하면 그날의 회고가 나와요")
                 .font(.system(size: 11, design: .serif))
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.inkMuted.opacity(0.4))
         }
     }
 
@@ -1365,7 +1365,7 @@ struct UrnDetailView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+            Color.appBackgroundWarm.ignoresSafeArea()
 
             ScrollView {
                 VStack(spacing: 18) {
@@ -1410,7 +1410,7 @@ struct UrnDetailView: View {
 
             Text(period.rangeLabel)
                 .font(.system(size: 12, design: .serif))
-                .foregroundColor(.gray.opacity(0.5))
+                .foregroundColor(.inkMuted.opacity(0.5))
         }
     }
 
@@ -1424,21 +1424,21 @@ struct UrnDetailView: View {
                 HStack(alignment: .firstTextBaseline) {
                     Text(m.displayName)
                         .font(.system(size: 17, weight: .semibold, design: .serif))
-                        .foregroundColor(.orange.opacity(0.92))
+                        .foregroundColor(.ember.opacity(0.92))
                     Spacer(minLength: 8)
                     Button {
                         meaningTarget = period
                     } label: {
                         Text("고쳐 적기")
                             .font(.system(size: 12, weight: .medium))
-                            .foregroundColor(.orange.opacity(0.7))
+                            .foregroundColor(.ember.opacity(0.7))
                     }
                 }
 
                 if !m.trimmedText.isEmpty, m.trimmedText != m.displayName {
                     Text(m.trimmedText)
                         .font(.system(size: 14, design: .serif))
-                        .foregroundColor(.gray.opacity(0.8))
+                        .foregroundColor(.inkMuted.opacity(0.8))
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -1447,25 +1447,25 @@ struct UrnDetailView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.orange.opacity(0.07))
+                    .fill(Color.ember.opacity(0.07))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.22), lineWidth: 1))
+                        .stroke(Color.ember.opacity(0.22), lineWidth: 1))
             )
             .padding(.horizontal, 16)
         } else {
             VStack(alignment: .leading, spacing: 10) {
                 Text("아직은 그냥 재예요")
                     .font(.system(size: 15, weight: .semibold, design: .serif))
-                    .foregroundColor(.gray.opacity(0.7))
+                    .foregroundColor(.inkMuted.opacity(0.7))
 
                 Text("여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요.")
                     .font(.system(size: 12, design: .serif))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
                     .fixedSize(horizontal: false, vertical: true)
 
                 Text(meaningQuestion)
                     .font(.system(size: 15, weight: .medium, design: .serif))
-                    .foregroundColor(.orange.opacity(0.88))
+                    .foregroundColor(.ember.opacity(0.88))
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 2)
 
@@ -1478,12 +1478,12 @@ struct UrnDetailView: View {
                         Text("의미 적기")
                             .font(.system(size: 14, weight: .semibold, design: .serif))
                     }
-                    .foregroundColor(.orange)
+                    .foregroundColor(.ember)
                     .padding(.vertical, 9)
                     .padding(.horizontal, 16)
                     .background(
-                        Capsule().fill(Color.orange.opacity(0.15))
-                            .overlay(Capsule().stroke(Color.orange.opacity(0.35), lineWidth: 1))
+                        Capsule().fill(Color.ember.opacity(0.15))
+                            .overlay(Capsule().stroke(Color.ember.opacity(0.35), lineWidth: 1))
                     )
                 }
                 .padding(.top, 2)
@@ -1492,9 +1492,9 @@ struct UrnDetailView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(Color.ink.opacity(0.03))
                     .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.gray.opacity(0.15), style: StrokeStyle(lineWidth: 1, dash: [4])))
+                        .stroke(Color.inkMuted.opacity(0.15), style: StrokeStyle(lineWidth: 1, dash: [4])))
             )
             .padding(.horizontal, 16)
         }
@@ -1519,16 +1519,16 @@ struct UrnDetailView: View {
                         .frame(width: 10, height: 10)
                     Text("\(counts[cat] ?? 0)")
                         .font(.system(size: 14, weight: .semibold, design: .monospaced))
-                        .foregroundColor(.orange.opacity(hasMeaning ? 0.85 : 0.45))
+                        .foregroundColor(.ember.opacity(hasMeaning ? 0.85 : 0.45))
                     Text(cat.shortLabel)
                         .font(.system(size: 10))
-                        .foregroundColor(.gray.opacity(0.55))
+                        .foregroundColor(.inkMuted.opacity(0.55))
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white.opacity(0.025))
+                        .fill(Color.ink.opacity(0.025))
                 )
             }
         }
@@ -1542,7 +1542,7 @@ struct UrnDetailView: View {
         return VStack(alignment: .leading, spacing: 10) {
             Text("이 달의 주 항아리")
                 .font(.system(size: 13, weight: .semibold, design: .serif))
-                .foregroundColor(.orange.opacity(0.8))
+                .foregroundColor(.ember.opacity(0.8))
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())],
@@ -1577,20 +1577,20 @@ struct UrnDetailView: View {
 
             Text(week.shortTitle)
                 .font(.system(size: 12, weight: .semibold, design: .serif))
-                .foregroundColor(.orange.opacity(0.85))
+                .foregroundColor(.ember.opacity(0.85))
 
             Text(m?.displayName ?? String(localized: "재 \(count)톨"))
                 .font(.system(size: 10, design: .serif))
-                .foregroundColor(.gray.opacity(m == nil ? 0.45 : 0.7))
+                .foregroundColor(.inkMuted.opacity(m == nil ? 0.45 : 0.7))
                 .lineLimit(1)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
                 .overlay(RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.orange.opacity(0.08), lineWidth: 1))
+                    .stroke(Color.ember.opacity(0.08), lineWidth: 1))
         )
         .contentShape(RoundedRectangle(cornerRadius: 12))
         .accessibilityElement(children: .ignore)
@@ -1608,13 +1608,13 @@ struct UrnDetailView: View {
         if items.isEmpty {
             Text("이 항아리는 비어 있어요.")
                 .font(.system(size: 13, design: .serif))
-                .foregroundColor(.gray.opacity(0.5))
+                .foregroundColor(.inkMuted.opacity(0.5))
                 .padding(.top, 12)
         } else {
             VStack(alignment: .leading, spacing: 8) {
                 Text("담긴 재")
                     .font(.system(size: 13, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.8))
+                    .foregroundColor(.ember.opacity(0.8))
 
                 ForEach(items) { item in
                     ReflectionRow(item: item, muted: !hasMeaning)
@@ -1660,7 +1660,7 @@ struct UrnMeaningEditView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+                Color.appBackgroundWarm.ignoresSafeArea()
 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
@@ -1679,12 +1679,12 @@ struct UrnMeaningEditView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("취소") { dismiss() }
-                        .foregroundColor(.gray)
+                        .foregroundColor(.inkMuted)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("새기기") { save() }
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(canSave ? .orange : .gray)
+                        .foregroundColor(canSave ? .ember : .inkMuted)
                         .disabled(!canSave)
                 }
             }
@@ -1717,13 +1717,13 @@ struct UrnMeaningEditView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(period.title)
                     .font(.system(size: 17, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.9))
+                    .foregroundColor(.ember.opacity(0.9))
                 Text(period.rangeLabel)
                     .font(.system(size: 11, design: .serif))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
                 Text("재 \(count)톨")
                     .font(.system(size: 11, design: .monospaced))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
             }
             Spacer(minLength: 0)
         }
@@ -1739,7 +1739,7 @@ struct UrnMeaningEditView: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("이 항아리에 남은 것들")
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(.gray.opacity(0.55))
+                    .foregroundColor(.inkMuted.opacity(0.55))
 
                 ForEach(items.prefix(6)) { item in
                     HStack(alignment: .top, spacing: 8) {
@@ -1749,7 +1749,7 @@ struct UrnMeaningEditView: View {
                             .padding(.top, 6)
                         Text(item.text)
                             .font(.system(size: 13, design: .serif))
-                            .foregroundColor(.gray.opacity(0.75))
+                            .foregroundColor(.inkMuted.opacity(0.75))
                             .fixedSize(horizontal: false, vertical: true)
                         Spacer(minLength: 0)
                     }
@@ -1758,7 +1758,7 @@ struct UrnMeaningEditView: View {
                 if items.count > 6 {
                     Text("외 \(items.count - 6)톨")
                         .font(.system(size: 11, design: .serif))
-                        .foregroundColor(.gray.opacity(0.4))
+                        .foregroundColor(.inkMuted.opacity(0.4))
                         .padding(.leading, 13)
                 }
             }
@@ -1766,7 +1766,7 @@ struct UrnMeaningEditView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.white.opacity(0.025))
+                    .fill(Color.ink.opacity(0.025))
             )
         }
     }
@@ -1777,26 +1777,26 @@ struct UrnMeaningEditView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(question)
                 .font(.system(size: 15, weight: .semibold, design: .serif))
-                .foregroundColor(.orange.opacity(0.9))
+                .foregroundColor(.ember.opacity(0.9))
                 .fixedSize(horizontal: false, vertical: true)
 
             Text("항아리에 새길 한 마디")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.55))
+                .foregroundColor(.inkMuted.opacity(0.55))
 
             TextField("예: 버텨낸 주", text: $name)
                 .font(.system(size: 17, design: .serif))
-                .foregroundColor(.orange.opacity(0.95))
-                .tint(.orange)
+                .foregroundColor(.ember.opacity(0.95))
+                .tint(.ember)
                 .focused($focusedField, equals: .name)
                 .submitLabel(.next)
                 .onSubmit { focusedField = .body }
                 .padding(14)
                 .background(
                     RoundedRectangle(cornerRadius: 12)
-                        .fill(Color.white.opacity(0.05))
+                        .fill(Color.ink.opacity(0.05))
                         .overlay(RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.orange.opacity(focusedField == .name ? 0.35 : 0.18), lineWidth: 1))
+                            .stroke(Color.ember.opacity(focusedField == .name ? 0.35 : 0.18), lineWidth: 1))
                 )
         }
     }
@@ -1805,20 +1805,20 @@ struct UrnMeaningEditView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("조금 더 적어두고 싶다면 (선택)")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.55))
+                .foregroundColor(.inkMuted.opacity(0.55))
 
             TextField("여기 쌓인 재가 나에게 무엇이었는지…", text: $text, axis: .vertical)
                 .lineLimit(3...10)
                 .font(.system(size: 15, design: .serif))
-                .foregroundColor(.orange.opacity(0.9))
-                .tint(.orange)
+                .foregroundColor(.ember.opacity(0.9))
+                .tint(.ember)
                 .focused($focusedField, equals: .body)
                 .padding(14)
                 .background(
                     RoundedRectangle(cornerRadius: 12)
-                        .fill(Color.white.opacity(0.04))
+                        .fill(Color.ink.opacity(0.04))
                         .overlay(RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.orange.opacity(focusedField == .body ? 0.35 : 0.15), lineWidth: 1))
+                            .stroke(Color.ember.opacity(focusedField == .body ? 0.35 : 0.15), lineWidth: 1))
                 )
         }
     }
@@ -1834,7 +1834,7 @@ struct UrnMeaningEditView: View {
                 Text("의미 지우기")
                     .font(.system(size: 13, weight: .medium))
             }
-            .foregroundColor(.red.opacity(0.7))
+            .foregroundColor(.emberDeep.opacity(0.7))
         }
         .accessibilityHint("이 항아리를 다시 이름 없는 재로 되돌립니다")
     }
@@ -1902,7 +1902,7 @@ struct ReflectionInputView: View {
 
     var body: some View {
         ZStack(alignment: .top) {
-            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+            Color.appBackgroundWarm.ignoresSafeArea()
 
             VStack(spacing: 0) {
                 chromeBar
@@ -1934,11 +1934,10 @@ struct ReflectionInputView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("날짜")
                                     .font(.system(size: 12, weight: .medium))
-                                    .foregroundColor(.gray.opacity(0.55))
+                                    .foregroundColor(.inkMuted.opacity(0.55))
                                 DatePicker("", selection: $date, displayedComponents: [.date])
                                     .datePickerStyle(.compact)
-                                    .colorScheme(.dark)
-                                    .tint(.orange)
+                                    .tint(.ember)
                                     .labelsHidden()
                             }
                             .padding(.horizontal, 22)
@@ -1981,7 +1980,7 @@ struct ReflectionInputView: View {
             } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 16, weight: .semibold))
-                    .foregroundColor(.gray.opacity(0.75))
+                    .foregroundColor(.inkMuted.opacity(0.75))
                     .frame(width: 38, height: 38)
             }
             .accessibilityLabel("닫기 — 지금까지 적은 내용은 저장됩니다")
@@ -2011,7 +2010,7 @@ struct ReflectionInputView: View {
                 Text("자동 저장")
                     .font(.system(size: 11, design: .serif))
             }
-            .foregroundColor(.gray.opacity(0.35))
+            .foregroundColor(.inkMuted.opacity(0.35))
             .accessibilityLabel("아직 적힌 내용이 없습니다")
 
         case .scheduled:
@@ -2021,7 +2020,7 @@ struct ReflectionInputView: View {
                 Text("저장 중…")
                     .font(.system(size: 11, design: .serif))
             }
-            .foregroundColor(.orange.opacity(0.7))
+            .foregroundColor(.ember.opacity(0.7))
             .accessibilityLabel("저장 중")
 
         case .saved:
@@ -2031,7 +2030,7 @@ struct ReflectionInputView: View {
                 Text("저장됨")
                     .font(.system(size: 11, weight: .medium, design: .serif))
             }
-            .foregroundColor(Color(red: 0.30, green: 0.78, blue: 0.42))
+            .foregroundColor(.successInk)
             .accessibilityLabel("저장됨")
         }
     }
@@ -2057,7 +2056,7 @@ struct ReflectionInputView: View {
                     goTo(step)
                 } label: {
                     Circle()
-                        .fill(step == currentStep ? Color.orange : Color.orange.opacity(0.18))
+                        .fill(step == currentStep ? Color.ember : Color.ember.opacity(0.18))
                         .frame(width: step == currentStep ? 8 : 5,
                                height: step == currentStep ? 8 : 5)
                 }
@@ -2085,12 +2084,12 @@ struct ReflectionInputView: View {
                 Image(systemName: nextIcon)
                     .font(.system(size: 11, weight: .semibold))
             }
-            .foregroundColor(canAdvance ? .white : .gray.opacity(0.4))
+            .foregroundColor(canAdvance ? .white : .inkMuted.opacity(0.4))
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
             .background(
                 Capsule()
-                    .fill(canAdvance ? Color.orange.opacity(0.85) : Color.white.opacity(0.04))
+                    .fill(canAdvance ? Color.ember.opacity(0.85) : Color.ink.opacity(0.04))
             )
         }
         .disabled(!canAdvance)
@@ -2109,15 +2108,15 @@ struct ReflectionInputView: View {
                 Text("새 회고")
                     .font(.system(size: 14, weight: .semibold, design: .serif))
             }
-            .foregroundColor(canAdvance ? .orange.opacity(0.9) : .gray.opacity(0.4))
+            .foregroundColor(canAdvance ? .ember.opacity(0.9) : .inkMuted.opacity(0.4))
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
             .background(
                 Capsule()
-                    .fill(Color.white.opacity(0.04))
+                    .fill(Color.ink.opacity(0.04))
                     .overlay(
                         Capsule().stroke(
-                            canAdvance ? Color.orange.opacity(0.45) : Color.orange.opacity(0.15),
+                            canAdvance ? Color.ember.opacity(0.45) : Color.ember.opacity(0.15),
                             lineWidth: 1
                         )
                     )
@@ -2144,7 +2143,7 @@ struct ReflectionInputView: View {
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
             .background(
-                Capsule().fill(Color.orange.opacity(0.85))
+                Capsule().fill(Color.ember.opacity(0.85))
             )
         }
         .accessibilityLabel("닫기")
@@ -2248,16 +2247,16 @@ struct ReflectionInputView: View {
         .lineLimit(1...8)
         .focused($focusedField, equals: .body)
         .font(.system(size: 20, design: .serif))
-        .foregroundColor(.orange.opacity(0.95))
-        .tint(.orange)
+        .foregroundColor(.ember.opacity(0.95))
+        .tint(.ember)
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white.opacity(0.05))
+                .fill(Color.ink.opacity(0.05))
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.orange.opacity(focusedField == .body ? 0.35 : 0.18), lineWidth: 1)
+                        .stroke(Color.ember.opacity(focusedField == .body ? 0.35 : 0.18), lineWidth: 1)
                 )
         )
         .toolbar {
@@ -2265,7 +2264,7 @@ struct ReflectionInputView: View {
                 Spacer()
                 Button("다음") { if canAdvance { advance() } }
                     .font(.system(size: 15, weight: .semibold))
-                    .foregroundColor(canAdvance ? .orange : .gray.opacity(0.4))
+                    .foregroundColor(canAdvance ? .ember : .inkMuted.opacity(0.4))
                     .disabled(!canAdvance)
             }
         }
@@ -2284,13 +2283,13 @@ struct ReflectionInputView: View {
                 .font(.system(size: 12, weight: .medium, design: .serif))
                 .lineLimit(1)
         }
-        .foregroundColor(.orange.opacity(0.6))
+        .foregroundColor(.ember.opacity(0.6))
         .padding(.horizontal, 10)
         .padding(.vertical, 5)
         .background(
             Capsule()
-                .fill(Color.white.opacity(0.04))
-                .overlay(Capsule().stroke(Color.orange.opacity(0.16), lineWidth: 1))
+                .fill(Color.ink.opacity(0.04))
+                .overlay(Capsule().stroke(Color.ember.opacity(0.16), lineWidth: 1))
         )
         .accessibilityLabel("\(destinationPeriod.title) 항아리에 담깁니다")
     }
@@ -2318,12 +2317,12 @@ struct ReflectionInputView: View {
                     .frame(width: 9, height: 9)
                 Text("→ \(cat.title)")
                     .font(.system(size: 13, weight: .medium, design: .serif))
-                    .foregroundColor(.orange.opacity(0.85))
+                    .foregroundColor(.ember.opacity(0.85))
             }
         } else {
             Text("오늘은 어떤 하루였나요? — 콕 찍어보세요")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.6))
+                .foregroundColor(.inkMuted.opacity(0.6))
         }
     }
 
@@ -2341,7 +2340,7 @@ struct ReflectionInputView: View {
         VStack(alignment: .leading, spacing: 6) {
             Text(title)
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.orange.opacity(0.75))
+                .foregroundColor(.ember.opacity(0.75))
             HStack(spacing: 8) {
                 togglePill(label: yesLabel, isOn: value.wrappedValue == true) { value.wrappedValue = true }
                 togglePill(label: noLabel,  isOn: value.wrappedValue == false) { value.wrappedValue = false }
@@ -2353,13 +2352,13 @@ struct ReflectionInputView: View {
         Button(action: action) {
             Text(label)
                 .font(.system(size: 13, weight: isOn ? .semibold : .regular))
-                .foregroundColor(isOn ? .orange : .gray.opacity(0.65))
+                .foregroundColor(isOn ? .ember : .inkMuted.opacity(0.65))
                 .padding(.vertical, 8)
                 .padding(.horizontal, 14)
                 .background(
                     Capsule()
-                        .fill(isOn ? Color.orange.opacity(0.15) : Color.white.opacity(0.04))
-                        .overlay(Capsule().stroke(isOn ? Color.orange.opacity(0.45) : Color.orange.opacity(0.10), lineWidth: 1))
+                        .fill(isOn ? Color.ember.opacity(0.15) : Color.ink.opacity(0.04))
+                        .overlay(Capsule().stroke(isOn ? Color.ember.opacity(0.45) : Color.ember.opacity(0.10), lineWidth: 1))
                 )
         }
     }
@@ -2368,17 +2367,17 @@ struct ReflectionInputView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("키워드 (선택)")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.55))
+                .foregroundColor(.inkMuted.opacity(0.55))
 
             TextField("", text: $keyword)
                 .font(.system(size: 14))
-                .foregroundColor(.orange.opacity(0.9))
+                .foregroundColor(.ember.opacity(0.9))
                 .padding(12)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white.opacity(0.04))
+                        .fill(Color.ink.opacity(0.04))
                         .overlay(RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.orange.opacity(0.15), lineWidth: 1))
+                            .stroke(Color.ember.opacity(0.15), lineWidth: 1))
                 )
 
             ScrollView(.horizontal, showsIndicators: false) {
@@ -2387,13 +2386,13 @@ struct ReflectionInputView: View {
                         Button { keyword = s } label: {
                             Text("#\(s)")
                                 .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(keyword == s ? .orange : .gray.opacity(0.6))
+                                .foregroundColor(keyword == s ? .ember : .inkMuted.opacity(0.6))
                                 .padding(.vertical, 5)
                                 .padding(.horizontal, 10)
                                 .background(
                                     Capsule().fill(keyword == s
-                                        ? Color.orange.opacity(0.15)
-                                        : Color.white.opacity(0.05))
+                                        ? Color.ember.opacity(0.15)
+                                        : Color.ink.opacity(0.05))
                                 )
                         }
                     }
@@ -2409,29 +2408,29 @@ struct ReflectionInputView: View {
             HStack(spacing: 6) {
                 Image(systemName: "sunrise")
                     .font(.system(size: 11))
-                    .foregroundColor(.orange.opacity(0.7))
+                    .foregroundColor(.ember.opacity(0.7))
                 Text(tomorrowQuestion)
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(.gray.opacity(0.65))
+                    .foregroundColor(.inkMuted.opacity(0.65))
             }
 
             TextField(tomorrowPlaceholder, text: $tomorrowIntent)
                 .font(.system(size: 14, design: .serif))
-                .foregroundColor(.orange.opacity(0.9))
+                .foregroundColor(.ember.opacity(0.9))
                 .focused($focusedField, equals: .tomorrow)
                 .submitLabel(.done)
                 .onSubmit { flushPendingSave(); dismiss() }
                 .padding(12)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white.opacity(0.04))
+                        .fill(Color.ink.opacity(0.04))
                         .overlay(RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.orange.opacity(0.18), lineWidth: 1))
+                            .stroke(Color.ember.opacity(0.18), lineWidth: 1))
                 )
 
             Text("내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요.")
                 .font(.system(size: 10))
-                .foregroundColor(.gray.opacity(0.45))
+                .foregroundColor(.inkMuted.opacity(0.45))
         }
     }
 
@@ -2668,14 +2667,14 @@ struct ClassificationGraph: View {
     private var pinView: some View {
         ZStack {
             Circle()
-                .fill(Color.orange.opacity(0.35))
+                .fill(Color.ember.opacity(0.35))
                 .frame(width: 28, height: 28)
                 .blur(radius: 4)
             Circle()
-                .fill(Color.white)
+                .fill(Color.ink)
                 .frame(width: 14, height: 14)
-                .overlay(Circle().stroke(Color.orange, lineWidth: 2.5))
-                .shadow(color: .orange.opacity(0.6), radius: 4)
+                .overlay(Circle().stroke(Color.ember, lineWidth: 2.5))
+                .shadow(color: .ember.opacity(0.6), radius: 4)
         }
     }
 }
@@ -2727,7 +2726,7 @@ struct ClassificationGraphBackground: View {
         }
         .overlay(
             Rectangle()
-                .stroke(Color.orange.opacity(0.20), lineWidth: 1)
+                .stroke(Color.ember.opacity(0.20), lineWidth: 1)
                 .frame(width: size, height: size)
         )
     }
@@ -2745,7 +2744,7 @@ struct ClassificationGraphBackground: View {
                     p.addLine(to: CGPoint(x: size, y: v))
                 }
             }
-            .stroke(Color.orange.opacity(0.10), style: StrokeStyle(lineWidth: 0.4, dash: [1, 3]))
+            .stroke(Color.ember.opacity(0.10), style: StrokeStyle(lineWidth: 0.4, dash: [1, 3]))
 
             // 4분면 주축 — 더 진하게
             Path { p in
@@ -2754,7 +2753,7 @@ struct ClassificationGraphBackground: View {
                 p.move(to: CGPoint(x: 0, y: size / 2))
                 p.addLine(to: CGPoint(x: size, y: size / 2))
             }
-            .stroke(Color.orange.opacity(0.22), style: StrokeStyle(lineWidth: 0.6, dash: [3, 3]))
+            .stroke(Color.ember.opacity(0.22), style: StrokeStyle(lineWidth: 0.6, dash: [3, 3]))
         }
     }
 
@@ -2793,23 +2792,23 @@ struct ClassificationGraphBackground: View {
         ZStack {
             Text("시간을 들였다")
                 .font(.system(size: 10, design: .serif))
-                .foregroundColor(.gray.opacity(0.7))
+                .foregroundColor(.inkMuted.opacity(0.7))
                 .position(x: size / 2, y: 12)
 
             Text("시간을 안 들였다")
                 .font(.system(size: 10, design: .serif))
-                .foregroundColor(.gray.opacity(0.7))
+                .foregroundColor(.inkMuted.opacity(0.7))
                 .position(x: size / 2, y: size - 12)
 
             Text("의지\n없음")
                 .font(.system(size: 10, design: .serif))
-                .foregroundColor(.gray.opacity(0.7))
+                .foregroundColor(.inkMuted.opacity(0.7))
                 .multilineTextAlignment(.center)
                 .position(x: 22, y: size / 2)
 
             Text("의지\n있음")
                 .font(.system(size: 10, design: .serif))
-                .foregroundColor(.gray.opacity(0.7))
+                .foregroundColor(.inkMuted.opacity(0.7))
                 .multilineTextAlignment(.center)
                 .position(x: size - 22, y: size / 2)
         }
@@ -2850,7 +2849,7 @@ struct ReflectionDistributionView: View {
             if plotted.isEmpty {
                 Text("아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요.")
                     .font(.system(size: 12, design: .serif))
-                    .foregroundColor(.gray.opacity(0.45))
+                    .foregroundColor(.inkMuted.opacity(0.45))
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity, alignment: .center)
             } else {
@@ -2862,9 +2861,9 @@ struct ReflectionDistributionView: View {
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
                 .overlay(RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.orange.opacity(0.10), lineWidth: 1))
+                    .stroke(Color.ember.opacity(0.10), lineWidth: 1))
         )
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("재의 분포")
@@ -2945,10 +2944,10 @@ struct ReflectionDistributionView: View {
             HStack(spacing: 6) {
                 Image(systemName: "chart.dots.scatter")
                     .font(.system(size: 11))
-                    .foregroundColor(.orange.opacity(0.6))
+                    .foregroundColor(.ember.opacity(0.6))
                 Text("재의 분포")
                     .font(.system(size: 14, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.85))
+                    .foregroundColor(.ember.opacity(0.85))
             }
 
             Spacer()
@@ -2960,14 +2959,14 @@ struct ReflectionDistributionView: View {
                     } label: {
                         Text(s.title)
                             .font(.system(size: 11, weight: scope == s ? .semibold : .regular))
-                            .foregroundColor(scope == s ? .orange : .gray.opacity(0.55))
+                            .foregroundColor(scope == s ? .ember : .inkMuted.opacity(0.55))
                             .padding(.vertical, 5)
                             .padding(.horizontal, 10)
                             .background(
                                 Capsule()
-                                    .fill(scope == s ? Color.orange.opacity(0.14) : Color.white.opacity(0.04))
+                                    .fill(scope == s ? Color.ember.opacity(0.14) : Color.ink.opacity(0.04))
                                     .overlay(Capsule().stroke(
-                                        scope == s ? Color.orange.opacity(0.40) : Color.clear,
+                                        scope == s ? Color.ember.opacity(0.40) : Color.clear,
                                         lineWidth: 1))
                             )
                     }
@@ -3058,7 +3057,7 @@ struct ReflectionDistributionView: View {
     private var centroidMarker: some View {
         ZStack {
             Circle()
-                .stroke(Color.white.opacity(0.7), lineWidth: 1.2)
+                .stroke(Color.ink.opacity(0.7), lineWidth: 1.2)
                 .frame(width: 11, height: 11)
             Path { p in
                 p.move(to: CGPoint(x: 5.5, y: -3))
@@ -3070,7 +3069,7 @@ struct ReflectionDistributionView: View {
                 p.move(to: CGPoint(x: 9, y: 5.5))
                 p.addLine(to: CGPoint(x: 14, y: 5.5))
             }
-            .stroke(Color.white.opacity(0.5), lineWidth: 1)
+            .stroke(Color.ink.opacity(0.5), lineWidth: 1)
             .frame(width: 11, height: 11)
         }
     }
@@ -3088,7 +3087,7 @@ struct ReflectionDistributionView: View {
             }
         }
         .font(.system(size: 10, design: .serif))
-        .foregroundColor(.gray.opacity(0.4))
+        .foregroundColor(.inkMuted.opacity(0.4))
     }
 
     private var accessibilitySummary: String {

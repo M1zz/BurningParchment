@@ -1263,6 +1263,23 @@
         }
       }
     },
+    "다크": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다크"
+          }
+        }
+      }
+    },
     "닫기": {
       "localizations": {
         "en": {
@@ -1527,6 +1544,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "두 축에 따라 손가락으로 콕 찍어 분류합니다"
+          }
+        }
+      }
+    },
+    "라이트": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Light"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "라이트"
           }
         }
       }
@@ -2265,6 +2299,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "시간을 안 들였다"
+          }
+        }
+      }
+    },
+    "시스템 설정": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정"
+          }
+        }
+      }
+    },
+    "시스템 설정을 고르면 기기의 다크 모드를 그대로 따라갑니다": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose System to follow your device's dark mode setting"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정을 고르면 기기의 다크 모드를 그대로 따라갑니다"
           }
         }
       }
@@ -4856,6 +4924,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "해냄"
+          }
+        }
+      }
+    },
+    "화면 테마": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화면 테마"
           }
         }
       }

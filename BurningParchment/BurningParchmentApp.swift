@@ -13,6 +13,10 @@ struct BurningParchmentApp: App {
     @StateObject private var excuseManager     = BedtimeExcuseManager()
     @StateObject private var storeManager      = StoreManager()
 
+    // 테마는 화면 전체에 걸리는 설정이라 최상위에서 읽어 Scene 에 그대로 건다.
+    @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
+    private var appTheme: AppTheme { AppTheme(rawValue: appThemeRaw) ?? .system }
+
     init() {
         // 계약(BurningParchmentSpec)에 선언한 것을 전부 켠다 —
         // 사용량 기록·분석 싱크·MetricKit 크래시 진단·사용현황 스냅샷, DEBUG 에선 프리플라이트 감사까지.
@@ -27,7 +31,7 @@ struct BurningParchmentApp: App {
                 .environmentObject(reflectionManager)
                 .environmentObject(excuseManager)
                 .environmentObject(storeManager)
-                .preferredColorScheme(.dark)
+                .preferredColorScheme(appTheme.colorScheme)
                 .leeoSatisfactionCheck(BurningParchmentSpec.self)
         }
     }

@@ -24,7 +24,7 @@ struct ReflectionBookView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.06, green: 0.05, blue: 0.03).ignoresSafeArea()
+            Color.appBackgroundWarm.ignoresSafeArea()
 
             if pages.isEmpty {
                 emptyState
@@ -51,7 +51,7 @@ struct ReflectionBookView: View {
                 if !pages.isEmpty {
                     Text("\(currentPage + 1) / \(pages.count)")
                         .font(.system(size: 12, design: .monospaced))
-                        .foregroundColor(.orange.opacity(0.6))
+                        .foregroundColor(.ember.opacity(0.6))
                 }
             }
         }
@@ -73,13 +73,13 @@ struct ReflectionBookView: View {
         VStack(spacing: 14) {
             Image(systemName: "book.closed")
                 .font(.system(size: 52))
-                .foregroundColor(.orange.opacity(0.3))
+                .foregroundColor(.ember.opacity(0.3))
             Text("아직 첫 페이지에요")
                 .font(.system(size: 16, weight: .medium, design: .serif))
-                .foregroundColor(.gray.opacity(0.6))
+                .foregroundColor(.inkMuted.opacity(0.6))
             Text("회고를 하나라도 담으면\n이 책이 채워져요.")
                 .font(.system(size: 12, design: .serif))
-                .foregroundColor(.gray.opacity(0.45))
+                .foregroundColor(.inkMuted.opacity(0.45))
                 .multilineTextAlignment(.center)
         }
     }
@@ -90,14 +90,14 @@ struct ReflectionBookView: View {
         HStack(spacing: 5) {
             ForEach(0..<min(pages.count, 30), id: \.self) { i in
                 Circle()
-                    .fill(i == currentPage ? Color.orange : Color.gray.opacity(0.3))
+                    .fill(i == currentPage ? Color.ember : Color.inkMuted.opacity(0.3))
                     .frame(width: i == currentPage ? 7 : 5,
                            height: i == currentPage ? 7 : 5)
             }
             if pages.count > 30 {
                 Text("…")
                     .font(.system(size: 10))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
             }
         }
     }
@@ -143,7 +143,7 @@ struct ReflectionBookView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.brown.opacity(0.35), lineWidth: 1)
                 )
-                .shadow(color: .black.opacity(0.45), radius: 12, y: 6)
+                .shadow(color: .appShadow.opacity(0.45), radius: 12, y: 6)
         )
     }
 

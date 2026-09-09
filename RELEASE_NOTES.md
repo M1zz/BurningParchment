@@ -1,5 +1,26 @@
 # 릴리즈 노트
 
+## 1.1.0
+
+### App Store "이번 버전의 새로운 기능" — 한국어
+
+```
+라이트 모드가 생겼습니다
+설정에서 화면 테마를 고를 수 있어요
+기기의 다크 모드를 그대로 따라갈 수도 있어요
+```
+
+### App Store "What's New" — English
+
+⚠️ App Store 페이지에 영어 현지화를 아직 추가하지 않았다면 올릴 자리가 없습니다.
+App Store Connect ▸ 앱 정보 ▸ 현지화에서 영어를 추가하면 그대로 올라갑니다.
+
+```
+Light mode is here
+Choose your theme in Settings
+Or just follow your device setting
+```
+
 ## 1.0.9 (build 1)
 
 App Store Connect v1.0.9 에 실제로 올린 문구입니다.

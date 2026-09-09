@@ -51,7 +51,7 @@ enum BurningParchmentSpec: LeeoAppSpec {
             .minimalPermissions,// 요청 권한은 알림 하나뿐 (카메라·위치·연락처 등 없음)
             .accessibility,     // 주요 화면 VoiceOver 라벨/값/힌트
             .localization,      // 한국어·영어 (String Catalog)
-            .darkMode,          // 다크 전용 디자인
+            .darkMode,          // 라이트·다크 테마 + 시스템 설정 따르기 (설정 ▸ 화면 테마)
             .microInteractions, // 햅틱 피드백 (회고 저장·드래그 앤 드랍 등)
             .pushNotifications, // 취침·저녁 회고 넛지 (로컬 알림 기반 재참여)
             .widgets,           // 홈 위젯 + 잠금 화면 위젯 + Live Activity

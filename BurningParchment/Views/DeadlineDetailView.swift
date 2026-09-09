@@ -29,7 +29,7 @@ struct DeadlineDetailView: View {
 
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea()
+            Color.appBackground.ignoresSafeArea()
 
             GeometryReader { geo in
                 let size = geo.size
@@ -95,9 +95,9 @@ struct DeadlineDetailView: View {
             Button { dismiss() } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 15, weight: .medium))
-                    .foregroundColor(.gray.opacity(0.6))
+                    .foregroundColor(.inkMuted.opacity(0.6))
                     .padding(10)
-                    .background(Circle().fill(Color.white.opacity(0.07)))
+                    .background(Circle().fill(Color.ink.opacity(0.07)))
             }
 
             Spacer()
@@ -106,7 +106,7 @@ struct DeadlineDetailView: View {
                 Text(deadline.emoji).font(.system(size: 22))
                 Text(deadline.title)
                     .font(.system(size: 15, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.85))
+                    .foregroundColor(.ember.opacity(0.85))
                     .lineLimit(1)
             }
 
@@ -122,9 +122,9 @@ struct DeadlineDetailView: View {
             } label: {
                 Image(systemName: "ellipsis")
                     .font(.system(size: 15, weight: .medium))
-                    .foregroundColor(.gray.opacity(0.6))
+                    .foregroundColor(.inkMuted.opacity(0.6))
                     .padding(10)
-                    .background(Circle().fill(Color.white.opacity(0.07)))
+                    .background(Circle().fill(Color.ink.opacity(0.07)))
             }
         }
         .padding(.horizontal, 16)
@@ -137,12 +137,12 @@ struct DeadlineDetailView: View {
         VStack(spacing: 14) {
             Text("마감까지 남은 시간")
                 .font(.system(size: 13, weight: .medium, design: .serif))
-                .foregroundColor(.orange.opacity(0.6))
+                .foregroundColor(.ember.opacity(0.6))
 
             if deadline.isExpired() {
                 Text("마감 완료 🏁")
                     .font(.system(size: 32, weight: .light, design: .serif))
-                    .foregroundColor(.gray.opacity(0.6))
+                    .foregroundColor(.inkMuted.opacity(0.6))
             } else {
                 remainingDisplay
             }
@@ -153,10 +153,10 @@ struct DeadlineDetailView: View {
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {
                         RoundedRectangle(cornerRadius: 4)
-                            .fill(Color.white.opacity(0.08))
+                            .fill(Color.ink.opacity(0.08))
                             .frame(height: 8)
                         RoundedRectangle(cornerRadius: 4)
-                            .fill(LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing))
+                            .fill(LinearGradient(colors: [.ember, .emberDeep], startPoint: .leading, endPoint: .trailing))
                             .frame(width: geo.size.width * currentProgress, height: 8)
                     }
                 }
@@ -167,7 +167,7 @@ struct DeadlineDetailView: View {
 
             Text("\(Int((1.0 - currentProgress) * 100))% 남음")
                 .font(.system(size: 12, weight: .medium, design: .serif))
-                .foregroundColor(.gray.opacity(0.6))
+                .foregroundColor(.inkMuted.opacity(0.6))
 
             HStack(spacing: 6) {
                 Text(deadline.startDateString)
@@ -175,7 +175,7 @@ struct DeadlineDetailView: View {
                 Text(deadline.targetDateString)
             }
             .font(.system(size: 11, design: .serif))
-            .foregroundColor(.gray.opacity(0.35))
+            .foregroundColor(.inkMuted.opacity(0.35))
         }
         .padding(.bottom, 28)
     }
@@ -186,7 +186,7 @@ struct DeadlineDetailView: View {
         if rem >= 86400 {
             Text(deadline.remainingString(at: Date()))
                 .font(.system(size: 36, weight: .ultraLight, design: .serif))
-                .foregroundColor(.orange.opacity(0.9))
+                .foregroundColor(.ember.opacity(0.9))
         } else {
             let h = rem / 3600
             let m = (rem % 3600) / 60
@@ -194,10 +194,10 @@ struct DeadlineDetailView: View {
             HStack(alignment: .firstTextBaseline, spacing: 3) {
                 TimeDigitView(value: h, label: "h")
                 Text(":").font(.system(size: 34, weight: .light, design: .serif))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
                 TimeDigitView(value: m, label: "m")
                 Text(":").font(.system(size: 34, weight: .light, design: .serif))
-                    .foregroundColor(.orange.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
                 TimeDigitView(value: s, label: "s")
             }
         }
@@ -211,8 +211,8 @@ struct DeadlineDetailView: View {
         let cy = min(0.5, max(0.1, 0.5 - k * 0.15))
         return RadialGradient(
             colors: [
-                Color.orange.opacity(0.28 + 0.10 * sin(phase * 2.0)),
-                Color.red.opacity(0.14),
+                Color.emberGlow.opacity(0.28 + 0.10 * sin(phase * 2.0)),
+                Color.emberGlowDeep.opacity(0.14),
                 Color.clear
             ],
             center: UnitPoint(x: cx, y: cy),
@@ -281,7 +281,7 @@ struct DeadlineDetailView: View {
             shape.stroke(Color.brown.opacity(0.2), lineWidth: 1)
         }
         .frame(width: pw, height: ph)
-        .shadow(color: .black.opacity(0.5), radius: 15, y: 8)
+        .shadow(color: .appShadow.opacity(0.5), radius: 15, y: 8)
     }
 
     // MARK: - Visual: Flame
@@ -338,7 +338,7 @@ struct DeadlineDetailView: View {
             }
         }
         .blur(radius: 2.5)
-        .blendMode(.screen)
+        .fireBlend()
         .allowsHitTesting(false)
     }
 

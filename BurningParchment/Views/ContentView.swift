@@ -48,8 +48,8 @@ struct ContentView: View {
         let k = 2.0 * (1.0 - progress)
         RadialGradient(
             colors: [
-                Color.orange.opacity(0.18 + progress * 0.07),
-                Color.red.opacity(0.07),
+                Color.emberGlow.opacity(0.18 + progress * 0.07),
+                Color.emberGlowDeep.opacity(0.07),
                 Color.clear
             ],
             center: UnitPoint(
@@ -65,7 +65,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.black.ignoresSafeArea()
+                Color.appBackground.ignoresSafeArea()
 
                 if bedtimeManager.selectedPeriod != .day || bedtimeManager.isCountdownActive {
                     fullScreenGlow
@@ -167,16 +167,16 @@ struct ContentView: View {
                 HStack(spacing: 5) {
                     Image(systemName: "scroll")
                         .font(.system(size: 10))
-                        .foregroundColor(.orange.opacity(0.75))
+                        .foregroundColor(.ember.opacity(0.75))
                     Text("어제 못한 것")
                         .font(.system(size: 11, weight: .medium, design: .serif))
-                        .foregroundColor(.orange.opacity(0.75))
+                        .foregroundColor(.ember.opacity(0.75))
                 }
                 ForEach(Array(intents.prefix(3).enumerated()), id: \.offset) { _, item in
                     HStack(alignment: .top, spacing: 6) {
                         Text("·")
                             .font(.system(size: 12, weight: .bold))
-                            .foregroundColor(.orange.opacity(0.6))
+                            .foregroundColor(.ember.opacity(0.6))
                         Text(item.intent)
                             .font(.system(size: 12, design: .serif))
                             .foregroundColor(Color(red: 0.45, green: 0.32, blue: 0.18))
@@ -187,7 +187,7 @@ struct ContentView: View {
                 if intents.count > 3 {
                     Text("외 \(intents.count - 3)개")
                         .font(.system(size: 10, design: .serif))
-                        .foregroundColor(.orange.opacity(0.5))
+                        .foregroundColor(.ember.opacity(0.5))
                 }
             }
             .padding(.vertical, 8)
@@ -232,28 +232,28 @@ struct ContentView: View {
                 HStack(spacing: 10) {
                     Image(systemName: "moon.stars.fill")
                         .font(.system(size: 13))
-                        .foregroundColor(.orange.opacity(0.85))
+                        .foregroundColor(.ember.opacity(0.85))
                     VStack(alignment: .leading, spacing: 2) {
                         Text("오늘 한 줄, 남기고 잘까요?")
                             .font(.system(size: 13, weight: .medium, design: .serif))
-                            .foregroundColor(.orange.opacity(0.92))
+                            .foregroundColor(.ember.opacity(0.92))
                         Text("재 항아리에 담아주세요")
                             .font(.system(size: 10))
-                            .foregroundColor(.gray.opacity(0.6))
+                            .foregroundColor(.inkMuted.opacity(0.6))
                     }
                     Spacer(minLength: 8)
                     Image(systemName: "chevron.right")
                         .font(.system(size: 11, weight: .semibold))
-                        .foregroundColor(.orange.opacity(0.55))
+                        .foregroundColor(.ember.opacity(0.55))
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal, 14)
                 .background(
                     Capsule()
                         .fill(.ultraThinMaterial)
-                        .overlay(Capsule().stroke(Color.orange.opacity(0.35), lineWidth: 1))
+                        .overlay(Capsule().stroke(Color.ember.opacity(0.35), lineWidth: 1))
                 )
-                .shadow(color: .orange.opacity(0.2), radius: 10, y: 2)
+                .shadow(color: .ember.opacity(0.2), radius: 10, y: 2)
             }
             .padding(.horizontal, 24)
             .padding(.bottom, 6)
@@ -345,28 +345,28 @@ struct ContentView: View {
         if !bedtimeManager.indicatorSymbol.isEmpty {
             Image(systemName: bedtimeManager.indicatorSymbol)
                 .font(.system(size: isActive ? 11 : 8))
-                .foregroundColor(isActive ? .orange : .gray.opacity(0.3))
+                .foregroundColor(isActive ? .ember : .inkMuted.opacity(0.3))
                 .animation(.easeInOut(duration: 0.2), value: isActive)
         } else {
             switch bedtimeManager.indicatorShape {
             case .dot:
                 Circle()
-                    .fill(isActive ? Color.orange : Color.gray.opacity(0.3))
+                    .fill(isActive ? Color.ember : Color.inkMuted.opacity(0.3))
                     .frame(width: isActive ? 8 : 6, height: isActive ? 8 : 6)
                     .animation(.easeInOut(duration: 0.2), value: isActive)
             case .pill:
                 Capsule()
-                    .fill(isActive ? Color.orange : Color.gray.opacity(0.3))
+                    .fill(isActive ? Color.ember : Color.inkMuted.opacity(0.3))
                     .frame(width: isActive ? 22 : 8, height: 8)
                     .animation(.easeInOut(duration: 0.2), value: isActive)
             case .line:
                 RoundedRectangle(cornerRadius: 2)
-                    .fill(isActive ? Color.orange : Color.gray.opacity(0.25))
+                    .fill(isActive ? Color.ember : Color.inkMuted.opacity(0.25))
                     .frame(width: isActive ? 20 : 6, height: 3)
                     .animation(.easeInOut(duration: 0.2), value: isActive)
             case .bar:
                 RoundedRectangle(cornerRadius: 3)
-                    .fill(isActive ? Color.orange : Color.gray.opacity(0.25))
+                    .fill(isActive ? Color.ember : Color.inkMuted.opacity(0.25))
                     .frame(width: 14, height: 6)
                     .animation(.easeInOut(duration: 0.2), value: isActive)
             }
@@ -378,7 +378,7 @@ struct ContentView: View {
         HStack(alignment: .top) {
             Text(periodTitle)
                 .font(.system(size: 34, weight: .bold, design: .serif))
-                .foregroundColor(.orange.opacity(0.9))
+                .foregroundColor(.ember.opacity(0.9))
                 .animation(reduceMotion ? nil : .easeInOut(duration: 0.2), value: bedtimeManager.selectedPeriod)
                 .accessibilityAddTraits(.isHeader)
                 .accessibilityValue("페이지 \(currentIndex + 1) / \(pages.count)")
@@ -407,7 +407,7 @@ struct ContentView: View {
                 Button(action: { showDeadlines = true }) {
                     Image(systemName: "flag.fill")
                         .font(.system(size: 18))
-                        .foregroundColor(.orange.opacity(0.6))
+                        .foregroundColor(.ember.opacity(0.6))
                 }
                 .accessibilityLabel("데드라인")
                 .accessibilityValue(
@@ -420,7 +420,7 @@ struct ContentView: View {
                 Button(action: { showSettings = true }) {
                     Image(systemName: "gearshape.fill")
                         .font(.system(size: 20))
-                        .foregroundColor(.orange.opacity(0.6))
+                        .foregroundColor(.ember.opacity(0.6))
                 }
                 .accessibilityLabel("시간 설정")
                 .accessibilityHint("기상 및 취침 시간 설정")

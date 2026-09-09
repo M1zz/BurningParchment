@@ -98,7 +98,7 @@ struct BurningParchmentView: View {
                 .fill(parchmentGradient)
                 .frame(width: pw, height: ph)
                 .overlay(Rectangle().stroke(Color.brown.opacity(0.25), lineWidth: 1))
-                .shadow(color: .black.opacity(0.4), radius: 12, y: 8)
+                .shadow(color: .appShadow.opacity(0.4), radius: 12, y: 8)
                 .position(x: size.width / 2, y: oy + ph / 2)
                 .accessibilityHidden(true)
 
@@ -108,14 +108,14 @@ struct BurningParchmentView: View {
                 VStack(spacing: 12) {
                     Image(systemName: "sunrise.fill")
                         .font(.system(size: 32))
-                        .foregroundColor(.orange.opacity(0.5))
+                        .foregroundColor(.ember.opacity(0.5))
                     Text("곧 기상 시간이에요")
                         .font(.system(size: 15, weight: .medium, design: .serif))
-                        .foregroundColor(.gray.opacity(0.7))
+                        .foregroundColor(.inkMuted.opacity(0.7))
                         .multilineTextAlignment(.center)
                     Text("\(sleepRemainingString) 후 양피지가 타기 시작합니다")
                         .font(.system(size: 12, design: .serif))
-                        .foregroundColor(.gray.opacity(0.5))
+                        .foregroundColor(.inkMuted.opacity(0.5))
                         .multilineTextAlignment(.center)
                 }
                 .accessibilityElement(children: .combine)
@@ -134,9 +134,9 @@ struct BurningParchmentView: View {
             // 배경 강렬한 글로우 (1층)
             RadialGradient(
                 colors: [
-                    Color.red.opacity(0.2 + 0.1 * sin(phase * 2.5)),
-                    Color.orange.opacity(0.12 + 0.06 * sin(phase * 3.0)),
-                    Color.red.opacity(0.04),
+                    Color.emberGlowDeep.opacity(0.2 + 0.1 * sin(phase * 2.5)),
+                    Color.emberGlow.opacity(0.12 + 0.06 * sin(phase * 3.0)),
+                    Color.emberGlowDeep.opacity(0.04),
                     Color.clear
                 ],
                 center: .center,
@@ -148,7 +148,7 @@ struct BurningParchmentView: View {
             // 배경 글로우 (2층 - 흔들리는 불빛)
             RadialGradient(
                 colors: [
-                    Color.orange.opacity(0.15 + 0.1 * sin(phase * 4.0)),
+                    Color.emberGlow.opacity(0.15 + 0.1 * sin(phase * 4.0)),
                     Color.clear
                 ],
                 center: UnitPoint(
@@ -298,16 +298,16 @@ struct BurningParchmentView: View {
 
                 Text("수면 중")
                     .font(.system(size: 22, weight: .medium, design: .serif))
-                    .foregroundColor(.orange.opacity(0.7))
+                    .foregroundColor(.ember.opacity(0.7))
 
                 Text("🌙 좋은 꿈 꾸세요")
                     .font(.system(size: 15, design: .serif))
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.inkMuted.opacity(0.5))
 
                 if bedtimeManager.isBeforeWakeTime {
                     Text("기상까지 \(sleepRemainingString)")
                         .font(.system(size: 13, design: .serif))
-                        .foregroundColor(.gray.opacity(0.4))
+                        .foregroundColor(.inkMuted.opacity(0.4))
                         .padding(.top, 4)
                 }
 
@@ -370,7 +370,7 @@ struct BurningParchmentView: View {
                 )
             }
         }
-        .blendMode(.screen)
+        .fireBlend()
         .allowsHitTesting(false)
     }
 
@@ -393,21 +393,21 @@ struct BurningParchmentView: View {
                 if let dl = nearestDeadline {
                     Text("\(dl.emoji) \(dl.title)")
                         .font(.system(size: 13, weight: .medium, design: .serif))
-                        .foregroundColor(.orange.opacity(0.6))
+                        .foregroundColor(.ember.opacity(0.6))
                         .lineLimit(1)
                     Text(dl.remainingString())
                         .font(.system(size: 36, weight: .ultraLight, design: .serif))
-                        .foregroundColor(.orange.opacity(0.9))
+                        .foregroundColor(.ember.opacity(0.9))
                 } else {
                     Text(bedtimeManager.periodLabel)
                         .font(.system(size: 13, weight: .medium, design: .serif))
-                        .foregroundColor(.orange.opacity(0.6))
+                        .foregroundColor(.ember.opacity(0.6))
 
                     Text(bedtimeManager.selectedPeriod == .day
                             ? bedtimeManager.remainingKoreanString
                             : bedtimeManager.periodRemainingString)
                         .font(.system(size: 30, weight: .ultraLight, design: .serif))
-                        .foregroundColor(.orange.opacity(0.9))
+                        .foregroundColor(.ember.opacity(0.9))
                         .monospacedDigit()
                         .minimumScaleFactor(0.7)
                         .lineLimit(1)
@@ -418,11 +418,11 @@ struct BurningParchmentView: View {
             GeometryReader { geo in
                 ZStack(alignment: .trailing) {
                     RoundedRectangle(cornerRadius: 4)
-                        .fill(Color.white.opacity(0.08))
+                        .fill(Color.ink.opacity(0.08))
                         .frame(height: 8)
                     RoundedRectangle(cornerRadius: 4)
                         .fill(LinearGradient(
-                            colors: [.orange, .red.opacity(0.85)],
+                            colors: [.ember, .emberDeep.opacity(0.85)],
                             startPoint: .leading, endPoint: .trailing
                         ))
                         .frame(width: geo.size.width * remaining, height: 8)
@@ -439,7 +439,7 @@ struct BurningParchmentView: View {
                         Image(systemName: startIcon).font(.system(size: 10))
                         Text(startLabel).font(.system(size: 10, design: .serif))
                     }
-                    .foregroundColor(.orange.opacity(0.45))
+                    .foregroundColor(.ember.opacity(0.45))
 
                     Spacer()
 
@@ -447,13 +447,13 @@ struct BurningParchmentView: View {
                         Text(endLabel).font(.system(size: 10, design: .serif))
                         Image(systemName: endIcon).font(.system(size: 10))
                     }
-                    .foregroundColor(.orange.opacity(0.45))
+                    .foregroundColor(.ember.opacity(0.45))
                 }
                 .padding(.horizontal, 32)
 
                 Text("\(Int(remaining * 100))% 남음")
                     .font(.system(size: 12, weight: .medium, design: .serif))
-                    .foregroundColor(.gray.opacity(0.6))
+                    .foregroundColor(.inkMuted.opacity(0.6))
             }
         }
         .padding(.bottom, 28)
@@ -505,8 +505,8 @@ struct BurningParchmentView: View {
 
         return RadialGradient(
             colors: [
-                Color.orange.opacity(0.28 + 0.10 * sin(phase * 2.0)),
-                Color.red.opacity(0.14),
+                Color.emberGlow.opacity(0.28 + 0.10 * sin(phase * 2.0)),
+                Color.emberGlowDeep.opacity(0.14),
                 Color.clear
             ],
             center: UnitPoint(x: cx, y: cy),
@@ -550,7 +550,7 @@ struct BurningParchmentView: View {
             shape.stroke(Color.brown.opacity(0.2), lineWidth: 1)
         }
         .frame(width: pw, height: ph)
-        .shadow(color: .black.opacity(0.5), radius: 15, y: 8)
+        .shadow(color: .appShadow.opacity(0.5), radius: 15, y: 8)
     }
 
     // MARK: - Scorch
@@ -739,7 +739,7 @@ struct BurningParchmentView: View {
             }
         }
         .blur(radius: 2.5)
-        .blendMode(.screen)
+        .fireBlend()
         .allowsHitTesting(false)
     }
 
@@ -1040,7 +1040,7 @@ struct TimeDigitView: View {
     var body: some View {
         Text(String(format: "%02d", value))
             .font(.system(size: 40, weight: .ultraLight, design: .serif))
-            .foregroundColor(.orange.opacity(0.9))
+            .foregroundColor(.ember.opacity(0.9))
             .monospacedDigit()
     }
 }
@@ -1049,7 +1049,7 @@ struct TimeDigitView: View {
 
 #Preview {
     ZStack {
-        Color.black.ignoresSafeArea()
+        Color.appBackground.ignoresSafeArea()
         BurningParchmentView()
             .environmentObject(BedtimeManager())
             .environmentObject(DeadlineManager())

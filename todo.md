@@ -1,5 +1,34 @@
 # todo
 
+## 라이트 모드 · 스토어 영어 (완료)
+- [x] 앱이 `.preferredColorScheme(.dark)` 로 다크를 못박고 있던 것을 설정값으로 바꿈
+      (`AppTheme` = 시스템 설정 / 라이트 / 다크, 기본값은 시스템 설정)
+- [x] `BurningParchment/Theme/Theme.swift` 추가 — 동적 UIColor 로 만든 색 토큰.
+      호출부가 colorScheme 을 읽지 않아도 되고 Canvas·Gradient 안에서도 쓸 수 있다.
+      다크 값은 기존 화면의 색을 그대로 옮겨 와서 다크는 한 픽셀도 안 변한다.
+      appBackground / appBackgroundWarm / ink / inkMuted / ember / emberDeep /
+      emberGlow / emberGlowDeep / onEmber / successInk / appShadow
+- [x] 뷰 9개의 UI 크롬 색(≈500곳)을 토큰으로 교체.
+      **불꽃·재·그을음·양피지는 실제 물질의 색이라 그대로 뒀다** — 촛불은 낮에도 주황색이다
+- [x] `.blendMode(.screen)` → `.fireBlend()`. screen 은 미색 바탕에서 흰색으로 날아가
+      라이트 모드에서 불꽃이 통째로 사라졌었다. 라이트에서는 그냥 겹쳐 그린다
+- [x] DatePicker 3곳의 `.colorScheme(.dark)` 제거 (라이트 테마에서 검은 판이 떴다)
+- [x] AccentColor 에 라이트 변형 추가 (기존 #FF8033 은 미색 위에서 너무 밝다)
+- [x] 설정에 "화면 테마" 섹션 + String Catalog 에 신규 5개 ko/en
+- [x] 시뮬레이터(라이트/다크 × 한국어/영어) 확인 — 주간 양피지·항아리·회고 입력·
+      데드라인 편집(DatePicker)·페이월·설정
+- [x] 스토어 영어: `deploy.env` LOCALES=ko,en · `RELEASE_NOTES.md` 1.1.0 절(ko/en)
+- [x] `scripts/predeploy.sh` 통과
+
+### 남은 일 (사람이 해야 함)
+- App Store Connect ▸ 앱 정보 ▸ 현지화에서 **영어를 추가**해야 en 릴리즈노트가 올라간다.
+  앱을 영어로 번역한 것과 스토어 페이지에 영어를 추가한 것은 별개다.
+- 위젯·Live Activity 는 지금도 고정 다크다. 위젯은 앱의 테마 설정을 볼 수 없어
+  (App Group 에 값을 넣고 뷰마다 colorScheme 을 덮어써야 한다) 앱과 어긋날 수 있어서
+  이번엔 건드리지 않았다. 홈 화면 배경 위에 놓이는 물건이라 고정 디자인도 무리는 아니다.
+- LeeoKit 의 지원 섹션 문구(지원 페이지·개인정보 처리방침·이용약관·사용 통계)는
+  한국어만 있다. 영어 기기에서도 한국어로 뜬다 — LeeoKit 쪽 번역이 필요하다.
+
 ## 한국어 로케일 표기 정상화 (완료)
 - [x] 원인 파악: 앱 로컬라이제이션 설정(developmentRegion/sourceLanguage = ko)은 정상,
       시각 표기에서 "AM"/"PM", "5h 24m" 이 코드에 영어로 하드코딩돼 있었음

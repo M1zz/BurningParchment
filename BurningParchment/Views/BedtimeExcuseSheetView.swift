@@ -19,7 +19,7 @@ struct BedtimeExcuseSheetView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 0.07, green: 0.05, blue: 0.03).ignoresSafeArea()
+                Color.appBackgroundWarm.ignoresSafeArea()
 
                 ScrollView {
                     VStack(spacing: 28) {
@@ -37,7 +37,7 @@ struct BedtimeExcuseSheetView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("닫기") { dismiss() }
-                        .foregroundColor(.gray.opacity(0.6))
+                        .foregroundColor(.inkMuted.opacity(0.6))
                         .font(.system(size: 15))
                 }
             }
@@ -55,13 +55,13 @@ struct BedtimeExcuseSheetView: View {
 
             Text("오늘 하루를\n마치지 못 했군요")
                 .font(.system(size: 26, weight: .light, design: .serif))
-                .foregroundColor(.orange.opacity(0.88))
+                .foregroundColor(.ember.opacity(0.88))
                 .multilineTextAlignment(.center)
                 .lineSpacing(4)
 
             Text("오늘 하루를 마치지 못 한 이유는\n무엇인가요?")
                 .font(.system(size: 14, design: .serif))
-                .foregroundColor(.gray.opacity(0.6))
+                .foregroundColor(.inkMuted.opacity(0.6))
                 .multilineTextAlignment(.center)
                 .lineSpacing(3)
         }
@@ -74,10 +74,10 @@ struct BedtimeExcuseSheetView: View {
             HStack(spacing: 6) {
                 Image(systemName: "clock.arrow.circlepath")
                     .font(.system(size: 11))
-                    .foregroundColor(.orange.opacity(0.55))
+                    .foregroundColor(.ember.opacity(0.55))
                 Text("이번 주에도 반복되고 있어요")
                     .font(.system(size: 12, weight: .medium, design: .serif))
-                    .foregroundColor(.orange.opacity(0.65))
+                    .foregroundColor(.ember.opacity(0.65))
             }
 
             VStack(spacing: 8) {
@@ -89,10 +89,10 @@ struct BedtimeExcuseSheetView: View {
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
                 .overlay(
                     RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.orange.opacity(0.13), lineWidth: 1)
+                        .stroke(Color.ember.opacity(0.13), lineWidth: 1)
                 )
         )
     }
@@ -121,20 +121,20 @@ struct BedtimeExcuseSheetView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(.gray.opacity(0.55))
+                .foregroundColor(.inkMuted.opacity(0.55))
 
             ZStack(alignment: .topLeading) {
                 if text.wrappedValue.isEmpty {
                     Text(placeholder)
                         .font(.system(size: 15, design: .serif))
-                        .foregroundColor(.gray.opacity(0.28))
+                        .foregroundColor(.inkMuted.opacity(0.28))
                         .padding(.top, 12)
                         .padding(.leading, 14)
                         .allowsHitTesting(false)
                 }
                 TextEditor(text: text)
                     .font(.system(size: 15, design: .serif))
-                    .foregroundColor(.orange.opacity(0.85))
+                    .foregroundColor(.ember.opacity(0.85))
                     .scrollContentBackground(.hidden)
                     .focused($focus, equals: field)
                     .frame(minHeight: 90)
@@ -143,13 +143,13 @@ struct BedtimeExcuseSheetView: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.white.opacity(0.035))
+                    .fill(Color.ink.opacity(0.035))
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .stroke(
                                 focus == field
-                                    ? Color.orange.opacity(0.45)
-                                    : Color.orange.opacity(0.13),
+                                    ? Color.ember.opacity(0.45)
+                                    : Color.ember.opacity(0.13),
                                 lineWidth: 1
                             )
                     )
@@ -168,12 +168,12 @@ struct BedtimeExcuseSheetView: View {
             } label: {
                 Text("기록하기")
                     .font(.system(size: 16, weight: .semibold, design: .serif))
-                    .foregroundColor(canSave ? .black : .gray.opacity(0.5))
+                    .foregroundColor(canSave ? .onEmber : .inkMuted.opacity(0.5))
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 15)
                     .background(
                         Capsule()
-                            .fill(canSave ? Color.orange : Color.gray.opacity(0.15))
+                            .fill(canSave ? Color.ember : Color.inkMuted.opacity(0.15))
                     )
             }
             .disabled(!canSave)
@@ -181,7 +181,7 @@ struct BedtimeExcuseSheetView: View {
 
             Button("오늘은 건너뛸게요") { dismiss() }
                 .font(.system(size: 13, design: .serif))
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.inkMuted.opacity(0.4))
         }
     }
 }
@@ -195,21 +195,21 @@ private struct PastExcuseCard: View {
         VStack(alignment: .leading, spacing: 6) {
             Text(excuse.dateString)
                 .font(.system(size: 11))
-                .foregroundColor(.orange.opacity(0.45))
+                .foregroundColor(.ember.opacity(0.45))
 
             Text(excuse.reason)
                 .font(.system(size: 13, design: .serif))
-                .foregroundColor(.gray.opacity(0.72))
+                .foregroundColor(.inkMuted.opacity(0.72))
                 .lineLimit(3)
 
             if !excuse.nextAction.isEmpty {
                 HStack(alignment: .top, spacing: 5) {
                     Text("→")
                         .font(.system(size: 12))
-                        .foregroundColor(.orange.opacity(0.38))
+                        .foregroundColor(.ember.opacity(0.38))
                     Text(excuse.nextAction)
                         .font(.system(size: 12, design: .serif))
-                        .foregroundColor(.orange.opacity(0.52))
+                        .foregroundColor(.ember.opacity(0.52))
                         .lineLimit(2)
                 }
             }
@@ -218,7 +218,7 @@ private struct PastExcuseCard: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color.white.opacity(0.02))
+                .fill(Color.ink.opacity(0.02))
         )
     }
 }

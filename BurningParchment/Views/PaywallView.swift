@@ -11,7 +11,7 @@ struct PaywallView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.08, green: 0.06, blue: 0.04).ignoresSafeArea()
+            Color.appBackgroundWarm.ignoresSafeArea()
 
             VStack(spacing: 0) {
                 closeBar
@@ -47,7 +47,7 @@ struct PaywallView: View {
             } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 15, weight: .semibold))
-                    .foregroundColor(.gray.opacity(0.7))
+                    .foregroundColor(.inkMuted.opacity(0.7))
                     .frame(width: 38, height: 38)
             }
             .accessibilityLabel("닫기")
@@ -65,7 +65,7 @@ struct PaywallView: View {
                 Circle()
                     .fill(
                         RadialGradient(
-                            colors: [Color.orange.opacity(0.35), .clear],
+                            colors: [Color.ember.opacity(0.35), .clear],
                             center: .center, startRadius: 4, endRadius: 60
                         )
                     )
@@ -82,11 +82,11 @@ struct PaywallView: View {
 
             Text("불타는 내인생 프로")
                 .font(.system(size: 26, weight: .semibold, design: .serif))
-                .foregroundColor(.orange.opacity(0.95))
+                .foregroundColor(.ember.opacity(0.95))
 
             Text("하루를 남김없이 담아보세요")
                 .font(.system(size: 14, design: .serif))
-                .foregroundColor(.gray.opacity(0.65))
+                .foregroundColor(.inkMuted.opacity(0.65))
         }
         .padding(.top, 8)
     }
@@ -114,10 +114,10 @@ struct PaywallView: View {
         .padding(18)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color.white.opacity(0.03))
+                .fill(Color.ink.opacity(0.03))
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.orange.opacity(0.12), lineWidth: 1)
+                        .stroke(Color.ember.opacity(0.12), lineWidth: 1)
                 )
         )
     }
@@ -126,16 +126,16 @@ struct PaywallView: View {
         HStack(alignment: .top, spacing: 14) {
             Image(systemName: icon)
                 .font(.system(size: 18))
-                .foregroundColor(.orange.opacity(0.85))
+                .foregroundColor(.ember.opacity(0.85))
                 .frame(width: 28)
 
             VStack(alignment: .leading, spacing: 3) {
                 Text(title)
                     .font(.system(size: 15, weight: .semibold, design: .serif))
-                    .foregroundColor(.orange.opacity(0.9))
+                    .foregroundColor(.ember.opacity(0.9))
                 Text(detail)
                     .font(.system(size: 12))
-                    .foregroundColor(.gray.opacity(0.6))
+                    .foregroundColor(.inkMuted.opacity(0.6))
                     .fixedSize(horizontal: false, vertical: true)
             }
             Spacer(minLength: 0)
@@ -169,25 +169,25 @@ struct PaywallView: View {
                     RoundedRectangle(cornerRadius: 16)
                         .fill(
                             LinearGradient(
-                                colors: [Color.orange, Color(red: 0.85, green: 0.35, blue: 0.1)],
+                                colors: [Color.ember, Color(red: 0.85, green: 0.35, blue: 0.1)],
                                 startPoint: .topLeading, endPoint: .bottomTrailing
                             )
                         )
                 )
-                .shadow(color: .orange.opacity(0.3), radius: 12, y: 4)
+                .shadow(color: .ember.opacity(0.3), radius: 12, y: 4)
             }
             .disabled(storeManager.purchaseInProgress)
 
             Text("한 번 결제로 평생 이용할 수 있어요")
                 .font(.system(size: 11))
-                .foregroundColor(.gray.opacity(0.5))
+                .foregroundColor(.inkMuted.opacity(0.5))
 
             Button {
                 Task { await storeManager.restorePurchases() }
             } label: {
                 Text("구매 복원")
                     .font(.system(size: 13, weight: .medium))
-                    .foregroundColor(.orange.opacity(0.7))
+                    .foregroundColor(.ember.opacity(0.7))
             }
             .disabled(storeManager.purchaseInProgress)
         }
@@ -204,8 +204,8 @@ struct PaywallView: View {
                  destination: URL(string: "https://github.com/M1zz/BurningParchment/blob/main/PRIVACY.md")!)
         }
         .font(.system(size: 11))
-        .foregroundColor(.gray.opacity(0.5))
-        .tint(.gray.opacity(0.5))
+        .foregroundColor(.inkMuted.opacity(0.5))
+        .tint(.inkMuted.opacity(0.5))
     }
 
     private var purchaseButtonTitle: String {

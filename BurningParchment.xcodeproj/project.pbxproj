@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0651A04A4DB4F600FE01B744 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CB6FF2098200B3878326E /* PaywallView.swift */; };
+		06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */; };
 		1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E813AB837B41DC4EFA2B33 /* StoreManager.swift */; };
 		15540253227E69CAD81A04F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */; };
 		1856D4570F214B76B78A6D6D /* BedtimeExcuseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE822A78BE0EC73DE29837 /* BedtimeExcuseSheetView.swift */; };
@@ -28,6 +29,8 @@
 		775B24E76AAD210FFD64FF2D /* UrnPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */; };
 		79905F785A9E6CA7EA01146A /* BedtimeExcuseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD73BA3FB29FEB20A91785 /* BedtimeExcuseManager.swift */; };
 		80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02478518C92DBEC5E15B33C5 /* SettingsView.swift */; };
+		82D6EBE2E5072C9BA3088358 /* BlowDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFF58C2AEF263382D4B35C /* BlowDetector.swift */; };
+		8955029F50F8FA12FD4984E7 /* FragmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FE7CC266CA77D35E7B037 /* FragmentManager.swift */; };
 		8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */; };
 		8D03A9304999EBE1A2BC1300 /* FireShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 95D60B5770EF62427A47B171 /* FireShader.metal */; };
 		8DF557D2EC219FFC216A4665 /* DeadlineWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E46A4404E4D469BD9E3474 /* DeadlineWidget.swift */; };
@@ -37,7 +40,10 @@
 		A35E2E75E37DBD4D39BBA9AA /* DeadlineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */; };
 		A4F57456B157A1096EA9BCA9 /* BedtimeExcuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6749D3031663D06A84E3FF /* BedtimeExcuse.swift */; };
 		A52ECECDB85AC363622131EB /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EEC577EC675B374BA1DCFF27 /* InfoPlist.xcstrings */; };
+		A54C4BE2A4CBD8603A12F300 /* ParchmentFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10418B3347B422A24EEB63C /* ParchmentFragment.swift */; };
+		A80E6616692F3C66FAFB2CBE /* BlowOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */; };
 		A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */; };
+		B61900F783977AF0FACBD854 /* FragmentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */; };
 		C273B9F2010771609AAE445B /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9062A5518028E5E6F7CCB7 /* Deadline.swift */; };
 		C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */; };
 		CC34799D264D16214F1389AF /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39513228BF7479E3BFEA9B8F /* LeeoKit */; };
@@ -80,12 +86,15 @@
 		048805690EF286B13912D40A /* BurningParchment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BurningParchment.entitlements; sourceTree = "<group>"; };
 		066C186AA161229FC7933070 /* BedtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeManager.swift; sourceTree = "<group>"; };
 		1569ACEDED9B2F27FD1E4AA9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentCollectionView.swift; sourceTree = "<group>"; };
 		18E813AB837B41DC4EFA2B33 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		18F256B31A77A4442890FB7D /* BurningParchmentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentSpec.swift; sourceTree = "<group>"; };
 		1D028387DE4D784C3F7DA93C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1D7FE7CC266CA77D35E7B037 /* FragmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentManager.swift; sourceTree = "<group>"; };
 		2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeLiveActivity.swift; sourceTree = "<group>"; };
 		227EABDBFE269403A2F55BA5 /* BurningParchmentWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BurningParchmentWidgets.entitlements; sourceTree = "<group>"; };
 		2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BurningParchmentWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlowOutView.swift; sourceTree = "<group>"; };
 		25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineManager.swift; sourceTree = "<group>"; };
 		2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineListView.swift; sourceTree = "<group>"; };
 		312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentApp.swift; sourceTree = "<group>"; };
@@ -95,6 +104,7 @@
 		41345BE06092DAE95A36C816 /* UrnMeaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnMeaning.swift; sourceTree = "<group>"; };
 		4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5E9062A5518028E5E6F7CCB7 /* Deadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadline.swift; sourceTree = "<group>"; };
+		5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentScrapView.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
 		8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBookView.swift; sourceTree = "<group>"; };
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +112,7 @@
 		95D60B5770EF62427A47B171 /* FireShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FireShader.metal; sourceTree = "<group>"; };
 		A9E108371E99FC1B2998C2CF /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0EFF58C2AEF263382D4B35C /* BlowDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlowDetector.swift; sourceTree = "<group>"; };
 		B1E46A4404E4D469BD9E3474 /* DeadlineWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineWidget.swift; sourceTree = "<group>"; };
 		B246D1C85A72A7898E560054 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		B84B5CD9701830C1165EDE4C /* DayReflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayReflection.swift; sourceTree = "<group>"; };
@@ -110,6 +121,7 @@
 		BF7DA3AEFB15B10715D4D4F5 /* TimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormat.swift; sourceTree = "<group>"; };
 		C1D3645BC9A44C34139BA62A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentView.swift; sourceTree = "<group>"; };
+		D10418B3347B422A24EEB63C /* ParchmentFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParchmentFragment.swift; sourceTree = "<group>"; };
 		D1888FBD73088238AA4AA51A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionUrnView.swift; sourceTree = "<group>"; };
 		DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnPeriod.swift; sourceTree = "<group>"; };
@@ -173,10 +185,13 @@
 			isa = PBXGroup;
 			children = (
 				E6DE822A78BE0EC73DE29837 /* BedtimeExcuseSheetView.swift */,
+				24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */,
 				C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */,
 				36C24016F79235C3EAFE2D5F /* ContentView.swift */,
 				013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */,
 				2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */,
+				18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */,
+				5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */,
 				358CB6FF2098200B3878326E /* PaywallView.swift */,
 				8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */,
 				DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */,
@@ -207,9 +222,12 @@
 				BC6749D3031663D06A84E3FF /* BedtimeExcuse.swift */,
 				EBCD73BA3FB29FEB20A91785 /* BedtimeExcuseManager.swift */,
 				066C186AA161229FC7933070 /* BedtimeManager.swift */,
+				B0EFF58C2AEF263382D4B35C /* BlowDetector.swift */,
 				B84B5CD9701830C1165EDE4C /* DayReflection.swift */,
 				5E9062A5518028E5E6F7CCB7 /* Deadline.swift */,
 				25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */,
+				1D7FE7CC266CA77D35E7B037 /* FragmentManager.swift */,
+				D10418B3347B422A24EEB63C /* ParchmentFragment.swift */,
 				38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */,
 				18E813AB837B41DC4EFA2B33 /* StoreManager.swift */,
 				BF7DA3AEFB15B10715D4D4F5 /* TimeFormat.swift */,
@@ -385,6 +403,8 @@
 				79905F785A9E6CA7EA01146A /* BedtimeExcuseManager.swift in Sources */,
 				1856D4570F214B76B78A6D6D /* BedtimeExcuseSheetView.swift in Sources */,
 				5BBE9589F3D41B5C48441AD0 /* BedtimeManager.swift in Sources */,
+				82D6EBE2E5072C9BA3088358 /* BlowDetector.swift in Sources */,
+				A80E6616692F3C66FAFB2CBE /* BlowOutView.swift in Sources */,
 				6F0D7E8A801C4F5A7C637273 /* BurningParchmentApp.swift in Sources */,
 				6A1E29DE8A8783C199F3C683 /* BurningParchmentSpec.swift in Sources */,
 				66D6D9631304A0D99C8807E0 /* BurningParchmentView.swift in Sources */,
@@ -395,6 +415,10 @@
 				C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */,
 				4E0A8DD3CED8F25008E35F16 /* DeadlineManager.swift in Sources */,
 				8D03A9304999EBE1A2BC1300 /* FireShader.metal in Sources */,
+				B61900F783977AF0FACBD854 /* FragmentCollectionView.swift in Sources */,
+				8955029F50F8FA12FD4984E7 /* FragmentManager.swift in Sources */,
+				06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */,
+				A54C4BE2A4CBD8603A12F300 /* ParchmentFragment.swift in Sources */,
 				0651A04A4DB4F600FE01B744 /* PaywallView.swift in Sources */,
 				A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */,
 				8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */,

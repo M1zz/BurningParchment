@@ -35,6 +35,24 @@
           }
         }
       }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "comment" : "Privacy - Microphone Usage Description",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used only to sense how hard you blow when putting out the parchment before bed. No sound is recorded or saved."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

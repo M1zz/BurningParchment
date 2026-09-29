@@ -83,7 +83,7 @@ class BedtimeManager: ObservableObject {
     private var timer: Timer?
     private var lastWidgetReload: Date = .distantPast
     private var scheduledNotifBedDate: Date?
-    private var currentBedDate: Date = .distantFuture
+    private(set) var currentBedDate: Date = .distantFuture
     private var liveActivity: Activity<BedtimeActivityAttributes>?
     private var lastLiveActivityUpdate: Date = .distantPast
 
@@ -293,6 +293,13 @@ class BedtimeManager: ObservableObject {
         let m = (Int(remainingSeconds) % 3600) / 60
         let s = Int(remainingSeconds) % 60
         return String(format: "%02d:%02d:%02d", h, m, s)
+    }
+
+    /// 후 불어 불을 끌 수 있는 시간 — 취침 30분 전부터 취침 시각까지
+    static let blowOutWindowSeconds: TimeInterval = 1800
+
+    var isInBlowOutWindow: Bool {
+        isCountdownActive && remainingSeconds > 0 && remainingSeconds <= Self.blowOutWindowSeconds
     }
 
     var remainingHours: Int { Int(remainingSeconds) / 3600 }

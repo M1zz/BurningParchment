@@ -75,6 +75,7 @@ targets:
         UIRequiresFullScreen: true
         CFBundleDisplayName: "불타는 내인생"
         NSSupportsLiveActivities: true
+        NSMicrophoneUsageDescription: "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app

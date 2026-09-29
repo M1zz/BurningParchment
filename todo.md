@@ -1,5 +1,24 @@
 # todo
 
+## 1.1.1 — 후 불어 불 끄기 · 남은 조각 모으기 (구현 완료, 실기기 확인 필요)
+- [x] 취침 30분 전 ~ 취침 시각에 메인(오늘) 하단에 "후 불어서 불 끄기" 버튼
+      (`BedtimeManager.isInBlowOutWindow`, 창 길이는 `blowOutWindowSeconds`)
+- [x] `BlowDetector` — 마이크 음량(dBFS)만 보고 센 입김이 약 0.8초 이어지면 꺼짐.
+      녹음·저장 없음. **입김으로만 꺼진다** — 누르기 대체 경로는 일부러 두지 않았다.
+      마이크 권한이 없으면 설정 열기 버튼만 보여 준다
+- [x] `BlowOutView` — 남은 조각을 크게 띄우고 타는 가장자리에 불꽃, 입김에 불꽃이 눕고 줄어듦,
+      꺼지면 연기 + 햅틱 → 조각에 한 줄(비우면 추천 글귀 `FragmentPhrase`) → 모아두기
+- [x] `FragmentManager`(App Group `parchment_fragments`) — 하룻밤 한 조각, 취침 시각으로 구분
+- [x] 불을 끈 밤은 메인 양피지가 끈 자리에서 멈추고 불꽃·불씨가 사라짐. 취침 후 변명 시트도 띄우지 않음
+- [x] `FragmentCollectionView` — 헤더의 조각 아이콘(조각이 있을 때만)에서 열람·삭제
+- [x] Info.plist 마이크 사용 설명(ko/en), String Catalog 신규 문구 en, PRIVACY.md·docs/privacy.html 마이크 항목
+- [x] 시뮬레이터 확인(ko) — 버튼 → 타는 조각 → 연기 → 한 줄 쓰기 → 멈춘 양피지 → 모은 조각 카드
+- [ ] **실기기에서 입김 감도 확인** — 시뮬레이터로는 입김을 넣을 수 없어 임계값
+      (`blowThreshold` 0.62, `fillPerSecond` 1.4)을 실제로 불어 보며 맞춰야 한다.
+      말소리·주변 소음에 꺼지지 않는지도 같이 볼 것
+- [ ] Live Activity·위젯은 불을 꺼도 계속 타는 모습이다 (이번엔 건드리지 않음)
+- [x] 1.1.1(빌드 1)로 올리고 `RELEASE_NOTES.md` 1.1.1 절(ko/en) 작성 — `DeployBar --reponotes` 확인
+
 ## 라이트 모드 · 스토어 영어 (완료)
 - [x] 앱이 `.preferredColorScheme(.dark)` 로 다크를 못박고 있던 것을 설정값으로 바꿈
       (`AppTheme` = 시스템 설정 / 라이트 / 다크, 기본값은 시스템 설정)

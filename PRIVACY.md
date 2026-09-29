@@ -26,6 +26,7 @@
 
 - 위치 정보, 연락처, 사진, 건강 데이터, 광고 식별자는 수집하지 않습니다.
 - 알림은 기기 내에서 예약되는 로컬 알림이며 외부 서버를 거치지 않습니다.
+- 마이크는 취침 30분 전 양피지에 "후" 불어 불을 끌 때만 사용하며, 입김의 세기만 그 자리에서 확인합니다. 소리는 녹음·저장·전송하지 않습니다.
 - 앱 내 구입 결제는 Apple의 App Store를 통해 처리되며, 개발자는 결제 정보에 접근할 수 없습니다. Apple의 개인정보 처리방침은 [apple.com/legal/privacy](https://www.apple.com/legal/privacy/)를 참고하세요.
 - 본 앱은 만 14세 미만 아동을 대상으로 하지 않습니다.
 
@@ -53,6 +54,7 @@ The following three things are sent to the developer's iCloud (CloudKit) storage
 
 - No location, contacts, photos, health data, or advertising identifiers are collected.
 - Notifications are local, scheduled on your device, and never go through an external server.
+- The microphone is used only when you blow out the parchment before bed, to sense the strength of your breath on the device. No audio is recorded, saved, or sent.
 - In-app purchases are processed by Apple's App Store; the developer has no access to your payment information. See Apple's privacy policy at [apple.com/legal/privacy](https://www.apple.com/legal/privacy/).
 - This app is not directed at children under 14.
 

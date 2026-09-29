@@ -261,6 +261,22 @@
         }
       }
     },
+    "%@, %lld분 남기고 불을 껐어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, put out with %lld min to spare"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld분 남기고 불을 껐어요"
+          }
+        }
+      }
+    },
     "%@, 기록 없음": {
       "extractionState": "stale",
       "localizations": {
@@ -392,6 +408,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld분 %lld초"
+          }
+        }
+      }
+    },
+    "%lld분 남기고": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld min to spare"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld분 남기고"
+          }
+        }
+      }
+    },
+    "%lld분을 남기고 불을 껐어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Put out with %lld min to spare"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld분을 남기고 불을 껐어요"
           }
         }
       }
@@ -1012,6 +1060,22 @@
         }
       }
     },
+    "꺼진 불 곁에서 편히 쉬어도 된다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rest easy beside the quiet flame"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꺼진 불 곁에서 편히 쉬어도 된다"
+          }
+        }
+      }
+    },
     "나의 목표": {
       "extractionState": "stale",
       "localizations": {
@@ -1058,6 +1122,70 @@
           "stringUnit": {
             "state": "translated",
             "value": "날짜"
+          }
+        }
+      }
+    },
+    "남겨둔 조각만큼 내일이 기다린다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow waits in the piece I saved"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남겨둔 조각만큼 내일이 기다린다"
+          }
+        }
+      }
+    },
+    "남은 불씨는 내일의 나에게 맡긴다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'll leave the last embers to tomorrow's me"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남은 불씨는 내일의 나에게 맡긴다"
+          }
+        }
+      }
+    },
+    "남은 조각": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What's left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남은 조각"
+          }
+        }
+      }
+    },
+    "남은 조각을 모아둘게요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let's keep what's left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남은 조각을 모아둘게요"
           }
         }
       }
@@ -1191,6 +1319,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "네트워크 상태를 확인하고 다시 시도해주세요."
+          }
+        }
+      }
+    },
+    "다 타지 않은 하루도 온전한 하루였다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A day not fully burned is still a whole day"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다 타지 않은 하루도 온전한 하루였다"
+          }
+        }
+      }
+    },
+    "다른 글귀": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Another line"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다른 글귀"
           }
         }
       }
@@ -1647,6 +1807,22 @@
         }
       }
     },
+    "마이크를 켜야 불을 끌 수 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn on the mic to put out the fire"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마이크를 켜야 불을 끌 수 있어요"
+          }
+        }
+      }
+    },
     "만들기": {
       "extractionState": "stale",
       "localizations": {
@@ -1681,6 +1857,22 @@
         }
       }
     },
+    "모든 걸 태우지 않아도 괜찮아": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You don't have to burn through everything"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 걸 태우지 않아도 괜찮아"
+          }
+        }
+      }
+    },
     "모아둔 재": {
       "extractionState": "manual",
       "localizations": {
@@ -1694,6 +1886,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "모아둔 재"
+          }
+        }
+      }
+    },
+    "모은 조각": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kept Pieces"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모은 조각"
           }
         }
       }
@@ -1795,6 +2003,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "버그 제보와 기능 제안을 환영합니다."
+          }
+        }
+      }
+    },
+    "버리기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discard"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버리기"
           }
         }
       }
@@ -1969,6 +2193,70 @@
         }
       }
     },
+    "불을 껐어요 · 모은 조각 보기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fire's out · See kept pieces"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불을 껐어요 · 모은 조각 보기"
+          }
+        }
+      }
+    },
+    "불을 끄고 남긴 조각 %lld개": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pieces kept: %lld"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불을 끄고 남긴 조각 %lld개"
+          }
+        }
+      }
+    },
+    "불을 끄는 것도 용기다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putting out the fire takes courage too"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불을 끄는 것도 용기다"
+          }
+        }
+      }
+    },
+    "불이 꺼졌어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The fire is out"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불이 꺼졌어요"
+          }
+        }
+      }
+    },
     "불타는 내인생 프로": {
       "localizations": {
         "en": {
@@ -1998,6 +2286,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "불타는 내인생 🔥"
+          }
+        }
+      }
+    },
+    "비워 두면 이 글귀가 적혀요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave it blank to use this line"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비워 두면 이 글귀가 적혀요"
           }
         }
       }
@@ -2167,6 +2471,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "선택됨"
+          }
+        }
+      }
+    },
+    "설정에서 마이크 켜기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn On Mic in Settings"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정에서 마이크 켜기"
           }
         }
       }
@@ -2399,6 +2719,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 담긴 재가 없어요"
+          }
+        }
+      }
+    },
+    "아직 모은 조각이 없어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pieces kept yet"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 모은 조각이 없어요"
           }
         }
       }
@@ -2956,6 +3292,22 @@
         }
       }
     },
+    "오늘 하루의 불을 끄고 남은 조각을 글귀와 함께 모아둡니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puts out today's fire and keeps what's left with a line"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 하루의 불을 끄고 남은 조각을 글귀와 함께 모아둡니다"
+          }
+        }
+      }
+    },
     "오늘 한 줄, 남기고 잘까요?": {
       "localizations": {
         "en": {
@@ -3018,6 +3370,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘은 어떤 하루였나요? — 콕 찍어보세요"
+          }
+        }
+      }
+    },
+    "오늘은 여기까지, 충분히 탔다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That's enough for today. It burned well."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘은 여기까지, 충분히 탔다"
+          }
+        }
+      }
+    },
+    "오늘의 끝은 내가 정했다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I decided where today ends"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘의 끝은 내가 정했다"
           }
         }
       }
@@ -3364,6 +3748,22 @@
         }
       }
     },
+    "이 조각을 버릴까요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discard this piece?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 조각을 버릴까요?"
+          }
+        }
+      }
+    },
     "이 주는 당신에게 어떤 의미였나요?": {
       "localizations": {
         "en": {
@@ -3648,6 +4048,22 @@
         }
       }
     },
+    "입김의 세기만 확인하고 소리는 녹음하지 않아요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only the strength of your breath is used. Nothing is recorded."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "입김의 세기만 확인하고 소리는 녹음하지 않아요"
+          }
+        }
+      }
+    },
     "잎": {
       "extractionState": "stale",
       "localizations": {
@@ -3710,6 +4126,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "잔불을 탭하면 그날의 회고가 나와요"
+          }
+        }
+      }
+    },
+    "잘 타오른 하루, 이제 식힐 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A day well burned. Time to let it cool."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잘 타오른 하루, 이제 식힐 시간"
           }
         }
       }
@@ -4041,6 +4473,70 @@
         }
       }
     },
+    "조각 모아두기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep this piece"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 모아두기"
+          }
+        }
+      }
+    },
+    "조각 버리기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discard piece"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 버리기"
+          }
+        }
+      }
+    },
+    "조각에 남길 한 줄": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A line for this piece"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각에 남길 한 줄"
+          }
+        }
+      }
+    },
+    "조금 남긴 하루가 더 오래 남는다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A day left a little unburned stays longer"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조금 남긴 하루가 더 오래 남는다"
+          }
+        }
+      }
+    },
     "조금 더 적어두고 싶다면 (선택)": {
       "localizations": {
         "en": {
@@ -4344,6 +4840,22 @@
         }
       }
     },
+    "취침 30분 전부터 타는 양피지에 후 불어\n불을 끄고 남은 조각을 모아둘 수 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From 30 minutes before bedtime, blow on the burning\nparchment to put it out and keep what's left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취침 30분 전부터 타는 양피지에 후 불어\n불을 끄고 남은 조각을 모아둘 수 있어요"
+          }
+        }
+      }
+    },
     "취침 시간": {
       "extractionState": "stale",
       "localizations": {
@@ -4374,6 +4886,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "취침 시간 %@ %lld시%@"
+          }
+        }
+      }
+    },
+    "취침까지 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ until bedtime"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취침까지 %@"
           }
         }
       }
@@ -4928,6 +5456,22 @@
         }
       }
     },
+    "화면 아래 마이크에 대고 후 불어 주세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blow into the mic at the bottom of your phone"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화면 아래 마이크에 대고 후 불어 주세요"
+          }
+        }
+      }
+    },
     "화면 테마": {
       "extractionState": "manual",
       "localizations": {
@@ -5059,6 +5603,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고를 항아리로 끌어다 옮길 수 있어요"
+          }
+        }
+      }
+    },
+    "후 불어서 불 끄기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blow out the fire"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "후 불어서 불 끄기"
           }
         }
       }

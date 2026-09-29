@@ -10,6 +10,7 @@ struct ContentView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
     @EnvironmentObject var excuseManager:     BedtimeExcuseManager
     @EnvironmentObject var storeManager:      StoreManager
+    @EnvironmentObject var fragmentManager:   FragmentManager
     @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings    = false
     @State private var showDeadlines   = false
@@ -19,6 +20,8 @@ struct ContentView: View {
     @State private var nudgeEvaluatedThisSession = false
     @State private var showExcuseSheet = false
     @State private var excuseShownThisSession = false
+    @State private var showBlowOut     = false
+    @State private var showFragments   = false
     @AppStorage("reflectionNudgeDismissedDate") private var nudgeDismissedISO: String = ""
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
@@ -77,6 +80,7 @@ struct ContentView: View {
                     tomorrowIntentStrip
                     BurningParchmentView()
                         .environmentObject(bedtimeManager)
+                    blowOutPrompt
                     reflectionNudgeBanner
                     pageIndicator
                 }
@@ -115,6 +119,15 @@ struct ContentView: View {
             DeadlineListView()
                 .environmentObject(deadlineManager)
                 .environmentObject(storeManager)
+        }
+        .fullScreenCover(isPresented: $showBlowOut) {
+            BlowOutView()
+                .environmentObject(bedtimeManager)
+                .environmentObject(fragmentManager)
+        }
+        .sheet(isPresented: $showFragments) {
+            FragmentCollectionView()
+                .environmentObject(fragmentManager)
         }
         .sheet(isPresented: $showExcuseSheet) {
             BedtimeExcuseSheetView()
@@ -218,6 +231,52 @@ struct ContentView: View {
         }
     }
 
+    // MARK: - Blow Out (취침 30분 전 불 끄기)
+
+    private var tonightFragment: ParchmentFragment? {
+        fragmentManager.fragment(forBedtime: bedtimeManager.currentBedDate)
+    }
+
+    @ViewBuilder
+    private var blowOutPrompt: some View {
+        if bedtimeManager.selectedPeriod == .day {
+            if bedtimeManager.isCountdownActive, tonightFragment != nil {
+                Button { showFragments = true } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "smoke.fill")
+                            .font(.system(size: 12))
+                        Text("불을 껐어요 · 모은 조각 보기")
+                            .font(.system(size: 13, weight: .medium, design: .serif))
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 10, weight: .semibold))
+                    }
+                    .foregroundColor(.inkMuted.opacity(0.75))
+                    .padding(.vertical, 8)
+                    .padding(.horizontal, 14)
+                }
+                .padding(.bottom, 6)
+                .transition(.opacity)
+            } else if bedtimeManager.isInBlowOutWindow {
+                Button { showBlowOut = true } label: {
+                    HStack(spacing: 10) {
+                        Image(systemName: "wind")
+                            .font(.system(size: 14, weight: .semibold))
+                        Text("후 불어서 불 끄기")
+                            .font(.system(size: 15, weight: .semibold, design: .serif))
+                    }
+                    .foregroundColor(.onEmber)
+                    .padding(.vertical, 12)
+                    .padding(.horizontal, 22)
+                    .background(Capsule().fill(Color.ember))
+                    .shadow(color: .ember.opacity(0.35), radius: 10, y: 3)
+                }
+                .padding(.bottom, 8)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .accessibilityHint("오늘 하루의 불을 끄고 남은 조각을 글귀와 함께 모아둡니다")
+            }
+        }
+    }
+
     // MARK: - Reflection Nudge
 
     @ViewBuilder
@@ -293,6 +352,8 @@ struct ContentView: View {
         && !bedtimeManager.isBeforeWakeTime
         && bedtimeManager.progress >= 1.0
         && !excuseManager.hasExcuseToday
+        // 취침 전에 스스로 불을 껐다면 지키지 못한 게 아니다
+        && tonightFragment == nil
     }
 
     private func evaluateExcusePrompt() {
@@ -401,6 +462,16 @@ struct ContentView: View {
             Spacer()
 
             HStack(spacing: 18) {
+                if !fragmentManager.fragments.isEmpty {
+                    Button(action: { showFragments = true }) {
+                        Image(systemName: "square.stack.fill")
+                            .font(.system(size: 17))
+                            .foregroundColor(.ember.opacity(0.6))
+                    }
+                    .accessibilityLabel("모은 조각")
+                    .accessibilityValue("\(fragmentManager.fragments.count)개")
+                }
+
                 AshUrnButton { showReflections = true }
                     .environmentObject(reflectionManager)
 
@@ -450,4 +521,5 @@ struct ContentView: View {
         .environmentObject(StoreManager())
         .environmentObject(ReflectionManager())
         .environmentObject(BedtimeExcuseManager())
+        .environmentObject(FragmentManager())
 }

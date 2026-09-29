@@ -12,6 +12,7 @@ struct BurningParchmentApp: App {
     @StateObject private var reflectionManager = ReflectionManager()
     @StateObject private var excuseManager     = BedtimeExcuseManager()
     @StateObject private var storeManager      = StoreManager()
+    @StateObject private var fragmentManager   = FragmentManager()
 
     // 테마는 화면 전체에 걸리는 설정이라 최상위에서 읽어 Scene 에 그대로 건다.
     @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
@@ -31,6 +32,7 @@ struct BurningParchmentApp: App {
                 .environmentObject(reflectionManager)
                 .environmentObject(excuseManager)
                 .environmentObject(storeManager)
+                .environmentObject(fragmentManager)
                 .preferredColorScheme(appTheme.colorScheme)
                 .leeoSatisfactionCheck(BurningParchmentSpec.self)
         }

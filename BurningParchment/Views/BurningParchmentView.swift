@@ -9,6 +9,7 @@ import SwiftUI
 struct BurningParchmentView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
     @EnvironmentObject var deadlineManager: DeadlineManager
+    @EnvironmentObject var fragmentManager: FragmentManager
     @State private var phase: Double = 0
     @State private var embers: [Ember] = []
     @State private var ashes: [Ash] = []
@@ -35,12 +36,17 @@ struct BurningParchmentView: View {
             let oy: CGFloat = 8
             let isDayPeriod = bedtimeManager.selectedPeriod == .day
             let displayProgress = currentDisplayProgress
+            let blownOut = isDayPeriod && bedtimeManager.isCountdownActive
+                ? fragmentManager.fragment(forBedtime: bedtimeManager.currentBedDate)
+                : nil
 
             ZStack {
                 if isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
                     beforeWakeView(pw: pw, ph: ph, oy: oy, size: size)
                 } else if isDayPeriod && (bedtimeManager.isBeforeWakeTime || (!bedtimeManager.isCountdownActive && bedtimeManager.progress >= 1.0)) {
                     bedtimeReachedView(size: size)
+                } else if let blownOut {
+                    extinguishedView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, fragment: blownOut)
                 } else {
                     burningView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, progress: displayProgress)
                 }
@@ -48,7 +54,7 @@ struct BurningParchmentView: View {
             .onReceive(timer) { _ in
                 guard !reduceMotion else { return }
                 phase += 0.05
-                if bedtimeManager.isCountdownActive || !isDayPeriod {
+                if (bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil {
                     updateParticles(pw: pw, ph: ph, ox: ox, oy: oy)
                 }
             }
@@ -81,6 +87,28 @@ struct BurningParchmentView: View {
             }
 
             particleCanvas(items: embers, withGlow: true)
+                .accessibilityHidden(true)
+
+            VStack {
+                Spacer()
+                timerSection(progress: progress, size: size)
+            }
+        }
+    }
+
+    // MARK: - Extinguished (불을 끈 밤)
+    // 취침 전에 불을 껐으면 양피지는 끈 자리에서 멈추고 불꽃·불씨·떨어지는 재가 사라진다.
+    // 타이머는 계속 가지만, 게이지는 끈 순간에 멈춘다 — 그만큼이 모아둔 조각이다.
+
+    private func extinguishedView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat,
+                                  fragment: ParchmentFragment) -> some View {
+        let progress = fragment.burnProgress
+        return ZStack {
+            parchmentGroup(pw: pw, ph: ph, progress: progress, edgePhase: fragment.edgePhase)
+                .position(x: size.width / 2, y: oy + ph / 2)
+                .accessibilityHidden(true)
+
+            ashPileCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                 .accessibilityHidden(true)
 
             VStack {
@@ -483,7 +511,9 @@ struct BurningParchmentView: View {
 
     // MARK: - Parchment Gradient
 
-    private var parchmentGradient: LinearGradient {
+    private var parchmentGradient: LinearGradient { Self.parchmentGradient }
+
+    static var parchmentGradient: LinearGradient {
         LinearGradient(
             colors: [
                 Color(red: 0.86, green: 0.78, blue: 0.62),
@@ -542,8 +572,8 @@ struct BurningParchmentView: View {
 
     // MARK: - Parchment Group
 
-    private func parchmentGroup(pw: CGFloat, ph: CGFloat, progress: Double) -> some View {
-        let shape = DiagonalBurnShape(progress: progress, phase: phase)
+    private func parchmentGroup(pw: CGFloat, ph: CGFloat, progress: Double, edgePhase: Double? = nil) -> some View {
+        let shape = DiagonalBurnShape(progress: progress, phase: edgePhase ?? phase)
         return ZStack {
             shape.fill(parchmentGradient)
             if progress > 0 { scorchOverlay(progress: progress, shape: shape) }
@@ -686,12 +716,25 @@ struct BurningParchmentView: View {
     // MARK: - Diagonal Flame Canvas (유기적 불꽃 - 직선 그라디언트 없음)
 
     private func diagonalFlameCanvas(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
-        Canvas { ctx, _ in
-            let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: progress, phase: phase)
+        let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: progress, phase: phase)
+            .map { CGPoint(x: $0.x + ox, y: $0.y + oy) }
+        return Self.flameCanvas(along: pts, normal: Self.burnNormal(pw: pw, ph: ph), phase: phase)
+    }
 
-            let nLen = sqrt(Double(ph * ph + pw * pw))
-            let nx = Double(ph) / nLen
-            let ny = Double(pw) / nLen
+    /// 타는 경계선이 뻗어 나가는 방향(오른쪽 아래) — 불꽃은 이쪽으로 솟는다
+    static func burnNormal(pw: CGFloat, ph: CGFloat) -> CGVector {
+        let nLen = sqrt(Double(ph * ph + pw * pw))
+        return CGVector(dx: Double(ph) / nLen, dy: Double(pw) / nLen)
+    }
+
+    /// 경계선 위 점들을 따라 솟는 불꽃. 불 끄기 화면의 조각도 같은 불꽃을 쓴다.
+    /// intensity 는 불의 세기(0 이면 꺼짐), breath 는 입김에 불꽃이 눕고 떨리는 정도, scale 은 불꽃 크기.
+    static func flameCanvas(along pts: [CGPoint], normal: CGVector, phase: Double,
+                            intensity: Double = 1, breath: Double = 0, scale: Double = 1) -> some View {
+        Canvas { ctx, _ in
+            guard intensity > 0.01 else { return }
+            let nx = Double(normal.dx)
+            let ny = Double(normal.dy)
             let tx = -ny
             let ty =  nx
 
@@ -703,12 +746,12 @@ struct BurningParchmentView: View {
                 let n2 = cos(fi * 0.90 + phase * 3.0)
                 let n3 = sin(fi * 1.70 + phase * 5.5)
 
-                let flameH = 14.0 + n1 * 26.0 + n3 * 7.0
-                let flameW =  5.0 + n1 *  4.5
-                let sway   = n2 * 3.0
+                let flameH = (14.0 + n1 * 26.0 + n3 * 7.0) * scale * intensity * (1.0 - breath * 0.35)
+                let flameW = (5.0 + n1 *  4.5) * scale
+                let sway   = (n2 * 3.0 + breath * 14.0 * sin(fi * 0.8 + phase * 11.0)) * scale
 
-                let bx  = Double(pt.x) + Double(ox)
-                let by  = Double(pt.y) + Double(oy)
+                let bx  = Double(pt.x)
+                let by  = Double(pt.y)
                 let tipX = bx + nx * flameH + tx * sway
                 let tipY = by + ny * flameH + ty * sway
 
@@ -725,7 +768,7 @@ struct BurningParchmentView: View {
                 flame.addQuadCurve(to: CGPoint(x: bx - tx * flameW * 0.5, y: by - ty * flameW * 0.5), control: ctrl2)
                 flame.closeSubpath()
 
-                ctx.opacity = 0.55 + n1 * 0.45 + n2 * 0.10
+                ctx.opacity = (0.55 + n1 * 0.45 + n2 * 0.10) * min(1, intensity * 1.3)
                 ctx.fill(flame, with: .linearGradient(
                     Gradient(colors: [
                         Color(red: 1.0, green: 0.97, blue: 0.72),
@@ -1053,5 +1096,6 @@ struct TimeDigitView: View {
         BurningParchmentView()
             .environmentObject(BedtimeManager())
             .environmentObject(DeadlineManager())
+            .environmentObject(FragmentManager())
     }
 }

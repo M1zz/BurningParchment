@@ -1,5 +1,23 @@
 # 릴리즈 노트
 
+## 1.1.1
+
+### App Store "이번 버전의 새로운 기능" — 한국어
+
+```
+잠들기 30분 전 양피지에 후 불어 불을 끌 수 있어요
+남은 조각에 오늘의 한 줄을 적어 모아둘 수 있어요
+모은 조각은 첫 화면의 새 아이콘에서 다시 볼 수 있어요
+```
+
+### App Store "What's New" — English
+
+```
+Blow out the parchment before bed
+Write a line on the piece that's left
+See your kept pieces from the new icon
+```
+
 ## 1.1.0
 
 ### App Store "이번 버전의 새로운 기능" — 한국어

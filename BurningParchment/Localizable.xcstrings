@@ -2306,6 +2306,22 @@
         }
       }
     },
+    "모은 조각 %@개": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ pieces kept"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모은 조각 %@개"
+          }
+        }
+      }
+    },
     "모은 조각 %lld개": {
       "localizations": {
         "en": {

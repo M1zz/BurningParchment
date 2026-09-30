@@ -1,5 +1,25 @@
 # 릴리즈 노트
 
+## 1.1.2
+
+### App Store "이번 버전의 새로운 기능" — 한국어
+
+```
+잠들 시간이 지나면 내일의 양피지가 천천히 타요
+아침에 지난밤 잠든 시각을 확인해요
+건강 앱의 수면 기록이 있으면 알아서 확인해요
+제시간에 잠들면 저절로 꺼진 조각을 받아요
+```
+
+### App Store "What's New" — English
+
+```
+Past bedtime, tomorrow's parchment burns
+Each morning, confirm when you slept
+Health sleep data can confirm it for you
+Sleep on time to earn a burned-out piece
+```
+
 ## 1.1.1
 
 ### App Store "이번 버전의 새로운 기능" — 한국어

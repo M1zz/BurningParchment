@@ -2,6 +2,11 @@
 // 건강 앱의 수면 기록에서 "그 밤에 잠든 시각"만 읽는다. 쓰지 않고, 기기 밖으로 보내지 않는다.
 
 import Foundation
+
+// 1.1.2 는 건강 앱 연동을 싣지 않는다 (NightManager.isEnabled 와 함께 비공개).
+// HealthKit 을 쓰는 코드가 바이너리에 남으면 권한 문구·entitlement 없이 심사에 걸리므로
+// 컴파일 조건 SLEEP_HEALTH 가 있을 때만 진짜 구현을 넣는다. 다시 열 때는 todo.md 참고.
+#if SLEEP_HEALTH
 import HealthKit
 
 enum SleepHealth {
@@ -57,3 +62,13 @@ enum SleepHealth {
             .min()
     }
 }
+#else
+enum SleepHealth {
+    static let connectedKey = "sleepHealthConnected"
+    static var isAvailable: Bool { false }
+    static var isConnected: Bool { false }
+    @discardableResult
+    static func connect() async -> Bool { false }
+    static func sleepOnset(in night: DateInterval) async -> Date? { nil }
+}
+#endif

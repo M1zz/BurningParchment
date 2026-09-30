@@ -4,6 +4,10 @@
 > 1.1.2 는 이 흐름을 `NightManager.isEnabled = false` 로 꺼 두고 낸다. 취침 이후는 1.1.1 의 하트,
 > 아침에는 불을 끈 밤의 조각 뒷면 쓰기만 권한다. 다시 열려면 스위치를 켜고 아래 두 가지를 되살린다:
 > 릴리즈노트 문구, 설정의 수면 기록 연결(스위치에 함께 묶여 있다).
+> 건강 앱 연동도 1.1.2 에서 통째로 뺐다. 다시 열 때 되살릴 것:
+> 컴파일 조건 `SLEEP_HEALTH`(SWIFT_ACTIVE_COMPILATION_CONDITIONS), entitlements 의 `com.apple.developer.healthkit`,
+> Info.plist·project.yml·InfoPlist.xcstrings 의 `NSHealthShareUsageDescription`(ko/en),
+> PRIVACY.md(ko/en)·docs/privacy.html 의 건강 앱 수면 기록 항목. 모두 커밋 e4e788e 이전에 있다.
 - [ ] 다시 열 때: 옮겨붙는 흐름을 더 가볍게 — 번거롭다는 판단으로 1.1.2 에서 뺐다
 원칙: **그을음은 확인된 만큼만.** 건강 앱 기록이나 본인 답변이 없으면 항상 0.
 - [x] 취침 이후 하트 대신 "내일의 양피지"가 천천히 탄다 (밤을 다 새우면 기상 시각에 한 장).

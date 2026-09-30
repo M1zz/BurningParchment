@@ -53,24 +53,6 @@
           }
         }
       }
-    },
-    "NSHealthShareUsageDescription" : {
-      "comment" : "Privacy - Health Share Usage Description",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reads your sleep records only to find when you fell asleep last night, so the parchment that burned after bedtime is rolled back to that time. Nothing is written to Health or sent off your device."
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아침에 어젯밤 잠든 시각을 확인해, 취침 이후 타던 내일의 양피지를 그 시각으로 되돌리는 데만 수면 기록을 읽습니다. 기록을 쓰거나 기기 밖으로 보내지 않습니다."
-          }
-        }
-      }
     }
   },
   "version" : "1.0"

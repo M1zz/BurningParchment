@@ -111,15 +111,25 @@ struct BurningParchmentView: View {
 
     // MARK: - Blow-Out Hint (취침 30분 전)
     // 이때쯤 양피지는 모서리만 남아 있다. 종이가 타 버린 빈자리에 오늘을 마감하는 안내를 띄운다.
+    // 깨어 있는 시간이 짧으면 종이가 아직 남아 있을 수 있어서, 종이·불꽃 위에서도 읽히게 판을 깔고 맨 위에 둔다.
 
     private func blowOutHint(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) -> some View {
         Text("후 하고 불어서 불을 끄고\n하루를 마감하세요")
             .font(.system(size: 20, weight: .medium, design: .serif))
-            .foregroundColor(.ember.opacity(0.9))
+            .foregroundColor(.ember)
             .multilineTextAlignment(.center)
             .lineSpacing(6)
-            .frame(width: pw - 48)
+            .padding(.vertical, 14)
+            .padding(.horizontal, 22)
+            .background(
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(Color.appBackground.opacity(0.82))
+                    .shadow(color: Color.appBackground.opacity(0.9), radius: 18)
+            )
+            .frame(maxWidth: pw - 32)
             .position(x: ox + pw / 2, y: oy + ph * 0.55)
+            .zIndex(1)
+            .allowsHitTesting(false)
     }
 
     // MARK: - Extinguished (불을 끈 밤)

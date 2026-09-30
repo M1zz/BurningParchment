@@ -3021,6 +3021,22 @@
         }
       }
     },
+    "수면 중": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sleeping"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수면 중"
+          }
+        }
+      }
+    },
     "수정": {
       "extractionState": "stale",
       "localizations": {
@@ -6439,6 +6455,22 @@
         }
       }
     },
+    "후 하고 불어서 불을 끄고\n하루를 마감하세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blow out the flame\nand close your day"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "후 하고 불어서 불을 끄고\n하루를 마감하세요"
+          }
+        }
+      }
+    },
     "휴식": {
       "extractionState": "stale",
       "localizations": {
@@ -6469,6 +6501,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "흘러감"
+          }
+        }
+      }
+    },
+    "🌙 좋은 꿈 꾸세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🌙 Sweet dreams"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🌙 좋은 꿈 꾸세요"
           }
         }
       }

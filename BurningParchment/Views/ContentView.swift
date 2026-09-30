@@ -167,7 +167,7 @@ struct ContentView: View {
         }
         .onChange(of: bedtimeManager.currentNight) { night in
             // 새 밤이 시작되면 확인받지 못한 지난 밤들은 그을음 없이 닫는다
-            if let night { nightManager.closeUnanswered(before: night.start) }
+            if NightManager.isEnabled, let night { nightManager.closeUnanswered(before: night.start) }
             noteAwakeIfNight()
         }
         .onReceive(awakeTicker) { _ in
@@ -260,7 +260,7 @@ struct ContentView: View {
 
     /// 취침 이후, 아직 끄지 않은 내일의 양피지가 타고 있는가
     private var isTomorrowBurning: Bool {
-        guard let night = bedtimeManager.currentNight else { return false }
+        guard NightManager.isEnabled, let night = bedtimeManager.currentNight else { return false }
         // 기상 30분 전부터는 "곧 기상" 화면이라 끌 것이 보이지 않는다
         if bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 { return false }
         if fragmentManager.fragment(forBedtime: night.start) != nil { return false }
@@ -273,7 +273,7 @@ struct ContentView: View {
             if isTomorrowBurning {
                 blowOutButton
                     .accessibilityHint("내일의 양피지에 붙은 불을 끕니다")
-            } else if bedtimeManager.isCountdownActive, let last = bedtimeManager.lastNight,
+            } else if NightManager.isEnabled, bedtimeManager.isCountdownActive, let last = bedtimeManager.lastNight,
                       morningAutoShownBedtime == last.start.timeIntervalSince1970,
                       nightManager.isPending(last) {
                 // 아침 확인을 닫아 두었다면 여기서 다시 열 수 있다. 답하지 않으면 그을음 없이 넘어간다.
@@ -405,7 +405,7 @@ struct ContentView: View {
     // 밤사이 내일의 양피지가 타는 건 보여주기만 하고, 그을음은 아침에 확인된 만큼만 남긴다.
 
     private func noteAwakeIfNight() {
-        guard let night = bedtimeManager.currentNight else { return }
+        guard NightManager.isEnabled, let night = bedtimeManager.currentNight else { return }
         nightManager.noteAwake(in: night)
     }
 
@@ -413,6 +413,18 @@ struct ContentView: View {
     private func evaluateMorning() {
         guard morningCheckIn == nil, !evaluatingMorning, !showBlowOut,
               bedtimeManager.isCountdownActive, let night = bedtimeManager.lastNight else { return }
+
+        // 옮겨붙는 흐름이 꺼져 있으면 잠든 시각은 묻지 않는다. 불을 끈 밤의 조각 뒷면만 권한다.
+        guard NightManager.isEnabled else {
+            let key = night.start.timeIntervalSince1970
+            if morningAutoShownBedtime != key,
+               let fragment = fragmentManager.fragment(forBedtime: night.start),
+               !fragment.isFellAsleep, !fragment.isBackWritten {
+                morningAutoShownBedtime = key
+                morningCheckIn = MorningCheckIn(night: night, step: .writeBack)
+            }
+            return
+        }
         // 더 지난 밤은 이제 묻지 않는다 — 앱을 며칠 안 열었어도 그 밤들은 그을음 없이 지나간다
         nightManager.closeUnanswered(before: night.start)
 

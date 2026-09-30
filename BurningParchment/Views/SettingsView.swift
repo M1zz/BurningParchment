@@ -92,7 +92,7 @@ struct SettingsView: View {
                         indicatorSection
 
                         // 수면 기록 (건강 앱)
-                        if SleepHealth.isAvailable { sleepRecordSection }
+                        if NightManager.isEnabled && SleepHealth.isAvailable { sleepRecordSection }
 
                         // 화면 테마
                         appearanceSection

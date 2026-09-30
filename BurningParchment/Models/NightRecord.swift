@@ -87,6 +87,11 @@ struct NightRecord: Codable, Identifiable, Hashable {
 // MARK: - Manager
 
 final class NightManager: ObservableObject {
+    /// 취침 이후 내일의 양피지로 불이 옮겨붙고 아침에 잠든 시각을 확인하는 흐름 전체의 스위치.
+    /// 아직 비공개 — 꺼 두면 1.1.1 처럼 취침 전 후 불어 끄는 의식만 남는다
+    /// (취침 이후는 하트, 아침에는 식은 조각의 뒷면 쓰기만 권한다).
+    static let isEnabled = false
+
     @Published private(set) var records: [NightRecord] = []
 
     private let key = "night_records"

@@ -60,7 +60,7 @@ struct BlowOutView: View {
         .onAppear {
             guard !targetFixed else { return }
             targetFixed = true
-            night = bedtimeManager.currentNight
+            night = NightManager.isEnabled ? bedtimeManager.currentNight : nil
         }
         .onReceive(timer) { _ in tick() }
         .task { await detector.start() }

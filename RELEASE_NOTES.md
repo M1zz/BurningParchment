@@ -7,7 +7,7 @@
 ```
 잠들 시간이 지나면 내일의 양피지가 천천히 타요
 아침에 지난밤 잠든 시각을 확인해요
-건강 앱의 수면 기록이 있으면 알아서 확인해요
+건강 앱과 연동해 수면 기록으로 잠든 시각을 알아서 확인해요
 제시간에 잠들면 저절로 꺼진 조각을 받아요
 ```
 
@@ -16,7 +16,7 @@
 ```
 Past bedtime, tomorrow's parchment burns
 Each morning, confirm when you slept
-Health sleep data can confirm it for you
+Now works with Apple Health sleep data
 Sleep on time to earn a burned-out piece
 ```
 

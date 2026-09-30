@@ -1,5 +1,6 @@
 // ParchmentFragment.swift
 // 취침 30분 전에 불을 끄고 남긴 양피지 한 조각. 조각의 모양은 burnProgress·edgePhase 로 다시 그린다.
+// 불을 끈 밤에는 조각을 식혀 두기만 하고, 뒷면의 한 줄은 아침에 적는다 — 자기 전에 폰을 더 붙잡지 않게.
 
 import Foundation
 
@@ -14,8 +15,17 @@ struct ParchmentFragment: Codable, Identifiable, Hashable {
     let remainingSeconds: TimeInterval
     /// 타다 만 가장자리의 모양. 불꽃이 흔들리던 그 순간의 위상을 그대로 얼려 둔다.
     let edgePhase: Double
+    /// 뒷면에 적은 한 줄. 비어 있으면 아직 적지 않은 것이다.
     var phrase: String
     let createdAt: Date
+    /// nil 이면 직접 불어서 끈 조각 (1.1.1 이전 조각에는 이 값이 없다)
+    let origin: Origin?
+
+    enum Origin: String, Codable {
+        case blownOut
+        /// 불을 끄지 못했지만 제시간에 잠든 게 확인된 밤 — 저절로 꺼진 조각
+        case fellAsleep
+    }
 
     init(id: UUID = UUID(),
          bedtimeDate: Date,
@@ -23,8 +33,9 @@ struct ParchmentFragment: Codable, Identifiable, Hashable {
          burnProgress: Double,
          remainingSeconds: TimeInterval,
          edgePhase: Double,
-         phrase: String,
-         createdAt: Date = Date()) {
+         phrase: String = "",
+         createdAt: Date = Date(),
+         origin: Origin = .blownOut) {
         self.id = id
         self.bedtimeDate = bedtimeDate
         self.extinguishedAt = extinguishedAt
@@ -33,7 +44,18 @@ struct ParchmentFragment: Codable, Identifiable, Hashable {
         self.edgePhase = edgePhase
         self.phrase = phrase
         self.createdAt = createdAt
+        self.origin = origin
     }
+
+    /// 잠든 게 확인돼 저절로 꺼진 조각. 모양은 모서리 한 줌으로 정해 둔다.
+    static func fellAsleep(bedtimeDate: Date) -> ParchmentFragment {
+        ParchmentFragment(bedtimeDate: bedtimeDate, extinguishedAt: bedtimeDate,
+                          burnProgress: 0.965, remainingSeconds: 0,
+                          edgePhase: .random(in: 0...100), origin: .fellAsleep)
+    }
+
+    var isFellAsleep: Bool { origin == .fellAsleep }
+    var isBackWritten: Bool { !phrase.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
 
     /// 29분 30초를 남겼으면 "30분" — 사용자가 본 타이머 숫자와 맞춘다
     var remainingMinutes: Int { Self.minutes(from: remainingSeconds) }

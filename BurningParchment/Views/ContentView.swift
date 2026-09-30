@@ -11,6 +11,7 @@ struct ContentView: View {
     @EnvironmentObject var excuseManager:     BedtimeExcuseManager
     @EnvironmentObject var storeManager:      StoreManager
     @EnvironmentObject var fragmentManager:   FragmentManager
+    @EnvironmentObject var nightManager:      NightManager
     @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings    = false
     @State private var showDeadlines   = false
@@ -18,11 +19,16 @@ struct ContentView: View {
     @State private var autoOpenReflectionInput = false
     @State private var showReflectionNudge = false
     @State private var nudgeEvaluatedThisSession = false
-    @State private var showExcuseSheet = false
-    @State private var excuseShownThisSession = false
     @State private var showBlowOut     = false
     @State private var showFragments   = false
+    @State private var morningCheckIn: MorningCheckIn?
+    @State private var evaluatingMorning = false
+    /// 아침 확인을 저절로 띄운 밤(취침 시각). 하룻밤에 한 번만 띄우고, 그 뒤로는 사용자가 열 때만.
+    @AppStorage("morningCheckInAutoShownBedtime") private var morningAutoShownBedtime: Double = 0
     @AppStorage("reflectionNudgeDismissedDate") private var nudgeDismissedISO: String = ""
+
+    /// 밤에 앱이 켜져 있는 동안 "깨어 있던 흔적"을 남기는 간격
+    private let awakeTicker = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private static let nudgeWindowSeconds: Double = 5400  // 취침 90분 전부터
@@ -80,6 +86,7 @@ struct ContentView: View {
                     tomorrowIntentStrip
                     BurningParchmentView()
                         .environmentObject(bedtimeManager)
+                        .environmentObject(nightManager)
                     blowOutPrompt
                     reflectionNudgeBanner
                     pageIndicator
@@ -124,13 +131,16 @@ struct ContentView: View {
             BlowOutView()
                 .environmentObject(bedtimeManager)
                 .environmentObject(fragmentManager)
+                .environmentObject(nightManager)
         }
         .sheet(isPresented: $showFragments) {
             FragmentCollectionView()
                 .environmentObject(fragmentManager)
         }
-        .sheet(isPresented: $showExcuseSheet) {
-            BedtimeExcuseSheetView()
+        .sheet(item: $morningCheckIn) { checkIn in
+            MorningCheckInView(checkIn: checkIn)
+                .environmentObject(nightManager)
+                .environmentObject(fragmentManager)
                 .environmentObject(excuseManager)
         }
         .onChange(of: scenePhase) { phase in
@@ -142,24 +152,35 @@ struct ContentView: View {
                     bedtimeManager.selectedPeriod = .day
                 }
                 nudgeEvaluatedThisSession = false
-                excuseShownThisSession = false
+                noteAwakeIfNight()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     evaluateReflectionNudge()
-                    evaluateExcusePrompt()
+                    evaluateMorning()
                 }
             }
         }
         .onChange(of: bedtimeManager.isCountdownActive) { active in
-            if active { evaluateReflectionNudge() }
-            if !active { evaluateExcusePrompt() }
+            if active {
+                evaluateReflectionNudge()
+                evaluateMorning()
+            }
+        }
+        .onChange(of: bedtimeManager.currentNight) { night in
+            // 새 밤이 시작되면 확인받지 못한 지난 밤들은 그을음 없이 닫는다
+            if let night { nightManager.closeUnanswered(before: night.start) }
+            noteAwakeIfNight()
+        }
+        .onReceive(awakeTicker) { _ in
+            if scenePhase == .active { noteAwakeIfNight() }
         }
         .onChange(of: showReflections) { isShowing in
             if !isShowing { autoOpenReflectionInput = false }
         }
         .onAppear {
+            noteAwakeIfNight()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 evaluateReflectionNudge()
-                evaluateExcusePrompt()
+                evaluateMorning()
             }
         }
     }
@@ -237,10 +258,42 @@ struct ContentView: View {
         fragmentManager.fragment(forBedtime: bedtimeManager.currentBedDate)
     }
 
+    /// 취침 이후, 아직 끄지 않은 내일의 양피지가 타고 있는가
+    private var isTomorrowBurning: Bool {
+        guard let night = bedtimeManager.currentNight else { return false }
+        // 기상 30분 전부터는 "곧 기상" 화면이라 끌 것이 보이지 않는다
+        if bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 { return false }
+        if fragmentManager.fragment(forBedtime: night.start) != nil { return false }
+        return nightManager.record(forBedtime: night.start)?.extinguishedAt == nil
+    }
+
     @ViewBuilder
     private var blowOutPrompt: some View {
         if bedtimeManager.selectedPeriod == .day {
-            if bedtimeManager.isCountdownActive, tonightFragment != nil {
+            if isTomorrowBurning {
+                blowOutButton
+                    .accessibilityHint("내일의 양피지에 붙은 불을 끕니다")
+            } else if bedtimeManager.isCountdownActive, let last = bedtimeManager.lastNight,
+                      morningAutoShownBedtime == last.start.timeIntervalSince1970,
+                      nightManager.isPending(last) {
+                // 아침 확인을 닫아 두었다면 여기서 다시 열 수 있다. 답하지 않으면 그을음 없이 넘어간다.
+                Button {
+                    morningCheckIn = MorningCheckIn(night: last, step: .ask)
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "sunrise")
+                        Text("어젯밤은 어땠나요?")
+                            .font(.system(.body, design: .serif).weight(.medium))
+                        Image(systemName: "chevron.right")
+                            .font(.body)
+                    }
+                    .foregroundColor(.inkMuted.opacity(0.85))
+                    .padding(.vertical, 8)
+                    .padding(.horizontal, 14)
+                }
+                .padding(.bottom, 6)
+                .transition(.opacity)
+            } else if bedtimeManager.isCountdownActive, tonightFragment != nil {
                 Button { showFragments = true } label: {
                     HStack(spacing: 8) {
                         Image(systemName: "smoke.fill")
@@ -257,24 +310,28 @@ struct ContentView: View {
                 .padding(.bottom, 6)
                 .transition(.opacity)
             } else if bedtimeManager.isInBlowOutWindow {
-                Button { showBlowOut = true } label: {
-                    HStack(spacing: 10) {
-                        Image(systemName: "wind")
-                            .font(.system(size: 14, weight: .semibold))
-                        Text("후 불어서 불 끄기")
-                            .font(.system(size: 15, weight: .semibold, design: .serif))
-                    }
-                    .foregroundColor(.onEmber)
-                    .padding(.vertical, 12)
-                    .padding(.horizontal, 22)
-                    .background(Capsule().fill(Color.ember))
-                    .shadow(color: .ember.opacity(0.35), radius: 10, y: 3)
-                }
-                .padding(.bottom, 8)
-                .transition(.move(edge: .bottom).combined(with: .opacity))
-                .accessibilityHint("오늘 하루의 불을 끄고 남은 조각을 글귀와 함께 모아둡니다")
+                blowOutButton
+                    .accessibilityHint("오늘 하루의 불을 끄고 남은 조각을 모아둡니다")
             }
         }
+    }
+
+    private var blowOutButton: some View {
+        Button { showBlowOut = true } label: {
+            HStack(spacing: 10) {
+                Image(systemName: "wind")
+                    .font(.system(size: 14, weight: .semibold))
+                Text("후 불어서 불 끄기")
+                    .font(.system(size: 15, weight: .semibold, design: .serif))
+            }
+            .foregroundColor(.onEmber)
+            .padding(.vertical, 12)
+            .padding(.horizontal, 22)
+            .background(Capsule().fill(Color.ember))
+            .shadow(color: .ember.opacity(0.35), radius: 10, y: 3)
+        }
+        .padding(.bottom, 8)
+        .transition(.move(edge: .bottom).combined(with: .opacity))
     }
 
     // MARK: - Reflection Nudge
@@ -344,22 +401,55 @@ struct ContentView: View {
         }
     }
 
-    // MARK: - Excuse Prompt
+    // MARK: - Night & Morning
+    // 밤사이 내일의 양피지가 타는 건 보여주기만 하고, 그을음은 아침에 확인된 만큼만 남긴다.
 
-    private var shouldShowExcuse: Bool {
-        bedtimeManager.selectedPeriod == .day
-        && !bedtimeManager.isCountdownActive
-        && !bedtimeManager.isBeforeWakeTime
-        && bedtimeManager.progress >= 1.0
-        && !excuseManager.hasExcuseToday
-        // 취침 전에 스스로 불을 껐다면 지키지 못한 게 아니다
-        && tonightFragment == nil
+    private func noteAwakeIfNight() {
+        guard let night = bedtimeManager.currentNight else { return }
+        nightManager.noteAwake(in: night)
     }
 
-    private func evaluateExcusePrompt() {
-        guard !excuseShownThisSession, shouldShowExcuse else { return }
-        excuseShownThisSession = true
-        showExcuseSheet = true
+    /// 낮에 앱을 열면 어젯밤을 확정한다. 건강 앱 기록이 있으면 묻지 않고, 없으면 하룻밤에 한 번만 묻는다.
+    private func evaluateMorning() {
+        guard morningCheckIn == nil, !evaluatingMorning, !showBlowOut,
+              bedtimeManager.isCountdownActive, let night = bedtimeManager.lastNight else { return }
+        // 더 지난 밤은 이제 묻지 않는다 — 앱을 며칠 안 열었어도 그 밤들은 그을음 없이 지나간다
+        nightManager.closeUnanswered(before: night.start)
+
+        let key = night.start.timeIntervalSince1970
+        let autoShown = morningAutoShownBedtime == key
+        let fragment = fragmentManager.fragment(forBedtime: night.start)
+
+        if nightManager.record(forBedtime: night.start)?.isResolved == true {
+            if let fragment, !fragment.isBackWritten, !autoShown {
+                morningAutoShownBedtime = key
+                morningCheckIn = MorningCheckIn(night: night, step: .writeBack)
+            }
+            return
+        }
+
+        // 취침 전에 스스로 불을 껐다 — 확인할 것이 없다. 식은 조각의 뒷면만 권한다.
+        if let fragment, !fragment.isFellAsleep {
+            nightManager.resolve(night, outcome: .keptBedtime)
+            if !fragment.isBackWritten, !autoShown {
+                morningAutoShownBedtime = key
+                morningCheckIn = MorningCheckIn(night: night, step: .writeBack)
+            }
+            return
+        }
+
+        evaluatingMorning = true
+        Task { @MainActor in
+            defer { evaluatingMorning = false }
+            if let onset = await SleepHealth.sleepOnset(in: night) {
+                nightManager.resolve(night, outcome: .health, healthOnset: onset)
+                morningAutoShownBedtime = key
+                morningCheckIn = MorningCheckIn(night: night, step: .result)
+            } else if !autoShown {
+                morningAutoShownBedtime = key
+                morningCheckIn = MorningCheckIn(night: night, step: .ask)
+            }
+        }
     }
 
     private var isNudgeDismissedToday: Bool {
@@ -522,4 +612,5 @@ struct ContentView: View {
         .environmentObject(ReflectionManager())
         .environmentObject(BedtimeExcuseManager())
         .environmentObject(FragmentManager())
+        .environmentObject(NightManager())
 }

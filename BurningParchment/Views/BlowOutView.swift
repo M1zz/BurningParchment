@@ -1,5 +1,7 @@
 // BlowOutView.swift
-// 취침 30분 전부터 — 타고 있는 양피지에 "후" 불어 불을 끄고, 남은 조각에 한 줄을 적어 모아둔다.
+// 타고 있는 양피지에 "후" 불어 불을 끈다.
+//   취침 30분 전 ~ 취침: 오늘의 양피지 — 남은 조각은 아침까지 식혀 두고, 뒷면은 아침에 적는다
+//   취침 이후:            내일의 양피지 — 끈 자리에서 멈춘다 (그을음은 아침에 확인된 만큼만 남는다)
 
 import SwiftUI
 import Combine
@@ -7,13 +9,14 @@ import Combine
 struct BlowOutView: View {
     @EnvironmentObject var bedtimeManager:  BedtimeManager
     @EnvironmentObject var fragmentManager: FragmentManager
+    @EnvironmentObject var nightManager:    NightManager
     @Environment(\.dismiss) private var dismiss
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @StateObject private var detector = BlowDetector()
 
-    private enum Stage { case blowing, extinguished, writing }
+    private enum Stage { case blowing, extinguished }
     @State private var stage: Stage = .blowing
     @State private var phase: Double = 0
     @State private var smoke: [Smoke] = []
@@ -23,15 +26,24 @@ struct BlowOutView: View {
 
     // 불이 꺼진 순간의 모습 — 조각은 이 값으로 만든다
     @State private var snapshot: Snapshot?
-    @State private var phrase = ""
-    @State private var suggestion = FragmentPhrase.random()
-    @FocusState private var phraseFocused: Bool
 
     private struct Snapshot {
         let bedDate: Date
         let burnProgress: Double
         let remainingSeconds: TimeInterval
         let edgePhase: Double
+    }
+
+    /// 지금 끄는 게 내일의 양피지인가 (취침 이후). 화면을 연 순간의 밤으로 고정한다.
+    @State private var night: DateInterval?
+    @State private var targetFixed = false
+
+    private var liveProgress: Double {
+        if let night {
+            return nightManager.record(forBedtime: night.start)?.liveBurnProgress(now: Date())
+                ?? min(max(Date().timeIntervalSince(night.start) / max(night.duration, 1), 0), 1)
+        }
+        return bedtimeManager.progress
     }
 
     /// 조각 둘레의 여백 — 불꽃과 연기가 뻗을 자리
@@ -43,14 +55,12 @@ struct BlowOutView: View {
         ZStack {
             Color.appBackground.ignoresSafeArea()
 
-            switch stage {
-            case .blowing, .extinguished:
-                burningStage
-                    .transition(.opacity)
-            case .writing:
-                writingStage
-                    .transition(.opacity.combined(with: .move(edge: .bottom)))
-            }
+            burningStage
+        }
+        .onAppear {
+            guard !targetFixed else { return }
+            targetFixed = true
+            night = bedtimeManager.currentNight
         }
         .onReceive(timer) { _ in tick() }
         .task { await detector.start() }
@@ -94,7 +104,7 @@ struct BlowOutView: View {
                 let room = Self.flameRoom
                 let inner = CGSize(width: max(geo.size.width - room * 2, 1),
                                    height: max(geo.size.height - room * 2, 1))
-                let progress = snapshot?.burnProgress ?? bedtimeManager.progress
+                let progress = snapshot?.burnProgress ?? liveProgress
                 let edge = FragmentScrapView.edgePoints(burnProgress: progress, edgePhase: edgeSeed, in: inner)
                     .map { CGPoint(x: $0.x + room, y: $0.y + room) }
 
@@ -131,9 +141,21 @@ struct BlowOutView: View {
                 Text("불이 꺼졌어요")
                     .font(.system(size: 22, weight: .medium, design: .serif))
                     .foregroundColor(.ember.opacity(0.9))
-                Text("남은 조각을 모아둘게요")
-                    .font(.system(size: 13, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.7))
+                Text(night == nil
+                     ? "남은 조각은 아침까지 식혀 둘게요.\n뒷면의 한 줄은 내일 아침에 적어요"
+                     : "내일의 양피지가 여기서 멈췄어요.\n좋은 꿈 꾸세요")
+                    .font(.system(.body, design: .serif))
+                    .foregroundColor(.inkMuted.opacity(0.8))
+                    .multilineTextAlignment(.center)
+                Button { dismiss() } label: {
+                    Text("잘 자요")
+                        .font(.body.weight(.semibold))
+                        .foregroundColor(.onEmber)
+                        .padding(.vertical, 12)
+                        .padding(.horizontal, 36)
+                        .background(Capsule().fill(Color.ember))
+                }
+                .padding(.top, 6)
             } else {
                 Text(detector.availability == .unavailable
                      ? "마이크를 켜야 불을 끌 수 있어요"
@@ -141,10 +163,16 @@ struct BlowOutView: View {
                     .font(.system(size: 20, weight: .medium, design: .serif))
                     .foregroundColor(.ember.opacity(0.9))
                     .multilineTextAlignment(.center)
-                Text("취침까지 \(bedtimeManager.remainingKoreanString)")
-                    .font(.system(size: 13, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.7))
-                    .monospacedDigit()
+                if night != nil {
+                    Text("내일의 양피지가 타고 있어요")
+                        .font(.system(.body, design: .serif))
+                        .foregroundColor(.inkMuted.opacity(0.8))
+                } else {
+                    Text("취침까지 \(bedtimeManager.remainingKoreanString)")
+                        .font(.system(size: 13, design: .serif))
+                        .foregroundColor(.inkMuted.opacity(0.7))
+                        .monospacedDigit()
+                }
                 if detector.availability == .unavailable {
                     // 불은 입김으로만 꺼진다 — 누르기 같은 다른 길은 두지 않는다
                     Text("입김의 세기만 확인하고 소리는 녹음하지 않아요")
@@ -170,107 +198,32 @@ struct BlowOutView: View {
         .frame(minHeight: 150)
     }
 
-    // MARK: - 조각에 한 줄
-
-    private var writingStage: some View {
-        let snap = snapshot
-        return ScrollView {
-            VStack(spacing: 22) {
-                Text("남은 조각")
-                    .font(.system(size: 13, weight: .medium, design: .serif))
-                    .foregroundColor(.ember.opacity(0.6))
-                    .padding(.top, 40)
-
-                FragmentScrapView(burnProgress: snap?.burnProgress ?? 1,
-                                  edgePhase: snap?.edgePhase ?? 0)
-                    .frame(height: 170)
-
-                if let snap {
-                    Text("\(ParchmentFragment.minutes(from: snap.remainingSeconds))분을 남기고 불을 껐어요")
-                        .font(.system(size: 20, weight: .medium, design: .serif))
-                        .foregroundColor(.ember.opacity(0.9))
-                }
-
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("조각에 남길 한 줄")
-                        .font(.system(size: 12, weight: .medium))
-                        .foregroundColor(.inkMuted.opacity(0.7))
-
-                    TextField(suggestion, text: $phrase, axis: .vertical)
-                        .font(.system(size: 16, design: .serif))
-                        .foregroundColor(.ink)
-                        .lineLimit(1...3)
-                        .focused($phraseFocused)
-                        .submitLabel(.done)
-                        .onSubmit { phraseFocused = false }
-                        .padding(14)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(Color.ink.opacity(0.04))
-                                .overlay(RoundedRectangle(cornerRadius: 12)
-                                    .stroke(Color.ember.opacity(0.25), lineWidth: 1))
-                        )
-
-                    HStack {
-                        Text("비워 두면 이 글귀가 적혀요")
-                            .font(.system(size: 11))
-                            .foregroundColor(.inkMuted.opacity(0.5))
-                        Spacer()
-                        Button {
-                            suggestion = FragmentPhrase.random(excluding: suggestion)
-                        } label: {
-                            Label("다른 글귀", systemImage: "arrow.triangle.2.circlepath")
-                                .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(.ember.opacity(0.75))
-                        }
-                    }
-                }
-
-                Button(action: save) {
-                    Text("조각 모아두기")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(.onEmber)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 15)
-                        .background(RoundedRectangle(cornerRadius: 14).fill(Color.ember))
-                }
-                .padding(.top, 6)
-            }
-            .padding(.horizontal, 28)
-            .padding(.bottom, 40)
-        }
-        .scrollDismissesKeyboard(.interactively)
-    }
-
     // MARK: - Actions
 
     private func putOut() {
         guard stage == .blowing else { return }
         detector.stop()
+        let now = Date()
         snapshot = Snapshot(
-            bedDate: bedtimeManager.currentBedDate,
-            burnProgress: bedtimeManager.progress,
+            bedDate: night?.start ?? bedtimeManager.currentBedDate,
+            burnProgress: liveProgress,
             remainingSeconds: bedtimeManager.remainingSeconds,
             edgePhase: edgeSeed
         )
+        if let night {
+            nightManager.markExtinguished(in: night, at: now)
+        } else if let snap = snapshot {
+            // 뒷면은 비워 둔 채 모아둔다 — 아침에 식은 조각을 뒤집어 적는다
+            fragmentManager.add(ParchmentFragment(
+                bedtimeDate: snap.bedDate,
+                extinguishedAt: now,
+                burnProgress: snap.burnProgress,
+                remainingSeconds: snap.remainingSeconds,
+                edgePhase: snap.edgePhase
+            ))
+        }
         if !reduceMotion { spawnSmoke() }
         withAnimation(.easeOut(duration: 0.4)) { stage = .extinguished }
-        DispatchQueue.main.asyncAfter(deadline: .now() + (reduceMotion ? 0.8 : 2.2)) {
-            withAnimation(.easeInOut(duration: 0.5)) { stage = .writing }
-        }
-    }
-
-    private func save() {
-        guard let snap = snapshot else { dismiss(); return }
-        let written = phrase.trimmingCharacters(in: .whitespacesAndNewlines)
-        fragmentManager.add(ParchmentFragment(
-            bedtimeDate: snap.bedDate,
-            burnProgress: snap.burnProgress,
-            remainingSeconds: snap.remainingSeconds,
-            edgePhase: snap.edgePhase,
-            phrase: written.isEmpty ? suggestion : written
-        ))
-        dismiss()
     }
 
     // MARK: - 연기

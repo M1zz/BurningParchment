@@ -76,6 +76,7 @@ targets:
         CFBundleDisplayName: "불타는 내인생"
         NSSupportsLiveActivities: true
         NSMicrophoneUsageDescription: "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
+        NSHealthShareUsageDescription: "아침에 어젯밤 잠든 시각을 확인해, 취침 이후 타던 내일의 양피지를 그 시각으로 되돌리는 데만 수면 기록을 읽습니다. 기록을 쓰거나 기기 밖으로 보내지 않습니다."
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app

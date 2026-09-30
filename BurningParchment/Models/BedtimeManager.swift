@@ -84,6 +84,10 @@ class BedtimeManager: ObservableObject {
     private var lastWidgetReload: Date = .distantPast
     private var scheduledNotifBedDate: Date?
     private(set) var currentBedDate: Date = .distantFuture
+    /// 지금 지나고 있는 밤(취침~기상). 낮이면 nil — 이 동안 "내일의 양피지"가 탄다.
+    @Published private(set) var currentNight: DateInterval?
+    /// 가장 최근에 끝난 밤. 낮 동안 아침 확인에 쓴다.
+    private(set) var lastNight: DateInterval?
     private var liveActivity: Activity<BedtimeActivityAttributes>?
     private var lastLiveActivityUpdate: Date = .distantPast
 
@@ -295,7 +299,7 @@ class BedtimeManager: ObservableObject {
         return String(format: "%02d:%02d:%02d", h, m, s)
     }
 
-    /// 후 불어 불을 끌 수 있는 시간 — 취침 30분 전부터 취침 시각까지
+    /// 후 불어 불을 끌 수 있는 시간 — 취침 30분 전부터. 취침 이후에는 내일의 양피지를 끈다.
     static let blowOutWindowSeconds: TimeInterval = 1800
 
     var isInBlowOutWindow: Bool {
@@ -521,6 +525,7 @@ class BedtimeManager: ObservableObject {
                 bedDate = bd
             } else {
                 // 수면 구간: 어제 취침 ~ 오늘 기상
+                setNight(DateInterval(start: bd, end: todayWake))
                 isBeforeWakeTime = true
                 isCountdownActive = false
                 sleepProgress = 0
@@ -548,10 +553,13 @@ class BedtimeManager: ObservableObject {
             remainingSeconds = 0
             totalSeconds = total
             let nextWake = cal.date(byAdding: .day, value: 1, to: wakeDate)!
+            setNight(DateInterval(start: bedDate, end: max(nextWake, bedDate.addingTimeInterval(1))))
             let totalSleep = nextWake.timeIntervalSince(bedDate)
             sleepProgress = totalSleep > 0 ? min(max(now.timeIntervalSince(bedDate) / totalSleep, 0), 1) : 0
             endLiveActivity()
         } else {
+            setNight(nil)
+            lastNight = previousNight(endingAt: wakeDate, cal: cal)
             isCountdownActive = true
             isBeforeWakeTime = false
             sleepProgress = 0
@@ -571,6 +579,23 @@ class BedtimeManager: ObservableObject {
         }
 
         saveSharedData()
+    }
+
+    private func setNight(_ night: DateInterval?) {
+        if currentNight != night { currentNight = night }
+    }
+
+    /// wakeDate 에 끝나는 밤 — 전날 기상 시각 기준으로 취침 시각을 잡는다
+    private func previousNight(endingAt wakeDate: Date, cal: Calendar) -> DateInterval? {
+        guard let prevWake = cal.date(byAdding: .day, value: -1, to: wakeDate) else { return nil }
+        var comps = cal.dateComponents([.year, .month, .day], from: prevWake)
+        comps.hour = bedtimeHour
+        comps.minute = bedtimeMinute
+        comps.second = 0
+        guard var bd = cal.date(from: comps) else { return nil }
+        if bd <= prevWake { bd = cal.date(byAdding: .day, value: 1, to: bd)! }
+        guard bd < wakeDate else { return nil }
+        return DateInterval(start: bd, end: wakeDate)
     }
 
     // MARK: - Hidden Periods Persistence

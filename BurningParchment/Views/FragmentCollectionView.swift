@@ -1,5 +1,5 @@
 // FragmentCollectionView.swift
-// 불을 끄고 모아둔 양피지 조각들 — 조각마다 그날 밤 남긴 한 줄이 적혀 있다.
+// 불을 끄고 모아둔 양피지 조각들 — 조각을 뒤집으면 뒷면에 적어 둔 한 줄이 있다.
 
 import SwiftUI
 
@@ -19,8 +19,8 @@ struct FragmentCollectionView: View {
                 } else {
                     ScrollView {
                         VStack(spacing: 6) {
-                            Text("불을 끄고 남긴 조각 \(fragmentManager.fragments.count)개")
-                                .font(.system(size: 13, design: .serif))
+                            Text("모은 조각 \(fragmentManager.fragments.count)개")
+                                .font(.system(.body, design: .serif))
                                 .foregroundColor(.inkMuted.opacity(0.7))
                                 .padding(.bottom, 12)
 
@@ -61,7 +61,7 @@ struct FragmentCollectionView: View {
                 .font(.system(size: 17, weight: .medium, design: .serif))
                 .foregroundColor(.ember.opacity(0.85))
             Text("취침 30분 전부터 타는 양피지에 후 불어\n불을 끄고 남은 조각을 모아둘 수 있어요")
-                .font(.system(size: 13))
+                .font(.body)
                 .foregroundColor(.inkMuted.opacity(0.7))
                 .multilineTextAlignment(.center)
         }
@@ -76,22 +76,24 @@ private struct FragmentCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            FragmentScrapView(burnProgress: fragment.burnProgress, edgePhase: fragment.edgePhase)
+            FragmentScrapView(fragment: fragment)
                 .frame(height: 96)
 
-            Text(fragment.phrase)
-                .font(.system(size: 14, design: .serif))
-                .foregroundColor(.ink.opacity(0.85))
+            Text(fragment.isBackWritten ? fragment.phrase : String(localized: "뒷면이 비어 있어요"))
+                .font(.system(.body, design: .serif))
+                .foregroundColor(fragment.isBackWritten ? .ink.opacity(0.85) : .inkMuted.opacity(0.6))
                 .lineLimit(3)
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, minHeight: 56, alignment: .topLeading)
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(fragment.dateString)
-                Text("\(fragment.remainingMinutes)분 남기고")
+                Text(fragment.shortCaption)
             }
-            .font(.system(size: 10))
-            .foregroundColor(.inkMuted.opacity(0.6))
+            .font(.body)
+            .foregroundColor(.inkMuted.opacity(0.7))
+            .lineLimit(1)
+            .minimumScaleFactor(0.8)
         }
         .padding(14)
         .background(
@@ -101,44 +103,69 @@ private struct FragmentCard: View {
                     .stroke(Color.ember.opacity(0.14), lineWidth: 1))
         )
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel(fragment.phrase)
-        .accessibilityValue(String(localized: "\(fragment.dateString), \(fragment.remainingMinutes)분 남기고 불을 껐어요"))
+        .accessibilityLabel(fragment.isBackWritten ? fragment.phrase : String(localized: "뒷면이 비어 있어요"))
+        .accessibilityValue(fragment.dateString + ", " + fragment.longCaption)
     }
 }
 
 // MARK: - Detail
 
 private struct FragmentDetailView: View {
-    let fragment: ParchmentFragment
+    let fragmentID: UUID
     @EnvironmentObject var fragmentManager: FragmentManager
     @Environment(\.dismiss) private var dismiss
     @State private var confirmDelete = false
+    @State private var showsBack = false
+    @State private var editing = false
+
+    init(fragment: ParchmentFragment) { self.fragmentID = fragment.id }
+
+    private var fragment: ParchmentFragment? {
+        fragmentManager.fragments.first { $0.id == fragmentID }
+    }
 
     var body: some View {
         ZStack {
             Color.appBackgroundWarm.ignoresSafeArea()
 
-            ScrollView {
-                VStack(spacing: 26) {
-                    FragmentScrapView(burnProgress: fragment.burnProgress, edgePhase: fragment.edgePhase)
-                        .frame(height: 220)
-                        .padding(.top, 24)
+            if let fragment {
+                ScrollView {
+                    VStack(spacing: 22) {
+                        FragmentFlipCard(fragment: fragment, showsBack: $showsBack)
+                            .frame(height: 220)
+                            .padding(.top, 24)
 
-                    Text(fragment.phrase)
-                        .font(.system(size: 22, weight: .regular, design: .serif))
-                        .foregroundColor(.ink)
+                        Text("조각을 누르면 뒤집혀요")
+                            .font(.body)
+                            .foregroundColor(.inkMuted.opacity(0.6))
+
+                        VStack(spacing: 4) {
+                            Text(fragment.dateString)
+                            Text(fragment.longCaption)
+                        }
+                        .font(.system(.body, design: .serif))
+                        .foregroundColor(.inkMuted.opacity(0.8))
                         .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
 
-                    VStack(spacing: 4) {
-                        Text(fragment.dateString)
-                        Text("\(fragment.remainingMinutes)분을 남기고 불을 껐어요")
+                        if editing || !fragment.isBackWritten {
+                            FragmentBackEditor(fragment: fragment) {
+                                editing = false
+                                showsBack = true
+                            }
+                            .environmentObject(fragmentManager)
+                            .padding(.top, 8)
+                        } else {
+                            Button { editing = true } label: {
+                                Label("뒷면 고쳐 쓰기", systemImage: "pencil")
+                                    .font(.body.weight(.medium))
+                                    .foregroundColor(.ember.opacity(0.85))
+                            }
+                        }
                     }
-                    .font(.system(size: 13, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.7))
+                    .padding(.horizontal, 28)
+                    .padding(.bottom, 40)
                 }
-                .padding(.horizontal, 32)
-                .padding(.bottom, 40)
+                .scrollDismissesKeyboard(.interactively)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -151,12 +178,27 @@ private struct FragmentDetailView: View {
                 .accessibilityLabel("조각 버리기")
             }
         }
+        .onAppear { showsBack = fragment?.isBackWritten ?? false }
         .confirmationDialog("이 조각을 버릴까요?", isPresented: $confirmDelete, titleVisibility: .visible) {
             Button("버리기", role: .destructive) {
-                fragmentManager.delete(fragment)
+                if let fragment { fragmentManager.delete(fragment) }
                 dismiss()
             }
             Button("취소", role: .cancel) {}
         }
+    }
+}
+
+// MARK: - Captions
+
+extension ParchmentFragment {
+    var shortCaption: String {
+        isFellAsleep ? String(localized: "저절로 꺼진 조각") : String(localized: "\(remainingMinutes)분 남기고")
+    }
+
+    var longCaption: String {
+        isFellAsleep
+            ? String(localized: "제시간에 잠들어 불이 저절로 꺼졌어요")
+            : String(localized: "\(remainingMinutes)분을 남기고 불을 껐어요")
     }
 }

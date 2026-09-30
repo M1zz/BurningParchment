@@ -28,6 +28,13 @@ class FragmentManager: ObservableObject {
         save()
     }
 
+    /// 뒷면에 한 줄을 적는다
+    func setPhrase(_ phrase: String, for id: UUID) {
+        guard let i = fragments.firstIndex(where: { $0.id == id }) else { return }
+        fragments[i].phrase = phrase.trimmingCharacters(in: .whitespacesAndNewlines)
+        save()
+    }
+
     func delete(_ fragment: ParchmentFragment) {
         fragments.removeAll { $0.id == fragment.id }
         save()

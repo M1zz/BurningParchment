@@ -94,6 +94,38 @@
         }
       }
     },
+    "%@ 늦게 잠들었어요. 그만큼 오늘 아침이 그을려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You fell asleep %@ late. This morning is scorched by that much"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 늦게 잠들었어요. 그만큼 오늘 아침이 그을려요"
+          }
+        }
+      }
+    },
+    "%@ 이후 내일의 양피지가 탔어요.\n잠든 시각만큼만 그을음으로 남겨요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow's parchment burned after %@.\nOnly the time you stayed up leaves a scorch."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 이후 내일의 양피지가 탔어요.\n잠든 시각만큼만 그을음으로 남겨요."
+          }
+        }
+      }
+    },
     "%@ 항아리": {
       "extractionState": "stale",
       "localizations": {
@@ -344,6 +376,38 @@
         }
       }
     },
+    "%@에 앱을 열어 본 기록이 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The app was open at %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@에 앱을 열어 본 기록이 있어요"
+          }
+        }
+      }
+    },
+    "%@에 후 불어 불을 껐어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You blew out the fire at %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@에 후 불어 불을 껐어요"
+          }
+        }
+      }
+    },
     "%lld%% 남음": {
       "extractionState": "stale",
       "localizations": {
@@ -578,6 +642,22 @@
         }
       }
     },
+    "10분 안쪽은 제시간으로 쳐요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Within 10 minutes counts as on time"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10분 안쪽은 제시간으로 쳐요"
+          }
+        }
+      }
+    },
     "1년": {
       "extractionState": "stale",
       "localizations": {
@@ -794,6 +874,86 @@
         }
       }
     },
+    "건강 앱 기록: %@에 잠들었어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health record: fell asleep at %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 앱 기록: %@에 잠들었어요"
+          }
+        }
+      }
+    },
+    "건강 앱 수면 기록 연결": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect Health sleep records"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 앱 수면 기록 연결"
+          }
+        }
+      }
+    },
+    "건강 앱 수면 기록 연결하기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect Health sleep records"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 앱 수면 기록 연결하기"
+          }
+        }
+      }
+    },
+    "건강 앱 수면 기록과 연결됨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connected to Health sleep records"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 앱 수면 기록과 연결됨"
+          }
+        }
+      }
+    },
+    "건강 앱에 어젯밤 수면 기록이 없어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There's no sleep record for last night in Health"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 앱에 어젯밤 수면 기록이 없어요"
+          }
+        }
+      }
+    },
     "고쳐 적기": {
       "localizations": {
         "en": {
@@ -923,6 +1083,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "그만둘 것"
+          }
+        }
+      }
+    },
+    "기록이 틀렸나요? 직접 고치기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record wrong? Fix it yourself"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기록이 틀렸나요? 직접 고치기"
           }
         }
       }
@@ -1093,6 +1269,22 @@
         }
       }
     },
+    "나중에": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Later"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나중에"
+          }
+        }
+      }
+    },
     "날려버리기": {
       "extractionState": "manual",
       "localizations": {
@@ -1158,34 +1350,18 @@
         }
       }
     },
-    "남은 조각": {
+    "남은 조각은 아침까지 식혀 둘게요.\n뒷면의 한 줄은 내일 아침에 적어요": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "What's left"
+            "value": "The fragment will cool until morning.\nWrite on its back tomorrow morning"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "남은 조각"
-          }
-        }
-      }
-    },
-    "남은 조각을 모아둘게요": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Let's keep what's left"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "남은 조각을 모아둘게요"
+            "value": "남은 조각은 아침까지 식혀 둘게요.\n뒷면의 한 줄은 내일 아침에 적어요"
           }
         }
       }
@@ -1307,6 +1483,70 @@
         }
       }
     },
+    "내일의 양피지": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow's Parchment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일의 양피지"
+          }
+        }
+      }
+    },
+    "내일의 양피지가 여기서 멈췄어요.\n좋은 꿈 꾸세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow's parchment stopped here.\nSweet dreams"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일의 양피지가 여기서 멈췄어요.\n좋은 꿈 꾸세요"
+          }
+        }
+      }
+    },
+    "내일의 양피지가 타고 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow's parchment is burning"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일의 양피지가 타고 있어요"
+          }
+        }
+      }
+    },
+    "내일의 양피지에 붙은 불을 끕니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puts out the fire on tomorrow's parchment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내일의 양피지에 붙은 불을 끕니다"
+          }
+        }
+      }
+    },
     "네트워크 상태를 확인하고 다시 시도해주세요.": {
       "localizations": {
         "en": {
@@ -1319,6 +1559,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "네트워크 상태를 확인하고 다시 시도해주세요."
+          }
+        }
+      }
+    },
+    "늦게 잤어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I went to bed late"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "늦게 잤어요"
           }
         }
       }
@@ -1339,18 +1595,18 @@
         }
       }
     },
-    "다른 글귀": {
+    "다른 글귀 보기": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Another line"
+            "value": "Show another phrase"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다른 글귀"
+            "value": "다른 글귀 보기"
           }
         }
       }
@@ -1523,6 +1779,38 @@
         }
       }
     },
+    "답하지 않고 닫아도 괜찮아요. 확인되지 않은 밤은 그을음 없이 넘어가요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's fine to close this without answering. Unconfirmed nights pass without any scorch."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "답하지 않고 닫아도 괜찮아요. 확인되지 않은 밤은 그을음 없이 넘어가요."
+          }
+        }
+      }
+    },
+    "대강이어도 괜찮아요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A rough guess is fine"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대강이어도 괜찮아요"
+          }
+        }
+      }
+    },
     "더 잘 하려면 내일 무엇을 할까요?": {
       "extractionState": "stale",
       "localizations": {
@@ -1691,6 +1979,22 @@
         }
       }
     },
+    "두 번 탭하면 조각을 뒤집습니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double-tap to flip the fragment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두 번 탭하면 조각을 뒤집습니다"
+          }
+        }
+      }
+    },
     "두 축에 따라 손가락으로 콕 찍어 분류합니다": {
       "extractionState": "stale",
       "localizations": {
@@ -1704,6 +2008,86 @@
           "stringUnit": {
             "state": "translated",
             "value": "두 축에 따라 손가락으로 콕 찍어 분류합니다"
+          }
+        }
+      }
+    },
+    "뒤집어서 뒷면에 한 줄을 남겨 보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flip it over and leave a line on the back."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "뒤집어서 뒷면에 한 줄을 남겨 보세요."
+          }
+        }
+      }
+    },
+    "뒷면 고쳐 쓰기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rewrite the back"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "뒷면 고쳐 쓰기"
+          }
+        }
+      }
+    },
+    "뒷면에 남길 한 줄": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A line for the back"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "뒷면에 남길 한 줄"
+          }
+        }
+      }
+    },
+    "뒷면에 적기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write on the back"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "뒷면에 적기"
+          }
+        }
+      }
+    },
+    "뒷면이 비어 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The back is blank"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "뒷면이 비어 있어요"
           }
         }
       }
@@ -1857,6 +2241,22 @@
         }
       }
     },
+    "몇 시쯤 잠들었나요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When did you fall asleep?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "몇 시쯤 잠들었나요?"
+          }
+        }
+      }
+    },
     "모든 걸 태우지 않아도 괜찮아": {
       "localizations": {
         "en": {
@@ -1906,6 +2306,22 @@
         }
       }
     },
+    "모은 조각 %lld개": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld fragments collected"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모은 조각 %lld개"
+          }
+        }
+      }
+    },
     "못함": {
       "extractionState": "stale",
       "localizations": {
@@ -1919,6 +2335,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "못함"
+          }
+        }
+      }
+    },
+    "무엇 때문에 늦었나요? (선택)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What kept you up? (optional)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "무엇 때문에 늦었나요? (선택)"
           }
         }
       }
@@ -2209,18 +2641,18 @@
         }
       }
     },
-    "불을 끄고 남긴 조각 %lld개": {
+    "불을 껐어요. 좋은 꿈 꾸세요": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pieces kept: %lld"
+            "value": "The fire is out. Sweet dreams"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "불을 끄고 남긴 조각 %lld개"
+            "value": "불을 껐어요. 좋은 꿈 꾸세요"
           }
         }
       }
@@ -2237,6 +2669,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "불을 끄는 것도 용기다"
+          }
+        }
+      }
+    },
+    "불을 끄지 못했어도, 제시간에 잠들었으니 불은 저절로 꺼졌어요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You didn't blow it out, but you fell asleep on time, so the fire went out on its own."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불을 끄지 못했어도, 제시간에 잠들었으니 불은 저절로 꺼졌어요."
           }
         }
       }
@@ -2290,18 +2738,18 @@
         }
       }
     },
-    "비워 두면 이 글귀가 적혀요": {
+    "비워 두면 흐리게 보이는 글귀가 적혀요": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Leave it blank to use this line"
+            "value": "Leave it blank to use the faded phrase"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "비워 두면 이 글귀가 적혀요"
+            "value": "비워 두면 흐리게 보이는 글귀가 적혀요"
           }
         }
       }
@@ -2525,18 +2973,34 @@
         }
       }
     },
-    "수면 중": {
+    "수면 기록": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sleeping"
+            "value": "Sleep Records"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "수면 중"
+            "value": "수면 기록"
+          }
+        }
+      }
+    },
+    "수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sleep records are only read and never leave your device"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요"
           }
         }
       }
@@ -2755,6 +3219,22 @@
         }
       }
     },
+    "아직 비어 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Still blank"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 비어 있어요"
+          }
+        }
+      }
+    },
     "아직 비어 있어요.": {
       "extractionState": "stale",
       "localizations": {
@@ -2938,6 +3418,70 @@
         }
       }
     },
+    "어젯밤 %@ 늦게 잠들어\n오늘 아침이 그을렸어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You fell asleep %@ late last night,\nso this morning is scorched"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어젯밤 %@ 늦게 잠들어\n오늘 아침이 그을렸어요"
+          }
+        }
+      }
+    },
+    "어젯밤 %@ 늦게 잠들었어요.\n오늘 저녁엔 조금 일찍 불을 꺼 봐요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You fell asleep %@ late last night.\nTry putting out the fire a bit earlier tonight."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어젯밤 %@ 늦게 잠들었어요.\n오늘 저녁엔 조금 일찍 불을 꺼 봐요."
+          }
+        }
+      }
+    },
+    "어젯밤 조각이 식었어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last night's fragment has cooled"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어젯밤 조각이 식었어요"
+          }
+        }
+      }
+    },
+    "어젯밤은 어땠나요?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How was last night?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어젯밤은 어땠나요?"
+          }
+        }
+      }
+    },
     "어쩌다": {
       "extractionState": "stale",
       "localizations": {
@@ -3052,6 +3596,70 @@
           "stringUnit": {
             "state": "translated",
             "value": "여러 목표를 동시에 카운트다운해요"
+          }
+        }
+      }
+    },
+    "연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To disconnect, go to iOS Settings ▸ Health ▸ Data Access & Devices"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요"
+          }
+        }
+      }
+    },
+    "연결하기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결하기"
+          }
+        }
+      }
+    },
+    "연결하면 아침마다 묻지 않고, 기록된 잠든 시각으로 불을 되돌려요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once connected, we won't ask each morning and will roll the fire back to when you fell asleep. Sleep records are only read and never leave your device."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결하면 아침마다 묻지 않고, 기록된 잠든 시각으로 불을 되돌려요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요."
+          }
+        }
+      }
+    },
+    "연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once connected, we won't ask each morning. Tomorrow's parchment is rolled back to the time you actually fell asleep"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요"
           }
         }
       }
@@ -3243,6 +3851,22 @@
         }
       }
     },
+    "오늘 아침이 조금 그을렸어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This morning is a little scorched"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 아침이 조금 그을렸어요"
+          }
+        }
+      }
+    },
     "오늘 하루, 한 줄로 남겨봐요.": {
       "extractionState": "stale",
       "localizations": {
@@ -3292,18 +3916,18 @@
         }
       }
     },
-    "오늘 하루의 불을 끄고 남은 조각을 글귀와 함께 모아둡니다": {
+    "오늘 하루의 불을 끄고 남은 조각을 모아둡니다": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Puts out today's fire and keeps what's left with a line"
+            "value": "Puts out today's fire and keeps the remaining fragment"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오늘 하루의 불을 끄고 남은 조각을 글귀와 함께 모아둡니다"
+            "value": "오늘 하루의 불을 끄고 남은 조각을 모아둡니다"
           }
         }
       }
@@ -3370,6 +3994,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘은 어떤 하루였나요? — 콕 찍어보세요"
+          }
+        }
+      }
+    },
+    "오늘은 어떻게 해 볼까요? (선택)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What will you try tonight? (optional)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘은 어떻게 해 볼까요? (선택)"
           }
         }
       }
@@ -3997,6 +4637,22 @@
         }
       }
     },
+    "이번 주에도 있었어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It happened earlier this week too"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주에도 있었어요"
+          }
+        }
+      }
+    },
     "이용약관 (EULA)": {
       "extractionState": "stale",
       "localizations": {
@@ -4130,6 +4786,22 @@
         }
       }
     },
+    "잘 자요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good night"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잘 자요"
+          }
+        }
+      }
+    },
     "잘 타오른 하루, 이제 식힐 시간": {
       "localizations": {
         "en": {
@@ -4159,6 +4831,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "잠김 — 프로에서 열려요"
+          }
+        }
+      }
+    },
+    "잠든 시각": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time fell asleep"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잠든 시각"
+          }
+        }
+      }
+    },
+    "잠들면 저절로 멈춰요. 잠든 시각은 아침에 확인해서 되돌려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It stops on its own once you're asleep. We check when you fell asleep in the morning and roll it back"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잠들면 저절로 멈춰요. 잠든 시각은 아침에 확인해서 되돌려요"
           }
         }
       }
@@ -4423,6 +5127,38 @@
         }
       }
     },
+    "저절로 꺼진 조각": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Went out on its own"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저절로 꺼진 조각"
+          }
+        }
+      }
+    },
+    "저절로 꺼진 조각을 모았어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You kept a fragment that went out on its own"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저절로 꺼진 조각을 모았어요"
+          }
+        }
+      }
+    },
     "전체": {
       "extractionState": "stale",
       "localizations": {
@@ -4473,18 +5209,50 @@
         }
       }
     },
-    "조각 모아두기": {
+    "제시간에 불을 껐어요. 내일의 양피지는 그대로예요": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Keep this piece"
+            "value": "You put out the fire on time. Tomorrow's parchment is untouched"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "조각 모아두기"
+            "value": "제시간에 불을 껐어요. 내일의 양피지는 그대로예요"
+          }
+        }
+      }
+    },
+    "제시간에 잠들어 불이 저절로 꺼졌어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You fell asleep on time, so the fire went out on its own"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제시간에 잠들어 불이 저절로 꺼졌어요"
+          }
+        }
+      }
+    },
+    "제시간에 잤어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I slept on time"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제시간에 잤어요"
           }
         }
       }
@@ -4505,18 +5273,50 @@
         }
       }
     },
-    "조각에 남길 한 줄": {
+    "조각을 누르면 뒤집혀요": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "A line for this piece"
+            "value": "Tap the fragment to flip it"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "조각에 남길 한 줄"
+            "value": "조각을 누르면 뒤집혀요"
+          }
+        }
+      }
+    },
+    "조각의 뒷면": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back of the fragment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각의 뒷면"
+          }
+        }
+      }
+    },
+    "조각의 앞면": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Front of the fragment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각의 앞면"
           }
         }
       }
@@ -5653,22 +6453,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "흘러감"
-          }
-        }
-      }
-    },
-    "🌙 좋은 꿈 꾸세요": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "🌙 Sweet dreams"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "🌙 좋은 꿈 꾸세요"
           }
         }
       }

@@ -18,6 +18,7 @@ struct SettingsView: View {
     @ScaledMetric private var headerIconSize: CGFloat = 44
     @ScaledMetric private var sectionIconSize: CGFloat = 14
     @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
+    @AppStorage(SleepHealth.connectedKey) private var sleepHealthConnected = false
     private var appTheme: AppTheme { AppTheme(rawValue: appThemeRaw) ?? .system }
 
     @ScaledMetric private var rowFontSize: CGFloat = 15
@@ -89,6 +90,9 @@ struct SettingsView: View {
 
                         // 인디케이터 설정
                         indicatorSection
+
+                        // 수면 기록 (건강 앱)
+                        if SleepHealth.isAvailable { sleepRecordSection }
 
                         // 화면 테마
                         appearanceSection
@@ -219,6 +223,62 @@ struct SettingsView: View {
     ]
 
     private var isSymbolMode: Bool { !bedtimeManager.indicatorSymbol.isEmpty }
+
+    // MARK: - Sleep Record Section (건강 앱 수면 기록)
+    // 취침 이후 타는 내일의 양피지는 아침에 잠든 시각이 확인된 만큼만 그을린다.
+    // 건강 앱을 연결하면 그 확인을 묻지 않고 기록으로 한다.
+
+    private var sleepRecordSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "bed.double.fill")
+                    .foregroundColor(.ember.opacity(0.6))
+                Text("수면 기록")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.ember.opacity(0.5))
+            }
+
+            VStack(alignment: .leading, spacing: 12) {
+                if sleepHealthConnected {
+                    Label("건강 앱 수면 기록과 연결됨", systemImage: "checkmark.circle.fill")
+                        .font(.body.weight(.medium))
+                        .foregroundColor(.ember.opacity(0.85))
+                    Text("연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요")
+                        .font(.body)
+                        .foregroundColor(.inkMuted.opacity(0.7))
+                        .fixedSize(horizontal: false, vertical: true)
+                } else {
+                    Text("연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요")
+                        .font(.body)
+                        .foregroundColor(.inkMuted.opacity(0.8))
+                        .fixedSize(horizontal: false, vertical: true)
+                    Button {
+                        Task { sleepHealthConnected = await SleepHealth.connect() }
+                    } label: {
+                        Text("건강 앱 수면 기록 연결하기")
+                            .font(.body.weight(.medium))
+                            .foregroundColor(.ember)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background(Capsule().stroke(Color.ember.opacity(0.4), lineWidth: 1))
+                    }
+                }
+            }
+            .padding(14)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.ink.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
+            )
+
+            Text("수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요")
+                .font(.body)
+                .foregroundColor(.inkMuted.opacity(0.6))
+                .padding(.horizontal, 4)
+        }
+        .padding(.horizontal, 20)
+    }
 
     // MARK: - Appearance Section (화면 테마)
 

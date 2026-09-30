@@ -13,10 +13,6 @@ class BedtimeExcuseManager: ObservableObject {
 
     // MARK: - Queries
 
-    var hasExcuseToday: Bool {
-        excuses.contains { Calendar.current.isDateInToday($0.date) }
-    }
-
     /// 이번 주(오늘 제외)에 기록된 변명 — 최신순
     var thisWeekPastExcuses: [BedtimeExcuse] {
         let cal = Calendar.current
@@ -31,11 +27,12 @@ class BedtimeExcuseManager: ObservableObject {
 
     // MARK: - Mutations
 
-    func add(reason: String, nextAction: String) {
+    /// date 는 그 밤의 날짜 — 아침에 어젯밤 일을 적어도 어젯밤으로 남는다
+    func add(reason: String, nextAction: String, date: Date = Date()) {
         let r = reason.trimmingCharacters(in: .whitespacesAndNewlines)
         let n = nextAction.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !r.isEmpty else { return }
-        excuses.insert(BedtimeExcuse(reason: r, nextAction: n), at: 0)
+        excuses.insert(BedtimeExcuse(date: date, reason: r, nextAction: n), at: 0)
         save()
     }
 

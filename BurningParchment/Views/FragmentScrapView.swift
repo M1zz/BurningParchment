@@ -10,6 +10,19 @@ import SwiftUI
 struct FragmentScrapView: View {
     let burnProgress: Double
     let edgePhase: Double
+    /// 저절로 꺼진 조각 — 연기에 그을린 듯 전체가 한 톤 어둡다
+    var smoked: Bool = false
+
+    init(burnProgress: Double, edgePhase: Double, smoked: Bool = false) {
+        self.burnProgress = burnProgress
+        self.edgePhase = edgePhase
+        self.smoked = smoked
+    }
+
+    init(fragment: ParchmentFragment) {
+        self.init(burnProgress: fragment.burnProgress, edgePhase: fragment.edgePhase,
+                  smoked: fragment.isFellAsleep)
+    }
 
     var body: some View {
         GeometryReader { geo in
@@ -19,6 +32,12 @@ struct FragmentScrapView: View {
 
             ZStack {
                 shape.fill(BurningParchmentView.parchmentGradient)
+                if smoked {
+                    shape.fill(RadialGradient(
+                        colors: [Color(red: 0.25, green: 0.18, blue: 0.12).opacity(0.18),
+                                 Color(red: 0.14, green: 0.10, blue: 0.07).opacity(0.5)],
+                        center: .topLeading, startRadius: 0, endRadius: 260))
+                }
                 // 타다 만 가장자리의 그을음 — 조각 안쪽으로만 번진다
                 edge.stroke(Color(red: 0.30, green: 0.15, blue: 0.05).opacity(0.75),
                             style: StrokeStyle(lineWidth: scrap.charWidth, lineCap: .round, lineJoin: .round))

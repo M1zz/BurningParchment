@@ -10,6 +10,7 @@ struct BurningParchmentView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
     @EnvironmentObject var deadlineManager: DeadlineManager
     @EnvironmentObject var fragmentManager: FragmentManager
+    @EnvironmentObject var nightManager: NightManager
     @State private var phase: Double = 0
     @State private var embers: [Ember] = []
     @State private var ashes: [Ash] = []
@@ -19,7 +20,9 @@ struct BurningParchmentView: View {
 
     private var currentDisplayProgress: Double {
         switch bedtimeManager.selectedPeriod {
-        case .day: return bedtimeManager.progress
+        case .day:
+            if bedtimeManager.currentNight != nil { return nightState?.progress ?? 0 }
+            return bedtimeManager.progress
         case .deadline:
             return deadlineManager.deadlines.first(where: { !$0.isExpired() })?.progress() ?? 0
         default:
@@ -39,22 +42,24 @@ struct BurningParchmentView: View {
             let blownOut = isDayPeriod && bedtimeManager.isCountdownActive
                 ? fragmentManager.fragment(forBedtime: bedtimeManager.currentBedDate)
                 : nil
+            let night = isDayPeriod ? nightState : nil
+            let charred = isDayPeriod ? lastNightCharred : nil
 
             ZStack {
                 if isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
                     beforeWakeView(pw: pw, ph: ph, oy: oy, size: size)
-                } else if isDayPeriod && (bedtimeManager.isBeforeWakeTime || (!bedtimeManager.isCountdownActive && bedtimeManager.progress >= 1.0)) {
-                    bedtimeReachedView(size: size)
+                } else if let night {
+                    tomorrowParchmentView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, night: night)
                 } else if let blownOut {
-                    extinguishedView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, fragment: blownOut)
+                    extinguishedView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, fragment: blownOut, charred: charred)
                 } else {
-                    burningView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, progress: displayProgress)
+                    burningView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, progress: displayProgress, charred: charred)
                 }
             }
             .onReceive(timer) { _ in
                 guard !reduceMotion else { return }
                 phase += 0.05
-                if (bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil {
+                if ((bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil) || night?.isBurning == true {
                     updateParticles(pw: pw, ph: ph, ox: ox, oy: oy)
                 }
             }
@@ -69,14 +74,17 @@ struct BurningParchmentView: View {
 
     // MARK: - Burning View
 
-    private func burningView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
+    private func burningView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double,
+                             charred: NightRecord? = nil) -> some View {
         ZStack {
             particleCanvas(items: ashes, withGlow: false)
                 .accessibilityHidden(true)
 
-            parchmentGroup(pw: pw, ph: ph, progress: progress)
+            parchmentGroup(pw: pw, ph: ph, progress: progress, charred: charred?.charredFraction ?? 0)
                 .position(x: size.width / 2, y: oy + ph / 2)
                 .accessibilityHidden(true)
+
+            if let charred { charredNote(charred, pw: pw, ph: ph, ox: ox, oy: oy, progress: progress) }
 
             ashPileCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                 .accessibilityHidden(true)
@@ -101,10 +109,11 @@ struct BurningParchmentView: View {
     // 타이머는 계속 가지만, 게이지는 끈 순간에 멈춘다 — 그만큼이 모아둔 조각이다.
 
     private func extinguishedView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat,
-                                  fragment: ParchmentFragment) -> some View {
+                                  fragment: ParchmentFragment, charred: NightRecord? = nil) -> some View {
         let progress = fragment.burnProgress
         return ZStack {
-            parchmentGroup(pw: pw, ph: ph, progress: progress, edgePhase: fragment.edgePhase)
+            parchmentGroup(pw: pw, ph: ph, progress: progress, edgePhase: fragment.edgePhase,
+                           charred: charred?.charredFraction ?? 0)
                 .position(x: size.width / 2, y: oy + ph / 2)
                 .accessibilityHidden(true)
 
@@ -155,251 +164,115 @@ struct BurningParchmentView: View {
         .accessibilityValue("\(sleepRemainingString) 후 시작")
     }
 
-    // MARK: - Bedtime Reached (불타는 하트)
+    // MARK: - Tomorrow's Parchment (취침 이후)
+    // 취침 시각이 지나면 내일의 양피지가 아주 천천히 탄다 — 밤을 다 새우면 기상 시각에 한 장이 다 탄다.
+    // 밤사이 타는 모습은 보여주기만 한다. 아침에 잠든 시각이 확인된 만큼만 그을음으로 남고,
+    // 확인이 없으면 아무것도 남지 않는다.
 
-    private func bedtimeReachedView(size: CGSize) -> some View {
-        ZStack {
-            // 배경 강렬한 글로우 (1층)
-            RadialGradient(
-                colors: [
-                    Color.emberGlowDeep.opacity(0.2 + 0.1 * sin(phase * 2.5)),
-                    Color.emberGlow.opacity(0.12 + 0.06 * sin(phase * 3.0)),
-                    Color.emberGlowDeep.opacity(0.04),
-                    Color.clear
-                ],
-                center: .center,
-                startRadius: 10,
-                endRadius: 250
-            )
-            .ignoresSafeArea()
-
-            // 배경 글로우 (2층 - 흔들리는 불빛)
-            RadialGradient(
-                colors: [
-                    Color.emberGlow.opacity(0.15 + 0.1 * sin(phase * 4.0)),
-                    Color.clear
-                ],
-                center: UnitPoint(
-                    x: 0.5 + 0.02 * sin(phase * 2.3),
-                    y: 0.38 + 0.02 * cos(phase * 1.8)
-                ),
-                startRadius: 30,
-                endRadius: 180
-            )
-            .ignoresSafeArea()
-
-            // 하트 불씨 파티클 (Canvas)
-            heartEmberCanvas(size: size)
-
-            VStack(spacing: 24) {
-                Spacer()
-
-                // 불타는 하트
-                ZStack {
-                    // 외부 대형 글로우 (넓은 범위)
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 120))
-                        .foregroundStyle(
-                            RadialGradient(
-                                colors: [.orange.opacity(0.3), .red.opacity(0.15), .clear],
-                                center: .center,
-                                startRadius: 5,
-                                endRadius: 60
-                            )
-                        )
-                        .blur(radius: 35)
-                        .scaleEffect(1.1 + 0.08 * sin(phase * 2.0))
-
-                    // 중간 글로우
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 95))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.red.opacity(0.5), .orange.opacity(0.4), .yellow.opacity(0.2)],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .blur(radius: 18)
-                        .scaleEffect(1.05 + 0.06 * sin(phase * 2.8))
-
-                    // 하트 본체
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 75))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 0.7, green: 0.05, blue: 0.05),
-                                    Color(red: 0.95, green: 0.3, blue: 0.05),
-                                    Color(red: 1.0, green: 0.6, blue: 0.1),
-                                    Color(red: 1.0, green: 0.85, blue: 0.3)
-                                ],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .scaleEffect(1.0 + 0.03 * sin(phase * 3.0))
-
-                    // 중앙 대형 불꽃
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 44))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 1.0, green: 0.95, blue: 0.7),
-                                    .yellow,
-                                    .orange.opacity(0.7),
-                                    .red.opacity(0.2)
-                                ],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .offset(y: -50 + sin(phase * 3.5) * 5)
-                        .scaleEffect(1.0 + 0.2 * sin(phase * 4.5))
-                        .blur(radius: 1.5)
-
-                    // 좌상 불꽃 (크게)
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 28))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.yellow.opacity(0.9), .orange, .red.opacity(0.3)],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .offset(x: -22, y: -42 + sin(phase * 4.0) * 4)
-                        .scaleEffect(0.85 + 0.25 * sin(phase * 3.8))
-                        .opacity(0.7 + 0.3 * sin(phase * 3.2))
-                        .blur(radius: 0.5)
-
-                    // 우상 불꽃 (크게)
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 26))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.yellow.opacity(0.8), .orange, .red.opacity(0.3)],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .offset(x: 25, y: -45 + cos(phase * 3.7) * 5)
-                        .scaleEffect(0.8 + 0.3 * sin(phase * 4.2))
-                        .opacity(0.6 + 0.35 * cos(phase * 3.5))
-                        .blur(radius: 0.5)
-
-                    // 좌측 측면 불꽃
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 18))
-                        .foregroundColor(.orange.opacity(0.7))
-                        .offset(x: -35, y: -18 + sin(phase * 5.0) * 3)
-                        .scaleEffect(0.7 + 0.3 * sin(phase * 4.5))
-                        .opacity(0.4 + 0.4 * sin(phase * 3.0))
-                        .rotationEffect(.degrees(-15 + sin(phase * 2.5) * 10))
-
-                    // 우측 측면 불꽃
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 16))
-                        .foregroundColor(.orange.opacity(0.6))
-                        .offset(x: 37, y: -22 + cos(phase * 4.8) * 3)
-                        .scaleEffect(0.65 + 0.35 * cos(phase * 5.0))
-                        .opacity(0.35 + 0.4 * cos(phase * 2.8))
-                        .rotationEffect(.degrees(15 + cos(phase * 2.3) * 10))
-
-                    // 상단 떠오르는 작은 불씨
-                    Image(systemName: "flame")
-                        .font(.system(size: 12))
-                        .foregroundColor(.yellow.opacity(0.6))
-                        .offset(
-                            x: -10 + sin(phase * 2.0) * 5,
-                            y: -65 + sin(phase * 3.0) * 6
-                        )
-                        .scaleEffect(0.6 + 0.4 * sin(phase * 5.5))
-                        .opacity(0.3 + 0.4 * sin(phase * 4.0))
-
-                    Image(systemName: "flame")
-                        .font(.system(size: 10))
-                        .foregroundColor(.yellow.opacity(0.5))
-                        .offset(
-                            x: 12 + cos(phase * 2.5) * 4,
-                            y: -70 + cos(phase * 3.5) * 5
-                        )
-                        .scaleEffect(0.5 + 0.4 * cos(phase * 6.0))
-                        .opacity(0.25 + 0.35 * cos(phase * 4.5))
-                }
-
-                Text("수면 중")
-                    .font(.system(size: 22, weight: .medium, design: .serif))
-                    .foregroundColor(.ember.opacity(0.7))
-
-                Text("🌙 좋은 꿈 꾸세요")
-                    .font(.system(size: 15, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.5))
-
-                if bedtimeManager.isBeforeWakeTime {
-                    Text("기상까지 \(sleepRemainingString)")
-                        .font(.system(size: 13, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.4))
-                        .padding(.top, 4)
-                }
-
-                Spacer()
-            }
-        }
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel("수면 중")
-        .accessibilityValue(bedtimeManager.isBeforeWakeTime
-            ? "기상까지 \(sleepRemainingString)"
-            : "좋은 꿈 꾸세요")
+    struct NightState {
+        let night: DateInterval
+        let progress: Double
+        /// 취침 전에 스스로 불을 껐다 — 내일의 양피지에는 불이 붙지 않았다
+        let keptBedtime: Bool
+        /// 취침 이후 후 불어 껐다
+        let extinguished: Bool
+        var isBurning: Bool { !keptBedtime && !extinguished && progress > 0 }
     }
 
-    // MARK: - Heart Ember Canvas (하트 불씨 파티클)
-
-    private func heartEmberCanvas(size: CGSize) -> some View {
-        Canvas { ctx, canvasSize in
-            let cx = canvasSize.width / 2
-            let cy = canvasSize.height * 0.38
-
-            for i in 0..<35 {
-                let fi = Double(i)
-                let seed = fi * 137.508
-
-                let cycle = (phase * 0.8 + seed)
-                    .truncatingRemainder(dividingBy: 4.0) / 4.0
-
-                let startX = cx + CGFloat(sin(seed) * 30 + cos(seed * 0.7) * 15)
-                let startY = cy + CGFloat(cos(seed * 0.5) * 20)
-
-                let px = startX + CGFloat(sin(fi * 0.9 + phase * 1.5) * 12 * cycle)
-                let py = startY - CGFloat(cycle * 80 + cycle * cycle * 40)
-
-                let opacity = (1.0 - cycle) * (0.5 + 0.5 * sin(fi * 2.3 + phase * 3.0))
-                let pSize = (1.0 - cycle) * (2.0 + sin(fi * 1.7) * 1.5)
-
-                guard opacity > 0.05 && pSize > 0.3 else { continue }
-
-                // 글로우
-                let gr = pSize * 2.0
-                ctx.opacity = opacity * 0.3
-                ctx.fill(
-                    Path(ellipseIn: CGRect(
-                        x: px - CGFloat(gr), y: py - CGFloat(gr),
-                        width: CGFloat(gr * 2), height: CGFloat(gr * 2)
-                    )),
-                    with: .color(.orange)
-                )
-
-                // 코어
-                ctx.opacity = opacity
-                let r = pSize / 2
-                let colors: [Color] = [.yellow, .orange, Color(red: 1, green: 0.85, blue: 0.4)]
-                ctx.fill(
-                    Path(ellipseIn: CGRect(
-                        x: px - CGFloat(r), y: py - CGFloat(r),
-                        width: CGFloat(pSize), height: CGFloat(pSize)
-                    )),
-                    with: .color(colors[i % colors.count])
-                )
-            }
+    private var nightState: NightState? {
+        guard let night = bedtimeManager.currentNight else { return nil }
+        if fragmentManager.fragment(forBedtime: night.start) != nil {
+            return NightState(night: night, progress: 0, keptBedtime: true, extinguished: false)
         }
-        .fireBlend()
-        .allowsHitTesting(false)
+        let record = nightManager.record(forBedtime: night.start)
+        let progress = record?.liveBurnProgress(now: Date())
+            ?? min(max(Date().timeIntervalSince(night.start) / max(night.duration, 1), 0), 1)
+        return NightState(night: night, progress: progress, keptBedtime: false,
+                          extinguished: record?.extinguishedAt != nil)
+    }
+
+    /// 어젯밤 늦게 잔 게 확인돼 오늘 양피지에 남은 그을음
+    private var lastNightCharred: NightRecord? {
+        guard bedtimeManager.isCountdownActive, let last = bedtimeManager.lastNight,
+              let record = nightManager.record(forBedtime: last.start),
+              record.isResolved, record.charredSeconds > 0 else { return nil }
+        return record
+    }
+
+    private func tomorrowParchmentView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat,
+                                       night: NightState) -> some View {
+        ZStack {
+            if night.isBurning {
+                particleCanvas(items: ashes, withGlow: false)
+                    .accessibilityHidden(true)
+            }
+
+            parchmentGroup(pw: pw, ph: ph, progress: night.progress,
+                           edgePhase: night.isBurning ? nil : 0)
+                .opacity(night.isBurning ? 1 : 0.85)
+                .position(x: size.width / 2, y: oy + ph / 2)
+                .accessibilityHidden(true)
+
+            if night.isBurning && night.progress > 0.005 {
+                diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: night.progress)
+                    .accessibilityHidden(true)
+                particleCanvas(items: embers, withGlow: true)
+                    .accessibilityHidden(true)
+            }
+
+            VStack(spacing: 10) {
+                Spacer()
+
+                Text("내일의 양피지")
+                    .font(.system(.title3, design: .serif).weight(.medium))
+                    .foregroundColor(.ember.opacity(0.85))
+
+                Group {
+                    if night.keptBedtime {
+                        Text("제시간에 불을 껐어요. 내일의 양피지는 그대로예요")
+                    } else if night.extinguished {
+                        Text("불을 껐어요. 좋은 꿈 꾸세요")
+                    } else {
+                        Text("잠들면 저절로 멈춰요. 잠든 시각은 아침에 확인해서 되돌려요")
+                    }
+                }
+                .font(.system(.body, design: .serif))
+                .foregroundColor(.inkMuted.opacity(0.8))
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+
+                Text("기상까지 \(Self.durationString(max(night.night.end.timeIntervalSinceNow, 60)))")
+                    .font(.system(.body, design: .serif))
+                    .foregroundColor(.inkMuted.opacity(0.6))
+            }
+            .padding(.horizontal, 32)
+            .padding(.bottom, 20)
+            .accessibilityElement(children: .combine)
+        }
+    }
+
+    /// 그을린 자리 옆의 한 줄. 오늘의 불길이 그 자리를 지나가면 함께 사라진다.
+    @ViewBuilder
+    private func charredNote(_ record: NightRecord, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat,
+                             progress: Double) -> some View {
+        if progress < record.charredFraction {
+            Text("어젯밤 \(Self.durationString(record.charredSeconds)) 늦게 잠들어\n오늘 아침이 그을렸어요")
+                .font(.system(.body, design: .serif))
+                .foregroundColor(Color(red: 0.25, green: 0.15, blue: 0.07).opacity(0.85))
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(width: pw - 36, alignment: .leading)
+                .position(x: ox + pw / 2, y: oy + 44)
+                .accessibilityElement(children: .combine)
+        }
+    }
+
+    static func durationString(_ seconds: TimeInterval) -> String {
+        let total = Int(seconds.rounded())
+        let h = total / 3600
+        let m = (total % 3600) / 60
+        if h > 0 { return String(localized: "\(h)시간 \(m)분") }
+        return String(localized: "\(max(m, 1))분")
     }
 
     // MARK: - Timer Section (하단)
@@ -572,10 +445,12 @@ struct BurningParchmentView: View {
 
     // MARK: - Parchment Group
 
-    private func parchmentGroup(pw: CGFloat, ph: CGFloat, progress: Double, edgePhase: Double? = nil) -> some View {
+    private func parchmentGroup(pw: CGFloat, ph: CGFloat, progress: Double, edgePhase: Double? = nil,
+                                charred: Double = 0) -> some View {
         let shape = DiagonalBurnShape(progress: progress, phase: edgePhase ?? phase)
         return ZStack {
             shape.fill(parchmentGradient)
+            if charred > 0 { charredOverlay(fraction: charred, shape: shape) }
             if progress > 0 { scorchOverlay(progress: progress, shape: shape) }
             shape.stroke(Color.brown.opacity(0.2), lineWidth: 1)
         }
@@ -596,6 +471,24 @@ struct BurningParchmentView: View {
                 .init(color: Color.black.opacity(0.95),                                      location: min(1, t + 0.01)),
             ],
             startPoint: .topLeading, endPoint: .bottomTrailing
+        )
+        .clipShape(shape)
+    }
+
+    // MARK: - Charred (어젯밤의 그을음)
+    // 밤새 내일의 양피지가 타던 쪽(오른쪽 아래)부터, 확인된 만큼 검게 그을려 있다.
+    // 종이는 그대로 남아 있고 오늘의 불길이 그 자리를 먼저 지나간다.
+
+    private func charredOverlay(fraction: Double, shape: DiagonalBurnShape) -> some View {
+        let f = min(max(fraction, 0.02), 1)
+        return LinearGradient(
+            stops: [
+                .init(color: Color(red: 0.08, green: 0.05, blue: 0.03).opacity(0.88), location: 0),
+                .init(color: Color(red: 0.22, green: 0.12, blue: 0.05).opacity(0.75), location: f * 0.6),
+                .init(color: Color(red: 0.40, green: 0.24, blue: 0.10).opacity(0.35), location: f),
+                .init(color: .clear, location: min(1, f + 0.08)),
+            ],
+            startPoint: .bottomTrailing, endPoint: .topLeading
         )
         .clipShape(shape)
     }
@@ -1097,5 +990,6 @@ struct TimeDigitView: View {
             .environmentObject(BedtimeManager())
             .environmentObject(DeadlineManager())
             .environmentObject(FragmentManager())
+            .environmentObject(NightManager())
     }
 }

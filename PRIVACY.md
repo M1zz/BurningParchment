@@ -24,7 +24,8 @@
 
 ### 그 밖에
 
-- 위치 정보, 연락처, 사진, 건강 데이터, 광고 식별자는 수집하지 않습니다.
+- 위치 정보, 연락처, 사진, 광고 식별자는 수집하지 않습니다.
+- 건강 앱 수면 기록은 사용자가 연결을 허용한 경우에만, 아침에 "어젯밤 잠든 시각"을 확인하는 데 읽습니다. 기기 안에서만 쓰며 저장·전송하지 않고, 건강 앱에 아무것도 쓰지 않습니다. 연결은 iOS 설정 ▸ 건강에서 언제든 끊을 수 있습니다.
 - 알림은 기기 내에서 예약되는 로컬 알림이며 외부 서버를 거치지 않습니다.
 - 마이크는 취침 30분 전 양피지에 "후" 불어 불을 끌 때만 사용하며, 입김의 세기만 그 자리에서 확인합니다. 소리는 녹음·저장·전송하지 않습니다.
 - 앱 내 구입 결제는 Apple의 App Store를 통해 처리되며, 개발자는 결제 정보에 접근할 수 없습니다. Apple의 개인정보 처리방침은 [apple.com/legal/privacy](https://www.apple.com/legal/privacy/)를 참고하세요.
@@ -52,7 +53,8 @@ The following three things are sent to the developer's iCloud (CloudKit) storage
 
 ### Also
 
-- No location, contacts, photos, health data, or advertising identifiers are collected.
+- No location, contacts, photos, or advertising identifiers are collected.
+- Health sleep records are read only if you choose to connect them, and only to check when you fell asleep last night. They are used on your device, never stored or sent, and nothing is written to Health. You can disconnect anytime in iOS Settings ▸ Health.
 - Notifications are local, scheduled on your device, and never go through an external server.
 - The microphone is used only when you blow out the parchment before bed, to sense the strength of your breath on the device. No audio is recorded, saved, or sent.
 - In-app purchases are processed by Apple's App Store; the developer has no access to your payment information. See Apple's privacy policy at [apple.com/legal/privacy](https://www.apple.com/legal/privacy/).

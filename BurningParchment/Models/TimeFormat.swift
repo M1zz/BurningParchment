@@ -14,6 +14,11 @@ enum TimeFormat {
         return date.formatted(.dateTime.hour().minute())
     }
 
+    /// 특정 시각을 같은 형식으로
+    static func short(_ date: Date) -> String {
+        date.formatted(.dateTime.hour().minute())
+    }
+
     /// 시(hour) 피커 한 칸에 들어갈 라벨. 12시간제 지역에서는 "오전 7" / "AM 7",
     /// 24시간제 지역에서는 "07" 로 나온다.
     static func hourLabel(_ hour: Int) -> String {

@@ -48,7 +48,7 @@ enum BurningParchmentSpec: LeeoAppSpec {
             .crashReporting,    // MetricKit 크래시·행 진단을 피드백 허브로 전송 (LeeoKit.bootstrap)
             .schemaMigration,   // 구버전 UserDefaults.standard → App Group 데이터 이관 (BedtimeManager.runMigrations)
             .emptyStates,       // 데드라인 목록·회고 책 뷰의 빈 상태 화면
-            .minimalPermissions,// 요청 권한은 알림 하나뿐 (카메라·위치·연락처 등 없음)
+            .minimalPermissions,// 알림 + 불 끌 때의 마이크 + (선택) 건강 앱 수면 기록 읽기뿐 — 카메라·위치·연락처 등 없음
             .accessibility,     // 주요 화면 VoiceOver 라벨/값/힌트
             .localization,      // 한국어·영어 (String Catalog)
             .darkMode,          // 라이트·다크 테마 + 시스템 설정 따르기 (설정 ▸ 화면 테마)

@@ -5,19 +5,19 @@
 ### App Store "이번 버전의 새로운 기능" — 한국어
 
 ```
-잠들 시간이 지나면 내일의 양피지가 천천히 타요
-아침에 지난밤 잠든 시각을 확인해요
-건강 앱과 연동해 수면 기록으로 잠든 시각을 알아서 확인해요
-제시간에 잠들면 저절로 꺼진 조각을 받아요
+잠들기 30분 전 불을 끄라는 안내가 나타나요
+후 불어 불을 끄고 오늘 하루를 마감하세요
+불을 끈 조각의 뒷면은 다음 날 아침에 적어요
+모은 조각을 뒤집어 뒷면을 볼 수 있어요
 ```
 
 ### App Store "What's New" — English
 
 ```
-Past bedtime, tomorrow's parchment burns
-Each morning, confirm when you slept
-Now works with Apple Health sleep data
-Sleep on time to earn a burned-out piece
+A reminder appears 30 minutes before bed
+Blow out the flame and close your day
+Write on your piece the next morning
+Flip your kept pieces to see the back
 ```
 
 ## 1.1.1

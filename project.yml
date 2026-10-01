@@ -64,6 +64,8 @@ targets:
     info:
       path: BurningParchment/Info.plist
       properties:
+        # 수출 규정: 운영체제 암호화(HTTPS 등)만 쓴다 — 심사 때 암호화 질문을 건너뛴다
+        ITSAppUsesNonExemptEncryption: false
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         CFBundleDevelopmentRegion: ko

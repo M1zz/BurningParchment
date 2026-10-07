@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Burning Parchment</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="privacy.html" hreflang="en" lang="en" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Back to Support</a>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: August 18, 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Summary</h2>
+    <div class="card">
+      <h3>Burning Parchment does not collect information that identifies you</h3>
+      <p>Everything you create in the app (wake-up time, bedtime, deadlines, reflections and urns) stays on your device. The only things that reach the developer are the anonymous statistics and crash diagnostics described below, and feedback you send yourself.</p>
+      <span class="highlight">🔒 Your reflections never leave your device · No ads, no tracking</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Stored Only on Your Device</h2>
+    <div class="card">
+      <h3>What you create in the app</h3>
+      <p>The following is stored only on your device (in UserDefaults):</p>
+      <ul>
+        <li>Wake-up time and bedtime</li>
+        <li>Deadlines</li>
+        <li>Reflections and urns</li>
+      </ul>
+      <p style="margin-top: 10px;">This data is shared between the app and its widgets only through App Group storage on your device, and it is deleted when you delete the app.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sent to the Developer</h2>
+    <div class="card">
+      <h3>Anonymous usage statistics</h3>
+      <p>To help improve the app, the following is sent to the developer's iCloud (CloudKit) storage:</p>
+      <ul>
+        <li>A randomly generated install identifier (UUID)</li>
+        <li>App version, platform and OS version, language setting</li>
+        <li>Number of launches, days of use, and the names of key feature events</li>
+      </ul>
+      <p style="margin-top: 10px;">The install identifier has nothing to do with device identifiers (IDFA or IDFV) or your Apple Account, and a new one is created if you delete and reinstall the app.</p>
+    </div>
+    <div class="card">
+      <h3>Crash and hang diagnostics</h3>
+      <p>If the app crashes or freezes, the diagnostic report created by iOS (MetricKit) is sent: the type of problem, the stack trace, the app and OS versions, and the device model. Nothing you have entered in the app, such as your reflections, is included.</p>
+    </div>
+    <div class="card">
+      <h3>Feedback you send</h3>
+      <p>Feedback is sent only when you submit it from the Settings screen. It includes what you wrote along with your device and app version, plus your name and email address only if you enter them yourself to get a reply.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What We Don't Collect</h2>
+    <div class="card">
+      <h3>We never collect the following</h3>
+      <ul>
+        <li>Anything you enter in the app, such as reflections or deadlines (unless you write it in feedback yourself)</li>
+        <li>Personal details such as your name, email or phone number (unless you enter them in feedback yourself)</li>
+        <li>Location</li>
+        <li>Contacts or photos</li>
+        <li>Device identifiers (IDFA, IDFV and so on)</li>
+        <li>Advertising data</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Third Parties</h2>
+    <div class="card">
+      <h3>We don't share your data</h3>
+      <p>The app uses no advertising networks and no third-party analytics SDKs. The statistics, diagnostics and feedback described above go only to the developer's own iCloud storage. They are never combined with data from other companies or used to track you for advertising.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>In-App Purchase</h2>
+    <div class="card">
+      <h3>Apple handles payment</h3>
+      <p>Payment for the one-time Pro purchase is handled by Apple through the App Store. The developer never receives payment details such as your card number or Apple Account. The app only keeps a record on your device of whether you have purchased Pro, so it can unlock Pro features.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <div class="card">
+      <h3>Local notifications only</h3>
+      <p>The reminder one hour before bedtime is a local notification scheduled on your device and never passes through an external server. You can change notification permission at any time in iOS Settings.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Microphone</h2>
+    <div class="card">
+      <h3>It only checks how hard you blow</h3>
+      <p>The microphone is used only when you blow on the parchment to put out the fire, 30 minutes before bedtime. The app measures only the strength of your breath on your device, and it never records, saves or sends any sound. You can change microphone permission at any time in iOS Settings.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <div class="card">
+      <h3>Children under 14</h3>
+      <p>This app is not directed at children under 14, and we do not knowingly collect personal information from children.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <div class="card">
+      <h3>We'll post any changes on this page</h3>
+      <p>If this Privacy Policy changes, we will update its content and the "Last updated" date on this page. For significant changes, we may also let you know in the app's release notes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <h3>Privacy questions</h3>
+      <p>If you have any questions about this Privacy Policy, please email us at the address below.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">This policy is available in Korean and English. If the two versions differ, the <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">Korean version</a> prevails.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

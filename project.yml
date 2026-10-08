@@ -5,9 +5,11 @@ options:
     iOS: "17.0"
   xcodeVersion: "15.0"
   generateEmptyDirectories: true
-  # String Catalog 의 sourceLanguage 가 ko 다. 이 값이 en 이면 한국어 기기에서도
-  # 개발 지역(en) 리소스가 선택돼 앱·위젯이 영어로 뜬다.
-  developmentLanguage: ko
+  # 개발 지역은 en: 지원하지 않는 언어(일본어 등) 사용자가 한국어 대신 영어를 본다.
+  # String Catalog 의 sourceLanguage 는 ko 이고, 앱·위젯 카탈로그에 ko 항목을
+  # 명시해 두었으므로 빌드 산출물에 ko.lproj 가 생겨 한국어 기기는 한국어로 뜬다.
+  # (ko 항목이 하나도 없으면 ko.lproj 가 안 생겨 한국어 기기가 en 을 고른다 — faea19a)
+  developmentLanguage: en
 
 # 버전·빌드번호의 단일 소스. 프로젝트 레벨 baseConfiguration 이라
 # 앱·위젯 두 타겟이 같은 값을 쓴다. 아래 타겟 설정에 MARKETING_VERSION 을
@@ -68,14 +70,14 @@ targets:
         ITSAppUsesNonExemptEncryption: false
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
-        CFBundleDevelopmentRegion: ko
+        CFBundleDevelopmentRegion: en
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         UIRequiresFullScreen: true
-        CFBundleDisplayName: "불타는 내인생"
+        CFBundleDisplayName: "Burning Parchment"
         NSSupportsLiveActivities: true
         NSMicrophoneUsageDescription: "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
     settings:
@@ -105,10 +107,10 @@ targets:
     info:
       path: BurningParchmentWidgets/Info.plist
       properties:
-        CFBundleDisplayName: BurningParchmentWidgets
+        CFBundleDisplayName: "Burning Parchment"
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
-        CFBundleDevelopmentRegion: ko
+        CFBundleDevelopmentRegion: en
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     settings:

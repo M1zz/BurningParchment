@@ -1,5 +1,19 @@
 # 릴리즈 노트
 
+## 1.1.3
+
+### 앱스토어 (한국어)
+
+위젯 이름이 기기 언어에 맞게 보여요
+한국어와 영어 밖의 언어에서는 영어로 보여요
+작은 문제를 고쳐 더 안정적으로 동작해요
+
+### App Store (English)
+
+Widget names follow your device language
+Other languages now show English
+Small fixes for a steadier app
+
 ## 1.1.2
 
 ### App Store "이번 버전의 새로운 기능" — 한국어

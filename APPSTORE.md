@@ -2,6 +2,48 @@
 
 ## ko
 
+### 이름
+
+불타는 내인생: 취침 카운트다운
+
+### 부제
+
+남은 시간이 타들어가는 양피지
+
+### 키워드
+
+시간관리,수면,잠,하루,디데이,타이머,회고,일기,저녁,밤,루틴,습관,위젯,잠금화면,다이나믹아일랜드,생산성,자기계발,마감,잠자리,기상,마음챙김,수면습관
+
+### 프로모션 텍스트
+
+잠들기 30분 전, 타오르는 양피지에 후 불어 불을 끄세요. 남은 조각에는 다음 날 아침 한 줄을 적어 모아 둘 수 있어요.
+
+### 설명
+
+오늘 남은 시간이 눈앞에서 타들어갑니다.
+불타는 내인생은 남은 시간을 숫자 대신 타오르는 양피지로 보여 주는 앱입니다. 저녁이 그냥 사라지는 걸 보고 싶지 않은 사람을 위해 만들었습니다.
+
+하루 · 한 주 · 한 달 · 한 해
+일어난 순간부터 잠들 시각까지 양피지가 천천히 타들어갑니다. 이번 주, 이번 달, 올해 남은 시간도 같은 양피지로 볼 수 있습니다.
+마감이 있는 목표를 더하면 그 날까지 남은 시간을 함께 셉니다.
+
+후 불어 끄는 하루의 끝
+잠들기 30분 전부터 타오르는 양피지에 숨을 불어 불을 끌 수 있습니다. 숨의 세기만 쓰고 아무것도 녹음하지 않습니다.
+불을 끄고 남은 조각은 식혀 두었다가 다음 날 아침 뒷면에 한 줄을 적습니다. 모은 조각은 뒤집어 다시 볼 수 있습니다.
+
+재로 남는 하루
+지나간 시간을 돌아보며 한 줄 회고를 남기고, 무엇에 썼는지 두 축 위에 점으로 나눕니다.
+회고는 주제별 항아리에 쌓이고, 회고 책에서 다시 읽을 수 있습니다.
+재의 흐름 화면에서는 시간이 어디로 갔는지 분포 그래프와 불씨 달력으로 보여 줍니다.
+
+언제나 눈앞에
+홈 화면과 잠금화면 위젯, 다이나믹 아일랜드와 잠금화면 실시간 현황에서 남은 시간을 확인합니다.
+라이트와 다크 테마, 추천 취침 시각, 보고 싶은 탭만 고르는 설정을 지원합니다.
+
+불타는 내인생 프로
+항아리 12개와 마감 1개까지는 무료입니다. 프로는 한 번 구매로 평생 쓰며, 항아리와 마감을 제한 없이 만들고 1년보다 오래된 항아리까지 다시 열 수 있습니다. 앞으로 추가되는 프로 기능도 모두 포함됩니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
 ### 지원 URL
 
 https://m1zz.github.io/BurningParchment/
@@ -15,6 +57,48 @@ https://m1zz.github.io/BurningParchment/privacy.html
 https://m1zz.github.io/BurningParchment/
 
 ## en-US
+
+### 이름
+
+Burning Parchment: Bedtime
+
+### 부제
+
+Watch your evening burn down
+
+### 키워드
+
+time,countdown,sleep,timer,widget,journal,reflection,routine,habit,deadline,night,productivity
+
+### 프로모션 텍스트
+
+Thirty minutes before bed, blow on the burning parchment to put it out. Keep what is left, and write a line on its back the next morning.
+
+### 설명
+
+The time you have left today burns away right in front of you.
+Burning Parchment shows your remaining time as a sheet of parchment on fire instead of a number. It is made for anyone tired of watching their evenings simply disappear.
+
+DAY, WEEK, MONTH, YEAR
+From the moment you wake up to bedtime, the parchment slowly burns. See what is left of this week, this month and this year the same way.
+Add a goal with a deadline and it counts down right alongside.
+
+BLOW OUT THE FLAME
+From 30 minutes before bedtime you can blow on the parchment to put the fire out. Only the strength of your breath is used. Nothing is recorded.
+The piece that is left cools overnight, and the next morning you write a line on its back. Flip through the pieces you have kept any time.
+
+WHAT REMAINS AS ASH
+Look back with a one-line reflection and place it on a two-axis graph of how the time was spent.
+Reflections gather in urns you name by topic, and you can read them again in the Reflection Book.
+Ash Flow shows where your time went with a distribution graph and an ember calendar.
+
+ALWAYS IN SIGHT
+Check the time left from Home Screen and Lock Screen widgets, the Dynamic Island and a Live Activity.
+Light and dark themes, suggested bedtimes, and only the tabs you want to see.
+
+BURNING PARCHMENT PRO
+Up to 12 urns and one deadline are free. Pro is a one-time lifetime purchase that removes those limits and reopens urns older than a year. Every Pro feature added later is included.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 지원 URL
 

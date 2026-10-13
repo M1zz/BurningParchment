@@ -6,7 +6,10 @@ import SwiftUI
 
 struct ReflectionBookView: View {
     @EnvironmentObject var reflectionManager: ReflectionManager
+    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
+    @State private var showExport = false
+    @State private var showPaywall = false
 
     @State private var currentPage: Int = 0
     @State private var editing: DayReflection? = nil
@@ -49,11 +52,28 @@ struct ReflectionBookView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 if !pages.isEmpty {
-                    Text("\(currentPage + 1) / \(pages.count)")
-                        .font(.system(size: 12, design: .monospaced))
-                        .foregroundColor(.ember.opacity(0.6))
+                    HStack(spacing: 14) {
+                        Text("\(currentPage + 1) / \(pages.count)")
+                            .font(.system(size: 12, design: .monospaced))
+                            .foregroundColor(.ember.opacity(0.6))
+                        Button {
+                            if storeManager.isPro { showExport = true } else { showPaywall = true }
+                        } label: {
+                            Image(systemName: "square.and.arrow.up")
+                                .foregroundColor(.ember)
+                        }
+                        .accessibilityLabel("회고 책 PDF 로 내보내기")
+                    }
                 }
             }
+        }
+        .sheet(isPresented: $showExport) {
+            BookExportSheet()
+                .environmentObject(reflectionManager)
+        }
+        .sheet(isPresented: $showPaywall) {
+            PaywallView(reason: .bookExport)
+                .environmentObject(storeManager)
         }
         .sheet(item: $editing) { item in
             ReflectionInputView(existing: item)
@@ -271,6 +291,7 @@ private struct DayGroup: Identifiable {
     NavigationStack {
         ReflectionBookView()
             .environmentObject(ReflectionManager())
+            .environmentObject(StoreManager())
             .preferredColorScheme(.dark)
     }
 }

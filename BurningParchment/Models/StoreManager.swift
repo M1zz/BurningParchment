@@ -24,7 +24,12 @@ final class StoreManager: ObservableObject {
     private var cancellable: AnyCancellable?
 
     init() {
+        #if DEBUG
+        // 시뮬레이터에서 프로 화면을 보려고 `-forcePro YES` 로 실행할 수 있다 (DebugLaunch.swift)
+        store = LeeoStore(config: BurningParchmentSpec.paywall!, unlockOverride: { DebugLaunch.forcePro })
+        #else
         store = LeeoStore(config: BurningParchmentSpec.paywall!)
+        #endif
         // 공용 스토어의 상태 변화를 그대로 뷰에 전파한다.
         cancellable = store.objectWillChange.sink { [weak self] in
             self?.objectWillChange.send()

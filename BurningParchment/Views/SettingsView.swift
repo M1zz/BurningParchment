@@ -11,6 +11,9 @@ struct SettingsView: View {
 
     @State private var showPaywall = false
     @State private var restoreMessage: String?
+    @State private var showThemePaywall = false
+    @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
+    @Environment(\.parchmentStyle) private var currentStyle
     @State private var selBedH: Int = 23
     @State private var selBedM: Int = 0
     @State private var selWakeH: Int = 7
@@ -97,6 +100,9 @@ struct SettingsView: View {
 
                         // 화면 테마
                         appearanceSection
+
+                        // 양피지·불꽃 (프로)
+                        parchmentStyleSection
 
                         // 프로
                         proSection
@@ -312,6 +318,99 @@ struct SettingsView: View {
                 .padding(.horizontal, 4)
         }
         .padding(.horizontal, 20)
+    }
+
+    // MARK: - 양피지·불꽃 테마 (프로)
+
+    private var parchmentStyleSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 6) {
+                Image(systemName: "paintpalette.fill")
+                    .foregroundColor(.ember.opacity(0.6))
+                Text("양피지·불꽃")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundColor(.ember.opacity(0.5))
+                if !storeManager.isPro {
+                    Text("프로")
+                        .font(.system(size: 10, weight: .semibold))
+                        .foregroundColor(.onEmber)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(Capsule().fill(Color.ember.opacity(0.8)))
+                }
+            }
+
+            LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 8) {
+                ForEach(ParchmentStyle.allCases) { style in
+                    styleTile(style)
+                }
+            }
+            .padding(14)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color.ink.opacity(0.03))
+                    .overlay(RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
+            )
+
+            Text("양피지의 종이 색과 불꽃의 빛깔이 함께 바뀌어요")
+                .font(.system(size: captionFontSize))
+                .foregroundColor(.inkMuted.opacity(0.4))
+                .padding(.horizontal, 4)
+        }
+        .padding(.horizontal, 20)
+        .sheet(isPresented: $showThemePaywall) {
+            PaywallView(reason: .theme)
+                .environmentObject(storeManager)
+        }
+    }
+
+    private func styleTile(_ style: ParchmentStyle) -> some View {
+        let isSelected = currentStyle == style
+        let locked = style.isPro && !storeManager.isPro
+        return Button {
+            if locked {
+                showThemePaywall = true
+            } else {
+                parchmentStyleRaw = style.rawValue
+            }
+        } label: {
+            VStack(spacing: 8) {
+                ZStack(alignment: .bottomTrailing) {
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(style.paperGradient)
+                        .frame(height: 46)
+                    Image(systemName: "flame.fill")
+                        .font(.system(size: 22))
+                        .foregroundStyle(LinearGradient(colors: [.yellow, .orange, .red],
+                                                        startPoint: .top, endPoint: .bottom))
+                        .flameTint(style)
+                        .padding(6)
+                }
+                .overlay(alignment: .topLeading) {
+                    if locked {
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 10, weight: .semibold))
+                            .foregroundColor(.black.opacity(0.45))
+                            .padding(6)
+                    }
+                }
+                Text(style.label)
+                    .font(.system(size: 12))
+                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.55))
+            }
+            .padding(8)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(isSelected ? Color.ember.opacity(0.12) : Color.clear)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                        .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1))
+            )
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(style.label)
+        .accessibilityValue(locked ? String(localized: "프로에서 열려요") : "")
+        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
     }
 
     private func themeTab(_ theme: AppTheme) -> some View {
@@ -553,7 +652,7 @@ struct SettingsView: View {
                             .stroke(Color.ember.opacity(0.1), lineWidth: 1))
                 )
 
-                Text("데드라인을 제한 없이 세울 수 있어요.")
+                Text("테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.")
                     .font(.system(size: 11))
                     .foregroundColor(.inkMuted.opacity(0.4))
                     .padding(.horizontal, 4)

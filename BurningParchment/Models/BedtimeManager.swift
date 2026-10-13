@@ -624,6 +624,10 @@ class BedtimeManager: ObservableObject {
     }
 
     private func scheduleNotification(bedDate: Date) {
+        #if DEBUG
+        // 새로 만든 시뮬레이터는 알림 서비스가 답하지 않아 여기서 멈춘다 — 화면 확인용 실행에서는 건너뛴다
+        if DebugLaunch.skipNotifications { return }
+        #endif
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: ["bedtime-1h"])
 

@@ -6,15 +6,17 @@
 
 지난 항아리를 모두 무료로 열 수 있어요
 아침에 따로 묻는 창이 뜨지 않아요
-후 불어 불을 끄면 하루가 끝나요
-프로 구매와 복원이 더 분명해졌어요
+프로에서 양피지와 불꽃 빛깔을 골라요
+프로에서 조각 카드와 회고 책 PDF를 만들어요
+프로에서 한 해의 재 흐름을 볼 수 있어요
 
 ### App Store (English)
 
 Every past urn now opens for free
 No more prompts when you wake up
-Blow out the flame and your day is done
-Buying and restoring Pro is clearer
+Pro adds parchment and flame colors
+Pro makes fragment cards and a book PDF
+Pro shows a whole year of ash
 
 ## 1.1.3
 

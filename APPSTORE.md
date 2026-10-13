@@ -41,7 +41,8 @@
 라이트와 다크 테마, 추천 취침 시각, 보고 싶은 탭만 고르는 설정을 지원합니다.
 
 불타는 내인생 프로
-마감 1개까지는 무료입니다. 프로는 구독이 아닌 한 번 구매로 평생 쓰며, 마감을 제한 없이 만들 수 있습니다. 앞으로 추가되는 프로 기능도 모두 포함됩니다.
+타오르는 양피지와 회고, 후 불어 끄는 의식은 모두 무료이고 마감은 1개까지 무료입니다. 프로는 구독이 아닌 한 번 구매로 평생 씁니다.
+양피지와 불꽃의 빛깔을 바꾸는 테마(달빛 한지, 청자, 노을), 모은 조각을 카드와 포스터 이미지로 공유하기, 회고 책을 PDF로 내보내기, 지난 열두 달의 재 흐름, 마감 무제한이 열립니다. 앞으로 추가되는 프로 기능도 모두 포함됩니다.
 이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 지원 URL
@@ -97,7 +98,8 @@ Check the time left from Home Screen and Lock Screen widgets, the Dynamic Island
 Light and dark themes, suggested bedtimes, and only the tabs you want to see.
 
 BURNING PARCHMENT PRO
-One deadline is free. Pro is a one-time lifetime purchase, not a subscription, and lets you set as many deadlines as you like. Every Pro feature added later is included.
+The burning parchment, reflections and the blow-out ritual are all free, along with one deadline. Pro is a one-time lifetime purchase, not a subscription.
+It adds parchment and flame themes (Moonlit Hanji, Celadon, Dusk), fragment cards and posters to share, a PDF of your Reflection Book, a year of ash at a glance, and unlimited deadlines. Every Pro feature added later is included.
 Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 지원 URL

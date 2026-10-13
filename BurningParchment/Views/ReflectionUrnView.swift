@@ -504,6 +504,7 @@ struct ReflectionUrnView: View {
                     NavigationLink {
                         AshInsightsView()
                             .environmentObject(reflectionManager)
+                            .environmentObject(storeManager)
                     } label: {
                         Image(systemName: "chart.dots.scatter")
                             .font(.system(size: 17))
@@ -514,6 +515,7 @@ struct ReflectionUrnView: View {
                     NavigationLink {
                         ReflectionBookView()
                             .environmentObject(reflectionManager)
+                            .environmentObject(storeManager)
                     } label: {
                         Image(systemName: "book.closed.fill")
                             .font(.system(size: 17))
@@ -942,6 +944,7 @@ struct AshInsightsView: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         ReflectionDistributionView()
+                        AshYearView()
                         EmberCalendarView(onEdit: { editing = $0 })
                     }
                     .padding(.horizontal, 16)

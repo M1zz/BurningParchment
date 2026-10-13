@@ -442,6 +442,38 @@
         }
       }
     },
+    "%lld번": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld times"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld번"
+          }
+        }
+      }
+    },
+    "%lld번의 밤을 끄고": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld nights blown out"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld번의 밤을 끄고"
+          }
+        }
+      }
+    },
     "%lld분": {
       "extractionState": "stale",
       "localizations": {
@@ -572,6 +604,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld일 %lld시간"
+          }
+        }
+      }
+    },
+    "%lld일 · 재 %lld톨": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days · %lld ashes"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld일 · 재 %lld톨"
           }
         }
       }
@@ -729,6 +777,22 @@
     ":": {
       "shouldTranslate": false
     },
+    "PDF 공유·저장": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share or Save PDF"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF 공유·저장"
+          }
+        }
+      }
+    },
     "·": {
       "shouldTranslate": false
     },
@@ -802,6 +866,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "가격 다시 불러오기"
+          }
+        }
+      }
+    },
+    "가장 길게 이어 쓴 날": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest streak"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "가장 길게 이어 쓴 날"
           }
         }
       }
@@ -1117,6 +1197,22 @@
         }
       }
     },
+    "기록한 날": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days recorded"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기록한 날"
+          }
+        }
+      }
+    },
     "기쁨": {
       "extractionState": "stale",
       "localizations": {
@@ -1364,6 +1460,22 @@
         }
       }
     },
+    "남은 조각을 모아 둡니다": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keeping what was left"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남은 조각을 모아 둡니다"
+          }
+        }
+      }
+    },
     "남음": {
       "localizations": {
         "en": {
@@ -1561,6 +1673,22 @@
         }
       }
     },
+    "노을": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dusk"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "노을"
+          }
+        }
+      }
+    },
     "늦게 잤어요": {
       "localizations": {
         "en": {
@@ -1605,6 +1733,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "다른 글귀 보기"
+          }
+        }
+      }
+    },
+    "다른 빛깔로 태워 보세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burn in a different color"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다른 빛깔로 태워 보세요"
           }
         }
       }
@@ -1740,6 +1884,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "달"
+          }
+        }
+      }
+    },
+    "달빛 한지": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moonlit Hanji"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달빛 한지"
+          }
+        }
+      }
+    },
+    "달빛 한지, 청자, 노을. 양피지와 불꽃의 빛깔을 바꿔요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moonlit Hanji, Celadon, Dusk. Change the color of the paper and the flame."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달빛 한지, 청자, 노을. 양피지와 불꽃의 빛깔을 바꿔요."
+          }
+        }
+      }
+    },
+    "달빛 한지·청자·노을 빛깔로 양피지가 타요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burn in Moonlit Hanji, Celadon or Dusk"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달빛 한지·청자·노을 빛깔로 양피지가 타요"
           }
         }
       }
@@ -1939,22 +2131,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "데드라인을 더 세우려면"
-          }
-        }
-      }
-    },
-    "데드라인을 제한 없이 세울 수 있어요.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Set as many deadlines as you like."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "데드라인을 제한 없이 세울 수 있어요."
           }
         }
       }
@@ -2187,6 +2363,22 @@
         }
       }
     },
+    "마음먹은 대로 가장 많이 한 달": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Month you did the most of what you meant to"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마음먹은 대로 가장 많이 한 달"
+          }
+        }
+      }
+    },
     "마음먹은 대로 한 일": {
       "extractionState": "stale",
       "localizations": {
@@ -2368,6 +2560,38 @@
         }
       }
     },
+    "모은 조각을 꺼내 보세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Take your fragments with you"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모은 조각을 꺼내 보세요"
+          }
+        }
+      }
+    },
+    "모은 조각을 카드와 포스터 이미지로 공유해요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share your fragments as card and poster images"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모은 조각을 카드와 포스터 이미지로 공유해요"
+          }
+        }
+      }
+    },
     "못함": {
       "extractionState": "stale",
       "localizations": {
@@ -2434,6 +2658,22 @@
         }
       }
     },
+    "바탕": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Background"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "바탕"
+          }
+        }
+      }
+    },
     "반짝": {
       "extractionState": "stale",
       "localizations": {
@@ -2447,6 +2687,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "반짝"
+          }
+        }
+      }
+    },
+    "밤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "밤"
           }
         }
       }
@@ -2530,6 +2786,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "번개"
+          }
+        }
+      }
+    },
+    "범위": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Range"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "범위"
           }
         }
       }
@@ -2735,6 +3007,22 @@
         }
       }
     },
+    "불을 끄고 남긴 조각을 카드와 포스터로 만들어 간직해요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn the fragments you kept into cards and posters."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불을 끄고 남긴 조각을 카드와 포스터로 만들어 간직해요."
+          }
+        }
+      }
+    },
     "불을 끄는 것도 용기다": {
       "localizations": {
         "en": {
@@ -2783,6 +3071,22 @@
         }
       }
     },
+    "불타는 내인생": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burning Parchment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불타는 내인생"
+          }
+        }
+      }
+    },
     "불타는 내인생 프로": {
       "localizations": {
         "en": {
@@ -2812,6 +3116,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "불타는 내인생 🔥"
+          }
+        }
+      }
+    },
+    "불타는 양피지": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burning Parchment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불타는 양피지"
           }
         }
       }
@@ -3458,6 +3778,70 @@
           "stringUnit": {
             "state": "translated",
             "value": "앞으로의 프로 기능"
+          }
+        }
+      }
+    },
+    "양피지": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parchment"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "양피지"
+          }
+        }
+      }
+    },
+    "양피지·불꽃": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parchment & Flame"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "양피지·불꽃"
+          }
+        }
+      }
+    },
+    "양피지·불꽃 테마": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parchment & Flame Themes"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "양피지·불꽃 테마"
+          }
+        }
+      }
+    },
+    "양피지의 종이 색과 불꽃의 빛깔이 함께 바뀌어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changes the paper color and the flame together"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "양피지의 종이 색과 불꽃의 빛깔이 함께 바뀌어요"
           }
         }
       }
@@ -4663,6 +5047,22 @@
         }
       }
     },
+    "이미지 공유": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Image"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이미지 공유"
+          }
+        }
+      }
+    },
     "이번 달": {
       "extractionState": "stale",
       "localizations": {
@@ -4960,6 +5360,22 @@
         }
       }
     },
+    "재": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재"
+          }
+        }
+      }
+    },
     "재 %@개 기준": {
       "localizations": {
         "en": {
@@ -5020,6 +5436,22 @@
         }
       }
     },
+    "재 %lld톨 · A5 크기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld ashes · A5 size"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재 %lld톨 · A5 크기"
+          }
+        }
+      }
+    },
     "재 항아리": {
       "extractionState": "stale",
       "localizations": {
@@ -5049,6 +5481,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "재 항아리에 담아주세요"
+          }
+        }
+      }
+    },
+    "재가 가장 많이 쌓인 달": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Month with the most ash"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재가 가장 많이 쌓인 달"
           }
         }
       }
@@ -5252,6 +5700,22 @@
         }
       }
     },
+    "적어 온 회고를 PDF 한 권으로 묶어 보관하고 인쇄해요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bind your reflections into one PDF to keep or print."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "적어 온 회고를 PDF 한 권으로 묶어 보관하고 인쇄해요."
+          }
+        }
+      }
+    },
     "전체": {
       "extractionState": "stale",
       "localizations": {
@@ -5366,6 +5830,86 @@
         }
       }
     },
+    "조각 카드": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragment Card"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 카드"
+          }
+        }
+      }
+    },
+    "조각 카드·포스터": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragment Cards & Posters"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 카드·포스터"
+          }
+        }
+      }
+    },
+    "조각 카드로 공유": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share as a fragment card"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 카드로 공유"
+          }
+        }
+      }
+    },
+    "조각 포스터": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragment Poster"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 포스터"
+          }
+        }
+      }
+    },
+    "조각 포스터 만들기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make a fragment poster"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각 포스터 만들기"
+          }
+        }
+      }
+    },
     "조각을 누르면 뒤집혀요": {
       "localizations": {
         "en": {
@@ -5442,6 +5986,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "조금 더 적어두고 싶다면 (선택)"
+          }
+        }
+      }
+    },
+    "종류": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kind"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "종류"
           }
         }
       }
@@ -5548,6 +6108,70 @@
         }
       }
     },
+    "지난 12개월 달별 재": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash by month over the last 12 months"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지난 12개월 달별 재"
+          }
+        }
+      }
+    },
+    "지난 12개월, 달마다 어디로 흘렀나": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where the last 12 months went, month by month"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지난 12개월, 달마다 어디로 흘렀나"
+          }
+        }
+      }
+    },
+    "지난 12개월의 재를 달마다 나눠 보여줘요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See the last 12 months of ash, month by month"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지난 12개월의 재를 달마다 나눠 보여줘요"
+          }
+        }
+      }
+    },
+    "지난 열두 달 동안 시간이 어디로 흘렀는지 달마다 보여 드려요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See where your time went each month over the last twelve months."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지난 열두 달 동안 시간이 어디로 흘렀는지 달마다 보여 드려요."
+          }
+        }
+      }
+    },
     "지원": {
       "comment": "A label for the support section.",
       "isCommentAutoGenerated": true,
@@ -5612,6 +6236,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요."
+          }
+        }
+      }
+    },
+    "청자": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Celadon"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "청자"
           }
         }
       }
@@ -5934,6 +6574,22 @@
         }
       }
     },
+    "테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Themes, fragment cards, the reflection book PDF, a year of ash and unlimited deadlines."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요."
+          }
+        }
+      }
+    },
     "페이지 %lld / %lld": {
       "extractionState": "stale",
       "localizations": {
@@ -5980,6 +6636,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "평생 이용권 · %@"
+          }
+        }
+      }
+    },
+    "포스터": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poster"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "포스터"
           }
         }
       }
@@ -6044,6 +6716,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "프로로 업그레이드"
+          }
+        }
+      }
+    },
+    "프로에서 열려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available with Pro"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로에서 열려요"
+          }
+        }
+      }
+    },
+    "프로에서 한 해의 흐름을 열어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock the year's flow with Pro"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로에서 한 해의 흐름을 열어요"
           }
         }
       }
@@ -6127,6 +6831,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "한 번 결제로 평생 이용할 수 있어요"
+          }
+        }
+      }
+    },
+    "한 해의 재": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Year of Ash"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 해의 재"
+          }
+        }
+      }
+    },
+    "한 해의 재 흐름": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Year of Ash"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 해의 재 흐름"
+          }
+        }
+      }
+    },
+    "한 해의 재를 한눈에": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A whole year of ash at a glance"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 해의 재를 한눈에"
           }
         }
       }
@@ -6383,6 +7135,38 @@
         }
       }
     },
+    "회고 책 PDF": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reflection Book PDF"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고 책 PDF"
+          }
+        }
+      }
+    },
+    "회고 책 PDF 로 내보내기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export reflection book as PDF"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고 책 PDF 로 내보내기"
+          }
+        }
+      }
+    },
     "회고 책으로 보기": {
       "extractionState": "stale",
       "localizations": {
@@ -6396,6 +7180,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고 책으로 보기"
+          }
+        }
+      }
+    },
+    "회고 책을 손에 쥐어 보세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold your reflection book"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고 책을 손에 쥐어 보세요"
+          }
+        }
+      }
+    },
+    "회고를 PDF 한 권으로 묶어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bind your reflections into one PDF"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 PDF 한 권으로 묶어요"
+          }
+        }
+      }
+    },
+    "회고를 날짜별 페이지의 PDF 로 묶어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bind reflections into a PDF, a page per day"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 날짜별 페이지의 PDF 로 묶어요"
           }
         }
       }

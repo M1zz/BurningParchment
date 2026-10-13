@@ -136,6 +136,7 @@ struct ContentView: View {
         .sheet(isPresented: $showFragments) {
             FragmentCollectionView()
                 .environmentObject(fragmentManager)
+                .environmentObject(storeManager)
         }
         .sheet(item: $morningCheckIn) { checkIn in
             MorningCheckInView(checkIn: checkIn)

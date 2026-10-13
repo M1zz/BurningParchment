@@ -15,6 +15,7 @@ struct BurningParchmentView: View {
     @State private var embers: [Ember] = []
     @State private var ashes: [Ash] = []
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.parchmentStyle) private var style
 
     private let timer = Timer.publish(every: 1.0 / 30.0, on: .main, in: .common).autoconnect()
 
@@ -96,10 +97,12 @@ struct BurningParchmentView: View {
 
             if progress > 0.005 && progress < 0.995 {
                 diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
+                    .flameTint(style)
                     .accessibilityHidden(true)
             }
 
             particleCanvas(items: embers, withGlow: true)
+                .flameTint(style)
                 .accessibilityHidden(true)
 
             VStack {
@@ -490,8 +493,10 @@ struct BurningParchmentView: View {
 
             if night.isBurning && night.progress > 0.005 {
                 diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: night.progress)
+                    .flameTint(style)
                     .accessibilityHidden(true)
                 particleCanvas(items: embers, withGlow: true)
+                    .flameTint(style)
                     .accessibilityHidden(true)
             }
 
@@ -659,20 +664,8 @@ struct BurningParchmentView: View {
 
     // MARK: - Parchment Gradient
 
-    private var parchmentGradient: LinearGradient { Self.parchmentGradient }
-
-    static var parchmentGradient: LinearGradient {
-        LinearGradient(
-            colors: [
-                Color(red: 0.86, green: 0.78, blue: 0.62),
-                Color(red: 0.80, green: 0.70, blue: 0.54),
-                Color(red: 0.73, green: 0.62, blue: 0.46),
-                Color(red: 0.66, green: 0.54, blue: 0.39),
-            ],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
-    }
+    // 종이 색은 양피지·불꽃 테마(ParchmentStyle)가 정한다. 기본은 볕에 그을린 양피지.
+    private var parchmentGradient: LinearGradient { style.paperGradient }
 
     // MARK: - Background Glow
 

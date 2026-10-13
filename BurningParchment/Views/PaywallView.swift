@@ -8,6 +8,25 @@ import StoreKit
 enum PaywallReason {
     /// 무료 데드라인 한도에 닿아 하나 더 만들려다 열림
     case deadline
+    /// 프로 테마(양피지·불꽃)를 고르려다 열림
+    case theme
+    /// 조각 카드·포스터를 내보내려다 열림
+    case fragmentExport
+    /// 회고 책을 PDF 로 내보내려다 열림
+    case bookExport
+    /// 재의 흐름의 긴 기간 분석을 열려다 열림
+    case insights
+
+    /// 혜택 목록에서 맨 위로 올릴 항목
+    fileprivate var feature: PaywallView.Feature {
+        switch self {
+        case .deadline:       return .deadline
+        case .theme:          return .theme
+        case .fragmentExport: return .fragmentExport
+        case .bookExport:     return .bookExport
+        case .insights:       return .insights
+        }
+    }
 }
 
 struct PaywallView: View {
@@ -115,7 +134,11 @@ struct PaywallView: View {
 
     private var headline: String {
         switch reason {
-        case .deadline: return String(localized: "데드라인을 더 세우려면")
+        case .deadline:       return String(localized: "데드라인을 더 세우려면")
+        case .theme:          return String(localized: "다른 빛깔로 태워 보세요")
+        case .fragmentExport: return String(localized: "모은 조각을 꺼내 보세요")
+        case .bookExport:     return String(localized: "회고 책을 손에 쥐어 보세요")
+        case .insights:       return String(localized: "한 해의 재를 한눈에")
         case nil:       return String(localized: "불타는 내인생 프로")
         }
     }
@@ -124,6 +147,14 @@ struct PaywallView: View {
         switch reason {
         case .deadline:
             return String(localized: "무료로는 데드라인을 \(StoreManager.freeDeadlineLimit)개까지 둘 수 있어요. 프로로 여러 목표를 함께 세어보세요.")
+        case .theme:
+            return String(localized: "달빛 한지, 청자, 노을. 양피지와 불꽃의 빛깔을 바꿔요.")
+        case .fragmentExport:
+            return String(localized: "불을 끄고 남긴 조각을 카드와 포스터로 만들어 간직해요.")
+        case .bookExport:
+            return String(localized: "적어 온 회고를 PDF 한 권으로 묶어 보관하고 인쇄해요.")
+        case .insights:
+            return String(localized: "지난 열두 달 동안 시간이 어디로 흘렀는지 달마다 보여 드려요.")
         case nil:
             return String(localized: "하루를 남김없이 담아보세요")
         }
@@ -133,16 +164,9 @@ struct PaywallView: View {
 
     private var featureList: some View {
         VStack(spacing: 14) {
-            featureRow(
-                icon: "flag.fill",
-                title: "데드라인 무제한",
-                detail: "여러 목표를 동시에 카운트다운해요"
-            )
-            featureRow(
-                icon: "sparkles",
-                title: "앞으로의 프로 기능",
-                detail: "새로 추가되는 프로 기능도 모두 포함돼요"
-            )
+            ForEach(orderedFeatures, id: \.self) { feature in
+                featureRow(icon: feature.icon, title: feature.title, detail: feature.detail)
+            }
         }
         .padding(18)
         .background(
@@ -153,6 +177,49 @@ struct PaywallView: View {
                         .stroke(Color.ember.opacity(0.12), lineWidth: 1)
                 )
         )
+    }
+
+    enum Feature: CaseIterable {
+        case theme, fragmentExport, bookExport, insights, deadline, future
+
+        var icon: String {
+            switch self {
+            case .theme:          return "paintpalette.fill"
+            case .fragmentExport: return "square.and.arrow.up.fill"
+            case .bookExport:     return "book.closed.fill"
+            case .insights:       return "chart.bar.fill"
+            case .deadline:       return "flag.fill"
+            case .future:         return "sparkles"
+            }
+        }
+
+        var title: LocalizedStringKey {
+            switch self {
+            case .theme:          return "양피지·불꽃 테마"
+            case .fragmentExport: return "조각 카드·포스터"
+            case .bookExport:     return "회고 책 PDF"
+            case .insights:       return "한 해의 재 흐름"
+            case .deadline:       return "데드라인 무제한"
+            case .future:         return "앞으로의 프로 기능"
+            }
+        }
+
+        var detail: LocalizedStringKey {
+            switch self {
+            case .theme:          return "달빛 한지·청자·노을 빛깔로 양피지가 타요"
+            case .fragmentExport: return "모은 조각을 카드와 포스터 이미지로 공유해요"
+            case .bookExport:     return "회고를 날짜별 페이지의 PDF 로 묶어요"
+            case .insights:       return "지난 12개월의 재를 달마다 나눠 보여줘요"
+            case .deadline:       return "여러 목표를 동시에 카운트다운해요"
+            case .future:         return "새로 추가되는 프로 기능도 모두 포함돼요"
+            }
+        }
+    }
+
+    /// 열린 까닭의 기능을 맨 위로.
+    private var orderedFeatures: [Feature] {
+        guard let first = reason?.feature else { return Feature.allCases }
+        return [first] + Feature.allCases.filter { $0 != first }
     }
 
     private func featureRow(icon: String, title: LocalizedStringKey, detail: LocalizedStringKey) -> some View {

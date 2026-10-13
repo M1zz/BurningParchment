@@ -12,6 +12,7 @@ struct FragmentScrapView: View {
     let edgePhase: Double
     /// 저절로 꺼진 조각 — 연기에 그을린 듯 전체가 한 톤 어둡다
     var smoked: Bool = false
+    @Environment(\.parchmentStyle) private var style
 
     init(burnProgress: Double, edgePhase: Double, smoked: Bool = false) {
         self.burnProgress = burnProgress
@@ -31,7 +32,7 @@ struct FragmentScrapView: View {
             let edge = Path { $0.addLines(scrap.edgePoints) }
 
             ZStack {
-                shape.fill(BurningParchmentView.parchmentGradient)
+                shape.fill(style.paperGradient)
                 if smoked {
                     shape.fill(RadialGradient(
                         colors: [Color(red: 0.25, green: 0.18, blue: 0.12).opacity(0.18),

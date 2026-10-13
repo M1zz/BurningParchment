@@ -18,6 +18,8 @@ struct BurningParchmentApp: App {
     // 테마는 화면 전체에 걸리는 설정이라 최상위에서 읽어 Scene 에 그대로 건다.
     @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
     private var appTheme: AppTheme { AppTheme(rawValue: appThemeRaw) ?? .system }
+    // 양피지·불꽃 테마도 여기서 프로 여부를 반영해 한 번만 정하고 아래로 흘려보낸다.
+    @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
 
     init() {
         // 계약(BurningParchmentSpec)에 선언한 것을 전부 켠다 —
@@ -28,6 +30,7 @@ struct BurningParchmentApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .debugLaunch()
                 .environmentObject(bedtimeManager)
                 .environmentObject(deadlineManager)
                 .environmentObject(reflectionManager)
@@ -35,6 +38,8 @@ struct BurningParchmentApp: App {
                 .environmentObject(storeManager)
                 .environmentObject(fragmentManager)
                 .environmentObject(nightManager)
+                .environment(\.parchmentStyle,
+                             ParchmentStyle.effective(raw: parchmentStyleRaw, isPro: storeManager.isPro))
                 .preferredColorScheme(appTheme.colorScheme)
                 .leeoSatisfactionCheck(BurningParchmentSpec.self)
         }

@@ -5,7 +5,10 @@ import SwiftUI
 
 struct FragmentCollectionView: View {
     @EnvironmentObject var fragmentManager: FragmentManager
+    @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
+    @State private var showPoster = false
+    @State private var showPaywall = false
 
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
@@ -44,10 +47,28 @@ struct FragmentCollectionView: View {
                 FragmentDetailView(fragment: fragment)
             }
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    if !fragmentManager.fragments.isEmpty {
+                        Button {
+                            if storeManager.isPro { showPoster = true } else { showPaywall = true }
+                        } label: {
+                            Label("포스터", systemImage: "square.grid.3x3.square")
+                        }
+                        .foregroundColor(.ember)
+                        .accessibilityLabel("조각 포스터 만들기")
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("닫기") { dismiss() }
                         .foregroundColor(.ember)
                 }
+            }
+            .sheet(isPresented: $showPoster) {
+                FragmentShareSheet(content: .poster(fragmentManager.fragments))
+            }
+            .sheet(isPresented: $showPaywall) {
+                PaywallView(reason: .fragmentExport)
+                    .environmentObject(storeManager)
             }
         }
     }
@@ -113,6 +134,9 @@ private struct FragmentCard: View {
 private struct FragmentDetailView: View {
     let fragmentID: UUID
     @EnvironmentObject var fragmentManager: FragmentManager
+    @EnvironmentObject var storeManager: StoreManager
+    @State private var showCard = false
+    @State private var showPaywall = false
     @Environment(\.dismiss) private var dismiss
     @State private var confirmDelete = false
     @State private var showsBack = false
@@ -171,6 +195,15 @@ private struct FragmentDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    if storeManager.isPro { showCard = true } else { showPaywall = true }
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                .foregroundColor(.ember)
+                .accessibilityLabel("조각 카드로 공유")
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
                 Button(role: .destructive) { confirmDelete = true } label: {
                     Image(systemName: "trash")
                 }
@@ -179,6 +212,13 @@ private struct FragmentDetailView: View {
             }
         }
         .onAppear { showsBack = fragment?.isBackWritten ?? false }
+        .sheet(isPresented: $showCard) {
+            if let fragment { FragmentShareSheet(content: .card(fragment)) }
+        }
+        .sheet(isPresented: $showPaywall) {
+            PaywallView(reason: .fragmentExport)
+                .environmentObject(storeManager)
+        }
         .confirmationDialog("이 조각을 버릴까요?", isPresented: $confirmDelete, titleVisibility: .visible) {
             Button("버리기", role: .destructive) {
                 if let fragment { fragmentManager.delete(fragment) }

@@ -23,6 +23,7 @@ struct BlowOutView: View {
     /// 조각 가장자리의 모양. 타는 동안 흔들리지 않게 한 번 정해 두고, 끈 조각에도 그대로 남긴다.
     @State private var edgeSeed = Double.random(in: 0...100)
     @State private var scrapSize: CGSize = .zero
+    @Environment(\.parchmentStyle) private var style
 
     // 불이 꺼진 순간의 모습 — 조각은 이 값으로 만든다
     @State private var snapshot: Snapshot?
@@ -120,6 +121,7 @@ struct BlowOutView: View {
                         breath: detector.breath,
                         scale: 1.5
                     )
+                    .flameTint(style)
 
                     smokeCanvas
                 }

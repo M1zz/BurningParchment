@@ -1,5 +1,21 @@
 # 릴리즈 노트
 
+## 1.1.4
+
+### 앱스토어 (한국어)
+
+지난 항아리를 모두 무료로 열 수 있어요
+아침에 따로 묻는 창이 뜨지 않아요
+후 불어 불을 끄면 하루가 끝나요
+프로 구매와 복원이 더 분명해졌어요
+
+### App Store (English)
+
+Every past urn now opens for free
+No more prompts when you wake up
+Blow out the flame and your day is done
+Buying and restoring Pro is clearer
+
 ## 1.1.3
 
 ### 앱스토어 (한국어)

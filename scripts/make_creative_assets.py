@@ -39,11 +39,12 @@ SEARCH = {
     "en": ("Time remaining", "Watch your time<br>burn away", "Your day, week, month and year"),
 }
 
-# 헤더는 한 가지 약속만: 흘려보내는 시간이 양피지처럼 타는 게 보인다.
+# 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
+# 양옆 기기는 불 끄기 화면(주황 불꽃)과 달빛 한지 테마(푸른 불꽃) — 같은 의식, 다른 빛깔.
 # ⚠️ 기계번역하지 않는다.
 HEADER = {
-    "ko": ("불타는 내인생", "오늘이 타들어가는 게<br>눈에 보여요"),
-    "en": ("My Burning Life", "See your day<br>go up in flames"),
+    "ko": ("불타는 내인생", "후 불어 끄면<br>오늘이 끝나요"),
+    "en": ("Burning Parchment", "Blow out the flame,<br>close your day"),
 }
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:
@@ -135,6 +136,7 @@ def search_html(lang):
     return f"""
 <div class="glow" style="left:{ph_left - 250}px;top:700px;width:1600px;height:1600px;background:rgba(214,120,44,.26)"></div>
 <div class="glow" style="left:{l - 700}px;top:{t - 500}px;width:1400px;height:1000px;background:rgba(214,120,44,.08)"></div>
+{phone(shot(lang, "07-theme-dark.png"), ph_left + 760, t - 200, 860, 10)}
 {phone(shot(lang, "01-week-dark.png"), ph_left, t - 360, ph_w, 0)}
 <div class="text" style="left:{l}px;top:{t}px;width:{col}px;height:{sh}px">
   <div class="eyebrow" style="font-size:92px">{eyebrow}</div>
@@ -155,8 +157,8 @@ def header_html(lang):
     return f"""
 <div class="glow" style="left:{l - 200}px;top:{t - 400}px;width:{sw + 400}px;height:{sh + 800}px;background:rgba(214,120,44,.16)"></div>
 {embers_html}
-{phone(shot(lang, "01-week-dark.png"), 300, 360, 640, -9)}
-{phone(shot(lang, "02-month-light.png"), 2900, 360, 640, 9)}
+{phone(shot(lang, "blowout-dark.png"), 300, 360, 640, -9)}
+{phone(shot(lang, "07-theme-dark.png"), 2900, 360, 640, 9)}
 <div class="text" style="left:{l}px;top:{t}px;width:{sw}px;height:{sh}px;align-items:center;text-align:center">
   <div class="eyebrow" style="font-size:76px">{eyebrow}</div>
   <div class="headline" data-max="200" data-min="110" style="margin-top:22px">{headline}</div>

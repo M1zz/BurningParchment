@@ -34,6 +34,11 @@ SHOTS = {
   ("04-flow-light.png",    "hero-bleed",  True,  "시간을 어디에 썼는지",                 "분포 그래프와 잔불 달력으로 한눈에",  None),
   ("05-book-dark.png",     "top-crop",    False, "지난 재를 다시 읽어보세요",            "양피지 위에 남긴 한 줄들",            0.58),
   ("06-settings-dark.png", "flat-rotate", False, "취침 시간부터<br>화면 테마까지",       "당신에게 맞게 맞춰 쓰세요",           None),
+  # ── 프로 ──
+  ("07-theme-dark.png",    "hero-bleed",  True,  "불꽃의 빛깔을<br>골라 보세요",         "프로 테마 · 달빛 한지 · 청자 · 노을",   None),
+  ("08-poster-dark.png",   "text-bottom", False, "꺼 둔 밤들을<br>한 장에",             "프로 · 모은 조각을 포스터와 카드로",     None),
+  ("09-year-light.png",    "top-crop",    False, "한 해의 재를<br>한눈에",              "프로 · 열두 달이 어디로 흘렀는지",       0.62),
+  ("10-book-pdf.png",      "pages",       False, "회고를<br>책 한 권으로",              "프로 · 날짜별 쪽으로 묶은 PDF",         None),
  ],
  "en": [
   ("01-week-dark.png",     "hero-bleed",  False, "Watch your time<br>burn away", "Day, week, month, year",                      None),
@@ -42,6 +47,11 @@ SHOTS = {
   ("04-flow-light.png",    "hero-bleed",  True,  "See where<br>your time went",  "A distribution graph and an ember calendar",   None),
   ("05-book-dark.png",     "top-crop",    False, "Read your ashes again",        "The lines you left on the parchment",          0.58),
   ("06-settings-dark.png", "flat-rotate", False, "From bedtime<br>to theme",     "Set it up the way you like",                   None),
+  # ── Pro ──
+  ("07-theme-dark.png",    "hero-bleed",  True,  "Pick the color<br>of your flame",    "Pro themes: Moonlit Hanji, Celadon, Dusk",  None),
+  ("08-poster-dark.png",   "text-bottom", False, "All your nights<br>on one page",     "Pro turns kept fragments into posters",     None),
+  ("09-year-light.png",    "top-crop",    False, "A whole year<br>of ash",             "Pro shows where twelve months went",        0.62),
+  ("10-book-pdf.png",      "pages",       False, "Your reflections,<br>bound as a book", "Pro exports a PDF, a page for every day", None),
  ],
 }
 
@@ -98,6 +108,18 @@ LAYOUTS = {
 """,
     # 위쪽만 잘라낸 화면을 크게 보여주고, 잘린 아랫단은 배경으로 스며들게 한다.
     # 딱 끊긴 단면이 그냥 떠 있으면 "잘못 잘린 이미지" 처럼 보인다.
+    # 회고 책 PDF 의 쪽(표지 + 본문 2쪽)을 부채꼴로 펼친다. 기기 대신 종이를 보인다.
+    "pages": """
+.headline { text-align:center; margin-top:250px; padding:0 70px; }
+.sub { text-align:center; margin-top:46px; padding:0 70px; }
+.pages { position:absolute; left:0; right:0; top:880px; height:1700px; }
+.page { position:absolute; width:800px; border-radius:14px; overflow:hidden;
+        box-shadow: 40px 60px 100px rgba(60,40,20,.28), 10px 18px 36px rgba(60,40,20,.16); }
+.page img { width:100%; display:block; }
+.p2 { left:400px; top:170px; transform:rotate(8deg); }
+.p1 { left:220px; top:70px;  transform:rotate(-1deg); }
+.p0 { left:40px;  top:230px; transform:rotate(-9deg); }
+""",
     "top-crop": """
 .headline { text-align:center; margin-top:250px; padding:0 70px; }
 .sub { text-align:center; margin-top:46px; padding:0 70px; }
@@ -111,6 +133,7 @@ LAYOUTS = {
 
 TEXT_FIRST  = '<div class="headline">{h}</div><div class="sub">{s}</div><div class="wrap"><div class="phone"><img src="{img}"></div></div>'
 PHONE_FIRST = '<div class="wrap"><div class="phone"><img src="{img}"></div></div><div class="headline">{h}</div><div class="sub">{s}</div>'
+PAGES       = '<div class="headline">{h}</div><div class="sub">{s}</div><div class="pages">{imgs}</div>'
 HTML = '<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
 
 
@@ -131,8 +154,15 @@ def main(lang, only=None):
             im = im.crop((0, 0, im.width, int(im.height * crop)))
             shot = work / f"{lang}-crop-{fname}"
             im.save(shot)
-        tpl = PHONE_FIRST if layout == "text-bottom" else TEXT_FIRST
-        body = tpl.format(h=head, s=sub, img=shot.as_uri())
+        if layout == "pages":
+            # 10-book-pdf.png → raw 의 10-book-p0/p1/p2.png (PDF 쪽을 그대로 그린 것)
+            stem = fname.split("-")[0]
+            imgs = "".join(f'<div class="page p{i}"><img src="{(src / f"{stem}-book-p{i}.png").as_uri()}"></div>'
+                           for i in (2, 1, 0))
+            body = PAGES.format(h=head, s=sub, imgs=imgs)
+        else:
+            tpl = PHONE_FIRST if layout == "text-bottom" else TEXT_FIRST
+            body = tpl.format(h=head, s=sub, img=shot.as_uri())
         css = base_css(lang, dark) + LAYOUTS[layout]
         html = work / f"{lang}-{fname.replace('.png','.html')}"
         html.write_text(HTML.format(css=css, body=body), encoding="utf-8")

@@ -620,6 +620,9 @@ class BedtimeManager: ObservableObject {
 
     // MARK: - Notifications
     private func requestNotificationPermission() {
+        #if DEBUG
+        if DebugLaunch.skipNotifications { return }
+        #endif
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in }
     }
 
@@ -648,6 +651,9 @@ class BedtimeManager: ObservableObject {
     // MARK: - Live Activity
 
     private func startLiveActivity(bedDate: Date) {
+        #if DEBUG
+        if DebugLaunch.skipNotifications { return }   // 스크린샷용 실행에서는 권한 창·실시간 현황을 띄우지 않는다
+        #endif
         guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
         guard liveActivity == nil else { return }
 

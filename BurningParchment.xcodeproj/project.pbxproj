@@ -180,6 +180,7 @@
 				EEC577EC675B374BA1DCFF27 /* InfoPlist.xcstrings */,
 				C1D3645BC9A44C34139BA62A /* Localizable.xcstrings */,
 				4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */,
+				85DBCEDE7F20B267AF225AF2 /* Extensions */,
 				9934137934554BDF839CE66F /* Models */,
 				8176ACB762014148DE653C30 /* Shaders */,
 				38EEBEFE4DF6D9E04580680C /* Theme */,
@@ -214,6 +215,13 @@
 				95D60B5770EF62427A47B171 /* FireShader.metal */,
 			);
 			path = Shaders;
+			sourceTree = "<group>";
+		};
+		85DBCEDE7F20B267AF225AF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9934137934554BDF839CE66F /* Models */ = {
@@ -680,7 +688,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.16.1;
+				minimumVersion = 3.17.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

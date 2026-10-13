@@ -675,40 +675,6 @@
         }
       }
     },
-    "1년보다 오래된 항아리까지 거슬러 올라가 다시 읽어요": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Go back past a year and read those urns again"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1년보다 오래된 항아리까지 거슬러 올라가 다시 읽어요"
-          }
-        }
-      }
-    },
-    "1년보다 오래된 항아리는 프로에서 열려요": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Urns older than a year open with Pro"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1년보다 오래된 항아리는 프로에서 열려요"
-          }
-        }
-      }
-    },
     "1달": {
       "extractionState": "stale",
       "localizations": {
@@ -823,6 +789,22 @@
     },
     "→ %@": {
       "shouldTranslate": false
+    },
+    "가격 다시 불러오기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reload Price"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "가격 다시 불러오기"
+          }
+        }
+      }
     },
     "감사": {
       "extractionState": "stale",
@@ -999,6 +981,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "관계"
+          }
+        }
+      }
+    },
+    "구독이 아니에요. 한 번 결제로 평생 이용할 수 있어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not a subscription. Pay once, keep it forever."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "구독이 아니에요. 한 번 결제로 평생 이용할 수 있어요"
           }
         }
       }
@@ -1350,18 +1348,18 @@
         }
       }
     },
-    "남은 조각은 아침까지 식혀 둘게요.\n뒷면의 한 줄은 내일 아침에 적어요": {
+    "남은 조각은 모아 둘게요.\n오늘은 이대로 푹 자요": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The fragment will cool until morning.\nWrite on its back tomorrow morning"
+            "value": "We'll keep what's left.\nNow get some good sleep."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "남은 조각은 아침까지 식혀 둘게요.\n뒷면의 한 줄은 내일 아침에 적어요"
+            "value": "남은 조각은 모아 둘게요.\n오늘은 이대로 푹 자요"
           }
         }
       }
@@ -1929,6 +1927,38 @@
         }
       }
     },
+    "데드라인을 더 세우려면": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Want more deadlines?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인을 더 세우려면"
+          }
+        }
+      }
+    },
+    "데드라인을 제한 없이 세울 수 있어요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set as many deadlines as you like."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인을 제한 없이 세울 수 있어요."
+          }
+        }
+      }
+    },
     "데드라인이 없어요": {
       "localizations": {
         "en": {
@@ -2355,6 +2385,22 @@
         }
       }
     },
+    "무료로는 데드라인을 %lld개까지 둘 수 있어요. 프로로 여러 목표를 함께 세어보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The free version keeps up to %lld deadline. With Pro, count down to as many goals as you like."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "무료로는 데드라인을 %lld개까지 둘 수 있어요. 프로로 여러 목표를 함께 세어보세요."
+          }
+        }
+      }
+    },
     "무엇 때문에 늦었나요? (선택)": {
       "localizations": {
         "en": {
@@ -2501,6 +2547,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "별"
+          }
+        }
+      }
+    },
+    "복원할 구매가 없어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No purchase to restore"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복원할 구매가 없어요"
           }
         }
       }
@@ -4354,6 +4416,22 @@
         }
       }
     },
+    "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We couldn't find a Pro purchase on this Apple Account. Make sure you're signed in with the account you used to buy it."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요."
+          }
+        }
+      }
+    },
     "이 날의 재는 남아 있지 않아요": {
       "localizations": {
         "en": {
@@ -4846,23 +4924,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "잘 타오른 하루, 이제 식힐 시간"
-          }
-        }
-      }
-    },
-    "잠김 — 프로에서 열려요": {
-      "extractionState": "stale",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Locked — opens with Pro"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "잠김 — 프로에서 열려요"
           }
         }
       }
@@ -5487,39 +5548,6 @@
         }
       }
     },
-    "지난 항아리 모두 열기": {
-      "extractionState": "stale",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Open every past urn"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "지난 항아리 모두 열기"
-          }
-        }
-      }
-    },
-    "지난 항아리 열람·데드라인 무제한을 이용해보세요.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Unlock past urns and unlimited deadlines."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "지난 항아리 열람·데드라인 무제한을 이용해보세요."
-          }
-        }
-      }
-    },
     "지원": {
       "comment": "A label for the support section.",
       "isCommentAutoGenerated": true,
@@ -5952,23 +5980,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "평생 이용권 · %@"
-          }
-        }
-      }
-    },
-    "평생 이용권 구매": {
-      "extractionState": "stale",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buy lifetime access"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "평생 이용권 구매"
           }
         }
       }

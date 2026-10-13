@@ -16,7 +16,7 @@
 
 ### 프로모션 텍스트
 
-잠들기 30분 전, 타오르는 양피지에 후 불어 불을 끄세요. 남은 조각에는 다음 날 아침 한 줄을 적어 모아 둘 수 있어요.
+잠들기 30분 전, 타오르는 양피지에 후 불어 불을 끄세요. 오늘 하루를 마치는 작은 의식입니다. 남은 조각은 차곡차곡 모여요.
 
 ### 설명
 
@@ -29,7 +29,7 @@
 
 후 불어 끄는 하루의 끝
 잠들기 30분 전부터 타오르는 양피지에 숨을 불어 불을 끌 수 있습니다. 숨의 세기만 쓰고 아무것도 녹음하지 않습니다.
-불을 끄고 남은 조각은 식혀 두었다가 다음 날 아침 뒷면에 한 줄을 적습니다. 모은 조각은 뒤집어 다시 볼 수 있습니다.
+불을 끄고 남은 조각은 모아 둡니다. 원할 때 조각을 뒤집어 뒷면에 한 줄을 적을 수 있습니다.
 
 재로 남는 하루
 지나간 시간을 돌아보며 한 줄 회고를 남기고, 무엇에 썼는지 두 축 위에 점으로 나눕니다.
@@ -41,7 +41,7 @@
 라이트와 다크 테마, 추천 취침 시각, 보고 싶은 탭만 고르는 설정을 지원합니다.
 
 불타는 내인생 프로
-항아리 12개와 마감 1개까지는 무료입니다. 프로는 한 번 구매로 평생 쓰며, 항아리와 마감을 제한 없이 만들고 1년보다 오래된 항아리까지 다시 열 수 있습니다. 앞으로 추가되는 프로 기능도 모두 포함됩니다.
+마감 1개까지는 무료입니다. 프로는 구독이 아닌 한 번 구매로 평생 쓰며, 마감을 제한 없이 만들 수 있습니다. 앞으로 추가되는 프로 기능도 모두 포함됩니다.
 이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 지원 URL
@@ -72,7 +72,7 @@ time,countdown,sleep,timer,widget,journal,reflection,routine,habit,deadline,nigh
 
 ### 프로모션 텍스트
 
-Thirty minutes before bed, blow on the burning parchment to put it out. Keep what is left, and write a line on its back the next morning.
+Thirty minutes before bed, blow on the burning parchment to put it out. A small ritual to close your day, with every piece you keep saved.
 
 ### 설명
 
@@ -85,7 +85,7 @@ Add a goal with a deadline and it counts down right alongside.
 
 BLOW OUT THE FLAME
 From 30 minutes before bedtime you can blow on the parchment to put the fire out. Only the strength of your breath is used. Nothing is recorded.
-The piece that is left cools overnight, and the next morning you write a line on its back. Flip through the pieces you have kept any time.
+The piece that is left is kept for you. Flip it over and write a line on its back whenever you like.
 
 WHAT REMAINS AS ASH
 Look back with a one-line reflection and place it on a two-axis graph of how the time was spent.
@@ -97,7 +97,7 @@ Check the time left from Home Screen and Lock Screen widgets, the Dynamic Island
 Light and dark themes, suggested bedtimes, and only the tabs you want to see.
 
 BURNING PARCHMENT PRO
-Up to 12 urns and one deadline are free. Pro is a one-time lifetime purchase that removes those limits and reopens urns older than a year. Every Pro feature added later is included.
+One deadline is free. Pro is a one-time lifetime purchase, not a subscription, and lets you set as many deadlines as you like. Every Pro feature added later is included.
 Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 지원 URL

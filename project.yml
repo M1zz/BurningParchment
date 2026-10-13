@@ -21,7 +21,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.16.1
+    from: 3.17.0
 
 schemes:
   BurningParchment:
@@ -31,6 +31,9 @@ schemes:
         BurningParchmentWidgets: all
     run:
       config: Debug
+      # 시뮬레이터에서 프로 구매·취소·복원을 실제 App Store 없이 시험한다 (Debug 실행에만 쓰인다).
+      # 가격은 시험용이다 — 실제 가격은 App Store Connect 의 com.burningparchment.app.pro 를 따른다.
+      storeKitConfiguration: Config/BurningParchment.storekit
     test:
       config: Debug
     profile:

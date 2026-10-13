@@ -10,6 +10,7 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var showPaywall = false
+    @State private var restoreMessage: String?
     @State private var selBedH: Int = 23
     @State private var selBedM: Int = 0
     @State private var selWakeH: Int = 7
@@ -521,7 +522,13 @@ struct SettingsView: View {
                         .padding(.leading, 14)
 
                     Button {
-                        Task { await storeManager.restorePurchases() }
+                        Task {
+                            let restored = await storeManager.restorePurchases()
+                            if !restored {
+                                restoreMessage = storeManager.lastError
+                                    ?? String(localized: "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
+                            }
+                        }
                     } label: {
                         HStack(spacing: 10) {
                             Image(systemName: "arrow.clockwise")
@@ -531,9 +538,13 @@ struct SettingsView: View {
                                 .font(.system(size: 15))
                                 .foregroundColor(.ember.opacity(0.9))
                             Spacer()
+                            if storeManager.purchaseInProgress {
+                                ProgressView()
+                            }
                         }
                         .padding(14)
                     }
+                    .disabled(storeManager.purchaseInProgress)
                 }
                 .background(
                     RoundedRectangle(cornerRadius: 14)
@@ -542,7 +553,7 @@ struct SettingsView: View {
                             .stroke(Color.ember.opacity(0.1), lineWidth: 1))
                 )
 
-                Text("지난 항아리 열람·데드라인 무제한을 이용해보세요.")
+                Text("데드라인을 제한 없이 세울 수 있어요.")
                     .font(.system(size: 11))
                     .foregroundColor(.inkMuted.opacity(0.4))
                     .padding(.horizontal, 4)
@@ -552,6 +563,12 @@ struct SettingsView: View {
         .sheet(isPresented: $showPaywall) {
             PaywallView()
                 .environmentObject(storeManager)
+        }
+        .alert("구매 복원",
+               isPresented: Binding(get: { restoreMessage != nil }, set: { if !$0 { restoreMessage = nil } })) {
+            Button("확인", role: .cancel) {}
+        } message: {
+            Text(restoreMessage ?? "")
         }
     }
 

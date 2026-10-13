@@ -2,12 +2,24 @@
 // 프로 일회성 잠금해제 페이월
 
 import SwiftUI
+import StoreKit
+
+/// 페이월이 왜 열렸는지. 막힌 기능을 머리말과 첫 줄로 올려 "지금 무엇이 열리는지"부터 말한다.
+enum PaywallReason {
+    /// 무료 데드라인 한도에 닿아 하나 더 만들려다 열림
+    case deadline
+}
 
 struct PaywallView: View {
     @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.purchase) private var purchaseAction
 
-    @State private var showError = false
+    /// 열린 까닭. 설정에서 직접 열면 nil.
+    var reason: PaywallReason? = nil
+
+    @State private var errorMessage: String?
+    @State private var showNothingToRestore = false
 
     var body: some View {
         ZStack {
@@ -28,12 +40,19 @@ struct PaywallView: View {
                 }
             }
         }
-        .alert("구매를 완료하지 못했어요", isPresented: $showError) {
+        .alert("구매를 완료하지 못했어요",
+               isPresented: Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })) {
             Button("확인", role: .cancel) {}
         } message: {
-            Text("네트워크 상태를 확인하고 다시 시도해주세요.")
+            Text(errorMessage ?? "")
         }
-        .onChange(of: storeManager.isPro) { pro in
+        .alert("복원할 구매가 없어요", isPresented: $showNothingToRestore) {
+            Button("확인", role: .cancel) {}
+        } message: {
+            Text("이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
+        }
+        .task { await storeManager.loadProduct() }
+        .onChange(of: storeManager.isPro) { _, pro in
             if pro { dismiss() }
         }
     }
@@ -80,26 +99,40 @@ struct PaywallView: View {
                     )
             }
 
-            Text("불타는 내인생 프로")
+            Text(headline)
                 .font(.system(size: 26, weight: .semibold, design: .serif))
                 .foregroundColor(.ember.opacity(0.95))
+                .multilineTextAlignment(.center)
 
-            Text("하루를 남김없이 담아보세요")
+            Text(subheadline)
                 .font(.system(size: 14, design: .serif))
                 .foregroundColor(.inkMuted.opacity(0.65))
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .padding(.top, 8)
+    }
+
+    private var headline: String {
+        switch reason {
+        case .deadline: return String(localized: "데드라인을 더 세우려면")
+        case nil:       return String(localized: "불타는 내인생 프로")
+        }
+    }
+
+    private var subheadline: String {
+        switch reason {
+        case .deadline:
+            return String(localized: "무료로는 데드라인을 \(StoreManager.freeDeadlineLimit)개까지 둘 수 있어요. 프로로 여러 목표를 함께 세어보세요.")
+        case nil:
+            return String(localized: "하루를 남김없이 담아보세요")
+        }
     }
 
     // MARK: - Features
 
     private var featureList: some View {
         VStack(spacing: 14) {
-            featureRow(
-                icon: "archivebox.fill",
-                title: "지난 항아리 모두 열기",
-                detail: "1년보다 오래된 항아리까지 거슬러 올라가 다시 읽어요"
-            )
             featureRow(
                 icon: "flag.fill",
                 title: "데드라인 무제한",
@@ -148,13 +181,10 @@ struct PaywallView: View {
     private var purchaseSection: some View {
         VStack(spacing: 14) {
             Button {
-                Task {
-                    let ok = await storeManager.purchasePro()
-                    if !ok && !storeManager.isPro { showError = true }
-                }
+                Task { await purchase() }
             } label: {
                 HStack(spacing: 8) {
-                    if storeManager.purchaseInProgress {
+                    if storeManager.purchaseInProgress || (storeManager.proProduct == nil && storeManager.isLoadingProduct) {
                         ProgressView()
                             .tint(.white)
                     } else {
@@ -176,14 +206,14 @@ struct PaywallView: View {
                 )
                 .shadow(color: .ember.opacity(0.3), radius: 12, y: 4)
             }
-            .disabled(storeManager.purchaseInProgress)
+            .disabled(storeManager.purchaseInProgress || storeManager.isLoadingProduct)
 
-            Text("한 번 결제로 평생 이용할 수 있어요")
+            Text("구독이 아니에요. 한 번 결제로 평생 이용할 수 있어요")
                 .font(.system(size: 11))
                 .foregroundColor(.inkMuted.opacity(0.5))
 
             Button {
-                Task { await storeManager.restorePurchases() }
+                Task { await restore() }
             } label: {
                 Text("구매 복원")
                     .font(.system(size: 13, weight: .medium))
@@ -200,8 +230,7 @@ struct PaywallView: View {
             Link("이용약관 (EULA)",
                  destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
             Text("·")
-            Link("개인정보처리방침",
-                 destination: URL(string: "https://github.com/M1zz/BurningParchment/blob/main/PRIVACY.md")!)
+            Link("개인정보처리방침", destination: Self.privacyURL)
         }
         .font(.system(size: 11))
         .foregroundColor(.inkMuted.opacity(0.5))
@@ -212,12 +241,48 @@ struct PaywallView: View {
         if let price = storeManager.proProduct?.displayPrice {
             return String(localized: "평생 이용권 · \(price)")
         }
-        return String(localized: "평생 이용권 구매")
+        // 가격을 못 받아 온 채로 "구매"를 내밀지 않는다 — 누르면 다시 불러온다.
+        return String(localized: "가격 다시 불러오기")
+    }
+
+    // MARK: - Actions
+
+    private func purchase() async {
+        guard storeManager.proProduct != nil else {
+            await storeManager.loadProduct()
+            if storeManager.proProduct == nil {
+                errorMessage = storeManager.lastError ?? String(localized: "네트워크 상태를 확인하고 다시 시도해주세요.")
+            }
+            return
+        }
+        let ok = await storeManager.purchasePro { try await purchaseAction($0) }
+        // 사용자가 결제 시트를 닫은 건 실패가 아니다 — lastError 가 없으면 조용히 둔다.
+        if !ok, !storeManager.isPro, let message = storeManager.lastError {
+            errorMessage = message
+        }
+    }
+
+    private func restore() async {
+        let restored = await storeManager.restorePurchases()
+        guard !restored else { return }   // 열렸으면 onChange 가 닫는다
+        if let message = storeManager.lastError {
+            errorMessage = message
+        } else {
+            showNothingToRestore = true
+        }
+    }
+
+    /// 개인정보처리방침은 지원 언어마다 페이지가 있다. 한국어가 아니면 영어 페이지로.
+    private static var privacyURL: URL {
+        let isKorean = Locale.preferredLanguages.first?.hasPrefix("ko") ?? false
+        return isKorean
+            ? BurningParchmentSpec.legal.privacyURL
+            : URL(string: "https://m1zz.github.io/BurningParchment/en/privacy.html")!
     }
 }
 
 #Preview {
-    PaywallView()
+    PaywallView(reason: .deadline)
         .environmentObject(StoreManager())
         .preferredColorScheme(.dark)
 }

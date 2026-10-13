@@ -414,17 +414,9 @@ struct ContentView: View {
         guard morningCheckIn == nil, !evaluatingMorning, !showBlowOut,
               bedtimeManager.isCountdownActive, let night = bedtimeManager.lastNight else { return }
 
-        // 옮겨붙는 흐름이 꺼져 있으면 잠든 시각은 묻지 않는다. 불을 끈 밤의 조각 뒷면만 권한다.
-        guard NightManager.isEnabled else {
-            let key = night.start.timeIntervalSince1970
-            if morningAutoShownBedtime != key,
-               let fragment = fragmentManager.fragment(forBedtime: night.start),
-               !fragment.isFellAsleep, !fragment.isBackWritten {
-                morningAutoShownBedtime = key
-                morningCheckIn = MorningCheckIn(night: night, step: .writeBack)
-            }
-            return
-        }
+        // 옮겨붙는 흐름이 꺼져 있으면 아침에는 아무것도 띄우지 않는다 — 잠든 시각도, 조각 뒷면 쓰기도.
+        // 앱은 자기 전에 후 불어 끄는 의식까지만 맡고, 뒷면은 모은 조각에서 원할 때 쓴다.
+        guard NightManager.isEnabled else { return }
         // 더 지난 밤은 이제 묻지 않는다 — 앱을 며칠 안 열었어도 그 밤들은 그을음 없이 지나간다
         nightManager.closeUnanswered(before: night.start)
 

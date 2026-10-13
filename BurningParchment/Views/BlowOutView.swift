@@ -1,6 +1,6 @@
 // BlowOutView.swift
 // 타고 있는 양피지에 "후" 불어 불을 끈다.
-//   취침 30분 전 ~ 취침: 오늘의 양피지 — 남은 조각은 아침까지 식혀 두고, 뒷면은 아침에 적는다
+//   취침 30분 전 ~ 취침: 오늘의 양피지 — 남은 조각을 모아 두고, 뒷면은 모은 조각에서 원할 때 적는다
 //   취침 이후:            내일의 양피지 — 끈 자리에서 멈춘다 (그을음은 아침에 확인된 만큼만 남는다)
 
 import SwiftUI
@@ -142,7 +142,7 @@ struct BlowOutView: View {
                     .font(.system(size: 22, weight: .medium, design: .serif))
                     .foregroundColor(.ember.opacity(0.9))
                 Text(night == nil
-                     ? "남은 조각은 아침까지 식혀 둘게요.\n뒷면의 한 줄은 내일 아침에 적어요"
+                     ? "남은 조각은 모아 둘게요.\n오늘은 이대로 푹 자요"
                      : "내일의 양피지가 여기서 멈췄어요.\n좋은 꿈 꾸세요")
                     .font(.system(.body, design: .serif))
                     .foregroundColor(.inkMuted.opacity(0.8))
@@ -213,7 +213,7 @@ struct BlowOutView: View {
         if let night {
             nightManager.markExtinguished(in: night, at: now)
         } else if let snap = snapshot {
-            // 뒷면은 비워 둔 채 모아둔다 — 아침에 식은 조각을 뒤집어 적는다
+            // 뒷면은 비워 둔 채 모아둔다 — 쓰고 싶으면 모은 조각에서 뒤집어 적는다
             fragmentManager.add(ParchmentFragment(
                 bedtimeDate: snap.bedDate,
                 extinguishedAt: now,

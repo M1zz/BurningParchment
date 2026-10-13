@@ -66,7 +66,7 @@ struct DeadlineListView: View {
                 .environmentObject(deadlineManager)
         }
         .sheet(isPresented: $showPaywall) {
-            PaywallView()
+            PaywallView(reason: .deadline)
                 .environmentObject(storeManager)
         }
         .sheet(item: $selectedDeadline) { deadline in

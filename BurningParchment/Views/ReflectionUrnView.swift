@@ -465,7 +465,6 @@ struct ReflectionUrnView: View {
     var autoOpenInput: Bool = false
 
     @State private var showInput = false
-    @State private var showPaywall = false
     @State private var editing: DayReflection? = nil
     @State private var meaningTarget: UrnPeriod? = nil
     @State private var autoOpenTriggered = false
@@ -535,10 +534,6 @@ struct ReflectionUrnView: View {
         .sheet(item: $editing) { item in
             ReflectionInputView(existing: item)
                 .environmentObject(reflectionManager)
-        }
-        .sheet(isPresented: $showPaywall) {
-            PaywallView()
-                .environmentObject(storeManager)
         }
         .sheet(item: $meaningTarget) { period in
             UrnMeaningEditView(period: period)
@@ -735,7 +730,7 @@ struct ReflectionUrnView: View {
 
     @ViewBuilder
     private var meaningPrompt: some View {
-        if let period = reflectionManager.unnamedSealedWeeks.first(where: { storeManager.canOpenUrn($0) }) {
+        if let period = reflectionManager.unnamedSealedWeeks.first {
             let count = reflectionManager.reflectionCount(in: period)
             Button {
                 meaningTarget = period
@@ -790,7 +785,7 @@ struct ReflectionUrnView: View {
                     .environmentObject(reflectionManager)
                     .environmentObject(storeManager)
             } label: {
-                urnRowLabel(period, locked: false)
+                urnRowLabel(period)
             }
             .buttonStyle(.plain)
         }
@@ -815,21 +810,14 @@ struct ReflectionUrnView: View {
 
     @ViewBuilder
     private func monthRow(_ month: UrnPeriod) -> some View {
-        if storeManager.canOpenUrn(month) {
-            NavigationLink {
-                UrnDetailView(period: month)
-                    .environmentObject(reflectionManager)
-                    .environmentObject(storeManager)
-            } label: {
-                urnRowLabel(month, locked: false)
-            }
-            .buttonStyle(.plain)
-        } else {
-            Button { showPaywall = true } label: {
-                urnRowLabel(month, locked: true)
-            }
-            .buttonStyle(.plain)
+        NavigationLink {
+            UrnDetailView(period: month)
+                .environmentObject(reflectionManager)
+                .environmentObject(storeManager)
+        } label: {
+            urnRowLabel(month)
         }
+        .buttonStyle(.plain)
     }
 
     private func sectionHeader(_ title: String, _ subtitle: String) -> some View {
@@ -847,7 +835,7 @@ struct ReflectionUrnView: View {
     }
 
     /// 선반에 놓인 항아리 한 줄.
-    private func urnRowLabel(_ period: UrnPeriod, locked: Bool) -> some View {
+    private func urnRowLabel(_ period: UrnPeriod) -> some View {
         let count = reflectionManager.reflectionCount(in: period)
         let meaning = reflectionManager.meaning(for: period)
 
@@ -859,20 +847,14 @@ struct ReflectionUrnView: View {
                 hasMeaning: meaning != nil
             )
             .frame(width: 46, height: 52)
-            .opacity(locked ? 0.4 : 1)
-            .blur(radius: locked ? 2.5 : 0)
             .accessibilityHidden(true)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(period.title)
                     .font(.system(size: 15, weight: .semibold, design: .serif))
-                    .foregroundColor(.ember.opacity(locked ? 0.5 : 0.88))
+                    .foregroundColor(.ember.opacity(0.88))
 
-                if locked {
-                    Text("1년보다 오래된 항아리는 프로에서 열려요")
-                        .font(.system(size: 11, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.5))
-                } else if let meaning {
+                if let meaning {
                     Text(meaning.displayName)
                         .font(.system(size: 12, design: .serif))
                         .foregroundColor(.inkMuted.opacity(0.65))
@@ -890,9 +872,9 @@ struct ReflectionUrnView: View {
                 Text("재 \(count)톨")
                     .font(.system(size: 11, design: .monospaced))
                     .foregroundColor(.inkMuted.opacity(0.5))
-                Image(systemName: locked ? "lock.fill" : "chevron.right")
+                Image(systemName: "chevron.right")
                     .font(.system(size: 11, weight: .semibold))
-                    .foregroundColor(locked ? .inkMuted.opacity(0.45) : .ember.opacity(0.5))
+                    .foregroundColor(.ember.opacity(0.5))
             }
         }
         .padding(14)
@@ -901,16 +883,14 @@ struct ReflectionUrnView: View {
             RoundedRectangle(cornerRadius: 14)
                 .fill(Color.ink.opacity(0.03))
                 .overlay(RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.ember.opacity(locked ? 0.05 : 0.10), lineWidth: 1))
+                    .stroke(Color.ember.opacity(0.10), lineWidth: 1))
         )
         .contentShape(RoundedRectangle(cornerRadius: 14))
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(period.accessibilityLabel)
         .accessibilityValue(
-            locked
-                ? String(localized: "잠김 — 프로에서 열려요")
-                : (reflectionManager.meaning(for: period)?.displayName
-                    ?? String(localized: "아직 이름 없는 재")) + ", " + String(localized: "재 \(count)톨")
+            (meaning?.displayName ?? String(localized: "아직 이름 없는 재"))
+                + ", " + String(localized: "재 \(count)톨")
         )
         .accessibilityAddTraits(.isButton)
     }

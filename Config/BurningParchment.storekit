@@ -1,0 +1,55 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "6A1F2C3E",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6758995391",
+      "localizations" : [
+        {
+          "description" : "데드라인을 제한 없이 세워요. 한 번 결제로 평생 이용해요.",
+          "displayName" : "불타는 내인생 프로",
+          "locale" : "ko"
+        },
+        {
+          "description" : "Unlimited deadlines. Pay once, keep it forever.",
+          "displayName" : "Burning Parchment Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.burningparchment.app.pro",
+      "referenceName" : "Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6758995390",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "ko",
+    "_storefront" : "KOR",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

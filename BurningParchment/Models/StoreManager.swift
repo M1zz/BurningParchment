@@ -6,9 +6,7 @@
 // 무료 한도 게이트(항아리/데드라인)만 얹은 얇은 파사드로, 기존 호출부·PaywallView 는
 // 그대로 동작한다.
 //
-// 항아리는 이제 사용자가 만드는 게 아니라 기간에서 파생되므로(UrnPeriod) "개수" 한도가 아니라
-// "얼마나 거슬러 올라가 열어볼 수 있나"로 게이트한다. 무료: 최근 1년치 항아리. 프로: 전부.
-// 재는 무료에서도 계속 쌓이므로 결제하면 지난 항아리가 그대로 열린다 — 잃는 데이터는 없다.
+// 지금 무료 한도는 데드라인 개수 하나뿐이다. 항아리(회고)는 기간과 상관없이 모두 무료로 열린다.
 
 import Foundation
 import Combine
@@ -20,8 +18,6 @@ final class StoreManager: ObservableObject {
     static let proProductID = "com.burningparchment.app.pro"
 
     /// 무료 사용 한도 — 선언은 BurningParchmentSpec.monetization 의 게이트 정책 한 곳에만 있다.
-    /// 항아리 한도는 "무료로 열람 가능한 달 수"로 읽는다 (12 = 최근 1년).
-    static let freeUrnHistoryMonths = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.urn] ?? 12
     static let freeDeadlineLimit = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.deadline] ?? 1
 
     private let store: LeeoStore
@@ -40,21 +36,11 @@ final class StoreManager: ObservableObject {
     var isPro: Bool { store.hasPro }
     var proProduct: Product? { store.products.first }
     var purchaseInProgress: Bool { store.purchasingProductID != nil || store.isRestoring }
+    var isLoadingProduct: Bool { store.isLoadingProducts }
+    /// 마지막 구매·복원·상품 로드 오류 (사용자에게 그대로 보여줄 문장). 취소는 오류가 아니라 nil 이다.
+    var lastError: String? { store.lastError }
 
     // MARK: - Gates
-
-    /// 이 항아리를 열어볼 수 있는가.  무료는 최근 freeUrnHistoryMonths 개월치(1년)만 열린다.
-    func canOpenUrn(_ period: UrnPeriod) -> Bool {
-        guard !isPro else { return true }
-        return Self.monthsAgo(period) < Self.freeUrnHistoryMonths
-    }
-
-    /// 지금으로부터 몇 달 전의 항아리인가.  이번 달이면 0, 지난달이면 1. 미래는 음수.
-    static func monthsAgo(_ period: UrnPeriod, now: Date = Date()) -> Int {
-        let c = Calendar.current.dateComponents([.year, .month], from: now)
-        let nowIndex = (c.year ?? 1) * 12 + (c.month ?? 1)
-        return nowIndex - (period.year * 12 + period.month)
-    }
 
     func canAddDeadline(currentCount: Int) -> Bool {
         isPro || currentCount < Self.freeDeadlineLimit
@@ -62,12 +48,24 @@ final class StoreManager: ObservableObject {
 
     // MARK: - 구매 / 복원 (LeeoStore 로 위임)
 
-    @discardableResult
-    func purchasePro() async -> Bool {
-        await store.purchasePrimary()
+    /// 페이월이 뜰 때 가격을 미리 받아 둔다. 이미 받았으면 아무것도 하지 않는다.
+    func loadProduct() async {
+        await store.loadProducts()
     }
 
-    func restorePurchases() async {
+    /// 프로를 산다. 결제 시트는 `action`(SwiftUI 의 `@Environment(\.purchase)`)이 띄운다 —
+    /// StoreKit 이 창을 짐작하게 두면 아이패드에서 결제가 오류로 끝난다 (심사 2.1(b)).
+    @discardableResult
+    func purchasePro(using action: (Product) async throws -> Product.PurchaseResult) async -> Bool {
+        if store.products.isEmpty { await store.loadProducts() }
+        guard let product = store.products.first else { return false }
+        return await store.purchase(product, using: action)
+    }
+
+    /// 구매를 복원하고, 그 결과로 프로가 열렸는지 돌려준다.
+    @discardableResult
+    func restorePurchases() async -> Bool {
         await store.restore()
+        return isPro
     }
 }

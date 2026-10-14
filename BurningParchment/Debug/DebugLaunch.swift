@@ -9,7 +9,8 @@
 //   -skipNotifications YES  알림 권한 요청·예약과 실시간 현황을 건너뛴다 (스크린샷용. 새 시뮬레이터에서 멈춤도 막는다)
 //   -demoProgress 0.45      지금 이 비율만큼 탄 하루가 되도록 기상·취침 시각을 맞춘다 (깨어 있는 시간 16시간)
 //                          ⚠️ 앱 그룹의 기상·취침 설정을 덮어쓴다 — 스크린샷용 시뮬레이터에서만 쓸 것
-//   debugScreen 에 year · blowout 도 있다
+//   debugScreen 에 year · blowout · freeTime(자유시간 정하기) 도 있다
+//   -freeTimeDemo YES       자유시간이 비어 있으면 평일 저녁·주말 오후 예시를 넣고 자유시간 탭을 연다
 //
 // 예) xcrun simctl launch booted com.burningparchment.app -forcePro YES -seedDemo YES -debugScreen insights
 
@@ -85,12 +86,21 @@ struct DebugLaunchModifier: ViewModifier {
     @EnvironmentObject var storeManager: StoreManager
     @EnvironmentObject var bedtimeManager: BedtimeManager
     @EnvironmentObject var nightManager: NightManager
+    @EnvironmentObject var freeTimeManager: FreeTimeManager
     @State private var screen: String?
 
     func body(content: Content) -> some View {
         content
             .onAppear {
                 DebugLaunch.seedIfNeeded(reflections: reflectionManager, fragments: fragmentManager)
+                if UserDefaults.standard.bool(forKey: "freeTimeDemo") {
+                    if !freeTimeManager.isConfigured {
+                        freeTimeManager.add(weekdays: [1, 2, 3, 4, 5], startMinute: 20 * 60, endMinute: 22 * 60 + 30)
+                        freeTimeManager.add(weekdays: [6, 7], startMinute: 14 * 60, endMinute: 18 * 60)
+                        freeTimeManager.add(weekdays: [3], startMinute: 7 * 60, endMinute: 8 * 60)
+                    }
+                    bedtimeManager.selectedPeriod = .freeTime
+                }
                 screen = DebugLaunch.screen
             }
             .sheet(isPresented: Binding(get: { screen != nil }, set: { if !$0 { screen = nil } })) {
@@ -100,6 +110,7 @@ struct DebugLaunchModifier: ViewModifier {
                     .environmentObject(storeManager)
                     .environmentObject(bedtimeManager)
                     .environmentObject(nightManager)
+                    .environmentObject(freeTimeManager)
             }
     }
 
@@ -125,6 +136,7 @@ struct DebugLaunchModifier: ViewModifier {
                     .navigationBarTitleDisplayMode(.inline)
             }
         case "blowout":    BlowOutView()
+        case "freeTime":   FreeTimeEditorView()
         default:           EmptyView()
         }
     }

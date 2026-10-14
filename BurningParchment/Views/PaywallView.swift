@@ -16,6 +16,8 @@ enum PaywallReason {
     case bookExport
     /// 재의 흐름의 긴 기간 분석을 열려다 열림
     case insights
+    /// 불타는 자유시간을 켜려다 열림
+    case freeTime
 
     /// 혜택 목록에서 맨 위로 올릴 항목
     fileprivate var feature: PaywallView.Feature {
@@ -25,6 +27,7 @@ enum PaywallReason {
         case .fragmentExport: return .fragmentExport
         case .bookExport:     return .bookExport
         case .insights:       return .insights
+        case .freeTime:       return .freeTime
         }
     }
 }
@@ -139,6 +142,7 @@ struct PaywallView: View {
         case .fragmentExport: return String(localized: "모은 조각을 꺼내 보세요")
         case .bookExport:     return String(localized: "회고 책을 손에 쥐어 보세요")
         case .insights:       return String(localized: "한 해의 재를 한눈에")
+        case .freeTime:       return String(localized: "나만의 시간만 태워 보세요")
         case nil:       return String(localized: "불타는 내인생 프로")
         }
     }
@@ -155,6 +159,8 @@ struct PaywallView: View {
             return String(localized: "적어 온 회고를 PDF 한 권으로 묶어 보관하고 인쇄해요.")
         case .insights:
             return String(localized: "지난 열두 달 동안 시간이 어디로 흘렀는지 달마다 보여 드려요.")
+        case .freeTime:
+            return String(localized: "잠과 일을 뺀 진짜 내 시간을 골라 두면, 그 시간이 지나갈 때만 이번 주 양피지가 타요.")
         case nil:
             return String(localized: "하루를 남김없이 담아보세요")
         }
@@ -180,10 +186,11 @@ struct PaywallView: View {
     }
 
     enum Feature: CaseIterable {
-        case theme, fragmentExport, bookExport, insights, deadline, future
+        case freeTime, theme, fragmentExport, bookExport, insights, deadline, future
 
         var icon: String {
             switch self {
+            case .freeTime:       return "hourglass"
             case .theme:          return "paintpalette.fill"
             case .fragmentExport: return "square.and.arrow.up.fill"
             case .bookExport:     return "book.closed.fill"
@@ -195,6 +202,7 @@ struct PaywallView: View {
 
         var title: LocalizedStringKey {
             switch self {
+            case .freeTime:       return "불타는 자유시간"
             case .theme:          return "양피지·불꽃 테마"
             case .fragmentExport: return "조각 카드·포스터"
             case .bookExport:     return "회고 책 PDF"
@@ -206,6 +214,7 @@ struct PaywallView: View {
 
         var detail: LocalizedStringKey {
             switch self {
+            case .freeTime:       return "일주일 중 나만의 시간이 지날 때만 양피지가 타요"
             case .theme:          return "달빛 한지·청자·노을 빛깔로 양피지가 타요"
             case .fragmentExport: return "모은 조각을 카드와 포스터 이미지로 공유해요"
             case .bookExport:     return "회고를 날짜별 페이지의 PDF 로 묶어요"

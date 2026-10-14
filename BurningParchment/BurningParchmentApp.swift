@@ -14,6 +14,7 @@ struct BurningParchmentApp: App {
     @StateObject private var storeManager      = StoreManager()
     @StateObject private var fragmentManager   = FragmentManager()
     @StateObject private var nightManager      = NightManager()
+    @StateObject private var freeTimeManager   = FreeTimeManager()
 
     // 테마는 화면 전체에 걸리는 설정이라 최상위에서 읽어 Scene 에 그대로 건다.
     @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
@@ -41,6 +42,7 @@ struct BurningParchmentApp: App {
                 .environmentObject(storeManager)
                 .environmentObject(fragmentManager)
                 .environmentObject(nightManager)
+                .environmentObject(freeTimeManager)
                 .environment(\.parchmentStyle,
                              ParchmentStyle.effective(raw: parchmentStyleRaw, isPro: storeManager.isPro))
                 .preferredColorScheme(appTheme.colorScheme)

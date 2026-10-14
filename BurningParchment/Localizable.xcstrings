@@ -1330,6 +1330,16 @@
         }
       }
     },
+    "깨어 있는 시간 중": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "of waking hours"
+          }
+        }
+      }
+    },
     "꺼진 불 곁에서 편히 쉬어도 된다": {
       "localizations": {
         "en": {
@@ -1342,6 +1352,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "꺼진 불 곁에서 편히 쉬어도 된다"
+          }
+        }
+      }
+    },
+    "끝": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End"
+          }
+        }
+      }
+    },
+    "나만의 시간만 태워 보세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burn only the time that's yours"
           }
         }
       }
@@ -1359,6 +1389,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "나의 목표"
+          }
+        }
+      }
+    },
+    "나의 자유시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My Free Time"
+          }
+        }
+      }
+    },
+    "나의 자유시간 정하기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set my free time"
           }
         }
       }
@@ -1787,6 +1837,16 @@
         }
       }
     },
+    "다음 자유시간 · %@ %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next free time · %1$@ %2$@"
+          }
+        }
+      }
+    },
     "다음엔 어떻게 하면 마칠 수 있을까요?": {
       "extractionState": "stale",
       "localizations": {
@@ -2014,6 +2074,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "더 잘 하려면 내일 무엇을 할까요?"
+          }
+        }
+      }
+    },
+    "더하기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
           }
         }
       }
@@ -2442,6 +2512,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "만들기"
+          }
+        }
+      }
+    },
+    "매일": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every day"
           }
         }
       }
@@ -3136,6 +3216,26 @@
         }
       }
     },
+    "불타는 자유시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burning Free Time"
+          }
+        }
+      }
+    },
+    "불타는 자유시간, 테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Burning Free Time, themes, fragment cards, the reflection book PDF, a year of ash and unlimited deadlines."
+          }
+        }
+      }
+    },
     "비워 두면 흐리게 보이는 글귀가 적혀요": {
       "localizations": {
         "en": {
@@ -3535,6 +3635,16 @@
         }
       }
     },
+    "시작": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        }
+      }
+    },
     "시작 시간": {
       "localizations": {
         "en": {
@@ -3778,6 +3888,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "앞으로의 프로 기능"
+          }
+        }
+      }
+    },
+    "약 %lld일": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About %lld days"
           }
         }
       }
@@ -5131,6 +5251,26 @@
         }
       }
     },
+    "이번 주 남은 자유시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free time left this week"
+          }
+        }
+      }
+    },
+    "이번 주 자유시간을 다 태웠어요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This week's free time has all burned"
+          }
+        }
+      }
+    },
     "이번 주에도 반복되고 있어요": {
       "localizations": {
         "en": {
@@ -5214,6 +5354,26 @@
         }
       }
     },
+    "일주일 나만의 시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My time each week"
+          }
+        }
+      }
+    },
+    "일주일 중 나만의 시간이 지날 때만 양피지가 타요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The parchment burns only during your own hours"
+          }
+        }
+      }
+    },
     "입김의 세기만 확인하고 소리는 녹음하지 않아요": {
       "localizations": {
         "en": {
@@ -5259,6 +5419,46 @@
           "stringUnit": {
             "state": "translated",
             "value": "자동 저장"
+          }
+        }
+      }
+    },
+    "자유시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free time"
+          }
+        }
+      }
+    },
+    "자유시간 고치기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit free time"
+          }
+        }
+      }
+    },
+    "자유시간 더하기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add free time"
+          }
+        }
+      }
+    },
+    "자유시간이 지나갈 때만 불이 붙고, 밖에서는 꺼진 채 기다려요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It lights up while your free time passes and waits unlit the rest of the week"
           }
         }
       }
@@ -5328,6 +5528,26 @@
         }
       }
     },
+    "잠·일·해야 할 일을 빼고, 온전히 나를 위해 쓰는 시간만 적어 주세요. 이 시간이 지나갈 때만 이번 주 양피지가 타요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave out sleep, work and chores, and add only the time you spend on yourself. This week's parchment burns only while it passes."
+          }
+        }
+      }
+    },
+    "잠과 일을 뺀 진짜 내 시간을 골라 두면, 그 시간이 지나갈 때만 이번 주 양피지가 타요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick the hours that are truly yours, beyond sleep and work. This week's parchment burns only while they pass."
+          }
+        }
+      }
+    },
     "잠든 시각": {
       "localizations": {
         "en": {
@@ -5356,6 +5576,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "잠들면 저절로 멈춰요. 잠든 시각은 아침에 확인해서 되돌려요"
+          }
+        }
+      }
+    },
+    "잠자는 시간과 겹쳐요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overlaps your sleep"
+          }
+        }
+      }
+    },
+    "잠자는 시간과 겹쳐요. 깨어 있는 시간 안으로 잡아 주세요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This overlaps your sleep. Keep it within your waking hours."
+          }
+        }
+      }
+    },
+    "잠자는 시간도, 일하는 시간도 빼고\n정말 나만을 위한 시간만 골라 두세요.\n그 시간이 지나갈 때만 이번 주 양피지가 타요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave out sleep, leave out work,\nand pick only the hours that are yours.\nThis week's parchment burns only while they pass."
           }
         }
       }
@@ -5750,6 +6000,26 @@
         }
       }
     },
+    "정해 둔 자유시간": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your free time"
+          }
+        }
+      }
+    },
+    "정해 보고 셈을 보는 건 무료예요. 그 시간만 태우는 건 프로예요.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setting it up and seeing the numbers is free. Burning only those hours is Pro."
+          }
+        }
+      }
+    },
     "제목": {
       "localizations": {
         "en": {
@@ -6023,6 +6293,16 @@
         }
       }
     },
+    "주말": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekends"
+          }
+        }
+      }
+    },
     "주제별로 원하는 만큼 재 항아리를 만들어요": {
       "extractionState": "stale",
       "localizations": {
@@ -6053,6 +6333,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "지금 담기는 항아리"
+          }
+        }
+      }
+    },
+    "지금 타는 중 · %@까지": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burning now · until %@"
           }
         }
       }
@@ -6168,6 +6458,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "지난 열두 달 동안 시간이 어디로 흘렀는지 달마다 보여 드려요."
+          }
+        }
+      }
+    },
+    "지우기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
           }
         }
       }
@@ -6574,22 +6874,6 @@
         }
       }
     },
-    "테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Themes, fragment cards, the reflection book PDF, a year of ash and unlimited deadlines."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요."
-          }
-        }
-      }
-    },
     "페이지 %lld / %lld": {
       "extractionState": "stale",
       "localizations": {
@@ -6636,6 +6920,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "평생 이용권 · %@"
+          }
+        }
+      }
+    },
+    "평일": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdays"
           }
         }
       }
@@ -6720,6 +7014,16 @@
         }
       }
     },
+    "프로로 자유시간만 태우기": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burn my free time with Pro"
+          }
+        }
+      }
+    },
     "프로에서 열려요": {
       "localizations": {
         "en": {
@@ -6732,6 +7036,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "프로에서 열려요"
+          }
+        }
+      }
+    },
+    "프로에서 이 시간만 양피지가 타요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Pro, the parchment burns only in these hours"
           }
         }
       }
@@ -6831,6 +7145,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "한 번 결제로 평생 이용할 수 있어요"
+          }
+        }
+      }
+    },
+    "한 해로 치면": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "over a year"
           }
         }
       }

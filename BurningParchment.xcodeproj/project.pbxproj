@@ -10,6 +10,7 @@
 		0651A04A4DB4F600FE01B744 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CB6FF2098200B3878326E /* PaywallView.swift */; };
 		06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */; };
 		1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E813AB837B41DC4EFA2B33 /* StoreManager.swift */; };
+		14A8922B9B8A28BCF24DD1C5 /* FreeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */; };
 		15540253227E69CAD81A04F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */; };
 		1B273FC340456458C80B16EC /* DayReflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B5CD9701830C1165EDE4C /* DayReflection.swift */; };
 		1F521ADAB0DC4F051433A917 /* ReflectionUrnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */; };
@@ -48,6 +49,7 @@
 		A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */; };
 		AD6BA0F21F9CD9310AC410E1 /* NightRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD8D8DFF8C62FA2A43633E /* NightRecord.swift */; };
 		B61900F783977AF0FACBD854 /* FragmentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */; };
+		B9BCE1B8D659A9E12E61D435 /* FreeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B159E43B8E19147CFD9439 /* FreeTime.swift */; };
 		BF273D2C3055A69F0063A9F9 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 50EA88CCDD9479885FECAA93 /* InfoPlist.xcstrings */; };
 		C273B9F2010771609AAE445B /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9062A5518028E5E6F7CCB7 /* Deadline.swift */; };
 		C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */; };
@@ -107,6 +109,7 @@
 		24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlowOutView.swift; sourceTree = "<group>"; };
 		25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineManager.swift; sourceTree = "<group>"; };
 		298FE2E945D497EDC4B7F18B /* FragmentBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentBackView.swift; sourceTree = "<group>"; };
+		2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTimeView.swift; sourceTree = "<group>"; };
 		2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineListView.swift; sourceTree = "<group>"; };
 		312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentApp.swift; sourceTree = "<group>"; };
 		358CB6FF2098200B3878326E /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentScrapView.swift; sourceTree = "<group>"; };
 		6361058205DE51EE86CE5866 /* DebugLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLaunch.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
+		73B159E43B8E19147CFD9439 /* FreeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTime.swift; sourceTree = "<group>"; };
 		8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBookView.swift; sourceTree = "<group>"; };
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +225,7 @@
 				18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */,
 				5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */,
 				4F3809310A920A95DD9F2096 /* FragmentShareView.swift */,
+				2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */,
 				EB5F9CE2CDF41F7BBB187DBD /* MorningCheckInView.swift */,
 				358CB6FF2098200B3878326E /* PaywallView.swift */,
 				C422EB6B8B07925C19D42B6C /* ReflectionBookExport.swift */,
@@ -258,6 +263,7 @@
 				5E9062A5518028E5E6F7CCB7 /* Deadline.swift */,
 				25ED0DF4B194C2E7C1C536BB /* DeadlineManager.swift */,
 				1D7FE7CC266CA77D35E7B037 /* FragmentManager.swift */,
+				73B159E43B8E19147CFD9439 /* FreeTime.swift */,
 				C3DD8D8DFF8C62FA2A43633E /* NightRecord.swift */,
 				D10418B3347B422A24EEB63C /* ParchmentFragment.swift */,
 				528CB938C4EA147484351E74 /* ParchmentStyle.swift */,
@@ -457,6 +463,8 @@
 				8955029F50F8FA12FD4984E7 /* FragmentManager.swift in Sources */,
 				06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */,
 				526ADBA5A06705B6EEC5760B /* FragmentShareView.swift in Sources */,
+				B9BCE1B8D659A9E12E61D435 /* FreeTime.swift in Sources */,
+				14A8922B9B8A28BCF24DD1C5 /* FreeTimeView.swift in Sources */,
 				C8F507936867BAFA92D4E9E1 /* MorningCheckInView.swift in Sources */,
 				AD6BA0F21F9CD9310AC410E1 /* NightRecord.swift in Sources */,
 				A54C4BE2A4CBD8603A12F300 /* ParchmentFragment.swift in Sources */,

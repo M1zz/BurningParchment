@@ -155,7 +155,7 @@ struct SettingsView: View {
 
     // MARK: - Tab Visibility Section
 
-    private let standardPeriods: [PeriodType] = [.day, .week, .month, .year]
+    private let standardPeriods: [PeriodType] = [.day, .week, .freeTime, .month, .year]
 
     private var tabVisibilitySection: some View {
         let visibleCount = standardPeriods.filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }.count
@@ -652,7 +652,7 @@ struct SettingsView: View {
                             .stroke(Color.ember.opacity(0.1), lineWidth: 1))
                 )
 
-                Text("테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.")
+                Text("불타는 자유시간, 테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.")
                     .font(.system(size: 11))
                     .foregroundColor(.inkMuted.opacity(0.4))
                     .padding(.horizontal, 4)

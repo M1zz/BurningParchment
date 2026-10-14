@@ -12,6 +12,8 @@ enum PeriodType: String, CaseIterable, Identifiable {
     case week = "1주"
     case month = "1달"
     case year = "1년"
+    /// 불타는 자유시간 (프로) — 일주일 중 나만의 시간이 지날 때만 탄다. 값은 FreeTimeManager 가 낸다.
+    case freeTime = "자유"
     case deadline = "D-Day"
     var id: String { rawValue }
 
@@ -22,6 +24,7 @@ enum PeriodType: String, CaseIterable, Identifiable {
         case .week:     return String(localized: "1주")
         case .month:    return String(localized: "1달")
         case .year:     return String(localized: "1년")
+        case .freeTime: return String(localized: "자유시간")
         case .deadline: return "D-Day"
         }
     }
@@ -110,7 +113,7 @@ class BedtimeManager: ObservableObject {
         case .week: return weekProgress
         case .month: return monthProgress
         case .year: return yearProgress
-        case .deadline: return 0
+        case .freeTime, .deadline: return 0
         }
     }
 
@@ -120,7 +123,7 @@ class BedtimeManager: ObservableObject {
         case .week: return formatRemainingDays(weekRemainingDays)
         case .month: return formatRemainingDays(monthRemainingDays)
         case .year: return formatRemainingDays(yearRemainingDays)
-        case .deadline: return ""
+        case .freeTime, .deadline: return ""
         }
     }
 
@@ -130,6 +133,7 @@ class BedtimeManager: ObservableObject {
         case .week: return String(localized: "이번 주 남은 시간")
         case .month: return String(localized: "이번 달 남은 시간")
         case .year: return String(localized: "올해 남은 시간")
+        case .freeTime: return String(localized: "이번 주 남은 자유시간")
         case .deadline: return String(localized: "데드라인까지")
         }
     }
@@ -139,7 +143,7 @@ class BedtimeManager: ObservableObject {
         let now = Date()
         switch selectedPeriod {
         case .day:      return wakeTimeString
-        case .week:     return shortDateString(thisMondayMidnight(from: now, cal: cal))
+        case .week, .freeTime: return shortDateString(thisMondayMidnight(from: now, cal: cal))
         case .month:    return shortDateString(firstOfThisMonth(from: now, cal: cal))
         case .year:     return "1/1"
         case .deadline: return shortDateString(now)
@@ -151,7 +155,7 @@ class BedtimeManager: ObservableObject {
         let now = Date()
         switch selectedPeriod {
         case .day: return bedtimeString
-        case .week:
+        case .week, .freeTime:
             let sun = cal.date(byAdding: .day, value: -1, to: nextMondayMidnight(from: now, cal: cal))!
             return shortDateString(sun)
         case .month:

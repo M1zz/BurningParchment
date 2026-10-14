@@ -12,6 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var storeManager:      StoreManager
     @EnvironmentObject var fragmentManager:   FragmentManager
     @EnvironmentObject var nightManager:      NightManager
+    @EnvironmentObject var freeTimeManager:   FreeTimeManager
     @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings    = false
     @State private var showDeadlines   = false
@@ -35,7 +36,7 @@ struct ContentView: View {
     private static let nudgeAutoHideSeconds: Double = 9
 
     private var pages: [PeriodType] {
-        let basePeriods: [PeriodType] = [.day, .week, .month, .year]
+        let basePeriods: [PeriodType] = [.day, .week, .freeTime, .month, .year]
             .filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }
         let nearestDeadline = deadlineManager.deadlines.first(where: { !$0.isExpired() })
         return basePeriods + (nearestDeadline != nil ? [.deadline] : [])
@@ -51,6 +52,7 @@ struct ContentView: View {
             switch bedtimeManager.selectedPeriod {
             case .day:      return bedtimeManager.progress
             case .deadline: return deadlineManager.deadlines.first(where: { !$0.isExpired() })?.progress() ?? 0
+            case .freeTime: return freeTimeManager.week().progress
             default:        return bedtimeManager.periodProgress
             }
         }()
@@ -604,6 +606,7 @@ struct ContentView: View {
         case .week:     return String(localized: "이번 주")
         case .month:    return String(localized: "이번 달")
         case .year:     return String(localized: "올해")
+        case .freeTime: return String(localized: "나의 자유시간")
         case .deadline: return String(localized: "나의 목표")
         }
     }
@@ -618,4 +621,5 @@ struct ContentView: View {
         .environmentObject(BedtimeExcuseManager())
         .environmentObject(FragmentManager())
         .environmentObject(NightManager())
+        .environmentObject(FreeTimeManager())
 }

@@ -11,6 +11,9 @@ struct BurningParchmentView: View {
     @EnvironmentObject var deadlineManager: DeadlineManager
     @EnvironmentObject var fragmentManager: FragmentManager
     @EnvironmentObject var nightManager: NightManager
+    @EnvironmentObject var freeTimeManager: FreeTimeManager
+    @EnvironmentObject var storeManager: StoreManager
+    @State private var showFreeTimeEditor = false
     @State private var phase: Double = 0
     @State private var embers: [Ember] = []
     @State private var ashes: [Ash] = []
@@ -26,9 +29,21 @@ struct BurningParchmentView: View {
             return bedtimeManager.progress
         case .deadline:
             return deadlineManager.deadlines.first(where: { !$0.isExpired() })?.progress() ?? 0
+        case .freeTime:
+            return freeTimeManager.week().progress
         default:
             return bedtimeManager.periodProgress
         }
+    }
+
+    /// 자유시간 탭에서 양피지 대신 소개·잠금 카드를 보일 때
+    private var showsFreeTimeIntro: Bool {
+        bedtimeManager.selectedPeriod == .freeTime && (!storeManager.isPro || !freeTimeManager.isConfigured)
+    }
+
+    /// 불이 붙어 있는지. 자유시간 탭은 자유시간이 지나가는 동안에만 탄다.
+    private var isLit: Bool {
+        bedtimeManager.selectedPeriod != .freeTime || freeTimeManager.week().isBurning
     }
 
     var body: some View {
@@ -47,7 +62,9 @@ struct BurningParchmentView: View {
             let charred = isDayPeriod ? lastNightCharred : nil
 
             ZStack {
-                if isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
+                if showsFreeTimeIntro {
+                    FreeTimeIntroView(onEdit: { showFreeTimeEditor = true })
+                } else if isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800 {
                     beforeWakeView(pw: pw, ph: ph, oy: oy, size: size)
                 } else if let night {
                     tomorrowParchmentView(size: size, pw: pw, ph: ph, ox: ox, oy: oy, night: night)
@@ -65,7 +82,7 @@ struct BurningParchmentView: View {
             .onReceive(timer) { _ in
                 guard !reduceMotion else { return }
                 phase += 0.05
-                if ((bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil) || night?.isBurning == true {
+                if ((bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil && isLit) || night?.isBurning == true {
                     updateParticles(pw: pw, ph: ph, ox: ox, oy: oy)
                 }
             }
@@ -76,15 +93,24 @@ struct BurningParchmentView: View {
                 initParticles(pw: pw, ph: ph, ox: ox, oy: oy)
             }
         }
+        .sheet(isPresented: $showFreeTimeEditor) {
+            FreeTimeEditorView()
+                .environmentObject(freeTimeManager)
+                .environmentObject(bedtimeManager)
+                .environmentObject(storeManager)
+        }
     }
 
     // MARK: - Burning View
 
     private func burningView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double,
                              charred: NightRecord? = nil) -> some View {
-        ZStack {
-            particleCanvas(items: ashes, withGlow: false)
-                .accessibilityHidden(true)
+        let lit = isLit
+        return ZStack {
+            if lit {
+                particleCanvas(items: ashes, withGlow: false)
+                    .accessibilityHidden(true)
+            }
 
             parchmentGroup(pw: pw, ph: ph, progress: progress, charred: charred?.charredFraction ?? 0)
                 .position(x: size.width / 2, y: oy + ph / 2)
@@ -95,15 +121,17 @@ struct BurningParchmentView: View {
             ashPileCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                 .accessibilityHidden(true)
 
-            if progress > 0.005 && progress < 0.995 {
+            if lit && progress > 0.005 && progress < 0.995 {
                 diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                     .flameTint(style)
                     .accessibilityHidden(true)
             }
 
-            particleCanvas(items: embers, withGlow: true)
-                .flameTint(style)
-                .accessibilityHidden(true)
+            if lit {
+                particleCanvas(items: embers, withGlow: true)
+                    .flameTint(style)
+                    .accessibilityHidden(true)
+            }
 
             VStack {
                 Spacer()
@@ -584,9 +612,7 @@ struct BurningParchmentView: View {
                         .font(.system(size: 13, weight: .medium, design: .serif))
                         .foregroundColor(.ember.opacity(0.6))
 
-                    Text(bedtimeManager.selectedPeriod == .day
-                            ? bedtimeManager.remainingKoreanString
-                            : bedtimeManager.periodRemainingString)
+                    Text(periodValueString)
                         .font(.system(size: 30, weight: .ultraLight, design: .serif))
                         .foregroundColor(.ember.opacity(0.9))
                         .monospacedDigit()
@@ -635,6 +661,8 @@ struct BurningParchmentView: View {
                 Text("\(Int(remaining * 100))% 남음")
                     .font(.system(size: 12, weight: .medium, design: .serif))
                     .foregroundColor(.inkMuted.opacity(0.6))
+
+                if bedtimeManager.selectedPeriod == .freeTime { freeTimeStatus }
             }
         }
         .padding(.bottom, 28)
@@ -646,11 +674,63 @@ struct BurningParchmentView: View {
         .accessibilityValue({
             let pct = Int(remaining * 100)
             if let dl = nearestDeadline { return String(localized: "\(dl.remainingString()), \(pct)% 남음") }
-            let time = bedtimeManager.selectedPeriod == .day
-                ? bedtimeManager.remainingKoreanString
-                : bedtimeManager.periodRemainingString
+            let time = periodValueString
+            if bedtimeManager.selectedPeriod == .freeTime {
+                return String(localized: "\(time), \(pct)% 남음") + ", " + freeTimeStatusText
+            }
             return String(localized: "\(time), \(pct)% 남음")
         }())
+        .accessibilityActions {
+            if bedtimeManager.selectedPeriod == .freeTime {
+                Button("자유시간 고치기") { showFreeTimeEditor = true }
+            }
+        }
+    }
+
+    private var periodValueString: String {
+        switch bedtimeManager.selectedPeriod {
+        case .day:      return bedtimeManager.remainingKoreanString
+        case .freeTime: return Self.durationString(freeTimeManager.week().remaining)
+        default:        return bedtimeManager.periodRemainingString
+        }
+    }
+
+    // MARK: - Free Time Status
+    // 지금 타는 중인지, 아니면 다음 자유시간이 언제인지. 그 옆에 자유시간을 고치는 버튼.
+
+    private var freeTimeStatusText: String {
+        let week = freeTimeManager.week()
+        if let current = week.current {
+            return String(localized: "지금 타는 중 · \(TimeFormat.short(current.end))까지")
+        }
+        if let next = week.next {
+            let day = next.start.formatted(.dateTime.weekday(.abbreviated))
+            return String(localized: "다음 자유시간 · \(day) \(TimeFormat.short(next.start))")
+        }
+        return String(localized: "이번 주 자유시간을 다 태웠어요")
+    }
+
+    private var freeTimeStatus: some View {
+        let burning = freeTimeManager.week().isBurning
+        return HStack(spacing: 10) {
+            HStack(spacing: 4) {
+                Image(systemName: burning ? "flame.fill" : "moon.zzz")
+                    .font(.system(size: 11))
+                Text(freeTimeStatusText)
+                    .font(.system(size: 12, design: .serif))
+            }
+            .foregroundColor(burning ? .ember.opacity(0.85) : .inkMuted.opacity(0.6))
+
+            Button { showFreeTimeEditor = true } label: {
+                Image(systemName: "slider.horizontal.3")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.ember.opacity(0.7))
+                    .padding(6)
+                    .background(Circle().fill(Color.ember.opacity(0.08)))
+            }
+            .accessibilityLabel("자유시간 고치기")
+        }
+        .padding(.top, 2)
     }
 
     // MARK: - Sleep Remaining String

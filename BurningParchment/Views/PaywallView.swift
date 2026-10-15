@@ -215,7 +215,7 @@ struct PaywallView: View {
         var detail: LocalizedStringKey {
             switch self {
             case .freeTime:       return "일주일 중 나만의 시간이 지날 때만 양피지가 타요"
-            case .theme:          return "달빛 한지·청자·노을 빛깔로 양피지가 타요"
+            case .theme:          return "달빛 한지·청자·노을 빛깔, 들불·숯불·불티로 양피지가 타요"
             case .fragmentExport: return "모은 조각을 카드와 포스터 이미지로 공유해요"
             case .bookExport:     return "회고를 날짜별 페이지의 PDF 로 묶어요"
             case .insights:       return "지난 12개월의 재를 달마다 나눠 보여줘요"

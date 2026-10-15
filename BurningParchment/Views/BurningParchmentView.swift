@@ -3,6 +3,7 @@
 // 오른쪽 아래 모서리부터 대각선으로 타들어감
 
 import SwiftUI
+import Combine
 
 // MARK: - Main View
 
@@ -19,6 +20,7 @@ struct BurningParchmentView: View {
     @State private var ashes: [Ash] = []
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.parchmentStyle) private var style
+    @Environment(\.flameKind) private var flameKind
 
     private let timer = Timer.publish(every: 1.0 / 30.0, on: .main, in: .common).autoconnect()
 
@@ -89,7 +91,7 @@ struct BurningParchmentView: View {
             .onAppear {
                 initParticles(pw: pw, ph: ph, ox: ox, oy: oy)
             }
-            .onChange(of: bedtimeManager.selectedPeriod) { _ in
+            .onChange(of: bedtimeManager.selectedPeriod) {
                 initParticles(pw: pw, ph: ph, ox: ox, oy: oy)
             }
         }
@@ -954,12 +956,12 @@ struct BurningParchmentView: View {
         .allowsHitTesting(false)
     }
 
-    // MARK: - Diagonal Flame Canvas (유기적 불꽃 - 직선 그라디언트 없음)
+    // MARK: - Diagonal Flame (경계선을 따라 솟는 불꽃 — 종류는 FlameView 가 고른다)
 
     private func diagonalFlameCanvas(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat, progress: Double) -> some View {
         let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: progress, phase: phase)
             .map { CGPoint(x: $0.x + ox, y: $0.y + oy) }
-        return Self.flameCanvas(along: pts, normal: Self.burnNormal(pw: pw, ph: ph), phase: phase)
+        return FlameView(kind: flameKind, points: pts, normal: Self.burnNormal(pw: pw, ph: ph), phase: phase)
     }
 
     /// 타는 경계선이 뻗어 나가는 방향(오른쪽 아래) — 불꽃은 이쪽으로 솟는다
@@ -968,7 +970,7 @@ struct BurningParchmentView: View {
         return CGVector(dx: Double(ph) / nLen, dy: Double(pw) / nLen)
     }
 
-    /// 경계선 위 점들을 따라 솟는 불꽃. 불 끄기 화면의 조각도 같은 불꽃을 쓴다.
+    /// 경계선 위 점들을 따라 솟는 곡선 혀 모양 불꽃 — 촛불(기본). 다른 종류도 낮은 불꽃으로 빌려 쓴다.
     /// intensity 는 불의 세기(0 이면 꺼짐), breath 는 입김에 불꽃이 눕고 떨리는 정도, scale 은 불꽃 크기.
     static func flameCanvas(along pts: [CGPoint], normal: CGVector, phase: Double,
                             intensity: Double = 1, breath: Double = 0, scale: Double = 1) -> some View {

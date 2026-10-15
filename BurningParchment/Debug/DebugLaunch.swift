@@ -6,10 +6,11 @@
 //   -debugScreen <이름>     실행하자마자 그 화면을 띄운다
 //                          paywall · settings · fragments · poster · card · book · bookExport · insights
 //   -parchmentStyle <값>    classic · moonlit · celadon · dusk (@AppStorage 를 그대로 덮는다)
+//   -flameKind <값>         classic · blaze · smolder · sparkler (불꽃의 종류, 마찬가지로 덮는다)
 //   -skipNotifications YES  알림 권한 요청·예약과 실시간 현황을 건너뛴다 (스크린샷용. 새 시뮬레이터에서 멈춤도 막는다)
 //   -demoProgress 0.45      지금 이 비율만큼 탄 하루가 되도록 기상·취침 시각을 맞춘다 (깨어 있는 시간 16시간)
 //                          ⚠️ 앱 그룹의 기상·취침 설정을 덮어쓴다 — 스크린샷용 시뮬레이터에서만 쓸 것
-//   debugScreen 에 year · blowout · freeTime(자유시간 정하기) 도 있다
+//   debugScreen 에 year · blowout · freeTime(자유시간 정하기) · flames(불꽃 종류 캐러셀) 도 있다
 //   -freeTimeDemo YES       자유시간이 비어 있으면 평일 저녁·주말 오후 예시를 넣고 자유시간 탭을 연다
 //
 // 예) xcrun simctl launch booted com.burningparchment.app -forcePro YES -seedDemo YES -debugScreen insights
@@ -137,8 +138,22 @@ struct DebugLaunchModifier: ViewModifier {
             }
         case "blowout":    BlowOutView()
         case "freeTime":   FreeTimeEditorView()
+        case "flames":     DebugFlamePicker()
         default:           EmptyView()
         }
+    }
+}
+
+/// 설정 ▸ 불꽃 종류 캐러셀만 띄운다 (설정 화면 아래쪽이라 스크린샷으로 닿기 어렵다)
+private struct DebugFlamePicker: View {
+    @Environment(\.flameKind) private var kind
+    @Environment(\.parchmentStyle) private var style
+    @AppStorage(FlameKind.storageKey) private var raw = FlameKind.classic.rawValue
+
+    var body: some View {
+        FlameKindPicker(current: kind, style: style, isPro: true) { raw = $0.rawValue }
+            .frame(maxHeight: .infinity)
+            .background(Color.appBackgroundWarm.ignoresSafeArea())
     }
 }
 #endif

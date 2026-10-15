@@ -7,8 +7,11 @@
 
 import AVFoundation
 import Combine
+import os
 
-final class BlowDetector: ObservableObject {
+// @unchecked Sendable: 엔진·isRunning 은 audioQueue 에서만, @Published 값은 메인에서만 만지고
+// wanted 는 잠금으로 지킨다. 그 규칙 안에서만 스레드를 건너간다.
+final class BlowDetector: ObservableObject, @unchecked Sendable {
     enum Availability { case unknown, listening, unavailable }
 
     /// 지금 들어오는 입김의 세기 (0~1). 불꽃이 눕는 정도에 쓴다.
@@ -18,7 +21,14 @@ final class BlowDetector: ObservableObject {
     @Published private(set) var availability: Availability = .unknown
 
     private let engine = AVAudioEngine()
+
+    // 오디오 세션 켜기·끄기(setActive)는 수십~수백 ms 걸릴 수 있어 메인에서 부르면 화면이 멈춘다.
+    // 세션·엔진은 이 직렬 큐에서만 만진다 — 시작과 정지가 부른 순서대로 처리된다.
+    private let audioQueue = DispatchQueue(label: "BlowDetector.audio", qos: .userInitiated)
+    /// 큐에서만 읽고 쓴다
     private var isRunning = false
+    /// 화면이 지금 마이크를 원하는지. 권한을 묻는 사이에 화면이 닫히면 늦게 온 시작을 버린다.
+    private let wanted = OSAllocatedUnfairLock(initialState: false)
 
     // 음량 → 0~1. -50dBFS 이하는 조용함, -12dBFS 이상은 최대.
     private static let floorDB: Float = -50
@@ -34,11 +44,20 @@ final class BlowDetector: ObservableObject {
 
     @MainActor
     func start() async {
-        guard !isRunning else { return }
+        wanted.withLock { $0 = true }
         guard await AVAudioApplication.requestRecordPermission() else {
             availability = .unavailable
             return
         }
+        let result: Availability? = await withCheckedContinuation { cont in
+            audioQueue.async { cont.resume(returning: self.startOnQueue()) }
+        }
+        if let result { availability = result }
+    }
+
+    /// 큐에서 부른다. 이미 듣고 있거나 그새 화면이 닫혔으면 nil (상태를 바꾸지 않는다).
+    private func startOnQueue() -> Availability? {
+        guard !isRunning, wanted.withLock({ $0 }) else { return nil }
         do {
             let session = AVAudioSession.sharedInstance()
             try session.setCategory(.record, mode: .measurement)
@@ -48,8 +67,8 @@ final class BlowDetector: ObservableObject {
             let format = input.outputFormat(forBus: 0)
             // 입력 장치가 없으면(일부 시뮬레이터 등) 샘플레이트가 0 으로 나온다
             guard format.sampleRate > 0, format.channelCount > 0 else {
-                availability = .unavailable
-                return
+                try? session.setActive(false, options: .notifyOthersOnDeactivation)
+                return .unavailable
             }
             input.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, _ in
                 self?.process(buffer)
@@ -57,20 +76,28 @@ final class BlowDetector: ObservableObject {
             engine.prepare()
             try engine.start()
             isRunning = true
-            availability = .listening
+            return .listening
         } catch {
             engine.inputNode.removeTap(onBus: 0)
-            availability = .unavailable
+            try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+            return .unavailable
         }
     }
 
     func stop() {
-        guard isRunning else { return }
-        isRunning = false
+        wanted.withLock { $0 = false }
+        audioQueue.async { [weak self] in
+            guard let self, self.isRunning else { return }
+            self.isRunning = false
+            Self.tearDown(self.engine)
+        }
+        DispatchQueue.main.async { [weak self] in self?.breath = 0 }
+    }
+
+    private static func tearDown(_ engine: AVAudioEngine) {
         engine.inputNode.removeTap(onBus: 0)
         engine.stop()
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
-        DispatchQueue.main.async { self.breath = 0 }
     }
 
     // MARK: - Level
@@ -102,5 +129,11 @@ final class BlowDetector: ObservableObject {
         }
     }
 
-    deinit { stop() }
+    deinit {
+        // 큐의 시작 작업은 self 를 붙잡고 있으므로, 여기까지 왔으면 isRunning 은 더 바뀌지 않는다.
+        // 듣던 중일 때만 정리한다 — 그렇지 않으면 다른 화면이 켠 오디오 세션을 끌 수 있다.
+        guard isRunning else { return }
+        let engine = self.engine
+        audioQueue.async { Self.tearDown(engine) }
+    }
 }

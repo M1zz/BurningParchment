@@ -25,7 +25,7 @@ struct BedtimeLiveActivity: Widget {
                         }
 
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(timerInterval: Date()...context.state.bedtimeDate, countsDown: true)
+                            Text(timerInterval: Self.countdown(to: context.state.bedtimeDate), countsDown: true)
                                 .font(.system(size: 26, weight: .light, design: .monospaced))
                                 .foregroundColor(.orange)
                                 .monospacedDigit()
@@ -59,7 +59,7 @@ struct BedtimeLiveActivity: Widget {
                 }
 
             } compactTrailing: {
-                Text(timerInterval: Date()...context.state.bedtimeDate, countsDown: true)
+                Text(timerInterval: Self.countdown(to: context.state.bedtimeDate), countsDown: true)
                     .font(.system(size: 11, weight: .medium, design: .monospaced))
                     .foregroundColor(.orange)
                     .monospacedDigit()
@@ -76,6 +76,13 @@ struct BedtimeLiveActivity: Widget {
                 }
             }
         }
+    }
+
+    /// 지금부터 취침까지. 취침 시각이 이미 지났으면 0 에서 멈춘다 —
+    /// Date()...과거 는 범위가 뒤집혀 크래시한다 (앱이 활동을 끝내기 전 잠깐 사이에 그려질 수 있다).
+    private static func countdown(to bedtime: Date) -> ClosedRange<Date> {
+        let now = Date()
+        return now...max(now, bedtime)
     }
 
     // MARK: - Lock Screen
@@ -98,7 +105,7 @@ struct BedtimeLiveActivity: Widget {
                     .font(.system(size: 11, weight: .medium))
                     .foregroundColor(.orange.opacity(0.7))
 
-                Text(timerInterval: Date()...context.state.bedtimeDate, countsDown: true)
+                Text(timerInterval: Self.countdown(to: context.state.bedtimeDate), countsDown: true)
                     .font(.system(size: 24, weight: .light, design: .monospaced))
                     .foregroundColor(.white)
                     .monospacedDigit()
@@ -139,7 +146,17 @@ struct BedtimeLiveActivity: Widget {
 struct MiniParchmentView: View {
     let progress: Double
 
+    /// 양피지 한 장의 가로:세로. 위젯·다이나믹 아일랜드·잠금 화면 어디에 놓여도 이 비율로 그린다.
+    /// 틀이 정사각형이어도 늘이지 않고 가운데에 맞춘다 — 예전엔 틀 모양대로 늘어나 찌그러져 보였다.
+    static let aspectRatio: CGFloat = 52.0 / 64.0
+
     var body: some View {
+        canvas
+            .aspectRatio(Self.aspectRatio, contentMode: .fit)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+
+    private var canvas: some View {
         Canvas { ctx, size in
             let W = size.width
             let H = size.height

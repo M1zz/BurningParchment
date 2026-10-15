@@ -606,7 +606,7 @@ class BedtimeManager: ObservableObject {
     private func saveHiddenPeriods() {
         sharedDefaults?.set(Array(hiddenPeriods), forKey: keyHiddenPeriods)
         if hiddenPeriods.contains(selectedPeriod.rawValue) {
-            let visible = [PeriodType.day, .week, .month, .year].first { !hiddenPeriods.contains($0.rawValue) }
+            let visible = [PeriodType.day, .week, .freeTime, .month, .year].first { !hiddenPeriods.contains($0.rawValue) }
             selectedPeriod = visible ?? .day
         }
     }
@@ -671,7 +671,7 @@ class BedtimeManager: ObservableObject {
         do {
             liveActivity = try Activity<BedtimeActivityAttributes>.request(
                 attributes: attrs,
-                contentState: state,
+                content: ActivityContent(state: state, staleDate: nil),
                 pushType: nil
             )
         } catch {}
@@ -688,7 +688,7 @@ class BedtimeManager: ObservableObject {
             bedtimeDate: bedDate,
             showMiniParchment: true
         )
-        Task { await activity.update(using: state) }
+        Task { await activity.update(ActivityContent(state: state, staleDate: nil)) }
     }
 
     private func endLiveActivity() {
@@ -698,7 +698,8 @@ class BedtimeManager: ObservableObject {
             bedtimeDate: Date(), showMiniParchment: false
         )
         Task {
-            await activity.end(using: final, dismissalPolicy: .after(Date().addingTimeInterval(30)))
+            await activity.end(ActivityContent(state: final, staleDate: nil),
+                               dismissalPolicy: .after(Date().addingTimeInterval(30)))
         }
         liveActivity = nil
     }

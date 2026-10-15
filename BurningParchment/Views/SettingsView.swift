@@ -1,5 +1,7 @@
 // SettingsView.swift
-// 기상시간 + 취침시간 설정
+// 설정 — 시간 · 페이지 · 화면 · 양피지와 불꽃 · 프로 · 지원.
+// 묶음은 모두 같은 카드(SettingsGroup)와 같은 행(SettingsRow)으로 그린다 (IndicatorSettingsPage.swift).
+// 시간은 [완료]를 눌러야 저장되고, 나머지는 고르는 즉시 반영된다.
 
 import SwiftUI
 import LeeoKit
@@ -14,117 +16,41 @@ struct SettingsView: View {
     @State private var showThemePaywall = false
     @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
     @Environment(\.parchmentStyle) private var currentStyle
+    @AppStorage(FlameKind.storageKey) private var flameKindRaw = FlameKind.classic.rawValue
+    @Environment(\.flameKind) private var currentFlameKind
     @State private var selBedH: Int = 23
     @State private var selBedM: Int = 0
     @State private var selWakeH: Int = 7
     @State private var selWakeM: Int = 0
 
-    @ScaledMetric private var headerIconSize: CGFloat = 44
-    @ScaledMetric private var sectionIconSize: CGFloat = 14
+    /// 펼쳐 둔 시간 휠 (한 번에 하나)
+    private enum TimeField { case wake, bed }
+    @State private var expandedTime: TimeField?
+
     @AppStorage(AppTheme.storageKey) private var appThemeRaw = AppTheme.system.rawValue
     @AppStorage(SleepHealth.connectedKey) private var sleepHealthConnected = false
-    private var appTheme: AppTheme { AppTheme(rawValue: appThemeRaw) ?? .system }
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @ScaledMetric private var rowFontSize: CGFloat = 15
-    @ScaledMetric private var captionFontSize: CGFloat = 11
 
     var body: some View {
         NavigationView {
-            ZStack {
-                Color.appBackgroundWarm
-                    .ignoresSafeArea()
-
-                ScrollView {
-                    VStack(spacing: 28) {
-                        // 헤더
-                        VStack(spacing: 10) {
-                            Image(systemName: "flame.fill")
-                                .font(.system(size: 44))
-                                .foregroundColor(.ember.opacity(0.6))
-
-                            Text("시간 설정")
-                                .font(.system(size: 22, weight: .semibold, design: .serif))
-                                .foregroundColor(.ember.opacity(0.8))
-
-                            Text("기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다")
-                                .font(.system(size: 14))
-                                .foregroundColor(.inkMuted)
-                                .multilineTextAlignment(.center)
-                        }
-                        .padding(.top, 16)
-
-                        // 기상시간 피커
-                        timePickerSection(
-                            title: String(localized: "기상 시간"),
-                            icon: "sunrise.fill",
-                            hour: $selWakeH,
-                            minute: $selWakeM
-                        )
-
-                        // 취침시간 피커
-                        timePickerSection(
-                            title: String(localized: "취침 시간"),
-                            icon: "moon.fill",
-                            hour: $selBedH,
-                            minute: $selBedM
-                        )
-
-                        // 추천 취침 시간
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text("추천 취침 시간")
-                                .font(.system(size: 13, weight: .medium))
-                                .foregroundColor(.inkMuted)
-
-                            HStack(spacing: 10) {
-                                presetButton(hour: 22, minute: 0)
-                                presetButton(hour: 22, minute: 30)
-                                presetButton(hour: 23, minute: 0)
-                                presetButton(hour: 23, minute: 30)
-                            }
-                            HStack(spacing: 10) {
-                                presetButton(hour: 0, minute: 0)
-                                presetButton(hour: 0, minute: 30)
-                                presetButton(hour: 1, minute: 0)
-                            }
-                        }
-                        .padding(.horizontal, 20)
-
-                        // 탭 표시 설정
-                        tabVisibilitySection
-
-                        // 인디케이터 설정
-                        indicatorSection
-
-                        // 수면 기록 (건강 앱)
-                        if NightManager.isEnabled && SleepHealth.isAvailable { sleepRecordSection }
-
-                        // 화면 테마
-                        appearanceSection
-
-                        // 양피지·불꽃 (프로)
-                        parchmentStyleSection
-
-                        // 프로
-                        proSection
-
-                        // 개발자 문의
-                        developerContactSection
-
-                        // 지원 (리뷰/피드백)
-                        leeoSupportSection
-
-                        // 안내
-                        VStack(spacing: 8) {
-                            Label("기상시간부터 자동 카운트다운", systemImage: "flame.fill")
-                            Label("다이나믹 아일랜드로 실시간 확인", systemImage: "island.fill")
-                        }
-                        .font(.system(size: 12))
-                        .foregroundColor(.inkMuted.opacity(0.6))
-                        .padding(.top, 8)
-                        .padding(.bottom, 20)
-                    }
+            ScrollView {
+                VStack(spacing: 28) {
+                    timeGroup
+                    pageGroup
+                    if NightManager.isEnabled && SleepHealth.isAvailable { sleepRecordGroup }
+                    appearanceGroup
+                    parchmentGroup
+                    proGroup
+                    supportGroup
                 }
+                .padding(.horizontal, 20)
+                .padding(.top, 8)
+                .padding(.bottom, 32)
             }
+            .background(Color.appBackgroundWarm.ignoresSafeArea())
+            .navigationTitle("설정")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -151,218 +77,268 @@ struct SettingsView: View {
             selWakeH = bedtimeManager.wakeHour
             selWakeM = bedtimeManager.wakeMinute
         }
-    }
-
-    // MARK: - Tab Visibility Section
-
-    private let standardPeriods: [PeriodType] = [.day, .week, .freeTime, .month, .year]
-
-    private var tabVisibilitySection: some View {
-        let visibleCount = standardPeriods.filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }.count
-
-        return VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "square.grid.2x2")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("탭 표시")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            VStack(spacing: 0) {
-                ForEach(standardPeriods) { period in
-                    let isVisible = !bedtimeManager.hiddenPeriods.contains(period.rawValue)
-
-                    HStack {
-                        Text(period.displayName)
-                            .font(.system(size: 15, design: .serif))
-                            .foregroundColor(isVisible ? .ember.opacity(0.85) : .inkMuted.opacity(0.4))
-                        Spacer()
-                        Toggle("", isOn: Binding(
-                            get: { isVisible },
-                            set: { newValue in
-                                if newValue {
-                                    bedtimeManager.hiddenPeriods.remove(period.rawValue)
-                                } else if visibleCount > 1 {
-                                    bedtimeManager.hiddenPeriods.insert(period.rawValue)
-                                }
-                            }
-                        ))
-                        .tint(.ember)
-                    }
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 10)
-
-                    if period != standardPeriods.last {
-                        Divider().background(Color.ember.opacity(0.08))
-                            .padding(.leading, 14)
-                    }
-                }
-            }
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
-
-            Text("데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다")
-                .font(.system(size: 11))
-                .foregroundColor(.inkMuted.opacity(0.4))
-                .padding(.horizontal, 4)
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+                .environmentObject(storeManager)
         }
-        .padding(.horizontal, 20)
-    }
-
-    // MARK: - Indicator Section
-
-    private let symbolOptions: [(name: String, label: String)] = [
-        ("circle.fill",   String(localized: "원")),
-        ("flame.fill",    String(localized: "불꽃")),
-        ("star.fill",     String(localized: "별")),
-        ("heart.fill",    String(localized: "하트")),
-        ("moon.fill",     String(localized: "달")),
-        ("sun.max.fill",  String(localized: "해")),
-        ("bolt.fill",     String(localized: "번개")),
-        ("leaf.fill",     String(localized: "잎")),
-        ("drop.fill",     String(localized: "방울")),
-        ("sparkle",       String(localized: "반짝")),
-    ]
-
-    private var isSymbolMode: Bool { !bedtimeManager.indicatorSymbol.isEmpty }
-
-    // MARK: - Sleep Record Section (건강 앱 수면 기록)
-    // 취침 이후 타는 내일의 양피지는 아침에 잠든 시각이 확인된 만큼만 그을린다.
-    // 건강 앱을 연결하면 그 확인을 묻지 않고 기록으로 한다.
-
-    private var sleepRecordSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "bed.double.fill")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("수면 기록")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            VStack(alignment: .leading, spacing: 12) {
-                if sleepHealthConnected {
-                    Label("건강 앱 수면 기록과 연결됨", systemImage: "checkmark.circle.fill")
-                        .font(.body.weight(.medium))
-                        .foregroundColor(.ember.opacity(0.85))
-                    Text("연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요")
-                        .font(.body)
-                        .foregroundColor(.inkMuted.opacity(0.7))
-                        .fixedSize(horizontal: false, vertical: true)
-                } else {
-                    Text("연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요")
-                        .font(.body)
-                        .foregroundColor(.inkMuted.opacity(0.8))
-                        .fixedSize(horizontal: false, vertical: true)
-                    Button {
-                        Task { sleepHealthConnected = await SleepHealth.connect() }
-                    } label: {
-                        Text("건강 앱 수면 기록 연결하기")
-                            .font(.body.weight(.medium))
-                            .foregroundColor(.ember)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 12)
-                            .background(Capsule().stroke(Color.ember.opacity(0.4), lineWidth: 1))
-                    }
-                }
-            }
-            .padding(14)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
-
-            Text("수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요")
-                .font(.body)
-                .foregroundColor(.inkMuted.opacity(0.6))
-                .padding(.horizontal, 4)
-        }
-        .padding(.horizontal, 20)
-    }
-
-    // MARK: - Appearance Section (화면 테마)
-
-    private var appearanceSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "circle.lefthalf.filled")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("화면 테마")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            HStack(spacing: 8) {
-                ForEach(AppTheme.allCases) { theme in
-                    themeTab(theme)
-                }
-            }
-            .padding(14)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
-
-            Text("시스템 설정을 고르면 기기의 다크 모드를 그대로 따라갑니다")
-                .font(.system(size: captionFontSize))
-                .foregroundColor(.inkMuted.opacity(0.4))
-                .padding(.horizontal, 4)
-        }
-        .padding(.horizontal, 20)
-    }
-
-    // MARK: - 양피지·불꽃 테마 (프로)
-
-    private var parchmentStyleSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "paintpalette.fill")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("양피지·불꽃")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-                if !storeManager.isPro {
-                    Text("프로")
-                        .font(.system(size: 10, weight: .semibold))
-                        .foregroundColor(.onEmber)
-                        .padding(.horizontal, 6)
-                        .padding(.vertical, 2)
-                        .background(Capsule().fill(Color.ember.opacity(0.8)))
-                }
-            }
-
-            LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 8) {
-                ForEach(ParchmentStyle.allCases) { style in
-                    styleTile(style)
-                }
-            }
-            .padding(14)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
-
-            Text("양피지의 종이 색과 불꽃의 빛깔이 함께 바뀌어요")
-                .font(.system(size: captionFontSize))
-                .foregroundColor(.inkMuted.opacity(0.4))
-                .padding(.horizontal, 4)
-        }
-        .padding(.horizontal, 20)
         .sheet(isPresented: $showThemePaywall) {
             PaywallView(reason: .theme)
                 .environmentObject(storeManager)
         }
+        .alert("구매 복원",
+               isPresented: Binding(get: { restoreMessage != nil }, set: { if !$0 { restoreMessage = nil } })) {
+            Button("확인", role: .cancel) {}
+        } message: {
+            Text(restoreMessage ?? "")
+        }
+    }
+
+    // MARK: - 시간
+
+    private var timeGroup: some View {
+        SettingsGroup(title: String(localized: "시간"),
+                      footer: String(localized: "기상 시간부터 취침 시간까지 양피지가 서서히 타들어가요")) {
+            timeRow(.wake, icon: "sunrise", title: String(localized: "기상 시간"), hour: $selWakeH, minute: $selWakeM)
+            SettingsDivider()
+            timeRow(.bed, icon: "moon", title: String(localized: "취침 시간"), hour: $selBedH, minute: $selBedM)
+            if expandedTime == .bed { bedPresets }
+        }
+    }
+
+    private func timeRow(_ field: TimeField, icon: String, title: String,
+                         hour: Binding<Int>, minute: Binding<Int>) -> some View {
+        let open = expandedTime == field
+        return VStack(spacing: 0) {
+            Button {
+                withAnimation(reduceMotion ? nil : .snappy) { expandedTime = open ? nil : field }
+            } label: {
+                SettingsRow(icon: icon, title: title) {
+                    Text(TimeFormat.short(hour: hour.wrappedValue, minute: minute.wrappedValue))
+                        .font(.system(size: rowFontSize, weight: .medium).monospacedDigit())
+                        .foregroundColor(open ? .onEmber : .ember)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Capsule().fill(open ? Color.ember : Color.ember.opacity(0.12)))
+                }
+            }
+            .buttonStyle(.plain)
+            .accessibilityValue(TimeFormat.short(hour: hour.wrappedValue, minute: minute.wrappedValue))
+            .accessibilityHint(open ? Text("탭하여 닫기") : Text("탭하여 시간 바꾸기"))
+
+            if open { timeWheel(hour: hour, minute: minute) }
+        }
+    }
+
+    private func timeWheel(hour: Binding<Int>, minute: Binding<Int>) -> some View {
+        HStack(spacing: 0) {
+            Picker("시", selection: hour) {
+                ForEach(0..<24, id: \.self) { h in
+                    Text(TimeFormat.hourLabel(h)).tag(h)
+                }
+            }
+            .pickerStyle(.wheel)
+            .frame(width: 140)
+
+            Text(":")
+                .font(.system(size: 24, weight: .light))
+                .foregroundColor(.inkMuted.opacity(0.6))
+
+            Picker("분", selection: minute) {
+                ForEach(0..<12, id: \.self) { idx in
+                    Text(String(format: "%02d", idx * 5)).tag(idx * 5)
+                }
+            }
+            .pickerStyle(.wheel)
+            .frame(width: 100)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 150)
+        .clipped()
+    }
+
+    /// 취침 시간을 펼쳤을 때만 보이는 추천 시각
+    private var bedPresets: some View {
+        let presets: [(Int, Int)] = [(22, 0), (22, 30), (23, 0), (23, 30), (0, 0), (0, 30), (1, 0)]
+        return ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(presets.indices, id: \.self) { i in
+                    presetButton(hour: presets[i].0, minute: presets[i].1)
+                }
+            }
+            .padding(.horizontal, 14)
+        }
+        .padding(.bottom, 12)
+    }
+
+    private func presetButton(hour: Int, minute: Int) -> some View {
+        let isSelected = selBedH == hour && selBedM == minute
+        let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
+        let ampm = hour >= 12 ? String(localized: "오후") : String(localized: "오전")
+        let minStr = minute > 0 ? String(localized: " \(minute)분") : ""
+        return Button {
+            selBedH = hour
+            selBedM = minute
+        } label: {
+            Text(TimeFormat.short(hour: hour, minute: minute))
+                .font(.system(size: 12, weight: .medium))
+                .foregroundColor(isSelected ? .onEmber : .ember.opacity(0.8))
+                .padding(.horizontal, 12)
+                .padding(.vertical, 7)
+                .background(Capsule().fill(isSelected ? Color.ember : Color.ember.opacity(0.1)))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("취침 시간 \(ampm) \(h12)시\(minStr)")
+        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+    }
+
+    // MARK: - 페이지
+
+    private let standardPeriods: [PeriodType] = [.day, .week, .freeTime, .month, .year]
+
+    private var pageGroup: some View {
+        let visibleCount = standardPeriods.filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }.count
+        return SettingsGroup(title: String(localized: "페이지"),
+                             footer: String(localized: "자유시간은 페이지 표시에서 모래시계로 보여요. 데드라인은 추가하면 저절로 나타나요")) {
+            ForEach(standardPeriods) { period in
+                let isVisible = !bedtimeManager.hiddenPeriods.contains(period.rawValue)
+                SettingsRow(icon: periodIcon(period), title: period.displayName) {
+                    Toggle("", isOn: Binding(
+                        get: { isVisible },
+                        set: { newValue in
+                            if newValue {
+                                bedtimeManager.hiddenPeriods.remove(period.rawValue)
+                            } else if visibleCount > 1 {
+                                bedtimeManager.hiddenPeriods.insert(period.rawValue)
+                            }
+                        }))
+                    .labelsHidden()
+                    .tint(.ember)
+                }
+                SettingsDivider()
+            }
+
+            NavigationLink {
+                IndicatorSettingsPage()
+                    .environmentObject(bedtimeManager)
+            } label: {
+                SettingsRow(icon: "ellipsis", title: String(localized: "페이지 표시 모양")) {
+                    indicatorSummary
+                    SettingsChevron()
+                }
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+    private func periodIcon(_ period: PeriodType) -> String {
+        switch period {
+        case .day:      return "sun.max"
+        case .week:     return "calendar"
+        case .freeTime: return "hourglass"
+        case .month:    return "calendar.circle"
+        case .year:     return "leaf"
+        case .deadline: return "flag"
+        }
+    }
+
+    @ViewBuilder
+    private var indicatorSummary: some View {
+        if !bedtimeManager.indicatorVisible {
+            Text("끔")
+                .font(.system(size: 14))
+                .foregroundColor(.inkMuted.opacity(0.6))
+        } else if !bedtimeManager.indicatorSymbol.isEmpty {
+            Image(systemName: bedtimeManager.indicatorSymbol)
+                .font(.system(size: 12))
+                .foregroundColor(.ember)
+        } else {
+            IndicatorSettingsPage.preview(for: bedtimeManager.indicatorShape)
+        }
+    }
+
+    // MARK: - 수면 기록 (건강 앱)
+    // 취침 이후 타는 내일의 양피지는 아침에 잠든 시각이 확인된 만큼만 그을린다.
+    // 건강 앱을 연결하면 그 확인을 묻지 않고 기록으로 한다.
+
+    private var sleepRecordGroup: some View {
+        SettingsGroup(title: String(localized: "수면 기록"),
+                      footer: sleepHealthConnected
+                        ? String(localized: "연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요")
+                        : String(localized: "연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요")) {
+            if sleepHealthConnected {
+                SettingsRow(icon: "bed.double", title: String(localized: "건강 앱 수면 기록")) {
+                    Label("연결됨", systemImage: "checkmark.circle.fill")
+                        .labelStyle(.titleAndIcon)
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundColor(.ember)
+                }
+            } else {
+                Button {
+                    Task { sleepHealthConnected = await SleepHealth.connect() }
+                } label: {
+                    SettingsRow(icon: "bed.double", title: String(localized: "건강 앱 수면 기록 연결하기")) {
+                        SettingsChevron()
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+        }
+    }
+
+    // MARK: - 화면
+
+    private var appearanceGroup: some View {
+        SettingsGroup(title: String(localized: "화면 테마"),
+                      footer: String(localized: "시스템 설정을 고르면 기기의 다크 모드를 그대로 따라갑니다")) {
+            Picker("화면 테마", selection: $appThemeRaw) {
+                ForEach(AppTheme.allCases) { theme in
+                    Text(theme.label).tag(theme.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(12)
+        }
+    }
+
+    // MARK: - 양피지와 불꽃 (프로)
+
+    private var parchmentGroup: some View {
+        SettingsGroup(title: String(localized: "양피지와 불꽃"),
+                      badge: storeManager.isPro ? nil : String(localized: "프로"),
+                      footer: String(localized: "빛깔은 종이 색과 불꽃 색을, 불꽃 종류는 어떤 불로 탈지를 정해요. 둘은 따로 고를 수 있어요")) {
+            VStack(alignment: .leading, spacing: 10) {
+                subheading(String(localized: "빛깔"))
+                HStack(spacing: 8) {
+                    ForEach(ParchmentStyle.allCases) { style in
+                        styleTile(style)
+                    }
+                }
+            }
+            .padding(14)
+
+            Divider().background(Color.ink.opacity(0.06))
+
+            VStack(alignment: .leading, spacing: 4) {
+                subheading(String(localized: "불꽃 종류"))
+                    .padding(.horizontal, 14)
+                    .padding(.top, 14)
+                FlameKindPicker(current: currentFlameKind, style: currentStyle, isPro: storeManager.isPro) { kind in
+                    if kind.isPro && !storeManager.isPro {
+                        showThemePaywall = true
+                    } else {
+                        flameKindRaw = kind.rawValue
+                    }
+                }
+                .padding(.bottom, 12)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 14))
+        }
+    }
+
+    private func subheading(_ text: String) -> some View {
+        Text(text)
+            .font(.system(size: 12, weight: .medium))
+            .foregroundColor(.inkMuted.opacity(0.7))
     }
 
     private func styleTile(_ style: ParchmentStyle) -> some View {
@@ -375,37 +351,35 @@ struct SettingsView: View {
                 parchmentStyleRaw = style.rawValue
             }
         } label: {
-            VStack(spacing: 8) {
-                ZStack(alignment: .bottomTrailing) {
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(style.paperGradient)
-                        .frame(height: 46)
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 22))
-                        .foregroundStyle(LinearGradient(colors: [.yellow, .orange, .red],
-                                                        startPoint: .top, endPoint: .bottom))
-                        .flameTint(style)
-                        .padding(6)
-                }
-                .overlay(alignment: .topLeading) {
-                    if locked {
-                        Image(systemName: "lock.fill")
-                            .font(.system(size: 10, weight: .semibold))
-                            .foregroundColor(.black.opacity(0.45))
-                            .padding(6)
+            VStack(spacing: 6) {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(style.paperGradient)
+                    .frame(height: 44)
+                    .overlay(alignment: .bottomTrailing) {
+                        Image(systemName: "flame.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(LinearGradient(colors: [.yellow, .orange, .red],
+                                                            startPoint: .top, endPoint: .bottom))
+                            .flameTint(style)
+                            .padding(5)
                     }
-                }
+                    .overlay(alignment: .topLeading) {
+                        if locked {
+                            Image(systemName: "lock.fill")
+                                .font(.system(size: 9, weight: .semibold))
+                                .foregroundColor(.black.opacity(0.45))
+                                .padding(5)
+                        }
+                    }
+                    .overlay(RoundedRectangle(cornerRadius: 8)
+                        .stroke(isSelected ? Color.ember : Color.clear, lineWidth: 2))
                 Text(style.label)
-                    .font(.system(size: 12))
-                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.55))
+                    .font(.system(size: 11, weight: isSelected ? .semibold : .regular))
+                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.7))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
             }
-            .padding(8)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(isSelected ? Color.ember.opacity(0.12) : Color.clear)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                        .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1))
-            )
+            .frame(maxWidth: .infinity)
         }
         .buttonStyle(.plain)
         .accessibilityLabel(style.label)
@@ -413,488 +387,83 @@ struct SettingsView: View {
         .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
     }
 
-    private func themeTab(_ theme: AppTheme) -> some View {
-        let isSelected = appTheme == theme
-        return Button {
-            appThemeRaw = theme.rawValue
-        } label: {
-            VStack(spacing: 8) {
-                Image(systemName: theme.icon)
-                    .font(.system(size: 18))
-                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.45))
-                Text(theme.label)
-                    .font(.system(size: 11))
-                    .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.4))
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 12)
-            .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(isSelected ? Color.ember.opacity(0.12) : Color.ink.opacity(0.03))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1)
-                    )
-            )
-        }
-        .accessibilityLabel(theme.label)
-        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
-    }
-
-    private var indicatorSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "circle.grid.3x3")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("페이지 인디케이터")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            VStack(spacing: 0) {
-                // 표시 여부
-                HStack {
-                    Text("표시")
-                        .font(.system(size: 15, design: .serif))
-                        .foregroundColor(bedtimeManager.indicatorVisible ? .ember.opacity(0.85) : .inkMuted.opacity(0.4))
-                    Spacer()
-                    Toggle("", isOn: $bedtimeManager.indicatorVisible)
-                        .tint(.ember)
-                }
-                .padding(.horizontal, 14)
-                .padding(.vertical, 10)
-
-                Divider().background(Color.ember.opacity(0.08)).padding(.leading, 14)
-
-                // 모드 선택 (도형 / 심볼)
-                HStack(spacing: 0) {
-                    modeTab(title: String(localized: "도형"), isSelected: !isSymbolMode) {
-                        bedtimeManager.indicatorSymbol = ""
-                    }
-                    modeTab(title: String(localized: "심볼"), isSelected: isSymbolMode) {
-                        if bedtimeManager.indicatorSymbol.isEmpty {
-                            bedtimeManager.indicatorSymbol = symbolOptions[0].name
-                        }
-                    }
-                }
-                .padding(.horizontal, 14)
-                .padding(.top, 12)
-                .padding(.bottom, 6)
-                .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
-                .disabled(!bedtimeManager.indicatorVisible)
-
-                if isSymbolMode {
-                    symbolGridSelector
-                } else {
-                    shapeSelector
-                }
-            }
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
-        }
-        .padding(.horizontal, 20)
-    }
-
-    // SF 심볼 그리드
-    private var symbolGridSelector: some View {
-        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 5), spacing: 8) {
-            ForEach(symbolOptions, id: \.name) { opt in
-                let isSelected = bedtimeManager.indicatorSymbol == opt.name
-                Button {
-                    bedtimeManager.indicatorSymbol = opt.name
-                } label: {
-                    VStack(spacing: 6) {
-                        Image(systemName: opt.name)
-                            .font(.system(size: 20))
-                            .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.45))
-                        Text(opt.label)
-                            .font(.system(size: 10))
-                            .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.4))
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(isSelected ? Color.ember.opacity(0.12) : Color.ink.opacity(0.03))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1)
-                            )
-                    )
-                }
-            }
-        }
-        .padding(.horizontal, 14)
-        .padding(.bottom, 14)
-        .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
-        .disabled(!bedtimeManager.indicatorVisible)
-    }
-
-    // 도형 선택
-    private var shapeSelector: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 8) {
-                ForEach(IndicatorShape.allCases) { shape in
-                    let isSelected = bedtimeManager.indicatorShape == shape
-                    Button {
-                        bedtimeManager.indicatorShape = shape
-                    } label: {
-                        VStack(spacing: 8) {
-                            indicatorPreview(for: shape)
-                                .frame(height: 14)
-                            Text(shape.label)
-                                .font(.system(size: 11))
-                                .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.4))
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        .background(
-                            RoundedRectangle(cornerRadius: 8)
-                                .fill(isSelected ? Color.ember.opacity(0.12) : Color.ink.opacity(0.03))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .stroke(isSelected ? Color.ember.opacity(0.4) : Color.clear, lineWidth: 1)
-                                )
-                        )
-                    }
-                }
-            }
-            .padding(.horizontal, 14)
-            .padding(.bottom, 12)
-            .opacity(bedtimeManager.indicatorVisible ? 1 : 0.3)
-            .disabled(!bedtimeManager.indicatorVisible)
-        }
-    }
-
     // MARK: - 프로
 
-    private var proSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "flame.fill")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("프로")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
+    private var proGroup: some View {
+        SettingsGroup(title: String(localized: "프로"),
+                      footer: storeManager.isPro ? nil
+                        : String(localized: "불타는 자유시간, 빛깔과 불꽃 종류, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.")) {
             if storeManager.isPro {
-                HStack(spacing: 10) {
-                    Image(systemName: "checkmark.seal.fill")
-                        .font(.system(size: 16))
-                        .foregroundColor(.ember.opacity(0.85))
-                    Text("프로 이용 중이에요. 감사합니다 🔥")
-                        .font(.system(size: 14, design: .serif))
-                        .foregroundColor(.ember.opacity(0.85))
-                    Spacer()
-                }
-                .padding(14)
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(Color.ink.opacity(0.03))
-                        .overlay(RoundedRectangle(cornerRadius: 14)
-                            .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-                )
+                SettingsRow(icon: "checkmark.seal", title: String(localized: "프로 이용 중이에요. 감사합니다 🔥"))
             } else {
-                VStack(spacing: 0) {
-                    Button { showPaywall = true } label: {
-                        HStack(spacing: 10) {
-                            Image(systemName: "sparkles")
-                                .font(.system(size: 14))
-                                .foregroundColor(.ember.opacity(0.7))
-                            Text("프로로 업그레이드")
-                                .font(.system(size: 15))
-                                .foregroundColor(.ember.opacity(0.9))
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .font(.system(size: 12))
-                                .foregroundColor(.inkMuted.opacity(0.4))
-                        }
-                        .padding(14)
+                Button { showPaywall = true } label: {
+                    SettingsRow(icon: "sparkles", title: String(localized: "프로로 업그레이드")) {
+                        SettingsChevron()
                     }
-
-                    Divider().background(Color.ember.opacity(0.08))
-                        .padding(.leading, 14)
-
-                    Button {
-                        Task {
-                            let restored = await storeManager.restorePurchases()
-                            if !restored {
-                                restoreMessage = storeManager.lastError
-                                    ?? String(localized: "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
-                            }
-                        }
-                    } label: {
-                        HStack(spacing: 10) {
-                            Image(systemName: "arrow.clockwise")
-                                .font(.system(size: 14))
-                                .foregroundColor(.ember.opacity(0.7))
-                            Text("구매 복원")
-                                .font(.system(size: 15))
-                                .foregroundColor(.ember.opacity(0.9))
-                            Spacer()
-                            if storeManager.purchaseInProgress {
-                                ProgressView()
-                            }
-                        }
-                        .padding(14)
-                    }
-                    .disabled(storeManager.purchaseInProgress)
                 }
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(Color.ink.opacity(0.03))
-                        .overlay(RoundedRectangle(cornerRadius: 14)
-                            .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-                )
+                .buttonStyle(.plain)
 
-                Text("불타는 자유시간, 테마, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.")
-                    .font(.system(size: 11))
-                    .foregroundColor(.inkMuted.opacity(0.4))
-                    .padding(.horizontal, 4)
+                SettingsDivider()
+
+                Button {
+                    Task {
+                        let restored = await storeManager.restorePurchases()
+                        if !restored {
+                            restoreMessage = storeManager.lastError
+                                ?? String(localized: "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
+                        }
+                    }
+                } label: {
+                    SettingsRow(icon: "arrow.clockwise", title: String(localized: "구매 복원")) {
+                        if storeManager.purchaseInProgress { ProgressView() }
+                    }
+                }
+                .buttonStyle(.plain)
+                .disabled(storeManager.purchaseInProgress)
             }
-        }
-        .padding(.horizontal, 20)
-        .sheet(isPresented: $showPaywall) {
-            PaywallView()
-                .environmentObject(storeManager)
-        }
-        .alert("구매 복원",
-               isPresented: Binding(get: { restoreMessage != nil }, set: { if !$0 { restoreMessage = nil } })) {
-            Button("확인", role: .cancel) {}
-        } message: {
-            Text(restoreMessage ?? "")
         }
     }
 
-    // MARK: - 개발자 문의
+    // MARK: - 지원 (문의 · 피드백 · 리뷰 · 정책 · 버전)
 
-    // MARK: - Support Section (리뷰/피드백)
+    private var supportGroup: some View {
+        SettingsGroup(title: String(localized: "지원"),
+                      footer: String(localized: "버그 제보와 기능 제안을 환영합니다.")) {
+            contactRow(title: String(localized: "이메일로 문의하기"), icon: "envelope", url: "mailto:leeo@kakao.com")
+            SettingsDivider()
+            contactRow(title: String(localized: "인스타그램 DM (@lee25_ios)"), icon: "paperplane",
+                       url: "https://instagram.com/lee25_ios")
 
-    private var leeoSupportSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "hands.sparkles")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("지원")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            VStack(spacing: 0) {
-                LeeoSupportSection<BurningParchmentSpec>()
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 6)
-            .tint(.ember)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
+            // LeeoKit 의 행들(피드백·리뷰·정책 링크·버전)은 Form 용이라 테두리가 없다.
+            // 행마다 같은 높이와 위쪽 구분선을 입혀 위의 행들과 맞춘다.
+            LeeoSupportSection<BurningParchmentSpec>()
+                .labelStyle(SettingsLabelStyle())
+                .font(.system(size: rowFontSize))
+                .foregroundStyle(Color.inkMuted.opacity(0.8))
+                .tint(.ember)
+                .buttonStyle(.plain)
+                .padding(.horizontal, 14)
+                .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+                .contentShape(Rectangle())
+                .overlay(alignment: .top) { SettingsDivider() }
         }
-        .padding(.horizontal, 20)
-    }
-
-    private var developerContactSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "envelope")
-                    .foregroundColor(.ember.opacity(0.6))
-                Text("개발자에게 문의")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            VStack(spacing: 0) {
-                contactRow(
-                    title: String(localized: "이메일로 문의하기"),
-                    icon: "envelope",
-                    url: "mailto:leeo@kakao.com"
-                )
-
-                Divider().background(Color.ember.opacity(0.08))
-                    .padding(.leading, 14)
-
-                contactRow(
-                    title: String(localized: "인스타그램 DM (@lee25_ios)"),
-                    icon: "paperplane",
-                    url: "https://instagram.com/lee25_ios"
-                )
-            }
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.ember.opacity(0.1), lineWidth: 1))
-            )
-
-            Text("버그 제보와 기능 제안을 환영합니다.")
-                .font(.system(size: 11))
-                .foregroundColor(.inkMuted.opacity(0.4))
-                .padding(.horizontal, 4)
-        }
-        .padding(.horizontal, 20)
     }
 
     @ViewBuilder
     private func contactRow(title: String, icon: String, url: String) -> some View {
         if let destination = URL(string: url) {
             Link(destination: destination) {
-                HStack {
-                    Image(systemName: icon)
-                        .font(.system(size: sectionIconSize))
-                        .foregroundColor(.ember.opacity(0.6))
-                    Text(title)
-                        .font(.system(size: rowFontSize, design: .serif))
-                        .foregroundColor(.ember.opacity(0.85))
-                    Spacer()
-                    Image(systemName: "arrow.up.right")
-                        .font(.system(size: 11))
-                        .foregroundColor(.inkMuted.opacity(0.4))
+                SettingsRow(icon: icon, title: title) {
+                    SettingsChevron(external: true)
                 }
-                .padding(.horizontal, 14)
-                .padding(.vertical, 12)
             }
+            .buttonStyle(.plain)
         }
-    }
-
-    private func modeTab(title: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(title)
-                .font(.system(size: 13, weight: .medium))
-                .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.45))
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 7)
-                .background(
-                    RoundedRectangle(cornerRadius: 7)
-                        .fill(isSelected ? Color.ember.opacity(0.12) : Color.clear)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 7)
-                                .stroke(isSelected ? Color.ember.opacity(0.3) : Color.clear, lineWidth: 1)
-                        )
-                )
-        }
-    }
-
-    @ViewBuilder
-    private func indicatorPreview(for shape: IndicatorShape) -> some View {
-        switch shape {
-        case .dot:
-            HStack(spacing: 4) {
-                Circle().fill(Color.ember).frame(width: 8, height: 8)
-                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 6, height: 6)
-                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 6, height: 6)
-            }
-        case .pill:
-            HStack(spacing: 4) {
-                Capsule().fill(Color.ember).frame(width: 18, height: 7)
-                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 7, height: 7)
-                Circle().fill(Color.inkMuted.opacity(0.3)).frame(width: 7, height: 7)
-            }
-        case .line:
-            HStack(spacing: 3) {
-                RoundedRectangle(cornerRadius: 2).fill(Color.ember).frame(width: 16, height: 3)
-                RoundedRectangle(cornerRadius: 2).fill(Color.inkMuted.opacity(0.25)).frame(width: 6, height: 3)
-                RoundedRectangle(cornerRadius: 2).fill(Color.inkMuted.opacity(0.25)).frame(width: 6, height: 3)
-            }
-        case .bar:
-            HStack(spacing: 3) {
-                RoundedRectangle(cornerRadius: 3).fill(Color.ember).frame(width: 12, height: 5)
-                RoundedRectangle(cornerRadius: 3).fill(Color.inkMuted.opacity(0.25)).frame(width: 12, height: 5)
-                RoundedRectangle(cornerRadius: 3).fill(Color.inkMuted.opacity(0.25)).frame(width: 12, height: 5)
-            }
-        }
-    }
-
-    // MARK: - Time Picker Section
-
-    private func timePickerSection(title: String, icon: String, hour: Binding<Int>, minute: Binding<Int>) -> some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 6) {
-                Image(systemName: icon)
-                    .foregroundColor(.ember.opacity(0.6))
-                Text(title)
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.ember.opacity(0.5))
-            }
-
-            HStack(spacing: 0) {
-                Picker("시", selection: hour) {
-                    ForEach(0..<24, id: \.self) { h in
-                        Text(hourLabel(h))
-                            .foregroundColor(.ember)
-                            .tag(h)
-                    }
-                }
-                .pickerStyle(.wheel)
-                .frame(width: 140)
-
-                Text(":")
-                    .font(.system(size: 30, weight: .light))
-                    .foregroundColor(.ember.opacity(0.5))
-
-                Picker("분", selection: minute) {
-                    ForEach(0..<12, id: \.self) { idx in
-                        Text(String(format: "%02d", idx * 5))
-                            .foregroundColor(.ember)
-                            .tag(idx * 5)
-                    }
-                }
-                .pickerStyle(.wheel)
-                .frame(width: 100)
-            }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 8)
-            .background(
-                RoundedRectangle(cornerRadius: 16)
-                    .fill(Color.ink.opacity(0.03))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 16)
-                            .stroke(Color.ember.opacity(0.1), lineWidth: 1)
-                    )
-            )
-        }
-        .padding(.horizontal, 20)
-    }
-
-    // MARK: - Preset Button
-
-    private func presetButton(hour: Int, minute: Int) -> some View {
-        let isSelected = selBedH == hour && selBedM == minute
-        let label = TimeFormat.short(hour: hour, minute: minute)
-        let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
-        let ampm = hour >= 12 ? String(localized: "오후") : String(localized: "오전")
-        let minStr = minute > 0 ? String(localized: " \(minute)분") : ""
-        return Button {
-            selBedH = hour
-            selBedM = minute
-        } label: {
-            Text(label)
-                .font(.system(size: captionFontSize, weight: .medium))
-                .foregroundColor(isSelected ? .onEmber : .ember.opacity(0.7))
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
-                .background(
-                    Capsule().fill(isSelected ? Color.ember : Color.ember.opacity(0.1))
-                )
-        }
-        .accessibilityLabel("취침 시간 \(ampm) \(h12)시\(minStr)")
-        .accessibilityAddTraits(isSelected ? .isSelected : [])
-        .accessibilityHint(isSelected ? "선택됨" : "탭하여 선택")
-    }
-
-    private func hourLabel(_ hour: Int) -> String {
-        TimeFormat.hourLabel(hour)
     }
 }
 
 #Preview {
     SettingsView()
         .environmentObject(BedtimeManager())
+        .environmentObject(StoreManager())
 }

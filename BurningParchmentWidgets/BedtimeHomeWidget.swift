@@ -35,7 +35,6 @@ struct ParchmentEntry: TimelineEntry {
     let period: WidgetPeriod
     let progress: Double
     let remainingText: String
-    let bedtimeDate: Date?
     let bedtimeString: String
     let isActive: Bool
     let isBeforeWakeTime: Bool
@@ -73,7 +72,6 @@ struct ParchmentProvider: TimelineProvider {
             remainingText: period == .daily
                 ? String(localized: "5시간 24분")
                 : String(localized: "3일 4시간"),
-            bedtimeDate: nil,
             bedtimeString: TimeFormat.short(hour: 23, minute: 0), isActive: true,
             isBeforeWakeTime: false, remainingSeconds: rem
         )
@@ -115,7 +113,7 @@ struct ParchmentProvider: TimelineProvider {
 
         let bedtimeStr = TimeFormat.short(hour: bedH, minute: bedM)
 
-        let (dailyProg, remSec, isActive, isBeforeWake, dailyBedDate) = dailyProgress(
+        let (dailyProg, remSec, isActive, isBeforeWake, _) = dailyProgress(
             date: date, wakeH: wakeH, wakeM: wakeM, bedH: bedH, bedM: bedM
         )
         let cal = Calendar.current
@@ -155,23 +153,9 @@ struct ParchmentProvider: TimelineProvider {
             remText = formatSeconds(rem)
         }
 
-        // 앱이 App Group에 저장한 취침 Date를 우선 사용 — 앱과 동일한 기준점 보장
-        let appBedDate = sd?.object(forKey: "shared_bedtimeDate") as? Date
-        let finalBedDate: Date?
-        if period == .daily && isActive {
-            if let saved = appBedDate, saved > date {
-                finalBedDate = saved
-            } else {
-                finalBedDate = dailyBedDate
-            }
-        } else {
-            finalBedDate = nil
-        }
-
         return ParchmentEntry(
             date: date, period: period, progress: prog,
             remainingText: remText,
-            bedtimeDate: finalBedDate,
             bedtimeString: bedtimeStr,
             isActive: isActive, isBeforeWakeTime: isBeforeWake, remainingSeconds: remSec
         )
@@ -293,31 +277,22 @@ struct BurningHeartView: View {
         }
     }
 
+    /// 하트 곡선 x = 16 sin³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t.
+    /// 가로세로 비율이 곡선 자체에 들어 있어 어떤 크기로 그려도 찌그러지지 않는다.
+    /// (예전 베지어 하트는 가로가 세로의 두 배라 납작하게 퍼져 보였다)
+    /// size 는 하트 가로 폭의 절반, (cx, cy) 는 하트 몸통의 가운데.
     private func makeHeart(cx: Double, cy: Double, size: Double) -> Path {
+        let k = size / 16
         var path = Path()
-        let w = size
-        let h = size * 0.9
-        path.move(to: CGPoint(x: cx, y: cy + h * 0.7))
-        path.addCurve(
-            to: CGPoint(x: cx - w, y: cy - h * 0.1),
-            control1: CGPoint(x: cx - w * 0.2, y: cy + h * 0.4),
-            control2: CGPoint(x: cx - w * 1.1, y: cy + h * 0.2)
-        )
-        path.addCurve(
-            to: CGPoint(x: cx, y: cy - h * 0.3),
-            control1: CGPoint(x: cx - w * 0.9, y: cy - h * 0.6),
-            control2: CGPoint(x: cx - w * 0.2, y: cy - h * 0.5)
-        )
-        path.addCurve(
-            to: CGPoint(x: cx + w, y: cy - h * 0.1),
-            control1: CGPoint(x: cx + w * 0.2, y: cy - h * 0.5),
-            control2: CGPoint(x: cx + w * 0.9, y: cy - h * 0.6)
-        )
-        path.addCurve(
-            to: CGPoint(x: cx, y: cy + h * 0.7),
-            control1: CGPoint(x: cx + w * 1.1, y: cy + h * 0.2),
-            control2: CGPoint(x: cx + w * 0.2, y: cy + h * 0.4)
-        )
+        let steps = 96
+        for i in 0...steps {
+            let t = Double(i) / Double(steps) * 2 * .pi
+            let x = 16 * pow(sin(t), 3)
+            let y = 13 * cos(t) - 5 * cos(2 * t) - 2 * cos(3 * t) - cos(4 * t)
+            // 곡선의 세로 범위(-17 ~ 12)의 가운데가 cy 에 오도록 2.5 만큼 내린다
+            let pt = CGPoint(x: cx + x * k, y: cy - (y + 2.5) * k)
+            if i == 0 { path.move(to: pt) } else { path.addLine(to: pt) }
+        }
         path.closeSubpath()
         return path
     }
@@ -336,18 +311,13 @@ private struct SmallWidgetContent: View {
                 case .burning:
                     MiniParchmentView(progress: entry.progress)
                         .frame(width: side, height: side)
-                    Group {
-                        if let bd = entry.bedtimeDate {
-                            Text(bd, style: .timer)
-                        } else {
-                            Text(entry.remainingText)
-                        }
-                    }
+                    // 1분마다 만든 타임라인 항목의 문구를 그대로 쓴다. .timer 는 '5:23:41' 같은 시계 숫자로 나오고
+                    // 취침 시각이 지나면 거꾸로 세어 올라가 타임스탬프처럼 보였다.
+                    Text(entry.remainingText)
                     .font(.system(size: 19, weight: .medium, design: .monospaced))
                     .foregroundColor(.orange)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
-                    // .timer 스타일은 최대 자릿수만큼 폭을 예약하므로 명시적으로 가운데 정렬해야 안 치우친다
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity, alignment: .center)
                     if entry.period != .daily {
@@ -415,13 +385,9 @@ private struct MediumWidgetContent: View {
                 .font(.system(size: 11, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            Group {
-                if let bd = entry.bedtimeDate {
-                    Text(bd, style: .timer)
-                } else {
-                    Text(entry.remainingText)
-                }
-            }
+            // 1분마다 만든 타임라인 항목의 문구를 그대로 쓴다. .timer 는 '5:23:41' 같은 시계 숫자로 나오고
+            // 취침 시각이 지나면 거꾸로 세어 올라가 타임스탬프처럼 보였다.
+            Text(entry.remainingText)
             .font(.system(
                 size: entry.period == .daily ? 28 : 20,
                 weight: .light,
@@ -430,7 +396,6 @@ private struct MediumWidgetContent: View {
             .foregroundColor(.white)
             .lineLimit(1)
             .minimumScaleFactor(0.8)
-            // .timer 스타일 예약 폭 안에서 왼쪽 기준으로 붙여, 위아래 요소와 좌측 라인을 맞춘다
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -540,13 +505,9 @@ private struct LargeWidgetContent: View {
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(.orange.opacity(0.7))
 
-            Group {
-                if let bd = entry.bedtimeDate {
-                    Text(bd, style: .timer)
-                } else {
-                    Text(entry.remainingText)
-                }
-            }
+            // 1분마다 만든 타임라인 항목의 문구를 그대로 쓴다. .timer 는 '5:23:41' 같은 시계 숫자로 나오고
+            // 취침 시각이 지나면 거꾸로 세어 올라가 타임스탬프처럼 보였다.
+            Text(entry.remainingText)
             .font(.system(
                 size: entry.period == .daily ? 36 : 26,
                 weight: .light,
@@ -555,7 +516,6 @@ private struct LargeWidgetContent: View {
             .foregroundColor(.white)
             .lineLimit(1)
             .minimumScaleFactor(0.8)
-            // .timer 스타일은 최대 자릿수만큼 폭을 예약하므로 명시적으로 가운데 정렬해야 안 치우친다
             .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity, alignment: .center)
 
@@ -643,17 +603,11 @@ struct BedtimeHomeWidgetView: View {
 // MARK: - Widget Background Modifier
 
 private struct WidgetBackground: ViewModifier {
-    @ViewBuilder
+    // 배포 대상이 iOS 17 이라 containerBackground 를 바로 쓴다.
+    // (예전의 #available 분기는 iOS 26 SDK 에서 이전 OS 용 코드 경로가 없다는 경고를 냈다)
     func body(content: Content) -> some View {
-        if #available(iOSApplicationExtension 17.0, *) {
-            content.containerBackground(for: .widget) {
-                Color(red: 0.08, green: 0.06, blue: 0.04)
-            }
-        } else {
-            ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04)
-                content
-            }
+        content.containerBackground(for: .widget) {
+            Color(red: 0.08, green: 0.06, blue: 0.04)
         }
     }
 }

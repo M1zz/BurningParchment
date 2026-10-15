@@ -2,6 +2,7 @@
 // 데드라인 상세 — 타오르는 양피지 효과로 마감까지 남은 시간 표시
 
 import SwiftUI
+import Combine
 
 struct DeadlineDetailView: View {
     let deadline: Deadline

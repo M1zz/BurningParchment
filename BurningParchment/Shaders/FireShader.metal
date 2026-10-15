@@ -348,3 +348,87 @@ static half4 fireRamp(float t) {
 
     return fireRamp(saturate(finalTemp));
 }
+
+// MARK: - Flame Kinds (FlameView)
+//
+// 들불·숯불은 Canvas 가 그린 "열 지도"(흰색, 알파 = 열) 위에 layerEffect 로 걸린다.
+// 모양은 Swift 쪽 기하(타는 경계선)를 그대로 따르고, 셰이더는 노이즈로 그 열을
+// 흐름 방향(flow)으로 일렁이게 끌어내고 흑체 색으로 바꾼다.
+//   flow  — 불꽃이 솟는 방향(단위 벡터, 포인트 좌표)
+//   scale — 불꽃 크기 배율 (불 끄기 화면은 1.5, 설정 카드는 0.8)
+
+static float fbm4(float2 p) {
+    float v = 0.0f, amp = 0.5f;
+    for (int i = 0; i < 4; i++) { v += amp * gnoise(p); p *= 2.03f; amp *= 0.5f; }
+    return v;
+}
+
+static float fbmRidge4(float2 p) {
+    float v = 0.0f, amp = 0.5f;
+    for (int i = 0; i < 4; i++) {
+        float n = 1.0f - abs(gnoise(p) * 2.0f - 1.0f);
+        v += amp * n * n;
+        p *= 2.03f; amp *= 0.5f;
+    }
+    return saturate(v * 1.15f);
+}
+
+// 들불 — 길게 찢어지는 불길, 하얗게 달아오른 뿌리
+[[stitchable]] half4 blazeFire(float2 pos, SwiftUI::Layer layer,
+                               float time, float2 flow, float scale) {
+    float2 n = normalize(flow);
+    float2 t = float2(-n.y, n.x);
+
+    // 주변에 열이 전혀 없으면 노이즈를 계산하지 않는다 (화면 대부분이 여기서 끝난다)
+    float reach = 28.0f * scale;
+    float probe = max(max(layer.sample(pos).a, layer.sample(pos - n * reach).a),
+                      max(layer.sample(pos + t * reach * 0.6f).a, layer.sample(pos - t * reach * 0.6f).a));
+    if (probe < 0.003f) return half4(0);
+
+    // 흐름 좌표계: x = 가로, y = 솟는 방향. 세로로 늘여 길쭉한 혀를 만들고 바깥으로 흘려보낸다
+    float2 q = float2(dot(pos, t), dot(pos, n)) / (22.0f * scale);
+    q.y = q.y * 0.6f - time * 0.95f;
+
+    float2 w = float2(fbm4(q + float2(0.0f, time * 0.12f)),
+                      fbm4(q * 1.3f + float2(5.2f, 1.3f))) - 0.5f;
+
+    // 끝으로 갈수록(열이 낮을수록) 크게 흔들린다. 흐름 반대쪽을 읽어 와 뿌리의 열을 밖으로 핥아 올린다
+    float h0  = layer.sample(pos).a;
+    float amp = mix(22.0f, 7.0f, saturate(h0 * 1.4f)) * scale;
+    float2 off = (t * w.x * 1.2f + n * (w.y - 0.28f)) * amp;
+    float heat = layer.sample(pos + off).a;
+    if (heat < 0.004f) return half4(0);
+
+    float ridge  = fbmRidge4(q * 2.0f + w * 1.8f);
+    float detail = gnoise(q * 5.0f + float2(0.0f, -time * 1.6f));
+    float flick  = 0.88f + 0.12f * sin(time * 9.0f + q.x * 3.0f);
+
+    // 하얗게 달아오르는 건 뿌리(열 0.8 이상)뿐 — 몸통은 주황, 끝은 붉게 사그라든다
+    float temp = pow(heat, 1.25f) * 1.02f * flick
+               - (1.0f - ridge) * 0.50f * (1.1f - heat)
+               - (detail - 0.5f) * 0.15f;
+    return fireRamp(saturate(temp));
+}
+
+// 숯불 — 낮게 깔린 붉은 띠, 천천히 숨 쉬는 숯 알갱이와 가끔 하얗게 달아오르는 자리
+[[stitchable]] half4 smolderFire(float2 pos, SwiftUI::Layer layer,
+                                 float time, float2 flow, float scale) {
+    float2 n = normalize(flow);
+    float2 t = float2(-n.y, n.x);
+
+    float probe = max(layer.sample(pos).a, layer.sample(pos - n * 9.0f * scale).a);
+    if (probe < 0.003f) return half4(0);
+
+    float2 q = float2(dot(pos, t), dot(pos, n)) / (9.0f * scale);
+    float2 w = float2(gnoise(q * 0.7f + float2(0.0f, -time * 0.35f)),
+                      gnoise(q * 0.7f + float2(3.1f,  time * 0.30f))) - 0.5f;
+    float heat = layer.sample(pos + (t * w.x + n * (w.y - 0.15f)) * 6.0f * scale).a;
+    if (heat < 0.004f) return half4(0);
+
+    float cells = fbm4(q * 1.4f + float2(time * 0.05f, 0.0f));
+    float pulse = 0.5f + 0.5f * sin(time * 1.6f + cells * 9.0f);
+    float temp  = heat * (0.40f + 0.36f * cells + 0.20f * pulse);
+    temp = min(temp, 0.70f);                                   // 대부분 붉은 주황
+    temp += smoothstep(0.60f, 0.78f, cells) * heat * 0.35f;    // 드문드문 달아오른 숯
+    return fireRamp(saturate(temp));
+}

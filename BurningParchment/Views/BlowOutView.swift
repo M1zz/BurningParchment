@@ -24,6 +24,7 @@ struct BlowOutView: View {
     @State private var edgeSeed = Double.random(in: 0...100)
     @State private var scrapSize: CGSize = .zero
     @Environment(\.parchmentStyle) private var style
+    @Environment(\.flameKind) private var flameKind
 
     // 불이 꺼진 순간의 모습 — 조각은 이 값으로 만든다
     @State private var snapshot: Snapshot?
@@ -113,8 +114,9 @@ struct BlowOutView: View {
                     FragmentScrapView(burnProgress: progress, edgePhase: edgeSeed)
                         .padding(room)
 
-                    BurningParchmentView.flameCanvas(
-                        along: edge,
+                    FlameView(
+                        kind: flameKind,
+                        points: edge,
                         normal: FragmentScrapView.edgeNormal,
                         phase: phase,
                         intensity: stage == .blowing ? 1 - detector.extinguish * 0.9 : 0,

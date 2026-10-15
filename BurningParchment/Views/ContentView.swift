@@ -2,6 +2,7 @@
 // 메인 화면
 
 import SwiftUI
+import Combine
 import WidgetKit
 
 struct ContentView: View {
@@ -146,7 +147,7 @@ struct ContentView: View {
                 .environmentObject(fragmentManager)
                 .environmentObject(excuseManager)
         }
-        .onChange(of: scenePhase) { phase in
+        .onChange(of: scenePhase) { _, phase in
             if phase == .active {
                 bedtimeManager.recalculate()
                 WidgetCenter.shared.reloadAllTimelines()
@@ -162,13 +163,13 @@ struct ContentView: View {
                 }
             }
         }
-        .onChange(of: bedtimeManager.isCountdownActive) { active in
+        .onChange(of: bedtimeManager.isCountdownActive) { _, active in
             if active {
                 evaluateReflectionNudge()
                 evaluateMorning()
             }
         }
-        .onChange(of: bedtimeManager.currentNight) { night in
+        .onChange(of: bedtimeManager.currentNight) { _, night in
             // 새 밤이 시작되면 확인받지 못한 지난 밤들은 그을음 없이 닫는다
             if NightManager.isEnabled, let night { nightManager.closeUnanswered(before: night.start) }
             noteAwakeIfNight()
@@ -176,7 +177,7 @@ struct ContentView: View {
         .onReceive(awakeTicker) { _ in
             if scenePhase == .active { noteAwakeIfNight() }
         }
-        .onChange(of: showReflections) { isShowing in
+        .onChange(of: showReflections) { _, isShowing in
             if !isShowing { autoOpenReflectionInput = false }
         }
         .onAppear {
@@ -480,8 +481,12 @@ struct ContentView: View {
     private var pageIndicator: some View {
         if bedtimeManager.indicatorVisible {
             HStack(spacing: indicatorSpacing) {
-                ForEach(Array(pages.enumerated()), id: \.offset) { idx, _ in
-                    indicatorItem(isActive: idx == currentIndex)
+                ForEach(Array(pages.enumerated()), id: \.offset) { idx, period in
+                    if period == .freeTime {
+                        freeTimeIndicatorItem(isActive: idx == currentIndex)
+                    } else {
+                        indicatorItem(isActive: idx == currentIndex)
+                    }
                 }
             }
             .padding(.bottom, 16)
@@ -496,6 +501,18 @@ struct ContentView: View {
         case .dot, .pill: return 6
         case .line, .bar: return 4
         }
+    }
+
+    /// 불타는 자유시간 페이지는 다른 기간과 성격이 달라(하루·주·달처럼 이어서 타지 않고
+    /// 정해 둔 시간에만 탄다) 점 대신 모래시계로 구분한다. 고른 인디케이터 모양과 상관없이 같다.
+    /// 지금 타는 중이면 비활성일 때도 은은하게 불빛을 띤다.
+    private func freeTimeIndicatorItem(isActive: Bool) -> some View {
+        let burning = freeTimeManager.week().isBurning
+        return Image(systemName: isActive || burning ? "hourglass" : "hourglass.bottomhalf.filled")
+            .font(.system(size: isActive ? 12 : 9, weight: .semibold))
+            .foregroundColor(isActive ? .ember : (burning ? .ember.opacity(0.55) : .inkMuted.opacity(0.35)))
+            .frame(height: 12)
+            .animation(.easeInOut(duration: 0.2), value: isActive)
     }
 
     @ViewBuilder

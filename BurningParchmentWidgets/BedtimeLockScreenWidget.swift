@@ -19,11 +19,6 @@ struct BedtimeLockScreenWidgetView: View {
         }
     }
 
-    /// 기상까지 남은 시각 (수면/기상 임박 모드에서 타이머 표시용)
-    private var wakeDate: Date {
-        entry.date.addingTimeInterval(entry.remainingSeconds)
-    }
-
     // MARK: Circular (원형 게이지)
 
     @ViewBuilder
@@ -84,17 +79,11 @@ struct BedtimeLockScreenWidgetView: View {
                 }
                 .widgetAccentable()
 
-                Group {
-                    if let bd = entry.bedtimeDate {
-                        Text(bd, style: .timer)
-                    } else {
-                        Text(entry.remainingText)
-                    }
-                }
+                // 1분마다 만든 항목의 문구 — .timer 는 시계 숫자로 나오고 취침 뒤엔 거꾸로 세어 올라갔다
+                Text(entry.remainingText)
                 .font(.system(size: 21, weight: .semibold, design: .monospaced))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-                // .timer 예약 폭 때문에 생기는 좌측 여백 방지
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -114,7 +103,7 @@ struct BedtimeLockScreenWidgetView: View {
                 }
                 .widgetAccentable()
 
-                Text(wakeDate, style: .timer)
+                Text(entry.shortTimeString)
                     .font(.system(size: 21, weight: .semibold, design: .monospaced))
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
@@ -136,7 +125,7 @@ struct BedtimeLockScreenWidgetView: View {
                 }
                 .widgetAccentable()
 
-                Text(wakeDate, style: .timer)
+                Text(entry.shortTimeString)
                     .font(.system(size: 21, weight: .semibold, design: .monospaced))
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
@@ -155,11 +144,7 @@ struct BedtimeLockScreenWidgetView: View {
     private var inline: some View {
         switch entry.displayMode {
         case .burning:
-            if let bd = entry.bedtimeDate {
-                Text("🔥 취침까지 \(Text(bd, style: .timer))")
-            } else {
-                Text("🔥 취침까지 \(entry.remainingText)")
-            }
+            Text("🔥 취침까지 \(entry.remainingText)")
         case .sleeping:
             Text("😴 기상까지 \(entry.shortTimeString)")
         case .wakeUpSoon:

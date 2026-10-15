@@ -232,17 +232,11 @@ struct DeadlineWidgetView: View {
 // MARK: - Widget Background (local copy)
 
 private struct DeadlineBG: ViewModifier {
-    @ViewBuilder
+    // 배포 대상이 iOS 17 이라 containerBackground 를 바로 쓴다.
+    // (예전의 #available 분기는 iOS 26 SDK 에서 이전 OS 용 코드 경로가 없다는 경고를 냈다)
     func body(content: Content) -> some View {
-        if #available(iOSApplicationExtension 17.0, *) {
-            content.containerBackground(for: .widget) {
-                Color(red: 0.08, green: 0.06, blue: 0.04)
-            }
-        } else {
-            ZStack {
-                Color(red: 0.08, green: 0.06, blue: 0.04)
-                content
-            }
+        content.containerBackground(for: .widget) {
+            Color(red: 0.08, green: 0.06, blue: 0.04)
         }
     }
 }

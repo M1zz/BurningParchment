@@ -1936,14 +1936,14 @@ struct ReflectionInputView: View {
         .presentationDragIndicator(.visible)
         .onAppear { setup() }
         .onDisappear { flushPendingSave() }
-        .onChange(of: text) { _ in scheduleAutoSave() }
-        .onChange(of: keyword) { _ in scheduleAutoSave() }
-        .onChange(of: tomorrowIntent) { _ in scheduleAutoSave() }
-        .onChange(of: hasIntent) { _ in scheduleAutoSave() }
-        .onChange(of: spentTime) { _ in scheduleAutoSave() }
-        .onChange(of: driftFeeling) { _ in scheduleAutoSave() }
-        .onChange(of: date) { _ in scheduleAutoSave() }
-        .onChange(of: classificationPoint) { _ in scheduleAutoSave() }
+        .onChange(of: text) { scheduleAutoSave() }
+        .onChange(of: keyword) { scheduleAutoSave() }
+        .onChange(of: tomorrowIntent) { scheduleAutoSave() }
+        .onChange(of: hasIntent) { scheduleAutoSave() }
+        .onChange(of: spentTime) { scheduleAutoSave() }
+        .onChange(of: driftFeeling) { scheduleAutoSave() }
+        .onChange(of: date) { scheduleAutoSave() }
+        .onChange(of: classificationPoint) { scheduleAutoSave() }
     }
 
     private var detentSet: Set<PresentationDetent> {

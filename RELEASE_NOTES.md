@@ -1,5 +1,21 @@
 # 릴리즈 노트
 
+## 1.2.0
+
+### 앱스토어 (한국어)
+
+프로에서 들불, 숯불, 불티로 양피지를 태워요
+프로에서 나만의 자유시간만 태울 수 있어요
+설정 화면이 한눈에 들어오게 정리됐어요
+위젯의 남은 시간이 더 또렷하게 보여요
+
+### App Store (English)
+
+Pro brings three new kinds of flame
+Pro can burn only your own free time
+Settings are cleaner and easier to scan
+Widgets show time left more clearly
+
 ## 1.1.4
 
 ### 앱스토어 (한국어)

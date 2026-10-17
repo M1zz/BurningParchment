@@ -433,6 +433,16 @@ struct SettingsView: View {
             SettingsDivider()
             contactRow(title: String(localized: "인스타그램 DM (@lee25_ios)"), icon: "paperplane",
                        url: "https://instagram.com/lee25_ios")
+            SettingsDivider()
+            // 앞으로 만들 것 — 원본은 BurningParchmentRoadmap.swift.
+            NavigationLink {
+                RoadmapScreen()
+            } label: {
+                SettingsRow(icon: "map", title: LeeoRoadmapText.entry) {
+                    SettingsChevron()
+                }
+            }
+            .buttonStyle(.plain)
 
             // LeeoKit 의 행들(피드백·리뷰·정책 링크·버전)은 Form 용이라 테두리가 없다.
             // 행마다 같은 높이와 위쪽 구분선을 입혀 위의 행들과 맞춘다.

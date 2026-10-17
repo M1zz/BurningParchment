@@ -10,6 +10,7 @@
 		0083FF00B6BED2D3DCDD74EE /* IndicatorSettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87525C95E5BE915F1C5CC4C7 /* IndicatorSettingsPage.swift */; };
 		0651A04A4DB4F600FE01B744 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CB6FF2098200B3878326E /* PaywallView.swift */; };
 		06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */; };
+		0E36C0CE01C03F1E88571145 /* BurningParchmentRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C91B1677D8FE92B34517759 /* BurningParchmentRoadmap.swift */; };
 		1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E813AB837B41DC4EFA2B33 /* StoreManager.swift */; };
 		14A8922B9B8A28BCF24DD1C5 /* FreeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */; };
 		15540253227E69CAD81A04F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */; };
@@ -131,6 +132,7 @@
 		6361058205DE51EE86CE5866 /* DebugLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLaunch.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
 		73B159E43B8E19147CFD9439 /* FreeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTime.swift; sourceTree = "<group>"; };
+		7C91B1677D8FE92B34517759 /* BurningParchmentRoadmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentRoadmap.swift; sourceTree = "<group>"; };
 		87525C95E5BE915F1C5CC4C7 /* IndicatorSettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorSettingsPage.swift; sourceTree = "<group>"; };
 		8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBookView.swift; sourceTree = "<group>"; };
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				AC700E65FDA28935E4EB72B5 /* Assets.xcassets */,
 				048805690EF286B13912D40A /* BurningParchment.entitlements */,
 				312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */,
+				7C91B1677D8FE92B34517759 /* BurningParchmentRoadmap.swift */,
 				18F256B31A77A4442890FB7D /* BurningParchmentSpec.swift */,
 				916E0DEA4D4FEE77171661E8 /* Info.plist */,
 				EEC577EC675B374BA1DCFF27 /* InfoPlist.xcstrings */,
@@ -460,6 +463,7 @@
 				82D6EBE2E5072C9BA3088358 /* BlowDetector.swift in Sources */,
 				A80E6616692F3C66FAFB2CBE /* BlowOutView.swift in Sources */,
 				6F0D7E8A801C4F5A7C637273 /* BurningParchmentApp.swift in Sources */,
+				0E36C0CE01C03F1E88571145 /* BurningParchmentRoadmap.swift in Sources */,
 				6A1E29DE8A8783C199F3C683 /* BurningParchmentSpec.swift in Sources */,
 				66D6D9631304A0D99C8807E0 /* BurningParchmentView.swift in Sources */,
 				D3D28D4E5AF111DAAFD0915F /* ContentView.swift in Sources */,
@@ -740,7 +744,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.17.0;
+				minimumVersion = 3.20.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -8404,6 +8404,448 @@
     },
     "🔥": {
       "shouldTranslate": false
+    },
+    "큰 글씨에 맞춘 화면": {
+      "comment": "Roadmap item: layouts for larger text",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layouts for larger text"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "큰 글씨에 맞춘 화면"
+          }
+        }
+      }
+    },
+    "글자 크기를 아주 키워도 잘리지 않고 보기 좋게 다시 배치돼요.": {
+      "comment": "Roadmap item detail: layouts for larger text",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Even at the largest text sizes, screens rearrange neatly instead of getting cut off."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글자 크기를 아주 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
+          }
+        }
+      }
+    },
+    "보기 편한 색과 대비": {
+      "comment": "Roadmap item: better colors and contrast",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easier colors and contrast"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보기 편한 색과 대비"
+          }
+        }
+      }
+    },
+    "대비를 높이거나 색을 구별하기 어려워도 타들어 가는 시간을 알아볼 수 있어요.": {
+      "comment": "Roadmap item detail: better colors and contrast",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See your time burning away clearly, even with Increase Contrast on or if colors are hard to tell apart."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대비를 높이거나 색을 구별하기 어려워도 타들어 가는 시간을 알아볼 수 있어요."
+          }
+        }
+      }
+    },
+    "더 많은 언어": {
+      "comment": "Roadmap item: more languages",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More languages"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 많은 언어"
+          }
+        }
+      }
+    },
+    "한국어와 영어 말고도 더 많은 나라 말로 쓸 수 있게 해요.": {
+      "comment": "Roadmap item detail: more languages",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use the app in more languages beyond Korean and English."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한국어와 영어 말고도 더 많은 나라 말로 쓸 수 있게 해요."
+          }
+        }
+      }
+    },
+    "처음 쓰는 분을 위한 안내": {
+      "comment": "Roadmap item: first-run guide",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A quick tour for newcomers"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "처음 쓰는 분을 위한 안내"
+          }
+        }
+      }
+    },
+    "처음 열었을 때 무엇을 할 수 있는지 짧게 보여 줘요.": {
+      "comment": "Roadmap item detail: first-run guide",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A short guide to what you can do, the first time you open the app."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "처음 열었을 때 무엇을 할 수 있는지 짧게 보여 줘요."
+          }
+        }
+      }
+    },
+    "업데이트 소식": {
+      "comment": "Roadmap item: what's new after an update",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What’s new"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 소식"
+          }
+        }
+      }
+    },
+    "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요.": {
+      "comment": "Roadmap item detail: what's new after an update",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first time you open the app after an update, see what’s new."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
+          }
+        }
+      }
+    },
+    "쓰는 요령 알려 주기": {
+      "comment": "Roadmap item: in-app tips",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handy tips"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰는 요령 알려 주기"
+          }
+        }
+      }
+    },
+    "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요.": {
+      "comment": "Roadmap item detail: in-app tips",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gentle hints about useful features, right when you need them."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
+          }
+        }
+      }
+    },
+    "Siri와 단축어": {
+      "comment": "Roadmap item: Siri and Shortcuts",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and Shortcuts"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri와 단축어"
+          }
+        }
+      }
+    },
+    "Siri에게 물어 오늘 남은 시간을 바로 확인해요.": {
+      "comment": "Roadmap item detail: Siri and Shortcuts",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask Siri how much of today is left."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri에게 물어 오늘 남은 시간을 바로 확인해요."
+          }
+        }
+      }
+    },
+    "기기 간 동기화": {
+      "comment": "Roadmap item: sync across devices",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync across devices"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 간 동기화"
+          }
+        }
+      }
+    },
+    "여러 기기에서 iCloud로 같은 회고와 데드라인을 이어서 봐요.": {
+      "comment": "Roadmap item detail: sync across devices",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep the same reflections and deadlines on all your devices with iCloud."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "여러 기기에서 iCloud로 같은 회고와 데드라인을 이어서 봐요."
+          }
+        }
+      }
+    },
+    "백업과 되살리기": {
+      "comment": "Roadmap item: backup and restore",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup and restore"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업과 되살리기"
+          }
+        }
+      }
+    },
+    "회고와 데드라인을 파일로 저장하고 다시 불러올 수 있어요.": {
+      "comment": "Roadmap item detail: backup and restore",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save your reflections and deadlines to a file and bring them back later."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고와 데드라인을 파일로 저장하고 다시 불러올 수 있어요."
+          }
+        }
+      }
+    },
+    "Face ID 잠금": {
+      "comment": "Roadmap item: Face ID lock",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID lock"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID 잠금"
+          }
+        }
+      }
+    },
+    "Face ID나 Touch ID로 앱을 잠가 내 회고를 지켜요.": {
+      "comment": "Roadmap item detail: Face ID lock",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lock the app with Face ID or Touch ID to keep your reflections private."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID나 Touch ID로 앱을 잠가 내 회고를 지켜요."
+          }
+        }
+      }
+    },
+    "펼치는 아이폰 화면": {
+      "comment": "Roadmap item: foldable iPhone layout",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foldable iPhone layout"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "펼치는 아이폰 화면"
+          }
+        }
+      }
+    },
+    "펼치는 아이폰에서 넓은 화면을 두 쪽으로 나눠 써요.": {
+      "comment": "Roadmap item detail: foldable iPhone layout",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use the wide screen of a foldable iPhone as two side-by-side panes."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "펼치는 아이폰에서 넓은 화면을 두 쪽으로 나눠 써요."
+          }
+        }
+      }
+    },
+    "내 기록 한 번에 지우기": {
+      "comment": "Roadmap item: delete all my data",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete all my data"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내 기록 한 번에 지우기"
+          }
+        }
+      }
+    },
+    "원하면 앱 안에서 회고와 데드라인을 모두 지울 수 있어요.": {
+      "comment": "Roadmap item detail: delete all my data",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase all your reflections and deadlines right in the app whenever you want."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원하면 앱 안에서 회고와 데드라인을 모두 지울 수 있어요."
+          }
+        }
+      }
+    },
+    "쓰던 회고 이어 쓰기": {
+      "comment": "Roadmap item: keep unsaved drafts",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick up your reflection where you left off"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰던 회고 이어 쓰기"
+          }
+        }
+      }
+    },
+    "회고를 쓰다가 앱이 꺼져도 쓰던 내용이 남아 있어요.": {
+      "comment": "Roadmap item detail: keep unsaved drafts",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you were writing stays put, even if the app closes mid-reflection."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 쓰다가 앱이 꺼져도 쓰던 내용이 남아 있어요."
+          }
+        }
+      }
     }
   },
   "version": "1.1"

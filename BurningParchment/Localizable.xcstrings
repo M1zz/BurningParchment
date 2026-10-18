@@ -19,6 +19,12 @@
             "state": "translated",
             "value": " %lld분"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " %lld分"
+          }
         }
       }
     },
@@ -45,6 +51,12 @@
             "state": "translated",
             "value": "%@ %@ 데드라인"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %@ 締め切り"
+          }
         }
       }
     },
@@ -62,6 +74,12 @@
             "state": "translated",
             "value": "%@ %lld주차"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 第%lld週"
+          }
         }
       }
     },
@@ -74,6 +92,12 @@
           }
         },
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ / %2$@"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "%1$@ / %2$@"
@@ -95,6 +119,12 @@
             "state": "translated",
             "value": "%@ — 아직 어느 항아리에도 담기지 않은 시간이에요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ — まだどの壺にも入っていない時間です。"
+          }
         }
       }
     },
@@ -111,6 +141,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ 늦게 잠들었어요. 그만큼 오늘 아침이 그을려요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@遅く眠りました。そのぶん今朝が焦げています"
           }
         }
       }
@@ -129,6 +165,12 @@
             "state": "translated",
             "value": "%@ 이후 내일의 양피지가 탔어요.\n잠든 시각만큼만 그을음으로 남겨요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@以降、明日の羊皮紙が燃えました。\n夜更かしした時間だけ焦げ跡が残ります。"
+          }
         }
       }
     },
@@ -145,6 +187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ 항아리"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の壺"
           }
         }
       }
@@ -163,6 +211,12 @@
             "state": "translated",
             "value": "%@ 항아리에 담깁니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の壺に入ります"
+          }
         }
       }
     },
@@ -180,6 +234,12 @@
             "state": "translated",
             "value": "%@ 항아리에 의미 적기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の壺に意味を書く"
+          }
         }
       }
     },
@@ -195,6 +255,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@ 항아리에 재 %2$@톨이 남았어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@の壺に灰が%2$@粒残りました"
           }
         }
       }
@@ -213,6 +279,12 @@
             "state": "translated",
             "value": "%@ 항아리에 재 %lld톨이 남았어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の壺に灰が%lld粒残りました"
+          }
         }
       }
     },
@@ -229,6 +301,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ 회고"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のふりかえり"
           }
         }
       }
@@ -247,6 +325,12 @@
             "state": "translated",
             "value": "%@ 후 시작"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@後に開始"
+          }
         }
       }
     },
@@ -263,6 +347,12 @@
             "state": "translated",
             "value": "%@ 후 양피지가 타기 시작합니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@後に羊皮紙が燃えはじめます"
+          }
         }
       }
     },
@@ -278,6 +368,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@%% 남음"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残り%@%%"
           }
         }
       }
@@ -296,6 +392,12 @@
             "state": "translated",
             "value": "%@, %lld%% 남음"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@、残り%lld%%"
+          }
         }
       }
     },
@@ -312,6 +414,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@, %lld분 남기고 불을 껐어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@、%lld分残して火を消しました"
           }
         }
       }
@@ -330,6 +438,12 @@
             "state": "translated",
             "value": "%@, 기록 없음"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@、記録なし"
+          }
         }
       }
     },
@@ -346,6 +460,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@, 재 %lld톨"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@、灰%lld粒"
           }
         }
       }
@@ -364,6 +484,12 @@
             "state": "translated",
             "value": "%@, 회고 %lld개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@、ふりかえり%lld件"
+          }
         }
       }
     },
@@ -380,6 +506,12 @@
             "state": "translated",
             "value": "%@개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@件"
+          }
         }
       }
     },
@@ -391,6 +523,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ nights blown out"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@回の夜を消して"
           }
         }
       }
@@ -409,6 +547,12 @@
             "state": "translated",
             "value": "%@에 앱을 열어 본 기록이 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@にアプリを開いた記録があります"
+          }
         }
       }
     },
@@ -425,6 +569,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@에 후 불어 불을 껐어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@にふーっと吹いて火を消しました"
           }
         }
       }
@@ -444,6 +594,12 @@
             "state": "translated",
             "value": "%1$@ days · %2$@ specks of ash"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@日 · 灰%2$@粒"
+          }
         }
       }
     },
@@ -460,6 +616,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld%% 남음"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残り%lld%%"
           }
         }
       }
@@ -478,6 +640,12 @@
             "state": "translated",
             "value": "%lld개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld件"
+          }
         }
       }
     },
@@ -494,6 +662,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld번"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld回"
           }
         }
       }
@@ -512,6 +686,12 @@
             "state": "translated",
             "value": "%lld번의 밤을 끄고"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld回の夜を消して"
+          }
         }
       }
     },
@@ -528,6 +708,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld분"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld分"
           }
         }
       }
@@ -546,6 +732,12 @@
             "state": "translated",
             "value": "%lld분 %lld초"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld分%lld秒"
+          }
         }
       }
     },
@@ -562,6 +754,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld분 남기고"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld分残して"
           }
         }
       }
@@ -580,6 +778,12 @@
             "state": "translated",
             "value": "%lld분을 남기고 불을 껐어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld分残して火を消しました"
+          }
         }
       }
     },
@@ -596,6 +800,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld시간"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld時間"
           }
         }
       }
@@ -614,6 +824,12 @@
             "state": "translated",
             "value": "%lld시간 %lld분"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld時間%lld分"
+          }
         }
       }
     },
@@ -630,6 +846,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld일"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld日"
           }
         }
       }
@@ -648,6 +870,12 @@
             "state": "translated",
             "value": "%lld일 %lld시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld日%lld時間"
+          }
         }
       }
     },
@@ -664,6 +892,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld일 · 재 %lld톨"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld日 · 灰%lld粒"
           }
         }
       }
@@ -682,6 +916,12 @@
             "state": "translated",
             "value": "%lld주차"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "第%lld週"
+          }
         }
       }
     },
@@ -699,6 +939,12 @@
             "state": "translated",
             "value": "%lld초"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld秒"
+          }
         }
       }
     },
@@ -715,6 +961,12 @@
             "state": "translated",
             "value": "'%@'을(를) 삭제할까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「%@」を削除しますか？"
+          }
         }
       }
     },
@@ -730,6 +982,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "+ 버튼으로 새 데드라인을 추가하세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "＋ボタンで新しい締め切りを追加しましょう"
           }
         }
       }
@@ -748,6 +1006,12 @@
             "state": "translated",
             "value": "10분 안쪽은 제시간으로 쳐요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10分以内なら時間どおりとみなします"
+          }
         }
       }
     },
@@ -764,6 +1028,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "1년"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1年"
           }
         }
       }
@@ -782,6 +1052,12 @@
             "state": "translated",
             "value": "1달"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1か月"
+          }
         }
       }
     },
@@ -799,6 +1075,12 @@
             "state": "translated",
             "value": "1일"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1日"
+          }
         }
       }
     },
@@ -815,6 +1097,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "1주"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1週間"
           }
         }
       }
@@ -836,6 +1124,12 @@
             "state": "translated",
             "value": "PDF 공유·저장"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDFを共有・保存"
+          }
         }
       }
     },
@@ -855,6 +1149,12 @@
             "state": "translated",
             "value": "· ⊕ 무게중심"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· ⊕ 重心"
+          }
         }
       }
     },
@@ -870,6 +1170,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "· 좌표 없는 옛 회고 %@개는 사분면 안에 흩어 표시"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 座標のない古いふりかえり%@件は象限内に散らして表示"
           }
         }
       }
@@ -887,6 +1193,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "· 좌표 없는 옛 회고 %lld개는 사분면 안에 흩어 표시"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 座標のない古いふりかえり%lld件は象限内に散らして表示"
           }
         }
       }
@@ -918,6 +1230,12 @@
             "state": "translated",
             "value": "가격 다시 불러오기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "価格を再読み込み"
+          }
         }
       }
     },
@@ -934,6 +1252,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가장 길게 이어 쓴 날"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最長連続記録"
           }
         }
       }
@@ -952,6 +1276,12 @@
             "state": "translated",
             "value": "감사"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "感謝"
+          }
         }
       }
     },
@@ -968,6 +1298,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "개발자에게 문의"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開発者に問い合わせる"
           }
         }
       }
@@ -986,6 +1322,12 @@
             "state": "translated",
             "value": "개인정보처리방침"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プライバシーポリシー"
+          }
         }
       }
     },
@@ -1003,6 +1345,12 @@
             "state": "translated",
             "value": "거세게 넘실대요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "激しく燃え上がります"
+          }
         }
       }
     },
@@ -1018,6 +1366,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "건강 앱 기록: %@에 잠들었어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアの記録：%@に眠りました"
           }
         }
       }
@@ -1036,6 +1390,12 @@
             "state": "translated",
             "value": "건강 앱 수면 기록"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアの睡眠記録"
+          }
         }
       }
     },
@@ -1052,6 +1412,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "건강 앱 수면 기록 연결"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアの睡眠記録と連携"
           }
         }
       }
@@ -1070,6 +1436,12 @@
             "state": "translated",
             "value": "건강 앱 수면 기록 연결하기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアの睡眠記録と連携する"
+          }
         }
       }
     },
@@ -1087,6 +1459,12 @@
             "state": "translated",
             "value": "건강 앱 수면 기록과 연결됨"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアの睡眠記録と連携中"
+          }
         }
       }
     },
@@ -1102,6 +1480,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "건강 앱에 어젯밤 수면 기록이 없어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアに昨夜の睡眠記録がありません"
           }
         }
       }
@@ -1120,6 +1504,12 @@
             "state": "translated",
             "value": "고요하게 일렁여요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "静かにゆらめきます"
+          }
         }
       }
     },
@@ -1136,6 +1526,12 @@
             "state": "translated",
             "value": "고쳐 적기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書き直す"
+          }
         }
       }
     },
@@ -1151,6 +1547,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "곧 기상 시간이에요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もうすぐ起床時間です"
           }
         }
       }
@@ -1169,6 +1571,12 @@
             "state": "translated",
             "value": "관계"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人間関係"
+          }
         }
       }
     },
@@ -1185,6 +1593,12 @@
             "state": "translated",
             "value": "구독이 아니에요. 한 번 결제로 평생 이용할 수 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サブスクリプションではありません。一度の購入でずっと使えます"
+          }
         }
       }
     },
@@ -1200,6 +1614,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "구매 복원"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "購入を復元"
           }
         }
       }
@@ -1218,6 +1638,12 @@
             "state": "translated",
             "value": "구매를 완료하지 못했어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "購入を完了できませんでした"
+          }
         }
       }
     },
@@ -1234,6 +1660,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "그냥 흘러간 시간"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ただ過ぎていった時間"
           }
         }
       }
@@ -1252,6 +1684,12 @@
             "state": "translated",
             "value": "그냥 흘러갔어"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ただ過ぎていった"
+          }
         }
       }
     },
@@ -1269,6 +1707,12 @@
             "state": "translated",
             "value": "그만둘 것"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "やめること"
+          }
         }
       }
     },
@@ -1284,6 +1728,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "기록이 틀렸나요? 직접 고치기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記録が違いますか？自分で修正する"
           }
         }
       }
@@ -1302,6 +1752,12 @@
             "state": "translated",
             "value": "기록하기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記録する"
+          }
         }
       }
     },
@@ -1318,6 +1774,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "기록한 날"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記録した日"
           }
         }
       }
@@ -1336,6 +1798,12 @@
             "state": "translated",
             "value": "기쁨"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "喜び"
+          }
         }
       }
     },
@@ -1352,6 +1820,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "기상 및 취침 시간 설정"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床・就寝時間の設定"
           }
         }
       }
@@ -1370,6 +1844,12 @@
             "state": "translated",
             "value": "기상 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床時間"
+          }
         }
       }
     },
@@ -1386,6 +1866,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "기상 시간부터 취침 시간까지 양피지가 서서히 타들어가요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床時間から就寝時間まで、羊皮紙がゆっくり燃えていきます"
           }
         }
       }
@@ -1404,6 +1890,12 @@
             "state": "translated",
             "value": "기상 전"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床前"
+          }
         }
       }
     },
@@ -1419,6 +1911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "기상까지 %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床まで%@"
           }
         }
       }
@@ -1437,6 +1935,12 @@
             "state": "translated",
             "value": "기상시간부터 자동 카운트다운"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床時間から自動でカウントダウン"
+          }
         }
       }
     },
@@ -1454,6 +1958,12 @@
             "state": "translated",
             "value": "기상시간부터 취침시간까지\n양피지가 서서히 타들어갑니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起床時間から就寝時間まで\n羊皮紙がゆっくり燃えていきます"
+          }
         }
       }
     },
@@ -1464,6 +1974,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "of waking hours"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起きている時間のうち"
           }
         }
       }
@@ -1482,6 +1998,12 @@
             "state": "translated",
             "value": "꺼진 불 곁에서 편히 쉬어도 된다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消えた火のそばで、ゆっくり休んでいい"
+          }
         }
       }
     },
@@ -1498,6 +2020,12 @@
             "state": "translated",
             "value": "끔"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オフ"
+          }
         }
       }
     },
@@ -1509,6 +2037,12 @@
             "state": "translated",
             "value": "End"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "終了"
+          }
         }
       }
     },
@@ -1519,6 +2053,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Burn only the time that's yours"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分だけの時間を燃やしてみましょう"
           }
         }
       }
@@ -1537,6 +2077,12 @@
             "state": "translated",
             "value": "나의 목표"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "わたしの目標"
+          }
         }
       }
     },
@@ -1548,6 +2094,12 @@
             "state": "translated",
             "value": "My Free Time"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "わたしの自由時間"
+          }
         }
       }
     },
@@ -1558,6 +2110,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Set my free time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "わたしの自由時間を決める"
           }
         }
       }
@@ -1576,6 +2134,12 @@
             "state": "translated",
             "value": "나중에"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あとで"
+          }
         }
       }
     },
@@ -1593,6 +2157,12 @@
             "state": "translated",
             "value": "날려버리기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "吹き飛ばす"
+          }
         }
       }
     },
@@ -1608,6 +2178,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "날짜"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日付"
           }
         }
       }
@@ -1626,6 +2202,12 @@
             "state": "translated",
             "value": "남겨둔 조각만큼 내일이 기다린다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残したかけらのぶん、明日が待っている"
+          }
         }
       }
     },
@@ -1642,6 +2224,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "남은 불씨는 내일의 나에게 맡긴다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残った火種は、明日の自分にあずける"
           }
         }
       }
@@ -1660,6 +2248,12 @@
             "state": "translated",
             "value": "남은 조각은 모아 둘게요.\n오늘은 이대로 푹 자요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残ったかけらはしまっておきます。\n今夜はこのままゆっくり休んでください"
+          }
         }
       }
     },
@@ -1676,6 +2270,12 @@
             "state": "translated",
             "value": "남은 조각을 모아 둡니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残ったかけらをしまっています"
+          }
         }
       }
     },
@@ -1691,6 +2291,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "남음"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残り"
           }
         }
       }
@@ -1709,6 +2315,12 @@
             "state": "translated",
             "value": "낮게 숨 쉬어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "低く息づいています"
+          }
         }
       }
     },
@@ -1725,6 +2337,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내일 메모 단계"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日のメモ"
           }
         }
       }
@@ -1743,6 +2361,12 @@
             "state": "translated",
             "value": "내일 새롭게 어떤 걸 시도해볼까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日はどんな新しいことに挑戦しますか？"
+          }
         }
       }
     },
@@ -1758,6 +2382,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日の朝、羊皮紙の上に帯として現れ、一日と一緒に燃えていきます。"
           }
         }
       }
@@ -1776,6 +2406,12 @@
             "state": "translated",
             "value": "내일 어떻게 해볼까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日はどうしてみますか？"
+          }
         }
       }
     },
@@ -1792,6 +2428,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내일은 무엇을 끊어낼까요?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日は何を断ち切りますか？"
           }
         }
       }
@@ -1810,6 +2452,12 @@
             "state": "translated",
             "value": "내일은 어떻게 다르게 보낼까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日はどう違う過ごし方をしますか？"
+          }
         }
       }
     },
@@ -1825,6 +2473,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내일의 양피지"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日の羊皮紙"
           }
         }
       }
@@ -1843,6 +2497,12 @@
             "state": "translated",
             "value": "내일의 양피지가 여기서 멈췄어요.\n좋은 꿈 꾸세요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日の羊皮紙はここで止まりました。\nおやすみなさい"
+          }
         }
       }
     },
@@ -1858,6 +2518,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내일의 양피지가 타고 있어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日の羊皮紙が燃えています"
           }
         }
       }
@@ -1876,6 +2542,12 @@
             "state": "translated",
             "value": "내일의 양피지에 붙은 불을 끕니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日の羊皮紙の火を消します"
+          }
         }
       }
     },
@@ -1892,6 +2564,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "네트워크 상태를 확인하고 다시 시도해주세요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ネットワーク接続を確認して、もう一度お試しください。"
           }
         }
       }
@@ -1910,6 +2588,12 @@
             "state": "translated",
             "value": "노을"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夕焼け"
+          }
         }
       }
     },
@@ -1926,6 +2610,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "늦게 잤어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遅く寝ました"
           }
         }
       }
@@ -1944,6 +2634,12 @@
             "state": "translated",
             "value": "다 타지 않은 하루도 온전한 하루였다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃えきらなかった一日も、まるごとの一日だった"
+          }
         }
       }
     },
@@ -1960,6 +2656,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다른 글귀 보기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別の言葉を見る"
           }
         }
       }
@@ -1978,6 +2680,12 @@
             "state": "translated",
             "value": "다른 빛깔로 태워 보세요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別の色合いで燃やしてみましょう"
+          }
         }
       }
     },
@@ -1994,6 +2702,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다음"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次へ"
           }
         }
       }
@@ -2012,6 +2726,12 @@
             "state": "translated",
             "value": "다음 달"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翌月"
+          }
         }
       }
     },
@@ -2022,6 +2742,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Next free time · %1$@ %2$@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次の自由時間 · %1$@ %2$@"
           }
         }
       }
@@ -2040,6 +2766,12 @@
             "state": "translated",
             "value": "다음엔 어떻게 하면 마칠 수 있을까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次はどうすれば終えられそうですか？"
+          }
         }
       }
     },
@@ -2056,6 +2788,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다이나믹 아일랜드로 실시간 확인"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dynamic Islandでリアルタイム表示"
           }
         }
       }
@@ -2074,6 +2812,12 @@
             "state": "translated",
             "value": "다크"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダーク"
+          }
         }
       }
     },
@@ -2089,6 +2833,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "닫기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閉じる"
           }
         }
       }
@@ -2107,6 +2857,12 @@
             "state": "translated",
             "value": "닫기 — 지금까지 적은 내용은 저장됩니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閉じる — ここまで書いた内容は保存されます"
+          }
         }
       }
     },
@@ -2123,6 +2879,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月"
           }
         }
       }
@@ -2141,6 +2903,12 @@
             "state": "translated",
             "value": "달빛 한지"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月明かりの韓紙"
+          }
         }
       }
     },
@@ -2157,6 +2925,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달빛 한지, 청자, 노을. 양피지와 불꽃의 빛깔을 바꿔요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月明かりの韓紙、青磁、夕焼け。羊皮紙と炎の色合いを変えられます。"
           }
         }
       }
@@ -2175,6 +2949,12 @@
             "state": "translated",
             "value": "달빛 한지·청자·노을 빛깔, 들불·숯불·불티로 양피지가 타요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月明かりの韓紙・青磁・夕焼けの色合いと、野火・炭火・火の粉の炎で羊皮紙が燃えます"
+          }
         }
       }
     },
@@ -2192,6 +2972,12 @@
             "state": "translated",
             "value": "달을 열면 그 달의 주 항아리가 나와요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月を開くと、その月の週ごとの壺が表示されます"
+          }
         }
       }
     },
@@ -2208,6 +2994,12 @@
             "state": "translated",
             "value": "담긴 재"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "入っている灰"
+          }
         }
       }
     },
@@ -2223,6 +3015,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "답하지 않고 닫아도 괜찮아요. 확인되지 않은 밤은 그을음 없이 넘어가요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "答えずに閉じても大丈夫です。確認できなかった夜は焦げ跡なしで過ぎていきます。"
           }
         }
       }
@@ -2241,6 +3039,12 @@
             "state": "translated",
             "value": "대강이어도 괜찮아요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "だいたいで大丈夫です"
+          }
         }
       }
     },
@@ -2258,6 +3062,12 @@
             "state": "translated",
             "value": "더 잘 하려면 내일 무엇을 할까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もっとうまくやるために、明日は何をしますか？"
+          }
         }
       }
     },
@@ -2267,6 +3077,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Add"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加"
           }
         }
       }
@@ -2285,6 +3101,12 @@
             "state": "translated",
             "value": "데드라인"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切り"
+          }
         }
       }
     },
@@ -2301,6 +3123,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "데드라인 무제한"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切り無制限"
           }
         }
       }
@@ -2319,6 +3147,12 @@
             "state": "translated",
             "value": "데드라인 삭제"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りを削除"
+          }
         }
       }
     },
@@ -2335,6 +3169,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "데드라인 수정"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りを編集"
           }
         }
       }
@@ -2353,6 +3193,12 @@
             "state": "translated",
             "value": "데드라인 탭은 데드라인 추가 시 자동으로 표시됩니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りタブは、締め切りを追加すると自動で表示されます"
+          }
         }
       }
     },
@@ -2369,6 +3215,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "데드라인까지"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りまで"
           }
         }
       }
@@ -2387,6 +3239,12 @@
             "state": "translated",
             "value": "데드라인을 더 세우려면"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りをもっと設定するには"
+          }
         }
       }
     },
@@ -2402,6 +3260,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "데드라인이 없어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りはありません"
           }
         }
       }
@@ -2420,6 +3284,12 @@
             "state": "translated",
             "value": "도전"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "挑戦"
+          }
         }
       }
     },
@@ -2435,6 +3305,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "도형"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "図形"
           }
         }
       }
@@ -2453,6 +3329,12 @@
             "state": "translated",
             "value": "두 번 탭하면 조각을 뒤집습니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダブルタップでかけらを裏返します"
+          }
         }
       }
     },
@@ -2469,6 +3351,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "두 축에 따라 손가락으로 콕 찍어 분류합니다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2つの軸に沿って、指でタップして分類します"
           }
         }
       }
@@ -2487,6 +3375,12 @@
             "state": "translated",
             "value": "뒤집어서 뒷면에 한 줄을 남겨 보세요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裏返して、裏面にひとこと残してみましょう。"
+          }
         }
       }
     },
@@ -2504,6 +3398,12 @@
             "state": "translated",
             "value": "뒷면 고쳐 쓰기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裏面を書き直す"
+          }
         }
       }
     },
@@ -2520,6 +3420,12 @@
             "state": "translated",
             "value": "뒷면에 남길 한 줄"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裏面に残すひとこと"
+          }
         }
       }
     },
@@ -2535,6 +3441,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "뒷면에 적기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裏面に書く"
           }
         }
       }
@@ -2553,6 +3465,12 @@
             "state": "translated",
             "value": "뒷면이 비어 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裏面はまだ空白です"
+          }
         }
       }
     },
@@ -2569,6 +3487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "들불"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "野火"
           }
         }
       }
@@ -2587,6 +3511,12 @@
             "state": "translated",
             "value": "라이트"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ライト"
+          }
         }
       }
     },
@@ -2602,6 +3532,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마감 완료 🏁"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りを迎えました 🏁"
           }
         }
       }
@@ -2619,6 +3555,12 @@
             "state": "translated",
             "value": "마감까지 남은 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りまでの残り時間"
+          }
         }
       }
     },
@@ -2634,6 +3576,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마감일"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切り日"
           }
         }
       }
@@ -2652,6 +3600,12 @@
             "state": "translated",
             "value": "마음먹은 대로 가장 많이 한 달"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "思いどおりにできたことが一番多かった月"
+          }
         }
       }
     },
@@ -2668,6 +3622,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마음먹은 대로 한 일"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "思いどおりにできたこと"
           }
         }
       }
@@ -2686,6 +3646,12 @@
             "state": "translated",
             "value": "마음먹은 대로 했어"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "思いどおりにできた"
+          }
         }
       }
     },
@@ -2702,6 +3668,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마이크를 켜야 불을 끌 수 있어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイクをオンにすると火を消せます"
           }
         }
       }
@@ -2720,6 +3692,12 @@
             "state": "translated",
             "value": "만들기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作成"
+          }
         }
       }
     },
@@ -2730,6 +3708,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Every day"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "毎日"
           }
         }
       }
@@ -2748,6 +3732,12 @@
             "state": "translated",
             "value": "멈춰"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "やめる"
+          }
         }
       }
     },
@@ -2764,6 +3754,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "몇 시쯤 잠들었나요?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "何時ごろ眠りましたか？"
           }
         }
       }
@@ -2782,6 +3778,12 @@
             "state": "translated",
             "value": "모든 걸 태우지 않아도 괜찮아"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてを燃やし尽くさなくても大丈夫"
+          }
         }
       }
     },
@@ -2798,6 +3800,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모아둔 재"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集めた灰"
           }
         }
       }
@@ -2816,6 +3824,12 @@
             "state": "translated",
             "value": "모양"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スタイル"
+          }
         }
       }
     },
@@ -2833,6 +3847,12 @@
             "state": "translated",
             "value": "모은 조각"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集めたかけら"
+          }
         }
       }
     },
@@ -2848,6 +3868,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모은 조각 %@개"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集めたかけら %@個"
           }
         }
       }
@@ -2866,6 +3892,12 @@
             "state": "translated",
             "value": "모은 조각 %lld개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集めたかけら %lld個"
+          }
         }
       }
     },
@@ -2882,6 +3914,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모은 조각을 꺼내 보세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集めたかけらを持ち出しましょう"
           }
         }
       }
@@ -2900,6 +3938,12 @@
             "state": "translated",
             "value": "모은 조각을 카드와 포스터 이미지로 공유해요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集めたかけらをカードやポスター画像でシェアできます"
+          }
         }
       }
     },
@@ -2916,6 +3960,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "못함"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "できなかった"
           }
         }
       }
@@ -2934,6 +3984,12 @@
             "state": "translated",
             "value": "무료로는 데드라인을 %lld개까지 둘 수 있어요. 프로로 여러 목표를 함께 세어보세요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無料版では締め切りを%lld件まで設定できます。Proなら複数の目標を一緒にカウントダウンできます。"
+          }
         }
       }
     },
@@ -2950,6 +4006,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "무엇 때문에 늦었나요? (선택)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遅くなった理由は？（任意）"
           }
         }
       }
@@ -2968,6 +4030,12 @@
             "state": "translated",
             "value": "바"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バー"
+          }
         }
       }
     },
@@ -2984,6 +4052,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "바탕"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "背景"
           }
         }
       }
@@ -3002,6 +4076,12 @@
             "state": "translated",
             "value": "반짝"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "きらめき"
+          }
         }
       }
     },
@@ -3018,6 +4098,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "밤"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜"
           }
         }
       }
@@ -3036,6 +4122,12 @@
             "state": "translated",
             "value": "방울"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "しずく"
+          }
         }
       }
     },
@@ -3052,6 +4144,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "배움"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "学び"
           }
         }
       }
@@ -3070,6 +4168,12 @@
             "state": "translated",
             "value": "버그 제보와 기능 제안을 환영합니다."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不具合の報告や機能のご提案をお待ちしています。"
+          }
         }
       }
     },
@@ -3086,6 +4190,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "버리기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "破棄"
           }
         }
       }
@@ -3104,6 +4214,12 @@
             "state": "translated",
             "value": "번개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稲妻"
+          }
         }
       }
     },
@@ -3120,6 +4236,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "범위"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "範囲"
           }
         }
       }
@@ -3138,6 +4260,12 @@
             "state": "translated",
             "value": "별"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "星"
+          }
         }
       }
     },
@@ -3154,6 +4282,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "복원할 구매가 없어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "復元できる購入がありません"
           }
         }
       }
@@ -3172,6 +4306,12 @@
             "state": "translated",
             "value": "본문 단계"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本文のステップ"
+          }
         }
       }
     },
@@ -3188,6 +4328,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "본문을 저장하고 분류 단계로 이동합니다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本文を保存して、分類のステップへ進みます"
           }
         }
       }
@@ -3206,6 +4352,12 @@
             "state": "translated",
             "value": "분"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分"
+          }
         }
       }
     },
@@ -3222,6 +4374,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "분류 그래프"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分類グラフ"
           }
         }
       }
@@ -3240,6 +4398,12 @@
             "state": "translated",
             "value": "분류 단계"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分類のステップ"
+          }
         }
       }
     },
@@ -3256,6 +4420,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "분류 안 됨"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未分類"
           }
         }
       }
@@ -3274,6 +4444,12 @@
             "state": "translated",
             "value": "분류를 저장하고 내일 메모 단계로 이동합니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分類を保存して、明日のメモのステップへ進みます"
+          }
         }
       }
     },
@@ -3290,6 +4466,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "불꽃"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "炎"
           }
         }
       }
@@ -3308,6 +4490,12 @@
             "state": "translated",
             "value": "불꽃 종류"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "炎の種類"
+          }
         }
       }
     },
@@ -3324,6 +4512,12 @@
             "state": "translated",
             "value": "불을 껐어요 · 모은 조각 보기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火を消しました・集めたかけらを見る"
+          }
         }
       }
     },
@@ -3339,6 +4533,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "불을 껐어요. 좋은 꿈 꾸세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火を消しました。おやすみなさい"
           }
         }
       }
@@ -3357,6 +4557,12 @@
             "state": "translated",
             "value": "불을 끄고 남긴 조각을 카드와 포스터로 만들어 간직해요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火を消して残ったかけらを、カードやポスターにして残しましょう。"
+          }
         }
       }
     },
@@ -3373,6 +4579,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "불을 끄는 것도 용기다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火を消すのも勇気"
           }
         }
       }
@@ -3391,6 +4603,12 @@
             "state": "translated",
             "value": "불을 끄지 못했어도, 제시간에 잠들었으니 불은 저절로 꺼졌어요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火は消せませんでしたが、時間どおりに眠ったので、火は自然に消えました。"
+          }
         }
       }
     },
@@ -3407,6 +4625,12 @@
             "state": "translated",
             "value": "불이 꺼졌어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火が消えました"
+          }
         }
       }
     },
@@ -3422,6 +4646,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "불타는 내인생"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える羊皮紙"
           }
         }
       }
@@ -3440,6 +4670,12 @@
             "state": "translated",
             "value": "불타는 내인생 프로"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える羊皮紙 Pro"
+          }
         }
       }
     },
@@ -3456,6 +4692,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "불타는 내인생 🔥"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える羊皮紙 🔥"
           }
         }
       }
@@ -3474,6 +4716,12 @@
             "state": "translated",
             "value": "불타는 양피지"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える羊皮紙"
+          }
         }
       }
     },
@@ -3483,6 +4731,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Burning Free Time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える自由時間"
           }
         }
       }
@@ -3501,6 +4755,12 @@
             "state": "translated",
             "value": "불타는 자유시간, 빛깔과 불꽃 종류, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える自由時間、色合いと炎の種類、かけらカード、ふりかえりの本PDF、1年の灰の流れ、締め切り無制限をご利用いただけます。"
+          }
         }
       }
     },
@@ -3511,6 +4771,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Get Burning Free Time, themes, fragment cards, the reflection book PDF, a year of ash and unlimited deadlines."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃える自由時間、テーマ、かけらカード、ふりかえりの本PDF、1年の灰の流れ、締め切り無制限をご利用いただけます。"
           }
         }
       }
@@ -3529,6 +4795,12 @@
             "state": "translated",
             "value": "불티"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火の粉"
+          }
         }
       }
     },
@@ -3544,6 +4816,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "비워 두면 흐리게 보이는 글귀가 적혀요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空欄のままにすると、薄く表示されている言葉が入ります"
           }
         }
       }
@@ -3562,6 +4840,12 @@
             "state": "translated",
             "value": "빛깔"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "色合い"
+          }
         }
       }
     },
@@ -3578,6 +4862,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "빛깔은 종이 색과 불꽃 색을, 불꽃 종류는 어떤 불로 탈지를 정해요. 둘은 따로 고를 수 있어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "色合いは紙と炎の色を、炎の種類はどんな火で燃えるかを決めます。それぞれ別々に選べます"
           }
         }
       }
@@ -3596,6 +4886,12 @@
             "state": "translated",
             "value": "사용 중"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用中"
+          }
         }
       }
     },
@@ -3612,6 +4908,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "삭제"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除"
           }
         }
       }
@@ -3630,6 +4932,12 @@
             "state": "translated",
             "value": "새 데드라인"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい締め切り"
+          }
         }
       }
     },
@@ -3646,6 +4954,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "새 항아리"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい壺"
           }
         }
       }
@@ -3664,6 +4978,12 @@
             "state": "translated",
             "value": "새 항아리 만들기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい壺を作る"
+          }
         }
       }
     },
@@ -3679,6 +4999,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "새 회고"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しいふりかえり"
           }
         }
       }
@@ -3697,6 +5023,12 @@
             "state": "translated",
             "value": "새 회고 적기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しいふりかえりを書く"
+          }
         }
       }
     },
@@ -3713,6 +5045,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "새기기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刻む"
           }
         }
       }
@@ -3731,6 +5069,12 @@
             "state": "translated",
             "value": "새로 추가되는 프로 기능도 모두 포함돼요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今後追加されるPro機能もすべて含まれます"
+          }
         }
       }
     },
@@ -3747,6 +5091,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "선"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "線"
           }
         }
       }
@@ -3765,6 +5115,12 @@
             "state": "translated",
             "value": "선택됨"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選択中"
+          }
         }
       }
     },
@@ -3782,8 +5138,15 @@
             "state": "translated",
             "value": "설정"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
+          }
         }
-      }
+      },
+      "comment": "Voice Control name for the settings button"
     },
     "설정에서 마이크 켜기": {
       "localizations": {
@@ -3797,6 +5160,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "설정에서 마이크 켜기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定でマイクをオンにする"
           }
         }
       }
@@ -3815,6 +5184,12 @@
             "state": "translated",
             "value": "성장"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成長"
+          }
         }
       }
     },
@@ -3831,6 +5206,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "솔직하게 적어보세요..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "素直な気持ちを書いてみましょう…"
           }
         }
       }
@@ -3849,6 +5230,12 @@
             "state": "translated",
             "value": "수면 기록"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠記録"
+          }
         }
       }
     },
@@ -3866,6 +5253,12 @@
             "state": "translated",
             "value": "수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠記録は読み取るだけで、端末の外には送信しません"
+          }
         }
       }
     },
@@ -3881,6 +5274,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "수면 중"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠中"
           }
         }
       }
@@ -3899,6 +5298,12 @@
             "state": "translated",
             "value": "수정"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "編集"
+          }
         }
       }
     },
@@ -3915,6 +5320,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "숯불"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "炭火"
           }
         }
       }
@@ -3933,6 +5344,12 @@
             "state": "translated",
             "value": "시"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時"
+          }
         }
       }
     },
@@ -3949,6 +5366,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시간"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間"
           }
         }
       }
@@ -3967,6 +5390,12 @@
             "state": "translated",
             "value": "시간 설정"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間の設定"
+          }
         }
       }
     },
@@ -3983,6 +5412,12 @@
             "state": "translated",
             "value": "시간을 들였다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間をかけた"
+          }
         }
       }
     },
@@ -3998,6 +5433,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시간을 안 들였다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間をかけなかった"
           }
         }
       }
@@ -4016,6 +5457,12 @@
             "state": "translated",
             "value": "시스템 설정"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定"
+          }
         }
       }
     },
@@ -4033,6 +5480,12 @@
             "state": "translated",
             "value": "시스템 설정을 고르면 기기의 다크 모드를 그대로 따라갑니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「システム設定」を選ぶと、端末のダークモード設定に合わせます"
+          }
         }
       }
     },
@@ -4043,6 +5496,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Start"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始"
           }
         }
       }
@@ -4059,6 +5518,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시작 시간"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始時刻"
           }
         }
       }
@@ -4077,6 +5542,12 @@
             "state": "translated",
             "value": "실수"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失敗"
+          }
         }
       }
     },
@@ -4092,6 +5563,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "심볼"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "シンボル"
           }
         }
       }
@@ -4109,6 +5586,12 @@
             "state": "translated",
             "value": "아직 담긴 재가 없어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ灰がありません"
+          }
         }
       }
     },
@@ -4125,6 +5608,12 @@
             "state": "translated",
             "value": "아직 모은 조각이 없어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ集めたかけらがありません"
+          }
         }
       }
     },
@@ -4140,6 +5629,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分類された灰はまだありません。ふりかえりを書くときに、グラフをタップしてみましょう。"
           }
         }
       }
@@ -4158,6 +5653,12 @@
             "state": "translated",
             "value": "아직 비어 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ空白です"
+          }
         }
       }
     },
@@ -4175,6 +5676,12 @@
             "state": "translated",
             "value": "아직 비어 있어요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ何もありません。"
+          }
         }
       }
     },
@@ -4190,6 +5697,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 이름 없는 재"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ名前のない灰"
           }
         }
       }
@@ -4208,6 +5721,12 @@
             "state": "translated",
             "value": "아직 적힌 내용이 없습니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ何も書かれていません"
+          }
         }
       }
     },
@@ -4223,6 +5742,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 첫 페이지에요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ最初のページです"
           }
         }
       }
@@ -4241,6 +5766,12 @@
             "state": "translated",
             "value": "아직 항아리가 없어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ壺がありません"
+          }
         }
       }
     },
@@ -4258,6 +5789,12 @@
             "state": "translated",
             "value": "아직 흘러간 재가 없어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ流れてきた灰がありません"
+          }
         }
       }
     },
@@ -4273,6 +5810,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직은 그냥 재예요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今はまだ、ただの灰です"
           }
         }
       }
@@ -4291,6 +5834,12 @@
             "state": "translated",
             "value": "앞으로의 프로 기능"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今後のPro機能"
+          }
         }
       }
     },
@@ -4301,6 +5850,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "About %lld days"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "約%lld日"
           }
         }
       }
@@ -4319,6 +5874,12 @@
             "state": "translated",
             "value": "양피지"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊皮紙"
+          }
         }
       }
     },
@@ -4335,6 +5896,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "양피지·불꽃"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊皮紙・炎"
           }
         }
       }
@@ -4353,6 +5920,12 @@
             "state": "translated",
             "value": "양피지·불꽃 테마"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊皮紙と炎のテーマ"
+          }
         }
       }
     },
@@ -4369,6 +5942,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "양피지가 어떤 불로 탈지 골라요. 빛깔은 위의 테마를 따라요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊皮紙をどんな火で燃やすか選びます。色合いは上のテーマに合わせます"
           }
         }
       }
@@ -4387,6 +5966,12 @@
             "state": "translated",
             "value": "양피지와 불꽃"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊皮紙と炎"
+          }
         }
       }
     },
@@ -4403,6 +5988,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "양피지의 종이 색과 불꽃의 빛깔이 함께 바뀌어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊皮紙の紙の色と炎の色合いが一緒に変わります"
           }
         }
       }
@@ -4421,6 +6012,12 @@
             "state": "translated",
             "value": "어느 항아리에 담을까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どの壺に入れますか？"
+          }
         }
       }
     },
@@ -4436,6 +6033,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어제 못한 것"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨日できなかったこと"
           }
         }
       }
@@ -4454,6 +6057,12 @@
             "state": "translated",
             "value": "어제 못한 것 %lld개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨日できなかったこと %lld件"
+          }
         }
       }
     },
@@ -4469,6 +6078,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어젯밤 %@ 늦게 잠들어\n오늘 아침이 그을렸어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨夜は%@遅く眠ったので、\n今朝は焦げてしまいました"
           }
         }
       }
@@ -4487,6 +6102,12 @@
             "state": "translated",
             "value": "어젯밤 %@ 늦게 잠들었어요.\n오늘 저녁엔 조금 일찍 불을 꺼 봐요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨夜は%@遅く眠りました。\n今夜は少し早めに火を消してみましょう。"
+          }
         }
       }
     },
@@ -4504,6 +6125,12 @@
             "state": "translated",
             "value": "어젯밤 조각이 식었어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨夜のかけらが冷めました"
+          }
         }
       }
     },
@@ -4519,6 +6146,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어젯밤은 어땠나요?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨夜はどうでしたか？"
           }
         }
       }
@@ -4537,6 +6170,12 @@
             "state": "translated",
             "value": "어쩌다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なりゆき"
+          }
         }
       }
     },
@@ -4553,6 +6192,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어쩌다 하게 됐어"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なりゆきでやった"
           }
         }
       }
@@ -4571,6 +6216,12 @@
             "state": "translated",
             "value": "어쩌다 하게 된 일"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なりゆきでやったこと"
+          }
         }
       }
     },
@@ -4588,6 +6239,12 @@
             "state": "translated",
             "value": "없음"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なし"
+          }
         }
       }
     },
@@ -4603,6 +6260,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ここにあるものは、あなたが名前をつけるまでただの灰です。"
           }
         }
       }
@@ -4621,6 +6284,12 @@
             "state": "translated",
             "value": "여기 쌓인 재가 나에게 무엇이었는지…"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ここに積もった灰が、自分にとって何だったのか…"
+          }
         }
       }
     },
@@ -4637,6 +6306,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "여러 목표를 동시에 카운트다운해요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複数の目標を同時にカウントダウン"
           }
         }
       }
@@ -4655,6 +6330,12 @@
             "state": "translated",
             "value": "연결됨"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続済み"
+          }
         }
       }
     },
@@ -4671,6 +6352,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続を解除するには、iOSの設定 ▸ ヘルスケア ▸ データアクセスとデバイス から変更できます"
           }
         }
       }
@@ -4689,6 +6376,12 @@
             "state": "translated",
             "value": "연결을 끊으려면 iOS 설정 ▸ 건강 ▸ 데이터 접근 및 기기에서 바꿀 수 있어요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続を解除するには、iOSの設定 ▸ ヘルスケア ▸ データアクセスとデバイス から変更できます。睡眠記録は読み取るだけで、端末の外には送信しません"
+          }
         }
       }
     },
@@ -4705,6 +6398,12 @@
             "state": "translated",
             "value": "연결하기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続する"
+          }
         }
       }
     },
@@ -4720,6 +6419,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "연결하면 아침마다 묻지 않고, 기록된 잠든 시각으로 불을 되돌려요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続すると毎朝たずねることなく、記録された入眠時刻まで火を巻き戻します。睡眠記録は読み取るだけで、端末の外には送信しません。"
           }
         }
       }
@@ -4738,6 +6443,12 @@
             "state": "translated",
             "value": "연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続すると毎朝入眠時刻をたずねることなく、記録された時刻で明日の羊皮紙を巻き戻します"
+          }
         }
       }
     },
@@ -4754,6 +6465,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "연결하면 아침마다 잠든 시각을 묻지 않고, 기록된 시각으로 내일의 양피지를 되돌려요. 수면 기록은 읽기만 하고 기기 밖으로 보내지 않아요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続すると毎朝入眠時刻をたずねることなく、記録された時刻で明日の羊皮紙を巻き戻します。睡眠記録は読み取るだけで、端末の外には送信しません"
           }
         }
       }
@@ -4772,6 +6489,12 @@
             "state": "translated",
             "value": "열기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開く"
+          }
         }
       }
     },
@@ -4788,6 +6511,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: SNS 사용 15분 제한"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：SNSの利用を15分までにする"
           }
         }
       }
@@ -4806,6 +6535,12 @@
             "state": "translated",
             "value": "예: 버텨낸 주"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：乗り越えた週"
+          }
         }
       }
     },
@@ -4822,6 +6557,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: 산책 20분으로 바꾸기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：散歩20分に切り替える"
           }
         }
       }
@@ -4840,6 +6581,12 @@
             "state": "translated",
             "value": "예: 운동 시간을 30분 늘리기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：運動時間を30分延ばす"
+          }
         }
       }
     },
@@ -4856,6 +6603,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: 운동, 관계, 올해의 도전"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：運動、人間関係、今年の挑戦"
           }
         }
       }
@@ -4874,6 +6627,12 @@
             "state": "translated",
             "value": "예: 점심 직후 운동 30분"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：昼食後すぐに30分運動"
+          }
         }
       }
     },
@@ -4890,6 +6649,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: 책 한 챕터 읽기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：本を1章読む"
           }
         }
       }
@@ -4908,6 +6673,12 @@
             "state": "translated",
             "value": "예: 프로젝트 제출"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：プロジェクトを提出"
+          }
         }
       }
     },
@@ -4924,6 +6695,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日"
           }
         }
       }
@@ -4942,6 +6719,12 @@
             "state": "translated",
             "value": "오늘 마치지 못한 이유"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日を終えられなかった理由"
+          }
         }
       }
     },
@@ -4958,6 +6741,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 아침이 조금 그을렸어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今朝が少し焦げてしまいました"
           }
         }
       }
@@ -4976,6 +6765,12 @@
             "state": "translated",
             "value": "오늘 하루, 한 줄로 남겨봐요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日一日を、ひとことで残しましょう。"
+          }
         }
       }
     },
@@ -4992,6 +6787,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 하루를\n마치지 못 했군요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日一日を\n終えられなかったのですね"
           }
         }
       }
@@ -5010,6 +6811,12 @@
             "state": "translated",
             "value": "오늘 하루를 마치지 못 한 이유는\n무엇인가요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日一日を終えられなかった理由は\n何でしょう？"
+          }
         }
       }
     },
@@ -5027,6 +6834,12 @@
             "state": "translated",
             "value": "오늘 하루의 불을 끄고 남은 조각을 모아둡니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の火を消して、残ったかけらをしまっておきます"
+          }
         }
       }
     },
@@ -5042,6 +6855,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 한 줄, 남기고 잘까요?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日のひとこと、残してから眠りませんか？"
           }
         }
       }
@@ -5060,6 +6879,12 @@
             "state": "translated",
             "value": "오늘, "
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日、"
+          }
         }
       }
     },
@@ -5077,6 +6902,12 @@
             "state": "translated",
             "value": "오늘은 건너뛸게요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日はスキップします"
+          }
         }
       }
     },
@@ -5092,6 +6923,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘은 어떤 하루였나요? — 콕 찍어보세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日はどんな一日でしたか？ — タップして置いてみましょう"
           }
         }
       }
@@ -5110,6 +6947,12 @@
             "state": "translated",
             "value": "오늘은 어떻게 해 볼까요? (선택)"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今夜はどうしてみますか？（任意）"
+          }
         }
       }
     },
@@ -5126,6 +6969,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘은 여기까지, 충분히 탔다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日はここまで。十分に燃えました"
           }
         }
       }
@@ -5144,6 +6993,12 @@
             "state": "translated",
             "value": "오늘의 끝은 내가 정했다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の終わりは自分で決めた"
+          }
         }
       }
     },
@@ -5160,6 +7015,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日のふりかえりを書きますか？タップすると入力画面が開きます"
           }
         }
       }
@@ -5178,6 +7039,12 @@
             "state": "translated",
             "value": "오전"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "午前"
+          }
         }
       }
     },
@@ -5194,6 +7061,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오후"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "午後"
           }
         }
       }
@@ -5212,6 +7085,12 @@
             "state": "translated",
             "value": "올해"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今年"
+          }
         }
       }
     },
@@ -5229,6 +7108,12 @@
             "state": "translated",
             "value": "올해 남은 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今年の残り時間"
+          }
         }
       }
     },
@@ -5244,6 +7129,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
           }
         }
       }
@@ -5261,6 +7152,12 @@
             "state": "translated",
             "value": "외 %@개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほか%@件"
+          }
         }
       }
     },
@@ -5270,6 +7167,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "and %@ more"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほか%@粒"
           }
         }
       }
@@ -5288,6 +7191,12 @@
             "state": "translated",
             "value": "외 %lld개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほか%lld件"
+          }
         }
       }
     },
@@ -5304,6 +7213,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "외 %lld톨"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほか%lld粒"
           }
         }
       }
@@ -5322,6 +7237,12 @@
             "state": "translated",
             "value": "원"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "円"
+          }
         }
       }
     },
@@ -5339,6 +7260,12 @@
             "state": "translated",
             "value": "위아래로 스와이프해 페이지 이동"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上下にスワイプしてページを移動"
+          }
         }
       }
     },
@@ -5354,6 +7281,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "의미 적기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "意味を書く"
           }
         }
       }
@@ -5372,6 +7305,12 @@
             "state": "translated",
             "value": "의미 적어 담기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "意味を書いてしまう"
+          }
         }
       }
     },
@@ -5387,6 +7326,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "의미 지우기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "意味を消す"
           }
         }
       }
@@ -5404,6 +7349,12 @@
             "state": "translated",
             "value": "의지\n없음"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "意志\nなし"
+          }
         }
       }
     },
@@ -5419,6 +7370,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "의지\n있음"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "意志\nあり"
           }
         }
       }
@@ -5436,6 +7393,12 @@
             "state": "translated",
             "value": "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このApple アカウントでProを購入した記録が見つかりませんでした。購入時のアカウントでサインインしているかご確認ください。"
+          }
         }
       }
     },
@@ -5451,6 +7414,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 날의 재는 남아 있지 않아요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この日の灰は残っていません"
           }
         }
       }
@@ -5469,6 +7438,12 @@
             "state": "translated",
             "value": "이 달은 당신에게 어떤 의미였나요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この月は、あなたにとってどんな意味がありましたか？"
+          }
         }
       }
     },
@@ -5484,6 +7459,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 달의 주 항아리"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この月の週の壺"
           }
         }
       }
@@ -5502,6 +7483,12 @@
             "state": "translated",
             "value": "이 시간을 내일은 어떻게 다룰까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日はこの時間をどう過ごしますか？"
+          }
         }
       }
     },
@@ -5519,6 +7506,12 @@
             "state": "translated",
             "value": "이 조각을 버릴까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このかけらを捨てますか？"
+          }
         }
       }
     },
@@ -5535,6 +7528,12 @@
             "state": "translated",
             "value": "이 주는 당신에게 어떤 의미였나요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この週は、あなたにとってどんな意味がありましたか？"
+          }
         }
       }
     },
@@ -5550,6 +7549,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 항아리는 비어 있어요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この壺は空っぽです。"
           }
         }
       }
@@ -5568,6 +7573,12 @@
             "state": "translated",
             "value": "이 항아리를 다시 이름 없는 재로 되돌립니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この壺を名前のない灰に戻します"
+          }
         }
       }
     },
@@ -5583,6 +7594,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 항아리에 남은 것들"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この壺に残ったもの"
           }
         }
       }
@@ -5601,6 +7618,12 @@
             "state": "translated",
             "value": "이름"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前"
+          }
         }
       }
     },
@@ -5617,6 +7640,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이름 변경"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前を変更"
           }
         }
       }
@@ -5635,6 +7664,12 @@
             "state": "translated",
             "value": "이름 없는 항아리"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前のない壺"
+          }
         }
       }
     },
@@ -5652,6 +7687,12 @@
             "state": "translated",
             "value": "이메일로 문의하기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メールで問い合わせる"
+          }
         }
       }
     },
@@ -5667,6 +7708,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이모지"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "絵文字"
           }
         }
       }
@@ -5685,6 +7732,12 @@
             "state": "translated",
             "value": "이미지 공유"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画像を共有"
+          }
         }
       }
     },
@@ -5701,6 +7754,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이번 달"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今月"
           }
         }
       }
@@ -5719,6 +7778,12 @@
             "state": "translated",
             "value": "이번 달 남은 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今月の残り時間"
+          }
         }
       }
     },
@@ -5735,6 +7800,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이번 주"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週"
           }
         }
       }
@@ -5753,6 +7824,12 @@
             "state": "translated",
             "value": "이번 주 남은 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週の残り時間"
+          }
         }
       }
     },
@@ -5764,6 +7841,12 @@
             "state": "translated",
             "value": "Free time left this week"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週の残りの自由時間"
+          }
         }
       }
     },
@@ -5774,6 +7857,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "This week's free time has all burned"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週の自由時間はすべて燃え尽きました"
           }
         }
       }
@@ -5792,6 +7881,12 @@
             "state": "translated",
             "value": "이번 주에도 반복되고 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週も繰り返しています"
+          }
         }
       }
     },
@@ -5808,6 +7903,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이번 주에도 있었어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週もありました"
           }
         }
       }
@@ -5826,6 +7927,12 @@
             "state": "translated",
             "value": "이용약관 (EULA)"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "利用規約（EULA）"
+          }
         }
       }
     },
@@ -5842,6 +7949,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이전 달"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "前の月"
           }
         }
       }
@@ -5860,6 +7973,12 @@
             "state": "translated",
             "value": "인스타그램 DM (@lee25_ios)"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instagram DM（@lee25_ios）"
+          }
         }
       }
     },
@@ -5871,6 +7990,12 @@
             "state": "translated",
             "value": "My time each week"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1週間の自分だけの時間"
+          }
         }
       }
     },
@@ -5881,6 +8006,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "The parchment burns only during your own hours"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1週間のうち、自分だけの時間が過ぎるときだけ羊皮紙が燃えます"
           }
         }
       }
@@ -5897,6 +8028,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "입김의 세기만 확인하고 소리는 녹음하지 않아요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "息の強さを確かめるだけで、音は録音しません"
           }
         }
       }
@@ -5915,6 +8052,12 @@
             "state": "translated",
             "value": "잎"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "葉"
+          }
         }
       }
     },
@@ -5931,6 +8074,12 @@
             "state": "translated",
             "value": "자동 저장"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動保存"
+          }
         }
       }
     },
@@ -5941,6 +8090,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Free time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由時間"
           }
         }
       }
@@ -5953,6 +8108,12 @@
             "state": "translated",
             "value": "Edit free time"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由時間を編集"
+          }
         }
       }
     },
@@ -5963,6 +8124,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Add free time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由時間を追加"
           }
         }
       }
@@ -5981,6 +8148,12 @@
             "state": "translated",
             "value": "자유시간은 페이지 표시에서 모래시계로 보여요. 데드라인은 추가하면 저절로 나타나요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由時間はページ表示で砂時計として表示されます。締め切りは追加すると自動で表示されます"
+          }
         }
       }
     },
@@ -5990,6 +8163,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "It lights up while your free time passes and waits unlit the rest of the week"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由時間が過ぎるときだけ火がつき、それ以外は消えたまま待っています"
           }
         }
       }
@@ -6008,6 +8187,12 @@
             "state": "translated",
             "value": "작은 변화부터 시작해도 괜찮아요..."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さな変化から始めても大丈夫です…"
+          }
         }
       }
     },
@@ -6024,6 +8209,12 @@
             "state": "translated",
             "value": "잔불을 탭하면 그날의 회고가 나와요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火種をタップすると、その日のふりかえりが表示されます"
+          }
         }
       }
     },
@@ -6039,6 +8230,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "잘 자요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "おやすみなさい"
           }
         }
       }
@@ -6057,6 +8254,12 @@
             "state": "translated",
             "value": "잘 타오른 하루, 이제 식힐 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "よく燃えた一日。そろそろ冷ます時間です"
+          }
         }
       }
     },
@@ -6066,6 +8269,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Leave out sleep, work and chores, and add only the time you spend on yourself. This week's parchment burns only while it passes."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠・仕事・やるべきことを除いて、自分のためだけに使う時間を入力してください。この時間が過ぎるときだけ、今週の羊皮紙が燃えます。"
           }
         }
       }
@@ -6077,6 +8286,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pick the hours that are truly yours, beyond sleep and work. This week's parchment burns only while they pass."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠と仕事を除いた本当の自分の時間を選んでおくと、その時間が過ぎるときだけ今週の羊皮紙が燃えます。"
           }
         }
       }
@@ -6095,6 +8310,12 @@
             "state": "translated",
             "value": "잠든 시각"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眠りについた時刻"
+          }
         }
       }
     },
@@ -6111,6 +8332,12 @@
             "state": "translated",
             "value": "잠들면 저절로 멈춰요. 잠든 시각은 아침에 확인해서 되돌려요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眠ると自動で止まります。眠りについた時刻は朝に確認して巻き戻します"
+          }
         }
       }
     },
@@ -6121,6 +8348,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Overlaps your sleep"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠時間と重なっています"
           }
         }
       }
@@ -6133,6 +8366,12 @@
             "state": "translated",
             "value": "This overlaps your sleep. Keep it within your waking hours."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠時間と重なっています。起きている時間内に設定してください。"
+          }
         }
       }
     },
@@ -6142,6 +8381,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Leave out sleep, leave out work,\nand pick only the hours that are yours.\nThis week's parchment burns only while they pass."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠時間も、仕事の時間も除いて\n本当に自分だけのための時間を選んでください。\nその時間が過ぎるときだけ、今週の羊皮紙が燃えます。"
           }
         }
       }
@@ -6160,6 +8405,12 @@
             "state": "translated",
             "value": "재"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰"
+          }
         }
       }
     },
@@ -6176,6 +8427,12 @@
             "state": "translated",
             "value": "재 %@개 기준"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰%@個をもとに"
+          }
         }
       }
     },
@@ -6185,6 +8442,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ specks of ash"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰 %@粒"
           }
         }
       }
@@ -6197,6 +8460,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ specks of ash · A5 size"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰 %@粒・A5サイズ"
           }
         }
       }
@@ -6215,6 +8484,12 @@
             "state": "translated",
             "value": "재 %lld개 기준"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰%lld個をもとに"
+          }
         }
       }
     },
@@ -6231,6 +8506,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "재 %lld톨"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰 %lld粒"
           }
         }
       }
@@ -6249,6 +8530,12 @@
             "state": "translated",
             "value": "재 %lld톨 · A5 크기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰 %lld粒・A5サイズ"
+          }
         }
       }
     },
@@ -6266,6 +8553,12 @@
             "state": "translated",
             "value": "재 항아리"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰の壺"
+          }
         }
       }
     },
@@ -6281,6 +8574,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "재 항아리에 담아주세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰の壺に入れてください"
           }
         }
       }
@@ -6299,6 +8598,12 @@
             "state": "translated",
             "value": "재가 가장 많이 쌓인 달"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰がいちばん積もった月"
+          }
         }
       }
     },
@@ -6316,6 +8621,12 @@
             "state": "translated",
             "value": "재를 몇 톨 담으면\n분포와 잔불 달력이 여기에 나타나요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰をいくつか入れると\n分布と火種のカレンダーがここに表示されます。"
+          }
         }
       }
     },
@@ -6331,6 +8642,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "재의 분포"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰の分布"
           }
         }
       }
@@ -6349,6 +8666,12 @@
             "state": "translated",
             "value": "재의 흐름"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰の流れ"
+          }
         }
       }
     },
@@ -6365,6 +8688,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "재의 흐름 보기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰の流れを見る"
           }
         }
       }
@@ -6383,6 +8712,12 @@
             "state": "translated",
             "value": "저장"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
         }
       }
     },
@@ -6400,6 +8735,12 @@
             "state": "translated",
             "value": "저장 중"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存中"
+          }
         }
       }
     },
@@ -6416,6 +8757,12 @@
             "state": "translated",
             "value": "저장 중…"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存中…"
+          }
         }
       }
     },
@@ -6431,6 +8778,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장됨"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存しました"
           }
         }
       }
@@ -6449,6 +8802,12 @@
             "state": "translated",
             "value": "저장하고 새 회고를 시작합니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存して新しいふりかえりを始めます"
+          }
         }
       }
     },
@@ -6465,6 +8824,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장하고 시트를 닫습니다"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存してシートを閉じます"
           }
         }
       }
@@ -6483,6 +8848,12 @@
             "state": "translated",
             "value": "저절로 꺼진 조각"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自然に消えたかけら"
+          }
         }
       }
     },
@@ -6499,6 +8870,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "저절로 꺼진 조각을 모았어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自然に消えたかけらを集めました"
           }
         }
       }
@@ -6517,6 +8894,12 @@
             "state": "translated",
             "value": "적어 온 회고를 PDF 한 권으로 묶어 보관하고 인쇄해요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書きためたふりかえりを1冊のPDFにまとめて、保管・印刷できます。"
+          }
         }
       }
     },
@@ -6533,6 +8916,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전체"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべて"
           }
         }
       }
@@ -6551,6 +8940,12 @@
             "state": "translated",
             "value": "점"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点"
+          }
         }
       }
     },
@@ -6562,6 +8957,12 @@
             "state": "translated",
             "value": "Your free time"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定した自由時間"
+          }
         }
       }
     },
@@ -6571,6 +8972,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Setting it up and seeing the numbers is free. Burning only those hours is Pro."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定して計算を見るのは無料です。その時間だけを燃やすのはProの機能です。"
           }
         }
       }
@@ -6588,6 +8995,12 @@
             "state": "translated",
             "value": "제목"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タイトル"
+          }
         }
       }
     },
@@ -6603,6 +9016,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제시간에 불을 껐어요. 내일의 양피지는 그대로예요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間どおりに火を消しました。明日の羊皮紙はそのままです"
           }
         }
       }
@@ -6621,6 +9040,12 @@
             "state": "translated",
             "value": "제시간에 잠들어 불이 저절로 꺼졌어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間どおりに眠ったので、火は自然に消えました"
+          }
         }
       }
     },
@@ -6637,6 +9062,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제시간에 잤어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間どおりに寝ました"
           }
         }
       }
@@ -6655,6 +9086,12 @@
             "state": "translated",
             "value": "조각 버리기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらを捨てる"
+          }
         }
       }
     },
@@ -6671,6 +9108,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "조각 카드"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらカード"
           }
         }
       }
@@ -6689,6 +9132,12 @@
             "state": "translated",
             "value": "조각 카드·포스터"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらカード・ポスター"
+          }
         }
       }
     },
@@ -6705,6 +9154,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "조각 카드로 공유"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらカードで共有"
           }
         }
       }
@@ -6723,6 +9178,12 @@
             "state": "translated",
             "value": "조각 포스터"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらポスター"
+          }
         }
       }
     },
@@ -6740,6 +9201,12 @@
             "state": "translated",
             "value": "조각 포스터 만들기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらポスターを作る"
+          }
         }
       }
     },
@@ -6755,6 +9222,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "조각을 누르면 뒤집혀요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらをタップすると裏返ります"
           }
         }
       }
@@ -6773,6 +9246,12 @@
             "state": "translated",
             "value": "조각의 뒷면"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらの裏面"
+          }
         }
       }
     },
@@ -6789,6 +9268,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "조각의 앞면"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらの表面"
           }
         }
       }
@@ -6807,6 +9292,12 @@
             "state": "translated",
             "value": "조금 남긴 하루가 더 오래 남는다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少し残した一日のほうが、長く心に残る"
+          }
         }
       }
     },
@@ -6822,6 +9313,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "조금 더 적어두고 싶다면 (선택)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう少し書き残したいなら（任意）"
           }
         }
       }
@@ -6840,6 +9337,12 @@
             "state": "translated",
             "value": "종류"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "種類"
+          }
         }
       }
     },
@@ -6857,6 +9360,12 @@
             "state": "translated",
             "value": "좋은 꿈 꾸세요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "よい夢を"
+          }
         }
       }
     },
@@ -6867,6 +9376,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Weekends"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "週末"
           }
         }
       }
@@ -6885,6 +9400,12 @@
             "state": "translated",
             "value": "주제별로 원하는 만큼 재 항아리를 만들어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テーマごとに好きなだけ灰の壺を作れます"
+          }
         }
       }
     },
@@ -6902,6 +9423,12 @@
             "state": "translated",
             "value": "지금 담기는 항아리"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "いま入れている壺"
+          }
         }
       }
     },
@@ -6912,6 +9439,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Burning now · until %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "燃焼中・%@まで"
           }
         }
       }
@@ -6930,6 +9463,12 @@
             "state": "translated",
             "value": "지금까지 적은 회고를 저장하고 빈 입력칸으로 넘어갑니다"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ここまでのふりかえりを保存して、新しい入力欄に移ります"
+          }
         }
       }
     },
@@ -6946,6 +9485,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지난 %lld일간의 재를 어떻게 할까요?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過去%lld日間の灰をどうしますか？"
           }
         }
       }
@@ -6964,6 +9509,12 @@
             "state": "translated",
             "value": "지난 %lld주간의 재를 어떻게 할까요?"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過去%lld週間の灰をどうしますか？"
+          }
         }
       }
     },
@@ -6981,6 +9532,12 @@
             "state": "translated",
             "value": "지난 12개월 달별 재"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過去12か月の月別の灰"
+          }
         }
       }
     },
@@ -6996,6 +9553,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지난 12개월, 달마다 어디로 흘렀나"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過去12か月、毎月どこへ流れたか"
           }
         }
       }
@@ -7014,6 +9577,12 @@
             "state": "translated",
             "value": "지난 12개월의 재를 달마다 나눠 보여줘요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過去12か月の灰を月ごとに分けて表示します"
+          }
         }
       }
     },
@@ -7031,6 +9600,12 @@
             "state": "translated",
             "value": "지난 열두 달 동안 시간이 어디로 흘렀는지 달마다 보여 드려요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過去12か月、時間がどこへ流れたのかを月ごとにお見せします。"
+          }
         }
       }
     },
@@ -7041,6 +9616,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Delete"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除"
           }
         }
       }
@@ -7061,6 +9642,12 @@
             "state": "translated",
             "value": "지원"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サポート"
+          }
         }
       }
     },
@@ -7076,6 +9663,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "첫 재 담기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初の灰を入れる"
           }
         }
       }
@@ -7094,6 +9687,12 @@
             "state": "translated",
             "value": "첫 항아리 만들기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初の壺を作る"
+          }
         }
       }
     },
@@ -7110,6 +9709,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "첫 항아리부터 만들어보세요.\n주제나 영역으로 이름을 지으면 좋아요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まずは最初の壺を作ってみましょう。\nテーマや分野で名前をつけるのがおすすめです。"
           }
         }
       }
@@ -7128,6 +9733,12 @@
             "state": "translated",
             "value": "청자"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "青磁"
+          }
         }
       }
     },
@@ -7144,6 +9755,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "촛불"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ろうそく"
           }
         }
       }
@@ -7162,6 +9779,12 @@
             "state": "translated",
             "value": "최근 30일"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直近30日"
+          }
         }
       }
     },
@@ -7178,6 +9801,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추가"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加"
           }
         }
       }
@@ -7196,6 +9825,12 @@
             "state": "translated",
             "value": "추천 취침 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "おすすめの就寝時刻"
+          }
         }
       }
     },
@@ -7212,6 +9847,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
           }
         }
       }
@@ -7230,6 +9871,12 @@
             "state": "translated",
             "value": "취침 1시간 전입니다. 오늘 하루도 수고했어요!"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寝る時間の1時間前です。今日も一日おつかれさまでした！"
+          }
         }
       }
     },
@@ -7245,6 +9892,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취침 30분 전부터 타는 양피지에 후 불어\n불을 끄고 남은 조각을 모아둘 수 있어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就寝30分前から、燃える羊皮紙にふーっと吹いて\n火を消し、残ったかけらを集められます"
           }
         }
       }
@@ -7263,6 +9916,12 @@
             "state": "translated",
             "value": "취침 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就寝時間"
+          }
         }
       }
     },
@@ -7280,6 +9939,12 @@
             "state": "translated",
             "value": "취침 시간 %@ %lld시%@"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就寝時間 %1$@%2$lld時%3$@"
+          }
         }
       }
     },
@@ -7295,6 +9960,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취침까지 %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就寝まで%@"
           }
         }
       }
@@ -7313,6 +9984,12 @@
             "state": "translated",
             "value": "취침까지 남은 시간"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就寝までの残り時間"
+          }
         }
       }
     },
@@ -7330,6 +10007,12 @@
             "state": "translated",
             "value": "캡슐"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カプセル"
+          }
         }
       }
     },
@@ -7345,6 +10028,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "키워드 (선택)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キーワード（任意）"
           }
         }
       }
@@ -7363,6 +10052,12 @@
             "state": "translated",
             "value": "탭 표시"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タブを表示"
+          }
         }
       }
     },
@@ -7378,6 +10073,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "탭하여 닫기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして閉じる"
           }
         }
       }
@@ -7396,6 +10097,12 @@
             "state": "translated",
             "value": "탭하여 데드라인 관리"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして締め切りを管理"
+          }
         }
       }
     },
@@ -7412,6 +10119,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "탭하여 본문 단계로 돌아감"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして本文に戻る"
           }
         }
       }
@@ -7430,6 +10143,12 @@
             "state": "translated",
             "value": "탭하여 선택"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして選択"
+          }
         }
       }
     },
@@ -7447,6 +10166,12 @@
             "state": "translated",
             "value": "탭하여 수정"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして編集"
+          }
         }
       }
     },
@@ -7462,6 +10187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "탭하여 시간 바꾸기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして時間を変更"
           }
         }
       }
@@ -7480,6 +10211,12 @@
             "state": "translated",
             "value": "탭하여 항아리 관리"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして壺を管理"
+          }
         }
       }
     },
@@ -7496,6 +10233,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "탭하여 항아리 열기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップして壺を開く"
           }
         }
       }
@@ -7514,6 +10257,12 @@
             "state": "translated",
             "value": "톡톡 튀어 올라요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パチパチと弾けます"
+          }
         }
       }
     },
@@ -7530,6 +10279,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "페이지"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページ"
           }
         }
       }
@@ -7548,6 +10303,12 @@
             "state": "translated",
             "value": "페이지 %lld / %lld"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページ %lld / %lld"
+          }
         }
       }
     },
@@ -7564,6 +10325,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "페이지 인디케이터"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページインジケータ"
           }
         }
       }
@@ -7582,6 +10349,12 @@
             "state": "translated",
             "value": "페이지 표시"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページ表示"
+          }
         }
       }
     },
@@ -7598,6 +10371,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "페이지 표시 모양"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページ表示のスタイル"
           }
         }
       }
@@ -7616,6 +10395,12 @@
             "state": "translated",
             "value": "평생 이용권 · %@"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "買い切り · %@"
+          }
         }
       }
     },
@@ -7626,6 +10411,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Weekdays"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "平日"
           }
         }
       }
@@ -7644,6 +10435,12 @@
             "state": "translated",
             "value": "포스터"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ポスター"
+          }
         }
       }
     },
@@ -7661,6 +10458,12 @@
             "state": "translated",
             "value": "표시"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表示"
+          }
         }
       }
     },
@@ -7676,6 +10479,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "프로"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro"
           }
         }
       }
@@ -7694,6 +10503,12 @@
             "state": "translated",
             "value": "프로 이용 중이에요. 감사합니다 🔥"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proをご利用中です。ありがとうございます 🔥"
+          }
         }
       }
     },
@@ -7711,6 +10526,12 @@
             "state": "translated",
             "value": "프로로 업그레이드"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proにアップグレード"
+          }
         }
       }
     },
@@ -7721,6 +10542,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Burn my free time with Pro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proで自由時間だけを燃やす"
           }
         }
       }
@@ -7739,6 +10566,12 @@
             "state": "translated",
             "value": "프로에서 열려요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proで利用できます"
+          }
         }
       }
     },
@@ -7748,6 +10581,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "With Pro, the parchment burns only in these hours"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proなら、この時間だけ羊皮紙が燃えます"
           }
         }
       }
@@ -7764,6 +10603,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "프로에서 한 해의 흐름을 열어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proで一年の流れが見られます"
           }
         }
       }
@@ -7782,6 +10627,12 @@
             "state": "translated",
             "value": "하려 했는데 못 했어"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "やろうとしたけど、できなかった"
+          }
         }
       }
     },
@@ -7798,6 +10649,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "하려 했지만 못 한 일"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "やろうとしたけど、できなかったこと"
           }
         }
       }
@@ -7816,6 +10673,12 @@
             "state": "translated",
             "value": "하루를 남김없이 담아보세요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一日をまるごと残しましょう"
+          }
         }
       }
     },
@@ -7832,6 +10695,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "하트"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハート"
           }
         }
       }
@@ -7850,6 +10719,12 @@
             "state": "translated",
             "value": "한 번 결제로 평생 이용할 수 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一度の購入で、ずっと使えます"
+          }
         }
       }
     },
@@ -7860,6 +10735,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "over a year"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一年に換算すると"
           }
         }
       }
@@ -7876,6 +10757,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "한 해의 재"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一年の灰"
           }
         }
       }
@@ -7894,6 +10781,12 @@
             "state": "translated",
             "value": "한 해의 재 흐름"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一年の灰の流れ"
+          }
         }
       }
     },
@@ -7910,6 +10803,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "한 해의 재를 한눈에"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一年の灰をひと目で"
           }
         }
       }
@@ -7928,6 +10827,12 @@
             "state": "translated",
             "value": "항아리 %lld개, 회고 %lld개"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺 %lld個・ふりかえり %lld件"
+          }
         }
       }
     },
@@ -7944,6 +10849,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "항아리 무제한"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺が無制限"
           }
         }
       }
@@ -7962,6 +10873,12 @@
             "state": "translated",
             "value": "항아리 삭제"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺を削除"
+          }
         }
       }
     },
@@ -7978,6 +10895,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "항아리 선반"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺の棚"
           }
         }
       }
@@ -7996,6 +10919,12 @@
             "state": "translated",
             "value": "항아리 수정"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺を編集"
+          }
         }
       }
     },
@@ -8013,6 +10942,12 @@
             "state": "translated",
             "value": "항아리·데드라인 무제한을 이용해보세요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺と締め切りを無制限に使えます。"
+          }
         }
       }
     },
@@ -8029,6 +10964,12 @@
             "state": "translated",
             "value": "항아리는 이미 준비돼 있어요.\n첫 재는 %@ 항아리에 담깁니다."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺はもう用意してあります。\n最初の灰は「%@」の壺に入ります。"
+          }
         }
       }
     },
@@ -8044,6 +10985,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "항아리에 새길 한 마디"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺に刻むひとこと"
           }
         }
       }
@@ -8062,6 +11009,12 @@
             "state": "translated",
             "value": "해"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "太陽"
+          }
         }
       }
     },
@@ -8078,6 +11031,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "해냄"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "できた"
           }
         }
       }
@@ -8096,6 +11055,12 @@
             "state": "translated",
             "value": "화면 아래 마이크에 대고 후 불어 주세요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面下のマイクに向かって、ふーっと吹いてください"
+          }
         }
       }
     },
@@ -8112,6 +11077,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "화면 테마"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面テーマ"
           }
         }
       }
@@ -8130,6 +11101,12 @@
             "state": "translated",
             "value": "확인"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
         }
       }
     },
@@ -8147,6 +11124,12 @@
             "state": "translated",
             "value": "회고 %lld개. 마음먹은 대로 했어 %lld퍼센트, 어쩌다 하게 됐어 %lld퍼센트, 하려 했는데 못 했어 %lld퍼센트, 그냥 흘러갔어 %lld퍼센트"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえり %lld件。思いどおりにできた %lld％、たまたまできた %lld％、やろうとしたけどできなかった %lld％、なんとなく過ぎた %lld％"
+          }
         }
       }
     },
@@ -8162,6 +11145,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고 책"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりの本"
           }
         }
       }
@@ -8180,6 +11169,12 @@
             "state": "translated",
             "value": "회고 책 PDF"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりの本 PDF"
+          }
         }
       }
     },
@@ -8196,6 +11191,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고 책 PDF 로 내보내기"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりの本をPDFで書き出す"
           }
         }
       }
@@ -8214,6 +11215,12 @@
             "state": "translated",
             "value": "회고 책으로 보기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本で見る"
+          }
         }
       }
     },
@@ -8231,6 +11238,12 @@
             "state": "translated",
             "value": "회고 책을 손에 쥐어 보세요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりの本を手に取ってみましょう"
+          }
         }
       }
     },
@@ -8246,6 +11259,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고를 PDF 한 권으로 묶어요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりを1冊のPDFにまとめます"
           }
         }
       }
@@ -8264,6 +11283,12 @@
             "state": "translated",
             "value": "회고를 날짜별 페이지의 PDF 로 묶어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりを日付ごとのページでPDFにまとめます"
+          }
         }
       }
     },
@@ -8281,6 +11306,12 @@
             "state": "translated",
             "value": "회고를 수정합니다."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりを編集します。"
+          }
         }
       }
     },
@@ -8296,6 +11327,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고를 하나라도 담으면\n이 책이 채워져요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりをひとつでも残すと\nこの本が埋まっていきます。"
           }
         }
       }
@@ -8314,6 +11351,12 @@
             "state": "translated",
             "value": "회고를 항아리로 끌어다 옮길 수 있어요"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりをドラッグして壺に移動できます"
+          }
         }
       }
     },
@@ -8330,6 +11373,12 @@
             "state": "translated",
             "value": "후 불어서 불 끄기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふーっと吹いて火を消す"
+          }
         }
       }
     },
@@ -8345,6 +11394,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "후 하고 불어서 불을 끄고\n하루를 마감하세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふーっと吹いて火を消し\n一日を締めくくりましょう"
           }
         }
       }
@@ -8363,6 +11418,12 @@
             "state": "translated",
             "value": "휴식"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "休息"
+          }
         }
       }
     },
@@ -8380,6 +11441,12 @@
             "state": "translated",
             "value": "흘러감"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過ぎた"
+          }
         }
       }
     },
@@ -8395,6 +11462,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "🌙 좋은 꿈 꾸세요"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🌙 おやすみなさい"
           }
         }
       }
@@ -8419,6 +11492,12 @@
             "state": "translated",
             "value": "큰 글씨에 맞춘 화면"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大きな文字に合わせた画面"
+          }
         }
       }
     },
@@ -8435,6 +11514,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "글자 크기를 아주 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文字をいちばん大きくしても、切れずにきれいに並び直します。"
           }
         }
       }
@@ -8453,6 +11538,12 @@
             "state": "translated",
             "value": "보기 편한 색과 대비"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見やすい色とコントラスト"
+          }
         }
       }
     },
@@ -8469,6 +11560,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "대비를 높이거나 색을 구별하기 어려워도 타들어 가는 시간을 알아볼 수 있어요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コントラストを上げていても、色の区別が難しくても、燃えていく時間がわかります。"
           }
         }
       }
@@ -8487,22 +11584,11 @@
             "state": "translated",
             "value": "더 많은 언어"
           }
-        }
-      }
-    },
-    "한국어와 영어 말고도 더 많은 나라 말로 쓸 수 있게 해요.": {
-      "comment": "Roadmap item detail: more languages",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Use the app in more languages beyond Korean and English."
-          }
         },
-        "ko": {
+        "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "한국어와 영어 말고도 더 많은 나라 말로 쓸 수 있게 해요."
+            "value": "もっと多くの言語"
           }
         }
       }
@@ -8521,6 +11607,12 @@
             "state": "translated",
             "value": "처음 쓰는 분을 위한 안내"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめての方へのご案内"
+          }
         }
       }
     },
@@ -8537,6 +11629,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처음 열었을 때 무엇을 할 수 있는지 짧게 보여 줘요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめて開いたときに、できることを短くご紹介します。"
           }
         }
       }
@@ -8555,6 +11653,12 @@
             "state": "translated",
             "value": "업데이트 소식"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデート情報"
+          }
         }
       }
     },
@@ -8571,6 +11675,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデート後に初めて開いたとき、新しくなった点をお知らせします。"
           }
         }
       }
@@ -8589,6 +11699,12 @@
             "state": "translated",
             "value": "쓰는 요령 알려 주기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使い方のヒント"
+          }
         }
       }
     },
@@ -8605,6 +11721,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "知っておくと便利な機能を、ちょうどいいときにそっとお知らせします。"
           }
         }
       }
@@ -8623,6 +11745,12 @@
             "state": "translated",
             "value": "Siri와 단축어"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siriとショートカット"
+          }
         }
       }
     },
@@ -8639,6 +11767,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri에게 물어 오늘 남은 시간을 바로 확인해요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siriに聞いて、今日の残り時間をすぐに確認できます。"
           }
         }
       }
@@ -8657,6 +11791,12 @@
             "state": "translated",
             "value": "기기 간 동기화"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス間の同期"
+          }
         }
       }
     },
@@ -8673,6 +11813,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "여러 기기에서 iCloud로 같은 회고와 데드라인을 이어서 봐요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloudで、どのデバイスでも同じふりかえりと締め切りを見られます。"
           }
         }
       }
@@ -8691,6 +11837,12 @@
             "state": "translated",
             "value": "백업과 되살리기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バックアップと復元"
+          }
         }
       }
     },
@@ -8707,6 +11859,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "회고와 데드라인을 파일로 저장하고 다시 불러올 수 있어요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりと締め切りをファイルに保存し、あとで読み込めます。"
           }
         }
       }
@@ -8725,6 +11883,12 @@
             "state": "translated",
             "value": "Face ID 잠금"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDロック"
+          }
         }
       }
     },
@@ -8741,6 +11905,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Face ID나 Touch ID로 앱을 잠가 내 회고를 지켜요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDやTouch IDでアプリをロックして、ふりかえりを守ります。"
           }
         }
       }
@@ -8759,6 +11929,12 @@
             "state": "translated",
             "value": "펼치는 아이폰 화면"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "折りたたみiPhoneの画面"
+          }
         }
       }
     },
@@ -8775,6 +11951,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "펼치는 아이폰에서 넓은 화면을 두 쪽으로 나눠 써요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "折りたたみiPhoneの広い画面を、左右2つに分けて使えます。"
           }
         }
       }
@@ -8793,6 +11975,12 @@
             "state": "translated",
             "value": "내 기록 한 번에 지우기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記録をまとめて削除"
+          }
         }
       }
     },
@@ -8809,6 +11997,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "원하면 앱 안에서 회고와 데드라인을 모두 지울 수 있어요."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "必要なときに、アプリ内でふりかえりと締め切りをすべて削除できます。"
           }
         }
       }
@@ -8827,6 +12021,12 @@
             "state": "translated",
             "value": "쓰던 회고 이어 쓰기"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書きかけのふりかえりを続きから"
+          }
         }
       }
     },
@@ -8844,8 +12044,888 @@
             "state": "translated",
             "value": "회고를 쓰다가 앱이 꺼져도 쓰던 내용이 남아 있어요."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりの途中でアプリが閉じても、書いた内容は残ります。"
+          }
         }
       }
+    },
+    "한국어와 영어에 이어 이제 일본어로도 쓸 수 있어요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "韓国語と英語に加えて、日本語でも使えるようになりました。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한국어와 영어에 이어 이제 일본어로도 쓸 수 있어요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After Korean and English, the app now speaks Japanese too."
+          }
+        }
+      },
+      "comment": "Roadmap item detail: more languages (Japanese added)"
+    },
+    "옆으로 밀어 보세요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "横にスワイプしてみましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "옆으로 밀어 보세요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try swiping sideways"
+          }
+        }
+      },
+      "comment": "Tip title: swipe the main screen sideways"
+    },
+    "이번 주, 이번 달, 올해 남은 시간도 같은 양피지로 볼 수 있어요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週・今月・今年の残り時間も、同じ羊皮紙で見られます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주, 이번 달, 올해 남은 시간도 같은 양피지로 볼 수 있어요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See what's left of this week, month, and year on the same parchment."
+          }
+        }
+      },
+      "comment": "Tip message: swiping shows week, month and year"
+    },
+    "조각을 뒤집어 보세요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらを裏返してみましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각을 뒤집어 보세요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flip a fragment over"
+          }
+        }
+      },
+      "comment": "Tip title: tap a fragment to flip it"
+    },
+    "조각을 누르면 뒷면에 그날의 한 줄을 적을 수 있어요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけらをタップすると、裏面にその日のひとことを書けます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각을 누르면 뒷면에 그날의 한 줄을 적을 수 있어요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap a fragment to write a line about that day on its back."
+          }
+        }
+      },
+      "comment": "Tip message: tapping a fragment lets you write on its back"
+    },
+    "목표": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目標"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "목표"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goals"
+          }
+        }
+      },
+      "comment": "Voice Control name for the deadlines button"
+    },
+    "조각": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かけら"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조각"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragments"
+          }
+        }
+      },
+      "comment": "Voice Control name for the collected fragments button"
+    },
+    "항아리": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "壺"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항아리"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urn"
+          }
+        }
+      },
+      "comment": "Voice Control name for the ash urn button"
+    },
+    "회고": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえり"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reflection"
+          }
+        }
+      },
+      "comment": "Voice Control name for the ash urn button"
+    },
+    "데드라인 추가": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切りを追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 추가"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Deadline"
+          }
+        }
+      },
+      "comment": "Button in the empty deadline list"
+    },
+    "데드라인 %@을 더했어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切り「%@」を追加しました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 %@을 더했어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Added deadline %@"
+          }
+        }
+      },
+      "comment": "VoiceOver announcement after adding a deadline. Argument is the deadline title"
+    },
+    "데드라인 %@을 지웠어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "締め切り「%@」を削除しました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데드라인 %@을 지웠어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deleted deadline %@"
+          }
+        }
+      },
+      "comment": "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
+    },
+    "불을 껐어요. 남은 조각을 모아 두었어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火を消しました。残ったかけらをしまっておきました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "불을 껐어요. 남은 조각을 모아 두었어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The fire is out. Your fragment has been kept."
+          }
+        }
+      },
+      "comment": "VoiceOver announcement after blowing out today's parchment"
+    },
+    "회고를 재 항아리에 담았어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ふりかえりを灰の壺に入れました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회고를 재 항아리에 담았어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your reflection is in the ash urn."
+          }
+        }
+      },
+      "comment": "VoiceOver announcement after a new reflection is auto-saved"
+    },
+    "건너뛰기": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキップ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건너뛰기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
+          }
+        }
+      },
+      "comment": "Onboarding: skip button"
+    },
+    "시작하기": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめる"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시작하기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Started"
+          }
+        }
+      },
+      "comment": "Onboarding: last page button"
+    },
+    "남은 시간이 눈앞에서 타들어가요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残り時間が目の前で燃えていきます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남은 시간이 눈앞에서 타들어가요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Watch your time burn away"
+          }
+        }
+      },
+      "comment": "Onboarding page 1 title"
+    },
+    "일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 옆으로 밀면 이번 주, 이번 달, 올해도 볼 수 있어요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起きた瞬間から寝る時間まで、羊皮紙がゆっくり燃えていきます。横にスワイプすると今週・今月・今年も見られます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 옆으로 밀면 이번 주, 이번 달, 올해도 볼 수 있어요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From the moment you wake up until bedtime, the parchment slowly burns. Swipe sideways to see this week, month, and year."
+          }
+        }
+      },
+      "comment": "Onboarding page 1 detail"
+    },
+    "잠들기 30분 전, 후 불어 끄세요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寝る30分前、ふーっと吹いて消しましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잠들기 30분 전, 후 불어 끄세요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 minutes before bed, blow it out"
+          }
+        }
+      },
+      "comment": "Onboarding page 2 title"
+    },
+    "마이크에 대고 후 불면 불이 꺼지고 남은 조각을 모아 둬요. 입김의 세기만 확인하고 소리는 녹음하지 않아요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイクに向かって吹くと火が消え、残ったかけらをしまっておけます。息の強さを確かめるだけで、音は録音しません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마이크에 대고 후 불면 불이 꺼지고 남은 조각을 모아 둬요. 입김의 세기만 확인하고 소리는 녹음하지 않아요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blow into the microphone to put out the fire and keep what's left. Only the strength of your breath is checked; nothing is recorded."
+          }
+        }
+      },
+      "comment": "Onboarding page 2 detail"
+    },
+    "하루는 재로 남아요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一日は灰になって残ります"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하루는 재로 남아요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Each day turns to ash"
+          }
+        }
+      },
+      "comment": "Onboarding page 3 title"
+    },
+    "오늘 한 일을 한 줄로 남기면 그 주의 재 항아리에 쌓여요. 기상과 취침 시간은 설정에서 바꿀 수 있어요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日したことをひとこと残すと、その週の灰の壺に積もっていきます。起床と就寝の時間は設定で変えられます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 한 일을 한 줄로 남기면 그 주의 재 항아리에 쌓여요. 기상과 취침 시간은 설정에서 바꿀 수 있어요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write one line about your day and it settles into that week's ash urn. Change your wake and bedtimes in Settings."
+          }
+        }
+      },
+      "comment": "Onboarding page 3 detail"
+    },
+    "복사": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コピー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복사"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy"
+          }
+        }
+      },
+      "comment": "Context menu: copy reflection text"
+    },
+    "새로 생긴 것": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新機能"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로 생긴 것"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What's New"
+          }
+        }
+      },
+      "comment": "What's new sheet title and settings row"
+    },
+    "처음 안내 다시 보기": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめの案内をもう一度見る"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "처음 안내 다시 보기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show the Welcome Guide"
+          }
+        }
+      },
+      "comment": "Settings row: show onboarding again"
+    },
+    "코드를 사용하지 못했어요. 잠시 뒤 다시 시도해 주세요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コードを使えませんでした。しばらくしてからもう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "코드를 사용하지 못했어요. 잠시 뒤 다시 시도해 주세요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The code couldn't be redeemed. Please try again in a moment."
+          }
+        }
+      },
+      "comment": "Alert: offer code redemption failed"
+    },
+    "프로모션 코드 사용": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プロモーションコードを使う"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로모션 코드 사용"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem Offer Code"
+          }
+        }
+      },
+      "comment": "Settings row: redeem an App Store offer code"
+    },
+    "버전 %@": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バージョン %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버전 %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@"
+          }
+        }
+      },
+      "comment": "What's new: version number"
+    },
+    "일본어로도 쓸 수 있어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日本語に対応しました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일본어로도 쓸 수 있어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Now in Japanese"
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: Japanese"
+    },
+    "기기 언어가 일본어면 화면과 위젯이 모두 일본어로 보여요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端末の言語が日本語なら、アプリもウィジェットも日本語で表示されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 언어가 일본어면 화면과 위젯이 모두 일본어로 보여요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If your device is set to Japanese, the app and its widgets appear in Japanese."
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: Japanese detail"
+    },
+    "큰 글씨와 대비 증가에 맞췄어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大きな文字とコントラストを上げる設定に対応"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "큰 글씨와 대비 증가에 맞췄어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Better with large text and high contrast"
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: accessibility title"
+    },
+    "글자를 아주 키워도 설정이 잘리지 않고, 대비 증가를 켜면 글자와 불씨가 더 진해져요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文字をとても大きくしても設定が切れず、「コントラストを上げる」をオンにすると文字と火種がより濃くなります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글자를 아주 키워도 설정이 잘리지 않고, 대비 증가를 켜면 글자와 불씨가 더 진해져요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings no longer get cut off at very large text sizes, and Increase Contrast makes text and embers darker."
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: accessibility detail"
+    },
+    "옆으로 밀어 기간을 바꾸는 법 같은 숨은 기능을 알맞은 때에 알려 드려요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "横にスワイプして期間を切り替えるなど、隠れた機能をちょうどいいタイミングでお知らせします。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "옆으로 밀어 기간을 바꾸는 법 같은 숨은 기능을 알맞은 때에 알려 드려요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hidden features, like swiping to change periods, are now pointed out at the right moment."
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: tips detail"
+    },
+    "앞으로 만들 기능을 미리 보세요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "これから作る機能をのぞいてみましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앞으로 만들 기능을 미리 보세요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See what's coming next"
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: roadmap title"
+    },
+    "설정 ▸ 지원에서 다음에 나올 기능을 보고 바라는 기능을 보낼 수 있어요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定 ▸ サポートで今後の機能を確認し、ほしい機能をリクエストできます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정 ▸ 지원에서 다음에 나올 기능을 보고 바라는 기능을 보낼 수 있어요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Settings ▸ Support, see upcoming features and suggest the ones you want."
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: roadmap detail"
+    },
+    "프로모션 코드를 쓸 수 있어요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プロモーションコードが使えます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로모션 코드를 쓸 수 있어요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offer codes are here"
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: offer code title"
+    },
+    "받은 코드가 있다면 설정 ▸ 프로에서 넣어 주세요.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コードをお持ちなら、設定 ▸ Pro で入力してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "받은 코드가 있다면 설정 ▸ 프로에서 넣어 주세요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you have a code, enter it in Settings ▸ Pro."
+          }
+        }
+      },
+      "comment": "What's new 1.2.1: offer code detail"
+    },
+    "좋아요": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "좋아요"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Got It"
+          }
+        }
+      },
+      "comment": "What's new: close button"
     }
   },
   "version": "1.1"

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー — 燃える羊皮紙</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="言語" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="privacy.html" hreflang="ja" lang="ja" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← サポートページに戻る</a>
+  <h1>プライバシーポリシー</h1>
+  <p>最終更新日：2026年8月18日</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>概要</h2>
+    <div class="card">
+      <h3>燃える羊皮紙は、あなたを特定する情報を収集しません</h3>
+      <p>アプリで作った記録（起床・就寝時刻、締め切り、ふりかえり、灰の壺）は、すべてお使いのデバイスの中だけに残ります。開発者に届くのは、下記の匿名の統計とクラッシュ診断、そしてご自身で送っていただいたフィードバックだけです。</p>
+      <span class="highlight">🔒 ふりかえりはデバイスの外に出ません · 広告・トラッキングなし</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>デバイスにのみ保存される情報</h2>
+    <div class="card">
+      <h3>アプリで作った記録</h3>
+      <p>次の項目は、お使いのデバイスの中（UserDefaults）にのみ保存されます。</p>
+      <ul>
+        <li>起床時刻・就寝時刻</li>
+        <li>締め切り</li>
+        <li>ふりかえりと灰の壺</li>
+      </ul>
+      <p style="margin-top: 10px;">これらのデータは、アプリとウィジェットのあいだで共有するために、デバイス内の App Group ストレージを通じてのみ使われます。アプリを削除すると一緒に削除されます。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>開発者に送信される情報</h2>
+    <div class="card">
+      <h3>匿名の利用統計</h3>
+      <p>アプリの改善のため、次の項目が開発者の iCloud（CloudKit）ストレージに送信されます。</p>
+      <ul>
+        <li>ランダムに生成したインストール識別子（UUID）</li>
+        <li>アプリのバージョン、プラットフォームと OS のバージョン、言語設定</li>
+        <li>起動回数、利用日数、主な機能の利用イベント名</li>
+      </ul>
+      <p style="margin-top: 10px;">インストール識別子は、デバイス識別子（IDFA・IDFV）や Apple アカウントとは関係がなく、アプリを削除して再インストールすると新しく作られます。</p>
+    </div>
+    <div class="card">
+      <h3>クラッシュ・フリーズの診断</h3>
+      <p>アプリが異常終了したり固まったりしたときに、iOS（MetricKit）が作成した診断情報（問題の種類、スタックトレース、アプリと OS のバージョン、デバイスの機種）が送信されます。ふりかえりなど、アプリに入力した内容は含まれません。</p>
+    </div>
+    <div class="card">
+      <h3>ご自身で送ったフィードバック</h3>
+      <p>設定画面からお問い合わせを送ったときにだけ送信されます。書いた内容とデバイス・アプリのバージョン情報が一緒に届き、返信を希望してご自身で入力した場合に限り、お名前とメールアドレスが含まれます。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>収集しない情報</h2>
+    <div class="card">
+      <h3>次の項目は収集しません</h3>
+      <ul>
+        <li>ふりかえりや締め切りなど、アプリに入力した内容（フィードバックにご自身で書いて送った場合を除く）</li>
+        <li>お名前、メールアドレス、電話番号などの個人を特定する情報（フィードバックにご自身で入力した場合を除く）</li>
+        <li>位置情報</li>
+        <li>連絡先、写真</li>
+        <li>デバイス識別子（IDFA、IDFV など）</li>
+        <li>広告に関するデータ</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>第三者への提供</h2>
+    <div class="card">
+      <h3>データを共有することはありません</h3>
+      <p>このアプリは、広告ネットワークや第三者の分析 SDK を一切使用していません。上記の統計・診断・フィードバックは開発者本人の iCloud ストレージにのみ送信され、他社のデータと組み合わせたり、広告目的でトラッキングしたりすることはありません。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>App 内課金</h2>
+    <div class="card">
+      <h3>決済は Apple が行います</h3>
+      <p>Pro（買い切り）の決済は App Store を通じて Apple が行い、開発者がカード番号や Apple アカウントなどの決済情報を受け取ることはありません。アプリは Pro を購入済みかどうかだけをデバイスに保存し、Pro の機能を使えるようにします。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>通知</h2>
+    <div class="card">
+      <h3>ローカル通知のみを使用します</h3>
+      <p>就寝1時間前の通知は、デバイス内で予約されるローカル通知で、外部のサーバーを経由しません。通知の許可は、いつでも iOS の設定で変更できます。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>マイク</h2>
+    <div class="card">
+      <h3>息の強さだけを確かめます</h3>
+      <p>マイクを使うのは、就寝30分前に羊皮紙の火をふーっと吹いて消すときだけです。デバイスの中で息の強さだけを確かめ、音を録音・保存・送信することはありません。マイクの許可は、いつでも iOS の設定で変更できます。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>お子さまのプライバシー</h2>
+    <div class="card">
+      <h3>14歳未満のお子さま</h3>
+      <p>このアプリは14歳未満のお子さまを対象としておらず、お子さまの個人情報を意図的に収集することはありません。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ポリシーの変更</h2>
+    <div class="card">
+      <h3>変更する場合はこのページでお知らせします</h3>
+      <p>このプライバシーポリシーを変更する場合は、このページの内容と最終更新日を更新します。重要な変更がある場合は、アプリのアップデート情報でもお知らせすることがあります。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="card">
+      <h3>プライバシーに関するお問い合わせ</h3>
+      <p>このプライバシーポリシーについてご質問がありましたら、下記のメールアドレスまでお問い合わせください。</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">このポリシーは韓国語・英語・日本語で提供しています。内容に違いがある場合は、<a href="../privacy.html" style="color: var(--orange); text-decoration: none;">韓国語版</a>が優先されます。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 燃える羊皮紙 &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

@@ -10,6 +10,12 @@
             "value" : "Burning Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃える羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28,6 +34,12 @@
             "value" : "Burning Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃える羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -44,6 +56,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Used only to sense how hard you blow when putting out the parchment before bed. No sound is recorded or saved."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "寝る30分前に羊皮紙へふーっと吹いて火を消すとき、息の強さを確かめるためだけに使います。音声を録音・保存することはありません。"
           }
         },
         "ko" : {

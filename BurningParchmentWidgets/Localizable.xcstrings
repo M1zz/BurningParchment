@@ -9,6 +9,12 @@
             "value" : "%@%%"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24,6 +30,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lldm"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld分"
           }
         },
         "ko" : {
@@ -43,6 +55,12 @@
             "value" : "%lldm %llds"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld分%lld秒"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -58,6 +76,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lldh %lldm"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld時間%lld分"
           }
         },
         "ko" : {
@@ -77,6 +101,12 @@
             "value" : "%lldd %lldh"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld日%lld時間"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -94,6 +124,12 @@
             "value" : "%llds"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld秒"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -102,83 +138,25 @@
         }
       }
     },
-    "🌅 곧 기상 · %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🌅 Waking soon · %@"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🌅 곧 기상 · %@"
-          }
-        }
-      }
-    },
-    "🔥 %@%% 남음" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🔥 %@%% left"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🔥 %@%% 남음"
-          }
-        }
-      }
-    },
-    "🔥 %lld%% 남음" : {
+    "2025.12.31 (수) 23:59" : {
       "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🔥 %lld%% left"
+            "value" : "12/31/2025 (Wed) 23:59"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025/12/31（水）23:59"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🔥 %lld%% 남음"
-          }
-        }
-      }
-    },
-    "🔥 취침까지 %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🔥 %@ until bedtime"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🔥 취침까지 %@"
-          }
-        }
-      }
-    },
-    "😴 기상까지 %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "😴 %@ until wake-up"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "😴 기상까지 %@"
+            "value" : "2025.12.31 (수) 23:59"
           }
         }
       }
@@ -190,6 +168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3d 4h"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3日4時間"
           }
         },
         "ko" : {
@@ -209,27 +193,16 @@
             "value" : "5h 24m"
           }
         },
-        "ko" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "5시간 24분"
-          }
-        }
-      }
-    },
-    "2025.12.31 (수) 23:59" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "12/31/2025 (Wed) 23:59"
+            "value" : "5時間24分"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2025.12.31 (수) 23:59"
+            "value" : "5시간 24분"
           }
         }
       }
@@ -240,6 +213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waking soon"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まもなく起床"
           }
         },
         "ko" : {
@@ -258,6 +237,12 @@
             "value" : "Wake %@"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起床 %@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -274,6 +259,12 @@
             "value" : "%@ until wake-up"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起床まで%@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -288,6 +279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Time left until wake-up"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起床までの残り時間"
           }
         },
         "ko" : {
@@ -307,6 +304,12 @@
             "value" : "Time Left"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "残り時間"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -322,6 +325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Time left until the next deadline"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次の締め切りまでの残り時間"
           }
         },
         "ko" : {
@@ -341,6 +350,12 @@
             "value" : "Deadline Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "締め切りの羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -355,6 +370,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No deadlines"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "締め切りなし"
           }
         },
         "ko" : {
@@ -373,6 +394,12 @@
             "value" : "Deadline passed 🏁"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "締め切りを迎えました 🏁"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -389,6 +416,12 @@
             "value" : "A new day begins"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しい一日が始まります"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -403,6 +436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sleeping"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "睡眠中"
           }
         },
         "ko" : {
@@ -422,6 +461,12 @@
             "value" : "Yearly Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一年の羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -437,6 +482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Time left until bedtime today"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日の就寝までの残り時間"
           }
         },
         "ko" : {
@@ -456,6 +507,12 @@
             "value" : "This Year"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今年"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -471,6 +528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Time left this year"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今年の残り時間"
           }
         },
         "ko" : {
@@ -490,6 +553,12 @@
             "value" : "Monthly Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今月の羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -505,6 +574,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This Month"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今月"
           }
         },
         "ko" : {
@@ -524,6 +599,12 @@
             "value" : "Time left this month"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今月の残り時間"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -539,6 +620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This Week"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今週"
           }
         },
         "ko" : {
@@ -558,6 +645,12 @@
             "value" : "Time left this week"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今週の残り時間"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -573,6 +666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daily Parchment"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日の羊皮紙"
           }
         },
         "ko" : {
@@ -592,6 +691,12 @@
             "value" : "See how much time is left until bedtime, right on your Lock Screen"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ロック画面で就寝までの残り時間を確認できます"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -606,6 +711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sweet dreams"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おやすみなさい"
           }
         },
         "ko" : {
@@ -625,6 +736,12 @@
             "value" : "Weekly Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今週の羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -641,6 +758,12 @@
             "value" : "Bed %@"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寝 %@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -655,6 +778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Until bedtime"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寝まで"
           }
         },
         "ko" : {
@@ -674,6 +803,12 @@
             "value" : "Time left until bedtime"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寝までの残り時間"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -691,10 +826,127 @@
             "value" : "Submit project"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロジェクト提出"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "프로젝트 제출"
+          }
+        }
+      }
+    },
+    "🌅 곧 기상 · %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Waking soon · %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 まもなく起床 · %@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 곧 기상 · %@"
+          }
+        }
+      }
+    },
+    "🔥 %@%% 남음" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@%% left"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 残り%@%%"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@%% 남음"
+          }
+        }
+      }
+    },
+    "🔥 %lld%% 남음" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %lld%% left"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 残り%lld%%"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %lld%% 남음"
+          }
+        }
+      }
+    },
+    "🔥 취침까지 %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@ until bedtime"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 就寝まで%@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 취침까지 %@"
+          }
+        }
+      }
+    },
+    "😴 기상까지 %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 %@ until wake-up"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 起床まで%@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 기상까지 %@"
           }
         }
       }

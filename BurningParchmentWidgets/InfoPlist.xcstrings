@@ -11,6 +11,12 @@
             "value" : "Burning Parchment"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃える羊皮紙"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Burning Parchment"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃える羊皮紙"
           }
         },
         "ko" : {

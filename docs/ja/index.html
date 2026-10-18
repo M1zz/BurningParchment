@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>燃える羊皮紙 — サポート</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+      --yellow: #fbbf24;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* flame gradient top bar */
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .flame-icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 16px #f97316aa);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--text-dim);
+      font-size: 15px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+
+    .card + .card { margin-top: 12px; }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .card li { margin-bottom: 4px; }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: var(--orange);
+      color: #0f0d0a;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-link:hover { opacity: 0.85; }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: var(--orange-dim);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 26px; }
+      .card { padding: 20px; }
+    }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/ja/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+</head>
+<body>
+<nav class="langs" aria-label="言語" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="index.html" hreflang="ja" lang="ja" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <span class="flame-icon">🔥</span>
+  <h1>燃える羊皮紙</h1>
+  <p>起きてから眠るまで、1日が燃えていく様子を見届けましょう。</p>
+</header>
+
+<main>
+
+  <!-- アプリについて -->
+  <section>
+    <h2>アプリについて</h2>
+    <div class="card">
+      <h3>どんなアプリですか？</h3>
+      <p>燃える羊皮紙は、1日の残り時間を羊皮紙が少しずつ燃えていく姿で表すカウントダウンアプリです。起床時刻から就寝時刻まで、あとどれくらい時間が残っているかがひと目でわかるので、1日をより大切に過ごせます。</p>
+      <div class="badge-row" style="margin-top: 14px;">
+        <span class="badge">1日のカウントダウン</span>
+        <span class="badge">週 / 月 / 年</span>
+        <span class="badge">ホーム画面ウィジェット</span>
+        <span class="badge">Dynamic Island</span>
+        <span class="badge">ロック画面ウィジェット</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使い方 -->
+  <section>
+    <h2>使い方</h2>
+    <div class="card">
+      <h3>起床時刻と就寝時刻を設定する</h3>
+      <p>右上の ⚙️ ボタンをタップして、起床時刻と就寝時刻を設定してください。起床時刻になると羊皮紙が燃えはじめ、就寝時刻になるとカウントダウンが終わります。</p>
+    </div>
+    <div class="card">
+      <h3>期間を選ぶ</h3>
+      <p>上部のタブで <strong>1日・1週間・1か月・1年</strong> から期間を選ぶと、その期間の残り時間を羊皮紙の燃え具合で表示します。</p>
+    </div>
+    <div class="card">
+      <h3>ホーム画面ウィジェット</h3>
+      <p>ホーム画面を長押し → ウィジェットを追加 → <strong>燃える羊皮紙</strong> を検索すると、日・週・月・年のウィジェットを追加できます。小・中・大の3サイズに対応しています。</p>
+    </div>
+    <div class="card">
+      <h3>Dynamic Island とロック画面</h3>
+      <p>カウントダウンが始まると、Dynamic Island とロック画面で残り時間をリアルタイムに確認できます。Dynamic Island を下に引くと、羊皮紙が燃えるアニメーションとともに詳しい情報が表示されます。</p>
+    </div>
+  </section>
+
+  <!-- よくある質問 -->
+  <section>
+    <h2>よくある質問</h2>
+    <div class="card">
+      <h3>ウィジェットとアプリで時間の表示が違います</h3>
+      <p>iOS の仕組み上、ホーム画面ウィジェットはリアルタイムに更新できません。アプリを開くとウィジェットのデータが自動で同期されます。リアルタイムのカウントダウンは Dynamic Island とロック画面でご確認ください。</p>
+    </div>
+    <div class="card">
+      <h3>寝ているあいだは何が表示されますか？</h3>
+      <p>就寝時刻を過ぎると燃えるハートのアニメーションが表示され、起床時刻までの睡眠の進み具合がわかります。起床の30分前には、新しい羊皮紙が用意されます。</p>
+    </div>
+    <div class="card">
+      <h3>通知はいつ届きますか？</h3>
+      <p>就寝時刻の1時間前に通知が届きます。届かない場合は、<strong>設定 → 通知 → 燃える羊皮紙</strong> で通知が許可されているかご確認ください。</p>
+    </div>
+    <div class="card">
+      <h3>バッテリーをたくさん消費しますか？</h3>
+      <p>アプリ内のカウントダウンは1秒ごとに更新されますが、ウィジェットはシステムが管理する省電力のタイムライン方式で動くため、バッテリーへの影響は最小限に抑えています。</p>
+    </div>
+  </section>
+
+  <!-- プライバシー -->
+  <section>
+    <h2>プライバシー</h2>
+    <div class="card">
+      <h3>情報の取り扱いについて</h3>
+      <p>起床・就寝時刻、締め切り、ふりかえり、灰の壺は、お使いのデバイスの中だけに保存されます。開発者に届くのは、匿名の利用統計とクラッシュ診断、そしてご自身で送っていただいたフィードバックだけです。</p>
+      <ul>
+        <li>アプリとウィジェットは、デバイス内の App Group を通じてのみデータを共有します。</li>
+        <li>広告もトラッキングもありません。</li>
+      </ul>
+      <a class="contact-link" href="privacy.html">プライバシーポリシーの全文を見る →</a>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="card">
+      <h3>うまく動かないところはありますか？</h3>
+      <p>不具合のご報告、機能のご要望、そのほかのお問い合わせは、下記のメールアドレスまでお気軽にご連絡ください。できるだけ早くお返事いたします。</p>
+      <a class="contact-link" href="mailto:leeo@kakao.com">
+        ✉️ &nbsp;leeo@kakao.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 燃える羊皮紙 &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  <p style="margin-top: 8px;"><a href="privacy.html">プライバシーポリシー</a></p>
+  <p style="margin-top: 6px;">Made with 🔥 in Korea</p>
+</footer>
+
+</body>
+</html>

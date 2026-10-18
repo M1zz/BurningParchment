@@ -1,0 +1,30 @@
+# SwiftLint — "나오면 반드시 고친다" 는 규칙만 켠다.
+#
+# 클립키보드(.swiftlint.yml)와 같은 출발점이다. 전체 규칙을 걸면 경고가 쏟아져 아무도 안 본다.
+# 규칙을 늘릴 땐 하나씩, 기존 위반을 0 으로 만든 뒤에 더한다.
+#
+# 실행: swiftlint            (경고 확인)
+#       swiftlint --strict   (CI — 경고도 실패로)
+
+only_rules:
+  - force_try          # try! — 저장·읽기 실패로 앱이 죽는다
+  - force_unwrapping   # 옵셔널 강제 언랩. 크래시 1순위 원인
+  - file_length        # 파일 비대화 방지
+
+included:
+  - BurningParchment
+  - BurningParchmentWidgets
+# 시험 코드는 뺀다 — 시험에서 강제 언랩은 "여기서 바로 실패하라"는 관용적 표현이다.
+
+excluded:
+  - build
+  - docs
+  - scripts
+
+file_length:
+  # ReflectionUrnView(약 3100줄)·BurningParchmentView(약 1350줄)가 넘는다. 줄여 가는 게 목표.
+  warning: 1000
+  error: 4000
+  ignore_comment_only_lines: true
+
+reporter: "xcode"

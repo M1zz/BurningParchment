@@ -1,0 +1,78 @@
+name: CI
+
+# 푸시·PR 마다 빌드하고 단위 시험을 돌린다.
+# (Release 빌드·버전 정합성까지 보는 배포 게이트는 scripts/predeploy.sh — DeployBar 가 배포 전에 돌린다)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: 빌드 · 단위 시험
+    runs-on: macos-15
+    timeout-minutes: 40
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode 버전 확인
+        run: xcodebuild -version
+
+      # LeeoKit(공개 SPM 패키지)을 매번 새로 받지 않도록 캐시
+      - name: SPM 캐시
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Developer/Xcode/DerivedData/**/SourcePackages
+          key: spm-${{ runner.os }}-${{ hashFiles('**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      # 가장 최신 iOS 런타임의 iPhone 을 고른다 (구버전 기기가 먼저 잡히면 destination 오류)
+      - name: 시뮬레이터 고르기
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available --json | python3 -c '
+          import json, re, sys
+          best = None
+          for runtime, devices in json.load(sys.stdin)["devices"].items():
+              m = re.search(r"iOS-(\d+)-(\d+)", runtime)
+              if not m:
+                  continue
+              v = (int(m.group(1)), int(m.group(2)))
+              for d in devices:
+                  if d.get("isAvailable") and "iPhone" in d.get("name", ""):
+                      if best is None or v > best[0]:
+                          best = (v, d["udid"])
+          print(best[1] if best else "")
+          ')
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+
+      - name: 빌드 · 단위 시험
+        run: |
+          xcodebuild test \
+            -project BurningParchment.xcodeproj \
+            -scheme BurningParchment \
+            -destination "platform=iOS Simulator,id=${{ steps.sim.outputs.udid }}" \
+            -only-testing:BurningParchmentTests \
+            CODE_SIGNING_ALLOWED=NO
+
+  lint:
+    name: SwiftLint
+    runs-on: macos-15
+    timeout-minutes: 10
+    # ⚠️ 지금은 경고로만 둔다 — 기존 강제 언랩 37건·긴 파일 2개가 남아 있다.
+    #    0 으로 만든 뒤 이 줄을 지워 막는 검사로 바꾼다.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: SwiftLint 설치
+        run: brew install swiftlint
+      - name: SwiftLint 실행
+        run: swiftlint --strict

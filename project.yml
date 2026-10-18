@@ -36,6 +36,10 @@ schemes:
       storeKitConfiguration: Config/BurningParchment.storekit
     test:
       config: Debug
+      gatherCoverageData: true
+      targets:
+        - BurningParchmentTests
+        - BurningParchmentUITests
     profile:
       config: Release
     analyze:
@@ -121,3 +125,33 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app.widgets
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
         CODE_SIGN_ENTITLEMENTS: BurningParchmentWidgets/BurningParchmentWidgets.entitlements
+
+  # 단위 시험 — 핵심 판단(데드라인·회고 분류·처음 온 사람·퍼널)과 계약(LeeoPreflight)
+  BurningParchmentTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: BurningParchmentTests
+    dependencies:
+      - target: BurningParchment
+      - package: LeeoKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/BurningParchment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BurningParchment"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+  # UI 시험 — 핵심 흐름 한 바퀴 + 접근성 감사
+  BurningParchmentUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: BurningParchmentUITests
+    dependencies:
+      - target: BurningParchment
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.burningparchment.app.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: BurningParchment

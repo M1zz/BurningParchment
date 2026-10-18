@@ -37,6 +37,7 @@ SPEC = {
 SEARCH = {
     "ko": ("남은 시간", "남은 시간이<br>눈앞에서 타들어갑니다", "하루 · 한 주 · 한 달 · 한 해"),
     "en": ("Time remaining", "Watch your time<br>burn away", "Your day, week, month and year"),
+    "ja": ("残り時間", "残り時間が<br>目の前で燃えていく", "一日・一週間・一か月・一年"),
 }
 
 # 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
@@ -45,6 +46,7 @@ SEARCH = {
 HEADER = {
     "ko": ("불타는 내인생", "후 불어 끄면<br>오늘이 끝나요"),
     "en": ("Burning Parchment", "Blow out the flame,<br>close your day"),
+    "ja": ("燃える羊皮紙", "ふーっと消せば<br>今日が終わる"),
 }
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:
@@ -53,7 +55,7 @@ BASE_CSS = """
 * { margin:0; padding:0; box-sizing:border-box; }
 html,body { width:%(W)dpx; height:%(H)dpx; overflow:hidden; }
 body { background:#f5efe2; position:relative;
-  font-family:-apple-system, "SF Pro Display", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+  font-family:-apple-system, "SF Pro Display", "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", sans-serif; }
 .glow { position:absolute; border-radius:50%%; filter:blur(170px); pointer-events:none; }
 .text { position:absolute; display:flex; flex-direction:column; justify-content:center; }
 .eyebrow { font-weight:700; color:#b5541c; letter-spacing:-0.01em; line-height:1.15; }

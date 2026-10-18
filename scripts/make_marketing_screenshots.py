@@ -3,6 +3,7 @@
 
     python3 scripts/make_marketing_screenshots.py ko
     python3 scripts/make_marketing_screenshots.py en
+    python3 scripts/make_marketing_screenshots.py ja
 
 원본은 docs/screenshots/raw-<lang>/ 의 시뮬레이터 캡처(1320x2868)를 쓰고,
 결과는 docs/screenshots/marketing-<lang>/ 에 **제출 규격 1242x2688 그대로** 나온다.
@@ -53,14 +54,28 @@ SHOTS = {
   ("09-year-light.png",    "top-crop",    False, "A whole year<br>of ash",             "Pro shows where twelve months went",        0.62),
   ("10-book-pdf.png",      "pages",       False, "Your reflections,<br>bound as a book", "Pro exports a PDF, a page for every day", None),
  ],
+ "ja": [
+  ("01-week-dark.png",     "hero-bleed",  False, "残り時間が<br>目の前で燃えていく", "一日・一週間・一か月・一年",              None),
+  ("02-month-light.png",   "hero-bleed",  True,  "ライトも、ダークも",               "端末の設定に合わせるか、自分で選べます",  None),
+  ("03-urn-dark.png",      "left-text",   False, "一日の終わりは<br>灰になって残る", "書いたことはその週の壺に積もります",      None),
+  ("04-flow-light.png",    "hero-bleed",  True,  "時間を何に<br>使ったのか",         "分布グラフと火種カレンダーでひと目で",    None),
+  ("05-book-dark.png",     "top-crop",    False, "残した灰を読み返す",               "羊皮紙に残したひとことたち",              0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "就寝時間から<br>テーマまで",       "自分に合わせて使えます",                  None),
+  # ── Pro ──
+  ("07-theme-dark.png",    "hero-bleed",  True,  "炎の色合いを<br>選べます",         "Proテーマ・月明かりの韓紙・青磁・夕焼け", None),
+  ("08-poster-dark.png",   "text-bottom", False, "消した夜を<br>一枚に",             "Pro・集めたかけらをポスターとカードに",   None),
+  ("09-year-light.png",    "top-crop",    False, "一年の灰を<br>ひと目で",           "Pro・12か月がどこへ流れたか",             0.62),
+  ("10-book-pdf.png",      "pages",       False, "ふりかえりを<br>一冊の本に",       "Pro・日付ごとのページでPDFに",            None),
+ ],
 }
 
 FONTS = {
     "ko": '-apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif',
     "en": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "ja": '-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96}
-SUB_SIZE  = {"ko": 42, "en": 44}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40}
 
 
 def base_css(lang, dark):

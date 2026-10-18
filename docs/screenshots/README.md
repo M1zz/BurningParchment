@@ -4,14 +4,18 @@
 
 | 폴더 | 내용 | 크기 |
 |---|---|---|
-| `raw-ko/`, `raw-en/` | 시뮬레이터 원본 캡처 | 1320×2868 (iPhone 17 Pro Max) |
-| `marketing-ko/`, `marketing-en/` | **App Store Connect 에 올리는 것** | 1242×2688 |
+| `raw-ko/`, `raw-en/`, `raw-ja/` | 시뮬레이터 원본 캡처 | 1320×2868 (iPhone 17 Pro Max) |
+| `marketing-ko/`, `marketing-en/`, `marketing-ja/` | **App Store Connect 에 올리는 것** | 1242×2688 |
+| `creative/<로케일>/` | 제품 페이지 헤더(3840×1646) · 검색 결과(3840×2560) | `scripts/make_creative_assets.py` |
 | `preview-ko/` | 앱 미리보기 영상 (한국어, 29.8초) | 886×1920 · H.264 · 무음 오디오 |
 
 마케팅 이미지는 원본을 리사이즈한 게 아니라 캔버스 자체를 1242×2688 로 잡고
 렌더링한 것이다. 그래서 헤드라인 글자가 뭉개지지 않는다.
 
 ## 다시 만들기
+
+원본은 `scripts/capture_raw.sh <UDID> <ko|en|ja>` 가 예시 데이터(-seedDemo, 언어별 예시 글)로 한 번에 찍는다.
+일본어(ja)는 이 스크립트로 찍었다. 아래는 손으로 찍을 때의 순서다.
 
 1. 6.9인치 시뮬레이터(iPhone 17 Pro Max)를 켜고 앱을 설치한다.
 2. 상태바를 고정한다 — 안 하면 실제 시각과 배터리가 그대로 찍힌다:
@@ -27,7 +31,7 @@
 4. 화면은 `xcrun simctl io <UDID> screenshot raw-ko/01-week-dark.png` 로 저장한다
    (MCP 스크린샷은 확인용이라 해상도가 낮다).
 5. 헤드라인·배치를 바꾸려면 `scripts/make_marketing_screenshots.py` 의 `SHOTS` 를
-   고치고 `python3 scripts/make_marketing_screenshots.py ko` / `... en` 을 돌린다.
+   고치고 `python3 scripts/make_marketing_screenshots.py ko` / `... en` / `... ja` 를 돌린다.
 
 ## 화면 고르는 기준
 

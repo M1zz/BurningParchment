@@ -1,5 +1,31 @@
 # 릴리즈 노트
 
+## 1.2.1
+
+### 앱스토어 (한국어)
+
+이제 일본어로도 쓸 수 있어요
+처음 여는 분께 쓰는 법을 짧게 알려 드려요
+큰 글씨와 대비 증가에서도 또렷하게 보여요
+프로모션 코드로 프로를 받을 수 있어요
+설정에서 앞으로 만들 기능을 볼 수 있어요
+
+### App Store (English)
+
+Now available in Japanese
+A short welcome guide for first-time users
+Clearer with large text and higher contrast
+Redeem offer codes for Pro
+See upcoming features in Settings
+
+### 앱스토어 (ja)
+
+日本語に対応しました
+はじめての方に使い方を短くご案内します
+大きな文字やコントラスト強調でも見やすく
+プロモーションコードでProを入手できます
+これから作る機能を設定で見られます
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

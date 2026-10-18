@@ -233,6 +233,8 @@ struct ContentView: View {
             showOnboarding = true
             return
         }
+        // 스크린샷·UI 시험: 첫 실행이어도 안내·새 소식을 띄우지 않는다 (-skipOnboarding YES)
+        if UserDefaults.standard.bool(forKey: "skipOnboarding") { return }
         #endif
         let audience = LaunchAudience.resolve(launchCount: LeeoEngagement.shared.launchCount,
                                               hasCompletedOnboarding: hasCompletedOnboarding,

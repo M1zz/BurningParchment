@@ -12,7 +12,7 @@
 
 ### 키워드
 
-시간관리,수면,잠,하루,디데이,타이머,회고,일기,저녁,밤,루틴,습관,위젯,잠금화면,다이나믹아일랜드,생산성,자기계발,마감,잠자리,기상,마음챙김,수면습관
+하루남은시간,하루마감,취침시간,저녁루틴,남은시간,다이나믹아일랜드,마감,회고,자기계발,마음챙김,잠금화면,수면시간,취침알림,잘시간,늦잠,수면습관,디데이,수면,잠자리,습관,저녁
 
 ### 프로모션 텍스트
 
@@ -69,7 +69,7 @@ Watch your evening burn down
 
 ### 키워드
 
-time,countdown,sleep,timer,widget,journal,reflection,routine,habit,deadline,night,productivity
+wind,deadline,live,activity,remaining,hours,countdown,sleep,lockscreen,reflection,routine,curfew
 
 ### 프로모션 텍스트
 

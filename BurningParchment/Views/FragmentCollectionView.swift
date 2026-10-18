@@ -2,6 +2,7 @@
 // 불을 끄고 모아둔 양피지 조각들 — 조각을 뒤집으면 뒷면에 적어 둔 한 줄이 있다.
 
 import SwiftUI
+import TipKit
 
 struct FragmentCollectionView: View {
     @EnvironmentObject var fragmentManager: FragmentManager
@@ -9,6 +10,7 @@ struct FragmentCollectionView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showPoster = false
     @State private var showPaywall = false
+    private let backTip = FragmentBackTip()
 
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
@@ -27,12 +29,22 @@ struct FragmentCollectionView: View {
                                 .foregroundColor(.inkMuted.opacity(0.7))
                                 .padding(.bottom, 12)
 
+                            // 뒷면이 빈 조각이 있을 때만 — 누르면 뒷면에 적을 수 있다는 걸 모르는 사람이 많다
+                            if fragmentManager.fragments.contains(where: { !$0.isBackWritten }) {
+                                TipView(backTip)
+                                    .tipBackground(Color.ink.opacity(0.05))
+                                    .padding(.bottom, 10)
+                            }
+
                             LazyVGrid(columns: columns, spacing: 14) {
                                 ForEach(fragmentManager.fragments) { fragment in
                                     NavigationLink(value: fragment) {
                                         FragmentCard(fragment: fragment)
                                     }
                                     .buttonStyle(.plain)
+                                    .simultaneousGesture(TapGesture().onEnded {
+                                        backTip.invalidate(reason: .actionPerformed)
+                                    })
                                 }
                             }
                         }
@@ -74,19 +86,20 @@ struct FragmentCollectionView: View {
     }
 
     private var emptyState: some View {
-        VStack(spacing: 14) {
-            Image(systemName: "wind")
-                .font(.system(size: 40))
-                .foregroundColor(.ember.opacity(0.5))
-            Text("아직 모은 조각이 없어요")
-                .font(.system(size: 17, weight: .medium, design: .serif))
-                .foregroundColor(.ember.opacity(0.85))
+        ContentUnavailableView {
+            Label {
+                Text("아직 모은 조각이 없어요")
+                    .font(.system(.title3, design: .serif).weight(.medium))
+                    .foregroundColor(.ember.opacity(0.85))
+            } icon: {
+                Image(systemName: "wind")
+                    .foregroundColor(.ember.opacity(0.5))
+            }
+        } description: {
             Text("취침 30분 전부터 타는 양피지에 후 불어\n불을 끄고 남은 조각을 모아둘 수 있어요")
-                .font(.body)
                 .foregroundColor(.inkMuted.opacity(0.7))
-                .multilineTextAlignment(.center)
         }
-        .padding(.horizontal, 32)
+        .padding(.horizontal, 16)
     }
 }
 

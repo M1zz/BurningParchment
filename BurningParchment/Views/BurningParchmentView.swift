@@ -148,7 +148,7 @@ struct BurningParchmentView: View {
 
     private func blowOutHint(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) -> some View {
         Text("후 하고 불어서 불을 끄고\n하루를 마감하세요")
-            .font(.system(size: 20, weight: .medium, design: .serif))
+            .font(.system(.title3, design: .serif).weight(.medium))
             .foregroundColor(.ember)
             .multilineTextAlignment(.center)
             .lineSpacing(6)
@@ -208,11 +208,11 @@ struct BurningParchmentView: View {
                         .font(.system(size: 32))
                         .foregroundColor(.ember.opacity(0.5))
                     Text("곧 기상 시간이에요")
-                        .font(.system(size: 15, weight: .medium, design: .serif))
+                        .font(.system(.subheadline, design: .serif).weight(.medium))
                         .foregroundColor(.inkMuted.opacity(0.7))
                         .multilineTextAlignment(.center)
                     Text("\(sleepRemainingString) 후 양피지가 타기 시작합니다")
-                        .font(.system(size: 12, design: .serif))
+                        .font(.system(.caption, design: .serif))
                         .foregroundColor(.inkMuted.opacity(0.5))
                         .multilineTextAlignment(.center)
                 }
@@ -261,6 +261,8 @@ struct BurningParchmentView: View {
             // 하트 불씨 파티클 (Canvas)
             heartEmberCanvas(size: size)
 
+            // 아주 큰 글씨에서는 하트 아래 글이 화면을 넘을 수 있다 — 넘칠 때만 스크롤된다
+            ScrollView(.vertical) {
             VStack(spacing: 24) {
                 Spacer()
 
@@ -394,23 +396,36 @@ struct BurningParchmentView: View {
                         .opacity(0.25 + 0.35 * cos(phase * 4.5))
                 }
 
+                // 밤에 보는 화면이라 어둡게 두되, 글자는 바탕과 충분히 구별되게 (접근성 감사의 대비 기준)
                 Text("수면 중")
-                    .font(.system(size: 22, weight: .medium, design: .serif))
-                    .foregroundColor(.ember.opacity(0.7))
+                    .font(.system(.title2, design: .serif).weight(.medium))
+                    .foregroundColor(.ember)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 24)
 
                 Text("🌙 좋은 꿈 꾸세요")
-                    .font(.system(size: 15, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .font(.system(.subheadline, design: .serif))
+                    .foregroundColor(.inkMuted.opacity(0.8))
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 24)
 
                 if bedtimeManager.isBeforeWakeTime {
                     Text("기상까지 \(sleepRemainingString)")
-                        .font(.system(size: 13, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.4))
+                        .font(.system(.footnote, design: .serif))
+                        .foregroundColor(.inkMuted.opacity(0.75))
                         .padding(.top, 4)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.horizontal, 24)
                 }
 
                 Spacer()
             }
+            .frame(minHeight: size.height)
+            }
+            .scrollBounceBehavior(.basedOnSize)
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("수면 중")
@@ -603,21 +618,26 @@ struct BurningParchmentView: View {
             VStack(spacing: 4) {
                 if let dl = nearestDeadline {
                     Text("\(dl.emoji) \(dl.title)")
-                        .font(.system(size: 13, weight: .medium, design: .serif))
-                        .foregroundColor(.ember.opacity(0.6))
+                        .font(.system(.footnote, design: .serif).weight(.semibold))
+                        .foregroundColor(.ember)
                         .lineLimit(1)
                     Text(dl.remainingString())
-                        .font(.system(size: 36, weight: .ultraLight, design: .serif))
-                        .foregroundColor(.ember.opacity(0.9))
+                        .font(.system(.largeTitle, design: .serif).weight(.light))
+                        .foregroundColor(.ember)
+                        // 줄어드는 숫자만 위로 굴러 바뀐다 (동작 줄이기에서는 그냥 바뀐다)
+                        .contentTransition(.numericText(countsDown: true))
+                        .animation(reduceMotion ? nil : .snappy, value: dl.remainingString())
                 } else {
                     Text(bedtimeManager.periodLabel)
-                        .font(.system(size: 13, weight: .medium, design: .serif))
-                        .foregroundColor(.ember.opacity(0.6))
+                        .font(.system(.footnote, design: .serif).weight(.semibold))
+                        .foregroundColor(.ember)
 
                     Text(periodValueString)
-                        .font(.system(size: 30, weight: .ultraLight, design: .serif))
-                        .foregroundColor(.ember.opacity(0.9))
+                        .font(.system(.largeTitle, design: .serif).weight(.light))
+                        .foregroundColor(.ember)
                         .monospacedDigit()
+                        .contentTransition(.numericText(countsDown: true))
+                        .animation(reduceMotion ? nil : .snappy, value: periodValueString)
                         .minimumScaleFactor(0.7)
                         .lineLimit(1)
                 }
@@ -643,26 +663,27 @@ struct BurningParchmentView: View {
 
             // 날짜 범위 + 남은 비율 (바 바로 아래)
             VStack(spacing: 4) {
-                HStack {
-                    HStack(spacing: 3) {
-                        Image(systemName: startIcon).font(.system(size: 10))
-                        Text(startLabel).font(.system(size: 10, design: .serif))
+                // 큰 글씨로 두 끝이 한 줄에 안 들어가면 위아래로 나눈다
+                ViewThatFits(in: .horizontal) {
+                    HStack {
+                        rangeStart(icon: startIcon, label: startLabel)
+                        Spacer()
+                        rangeEnd(icon: endIcon, label: endLabel)
                     }
-                    .foregroundColor(.ember.opacity(0.45))
-
-                    Spacer()
-
-                    HStack(spacing: 3) {
-                        Text(endLabel).font(.system(size: 10, design: .serif))
-                        Image(systemName: endIcon).font(.system(size: 10))
+                    VStack(spacing: 2) {
+                        rangeStart(icon: startIcon, label: startLabel)
+                        rangeEnd(icon: endIcon, label: endLabel)
                     }
-                    .foregroundColor(.ember.opacity(0.45))
                 }
+                // 작은 글자라 불씨색보다 대비가 높은 먹색으로 (아이콘은 불씨색)
+                .foregroundColor(.inkMuted)
                 .padding(.horizontal, 32)
 
                 Text("\(Int(remaining * 100))% 남음")
-                    .font(.system(size: 12, weight: .medium, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.6))
+                    .font(.system(.caption, design: .serif).weight(.medium))
+                    .foregroundColor(.inkMuted.opacity(0.85))
+                    .contentTransition(.numericText(countsDown: true))
+                    .animation(reduceMotion ? nil : .snappy, value: Int(remaining * 100))
 
                 if bedtimeManager.selectedPeriod == .freeTime { freeTimeStatus }
             }
@@ -687,6 +708,24 @@ struct BurningParchmentView: View {
                 Button("자유시간 고치기") { showFreeTimeEditor = true }
             }
         }
+    }
+
+    private func rangeStart(icon: String, label: String) -> some View {
+        HStack(spacing: 3) {
+            Image(systemName: icon).font(.caption2).foregroundColor(.ember)
+            Text(label).font(.system(.caption2, design: .serif).weight(.medium))
+                .accessibilityIdentifier("period.rangeLabel")
+        }
+        .fixedSize()
+    }
+
+    private func rangeEnd(icon: String, label: String) -> some View {
+        HStack(spacing: 3) {
+            Text(label).font(.system(.caption2, design: .serif).weight(.medium))
+                .accessibilityIdentifier("period.rangeLabel")
+            Image(systemName: icon).font(.caption2).foregroundColor(.ember)
+        }
+        .fixedSize()
     }
 
     private var periodValueString: String {
@@ -719,7 +758,7 @@ struct BurningParchmentView: View {
                 Image(systemName: burning ? "flame.fill" : "moon.zzz")
                     .font(.system(size: 11))
                 Text(freeTimeStatusText)
-                    .font(.system(size: 12, design: .serif))
+                    .font(.system(.caption, design: .serif))
             }
             .foregroundColor(burning ? .ember.opacity(0.85) : .inkMuted.opacity(0.6))
 
@@ -1325,7 +1364,7 @@ struct TimeDigitView: View {
 
     var body: some View {
         Text(String(format: "%02d", value))
-            .font(.system(size: 40, weight: .ultraLight, design: .serif))
+            .font(.system(.largeTitle, design: .serif).weight(.ultraLight))
             .foregroundColor(.ember.opacity(0.9))
             .monospacedDigit()
     }

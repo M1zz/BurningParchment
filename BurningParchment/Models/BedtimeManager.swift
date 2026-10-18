@@ -637,6 +637,8 @@ class BedtimeManager: ObservableObject {
         #endif
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: ["bedtime-1h"])
+        // 원격으로 꺼 두면 예약했던 것도 지운 채로 둔다
+        guard BurningFlag.bedtimeReminder.isEnabled else { return }
 
         let notifDate = bedDate.addingTimeInterval(-3600)
         guard notifDate > Date() else { return }
@@ -658,6 +660,8 @@ class BedtimeManager: ObservableObject {
         #if DEBUG
         if DebugLaunch.skipNotifications { return }   // 스크린샷용 실행에서는 권한 창·실시간 현황을 띄우지 않는다
         #endif
+        // 원격으로 꺼 두었거나, 지난 실행들이 연달아 끝나지 못해 세이프 모드로 열렸으면 띄우지 않는다
+        guard BurningFlag.liveActivity.isEnabled, !AppLaunch.isSafeMode else { return }
         guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
         guard liveActivity == nil else { return }
 
@@ -674,7 +678,11 @@ class BedtimeManager: ObservableObject {
                 content: ActivityContent(state: state, staleDate: nil),
                 pushType: nil
             )
-        } catch {}
+            AppLog.liveActivity.info("실시간 현황 시작")
+        } catch {
+            // 사용자가 실시간 현황을 꺼 두었거나 시스템 한도에 걸린 경우 — 앱은 그대로 쓸 수 있다
+            AppLog.liveActivity.error("실시간 현황을 시작하지 못함: \(error.localizedDescription, privacy: .public)")
+        }
     }
 
     private func updateLiveActivity(bedDate: Date) {
@@ -705,6 +713,7 @@ class BedtimeManager: ObservableObject {
     }
 
     private func reconnectLiveActivity() {
+        guard !AppLaunch.isSafeMode else { return }
         liveActivity = Activity<BedtimeActivityAttributes>.activities.first
     }
 

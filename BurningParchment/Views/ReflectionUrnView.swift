@@ -439,6 +439,7 @@ struct AshUrnButton: View {
         .accessibilityLabel("재 항아리")
         .accessibilityValue("\(period.title), 재 \(count)톨")
         .accessibilityHint("탭하여 항아리 열기")
+        .accessibilityInputLabels([Text("재 항아리"), Text("항아리"), Text("회고")])
     }
 }
 
@@ -1305,12 +1306,18 @@ struct EmberCalendarView: View {
                                       muted: !reflectionManager.hasMeaning(period))
                             .onTapGesture { onEdit(item) }
                             .contextMenu {
+                                Button {
+                                    UIPasteboard.general.string = item.text
+                                } label: {
+                                    Label("복사", systemImage: "doc.on.doc")
+                                }
                                 Button(role: .destructive) {
                                     reflectionManager.delete(id: item.id)
                                 } label: {
                                     Label("삭제", systemImage: "trash")
                                 }
                             }
+                            .accessibilityAction(named: Text("삭제")) { reflectionManager.delete(id: item.id) }
                     }
                 }
             }
@@ -1603,12 +1610,18 @@ struct UrnDetailView: View {
                     ReflectionRow(item: item, muted: !hasMeaning)
                         .onTapGesture { editing = item }
                         .contextMenu {
+                            Button {
+                                UIPasteboard.general.string = item.text
+                            } label: {
+                                Label("복사", systemImage: "doc.on.doc")
+                            }
                             Button(role: .destructive) {
                                 reflectionManager.delete(id: item.id)
                             } label: {
                                 Label("삭제", systemImage: "trash")
                             }
                         }
+                        .accessibilityAction(named: Text("삭제")) { reflectionManager.delete(id: item.id) }
                 }
             }
             .padding(.horizontal, 16)
@@ -1734,6 +1747,8 @@ struct UrnMeaningEditView: View {
                             .font(.system(size: 13, design: .serif))
                             .foregroundColor(.inkMuted.opacity(0.75))
                             .fixedSize(horizontal: false, vertical: true)
+                            // 지난 회고를 길게 눌러 골라 복사할 수 있게 한다
+                            .textSelection(.enabled)
                         Spacer(minLength: 0)
                     }
                 }
@@ -2572,6 +2587,7 @@ struct ReflectionInputView: View {
                 date: date
             )
             savedReflectionId = created.id
+            Moments.reflectionSaved()
         }
 
         saveStatus = .saved

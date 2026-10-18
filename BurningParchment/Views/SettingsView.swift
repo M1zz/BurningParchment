@@ -14,6 +14,10 @@ struct SettingsView: View {
     @State private var showPaywall = false
     @State private var restoreMessage: String?
     @State private var showThemePaywall = false
+    @State private var showOfferCode = false
+    @State private var showOnboarding = false
+    @State private var showWhatsNew = false
+    @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
     @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
     @Environment(\.parchmentStyle) private var currentStyle
     @AppStorage(FlameKind.storageKey) private var flameKindRaw = FlameKind.classic.rawValue
@@ -84,6 +88,20 @@ struct SettingsView: View {
         .sheet(isPresented: $showThemePaywall) {
             PaywallView(reason: .theme)
                 .environmentObject(storeManager)
+        }
+        .offerCodeRedemption(isPresented: $showOfferCode) { result in
+            // 코드가 받아지면 거래 리스너(LeeoStore)가 프로를 연다. 실패만 알린다.
+            if case .failure(let error) = result {
+                AppLog.lifecycle.error("프로모션 코드 사용 실패: \(error.localizedDescription, privacy: .public)")
+                restoreMessage = String(localized: "코드를 사용하지 못했어요. 잠시 뒤 다시 시도해 주세요.")
+            }
+        }
+        .fullScreenCover(isPresented: $showOnboarding) {
+            BurningOnboardingView { showOnboarding = false }
+        }
+        .sheet(isPresented: $showWhatsNew) {
+            WhatsNewView { showWhatsNew = false }
+                .presentationDragIndicator(.visible)
         }
         .alert("구매 복원",
                isPresented: Binding(get: { restoreMessage != nil }, set: { if !$0 { restoreMessage = nil } })) {
@@ -373,6 +391,16 @@ struct SettingsView: View {
                     }
                     .overlay(RoundedRectangle(cornerRadius: 8)
                         .stroke(isSelected ? Color.ember : Color.clear, lineWidth: 2))
+                    .overlay(alignment: .topTrailing) {
+                        // 색을 구별하기 어려우면 테두리 색만으로는 고른 것을 알 수 없다 — 표시를 더한다
+                        if isSelected && differentiateWithoutColor {
+                            Image(systemName: "checkmark.circle.fill")
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundStyle(Color.onEmber, Color.ember)
+                                .padding(4)
+                                .accessibilityHidden(true)
+                        }
+                    }
                 Text(style.label)
                     .font(.system(size: 11, weight: isSelected ? .semibold : .regular))
                     .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.7))
@@ -420,6 +448,15 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .disabled(storeManager.purchaseInProgress)
+
+                SettingsDivider()
+
+                Button { showOfferCode = true } label: {
+                    SettingsRow(icon: "ticket", title: String(localized: "프로모션 코드 사용")) {
+                        SettingsChevron()
+                    }
+                }
+                .buttonStyle(.plain)
             }
         }
     }
@@ -434,6 +471,20 @@ struct SettingsView: View {
             contactRow(title: String(localized: "인스타그램 DM (@lee25_ios)"), icon: "paperplane",
                        url: "https://instagram.com/lee25_ios")
             SettingsDivider()
+            Button { showWhatsNew = true } label: {
+                SettingsRow(icon: "sparkles", title: String(localized: "새로 생긴 것")) {
+                    SettingsChevron()
+                }
+            }
+            .buttonStyle(.plain)
+            SettingsDivider()
+            Button { showOnboarding = true } label: {
+                SettingsRow(icon: "questionmark.circle", title: String(localized: "처음 안내 다시 보기")) {
+                    SettingsChevron()
+                }
+            }
+            .buttonStyle(.plain)
+            SettingsDivider()
             // 앞으로 만들 것 — 원본은 BurningParchmentRoadmap.swift.
             NavigationLink {
                 RoadmapScreen()
@@ -443,6 +494,18 @@ struct SettingsView: View {
                 }
             }
             .buttonStyle(.plain)
+
+            // 같은 개발자가 만든 다른 앱 — 목록과 소개 글은 LeeoKit(LeeoFamilyCatalog)에 있다
+            LeeoFamilySettingsRow<BurningParchmentSpec>()
+                .labelStyle(SettingsLabelStyle())
+                .font(.system(size: rowFontSize))
+                .foregroundStyle(Color.inkMuted.opacity(0.8))
+                .tint(.ember)
+                .buttonStyle(.plain)
+                .padding(.horizontal, 14)
+                .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+                .contentShape(Rectangle())
+                .overlay(alignment: .top) { SettingsDivider() }
 
             // LeeoKit 의 행들(피드백·리뷰·정책 링크·버전)은 Form 용이라 테두리가 없다.
             // 행마다 같은 높이와 위쪽 구분선을 입혀 위의 행들과 맞춘다.

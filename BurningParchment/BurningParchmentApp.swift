@@ -27,10 +27,28 @@ struct BurningParchmentApp: App {
         // 계약(BurningParchmentSpec)에 선언한 것을 전부 켠다 —
         // 사용량 기록·분석 싱크·MetricKit 크래시 진단·사용현황 스냅샷, DEBUG 에선 프리플라이트 감사까지.
         LeeoKit.bootstrap(BurningParchmentSpec.self)
+        // 크래시 루프 가드와 원격 스위치. 매니저들(@StateObject)은 body 가 처음 그려질 때 만들어지므로
+        // 여기서 정한 세이프 모드가 그 시작 작업에 닿는다.
+        AppLaunch.begin()
+        BurningFunnel.installed.reach()
+        BurningTips.configure()
         #if DEBUG
+        Self.assertSpecIsReleasable()
         DebugLaunch.applyOverrides()
         #endif
     }
+
+    #if DEBUG
+    /// 부트스트랩의 감사는 콘솔에 찍기만 해서 지나치기 쉽다. 출시하면 안 되는 문제(error)가 있으면
+    /// 개발 중 실행을 바로 멈춰 세운다. (같은 검사를 BurningParchmentTests 도 지킨다)
+    private static func assertSpecIsReleasable() {
+        let issues = LeeoPreflight.audit(BurningParchmentSpec.self)
+        for issue in issues.errors {
+            AppLog.lifecycle.fault("프리플라이트 오류 [\(issue.code, privacy: .public)] \(issue.message, privacy: .public)")
+        }
+        assert(issues.isReleasable, "LeeoPreflight 오류가 있습니다 — 콘솔의 [LeeoPreflight] 를 보세요")
+    }
+    #endif
 
     var body: some Scene {
         WindowGroup {

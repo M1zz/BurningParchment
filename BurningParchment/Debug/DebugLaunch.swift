@@ -10,7 +10,8 @@
 //   -skipNotifications YES  알림 권한 요청·예약과 실시간 현황을 건너뛴다 (스크린샷용. 새 시뮬레이터에서 멈춤도 막는다)
 //   -demoProgress 0.45      지금 이 비율만큼 탄 하루가 되도록 기상·취침 시각을 맞춘다 (깨어 있는 시간 16시간)
 //                          ⚠️ 앱 그룹의 기상·취침 설정을 덮어쓴다 — 스크린샷용 시뮬레이터에서만 쓸 것
-//   debugScreen 에 year · blowout · freeTime(자유시간 정하기) · flames(불꽃 종류 캐러셀) 도 있다
+//   -period week|month|year 그 기간 페이지로 연다
+//   debugScreen 에 urn(재 항아리) · year · blowout · freeTime(자유시간 정하기) · flames(불꽃 종류 캐러셀) 도 있다
 //   -freeTimeDemo YES       자유시간이 비어 있으면 평일 저녁·주말 오후 예시를 넣고 자유시간 탭을 연다
 //
 // 예) xcrun simctl launch booted com.burningparchment.app -forcePro YES -seedDemo YES -debugScreen insights
@@ -27,6 +28,11 @@ enum DebugLaunch {
 
     /// 매니저들이 만들어지기 전에(App.init) 불러야 한다.
     static func applyOverrides() {
+        // 스크린샷·UI 시험: 처음 안내와 새 소식을 이미 본 것으로 둔다
+        if UserDefaults.standard.bool(forKey: "skipOnboarding") {
+            UserDefaults.standard.set(true, forKey: LaunchAudience.onboardingKey)
+            UserDefaults.standard.set(WhatsNewContent.version, forKey: LaunchAudience.whatsNewKey)
+        }
         guard let raw = UserDefaults.standard.string(forKey: "demoProgress"),
               let progress = Double(raw) else { return }
         let awake: TimeInterval = 16 * 3600
@@ -40,22 +46,36 @@ enum DebugLaunch {
         sd?.set(cal.component(.minute, from: bed), forKey: "bedtimeMinute")
     }
 
-    private static var isEnglish: Bool { !(Locale.preferredLanguages.first ?? "ko").hasPrefix("ko") }
+    private static var language: String {
+        let first = Locale.preferredLanguages.first ?? "ko"
+        if first.hasPrefix("ko") { return "ko" }
+        if first.hasPrefix("ja") { return "ja" }
+        return "en"
+    }
     static var screen: String? { UserDefaults.standard.string(forKey: "debugScreen") }
 
     @MainActor
     static func seedIfNeeded(reflections: ReflectionManager, fragments: FragmentManager) {
-        guard seedDemo, reflections.reflections.isEmpty, fragments.fragments.isEmpty else { return }
+        guard seedDemo, !AppLaunch.isSafeMode,
+              reflections.reflections.isEmpty, fragments.fragments.isEmpty else { return }
         var rng = SeededRNG(seed: 20261013)
         let cal = Calendar.current
-        let texts = isEnglish
-            ? ["Walked for 30 minutes this morning", "Finished the first draft of the report",
-               "Watched videos for two hours", "Didn't read a single page", "Had a long call with a friend",
-               "Put off the gym again", "Cooked dinner myself", "Scrolled shopping apps for no reason",
-               "Left work early and took a walk", "Mapped out the new project"]
-            : ["아침에 30분 걸었다", "보고서 초안을 끝냈다", "유튜브를 두 시간 봤다", "책 한 장도 못 읽었다",
-               "친구와 오래 통화했다", "운동을 또 미뤘다", "저녁을 직접 해 먹었다", "괜히 쇼핑앱을 뒤적였다",
-               "일찍 퇴근해서 산책했다", "새 프로젝트 기획을 정리했다"]
+        let texts: [String]
+        switch language {
+        case "en":
+            texts = ["Walked for 30 minutes this morning", "Finished the first draft of the report",
+                     "Watched videos for two hours", "Didn't read a single page", "Had a long call with a friend",
+                     "Put off the gym again", "Cooked dinner myself", "Scrolled shopping apps for no reason",
+                     "Left work early and took a walk", "Mapped out the new project"]
+        case "ja":
+            texts = ["朝に30分歩いた", "報告書の下書きを仕上げた", "動画を2時間見てしまった", "本を1ページも読めなかった",
+                     "友だちと長電話した", "またジムをさぼった", "夕飯を自分で作った", "なんとなく通販アプリを眺めていた",
+                     "早めに退勤して散歩した", "新しい企画を整理した"]
+        default:
+            texts = ["아침에 30분 걸었다", "보고서 초안을 끝냈다", "유튜브를 두 시간 봤다", "책 한 장도 못 읽었다",
+                     "친구와 오래 통화했다", "운동을 또 미뤘다", "저녁을 직접 해 먹었다", "괜히 쇼핑앱을 뒤적였다",
+                     "일찍 퇴근해서 산책했다", "새 프로젝트 기획을 정리했다"]
+        }
         let cats: [ReflectionCategory] = [.forged, .forged, .forged, .missed, .missed, .accept, .stop, .scattered]
         for _ in 0..<160 {
             let daysAgo = Int.random(in: 0..<360, using: &rng)
@@ -64,11 +84,18 @@ enum DebugLaunch {
                             category: cats.randomElement(using: &rng)!,
                             date: date)
         }
-        let phrases = isEnglish
-            ? ["That's enough for today", "A little earlier tomorrow", "I did enough", "", "A warm evening",
-               "", "Open a book next time", "A quiet night", "Made it through"]
-            : ["오늘은 여기까지", "내일은 조금 더 일찍", "충분히 애썼다", "", "따뜻한 저녁이었다",
-               "", "다음엔 책을 펴자", "고요한 밤", "잘 버텼다"]
+        let phrases: [String]
+        switch language {
+        case "en":
+            phrases = ["That's enough for today", "A little earlier tomorrow", "I did enough", "", "A warm evening",
+                       "", "Open a book next time", "A quiet night", "Made it through"]
+        case "ja":
+            phrases = ["今日はここまで", "明日はもう少し早く", "よくがんばった", "", "あたたかい夜だった",
+                       "", "次は本を開こう", "静かな夜", "なんとか乗りきった"]
+        default:
+            phrases = ["오늘은 여기까지", "내일은 조금 더 일찍", "충분히 애썼다", "", "따뜻한 저녁이었다",
+                       "", "다음엔 책을 펴자", "고요한 밤", "잘 버텼다"]
+        }
         for (i, phrase) in phrases.enumerated() {
             guard let bed = cal.date(byAdding: .day, value: -(i * 3 + 1), to: Date()) else { continue }
             fragments.add(ParchmentFragment(bedtimeDate: bed, extinguishedAt: bed.addingTimeInterval(-1200),
@@ -101,6 +128,13 @@ struct DebugLaunchModifier: ViewModifier {
                         freeTimeManager.add(weekdays: [3], startMinute: 7 * 60, endMinute: 8 * 60)
                     }
                     bedtimeManager.selectedPeriod = .freeTime
+                }
+                // -period week|month|year : 그 기간 페이지로 연다 (스크린샷용)
+                switch UserDefaults.standard.string(forKey: "period") {
+                case "week":  bedtimeManager.selectedPeriod = .week
+                case "month": bedtimeManager.selectedPeriod = .month
+                case "year":  bedtimeManager.selectedPeriod = .year
+                default:      break
                 }
                 screen = DebugLaunch.screen
             }
@@ -135,6 +169,12 @@ struct DebugLaunchModifier: ViewModifier {
                     .background(Color.appBackgroundWarm.ignoresSafeArea())
                     .navigationTitle("재의 흐름")
                     .navigationBarTitleDisplayMode(.inline)
+            }
+        case "urn":
+            NavigationStack {
+                ReflectionUrnView()
+                    .environmentObject(reflectionManager)
+                    .environmentObject(storeManager)
             }
         case "blowout":    BlowOutView()
         case "freeTime":   FreeTimeEditorView()

@@ -48,8 +48,15 @@ enum AppTheme: String, CaseIterable, Identifiable {
 
 // MARK: - 팔레트
 
-private func dynamic(light: UIColor, dark: UIColor) -> Color {
-    Color(UIColor { $0.userInterfaceStyle == .dark ? dark : light })
+/// 라이트·다크 두 벌에, 설정 ▸ 손쉬운 사용 ▸ '대비 증가' 를 켰을 때의 진한 한 벌을 더할 수 있다.
+/// 고대비 값을 주지 않은 색은 평소 값을 그대로 쓴다.
+private func dynamic(light: UIColor, dark: UIColor,
+                     lightHighContrast: UIColor? = nil, darkHighContrast: UIColor? = nil) -> Color {
+    Color(UIColor { t in
+        let high = t.accessibilityContrast == .high
+        if t.userInterfaceStyle == .dark { return high ? (darkHighContrast ?? dark) : dark }
+        return high ? (lightHighContrast ?? light) : light
+    })
 }
 
 private func rgb(_ r: Double, _ g: Double, _ b: Double, _ a: Double = 1) -> UIColor {
@@ -90,19 +97,26 @@ extension Color {
     /// 라이트 값이 회색이 아니라 짙은 갈색인 이유: 호출부가 대부분
     /// `.opacity(0.4)~(0.6)` 으로 흐려 쓴다. 미색 바탕에 중간 회색을 40% 로 얹으면
     /// 거의 사라지므로, 흐려진 뒤에도 읽히도록 바탕에서 충분히 먼 색을 바닥값으로 둔다.
+    ///
+    /// 대비 증가에서는 바탕에서 더 멀리 민다 — 흐리게 얹는 호출부가 많아 그래야 읽힌다.
     static let inkMuted = dynamic(
         light: rgb(0.243, 0.196, 0.137),
-        dark:  UIColor.systemGray
+        dark:  UIColor.systemGray,
+        lightHighContrast: rgb(0.10, 0.075, 0.05),
+        darkHighContrast:  rgb(0.86, 0.86, 0.88)
     )
 
     // MARK: 강조 (불씨)
 
     /// 예전의 `.orange` 자리. 다크에서는 SwiftUI 의 orange 를 그대로 되돌려 주므로
     /// 기존 화면과 완전히 같다. 라이트에서는 미색 위에서 읽히도록 태운 주황으로 낮춘다.
+    /// 대비 증가에서는 다크는 더 밝게, 라이트는 더 짙게 태운다.
     static let ember = Color(UIColor { t in
-        t.userInterfaceStyle == .dark
-            ? UIColor(Color.orange).resolvedColor(with: t)
-            : rgb(0.678, 0.302, 0.075)
+        let high = t.accessibilityContrast == .high
+        if t.userInterfaceStyle == .dark {
+            return high ? rgb(1.0, 0.72, 0.38) : UIColor(Color.orange).resolvedColor(with: t)
+        }
+        return high ? rgb(0.52, 0.20, 0.02) : rgb(0.678, 0.302, 0.075)
     })
 
     /// 경고·만료처럼 붉은 강조. (불꽃 그라디언트의 빨강과는 다른 용도다)

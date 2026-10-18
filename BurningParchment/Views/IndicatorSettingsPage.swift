@@ -199,23 +199,50 @@ struct SettingsRow<Trailing: View>: View {
     let title: String
     @ViewBuilder var trailing: Trailing
     @ScaledMetric private var fontSize: CGFloat = 15
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
-        HStack(spacing: 12) {
-            Image(systemName: icon)
-                .font(.system(size: fontSize - 1))
-                .foregroundColor(.ember.opacity(0.75))
-                .frame(width: 22)
-                .accessibilityHidden(true)
-            Text(title)
-                .font(.system(size: fontSize))
-                .foregroundColor(.ink.opacity(0.88))
-            Spacer(minLength: 8)
-            trailing
+        Group {
+            if typeSize.isAccessibilitySize {
+                // 아주 큰 글씨: 제목이 꼬리(시간·스위치)에 밀려 잘리지 않도록 두 줄로 나눈다
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(spacing: 12) {
+                        iconView(width: 28)
+                        titleText
+                    }
+                    HStack {
+                        Spacer(minLength: 0)
+                        trailing
+                    }
+                }
+                .padding(.vertical, 10)
+            } else {
+                HStack(spacing: 12) {
+                    iconView(width: 22)
+                    titleText
+                    Spacer(minLength: 8)
+                    trailing
+                }
+            }
         }
         .padding(.horizontal, 14)
         .frame(minHeight: 48)
         .contentShape(Rectangle())
+    }
+
+    private func iconView(width: CGFloat) -> some View {
+        Image(systemName: icon)
+            .font(.system(size: fontSize - 1))
+            .foregroundColor(.ember.opacity(0.75))
+            .frame(width: width)
+            .accessibilityHidden(true)
+    }
+
+    private var titleText: some View {
+        Text(title)
+            .font(.system(size: fontSize))
+            .foregroundColor(.ink.opacity(0.88))
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 

@@ -4,6 +4,8 @@
 import SwiftUI
 import Combine
 import WidgetKit
+import TipKit
+import LeeoKit
 
 struct ContentView: View {
     @EnvironmentObject var bedtimeManager:    BedtimeManager
@@ -32,6 +34,20 @@ struct ContentView: View {
     /// 밤에 앱이 켜져 있는 동안 "깨어 있던 흔적"을 남기는 간격
     private let awakeTicker = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.colorSchemeContrast) private var contrast
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    /// 처음 연 사람에게 보이는 안내, 업데이트 뒤 한 번 보이는 새 소식
+    @State private var showOnboarding = false
+    @State private var showWhatsNew = false
+    @State private var greeted = false
+    @AppStorage(LaunchAudience.onboardingKey) private var hasCompletedOnboarding = false
+    @AppStorage(LaunchAudience.whatsNewKey) private var lastSeenWhatsNew = ""
+    private let swipeTip = SwipePeriodsTip()
+
+    /// 머리 줄 아이콘의 불투명도. 대비 증가에서는 흐리게 두지 않는다.
+    private var headerIconOpacity: Double { contrast == .increased ? 0.95 : 0.6 }
 
     private static let nudgeWindowSeconds: Double = 5400  // 취침 90분 전부터
     private static let nudgeAutoHideSeconds: Double = 9
@@ -86,6 +102,9 @@ struct ContentView: View {
 
                 VStack(spacing: 0) {
                     headerBar
+                    TipView(swipeTip, arrowEdge: .top)
+                        .tipBackground(Color.appBackgroundWarm)
+                        .padding(.horizontal, 20)
                     tomorrowIntentStrip
                     BurningParchmentView()
                         .environmentObject(bedtimeManager)
@@ -101,6 +120,7 @@ struct ContentView: View {
                         let dx = value.translation.width
                         let dy = value.translation.height
                         guard abs(dx) > abs(dy) * 1.5 else { return }
+                        swipeTip.invalidate(reason: .actionPerformed)
                         let idx = currentIndex
                         if dx < 0, idx < pages.count - 1 {
                             withAnimation(.easeInOut(duration: 0.2)) {
@@ -180,12 +200,55 @@ struct ContentView: View {
         .onChange(of: showReflections) { _, isShowing in
             if !isShowing { autoOpenReflectionInput = false }
         }
+        .fullScreenCover(isPresented: $showOnboarding) {
+            BurningOnboardingView {
+                hasCompletedOnboarding = true
+                showOnboarding = false
+            }
+        }
+        .sheet(isPresented: $showWhatsNew) {
+            WhatsNewView { showWhatsNew = false }
+                .presentationDragIndicator(.visible)
+        }
         .onAppear {
+            AppLaunch.firstScreenAppeared()
+            greetByAudience()
             noteAwakeIfNight()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 evaluateReflectionNudge()
                 evaluateMorning()
             }
+        }
+    }
+
+    // MARK: - 처음 온 사람 · 업데이트한 사람
+
+    private func greetByAudience() {
+        // 전체 화면 안내가 닫히면 onAppear 가 다시 불린다 — 한 번만 판단한다
+        guard !greeted else { return }
+        greeted = true
+        #if DEBUG
+        // UI 시험·스크린샷: 실행 횟수와 상관없이 안내를 띄운다 (-showOnboarding YES)
+        if UserDefaults.standard.bool(forKey: "showOnboarding") {
+            showOnboarding = true
+            return
+        }
+        #endif
+        let audience = LaunchAudience.resolve(launchCount: LeeoEngagement.shared.launchCount,
+                                              hasCompletedOnboarding: hasCompletedOnboarding,
+                                              lastSeenWhatsNew: lastSeenWhatsNew)
+        switch audience {
+        case .newcomer:
+            // 처음 온 사람에게 "새로워졌어요"는 뜻 모를 말이다 — 본 것으로만 적는다
+            lastSeenWhatsNew = WhatsNewContent.version
+            showOnboarding = true
+        case .returningNeedsWhatsNew:
+            // 쓰던 사람은 안내가 필요 없다 (설정에서 다시 볼 수 있다)
+            hasCompletedOnboarding = true
+            lastSeenWhatsNew = WhatsNewContent.version
+            showWhatsNew = true
+        case .returning:
+            break
         }
     }
 
@@ -207,16 +270,16 @@ struct ContentView: View {
                         .font(.system(size: 10))
                         .foregroundColor(.ember.opacity(0.75))
                     Text("어제 못한 것")
-                        .font(.system(size: 11, weight: .medium, design: .serif))
+                        .font(.system(.caption2, design: .serif).weight(.medium))
                         .foregroundColor(.ember.opacity(0.75))
                 }
                 ForEach(Array(intents.prefix(3).enumerated()), id: \.offset) { _, item in
                     HStack(alignment: .top, spacing: 6) {
                         Text("·")
-                            .font(.system(size: 12, weight: .bold))
+                            .font(.caption.weight(.bold))
                             .foregroundColor(.ember.opacity(0.6))
                         Text(item.intent)
-                            .font(.system(size: 12, design: .serif))
+                            .font(.system(.caption, design: .serif))
                             .foregroundColor(Color(red: 0.45, green: 0.32, blue: 0.18))
                             .lineLimit(1)
                             .truncationMode(.tail)
@@ -224,7 +287,7 @@ struct ContentView: View {
                 }
                 if intents.count > 3 {
                     Text("외 \(intents.count - 3)개")
-                        .font(.system(size: 10, design: .serif))
+                        .font(.system(.caption2, design: .serif))
                         .foregroundColor(.ember.opacity(0.5))
                 }
             }
@@ -303,7 +366,7 @@ struct ContentView: View {
                         Image(systemName: "smoke.fill")
                             .font(.system(size: 12))
                         Text("불을 껐어요 · 모은 조각 보기")
-                            .font(.system(size: 13, weight: .medium, design: .serif))
+                            .font(.system(.footnote, design: .serif).weight(.medium))
                         Image(systemName: "chevron.right")
                             .font(.system(size: 10, weight: .semibold))
                     }
@@ -326,7 +389,7 @@ struct ContentView: View {
                 Image(systemName: "wind")
                     .font(.system(size: 14, weight: .semibold))
                 Text("후 불어서 불 끄기")
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .font(.system(.subheadline, design: .serif).weight(.semibold))
             }
             .foregroundColor(.onEmber)
             .padding(.vertical, 12)
@@ -355,10 +418,10 @@ struct ContentView: View {
                         .foregroundColor(.ember.opacity(0.85))
                     VStack(alignment: .leading, spacing: 2) {
                         Text("오늘 한 줄, 남기고 잘까요?")
-                            .font(.system(size: 13, weight: .medium, design: .serif))
+                            .font(.system(.footnote, design: .serif).weight(.medium))
                             .foregroundColor(.ember.opacity(0.92))
                         Text("재 항아리에 담아주세요")
-                            .font(.system(size: 10))
+                            .font(.caption2)
                             .foregroundColor(.inkMuted.opacity(0.6))
                     }
                     Spacer(minLength: 8)
@@ -369,9 +432,8 @@ struct ContentView: View {
                 .padding(.vertical, 10)
                 .padding(.horizontal, 14)
                 .background(
-                    Capsule()
-                        .fill(.ultraThinMaterial)
-                        .overlay(Capsule().stroke(Color.ember.opacity(0.35), lineWidth: 1))
+                    nudgeBackground
+                        .overlay(Capsule().stroke(Color.ember.opacity(contrast == .increased ? 0.8 : 0.35), lineWidth: 1))
                 )
                 .shadow(color: .ember.opacity(0.2), radius: 10, y: 2)
             }
@@ -379,6 +441,16 @@ struct ContentView: View {
             .padding(.bottom, 6)
             .transition(.move(edge: .bottom).combined(with: .opacity))
             .accessibilityLabel("오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다")
+        }
+    }
+
+    /// 투명도 줄이기를 켜면 비치는 유리 대신 불투명한 바탕을 쓴다
+    @ViewBuilder
+    private var nudgeBackground: some View {
+        if reduceTransparency {
+            Capsule().fill(Color.appBackgroundWarm)
+        } else {
+            Capsule().fill(.ultraThinMaterial)
         }
     }
 
@@ -415,7 +487,7 @@ struct ContentView: View {
 
     /// 낮에 앱을 열면 어젯밤을 확정한다. 건강 앱 기록이 있으면 묻지 않고, 없으면 하룻밤에 한 번만 묻는다.
     private func evaluateMorning() {
-        guard morningCheckIn == nil, !evaluatingMorning, !showBlowOut,
+        guard morningCheckIn == nil, !evaluatingMorning, !showBlowOut, !showOnboarding, !showWhatsNew,
               bedtimeManager.isCountdownActive, let night = bedtimeManager.lastNight else { return }
 
         // 옮겨붙는 흐름이 꺼져 있으면 아침에는 아무것도 띄우지 않는다 — 잠든 시각도, 조각 뒷면 쓰기도.
@@ -447,9 +519,11 @@ struct ContentView: View {
         }
 
         evaluatingMorning = true
+        // 건강 앱 조회는 원격으로 끌 수 있고, 세이프 모드에서는 건너뛴다 — 그때는 아침에 직접 묻는다
+        let readsHealth = BurningFlag.sleepHealth.isEnabled && !AppLaunch.isSafeMode
         Task { @MainActor in
             defer { evaluatingMorning = false }
-            if let onset = await SleepHealth.sleepOnset(in: night) {
+            if readsHealth, let onset = await SleepHealth.sleepOnset(in: night) {
                 nightManager.resolve(night, outcome: .health, healthOnset: onset)
                 morningAutoShownBedtime = key
                 morningCheckIn = MorningCheckIn(night: night, step: .result)
@@ -550,71 +624,90 @@ struct ContentView: View {
 
     // MARK: - Header
     private var headerBar: some View {
-        HStack(alignment: .top) {
-            Text(periodTitle)
-                .font(.system(size: 34, weight: .bold, design: .serif))
-                .foregroundColor(.ember.opacity(0.9))
-                .animation(reduceMotion ? nil : .easeInOut(duration: 0.2), value: bedtimeManager.selectedPeriod)
-                .accessibilityAddTraits(.isHeader)
-                .accessibilityValue("페이지 \(currentIndex + 1) / \(pages.count)")
-                .accessibilityHint("위아래로 스와이프해 페이지 이동")
-                .accessibilityAdjustableAction { direction in
-                    let idx = currentIndex
-                    switch direction {
-                    case .increment:
-                        if idx < pages.count - 1 {
-                            bedtimeManager.selectedPeriod = pages[idx + 1]
-                        }
-                    case .decrement:
-                        if idx > 0 {
-                            bedtimeManager.selectedPeriod = pages[idx - 1]
-                        }
-                    @unknown default: break
-                    }
+        Group {
+            if typeSize.isAccessibilitySize {
+                // 아주 큰 글씨: 제목이 아이콘 줄에 밀려 잘리지 않도록 아이콘을 위, 제목을 아래로 둔다
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack { Spacer(); headerIcons }
+                    headerTitle
                 }
-
-            Spacer()
-
-            HStack(spacing: 18) {
-                if !fragmentManager.fragments.isEmpty {
-                    Button(action: { showFragments = true }) {
-                        Image(systemName: "square.stack.fill")
-                            .font(.system(size: 17))
-                            .foregroundColor(.ember.opacity(0.6))
-                    }
-                    .accessibilityLabel("모은 조각")
-                    .accessibilityValue("\(fragmentManager.fragments.count)개")
+            } else {
+                HStack(alignment: .top) {
+                    headerTitle
+                    Spacer()
+                    headerIcons.padding(.top, 10)
                 }
-
-                AshUrnButton { showReflections = true }
-                    .environmentObject(reflectionManager)
-
-                Button(action: { showDeadlines = true }) {
-                    Image(systemName: "flag.fill")
-                        .font(.system(size: 18))
-                        .foregroundColor(.ember.opacity(0.6))
-                }
-                .accessibilityLabel("데드라인")
-                .accessibilityValue(
-                    deadlineManager.deadlines.isEmpty
-                        ? "없음"
-                        : "\(deadlineManager.deadlines.filter { !$0.isExpired() }.count)개"
-                )
-                .accessibilityHint("탭하여 데드라인 관리")
-
-                Button(action: { showSettings = true }) {
-                    Image(systemName: "gearshape.fill")
-                        .font(.system(size: 20))
-                        .foregroundColor(.ember.opacity(0.6))
-                }
-                .accessibilityLabel("시간 설정")
-                .accessibilityHint("기상 및 취침 시간 설정")
             }
-            .padding(.top, 10)
         }
         .padding(.horizontal, 24)
         .padding(.top, 8)
         .padding(.bottom, 4)
+    }
+
+    private var headerTitle: some View {
+        Text(periodTitle)
+            // 큰 제목 스타일(34pt) — 글자 크기 설정을 따른다
+            .font(.system(.largeTitle, design: .serif).weight(.bold))
+            .foregroundColor(.ember.opacity(0.9))
+            .animation(reduceMotion ? nil : .easeInOut(duration: 0.2), value: bedtimeManager.selectedPeriod)
+            .accessibilityAddTraits(.isHeader)
+            .accessibilityValue("페이지 \(currentIndex + 1) / \(pages.count)")
+            .accessibilityHint("위아래로 스와이프해 페이지 이동")
+            .accessibilityAdjustableAction { direction in
+                let idx = currentIndex
+                switch direction {
+                case .increment:
+                    if idx < pages.count - 1 {
+                        bedtimeManager.selectedPeriod = pages[idx + 1]
+                    }
+                case .decrement:
+                    if idx > 0 {
+                        bedtimeManager.selectedPeriod = pages[idx - 1]
+                    }
+                @unknown default: break
+                }
+            }
+    }
+
+    private var headerIcons: some View {
+        HStack(spacing: 18) {
+            if !fragmentManager.fragments.isEmpty {
+                Button(action: { showFragments = true }) {
+                    Image(systemName: "square.stack.fill")
+                        .font(.system(size: 17))
+                        .foregroundColor(.ember.opacity(headerIconOpacity))
+                }
+                .accessibilityLabel("모은 조각")
+                .accessibilityValue("\(fragmentManager.fragments.count)개")
+                .accessibilityInputLabels([Text("모은 조각"), Text("조각")])
+            }
+
+            AshUrnButton { showReflections = true }
+                .environmentObject(reflectionManager)
+
+            Button(action: { showDeadlines = true }) {
+                Image(systemName: "flag.fill")
+                    .font(.system(size: 18))
+                    .foregroundColor(.ember.opacity(headerIconOpacity))
+            }
+            .accessibilityLabel("데드라인")
+            .accessibilityInputLabels([Text("데드라인"), Text("목표")])
+            .accessibilityValue(
+                deadlineManager.deadlines.isEmpty
+                    ? "없음"
+                    : "\(deadlineManager.deadlines.filter { !$0.isExpired() }.count)개"
+            )
+            .accessibilityHint("탭하여 데드라인 관리")
+
+            Button(action: { showSettings = true }) {
+                Image(systemName: "gearshape.fill")
+                    .font(.system(size: 20))
+                    .foregroundColor(.ember.opacity(headerIconOpacity))
+            }
+            .accessibilityLabel("시간 설정")
+            .accessibilityHint("기상 및 취침 시간 설정")
+            .accessibilityInputLabels([Text("설정"), Text("시간 설정")])
+        }
     }
 
     private var periodTitle: String {

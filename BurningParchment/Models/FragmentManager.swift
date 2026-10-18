@@ -43,14 +43,20 @@ class FragmentManager: ObservableObject {
     // MARK: - Persistence
 
     private func save() {
-        guard let data = try? JSONEncoder().encode(fragments) else { return }
-        sd?.set(data, forKey: key)
+        do {
+            sd?.set(try JSONEncoder().encode(fragments), forKey: key)
+        } catch {
+            AppLog.storage.error("조각 \(self.fragments.count)개를 저장하지 못함: \(error.localizedDescription, privacy: .public)")
+        }
     }
 
     private func load() {
-        guard let data = sd?.data(forKey: key),
-              let decoded = try? JSONDecoder().decode([ParchmentFragment].self, from: data)
-        else { return }
-        fragments = decoded.sorted { $0.bedtimeDate > $1.bedtimeDate }
+        guard let data = sd?.data(forKey: key) else { return }
+        do {
+            let decoded = try JSONDecoder().decode([ParchmentFragment].self, from: data)
+            fragments = decoded.sorted { $0.bedtimeDate > $1.bedtimeDate }
+        } catch {
+            AppLog.storage.fault("조각을 읽지 못함 (\(data.count) bytes): \(error.localizedDescription, privacy: .public)")
+        }
     }
 }

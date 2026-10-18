@@ -28,11 +28,13 @@ struct DeadlineListView: View {
                                     .onTapGesture { selectedDeadline = deadline }
                                     .contextMenu {
                                         Button(role: .destructive) {
-                                            deadlineManager.delete(id: deadline.id)
+                                            delete(deadline)
                                         } label: {
                                             Label("삭제", systemImage: "trash")
                                         }
                                     }
+                                    // 길게 눌러 여는 메뉴를 VoiceOver 동작으로도
+                                    .accessibilityAction(named: Text("삭제")) { delete(deadline) }
                             }
                         }
                         .padding(.horizontal, 16)
@@ -55,6 +57,7 @@ struct DeadlineListView: View {
                             .foregroundColor(.ember)
                             .font(.system(size: 16, weight: .semibold))
                     }
+                    .accessibilityLabel("데드라인 추가")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("닫기") { dismiss() }
@@ -76,17 +79,29 @@ struct DeadlineListView: View {
         }
     }
 
+    private func delete(_ deadline: Deadline) {
+        deadlineManager.delete(id: deadline.id)
+        Moments.deadlineDeleted(deadline.title)
+    }
+
     private var emptyState: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "flag.fill")
-                .font(.system(size: 52))
-                .foregroundColor(.ember.opacity(0.25))
-            Text("데드라인이 없어요")
-                .font(.system(size: 18, weight: .medium, design: .serif))
-                .foregroundColor(.inkMuted.opacity(0.5))
+        ContentUnavailableView {
+            Label {
+                Text("데드라인이 없어요")
+                    .font(.system(.title3, design: .serif).weight(.medium))
+                    .foregroundColor(.inkMuted.opacity(0.8))
+            } icon: {
+                Image(systemName: "flag.fill")
+                    .foregroundColor(.ember.opacity(0.35))
+            }
+        } description: {
             Text("+ 버튼으로 새 데드라인을 추가하세요")
-                .font(.system(size: 13))
-                .foregroundColor(.inkMuted.opacity(0.35))
+                .foregroundColor(.inkMuted.opacity(0.7))
+        } actions: {
+            Button("데드라인 추가") { showAdd = true }
+                .buttonStyle(.borderedProminent)
+                .tint(.ember)
+                .accessibilityIdentifier("deadline.emptyAdd")
         }
     }
 }
@@ -228,6 +243,7 @@ struct DeadlineFormView: View {
                                 .font(.system(size: 13, weight: .medium))
                                 .foregroundColor(.inkMuted.opacity(0.6))
                             TextField("예: 프로젝트 제출", text: $title)
+                                .accessibilityIdentifier("deadline.title")
                                 .font(.system(size: 17))
                                 .foregroundColor(.ember.opacity(0.9))
                                 .padding(14)
@@ -296,6 +312,7 @@ struct DeadlineFormView: View {
                             deadlineManager.update(updated)
                         } else {
                             deadlineManager.add(Deadline(title: title, emoji: emoji, targetDate: targetDate, startDate: startDate))
+                            Moments.deadlineAdded(title)
                         }
                         dismiss()
                     }

@@ -61,6 +61,10 @@ enum ReflectionBookPDF {
                      urnTitle: (DayReflection) -> String) -> URL? {
         let reflections = all.filter { scope.contains($0.date) }
         guard !reflections.isEmpty else { return nil }
+        // 회고가 많으면 몇 초 걸린다 — Instruments ▸ Points of Interest 에서 본다
+        let signpostState = AppLog.signposter.beginInterval("MakeBookPDF", id: AppLog.signposter.makeSignpostID(),
+                                                            "\(reflections.count) reflections")
+        defer { AppLog.signposter.endInterval("MakeBookPDF", signpostState) }
 
         let days = Dictionary(grouping: reflections) { Calendar.current.startOfDay(for: $0.date) }
             .map { (date: $0.key, items: $0.value.sorted { $0.createdAt < $1.createdAt }) }
@@ -72,7 +76,10 @@ enum ReflectionBookPDF {
             fileName.replacingOccurrences(of: "/", with: "-"))
 
         var mediaBox = CGRect(origin: .zero, size: pageSize)
-        guard let pdf = CGContext(url as CFURL, mediaBox: &mediaBox, nil) else { return nil }
+        guard let pdf = CGContext(url as CFURL, mediaBox: &mediaBox, nil) else {
+            AppLog.export.error("회고 책 PDF 파일을 만들지 못함")
+            return nil
+        }
 
         var pageNumber = 0
         var cursorY: CGFloat = 0   // 쪽 맨 위에서부터 내려온 거리
@@ -131,6 +138,7 @@ enum ReflectionBookPDF {
         }
         endPage()
         pdf.closePDF()
+        AppLog.export.info("회고 책 PDF \(pageNumber)쪽 (회고 \(reflections.count)개)")
         return url
     }
 

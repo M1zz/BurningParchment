@@ -74,8 +74,12 @@ struct PaywallView: View {
             Text("이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
         }
         .task { await storeManager.loadProduct() }
+        .onAppear { BurningFunnel.paywallSeen.reach() }
         .onChange(of: storeManager.isPro) { _, pro in
-            if pro { dismiss() }
+            if pro {
+                BurningFunnel.purchased.reach()
+                dismiss()
+            }
         }
     }
 
@@ -348,12 +352,13 @@ struct PaywallView: View {
         }
     }
 
-    /// 개인정보처리방침은 지원 언어마다 페이지가 있다. 한국어가 아니면 영어 페이지로.
+    /// 개인정보처리방침은 지원 언어마다 페이지가 있다. 한국어·일본어가 아니면 영어 페이지로.
     private static var privacyURL: URL {
-        let isKorean = Locale.preferredLanguages.first?.hasPrefix("ko") ?? false
-        return isKorean
-            ? BurningParchmentSpec.legal.privacyURL
-            : URL(string: "https://m1zz.github.io/BurningParchment/en/privacy.html")!
+        let language = Locale.preferredLanguages.first ?? "en"
+        if language.hasPrefix("ko") { return BurningParchmentSpec.legal.privacyURL }
+        let folder = language.hasPrefix("ja") ? "ja" : "en"
+        return URL(string: "https://m1zz.github.io/BurningParchment/\(folder)/privacy.html")
+            ?? BurningParchmentSpec.legal.privacyURL
     }
 }
 

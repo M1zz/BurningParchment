@@ -228,6 +228,7 @@ struct BlowOutView: View {
         }
         if !reduceMotion { spawnSmoke() }
         withAnimation(.easeOut(duration: 0.4)) { stage = .extinguished }
+        Moments.fireBlownOut(keptFragment: night == nil)
     }
 
     // MARK: - 연기

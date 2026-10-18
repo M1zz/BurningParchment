@@ -90,17 +90,19 @@ struct ReflectionBookView: View {
     // MARK: - Empty State
 
     private var emptyState: some View {
-        VStack(spacing: 14) {
-            Image(systemName: "book.closed")
-                .font(.system(size: 52))
-                .foregroundColor(.ember.opacity(0.3))
-            Text("아직 첫 페이지에요")
-                .font(.system(size: 16, weight: .medium, design: .serif))
-                .foregroundColor(.inkMuted.opacity(0.6))
+        ContentUnavailableView {
+            Label {
+                Text("아직 첫 페이지에요")
+                    .font(.system(.title3, design: .serif).weight(.medium))
+                    .foregroundColor(.inkMuted.opacity(0.8))
+            } icon: {
+                Image(systemName: "book.closed")
+                    .foregroundColor(.ember.opacity(0.35))
+            }
+        } description: {
             Text("회고를 하나라도 담으면\n이 책이 채워져요.")
-                .font(.system(size: 12, design: .serif))
-                .foregroundColor(.inkMuted.opacity(0.45))
-                .multilineTextAlignment(.center)
+                .font(.system(.subheadline, design: .serif))
+                .foregroundColor(.inkMuted.opacity(0.7))
         }
     }
 

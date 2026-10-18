@@ -224,8 +224,12 @@ class ReflectionManager: ObservableObject {
     // MARK: - Persistence
 
     private func saveReflections() {
-        guard let data = try? JSONEncoder().encode(reflections) else { return }
-        sharedDefaults?.set(data, forKey: keyReflections)
+        do {
+            let data = try AppLog.measure("SaveReflections") { try JSONEncoder().encode(reflections) }
+            sharedDefaults?.set(data, forKey: keyReflections)
+        } catch {
+            AppLog.storage.error("회고 \(self.reflections.count)개를 저장하지 못함: \(error.localizedDescription, privacy: .public)")
+        }
     }
 
     private func saveMeanings() {
@@ -234,9 +238,17 @@ class ReflectionManager: ObservableObject {
     }
 
     private func load() {
-        if let data = sharedDefaults?.data(forKey: keyReflections),
-           let decoded = try? JSONDecoder().decode([DayReflection].self, from: data) {
-            reflections = decoded.sorted { $0.createdAt > $1.createdAt }
+        if let data = sharedDefaults?.data(forKey: keyReflections) {
+            do {
+                let decoded = try AppLog.measure("LoadReflections") {
+                    try JSONDecoder().decode([DayReflection].self, from: data)
+                }
+                reflections = decoded.sorted { $0.createdAt > $1.createdAt }
+                AppLog.storage.info("회고 \(decoded.count)개를 읽음")
+            } catch {
+                // 읽지 못한 회고가 있다 — 조용히 넘어가면 다음 저장이 빈 목록으로 덮어쓴 것처럼 보인다
+                AppLog.storage.fault("회고를 읽지 못함 (\(data.count) bytes): \(error.localizedDescription, privacy: .public)")
+            }
         }
         if let data = sharedDefaults?.data(forKey: keyMeanings),
            let decoded = try? JSONDecoder().decode([String: UrnMeaning].self, from: data) {

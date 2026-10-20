@@ -67,7 +67,7 @@ struct BurningParchmentApp: App {
                 .environment(\.flameKind,
                              FlameKind.effective(raw: flameKindRaw, isPro: storeManager.isPro))
                 .preferredColorScheme(appTheme.colorScheme)
-                .leeoSatisfactionCheck(BurningParchmentSpec.self)
+                // 만족도 질문은 앱을 켤 때가 아니라 해낸 직후에 묻는다 (ContentView)
         }
     }
 }

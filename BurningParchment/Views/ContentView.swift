@@ -25,6 +25,9 @@ struct ContentView: View {
     @State private var nudgeEvaluatedThisSession = false
     @State private var showBlowOut     = false
     @State private var showFragments   = false
+    // 만족도 질문 — 회고·데드라인 화면에서 무언가를 해내고 돌아온 때 묻는다 (앱을 켜자마자가 아니라)
+    @State private var showReviewGate  = false
+    @State private var eventsAtVisit   = 0
     @State private var morningCheckIn: MorningCheckIn?
     @State private var evaluatingMorning = false
     /// 아침 확인을 저절로 띄운 밤(취침 시각). 하룻밤에 한 번만 띄우고, 그 뒤로는 사용자가 열 때만.
@@ -199,7 +202,12 @@ struct ContentView: View {
         }
         .onChange(of: showReflections) { _, isShowing in
             if !isShowing { autoOpenReflectionInput = false }
+            askForReviewIfAccomplished(returning: !isShowing)
         }
+        .onChange(of: showDeadlines) { _, isShowing in
+            askForReviewIfAccomplished(returning: !isShowing)
+        }
+        .leeoReviewGate(BurningParchmentSpec.self, isPresented: $showReviewGate)
         .fullScreenCover(isPresented: $showOnboarding) {
             BurningOnboardingView {
                 hasCompletedOnboarding = true
@@ -218,6 +226,24 @@ struct ContentView: View {
                 evaluateReflectionNudge()
                 evaluateMorning()
             }
+        }
+    }
+
+    // MARK: - 만족도 질문
+
+    /// 회고·데드라인 화면을 열 때 해낸 일 수를 적어 두고, 닫고 돌아왔을 때 늘었으면 묻는다.
+    /// 불 끄기는 "잘 자요"로 끝나는 잠자리 의식이라 거기서는 묻지 않는다.
+    private func askForReviewIfAccomplished(returning: Bool) {
+        let events = LeeoEngagement.shared.significantEventCount
+        guard returning else { eventsAtVisit = events; return }
+        guard events > eventsAtVisit, LeeoReviewRequest.shouldRequest() else { return }
+        Task { @MainActor in
+            try? await Task.sleep(for: .seconds(0.8))   // 화면이 돌아오는 전환이 끝난 뒤
+            let busy = showSettings || showDeadlines || showReflections || showReflectionNudge || showBlowOut
+                || showFragments || morningCheckIn != nil || showOnboarding || showWhatsNew || showReviewGate
+            guard !busy, LeeoReviewRequest.shouldRequest() else { return }
+            LeeoReviewRequest.markRequested()
+            showReviewGate = true
         }
     }
 

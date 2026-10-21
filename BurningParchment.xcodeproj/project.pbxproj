@@ -524,6 +524,10 @@
 				en,
 				ja,
 				ko,
+				"en-GB",
+				es,
+				de,
+				"zh-Hans",
 			);
 			mainGroup = 39EC316FADCCDA4DC5875847;
 			minimizedProjectReferenceProxies = 1;

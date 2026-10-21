@@ -170,3 +170,231 @@ https://m1zz.github.io/BurningParchment/ja/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/ja/
+
+## en-GB
+
+### 이름
+
+Burning Parchment: Bedtime
+
+### 부제
+
+Watch your evening burn down
+
+### 키워드
+
+sleep,countdown,deadline,remaining,routine,reflection,journal,lockscreen,widget,habit,curfew,timer
+
+### 프로모션 텍스트
+
+Thirty minutes before bed, blow on the burning parchment to put it out. A small ritual to close your day, with every piece you keep safely saved.
+
+### 설명
+
+The time you have left today burns away right in front of you.
+Burning Parchment shows your remaining time as a sheet of parchment on fire instead of a number. It is made for anyone tired of watching their evenings simply disappear.
+
+DAY, WEEK, MONTH, YEAR
+From the moment you wake up until bedtime, the parchment slowly burns. See what is left of this week, this month and this year in the same way.
+Add a goal with a deadline and it counts down right alongside.
+
+BLOW OUT THE FLAME
+From 30 minutes before bedtime you can blow on the parchment to put the fire out. Only the strength of your breath is used. Nothing is recorded.
+The piece that is left is kept for you. Flip it over and write a line on its back whenever you like.
+
+WHAT REMAINS AS ASH
+Look back with a one-line reflection and place it on a two-axis graph of how the time was spent.
+Reflections gather in urns that you name by topic, and you can read them again in the Reflection Book.
+Ash Flow shows where your time went, with a distribution graph and an ember calendar.
+
+ALWAYS IN SIGHT
+Check the time left from Home Screen and Lock Screen widgets, the Dynamic Island and a Live Activity.
+Light and dark themes, suggested bedtimes, and only the tabs you want to see.
+
+BURNING PARCHMENT PRO
+The burning parchment, reflections and the blow-out ritual are all free, along with one deadline. Pro is a one-off lifetime purchase, not a subscription.
+It adds parchment and flame themes (Moonlit Hanji, Celadon, Dusk), fragment cards and posters to share, a PDF of your Reflection Book, a year of ash at a glance, and unlimited deadlines. Every Pro feature added later is included.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/en/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/en/
+
+## es
+
+### 이름
+
+Pergamino en Llamas: Tu día
+
+### 부제
+
+Cuenta atrás hasta dormir
+
+### 키워드
+
+temporizador,tiempo,sueño,diario,reflexión,hábitos,rutina,descanso,widget,plazos,metas,noche,calma
+
+### 프로모션 텍스트
+
+30 minutos antes de dormir, sopla sobre el pergamino y apaga el fuego. Un pequeño ritual para cerrar el día. Los fragmentos que quedan puedes guardarlos con cariño.
+
+### 설명
+
+El tiempo que te queda hoy se consume ante tus ojos.
+Pergamino en Llamas te muestra cuánto tiempo queda, no con números, sino con un pergamino que arde. Lo creamos para quienes quieren cambiar esos días en los que, sin darse cuenta, la noche ya ha terminado.
+
+Un día, una semana, un mes, un año
+Desde que despiertas hasta la hora de dormir, el pergamino arde poco a poco. En el mismo pergamino también puedes ver cuánto queda de esta semana, este mes y este año.
+Si añades una meta con fecha límite, también cuenta el tiempo que falta hasta ese día.
+
+Sopla y apaga: el final del día
+Desde 30 minutos antes de dormir, puedes soplar sobre el pergamino para apagar el fuego. Solo se usa la intensidad de tu soplido y nunca se graba ningún sonido.
+El fragmento que queda tras apagar el fuego puedes guardarlo. Cuando quieras, dale la vuelta y escribe una línea en el reverso.
+
+Un día que se queda en ceniza
+Mira atrás en el tiempo que pasó, deja una línea y coloca con un punto en un gráfico de dos ejes a qué dedicaste ese rato.
+Tus reflexiones se acumulan en urnas de ceniza semanales y mensuales, y puedes releerlas en el libro de reflexiones.
+En la pantalla del flujo de ceniza ves adónde fue el tiempo con un gráfico de distribución y un calendario de brasas.
+
+Siempre a la vista
+Consulta el tiempo restante con widgets en la pantalla de inicio y de bloqueo, la Dynamic Island y las actividades en directo de la pantalla de bloqueo.
+Incluye temas claro y oscuro, horas de dormir sugeridas y ajustes para elegir solo las páginas que quieres ver.
+
+Pergamino en Llamas Pro
+Pergamino en Llamas, las reflexiones y el ritual de soplar para apagar son totalmente gratis, y las fechas límite son gratis hasta 1. Pro no es una suscripción: se paga una sola vez y es tuyo para siempre.
+Desbloquea el tiempo libre en llamas, que quema solo el tiempo libre que tú decides; los colores del pergamino y de la llama (Hanji a la luz de la luna, Celadón, Atardecer); los tipos de llama (Incendio, Brasas, Chispas); compartir fragmentos como tarjetas o pósteres; exportar el libro de reflexiones en PDF; el flujo de ceniza de los últimos 12 meses; y fechas límite ilimitadas. Incluye también todas las funciones Pro que se añadan en el futuro.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/es/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/es/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/es/
+
+## de
+
+### 이름
+
+Brennendes Pergament: Bettzeit
+
+### 부제
+
+Dein Abend brennt langsam ab
+
+### 키워드
+
+Schlafenszeit,Restzeit,Countdown,Tagesplaner,Rückblick,Tagebuch,Routine,Widget,Deadline,Nachtroutine
+
+### 프로모션 텍스트
+
+30 Minuten vor dem Schlafen pustest du das brennende Pergament aus. Ein kleines Ritual zum Tagesabschluss. Übrig gebliebene Fragmente werden für dich aufbewahrt.
+
+### 설명
+
+Die Zeit, die dir heute noch bleibt, verbrennt direkt vor deinen Augen.
+Brennendes Pergament zeigt dir die Restzeit nicht als Zahl, sondern als brennendes Pergament. Die App ist für alle gemacht, die nicht länger zusehen wollen, wie ihre Abende einfach verschwinden.
+
+TAG, WOCHE, MONAT, JAHR
+Vom Aufstehen bis zur Schlafenszeit brennt das Pergament langsam ab. Auch die Restzeit dieser Woche, dieses Monats und dieses Jahres siehst du auf demselben Pergament.
+Fügst du ein Ziel mit Deadline hinzu, läuft der Countdown dafür gleich mit.
+
+FLAMME AUSPUSTEN
+Ab 30 Minuten vor der Schlafenszeit kannst du auf das Pergament pusten und das Feuer löschen. Genutzt wird nur die Stärke deines Atems, es wird nichts aufgenommen.
+Das übrig gebliebene Fragment wird für dich aufbewahrt. Dreh es um und schreib jederzeit eine Zeile auf die Rückseite.
+
+WAS ALS ASCHE BLEIBT
+Blick mit einer Zeile auf den Tag zurück und setze ihn in einem Diagramm mit zwei Achsen als Punkt, je nachdem, wofür die Zeit draufging.
+Rückblicke sammeln sich in Urnen, die du nach Themen benennst, und im Rückblickbuch kannst du sie wieder lesen.
+Der Aschefluss zeigt dir mit einem Verteilungsdiagramm und einem Glutkalender, wohin deine Zeit geflossen ist.
+
+IMMER IM BLICK
+Die Restzeit siehst du in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm, in der Dynamic Island und in einer Live-Aktivität.
+Helles und dunkles Design, empfohlene Schlafenszeiten und eine Auswahl der Tabs, die du sehen willst.
+
+BRENNENDES PERGAMENT PRO
+Das brennende Pergament, Rückblicke und das Auspusten der Flamme sind kostenlos, ebenso eine Deadline. Pro ist ein einmaliger Kauf für immer und kein Abo.
+Pro schaltet „Brennende Freizeit“ frei, die nur deine selbst festgelegte Freizeit verbrennt, dazu Pergament- und Flammenfarben (Mondlicht-Hanji, Seladon, Abendrot), Flammenarten (Lauffeuer, Glut, Funkenflug), Fragmentkarten und Poster zum Teilen, das Rückblickbuch als PDF, den Aschefluss der letzten 12 Monate und unbegrenzte Deadlines. Alle später hinzukommenden Pro-Funktionen sind enthalten.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/de/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/de/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/de/
+
+## zh-Hans
+
+### 이름
+
+燃烧的羊皮纸：睡前倒计时
+
+### 부제
+
+一天剩余时间，看得见的燃烧
+
+### 키워드
+
+时间管理,睡眠,计时器,日记,复盘,习惯,作息,熬夜,早睡,睡眠改善,小组件,锁屏,截止日期,自律,效率,正念,夜间习惯,仪式感,放松,晚安,健康作息,专注,打卡,目标,待办,提醒,生活记录,夜晚
+
+### 프로모션 텍스트
+
+睡前 30 分钟，对着燃烧的羊皮纸吹一口气，把火熄灭。这是结束一天的小小仪式，留下的碎片也会好好收起来。
+
+### 설명
+
+今天剩下的时间，正在你眼前慢慢燃烧。
+燃烧的羊皮纸用一张燃烧的羊皮纸，而不是数字，来呈现剩余时间。它为那些不想再让夜晚不知不觉溜走的人而做。
+
+一天、一周、一个月、一年
+从起床的那一刻到就寝时间，羊皮纸缓缓燃烧。本周、本月和今年的剩余时间，也能在同一张羊皮纸上查看。
+添加有截止日期的目标，到那一天还剩多少时间，也会一起倒数。
+
+吹一口气，结束这一天
+就寝前 30 分钟起，可以对着燃烧的羊皮纸吹气，把火熄灭。只检测吹气的力度，不会录制任何声音。
+熄火后留下的碎片可以收藏起来。想看的时候，把碎片翻过来，还能在背面写下一句话。
+
+化作灰烬留下的一天
+回顾已经过去的时间，写下一句话，再把它在两条坐标轴的图上点成一个点，看看这段时间花在了哪里。
+回顾会按周、按月落进灰罐，之后可以在回顾书里重新翻阅。
+在灰烬流向页面，你可以通过分布图和余烬日历，看清时间都去了哪里。
+
+随时都在眼前
+主屏幕和锁定屏幕小组件、灵动岛，以及锁定屏幕上的实时活动，都能随时查看剩余时间。
+支持浅色与深色主题、推荐就寝时间，还可以只选择自己想看的页面。
+
+燃烧的羊皮纸 Pro
+燃烧的羊皮纸、回顾，以及吹气熄火的小仪式全部免费，截止日期也可免费使用 1 个。Pro 不是订阅，一次付费，永久使用。
+可以使用只烧自己设定的自由时间的“燃烧的自由时间”、羊皮纸与火焰的配色（月光韩纸、青瓷、晚霞）、火焰类型（野火、炭火、火星）、把碎片做成卡片和海报图片来分享、将回顾书导出为 PDF、过去 12 个月的灰烬流向，以及不限数量地添加截止日期。之后新增的 Pro 功能也全部包含在内。
+使用条款（EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/zh-hans/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/zh-hans/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/zh-hans/

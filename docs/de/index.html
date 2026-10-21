@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brennendes Pergament — Support</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+      --yellow: #fbbf24;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* flame gradient top bar */
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .flame-icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 16px #f97316aa);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--text-dim);
+      font-size: 15px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+
+    .card + .card { margin-top: 12px; }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .card li { margin-bottom: 4px; }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: var(--orange);
+      color: #0f0d0a;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-link:hover { opacity: 0.85; }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: var(--orange-dim);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 26px; }
+      .card { padding: 20px; }
+    }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/de/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="index.html" hreflang="de" lang="de" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <span class="flame-icon">🔥</span>
+  <h1>Brennendes Pergament</h1>
+  <p>Vom Aufwachen bis zum Schlafengehen siehst du zu, wie dein Tag verbrennt.</p>
+</header>
+
+<main>
+
+  <!-- About -->
+  <section>
+    <h2>Über die App</h2>
+    <div class="card">
+      <h3>Was ist Brennendes Pergament?</h3>
+      <p>Brennendes Pergament ist eine Countdown-App, die dir die verbleibende Zeit deines Tages als langsam verbrennendes Pergament zeigt. Vom Aufstehen bis zur Schlafenszeit siehst du auf einen Blick, wie viel Zeit noch bleibt, und kannst die Stunden, die dir noch bleiben, besser nutzen.</p>
+      <div class="badge-row" style="margin-top: 14px;">
+        <span class="badge">Tages-Countdown</span>
+        <span class="badge">Woche / Monat / Jahr</span>
+        <span class="badge">Home-Bildschirm-Widgets</span>
+        <span class="badge">Dynamic Island</span>
+        <span class="badge">Sperrbildschirm-Widgets</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section>
+    <h2>So funktioniert es</h2>
+    <div class="card">
+      <h3>Aufstehzeit und Schlafenszeit festlegen</h3>
+      <p>Tippe oben rechts auf die Taste ⚙️, um deine Aufstehzeit und Schlafenszeit festzulegen. Das Pergament beginnt zu brennen, wenn du aufstehst, und der Countdown endet zur Schlafenszeit.</p>
+    </div>
+    <div class="card">
+      <h3>Zeitraum wählen</h3>
+      <p>Wähle oben in den Tabs <strong>1 Tag · 1 Woche · 1 Monat · 1 Jahr</strong>, und das Pergament brennt entsprechend ab und zeigt, wie viel von diesem Zeitraum noch übrig ist.</p>
+    </div>
+    <div class="card">
+      <h3>Home-Bildschirm-Widgets</h3>
+      <p>Halte den Home-Bildschirm gedrückt → Widget hinzufügen → suche nach <strong>Brennendes Pergament</strong>, um ein Tages-, Wochen-, Monats- oder Jahres-Widget hinzuzufügen. Es gibt die Größen Klein, Mittel und Groß.</p>
+    </div>
+    <div class="card">
+      <h3>Dynamic Island und Sperrbildschirm</h3>
+      <p>Sobald der Countdown läuft, kannst du die verbleibende Zeit live in der Dynamic Island und auf dem Sperrbildschirm verfolgen. Zieh die Dynamic Island nach unten, um mehr Details und die Animation des brennenden Pergaments zu sehen.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Häufige Fragen</h2>
+    <div class="card">
+      <h3>Das Widget zeigt eine andere Zeit als die App</h3>
+      <p>iOS-bedingt können Widgets auf dem Home-Bildschirm nicht in Echtzeit aktualisiert werden. Beim Öffnen der App werden die Widget-Daten automatisch abgeglichen. Für einen Live-Countdown nutze die Dynamic Island und den Sperrbildschirm.</p>
+    </div>
+    <div class="card">
+      <h3>Was wird angezeigt, während ich schlafe?</h3>
+      <p>Nach der Schlafenszeit erscheint eine Animation eines brennenden Herzens, die zeigt, wie weit deine Schlafzeit bis zum Aufstehen fortgeschritten ist. 30 Minuten vor dem Aufstehen wird ein frisches Pergament vorbereitet.</p>
+    </div>
+    <div class="card">
+      <h3>Wann kommen Mitteilungen?</h3>
+      <p>Eine Stunde vor der Schlafenszeit erhältst du eine Mitteilung. Kommt sie nicht an, prüfe unter <strong>Einstellungen → Mitteilungen → Brennendes Pergament</strong>, ob Mitteilungen erlaubt sind.</p>
+    </div>
+    <div class="card">
+      <h3>Verbraucht die App viel Akku?</h3>
+      <p>Der Countdown in der App aktualisiert sich einmal pro Sekunde, Widgets dagegen laufen auf einer stromsparenden, vom System verwalteten Timeline, sodass die Auswirkung auf die Akkulaufzeit minimal bleibt.</p>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section>
+    <h2>Datenschutz</h2>
+    <div class="card">
+      <h3>So gehen wir mit deinen Daten um</h3>
+      <p>Deine Aufstehzeit, Schlafenszeit, Deadlines, Rückblicke und Urnen werden nur auf deinem Gerät gespeichert. Der Entwickler erhält lediglich anonyme Nutzungsstatistiken, Absturzdiagnosen und Feedback, das du selbst sendest.</p>
+      <ul>
+        <li>Die App und ihre Widgets tauschen Daten nur über eine App Group auf deinem Gerät aus.</li>
+        <li>Keine Werbung, kein Tracking.</li>
+      </ul>
+      <a class="contact-link" href="privacy.html">Die vollständige Datenschutzerklärung lesen →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Kontakt</h2>
+    <div class="card">
+      <h3>Funktioniert etwas nicht richtig?</h3>
+      <p>Für Fehlermeldungen, Funktionsideen oder andere Fragen schreib uns an die unten stehende Adresse. Wir antworten so schnell wie möglich.</p>
+      <a class="contact-link" href="mailto:leeo@kakao.com">
+        ✉️ &nbsp;leeo@kakao.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Brennendes Pergament &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  <p style="margin-top: 8px;"><a href="privacy.html">Datenschutzerklärung</a></p>
+  <p style="margin-top: 6px;">Mit 🔥 in Korea gemacht</p>
+</footer>
+
+</body>
+</html>

@@ -21,6 +21,30 @@
             "state" : "translated",
             "value" : "불타는 내인생"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Burning Parchment"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamino en Llamas"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennendes Pergament"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧的羊皮纸"
+          }
         }
       }
     },
@@ -45,6 +69,30 @@
             "state" : "translated",
             "value" : "불타는 내인생"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Burning Parchment"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamino en Llamas"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennendes Pergament"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧的羊皮纸"
+          }
         }
       }
     },
@@ -68,6 +116,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used only to sense how hard you blow when putting out the parchment before bed. No sound is recorded or saved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se usa solo para detectar la intensidad con la que soplas al apagar el pergamino antes de dormir. No se graba ni se guarda ningún sonido."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird nur verwendet, um zu erkennen, wie stark du pustest, wenn du vor dem Schlafen das Pergament löschst. Es wird kein Ton aufgenommen oder gespeichert."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寝前 30 分钟，对着羊皮纸吹气熄火时，仅检测吹气的力度，不会录制或保存任何声音。"
           }
         }
       }

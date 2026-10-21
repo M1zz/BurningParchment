@@ -26,6 +26,38 @@ See upcoming features in Settings
 プロモーションコードでProを入手できます
 これから作る機能を設定で見られます
 
+### 앱스토어 (en-GB)
+
+Now available in British English
+A short welcome guide for new users
+Clearer with large text and contrast
+Redeem offer codes for Pro
+See upcoming features in Settings
+
+### 앱스토어 (es)
+
+Ahora disponible en español
+Guía de bienvenida para empezar
+Más nítida con texto grande y contraste
+Canjea códigos promocionales de Pro
+Mira en Ajustes las próximas funciones
+
+### 앱스토어 (de)
+
+Jetzt auch auf Deutsch verfügbar
+Kurze Einführung für neue Nutzer
+Gut lesbar: große Schrift, Kontrast
+Pro mit Promocodes freischalten
+Kommende Funktionen in den Einstellungen
+
+### 앱스토어 (zh-Hans)
+
+现已支持简体中文
+首次打开时，用简短的指引介绍用法
+大字体和增强对比度下也清晰易读
+可使用优惠代码获取 Pro
+可在设置中查看即将推出的功能
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

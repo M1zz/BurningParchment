@@ -50,6 +50,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -102,6 +108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld分鐘"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld мин"
           }
         }
       }
@@ -156,6 +168,12 @@
             "state" : "translated",
             "value" : "%lld分%lld秒"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld мин %2$lld с"
+          }
         }
       }
     },
@@ -208,6 +226,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld小時%lld分鐘"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ч %2$lld мин"
           }
         }
       }
@@ -262,6 +286,12 @@
             "state" : "translated",
             "value" : "%lld天%lld小時"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld д %2$lld ч"
+          }
         }
       }
     },
@@ -314,6 +344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld秒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld с"
           }
         }
       }
@@ -368,6 +404,12 @@
             "state" : "translated",
             "value" : "2025.12.31（週三）23:59"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31.12.2025 (ср) 23:59"
+          }
         }
       }
     },
@@ -420,6 +462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3天4小時"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 д 4 ч"
           }
         }
       }
@@ -474,6 +522,12 @@
             "state" : "translated",
             "value" : "5小時24分鐘"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 ч 24 мин"
+          }
         }
       }
     },
@@ -525,6 +579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即將起床"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скоро подъём"
           }
         }
       }
@@ -578,6 +638,12 @@
             "state" : "translated",
             "value" : "起床 %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подъём: %@"
+          }
         }
       }
     },
@@ -630,6 +696,12 @@
             "state" : "translated",
             "value" : "距起床 %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До подъёма: %@"
+          }
         }
       }
     },
@@ -681,6 +753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "距起床的剩餘時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Времени до подъёма"
           }
         }
       }
@@ -735,6 +813,12 @@
             "state" : "translated",
             "value" : "剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось времени"
+          }
         }
       }
     },
@@ -787,6 +871,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "距下一個截止的剩餘時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Времени до следующего дедлайна"
           }
         }
       }
@@ -841,6 +931,12 @@
             "state" : "translated",
             "value" : "截止日期羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент дедлайнов"
+          }
         }
       }
     },
@@ -892,6 +988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒有截止日期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет дедлайнов"
           }
         }
       }
@@ -945,6 +1047,12 @@
             "state" : "translated",
             "value" : "已截止 🏁"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Срок прошёл 🏁"
+          }
         }
       }
     },
@@ -997,6 +1105,12 @@
             "state" : "translated",
             "value" : "新的一天開始了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начинается новый день"
+          }
         }
       }
     },
@@ -1048,6 +1162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "睡眠中"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сон"
           }
         }
       }
@@ -1102,6 +1222,12 @@
             "state" : "translated",
             "value" : "年度羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент года"
+          }
         }
       }
     },
@@ -1154,6 +1280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天距就寢的剩餘時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Времени до сна сегодня"
           }
         }
       }
@@ -1208,6 +1340,12 @@
             "state" : "translated",
             "value" : "今年"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот год"
+          }
         }
       }
     },
@@ -1260,6 +1398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今年剩餘時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось в этом году"
           }
         }
       }
@@ -1314,6 +1458,12 @@
             "state" : "translated",
             "value" : "每月羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент месяца"
+          }
         }
       }
     },
@@ -1366,6 +1516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本月"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот месяц"
           }
         }
       }
@@ -1420,6 +1576,12 @@
             "state" : "translated",
             "value" : "本月剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось в этом месяце"
+          }
         }
       }
     },
@@ -1472,6 +1634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本週"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эта неделя"
           }
         }
       }
@@ -1526,6 +1694,12 @@
             "state" : "translated",
             "value" : "本週剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось на этой неделе"
+          }
         }
       }
     },
@@ -1578,6 +1752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "每日羊皮紙"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент дня"
           }
         }
       }
@@ -1632,6 +1812,12 @@
             "state" : "translated",
             "value" : "在鎖定畫面上查看距就寢的剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Смотрите, сколько осталось до сна, прямо на экране блокировки"
+          }
         }
       }
     },
@@ -1683,6 +1869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "好夢"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сладких снов"
           }
         }
       }
@@ -1737,6 +1929,12 @@
             "state" : "translated",
             "value" : "每週羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент недели"
+          }
         }
       }
     },
@@ -1789,6 +1987,12 @@
             "state" : "translated",
             "value" : "就寢 %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сон: %@"
+          }
         }
       }
     },
@@ -1840,6 +2044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "距就寢"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До сна"
           }
         }
       }
@@ -1894,6 +2104,12 @@
             "state" : "translated",
             "value" : "距就寢的剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Времени до сна"
+          }
         }
       }
     },
@@ -1947,6 +2163,12 @@
             "state" : "translated",
             "value" : "提交專案"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сдать проект"
+          }
         }
       }
     },
@@ -1999,6 +2221,12 @@
             "state" : "translated",
             "value" : "🌅 即將起床 · %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Скоро подъём · %@"
+          }
         }
       }
     },
@@ -2050,6 +2278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 剩餘%@%%"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Осталось %@%%"
           }
         }
       }
@@ -2104,6 +2338,12 @@
             "state" : "translated",
             "value" : "🔥 剩餘%lld%%"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Осталось %lld%%"
+          }
         }
       }
     },
@@ -2156,6 +2396,12 @@
             "state" : "translated",
             "value" : "🔥 距就寢 %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 До сна: %@"
+          }
         }
       }
     },
@@ -2207,6 +2453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 距起床 %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 До подъёма: %@"
           }
         }
       }

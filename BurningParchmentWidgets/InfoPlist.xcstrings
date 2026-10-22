@@ -52,6 +52,12 @@
             "state" : "translated",
             "value" : "燃燒的羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
         }
       }
     },
@@ -105,6 +111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "燃燒的羊皮紙"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
           }
         }
       }

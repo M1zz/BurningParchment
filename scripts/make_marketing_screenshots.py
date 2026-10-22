@@ -80,6 +80,19 @@ SHOTS = {
   ("09-year-light.png",    "top-crop",    False, "一整年的灰燼<br>一目瞭然",   "Pro・十二個月流向了哪裡",                 0.62),
   ("10-book-pdf.png",      "pages",       False, "把回顧<br>裝訂成一本書",     "Pro・依日期逐頁匯出 PDF",                 None),
  ],
+ "ru": [
+  ("01-week-dark.png", "hero-bleed", False, "Время сгорает<br>на ваших глазах", "День, неделя, месяц, год", None),
+  ("02-month-light.png", "hero-bleed", True, "Светлая или тёмная", "По настройке устройства или на ваш выбор", None),
+  ("03-urn-dark.png", "left-text", False, "Каждый день<br>становится пеплом", "Написанное оседает в урне этой недели", None),
+  ("04-flow-light.png", "hero-bleed", True, "Куда ушло<br>ваше время", "График распределения и календарь углей", None),
+  ("05-book-dark.png", "top-crop", False, "Перечитайте свой пепел", "Строки, оставленные на пергаменте", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "От времени сна<br>до темы", "Настройте всё под себя", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Выберите цвет<br>своего пламени", "Темы Pro: лунная ханджи, селадон, закат", None),
+  ("08-poster-dark.png", "text-bottom", False, "Все погасшие ночи<br>на одном листе", "Pro превращает осколки в постеры", None),
+  ("09-year-light.png", "top-crop", False, "Целый год<br>пепла", "Pro показывает, куда ушли двенадцать месяцев", 0.62),
+  ("10-book-pdf.png", "pages", False, "Ваши записи<br>книгой", "Pro: PDF по странице на каждый день", None),
+ ],
 }
 
 FONTS = {
@@ -87,9 +100,10 @@ FONTS = {
     "en": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "ja": '-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif',
     "zh-Hant": '-apple-system, "PingFang TC", "Heiti TC", sans-serif',
+    "ru": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42}
 
 
 def base_css(lang, dark):

@@ -51,6 +51,12 @@
             "state" : "translated",
             "value" : "燃燒的羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
         }
       }
     },
@@ -105,6 +111,12 @@
             "state" : "translated",
             "value" : "燃燒的羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
         }
       }
     },
@@ -158,6 +170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "就寢前 30 分鐘，對著羊皮紙吹氣熄火時，僅檢測吹氣的力度，不會錄製或儲存任何聲音。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Используется только для оценки силы вашего дыхания, когда вы гасите пергамент перед сном. Звук не записывается и не сохраняется."
           }
         }
       }

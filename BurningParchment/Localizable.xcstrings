@@ -55,6 +55,12 @@
             "state" : "translated",
             "value" : " %lld分"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " %lld мин"
+          }
         }
       }
     },
@@ -117,6 +123,12 @@
             "state" : "translated",
             "value" : "%@ %@ 截止"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дедлайн: %@ %@"
+          }
         }
       }
     },
@@ -170,6 +182,12 @@
             "state" : "translated",
             "value" : "%@ · 第%lld週"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · неделя %lld"
+          }
         }
       }
     },
@@ -221,6 +239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ / %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
           }
         }
       }
@@ -275,6 +299,12 @@
             "state" : "translated",
             "value" : "%@ — 還沒有放進任何灰罐的時間。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — время, которое пока не попало ни в одну урну."
+          }
         }
       }
     },
@@ -327,6 +357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "你晚睡了 %@，今天早晨因此留下了焦痕"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы легли на %@ позже. Утро обожжено на столько же"
           }
         }
       }
@@ -381,6 +417,12 @@
             "state" : "translated",
             "value" : "%@ 之後，明天的羊皮紙已經燒起來了。\n只把熬夜的時長留作焦痕。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент на завтра горел после %@.\\nСажа остаётся только за часы бодрствования."
+          }
         }
       }
     },
@@ -433,6 +475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@灰罐"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урна «%@»"
           }
         }
       }
@@ -487,6 +535,12 @@
             "state" : "translated",
             "value" : "放入%@灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Попадёт в урну «%@»"
+          }
         }
       }
     },
@@ -540,6 +594,12 @@
             "state" : "translated",
             "value" : "為%@灰罐寫下意義"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Придать смысл урне «%@»"
+          }
         }
       }
     },
@@ -591,6 +651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@灰罐裡留著 %2$@ 粒灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В урне «%1$@» осталось крупиц пепла: %2$@"
           }
         }
       }
@@ -645,6 +711,12 @@
             "state" : "translated",
             "value" : "%@灰罐裡留著 %lld 粒灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В урне «%1$@» осталось крупиц пепла: %2$lld"
+          }
         }
       }
     },
@@ -697,6 +769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@回顧"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записи: %@"
           }
         }
       }
@@ -751,6 +829,12 @@
             "state" : "translated",
             "value" : "%@後開始"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Старт через %@"
+          }
         }
       }
     },
@@ -803,6 +887,12 @@
             "state" : "translated",
             "value" : "%@後羊皮紙開始燃燒"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент начнёт гореть через %@"
+          }
         }
       }
     },
@@ -854,6 +944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩餘%@%%"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось %@%%"
           }
         }
       }
@@ -908,6 +1004,12 @@
             "state" : "translated",
             "value" : "%@，剩餘%lld%%"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, осталось %2$lld%%"
+          }
         }
       }
     },
@@ -960,6 +1062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@，還剩 %lld 分鐘時吹滅了火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, огонь погашен за %2$lld мин до срока"
           }
         }
       }
@@ -1014,6 +1122,12 @@
             "state" : "translated",
             "value" : "%@，沒有記錄"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, записей нет"
+          }
         }
       }
     },
@@ -1066,6 +1180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@，%lld 粒灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, пепла: %2$lld"
           }
         }
       }
@@ -1120,6 +1240,12 @@
             "state" : "translated",
             "value" : "%@，%lld 條回顧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, записей: %2$lld"
+          }
         }
       }
     },
@@ -1172,6 +1298,12 @@
             "state" : "translated",
             "value" : "%@個"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1219,6 +1351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "吹滅了 %@ 個夜晚"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ночей, когда огонь погашен: %@"
           }
         }
       }
@@ -1273,6 +1411,12 @@
             "state" : "translated",
             "value" : "%@時開啟過 App"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приложение было открыто в %@"
+          }
         }
       }
     },
@@ -1325,6 +1469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@時吹氣熄滅了火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы задули огонь в %@"
           }
         }
       }
@@ -1380,6 +1530,12 @@
             "state" : "translated",
             "value" : "%1$@天 · %2$@粒灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ дн. · пепла: %2$@"
+          }
         }
       }
     },
@@ -1432,6 +1588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩餘%lld%%"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось %lld%%"
           }
         }
       }
@@ -1486,6 +1648,12 @@
             "state" : "translated",
             "value" : "%lld個"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
         }
       }
     },
@@ -1538,6 +1706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld次"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld раз"
           }
         }
       }
@@ -1592,6 +1766,12 @@
             "state" : "translated",
             "value" : "吹滅了 %lld 個夜晚"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ночей, когда огонь погашен: %lld"
+          }
         }
       }
     },
@@ -1644,6 +1824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld分鐘"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld мин"
           }
         }
       }
@@ -1698,6 +1884,12 @@
             "state" : "translated",
             "value" : "%lld分%lld秒"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld мин %2$lld с"
+          }
         }
       }
     },
@@ -1750,6 +1942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩 %lld 分鐘時"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "За %lld мин до срока"
           }
         }
       }
@@ -1804,6 +2002,12 @@
             "state" : "translated",
             "value" : "還剩 %lld 分鐘時吹滅了火"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь погашен за %lld мин до срока"
+          }
         }
       }
     },
@@ -1856,6 +2060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld小時"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ч"
           }
         }
       }
@@ -1910,6 +2120,12 @@
             "state" : "translated",
             "value" : "%lld小時%lld分鐘"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ч %2$lld мин"
+          }
         }
       }
     },
@@ -1962,6 +2178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld天"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld д"
           }
         }
       }
@@ -2016,6 +2238,12 @@
             "state" : "translated",
             "value" : "%lld天%lld小時"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld д %2$lld ч"
+          }
         }
       }
     },
@@ -2068,6 +2296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld天 · %lld粒灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld дн. · пепла: %2$lld"
           }
         }
       }
@@ -2122,6 +2356,12 @@
             "state" : "translated",
             "value" : "第%lld週"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неделя %lld"
+          }
         }
       }
     },
@@ -2175,6 +2415,12 @@
             "state" : "translated",
             "value" : "%lld秒"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld с"
+          }
         }
       }
     },
@@ -2227,6 +2473,12 @@
             "state" : "translated",
             "value" : "要刪除「%@」嗎？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить «%@»?"
+          }
         }
       }
     },
@@ -2278,6 +2530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按 + 按鈕新增新的截止日期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте новый дедлайн кнопкой +"
           }
         }
       }
@@ -2332,6 +2590,12 @@
             "state" : "translated",
             "value" : "10 分鐘以內算準時"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Опоздание до 10 минут не считается"
+          }
         }
       }
     },
@@ -2384,6 +2648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1年"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Год"
           }
         }
       }
@@ -2438,6 +2708,12 @@
             "state" : "translated",
             "value" : "1個月"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месяц"
+          }
         }
       }
     },
@@ -2491,6 +2767,12 @@
             "state" : "translated",
             "value" : "1天"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "День"
+          }
         }
       }
     },
@@ -2543,6 +2825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1週"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неделя"
           }
         }
       }
@@ -2600,6 +2888,12 @@
             "state" : "translated",
             "value" : "分享或儲存 PDF"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поделиться или сохранить PDF"
+          }
         }
       }
     },
@@ -2655,6 +2949,12 @@
             "state" : "translated",
             "value" : "· ⊕ 重心"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ центр тяжести"
+          }
         }
       }
     },
@@ -2706,6 +3006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· 沒有座標的舊回顧 %@ 條，散佈顯示在象限內"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· Старые записи без сохранённой точки (%@) разбросаны по своему квадранту"
           }
         }
       }
@@ -2759,6 +3065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· 沒有座標的舊回顧 %lld 條，散佈顯示在象限內"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· Старые записи без сохранённой точки (%lld) разбросаны по своему квадранту"
           }
         }
       }
@@ -2826,6 +3138,12 @@
             "state" : "translated",
             "value" : "重新取得價格"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузить цену заново"
+          }
         }
       }
     },
@@ -2878,6 +3196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "連續記錄最久的一次"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Самая длинная серия"
           }
         }
       }
@@ -2932,6 +3256,12 @@
             "state" : "translated",
             "value" : "感恩"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Благодарность"
+          }
         }
       }
     },
@@ -2984,6 +3314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "聯絡開發者"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Связаться с разработчиком"
           }
         }
       }
@@ -3038,6 +3374,12 @@
             "state" : "translated",
             "value" : "隱私權政策"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Политика конфиденциальности"
+          }
         }
       }
     },
@@ -3091,6 +3433,12 @@
             "state" : "translated",
             "value" : "熊熊躍動"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ревущее, прыгающее пламя"
+          }
         }
       }
     },
@@ -3142,6 +3490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "「健康」記錄：%@入睡"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данные «Здоровья»: уснули в %@"
           }
         }
       }
@@ -3196,6 +3550,12 @@
             "state" : "translated",
             "value" : "「健康」睡眠記錄"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данные сна из «Здоровья»"
+          }
         }
       }
     },
@@ -3248,6 +3608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "連線「健康」睡眠記錄"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подключить данные сна из «Здоровья»"
           }
         }
       }
@@ -3302,6 +3668,12 @@
             "state" : "translated",
             "value" : "連線「健康」睡眠記錄"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подключить данные сна из «Здоровья»"
+          }
         }
       }
     },
@@ -3355,6 +3727,12 @@
             "state" : "translated",
             "value" : "已連線「健康」睡眠記錄"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подключено к данным сна из «Здоровья»"
+          }
         }
       }
     },
@@ -3406,6 +3784,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "「健康」中沒有昨晚的睡眠記錄"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В «Здоровье» нет записи о сне за прошлую ночь"
           }
         }
       }
@@ -3460,6 +3844,12 @@
             "state" : "translated",
             "value" : "靜靜搖曳"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тихое, спокойное мерцание"
+          }
         }
       }
     },
@@ -3512,6 +3902,12 @@
             "state" : "translated",
             "value" : "改寫"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переписать"
+          }
         }
       }
     },
@@ -3563,6 +3959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "快到起床時間了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скоро время подъёма"
           }
         }
       }
@@ -3617,6 +4019,12 @@
             "state" : "translated",
             "value" : "關係"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отношения"
+          }
         }
       }
     },
@@ -3669,6 +4077,12 @@
             "state" : "translated",
             "value" : "不是訂閱，一次付費，永久使用"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это не подписка. Платите один раз — пользуйтесь всегда."
+          }
         }
       }
     },
@@ -3720,6 +4134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "回復購買"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Восстановить покупки"
           }
         }
       }
@@ -3774,6 +4194,12 @@
             "state" : "translated",
             "value" : "購買未能完成"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось завершить покупку"
+          }
         }
       }
     },
@@ -3826,6 +4252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "白白流逝的時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ушедшее время"
           }
         }
       }
@@ -3880,6 +4312,12 @@
             "state" : "translated",
             "value" : "就這麼過去了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Просто утекло"
+          }
         }
       }
     },
@@ -3933,6 +4371,12 @@
             "state" : "translated",
             "value" : "要戒掉的事"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От чего отказаться"
+          }
         }
       }
     },
@@ -3984,6 +4428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "記錄不對？自己修改"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запись неверна? Исправьте сами"
           }
         }
       }
@@ -4038,6 +4488,12 @@
             "state" : "translated",
             "value" : "記錄"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записать"
+          }
         }
       }
     },
@@ -4090,6 +4546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "記錄的天數"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дней с записями"
           }
         }
       }
@@ -4144,6 +4606,12 @@
             "state" : "translated",
             "value" : "快樂"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Радость"
+          }
         }
       }
     },
@@ -4196,6 +4664,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "起床與就寢時間設定"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время подъёма и отхода ко сну"
           }
         }
       }
@@ -4250,6 +4724,12 @@
             "state" : "translated",
             "value" : "起床時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время подъёма"
+          }
         }
       }
     },
@@ -4302,6 +4782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "從起床到就寢，羊皮紙會慢慢燃燒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От подъёма до отхода ко сну пергамент медленно сгорает"
           }
         }
       }
@@ -4356,6 +4842,12 @@
             "state" : "translated",
             "value" : "起床前"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До подъёма"
+          }
         }
       }
     },
@@ -4407,6 +4899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "距起床 %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До подъёма: %@"
           }
         }
       }
@@ -4461,6 +4959,12 @@
             "state" : "translated",
             "value" : "從起床時間起自動倒數"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоотсчёт от времени подъёма"
+          }
         }
       }
     },
@@ -4514,6 +5018,12 @@
             "state" : "translated",
             "value" : "從起床到就寢時間，\n羊皮紙慢慢燃燒"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От подъёма до отхода ко сну\\nпергамент медленно сгорает"
+          }
         }
       }
     },
@@ -4560,6 +5070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "佔清醒時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "от времени бодрствования"
           }
         }
       }
@@ -4614,6 +5130,12 @@
             "state" : "translated",
             "value" : "在熄滅的火旁安心歇息吧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Можно спокойно отдохнуть у погасшего огня"
+          }
         }
       }
     },
@@ -4666,6 +5188,12 @@
             "state" : "translated",
             "value" : "關閉"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выкл."
+          }
         }
       }
     },
@@ -4713,6 +5241,12 @@
             "state" : "translated",
             "value" : "結束"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Конец"
+          }
         }
       }
     },
@@ -4759,6 +5293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "只燒屬於你自己的時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сжигайте только своё время"
           }
         }
       }
@@ -4813,6 +5353,12 @@
             "state" : "translated",
             "value" : "我的目標"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мои цели"
+          }
         }
       }
     },
@@ -4860,6 +5406,12 @@
             "state" : "translated",
             "value" : "我的自由時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Моё свободное время"
+          }
         }
       }
     },
@@ -4906,6 +5458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定我的自由時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задать моё свободное время"
           }
         }
       }
@@ -4960,6 +5518,12 @@
             "state" : "translated",
             "value" : "稍後"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позже"
+          }
         }
       }
     },
@@ -5013,6 +5577,12 @@
             "state" : "translated",
             "value" : "吹走"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сдуть"
+          }
         }
       }
     },
@@ -5064,6 +5634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "日期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата"
           }
         }
       }
@@ -5118,6 +5694,12 @@
             "state" : "translated",
             "value" : "留下的碎片，讓明天有所期待"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтра ждёт там, где остался осколок"
+          }
         }
       }
     },
@@ -5170,6 +5752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩下的火星，交給明天的我"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последние угольки оставлю завтрашнему себе"
           }
         }
       }
@@ -5224,6 +5812,12 @@
             "state" : "translated",
             "value" : "剩下的碎片我們會收好。\n今天就這樣安心睡吧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Остатки мы сохраним.\\nА теперь спите спокойно"
+          }
         }
       }
     },
@@ -5276,6 +5870,12 @@
             "state" : "translated",
             "value" : "正在收起剩下的碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохраняем оставшееся"
+          }
         }
       }
     },
@@ -5327,6 +5927,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩餘"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "осталось"
           }
         }
       }
@@ -5381,6 +5987,12 @@
             "state" : "translated",
             "value" : "低低地呼吸"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Низкое, дышащее свечение"
+          }
         }
       }
     },
@@ -5433,6 +6045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "明日備忘步驟"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шаг «Заметка на завтра»"
           }
         }
       }
@@ -5487,6 +6105,12 @@
             "state" : "translated",
             "value" : "明天想嘗試點什麼新的？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что нового попробуете завтра?"
+          }
         }
       }
     },
@@ -5538,6 +6162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "明天早晨，它會以橫條的形式浮現在羊皮紙上方，和這一天一起燃燒。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтра утром она появится полосой над пергаментом и сгорит вместе с вашим днём."
           }
         }
       }
@@ -5592,6 +6222,12 @@
             "state" : "translated",
             "value" : "明天打算怎麼做？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что вы сделаете завтра?"
+          }
         }
       }
     },
@@ -5644,6 +6280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "明天想戒掉什麼？"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От чего откажетесь завтра?"
           }
         }
       }
@@ -5698,6 +6340,12 @@
             "state" : "translated",
             "value" : "明天想怎樣過得不一樣？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как проведёте завтрашний день иначе?"
+          }
         }
       }
     },
@@ -5749,6 +6397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "明天的羊皮紙"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтрашний пергамент"
           }
         }
       }
@@ -5803,6 +6457,12 @@
             "state" : "translated",
             "value" : "明天的羊皮紙停在了這裡。\n晚安，好夢"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтрашний пергамент остановился здесь.\\nСладких снов"
+          }
         }
       }
     },
@@ -5854,6 +6514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "明天的羊皮紙正在燃燒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завтрашний пергамент горит"
           }
         }
       }
@@ -5908,6 +6574,12 @@
             "state" : "translated",
             "value" : "熄滅明天羊皮紙上的火"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гасит огонь на завтрашнем пергаменте"
+          }
         }
       }
     },
@@ -5960,6 +6632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請檢查網路連線後重試。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверьте подключение к сети и повторите попытку."
           }
         }
       }
@@ -6014,6 +6692,12 @@
             "state" : "translated",
             "value" : "晚霞"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закат"
+          }
         }
       }
     },
@@ -6066,6 +6750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "我睡晚了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я поздно лёг(ла)"
           }
         }
       }
@@ -6120,6 +6810,12 @@
             "state" : "translated",
             "value" : "沒燒完的一天，也是完整的一天"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "День, не сгоревший дотла, всё равно целый день"
+          }
         }
       }
     },
@@ -6172,6 +6868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "換一句"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать другую фразу"
           }
         }
       }
@@ -6226,6 +6928,12 @@
             "state" : "translated",
             "value" : "換個顏色來燒"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сожгите в другом цвете"
+          }
         }
       }
     },
@@ -6278,6 +6986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "下一步"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далее"
           }
         }
       }
@@ -6332,6 +7046,12 @@
             "state" : "translated",
             "value" : "下個月"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующий месяц"
+          }
         }
       }
     },
@@ -6378,6 +7098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "下次自由時間 · %@ %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующее свободное время · %1$@ %2$@"
           }
         }
       }
@@ -6432,6 +7158,12 @@
             "state" : "translated",
             "value" : "下次怎樣才能做完呢？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как закончить это в следующий раз?"
+          }
         }
       }
     },
@@ -6484,6 +7216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "透過動態島即時查看"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Живые обновления в Dynamic Island"
           }
         }
       }
@@ -6538,6 +7276,12 @@
             "state" : "translated",
             "value" : "深色"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тёмная"
+          }
         }
       }
     },
@@ -6589,6 +7333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關閉"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть"
           }
         }
       }
@@ -6643,6 +7393,12 @@
             "state" : "translated",
             "value" : "關閉——已寫的內容會儲存"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть — всё написанное сохранено"
+          }
         }
       }
     },
@@ -6695,6 +7451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Луна"
           }
         }
       }
@@ -6749,6 +7511,12 @@
             "state" : "translated",
             "value" : "月光韓紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лунная бумага ханджи"
+          }
         }
       }
     },
@@ -6801,6 +7569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月光韓紙、青瓷、晚霞。更換羊皮紙和火焰的顏色。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лунная ханджи, селадон, закат. Меняют цвет бумаги и пламени."
           }
         }
       }
@@ -6855,6 +7629,12 @@
             "state" : "translated",
             "value" : "月光韓紙、青瓷、晚霞配色，野火、炭火、火星多種燃燒方式"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горите в цветах лунной ханджи, селадона или заката — как степной пожар, угли или бенгальский огонь"
+          }
         }
       }
     },
@@ -6908,6 +7688,12 @@
             "state" : "translated",
             "value" : "展開某個月，就能看到這個月的每週灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыв месяц, вы увидите его недельные урны"
+          }
         }
       }
     },
@@ -6960,6 +7746,12 @@
             "state" : "translated",
             "value" : "盛放的灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепел внутри"
+          }
         }
       }
     },
@@ -7011,6 +7803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "不回答直接關閉也沒關係。沒有確認的夜晚不會留下焦痕。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Можно закрыть и не отвечать. Неподтверждённые ночи проходят без сажи."
           }
         }
       }
@@ -7065,6 +7863,12 @@
             "state" : "translated",
             "value" : "大概就行"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приблизительно — тоже хорошо"
+          }
         }
       }
     },
@@ -7118,6 +7922,12 @@
             "state" : "translated",
             "value" : "想做得更好，明天做什麼？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что сделаете завтра, чтобы получилось ещё лучше?"
+          }
         }
       }
     },
@@ -7163,6 +7973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新增"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить"
           }
         }
       }
@@ -7217,6 +8033,12 @@
             "state" : "translated",
             "value" : "截止日期"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дедлайны"
+          }
         }
       }
     },
@@ -7269,6 +8091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "截止日期不限數量"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безлимитные дедлайны"
           }
         }
       }
@@ -7323,6 +8151,12 @@
             "state" : "translated",
             "value" : "刪除截止日期"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить дедлайн"
+          }
         }
       }
     },
@@ -7375,6 +8209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "編輯截止日期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить дедлайн"
           }
         }
       }
@@ -7429,6 +8269,12 @@
             "state" : "translated",
             "value" : "新增截止日期後，截止日期標籤頁會自動顯示"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вкладка дедлайнов появится сама, когда вы добавите дедлайн"
+          }
         }
       }
     },
@@ -7481,6 +8327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "距截止日期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До дедлайна"
           }
         }
       }
@@ -7535,6 +8387,12 @@
             "state" : "translated",
             "value" : "想設更多截止日期？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нужно больше дедлайнов?"
+          }
         }
       }
     },
@@ -7586,6 +8444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒有截止日期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет дедлайнов"
           }
         }
       }
@@ -7640,6 +8504,12 @@
             "state" : "translated",
             "value" : "挑戰"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Испытание"
+          }
         }
       }
     },
@@ -7691,6 +8561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "形狀"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Форма"
           }
         }
       }
@@ -7745,6 +8621,12 @@
             "state" : "translated",
             "value" : "輕點兩下可翻轉碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Двойное касание переворачивает осколок"
+          }
         }
       }
     },
@@ -7797,6 +8679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "按兩條座標軸，用手指點一下來分類"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите точку на двух осях, чтобы классифицировать"
           }
         }
       }
@@ -7851,6 +8739,12 @@
             "state" : "translated",
             "value" : "翻過來，在背面寫一句話吧。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переверните и оставьте строку на обороте."
+          }
         }
       }
     },
@@ -7904,6 +8798,12 @@
             "state" : "translated",
             "value" : "改寫背面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переписать оборот"
+          }
         }
       }
     },
@@ -7956,6 +8856,12 @@
             "state" : "translated",
             "value" : "寫在背面的一句話"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Строка для оборота"
+          }
         }
       }
     },
@@ -8007,6 +8913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "寫在背面"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать на обороте"
           }
         }
       }
@@ -8061,6 +8973,12 @@
             "state" : "translated",
             "value" : "背面是空白的"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оборот пуст"
+          }
         }
       }
     },
@@ -8113,6 +9031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "野火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Степной пожар"
           }
         }
       }
@@ -8167,6 +9091,12 @@
             "state" : "translated",
             "value" : "淺色"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Светлая"
+          }
         }
       }
     },
@@ -8218,6 +9148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已截止 🏁"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Срок прошёл 🏁"
           }
         }
       }
@@ -8271,6 +9207,12 @@
             "state" : "translated",
             "value" : "距截止的剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Времени до дедлайна"
+          }
         }
       }
     },
@@ -8322,6 +9264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "截止日"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Срок сдачи"
           }
         }
       }
@@ -8376,6 +9324,12 @@
             "state" : "translated",
             "value" : "最隨心所願的一個月"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месяц, когда вы больше всего сделали задуманное"
+          }
         }
       }
     },
@@ -8428,6 +9382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "按心意完成的事"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сделал(а), как задумал(а)"
           }
         }
       }
@@ -8482,6 +9442,12 @@
             "state" : "translated",
             "value" : "按心意做了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сделал(а), как хотел(а)"
+          }
         }
       }
     },
@@ -8534,6 +9500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "需要開啟麥克風才能吹滅火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включите микрофон, чтобы задуть огонь"
           }
         }
       }
@@ -8588,6 +9560,12 @@
             "state" : "translated",
             "value" : "建立"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать"
+          }
         }
       }
     },
@@ -8634,6 +9612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "每天"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый день"
           }
         }
       }
@@ -8688,6 +9672,12 @@
             "state" : "translated",
             "value" : "停下"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стоп"
+          }
         }
       }
     },
@@ -8740,6 +9730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "大概幾點睡的？"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Во сколько вы уснули?"
           }
         }
       }
@@ -8794,6 +9790,12 @@
             "state" : "translated",
             "value" : "不必把一切都燒光"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не обязательно сжигать всё"
+          }
         }
       }
     },
@@ -8846,6 +9848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "積攢的灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Накопленный пепел"
           }
         }
       }
@@ -8900,6 +9908,12 @@
             "state" : "translated",
             "value" : "樣式"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стиль"
+          }
         }
       }
     },
@@ -8953,6 +9967,12 @@
             "state" : "translated",
             "value" : "收集的碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Собранные осколки"
+          }
         }
       }
     },
@@ -9004,6 +10024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "收集了 %@ 塊碎片"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Собрано осколков: %@"
           }
         }
       }
@@ -9058,6 +10084,12 @@
             "state" : "translated",
             "value" : "收集了 %lld 塊碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Собрано осколков: %lld"
+          }
         }
       }
     },
@@ -9110,6 +10142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把收集的碎片拿出來看看"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Возьмите собранные осколки с собой"
           }
         }
       }
@@ -9164,6 +10202,12 @@
             "state" : "translated",
             "value" : "把收集的碎片分享成卡片和海報圖片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Делитесь осколками в виде карточек и постеров"
+          }
         }
       }
     },
@@ -9216,6 +10260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未完成"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вышло"
           }
         }
       }
@@ -9270,6 +10320,12 @@
             "state" : "translated",
             "value" : "免費版最多可設 %lld 個截止日期。升級 Pro，可以同時倒數多個目標。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бесплатно можно держать до %lld дедлайна. С Pro вы отсчитываете сколько угодно целей."
+          }
         }
       }
     },
@@ -9322,6 +10378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "是什麼讓你睡晚了？（選填）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что не давало вам уснуть? (необязательно)"
           }
         }
       }
@@ -9376,6 +10438,12 @@
             "state" : "translated",
             "value" : "條形"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полоса"
+          }
         }
       }
     },
@@ -9428,6 +10496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "背景"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фон"
           }
         }
       }
@@ -9482,6 +10556,12 @@
             "state" : "translated",
             "value" : "閃爍"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Искра"
+          }
         }
       }
     },
@@ -9534,6 +10614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "夜"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ночь"
           }
         }
       }
@@ -9588,6 +10674,12 @@
             "state" : "translated",
             "value" : "水滴"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Капля"
+          }
         }
       }
     },
@@ -9640,6 +10732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "學習"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учёба"
           }
         }
       }
@@ -9694,6 +10792,12 @@
             "state" : "translated",
             "value" : "歡迎意見回饋問題和提出功能建議。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мы рады отчётам об ошибках и идеям новых функций."
+          }
         }
       }
     },
@@ -9746,6 +10850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "丟棄"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбросить"
           }
         }
       }
@@ -9800,6 +10910,12 @@
             "state" : "translated",
             "value" : "閃電"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Молния"
+          }
         }
       }
     },
@@ -9852,6 +10968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "範圍"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диапазон"
           }
         }
       }
@@ -9906,6 +11028,12 @@
             "state" : "translated",
             "value" : "星星"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звезда"
+          }
         }
       }
     },
@@ -9958,6 +11086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒有可回復的購買項目"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет покупок для восстановления"
           }
         }
       }
@@ -10012,6 +11146,12 @@
             "state" : "translated",
             "value" : "正文步驟"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шаг «Текст»"
+          }
         }
       }
     },
@@ -10064,6 +11204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "儲存正文並進入分類步驟"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить текст и перейти к классификации"
           }
         }
       }
@@ -10118,6 +11264,12 @@
             "state" : "translated",
             "value" : "分鐘"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "мин"
+          }
         }
       }
     },
@@ -10170,6 +11322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "分類圖"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "График классификации"
           }
         }
       }
@@ -10224,6 +11382,12 @@
             "state" : "translated",
             "value" : "分類步驟"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шаг «Классификация»"
+          }
         }
       }
     },
@@ -10276,6 +11440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未分類"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Без категории"
           }
         }
       }
@@ -10330,6 +11500,12 @@
             "state" : "translated",
             "value" : "儲存分類並進入明日備忘步驟"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить классификацию и перейти к заметке на завтра"
+          }
         }
       }
     },
@@ -10382,6 +11558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "火焰"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пламя"
           }
         }
       }
@@ -10436,6 +11618,12 @@
             "state" : "translated",
             "value" : "火焰類型"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип пламени"
+          }
         }
       }
     },
@@ -10488,6 +11676,12 @@
             "state" : "translated",
             "value" : "火已熄滅 · 查看收集的碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь погашен · Смотреть осколки"
+          }
         }
       }
     },
@@ -10539,6 +11733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "火熄滅了。晚安，好夢"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь погашен. Сладких снов"
           }
         }
       }
@@ -10593,6 +11793,12 @@
             "state" : "translated",
             "value" : "把熄火後留下的碎片做成卡片和海報，好好珍藏。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Превратите оставшиеся осколки в карточки и постеры и сохраните их."
+          }
         }
       }
     },
@@ -10645,6 +11851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "熄滅火焰也是一種勇氣"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Погасить огонь — тоже смелость"
           }
         }
       }
@@ -10699,6 +11911,12 @@
             "state" : "translated",
             "value" : "雖然沒吹滅，但你按時睡著了，火自己熄滅了。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы не задули огонь, но уснули вовремя — и он погас сам."
+          }
         }
       }
     },
@@ -10751,6 +11969,12 @@
             "state" : "translated",
             "value" : "火熄滅了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь погас"
+          }
         }
       }
     },
@@ -10802,6 +12026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "燃燒的羊皮紙"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
           }
         }
       }
@@ -10856,6 +12086,12 @@
             "state" : "translated",
             "value" : "燃燒的羊皮紙 Pro"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент Pro"
+          }
         }
       }
     },
@@ -10908,6 +12144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "燃燒的羊皮紙 🔥"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент 🔥"
           }
         }
       }
@@ -10962,6 +12204,12 @@
             "state" : "translated",
             "value" : "燃燒的羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
         }
       }
     },
@@ -11007,6 +12255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "燃燒的自由時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящее свободное время"
           }
         }
       }
@@ -11061,6 +12315,12 @@
             "state" : "translated",
             "value" : "體驗燃燒的自由時間、配色與火焰類型、碎片卡片、回顧書 PDF、一整年的灰燼流向，以及不限數量的截止日期。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получите «Горящее свободное время», цвета и типы пламени, карточки осколков, PDF-книгу записей, год пепла и безлимитные дедлайны."
+          }
         }
       }
     },
@@ -11107,6 +12367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "體驗燃燒的自由時間、主題、碎片卡片、回顧書 PDF、一整年的灰燼流向，以及不限數量的截止日期。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получите «Горящее свободное время», темы, карточки осколков, PDF-книгу записей, год пепла и безлимитные дедлайны."
           }
         }
       }
@@ -11161,6 +12427,12 @@
             "state" : "translated",
             "value" : "火星"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бенгальский огонь"
+          }
         }
       }
     },
@@ -11212,6 +12484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "留空的話，會寫入淡色的提示語"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если оставить пустым, будет показана блёклая фраза"
           }
         }
       }
@@ -11266,6 +12544,12 @@
             "state" : "translated",
             "value" : "配色"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет"
+          }
         }
       }
     },
@@ -11318,6 +12602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "配色決定紙張和火焰的顏色，火焰類型決定用哪種火來燒。兩者可以分開選擇"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет задаёт оттенок бумаги и пламени, тип пламени — как оно горит. Выбирайте каждое отдельно"
           }
         }
       }
@@ -11372,6 +12662,12 @@
             "state" : "translated",
             "value" : "使用中"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Используется"
+          }
         }
       }
     },
@@ -11424,6 +12720,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "刪除"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить"
           }
         }
       }
@@ -11478,6 +12780,12 @@
             "state" : "translated",
             "value" : "新截止日期"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новый дедлайн"
+          }
         }
       }
     },
@@ -11530,6 +12838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新灰罐"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новая урна"
           }
         }
       }
@@ -11584,6 +12898,12 @@
             "state" : "translated",
             "value" : "建立新灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать новую урну"
+          }
         }
       }
     },
@@ -11635,6 +12955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新回顧"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новая запись"
           }
         }
       }
@@ -11689,6 +13015,12 @@
             "state" : "translated",
             "value" : "寫一條新回顧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать новую запись"
+          }
         }
       }
     },
@@ -11741,6 +13073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "刻下"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выгравировать"
           }
         }
       }
@@ -11795,6 +13133,12 @@
             "state" : "translated",
             "value" : "之後新增的 Pro 功能也都包含在內"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В Pro войдут и все будущие функции"
+          }
         }
       }
     },
@@ -11847,6 +13191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "線條"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Линия"
           }
         }
       }
@@ -11901,6 +13251,12 @@
             "state" : "translated",
             "value" : "已選擇"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрано"
+          }
         }
       }
     },
@@ -11953,6 +13309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
           }
         }
       },
@@ -12007,6 +13369,12 @@
             "state" : "translated",
             "value" : "在設定中開啟麥克風"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить микрофон в настройках"
+          }
         }
       }
     },
@@ -12059,6 +13427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "成長"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рост"
           }
         }
       }
@@ -12113,6 +13487,12 @@
             "state" : "translated",
             "value" : "坦率地寫下來吧……"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пишите честно..."
+          }
         }
       }
     },
@@ -12165,6 +13545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "睡眠記錄"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записи сна"
           }
         }
       }
@@ -12219,6 +13605,12 @@
             "state" : "translated",
             "value" : "睡眠記錄只讀取，不會離開你的裝置"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данные сна только читаются и не покидают ваше устройство"
+          }
         }
       }
     },
@@ -12270,6 +13662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "睡眠中"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сон"
           }
         }
       }
@@ -12324,6 +13722,12 @@
             "state" : "translated",
             "value" : "編輯"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить"
+          }
         }
       }
     },
@@ -12376,6 +13780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "炭火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Угли"
           }
         }
       }
@@ -12430,6 +13840,12 @@
             "state" : "translated",
             "value" : "小時"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ч"
+          }
         }
       }
     },
@@ -12482,6 +13898,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время"
           }
         }
       }
@@ -12536,6 +13958,12 @@
             "state" : "translated",
             "value" : "時間設定"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки времени"
+          }
         }
       }
     },
@@ -12588,6 +14016,12 @@
             "state" : "translated",
             "value" : "花了時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Потратил(а) время"
+          }
         }
       }
     },
@@ -12639,6 +14073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒花時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не тратил(а) время"
           }
         }
       }
@@ -12693,6 +14133,12 @@
             "state" : "translated",
             "value" : "跟隨系統"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как в системе"
+          }
         }
       }
     },
@@ -12746,6 +14192,12 @@
             "state" : "translated",
             "value" : "選擇「跟隨系統」，會沿用裝置的深色模式設定"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«Как в системе» повторяет настройку тёмного режима на вашем устройстве"
+          }
         }
       }
     },
@@ -12792,6 +14244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開始"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начало"
           }
         }
       }
@@ -12844,6 +14302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開始時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время начала"
           }
         }
       }
@@ -12898,6 +14362,12 @@
             "state" : "translated",
             "value" : "失誤"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибки"
+          }
         }
       }
     },
@@ -12949,6 +14419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "符號"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Символ"
           }
         }
       }
@@ -13002,6 +14478,12 @@
             "state" : "translated",
             "value" : "還沒有盛放的灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока нет пепла"
+          }
         }
       }
     },
@@ -13054,6 +14536,12 @@
             "state" : "translated",
             "value" : "還沒有收集的碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока нет собранных осколков"
+          }
         }
       }
     },
@@ -13105,6 +14593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "還沒有分類的灰燼。寫回顧時，在圖上點一下吧。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока нет классифицированного пепла. Нажмите точку на графике, когда пишете запись."
           }
         }
       }
@@ -13159,6 +14653,12 @@
             "state" : "translated",
             "value" : "還是空的"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока пусто"
+          }
         }
       }
     },
@@ -13212,6 +14712,12 @@
             "state" : "translated",
             "value" : "還是空的。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока пусто."
+          }
         }
       }
     },
@@ -13263,6 +14769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "還沒有名字的灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепел без имени"
           }
         }
       }
@@ -13317,6 +14829,12 @@
             "state" : "translated",
             "value" : "還沒有寫任何內容"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока ничего не написано"
+          }
         }
       }
     },
@@ -13368,6 +14886,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "還在第一頁"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы всё ещё на первой странице"
           }
         }
       }
@@ -13422,6 +14946,12 @@
             "state" : "translated",
             "value" : "還沒有灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока нет урн"
+          }
         }
       }
     },
@@ -13475,6 +15005,12 @@
             "state" : "translated",
             "value" : "還沒有沉澱下來的灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепел пока не осел"
+          }
         }
       }
     },
@@ -13526,6 +15062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "目前還只是灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока это просто пепел"
           }
         }
       }
@@ -13580,6 +15122,12 @@
             "state" : "translated",
             "value" : "未來的 Pro 功能"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Будущие функции Pro"
+          }
         }
       }
     },
@@ -13626,6 +15174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "約 %lld 天"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Около %lld дн."
           }
         }
       }
@@ -13680,6 +15234,12 @@
             "state" : "translated",
             "value" : "羊皮紙"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент"
+          }
         }
       }
     },
@@ -13732,6 +15292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "羊皮紙·火焰"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент и пламя"
           }
         }
       }
@@ -13786,6 +15352,12 @@
             "state" : "translated",
             "value" : "羊皮紙·火焰主題"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темы пергамента и пламени"
+          }
         }
       }
     },
@@ -13838,6 +15410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "選擇羊皮紙用哪種火來燒。配色跟隨上方的主題"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите, как будет гореть пергамент. Цвет задаёт тема выше"
           }
         }
       }
@@ -13892,6 +15470,12 @@
             "state" : "translated",
             "value" : "羊皮紙與火焰"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент и пламя"
+          }
         }
       }
     },
@@ -13944,6 +15528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "紙張顏色和火焰色彩會一起改變"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет бумаги и пламя меняются вместе"
           }
         }
       }
@@ -13998,6 +15588,12 @@
             "state" : "translated",
             "value" : "放進哪個灰罐？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В какую урну положить?"
+          }
         }
       }
     },
@@ -14049,6 +15645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "昨天沒做的事"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вчерашние незавершённые"
           }
         }
       }
@@ -14103,6 +15705,12 @@
             "state" : "translated",
             "value" : "昨天沒做的事 %lld 件"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вчера не сделано: %lld"
+          }
         }
       }
     },
@@ -14154,6 +15762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "昨晚晚睡了 %@，\n今天早晨留下了焦痕"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы легли на %@ позже,\\nпоэтому утро обожжено"
           }
         }
       }
@@ -14208,6 +15822,12 @@
             "state" : "translated",
             "value" : "昨晚晚睡了 %@。\n今晚試著早點熄火吧。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы легли на %@ позже прошлой ночью.\\nСегодня вечером попробуйте погасить огонь пораньше."
+          }
         }
       }
     },
@@ -14261,6 +15881,12 @@
             "state" : "translated",
             "value" : "昨晚的碎片涼了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вчерашний осколок остыл"
+          }
         }
       }
     },
@@ -14312,6 +15938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "昨晚睡得怎麼樣？"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как прошла прошлая ночь?"
           }
         }
       }
@@ -14366,6 +15998,12 @@
             "state" : "translated",
             "value" : "無意間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Само вышло"
+          }
         }
       }
     },
@@ -14418,6 +16056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "不知不覺做了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Так получилось"
           }
         }
       }
@@ -14472,6 +16116,12 @@
             "state" : "translated",
             "value" : "不知不覺做的事"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что вышло само"
+          }
         }
       }
     },
@@ -14525,6 +16175,12 @@
             "state" : "translated",
             "value" : "無"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет"
+          }
         }
       }
     },
@@ -14576,6 +16232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "這裡面的東西，在你為它們命名之前，只是灰燼。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "То, что здесь, — просто пепел, пока вы не дадите ему имя."
           }
         }
       }
@@ -14630,6 +16292,12 @@
             "state" : "translated",
             "value" : "這裡積攢的灰燼，對我意味著什麼……"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что для меня значил этот пепел…"
+          }
         }
       }
     },
@@ -14682,6 +16350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "同時倒數多個目標"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсчитывайте сразу несколько целей"
           }
         }
       }
@@ -14736,6 +16410,12 @@
             "state" : "translated",
             "value" : "已連線"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подключено"
+          }
         }
       }
     },
@@ -14788,6 +16468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "如需斷開連線，請前往 iOS 設定 ▸ 健康 ▸ 資料存取與裝置 進行更改"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы отключить, откройте «Настройки» iOS ▸ «Здоровье» ▸ «Доступ к данным и устройства»"
           }
         }
       }
@@ -14842,6 +16528,12 @@
             "state" : "translated",
             "value" : "如需斷開連線，請前往 iOS 設定 ▸ 健康 ▸ 資料存取與裝置 進行更改。睡眠記錄只讀取，不會離開你的裝置"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы отключить, откройте «Настройки» iOS ▸ «Здоровье» ▸ «Доступ к данным и устройства». Данные сна только читаются и не покидают ваше устройство"
+          }
         }
       }
     },
@@ -14894,6 +16586,12 @@
             "state" : "translated",
             "value" : "連線"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подключить"
+          }
         }
       }
     },
@@ -14945,6 +16643,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "連線後，不用每天早上詢問，會根據記錄的入睡時間把火往回撥。睡眠記錄只讀取，不會離開你的裝置。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "После подключения мы не будем спрашивать по утрам и вернём огонь к моменту, когда вы уснули. Данные сна только читаются и не покидают ваше устройство."
           }
         }
       }
@@ -14999,6 +16703,12 @@
             "state" : "translated",
             "value" : "連線後，不用每天早上詢問入睡時間，會按記錄的時間把明天的羊皮紙往回撥"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "После подключения мы не будем спрашивать по утрам. Завтрашний пергамент вернётся к времени, когда вы на самом деле уснули"
+          }
         }
       }
     },
@@ -15051,6 +16761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "連線後，不用每天早上詢問入睡時間，會按記錄的時間把明天的羊皮紙往回撥。睡眠記錄只讀取，不會離開你的裝置"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "После подключения мы берём записанное время сна вместо ежедневного вопроса. Данные сна только читаются и не покидают ваше устройство"
           }
         }
       }
@@ -15105,6 +16821,12 @@
             "state" : "translated",
             "value" : "開啟"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть"
+          }
         }
       }
     },
@@ -15157,6 +16879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "例：社群媒體限用 15 分鐘"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: не больше 15 минут в соцсетях"
           }
         }
       }
@@ -15211,6 +16939,12 @@
             "state" : "translated",
             "value" : "例：撐過來的一週"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: неделя, которую я выдержал(а)"
+          }
         }
       }
     },
@@ -15263,6 +16997,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "例：改成散步 20 分鐘"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: заменить на прогулку в 20 минут"
           }
         }
       }
@@ -15317,6 +17057,12 @@
             "state" : "translated",
             "value" : "例：運動時間增加 30 分鐘"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: тренироваться на 30 минут больше"
+          }
         }
       }
     },
@@ -15369,6 +17115,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "例：運動、關係、今年的挑戰"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: спорт, отношения, вызов года"
           }
         }
       }
@@ -15423,6 +17175,12 @@
             "state" : "translated",
             "value" : "例：午飯後立刻運動 30 分鐘"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: 30 минут тренировки сразу после обеда"
+          }
         }
       }
     },
@@ -15475,6 +17233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "例：讀一章書"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: прочитать одну главу"
           }
         }
       }
@@ -15529,6 +17293,12 @@
             "state" : "translated",
             "value" : "例：提交專案"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напр.: сдать проект"
+          }
         }
       }
     },
@@ -15581,6 +17351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня"
           }
         }
       }
@@ -15635,6 +17411,12 @@
             "state" : "translated",
             "value" : "今天沒做完的原因"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Почему день остался незавершённым"
+          }
         }
       }
     },
@@ -15687,6 +17469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天早晨有一點焦痕"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Утро слегка обожжено"
           }
         }
       }
@@ -15741,6 +17529,12 @@
             "state" : "translated",
             "value" : "用一句話記下今天吧。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставьте одну строку о своём дне."
+          }
         }
       }
     },
@@ -15793,6 +17587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "你今天沒能\n過完這一天"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы не смогли\\nзавершить день"
           }
         }
       }
@@ -15847,6 +17647,12 @@
             "state" : "translated",
             "value" : "今天沒能過完這一天，\n是因為什麼呢？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что помешало вам\\nзавершить день?"
+          }
         }
       }
     },
@@ -15900,6 +17706,12 @@
             "state" : "translated",
             "value" : "熄滅今天的火，收起剩下的碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гасит сегодняшний огонь и сохраняет оставшийся осколок"
+          }
         }
       }
     },
@@ -15951,6 +17763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "睡前留下今天的一句話嗎？"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставить строку перед сном?"
           }
         }
       }
@@ -16005,6 +17823,12 @@
             "state" : "translated",
             "value" : "今天， "
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня, "
+          }
         }
       }
     },
@@ -16058,6 +17882,12 @@
             "state" : "translated",
             "value" : "今天先跳過"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустить сегодня"
+          }
         }
       }
     },
@@ -16109,6 +17939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天過得怎麼樣？——點一下吧"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каким был ваш день? — Нажмите, чтобы отметить"
           }
         }
       }
@@ -16163,6 +17999,12 @@
             "state" : "translated",
             "value" : "今晚打算怎麼做？（選填）"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что попробуете сегодня вечером? (необязательно)"
+          }
         }
       }
     },
@@ -16215,6 +18057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今天就到這裡，燒得很充分"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На сегодня хватит. Горело славно."
           }
         }
       }
@@ -16269,6 +18117,12 @@
             "state" : "translated",
             "value" : "今天在哪裡結束，由我決定"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Конец дня определяю я"
+          }
         }
       }
     },
@@ -16321,6 +18175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "要寫今天的回顧嗎？點按即可開啟編寫介面"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать запись за сегодня? Нажмите, чтобы открыть редактор"
           }
         }
       }
@@ -16375,6 +18235,12 @@
             "state" : "translated",
             "value" : "上午"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ДП"
+          }
         }
       }
     },
@@ -16427,6 +18293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "下午"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ПП"
           }
         }
       }
@@ -16481,6 +18353,12 @@
             "state" : "translated",
             "value" : "今年"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот год"
+          }
         }
       }
     },
@@ -16534,6 +18412,12 @@
             "state" : "translated",
             "value" : "今年剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось в этом году"
+          }
         }
       }
     },
@@ -16585,6 +18469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完成"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
           }
         }
       }
@@ -16638,6 +18528,12 @@
             "state" : "translated",
             "value" : "另有 %@ 個"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "и ещё %@"
+          }
         }
       }
     },
@@ -16683,6 +18579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "另有 %@ 粒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "и ещё %@"
           }
         }
       }
@@ -16737,6 +18639,12 @@
             "state" : "translated",
             "value" : "另有 %lld 個"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "и ещё %lld"
+          }
         }
       }
     },
@@ -16789,6 +18697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "另有 %lld 粒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "и ещё %lld"
           }
         }
       }
@@ -16843,6 +18757,12 @@
             "state" : "translated",
             "value" : "圓形"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Круг"
+          }
         }
       }
     },
@@ -16896,6 +18816,12 @@
             "state" : "translated",
             "value" : "上下滑動切換頁面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Листайте вверх или вниз, чтобы менять страницы"
+          }
         }
       }
     },
@@ -16947,6 +18873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "寫下意義"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать смысл"
           }
         }
       }
@@ -17001,6 +18933,12 @@
             "state" : "translated",
             "value" : "寫下意義並放入"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записать"
+          }
         }
       }
     },
@@ -17052,6 +18990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "清除意義"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стереть смысл"
           }
         }
       }
@@ -17105,6 +19049,12 @@
             "state" : "translated",
             "value" : "無\n意願"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Без\\nнамерения"
+          }
         }
       }
     },
@@ -17156,6 +19106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "有\n意願"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С\\nнамерением"
           }
         }
       }
@@ -17209,6 +19165,12 @@
             "state" : "translated",
             "value" : "這個 Apple 帳號下沒有找到購買 Pro 的記錄。請確認登入的是購買時使用的帳號。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для этого аккаунта Apple покупка Pro не найдена. Убедитесь, что вы вошли в аккаунт, с которого покупали."
+          }
         }
       }
     },
@@ -17260,6 +19222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "這一天的灰燼沒有留下"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От этого дня пепла не осталось"
           }
         }
       }
@@ -17314,6 +19282,12 @@
             "state" : "translated",
             "value" : "這個月對你意味著什麼？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что для вас значил этот месяц?"
+          }
         }
       }
     },
@@ -17365,6 +19339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "這個月的每週灰罐"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недельные урны этого месяца"
           }
         }
       }
@@ -17419,6 +19399,12 @@
             "state" : "translated",
             "value" : "明天打算怎樣安排這段時間？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как распорядитесь этим временем завтра?"
+          }
         }
       }
     },
@@ -17472,6 +19458,12 @@
             "state" : "translated",
             "value" : "要丟棄這塊碎片嗎？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбросить этот осколок?"
+          }
         }
       }
     },
@@ -17524,6 +19516,12 @@
             "state" : "translated",
             "value" : "這一週對你意味著什麼？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что для вас значила эта неделя?"
+          }
         }
       }
     },
@@ -17575,6 +19573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "這個灰罐是空的。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эта урна пуста."
           }
         }
       }
@@ -17629,6 +19633,12 @@
             "state" : "translated",
             "value" : "讓這個灰罐裡的內容重新變回無名灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Возвращает эту урну к безымянному пеплу"
+          }
         }
       }
     },
@@ -17680,6 +19690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "這個灰罐裡留下的東西"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что осталось в этой урне"
           }
         }
       }
@@ -17734,6 +19750,12 @@
             "state" : "translated",
             "value" : "名稱"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название"
+          }
         }
       }
     },
@@ -17786,6 +19808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "重新命名"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переименовать"
           }
         }
       }
@@ -17840,6 +19868,12 @@
             "state" : "translated",
             "value" : "未命名灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урна без названия"
+          }
         }
       }
     },
@@ -17893,6 +19927,12 @@
             "state" : "translated",
             "value" : "透過電子郵件聯絡"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать нам"
+          }
         }
       }
     },
@@ -17944,6 +19984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "表情符號"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эмодзи"
           }
         }
       }
@@ -17998,6 +20044,12 @@
             "state" : "translated",
             "value" : "分享圖片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поделиться изображением"
+          }
         }
       }
     },
@@ -18050,6 +20102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本月"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот месяц"
           }
         }
       }
@@ -18104,6 +20162,12 @@
             "state" : "translated",
             "value" : "本月剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось в этом месяце"
+          }
         }
       }
     },
@@ -18156,6 +20220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本週"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эта неделя"
           }
         }
       }
@@ -18210,6 +20280,12 @@
             "state" : "translated",
             "value" : "本週剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось на этой неделе"
+          }
         }
       }
     },
@@ -18257,6 +20333,12 @@
             "state" : "translated",
             "value" : "本週剩餘自由時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободного времени на этой неделе"
+          }
         }
       }
     },
@@ -18303,6 +20385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本週的自由時間已燒盡"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободное время этой недели сгорело"
           }
         }
       }
@@ -18357,6 +20445,12 @@
             "state" : "translated",
             "value" : "這週也在重複"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это повторяется и на этой неделе"
+          }
         }
       }
     },
@@ -18409,6 +20503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "這週也出現過"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Такое было и на этой неделе"
           }
         }
       }
@@ -18463,6 +20563,12 @@
             "state" : "translated",
             "value" : "使用條款 (EULA)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Условия использования (EULA)"
+          }
         }
       }
     },
@@ -18515,6 +20621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "上個月"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прошлый месяц"
           }
         }
       }
@@ -18569,6 +20681,12 @@
             "state" : "translated",
             "value" : "Instagram 私訊 (@lee25_ios)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Личные сообщения в Instagram (@lee25_ios)"
+          }
         }
       }
     },
@@ -18616,6 +20734,12 @@
             "state" : "translated",
             "value" : "一週中屬於我的時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Моё время на неделе"
+          }
         }
       }
     },
@@ -18662,6 +20786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "只有一週中屬於你自己的時間流逝時，羊皮紙才會燃燒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пергамент горит только в ваши собственные часы"
           }
         }
       }
@@ -18714,6 +20844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "只檢測吹氣的力度，不會錄音"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учитывается только сила дыхания. Звук не записывается."
           }
         }
       }
@@ -18768,6 +20904,12 @@
             "state" : "translated",
             "value" : "葉子"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лист"
+          }
         }
       }
     },
@@ -18820,6 +20962,12 @@
             "state" : "translated",
             "value" : "自動儲存"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автосохранение"
+          }
         }
       }
     },
@@ -18866,6 +21014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自由時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободное время"
           }
         }
       }
@@ -18914,6 +21068,12 @@
             "state" : "translated",
             "value" : "編輯自由時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить свободное время"
+          }
         }
       }
     },
@@ -18960,6 +21120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新增自由時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить свободное время"
           }
         }
       }
@@ -19014,6 +21180,12 @@
             "state" : "translated",
             "value" : "自由時間在頁面指示點中顯示為沙漏。新增截止日期後會自動出現"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободное время отображается песочными часами среди точек страниц. Дедлайны появляются сами, как только вы их добавите"
+          }
         }
       }
     },
@@ -19059,6 +21231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "只在自由時間流逝時點燃，其餘時間熄滅等待"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь зажигается, пока идёт ваше свободное время, а в остальные часы недели ждёт погасшим"
           }
         }
       }
@@ -19113,6 +21291,12 @@
             "state" : "translated",
             "value" : "從小小的改變開始也很好……"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Небольшие перемены — хорошее начало..."
+          }
         }
       }
     },
@@ -19165,6 +21349,12 @@
             "state" : "translated",
             "value" : "點按餘燼，查看那天的回顧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите на уголёк, чтобы увидеть записи того дня"
+          }
         }
       }
     },
@@ -19216,6 +21406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "晚安"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спокойной ночи"
           }
         }
       }
@@ -19270,6 +21466,12 @@
             "state" : "translated",
             "value" : "燒得很好的一天，該放涼了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хорошо прогоревший день. Пора остыть."
+          }
         }
       }
     },
@@ -19315,6 +21517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請排除睡覺、工作和雜事，只填寫完全為自己所用的時間。只有這段時間流逝時，本週的羊皮紙才會燃燒。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не включайте сон, работу и дела — добавьте только время, которое тратите на себя. Пергамент этой недели горит, только пока оно идёт."
           }
         }
       }
@@ -19362,6 +21570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "選好扣除睡眠和工作之後真正屬於你的時間，只有這段時間流逝時，本週的羊皮紙才會燃燒。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите часы, которые по-настоящему ваши, помимо сна и работы. Пергамент этой недели горит, только пока они идут."
           }
         }
       }
@@ -19416,6 +21630,12 @@
             "state" : "translated",
             "value" : "入睡時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время сна"
+          }
         }
       }
     },
@@ -19468,6 +21688,12 @@
             "state" : "translated",
             "value" : "睡著後會自動停下。早晨會確認入睡時間，並把火往回撥"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь гаснет сам, когда вы засыпаете. Утром мы проверяем, когда вы уснули, и возвращаем его назад"
+          }
         }
       }
     },
@@ -19514,6 +21740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "與睡眠時間重疊"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пересекается со временем сна"
           }
         }
       }
@@ -19562,6 +21794,12 @@
             "state" : "translated",
             "value" : "與睡眠時間重疊。請設在清醒時間內。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пересекается со сном. Оставьте это в часы бодрствования."
+          }
         }
       }
     },
@@ -19607,6 +21845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "不算睡覺，不算工作，\n只選真正屬於你自己的時間。\n只有這段時間流逝時，本週的羊皮紙才會燃燒。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не включайте сон,\\nне включайте работу —\\nвыберите только свои часы.\\nПергамент этой недели горит, только пока они идут."
           }
         }
       }
@@ -19661,6 +21905,12 @@
             "state" : "translated",
             "value" : "灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепел"
+          }
         }
       }
     },
@@ -19713,6 +21963,12 @@
             "state" : "translated",
             "value" : "基於 %@ 粒灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "По %@ записям пепла"
+          }
         }
       }
     },
@@ -19758,6 +22014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ 粒灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепла: %@"
           }
         }
       }
@@ -19806,6 +22068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ 粒灰燼 · A5 尺寸"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепла: %@ · размер A5"
           }
         }
       }
@@ -19860,6 +22128,12 @@
             "state" : "translated",
             "value" : "基於 %lld 粒灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "По %lld записям пепла"
+          }
         }
       }
     },
@@ -19912,6 +22186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld 粒灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепла: %lld"
           }
         }
       }
@@ -19966,6 +22246,12 @@
             "state" : "translated",
             "value" : "%lld 粒灰燼 · A5 尺寸"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепла: %lld · размер A5"
+          }
         }
       }
     },
@@ -20019,6 +22305,12 @@
             "state" : "translated",
             "value" : "灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урны пепла"
+          }
         }
       }
     },
@@ -20070,6 +22362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請放入灰罐"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Положите в урну пепла"
           }
         }
       }
@@ -20124,6 +22422,12 @@
             "state" : "translated",
             "value" : "灰燼積累最多的月份"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше всего пепла в месяце"
+          }
         }
       }
     },
@@ -20177,6 +22481,12 @@
             "state" : "translated",
             "value" : "存入幾粒灰燼後，\n分佈圖和餘燼日曆就會出現在這裡。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте немного пепла —\\nи здесь появятся распределение и календарь углей."
+          }
         }
       }
     },
@@ -20228,6 +22538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "灰燼分佈"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Распределение пепла"
           }
         }
       }
@@ -20282,6 +22598,12 @@
             "state" : "translated",
             "value" : "灰燼流向"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поток пепла"
+          }
         }
       }
     },
@@ -20334,6 +22656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "查看灰燼流向"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Смотреть поток пепла"
           }
         }
       }
@@ -20388,6 +22716,12 @@
             "state" : "translated",
             "value" : "儲存"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить"
+          }
         }
       }
     },
@@ -20441,6 +22775,12 @@
             "state" : "translated",
             "value" : "正在儲存"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранение"
+          }
         }
       }
     },
@@ -20493,6 +22833,12 @@
             "state" : "translated",
             "value" : "正在儲存…"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранение…"
+          }
         }
       }
     },
@@ -20544,6 +22890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已儲存"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранено"
           }
         }
       }
@@ -20598,6 +22950,12 @@
             "state" : "translated",
             "value" : "儲存並開始新的回顧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить и начать новую запись"
+          }
         }
       }
     },
@@ -20650,6 +23008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "儲存並關閉面板"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить и закрыть"
           }
         }
       }
@@ -20704,6 +23068,12 @@
             "state" : "translated",
             "value" : "自己熄滅的碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Погасший сам осколок"
+          }
         }
       }
     },
@@ -20756,6 +23126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "收集了一塊自己熄滅的碎片"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы сохранили осколок, который погас сам"
           }
         }
       }
@@ -20810,6 +23186,12 @@
             "state" : "translated",
             "value" : "把寫下的回顧裝訂成一本 PDF，用於儲存和列印。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соберите записи в один PDF, чтобы хранить или распечатать."
+          }
         }
       }
     },
@@ -20862,6 +23244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "全部"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все"
           }
         }
       }
@@ -20916,6 +23304,12 @@
             "state" : "translated",
             "value" : "圓點"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Точка"
+          }
         }
       }
     },
@@ -20963,6 +23357,12 @@
             "state" : "translated",
             "value" : "設定的自由時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше свободное время"
+          }
         }
       }
     },
@@ -21008,6 +23408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定並查看統計是免費的，只燒這段時間則需要 Pro。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настроить и увидеть цифры можно бесплатно. Жечь только эти часы — в Pro."
           }
         }
       }
@@ -21061,6 +23467,12 @@
             "state" : "translated",
             "value" : "標題"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заголовок"
+          }
         }
       }
     },
@@ -21112,6 +23524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "按時熄了火。明天的羊皮紙保持原樣"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы вовремя погасили огонь. Завтрашний пергамент не тронут"
           }
         }
       }
@@ -21166,6 +23584,12 @@
             "state" : "translated",
             "value" : "按時睡著，火自己熄滅了"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы уснули вовремя, и огонь погас сам"
+          }
         }
       }
     },
@@ -21218,6 +23642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "我按時睡了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я лёг(ла) вовремя"
           }
         }
       }
@@ -21272,6 +23702,12 @@
             "state" : "translated",
             "value" : "丟棄碎片"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбросить осколок"
+          }
         }
       }
     },
@@ -21324,6 +23760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "碎片卡片"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карточка осколка"
           }
         }
       }
@@ -21378,6 +23820,12 @@
             "state" : "translated",
             "value" : "碎片卡片·海報"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карточки и постеры осколков"
+          }
         }
       }
     },
@@ -21430,6 +23878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "分享為碎片卡片"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поделиться карточкой осколка"
           }
         }
       }
@@ -21484,6 +23938,12 @@
             "state" : "translated",
             "value" : "碎片海報"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Постер осколка"
+          }
         }
       }
     },
@@ -21537,6 +23997,12 @@
             "state" : "translated",
             "value" : "製作碎片海報"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать постер осколка"
+          }
         }
       }
     },
@@ -21588,6 +24054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按碎片即可翻轉"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите на осколок, чтобы перевернуть"
           }
         }
       }
@@ -21642,6 +24114,12 @@
             "state" : "translated",
             "value" : "碎片背面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оборот осколка"
+          }
         }
       }
     },
@@ -21694,6 +24172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "碎片正面"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лицевая сторона осколка"
           }
         }
       }
@@ -21748,6 +24232,12 @@
             "state" : "translated",
             "value" : "留下一點沒燒完的一天，反而記得更久"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "День, оставленный чуть несгоревшим, помнится дольше"
+          }
         }
       }
     },
@@ -21799,6 +24289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "想多寫幾句的話（選填）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хотите добавить больше? (необязательно)"
           }
         }
       }
@@ -21853,6 +24349,12 @@
             "state" : "translated",
             "value" : "類型"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вид"
+          }
         }
       }
     },
@@ -21906,6 +24408,12 @@
             "state" : "translated",
             "value" : "好夢"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сладких снов"
+          }
         }
       }
     },
@@ -21952,6 +24460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "週末"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выходные"
           }
         }
       }
@@ -22006,6 +24520,12 @@
             "state" : "translated",
             "value" : "按主題隨意建立任意數量的灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создавайте сколько угодно урн пепла по темам"
+          }
         }
       }
     },
@@ -22059,6 +24579,12 @@
             "state" : "translated",
             "value" : "當前放入的灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сейчас наполняется"
+          }
         }
       }
     },
@@ -22105,6 +24631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "正在燃燒 · 至 %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горит сейчас · до %@"
           }
         }
       }
@@ -22159,6 +24691,12 @@
             "state" : "translated",
             "value" : "儲存目前寫的回顧，並切換到空白輸入欄"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохраняет эту запись и открывает пустую"
+          }
         }
       }
     },
@@ -22211,6 +24749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "過去 %lld 天的灰燼要怎麼處理？"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что сделать с пеплом за последние дни (%lld)?"
           }
         }
       }
@@ -22265,6 +24809,12 @@
             "state" : "translated",
             "value" : "過去 %lld 週的灰燼要怎麼處理？"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что сделать с пеплом за последние недели (%lld)?"
+          }
         }
       }
     },
@@ -22318,6 +24868,12 @@
             "state" : "translated",
             "value" : "過去 12 個月每月的灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепел по месяцам за последние 12 месяцев"
+          }
         }
       }
     },
@@ -22369,6 +24925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "過去 12 個月，每個月流向了哪裡"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Куда ушли последние 12 месяцев — по месяцам"
           }
         }
       }
@@ -22423,6 +24985,12 @@
             "state" : "translated",
             "value" : "按月份展示過去 12 個月的灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пепел последних 12 месяцев по месяцам"
+          }
         }
       }
     },
@@ -22476,6 +25044,12 @@
             "state" : "translated",
             "value" : "按月份展示過去十二個月裡，時間都流向了哪裡。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Посмотрите, куда утекло ваше время в каждом из последних двенадцати месяцев."
+          }
         }
       }
     },
@@ -22522,6 +25096,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "刪除"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить"
           }
         }
       }
@@ -22578,6 +25158,12 @@
             "state" : "translated",
             "value" : "支援"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка"
+          }
         }
       }
     },
@@ -22629,6 +25215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "放入第一粒灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить первый пепел"
           }
         }
       }
@@ -22683,6 +25275,12 @@
             "state" : "translated",
             "value" : "建立第一個灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать первую урну"
+          }
         }
       }
     },
@@ -22735,6 +25333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "先建立第一個灰罐吧。\n按主題或領域來命名就很合適。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начните с первой урны.\\nХорошо назвать её по теме или области жизни."
           }
         }
       }
@@ -22789,6 +25393,12 @@
             "state" : "translated",
             "value" : "青瓷"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Селадон"
+          }
         }
       }
     },
@@ -22841,6 +25451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "燭火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свеча"
           }
         }
       }
@@ -22895,6 +25511,12 @@
             "state" : "translated",
             "value" : "最近 30 天"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последние 30 дней"
+          }
         }
       }
     },
@@ -22947,6 +25569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新增"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить"
           }
         }
       }
@@ -23001,6 +25629,12 @@
             "state" : "translated",
             "value" : "推薦就寢時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рекомендуемое время сна"
+          }
         }
       }
     },
@@ -23053,6 +25687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "取消"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
           }
         }
       }
@@ -23107,6 +25747,12 @@
             "state" : "translated",
             "value" : "距就寢還有 1 小時。今天也辛苦了！"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До отхода ко сну 1 час. Вы славно потрудились сегодня!"
+          }
         }
       }
     },
@@ -23158,6 +25804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "就寢前 30 分鐘起，可以對著燃燒的羊皮紙吹氣\n熄滅火焰，並收起剩下的碎片"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "За 30 минут до сна подуйте на горящий\\nпергамент, чтобы погасить огонь и сохранить остаток"
           }
         }
       }
@@ -23212,6 +25864,12 @@
             "state" : "translated",
             "value" : "就寢時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время отхода ко сну"
+          }
         }
       }
     },
@@ -23265,6 +25923,12 @@
             "state" : "translated",
             "value" : "就寢時間 %1$@%2$lld點%3$@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отход ко сну: %3$@ %2$lld ч %1$@"
+          }
         }
       }
     },
@@ -23316,6 +25980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "距就寢 %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До сна: %@"
           }
         }
       }
@@ -23370,6 +26040,12 @@
             "state" : "translated",
             "value" : "距就寢的剩餘時間"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Времени до сна"
+          }
         }
       }
     },
@@ -23423,6 +26099,12 @@
             "state" : "translated",
             "value" : "膠囊"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Капсула"
+          }
         }
       }
     },
@@ -23474,6 +26156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關鍵詞（選填）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ключевое слово (необязательно)"
           }
         }
       }
@@ -23528,6 +26216,12 @@
             "state" : "translated",
             "value" : "顯示標籤頁"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывать вкладки"
+          }
         }
       }
     },
@@ -23579,6 +26273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按關閉"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы закрыть"
           }
         }
       }
@@ -23633,6 +26333,12 @@
             "state" : "translated",
             "value" : "點按管理截止日期"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы управлять дедлайнами"
+          }
         }
       }
     },
@@ -23685,6 +26391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按返回正文步驟"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы вернуться к шагу «Текст»"
           }
         }
       }
@@ -23739,6 +26451,12 @@
             "state" : "translated",
             "value" : "點按選擇"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы выбрать"
+          }
         }
       }
     },
@@ -23792,6 +26510,12 @@
             "state" : "translated",
             "value" : "點按編輯"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы изменить"
+          }
         }
       }
     },
@@ -23843,6 +26567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按更改時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы изменить время"
           }
         }
       }
@@ -23897,6 +26627,12 @@
             "state" : "translated",
             "value" : "點按管理灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы управлять урнами"
+          }
         }
       }
     },
@@ -23949,6 +26685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按開啟灰罐"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы открыть урну"
           }
         }
       }
@@ -24003,6 +26745,12 @@
             "state" : "translated",
             "value" : "噼啪迸濺"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Потрескивающие, разлетающиеся искры"
+          }
         }
       }
     },
@@ -24055,6 +26803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "頁面"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Страницы"
           }
         }
       }
@@ -24109,6 +26863,12 @@
             "state" : "translated",
             "value" : "第 %lld / %lld 頁"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Страница %1$lld из %2$lld"
+          }
         }
       }
     },
@@ -24161,6 +26921,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "頁面指示器"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Индикатор страниц"
           }
         }
       }
@@ -24215,6 +26981,12 @@
             "state" : "translated",
             "value" : "頁面指示點"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Точки страниц"
+          }
         }
       }
     },
@@ -24267,6 +27039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "頁面指示點樣式"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вид точек страниц"
           }
         }
       }
@@ -24321,6 +27099,12 @@
             "state" : "translated",
             "value" : "永久使用 · %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бессрочный доступ · %@"
+          }
         }
       }
     },
@@ -24367,6 +27151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "工作日"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Будни"
           }
         }
       }
@@ -24421,6 +27211,12 @@
             "state" : "translated",
             "value" : "海報"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Постер"
+          }
         }
       }
     },
@@ -24474,6 +27270,12 @@
             "state" : "translated",
             "value" : "顯示"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывать"
+          }
         }
       }
     },
@@ -24522,6 +27324,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -24579,6 +27387,12 @@
             "state" : "translated",
             "value" : "你已是 Pro 使用者，謝謝 🔥"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы с Pro. Спасибо 🔥"
+          }
         }
       }
     },
@@ -24632,6 +27446,12 @@
             "state" : "translated",
             "value" : "升級到 Pro"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейти на Pro"
+          }
         }
       }
     },
@@ -24678,6 +27498,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用 Pro 只燒自由時間"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жечь только свободное время с Pro"
           }
         }
       }
@@ -24732,6 +27558,12 @@
             "state" : "translated",
             "value" : "升級 Pro 後可用"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступно в Pro"
+          }
         }
       }
     },
@@ -24777,6 +27609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開通 Pro 後，只有這段時間羊皮紙才會燃燒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С Pro пергамент горит только в эти часы"
           }
         }
       }
@@ -24829,6 +27667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用 Pro 解鎖一整年的灰燼流向"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте с Pro поток года"
           }
         }
       }
@@ -24883,6 +27727,12 @@
             "state" : "translated",
             "value" : "本想做，沒做成"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хотел(а), но не сделал(а)"
+          }
         }
       }
     },
@@ -24935,6 +27785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "想做卻沒做成的事"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хотел(а), но не сделал(а)"
           }
         }
       }
@@ -24989,6 +27845,12 @@
             "state" : "translated",
             "value" : "把一天完整地記下來吧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохраните день без остатка"
+          }
         }
       }
     },
@@ -25041,6 +27903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "愛心"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сердце"
           }
         }
       }
@@ -25095,6 +27963,12 @@
             "state" : "translated",
             "value" : "一次付費，永久使用"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Платите один раз — пользуйтесь всегда"
+          }
         }
       }
     },
@@ -25141,6 +28015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "折算成一年"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В пересчёте на год"
           }
         }
       }
@@ -25193,6 +28073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一整年的灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Год пепла"
           }
         }
       }
@@ -25247,6 +28133,12 @@
             "state" : "translated",
             "value" : "一整年的灰燼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Год пепла"
+          }
         }
       }
     },
@@ -25299,6 +28191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一整年的灰燼，一目瞭然"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Целый год пепла одним взглядом"
           }
         }
       }
@@ -25353,6 +28251,12 @@
             "state" : "translated",
             "value" : "%lld 個灰罐，%lld 條回顧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урн: %1$lld, записей: %2$lld"
+          }
         }
       }
     },
@@ -25405,6 +28309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "灰罐不限數量"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безлимитные урны"
           }
         }
       }
@@ -25459,6 +28369,12 @@
             "state" : "translated",
             "value" : "刪除灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить урну"
+          }
         }
       }
     },
@@ -25511,6 +28427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "灰罐架"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полка урн"
           }
         }
       }
@@ -25565,6 +28487,12 @@
             "state" : "translated",
             "value" : "編輯灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить урну"
+          }
         }
       }
     },
@@ -25618,6 +28546,12 @@
             "state" : "translated",
             "value" : "解鎖不限數量的灰罐和截止日期。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте безлимитные урны и дедлайны."
+          }
         }
       }
     },
@@ -25670,6 +28604,12 @@
             "state" : "translated",
             "value" : "灰罐已經準備好了。\n第一粒灰燼會放入%@灰罐。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урна уже ждёт.\\nПервый пепел попадёт в урну «%@»."
+          }
         }
       }
     },
@@ -25721,6 +28661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "刻在灰罐上的一句話"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слово для гравировки на урне"
           }
         }
       }
@@ -25775,6 +28721,12 @@
             "state" : "translated",
             "value" : "太陽"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Солнце"
+          }
         }
       }
     },
@@ -25827,6 +28779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "做到了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сделано"
           }
         }
       }
@@ -25881,6 +28839,12 @@
             "state" : "translated",
             "value" : "請對著手機底部的麥克風吹氣"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дуньте в микрофон внизу телефона"
+          }
         }
       }
     },
@@ -25933,6 +28897,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "外觀"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оформление"
           }
         }
       }
@@ -25987,6 +28957,12 @@
             "state" : "translated",
             "value" : "好"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
         }
       }
     },
@@ -26040,6 +29016,12 @@
             "state" : "translated",
             "value" : "共 %lld 條回顧。按心意做了百分之 %lld，不知不覺做了百分之 %lld，本想做卻沒做成百分之 %lld，就這麼過去了百分之 %lld"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записей: %1$lld. Сделал(а), как задумал(а): %2$lld процентов; так получилось: %3$lld процентов; хотел(а), но не сделал(а): %4$lld процентов; просто утекло: %5$lld процентов"
+          }
         }
       }
     },
@@ -26091,6 +29073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "回顧書"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Книга записей"
           }
         }
       }
@@ -26145,6 +29133,12 @@
             "state" : "translated",
             "value" : "回顧書 PDF"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF-книга записей"
+          }
         }
       }
     },
@@ -26197,6 +29191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "匯出回顧書 PDF"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экспорт книги записей в PDF"
           }
         }
       }
@@ -26251,6 +29251,12 @@
             "state" : "translated",
             "value" : "以書的形式查看"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Смотреть как книгу"
+          }
         }
       }
     },
@@ -26304,6 +29310,12 @@
             "state" : "translated",
             "value" : "親手翻翻你的回顧書吧"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Возьмите свою книгу записей в руки"
+          }
         }
       }
     },
@@ -26355,6 +29367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把回顧裝訂成一本 PDF"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соберите записи в один PDF"
           }
         }
       }
@@ -26409,6 +29427,12 @@
             "state" : "translated",
             "value" : "把回顧按日期逐頁裝訂成 PDF"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соберите записи в PDF, по странице на день"
+          }
         }
       }
     },
@@ -26462,6 +29486,12 @@
             "state" : "translated",
             "value" : "編輯你的回顧。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Измените свою запись."
+          }
         }
       }
     },
@@ -26513,6 +29543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "只要存入一條回顧，\n這本書就會慢慢寫滿。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте запись —\\nи эта книга начнёт заполняться."
           }
         }
       }
@@ -26567,6 +29603,12 @@
             "state" : "translated",
             "value" : "可以把回顧拖進灰罐來移動"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перетаскивайте записи в урну, чтобы переместить их"
+          }
         }
       }
     },
@@ -26619,6 +29661,12 @@
             "state" : "translated",
             "value" : "吹氣熄火"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задуть огонь"
+          }
         }
       }
     },
@@ -26670,6 +29718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "吹一口氣熄滅火焰，\n結束這一天"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дуньте, чтобы погасить пламя\\nи завершить день"
           }
         }
       }
@@ -26724,6 +29778,12 @@
             "state" : "translated",
             "value" : "休息"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отдых"
+          }
         }
       }
     },
@@ -26777,6 +29837,12 @@
             "state" : "translated",
             "value" : "流逝"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Утекло"
+          }
         }
       }
     },
@@ -26828,6 +29894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 好夢"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Сладких снов"
           }
         }
       }
@@ -26888,6 +29960,12 @@
             "state" : "translated",
             "value" : "適配大字體的介面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран для крупного шрифта"
+          }
         }
       }
     },
@@ -26940,6 +30018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即使把字級調到最大，介面也會重新排版，不會被截斷。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Даже при самом крупном шрифте экраны аккуратно перестраиваются и ничего не обрезается."
           }
         }
       }
@@ -26994,6 +30078,12 @@
             "state" : "translated",
             "value" : "更易讀的顏色與對比度"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удобные цвета и контраст"
+          }
         }
       }
     },
@@ -27046,6 +30136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即使開啟「增強對比度」，或難以分辨顏色，也能看清燃燒的時間。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время, которое горит, хорошо видно даже при повышенной контрастности или если трудно различать цвета."
           }
         }
       }
@@ -27100,6 +30196,12 @@
             "state" : "translated",
             "value" : "更多語言"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше языков"
+          }
         }
       }
     },
@@ -27152,6 +30254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "給新使用者的指引"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Краткий тур для новичков"
           }
         }
       }
@@ -27206,6 +30314,12 @@
             "state" : "translated",
             "value" : "首次開啟時，簡單介紹你可以做什麼。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Короткий рассказ о возможностях при первом открытии приложения."
+          }
         }
       }
     },
@@ -27258,6 +30372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新內容"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что нового"
           }
         }
       }
@@ -27312,6 +30432,12 @@
             "state" : "translated",
             "value" : "更新後首次開啟時，告訴你有什麼新變化。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При первом открытии после обновления вы увидите, что появилось нового."
+          }
         }
       }
     },
@@ -27364,6 +30490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用小技巧"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полезные советы"
           }
         }
       }
@@ -27418,6 +30550,12 @@
             "state" : "translated",
             "value" : "在合適的時候，輕輕提醒你一些好用的功能。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ненавязчивые подсказки о полезных функциях — как раз вовремя."
+          }
         }
       }
     },
@@ -27470,6 +30608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri 與捷徑"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri и Быстрые команды"
           }
         }
       }
@@ -27524,6 +30668,12 @@
             "state" : "translated",
             "value" : "問問 Siri，馬上知道今天還剩多少時間。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спросите Siri, сколько осталось от сегодняшнего дня."
+          }
         }
       }
     },
@@ -27576,6 +30726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "多裝置同步"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Синхронизация между устройствами"
           }
         }
       }
@@ -27630,6 +30786,12 @@
             "state" : "translated",
             "value" : "透過 iCloud，在多臺裝置上接著查看同樣的回顧和截止日期。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Через iCloud те же записи и дедлайны доступны на всех ваших устройствах."
+          }
         }
       }
     },
@@ -27682,6 +30844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "備份與回復"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Резервная копия и восстановление"
           }
         }
       }
@@ -27736,6 +30904,12 @@
             "state" : "translated",
             "value" : "可以把回顧和截止日期儲存為檔案，之後再匯入。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохраняйте записи и дедлайны в файл и возвращайте их позже."
+          }
         }
       }
     },
@@ -27788,6 +30962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Face ID 鎖定"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блокировка Face ID"
           }
         }
       }
@@ -27842,6 +31022,12 @@
             "state" : "translated",
             "value" : "用 Face ID 或 Touch ID 鎖定 App，守護你的回顧。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закройте приложение с помощью Face ID или Touch ID, чтобы записи остались личными."
+          }
         }
       }
     },
@@ -27894,6 +31080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "摺疊式 iPhone 佈局"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Раскладка для складного iPhone"
           }
         }
       }
@@ -27948,6 +31140,12 @@
             "state" : "translated",
             "value" : "在摺疊式 iPhone 上，把寬大的畫面分成左右兩欄使用。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На складном iPhone широкий экран делится на две панели рядом."
+          }
         }
       }
     },
@@ -28000,6 +31198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一鍵清除我的記錄"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все мои данные"
           }
         }
       }
@@ -28054,6 +31258,12 @@
             "state" : "translated",
             "value" : "需要時，可以在 App 內清除全部回顧和截止日期。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Когда захотите, удалите все записи и дедлайны прямо в приложении."
+          }
         }
       }
     },
@@ -28106,6 +31316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "接著寫未寫完的回顧"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжить начатую запись"
           }
         }
       }
@@ -28160,6 +31376,12 @@
             "state" : "translated",
             "value" : "寫回顧時即使 App 關閉，寫到一半的內容也會保留。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если приложение закроется на середине записи, написанное сохранится."
+          }
         }
       }
     },
@@ -28211,6 +31433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "繼韓語、英語和日語之後，現在也能用繁體中文了。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "После корейского и английского приложение заговорило и по-русски."
           }
         }
       },
@@ -28265,6 +31493,12 @@
             "state" : "translated",
             "value" : "試試左右滑動"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Листайте вбок"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -28317,6 +31551,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本週、本月和今年的剩餘時間，也能在同一張羊皮紙上查看。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Остаток этой недели, месяца и года виден на том же пергаменте."
           }
         }
       },
@@ -28371,6 +31611,12 @@
             "state" : "translated",
             "value" : "翻翻碎片看看"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переверните осколок"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -28423,6 +31669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點按碎片，可以在背面寫下那天的一句話。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите на осколок, чтобы написать на обороте строку об этом дне."
           }
         }
       },
@@ -28477,6 +31729,12 @@
             "state" : "translated",
             "value" : "目標"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цели"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -28529,6 +31787,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "碎片"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осколки"
           }
         }
       },
@@ -28583,6 +31847,12 @@
             "state" : "translated",
             "value" : "灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урна"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -28635,6 +31905,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "回顧"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запись"
           }
         }
       },
@@ -28689,6 +31965,12 @@
             "state" : "translated",
             "value" : "新增截止日期"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить дедлайн"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -28741,6 +32023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已新增截止日期 %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дедлайн «%@» добавлен"
           }
         }
       },
@@ -28795,6 +32083,12 @@
             "state" : "translated",
             "value" : "已刪除截止日期 %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дедлайн «%@» удалён"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -28847,6 +32141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "火熄滅了。剩下的碎片已收好"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огонь погашен. Осколок сохранён"
           }
         }
       },
@@ -28901,6 +32201,12 @@
             "state" : "translated",
             "value" : "回顧已放入灰罐"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запись положена в урну пепла"
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -28953,6 +32259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "跳過"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустить"
           }
         }
       },
@@ -29007,6 +32319,12 @@
             "state" : "translated",
             "value" : "開始使用"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -29059,6 +32377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩餘時間在眼前燃燒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Смотрите, как сгорает ваше время"
           }
         }
       },
@@ -29113,6 +32437,12 @@
             "state" : "translated",
             "value" : "從起床到入睡，羊皮紙慢慢燃燒。左右滑動，還能查看本週、本月和今年。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От подъёма до отхода ко сну пергамент медленно горит. Листайте вбок, чтобы увидеть неделю, месяц и год."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -29165,6 +32495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "睡前 30 分鐘，吹氣熄火"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "За 30 минут до сна — задуйте огонь"
           }
         }
       },
@@ -29219,6 +32555,12 @@
             "state" : "translated",
             "value" : "對著麥克風吹一口氣，火就熄滅，剩下的碎片會被收起。只檢測吹氣的力度，不會錄音。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подуйте в микрофон, чтобы погасить огонь и сохранить остаток. Проверяется только сила дыхания, звук не записывается."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -29271,6 +32613,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "每一天都會化為灰燼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый день становится пеплом"
           }
         }
       },
@@ -29325,6 +32673,12 @@
             "state" : "translated",
             "value" : "用一句話記下今天做的事，它就會落進當週的灰罐。起床和就寢時間可在設定中更改。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напишите о дне одну строку — и она осядет в урне пепла этой недели. Время подъёма и сна меняется в настройках."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -29377,6 +32731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "複製"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Копировать"
           }
         }
       },
@@ -29431,6 +32791,12 @@
             "state" : "translated",
             "value" : "新功能"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что нового"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -29483,6 +32849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "重新查看歡迎指引"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать приветствие снова"
           }
         }
       },
@@ -29537,6 +32909,12 @@
             "state" : "translated",
             "value" : "無法使用該代碼。請稍後再試。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось активировать код. Повторите попытку чуть позже."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -29589,6 +32967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用優惠代碼"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активировать промокод"
           }
         }
       },
@@ -29643,6 +33027,12 @@
             "state" : "translated",
             "value" : "版本 %@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -29695,6 +33085,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "支援繁體中文"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теперь и по-русски"
           }
         }
       },
@@ -29749,6 +33145,12 @@
             "state" : "translated",
             "value" : "裝置語言為繁體中文時，App 和小工具都會顯示繁體中文。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если на устройстве выбран русский, приложение и виджеты отображаются по-русски."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -29801,6 +33203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "適配大字體和增強對比度"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удобно при крупном шрифте и высоком контрасте"
           }
         }
       },
@@ -29855,6 +33263,12 @@
             "state" : "translated",
             "value" : "字級調到很大，設定介面也不會被截斷；開啟「增強對比度」後，文字和餘燼會更深更清晰。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки больше не обрезаются при очень крупном шрифте, а «Повышение контрастности» делает текст и угольки темнее."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -29907,6 +33321,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "像左右滑動切換時間範圍這樣的隱藏功能，會在合適的時候提示你。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скрытые функции, например смена периода свайпом, теперь подсказываются в нужный момент."
           }
         }
       },
@@ -29961,6 +33381,12 @@
             "state" : "translated",
             "value" : "提前看看接下來的功能"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Посмотрите, что будет дальше"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -30013,6 +33439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在「設定 ▸ 支援」中可以查看即將推出的功能，並告訴我們你想要的功能。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В «Настройки» ▸ «Поддержка» смотрите будущие функции и предлагайте нужные."
           }
         }
       },
@@ -30067,6 +33499,12 @@
             "state" : "translated",
             "value" : "現在可以使用優惠代碼"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теперь есть промокоды"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -30120,6 +33558,12 @@
             "state" : "translated",
             "value" : "如果你有優惠代碼，請在「設定 ▸ Pro」中輸入。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если у вас есть код, введите его в «Настройки» ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -30172,6 +33616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "知道了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Понятно"
           }
         }
       },

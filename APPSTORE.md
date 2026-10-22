@@ -1139,3 +1139,60 @@ https://m1zz.github.io/BurningParchment/nb/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/nb/
+
+## nl
+
+### 이름
+
+Brandend Perkament: bedtijd
+
+### 부제
+
+De rest van je dag brandt op
+
+### 키워드
+
+timer,dagboek,gewoontes,widget,deadline,discipline,ritueel,avond,doelen,reflectie,slapeloos,routine
+
+### 프로모션 텍스트
+
+Blaas voor het slapengaan het brandende perkament uit om het vuur te doven: een klein ritueel om de dag af te sluiten. Overgebleven fragmenten worden bewaard.
+
+### 설명
+
+De rest van je dag brandt voor je ogen op.
+Brandend Perkament laat de resterende tijd niet met cijfers zien, maar met een vel perkament dat langzaam opbrandt. De app is gemaakt voor wie de avond niet ongemerkt wil zien verdwijnen.
+
+Dag, week, maand, jaar
+Van opstaan tot bedtijd brandt het perkament langzaam op. Wat er nog over is van deze week, deze maand en dit jaar zie je ook op hetzelfde perkament.
+Voeg een doel met een deadline toe, en ook de tijd tot die dag wordt afgeteld.
+
+Blaas uit en sluit de dag af
+Vanaf 30 minuten voor bedtijd kun je op het brandende perkament blazen om het vuur te doven. Alleen de kracht van je adem wordt gebruikt en er wordt niets opgenomen.
+De fragmenten die na het doven overblijven, worden bewaard. Draai een fragment om wanneer je wilt en schrijf een regel op de achterkant.
+
+Een dag die as wordt
+Kijk terug op de tijd die voorbij is, laat een reflectie van één regel achter en zet een punt op een grafiek met twee assen om te zien waar het heen ging.
+Reflecties verzamelen zich in urnen per onderwerp en je kunt ze teruglezen in het reflectieboek.
+Het scherm Asstroom laat zien waar je tijd naartoe ging met een verdelingsgrafiek en een gloeikalender.
+
+Altijd in beeld
+Widgets op het beginscherm en toegangsscherm, het Dynamic Island en Live Activities op het toegangsscherm tonen de resterende tijd.
+Licht en donker thema, voorgestelde bedtijden en de keuze welke tabbladen je wilt zien.
+
+Brandend Perkament Pro
+Het brandende perkament, de reflecties en het ritueel van het uitblazen zijn gratis, net als één deadline. Pro is geen abonnement: eenmalig kopen, voor altijd houden.
+Het ontgrendelt Brandende Vrije Tijd, dat alleen de vrije tijd brandt die je hebt ingesteld; kleuren voor perkament en vlam (maanlicht-hanji, celadon, schemering); soorten vlam (prairiebrand, gloeiende kolen, sterretje); fragmenten delen als kaarten en posters; het reflectieboek exporteren als pdf; de asstroom van de afgelopen twaalf maanden; en onbeperkte deadlines. Alle toekomstige Pro-functies zijn ook inbegrepen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/nl/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/nl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/nl/

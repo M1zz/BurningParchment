@@ -236,6 +236,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Et helt år<br>med aske", "Pro viser hvor tolv måneder ble av", 0.62),
   ("10-book-pdf.png", "pages", False, "Refleksjonene dine<br>som en bok", "Pro: en PDF, én side per dag", None),
  ],
+ "nl": [
+  ("01-week-dark.png", "hero-bleed", False, "Zie je tijd<br>opbranden", "Dag, week, maand, jaar", None),
+  ("02-month-light.png", "hero-bleed", True, "Licht of donker", "Volg je apparaat of kies zelf", None),
+  ("03-urn-dark.png", "left-text", False, "Elke dag eindigt<br>als as", "Wat je schrijft daalt neer in de urn van de week", None),
+  ("04-flow-light.png", "hero-bleed", True, "Waar ging je tijd<br>heen", "Een verdelingsgrafiek en een gloeikalender", None),
+  ("05-book-dark.png", "top-crop", False, "Lees je as terug", "De regels die je op het perkament achterliet", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Van bedtijd<br>tot thema", "Stel het in zoals jij wilt", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Kies de kleur<br>van je vlam", "Pro-thema’s: hanji, celadon, schemering", None),
+  ("08-poster-dark.png", "text-bottom", False, "Al je nachten<br>op één vel", "Met Pro worden fragmenten posters", None),
+  ("09-year-light.png", "top-crop", False, "Een heel jaar<br>as", "Pro laat zien waar twaalf maanden heen gingen", 0.62),
+  ("10-book-pdf.png", "pages", False, "Je reflecties<br>als boek", "Pro: een pdf, een pagina per dag", None),
+ ],
 }
 
 FONTS = {
@@ -255,9 +268,10 @@ FONTS = {
     "fi": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "id": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "nb": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "nl": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84, "fi": 88, "id": 90, "nb": 88}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40, "fi": 42, "id": 42, "nb": 42}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84, "fi": 88, "id": 90, "nb": 88, "nl": 90}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40, "fi": 42, "id": 42, "nb": 42, "nl": 42}
 
 
 def base_css(lang, dark):

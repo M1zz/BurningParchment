@@ -162,6 +162,14 @@ Tydelig med stor tekst og kontrast
 Løs inn tilbudskoder for å få Pro
 Se kommende funksjoner i Innstillinger
 
+### 앱스토어 (nl)
+
+Nu in het Nederlands
+Een korte gids voor nieuwe gebruikers
+Duidelijk met grote tekst en contrast
+Wissel aanbiedingscodes in voor Pro
+Bekijk nieuwe functies in Instellingen
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

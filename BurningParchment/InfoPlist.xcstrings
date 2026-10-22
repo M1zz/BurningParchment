@@ -123,6 +123,12 @@
             "state" : "translated",
             "value" : "Brennende Pergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brandend Perkament"
+          }
         }
       }
     },
@@ -249,6 +255,12 @@
             "state" : "translated",
             "value" : "Brennende Pergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brandend Perkament"
+          }
         }
       }
     },
@@ -374,6 +386,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brukes bare til å registrere hvor hardt du blåser når du slukker pergamentet før leggetid. Ingen lyd tas opp eller lagres."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen gebruikt om te meten hoe hard je blaast als je het perkament voor het slapengaan dooft. Er wordt geen geluid opgenomen of bewaard."
           }
         }
       }

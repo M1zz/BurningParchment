@@ -124,6 +124,12 @@
             "state" : "translated",
             "value" : "Brennende Pergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brandend Perkament"
+          }
         }
       }
     },
@@ -249,6 +255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brennende Pergament"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brandend Perkament"
           }
         }
       }

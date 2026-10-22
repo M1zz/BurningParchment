@@ -122,6 +122,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -243,6 +249,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -372,6 +384,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld sek"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld sec"
+          }
         }
       }
     },
@@ -496,6 +514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld t %2$lld min"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld u %2$lld min"
           }
         }
       }
@@ -622,6 +646,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld t"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld u"
+          }
         }
       }
     },
@@ -746,6 +776,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld sek"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sec"
           }
         }
       }
@@ -872,6 +908,12 @@
             "state" : "translated",
             "value" : "31.12.2025 (ons.) 23:59"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31-12-2025 (wo) 23:59"
+          }
         }
       }
     },
@@ -996,6 +1038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 d 4 t"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 d 4 u"
           }
         }
       }
@@ -1122,6 +1170,12 @@
             "state" : "translated",
             "value" : "5 t 24 min"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 u 24 min"
+          }
         }
       }
     },
@@ -1245,6 +1299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snart oppvåkning"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bijna opstaan"
           }
         }
       }
@@ -1370,6 +1430,12 @@
             "state" : "translated",
             "value" : "Oppvåkning %@"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opstaan %@"
+          }
         }
       }
     },
@@ -1494,6 +1560,12 @@
             "state" : "translated",
             "value" : "%@ til oppvåkning"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nog %@ tot opstaan"
+          }
         }
       }
     },
@@ -1617,6 +1689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid til oppvåkning"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd tot opstaan"
           }
         }
       }
@@ -1743,6 +1821,12 @@
             "state" : "translated",
             "value" : "Tid igjen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd"
+          }
         }
       }
     },
@@ -1867,6 +1951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid til neste frist"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd tot de volgende deadline"
           }
         }
       }
@@ -1993,6 +2083,12 @@
             "state" : "translated",
             "value" : "Fristpergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadlineperkament"
+          }
         }
       }
     },
@@ -2116,6 +2212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen frister"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geen deadlines"
           }
         }
       }
@@ -2241,6 +2343,12 @@
             "state" : "translated",
             "value" : "Fristen er ute 🏁"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadline verstreken 🏁"
+          }
         }
       }
     },
@@ -2365,6 +2473,12 @@
             "state" : "translated",
             "value" : "En ny dag begynner"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Een nieuwe dag begint"
+          }
         }
       }
     },
@@ -2488,6 +2602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sover"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slapen"
           }
         }
       }
@@ -2614,6 +2734,12 @@
             "state" : "translated",
             "value" : "Årspergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaarperkament"
+          }
         }
       }
     },
@@ -2738,6 +2864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid til leggetid i dag"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd tot bedtijd vandaag"
           }
         }
       }
@@ -2864,6 +2996,12 @@
             "state" : "translated",
             "value" : "I år"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dit jaar"
+          }
         }
       }
     },
@@ -2988,6 +3126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid igjen i år"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd dit jaar"
           }
         }
       }
@@ -3114,6 +3258,12 @@
             "state" : "translated",
             "value" : "Månedspergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maandperkament"
+          }
         }
       }
     },
@@ -3238,6 +3388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne måneden"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deze maand"
           }
         }
       }
@@ -3364,6 +3520,12 @@
             "state" : "translated",
             "value" : "Tid igjen denne måneden"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd deze maand"
+          }
         }
       }
     },
@@ -3488,6 +3650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne uken"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deze week"
           }
         }
       }
@@ -3614,6 +3782,12 @@
             "state" : "translated",
             "value" : "Tid igjen denne uken"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd deze week"
+          }
         }
       }
     },
@@ -3738,6 +3912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dagspergament"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dagperkament"
           }
         }
       }
@@ -3864,6 +4044,12 @@
             "state" : "translated",
             "value" : "Se hvor lenge det er til leggetid, rett på låseskjermen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zie op je toegangsscherm hoeveel tijd er nog is tot bedtijd"
+          }
         }
       }
     },
@@ -3987,6 +4173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Søte drømmer"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slaap lekker"
           }
         }
       }
@@ -4113,6 +4305,12 @@
             "state" : "translated",
             "value" : "Ukespergament"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekperkament"
+          }
         }
       }
     },
@@ -4237,6 +4435,12 @@
             "state" : "translated",
             "value" : "Seng %@"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bed %@"
+          }
         }
       }
     },
@@ -4360,6 +4564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Til leggetid"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tot bedtijd"
           }
         }
       }
@@ -4486,6 +4696,12 @@
             "state" : "translated",
             "value" : "Tid til leggetid"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd tot bedtijd"
+          }
         }
       }
     },
@@ -4611,6 +4827,12 @@
             "state" : "translated",
             "value" : "Lever inn prosjektet"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Project inleveren"
+          }
         }
       }
     },
@@ -4735,6 +4957,12 @@
             "state" : "translated",
             "value" : "🌅 Snart oppvåkning · %@"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Bijna opstaan · %@"
+          }
         }
       }
     },
@@ -4858,6 +5086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 %@%% igjen"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Nog %@%%"
           }
         }
       }
@@ -4984,6 +5218,12 @@
             "state" : "translated",
             "value" : "🔥 %lld%% igjen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Nog %lld%%"
+          }
         }
       }
     },
@@ -5108,6 +5348,12 @@
             "state" : "translated",
             "value" : "🔥 %@ til leggetid"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Nog %@ tot bedtijd"
+          }
         }
       }
     },
@@ -5231,6 +5477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ til oppvåkning"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 Nog %@ tot opstaan"
           }
         }
       }

@@ -58,6 +58,12 @@
             "state" : "translated",
             "value" : "Горящий пергамент"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes"
+          }
         }
       }
     },
@@ -117,6 +123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Горящий пергамент"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes"
           }
         }
       }

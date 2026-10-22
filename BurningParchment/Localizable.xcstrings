@@ -61,6 +61,12 @@
             "state" : "translated",
             "value" : " %lld мин"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " %lld min"
+          }
         }
       }
     },
@@ -129,6 +135,12 @@
             "state" : "translated",
             "value" : "Дедлайн: %@ %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échéance : %@ %@"
+          }
         }
       }
     },
@@ -188,6 +200,12 @@
             "state" : "translated",
             "value" : "%@ · неделя %lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · semaine %lld"
+          }
         }
       }
     },
@@ -242,6 +260,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -305,6 +329,12 @@
             "state" : "translated",
             "value" : "%@ — время, которое пока не попало ни в одну урну."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — du temps qui n’est encore entré dans aucune urne."
+          }
         }
       }
     },
@@ -363,6 +393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы легли на %@ позже. Утро обожжено на столько же"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous vous êtes endormi(e) %@ trop tard. Ce matin est roussi d’autant"
           }
         }
       }
@@ -423,6 +459,12 @@
             "state" : "translated",
             "value" : "Пергамент на завтра горел после %@.\\nСажа остаётся только за часы бодрствования."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le parchemin de demain a brûlé après %@.\\nSeul le temps passé éveillé laisse une trace de roussi."
+          }
         }
       }
     },
@@ -481,6 +523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Урна «%@»"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne « %@ »"
           }
         }
       }
@@ -541,6 +589,12 @@
             "state" : "translated",
             "value" : "Попадёт в урну «%@»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ira dans l’urne « %@ »"
+          }
         }
       }
     },
@@ -600,6 +654,12 @@
             "state" : "translated",
             "value" : "Придать смысл урне «%@»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donner un sens à l’urne « %@ »"
+          }
         }
       }
     },
@@ -657,6 +717,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "В урне «%1$@» осталось крупиц пепла: %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’urne « %1$@ » contient des grains de cendre : %2$@"
           }
         }
       }
@@ -717,6 +783,12 @@
             "state" : "translated",
             "value" : "В урне «%1$@» осталось крупиц пепла: %2$lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’urne « %1$@ » contient des grains de cendre : %2$lld"
+          }
         }
       }
     },
@@ -775,6 +847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Записи: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilans : %@"
           }
         }
       }
@@ -835,6 +913,12 @@
             "state" : "translated",
             "value" : "Старт через %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Début dans %@"
+          }
         }
       }
     },
@@ -893,6 +977,12 @@
             "state" : "translated",
             "value" : "Пергамент начнёт гореть через %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le parchemin commence à brûler dans %@"
+          }
         }
       }
     },
@@ -950,6 +1040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Осталось %@%%"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%% restant"
           }
         }
       }
@@ -1010,6 +1106,12 @@
             "state" : "translated",
             "value" : "%1$@, осталось %2$lld%%"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, %2$lld%% restant"
+          }
         }
       }
     },
@@ -1068,6 +1170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, огонь погашен за %2$lld мин до срока"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, feu éteint avec %2$lld min d’avance"
           }
         }
       }
@@ -1128,6 +1236,12 @@
             "state" : "translated",
             "value" : "%@, записей нет"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, aucune entrée"
+          }
         }
       }
     },
@@ -1186,6 +1300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, пепла: %2$lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, cendres : %2$lld"
           }
         }
       }
@@ -1246,6 +1366,12 @@
             "state" : "translated",
             "value" : "%1$@, записей: %2$lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, bilans : %2$lld"
+          }
         }
       }
     },
@@ -1304,6 +1430,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1357,6 +1489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ночей, когда огонь погашен: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuits où le feu a été soufflé : %@"
           }
         }
       }
@@ -1417,6 +1555,12 @@
             "state" : "translated",
             "value" : "Приложение было открыто в %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’app était ouverte à %@"
+          }
         }
       }
     },
@@ -1475,6 +1619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы задули огонь в %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous avez soufflé le feu à %@"
           }
         }
       }
@@ -1536,6 +1686,12 @@
             "state" : "translated",
             "value" : "%1$@ дн. · пепла: %2$@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ j · cendres : %2$@"
+          }
         }
       }
     },
@@ -1595,6 +1751,12 @@
             "state" : "translated",
             "value" : "Осталось %lld%%"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% restant"
+          }
         }
       }
     },
@@ -1650,6 +1812,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1713,6 +1881,12 @@
             "state" : "translated",
             "value" : "%lld раз"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld fois"
+          }
         }
       }
     },
@@ -1771,6 +1945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ночей, когда огонь погашен: %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuits où le feu a été soufflé : %lld"
           }
         }
       }
@@ -1831,6 +2011,12 @@
             "state" : "translated",
             "value" : "%lld мин"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -1889,6 +2075,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld мин %2$lld с"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
           }
         }
       }
@@ -1949,6 +2141,12 @@
             "state" : "translated",
             "value" : "За %lld мин до срока"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avec %lld min d’avance"
+          }
         }
       }
     },
@@ -2007,6 +2205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Огонь погашен за %lld мин до срока"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feu éteint avec %lld min d’avance"
           }
         }
       }
@@ -2067,6 +2271,12 @@
             "state" : "translated",
             "value" : "%lld ч"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
         }
       }
     },
@@ -2125,6 +2335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld ч %2$lld мин"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
           }
         }
       }
@@ -2185,6 +2401,12 @@
             "state" : "translated",
             "value" : "%lld д"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld j"
+          }
         }
       }
     },
@@ -2243,6 +2465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld д %2$lld ч"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld j %2$lld h"
           }
         }
       }
@@ -2303,6 +2531,12 @@
             "state" : "translated",
             "value" : "%1$lld дн. · пепла: %2$lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld j · cendres : %2$lld"
+          }
         }
       }
     },
@@ -2361,6 +2595,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Неделя %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine %lld"
           }
         }
       }
@@ -2421,6 +2661,12 @@
             "state" : "translated",
             "value" : "%lld с"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
+          }
         }
       }
     },
@@ -2479,6 +2725,12 @@
             "state" : "translated",
             "value" : "Удалить «%@»?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer « %@ » ?"
+          }
         }
       }
     },
@@ -2536,6 +2788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте новый дедлайн кнопкой +"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez une échéance avec le bouton +"
           }
         }
       }
@@ -2596,6 +2854,12 @@
             "state" : "translated",
             "value" : "Опоздание до 10 минут не считается"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moins de 10 minutes de retard : c’est à l’heure"
+          }
         }
       }
     },
@@ -2654,6 +2918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Год"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Année"
           }
         }
       }
@@ -2714,6 +2984,12 @@
             "state" : "translated",
             "value" : "Месяц"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois"
+          }
         }
       }
     },
@@ -2773,6 +3049,12 @@
             "state" : "translated",
             "value" : "День"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour"
+          }
         }
       }
     },
@@ -2831,6 +3113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Неделя"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine"
           }
         }
       }
@@ -2894,6 +3182,12 @@
             "state" : "translated",
             "value" : "Поделиться или сохранить PDF"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager ou enregistrer le PDF"
+          }
         }
       }
     },
@@ -2955,6 +3249,12 @@
             "state" : "translated",
             "value" : "· ⊕ центр тяжести"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ centre de gravité"
+          }
         }
       }
     },
@@ -3012,6 +3312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· Старые записи без сохранённой точки (%@) разбросаны по своему квадранту"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ anciens bilans sans point enregistré sont dispersés dans leur quadrant"
           }
         }
       }
@@ -3071,6 +3377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· Старые записи без сохранённой точки (%lld) разбросаны по своему квадранту"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld anciens bilans sans point enregistré sont dispersés dans leur quadrant"
           }
         }
       }
@@ -3144,6 +3456,12 @@
             "state" : "translated",
             "value" : "Загрузить цену заново"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recharger le prix"
+          }
         }
       }
     },
@@ -3202,6 +3520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Самая длинная серия"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus longue série"
           }
         }
       }
@@ -3262,6 +3586,12 @@
             "state" : "translated",
             "value" : "Благодарность"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratitude"
+          }
         }
       }
     },
@@ -3320,6 +3650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Связаться с разработчиком"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contacter le développeur"
           }
         }
       }
@@ -3380,6 +3716,12 @@
             "state" : "translated",
             "value" : "Политика конфиденциальности"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Politique de confidentialité"
+          }
         }
       }
     },
@@ -3439,6 +3781,12 @@
             "state" : "translated",
             "value" : "Ревущее, прыгающее пламя"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flammes rugissantes et bondissantes"
+          }
         }
       }
     },
@@ -3496,6 +3844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Данные «Здоровья»: уснули в %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données Santé : endormi(e) à %@"
           }
         }
       }
@@ -3556,6 +3910,12 @@
             "state" : "translated",
             "value" : "Данные сна из «Здоровья»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données de sommeil de Santé"
+          }
         }
       }
     },
@@ -3614,6 +3974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Подключить данные сна из «Здоровья»"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connecter les données de sommeil de Santé"
           }
         }
       }
@@ -3674,6 +4040,12 @@
             "state" : "translated",
             "value" : "Подключить данные сна из «Здоровья»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connecter les données de sommeil de Santé"
+          }
         }
       }
     },
@@ -3733,6 +4105,12 @@
             "state" : "translated",
             "value" : "Подключено к данным сна из «Здоровья»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connecté aux données de sommeil de Santé"
+          }
         }
       }
     },
@@ -3790,6 +4168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "В «Здоровье» нет записи о сне за прошлую ночь"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune donnée de sommeil pour la nuit dernière dans Santé"
           }
         }
       }
@@ -3850,6 +4234,12 @@
             "state" : "translated",
             "value" : "Тихое, спокойное мерцание"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une douce vacillation, calme"
+          }
         }
       }
     },
@@ -3908,6 +4298,12 @@
             "state" : "translated",
             "value" : "Переписать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réécrire"
+          }
         }
       }
     },
@@ -3965,6 +4361,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скоро время подъёма"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bientôt l’heure du réveil"
           }
         }
       }
@@ -4025,6 +4427,12 @@
             "state" : "translated",
             "value" : "Отношения"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relations"
+          }
         }
       }
     },
@@ -4083,6 +4491,12 @@
             "state" : "translated",
             "value" : "Это не подписка. Платите один раз — пользуйтесь всегда."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce n’est pas un abonnement. Payez une fois, gardez-le pour toujours."
+          }
         }
       }
     },
@@ -4140,6 +4554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Восстановить покупки"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurer les achats"
           }
         }
       }
@@ -4200,6 +4620,12 @@
             "state" : "translated",
             "value" : "Не удалось завершить покупку"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’achat n’a pas pu être finalisé"
+          }
         }
       }
     },
@@ -4258,6 +4684,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ушедшее время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le temps qui s’est envolé"
           }
         }
       }
@@ -4318,6 +4750,12 @@
             "state" : "translated",
             "value" : "Просто утекло"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juste envolé"
+          }
         }
       }
     },
@@ -4377,6 +4815,12 @@
             "state" : "translated",
             "value" : "От чего отказаться"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À arrêter"
+          }
         }
       }
     },
@@ -4434,6 +4878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Запись неверна? Исправьте сами"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur dans l’entrée ? Corrigez-la vous-même"
           }
         }
       }
@@ -4494,6 +4944,12 @@
             "state" : "translated",
             "value" : "Записать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
+          }
         }
       }
     },
@@ -4552,6 +5008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дней с записями"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours enregistrés"
           }
         }
       }
@@ -4612,6 +5074,12 @@
             "state" : "translated",
             "value" : "Радость"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Joie"
+          }
         }
       }
     },
@@ -4670,6 +5138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время подъёма и отхода ко сну"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages du réveil et du coucher"
           }
         }
       }
@@ -4730,6 +5204,12 @@
             "state" : "translated",
             "value" : "Время подъёма"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure de réveil"
+          }
         }
       }
     },
@@ -4788,6 +5268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "От подъёма до отхода ко сну пергамент медленно сгорает"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du réveil au coucher, votre parchemin brûle lentement"
           }
         }
       }
@@ -4848,6 +5334,12 @@
             "state" : "translated",
             "value" : "До подъёма"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avant le réveil"
+          }
         }
       }
     },
@@ -4905,6 +5397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "До подъёма: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ avant le réveil"
           }
         }
       }
@@ -4965,6 +5463,12 @@
             "state" : "translated",
             "value" : "Автоотсчёт от времени подъёма"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compte à rebours automatique dès le réveil"
+          }
         }
       }
     },
@@ -5024,6 +5528,12 @@
             "state" : "translated",
             "value" : "От подъёма до отхода ко сну\\nпергамент медленно сгорает"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du réveil au coucher,\\nle parchemin brûle lentement"
+          }
         }
       }
     },
@@ -5076,6 +5586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "от времени бодрствования"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "des heures d’éveil"
           }
         }
       }
@@ -5136,6 +5652,12 @@
             "state" : "translated",
             "value" : "Можно спокойно отдохнуть у погасшего огня"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reposez-vous sereinement près du feu éteint"
+          }
         }
       }
     },
@@ -5194,6 +5716,12 @@
             "state" : "translated",
             "value" : "Выкл."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactivé"
+          }
         }
       }
     },
@@ -5247,6 +5775,12 @@
             "state" : "translated",
             "value" : "Конец"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin"
+          }
         }
       }
     },
@@ -5299,6 +5833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сжигайте только своё время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne brûlez que le temps qui est à vous"
           }
         }
       }
@@ -5359,6 +5899,12 @@
             "state" : "translated",
             "value" : "Мои цели"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes objectifs"
+          }
         }
       }
     },
@@ -5412,6 +5958,12 @@
             "state" : "translated",
             "value" : "Моё свободное время"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon temps libre"
+          }
         }
       }
     },
@@ -5464,6 +6016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Задать моё свободное время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir mon temps libre"
           }
         }
       }
@@ -5524,6 +6082,12 @@
             "state" : "translated",
             "value" : "Позже"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus tard"
+          }
         }
       }
     },
@@ -5583,6 +6147,12 @@
             "state" : "translated",
             "value" : "Сдуть"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Souffler"
+          }
         }
       }
     },
@@ -5640,6 +6210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дата"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date"
           }
         }
       }
@@ -5700,6 +6276,12 @@
             "state" : "translated",
             "value" : "Завтра ждёт там, где остался осколок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demain attend dans le fragment que j’ai gardé"
+          }
         }
       }
     },
@@ -5758,6 +6340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Последние угольки оставлю завтрашнему себе"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je laisse les dernières braises au moi de demain"
           }
         }
       }
@@ -5818,6 +6406,12 @@
             "state" : "translated",
             "value" : "Остатки мы сохраним.\\nА теперь спите спокойно"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous gardons ce qu’il reste.\\nMaintenant, dormez bien."
+          }
         }
       }
     },
@@ -5876,6 +6470,12 @@
             "state" : "translated",
             "value" : "Сохраняем оставшееся"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On garde ce qu’il restait"
+          }
         }
       }
     },
@@ -5933,6 +6533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "осталось"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "restant"
           }
         }
       }
@@ -5993,6 +6599,12 @@
             "state" : "translated",
             "value" : "Низкое, дышащее свечение"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une lueur basse qui respire"
+          }
         }
       }
     },
@@ -6051,6 +6663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Шаг «Заметка на завтра»"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étape Note pour demain"
           }
         }
       }
@@ -6111,6 +6729,12 @@
             "state" : "translated",
             "value" : "Что нового попробуете завтра?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu’essaierez-vous de nouveau demain ?"
+          }
         }
       }
     },
@@ -6168,6 +6792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Завтра утром она появится полосой над пергаментом и сгорит вместе с вашим днём."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demain matin, il apparaît en bandeau en haut du parchemin et brûle avec votre journée."
           }
         }
       }
@@ -6228,6 +6858,12 @@
             "state" : "translated",
             "value" : "Что вы сделаете завтра?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment vous y prendrez-vous demain ?"
+          }
         }
       }
     },
@@ -6286,6 +6922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "От чего откажетесь завтра?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu’abandonnerez-vous demain ?"
           }
         }
       }
@@ -6346,6 +6988,12 @@
             "state" : "translated",
             "value" : "Как проведёте завтрашний день иначе?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment passerez-vous demain différemment ?"
+          }
         }
       }
     },
@@ -6403,6 +7051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Завтрашний пергамент"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin de demain"
           }
         }
       }
@@ -6463,6 +7117,12 @@
             "state" : "translated",
             "value" : "Завтрашний пергамент остановился здесь.\\nСладких снов"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le parchemin de demain s’est arrêté ici.\\nDoux rêves"
+          }
         }
       }
     },
@@ -6520,6 +7180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Завтрашний пергамент горит"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le parchemin de demain brûle"
           }
         }
       }
@@ -6580,6 +7246,12 @@
             "state" : "translated",
             "value" : "Гасит огонь на завтрашнем пергаменте"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éteint le feu du parchemin de demain"
+          }
         }
       }
     },
@@ -6638,6 +7310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Проверьте подключение к сети и повторите попытку."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez votre connexion réseau et réessayez."
           }
         }
       }
@@ -6698,6 +7376,12 @@
             "state" : "translated",
             "value" : "Закат"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crépuscule"
+          }
         }
       }
     },
@@ -6756,6 +7440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Я поздно лёг(ла)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je me suis couché(e) tard"
           }
         }
       }
@@ -6816,6 +7506,12 @@
             "state" : "translated",
             "value" : "День, не сгоревший дотла, всё равно целый день"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une journée non brûlée jusqu’au bout reste une journée entière"
+          }
         }
       }
     },
@@ -6874,6 +7570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показать другую фразу"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir une autre phrase"
           }
         }
       }
@@ -6934,6 +7636,12 @@
             "state" : "translated",
             "value" : "Сожгите в другом цвете"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brûlez dans une autre couleur"
+          }
         }
       }
     },
@@ -6992,6 +7700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Далее"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
           }
         }
       }
@@ -7052,6 +7766,12 @@
             "state" : "translated",
             "value" : "Следующий месяц"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois suivant"
+          }
         }
       }
     },
@@ -7104,6 +7824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Следующее свободное время · %1$@ %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prochain temps libre · %1$@ %2$@"
           }
         }
       }
@@ -7164,6 +7890,12 @@
             "state" : "translated",
             "value" : "Как закончить это в следующий раз?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment pourriez-vous finir la prochaine fois ?"
+          }
         }
       }
     },
@@ -7222,6 +7954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Живые обновления в Dynamic Island"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivi en direct dans la Dynamic Island"
           }
         }
       }
@@ -7282,6 +8020,12 @@
             "state" : "translated",
             "value" : "Тёмная"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sombre"
+          }
         }
       }
     },
@@ -7339,6 +8083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыть"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
           }
         }
       }
@@ -7399,6 +8149,12 @@
             "state" : "translated",
             "value" : "Закрыть — всё написанное сохранено"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer — tout ce que vous avez écrit est enregistré"
+          }
         }
       }
     },
@@ -7457,6 +8213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Луна"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lune"
           }
         }
       }
@@ -7517,6 +8279,12 @@
             "state" : "translated",
             "value" : "Лунная бумага ханджи"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanji au clair de lune"
+          }
         }
       }
     },
@@ -7575,6 +8343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Лунная ханджи, селадон, закат. Меняют цвет бумаги и пламени."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanji au clair de lune, céladon, crépuscule. Changez la couleur du papier et de la flamme."
           }
         }
       }
@@ -7635,6 +8409,12 @@
             "state" : "translated",
             "value" : "Горите в цветах лунной ханджи, селадона или заката — как степной пожар, угли или бенгальский огонь"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brûlez en hanji au clair de lune, céladon ou crépuscule, en feu de prairie, braises ou cierge magique"
+          }
         }
       }
     },
@@ -7694,6 +8474,12 @@
             "state" : "translated",
             "value" : "Открыв месяц, вы увидите его недельные урны"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrez un mois pour trouver ses urnes hebdomadaires"
+          }
         }
       }
     },
@@ -7752,6 +8538,12 @@
             "state" : "translated",
             "value" : "Пепел внутри"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres contenues"
+          }
         }
       }
     },
@@ -7809,6 +8601,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Можно закрыть и не отвечать. Неподтверждённые ночи проходят без сажи."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pouvez fermer sans répondre. Les nuits non confirmées passent sans trace de roussi."
           }
         }
       }
@@ -7869,6 +8667,12 @@
             "state" : "translated",
             "value" : "Приблизительно — тоже хорошо"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une estimation suffit"
+          }
         }
       }
     },
@@ -7928,6 +8732,12 @@
             "state" : "translated",
             "value" : "Что сделаете завтра, чтобы получилось ещё лучше?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que ferez-vous demain pour faire encore mieux ?"
+          }
         }
       }
     },
@@ -7979,6 +8789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter"
           }
         }
       }
@@ -8039,6 +8855,12 @@
             "state" : "translated",
             "value" : "Дедлайны"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échéances"
+          }
         }
       }
     },
@@ -8097,6 +8919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Безлимитные дедлайны"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échéances illimitées"
           }
         }
       }
@@ -8157,6 +8985,12 @@
             "state" : "translated",
             "value" : "Удалить дедлайн"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer l’échéance"
+          }
         }
       }
     },
@@ -8215,6 +9049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить дедлайн"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier l’échéance"
           }
         }
       }
@@ -8275,6 +9115,12 @@
             "state" : "translated",
             "value" : "Вкладка дедлайнов появится сама, когда вы добавите дедлайн"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’onglet des échéances apparaît automatiquement dès que vous en ajoutez une"
+          }
         }
       }
     },
@@ -8333,6 +9179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "До дедлайна"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jusqu’à l’échéance"
           }
         }
       }
@@ -8393,6 +9245,12 @@
             "state" : "translated",
             "value" : "Нужно больше дедлайнов?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Besoin de plus d’échéances ?"
+          }
         }
       }
     },
@@ -8450,6 +9308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нет дедлайнов"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune échéance"
           }
         }
       }
@@ -8510,6 +9374,12 @@
             "state" : "translated",
             "value" : "Испытание"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Défi"
+          }
         }
       }
     },
@@ -8567,6 +9437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Форма"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forme"
           }
         }
       }
@@ -8627,6 +9503,12 @@
             "state" : "translated",
             "value" : "Двойное касание переворачивает осколок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez deux fois pour retourner le fragment"
+          }
         }
       }
     },
@@ -8685,6 +9567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите точку на двух осях, чтобы классифицировать"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Classez en touchant un point sur les deux axes"
           }
         }
       }
@@ -8745,6 +9633,12 @@
             "state" : "translated",
             "value" : "Переверните и оставьте строку на обороте."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retournez-le et laissez une ligne au dos."
+          }
         }
       }
     },
@@ -8804,6 +9698,12 @@
             "state" : "translated",
             "value" : "Переписать оборот"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réécrire le dos"
+          }
         }
       }
     },
@@ -8862,6 +9762,12 @@
             "state" : "translated",
             "value" : "Строка для оборота"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une ligne pour le dos"
+          }
         }
       }
     },
@@ -8919,6 +9825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Написать на обороте"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrire au dos"
           }
         }
       }
@@ -8979,6 +9891,12 @@
             "state" : "translated",
             "value" : "Оборот пуст"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le dos est vide"
+          }
         }
       }
     },
@@ -9037,6 +9955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Степной пожар"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feu de prairie"
           }
         }
       }
@@ -9097,6 +10021,12 @@
             "state" : "translated",
             "value" : "Светлая"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair"
+          }
         }
       }
     },
@@ -9154,6 +10084,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Срок прошёл 🏁"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échéance passée 🏁"
           }
         }
       }
@@ -9213,6 +10149,12 @@
             "state" : "translated",
             "value" : "Времени до дедлайна"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps restant avant l’échéance"
+          }
         }
       }
     },
@@ -9270,6 +10212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Срок сдачи"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date d’échéance"
           }
         }
       }
@@ -9330,6 +10278,12 @@
             "state" : "translated",
             "value" : "Месяц, когда вы больше всего сделали задуманное"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le mois où vous avez le plus fait ce que vous aviez prévu"
+          }
         }
       }
     },
@@ -9388,6 +10342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сделал(а), как задумал(а)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "J’ai fait ce que j’avais prévu"
           }
         }
       }
@@ -9448,6 +10408,12 @@
             "state" : "translated",
             "value" : "Сделал(а), как хотел(а)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "J’ai fait ce que je voulais"
+          }
         }
       }
     },
@@ -9506,6 +10472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Включите микрофон, чтобы задуть огонь"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activez le micro pour éteindre le feu"
           }
         }
       }
@@ -9566,6 +10538,12 @@
             "state" : "translated",
             "value" : "Создать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer"
+          }
         }
       }
     },
@@ -9618,6 +10596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каждый день"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque jour"
           }
         }
       }
@@ -9678,6 +10662,12 @@
             "state" : "translated",
             "value" : "Стоп"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
         }
       }
     },
@@ -9736,6 +10726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Во сколько вы уснули?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À quelle heure vous êtes-vous endormi(e) ?"
           }
         }
       }
@@ -9796,6 +10792,12 @@
             "state" : "translated",
             "value" : "Не обязательно сжигать всё"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas besoin de tout brûler"
+          }
         }
       }
     },
@@ -9854,6 +10856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Накопленный пепел"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres rassemblées"
           }
         }
       }
@@ -9914,6 +10922,12 @@
             "state" : "translated",
             "value" : "Стиль"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Style"
+          }
         }
       }
     },
@@ -9973,6 +10987,12 @@
             "state" : "translated",
             "value" : "Собранные осколки"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragments gardés"
+          }
         }
       }
     },
@@ -10030,6 +11050,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Собрано осколков: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragments gardés : %@"
           }
         }
       }
@@ -10090,6 +11116,12 @@
             "state" : "translated",
             "value" : "Собрано осколков: %lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragments gardés : %lld"
+          }
         }
       }
     },
@@ -10148,6 +11180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Возьмите собранные осколки с собой"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emportez vos fragments avec vous"
           }
         }
       }
@@ -10208,6 +11246,12 @@
             "state" : "translated",
             "value" : "Делитесь осколками в виде карточек и постеров"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partagez vos fragments en cartes et en affiches"
+          }
         }
       }
     },
@@ -10266,6 +11310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вышло"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manqué"
           }
         }
       }
@@ -10326,6 +11376,12 @@
             "state" : "translated",
             "value" : "Бесплатно можно держать до %lld дедлайна. С Pro вы отсчитываете сколько угодно целей."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La version gratuite garde jusqu’à %lld échéance. Avec Pro, décomptez autant d’objectifs que vous voulez."
+          }
         }
       }
     },
@@ -10384,6 +11440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что не давало вам уснуть? (необязательно)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu’est-ce qui vous a gardé(e) éveillé(e) ? (facultatif)"
           }
         }
       }
@@ -10444,6 +11506,12 @@
             "state" : "translated",
             "value" : "Полоса"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barre"
+          }
         }
       }
     },
@@ -10502,6 +11570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Фон"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrière-plan"
           }
         }
       }
@@ -10562,6 +11636,12 @@
             "state" : "translated",
             "value" : "Искра"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étincelle"
+          }
         }
       }
     },
@@ -10620,6 +11700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ночь"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuit"
           }
         }
       }
@@ -10680,6 +11766,12 @@
             "state" : "translated",
             "value" : "Капля"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Goutte"
+          }
         }
       }
     },
@@ -10738,6 +11830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Учёба"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apprentissage"
           }
         }
       }
@@ -10798,6 +11896,12 @@
             "state" : "translated",
             "value" : "Мы рады отчётам об ошибках и идеям новых функций."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les rapports de bugs et les idées de fonctionnalités sont les bienvenus."
+          }
         }
       }
     },
@@ -10856,6 +11960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выбросить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeter"
           }
         }
       }
@@ -10916,6 +12026,12 @@
             "state" : "translated",
             "value" : "Молния"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éclair"
+          }
         }
       }
     },
@@ -10974,6 +12090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Диапазон"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plage"
           }
         }
       }
@@ -11034,6 +12156,12 @@
             "state" : "translated",
             "value" : "Звезда"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étoile"
+          }
         }
       }
     },
@@ -11092,6 +12220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нет покупок для восстановления"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun achat à restaurer"
           }
         }
       }
@@ -11152,6 +12286,12 @@
             "state" : "translated",
             "value" : "Шаг «Текст»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étape Rédaction"
+          }
         }
       }
     },
@@ -11210,6 +12350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранить текст и перейти к классификации"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer le texte et passer à la classification"
           }
         }
       }
@@ -11270,6 +12416,12 @@
             "state" : "translated",
             "value" : "мин"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
         }
       }
     },
@@ -11328,6 +12480,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "График классификации"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graphique de classification"
           }
         }
       }
@@ -11388,6 +12546,12 @@
             "state" : "translated",
             "value" : "Шаг «Классификация»"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étape Classification"
+          }
         }
       }
     },
@@ -11446,6 +12610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Без категории"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non classé"
           }
         }
       }
@@ -11506,6 +12676,12 @@
             "state" : "translated",
             "value" : "Сохранить классификацию и перейти к заметке на завтра"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer la classification et passer à la note pour demain"
+          }
         }
       }
     },
@@ -11564,6 +12740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пламя"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flamme"
           }
         }
       }
@@ -11624,6 +12806,12 @@
             "state" : "translated",
             "value" : "Тип пламени"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type de flamme"
+          }
         }
       }
     },
@@ -11682,6 +12870,12 @@
             "state" : "translated",
             "value" : "Огонь погашен · Смотреть осколки"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feu éteint · Voir les fragments gardés"
+          }
         }
       }
     },
@@ -11739,6 +12933,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Огонь погашен. Сладких снов"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le feu est éteint. Doux rêves"
           }
         }
       }
@@ -11799,6 +12999,12 @@
             "state" : "translated",
             "value" : "Превратите оставшиеся осколки в карточки и постеры и сохраните их."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transformez les fragments gardés en cartes et en affiches."
+          }
         }
       }
     },
@@ -11857,6 +13063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Погасить огонь — тоже смелость"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éteindre le feu demande aussi du courage"
           }
         }
       }
@@ -11917,6 +13129,12 @@
             "state" : "translated",
             "value" : "Вы не задули огонь, но уснули вовремя — и он погас сам."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous n’avez pas soufflé, mais vous vous êtes endormi(e) à l’heure : le feu s’est éteint tout seul."
+          }
         }
       }
     },
@@ -11975,6 +13193,12 @@
             "state" : "translated",
             "value" : "Огонь погас"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le feu est éteint"
+          }
         }
       }
     },
@@ -12032,6 +13256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Горящий пергамент"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes"
           }
         }
       }
@@ -12092,6 +13322,12 @@
             "state" : "translated",
             "value" : "Горящий пергамент Pro"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes Pro"
+          }
         }
       }
     },
@@ -12150,6 +13386,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Горящий пергамент 🔥"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes 🔥"
           }
         }
       }
@@ -12210,6 +13452,12 @@
             "state" : "translated",
             "value" : "Горящий пергамент"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes"
+          }
         }
       }
     },
@@ -12261,6 +13509,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Горящее свободное время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps libre en flammes"
           }
         }
       }
@@ -12321,6 +13575,12 @@
             "state" : "translated",
             "value" : "Получите «Горящее свободное время», цвета и типы пламени, карточки осколков, PDF-книгу записей, год пепла и безлимитные дедлайны."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profitez du Temps libre en flammes, des couleurs et types de flamme, des cartes de fragments, du PDF du livre des bilans, d’une année de cendres et d’échéances illimitées."
+          }
         }
       }
     },
@@ -12373,6 +13633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Получите «Горящее свободное время», темы, карточки осколков, PDF-книгу записей, год пепла и безлимитные дедлайны."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profitez du Temps libre en flammes, des thèmes, des cartes de fragments, du PDF du livre des bilans, d’une année de cendres et d’échéances illimitées."
           }
         }
       }
@@ -12433,6 +13699,12 @@
             "state" : "translated",
             "value" : "Бенгальский огонь"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cierge magique"
+          }
         }
       }
     },
@@ -12490,6 +13762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Если оставить пустым, будет показана блёклая фраза"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laissez vide pour utiliser la phrase en filigrane"
           }
         }
       }
@@ -12550,6 +13828,12 @@
             "state" : "translated",
             "value" : "Цвет"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur"
+          }
         }
       }
     },
@@ -12608,6 +13892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Цвет задаёт оттенок бумаги и пламени, тип пламени — как оно горит. Выбирайте каждое отдельно"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La couleur règle la teinte du papier et de la flamme. Le type de flamme règle la façon de brûler. Choisissez-les séparément"
           }
         }
       }
@@ -12668,6 +13958,12 @@
             "state" : "translated",
             "value" : "Используется"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisé"
+          }
         }
       }
     },
@@ -12726,6 +14022,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
           }
         }
       }
@@ -12786,6 +14088,12 @@
             "state" : "translated",
             "value" : "Новый дедлайн"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle échéance"
+          }
         }
       }
     },
@@ -12844,6 +14152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Новая урна"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle urne"
           }
         }
       }
@@ -12904,6 +14218,12 @@
             "state" : "translated",
             "value" : "Создать новую урну"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer une nouvelle urne"
+          }
         }
       }
     },
@@ -12961,6 +14281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Новая запись"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveau bilan"
           }
         }
       }
@@ -13021,6 +14347,12 @@
             "state" : "translated",
             "value" : "Написать новую запись"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrire un nouveau bilan"
+          }
         }
       }
     },
@@ -13079,6 +14411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выгравировать"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graver"
           }
         }
       }
@@ -13139,6 +14477,12 @@
             "state" : "translated",
             "value" : "В Pro войдут и все будущие функции"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inclut toutes les fonctionnalités Pro à venir"
+          }
         }
       }
     },
@@ -13197,6 +14541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Линия"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ligne"
           }
         }
       }
@@ -13257,6 +14607,12 @@
             "state" : "translated",
             "value" : "Выбрано"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionné"
+          }
         }
       }
     },
@@ -13315,6 +14671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages"
           }
         }
       },
@@ -13375,6 +14737,12 @@
             "state" : "translated",
             "value" : "Включить микрофон в настройках"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer le micro dans les Réglages"
+          }
         }
       }
     },
@@ -13433,6 +14801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рост"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Évolution"
           }
         }
       }
@@ -13493,6 +14867,12 @@
             "state" : "translated",
             "value" : "Пишите честно..."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soyez honnête..."
+          }
         }
       }
     },
@@ -13551,6 +14931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Записи сна"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données de sommeil"
           }
         }
       }
@@ -13611,6 +14997,12 @@
             "state" : "translated",
             "value" : "Данные сна только читаются и не покидают ваше устройство"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les données de sommeil sont seulement lues et ne quittent jamais votre appareil"
+          }
         }
       }
     },
@@ -13668,6 +15060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сон"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sommeil"
           }
         }
       }
@@ -13728,6 +15126,12 @@
             "state" : "translated",
             "value" : "Изменить"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
+          }
         }
       }
     },
@@ -13786,6 +15190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Угли"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Braises"
           }
         }
       }
@@ -13846,6 +15256,12 @@
             "state" : "translated",
             "value" : "ч"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "h"
+          }
         }
       }
     },
@@ -13904,6 +15320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure"
           }
         }
       }
@@ -13964,6 +15386,12 @@
             "state" : "translated",
             "value" : "Настройки времени"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages de l’heure"
+          }
         }
       }
     },
@@ -14022,6 +15450,12 @@
             "state" : "translated",
             "value" : "Потратил(а) время"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps consacré"
+          }
         }
       }
     },
@@ -14079,6 +15513,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не тратил(а) время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun temps consacré"
           }
         }
       }
@@ -14139,6 +15579,12 @@
             "state" : "translated",
             "value" : "Как в системе"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système"
+          }
         }
       }
     },
@@ -14198,6 +15644,12 @@
             "state" : "translated",
             "value" : "«Как в системе» повторяет настройку тёмного режима на вашем устройстве"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez Système pour suivre le réglage du mode sombre de votre appareil"
+          }
         }
       }
     },
@@ -14250,6 +15702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Начало"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Début"
           }
         }
       }
@@ -14308,6 +15766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время начала"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure de début"
           }
         }
       }
@@ -14368,6 +15832,12 @@
             "state" : "translated",
             "value" : "Ошибки"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreurs"
+          }
         }
       }
     },
@@ -14425,6 +15895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Символ"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbole"
           }
         }
       }
@@ -14484,6 +15960,12 @@
             "state" : "translated",
             "value" : "Пока нет пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas encore de cendres"
+          }
         }
       }
     },
@@ -14542,6 +16024,12 @@
             "state" : "translated",
             "value" : "Пока нет собранных осколков"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun fragment gardé pour l’instant"
+          }
         }
       }
     },
@@ -14599,6 +16087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пока нет классифицированного пепла. Нажмите точку на графике, когда пишете запись."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune cendre classée pour l’instant. Touchez le graphique en écrivant un bilan."
           }
         }
       }
@@ -14659,6 +16153,12 @@
             "state" : "translated",
             "value" : "Пока пусто"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encore vide"
+          }
         }
       }
     },
@@ -14718,6 +16218,12 @@
             "state" : "translated",
             "value" : "Пока пусто."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encore vide."
+          }
         }
       }
     },
@@ -14775,6 +16281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пепел без имени"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres sans nom"
           }
         }
       }
@@ -14835,6 +16347,12 @@
             "state" : "translated",
             "value" : "Пока ничего не написано"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rien d’écrit pour l’instant"
+          }
         }
       }
     },
@@ -14892,6 +16410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы всё ещё на первой странице"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encore sur la première page"
           }
         }
       }
@@ -14952,6 +16476,12 @@
             "state" : "translated",
             "value" : "Пока нет урн"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas encore d’urnes"
+          }
         }
       }
     },
@@ -15011,6 +16541,12 @@
             "state" : "translated",
             "value" : "Пепел пока не осел"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune cendre n’est encore retombée"
+          }
         }
       }
     },
@@ -15068,6 +16604,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пока это просто пепел"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour l’instant, juste de la cendre"
           }
         }
       }
@@ -15128,6 +16670,12 @@
             "state" : "translated",
             "value" : "Будущие функции Pro"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctionnalités Pro à venir"
+          }
         }
       }
     },
@@ -15180,6 +16728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Около %lld дн."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Environ %lld jours"
           }
         }
       }
@@ -15240,6 +16794,12 @@
             "state" : "translated",
             "value" : "Пергамент"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin"
+          }
         }
       }
     },
@@ -15298,6 +16858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пергамент и пламя"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin et flamme"
           }
         }
       }
@@ -15358,6 +16924,12 @@
             "state" : "translated",
             "value" : "Темы пергамента и пламени"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thèmes parchemin et flamme"
+          }
         }
       }
     },
@@ -15416,6 +16988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите, как будет гореть пергамент. Цвет задаёт тема выше"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez comment brûle votre parchemin. La couleur suit le thème ci-dessus"
           }
         }
       }
@@ -15476,6 +17054,12 @@
             "state" : "translated",
             "value" : "Пергамент и пламя"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin et flamme"
+          }
         }
       }
     },
@@ -15534,6 +17118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Цвет бумаги и пламя меняются вместе"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La couleur du papier et la flamme changent ensemble"
           }
         }
       }
@@ -15594,6 +17184,12 @@
             "state" : "translated",
             "value" : "В какую урну положить?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dans quelle urne la ranger ?"
+          }
         }
       }
     },
@@ -15651,6 +17247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вчерашние незавершённые"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non terminé hier"
           }
         }
       }
@@ -15711,6 +17313,12 @@
             "state" : "translated",
             "value" : "Вчера не сделано: %lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non terminé hier : %lld"
+          }
         }
       }
     },
@@ -15768,6 +17376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы легли на %@ позже,\\nпоэтому утро обожжено"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous vous êtes endormi(e) %@ trop tard hier soir,\\ndonc ce matin est roussi"
           }
         }
       }
@@ -15828,6 +17442,12 @@
             "state" : "translated",
             "value" : "Вы легли на %@ позже прошлой ночью.\\nСегодня вечером попробуйте погасить огонь пораньше."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous vous êtes endormi(e) %@ trop tard hier soir.\\nEssayez d’éteindre le feu un peu plus tôt ce soir."
+          }
         }
       }
     },
@@ -15887,6 +17507,12 @@
             "state" : "translated",
             "value" : "Вчерашний осколок остыл"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le fragment de la nuit dernière a refroidi"
+          }
         }
       }
     },
@@ -15944,6 +17570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Как прошла прошлая ночь?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment était la nuit dernière ?"
           }
         }
       }
@@ -16004,6 +17636,12 @@
             "state" : "translated",
             "value" : "Само вышло"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imprévu"
+          }
         }
       }
     },
@@ -16062,6 +17700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Так получилось"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "J’ai fini par le faire"
           }
         }
       }
@@ -16122,6 +17766,12 @@
             "state" : "translated",
             "value" : "Что вышло само"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fait sans l’avoir prévu"
+          }
         }
       }
     },
@@ -16181,6 +17831,12 @@
             "state" : "translated",
             "value" : "Нет"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun"
+          }
         }
       }
     },
@@ -16238,6 +17894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "То, что здесь, — просто пепел, пока вы не дадите ему имя."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce qui est ici reste de la cendre tant que vous ne lui avez pas donné un nom."
           }
         }
       }
@@ -16298,6 +17960,12 @@
             "state" : "translated",
             "value" : "Что для меня значил этот пепел…"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce que ces cendres ont été pour moi…"
+          }
         }
       }
     },
@@ -16356,6 +18024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отсчитывайте сразу несколько целей"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Décomptez plusieurs objectifs à la fois"
           }
         }
       }
@@ -16416,6 +18090,12 @@
             "state" : "translated",
             "value" : "Подключено"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connecté"
+          }
         }
       }
     },
@@ -16474,6 +18154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Чтобы отключить, откройте «Настройки» iOS ▸ «Здоровье» ▸ «Доступ к данным и устройства»"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour déconnecter, allez dans Réglages iOS ▸ Santé ▸ Accès aux données et appareils"
           }
         }
       }
@@ -16534,6 +18220,12 @@
             "state" : "translated",
             "value" : "Чтобы отключить, откройте «Настройки» iOS ▸ «Здоровье» ▸ «Доступ к данным и устройства». Данные сна только читаются и не покидают ваше устройство"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour déconnecter, allez dans Réglages iOS ▸ Santé ▸ Accès aux données et appareils. Les données de sommeil sont seulement lues et ne quittent jamais votre appareil"
+          }
         }
       }
     },
@@ -16592,6 +18284,12 @@
             "state" : "translated",
             "value" : "Подключить"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connecter"
+          }
         }
       }
     },
@@ -16649,6 +18347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "После подключения мы не будем спрашивать по утрам и вернём огонь к моменту, когда вы уснули. Данные сна только читаются и не покидают ваше устройство."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une fois connecté, nous ne demandons plus chaque matin et remettons le feu à l’heure où vous vous êtes endormi(e). Les données de sommeil sont seulement lues et ne quittent jamais votre appareil."
           }
         }
       }
@@ -16709,6 +18413,12 @@
             "state" : "translated",
             "value" : "После подключения мы не будем спрашивать по утрам. Завтрашний пергамент вернётся к времени, когда вы на самом деле уснули"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une fois connecté, nous ne demandons plus chaque matin. Le parchemin de demain revient à l’heure où vous vous êtes réellement endormi(e)"
+          }
         }
       }
     },
@@ -16767,6 +18477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "После подключения мы берём записанное время сна вместо ежедневного вопроса. Данные сна только читаются и не покидают ваше устройство"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une fois connecté, nous utilisons votre heure de sommeil enregistrée au lieu de demander chaque matin. Les données de sommeil sont seulement lues et ne quittent jamais votre appareil"
           }
         }
       }
@@ -16827,6 +18543,12 @@
             "state" : "translated",
             "value" : "Открыть"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir"
+          }
         }
       }
     },
@@ -16885,6 +18607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напр.: не больше 15 минут в соцсетях"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : limiter les réseaux sociaux à 15 minutes"
           }
         }
       }
@@ -16945,6 +18673,12 @@
             "state" : "translated",
             "value" : "Напр.: неделя, которую я выдержал(а)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : la semaine où j’ai tenu bon"
+          }
         }
       }
     },
@@ -17003,6 +18737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напр.: заменить на прогулку в 20 минут"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : passer à 20 minutes de marche"
           }
         }
       }
@@ -17063,6 +18803,12 @@
             "state" : "translated",
             "value" : "Напр.: тренироваться на 30 минут больше"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : prolonger l’entraînement de 30 minutes"
+          }
         }
       }
     },
@@ -17121,6 +18867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напр.: спорт, отношения, вызов года"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : sport, relations, défi de l’année"
           }
         }
       }
@@ -17181,6 +18933,12 @@
             "state" : "translated",
             "value" : "Напр.: 30 минут тренировки сразу после обеда"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : 30 minutes de sport juste après le déjeuner"
+          }
         }
       }
     },
@@ -17239,6 +18997,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напр.: прочитать одну главу"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : lire un chapitre"
           }
         }
       }
@@ -17299,6 +19063,12 @@
             "state" : "translated",
             "value" : "Напр.: сдать проект"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex. : rendre le projet"
+          }
         }
       }
     },
@@ -17357,6 +19127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сегодня"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aujourd’hui"
           }
         }
       }
@@ -17417,6 +19193,12 @@
             "state" : "translated",
             "value" : "Почему день остался незавершённым"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pourquoi la journée est restée inachevée"
+          }
         }
       }
     },
@@ -17475,6 +19257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Утро слегка обожжено"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce matin est un peu roussi"
           }
         }
       }
@@ -17535,6 +19323,12 @@
             "state" : "translated",
             "value" : "Оставьте одну строку о своём дне."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laissez une ligne sur votre journée."
+          }
         }
       }
     },
@@ -17593,6 +19387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы не смогли\\nзавершить день"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous n’avez pas pu\\nfinir votre journée"
           }
         }
       }
@@ -17653,6 +19453,12 @@
             "state" : "translated",
             "value" : "Что помешало вам\\nзавершить день?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu’est-ce qui vous a empêché(e)\\nde finir votre journée ?"
+          }
         }
       }
     },
@@ -17712,6 +19518,12 @@
             "state" : "translated",
             "value" : "Гасит сегодняшний огонь и сохраняет оставшийся осколок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éteint le feu d’aujourd’hui et garde le fragment restant"
+          }
         }
       }
     },
@@ -17769,6 +19581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оставить строку перед сном?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une ligne avant de dormir ?"
           }
         }
       }
@@ -17829,6 +19647,12 @@
             "state" : "translated",
             "value" : "Сегодня, "
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aujourd’hui, "
+          }
         }
       }
     },
@@ -17888,6 +19712,12 @@
             "state" : "translated",
             "value" : "Пропустить сегодня"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer aujourd’hui"
+          }
         }
       }
     },
@@ -17945,6 +19775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каким был ваш день? — Нажмите, чтобы отметить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment était votre journée ? — Touchez pour la placer"
           }
         }
       }
@@ -18005,6 +19841,12 @@
             "state" : "translated",
             "value" : "Что попробуете сегодня вечером? (необязательно)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu’essaierez-vous ce soir ? (facultatif)"
+          }
         }
       }
     },
@@ -18063,6 +19905,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "На сегодня хватит. Горело славно."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voilà pour aujourd’hui. Ça a bien brûlé."
           }
         }
       }
@@ -18123,6 +19971,12 @@
             "state" : "translated",
             "value" : "Конец дня определяю я"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C’est moi qui décide où finit aujourd’hui"
+          }
         }
       }
     },
@@ -18181,6 +20035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Написать запись за сегодня? Нажмите, чтобы открыть редактор"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrire le bilan du jour ? Touchez pour ouvrir l’éditeur"
           }
         }
       }
@@ -18241,6 +20101,12 @@
             "state" : "translated",
             "value" : "ДП"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AM"
+          }
         }
       }
     },
@@ -18299,6 +20165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ПП"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PM"
           }
         }
       }
@@ -18359,6 +20231,12 @@
             "state" : "translated",
             "value" : "Этот год"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette année"
+          }
         }
       }
     },
@@ -18418,6 +20296,12 @@
             "state" : "translated",
             "value" : "Осталось в этом году"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps restant cette année"
+          }
         }
       }
     },
@@ -18475,6 +20359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         }
       }
@@ -18534,6 +20424,12 @@
             "state" : "translated",
             "value" : "и ещё %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@ de plus"
+          }
         }
       }
     },
@@ -18585,6 +20481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "и ещё %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "et %@ de plus"
           }
         }
       }
@@ -18645,6 +20547,12 @@
             "state" : "translated",
             "value" : "и ещё %lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld de plus"
+          }
         }
       }
     },
@@ -18703,6 +20611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "и ещё %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "et %lld de plus"
           }
         }
       }
@@ -18763,6 +20677,12 @@
             "state" : "translated",
             "value" : "Круг"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cercle"
+          }
         }
       }
     },
@@ -18822,6 +20742,12 @@
             "state" : "translated",
             "value" : "Листайте вверх или вниз, чтобы менять страницы"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Balayez vers le haut ou le bas pour changer de page"
+          }
         }
       }
     },
@@ -18879,6 +20805,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Написать смысл"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrire son sens"
           }
         }
       }
@@ -18939,6 +20871,12 @@
             "state" : "translated",
             "value" : "Записать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le noter"
+          }
         }
       }
     },
@@ -18996,6 +20934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Стереть смысл"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer le sens"
           }
         }
       }
@@ -19055,6 +20999,12 @@
             "state" : "translated",
             "value" : "Без\\nнамерения"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sans\\nintention"
+          }
         }
       }
     },
@@ -19112,6 +21062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "С\\nнамерением"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avec\\nintention"
           }
         }
       }
@@ -19171,6 +21127,12 @@
             "state" : "translated",
             "value" : "Для этого аккаунта Apple покупка Pro не найдена. Убедитесь, что вы вошли в аккаунт, с которого покупали."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous n’avons trouvé aucun achat Pro sur ce compte Apple. Vérifiez que vous êtes connecté(e) avec le compte utilisé pour l’achat."
+          }
         }
       }
     },
@@ -19228,6 +21190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "От этого дня пепла не осталось"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune cendre ne reste de ce jour"
           }
         }
       }
@@ -19288,6 +21256,12 @@
             "state" : "translated",
             "value" : "Что для вас значил этот месяц?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que signifiait ce mois pour vous ?"
+          }
         }
       }
     },
@@ -19345,6 +21319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Недельные урны этого месяца"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnes hebdomadaires de ce mois"
           }
         }
       }
@@ -19405,6 +21385,12 @@
             "state" : "translated",
             "value" : "Как распорядитесь этим временем завтра?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment gérerez-vous ce temps demain ?"
+          }
         }
       }
     },
@@ -19464,6 +21450,12 @@
             "state" : "translated",
             "value" : "Выбросить этот осколок?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeter ce fragment ?"
+          }
         }
       }
     },
@@ -19522,6 +21514,12 @@
             "state" : "translated",
             "value" : "Что для вас значила эта неделя?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que signifiait cette semaine pour vous ?"
+          }
         }
       }
     },
@@ -19579,6 +21577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эта урна пуста."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette urne est vide."
           }
         }
       }
@@ -19639,6 +21643,12 @@
             "state" : "translated",
             "value" : "Возвращает эту урну к безымянному пеплу"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remet cette urne à l’état de cendre sans nom"
+          }
         }
       }
     },
@@ -19696,6 +21706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что осталось в этой урне"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce qui reste dans cette urne"
           }
         }
       }
@@ -19756,6 +21772,12 @@
             "state" : "translated",
             "value" : "Название"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom"
+          }
         }
       }
     },
@@ -19814,6 +21836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Переименовать"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renommer"
           }
         }
       }
@@ -19874,6 +21902,12 @@
             "state" : "translated",
             "value" : "Урна без названия"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne sans titre"
+          }
         }
       }
     },
@@ -19933,6 +21967,12 @@
             "state" : "translated",
             "value" : "Написать нам"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous écrire"
+          }
         }
       }
     },
@@ -19990,6 +22030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эмодзи"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
           }
         }
       }
@@ -20050,6 +22096,12 @@
             "state" : "translated",
             "value" : "Поделиться изображением"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager l’image"
+          }
         }
       }
     },
@@ -20108,6 +22160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Этот месяц"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce mois-ci"
           }
         }
       }
@@ -20168,6 +22226,12 @@
             "state" : "translated",
             "value" : "Осталось в этом месяце"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps restant ce mois-ci"
+          }
         }
       }
     },
@@ -20226,6 +22290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эта неделя"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette semaine"
           }
         }
       }
@@ -20286,6 +22356,12 @@
             "state" : "translated",
             "value" : "Осталось на этой неделе"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps restant cette semaine"
+          }
         }
       }
     },
@@ -20339,6 +22415,12 @@
             "state" : "translated",
             "value" : "Свободного времени на этой неделе"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps libre restant cette semaine"
+          }
         }
       }
     },
@@ -20391,6 +22473,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Свободное время этой недели сгорело"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le temps libre de cette semaine a entièrement brûlé"
           }
         }
       }
@@ -20451,6 +22539,12 @@
             "state" : "translated",
             "value" : "Это повторяется и на этой неделе"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cela se répète aussi cette semaine"
+          }
         }
       }
     },
@@ -20509,6 +22603,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Такое было и на этой неделе"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cela s’est aussi produit plus tôt cette semaine"
           }
         }
       }
@@ -20569,6 +22669,12 @@
             "state" : "translated",
             "value" : "Условия использования (EULA)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditions d’utilisation (EULA)"
+          }
         }
       }
     },
@@ -20627,6 +22733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Прошлый месяц"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois précédent"
           }
         }
       }
@@ -20687,6 +22799,12 @@
             "state" : "translated",
             "value" : "Личные сообщения в Instagram (@lee25_ios)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM Instagram (@lee25_ios)"
+          }
         }
       }
     },
@@ -20740,6 +22858,12 @@
             "state" : "translated",
             "value" : "Моё время на неделе"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon temps chaque semaine"
+          }
         }
       }
     },
@@ -20792,6 +22916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пергамент горит только в ваши собственные часы"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le parchemin ne brûle que pendant vos propres heures"
           }
         }
       }
@@ -20850,6 +22980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Учитывается только сила дыхания. Звук не записывается."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seule la force de votre souffle est utilisée. Rien n’est enregistré."
           }
         }
       }
@@ -20910,6 +23046,12 @@
             "state" : "translated",
             "value" : "Лист"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feuille"
+          }
         }
       }
     },
@@ -20968,6 +23110,12 @@
             "state" : "translated",
             "value" : "Автосохранение"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrement auto"
+          }
         }
       }
     },
@@ -21020,6 +23168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Свободное время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps libre"
           }
         }
       }
@@ -21074,6 +23228,12 @@
             "state" : "translated",
             "value" : "Изменить свободное время"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier le temps libre"
+          }
         }
       }
     },
@@ -21126,6 +23286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить свободное время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter du temps libre"
           }
         }
       }
@@ -21186,6 +23352,12 @@
             "state" : "translated",
             "value" : "Свободное время отображается песочными часами среди точек страниц. Дедлайны появляются сами, как только вы их добавите"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le temps libre apparaît sous forme de sablier dans les points de pages. Les échéances apparaissent d’elles-mêmes dès que vous en ajoutez"
+          }
         }
       }
     },
@@ -21237,6 +23409,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Огонь зажигается, пока идёт ваше свободное время, а в остальные часы недели ждёт погасшим"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il s’allume tant que votre temps libre s’écoule et attend éteint le reste de la semaine"
           }
         }
       }
@@ -21297,6 +23475,12 @@
             "state" : "translated",
             "value" : "Небольшие перемены — хорошее начало..."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De petits changements, c’est déjà un bon début..."
+          }
         }
       }
     },
@@ -21355,6 +23539,12 @@
             "state" : "translated",
             "value" : "Нажмите на уголёк, чтобы увидеть записи того дня"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez une braise pour voir les bilans de ce jour"
+          }
         }
       }
     },
@@ -21412,6 +23602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Спокойной ночи"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bonne nuit"
           }
         }
       }
@@ -21472,6 +23668,12 @@
             "state" : "translated",
             "value" : "Хорошо прогоревший день. Пора остыть."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une journée bien brûlée. Il est temps de laisser refroidir."
+          }
         }
       }
     },
@@ -21523,6 +23725,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не включайте сон, работу и дела — добавьте только время, которое тратите на себя. Пергамент этой недели горит, только пока оно идёт."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écartez le sommeil, le travail et les corvées, et n’ajoutez que le temps que vous vous consacrez. Le parchemin de cette semaine ne brûle que pendant qu’il s’écoule."
           }
         }
       }
@@ -21576,6 +23784,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите часы, которые по-настоящему ваши, помимо сна и работы. Пергамент этой недели горит, только пока они идут."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez les heures qui sont vraiment à vous, en dehors du sommeil et du travail. Le parchemin de cette semaine ne brûle que pendant qu’elles s’écoulent."
           }
         }
       }
@@ -21636,6 +23850,12 @@
             "state" : "translated",
             "value" : "Время сна"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure d’endormissement"
+          }
         }
       }
     },
@@ -21694,6 +23914,12 @@
             "state" : "translated",
             "value" : "Огонь гаснет сам, когда вы засыпаете. Утром мы проверяем, когда вы уснули, и возвращаем его назад"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il s’arrête tout seul dès que vous dormez. Nous vérifions le matin à quelle heure vous vous êtes endormi(e) et le remettons en arrière"
+          }
         }
       }
     },
@@ -21746,6 +23972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пересекается со временем сна"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chevauche votre sommeil"
           }
         }
       }
@@ -21800,6 +24032,12 @@
             "state" : "translated",
             "value" : "Пересекается со сном. Оставьте это в часы бодрствования."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cela chevauche votre sommeil. Gardez-le dans vos heures d’éveil."
+          }
         }
       }
     },
@@ -21851,6 +24089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не включайте сон,\\nне включайте работу —\\nвыберите только свои часы.\\nПергамент этой недели горит, только пока они идут."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sans le sommeil, sans le travail,\\nchoisissez seulement les heures qui sont à vous.\\nLe parchemin de cette semaine ne brûle que pendant qu’elles s’écoulent."
           }
         }
       }
@@ -21911,6 +24155,12 @@
             "state" : "translated",
             "value" : "Пепел"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres"
+          }
         }
       }
     },
@@ -21969,6 +24219,12 @@
             "state" : "translated",
             "value" : "По %@ записям пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basé sur %@ cendres"
+          }
         }
       }
     },
@@ -22020,6 +24276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пепла: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres : %@"
           }
         }
       }
@@ -22074,6 +24336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пепла: %@ · размер A5"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres : %@ · format A5"
           }
         }
       }
@@ -22134,6 +24402,12 @@
             "state" : "translated",
             "value" : "По %lld записям пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basé sur %lld cendres"
+          }
         }
       }
     },
@@ -22192,6 +24466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пепла: %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres : %lld"
           }
         }
       }
@@ -22252,6 +24532,12 @@
             "state" : "translated",
             "value" : "Пепла: %lld · размер A5"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres : %lld · format A5"
+          }
         }
       }
     },
@@ -22311,6 +24597,12 @@
             "state" : "translated",
             "value" : "Урны пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnes de cendres"
+          }
         }
       }
     },
@@ -22368,6 +24660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Положите в урну пепла"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rangez-la dans votre urne de cendres"
           }
         }
       }
@@ -22428,6 +24726,12 @@
             "state" : "translated",
             "value" : "Больше всего пепла в месяце"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois avec le plus de cendres"
+          }
         }
       }
     },
@@ -22487,6 +24791,12 @@
             "state" : "translated",
             "value" : "Добавьте немного пепла —\\nи здесь появятся распределение и календарь углей."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gardez quelques cendres et\\nla répartition et le calendrier des braises apparaîtront ici."
+          }
         }
       }
     },
@@ -22544,6 +24854,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Распределение пепла"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Répartition des cendres"
           }
         }
       }
@@ -22604,6 +24920,12 @@
             "state" : "translated",
             "value" : "Поток пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flux de cendres"
+          }
         }
       }
     },
@@ -22662,6 +24984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Смотреть поток пепла"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir le flux de cendres"
           }
         }
       }
@@ -22722,6 +25050,12 @@
             "state" : "translated",
             "value" : "Сохранить"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
+          }
         }
       }
     },
@@ -22781,6 +25115,12 @@
             "state" : "translated",
             "value" : "Сохранение"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrement"
+          }
         }
       }
     },
@@ -22839,6 +25179,12 @@
             "state" : "translated",
             "value" : "Сохранение…"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrement…"
+          }
         }
       }
     },
@@ -22896,6 +25242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранено"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistré"
           }
         }
       }
@@ -22956,6 +25308,12 @@
             "state" : "translated",
             "value" : "Сохранить и начать новую запись"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer et commencer un nouveau bilan"
+          }
         }
       }
     },
@@ -23014,6 +25372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранить и закрыть"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer et fermer"
           }
         }
       }
@@ -23074,6 +25438,12 @@
             "state" : "translated",
             "value" : "Погасший сам осколок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éteint tout seul"
+          }
         }
       }
     },
@@ -23132,6 +25502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы сохранили осколок, который погас сам"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous avez gardé un fragment éteint tout seul"
           }
         }
       }
@@ -23192,6 +25568,12 @@
             "state" : "translated",
             "value" : "Соберите записи в один PDF, чтобы хранить или распечатать."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réunissez vos bilans en un seul PDF à conserver ou imprimer."
+          }
         }
       }
     },
@@ -23250,6 +25632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Все"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout"
           }
         }
       }
@@ -23310,6 +25698,12 @@
             "state" : "translated",
             "value" : "Точка"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Point"
+          }
         }
       }
     },
@@ -23363,6 +25757,12 @@
             "state" : "translated",
             "value" : "Ваше свободное время"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre temps libre"
+          }
         }
       }
     },
@@ -23414,6 +25814,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настроить и увидеть цифры можно бесплатно. Жечь только эти часы — в Pro."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le définir et voir les chiffres est gratuit. Ne brûler que ces heures est réservé à Pro."
           }
         }
       }
@@ -23473,6 +25879,12 @@
             "state" : "translated",
             "value" : "Заголовок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titre"
+          }
         }
       }
     },
@@ -23530,6 +25942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы вовремя погасили огонь. Завтрашний пергамент не тронут"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous avez éteint le feu à l’heure. Le parchemin de demain est intact"
           }
         }
       }
@@ -23590,6 +26008,12 @@
             "state" : "translated",
             "value" : "Вы уснули вовремя, и огонь погас сам"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous vous êtes endormi(e) à l’heure, donc le feu s’est éteint tout seul"
+          }
         }
       }
     },
@@ -23648,6 +26072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Я лёг(ла) вовремя"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je me suis couché(e) à l’heure"
           }
         }
       }
@@ -23708,6 +26138,12 @@
             "state" : "translated",
             "value" : "Выбросить осколок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeter le fragment"
+          }
         }
       }
     },
@@ -23766,6 +26202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Карточка осколка"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carte de fragment"
           }
         }
       }
@@ -23826,6 +26268,12 @@
             "state" : "translated",
             "value" : "Карточки и постеры осколков"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartes et affiches de fragments"
+          }
         }
       }
     },
@@ -23884,6 +26332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поделиться карточкой осколка"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager en carte de fragment"
           }
         }
       }
@@ -23944,6 +26398,12 @@
             "state" : "translated",
             "value" : "Постер осколка"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche de fragment"
+          }
         }
       }
     },
@@ -24003,6 +26463,12 @@
             "state" : "translated",
             "value" : "Создать постер осколка"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer une affiche de fragment"
+          }
         }
       }
     },
@@ -24060,6 +26526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите на осколок, чтобы перевернуть"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez le fragment pour le retourner"
           }
         }
       }
@@ -24120,6 +26592,12 @@
             "state" : "translated",
             "value" : "Оборот осколка"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dos du fragment"
+          }
         }
       }
     },
@@ -24178,6 +26656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Лицевая сторона осколка"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face du fragment"
           }
         }
       }
@@ -24238,6 +26722,12 @@
             "state" : "translated",
             "value" : "День, оставленный чуть несгоревшим, помнится дольше"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une journée laissée un peu non brûlée reste plus longtemps"
+          }
         }
       }
     },
@@ -24295,6 +26785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Хотите добавить больше? (необязательно)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envie d’en dire plus ? (facultatif)"
           }
         }
       }
@@ -24355,6 +26851,12 @@
             "state" : "translated",
             "value" : "Вид"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
         }
       }
     },
@@ -24414,6 +26916,12 @@
             "state" : "translated",
             "value" : "Сладких снов"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doux rêves"
+          }
         }
       }
     },
@@ -24466,6 +26974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выходные"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Week-ends"
           }
         }
       }
@@ -24526,6 +27040,12 @@
             "state" : "translated",
             "value" : "Создавайте сколько угодно урн пепла по темам"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créez autant d’urnes de cendres que vous voulez, par sujet"
+          }
         }
       }
     },
@@ -24585,6 +27105,12 @@
             "state" : "translated",
             "value" : "Сейчас наполняется"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En cours de remplissage"
+          }
         }
       }
     },
@@ -24637,6 +27163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Горит сейчас · до %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En train de brûler · jusqu’à %@"
           }
         }
       }
@@ -24697,6 +27229,12 @@
             "state" : "translated",
             "value" : "Сохраняет эту запись и открывает пустую"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistre ce bilan et en ouvre un vierge"
+          }
         }
       }
     },
@@ -24755,6 +27293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что сделать с пеплом за последние дни (%lld)?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que faire des cendres des %lld derniers jours ?"
           }
         }
       }
@@ -24815,6 +27359,12 @@
             "state" : "translated",
             "value" : "Что сделать с пеплом за последние недели (%lld)?"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que faire des cendres des %lld dernières semaines ?"
+          }
         }
       }
     },
@@ -24874,6 +27424,12 @@
             "state" : "translated",
             "value" : "Пепел по месяцам за последние 12 месяцев"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cendres par mois sur les 12 derniers mois"
+          }
         }
       }
     },
@@ -24931,6 +27487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Куда ушли последние 12 месяцев — по месяцам"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Où sont passés les 12 derniers mois, mois par mois"
           }
         }
       }
@@ -24991,6 +27553,12 @@
             "state" : "translated",
             "value" : "Пепел последних 12 месяцев по месяцам"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les cendres des 12 derniers mois, mois par mois"
+          }
         }
       }
     },
@@ -25050,6 +27618,12 @@
             "state" : "translated",
             "value" : "Посмотрите, куда утекло ваше время в каждом из последних двенадцати месяцев."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voyez où est passé votre temps chaque mois sur les douze derniers mois."
+          }
         }
       }
     },
@@ -25102,6 +27676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
           }
         }
       }
@@ -25164,6 +27744,12 @@
             "state" : "translated",
             "value" : "Поддержка"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistance"
+          }
         }
       }
     },
@@ -25221,6 +27807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить первый пепел"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter la première cendre"
           }
         }
       }
@@ -25281,6 +27873,12 @@
             "state" : "translated",
             "value" : "Создать первую урну"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer votre première urne"
+          }
         }
       }
     },
@@ -25339,6 +27937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Начните с первой урны.\\nХорошо назвать её по теме или области жизни."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencez par créer votre première urne.\\nLa nommer par sujet ou par domaine fonctionne bien."
           }
         }
       }
@@ -25399,6 +28003,12 @@
             "state" : "translated",
             "value" : "Селадон"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Céladon"
+          }
         }
       }
     },
@@ -25457,6 +28067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Свеча"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bougie"
           }
         }
       }
@@ -25517,6 +28133,12 @@
             "state" : "translated",
             "value" : "Последние 30 дней"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 derniers jours"
+          }
         }
       }
     },
@@ -25575,6 +28197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter"
           }
         }
       }
@@ -25635,6 +28263,12 @@
             "state" : "translated",
             "value" : "Рекомендуемое время сна"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heures de coucher suggérées"
+          }
         }
       }
     },
@@ -25693,6 +28327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отмена"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
           }
         }
       }
@@ -25753,6 +28393,12 @@
             "state" : "translated",
             "value" : "До отхода ко сну 1 час. Вы славно потрудились сегодня!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus qu’une heure avant le coucher. Bravo pour aujourd’hui !"
+          }
         }
       }
     },
@@ -25810,6 +28456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "За 30 минут до сна подуйте на горящий\\nпергамент, чтобы погасить огонь и сохранить остаток"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dès 30 minutes avant le coucher, soufflez sur le parchemin qui brûle\\npour l’éteindre et garder ce qu’il reste"
           }
         }
       }
@@ -25870,6 +28522,12 @@
             "state" : "translated",
             "value" : "Время отхода ко сну"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure du coucher"
+          }
         }
       }
     },
@@ -25929,6 +28587,12 @@
             "state" : "translated",
             "value" : "Отход ко сну: %3$@ %2$lld ч %1$@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coucher à %3$@ %2$lld h %1$@"
+          }
         }
       }
     },
@@ -25986,6 +28650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "До сна: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ avant le coucher"
           }
         }
       }
@@ -26046,6 +28716,12 @@
             "state" : "translated",
             "value" : "Времени до сна"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps restant avant le coucher"
+          }
         }
       }
     },
@@ -26105,6 +28781,12 @@
             "state" : "translated",
             "value" : "Капсула"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capsule"
+          }
         }
       }
     },
@@ -26162,6 +28844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ключевое слово (необязательно)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mot-clé (facultatif)"
           }
         }
       }
@@ -26222,6 +28910,12 @@
             "state" : "translated",
             "value" : "Показывать вкладки"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les onglets"
+          }
         }
       }
     },
@@ -26279,6 +28973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите, чтобы закрыть"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour fermer"
           }
         }
       }
@@ -26339,6 +29039,12 @@
             "state" : "translated",
             "value" : "Нажмите, чтобы управлять дедлайнами"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour gérer les échéances"
+          }
         }
       }
     },
@@ -26397,6 +29103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите, чтобы вернуться к шагу «Текст»"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour revenir à l’étape Rédaction"
           }
         }
       }
@@ -26457,6 +29169,12 @@
             "state" : "translated",
             "value" : "Нажмите, чтобы выбрать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour sélectionner"
+          }
         }
       }
     },
@@ -26516,6 +29234,12 @@
             "state" : "translated",
             "value" : "Нажмите, чтобы изменить"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour modifier"
+          }
         }
       }
     },
@@ -26573,6 +29297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите, чтобы изменить время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour changer l’heure"
           }
         }
       }
@@ -26633,6 +29363,12 @@
             "state" : "translated",
             "value" : "Нажмите, чтобы управлять урнами"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour gérer les urnes"
+          }
         }
       }
     },
@@ -26691,6 +29427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите, чтобы открыть урну"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez pour ouvrir l’urne"
           }
         }
       }
@@ -26751,6 +29493,12 @@
             "state" : "translated",
             "value" : "Потрескивающие, разлетающиеся искры"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étincelles crépitantes et jaillissantes"
+          }
         }
       }
     },
@@ -26809,6 +29557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Страницы"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pages"
           }
         }
       }
@@ -26869,6 +29623,12 @@
             "state" : "translated",
             "value" : "Страница %1$lld из %2$lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page %1$lld sur %2$lld"
+          }
         }
       }
     },
@@ -26927,6 +29687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Индикатор страниц"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indicateur de page"
           }
         }
       }
@@ -26987,6 +29753,12 @@
             "state" : "translated",
             "value" : "Точки страниц"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Points de pages"
+          }
         }
       }
     },
@@ -27045,6 +29817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вид точек страниц"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Style des points de pages"
           }
         }
       }
@@ -27105,6 +29883,12 @@
             "state" : "translated",
             "value" : "Бессрочный доступ · %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accès à vie · %@"
+          }
         }
       }
     },
@@ -27157,6 +29941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Будни"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours de semaine"
           }
         }
       }
@@ -27217,6 +30007,12 @@
             "state" : "translated",
             "value" : "Постер"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche"
+          }
         }
       }
     },
@@ -27276,6 +30072,12 @@
             "state" : "translated",
             "value" : "Показывать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher"
+          }
         }
       }
     },
@@ -27330,6 +30132,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -27393,6 +30201,12 @@
             "state" : "translated",
             "value" : "Вы с Pro. Спасибо 🔥"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous êtes sur Pro. Merci 🔥"
+          }
         }
       }
     },
@@ -27452,6 +30266,12 @@
             "state" : "translated",
             "value" : "Перейти на Pro"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer à Pro"
+          }
         }
       }
     },
@@ -27504,6 +30324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Жечь только свободное время с Pro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brûler mon temps libre avec Pro"
           }
         }
       }
@@ -27564,6 +30390,12 @@
             "state" : "translated",
             "value" : "Доступно в Pro"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponible avec Pro"
+          }
         }
       }
     },
@@ -27615,6 +30447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "С Pro пергамент горит только в эти часы"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avec Pro, le parchemin ne brûle que pendant ces heures"
           }
         }
       }
@@ -27673,6 +30511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Откройте с Pro поток года"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Débloquez le flux de l’année avec Pro"
           }
         }
       }
@@ -27733,6 +30577,12 @@
             "state" : "translated",
             "value" : "Хотел(а), но не сделал(а)"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voulu, mais pas fait"
+          }
         }
       }
     },
@@ -27791,6 +30641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Хотел(а), но не сделал(а)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voulu, mais pas fait"
           }
         }
       }
@@ -27851,6 +30707,12 @@
             "state" : "translated",
             "value" : "Сохраните день без остатка"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gardez votre journée, sans rien laisser de côté"
+          }
         }
       }
     },
@@ -27909,6 +30771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сердце"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cœur"
           }
         }
       }
@@ -27969,6 +30837,12 @@
             "state" : "translated",
             "value" : "Платите один раз — пользуйтесь всегда"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Payez une fois, profitez-en toujours"
+          }
         }
       }
     },
@@ -28021,6 +30895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "В пересчёте на год"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur une année"
           }
         }
       }
@@ -28079,6 +30959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Год пепла"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une année de cendres"
           }
         }
       }
@@ -28139,6 +31025,12 @@
             "state" : "translated",
             "value" : "Год пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une année de cendres"
+          }
         }
       }
     },
@@ -28197,6 +31089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Целый год пепла одним взглядом"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une année entière de cendres en un coup d’œil"
           }
         }
       }
@@ -28257,6 +31155,12 @@
             "state" : "translated",
             "value" : "Урн: %1$lld, записей: %2$lld"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld urnes, %2$lld bilans"
+          }
         }
       }
     },
@@ -28315,6 +31219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Безлимитные урны"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnes illimitées"
           }
         }
       }
@@ -28375,6 +31285,12 @@
             "state" : "translated",
             "value" : "Удалить урну"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer l’urne"
+          }
         }
       }
     },
@@ -28433,6 +31349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Полка урн"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’étagère des urnes"
           }
         }
       }
@@ -28493,6 +31415,12 @@
             "state" : "translated",
             "value" : "Изменить урну"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier l’urne"
+          }
         }
       }
     },
@@ -28552,6 +31480,12 @@
             "state" : "translated",
             "value" : "Откройте безлимитные урны и дедлайны."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Débloquez des urnes et des échéances illimitées."
+          }
         }
       }
     },
@@ -28610,6 +31544,12 @@
             "state" : "translated",
             "value" : "Урна уже ждёт.\\nПервый пепел попадёт в урну «%@»."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’urne vous attend déjà.\\nVotre première cendre ira dans « %@ »."
+          }
         }
       }
     },
@@ -28667,6 +31607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Слово для гравировки на урне"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un mot à graver sur l’urne"
           }
         }
       }
@@ -28727,6 +31673,12 @@
             "state" : "translated",
             "value" : "Солнце"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soleil"
+          }
         }
       }
     },
@@ -28785,6 +31737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сделано"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fait"
           }
         }
       }
@@ -28845,6 +31803,12 @@
             "state" : "translated",
             "value" : "Дуньте в микрофон внизу телефона"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soufflez dans le micro en bas de votre téléphone"
+          }
         }
       }
     },
@@ -28903,6 +31867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оформление"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apparence"
           }
         }
       }
@@ -28963,6 +31933,12 @@
             "state" : "translated",
             "value" : "ОК"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
         }
       }
     },
@@ -29022,6 +31998,12 @@
             "state" : "translated",
             "value" : "Записей: %1$lld. Сделал(а), как задумал(а): %2$lld процентов; так получилось: %3$lld процентов; хотел(а), но не сделал(а): %4$lld процентов; просто утекло: %5$lld процентов"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilans : %1$lld. J’ai fait ce que j’avais prévu : %2$lld pour cent ; fait sans l’avoir prévu : %3$lld pour cent ; voulu mais pas fait : %4$lld pour cent ; juste envolé : %5$lld pour cent"
+          }
         }
       }
     },
@@ -29079,6 +32061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Книга записей"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livre des bilans"
           }
         }
       }
@@ -29139,6 +32127,12 @@
             "state" : "translated",
             "value" : "PDF-книга записей"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF du livre des bilans"
+          }
         }
       }
     },
@@ -29197,6 +32191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экспорт книги записей в PDF"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exporter le livre des bilans en PDF"
           }
         }
       }
@@ -29257,6 +32257,12 @@
             "state" : "translated",
             "value" : "Смотреть как книгу"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir en livre"
+          }
         }
       }
     },
@@ -29316,6 +32322,12 @@
             "state" : "translated",
             "value" : "Возьмите свою книгу записей в руки"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tenez votre livre des bilans entre les mains"
+          }
         }
       }
     },
@@ -29373,6 +32385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Соберите записи в один PDF"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réunissez vos bilans en un seul PDF"
           }
         }
       }
@@ -29433,6 +32451,12 @@
             "state" : "translated",
             "value" : "Соберите записи в PDF, по странице на день"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réunissez vos bilans dans un PDF, une page par jour"
+          }
         }
       }
     },
@@ -29492,6 +32516,12 @@
             "state" : "translated",
             "value" : "Измените свою запись."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifiez votre bilan."
+          }
         }
       }
     },
@@ -29549,6 +32579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавьте запись —\\nи эта книга начнёт заполняться."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez un bilan\\net ce livre commencera à se remplir."
           }
         }
       }
@@ -29609,6 +32645,12 @@
             "state" : "translated",
             "value" : "Перетаскивайте записи в урну, чтобы переместить их"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites glisser les bilans vers une urne pour les déplacer"
+          }
         }
       }
     },
@@ -29667,6 +32709,12 @@
             "state" : "translated",
             "value" : "Задуть огонь"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Souffler le feu"
+          }
         }
       }
     },
@@ -29724,6 +32772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дуньте, чтобы погасить пламя\\nи завершить день"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soufflez pour éteindre la flamme\\net clore votre journée"
           }
         }
       }
@@ -29784,6 +32838,12 @@
             "state" : "translated",
             "value" : "Отдых"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repos"
+          }
         }
       }
     },
@@ -29843,6 +32903,12 @@
             "state" : "translated",
             "value" : "Утекло"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envolé"
+          }
         }
       }
     },
@@ -29900,6 +32966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Сладких снов"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Doux rêves"
           }
         }
       }
@@ -29966,6 +33038,12 @@
             "state" : "translated",
             "value" : "Экран для крупного шрифта"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des écrans adaptés au texte agrandi"
+          }
         }
       }
     },
@@ -30024,6 +33102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Даже при самом крупном шрифте экраны аккуратно перестраиваются и ничего не обрезается."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Même avec les plus grandes tailles de texte, les écrans se réorganisent proprement au lieu d’être coupés."
           }
         }
       }
@@ -30084,6 +33168,12 @@
             "state" : "translated",
             "value" : "Удобные цвета и контраст"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleurs et contraste plus lisibles"
+          }
         }
       }
     },
@@ -30142,6 +33232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время, которое горит, хорошо видно даже при повышенной контрастности или если трудно различать цвета."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voyez clairement votre temps brûler, même avec Augmenter le contraste ou si les couleurs sont difficiles à distinguer."
           }
         }
       }
@@ -30202,6 +33298,12 @@
             "state" : "translated",
             "value" : "Больше языков"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus de langues"
+          }
         }
       }
     },
@@ -30260,6 +33362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Краткий тур для новичков"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une visite rapide pour les nouveaux"
           }
         }
       }
@@ -30320,6 +33428,12 @@
             "state" : "translated",
             "value" : "Короткий рассказ о возможностях при первом открытии приложения."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un court guide de ce que vous pouvez faire, à la première ouverture de l’app."
+          }
         }
       }
     },
@@ -30378,6 +33492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что нового"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveautés"
           }
         }
       }
@@ -30438,6 +33558,12 @@
             "state" : "translated",
             "value" : "При первом открытии после обновления вы увидите, что появилось нового."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À la première ouverture après une mise à jour, découvrez les nouveautés."
+          }
         }
       }
     },
@@ -30496,6 +33622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Полезные советы"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Astuces pratiques"
           }
         }
       }
@@ -30556,6 +33688,12 @@
             "state" : "translated",
             "value" : "Ненавязчивые подсказки о полезных функциях — как раз вовремя."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De discrets conseils sur des fonctions utiles, au moment où vous en avez besoin."
+          }
         }
       }
     },
@@ -30614,6 +33752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri и Быстрые команды"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri et Raccourcis"
           }
         }
       }
@@ -30674,6 +33818,12 @@
             "state" : "translated",
             "value" : "Спросите Siri, сколько осталось от сегодняшнего дня."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demandez à Siri ce qu’il reste de la journée."
+          }
         }
       }
     },
@@ -30732,6 +33882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Синхронизация между устройствами"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisation entre appareils"
           }
         }
       }
@@ -30792,6 +33948,12 @@
             "state" : "translated",
             "value" : "Через iCloud те же записи и дедлайны доступны на всех ваших устройствах."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retrouvez les mêmes bilans et échéances sur tous vos appareils avec iCloud."
+          }
         }
       }
     },
@@ -30850,6 +34012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Резервная копия и восстановление"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarde et restauration"
           }
         }
       }
@@ -30910,6 +34078,12 @@
             "state" : "translated",
             "value" : "Сохраняйте записи и дедлайны в файл и возвращайте их позже."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrez vos bilans et échéances dans un fichier et récupérez-les plus tard."
+          }
         }
       }
     },
@@ -30968,6 +34142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Блокировка Face ID"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verrouillage Face ID"
           }
         }
       }
@@ -31028,6 +34208,12 @@
             "state" : "translated",
             "value" : "Закройте приложение с помощью Face ID или Touch ID, чтобы записи остались личными."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verrouillez l’app avec Face ID ou Touch ID pour garder vos bilans privés."
+          }
         }
       }
     },
@@ -31086,6 +34272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Раскладка для складного iPhone"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disposition pour iPhone pliable"
           }
         }
       }
@@ -31146,6 +34338,12 @@
             "state" : "translated",
             "value" : "На складном iPhone широкий экран делится на две панели рядом."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisez le grand écran d’un iPhone pliable en deux volets côte à côte."
+          }
         }
       }
     },
@@ -31204,6 +34402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить все мои данные"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer toutes mes données"
           }
         }
       }
@@ -31264,6 +34468,12 @@
             "state" : "translated",
             "value" : "Когда захотите, удалите все записи и дедлайны прямо в приложении."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacez tous vos bilans et échéances directement dans l’app, quand vous voulez."
+          }
         }
       }
     },
@@ -31322,6 +34532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продолжить начатую запись"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reprendre votre bilan là où vous en étiez"
           }
         }
       }
@@ -31382,6 +34598,12 @@
             "state" : "translated",
             "value" : "Если приложение закроется на середине записи, написанное сохранится."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce que vous écriviez reste en place, même si l’app se ferme en plein bilan."
+          }
         }
       }
     },
@@ -31439,6 +34661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "После корейского и английского приложение заговорило и по-русски."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Après le coréen et l’anglais, l’app parle maintenant aussi français."
           }
         }
       },
@@ -31499,6 +34727,12 @@
             "state" : "translated",
             "value" : "Листайте вбок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essayez de balayer sur le côté"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -31557,6 +34791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Остаток этой недели, месяца и года виден на том же пергаменте."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voyez ce qu’il reste de la semaine, du mois et de l’année sur le même parchemin."
           }
         }
       },
@@ -31617,6 +34857,12 @@
             "state" : "translated",
             "value" : "Переверните осколок"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retournez un fragment"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -31675,6 +34921,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите на осколок, чтобы написать на обороте строку об этом дне."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez un fragment pour écrire au dos une ligne sur ce jour-là."
           }
         }
       },
@@ -31735,6 +34987,12 @@
             "state" : "translated",
             "value" : "Цели"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectifs"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -31793,6 +35051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Осколки"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragments"
           }
         }
       },
@@ -31853,6 +35117,12 @@
             "state" : "translated",
             "value" : "Урна"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -31911,6 +35181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Запись"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilan"
           }
         }
       },
@@ -31971,6 +35247,12 @@
             "state" : "translated",
             "value" : "Добавить дедлайн"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter une échéance"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -32029,6 +35311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дедлайн «%@» добавлен"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échéance « %@ » ajoutée"
           }
         }
       },
@@ -32089,6 +35377,12 @@
             "state" : "translated",
             "value" : "Дедлайн «%@» удалён"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échéance « %@ » supprimée"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -32147,6 +35441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Огонь погашен. Осколок сохранён"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le feu est éteint. Votre fragment a été gardé."
           }
         }
       },
@@ -32207,6 +35507,12 @@
             "state" : "translated",
             "value" : "Запись положена в урну пепла"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre bilan est dans l’urne de cendres."
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -32265,6 +35571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пропустить"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer"
           }
         }
       },
@@ -32325,6 +35637,12 @@
             "state" : "translated",
             "value" : "Начать"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -32383,6 +35701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Смотрите, как сгорает ваше время"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regardez votre temps brûler"
           }
         }
       },
@@ -32443,6 +35767,12 @@
             "state" : "translated",
             "value" : "От подъёма до отхода ко сну пергамент медленно горит. Листайте вбок, чтобы увидеть неделю, месяц и год."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du réveil au coucher, le parchemin brûle lentement. Balayez sur le côté pour voir la semaine, le mois et l’année."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -32501,6 +35831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "За 30 минут до сна — задуйте огонь"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 minutes avant le coucher, soufflez dessus"
           }
         }
       },
@@ -32561,6 +35897,12 @@
             "state" : "translated",
             "value" : "Подуйте в микрофон, чтобы погасить огонь и сохранить остаток. Проверяется только сила дыхания, звук не записывается."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soufflez dans le micro pour éteindre le feu et garder ce qu’il reste. Seule la force de votre souffle est vérifiée ; rien n’est enregistré."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -32619,6 +35961,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каждый день становится пеплом"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque jour devient cendre"
           }
         }
       },
@@ -32679,6 +36027,12 @@
             "state" : "translated",
             "value" : "Напишите о дне одну строку — и она осядет в урне пепла этой недели. Время подъёма и сна меняется в настройках."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrivez une ligne sur votre journée et elle se dépose dans l’urne de cendres de la semaine. Changez vos heures de réveil et de coucher dans les Réglages."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -32737,6 +36091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Копировать"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier"
           }
         }
       },
@@ -32797,6 +36157,12 @@
             "state" : "translated",
             "value" : "Что нового"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveautés"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -32855,6 +36221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показать приветствие снова"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revoir le guide de bienvenue"
           }
         }
       },
@@ -32915,6 +36287,12 @@
             "state" : "translated",
             "value" : "Не удалось активировать код. Повторите попытку чуть позже."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le code n’a pas pu être utilisé. Réessayez dans un instant."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -32973,6 +36351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Активировать промокод"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utiliser un code promo"
           }
         }
       },
@@ -33033,6 +36417,12 @@
             "state" : "translated",
             "value" : "Версия %@"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -33091,6 +36481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Теперь и по-русски"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désormais en français"
           }
         }
       },
@@ -33151,6 +36547,12 @@
             "state" : "translated",
             "value" : "Если на устройстве выбран русский, приложение и виджеты отображаются по-русски."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si votre appareil est réglé sur le français, l’app et ses widgets s’affichent en français."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -33209,6 +36611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удобно при крупном шрифте и высоком контрасте"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mieux avec le texte agrandi et le contraste élevé"
           }
         }
       },
@@ -33269,6 +36677,12 @@
             "state" : "translated",
             "value" : "Настройки больше не обрезаются при очень крупном шрифте, а «Повышение контрастности» делает текст и угольки темнее."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les Réglages ne sont plus coupés avec de très grandes tailles de texte, et Augmenter le contraste assombrit le texte et les braises."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -33327,6 +36741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скрытые функции, например смена периода свайпом, теперь подсказываются в нужный момент."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les fonctions cachées, comme balayer pour changer de période, sont maintenant signalées au bon moment."
           }
         }
       },
@@ -33387,6 +36807,12 @@
             "state" : "translated",
             "value" : "Посмотрите, что будет дальше"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Découvrez ce qui arrive"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -33445,6 +36871,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "В «Настройки» ▸ «Поддержка» смотрите будущие функции и предлагайте нужные."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dans Réglages ▸ Assistance, voyez les fonctions à venir et proposez celles que vous voulez."
           }
         }
       },
@@ -33505,6 +36937,12 @@
             "state" : "translated",
             "value" : "Теперь есть промокоды"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les codes promo sont là"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -33564,6 +37002,12 @@
             "state" : "translated",
             "value" : "Если у вас есть код, введите его в «Настройки» ▸ Pro."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si vous avez un code, saisissez-le dans Réglages ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -33622,6 +37066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Понятно"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compris"
           }
         }
       },

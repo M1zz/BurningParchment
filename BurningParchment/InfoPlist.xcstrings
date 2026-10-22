@@ -57,6 +57,12 @@
             "state" : "translated",
             "value" : "Горящий пергамент"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes"
+          }
         }
       }
     },
@@ -117,6 +123,12 @@
             "state" : "translated",
             "value" : "Горящий пергамент"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parchemin en flammes"
+          }
         }
       }
     },
@@ -176,6 +188,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Используется только для оценки силы вашего дыхания, когда вы гасите пергамент перед сном. Звук не записывается и не сохраняется."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisé uniquement pour mesurer la force de votre souffle quand vous éteignez le parchemin avant de dormir. Aucun son n’est enregistré ni conservé."
           }
         }
       }

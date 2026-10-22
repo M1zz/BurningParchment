@@ -54,6 +54,7 @@ SEARCH = {
     "nl": ('Resterende tijd', 'Zie je tijd<br>opbranden', 'Dag, week, maand en jaar'),
     "pl": ('Pozostały czas', 'Zobacz, jak twój czas<br>się spala', 'Dzień, tydzień, miesiąc i rok'),
     "sv": ('Tid kvar', 'Se din tid<br>brinna ner', 'Dag, vecka, månad och år'),
+    "tr": ('Kalan süre', 'Zamanının yanışını<br>izle', 'Gün, hafta, ay ve yıl'),
 }
 
 # 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
@@ -79,6 +80,7 @@ HEADER = {
     "nl": ('Brandend Perkament', 'Blaas de vlam uit,<br>sluit je dag af'),
     "pl": ('Płonący Pergamin', 'Zdmuchnij płomień,<br>zakończ dzień'),
     "sv": ('Brinnande Pergament', 'Blås ut lågan,<br>avsluta dagen'),
+    "tr": ('Yanan Parşömen', 'Alevi üfle,<br>günü kapat'),
 }
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:

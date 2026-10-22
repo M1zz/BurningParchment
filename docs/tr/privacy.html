@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — Yanan Parşömen</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/tr/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/BurningParchment/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/BurningParchment/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/BurningParchment/fi/privacy.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/BurningParchment/id/privacy.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/BurningParchment/nb/privacy.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/BurningParchment/nl/privacy.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/BurningParchment/pl/privacy.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/privacy.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/privacy.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/privacy.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/privacy.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/privacy.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/privacy.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/privacy.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/privacy.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/privacy.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/privacy.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/privacy.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="privacy.html" hreflang="tr" lang="tr" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Desteğe geri dön</a>
+  <h1>Gizlilik Politikası</h1>
+  <p>Son güncelleme: 18 Ağustos 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Özet</h2>
+    <div class="card">
+      <h3>Yanan Parşömen seni tanımlayan bilgileri toplamaz</h3>
+      <p>Uygulamada oluşturduğun her şey (uyanma saati, uyku saati, son tarihler, değerlendirmeler ve kavanozlar) cihazında kalır. Geliştiriciye yalnızca aşağıda anlatılan anonim istatistikler ve çökme tanılamaları ile senin gönderdiğin geri bildirimler ulaşır.</p>
+      <span class="highlight">🔒 Değerlendirmelerin cihazından asla çıkmaz · Reklam yok, takip yok</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Yalnızca cihazında saklanır</h2>
+    <div class="card">
+      <h3>Uygulamada oluşturdukların</h3>
+      <p>Aşağıdakiler yalnızca cihazında saklanır (UserDefaults içinde):</p>
+      <ul>
+        <li>Uyanma saati ve uyku saati</li>
+        <li>Son tarihler</li>
+        <li>Değerlendirmeler ve kavanozlar</li>
+      </ul>
+      <p style="margin-top: 10px;">Bu veriler uygulama ile widget’ları arasında yalnızca cihazındaki App Group deposu üzerinden paylaşılır ve uygulamayı sildiğinde silinir.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Geliştiriciye gönderilenler</h2>
+    <div class="card">
+      <h3>Anonim kullanım istatistikleri</h3>
+      <p>Uygulamanın geliştirilmesine yardımcı olmak için aşağıdakiler geliştiricinin iCloud (CloudKit) deposuna gönderilir:</p>
+      <ul>
+        <li>Rastgele oluşturulmuş bir kurulum kimliği (UUID)</li>
+        <li>Uygulama sürümü, platform ve işletim sistemi sürümü, dil ayarı</li>
+        <li>Açılış sayısı, kullanım günü sayısı ve temel özellik olaylarının adları</li>
+      </ul>
+      <p style="margin-top: 10px;">Kurulum kimliğinin cihaz tanımlayıcılarıyla (IDFA veya IDFV) ya da Apple Hesabınla hiçbir ilgisi yoktur; uygulamayı silip yeniden kurarsan yeni bir kimlik oluşturulur.</p>
+    </div>
+    <div class="card">
+      <h3>Çökme ve donma tanılamaları</h3>
+      <p>Uygulama çökerse veya donarsa iOS’un oluşturduğu tanılama raporu (MetricKit) gönderilir: sorunun türü, yığın izi, uygulama ve işletim sistemi sürümleri ile cihaz modeli. Uygulamaya girdiğin hiçbir şey, örneğin değerlendirmelerin, dahil edilmez.</p>
+    </div>
+    <div class="card">
+      <h3>Gönderdiğin geri bildirimler</h3>
+      <p>Geri bildirim yalnızca Ayarlar ekranından gönderdiğinde iletilir. Yazdıklarını, cihazını ve uygulama sürümünü; adını ve e-posta adresini ise yalnızca yanıt almak için kendin girersen içerir.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Toplamadıklarımız</h2>
+    <div class="card">
+      <h3>Aşağıdakileri asla toplamayız</h3>
+      <ul>
+        <li>Uygulamaya girdiğin hiçbir şeyi, örneğin değerlendirmeleri veya son tarihleri (kendin geri bildirimde yazmadıkça)</li>
+        <li>Ad, e-posta veya telefon numarası gibi kişisel bilgileri (kendin geri bildirimde girmedikçe)</li>
+        <li>Konum</li>
+        <li>Kişiler veya fotoğraflar</li>
+        <li>Cihaz tanımlayıcıları (IDFA, IDFV vb.)</li>
+        <li>Reklam verileri</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Üçüncü Taraflar</h2>
+    <div class="card">
+      <h3>Verilerini paylaşmayız</h3>
+      <p>Uygulama hiçbir reklam ağı ve üçüncü taraf analiz SDK’sı kullanmaz. Yukarıda anlatılan istatistikler, tanılamalar ve geri bildirimler yalnızca geliştiricinin kendi iCloud deposuna gider. Başka şirketlerin verileriyle birleştirilmez veya seni reklam amacıyla takip etmek için kullanılmaz.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Uygulama İçi Satın Alma</h2>
+    <div class="card">
+      <h3>Ödemeyi Apple yönetir</h3>
+      <p>Tek seferlik Pro satın alımının ödemesi App Store üzerinden Apple tarafından işlenir. Geliştirici kart numaran veya Apple Hesabın gibi ödeme bilgilerini asla almaz. Uygulama yalnızca Pro’yu satın alıp almadığını cihazında kaydeder, böylece Pro özelliklerinin kilidini açabilir.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bildirimler</h2>
+    <div class="card">
+      <h3>Yalnızca yerel bildirimler</h3>
+      <p>Uyku saatinden bir saat önceki hatırlatma, cihazında zamanlanan yerel bir bildirimdir ve hiçbir harici sunucudan geçmez. Bildirim iznini istediğin zaman iOS Ayarlar’dan değiştirebilirsin.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mikrofon</h2>
+    <div class="card">
+      <h3>Yalnızca ne kadar sert üflediğini algılar</h3>
+      <p>Mikrofon yalnızca uyku saatinden 30 dakika önce ateşi söndürmek için parşömene üflediğinde kullanılır. Uygulama yalnızca nefesinin gücünü cihazında ölçer; hiçbir sesi kaydetmez, saklamaz veya göndermez. Mikrofon iznini istediğin zaman iOS Ayarlar’dan değiştirebilirsin.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Çocukların Gizliliği</h2>
+    <div class="card">
+      <h3>14 yaşın altındaki çocuklar</h3>
+      <p>Bu uygulama 14 yaşın altındaki çocuklara yönelik değildir ve çocuklardan bilerek kişisel bilgi toplamayız.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bu Politikadaki Değişiklikler</h2>
+    <div class="card">
+      <h3>Değişiklikleri bu sayfada yayınlarız</h3>
+      <p>Bu Gizlilik Politikası değişirse içeriğini ve bu sayfadaki “Son güncelleme” tarihini güncelleriz. Önemli değişikliklerde uygulamanın sürüm notlarında da bilgilendirebiliriz.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>İletişim</h2>
+    <div class="card">
+      <h3>Gizlilik soruları</h3>
+      <p>Bu Gizlilik Politikası hakkında sorularınız varsa aşağıdaki adrese e-posta gönderin.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Bu politika birden çok dilde sunulur. Sürümler arasında fark varsa <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">Korece sürüm</a> geçerlidir.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

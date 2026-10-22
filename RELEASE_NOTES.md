@@ -186,6 +186,14 @@ Tydlig med stor text och kontrast
 Lös in erbjudandekoder för Pro
 Se kommande funktioner i Inställningar
 
+### 앱스토어 (tr)
+
+Artık Türkçe
+Yeni başlayanlar için kısa rehber
+Büyük yazıyla net görünür
+Teklif kodlarıyla Pro’yu edin
+Gelecek özellikleri Ayarlar’da gör
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

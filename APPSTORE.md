@@ -1310,3 +1310,60 @@ https://m1zz.github.io/BurningParchment/sv/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/sv/
+
+## tr
+
+### 이름
+
+Yanan Parşömen: Uyku Saati
+
+### 부제
+
+Günün kalan zamanı yanıyor
+
+### 키워드
+
+zamanlayıcı,günlük,alışkanlık,widget,teslim,disiplin,ritüel,akşam,hedefler,değerlendirme,uykusuzluk
+
+### 프로모션 텍스트
+
+Uyumadan önce yanan parşömene üfleyip ateşi söndür: günü kapatan küçük bir ritüel. Kalan parçalar saklanır.
+
+### 설명
+
+Gününden kalan zaman gözünün önünde yanıyor.
+Yanan Parşömen, kalan zamanı rakamlarla değil, yavaşça yanan bir parşömen yaprağıyla gösterir. Akşamın sessizce kaybolup gitmesini görmek istemeyenler için yapıldı.
+
+Gün, hafta, ay, yıl
+Uyanmaktan uyku saatine kadar parşömen yavaşça yanar. Bu haftadan, aydan ve yıldan kalan süreyi de aynı parşömende görürsün.
+Son tarihli bir hedef ekle; o güne kadar kalan süre de birlikte geri sayılır.
+
+Üfle ve günü kapat
+Uyku saatinden 30 dakika önce, yanan parşömene üfleyerek ateşi söndürebilirsin. Yalnızca nefesinin gücü kullanılır, hiçbir ses kaydedilmez.
+Ateş söndükten sonra kalan parçalar saklanır. İstediğinde bir parçayı çevirip arka yüzüne bir satır yazabilirsin.
+
+Kül olan bir gün
+Geçen zamana dön, tek satırlık bir değerlendirme bırak ve iki eksenli bir grafikte bir noktayla zamanın nereye gittiğini işaretle.
+Değerlendirmeler konuya göre kavanozlarda birikir ve değerlendirme kitabında yeniden okunabilir.
+Külün Akışı ekranı, zamanın nereye gittiğini dağılım grafiği ve köz takvimiyle gösterir.
+
+Hep gözünün önünde
+Ana Ekran ve Kilit Ekranı widget’ları, Dynamic Island ve Kilit Ekranı’ndaki Live Activity kalan süreyi gösterir.
+Açık ve koyu tema, önerilen uyku saatleri ve görmek istediğin sekmeleri seçme.
+
+Yanan Parşömen Pro
+Yanan parşömen, değerlendirmeler ve üfleyerek söndürme ritüeli ücretsizdir; bir son tarih de ücretsizdir. Pro abonelik değildir: bir kez satın al, sonsuza dek kullan.
+Pro; yalnızca ayarladığın boş zamanı yakan Yanan Boş Zaman’ı, parşömen ve alev renklerini (ay ışığı hanji, seladon, alacakaranlık), alev türlerini (bozkır yangını, köz, maytap), parçaları kart ve poster olarak paylaşmayı, değerlendirme kitabını PDF olarak dışa aktarmayı, son on iki ayın külünün akışını ve sınırsız son tarihi açar. Gelecekte eklenecek tüm Pro özellikleri de dahildir.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/tr/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/tr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/tr/

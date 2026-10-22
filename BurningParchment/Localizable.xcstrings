@@ -145,6 +145,12 @@
             "state" : "translated",
             "value" : ":%lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
+          }
         }
       }
     },
@@ -297,6 +303,12 @@
             "state" : "translated",
             "value" : "Deadline: %@ %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarih: %@ %@"
+          }
         }
       }
     },
@@ -440,6 +452,12 @@
             "state" : "translated",
             "value" : "%@ · vecka %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · hafta %lld"
+          }
         }
       }
     },
@@ -578,6 +596,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -725,6 +749,12 @@
             "state" : "translated",
             "value" : "%@ — tid som ännu inte har hamnat i någon urna."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — henüz hiçbir kavanoza girmemiş zaman."
+          }
         }
       }
     },
@@ -867,6 +897,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du somnade %@ för sent. Morgonen i dag är svedd lika mycket"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ daha geç uyudun. Bu sabah o kadar yanık"
           }
         }
       }
@@ -1011,6 +1047,12 @@
             "state" : "translated",
             "value" : "Morgondagens pergament brann efter %@.\\nBara tiden du var vaken lämnar en sviden fläck."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarının parşömeni %@ sonrasında yandı.\\nSadece uyanık kaldığın süre yanık izi bırakır."
+          }
         }
       }
     },
@@ -1153,6 +1195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnan %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kavanozu"
           }
         }
       }
@@ -1297,6 +1345,12 @@
             "state" : "translated",
             "value" : "Hamnar i urnan %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kavanozuna girecek"
+          }
         }
       }
     },
@@ -1440,6 +1494,12 @@
             "state" : "translated",
             "value" : "Ge urnan %@ en betydelse"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kavanozuna bir anlam ver"
+          }
         }
       }
     },
@@ -1581,6 +1641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I urnan %1$@ finns askkorn: %2$@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ kavanozunda kalan kül tanesi: %2$@"
           }
         }
       }
@@ -1725,6 +1791,12 @@
             "state" : "translated",
             "value" : "I urnan %1$@ finns askkorn: %2$lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ kavanozunda kalan kül tanesi: %2$lld"
+          }
         }
       }
     },
@@ -1867,6 +1939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflektioner: %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmeler: %@"
           }
         }
       }
@@ -2011,6 +2089,12 @@
             "state" : "translated",
             "value" : "Börjar om %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sonra başlar"
+          }
         }
       }
     },
@@ -2153,6 +2237,12 @@
             "state" : "translated",
             "value" : "Pergamentet börjar brinna om %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömen %@ sonra yanmaya başlar"
+          }
         }
       }
     },
@@ -2294,6 +2384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@%% kvar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%%%@ kaldı"
           }
         }
       }
@@ -2438,6 +2534,12 @@
             "state" : "translated",
             "value" : "%1$@, %2$lld%% kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, %%%2$lld kaldı"
+          }
         }
       }
     },
@@ -2580,6 +2682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, elden släckt med %2$lld min till godo"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, ateş %2$lld dk fazlayla söndürüldü"
           }
         }
       }
@@ -2724,6 +2832,12 @@
             "state" : "translated",
             "value" : "%@, inga inlägg"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, kayıt yok"
+          }
         }
       }
     },
@@ -2866,6 +2980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, aska: %2$lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, kül: %2$lld"
           }
         }
       }
@@ -3010,6 +3130,12 @@
             "state" : "translated",
             "value" : "%1$@, reflektioner: %2$lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, değerlendirme: %2$lld"
+          }
         }
       }
     },
@@ -3152,6 +3278,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -3289,6 +3421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nätter med utblåst eld: %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşin üflenerek söndürüldüğü geceler: %@"
           }
         }
       }
@@ -3433,6 +3571,12 @@
             "state" : "translated",
             "value" : "Appen var öppen kl. %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama saat %@ itibarıyla açıktı"
+          }
         }
       }
     },
@@ -3575,6 +3719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du blåste ut elden kl. %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşi saat %@ itibarıyla üfleyip söndürdün"
           }
         }
       }
@@ -3720,6 +3870,12 @@
             "state" : "translated",
             "value" : "%1$@ d · aska: %2$@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ gün · kül: %2$@"
+          }
         }
       }
     },
@@ -3863,6 +4019,12 @@
             "state" : "translated",
             "value" : "%lld%% kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%%%lld kaldı"
+          }
         }
       }
     },
@@ -4002,6 +4164,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -4149,6 +4317,12 @@
             "state" : "translated",
             "value" : "%lld gånger"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kez"
+          }
         }
       }
     },
@@ -4291,6 +4465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nätter med utblåst eld: %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşin üflenerek söndürüldüğü geceler: %lld"
           }
         }
       }
@@ -4435,6 +4615,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld dk"
+          }
         }
       }
     },
@@ -4577,6 +4763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld dk %2$lld sn"
           }
         }
       }
@@ -4721,6 +4913,12 @@
             "state" : "translated",
             "value" : "Med %lld min till godo"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld dk fazlayla"
+          }
         }
       }
     },
@@ -4863,6 +5061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elden släckt med %lld min till godo"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateş %lld dk fazlayla söndürüldü"
           }
         }
       }
@@ -5007,6 +5211,12 @@
             "state" : "translated",
             "value" : "%lld h"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sa"
+          }
         }
       }
     },
@@ -5149,6 +5359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld sa %2$lld dk"
           }
         }
       }
@@ -5293,6 +5509,12 @@
             "state" : "translated",
             "value" : "%lld d"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld gün"
+          }
         }
       }
     },
@@ -5435,6 +5657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld d %2$lld h"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld gün %2$lld sa"
           }
         }
       }
@@ -5579,6 +5807,12 @@
             "state" : "translated",
             "value" : "%1$lld d · aska: %2$lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld gün · kül: %2$lld"
+          }
         }
       }
     },
@@ -5721,6 +5955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vecka %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta %lld"
           }
         }
       }
@@ -5865,6 +6105,12 @@
             "state" : "translated",
             "value" : "%lld s"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sn"
+          }
         }
       }
     },
@@ -6007,6 +6253,12 @@
             "state" : "translated",
             "value" : "Ta bort ”%@”?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "‘%@’ silinsin mi?"
+          }
         }
       }
     },
@@ -6148,6 +6400,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till en med +-knappen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+ düğmesiyle yeni bir tane ekle"
           }
         }
       }
@@ -6292,6 +6550,12 @@
             "state" : "translated",
             "value" : "Inom 10 minuter räknas som i tid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 dakika içinde zamanında sayılır"
+          }
         }
       }
     },
@@ -6434,6 +6698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "År"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yıl"
           }
         }
       }
@@ -6578,6 +6848,12 @@
             "state" : "translated",
             "value" : "Månad"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ay"
+          }
         }
       }
     },
@@ -6721,6 +6997,12 @@
             "state" : "translated",
             "value" : "Dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gün"
+          }
         }
       }
     },
@@ -6863,6 +7145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vecka"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta"
           }
         }
       }
@@ -7010,6 +7298,12 @@
             "state" : "translated",
             "value" : "Dela eller spara PDF"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF’yi paylaş veya kaydet"
+          }
         }
       }
     },
@@ -7155,6 +7449,12 @@
             "state" : "translated",
             "value" : "· ⊕ tyngdpunkt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ ağırlık merkezi"
+          }
         }
       }
     },
@@ -7296,6 +7596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %@ äldre reflektioner utan sparad punkt är utspridda inom sin kvadrant"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· Kayıtlı noktası olmayan %@ eski değerlendirme, çeyreği içinde dağınık gösterilir"
           }
         }
       }
@@ -7439,6 +7745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %lld äldre reflektioner utan sparad punkt är utspridda inom sin kvadrant"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· Kayıtlı noktası olmayan %lld eski değerlendirme, çeyreği içinde dağınık gösterilir"
           }
         }
       }
@@ -7596,6 +7908,12 @@
             "state" : "translated",
             "value" : "Hämta priset igen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiyatı yeniden yükle"
+          }
         }
       }
     },
@@ -7738,6 +8056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Längsta svit"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En uzun seri"
           }
         }
       }
@@ -7882,6 +8206,12 @@
             "state" : "translated",
             "value" : "Tacksamhet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minnettarlık"
+          }
         }
       }
     },
@@ -8024,6 +8354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakta utvecklaren"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geliştiriciyle iletişime geç"
           }
         }
       }
@@ -8168,6 +8504,12 @@
             "state" : "translated",
             "value" : "Integritetspolicy"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gizlilik Politikası"
+          }
         }
       }
     },
@@ -8311,6 +8653,12 @@
             "state" : "translated",
             "value" : "Rytande, hoppande lågor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kükreyen, sıçrayan alevler"
+          }
         }
       }
     },
@@ -8452,6 +8800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hälsodata: somnade kl. %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık verisi: saat %@ itibarıyla uykuya daldın"
           }
         }
       }
@@ -8596,6 +8950,12 @@
             "state" : "translated",
             "value" : "Sömndata från Hälsa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık uyku verileri"
+          }
         }
       }
     },
@@ -8738,6 +9098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anslut sömndata från Hälsa"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık uyku verilerini bağla"
           }
         }
       }
@@ -8882,6 +9248,12 @@
             "state" : "translated",
             "value" : "Anslut sömndata från Hälsa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık uyku verilerini bağla"
+          }
         }
       }
     },
@@ -9025,6 +9397,12 @@
             "state" : "translated",
             "value" : "Ansluten till sömndata från Hälsa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık uyku verilerine bağlandı"
+          }
         }
       }
     },
@@ -9166,6 +9544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det finns ingen sömndata för i natt i Hälsa"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık’ta dün geceye ait uyku kaydı yok"
           }
         }
       }
@@ -9310,6 +9694,12 @@
             "state" : "translated",
             "value" : "En lugn, mjuk fladdring"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sakin, yumuşak bir titreşim"
+          }
         }
       }
     },
@@ -9452,6 +9842,12 @@
             "state" : "translated",
             "value" : "Skriv om"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden yaz"
+          }
         }
       }
     },
@@ -9593,6 +9989,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snart dags att gå upp"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanma saati yaklaşıyor"
           }
         }
       }
@@ -9737,6 +10139,12 @@
             "state" : "translated",
             "value" : "Relationer"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlişkiler"
+          }
         }
       }
     },
@@ -9879,6 +10287,12 @@
             "state" : "translated",
             "value" : "Det här är ingen prenumeration. Betala en gång och behåll det för alltid."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu bir abonelik değil. Bir kez öde, sonsuza dek kullan."
+          }
         }
       }
     },
@@ -10020,6 +10434,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Återställ köp"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satın Alımları Geri Yükle"
           }
         }
       }
@@ -10164,6 +10584,12 @@
             "state" : "translated",
             "value" : "Köpet kunde inte slutföras"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satın alma tamamlanamadı"
+          }
         }
       }
     },
@@ -10306,6 +10732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid som rann iväg"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akıp giden zaman"
           }
         }
       }
@@ -10450,6 +10882,12 @@
             "state" : "translated",
             "value" : "Rann bara iväg"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sadece akıp gitti"
+          }
         }
       }
     },
@@ -10593,6 +11031,12 @@
             "state" : "translated",
             "value" : "Saker att sluta med"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bırakılacaklar"
+          }
         }
       }
     },
@@ -10734,6 +11178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Är inlägget fel? Rätta det själv"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıt yanlış mı? Kendin düzelt"
           }
         }
       }
@@ -10878,6 +11328,12 @@
             "state" : "translated",
             "value" : "Spara"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
+          }
         }
       }
     },
@@ -11020,6 +11476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dagar med inlägg"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıtlı günler"
           }
         }
       }
@@ -11164,6 +11626,12 @@
             "state" : "translated",
             "value" : "Glädje"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neşe"
+          }
         }
       }
     },
@@ -11306,6 +11774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställningar för uppvaknande och läggdags"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanma ve uyuma ayarları"
           }
         }
       }
@@ -11450,6 +11924,12 @@
             "state" : "translated",
             "value" : "Väckningstid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanma saati"
+          }
         }
       }
     },
@@ -11592,6 +12072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Från uppvaknandet till läggdags brinner pergamentet långsamt ner"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmaktan uyku saatine kadar parşömenin yavaşça yanar"
           }
         }
       }
@@ -11736,6 +12222,12 @@
             "state" : "translated",
             "value" : "Före uppvaknandet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmadan önce"
+          }
         }
       }
     },
@@ -11877,6 +12369,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ till uppvaknandet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmaya %@"
           }
         }
       }
@@ -12021,6 +12519,12 @@
             "state" : "translated",
             "value" : "Automatisk nedräkning från uppvaknandet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanma saatinden itibaren otomatik geri sayım"
+          }
         }
       }
     },
@@ -12164,6 +12668,12 @@
             "state" : "translated",
             "value" : "Från uppvaknandet till läggdags\\nbrinner pergamentet långsamt ner"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmaktan uyku saatine kadar\\nparşömen yavaşça yanar"
+          }
         }
       }
     },
@@ -12300,6 +12810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "av din vakna tid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "uyanık geçen sürenin"
           }
         }
       }
@@ -12444,6 +12960,12 @@
             "state" : "translated",
             "value" : "Vila tryggt vid den släckta elden"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sönmüş ateşin yanında rahatça dinlen"
+          }
         }
       }
     },
@@ -12586,6 +13108,12 @@
             "state" : "translated",
             "value" : "Av"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı"
+          }
         }
       }
     },
@@ -12723,6 +13251,12 @@
             "state" : "translated",
             "value" : "Slut"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son"
+          }
         }
       }
     },
@@ -12859,6 +13393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bränn bara den tid som är din"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sadece sana ait olan zamanı yak"
           }
         }
       }
@@ -13003,6 +13543,12 @@
             "state" : "translated",
             "value" : "Mina mål"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hedeflerim"
+          }
         }
       }
     },
@@ -13140,6 +13686,12 @@
             "state" : "translated",
             "value" : "Min fritid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zamanım"
+          }
         }
       }
     },
@@ -13276,6 +13828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ställ in min fritid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zamanımı ayarla"
           }
         }
       }
@@ -13420,6 +13978,12 @@
             "state" : "translated",
             "value" : "Senare"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonra"
+          }
         }
       }
     },
@@ -13563,6 +14127,12 @@
             "state" : "translated",
             "value" : "Blås bort"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üfle gitsin"
+          }
         }
       }
     },
@@ -13704,6 +14274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Datum"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarih"
           }
         }
       }
@@ -13848,6 +14424,12 @@
             "state" : "translated",
             "value" : "Morgondagen väntar i biten jag sparade"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın, sakladığım parçada bekliyor"
+          }
         }
       }
     },
@@ -13990,6 +14572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De sista glöden lämnar jag åt mitt morgondags-jag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son közleri yarınki bana bırakıyorum"
           }
         }
       }
@@ -14134,6 +14722,12 @@
             "state" : "translated",
             "value" : "Vi tar hand om det som blev kvar.\\nSov gott nu."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalanı biz saklarız.\\nŞimdi iyi uyu."
+          }
         }
       }
     },
@@ -14276,6 +14870,12 @@
             "state" : "translated",
             "value" : "Tar hand om det som blev kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalanlar saklanıyor"
+          }
         }
       }
     },
@@ -14417,6 +15017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "kvar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kaldı"
           }
         }
       }
@@ -14561,6 +15167,12 @@
             "state" : "translated",
             "value" : "Ett lågt, andande sken"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alçak, nefes alan bir parıltı"
+          }
         }
       }
     },
@@ -14703,6 +15315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Steget Anteckning till i morgon"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın için not adımı"
           }
         }
       }
@@ -14847,6 +15465,12 @@
             "state" : "translated",
             "value" : "Vad nytt ska du prova i morgon?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın yeni olarak ne deneyeceksin?"
+          }
         }
       }
     },
@@ -14988,6 +15612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I morgon bitti dyker det upp som ett band överst på pergamentet och brinner tillsammans med din dag."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın sabah parşömenin üstünde bir şerit olarak belirir ve gününle birlikte yanar."
           }
         }
       }
@@ -15132,6 +15762,12 @@
             "state" : "translated",
             "value" : "Hur ska du ta dig an i morgon?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarına nasıl yaklaşacaksın?"
+          }
         }
       }
     },
@@ -15274,6 +15910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vad ska du sluta med i morgon?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın neyi bırakacaksın?"
           }
         }
       }
@@ -15418,6 +16060,12 @@
             "state" : "translated",
             "value" : "Hur ska du tillbringa morgondagen annorlunda?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarını nasıl farklı geçireceksin?"
+          }
         }
       }
     },
@@ -15559,6 +16207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morgondagens pergament"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarının Parşömeni"
           }
         }
       }
@@ -15703,6 +16357,12 @@
             "state" : "translated",
             "value" : "Morgondagens pergament stannade här.\\nSöta drömmar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarının parşömeni burada durdu.\\nTatlı rüyalar"
+          }
         }
       }
     },
@@ -15844,6 +16504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morgondagens pergament brinner"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarının parşömeni yanıyor"
           }
         }
       }
@@ -15988,6 +16654,12 @@
             "state" : "translated",
             "value" : "Släcker elden på morgondagens pergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarının parşömenindeki ateşi söndürür"
+          }
         }
       }
     },
@@ -16130,6 +16802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontrollera nätverksanslutningen och försök igen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ağ bağlantını kontrol edip tekrar dene."
           }
         }
       }
@@ -16274,6 +16952,12 @@
             "state" : "translated",
             "value" : "Skymning"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alacakaranlık"
+          }
         }
       }
     },
@@ -16416,6 +17100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jag gick och la mig sent"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geç yattım"
           }
         }
       }
@@ -16560,6 +17250,12 @@
             "state" : "translated",
             "value" : "En dag som inte brann ner helt är ändå en hel dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamamen yanmamış bir gün de bütün bir gündür"
+          }
         }
       }
     },
@@ -16702,6 +17398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visa en annan mening"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başka bir söz göster"
           }
         }
       }
@@ -16846,6 +17548,12 @@
             "state" : "translated",
             "value" : "Bränn i en annan färg"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başka bir renkte yak"
+          }
         }
       }
     },
@@ -16988,6 +17696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nästa"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İleri"
           }
         }
       }
@@ -17132,6 +17846,12 @@
             "state" : "translated",
             "value" : "Nästa månad"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonraki ay"
+          }
         }
       }
     },
@@ -17268,6 +17988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nästa fritid · %1$@ %2$@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonraki boş zaman · %1$@ %2$@"
           }
         }
       }
@@ -17412,6 +18138,12 @@
             "state" : "translated",
             "value" : "Hur kunde du bli klar nästa gång?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir dahaki sefere bunu nasıl bitirebilirdin?"
+          }
         }
       }
     },
@@ -17554,6 +18286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liveuppdateringar i Dynamic Island"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island’da canlı güncellemeler"
           }
         }
       }
@@ -17698,6 +18436,12 @@
             "state" : "translated",
             "value" : "Mörkt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koyu"
+          }
         }
       }
     },
@@ -17839,6 +18583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stäng"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
           }
         }
       }
@@ -17983,6 +18733,12 @@
             "state" : "translated",
             "value" : "Stäng — allt du har skrivit är sparat"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat — yazdığın her şey kaydedildi"
+          }
         }
       }
     },
@@ -18125,6 +18881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Måne"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ay"
           }
         }
       }
@@ -18269,6 +19031,12 @@
             "state" : "translated",
             "value" : "Månskens-hanji"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ay Işığı Hanji"
+          }
         }
       }
     },
@@ -18411,6 +19179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Månskens-hanji, celadon, skymning. Ändrar färgen på papperet och lågan."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ay ışığı hanji, seladon, alacakaranlık. Kâğıdın ve alevin rengini değiştirir."
           }
         }
       }
@@ -18555,6 +19329,12 @@
             "state" : "translated",
             "value" : "Bränn i månskens-hanji, celadon eller skymning, som präriebrand, glöd eller tomtebloss"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ay ışığı hanji, seladon veya alacakaranlık renginde; bozkır yangını, köz ya da maytap olarak yak"
+          }
         }
       }
     },
@@ -18698,6 +19478,12 @@
             "state" : "translated",
             "value" : "Öppna en månad för att hitta dess veckournor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftalık kavanozlarını görmek için bir ayı aç"
+          }
         }
       }
     },
@@ -18840,6 +19626,12 @@
             "state" : "translated",
             "value" : "Aska inuti"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İçindeki kül"
+          }
         }
       }
     },
@@ -18981,6 +19773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det går bra att stänga utan att svara. Obekräftade nätter går förbi utan svedda fläckar."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cevaplamadan kapatabilirsin. Onaylanmayan geceler yanık izi bırakmadan geçer."
           }
         }
       }
@@ -19125,6 +19923,12 @@
             "state" : "translated",
             "value" : "En grov gissning duger"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kabaca bir tahmin de olur"
+          }
         }
       }
     },
@@ -19268,6 +20072,12 @@
             "state" : "translated",
             "value" : "Vad gör du i morgon för att det ska gå ännu bättre?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha da iyisini yapmak için yarın ne yapacaksın?"
+          }
         }
       }
     },
@@ -19403,6 +20213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekle"
           }
         }
       }
@@ -19547,6 +20363,12 @@
             "state" : "translated",
             "value" : "Deadlines"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son Tarihler"
+          }
         }
       }
     },
@@ -19689,6 +20511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obegränsat med deadlines"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınırsız son tarih"
           }
         }
       }
@@ -19833,6 +20661,12 @@
             "state" : "translated",
             "value" : "Ta bort deadline"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son Tarihi Sil"
+          }
         }
       }
     },
@@ -19975,6 +20809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redigera deadline"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son Tarihi Düzenle"
           }
         }
       }
@@ -20119,6 +20959,12 @@
             "state" : "translated",
             "value" : "Fliken Deadlines visas automatiskt när du lägger till en deadline"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarih ekleyince Son Tarihler sekmesi kendiliğinden görünür"
+          }
         }
       }
     },
@@ -20261,6 +21107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Till deadline"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarihe kadar"
           }
         }
       }
@@ -20405,6 +21257,12 @@
             "state" : "translated",
             "value" : "Vill du ha fler deadlines?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha fazla son tarih mi istiyorsun?"
+          }
         }
       }
     },
@@ -20546,6 +21404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inga deadlines"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarih yok"
           }
         }
       }
@@ -20690,6 +21554,12 @@
             "state" : "translated",
             "value" : "Utmaning"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meydan okuma"
+          }
         }
       }
     },
@@ -20831,6 +21701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Form"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şekil"
           }
         }
       }
@@ -20975,6 +21851,12 @@
             "state" : "translated",
             "value" : "Dubbeltryck för att vända biten"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parçayı çevirmek için çift dokun"
+          }
         }
       }
     },
@@ -21117,6 +21999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klassificera genom att trycka på en punkt längs de två axlarna"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki eksen boyunca bir noktaya dokunarak sınıflandır"
           }
         }
       }
@@ -21261,6 +22149,12 @@
             "state" : "translated",
             "value" : "Vänd på den och lämna en rad på baksidan."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çevir ve arka yüzüne bir satır bırak."
+          }
         }
       }
     },
@@ -21404,6 +22298,12 @@
             "state" : "translated",
             "value" : "Skriv om baksidan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arka yüzü yeniden yaz"
+          }
         }
       }
     },
@@ -21546,6 +22446,12 @@
             "state" : "translated",
             "value" : "En rad till baksidan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arka yüz için bir satır"
+          }
         }
       }
     },
@@ -21687,6 +22593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skriv på baksidan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arka yüze yaz"
           }
         }
       }
@@ -21831,6 +22743,12 @@
             "state" : "translated",
             "value" : "Baksidan är tom"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arka yüz boş"
+          }
         }
       }
     },
@@ -21973,6 +22891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Präriebrand"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bozkır yangını"
           }
         }
       }
@@ -22117,6 +23041,12 @@
             "state" : "translated",
             "value" : "Ljust"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık"
+          }
         }
       }
     },
@@ -22258,6 +23188,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deadline passerad 🏁"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarih geçti 🏁"
           }
         }
       }
@@ -22401,6 +23337,12 @@
             "state" : "translated",
             "value" : "Tid kvar till deadline"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarihe kalan süre"
+          }
         }
       }
     },
@@ -22542,6 +23484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Förfallodatum"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitiş tarihi"
           }
         }
       }
@@ -22686,6 +23634,12 @@
             "state" : "translated",
             "value" : "Månaden då du gjorde mest av det du tänkt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niyet ettiğin işleri en çok yaptığın ay"
+          }
         }
       }
     },
@@ -22828,6 +23782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjorde som jag tänkt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niyet ettiğim gibi yaptım"
           }
         }
       }
@@ -22972,6 +23932,12 @@
             "state" : "translated",
             "value" : "Gjorde det jag ville"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstediğimi yaptım"
+          }
         }
       }
     },
@@ -23114,6 +24080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slå på mikrofonen för att släcka elden"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşi söndürmek için mikrofonu aç"
           }
         }
       }
@@ -23258,6 +24230,12 @@
             "state" : "translated",
             "value" : "Skapa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oluştur"
+          }
         }
       }
     },
@@ -23394,6 +24372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Varje dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her gün"
           }
         }
       }
@@ -23538,6 +24522,12 @@
             "state" : "translated",
             "value" : "Stopp"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dur"
+          }
         }
       }
     },
@@ -23680,6 +24670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "När somnade du?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat kaçta uykuya daldın?"
           }
         }
       }
@@ -23824,6 +24820,12 @@
             "state" : "translated",
             "value" : "Du behöver inte bränna allt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her şeyi yakmak zorunda değilsin"
+          }
         }
       }
     },
@@ -23967,6 +24969,12 @@
             "state" : "translated",
             "value" : "Samlad aska"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biriken kül"
+          }
         }
       }
     },
@@ -24106,6 +25114,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stil"
@@ -24253,6 +25267,12 @@
             "state" : "translated",
             "value" : "Sparade bitar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saklanan Parçalar"
+          }
         }
       }
     },
@@ -24394,6 +25414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sparade bitar: %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saklanan parçalar: %@"
           }
         }
       }
@@ -24538,6 +25564,12 @@
             "state" : "translated",
             "value" : "Sparade bitar: %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saklanan parçalar: %lld"
+          }
         }
       }
     },
@@ -24680,6 +25712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ta med dig dina sparade bitar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sakladığın parçaları yanında götür"
           }
         }
       }
@@ -24824,6 +25862,12 @@
             "state" : "translated",
             "value" : "Dela dina bitar som kort och affischer"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parçalarını kart ve poster olarak paylaş"
+          }
         }
       }
     },
@@ -24966,6 +26010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blev inte av"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yapamadım"
           }
         }
       }
@@ -25110,6 +26160,12 @@
             "state" : "translated",
             "value" : "Gratisversionen rymmer upp till %lld deadline. Med Pro räknar du ner till så många mål du vill."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ücretsiz sürüm en fazla %lld son tarih tutar. Pro ile istediğin kadar hedefe geri sayım yaparsın."
+          }
         }
       }
     },
@@ -25252,6 +26308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vad höll dig vaken? (valfritt)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seni uyanık tutan neydi? (isteğe bağlı)"
           }
         }
       }
@@ -25396,6 +26458,12 @@
             "state" : "translated",
             "value" : "Stapel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çubuk"
+          }
         }
       }
     },
@@ -25538,6 +26606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bakgrund"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arka plan"
           }
         }
       }
@@ -25682,6 +26756,12 @@
             "state" : "translated",
             "value" : "Gnista"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kıvılcım"
+          }
         }
       }
     },
@@ -25824,6 +26904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Natt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece"
           }
         }
       }
@@ -25968,6 +27054,12 @@
             "state" : "translated",
             "value" : "Droppe"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Damla"
+          }
         }
       }
     },
@@ -26110,6 +27202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lärande"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğrenme"
           }
         }
       }
@@ -26254,6 +27352,12 @@
             "state" : "translated",
             "value" : "Felrapporter och funktionsidéer är välkomna."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata bildirimleri ve özellik fikirleri memnuniyetle karşılanır."
+          }
         }
       }
     },
@@ -26396,6 +27500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Släng"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At"
           }
         }
       }
@@ -26540,6 +27650,12 @@
             "state" : "translated",
             "value" : "Blixt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimşek"
+          }
         }
       }
     },
@@ -26682,6 +27798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Intervall"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aralık"
           }
         }
       }
@@ -26826,6 +27948,12 @@
             "state" : "translated",
             "value" : "Stjärna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yıldız"
+          }
         }
       }
     },
@@ -26968,6 +28096,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inget köp att återställa"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri yüklenecek satın alma yok"
           }
         }
       }
@@ -27112,6 +28246,12 @@
             "state" : "translated",
             "value" : "Steget Skrivande"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yazma adımı"
+          }
         }
       }
     },
@@ -27254,6 +28394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spara texten och gå till klassificeringen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metni kaydet ve sınıflandırma adımına geç"
           }
         }
       }
@@ -27398,6 +28544,12 @@
             "state" : "translated",
             "value" : "min"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dk"
+          }
         }
       }
     },
@@ -27540,6 +28692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klassificeringsdiagram"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınıflandırma grafiği"
           }
         }
       }
@@ -27684,6 +28842,12 @@
             "state" : "translated",
             "value" : "Steget Klassificering"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınıflandırma adımı"
+          }
         }
       }
     },
@@ -27826,6 +28990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inte klassificerad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınıflandırılmadı"
           }
         }
       }
@@ -27970,6 +29140,12 @@
             "state" : "translated",
             "value" : "Spara klassificeringen och gå till anteckningen till i morgon"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınıflandırmayı kaydet ve yarın için nota geç"
+          }
         }
       }
     },
@@ -28112,6 +29288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Låga"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alev"
           }
         }
       }
@@ -28256,6 +29438,12 @@
             "state" : "translated",
             "value" : "Typ av låga"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alev Türü"
+          }
         }
       }
     },
@@ -28398,6 +29586,12 @@
             "state" : "translated",
             "value" : "Elden är släckt · Se sparade bitar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateş söndü · Saklanan parçalara bak"
+          }
         }
       }
     },
@@ -28539,6 +29733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elden är släckt. Söta drömmar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateş söndü. Tatlı rüyalar"
           }
         }
       }
@@ -28683,6 +29883,12 @@
             "state" : "translated",
             "value" : "Förvandla de sparade bitarna till kort och affischer."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sakladığın parçaları kart ve poster haline getir."
+          }
         }
       }
     },
@@ -28825,6 +30031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det krävs mod att släcka elden också"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşi söndürmek de cesaret ister"
           }
         }
       }
@@ -28969,6 +30181,12 @@
             "state" : "translated",
             "value" : "Du blåste inte, men somnade i tid, så elden slocknade av sig själv."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üflemedin ama zamanında uyudun, bu yüzden ateş kendiliğinden söndü."
+          }
         }
       }
     },
@@ -29111,6 +30329,12 @@
             "state" : "translated",
             "value" : "Elden är släckt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateş söndü"
+          }
         }
       }
     },
@@ -29252,6 +30476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Pergament"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Parşömen"
           }
         }
       }
@@ -29396,6 +30626,12 @@
             "state" : "translated",
             "value" : "Brinnande Pergament Pro"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Parşömen Pro"
+          }
         }
       }
     },
@@ -29538,6 +30774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Pergament 🔥"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Parşömen 🔥"
           }
         }
       }
@@ -29682,6 +30924,12 @@
             "state" : "translated",
             "value" : "Brinnande Pergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Parşömen"
+          }
         }
       }
     },
@@ -29817,6 +31065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Fritid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Boş Zaman"
           }
         }
       }
@@ -29961,6 +31215,12 @@
             "state" : "translated",
             "value" : "Skaffa Brinnande Fritid, färger och lågtyper, bitkort, PDF av reflektionsboken, ett års aska och obegränsade deadlines."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Boş Zaman’ı, renkleri ve alev türlerini, parça kartlarını, değerlendirme kitabı PDF’sini, bir yıllık külü ve sınırsız son tarihi edin."
+          }
         }
       }
     },
@@ -30097,6 +31357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skaffa Brinnande Fritid, teman, bitkort, PDF av reflektionsboken, ett års aska och obegränsade deadlines."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanan Boş Zaman’ı, temaları, parça kartlarını, değerlendirme kitabı PDF’sini, bir yıllık külü ve sınırsız son tarihi edin."
           }
         }
       }
@@ -30241,6 +31507,12 @@
             "state" : "translated",
             "value" : "Tomtebloss"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maytap"
+          }
         }
       }
     },
@@ -30382,6 +31654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lämna tomt för att använda den bleka meningen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soluk sözü kullanmak için boş bırak"
           }
         }
       }
@@ -30526,6 +31804,12 @@
             "state" : "translated",
             "value" : "Färg"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renk"
+          }
         }
       }
     },
@@ -30668,6 +31952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Färgen styr nyansen på papper och låga. Lågtypen styr hur den brinner. Välj var och en för sig"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renk, kâğıdın ve alevin tonunu belirler. Alev türü nasıl yanacağını belirler. Her birini ayrı seç"
           }
         }
       }
@@ -30812,6 +32102,12 @@
             "state" : "translated",
             "value" : "Används"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanımda"
+          }
         }
       }
     },
@@ -30954,6 +32250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ta bort"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sil"
           }
         }
       }
@@ -31098,6 +32400,12 @@
             "state" : "translated",
             "value" : "Ny deadline"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Son Tarih"
+          }
         }
       }
     },
@@ -31240,6 +32548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ny urna"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Kavanoz"
           }
         }
       }
@@ -31384,6 +32698,12 @@
             "state" : "translated",
             "value" : "Skapa ny urna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni kavanoz oluştur"
+          }
         }
       }
     },
@@ -31525,6 +32845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ny reflektion"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Değerlendirme"
           }
         }
       }
@@ -31669,6 +32995,12 @@
             "state" : "translated",
             "value" : "Skriv en ny reflektion"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni bir değerlendirme yaz"
+          }
         }
       }
     },
@@ -31811,6 +33143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gravera"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kazı"
           }
         }
       }
@@ -31955,6 +33293,12 @@
             "state" : "translated",
             "value" : "Inkluderar alla Pro-funktioner vi lägger till senare"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonradan eklenecek tüm Pro özellikleri dahildir"
+          }
         }
       }
     },
@@ -32097,6 +33441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Linje"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çizgi"
           }
         }
       }
@@ -32241,6 +33591,12 @@
             "state" : "translated",
             "value" : "Vald"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçili"
+          }
         }
       }
     },
@@ -32383,6 +33739,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställningar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
           }
         }
       },
@@ -32527,6 +33889,12 @@
             "state" : "translated",
             "value" : "Slå på mikrofonen i Inställningar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar’dan mikrofonu aç"
+          }
         }
       }
     },
@@ -32669,6 +34037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Växande"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelişim"
           }
         }
       }
@@ -32813,6 +34187,12 @@
             "state" : "translated",
             "value" : "Var ärlig..."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dürüst ol..."
+          }
         }
       }
     },
@@ -32955,6 +34335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sömndata"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku Kayıtları"
           }
         }
       }
@@ -33099,6 +34485,12 @@
             "state" : "translated",
             "value" : "Sömndata läses bara och lämnar aldrig din enhet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku kayıtları yalnızca okunur ve cihazından asla çıkmaz"
+          }
         }
       }
     },
@@ -33240,6 +34632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sover"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyuyor"
           }
         }
       }
@@ -33384,6 +34782,12 @@
             "state" : "translated",
             "value" : "Redigera"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzenle"
+          }
         }
       }
     },
@@ -33526,6 +34930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Glöd"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Köz"
           }
         }
       }
@@ -33670,6 +35080,12 @@
             "state" : "translated",
             "value" : "h"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sa"
+          }
         }
       }
     },
@@ -33812,6 +35228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman"
           }
         }
       }
@@ -33956,6 +35378,12 @@
             "state" : "translated",
             "value" : "Tidsinställningar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman Ayarları"
+          }
         }
       }
     },
@@ -34098,6 +35526,12 @@
             "state" : "translated",
             "value" : "Lade tid på det"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman harcadım"
+          }
         }
       }
     },
@@ -34239,6 +35673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lade ingen tid på det"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman harcamadım"
           }
         }
       }
@@ -34383,6 +35823,12 @@
             "state" : "translated",
             "value" : "System"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem"
+          }
         }
       }
     },
@@ -34526,6 +35972,12 @@
             "state" : "translated",
             "value" : "Välj System för att följa enhetens inställning för mörkt läge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazının koyu mod ayarını izlemek için Sistem’i seç"
+          }
         }
       }
     },
@@ -34662,6 +36114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlangıç"
           }
         }
       }
@@ -34804,6 +36262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Starttid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlangıç saati"
           }
         }
       }
@@ -34948,6 +36412,12 @@
             "state" : "translated",
             "value" : "Misstag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hatalar"
+          }
         }
       }
     },
@@ -35089,6 +36559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbol"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sembol"
           }
         }
       }
@@ -35232,6 +36708,12 @@
             "state" : "translated",
             "value" : "Ingen aska än"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz kül yok"
+          }
         }
       }
     },
@@ -35374,6 +36856,12 @@
             "state" : "translated",
             "value" : "Inga sparade bitar än"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz saklanan parça yok"
+          }
         }
       }
     },
@@ -35515,6 +37003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen klassificerad aska än. Tryck på diagrammet när du skriver en reflektion."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz sınıflandırılmış kül yok. Değerlendirme yazarken grafiğe dokun."
           }
         }
       }
@@ -35659,6 +37153,12 @@
             "state" : "translated",
             "value" : "Fortfarande tomt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hâlâ boş"
+          }
         }
       }
     },
@@ -35802,6 +37302,12 @@
             "state" : "translated",
             "value" : "Fortfarande tomt."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hâlâ boş."
+          }
         }
       }
     },
@@ -35943,6 +37449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aska utan namn än"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz adı olmayan kül"
           }
         }
       }
@@ -36087,6 +37599,12 @@
             "state" : "translated",
             "value" : "Inget skrivet än"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz bir şey yazılmadı"
+          }
         }
       }
     },
@@ -36228,6 +37746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortfarande på första sidan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hâlâ ilk sayfadasın"
           }
         }
       }
@@ -36372,6 +37896,12 @@
             "state" : "translated",
             "value" : "Inga urnor än"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz kavanoz yok"
+          }
         }
       }
     },
@@ -36515,6 +38045,12 @@
             "state" : "translated",
             "value" : "Ingen aska har lagt sig än"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz kül çökmedi"
+          }
         }
       }
     },
@@ -36656,6 +38192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Än så länge bara aska"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimdilik sadece kül"
           }
         }
       }
@@ -36800,6 +38342,12 @@
             "state" : "translated",
             "value" : "Kommande Pro-funktioner"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelecekteki Pro özellikleri"
+          }
         }
       }
     },
@@ -36936,6 +38484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ungefär %lld dagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yaklaşık %lld gün"
           }
         }
       }
@@ -37080,6 +38634,12 @@
             "state" : "translated",
             "value" : "Pergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömen"
+          }
         }
       }
     },
@@ -37222,6 +38782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergament och låga"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömen ve Alev"
           }
         }
       }
@@ -37366,6 +38932,12 @@
             "state" : "translated",
             "value" : "Teman för pergament och låga"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömen ve Alev Temaları"
+          }
         }
       }
     },
@@ -37508,6 +39080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj hur ditt pergament brinner. Färgen följer temat ovan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömeninin nasıl yanacağını seç. Renk yukarıdaki temayı izler"
           }
         }
       }
@@ -37652,6 +39230,12 @@
             "state" : "translated",
             "value" : "Pergament och låga"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömen ve Alev"
+          }
         }
       }
     },
@@ -37794,6 +39378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Papperets färg och lågan ändras tillsammans"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kâğıt rengi ve alev birlikte değişir"
           }
         }
       }
@@ -37938,6 +39528,12 @@
             "state" : "translated",
             "value" : "Vilken urna ska det i?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hangi kavanoza konsun?"
+          }
         }
       }
     },
@@ -38079,6 +39675,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ogjort från i går"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dünden kalanlar"
           }
         }
       }
@@ -38223,6 +39825,12 @@
             "state" : "translated",
             "value" : "Ogjort från i går: %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dünden kalan %lld"
+          }
         }
       }
     },
@@ -38364,6 +39972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du somnade %@ för sent i natt,\\nså morgonen i dag är svedd"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dün gece %@ daha geç uyudun,\\nbu yüzden bu sabah yanık"
           }
         }
       }
@@ -38508,6 +40122,12 @@
             "state" : "translated",
             "value" : "Du somnade %@ för sent i natt.\\nTesta att släcka elden lite tidigare i kväll."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dün gece %@ daha geç uyudun.\\nBu akşam ateşi biraz daha erken söndürmeyi dene."
+          }
         }
       }
     },
@@ -38651,6 +40271,12 @@
             "state" : "translated",
             "value" : "Gårdagens bit har kallnat"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dün gecenin parçası soğudu"
+          }
         }
       }
     },
@@ -38792,6 +40418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hur var natten?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dün gece nasıldı?"
           }
         }
       }
@@ -38936,6 +40568,12 @@
             "state" : "translated",
             "value" : "Av en slump"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendiliğinden"
+          }
         }
       }
     },
@@ -39078,6 +40716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det blev så att jag gjorde det"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonunda yaptım"
           }
         }
       }
@@ -39222,6 +40866,12 @@
             "state" : "translated",
             "value" : "Det som det blev av"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonunda yaptıklarım"
+          }
         }
       }
     },
@@ -39365,6 +41015,12 @@
             "state" : "translated",
             "value" : "Ingen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yok"
+          }
         }
       }
     },
@@ -39506,6 +41162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det som ligger här är bara aska tills du ger det ett namn."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buradakiler sen onlara bir ad verene kadar sadece kül."
           }
         }
       }
@@ -39650,6 +41312,12 @@
             "state" : "translated",
             "value" : "Vad den här askan betydde för mig…"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu külün benim için anlamı…"
+          }
         }
       }
     },
@@ -39792,6 +41460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Räkna ner till flera mål samtidigt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birden fazla hedefe aynı anda geri say"
           }
         }
       }
@@ -39936,6 +41610,12 @@
             "state" : "translated",
             "value" : "Ansluten"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlandı"
+          }
         }
       }
     },
@@ -40078,6 +41758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "För att koppla från, gå till Inställningar i iOS ▸ Hälsa ▸ Dataåtkomst och enheter"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantıyı kesmek için iOS Ayarlar ▸ Sağlık ▸ Veri Erişimi ve Cihazlar bölümüne git"
           }
         }
       }
@@ -40222,6 +41908,12 @@
             "state" : "translated",
             "value" : "För att koppla från, gå till Inställningar i iOS ▸ Hälsa ▸ Dataåtkomst och enheter. Sömndata läses bara och lämnar aldrig din enhet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantıyı kesmek için iOS Ayarlar ▸ Sağlık ▸ Veri Erişimi ve Cihazlar bölümüne git. Uyku verileri yalnızca okunur ve cihazından asla çıkmaz"
+          }
         }
       }
     },
@@ -40364,6 +42056,12 @@
             "state" : "translated",
             "value" : "Anslut"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağla"
+          }
         }
       }
     },
@@ -40505,6 +42203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "När du har anslutit frågar vi inte varje morgon utan sätter tillbaka elden till när du somnade. Sömndata läses bara och lämnar aldrig din enhet."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlanınca her sabah sormayız ve ateşi uykuya daldığın ana geri alırız. Uyku kayıtları yalnızca okunur ve cihazından asla çıkmaz."
           }
         }
       }
@@ -40649,6 +42353,12 @@
             "state" : "translated",
             "value" : "När du har anslutit frågar vi inte varje morgon. Morgondagens pergament sätts tillbaka till när du faktiskt somnade"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlanınca her sabah sormayız. Yarının parşömeni gerçekten uykuya daldığın ana geri alınır"
+          }
         }
       }
     },
@@ -40791,6 +42501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "När du har anslutit använder vi din registrerade sömntid i stället för att fråga varje morgon. Sömndata läses bara och lämnar aldrig din enhet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlanınca her sabah sormak yerine kayıtlı uyku saatini kullanırız. Uyku verileri yalnızca okunur ve cihazından asla çıkmaz"
           }
         }
       }
@@ -40935,6 +42651,12 @@
             "state" : "translated",
             "value" : "Öppna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aç"
+          }
         }
       }
     },
@@ -41077,6 +42799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "T.ex. max 15 minuter på sociala medier"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. sosyal medyayı 15 dakikayla sınırla"
           }
         }
       }
@@ -41221,6 +42949,12 @@
             "state" : "translated",
             "value" : "T.ex. veckan jag höll ut"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. dayandığım hafta"
+          }
         }
       }
     },
@@ -41363,6 +43097,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "T.ex. byt till en 20 minuters promenad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. 20 dakikalık yürüyüşe geç"
           }
         }
       }
@@ -41507,6 +43247,12 @@
             "state" : "translated",
             "value" : "T.ex. förläng träningen med 30 minuter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. antrenmanı 30 dakika uzat"
+          }
         }
       }
     },
@@ -41649,6 +43395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "T.ex. träning, relationer, årets utmaning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. spor, ilişkiler, yılın meydan okuması"
           }
         }
       }
@@ -41793,6 +43545,12 @@
             "state" : "translated",
             "value" : "T.ex. 30 minuters träning direkt efter lunch"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. öğle yemeğinden hemen sonra 30 dk antrenman"
+          }
         }
       }
     },
@@ -41935,6 +43693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "T.ex. läs ett kapitel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. bir bölüm oku"
           }
         }
       }
@@ -42079,6 +43843,12 @@
             "state" : "translated",
             "value" : "T.ex. lämna in projektet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Örn. projeyi teslim et"
+          }
         }
       }
     },
@@ -42221,6 +43991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün"
           }
         }
       }
@@ -42365,6 +44141,12 @@
             "state" : "translated",
             "value" : "Varför dagen blev ogjord"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünün neden yarım kaldığı"
+          }
         }
       }
     },
@@ -42507,6 +44289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morgonen i dag är lite svedd"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu sabah biraz yanık"
           }
         }
       }
@@ -42651,6 +44439,12 @@
             "state" : "translated",
             "value" : "Lämna en rad om din dag."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gününle ilgili bir satır bırak."
+          }
         }
       }
     },
@@ -42793,6 +44587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du hann inte\\navsluta din dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünü\\ntamamlayamadın"
           }
         }
       }
@@ -42937,6 +44737,12 @@
             "state" : "translated",
             "value" : "Vad hindrade dig från att\\navsluta din dag?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gününü tamamlamanı\\nneyin engellediği?"
+          }
         }
       }
     },
@@ -43080,6 +44886,12 @@
             "state" : "translated",
             "value" : "Släcker dagens eld och sparar biten som blev kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünün ateşini söndürür ve kalan parçayı saklar"
+          }
         }
       }
     },
@@ -43221,6 +45033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lämna en rad innan du sover?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyumadan önce bir satır bırakmak ister misin?"
           }
         }
       }
@@ -43365,6 +45183,12 @@
             "state" : "translated",
             "value" : "I dag, "
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün, "
+          }
         }
       }
     },
@@ -43508,6 +45332,12 @@
             "state" : "translated",
             "value" : "Hoppa över i dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünü atla"
+          }
         }
       }
     },
@@ -43649,6 +45479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hur var din dag? — Tryck för att markera"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Günün nasıldı? — İşaretlemek için dokun"
           }
         }
       }
@@ -43793,6 +45629,12 @@
             "state" : "translated",
             "value" : "Vad ska du prova i kväll? (valfritt)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu akşam ne deneyeceksin? (isteğe bağlı)"
+          }
         }
       }
     },
@@ -43935,6 +45777,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det räcker för i dag. Det brann bra."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünlük bu kadar yeter. İyi yandı."
           }
         }
       }
@@ -44079,6 +45927,12 @@
             "state" : "translated",
             "value" : "Jag bestämmer var i dag slutar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünün nerede biteceğine ben karar veririm"
+          }
         }
       }
     },
@@ -44221,6 +46075,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skriva dagens reflektion? Tryck för att öppna redigeraren"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünün değerlendirmesi yazılsın mı? Düzenleyiciyi açmak için dokun"
           }
         }
       }
@@ -44365,6 +46225,12 @@
             "state" : "translated",
             "value" : "fm"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ÖÖ"
+          }
         }
       }
     },
@@ -44507,6 +46373,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "em"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ÖS"
           }
         }
       }
@@ -44651,6 +46523,12 @@
             "state" : "translated",
             "value" : "I år"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Yıl"
+          }
         }
       }
     },
@@ -44794,6 +46672,12 @@
             "state" : "translated",
             "value" : "Tid kvar i år"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu yıl kalan süre"
+          }
         }
       }
     },
@@ -44935,6 +46819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitti"
           }
         }
       }
@@ -45078,6 +46968,12 @@
             "state" : "translated",
             "value" : "+%@ till"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@ daha"
+          }
         }
       }
     },
@@ -45213,6 +47109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "och %@ till"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ve %@ daha"
           }
         }
       }
@@ -45357,6 +47259,12 @@
             "state" : "translated",
             "value" : "+%lld till"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld daha"
+          }
         }
       }
     },
@@ -45499,6 +47407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "och %lld till"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ve %lld daha"
           }
         }
       }
@@ -45643,6 +47557,12 @@
             "state" : "translated",
             "value" : "Cirkel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daire"
+          }
         }
       }
     },
@@ -45786,6 +47706,12 @@
             "state" : "translated",
             "value" : "Svep uppåt eller nedåt för att byta sida"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayfa değiştirmek için yukarı veya aşağı kaydır"
+          }
         }
       }
     },
@@ -45927,6 +47853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skriv betydelsen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anlamını yaz"
           }
         }
       }
@@ -46071,6 +48003,12 @@
             "state" : "translated",
             "value" : "Skriv ner det"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
+          }
         }
       }
     },
@@ -46212,6 +48150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Radera betydelsen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anlamı sil"
           }
         }
       }
@@ -46355,6 +48299,12 @@
             "state" : "translated",
             "value" : "Utan\\navsikt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niyet\\nyok"
+          }
         }
       }
     },
@@ -46496,6 +48446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med\\navsikt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niyetle"
           }
         }
       }
@@ -46639,6 +48595,12 @@
             "state" : "translated",
             "value" : "Vi hittade inget Pro-köp på det här Apple-kontot. Kontrollera att du är inloggad med kontot du köpte med."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Apple Hesabı’nda Pro satın alımı bulunamadı. Satın alırken kullandığın hesapla giriş yaptığından emin ol."
+          }
         }
       }
     },
@@ -46780,6 +48742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen aska finns kvar från den här dagen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu günden geriye kül kalmadı"
           }
         }
       }
@@ -46924,6 +48892,12 @@
             "state" : "translated",
             "value" : "Vad betydde den här månaden för dig?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu ay senin için ne ifade ediyordu?"
+          }
         }
       }
     },
@@ -47065,6 +49039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veckournor i den här månaden"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu ayın haftalık kavanozları"
           }
         }
       }
@@ -47209,6 +49189,12 @@
             "state" : "translated",
             "value" : "Hur ska du hantera den här tiden i morgon?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu zamanı yarın nasıl ele alacaksın?"
+          }
         }
       }
     },
@@ -47352,6 +49338,12 @@
             "state" : "translated",
             "value" : "Släng den här biten?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu parça atılsın mı?"
+          }
         }
       }
     },
@@ -47494,6 +49486,12 @@
             "state" : "translated",
             "value" : "Vad betydde den här veckan för dig?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta senin için ne ifade ediyordu?"
+          }
         }
       }
     },
@@ -47635,6 +49633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den här urnan är tom."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu kavanoz boş."
           }
         }
       }
@@ -47779,6 +49783,12 @@
             "state" : "translated",
             "value" : "Gör den här urnan till aska utan namn igen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu kavanozu yeniden adsız küle çevirir"
+          }
         }
       }
     },
@@ -47920,6 +49930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det som finns kvar i den här urnan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu kavanozda kalanlar"
           }
         }
       }
@@ -48064,6 +50080,12 @@
             "state" : "translated",
             "value" : "Namn"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad"
+          }
         }
       }
     },
@@ -48206,6 +50228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Byt namn"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden Adlandır"
           }
         }
       }
@@ -48350,6 +50378,12 @@
             "state" : "translated",
             "value" : "Urna utan titel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adsız Kavanoz"
+          }
         }
       }
     },
@@ -48493,6 +50527,12 @@
             "state" : "translated",
             "value" : "Mejla oss"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bize e-posta gönder"
+          }
         }
       }
     },
@@ -48631,6 +50671,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -48778,6 +50824,12 @@
             "state" : "translated",
             "value" : "Dela bild"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Görseli Paylaş"
+          }
         }
       }
     },
@@ -48920,6 +50972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den här månaden"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Ay"
           }
         }
       }
@@ -49064,6 +51122,12 @@
             "state" : "translated",
             "value" : "Tid kvar den här månaden"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu ay kalan süre"
+          }
         }
       }
     },
@@ -49206,6 +51270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den här veckan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Hafta"
           }
         }
       }
@@ -49350,6 +51420,12 @@
             "state" : "translated",
             "value" : "Tid kvar den här veckan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta kalan süre"
+          }
         }
       }
     },
@@ -49487,6 +51563,12 @@
             "state" : "translated",
             "value" : "Fritid kvar den här veckan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta kalan boş zaman"
+          }
         }
       }
     },
@@ -49623,6 +51705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veckans fritid har brunnit upp helt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu haftanın boş zamanı tamamen yandı"
           }
         }
       }
@@ -49767,6 +51855,12 @@
             "state" : "translated",
             "value" : "Det upprepas även den här veckan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta da tekrar ediyor"
+          }
         }
       }
     },
@@ -49909,6 +52003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det hände även tidigare den här veckan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta daha önce de oldu"
           }
         }
       }
@@ -50053,6 +52153,12 @@
             "state" : "translated",
             "value" : "Användarvillkor (EULA)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanım Koşulları (EULA)"
+          }
         }
       }
     },
@@ -50195,6 +52301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Föregående månad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önceki ay"
           }
         }
       }
@@ -50339,6 +52451,12 @@
             "state" : "translated",
             "value" : "Instagram-DM (@lee25_ios)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -50476,6 +52594,12 @@
             "state" : "translated",
             "value" : "Min tid varje vecka"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her haftaki zamanım"
+          }
         }
       }
     },
@@ -50612,6 +52736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamentet brinner bara under dina egna timmar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömen yalnızca kendi saatlerinde yanar"
           }
         }
       }
@@ -50754,6 +52884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bara styrkan i din andning används. Inget spelas in."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca nefesinin gücü kullanılır. Hiçbir şey kaydedilmez."
           }
         }
       }
@@ -50898,6 +53034,12 @@
             "state" : "translated",
             "value" : "Löv"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yaprak"
+          }
         }
       }
     },
@@ -51040,6 +53182,12 @@
             "state" : "translated",
             "value" : "Autospara"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatik kaydet"
+          }
         }
       }
     },
@@ -51176,6 +53324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fritid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zaman"
           }
         }
       }
@@ -51314,6 +53468,12 @@
             "state" : "translated",
             "value" : "Redigera fritid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zamanı düzenle"
+          }
         }
       }
     },
@@ -51450,6 +53610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till fritid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zaman ekle"
           }
         }
       }
@@ -51594,6 +53760,12 @@
             "state" : "translated",
             "value" : "Fritid visas som ett timglas bland sidprickarna. Deadlines dyker upp av sig själva när du lägger till dem"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zaman, sayfa noktalarında kum saati olarak görünür. Son tarihler ekledikçe kendiliğinden belirir"
+          }
         }
       }
     },
@@ -51729,6 +53901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det tänds medan din fritid går och väntar släckt resten av veckan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zamanın geçerken yanar, haftanın geri kalanında sönük bekler"
           }
         }
       }
@@ -51873,6 +54051,12 @@
             "state" : "translated",
             "value" : "Små förändringar är en bra början..."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Küçük değişiklikler de güzel bir başlangıç..."
+          }
         }
       }
     },
@@ -52015,6 +54199,12 @@
             "state" : "translated",
             "value" : "Tryck på en glöd för att se den dagens reflektioner"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O günün değerlendirmelerini görmek için bir köze dokun"
+          }
         }
       }
     },
@@ -52156,6 +54346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "God natt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İyi geceler"
           }
         }
       }
@@ -52300,6 +54496,12 @@
             "state" : "translated",
             "value" : "En väl bränd dag. Dags att låta den svalna."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İyi yanmış bir gün. Soğumaya bırakma zamanı."
+          }
         }
       }
     },
@@ -52435,6 +54637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utelämna sömn, arbete och måsten och lägg bara till den tid du ägnar åt dig själv. Veckans pergament brinner bara medan den går."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykuyu, işi ve angaryayı bir kenara bırak; sadece kendine ayırdığın zamanı ekle. Bu haftanın parşömeni yalnızca o zaman geçerken yanar."
           }
         }
       }
@@ -52572,6 +54780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj de timmar som verkligen är dina, utöver sömn och arbete. Veckans pergament brinner bara medan de går."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku ve işin dışında gerçekten sana ait saatleri seç. Bu haftanın parşömeni yalnızca onlar geçerken yanar."
           }
         }
       }
@@ -52716,6 +54930,12 @@
             "state" : "translated",
             "value" : "Insomningstid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykuya dalma saati"
+          }
         }
       }
     },
@@ -52858,6 +55078,12 @@
             "state" : "translated",
             "value" : "Det stannar av sig självt när du sover. På morgonen kontrollerar vi när du somnade och sätter tillbaka det"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyuyunca kendiliğinden durur. Sabah ne zaman uyuduğunu kontrol edip geri alırız"
+          }
         }
       }
     },
@@ -52994,6 +55220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Överlappar din sömn"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykunla çakışıyor"
           }
         }
       }
@@ -53132,6 +55364,12 @@
             "state" : "translated",
             "value" : "Det här överlappar din sömn. Håll det inom din vakna tid."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu, uykunla çakışıyor. Uyanık saatlerin içinde tut."
+          }
         }
       }
     },
@@ -53267,6 +55505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utan sömn, utan arbete,\\nvälj bara de timmar som är dina.\\nVeckans pergament brinner bara medan de går."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykusuz, işsiz,\\nsadece sana ait saatleri seç.\\nBu haftanın parşömeni yalnızca onlar geçerken yanar."
           }
         }
       }
@@ -53411,6 +55655,12 @@
             "state" : "translated",
             "value" : "Aska"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül"
+          }
         }
       }
     },
@@ -53553,6 +55803,12 @@
             "state" : "translated",
             "value" : "Baserat på %@ aska"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ külü baz alınır"
+          }
         }
       }
     },
@@ -53688,6 +55944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aska: %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül: %@"
           }
         }
       }
@@ -53826,6 +56088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aska: %@ · A5-storlek"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül: %@ · A5 boyut"
           }
         }
       }
@@ -53970,6 +56238,12 @@
             "state" : "translated",
             "value" : "Baserat på %lld aska"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld külü baz alınır"
+          }
         }
       }
     },
@@ -54112,6 +56386,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aska: %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül: %lld"
           }
         }
       }
@@ -54256,6 +56536,12 @@
             "state" : "translated",
             "value" : "Aska: %lld · A5-storlek"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül: %lld · A5 boyut"
+          }
         }
       }
     },
@@ -54399,6 +56685,12 @@
             "state" : "translated",
             "value" : "Askurnor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül Kavanozları"
+          }
         }
       }
     },
@@ -54540,6 +56832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg den i din askurna"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül kavanozuna koy"
           }
         }
       }
@@ -54684,6 +56982,12 @@
             "state" : "translated",
             "value" : "Månaden med mest aska"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En çok kül biriken ay"
+          }
         }
       }
     },
@@ -54827,6 +57131,12 @@
             "state" : "translated",
             "value" : "Spara lite aska så visas\\nfördelningen och glödkalendern här."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biraz kül sakla;\\ndağılım ve köz takvimi burada belirir."
+          }
         }
       }
     },
@@ -54968,6 +57278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Askans fördelning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Külün Dağılımı"
           }
         }
       }
@@ -55112,6 +57428,12 @@
             "state" : "translated",
             "value" : "Askans flöde"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Külün Akışı"
+          }
         }
       }
     },
@@ -55254,6 +57576,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visa askans flöde"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Külün akışını gör"
           }
         }
       }
@@ -55398,6 +57726,12 @@
             "state" : "translated",
             "value" : "Spara"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
+          }
         }
       }
     },
@@ -55541,6 +57875,12 @@
             "state" : "translated",
             "value" : "Sparar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydediliyor"
+          }
         }
       }
     },
@@ -55683,6 +58023,12 @@
             "state" : "translated",
             "value" : "Sparar…"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydediliyor…"
+          }
         }
       }
     },
@@ -55824,6 +58170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sparad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydedildi"
           }
         }
       }
@@ -55968,6 +58320,12 @@
             "state" : "translated",
             "value" : "Spara och börja en ny reflektion"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet ve yeni değerlendirmeye başla"
+          }
         }
       }
     },
@@ -56110,6 +58468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spara och stäng"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet ve kapat"
           }
         }
       }
@@ -56254,6 +58618,12 @@
             "state" : "translated",
             "value" : "Slocknade av sig själv"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendiliğinden Sönen Parça"
+          }
         }
       }
     },
@@ -56396,6 +58766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du sparade en bit som slocknade av sig själv"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendiliğinden sönen bir parça sakladın"
           }
         }
       }
@@ -56540,6 +58916,12 @@
             "state" : "translated",
             "value" : "Samla dina reflektioner i en PDF att spara eller skriva ut."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmelerini saklamak veya yazdırmak için tek bir PDF’de topla."
+          }
         }
       }
     },
@@ -56682,6 +59064,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alla"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümü"
           }
         }
       }
@@ -56826,6 +59214,12 @@
             "state" : "translated",
             "value" : "Punkt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nokta"
+          }
         }
       }
     },
@@ -56963,6 +59357,12 @@
             "state" : "translated",
             "value" : "Din fritid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boş zamanın"
+          }
         }
       }
     },
@@ -57098,6 +59498,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Att ställa in den och se siffrorna är gratis. Att bränna just de timmarna är Pro."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlamak ve rakamları görmek ücretsiz. Sadece o saatleri yakmak Pro."
           }
         }
       }
@@ -57241,6 +59647,12 @@
             "state" : "translated",
             "value" : "Titel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlık"
+          }
         }
       }
     },
@@ -57382,6 +59794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du släckte elden i tid. Morgondagens pergament är orört"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşi zamanında söndürdün. Yarının parşömeni olduğu gibi duruyor"
           }
         }
       }
@@ -57526,6 +59944,12 @@
             "state" : "translated",
             "value" : "Du somnade i tid, så elden slocknade av sig själv"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamanında uyudun, bu yüzden ateş kendiliğinden söndü"
+          }
         }
       }
     },
@@ -57668,6 +60092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jag sov i tid"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamanında uyudum"
           }
         }
       }
@@ -57812,6 +60242,12 @@
             "state" : "translated",
             "value" : "Släng bit"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parçayı At"
+          }
         }
       }
     },
@@ -57954,6 +60390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitkort"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parça Kartı"
           }
         }
       }
@@ -58098,6 +60540,12 @@
             "state" : "translated",
             "value" : "Bitkort och affischer"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parça Kartları ve Posterleri"
+          }
         }
       }
     },
@@ -58240,6 +60688,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dela som bitkort"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parça kartı olarak paylaş"
           }
         }
       }
@@ -58384,6 +60838,12 @@
             "state" : "translated",
             "value" : "Bitaffisch"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parça Posteri"
+          }
         }
       }
     },
@@ -58527,6 +60987,12 @@
             "state" : "translated",
             "value" : "Skapa en bitaffisch"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parça posteri yap"
+          }
         }
       }
     },
@@ -58668,6 +61134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryck på biten för att vända den"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çevirmek için parçaya dokun"
           }
         }
       }
@@ -58812,6 +61284,12 @@
             "state" : "translated",
             "value" : "Bitens baksida"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parçanın arka yüzü"
+          }
         }
       }
     },
@@ -58954,6 +61432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitens framsida"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parçanın ön yüzü"
           }
         }
       }
@@ -59098,6 +61582,12 @@
             "state" : "translated",
             "value" : "En dag som blir lite obränd stannar längre kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biraz yanmadan kalan gün daha uzun akılda kalır"
+          }
         }
       }
     },
@@ -59239,6 +61729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vill du skriva mer? (valfritt)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha fazla söylemek ister misin? (isteğe bağlı)"
           }
         }
       }
@@ -59383,6 +61879,12 @@
             "state" : "translated",
             "value" : "Sort"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tür"
+          }
         }
       }
     },
@@ -59526,6 +62028,12 @@
             "state" : "translated",
             "value" : "Söta drömmar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tatlı rüyalar"
+          }
         }
       }
     },
@@ -59662,6 +62170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Helger"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta sonları"
           }
         }
       }
@@ -59806,6 +62320,12 @@
             "state" : "translated",
             "value" : "Skapa så många askurnor du vill, efter ämne"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konuya göre istediğin kadar kül kavanozu oluştur"
+          }
         }
       }
     },
@@ -59949,6 +62469,12 @@
             "state" : "translated",
             "value" : "Fylls just nu"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu an doluyor"
+          }
         }
       }
     },
@@ -60085,6 +62611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinner nu · till kl. %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimdi yanıyor · saat %@ itibarıyla"
           }
         }
       }
@@ -60229,6 +62761,12 @@
             "state" : "translated",
             "value" : "Sparar den här reflektionen och öppnar en tom"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu değerlendirmeyi kaydeder ve boş bir tane açar"
+          }
         }
       }
     },
@@ -60371,6 +62909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vad ska vi göra med askan från de senaste %lld dagarna?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son %lld günün külüyle ne yapalım?"
           }
         }
       }
@@ -60515,6 +63059,12 @@
             "state" : "translated",
             "value" : "Vad ska vi göra med askan från de senaste %lld veckorna?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son %lld haftanın külüyle ne yapalım?"
+          }
         }
       }
     },
@@ -60658,6 +63208,12 @@
             "state" : "translated",
             "value" : "Aska per månad de senaste 12 månaderna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son 12 ayın aylara göre külü"
+          }
         }
       }
     },
@@ -60799,6 +63355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vart de senaste 12 månaderna tog vägen, månad för månad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son 12 ay nereye gitti, ay ay"
           }
         }
       }
@@ -60943,6 +63505,12 @@
             "state" : "translated",
             "value" : "Askan från de senaste 12 månaderna, månad för månad"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son 12 ayın külünü aylara göre göster"
+          }
         }
       }
     },
@@ -61086,6 +63654,12 @@
             "state" : "translated",
             "value" : "Se vart din tid tog vägen varje månad under de senaste tolv månaderna."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son on iki ayda zamanının her ay nereye gittiğini gör."
+          }
         }
       }
     },
@@ -61222,6 +63796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ta bort"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sil"
           }
         }
       }
@@ -61368,6 +63948,12 @@
             "state" : "translated",
             "value" : "Support"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destek"
+          }
         }
       }
     },
@@ -61509,6 +64095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till första askan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlk külü ekle"
           }
         }
       }
@@ -61653,6 +64245,12 @@
             "state" : "translated",
             "value" : "Skapa din första urna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlk kavanozunu oluştur"
+          }
         }
       }
     },
@@ -61795,6 +64393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Börja med att skapa din första urna.\\nDet funkar bra att namnge den efter ämne eller område."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlk kavanozunu oluşturarak başla.\\nKonuya veya alana göre adlandırmak iyi sonuç verir."
           }
         }
       }
@@ -61939,6 +64543,12 @@
             "state" : "translated",
             "value" : "Celadon"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seladon"
+          }
         }
       }
     },
@@ -62081,6 +64691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ljus"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mum"
           }
         }
       }
@@ -62225,6 +64841,12 @@
             "state" : "translated",
             "value" : "Senaste 30 dagarna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son 30 gün"
+          }
         }
       }
     },
@@ -62367,6 +64989,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekle"
           }
         }
       }
@@ -62511,6 +65139,12 @@
             "state" : "translated",
             "value" : "Föreslagna läggtider"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önerilen uyku saatleri"
+          }
         }
       }
     },
@@ -62653,6 +65287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avbryt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vazgeç"
           }
         }
       }
@@ -62797,6 +65437,12 @@
             "state" : "translated",
             "value" : "1 timme till läggdags. Bra jobbat i dag!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saatine 1 saat var. Bugün harikaydın!"
+          }
         }
       }
     },
@@ -62938,6 +65584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Från 30 minuter före läggdags kan du blåsa på det brinnande\\npergamentet för att släcka elden och spara det som blev kvar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saatinden 30 dakika önce, yanan parşömene üfleyerek\\nateşi söndürebilir ve kalanı saklayabilirsin"
           }
         }
       }
@@ -63082,6 +65734,12 @@
             "state" : "translated",
             "value" : "Läggdags"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saati"
+          }
         }
       }
     },
@@ -63225,6 +65883,12 @@
             "state" : "translated",
             "value" : "Läggdags %2$lld%3$@ %1$@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saati %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -63366,6 +66030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ till läggdags"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykuya %@"
           }
         }
       }
@@ -63510,6 +66180,12 @@
             "state" : "translated",
             "value" : "Tid kvar till läggdags"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saatine kalan süre"
+          }
         }
       }
     },
@@ -63653,6 +66329,12 @@
             "state" : "translated",
             "value" : "Kapsel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapsül"
+          }
         }
       }
     },
@@ -63794,6 +66476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyckelord (valfritt)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anahtar kelime (isteğe bağlı)"
           }
         }
       }
@@ -63938,6 +66626,12 @@
             "state" : "translated",
             "value" : "Visa flikar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekmeleri göster"
+          }
         }
       }
     },
@@ -64079,6 +66773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryck för att stänga"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapatmak için dokun"
           }
         }
       }
@@ -64223,6 +66923,12 @@
             "state" : "translated",
             "value" : "Tryck för att hantera deadlines"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarihleri yönetmek için dokun"
+          }
         }
       }
     },
@@ -64365,6 +67071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryck för att gå tillbaka till steget Skrivande"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yazma adımına dönmek için dokun"
           }
         }
       }
@@ -64509,6 +67221,12 @@
             "state" : "translated",
             "value" : "Tryck för att välja"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçmek için dokun"
+          }
         }
       }
     },
@@ -64652,6 +67370,12 @@
             "state" : "translated",
             "value" : "Tryck för att redigera"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzenlemek için dokun"
+          }
         }
       }
     },
@@ -64793,6 +67517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryck för att ändra tiden"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saati değiştirmek için dokun"
           }
         }
       }
@@ -64937,6 +67667,12 @@
             "state" : "translated",
             "value" : "Tryck för att hantera urnor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanozları yönetmek için dokun"
+          }
         }
       }
     },
@@ -65079,6 +67815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryck för att öppna urnan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanozu açmak için dokun"
           }
         }
       }
@@ -65223,6 +67965,12 @@
             "state" : "translated",
             "value" : "Knastrande, studsande gnistor"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çıtırdayan, saçılan kıvılcımlar"
+          }
         }
       }
     },
@@ -65365,6 +68113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sidor"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayfalar"
           }
         }
       }
@@ -65509,6 +68263,12 @@
             "state" : "translated",
             "value" : "Sida %1$lld av %2$lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayfa %1$lld / %2$lld"
+          }
         }
       }
     },
@@ -65651,6 +68411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sidindikator"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayfa göstergesi"
           }
         }
       }
@@ -65795,6 +68561,12 @@
             "state" : "translated",
             "value" : "Sidprickar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayfa Noktaları"
+          }
         }
       }
     },
@@ -65937,6 +68709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stil på sidprickar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayfa Noktası Stili"
           }
         }
       }
@@ -66081,6 +68859,12 @@
             "state" : "translated",
             "value" : "Livstidsåtkomst · %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ömür boyu erişim · %@"
+          }
         }
       }
     },
@@ -66217,6 +69001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vardagar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta içi"
           }
         }
       }
@@ -66361,6 +69151,12 @@
             "state" : "translated",
             "value" : "Affisch"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poster"
+          }
         }
       }
     },
@@ -66504,6 +69300,12 @@
             "state" : "translated",
             "value" : "Visa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Göster"
+          }
         }
       }
     },
@@ -66642,6 +69444,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -66789,6 +69597,12 @@
             "state" : "translated",
             "value" : "Du har Pro. Tack 🔥"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro kullanıyorsun. Teşekkürler 🔥"
+          }
         }
       }
     },
@@ -66932,6 +69746,12 @@
             "state" : "translated",
             "value" : "Uppgradera till Pro"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro’ya Yükselt"
+          }
         }
       }
     },
@@ -67068,6 +69888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bränn min fritid med Pro"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro ile boş zamanımı yak"
           }
         }
       }
@@ -67212,6 +70038,12 @@
             "state" : "translated",
             "value" : "Finns med Pro"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro ile açılır"
+          }
         }
       }
     },
@@ -67347,6 +70179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med Pro brinner pergamentet bara under de här timmarna"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro ile parşömen yalnızca bu saatlerde yanar"
           }
         }
       }
@@ -67489,6 +70327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lås upp årets flöde med Pro"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro ile yılın akışını aç"
           }
         }
       }
@@ -67633,6 +70477,12 @@
             "state" : "translated",
             "value" : "Tänkte, men gjorde inte"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yapmak istedim ama yapamadım"
+          }
         }
       }
     },
@@ -67775,6 +70625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hade tänkt, men blev inte av"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yapmayı düşündüm ama yapmadım"
           }
         }
       }
@@ -67919,6 +70775,12 @@
             "state" : "translated",
             "value" : "Fånga din dag, utan att något lämnas utanför"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gününü hiçbir şey kalmadan yakala"
+          }
         }
       }
     },
@@ -68061,6 +70923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hjärta"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalp"
           }
         }
       }
@@ -68205,6 +71073,12 @@
             "state" : "translated",
             "value" : "Betala en gång, använd för alltid"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir kez öde, sonsuza dek kullan"
+          }
         }
       }
     },
@@ -68341,6 +71215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Över ett år"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir yıla göre"
           }
         }
       }
@@ -68483,6 +71363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ett års aska"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir Yıllık Kül"
           }
         }
       }
@@ -68627,6 +71513,12 @@
             "state" : "translated",
             "value" : "Ett års aska"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir Yıllık Kül"
+          }
         }
       }
     },
@@ -68769,6 +71661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ett helt års aska i en blick"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koca bir yılın külü tek bakışta"
           }
         }
       }
@@ -68913,6 +71811,12 @@
             "state" : "translated",
             "value" : "Urnor: %1$lld, reflektioner: %2$lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld kavanoz, %2$lld değerlendirme"
+          }
         }
       }
     },
@@ -69055,6 +71959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obegränsat med urnor"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınırsız kavanoz"
           }
         }
       }
@@ -69199,6 +72109,12 @@
             "state" : "translated",
             "value" : "Ta bort urna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanozu Sil"
+          }
         }
       }
     },
@@ -69341,6 +72257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnhyllan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanoz rafı"
           }
         }
       }
@@ -69485,6 +72407,12 @@
             "state" : "translated",
             "value" : "Redigera urna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanozu Düzenle"
+          }
         }
       }
     },
@@ -69628,6 +72556,12 @@
             "state" : "translated",
             "value" : "Lås upp obegränsat med urnor och deadlines."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sınırsız kavanoz ve son tarihin kilidini aç."
+          }
         }
       }
     },
@@ -69770,6 +72704,12 @@
             "state" : "translated",
             "value" : "Urnan väntar redan.\\nDin första aska hamnar i %@."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanoz zaten hazır.\\nİlk külün %@ kavanozuna girecek."
+          }
         }
       }
     },
@@ -69911,6 +72851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ett ord att gravera på urnan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanoza kazınacak bir söz"
           }
         }
       }
@@ -70055,6 +73001,12 @@
             "state" : "translated",
             "value" : "Sol"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güneş"
+          }
         }
       }
     },
@@ -70197,6 +73149,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjort"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yapıldı"
           }
         }
       }
@@ -70341,6 +73299,12 @@
             "state" : "translated",
             "value" : "Blås i mikrofonen längst ned på telefonen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefonunun altındaki mikrofona üfle"
+          }
         }
       }
     },
@@ -70483,6 +73447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utseende"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Görünüm"
           }
         }
       }
@@ -70627,6 +73597,12 @@
             "state" : "translated",
             "value" : "OK"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam"
+          }
         }
       }
     },
@@ -70770,6 +73746,12 @@
             "state" : "translated",
             "value" : "Reflektioner: %1$lld. Gjorde som jag tänkt: %2$lld procent; det blev så att jag gjorde det: %3$lld procent; tänkte men gjorde inte: %4$lld procent; rann bara iväg: %5$lld procent"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirme: %1$lld. Niyet ettiğim gibi yaptım yüzde %2$lld, sonunda yaptım yüzde %3$lld, yapmak istedim ama yapamadım yüzde %4$lld, sadece akıp gitti yüzde %5$lld"
+          }
         }
       }
     },
@@ -70911,6 +73893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflektionsbok"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirme Kitabı"
           }
         }
       }
@@ -71055,6 +74043,12 @@
             "state" : "translated",
             "value" : "PDF av reflektionsboken"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirme Kitabı PDF"
+          }
         }
       }
     },
@@ -71197,6 +74191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exportera reflektionsboken som PDF"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirme kitabını PDF olarak dışa aktar"
           }
         }
       }
@@ -71341,6 +74341,12 @@
             "state" : "translated",
             "value" : "Visa som bok"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kitap olarak gör"
+          }
         }
       }
     },
@@ -71484,6 +74490,12 @@
             "state" : "translated",
             "value" : "Håll din reflektionsbok i handen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirme kitabını elinde tut"
+          }
         }
       }
     },
@@ -71625,6 +74637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Samla dina reflektioner i en PDF"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmelerini tek bir PDF’de topla"
           }
         }
       }
@@ -71769,6 +74787,12 @@
             "state" : "translated",
             "value" : "Samla reflektioner i en PDF, en sida per dag"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmeleri günde bir sayfa olacak şekilde PDF’de topla"
+          }
         }
       }
     },
@@ -71912,6 +74936,12 @@
             "state" : "translated",
             "value" : "Redigera din reflektion."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmeni düzenle."
+          }
         }
       }
     },
@@ -72053,6 +75083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till en reflektion\\noch den här boken börjar fyllas."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir değerlendirme ekle,\\nbu kitap dolmaya başlasın."
           }
         }
       }
@@ -72197,6 +75233,12 @@
             "state" : "translated",
             "value" : "Dra reflektioner till en urna för att flytta dem"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taşımak için değerlendirmeleri bir kavanoza sürükle"
+          }
         }
       }
     },
@@ -72339,6 +75381,12 @@
             "state" : "translated",
             "value" : "Blås ut elden"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşi üfleyerek söndür"
+          }
         }
       }
     },
@@ -72480,6 +75528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blås ut lågan\\noch avsluta din dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alevi üfleyip söndür\\nve gününü kapat"
           }
         }
       }
@@ -72624,6 +75678,12 @@
             "state" : "translated",
             "value" : "Vila"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dinlenme"
+          }
         }
       }
     },
@@ -72767,6 +75827,12 @@
             "state" : "translated",
             "value" : "Rann iväg"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akıp gitti"
+          }
         }
       }
     },
@@ -72908,6 +75974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Söta drömmar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Tatlı rüyalar"
           }
         }
       }
@@ -73058,6 +76130,12 @@
             "state" : "translated",
             "value" : "Skärmar för större text"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Büyük yazıya uygun ekranlar"
+          }
         }
       }
     },
@@ -73200,6 +76278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Även med de största textstorlekarna ordnas skärmarna snyggt om i stället för att klippas av."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En büyük yazı boyutlarında bile ekranlar kesilmek yerine düzgünce yeniden yerleşir."
           }
         }
       }
@@ -73344,6 +76428,12 @@
             "state" : "translated",
             "value" : "Behagligare färger och kontrast"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha rahat renkler ve karşıtlık"
+          }
         }
       }
     },
@@ -73486,6 +76576,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se tydligt hur din tid brinner, även med Öka kontrast på eller om färger är svåra att skilja åt."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karşıtlığı Artır açıkken veya renkleri ayırt etmek zorken bile yanan zamanını net gör."
           }
         }
       }
@@ -73630,6 +76726,12 @@
             "state" : "translated",
             "value" : "Fler språk"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha fazla dil"
+          }
         }
       }
     },
@@ -73772,6 +76874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En kort rundtur för nya användare"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni başlayanlar için kısa tur"
           }
         }
       }
@@ -73916,6 +77024,12 @@
             "state" : "translated",
             "value" : "En kort guide till vad du kan göra, första gången du öppnar appen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı ilk açtığında neler yapabileceğine dair kısa bir rehber."
+          }
         }
       }
     },
@@ -74058,6 +77172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyheter"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenilikler"
           }
         }
       }
@@ -74202,6 +77322,12 @@
             "state" : "translated",
             "value" : "Första gången du öppnar efter en uppdatering ser du vad som är nytt."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir güncellemeden sonra ilk açtığında nelerin yeni olduğunu gör."
+          }
         }
       }
     },
@@ -74344,6 +77470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smarta tips"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratik ipuçları"
           }
         }
       }
@@ -74488,6 +77620,12 @@
             "state" : "translated",
             "value" : "Diskreta tips om användbara funktioner, precis när du behöver dem."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faydalı özellikler hakkında tam ihtiyaç duyduğunda hafif ipuçları."
+          }
         }
       }
     },
@@ -74630,6 +77768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri och Genvägar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ve Kısayollar"
           }
         }
       }
@@ -74774,6 +77918,12 @@
             "state" : "translated",
             "value" : "Fråga Siri hur mycket som är kvar av i dag."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri’ye bugünden ne kadar kaldığını sor."
+          }
         }
       }
     },
@@ -74916,6 +78066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synkronisering mellan enheter"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazlar arası senkronizasyon"
           }
         }
       }
@@ -75060,6 +78216,12 @@
             "state" : "translated",
             "value" : "Ha samma reflektioner och deadlines på alla dina enheter med iCloud."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud ile aynı değerlendirme ve son tarihleri tüm cihazlarında gör."
+          }
         }
       }
     },
@@ -75202,6 +78364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Säkerhetskopia och återställning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yedekleme ve geri yükleme"
           }
         }
       }
@@ -75346,6 +78514,12 @@
             "state" : "translated",
             "value" : "Spara dina reflektioner och deadlines i en fil och hämta tillbaka dem senare."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmelerini ve son tarihlerini bir dosyaya kaydet, sonra geri getir."
+          }
         }
       }
     },
@@ -75488,6 +78662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Face ID-lås"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID kilidi"
           }
         }
       }
@@ -75632,6 +78812,12 @@
             "state" : "translated",
             "value" : "Lås appen med Face ID eller Touch ID för att hålla dina reflektioner privata."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmelerini gizli tutmak için uygulamayı Face ID veya Touch ID ile kilitle."
+          }
         }
       }
     },
@@ -75774,6 +78960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout för vikbar iPhone"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone düzeni"
           }
         }
       }
@@ -75918,6 +79110,12 @@
             "state" : "translated",
             "value" : "Använd den breda skärmen på en vikbar iPhone som två paneler sida vid sida."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone’un geniş ekranını yan yana iki bölme olarak kullan."
+          }
         }
       }
     },
@@ -76060,6 +79258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Radera alla mina data"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm verilerimi sil"
           }
         }
       }
@@ -76204,6 +79408,12 @@
             "state" : "translated",
             "value" : "Radera alla reflektioner och deadlines direkt i appen när du vill."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstediğin zaman tüm değerlendirme ve son tarihleri uygulamada silebilirsin."
+          }
         }
       }
     },
@@ -76346,6 +79556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortsätt din reflektion där du slutade"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmene kaldığın yerden devam et"
           }
         }
       }
@@ -76490,6 +79706,12 @@
             "state" : "translated",
             "value" : "Det du skrev finns kvar, även om appen stängs mitt i en reflektion."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama yarıda kapansa bile yazdıkların yerinde kalır."
+          }
         }
       }
     },
@@ -76631,6 +79853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Efter koreanska och engelska talar appen nu även svenska."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korece ve İngilizce’den sonra uygulama artık Türkçe de konuşuyor."
           }
         }
       },
@@ -76775,6 +80003,12 @@
             "state" : "translated",
             "value" : "Prova att svepa åt sidan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yana kaydırmayı dene"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -76917,6 +80151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se vad som är kvar av veckan, månaden och året på samma pergament."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu haftadan, aydan ve yıldan kalanı aynı parşömende gör."
           }
         }
       },
@@ -77061,6 +80301,12 @@
             "state" : "translated",
             "value" : "Vänd på en bit"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir parçayı çevir"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -77203,6 +80449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryck på en bit för att skriva en rad om den dagen på baksidan."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O güne dair bir satırı arka yüzüne yazmak için parçaya dokun."
           }
         }
       },
@@ -77347,6 +80599,12 @@
             "state" : "translated",
             "value" : "Mål"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hedefler"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -77489,6 +80747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parçalar"
           }
         }
       },
@@ -77633,6 +80897,12 @@
             "state" : "translated",
             "value" : "Urna"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kavanoz"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -77775,6 +81045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflektion"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirme"
           }
         }
       },
@@ -77919,6 +81195,12 @@
             "state" : "translated",
             "value" : "Lägg till deadline"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son Tarih Ekle"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -78061,6 +81343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deadline %@ tillagd"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ son tarihi eklendi"
           }
         }
       },
@@ -78205,6 +81493,12 @@
             "state" : "translated",
             "value" : "Deadline %@ borttagen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ son tarihi silindi"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -78347,6 +81641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elden är släckt. Din bit har sparats."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateş söndü. Parçan saklandı."
           }
         }
       },
@@ -78491,6 +81791,12 @@
             "state" : "translated",
             "value" : "Din reflektion ligger i askurnan."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değerlendirmen kül kavanozunda."
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -78633,6 +81939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hoppa över"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atla"
           }
         }
       },
@@ -78777,6 +82089,12 @@
             "state" : "translated",
             "value" : "Kom igång"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başla"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -78919,6 +82237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se din tid brinna ner"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamanının yanışını izle"
           }
         }
       },
@@ -79063,6 +82387,12 @@
             "state" : "translated",
             "value" : "Från uppvaknandet till läggdags brinner pergamentet långsamt ner. Svep åt sidan för att se vecka, månad och år."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmaktan uyku saatine kadar parşömen yavaşça yanar. Haftayı, ayı ve yılı görmek için yana kaydır."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -79205,6 +82535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 minuter före läggdags, blås ut det"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykudan 30 dakika önce üfleyip söndür"
           }
         }
       },
@@ -79349,6 +82685,12 @@
             "state" : "translated",
             "value" : "Blås i mikrofonen för att släcka elden och spara det som blev kvar. Bara styrkan i din andning kontrolleras; inget spelas in."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ateşi söndürüp kalanı saklamak için mikrofona üfle. Sadece nefesinin gücü kontrol edilir; hiçbir şey kaydedilmez."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -79491,6 +82833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Varje dag blir aska"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her gün kül olur"
           }
         }
       },
@@ -79635,6 +82983,12 @@
             "state" : "translated",
             "value" : "Skriv en rad om din dag så lägger den sig i veckans askurna. Ändra väcknings- och läggtid i Inställningar."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gününle ilgili bir satır yaz, o haftanın kül kavanozuna çöksün. Uyanma ve uyuma saatlerini Ayarlar’dan değiştir."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -79777,6 +83131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiera"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopyala"
           }
         }
       },
@@ -79921,6 +83281,12 @@
             "state" : "translated",
             "value" : "Nyheter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenilikler"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -80063,6 +83429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visa välkomstguiden igen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karşılama Rehberini Tekrar Göster"
           }
         }
       },
@@ -80207,6 +83579,12 @@
             "state" : "translated",
             "value" : "Koden kunde inte lösas in. Försök igen om en stund."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kod kullanılamadı. Biraz sonra tekrar dene."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -80349,6 +83727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lös in erbjudandekod"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teklif Kodunu Kullan"
           }
         }
       },
@@ -80493,6 +83877,12 @@
             "state" : "translated",
             "value" : "Version %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sürüm %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -80635,6 +84025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nu även på svenska"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Artık Türkçe"
           }
         }
       },
@@ -80779,6 +84175,12 @@
             "state" : "translated",
             "value" : "Om din enhet är inställd på svenska visas appen och dess widgetar på svenska."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazın Türkçe ise uygulama ve widget’ları Türkçe görünür."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -80921,6 +84323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bättre med stor text och hög kontrast"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Büyük yazı ve yüksek karşıtlıkla daha iyi"
           }
         }
       },
@@ -81065,6 +84473,12 @@
             "state" : "translated",
             "value" : "Inställningar klipps inte längre av vid mycket stor text, och Öka kontrast gör text och glöd mörkare."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çok büyük yazıda Ayarlar artık kesilmiyor, Karşıtlığı Artır ise yazıyı ve közleri koyulaştırıyor."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -81207,6 +84621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dolda funktioner, som att svepa för att byta period, visas nu i rätt ögonblick."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dönemi değiştirmek için kaydırmak gibi gizli özellikler artık tam zamanında gösteriliyor."
           }
         }
       },
@@ -81351,6 +84771,12 @@
             "state" : "translated",
             "value" : "Se vad som kommer"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neler geleceğine göz at"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -81493,6 +84919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Under Inställningar ▸ Support ser du kommande funktioner och kan föreslå dem du vill ha."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar ▸ Destek’te gelecek özellikleri gör ve istediklerini öner."
           }
         }
       },
@@ -81637,6 +85069,12 @@
             "state" : "translated",
             "value" : "Erbjudandekoder är här"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teklif kodları geldi"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -81780,6 +85218,12 @@
             "state" : "translated",
             "value" : "Har du en kod anger du den i Inställningar ▸ Pro."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodun varsa Ayarlar ▸ Pro’ya gir."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -81922,6 +85366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uppfattat"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anladım"
           }
         }
       },

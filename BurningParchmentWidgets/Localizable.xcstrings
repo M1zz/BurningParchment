@@ -140,6 +140,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%%%@"
+          }
         }
       }
     },
@@ -282,6 +288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld dk"
           }
         }
       }
@@ -426,6 +438,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld dk %2$lld sn"
+          }
         }
       }
     },
@@ -568,6 +586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld sa %2$lld dk"
           }
         }
       }
@@ -712,6 +736,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld h"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld gün %2$lld sa"
+          }
         }
       }
     },
@@ -854,6 +884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sn"
           }
         }
       }
@@ -998,6 +1034,12 @@
             "state" : "translated",
             "value" : "2025-12-31 (ons) 23:59"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31.12.2025 (Çar) 23:59"
+          }
         }
       }
     },
@@ -1140,6 +1182,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 d 4 h"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 gün 4 sa"
           }
         }
       }
@@ -1284,6 +1332,12 @@
             "state" : "translated",
             "value" : "5 h 24 min"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 sa 24 dk"
+          }
         }
       }
     },
@@ -1425,6 +1479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snart uppvaknande"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakında uyanış"
           }
         }
       }
@@ -1568,6 +1628,12 @@
             "state" : "translated",
             "value" : "Uppvaknande %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanış %@"
+          }
         }
       }
     },
@@ -1710,6 +1776,12 @@
             "state" : "translated",
             "value" : "%@ till uppvaknandet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmaya %@"
+          }
         }
       }
     },
@@ -1851,6 +1923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid kvar till uppvaknandet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyanmaya kalan süre"
           }
         }
       }
@@ -1995,6 +2073,12 @@
             "state" : "translated",
             "value" : "Tid kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalan Süre"
+          }
         }
       }
     },
@@ -2137,6 +2221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid kvar till nästa deadline"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonraki son tarihe kalan süre"
           }
         }
       }
@@ -2281,6 +2371,12 @@
             "state" : "translated",
             "value" : "Deadlinepergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son Tarih Parşömeni"
+          }
         }
       }
     },
@@ -2422,6 +2518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inga deadlines"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarih yok"
           }
         }
       }
@@ -2565,6 +2667,12 @@
             "state" : "translated",
             "value" : "Deadline passerad 🏁"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son tarih geçti 🏁"
+          }
         }
       }
     },
@@ -2707,6 +2815,12 @@
             "state" : "translated",
             "value" : "En ny dag börjar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni bir gün başlıyor"
+          }
         }
       }
     },
@@ -2848,6 +2962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sover"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyuyor"
           }
         }
       }
@@ -2992,6 +3112,12 @@
             "state" : "translated",
             "value" : "Årspergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yıllık Parşömen"
+          }
         }
       }
     },
@@ -3134,6 +3260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid kvar till läggdags i dag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün uyku saatine kalan süre"
           }
         }
       }
@@ -3278,6 +3410,12 @@
             "state" : "translated",
             "value" : "I år"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Yıl"
+          }
         }
       }
     },
@@ -3420,6 +3558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid kvar i år"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu yıl kalan süre"
           }
         }
       }
@@ -3564,6 +3708,12 @@
             "state" : "translated",
             "value" : "Månadspergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aylık Parşömen"
+          }
         }
       }
     },
@@ -3706,6 +3856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den här månaden"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Ay"
           }
         }
       }
@@ -3850,6 +4006,12 @@
             "state" : "translated",
             "value" : "Tid kvar den här månaden"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu ay kalan süre"
+          }
         }
       }
     },
@@ -3992,6 +4154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den här veckan"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Hafta"
           }
         }
       }
@@ -4136,6 +4304,12 @@
             "state" : "translated",
             "value" : "Tid kvar den här veckan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta kalan süre"
+          }
         }
       }
     },
@@ -4278,6 +4452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dagspergament"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Günlük Parşömen"
           }
         }
       }
@@ -4422,6 +4602,12 @@
             "state" : "translated",
             "value" : "Se hur lång tid det är till läggdags, direkt på låsskärmen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saatine ne kadar kaldığını doğrudan Kilit Ekranı’nda gör"
+          }
         }
       }
     },
@@ -4563,6 +4749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Söta drömmar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tatlı rüyalar"
           }
         }
       }
@@ -4707,6 +4899,12 @@
             "state" : "translated",
             "value" : "Veckopergament"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftalık Parşömen"
+          }
         }
       }
     },
@@ -4849,6 +5047,12 @@
             "state" : "translated",
             "value" : "Sängdags %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku %@"
+          }
         }
       }
     },
@@ -4990,6 +5194,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Till läggdags"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uykuya kadar"
           }
         }
       }
@@ -5134,6 +5344,12 @@
             "state" : "translated",
             "value" : "Tid kvar till läggdags"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyku saatine kalan süre"
+          }
         }
       }
     },
@@ -5277,6 +5493,12 @@
             "state" : "translated",
             "value" : "Lämna in projektet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projeyi teslim et"
+          }
         }
       }
     },
@@ -5419,6 +5641,12 @@
             "state" : "translated",
             "value" : "🌅 Snart uppvaknande · %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Yakında uyanış · %@"
+          }
         }
       }
     },
@@ -5560,6 +5788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 %@%% kvar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %%%@ kaldı"
           }
         }
       }
@@ -5704,6 +5938,12 @@
             "state" : "translated",
             "value" : "🔥 %lld%% kvar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %%%lld kaldı"
+          }
         }
       }
     },
@@ -5846,6 +6086,12 @@
             "state" : "translated",
             "value" : "🔥 %@ till läggdags"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Uykuya %@"
+          }
         }
       }
     },
@@ -5987,6 +6233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ till uppvaknandet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 Uyanmaya %@"
           }
         }
       }

@@ -81,6 +81,12 @@
             "state" : "translated",
             "value" : "กระดาษหนังลุกไหม้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
         }
       }
     },
@@ -165,6 +171,12 @@
             "state" : "translated",
             "value" : "กระดาษหนังลุกไหม้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
         }
       }
     },
@@ -248,6 +260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใช้เพื่อตรวจแรงลมเป่าตอนดับกระดาษหนังก่อนนอนเท่านั้น ไม่มีการบันทึกหรือเก็บเสียงใด ๆ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ dùng để cảm nhận sức thổi của bạn khi dập giấy da trước khi ngủ. Không có âm thanh nào được ghi âm hay lưu lại."
           }
         }
       }

@@ -82,6 +82,12 @@
             "state" : "translated",
             "value" : "กระดาษหนังลุกไหม้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
         }
       }
     },
@@ -165,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กระดาษหนังลุกไหม้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
           }
         }
       }

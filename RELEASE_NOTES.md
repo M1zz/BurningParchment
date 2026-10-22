@@ -106,6 +106,14 @@ Veja nos Ajustes os próximos recursos
 แลกโค้ดโปรโมชันเพื่อรับ Pro
 ดูฟีเจอร์ที่กำลังจะมาในการตั้งค่า
 
+### 앱스토어 (vi)
+
+Giờ đã có tiếng Việt
+Hướng dẫn ngắn cho người mới
+Rõ nét với chữ lớn và độ tương phản
+Đổi mã ưu đãi để nhận Pro
+Xem tính năng sắp tới trong Cài đặt
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

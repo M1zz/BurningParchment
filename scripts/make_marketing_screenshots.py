@@ -145,6 +145,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "เถ้าทั้งปี<br>ในมุมมองเดียว", "Pro แสดงว่าสิบสองเดือนไปอยู่ที่ไหน", 0.62),
   ("10-book-pdf.png", "pages", False, "บันทึกทบทวน<br>เป็นสมุดเล่มเดียว", "Pro: PDF หนึ่งหน้าต่อวัน", None),
  ],
+ "vi": [
+  ("01-week-dark.png", "hero-bleed", False, "Xem thời gian<br>cháy trước mắt", "Ngày, tuần, tháng, năm", None),
+  ("02-month-light.png", "hero-bleed", True, "Sáng hay tối", "Theo thiết bị hoặc tự chọn", None),
+  ("03-urn-dark.png", "left-text", False, "Mỗi ngày kết thúc<br>bằng tro", "Điều bạn viết lắng vào bình của tuần", None),
+  ("04-flow-light.png", "hero-bleed", True, "Thời gian của bạn<br>đã đi đâu", "Biểu đồ phân bố và lịch than hồng", None),
+  ("05-book-dark.png", "top-crop", False, "Đọc lại đống tro", "Những dòng bạn để lại trên giấy da", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Từ giờ ngủ<br>đến giao diện", "Cài đặt theo ý bạn", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Chọn màu<br>cho ngọn lửa", "Chủ đề Pro: hanji, men ngọc, hoàng hôn", None),
+  ("08-poster-dark.png", "text-bottom", False, "Mọi đêm đã tắt lửa<br>trên một trang", "Pro biến các mảnh thành áp phích", None),
+  ("09-year-light.png", "top-crop", False, "Cả năm<br>trong một tro", "Pro cho thấy mười hai tháng đã đi đâu", 0.62),
+  ("10-book-pdf.png", "pages", False, "Bản nhìn lại<br>thành một cuốn sổ", "Pro: PDF, mỗi ngày một trang", None),
+ ],
 }
 
 FONTS = {
@@ -157,9 +170,10 @@ FONTS = {
     "it": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "pt-BR": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "th": '-apple-system, "Thonburi", "Sukhumvit Set", sans-serif',
+    "vi": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42}
 
 
 def base_css(lang, dark):

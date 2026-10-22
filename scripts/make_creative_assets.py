@@ -44,6 +44,7 @@ SEARCH = {
     "it": ('Tempo rimasto', 'Guarda il tuo tempo<br>consumarsi', 'Giorno, settimana, mese e anno'),
     "pt-BR": ('Tempo restante', 'Veja o seu tempo<br>queimar', 'Dia, semana, mês e ano'),
     "th": ('เวลาที่เหลือ', 'เวลาที่เหลือ<br>กำลังไหม้ตรงหน้า', 'วัน สัปดาห์ เดือน และปี'),
+    "vi": ('Thời gian còn lại', 'Xem thời gian<br>cháy trước mắt', 'Ngày, tuần, tháng và năm'),
 }
 
 # 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
@@ -59,6 +60,7 @@ HEADER = {
     "it": ('Pergamena in fiamme', 'Soffia sulla fiamma,<br>chiudi la giornata'),
     "pt-BR": ('Pergaminho em Chamas', 'Sopre a chama,<br>encerre o dia'),
     "th": ('กระดาษหนังลุกไหม้', 'เป่าให้ดับ<br>แล้วปิดวัน'),
+    "vi": ('Giấy Da Cháy', 'Thổi tắt ngọn lửa,<br>khép lại ngày'),
 }
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:

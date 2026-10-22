@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính sách quyền riêng tư — Giấy Da Cháy</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="privacy.html" hreflang="vi" lang="vi" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Quay lại Hỗ trợ</a>
+  <h1>Chính sách quyền riêng tư</h1>
+  <p>Cập nhật lần cuối: 18 tháng 8, 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Tóm tắt</h2>
+    <div class="card">
+      <h3>Giấy Da Cháy không thu thập thông tin nhận dạng bạn</h3>
+      <p>Mọi thứ bạn tạo trong ứng dụng (giờ thức dậy, giờ đi ngủ, hạn chót, bản nhìn lại và bình) đều ở lại trên thiết bị của bạn. Những gì đến được nhà phát triển chỉ là thống kê ẩn danh và chẩn đoán sự cố được mô tả bên dưới, cùng phản hồi do chính bạn gửi.</p>
+      <span class="highlight">🔒 Các bản nhìn lại của bạn không bao giờ rời khỏi thiết bị · Không quảng cáo, không theo dõi</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Chỉ lưu trên thiết bị của bạn</h2>
+    <div class="card">
+      <h3>Những gì bạn tạo trong ứng dụng</h3>
+      <p>Những mục sau chỉ được lưu trên thiết bị của bạn (trong UserDefaults):</p>
+      <ul>
+        <li>Giờ thức dậy và giờ đi ngủ</li>
+        <li>Hạn chót</li>
+        <li>Bản nhìn lại và bình</li>
+      </ul>
+      <p style="margin-top: 10px;">Dữ liệu này chỉ được chia sẻ giữa ứng dụng và tiện ích qua bộ nhớ App Group trên thiết bị của bạn, và sẽ bị xóa khi bạn xóa ứng dụng.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gửi đến nhà phát triển</h2>
+    <div class="card">
+      <h3>Thống kê sử dụng ẩn danh</h3>
+      <p>Để giúp cải thiện ứng dụng, những mục sau được gửi đến bộ nhớ iCloud (CloudKit) của nhà phát triển:</p>
+      <ul>
+        <li>Mã định danh cài đặt được tạo ngẫu nhiên (UUID)</li>
+        <li>Phiên bản ứng dụng, nền tảng và phiên bản hệ điều hành, cài đặt ngôn ngữ</li>
+        <li>Số lần mở, số ngày sử dụng và tên các sự kiện tính năng chính</li>
+      </ul>
+      <p style="margin-top: 10px;">Mã định danh cài đặt không liên quan gì đến mã định danh thiết bị (IDFA hoặc IDFV) hay Apple Account của bạn, và một mã mới được tạo nếu bạn xóa rồi cài lại ứng dụng.</p>
+    </div>
+    <div class="card">
+      <h3>Chẩn đoán sự cố và treo máy</h3>
+      <p>Nếu ứng dụng gặp sự cố hoặc bị treo, báo cáo chẩn đoán do iOS tạo (MetricKit) sẽ được gửi: loại sự cố, stack trace, phiên bản ứng dụng và hệ điều hành, cùng kiểu máy. Không có nội dung nào bạn đã nhập trong ứng dụng, như bản nhìn lại, được đưa vào.</p>
+    </div>
+    <div class="card">
+      <h3>Phản hồi bạn gửi</h3>
+      <p>Phản hồi chỉ được gửi khi bạn gửi từ màn hình Cài đặt. Nó gồm nội dung bạn viết cùng thiết bị và phiên bản ứng dụng, cộng với tên và email của bạn chỉ khi bạn tự nhập để nhận hồi âm.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Những gì chúng tôi không thu thập</h2>
+    <div class="card">
+      <h3>Chúng tôi không bao giờ thu thập những mục sau</h3>
+      <ul>
+        <li>Bất cứ thứ gì bạn nhập trong ứng dụng, như bản nhìn lại hay hạn chót (trừ khi bạn tự viết trong phản hồi)</li>
+        <li>Thông tin cá nhân như tên, email hoặc số điện thoại (trừ khi bạn tự nhập trong phản hồi)</li>
+        <li>Vị trí</li>
+        <li>Danh bạ hoặc ảnh</li>
+        <li>Mã định danh thiết bị (IDFA, IDFV, v.v.)</li>
+        <li>Dữ liệu quảng cáo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bên thứ ba</h2>
+    <div class="card">
+      <h3>Chúng tôi không chia sẻ dữ liệu của bạn</h3>
+      <p>Ứng dụng không dùng mạng quảng cáo hay SDK phân tích của bên thứ ba. Thống kê, chẩn đoán và phản hồi nêu trên chỉ đến bộ nhớ iCloud riêng của nhà phát triển. Chúng không bao giờ được kết hợp với dữ liệu của công ty khác hay dùng để theo dõi bạn cho mục đích quảng cáo.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mua trong ứng dụng</h2>
+    <div class="card">
+      <h3>Apple xử lý thanh toán</h3>
+      <p>Việc thanh toán cho giao dịch mua Pro một lần do Apple xử lý qua App Store. Nhà phát triển không bao giờ nhận được thông tin thanh toán như số thẻ hay Apple Account. Ứng dụng chỉ lưu trên thiết bị của bạn việc bạn đã mua Pro hay chưa, để mở khóa các tính năng Pro.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Thông báo</h2>
+    <div class="card">
+      <h3>Chỉ thông báo cục bộ</h3>
+      <p>Lời nhắc trước giờ đi ngủ một tiếng là thông báo cục bộ được lên lịch trên thiết bị của bạn và không bao giờ đi qua máy chủ bên ngoài. Bạn có thể đổi quyền thông báo bất cứ lúc nào trong Cài đặt iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Micro</h2>
+    <div class="card">
+      <h3>Chỉ kiểm tra sức thổi của bạn</h3>
+      <p>Micro chỉ được dùng khi bạn thổi vào giấy da để dập lửa, 30 phút trước giờ đi ngủ. Ứng dụng chỉ đo sức thổi của bạn ngay trên thiết bị và không bao giờ ghi âm, lưu hay gửi bất kỳ âm thanh nào. Bạn có thể đổi quyền micro bất cứ lúc nào trong Cài đặt iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quyền riêng tư của trẻ em</h2>
+    <div class="card">
+      <h3>Trẻ em dưới 14 tuổi</h3>
+      <p>Ứng dụng này không hướng đến trẻ em dưới 14 tuổi, và chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Thay đổi chính sách này</h2>
+    <div class="card">
+      <h3>Chúng tôi sẽ đăng mọi thay đổi trên trang này</h3>
+      <p>Nếu Chính sách quyền riêng tư này thay đổi, chúng tôi sẽ cập nhật nội dung và ngày “Cập nhật lần cuối” trên trang này. Với thay đổi quan trọng, chúng tôi cũng có thể thông báo trong ghi chú phát hành của ứng dụng.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Liên hệ</h2>
+    <div class="card">
+      <h3>Câu hỏi về quyền riêng tư</h3>
+      <p>Nếu bạn có câu hỏi về Chính sách quyền riêng tư này, hãy gửi email đến địa chỉ bên dưới.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Chính sách này có nhiều ngôn ngữ. Nếu các bản khác nhau, <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">bản tiếng Hàn</a> sẽ được ưu tiên.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

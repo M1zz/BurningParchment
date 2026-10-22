@@ -740,3 +740,60 @@ https://m1zz.github.io/BurningParchment/th/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/th/
+
+## vi
+
+### 이름
+
+Giấy Da Cháy: đến giờ ngủ
+
+### 부제
+
+Thời gian còn lại đang cháy
+
+### 키워드
+
+hẹn giờ,nhật ký,thói quen,tiện ích,hạn chót,kỷ luật,buổi tối,mục tiêu,mất ngủ,thời gian,lịch trình
+
+### 프로모션 텍스트
+
+Trước khi ngủ, hãy thổi vào tờ giấy da đang cháy để tắt lửa: một nghi thức nhỏ khép lại ngày. Những mảnh còn lại sẽ được giữ cho bạn.
+
+### 설명
+
+Thời gian còn lại của ngày đang cháy ngay trước mắt bạn.
+Giấy Da Cháy cho bạn thấy thời gian còn lại không bằng con số, mà bằng một tờ giấy da đang cháy dần. Ứng dụng dành cho những ai không muốn nhìn buổi tối cứ thế trôi mất.
+
+Ngày, tuần, tháng, năm
+Từ lúc thức dậy đến giờ đi ngủ, giấy da cháy dần. Thời gian còn lại của tuần này, tháng này và năm nay cũng xem được trên cùng tờ giấy da.
+Thêm một mục tiêu có hạn chót, và thời gian còn lại đến ngày đó cũng được đếm ngược.
+
+Thổi tắt lửa, khép lại ngày
+Từ 30 phút trước giờ đi ngủ, bạn có thể thổi vào tờ giấy da đang cháy để tắt lửa. Chỉ dùng sức thổi, không ghi âm gì cả.
+Những mảnh còn lại sau khi tắt lửa được giữ lại. Khi muốn, hãy lật một mảnh và viết một dòng ở mặt sau.
+
+Một ngày hóa thành tro
+Nhìn lại thời gian đã qua, để lại một dòng nhìn lại và đánh dấu một điểm trên biểu đồ hai trục để thấy nó đã đi đâu.
+Các bản nhìn lại lắng vào những bình theo chủ đề, và bạn có thể đọc lại trong sổ nhìn lại.
+Màn hình Dòng chảy của tro cho thấy thời gian đã đi đâu bằng biểu đồ phân bố và lịch than hồng.
+
+Luôn trước mắt
+Tiện ích trên Màn hình chính và Màn hình khóa, Dynamic Island cùng Live Activity trên Màn hình khóa hiển thị thời gian còn lại.
+Có chủ đề sáng và tối, giờ đi ngủ gợi ý và tùy chọn tab muốn hiện.
+
+Giấy Da Cháy Pro
+Giấy da cháy, các bản nhìn lại và nghi thức thổi tắt lửa đều miễn phí, hạn chót cũng miễn phí một mục. Pro không phải gói đăng ký: chỉ mua một lần, dùng mãi mãi.
+Pro mở khóa Thời Gian Rảnh Cháy, chỉ đốt thời gian rảnh bạn đã đặt; màu giấy da và ngọn lửa (hanji dưới trăng, men ngọc, hoàng hôn); các loại ngọn lửa (lửa đồng, than hồng, pháo bông cầm tay); chia sẻ mảnh dưới dạng thẻ và áp phích; xuất sổ nhìn lại ra PDF; dòng chảy của tro trong mười hai tháng qua; và hạn chót không giới hạn. Mọi tính năng Pro sau này cũng được bao gồm.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/vi/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/vi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/vi/

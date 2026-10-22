@@ -118,6 +118,12 @@
             "state" : "translated",
             "value" : "Perkamen Terbakar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament"
+          }
         }
       }
     },
@@ -237,6 +243,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen Terbakar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament"
           }
         }
       }

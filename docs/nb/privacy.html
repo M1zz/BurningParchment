@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personvernerklæring — Brennende Pergament</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/nb/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/BurningParchment/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/BurningParchment/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/BurningParchment/fi/privacy.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/BurningParchment/id/privacy.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/BurningParchment/nb/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/privacy.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/privacy.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/privacy.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/privacy.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/privacy.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/privacy.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="privacy.html" hreflang="nb" lang="nb" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Tilbake til Støtte</a>
+  <h1>Personvernerklæring</h1>
+  <p>Sist oppdatert: 18. august 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Sammendrag</h2>
+    <div class="card">
+      <h3>Brennende Pergament samler ikke inn opplysninger som identifiserer deg</h3>
+      <p>Alt du oppretter i appen (oppvåkningstid, leggetid, frister, refleksjoner og urner) blir på enheten din. Det eneste som når utvikleren, er den anonyme statistikken og krasjdiagnostikken som er beskrevet nedenfor, samt tilbakemeldinger du selv sender.</p>
+      <span class="highlight">🔒 Refleksjonene dine forlater aldri enheten din · Ingen reklame, ingen sporing</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lagres bare på enheten din</h2>
+    <div class="card">
+      <h3>Det du oppretter i appen</h3>
+      <p>Følgende lagres bare på enheten din (i UserDefaults):</p>
+      <ul>
+        <li>Oppvåkningstid og leggetid</li>
+        <li>Frister</li>
+        <li>Refleksjoner og urner</li>
+      </ul>
+      <p style="margin-top: 10px;">Disse dataene deles mellom appen og widgetene bare via App Group-lagring på enheten din, og slettes når du sletter appen.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sendt til utvikleren</h2>
+    <div class="card">
+      <h3>Anonym bruksstatistikk</h3>
+      <p>For å bidra til å forbedre appen sendes følgende til utviklerens iCloud-lagring (CloudKit):</p>
+      <ul>
+        <li>En tilfeldig generert installasjons-ID (UUID)</li>
+        <li>Appversjon, plattform og OS-versjon, språkinnstilling</li>
+        <li>Antall oppstarter, antall bruksdager og navn på sentrale funksjonshendelser</li>
+      </ul>
+      <p style="margin-top: 10px;">Installasjons-ID-en har ingenting å gjøre med enhetsidentifikatorer (IDFA eller IDFV) eller Apple-kontoen din, og en ny opprettes hvis du sletter og installerer appen på nytt.</p>
+    </div>
+    <div class="card">
+      <h3>Krasj- og hengediagnostikk</h3>
+      <p>Hvis appen krasjer eller henger seg opp, sendes diagnoserapporten som iOS lager (MetricKit): type problem, stack trace, app- og OS-versjoner og enhetsmodell. Ingenting du har skrevet inn i appen, som refleksjoner, er med.</p>
+    </div>
+    <div class="card">
+      <h3>Tilbakemeldinger du sender</h3>
+      <p>Tilbakemeldinger sendes bare når du sender dem fra Innstillinger-skjermen. De inneholder det du har skrevet sammen med enheten og appversjonen din, samt navn og e-postadresse bare hvis du selv skriver dem inn for å få svar.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Det vi ikke samler inn</h2>
+    <div class="card">
+      <h3>Vi samler aldri inn følgende</h3>
+      <ul>
+        <li>Alt du skriver inn i appen, som refleksjoner eller frister (med mindre du selv skriver det i en tilbakemelding)</li>
+        <li>Personopplysninger som navn, e-post eller telefonnummer (med mindre du selv skriver dem inn i en tilbakemelding)</li>
+        <li>Posisjon</li>
+        <li>Kontakter eller bilder</li>
+        <li>Enhetsidentifikatorer (IDFA, IDFV og lignende)</li>
+        <li>Reklamedata</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tredjeparter</h2>
+    <div class="card">
+      <h3>Vi deler ikke dataene dine</h3>
+      <p>Appen bruker ingen annonsenettverk og ingen analyse-SDK-er fra tredjeparter. Statistikken, diagnostikken og tilbakemeldingene som er beskrevet ovenfor, går bare til utviklerens egen iCloud-lagring. De kobles aldri sammen med data fra andre selskaper og brukes aldri til å spore deg for reklameformål.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kjøp i appen</h2>
+    <div class="card">
+      <h3>Apple håndterer betalingen</h3>
+      <p>Betalingen for engangskjøpet av Pro håndteres av Apple via App Store. Utvikleren mottar aldri betalingsopplysninger som kortnummer eller Apple-kontoen din. Appen lagrer bare på enheten din om du har kjøpt Pro, slik at den kan låse opp Pro-funksjonene.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Varsler</h2>
+    <div class="card">
+      <h3>Bare lokale varsler</h3>
+      <p>Påminnelsen én time før leggetid er et lokalt varsel som er planlagt på enheten din, og det går aldri via en ekstern server. Du kan når som helst endre varseltillatelsen i iOS Innstillinger.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mikrofon</h2>
+    <div class="card">
+      <h3>Den sjekker bare hvor hardt du blåser</h3>
+      <p>Mikrofonen brukes bare når du blåser på pergamentet for å slukke ilden, 30 minutter før leggetid. Appen måler bare styrken på pusten din på enheten, og tar aldri opp, lagrer eller sender noen lyd. Du kan når som helst endre mikrofontillatelsen i iOS Innstillinger.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Barns personvern</h2>
+    <div class="card">
+      <h3>Barn under 14 år</h3>
+      <p>Denne appen er ikke rettet mot barn under 14 år, og vi samler ikke bevisst inn personopplysninger fra barn.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Endringer i denne erklæringen</h2>
+    <div class="card">
+      <h3>Vi legger ut eventuelle endringer på denne siden</h3>
+      <p>Hvis denne personvernerklæringen endres, oppdaterer vi innholdet og datoen for «Sist oppdatert» på denne siden. Ved vesentlige endringer kan vi også gi beskjed i appens utgivelsesnotater.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <div class="card">
+      <h3>Spørsmål om personvern</h3>
+      <p>Hvis du har spørsmål om denne personvernerklæringen, kan du sende en e-post til adressen nedenfor.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Denne erklæringen er tilgjengelig på flere språk. Hvis versjonene er ulike, gjelder den <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">koreanske versjonen</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

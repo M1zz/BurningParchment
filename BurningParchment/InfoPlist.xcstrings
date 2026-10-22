@@ -117,6 +117,12 @@
             "state" : "translated",
             "value" : "Perkamen Terbakar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament"
+          }
         }
       }
     },
@@ -237,6 +243,12 @@
             "state" : "translated",
             "value" : "Perkamen Terbakar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament"
+          }
         }
       }
     },
@@ -356,6 +368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hanya digunakan untuk merasakan seberapa kuat kamu meniup saat memadamkan perkamen sebelum tidur. Tidak ada suara yang direkam atau disimpan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brukes bare til å registrere hvor hardt du blåser når du slukker pergamentet før leggetid. Ingen lyd tas opp eller lagres."
           }
         }
       }

@@ -154,6 +154,14 @@ Jelas dengan teks besar
 Tukarkan kode penawaran untuk Pro
 Lihat fitur mendatang di Pengaturan
 
+### 앱스토어 (nb)
+
+Nå på norsk
+En kort guide for nye brukere
+Tydelig med stor tekst og kontrast
+Løs inn tilbudskoder for å få Pro
+Se kommende funksjoner i Innstillinger
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

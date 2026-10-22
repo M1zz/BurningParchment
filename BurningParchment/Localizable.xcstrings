@@ -121,6 +121,12 @@
             "state" : "translated",
             "value" : ":%lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
+          }
         }
       }
     },
@@ -249,6 +255,12 @@
             "state" : "translated",
             "value" : "Tenggat: %@ %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frist: %@ %@"
+          }
         }
       }
     },
@@ -368,6 +380,12 @@
             "state" : "translated",
             "value" : "%@ · minggu %lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · uke %lld"
+          }
         }
       }
     },
@@ -482,6 +500,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -605,6 +629,12 @@
             "state" : "translated",
             "value" : "%@ — waktu yang belum masuk ke guci mana pun."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — tid som ennå ikke har havnet i noen urne."
+          }
         }
       }
     },
@@ -723,6 +753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu tidur %@ lebih larut. Pagi ini hangus sebanyak itu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du sovnet %@ for sent. Morgenen i dag er svidd tilsvarende"
           }
         }
       }
@@ -843,6 +879,12 @@
             "state" : "translated",
             "value" : "Perkamen besok terbakar setelah %@.\\nHanya waktu saat kamu terjaga yang meninggalkan bekas hangus."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament brant etter %@.\\nBare tiden du var våken, setter svidde spor."
+          }
         }
       }
     },
@@ -961,6 +1003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guci %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen %@"
           }
         }
       }
@@ -1081,6 +1129,12 @@
             "state" : "translated",
             "value" : "Akan masuk ke guci %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Havner i urnen %@"
+          }
         }
       }
     },
@@ -1200,6 +1254,12 @@
             "state" : "translated",
             "value" : "Beri makna pada guci %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gi urnen %@ en betydning"
+          }
         }
       }
     },
@@ -1317,6 +1377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guci %1$@ menyimpan butir abu: %2$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen %1$@ rommer askekorn: %2$@"
           }
         }
       }
@@ -1437,6 +1503,12 @@
             "state" : "translated",
             "value" : "Guci %1$@ menyimpan butir abu: %2$lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen %1$@ rommer askekorn: %2$lld"
+          }
         }
       }
     },
@@ -1555,6 +1627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksi: %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjoner: %@"
           }
         }
       }
@@ -1675,6 +1753,12 @@
             "state" : "translated",
             "value" : "Mulai dalam %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starter om %@"
+          }
         }
       }
     },
@@ -1793,6 +1877,12 @@
             "state" : "translated",
             "value" : "Perkamen mulai terbakar dalam %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamentet begynner å brenne om %@"
+          }
         }
       }
     },
@@ -1910,6 +2000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sisa %@%%"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%% igjen"
           }
         }
       }
@@ -2030,6 +2126,12 @@
             "state" : "translated",
             "value" : "%1$@, sisa %2$lld%%"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, %2$lld%% igjen"
+          }
         }
       }
     },
@@ -2148,6 +2250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, api dipadamkan dengan sisa %2$lld mnt"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, ilden slukket med %2$lld min til gode"
           }
         }
       }
@@ -2268,6 +2376,12 @@
             "state" : "translated",
             "value" : "%@, tidak ada catatan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, ingen oppføringer"
+          }
         }
       }
     },
@@ -2386,6 +2500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, abu: %2$lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, aske: %2$lld"
           }
         }
       }
@@ -2506,6 +2626,12 @@
             "state" : "translated",
             "value" : "%1$@, refleksi: %2$lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, refleksjoner: %2$lld"
+          }
         }
       }
     },
@@ -2624,6 +2750,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -2737,6 +2869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Malam saat api ditiup padam: %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netter med ild blåst ut: %@"
           }
         }
       }
@@ -2857,6 +2995,12 @@
             "state" : "translated",
             "value" : "Aplikasi dibuka pukul %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appen var åpen kl. %@"
+          }
         }
       }
     },
@@ -2975,6 +3119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu meniup padam api pukul %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du blåste ut ilden kl. %@"
           }
         }
       }
@@ -3096,6 +3246,12 @@
             "state" : "translated",
             "value" : "%1$@ hr · abu: %2$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ d · aske: %2$@"
+          }
         }
       }
     },
@@ -3215,6 +3371,12 @@
             "state" : "translated",
             "value" : "Sisa %lld%%"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% igjen"
+          }
         }
       }
     },
@@ -3330,6 +3492,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -3453,6 +3621,12 @@
             "state" : "translated",
             "value" : "%lld kali"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ganger"
+          }
         }
       }
     },
@@ -3571,6 +3745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Malam saat api ditiup padam: %lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netter med ild blåst ut: %lld"
           }
         }
       }
@@ -3691,6 +3871,12 @@
             "state" : "translated",
             "value" : "%lld mnt"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
         }
       }
     },
@@ -3809,6 +3995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld mnt %2$lld dtk"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld sek"
           }
         }
       }
@@ -3929,6 +4121,12 @@
             "state" : "translated",
             "value" : "Sisa %lld mnt"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med %lld min til gode"
+          }
         }
       }
     },
@@ -4047,6 +4245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Api dipadamkan dengan sisa %lld mnt"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden slukket med %lld min til gode"
           }
         }
       }
@@ -4167,6 +4371,12 @@
             "state" : "translated",
             "value" : "%lld jam"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld t"
+          }
         }
       }
     },
@@ -4285,6 +4495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld jam %2$lld mnt"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld t %2$lld min"
           }
         }
       }
@@ -4405,6 +4621,12 @@
             "state" : "translated",
             "value" : "%lld hr"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d"
+          }
         }
       }
     },
@@ -4523,6 +4745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld hr %2$lld jam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld t"
           }
         }
       }
@@ -4643,6 +4871,12 @@
             "state" : "translated",
             "value" : "%1$lld hr · abu: %2$lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d · aske: %2$lld"
+          }
         }
       }
     },
@@ -4761,6 +4995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minggu %lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uke %lld"
           }
         }
       }
@@ -4881,6 +5121,12 @@
             "state" : "translated",
             "value" : "%lld dtk"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sek"
+          }
         }
       }
     },
@@ -4999,6 +5245,12 @@
             "state" : "translated",
             "value" : "Hapus “%@”?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slette «%@»?"
+          }
         }
       }
     },
@@ -5116,6 +5368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambahkan dengan tombol +"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til en med +-knappen"
           }
         }
       }
@@ -5236,6 +5494,12 @@
             "state" : "translated",
             "value" : "Dalam 10 menit dihitung tepat waktu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innen 10 minutter regnes som i tide"
+          }
         }
       }
     },
@@ -5354,6 +5618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tahun"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "År"
           }
         }
       }
@@ -5474,6 +5744,12 @@
             "state" : "translated",
             "value" : "Bulan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måned"
+          }
         }
       }
     },
@@ -5593,6 +5869,12 @@
             "state" : "translated",
             "value" : "Hari"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag"
+          }
         }
       }
     },
@@ -5711,6 +5993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minggu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uke"
           }
         }
       }
@@ -5834,6 +6122,12 @@
             "state" : "translated",
             "value" : "Bagikan atau simpan PDF"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del eller lagre PDF"
+          }
         }
       }
     },
@@ -5955,6 +6249,12 @@
             "state" : "translated",
             "value" : "· ⊕ pusat massa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ tyngdepunkt"
+          }
         }
       }
     },
@@ -6072,6 +6372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %@ refleksi lama tanpa titik tersimpan disebar di dalam kuadrannya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ eldre refleksjoner uten lagret punkt er spredt innenfor kvadranten sin"
           }
         }
       }
@@ -6191,6 +6497,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %lld refleksi lama tanpa titik tersimpan disebar di dalam kuadrannya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld eldre refleksjoner uten lagret punkt er spredt innenfor kvadranten sin"
           }
         }
       }
@@ -6324,6 +6636,12 @@
             "state" : "translated",
             "value" : "Muat ulang harga"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hent pris på nytt"
+          }
         }
       }
     },
@@ -6442,6 +6760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rentetan terpanjang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lengste rekke"
           }
         }
       }
@@ -6562,6 +6886,12 @@
             "state" : "translated",
             "value" : "Rasa syukur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takknemlighet"
+          }
         }
       }
     },
@@ -6680,6 +7010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hubungi pengembang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt utvikleren"
           }
         }
       }
@@ -6800,6 +7136,12 @@
             "state" : "translated",
             "value" : "Kebijakan Privasi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personvernerklæring"
+          }
         }
       }
     },
@@ -6919,6 +7261,12 @@
             "state" : "translated",
             "value" : "Api yang menderu dan melompat-lompat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brølende, hoppende flammer"
+          }
         }
       }
     },
@@ -7036,6 +7384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data Kesehatan: tertidur pukul %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data fra Helse: sovnet kl. %@"
           }
         }
       }
@@ -7156,6 +7510,12 @@
             "state" : "translated",
             "value" : "Data tidur dari Kesehatan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søvndata fra Helse"
+          }
         }
       }
     },
@@ -7274,6 +7634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hubungkan data tidur Kesehatan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koble til søvndata fra Helse"
           }
         }
       }
@@ -7394,6 +7760,12 @@
             "state" : "translated",
             "value" : "Hubungkan data tidur Kesehatan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koble til søvndata fra Helse"
+          }
         }
       }
     },
@@ -7513,6 +7885,12 @@
             "state" : "translated",
             "value" : "Terhubung ke data tidur Kesehatan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koblet til søvndata fra Helse"
+          }
         }
       }
     },
@@ -7630,6 +8008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak ada data tidur semalam di Kesehatan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det finnes ingen søvndata for i natt i Helse"
           }
         }
       }
@@ -7750,6 +8134,12 @@
             "state" : "translated",
             "value" : "Kelip yang tenang dan lembut"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et rolig, mykt flimmer"
+          }
         }
       }
     },
@@ -7868,6 +8258,12 @@
             "state" : "translated",
             "value" : "Tulis ulang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv om"
+          }
         }
       }
     },
@@ -7985,6 +8381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hampir waktunya bangun"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snart tid for å stå opp"
           }
         }
       }
@@ -8105,6 +8507,12 @@
             "state" : "translated",
             "value" : "Hubungan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forhold"
+          }
         }
       }
     },
@@ -8223,6 +8631,12 @@
             "state" : "translated",
             "value" : "Bukan langganan. Bayar sekali, pakai selamanya."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dette er ikke et abonnement. Betal én gang, og behold det for alltid."
+          }
         }
       }
     },
@@ -8340,6 +8754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulihkan pembelian"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenopprett kjøp"
           }
         }
       }
@@ -8460,6 +8880,12 @@
             "state" : "translated",
             "value" : "Pembelian tidak dapat diselesaikan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kjøpet kunne ikke fullføres"
+          }
         }
       }
     },
@@ -8578,6 +9004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu yang berlalu begitu saja"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid som rant bort"
           }
         }
       }
@@ -8698,6 +9130,12 @@
             "state" : "translated",
             "value" : "Berlalu begitu saja"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rant bare bort"
+          }
         }
       }
     },
@@ -8817,6 +9255,12 @@
             "state" : "translated",
             "value" : "Hal yang perlu dihentikan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ting å slutte med"
+          }
         }
       }
     },
@@ -8934,6 +9378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Catatan salah? Perbaiki sendiri"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er oppføringen feil? Rett den selv"
           }
         }
       }
@@ -9054,6 +9504,12 @@
             "state" : "translated",
             "value" : "Catat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre"
+          }
         }
       }
     },
@@ -9172,6 +9628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari tercatat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dager med oppføring"
           }
         }
       }
@@ -9292,6 +9754,12 @@
             "state" : "translated",
             "value" : "Kegembiraan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glede"
+          }
         }
       }
     },
@@ -9410,6 +9878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengaturan bangun dan tidur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger for oppvåkning og leggetid"
           }
         }
       }
@@ -9530,6 +10004,12 @@
             "state" : "translated",
             "value" : "Waktu bangun"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppvåkningstid"
+          }
         }
       }
     },
@@ -9648,6 +10128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dari bangun hingga waktu tidur, perkamenmu terbakar perlahan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du står opp til leggetid brenner pergamentet sakte ned"
           }
         }
       }
@@ -9768,6 +10254,12 @@
             "state" : "translated",
             "value" : "Sebelum bangun"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Før oppvåkning"
+          }
         }
       }
     },
@@ -9885,6 +10377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ lagi sebelum bangun"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ til oppvåkning"
           }
         }
       }
@@ -10005,6 +10503,12 @@
             "state" : "translated",
             "value" : "Hitung mundur otomatis sejak bangun"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk nedtelling fra oppvåkning"
+          }
         }
       }
     },
@@ -10124,6 +10628,12 @@
             "state" : "translated",
             "value" : "Dari bangun hingga waktu tidur,\\nperkamen terbakar perlahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du står opp til leggetid\\nbrenner pergamentet sakte ned"
+          }
         }
       }
     },
@@ -10236,6 +10746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "dari waktu terjaga"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "av våken tid"
           }
         }
       }
@@ -10356,6 +10872,12 @@
             "state" : "translated",
             "value" : "Beristirahatlah dengan tenang di dekat api yang padam"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvil trygt ved den slukkede ilden"
+          }
         }
       }
     },
@@ -10474,6 +10996,12 @@
             "state" : "translated",
             "value" : "Mati"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av"
+          }
         }
       }
     },
@@ -10587,6 +11115,12 @@
             "state" : "translated",
             "value" : "Selesai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slutt"
+          }
         }
       }
     },
@@ -10699,6 +11233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bakar hanya waktu yang menjadi milikmu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brenn bare tiden som er din"
           }
         }
       }
@@ -10819,6 +11359,12 @@
             "state" : "translated",
             "value" : "Tujuanku"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mine mål"
+          }
         }
       }
     },
@@ -10932,6 +11478,12 @@
             "state" : "translated",
             "value" : "Waktu luangku"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritiden min"
+          }
         }
       }
     },
@@ -11044,6 +11596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atur waktu luangku"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Angi fritiden min"
           }
         }
       }
@@ -11164,6 +11722,12 @@
             "state" : "translated",
             "value" : "Nanti"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senere"
+          }
         }
       }
     },
@@ -11283,6 +11847,12 @@
             "state" : "translated",
             "value" : "Tiup"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås bort"
+          }
         }
       }
     },
@@ -11400,6 +11970,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tanggal"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dato"
           }
         }
       }
@@ -11520,6 +12096,12 @@
             "state" : "translated",
             "value" : "Besok menunggu di pecahan yang kusimpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen venter i bruddstykket jeg beholdt"
+          }
         }
       }
     },
@@ -11638,6 +12220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bara terakhir kuserahkan pada diriku besok"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De siste glørne overlater jeg til meg selv i morgen"
           }
         }
       }
@@ -11758,6 +12346,12 @@
             "state" : "translated",
             "value" : "Sisanya akan kami simpan.\\nSekarang tidurlah yang nyenyak."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi tar vare på det som er igjen.\\nNå skal du sove godt."
+          }
         }
       }
     },
@@ -11876,6 +12470,12 @@
             "state" : "translated",
             "value" : "Menyimpan yang tersisa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tar vare på det som var igjen"
+          }
         }
       }
     },
@@ -11993,6 +12593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "sisa"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "igjen"
           }
         }
       }
@@ -12113,6 +12719,12 @@
             "state" : "translated",
             "value" : "Cahaya rendah yang seperti bernapas"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et lavt, pustende skjær"
+          }
         }
       }
     },
@@ -12231,6 +12843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Langkah Catatan untuk besok"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trinnet Notat til i morgen"
           }
         }
       }
@@ -12351,6 +12969,12 @@
             "state" : "translated",
             "value" : "Hal baru apa yang akan kamu coba besok?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva nytt vil du prøve i morgen?"
+          }
         }
       }
     },
@@ -12468,6 +13092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Besok pagi, ia muncul sebagai pita di atas perkamen dan ikut terbakar bersama harimu."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen tidlig dukker det opp som et bånd øverst på pergamentet og brenner sammen med dagen din."
           }
         }
       }
@@ -12588,6 +13218,12 @@
             "state" : "translated",
             "value" : "Bagaimana kamu akan menjalani besok?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan vil du gripe an i morgen?"
+          }
         }
       }
     },
@@ -12706,6 +13342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apa yang akan kamu tinggalkan besok?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva vil du kutte ut i morgen?"
           }
         }
       }
@@ -12826,6 +13468,12 @@
             "state" : "translated",
             "value" : "Bagaimana kamu akan melewati besok dengan cara berbeda?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan vil du bruke i morgen annerledes?"
+          }
         }
       }
     },
@@ -12943,6 +13591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen besok"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament"
           }
         }
       }
@@ -13063,6 +13717,12 @@
             "state" : "translated",
             "value" : "Perkamen besok berhenti di sini.\\nSelamat tidur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament stoppet her.\\nSøte drømmer"
+          }
         }
       }
     },
@@ -13180,6 +13840,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen besok sedang terbakar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament brenner"
           }
         }
       }
@@ -13300,6 +13966,12 @@
             "state" : "translated",
             "value" : "Memadamkan api di perkamen besok"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slukker ilden på i morgens pergament"
+          }
         }
       }
     },
@@ -13418,6 +14090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Periksa koneksi jaringan, lalu coba lagi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekk nettverkstilkoblingen og prøv igjen."
           }
         }
       }
@@ -13538,6 +14216,12 @@
             "state" : "translated",
             "value" : "Senja"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solnedgang"
+          }
         }
       }
     },
@@ -13656,6 +14340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aku tidur larut"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg la meg sent"
           }
         }
       }
@@ -13776,6 +14466,12 @@
             "state" : "translated",
             "value" : "Hari yang tidak terbakar habis tetaplah satu hari penuh"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En dag som ikke brant helt ned, er fortsatt en hel dag"
+          }
         }
       }
     },
@@ -13894,6 +14590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tampilkan kalimat lain"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis en annen setning"
           }
         }
       }
@@ -14014,6 +14716,12 @@
             "state" : "translated",
             "value" : "Bakar dengan warna lain"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brenn i en annen farge"
+          }
         }
       }
     },
@@ -14132,6 +14840,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Berikutnya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste"
           }
         }
       }
@@ -14252,6 +14966,12 @@
             "state" : "translated",
             "value" : "Bulan depan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste måned"
+          }
         }
       }
     },
@@ -14364,6 +15084,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu luang berikutnya · %1$@ %2$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste fritid · %1$@ %2$@"
           }
         }
       }
@@ -14484,6 +15210,12 @@
             "state" : "translated",
             "value" : "Bagaimana kamu bisa menyelesaikannya lain kali?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan kunne du blitt ferdig neste gang?"
+          }
         }
       }
     },
@@ -14602,6 +15334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pembaruan langsung di Dynamic Island"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direkteoppdateringer i Dynamic Island"
           }
         }
       }
@@ -14722,6 +15460,12 @@
             "state" : "translated",
             "value" : "Gelap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk"
+          }
         }
       }
     },
@@ -14839,6 +15583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukk"
           }
         }
       }
@@ -14959,6 +15709,12 @@
             "state" : "translated",
             "value" : "Tutup — semua yang telah kamu tulis tersimpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukk — alt du har skrevet, er lagret"
+          }
         }
       }
     },
@@ -15077,6 +15833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bulan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måne"
           }
         }
       }
@@ -15197,6 +15959,12 @@
             "state" : "translated",
             "value" : "Hanji Cahaya Bulan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneskinns-hanji"
+          }
         }
       }
     },
@@ -15315,6 +16083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hanji Cahaya Bulan, Celadon, Senja. Mengubah warna kertas dan api."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneskinns-hanji, celadon, solnedgang. Endrer fargen på papiret og flammen."
           }
         }
       }
@@ -15435,6 +16209,12 @@
             "state" : "translated",
             "value" : "Bakar dengan Hanji Cahaya Bulan, Celadon, atau Senja, sebagai api padang, bara, atau kembang api tangan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brenn i måneskinns-hanji, celadon eller solnedgang, som prærieild, glør eller stjerneskudd"
+          }
         }
       }
     },
@@ -15554,6 +16334,12 @@
             "state" : "translated",
             "value" : "Buka satu bulan untuk melihat guci mingguannya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpne en måned for å finne ukeurnene dens"
+          }
         }
       }
     },
@@ -15672,6 +16458,12 @@
             "state" : "translated",
             "value" : "Abu di dalamnya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske inni"
+          }
         }
       }
     },
@@ -15789,6 +16581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak apa-apa menutup tanpa menjawab. Malam yang tidak dikonfirmasi lewat tanpa bekas hangus."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan lukke uten å svare. Ubekreftede netter går forbi uten svidd spor."
           }
         }
       }
@@ -15909,6 +16707,12 @@
             "state" : "translated",
             "value" : "Perkiraan kasar pun tak apa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et grovt anslag er greit"
+          }
         }
       }
     },
@@ -16028,6 +16832,12 @@
             "state" : "translated",
             "value" : "Apa yang akan kamu lakukan besok agar lebih baik lagi?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva gjør du i morgen for å gjøre det enda bedre?"
+          }
         }
       }
     },
@@ -16139,6 +16949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambah"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til"
           }
         }
       }
@@ -16259,6 +17075,12 @@
             "state" : "translated",
             "value" : "Tenggat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frister"
+          }
         }
       }
     },
@@ -16377,6 +17199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tenggat tanpa batas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrensede frister"
           }
         }
       }
@@ -16497,6 +17325,12 @@
             "state" : "translated",
             "value" : "Hapus tenggat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett frist"
+          }
         }
       }
     },
@@ -16615,6 +17449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ubah tenggat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger frist"
           }
         }
       }
@@ -16735,6 +17575,12 @@
             "state" : "translated",
             "value" : "Tab tenggat muncul otomatis begitu kamu menambahkan tenggat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fristfanen vises automatisk når du legger til en frist"
+          }
         }
       }
     },
@@ -16853,6 +17699,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hingga tenggat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Til fristen"
           }
         }
       }
@@ -16973,6 +17825,12 @@
             "state" : "translated",
             "value" : "Ingin lebih banyak tenggat?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vil du ha flere frister?"
+          }
         }
       }
     },
@@ -17090,6 +17948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak ada tenggat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen frister"
           }
         }
       }
@@ -17210,6 +18074,12 @@
             "state" : "translated",
             "value" : "Tantangan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utfordring"
+          }
         }
       }
     },
@@ -17327,6 +18197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bentuk"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Form"
           }
         }
       }
@@ -17447,6 +18323,12 @@
             "state" : "translated",
             "value" : "Ketuk dua kali untuk membalik pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dobbelttrykk for å snu bruddstykket"
+          }
         }
       }
     },
@@ -17565,6 +18447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klasifikasikan dengan mengetuk satu titik di sepanjang kedua sumbu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorter ved å trykke på et punkt langs de to aksene"
           }
         }
       }
@@ -17685,6 +18573,12 @@
             "state" : "translated",
             "value" : "Balikkan dan tinggalkan satu baris di baliknya."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snu det og legg igjen en linje på baksiden."
+          }
         }
       }
     },
@@ -17804,6 +18698,12 @@
             "state" : "translated",
             "value" : "Tulis ulang bagian belakang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv om baksiden"
+          }
         }
       }
     },
@@ -17922,6 +18822,12 @@
             "state" : "translated",
             "value" : "Satu baris untuk bagian belakang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En linje til baksiden"
+          }
         }
       }
     },
@@ -18039,6 +18945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tulis di bagian belakang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv på baksiden"
           }
         }
       }
@@ -18159,6 +19071,12 @@
             "state" : "translated",
             "value" : "Bagian belakang masih kosong"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baksiden er tom"
+          }
         }
       }
     },
@@ -18277,6 +19195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Api padang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prærieild"
           }
         }
       }
@@ -18397,6 +19321,12 @@
             "state" : "translated",
             "value" : "Terang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lys"
+          }
         }
       }
     },
@@ -18514,6 +19444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tenggat terlewati 🏁"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fristen er ute 🏁"
           }
         }
       }
@@ -18633,6 +19569,12 @@
             "state" : "translated",
             "value" : "Sisa waktu hingga tenggat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid til fristen"
+          }
         }
       }
     },
@@ -18750,6 +19692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tanggal jatuh tempo"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forfallsdato"
           }
         }
       }
@@ -18870,6 +19818,12 @@
             "state" : "translated",
             "value" : "Bulan saat kamu paling banyak melakukan apa yang kamu rencanakan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneden du gjorde mest av det du hadde tenkt"
+          }
         }
       }
     },
@@ -18988,6 +19942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Melakukan sesuai rencana"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjorde som jeg hadde tenkt"
           }
         }
       }
@@ -19108,6 +20068,12 @@
             "state" : "translated",
             "value" : "Melakukan yang kuinginkan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjorde det jeg ville"
+          }
         }
       }
     },
@@ -19226,6 +20192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyalakan mikrofon untuk memadamkan api"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på mikrofonen for å slukke ilden"
           }
         }
       }
@@ -19346,6 +20318,12 @@
             "state" : "translated",
             "value" : "Buat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opprett"
+          }
         }
       }
     },
@@ -19458,6 +20436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Setiap hari"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver dag"
           }
         }
       }
@@ -19578,6 +20562,12 @@
             "state" : "translated",
             "value" : "Berhenti"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopp"
+          }
         }
       }
     },
@@ -19696,6 +20686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapan kamu tertidur?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når sovnet du?"
           }
         }
       }
@@ -19816,6 +20812,12 @@
             "state" : "translated",
             "value" : "Tidak perlu membakar semuanya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du trenger ikke brenne alt"
+          }
         }
       }
     },
@@ -19934,6 +20936,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu terkumpul"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samlet aske"
           }
         }
       }
@@ -20054,6 +21062,12 @@
             "state" : "translated",
             "value" : "Gaya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil"
+          }
         }
       }
     },
@@ -20173,6 +21187,12 @@
             "state" : "translated",
             "value" : "Pecahan tersimpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bevarte bruddstykker"
+          }
         }
       }
     },
@@ -20290,6 +21310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pecahan tersimpan: %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bevarte bruddstykker: %@"
           }
         }
       }
@@ -20410,6 +21436,12 @@
             "state" : "translated",
             "value" : "Pecahan tersimpan: %lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bevarte bruddstykker: %lld"
+          }
         }
       }
     },
@@ -20528,6 +21560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bawa pecahanmu bersamamu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta med deg bruddstykkene dine"
           }
         }
       }
@@ -20648,6 +21686,12 @@
             "state" : "translated",
             "value" : "Bagikan pecahanmu sebagai kartu dan poster"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del bruddstykkene dine som kort og plakater"
+          }
         }
       }
     },
@@ -20766,6 +21810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tak terlaksana"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ble ikke gjort"
           }
         }
       }
@@ -20886,6 +21936,12 @@
             "state" : "translated",
             "value" : "Versi gratis menyimpan hingga %lld tenggat. Dengan Pro, hitung mundur sebanyak apa pun tujuan yang kamu mau."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratisversjonen rommer opptil %lld frist. Med Pro kan du telle ned til så mange mål du vil."
+          }
         }
       }
     },
@@ -21004,6 +22060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apa yang membuatmu terjaga? (opsional)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva holdt deg våken? (valgfritt)"
           }
         }
       }
@@ -21124,6 +22186,12 @@
             "state" : "translated",
             "value" : "Batang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stolpe"
+          }
         }
       }
     },
@@ -21242,6 +22310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Latar belakang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bakgrunn"
           }
         }
       }
@@ -21362,6 +22436,12 @@
             "state" : "translated",
             "value" : "Percikan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gnist"
+          }
         }
       }
     },
@@ -21480,6 +22560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Malam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natt"
           }
         }
       }
@@ -21600,6 +22686,12 @@
             "state" : "translated",
             "value" : "Tetesan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dråpe"
+          }
         }
       }
     },
@@ -21718,6 +22810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Belajar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Læring"
           }
         }
       }
@@ -21838,6 +22936,12 @@
             "state" : "translated",
             "value" : "Laporan bug dan ide fitur sangat kami nantikan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feilrapporter og ideer til funksjoner er velkomne."
+          }
         }
       }
     },
@@ -21956,6 +23060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forkast"
           }
         }
       }
@@ -22076,6 +23186,12 @@
             "state" : "translated",
             "value" : "Petir"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lyn"
+          }
         }
       }
     },
@@ -22194,6 +23310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rentang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Område"
           }
         }
       }
@@ -22314,6 +23436,12 @@
             "state" : "translated",
             "value" : "Bintang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjerne"
+          }
         }
       }
     },
@@ -22432,6 +23560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak ada pembelian untuk dipulihkan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen kjøp å gjenopprette"
           }
         }
       }
@@ -22552,6 +23686,12 @@
             "state" : "translated",
             "value" : "Langkah Menulis"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trinnet Skriving"
+          }
         }
       }
     },
@@ -22670,6 +23810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Simpan teks lalu lanjut ke klasifikasi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre teksten og gå til klassifisering"
           }
         }
       }
@@ -22790,6 +23936,12 @@
             "state" : "translated",
             "value" : "mnt"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
         }
       }
     },
@@ -22908,6 +24060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Grafik klasifikasi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klassifiseringsgraf"
           }
         }
       }
@@ -23028,6 +24186,12 @@
             "state" : "translated",
             "value" : "Langkah Klasifikasi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trinnet Klassifisering"
+          }
         }
       }
     },
@@ -23146,6 +24310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Belum diklasifikasikan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke klassifisert"
           }
         }
       }
@@ -23266,6 +24436,12 @@
             "state" : "translated",
             "value" : "Simpan klasifikasi lalu lanjut ke catatan untuk besok"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre klassifiseringen og gå til notatet til i morgen"
+          }
         }
       }
     },
@@ -23384,6 +24560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Api"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flamme"
           }
         }
       }
@@ -23504,6 +24686,12 @@
             "state" : "translated",
             "value" : "Jenis api"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flammetype"
+          }
         }
       }
     },
@@ -23622,6 +24810,12 @@
             "state" : "translated",
             "value" : "Api padam · Lihat pecahan tersimpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket · Se bevarte bruddstykker"
+          }
         }
       }
     },
@@ -23739,6 +24933,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Api padam. Selamat tidur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket. Søte drømmer"
           }
         }
       }
@@ -23859,6 +25059,12 @@
             "state" : "translated",
             "value" : "Ubah pecahan yang kamu simpan menjadi kartu dan poster."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjør de bevarte bruddstykkene om til kort og plakater."
+          }
         }
       }
     },
@@ -23977,6 +25183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Memadamkan api juga butuh keberanian"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det krever også mot å slukke ilden"
           }
         }
       }
@@ -24097,6 +25309,12 @@
             "state" : "translated",
             "value" : "Kamu tidak meniup, tetapi tidur tepat waktu, jadi api padam dengan sendirinya."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du blåste ikke, men sovnet i tide, så ilden gikk ut av seg selv."
+          }
         }
       }
     },
@@ -24215,6 +25433,12 @@
             "state" : "translated",
             "value" : "Api padam"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket"
+          }
         }
       }
     },
@@ -24332,6 +25556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen Terbakar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament"
           }
         }
       }
@@ -24452,6 +25682,12 @@
             "state" : "translated",
             "value" : "Perkamen Terbakar Pro"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament Pro"
+          }
         }
       }
     },
@@ -24570,6 +25806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen Terbakar 🔥"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament 🔥"
           }
         }
       }
@@ -24690,6 +25932,12 @@
             "state" : "translated",
             "value" : "Perkamen Terbakar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Pergament"
+          }
         }
       }
     },
@@ -24801,6 +26049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu Luang Terbakar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennende Fritid"
           }
         }
       }
@@ -24921,6 +26175,12 @@
             "state" : "translated",
             "value" : "Dapatkan Waktu Luang Terbakar, warna dan jenis api, kartu pecahan, PDF buku refleksi, abu setahun penuh, dan tenggat tanpa batas."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få Brennende Fritid, farger og flammetyper, bruddstykkekort, PDF av refleksjonsboken, et års aske og ubegrensede frister."
+          }
         }
       }
     },
@@ -25033,6 +26293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dapatkan Waktu Luang Terbakar, tema, kartu pecahan, PDF buku refleksi, abu setahun penuh, dan tenggat tanpa batas."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få Brennende Fritid, temaer, bruddstykkekort, PDF av refleksjonsboken, et års aske og ubegrensede frister."
           }
         }
       }
@@ -25153,6 +26419,12 @@
             "state" : "translated",
             "value" : "Kembang api tangan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjerneskudd"
+          }
         }
       }
     },
@@ -25270,6 +26542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biarkan kosong untuk memakai kalimat yang samar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La stå tomt for å bruke den svake setningen"
           }
         }
       }
@@ -25390,6 +26668,12 @@
             "state" : "translated",
             "value" : "Warna"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farge"
+          }
         }
       }
     },
@@ -25508,6 +26792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warna menentukan rona kertas dan api. Jenis api menentukan cara terbakarnya. Pilih masing-masing secara terpisah"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fargen bestemmer nyansen på papiret og flammen. Flammetypen bestemmer hvordan den brenner. Velg hver for seg"
           }
         }
       }
@@ -25628,6 +26918,12 @@
             "state" : "translated",
             "value" : "Sedang dipakai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I bruk"
+          }
         }
       }
     },
@@ -25746,6 +27042,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett"
           }
         }
       }
@@ -25866,6 +27168,12 @@
             "state" : "translated",
             "value" : "Tenggat baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny frist"
+          }
         }
       }
     },
@@ -25984,6 +27292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guci baru"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny urne"
           }
         }
       }
@@ -26104,6 +27418,12 @@
             "state" : "translated",
             "value" : "Buat guci baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opprett ny urne"
+          }
         }
       }
     },
@@ -26221,6 +27541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksi baru"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny refleksjon"
           }
         }
       }
@@ -26341,6 +27667,12 @@
             "state" : "translated",
             "value" : "Tulis refleksi baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en ny refleksjon"
+          }
         }
       }
     },
@@ -26459,6 +27791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ukir"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gravér"
           }
         }
       }
@@ -26579,6 +27917,12 @@
             "state" : "translated",
             "value" : "Mencakup semua fitur Pro yang kami tambahkan nanti"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inkluderer alle Pro-funksjoner vi legger til senere"
+          }
         }
       }
     },
@@ -26697,6 +28041,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Garis"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linje"
           }
         }
       }
@@ -26817,6 +28167,12 @@
             "state" : "translated",
             "value" : "Dipilih"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt"
+          }
         }
       }
     },
@@ -26935,6 +28291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengaturan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger"
           }
         }
       },
@@ -27055,6 +28417,12 @@
             "state" : "translated",
             "value" : "Nyalakan mikrofon di Pengaturan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på mikrofonen i Innstillinger"
+          }
         }
       }
     },
@@ -27173,6 +28541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pertumbuhan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vekst"
           }
         }
       }
@@ -27293,6 +28667,12 @@
             "state" : "translated",
             "value" : "Jujurlah..."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vær ærlig..."
+          }
         }
       }
     },
@@ -27411,6 +28791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Catatan tidur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søvndata"
           }
         }
       }
@@ -27531,6 +28917,12 @@
             "state" : "translated",
             "value" : "Catatan tidur hanya dibaca dan tidak pernah meninggalkan perangkatmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søvndata blir bare lest og forlater aldri enheten din"
+          }
         }
       }
     },
@@ -27648,6 +29040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sover"
           }
         }
       }
@@ -27768,6 +29166,12 @@
             "state" : "translated",
             "value" : "Ubah"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger"
+          }
         }
       }
     },
@@ -27886,6 +29290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bara"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glør"
           }
         }
       }
@@ -28006,6 +29416,12 @@
             "state" : "translated",
             "value" : "jam"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "t"
+          }
         }
       }
     },
@@ -28124,6 +29540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid"
           }
         }
       }
@@ -28244,6 +29666,12 @@
             "state" : "translated",
             "value" : "Pengaturan waktu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidsinnstillinger"
+          }
         }
       }
     },
@@ -28362,6 +29790,12 @@
             "state" : "translated",
             "value" : "Meluangkan waktu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brukte tid"
+          }
         }
       }
     },
@@ -28479,6 +29913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak meluangkan waktu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brukte ikke tid"
           }
         }
       }
@@ -28599,6 +30039,12 @@
             "state" : "translated",
             "value" : "Sistem"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
         }
       }
     },
@@ -28718,6 +30164,12 @@
             "state" : "translated",
             "value" : "Pilih Sistem untuk mengikuti pengaturan mode gelap perangkatmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg System for å følge enhetens innstilling for mørk modus"
+          }
         }
       }
     },
@@ -28830,6 +30282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mulai"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
           }
         }
       }
@@ -28948,6 +30406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu mulai"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starttidspunkt"
           }
         }
       }
@@ -29068,6 +30532,12 @@
             "state" : "translated",
             "value" : "Kesalahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feil"
+          }
         }
       }
     },
@@ -29185,6 +30655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Simbol"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbol"
           }
         }
       }
@@ -29304,6 +30780,12 @@
             "state" : "translated",
             "value" : "Belum ada abu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aske ennå"
+          }
         }
       }
     },
@@ -29422,6 +30904,12 @@
             "state" : "translated",
             "value" : "Belum ada pecahan tersimpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen bevarte bruddstykker ennå"
+          }
         }
       }
     },
@@ -29539,6 +31027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Belum ada abu yang diklasifikasikan. Ketuk grafik saat menulis refleksi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen klassifisert aske ennå. Trykk på grafen når du skriver en refleksjon."
           }
         }
       }
@@ -29659,6 +31153,12 @@
             "state" : "translated",
             "value" : "Masih kosong"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsatt tom"
+          }
         }
       }
     },
@@ -29778,6 +31278,12 @@
             "state" : "translated",
             "value" : "Masih kosong."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsatt tom."
+          }
         }
       }
     },
@@ -29895,6 +31401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu yang belum bernama"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske uten navn ennå"
           }
         }
       }
@@ -30015,6 +31527,12 @@
             "state" : "translated",
             "value" : "Belum ada yang tertulis"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingenting skrevet ennå"
+          }
         }
       }
     },
@@ -30132,6 +31650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Masih di halaman pertama"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsatt på første side"
           }
         }
       }
@@ -30252,6 +31776,12 @@
             "state" : "translated",
             "value" : "Belum ada guci"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen urner ennå"
+          }
         }
       }
     },
@@ -30371,6 +31901,12 @@
             "state" : "translated",
             "value" : "Belum ada abu yang mengendap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aske har lagt seg ennå"
+          }
         }
       }
     },
@@ -30488,6 +32024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Untuk sekarang hanya abu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foreløpig bare aske"
           }
         }
       }
@@ -30608,6 +32150,12 @@
             "state" : "translated",
             "value" : "Fitur Pro mendatang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommende Pro-funksjoner"
+          }
         }
       }
     },
@@ -30720,6 +32268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sekitar %lld hari"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omtrent %lld dager"
           }
         }
       }
@@ -30840,6 +32394,12 @@
             "state" : "translated",
             "value" : "Perkamen"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament"
+          }
         }
       }
     },
@@ -30958,6 +32518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen dan api"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament og flamme"
           }
         }
       }
@@ -31078,6 +32644,12 @@
             "state" : "translated",
             "value" : "Tema perkamen dan api"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament- og flammetemaer"
+          }
         }
       }
     },
@@ -31196,6 +32768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pilih bagaimana perkamenmu terbakar. Warna mengikuti tema di atas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg hvordan pergamentet ditt brenner. Fargen følger temaet over"
           }
         }
       }
@@ -31316,6 +32894,12 @@
             "state" : "translated",
             "value" : "Perkamen dan api"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament og flamme"
+          }
         }
       }
     },
@@ -31434,6 +33018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warna kertas dan api berubah bersamaan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Papirfargen og flammen endres sammen"
           }
         }
       }
@@ -31554,6 +33144,12 @@
             "state" : "translated",
             "value" : "Masukkan ke guci mana?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilken urne skal det i?"
+          }
         }
       }
     },
@@ -31671,6 +33267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Belum selesai kemarin"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uferdig fra i går"
           }
         }
       }
@@ -31791,6 +33393,12 @@
             "state" : "translated",
             "value" : "Belum selesai kemarin: %lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uferdig fra i går: %lld"
+          }
         }
       }
     },
@@ -31908,6 +33516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semalam kamu tidur %@ lebih larut,\\njadi pagi ini hangus"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du sovnet %@ for sent i natt,\\nså morgenen i dag er svidd"
           }
         }
       }
@@ -32028,6 +33642,12 @@
             "state" : "translated",
             "value" : "Semalam kamu tidur %@ lebih larut.\\nCoba padamkan api sedikit lebih awal malam ini."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du sovnet %@ for sent i natt.\\nPrøv å slukke ilden litt tidligere i kveld."
+          }
         }
       }
     },
@@ -32147,6 +33767,12 @@
             "state" : "translated",
             "value" : "Pecahan semalam sudah dingin"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruddstykket fra i natt er blitt kaldt"
+          }
         }
       }
     },
@@ -32264,6 +33890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagaimana semalam?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan var natten?"
           }
         }
       }
@@ -32384,6 +34016,12 @@
             "state" : "translated",
             "value" : "Kebetulan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilfeldig"
+          }
         }
       }
     },
@@ -32502,6 +34140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Akhirnya melakukannya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endte opp med å gjøre det"
           }
         }
       }
@@ -32622,6 +34266,12 @@
             "state" : "translated",
             "value" : "Yang akhirnya kulakukan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det jeg endte opp med å gjøre"
+          }
         }
       }
     },
@@ -32741,6 +34391,12 @@
             "state" : "translated",
             "value" : "Tidak ada"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen"
+          }
         }
       }
     },
@@ -32858,6 +34514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Isi di sini hanyalah abu sampai kamu memberinya nama."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det som ligger her, er bare aske til du gir det et navn."
           }
         }
       }
@@ -32978,6 +34640,12 @@
             "state" : "translated",
             "value" : "Apa arti abu ini bagiku…"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva denne asken har betydd for meg…"
+          }
         }
       }
     },
@@ -33096,6 +34764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hitung mundur banyak tujuan sekaligus"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tell ned til flere mål samtidig"
           }
         }
       }
@@ -33216,6 +34890,12 @@
             "state" : "translated",
             "value" : "Terhubung"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koblet til"
+          }
         }
       }
     },
@@ -33334,6 +35014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Untuk memutus koneksi, buka Pengaturan iOS ▸ Kesehatan ▸ Akses Data & Perangkat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kobler fra i iOS Innstillinger ▸ Helse ▸ Datatilgang og enheter"
           }
         }
       }
@@ -33454,6 +35140,12 @@
             "state" : "translated",
             "value" : "Untuk memutus koneksi, buka Pengaturan iOS ▸ Kesehatan ▸ Akses Data & Perangkat. Data tidur hanya dibaca dan tidak pernah meninggalkan perangkatmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kobler fra i iOS Innstillinger ▸ Helse ▸ Datatilgang og enheter. Søvndata blir bare lest og forlater aldri enheten din"
+          }
         }
       }
     },
@@ -33572,6 +35264,12 @@
             "state" : "translated",
             "value" : "Hubungkan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koble til"
+          }
         }
       }
     },
@@ -33689,6 +35387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Setelah terhubung, kami tidak akan bertanya setiap pagi dan akan memutar api kembali ke saat kamu tertidur. Catatan tidur hanya dibaca dan tidak pernah meninggalkan perangkatmu."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du har koblet til, spør vi ikke hver morgen og setter ilden tilbake til tidspunktet du sovnet. Søvndata blir bare lest og forlater aldri enheten din."
           }
         }
       }
@@ -33809,6 +35513,12 @@
             "state" : "translated",
             "value" : "Setelah terhubung, kami tidak akan bertanya setiap pagi. Perkamen besok dikembalikan ke saat kamu benar-benar tertidur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du har koblet til, spør vi ikke hver morgen. I morgens pergament settes tilbake til tidspunktet du faktisk sovnet"
+          }
         }
       }
     },
@@ -33927,6 +35637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Setelah terhubung, kami memakai waktu tidur yang tercatat alih-alih bertanya setiap pagi. Data tidur hanya dibaca dan tidak pernah meninggalkan perangkatmu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du har koblet til, bruker vi den registrerte søvntiden i stedet for å spørre hver morgen. Søvndata blir bare lest og forlater aldri enheten din"
           }
         }
       }
@@ -34047,6 +35763,12 @@
             "state" : "translated",
             "value" : "Buka"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpne"
+          }
         }
       }
     },
@@ -34165,6 +35887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cth: batasi media sosial 15 menit"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. maks 15 minutter på sosiale medier"
           }
         }
       }
@@ -34285,6 +36013,12 @@
             "state" : "translated",
             "value" : "Cth: minggu yang berhasil kulewati"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. uken jeg holdt ut"
+          }
         }
       }
     },
@@ -34403,6 +36137,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cth: ganti dengan jalan kaki 20 menit"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. bytt til en gåtur på 20 minutter"
           }
         }
       }
@@ -34523,6 +36263,12 @@
             "state" : "translated",
             "value" : "Cth: tambah olahraga 30 menit"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. tren 30 minutter ekstra"
+          }
         }
       }
     },
@@ -34641,6 +36387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cth: olahraga, hubungan, tantangan tahun ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. trening, forhold, årets utfordring"
           }
         }
       }
@@ -34761,6 +36513,12 @@
             "state" : "translated",
             "value" : "Cth: olahraga 30 menit setelah makan siang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. 30 minutters trening rett etter lunsj"
+          }
         }
       }
     },
@@ -34879,6 +36637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cth: baca satu bab"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. les ett kapittel"
           }
         }
       }
@@ -34999,6 +36763,12 @@
             "state" : "translated",
             "value" : "Cth: serahkan proyek"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. lever inn prosjektet"
+          }
         }
       }
     },
@@ -35117,6 +36887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag"
           }
         }
       }
@@ -35237,6 +37013,12 @@
             "state" : "translated",
             "value" : "Mengapa hari ini tidak selesai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvorfor i dag ble uferdig"
+          }
         }
       }
     },
@@ -35355,6 +37137,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pagi ini sedikit hangus"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgenen i dag er litt svidd"
           }
         }
       }
@@ -35475,6 +37263,12 @@
             "state" : "translated",
             "value" : "Tinggalkan satu baris tentang harimu."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg igjen en linje om dagen din."
+          }
         }
       }
     },
@@ -35593,6 +37387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu tidak bisa\\nmenyelesaikan harimu hari ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du fikk ikke\\navsluttet dagen din"
           }
         }
       }
@@ -35713,6 +37513,12 @@
             "state" : "translated",
             "value" : "Apa yang membuatmu tidak bisa\\nmenyelesaikan harimu?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva hindret deg i å\\navslutte dagen din?"
+          }
         }
       }
     },
@@ -35832,6 +37638,12 @@
             "state" : "translated",
             "value" : "Memadamkan api hari ini dan menyimpan pecahan yang tersisa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slukker dagens ild og tar vare på bruddstykket som er igjen"
+          }
         }
       }
     },
@@ -35949,6 +37761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tinggalkan satu baris sebelum tidur?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legge igjen en linje før du sover?"
           }
         }
       }
@@ -36069,6 +37887,12 @@
             "state" : "translated",
             "value" : "Hari ini, "
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag, "
+          }
         }
       }
     },
@@ -36188,6 +38012,12 @@
             "state" : "translated",
             "value" : "Lewati hari ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hopp over i dag"
+          }
         }
       }
     },
@@ -36305,6 +38135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagaimana harimu? — Ketuk untuk menandai"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan var dagen din? — Trykk for å sette et punkt"
           }
         }
       }
@@ -36425,6 +38261,12 @@
             "state" : "translated",
             "value" : "Apa yang akan kamu coba malam ini? (opsional)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva vil du prøve i kveld? (valgfritt)"
+          }
         }
       }
     },
@@ -36543,6 +38385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cukup untuk hari ini. Terbakar dengan baik."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det holder for i dag. Det brant godt."
           }
         }
       }
@@ -36663,6 +38511,12 @@
             "state" : "translated",
             "value" : "Aku yang menentukan di mana hari ini berakhir"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg bestemmer hvor i dag slutter"
+          }
         }
       }
     },
@@ -36781,6 +38635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tulis refleksi hari ini? Ketuk untuk membuka editor"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrive dagens refleksjon? Trykk for å åpne editoren"
           }
         }
       }
@@ -36901,6 +38761,12 @@
             "state" : "translated",
             "value" : "pagi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "om morgenen"
+          }
         }
       }
     },
@@ -37019,6 +38885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "malam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "om kvelden"
           }
         }
       }
@@ -37139,6 +39011,12 @@
             "state" : "translated",
             "value" : "Tahun Ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I år"
+          }
         }
       }
     },
@@ -37258,6 +39136,12 @@
             "state" : "translated",
             "value" : "Sisa waktu tahun ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid igjen i år"
+          }
         }
       }
     },
@@ -37375,6 +39259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selesai"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferdig"
           }
         }
       }
@@ -37494,6 +39384,12 @@
             "state" : "translated",
             "value" : "+%@ lagi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@ til"
+          }
         }
       }
     },
@@ -37605,6 +39501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "dan %@ lagi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "og %@ til"
           }
         }
       }
@@ -37725,6 +39627,12 @@
             "state" : "translated",
             "value" : "+%lld lagi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld til"
+          }
         }
       }
     },
@@ -37843,6 +39751,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "dan %lld lagi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "og %lld til"
           }
         }
       }
@@ -37963,6 +39877,12 @@
             "state" : "translated",
             "value" : "Lingkaran"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sirkel"
+          }
         }
       }
     },
@@ -38082,6 +40002,12 @@
             "state" : "translated",
             "value" : "Gesek ke atas atau bawah untuk berpindah halaman"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sveip opp eller ned for å bytte side"
+          }
         }
       }
     },
@@ -38199,6 +40125,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tulis maknanya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv betydningen"
           }
         }
       }
@@ -38319,6 +40251,12 @@
             "state" : "translated",
             "value" : "Catat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv det ned"
+          }
         }
       }
     },
@@ -38436,6 +40374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus makna"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett betydningen"
           }
         }
       }
@@ -38555,6 +40499,12 @@
             "state" : "translated",
             "value" : "Tanpa\\nniat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uten\\nintensjon"
+          }
         }
       }
     },
@@ -38672,6 +40622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dengan\\nniat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med\\nintensjon"
           }
         }
       }
@@ -38791,6 +40747,12 @@
             "state" : "translated",
             "value" : "Kami tidak menemukan pembelian Pro di Akun Apple ini. Pastikan kamu masuk dengan akun yang dipakai untuk membeli."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi fant ikke noe Pro-kjøp på denne Apple-kontoen. Sjekk at du er logget inn med kontoen du kjøpte med."
+          }
         }
       }
     },
@@ -38908,6 +40870,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidak ada abu tersisa dari hari ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det er ingen aske igjen fra denne dagen"
           }
         }
       }
@@ -39028,6 +40996,12 @@
             "state" : "translated",
             "value" : "Apa arti bulan ini bagimu?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva betydde denne måneden for deg?"
+          }
         }
       }
     },
@@ -39145,6 +41119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guci mingguan bulan ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukeurner i denne måneden"
           }
         }
       }
@@ -39265,6 +41245,12 @@
             "state" : "translated",
             "value" : "Bagaimana kamu akan mengelola waktu ini besok?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan vil du håndtere denne tiden i morgen?"
+          }
         }
       }
     },
@@ -39384,6 +41370,12 @@
             "state" : "translated",
             "value" : "Buang pecahan ini?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forkaste dette bruddstykket?"
+          }
         }
       }
     },
@@ -39502,6 +41494,12 @@
             "state" : "translated",
             "value" : "Apa arti minggu ini bagimu?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva betydde denne uken for deg?"
+          }
         }
       }
     },
@@ -39619,6 +41617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guci ini kosong."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne urnen er tom."
           }
         }
       }
@@ -39739,6 +41743,12 @@
             "state" : "translated",
             "value" : "Mengembalikan guci ini menjadi abu tanpa nama"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setter denne urnen tilbake til aske uten navn"
+          }
         }
       }
     },
@@ -39856,6 +41866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yang tersisa di guci ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det som er igjen i denne urnen"
           }
         }
       }
@@ -39976,6 +41992,12 @@
             "state" : "translated",
             "value" : "Nama"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navn"
+          }
         }
       }
     },
@@ -40094,6 +42116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ganti nama"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gi nytt navn"
           }
         }
       }
@@ -40214,6 +42242,12 @@
             "state" : "translated",
             "value" : "Guci tanpa judul"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne uten tittel"
+          }
         }
       }
     },
@@ -40333,6 +42367,12 @@
             "state" : "translated",
             "value" : "Kirim email kepada kami"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send oss en e-post"
+          }
         }
       }
     },
@@ -40447,6 +42487,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -40570,6 +42616,12 @@
             "state" : "translated",
             "value" : "Bagikan gambar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del bilde"
+          }
         }
       }
     },
@@ -40688,6 +42740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bulan Ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne måneden"
           }
         }
       }
@@ -40808,6 +42866,12 @@
             "state" : "translated",
             "value" : "Sisa waktu bulan ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid igjen denne måneden"
+          }
         }
       }
     },
@@ -40926,6 +42990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minggu Ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne uken"
           }
         }
       }
@@ -41046,6 +43116,12 @@
             "state" : "translated",
             "value" : "Sisa waktu minggu ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid igjen denne uken"
+          }
         }
       }
     },
@@ -41159,6 +43235,12 @@
             "state" : "translated",
             "value" : "Sisa waktu luang minggu ini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid igjen denne uken"
+          }
         }
       }
     },
@@ -41271,6 +43353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu luang minggu ini sudah terbakar habis"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritiden denne uken er brent opp"
           }
         }
       }
@@ -41391,6 +43479,12 @@
             "state" : "translated",
             "value" : "Hal ini berulang minggu ini juga"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gjentar seg også denne uken"
+          }
         }
       }
     },
@@ -41509,6 +43603,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hal ini juga terjadi lebih awal minggu ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det skjedde også tidligere denne uken"
           }
         }
       }
@@ -41629,6 +43729,12 @@
             "state" : "translated",
             "value" : "Ketentuan Penggunaan (EULA)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brukervilkår (EULA)"
+          }
         }
       }
     },
@@ -41747,6 +43853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bulan sebelumnya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forrige måned"
           }
         }
       }
@@ -41867,6 +43979,12 @@
             "state" : "translated",
             "value" : "DM Instagram (@lee25_ios)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -41980,6 +44098,12 @@
             "state" : "translated",
             "value" : "Waktuku setiap minggu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min tid hver uke"
+          }
         }
       }
     },
@@ -42092,6 +44216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perkamen hanya terbakar pada jam-jam milikmu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamentet brenner bare i dine egne timer"
           }
         }
       }
@@ -42210,6 +44340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hanya kekuatan napasmu yang dipakai. Tidak ada yang direkam."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bare styrken på pusten din brukes. Ingenting tas opp."
           }
         }
       }
@@ -42330,6 +44466,12 @@
             "state" : "translated",
             "value" : "Daun"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blad"
+          }
         }
       }
     },
@@ -42448,6 +44590,12 @@
             "state" : "translated",
             "value" : "Simpan otomatis"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autolagring"
+          }
         }
       }
     },
@@ -42560,6 +44708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu luang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid"
           }
         }
       }
@@ -42674,6 +44828,12 @@
             "state" : "translated",
             "value" : "Ubah waktu luang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger fritid"
+          }
         }
       }
     },
@@ -42786,6 +44946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambah waktu luang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til fritid"
           }
         }
       }
@@ -42906,6 +45072,12 @@
             "state" : "translated",
             "value" : "Waktu luang tampil sebagai jam pasir di titik halaman. Tenggat muncul sendiri setelah kamu menambahkannya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid vises som et timeglass i sideprikkene. Frister dukker opp av seg selv når du legger dem til"
+          }
         }
       }
     },
@@ -43017,6 +45189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menyala saat waktu luangmu berlalu dan menunggu dalam keadaan padam di sisa minggu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det tennes mens fritiden din går, og venter slukket resten av uken"
           }
         }
       }
@@ -43137,6 +45315,12 @@
             "state" : "translated",
             "value" : "Perubahan kecil pun awal yang baik..."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Små endringer er en fin start..."
+          }
         }
       }
     },
@@ -43255,6 +45439,12 @@
             "state" : "translated",
             "value" : "Ketuk bara untuk melihat refleksi hari itu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk på en glør for å se refleksjonene fra den dagen"
+          }
         }
       }
     },
@@ -43372,6 +45562,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selamat malam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "God natt"
           }
         }
       }
@@ -43492,6 +45688,12 @@
             "state" : "translated",
             "value" : "Hari yang terbakar dengan baik. Saatnya membiarkannya dingin."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En godt brent dag. På tide å la den kjølne."
+          }
         }
       }
     },
@@ -43603,6 +45805,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kecualikan tidur, kerja, dan urusan rumah, lalu tambahkan hanya waktu yang kamu pakai untuk dirimu sendiri. Perkamen minggu ini hanya terbakar selama waktu itu berlalu."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La søvn, jobb og gjøremål ligge utenfor, og legg bare til tiden du bruker på deg selv. Pergamentet denne uken brenner bare mens den går."
           }
         }
       }
@@ -43716,6 +45924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pilih jam yang benar-benar milikmu, di luar tidur dan kerja. Perkamen minggu ini hanya terbakar selama jam itu berlalu."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg timene som virkelig er dine, utover søvn og jobb. Pergamentet denne uken brenner bare mens de går."
           }
         }
       }
@@ -43836,6 +46050,12 @@
             "state" : "translated",
             "value" : "Waktu tertidur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidspunkt for søvn"
+          }
         }
       }
     },
@@ -43954,6 +46174,12 @@
             "state" : "translated",
             "value" : "Berhenti sendiri begitu kamu tertidur. Paginya kami memeriksa kapan kamu tertidur dan memutarnya kembali"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det stopper av seg selv når du sovner. Om morgenen sjekker vi når du sovnet, og setter det tilbake"
+          }
         }
       }
     },
@@ -44066,6 +46292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tumpang tindih dengan waktu tidurmu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overlapper med søvnen din"
           }
         }
       }
@@ -44180,6 +46412,12 @@
             "state" : "translated",
             "value" : "Ini tumpang tindih dengan waktu tidurmu. Tetaplah di dalam jam terjaga."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dette overlapper med søvnen din. Hold det innenfor våken tid."
+          }
         }
       }
     },
@@ -44291,6 +46529,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tanpa tidur, tanpa kerja,\\npilih hanya jam yang menjadi milikmu.\\nPerkamen minggu ini hanya terbakar selama jam itu berlalu."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uten søvn, uten jobb,\\nvelg bare timene som er dine.\\nPergamentet denne uken brenner bare mens de går."
           }
         }
       }
@@ -44411,6 +46655,12 @@
             "state" : "translated",
             "value" : "Abu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske"
+          }
         }
       }
     },
@@ -44529,6 +46779,12 @@
             "state" : "translated",
             "value" : "Berdasarkan %@ abu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basert på %@ aske"
+          }
         }
       }
     },
@@ -44640,6 +46896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu: %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %@"
           }
         }
       }
@@ -44754,6 +47016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu: %@ · ukuran A5"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %@ · A5-størrelse"
           }
         }
       }
@@ -44874,6 +47142,12 @@
             "state" : "translated",
             "value" : "Berdasarkan %lld abu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basert på %lld aske"
+          }
         }
       }
     },
@@ -44992,6 +47266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu: %lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %lld"
           }
         }
       }
@@ -45112,6 +47392,12 @@
             "state" : "translated",
             "value" : "Abu: %lld · ukuran A5"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %lld · A5-størrelse"
+          }
         }
       }
     },
@@ -45231,6 +47517,12 @@
             "state" : "translated",
             "value" : "Guci Abu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askeurner"
+          }
         }
       }
     },
@@ -45348,6 +47640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Masukkan ke guci abumu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg den i askeurnen din"
           }
         }
       }
@@ -45468,6 +47766,12 @@
             "state" : "translated",
             "value" : "Bulan dengan abu terbanyak"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneden med mest aske"
+          }
         }
       }
     },
@@ -45587,6 +47891,12 @@
             "state" : "translated",
             "value" : "Simpan sedikit abu dan\\nsebaran serta kalender baranya akan muncul di sini."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta vare på litt aske, så vises\\nfordelingen og glødkalenderen her."
+          }
         }
       }
     },
@@ -45704,6 +48014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sebaran abu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fordeling av aske"
           }
         }
       }
@@ -45824,6 +48140,12 @@
             "state" : "translated",
             "value" : "Aliran abu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askestrøm"
+          }
         }
       }
     },
@@ -45942,6 +48264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lihat aliran abu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se askestrømmen"
           }
         }
       }
@@ -46062,6 +48390,12 @@
             "state" : "translated",
             "value" : "Simpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre"
+          }
         }
       }
     },
@@ -46181,6 +48515,12 @@
             "state" : "translated",
             "value" : "Menyimpan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagrer"
+          }
         }
       }
     },
@@ -46299,6 +48639,12 @@
             "state" : "translated",
             "value" : "Menyimpan…"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagrer…"
+          }
         }
       }
     },
@@ -46416,6 +48762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tersimpan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagret"
           }
         }
       }
@@ -46536,6 +48888,12 @@
             "state" : "translated",
             "value" : "Simpan dan mulai refleksi baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre og start en ny refleksjon"
+          }
         }
       }
     },
@@ -46654,6 +49012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Simpan dan tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre og lukk"
           }
         }
       }
@@ -46774,6 +49138,12 @@
             "state" : "translated",
             "value" : "Padam sendiri"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gikk ut av seg selv"
+          }
         }
       }
     },
@@ -46892,6 +49262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu menyimpan pecahan yang padam sendiri"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du tok vare på et bruddstykke som gikk ut av seg selv"
           }
         }
       }
@@ -47012,6 +49388,12 @@
             "state" : "translated",
             "value" : "Kumpulkan refleksimu dalam satu PDF untuk disimpan atau dicetak."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samle refleksjonene dine i én PDF til å oppbevare eller skrive ut."
+          }
         }
       }
     },
@@ -47130,6 +49512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semua"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
           }
         }
       }
@@ -47250,6 +49638,12 @@
             "state" : "translated",
             "value" : "Titik"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkt"
+          }
         }
       }
     },
@@ -47363,6 +49757,12 @@
             "state" : "translated",
             "value" : "Waktu luangmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritiden din"
+          }
         }
       }
     },
@@ -47474,6 +49874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mengatur dan melihat angkanya gratis. Membakar hanya jam-jam itu adalah fitur Pro."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det er gratis å angi den og se tallene. Å brenne bare de timene er Pro."
           }
         }
       }
@@ -47593,6 +49999,12 @@
             "state" : "translated",
             "value" : "Judul"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tittel"
+          }
         }
       }
     },
@@ -47710,6 +50122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu memadamkan api tepat waktu. Perkamen besok tidak tersentuh"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du slukket ilden i tide. I morgens pergament er urørt"
           }
         }
       }
@@ -47830,6 +50248,12 @@
             "state" : "translated",
             "value" : "Kamu tidur tepat waktu, jadi api padam sendiri"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du sovnet i tide, så ilden gikk ut av seg selv"
+          }
         }
       }
     },
@@ -47948,6 +50372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aku tidur tepat waktu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg sov i tide"
           }
         }
       }
@@ -48068,6 +50498,12 @@
             "state" : "translated",
             "value" : "Buang pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forkast bruddstykke"
+          }
         }
       }
     },
@@ -48186,6 +50622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kartu pecahan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruddstykkekort"
           }
         }
       }
@@ -48306,6 +50748,12 @@
             "state" : "translated",
             "value" : "Kartu & poster pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruddstykkekort og plakater"
+          }
         }
       }
     },
@@ -48424,6 +50872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagikan sebagai kartu pecahan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del som bruddstykkekort"
           }
         }
       }
@@ -48544,6 +50998,12 @@
             "state" : "translated",
             "value" : "Poster pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruddstykkeplakat"
+          }
         }
       }
     },
@@ -48663,6 +51123,12 @@
             "state" : "translated",
             "value" : "Buat poster pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lag en bruddstykkeplakat"
+          }
         }
       }
     },
@@ -48780,6 +51246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ketuk pecahan untuk membaliknya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk på bruddstykket for å snu det"
           }
         }
       }
@@ -48900,6 +51372,12 @@
             "state" : "translated",
             "value" : "Bagian belakang pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baksiden av bruddstykket"
+          }
         }
       }
     },
@@ -49018,6 +51496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagian depan pecahan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forsiden av bruddstykket"
           }
         }
       }
@@ -49138,6 +51622,12 @@
             "state" : "translated",
             "value" : "Hari yang sedikit tak terbakar akan lebih lama diingat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En dag som blir litt ubrent, huskes lenger"
+          }
         }
       }
     },
@@ -49255,6 +51745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingin menulis lebih banyak? (opsional)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vil du skrive mer? (valgfritt)"
           }
         }
       }
@@ -49375,6 +51871,12 @@
             "state" : "translated",
             "value" : "Jenis"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
         }
       }
     },
@@ -49494,6 +51996,12 @@
             "state" : "translated",
             "value" : "Selamat tidur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søte drømmer"
+          }
         }
       }
     },
@@ -49606,6 +52114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Akhir pekan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helger"
           }
         }
       }
@@ -49726,6 +52240,12 @@
             "state" : "translated",
             "value" : "Buat guci abu sebanyak yang kamu mau, per topik"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lag så mange askeurner du vil, etter emne"
+          }
         }
       }
     },
@@ -49845,6 +52365,12 @@
             "state" : "translated",
             "value" : "Sedang diisi sekarang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fylles akkurat nå"
+          }
         }
       }
     },
@@ -49957,6 +52483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sedang terbakar · hingga %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brenner nå · til kl. %@"
           }
         }
       }
@@ -50077,6 +52609,12 @@
             "state" : "translated",
             "value" : "Menyimpan refleksi ini dan membuka yang kosong"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagrer denne refleksjonen og åpner en tom"
+          }
         }
       }
     },
@@ -50195,6 +52733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apa yang akan dilakukan dengan abu %lld hari terakhir?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva skal vi gjøre med asken fra de siste %lld dagene?"
           }
         }
       }
@@ -50315,6 +52859,12 @@
             "state" : "translated",
             "value" : "Apa yang akan dilakukan dengan abu %lld minggu terakhir?"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva skal vi gjøre med asken fra de siste %lld ukene?"
+          }
         }
       }
     },
@@ -50434,6 +52984,12 @@
             "state" : "translated",
             "value" : "Abu per bulan selama 12 bulan terakhir"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske per måned de siste 12 månedene"
+          }
         }
       }
     },
@@ -50551,6 +53107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ke mana 12 bulan terakhir pergi, bulan demi bulan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvor de siste 12 månedene ble av, måned for måned"
           }
         }
       }
@@ -50671,6 +53233,12 @@
             "state" : "translated",
             "value" : "Lihat abu 12 bulan terakhir, bulan demi bulan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asken fra de siste 12 månedene, måned for måned"
+          }
         }
       }
     },
@@ -50790,6 +53358,12 @@
             "state" : "translated",
             "value" : "Lihat ke mana waktumu pergi setiap bulan selama dua belas bulan terakhir."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se hvor tiden din ble av hver måned de siste tolv månedene."
+          }
         }
       }
     },
@@ -50902,6 +53476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett"
           }
         }
       }
@@ -51024,6 +53604,12 @@
             "state" : "translated",
             "value" : "Dukungan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtte"
+          }
         }
       }
     },
@@ -51141,6 +53727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambah abu pertama"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til den første asken"
           }
         }
       }
@@ -51261,6 +53853,12 @@
             "state" : "translated",
             "value" : "Buat guci pertamamu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lag din første urne"
+          }
         }
       }
     },
@@ -51380,6 +53978,12 @@
             "state" : "translated",
             "value" : "Mulailah dengan membuat guci pertamamu.\\nMemberinya nama berdasarkan topik atau bidang cocok sekali."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begynn med å lage din første urne.\\nDet fungerer bra å gi den navn etter emne eller område."
+          }
         }
       }
     },
@@ -51495,6 +54099,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celadon"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celadon"
@@ -51618,6 +54228,12 @@
             "state" : "translated",
             "value" : "Lilin"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stearinlys"
+          }
         }
       }
     },
@@ -51736,6 +54352,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 hari terakhir"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siste 30 dager"
           }
         }
       }
@@ -51856,6 +54478,12 @@
             "state" : "translated",
             "value" : "Tambah"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til"
+          }
         }
       }
     },
@@ -51974,6 +54602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Waktu tidur yang disarankan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foreslåtte leggetider"
           }
         }
       }
@@ -52094,6 +54728,12 @@
             "state" : "translated",
             "value" : "Batal"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
         }
       }
     },
@@ -52213,6 +54853,12 @@
             "state" : "translated",
             "value" : "1 jam lagi sebelum tidur. Kerja bagus hari ini!"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 time til leggetid. Godt jobbet i dag!"
+          }
         }
       }
     },
@@ -52330,6 +54976,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mulai 30 menit sebelum tidur, tiup perkamen yang terbakar\\nuntuk memadamkan api dan menyimpan yang tersisa"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra 30 minutter før leggetid kan du blåse på det brennende\\npergamentet for å slukke ilden og ta vare på det som er igjen"
           }
         }
       }
@@ -52450,6 +55102,12 @@
             "state" : "translated",
             "value" : "Waktu tidur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggetid"
+          }
         }
       }
     },
@@ -52569,6 +55227,12 @@
             "state" : "translated",
             "value" : "Tidur %2$lld%3$@ %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggetid %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -52686,6 +55350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ lagi sebelum tidur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ til leggetid"
           }
         }
       }
@@ -52806,6 +55476,12 @@
             "state" : "translated",
             "value" : "Sisa waktu hingga tidur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid til leggetid"
+          }
         }
       }
     },
@@ -52925,6 +55601,12 @@
             "state" : "translated",
             "value" : "Kapsul"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapsel"
+          }
         }
       }
     },
@@ -53042,6 +55724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kata kunci (opsional)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nøkkelord (valgfritt)"
           }
         }
       }
@@ -53162,6 +55850,12 @@
             "state" : "translated",
             "value" : "Tampilkan tab"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis faner"
+          }
         }
       }
     },
@@ -53279,6 +55973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ketuk untuk menutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å lukke"
           }
         }
       }
@@ -53399,6 +56099,12 @@
             "state" : "translated",
             "value" : "Ketuk untuk mengelola tenggat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å administrere frister"
+          }
         }
       }
     },
@@ -53517,6 +56223,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ketuk untuk kembali ke langkah Menulis"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å gå tilbake til trinnet Skriving"
           }
         }
       }
@@ -53637,6 +56349,12 @@
             "state" : "translated",
             "value" : "Ketuk untuk memilih"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å velge"
+          }
         }
       }
     },
@@ -53756,6 +56474,12 @@
             "state" : "translated",
             "value" : "Ketuk untuk mengubah"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å redigere"
+          }
         }
       }
     },
@@ -53873,6 +56597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ketuk untuk mengubah waktu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å endre tiden"
           }
         }
       }
@@ -53993,6 +56723,12 @@
             "state" : "translated",
             "value" : "Ketuk untuk mengelola guci"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å administrere urner"
+          }
         }
       }
     },
@@ -54111,6 +56847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ketuk untuk membuka guci"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk for å åpne urnen"
           }
         }
       }
@@ -54231,6 +56973,12 @@
             "state" : "translated",
             "value" : "Percikan yang berderak dan melompat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knitrende, sprettende gnister"
+          }
         }
       }
     },
@@ -54349,6 +57097,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halaman"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sider"
           }
         }
       }
@@ -54469,6 +57223,12 @@
             "state" : "translated",
             "value" : "Halaman %1$lld dari %2$lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side %1$lld av %2$lld"
+          }
         }
       }
     },
@@ -54587,6 +57347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indikator halaman"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sideindikator"
           }
         }
       }
@@ -54707,6 +57473,12 @@
             "state" : "translated",
             "value" : "Titik halaman"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sideprikker"
+          }
         }
       }
     },
@@ -54825,6 +57597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gaya titik halaman"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil på sideprikker"
           }
         }
       }
@@ -54945,6 +57723,12 @@
             "state" : "translated",
             "value" : "Akses seumur hidup · %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidstilgang · %@"
+          }
         }
       }
     },
@@ -55057,6 +57841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hari kerja"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hverdager"
           }
         }
       }
@@ -55177,6 +57967,12 @@
             "state" : "translated",
             "value" : "Poster"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plakat"
+          }
         }
       }
     },
@@ -55296,6 +58092,12 @@
             "state" : "translated",
             "value" : "Tampilkan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis"
+          }
         }
       }
     },
@@ -55410,6 +58212,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -55533,6 +58341,12 @@
             "state" : "translated",
             "value" : "Kamu memakai Pro. Terima kasih 🔥"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har Pro. Takk 🔥"
+          }
         }
       }
     },
@@ -55652,6 +58466,12 @@
             "state" : "translated",
             "value" : "Tingkatkan ke Pro"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppgrader til Pro"
+          }
         }
       }
     },
@@ -55764,6 +58584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bakar waktu luangku dengan Pro"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brenn fritiden min med Pro"
           }
         }
       }
@@ -55884,6 +58710,12 @@
             "state" : "translated",
             "value" : "Tersedia dengan Pro"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilgjengelig med Pro"
+          }
         }
       }
     },
@@ -55995,6 +58827,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dengan Pro, perkamen hanya terbakar pada jam-jam ini"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Pro brenner pergamentet bare i disse timene"
           }
         }
       }
@@ -56113,6 +58951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buka aliran setahun dengan Pro"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås opp årets strøm med Pro"
           }
         }
       }
@@ -56233,6 +59077,12 @@
             "state" : "translated",
             "value" : "Ingin melakukan, tetapi tidak"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville gjøre det, men gjorde ikke"
+          }
         }
       }
     },
@@ -56351,6 +59201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Berniat melakukan, tetapi tidak"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hadde tenkt, men gjorde ikke"
           }
         }
       }
@@ -56471,6 +59327,12 @@
             "state" : "translated",
             "value" : "Abadikan harimu, tanpa ada yang terlewat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fang dagen din, uten at noe går tapt"
+          }
         }
       }
     },
@@ -56589,6 +59451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hati"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjerte"
           }
         }
       }
@@ -56709,6 +59577,12 @@
             "state" : "translated",
             "value" : "Bayar sekali, pakai selamanya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betal én gang, bruk for alltid"
+          }
         }
       }
     },
@@ -56821,6 +59695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dalam setahun"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over et år"
           }
         }
       }
@@ -56939,6 +59819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu Setahun"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et års aske"
           }
         }
       }
@@ -57059,6 +59945,12 @@
             "state" : "translated",
             "value" : "Abu Setahun"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et års aske"
+          }
         }
       }
     },
@@ -57177,6 +60069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abu setahun penuh sekilas pandang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et helt års aske på et øyeblikk"
           }
         }
       }
@@ -57297,6 +60195,12 @@
             "state" : "translated",
             "value" : "%1$lld guci, %2$lld refleksi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld urner, %2$lld refleksjoner"
+          }
         }
       }
     },
@@ -57415,6 +60319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guci tanpa batas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrensede urner"
           }
         }
       }
@@ -57535,6 +60445,12 @@
             "state" : "translated",
             "value" : "Hapus guci"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett urne"
+          }
         }
       }
     },
@@ -57653,6 +60569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rak guci"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnehyllen"
           }
         }
       }
@@ -57773,6 +60695,12 @@
             "state" : "translated",
             "value" : "Ubah guci"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger urne"
+          }
         }
       }
     },
@@ -57892,6 +60820,12 @@
             "state" : "translated",
             "value" : "Buka guci dan tenggat tanpa batas."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås opp ubegrensede urner og frister."
+          }
         }
       }
     },
@@ -58010,6 +60944,12 @@
             "state" : "translated",
             "value" : "Guci sudah menunggu.\\nAbu pertamamu masuk ke guci %@."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen venter allerede.\\nDen første asken din havner i %@."
+          }
         }
       }
     },
@@ -58127,6 +61067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Satu kata untuk diukir di guci"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et ord å gravere på urnen"
           }
         }
       }
@@ -58247,6 +61193,12 @@
             "state" : "translated",
             "value" : "Matahari"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sol"
+          }
         }
       }
     },
@@ -58365,6 +61317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selesai"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjort"
           }
         }
       }
@@ -58485,6 +61443,12 @@
             "state" : "translated",
             "value" : "Tiup mikrofon di bagian bawah ponselmu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås i mikrofonen nederst på telefonen"
+          }
         }
       }
     },
@@ -58604,6 +61568,12 @@
             "state" : "translated",
             "value" : "Tampilan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utseende"
+          }
         }
       }
     },
@@ -58719,6 +61689,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -58842,6 +61818,12 @@
             "state" : "translated",
             "value" : "Refleksi: %1$lld. Melakukan sesuai rencana %2$lld persen, akhirnya melakukannya %3$lld persen, ingin melakukan tetapi tidak %4$lld persen, berlalu begitu saja %5$lld persen"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjoner: %1$lld. Gjorde som jeg hadde tenkt: %2$lld prosent; endte opp med å gjøre det: %3$lld prosent; ville, men gjorde ikke: %4$lld prosent; rant bare bort: %5$lld prosent"
+          }
         }
       }
     },
@@ -58959,6 +61941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buku Refleksi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjonsbok"
           }
         }
       }
@@ -59079,6 +62067,12 @@
             "state" : "translated",
             "value" : "PDF Buku Refleksi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF av refleksjonsboken"
+          }
         }
       }
     },
@@ -59197,6 +62191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ekspor buku refleksi sebagai PDF"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eksporter refleksjonsboken som PDF"
           }
         }
       }
@@ -59317,6 +62317,12 @@
             "state" : "translated",
             "value" : "Lihat sebagai buku"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se som bok"
+          }
         }
       }
     },
@@ -59436,6 +62442,12 @@
             "state" : "translated",
             "value" : "Genggam buku refleksimu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold refleksjonsboken din i hånden"
+          }
         }
       }
     },
@@ -59553,6 +62565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kumpulkan refleksi dalam satu PDF"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samle refleksjonene dine i én PDF"
           }
         }
       }
@@ -59673,6 +62691,12 @@
             "state" : "translated",
             "value" : "Kumpulkan refleksi dalam PDF, satu halaman per hari"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samle refleksjoner i en PDF, én side per dag"
+          }
         }
       }
     },
@@ -59792,6 +62816,12 @@
             "state" : "translated",
             "value" : "Ubah refleksimu."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger refleksjonen din."
+          }
         }
       }
     },
@@ -59909,6 +62939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tambahkan satu refleksi\\ndan buku ini mulai terisi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til en refleksjon,\\nså begynner denne boken å fylles."
           }
         }
       }
@@ -60029,6 +63065,12 @@
             "state" : "translated",
             "value" : "Seret refleksi ke guci untuk memindahkannya"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dra refleksjoner til en urne for å flytte dem"
+          }
         }
       }
     },
@@ -60147,6 +63189,12 @@
             "state" : "translated",
             "value" : "Tiup api hingga padam"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås ut ilden"
+          }
         }
       }
     },
@@ -60264,6 +63312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tiup api hingga padam\\ndan akhiri harimu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås ut flammen\\nog avslutt dagen din"
           }
         }
       }
@@ -60384,6 +63438,12 @@
             "state" : "translated",
             "value" : "Istirahat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvile"
+          }
         }
       }
     },
@@ -60503,6 +63563,12 @@
             "state" : "translated",
             "value" : "Berlalu"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rant bort"
+          }
         }
       }
     },
@@ -60620,6 +63686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Selamat tidur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Søte drømmer"
           }
         }
       }
@@ -60746,6 +63818,12 @@
             "state" : "translated",
             "value" : "Tata letak untuk teks lebih besar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjermer for større tekst"
+          }
         }
       }
     },
@@ -60864,6 +63942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bahkan pada ukuran teks terbesar, layar tersusun ulang dengan rapi alih-alih terpotong."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selv med de største tekststørrelsene ordner skjermene seg pent i stedet for å bli kuttet."
           }
         }
       }
@@ -60984,6 +64068,12 @@
             "state" : "translated",
             "value" : "Warna dan kontras yang lebih nyaman"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enklere farger og kontrast"
+          }
         }
       }
     },
@@ -61102,6 +64192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lihat waktumu yang terbakar dengan jelas, bahkan saat Tambah Kontras aktif atau saat warna sulit dibedakan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se tydelig hvordan tiden din brenner, selv med Øk kontrast på eller hvis farger er vanskelige å skille."
           }
         }
       }
@@ -61222,6 +64318,12 @@
             "state" : "translated",
             "value" : "Lebih banyak bahasa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere språk"
+          }
         }
       }
     },
@@ -61340,6 +64442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tur singkat untuk pendatang baru"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort omvisning for nye brukere"
           }
         }
       }
@@ -61460,6 +64568,12 @@
             "state" : "translated",
             "value" : "Panduan singkat tentang apa yang bisa kamu lakukan, saat pertama kali membuka aplikasi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort guide til hva du kan gjøre, første gang du åpner appen."
+          }
         }
       }
     },
@@ -61578,6 +64692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yang baru"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nytt"
           }
         }
       }
@@ -61698,6 +64818,12 @@
             "state" : "translated",
             "value" : "Saat pertama kali dibuka setelah pembaruan, lihat apa yang baru."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åpner etter en oppdatering, ser du hva som er nytt."
+          }
         }
       }
     },
@@ -61816,6 +64942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tips praktis"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyttige tips"
           }
         }
       }
@@ -61936,6 +65068,12 @@
             "state" : "translated",
             "value" : "Petunjuk halus tentang fitur berguna, tepat saat kamu membutuhkannya."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskrete hint om nyttige funksjoner, akkurat når du trenger dem."
+          }
         }
       }
     },
@@ -62054,6 +65192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri dan Pintasan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri og Snarveier"
           }
         }
       }
@@ -62174,6 +65318,12 @@
             "state" : "translated",
             "value" : "Tanya Siri berapa banyak waktu hari ini yang tersisa."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spør Siri hvor mye som er igjen av i dag."
+          }
         }
       }
     },
@@ -62292,6 +65442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sinkronisasi antarperangkat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronisering mellom enheter"
           }
         }
       }
@@ -62412,6 +65568,12 @@
             "state" : "translated",
             "value" : "Dapatkan refleksi dan tenggat yang sama di semua perangkatmu dengan iCloud."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha de samme refleksjonene og fristene på alle enhetene dine med iCloud."
+          }
         }
       }
     },
@@ -62530,6 +65692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cadangan dan pemulihan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sikkerhetskopi og gjenoppretting"
           }
         }
       }
@@ -62650,6 +65818,12 @@
             "state" : "translated",
             "value" : "Simpan refleksi dan tenggat ke file dan pulihkan nanti."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre refleksjonene og fristene dine i en fil og hent dem tilbake senere."
+          }
         }
       }
     },
@@ -62768,6 +65942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunci Face ID"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID-lås"
           }
         }
       }
@@ -62888,6 +66068,12 @@
             "state" : "translated",
             "value" : "Kunci aplikasi dengan Face ID atau Touch ID agar refleksimu tetap pribadi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås appen med Face ID eller Touch ID for å holde refleksjonene dine private."
+          }
         }
       }
     },
@@ -63006,6 +66192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tata letak iPhone lipat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppsett for sammenleggbar iPhone"
           }
         }
       }
@@ -63126,6 +66318,12 @@
             "state" : "translated",
             "value" : "Gunakan layar lebar iPhone lipat sebagai dua panel berdampingan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk den brede skjermen på en sammenleggbar iPhone som to paneler side om side."
+          }
         }
       }
     },
@@ -63244,6 +66442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus semua datamu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett alle dataene mine"
           }
         }
       }
@@ -63364,6 +66568,12 @@
             "state" : "translated",
             "value" : "Hapus semua refleksi dan tenggat langsung di aplikasi kapan pun kamu mau."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett alle refleksjoner og frister rett i appen når du vil."
+          }
         }
       }
     },
@@ -63482,6 +66692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lanjutkan refleksi dari tempatmu berhenti"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett refleksjonen der du slapp"
           }
         }
       }
@@ -63602,6 +66818,12 @@
             "state" : "translated",
             "value" : "Apa yang sedang kamu tulis tetap tersimpan, bahkan jika aplikasi tertutup di tengah refleksi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det du skrev, blir stående, selv om appen lukkes midt i en refleksjon."
+          }
         }
       }
     },
@@ -63719,6 +66941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Setelah bahasa Korea dan Inggris, aplikasi ini kini juga berbahasa Indonesia."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etter koreansk og engelsk snakker appen nå også norsk."
           }
         }
       },
@@ -63839,6 +67067,12 @@
             "state" : "translated",
             "value" : "Coba gesek ke samping"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prøv å sveipe til siden"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -63957,6 +67191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lihat sisa minggu, bulan, dan tahun ini pada perkamen yang sama."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se hva som er igjen av denne uken, måneden og året på det samme pergamentet."
           }
         }
       },
@@ -64077,6 +67317,12 @@
             "state" : "translated",
             "value" : "Balikkan sebuah pecahan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snu et bruddstykke"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -64195,6 +67441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ketuk pecahan untuk menulis satu baris tentang hari itu di bagian belakangnya."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk på et bruddstykke for å skrive en linje om den dagen på baksiden."
           }
         }
       },
@@ -64315,6 +67567,12 @@
             "state" : "translated",
             "value" : "Tujuan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mål"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -64433,6 +67691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pecahan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruddstykker"
           }
         }
       },
@@ -64553,6 +67817,12 @@
             "state" : "translated",
             "value" : "Guci"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -64671,6 +67941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjon"
           }
         }
       },
@@ -64791,6 +68067,12 @@
             "state" : "translated",
             "value" : "Tambah Tenggat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til frist"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -64909,6 +68191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menambahkan tenggat %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La til fristen %@"
           }
         }
       },
@@ -65029,6 +68317,12 @@
             "state" : "translated",
             "value" : "Menghapus tenggat %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slettet fristen %@"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -65147,6 +68441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Api padam. Pecahanmu telah disimpan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket. Bruddstykket ditt er bevart."
           }
         }
       },
@@ -65267,6 +68567,12 @@
             "state" : "translated",
             "value" : "Refleksimu masuk ke guci abu."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjonen din er i askeurnen."
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -65385,6 +68691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lewati"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hopp over"
           }
         }
       },
@@ -65505,6 +68817,12 @@
             "state" : "translated",
             "value" : "Mulai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom i gang"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -65623,6 +68941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lihat waktumu terbakar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se tiden din brenne ned"
           }
         }
       },
@@ -65743,6 +69067,12 @@
             "state" : "translated",
             "value" : "Dari saat bangun hingga waktu tidur, perkamen terbakar perlahan. Gesek ke samping untuk melihat minggu, bulan, dan tahun."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du står opp til leggetid brenner pergamentet sakte ned. Sveip til siden for å se uke, måned og år."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -65861,6 +69191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 menit sebelum tidur, tiup hingga padam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 minutter før leggetid, blås det ut"
           }
         }
       },
@@ -65981,6 +69317,12 @@
             "state" : "translated",
             "value" : "Tiup mikrofon untuk memadamkan api dan menyimpan yang tersisa. Hanya kekuatan napasmu yang diperiksa; tidak ada yang direkam."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås i mikrofonen for å slukke ilden og ta vare på det som er igjen. Bare styrken på pusten sjekkes; ingenting tas opp."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -66099,6 +69441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Setiap hari menjadi abu"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver dag blir til aske"
           }
         }
       },
@@ -66219,6 +69567,12 @@
             "state" : "translated",
             "value" : "Tulis satu baris tentang harimu dan ia mengendap di guci abu minggu itu. Ubah waktu bangun dan tidur di Pengaturan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en linje om dagen din, så legger den seg i askeurnen for den uken. Endre oppvåknings- og leggetid i Innstillinger."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -66337,6 +69691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salin"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopier"
           }
         }
       },
@@ -66457,6 +69817,12 @@
             "state" : "translated",
             "value" : "Yang Baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nytt"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -66575,6 +69941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tampilkan Panduan Selamat Datang lagi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se velkomstguiden igjen"
           }
         }
       },
@@ -66695,6 +70067,12 @@
             "state" : "translated",
             "value" : "Kode tidak dapat ditukarkan. Coba lagi sebentar lagi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koden kunne ikke løses inn. Prøv igjen om litt."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -66813,6 +70191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tukarkan Kode Penawaran"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Løs inn tilbudskode"
           }
         }
       },
@@ -66933,6 +70317,12 @@
             "state" : "translated",
             "value" : "Versi %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versjon %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -67051,6 +70441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kini dalam bahasa Indonesia"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nå på norsk"
           }
         }
       },
@@ -67171,6 +70567,12 @@
             "state" : "translated",
             "value" : "Jika perangkatmu diatur ke bahasa Indonesia, aplikasi dan widgetnya tampil dalam bahasa Indonesia."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis enheten din er satt til norsk, vises appen og widgetene på norsk."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -67289,6 +70691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lebih baik dengan teks besar dan kontras tinggi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre med stor tekst og høy kontrast"
           }
         }
       },
@@ -67409,6 +70817,12 @@
             "state" : "translated",
             "value" : "Pengaturan tidak lagi terpotong pada ukuran teks yang sangat besar, dan Tambah Kontras membuat teks dan bara lebih gelap."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger blir ikke lenger kuttet ved svært stor tekst, og Øk kontrast gjør tekst og glør mørkere."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -67527,6 +70941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fitur tersembunyi, seperti menggesek untuk mengganti periode, kini ditunjukkan pada saat yang tepat."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjulte funksjoner, som å sveipe for å bytte periode, blir nå vist til rett tid."
           }
         }
       },
@@ -67647,6 +71067,12 @@
             "state" : "translated",
             "value" : "Lihat apa yang akan datang"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se hva som kommer"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -67765,6 +71191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Di Pengaturan ▸ Dukungan, lihat fitur mendatang dan usulkan yang kamu inginkan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Under Innstillinger ▸ Støtte kan du se kommende funksjoner og foreslå de du ønsker."
           }
         }
       },
@@ -67885,6 +71317,12 @@
             "state" : "translated",
             "value" : "Kode penawaran telah hadir"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilbudskoder er her"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -68004,6 +71442,12 @@
             "state" : "translated",
             "value" : "Jika punya kode, masukkan di Pengaturan ▸ Pro."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis du har en kode, skriver du den inn under Innstillinger ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -68122,6 +71566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mengerti"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forstått"
           }
         }
       },

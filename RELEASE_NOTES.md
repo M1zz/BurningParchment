@@ -146,6 +146,14 @@ Selkeä suurella tekstillä
 Lunasta tarjouskoodit ja saat Pron
 Tulevat ominaisuudet näet Asetuksissa
 
+### 앱스토어 (id)
+
+Kini dalam bahasa Indonesia
+Panduan singkat untuk pengguna baru
+Jelas dengan teks besar
+Tukarkan kode penawaran untuk Pro
+Lihat fitur mendatang di Pengaturan
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

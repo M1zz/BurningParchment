@@ -1025,3 +1025,60 @@ https://m1zz.github.io/BurningParchment/fi/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/fi/
+
+## id
+
+### 이름
+
+Perkamen Terbakar: Waktu Tidur
+
+### 부제
+
+Sisa harimu terbakar perlahan
+
+### 키워드
+
+timer,jurnal,kebiasaan,widget,tenggat,disiplin,ritual,malam,target,refleksi,insomnia,rutinitas
+
+### 프로모션 텍스트
+
+Sebelum tidur, tiup perkamen yang terbakar untuk memadamkan api: ritual kecil untuk mengakhiri hari. Pecahan yang tersisa akan disimpan.
+
+### 설명
+
+Sisa harimu terbakar tepat di depan matamu.
+Perkamen Terbakar menunjukkan sisa waktu bukan dengan angka, melainkan dengan selembar perkamen yang terbakar perlahan. Aplikasi ini dibuat untuk mereka yang tidak ingin melihat malam berlalu begitu saja.
+
+Hari, minggu, bulan, tahun
+Dari bangun hingga waktu tidur, perkamen terbakar perlahan. Sisa waktu minggu ini, bulan ini, dan tahun ini juga bisa dilihat pada perkamen yang sama.
+Tambahkan tujuan dengan tenggat, dan waktu hingga hari itu ikut dihitung mundur.
+
+Tiup dan akhiri hari
+Mulai 30 menit sebelum tidur, kamu bisa meniup perkamen yang terbakar untuk memadamkan api. Hanya kekuatan napas yang dipakai, dan tidak ada suara yang direkam.
+Pecahan yang tersisa setelah api padam akan disimpan. Kapan pun kamu mau, balikkan pecahan dan tulis satu baris di bagian belakangnya.
+
+Hari yang menjadi abu
+Tengok waktu yang telah berlalu, tinggalkan refleksi satu baris, dan tandai dengan satu titik pada grafik dua sumbu untuk melihat ke mana perginya.
+Refleksi mengendap di guci per topik, dan bisa dibaca lagi di buku refleksi.
+Layar Aliran Abu menunjukkan ke mana waktu pergi dengan grafik sebaran dan kalender bara.
+
+Selalu di depan mata
+Widget Layar Utama dan Layar Kunci, Dynamic Island, serta Live Activity di Layar Kunci menampilkan sisa waktu.
+Tersedia tema terang dan gelap, saran waktu tidur, dan pilihan tab yang ingin kamu lihat.
+
+Perkamen Terbakar Pro
+Perkamen yang terbakar, refleksi, dan ritual meniup api gratis, begitu pula satu tenggat. Pro bukan langganan: sekali beli, dipakai selamanya.
+Pro membuka Waktu Luang Terbakar yang hanya membakar waktu luang yang kamu atur; warna perkamen dan api (Hanji Cahaya Bulan, Celadon, Senja); jenis api (api padang, bara, kembang api tangan); berbagi pecahan sebagai kartu dan poster; ekspor buku refleksi ke PDF; aliran abu dua belas bulan terakhir; dan tenggat tanpa batas. Semua fitur Pro di masa depan juga termasuk.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/id/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/id/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/id/

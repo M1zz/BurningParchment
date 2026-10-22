@@ -112,6 +112,12 @@
             "state" : "translated",
             "value" : "Palava Pergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
         }
       }
     },
@@ -225,6 +231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Palava Pergamentti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
           }
         }
       }

@@ -110,6 +110,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -222,6 +228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld mnt"
           }
         }
       }
@@ -336,6 +348,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld mnt %2$lld dtk"
+          }
         }
       }
     },
@@ -448,6 +466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld t %2$lld min"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld jam %2$lld mnt"
           }
         }
       }
@@ -562,6 +586,12 @@
             "state" : "translated",
             "value" : "%1$lld pv %2$lld t"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld hr %2$lld jam"
+          }
         }
       }
     },
@@ -674,6 +704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld dtk"
           }
         }
       }
@@ -788,6 +824,12 @@
             "state" : "translated",
             "value" : "31.12.2025 (ke) 23.59"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31/12/2025 (Rab) 23.59"
+          }
         }
       }
     },
@@ -900,6 +942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 pv 4 t"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 hr 4 jam"
           }
         }
       }
@@ -1014,6 +1062,12 @@
             "state" : "translated",
             "value" : "5 t 24 min"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 jam 24 mnt"
+          }
         }
       }
     },
@@ -1125,6 +1179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pian herätys"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segera bangun"
           }
         }
       }
@@ -1238,6 +1298,12 @@
             "state" : "translated",
             "value" : "Herätys %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bangun %@"
+          }
         }
       }
     },
@@ -1350,6 +1416,12 @@
             "state" : "translated",
             "value" : "%@ heräämiseen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lagi sebelum bangun"
+          }
         }
       }
     },
@@ -1461,6 +1533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aikaa heräämiseen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu hingga bangun"
           }
         }
       }
@@ -1575,6 +1653,12 @@
             "state" : "translated",
             "value" : "Aikaa jäljellä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa Waktu"
+          }
         }
       }
     },
@@ -1687,6 +1771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aikaa seuraavaan määräaikaan"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu hingga tenggat berikutnya"
           }
         }
       }
@@ -1801,6 +1891,12 @@
             "state" : "translated",
             "value" : "Määräaikapergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Tenggat"
+          }
         }
       }
     },
@@ -1912,6 +2008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ei määräaikoja"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada tenggat"
           }
         }
       }
@@ -2025,6 +2127,12 @@
             "state" : "translated",
             "value" : "Määräaika ohi 🏁"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tenggat terlewati 🏁"
+          }
         }
       }
     },
@@ -2137,6 +2245,12 @@
             "state" : "translated",
             "value" : "Uusi päivä alkaa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari baru dimulai"
+          }
         }
       }
     },
@@ -2248,6 +2362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nukkuu"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidur"
           }
         }
       }
@@ -2362,6 +2482,12 @@
             "state" : "translated",
             "value" : "Vuosipergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Tahunan"
+          }
         }
       }
     },
@@ -2474,6 +2600,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aikaa nukkumaanmenoon tänään"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu hingga tidur hari ini"
           }
         }
       }
@@ -2588,6 +2720,12 @@
             "state" : "translated",
             "value" : "Tänä vuonna"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tahun Ini"
+          }
         }
       }
     },
@@ -2700,6 +2838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aikaa jäljellä tänä vuonna"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu tahun ini"
           }
         }
       }
@@ -2814,6 +2958,12 @@
             "state" : "translated",
             "value" : "Kuukausipergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Bulanan"
+          }
         }
       }
     },
@@ -2926,6 +3076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tämä kuukausi"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bulan Ini"
           }
         }
       }
@@ -3040,6 +3196,12 @@
             "state" : "translated",
             "value" : "Aikaa jäljellä tässä kuussa"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu bulan ini"
+          }
         }
       }
     },
@@ -3152,6 +3314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tämä viikko"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minggu Ini"
           }
         }
       }
@@ -3266,6 +3434,12 @@
             "state" : "translated",
             "value" : "Aikaa jäljellä tällä viikolla"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu minggu ini"
+          }
         }
       }
     },
@@ -3378,6 +3552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Päiväpergamentti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Harian"
           }
         }
       }
@@ -3492,6 +3672,12 @@
             "state" : "translated",
             "value" : "Näe lukitusnäytöllä, kuinka paljon on nukkumaanmenoon"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat sisa waktu hingga tidur langsung di Layar Kunci"
+          }
         }
       }
     },
@@ -3603,6 +3789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unelmia"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selamat tidur"
           }
         }
       }
@@ -3717,6 +3909,12 @@
             "state" : "translated",
             "value" : "Viikkopergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Mingguan"
+          }
         }
       }
     },
@@ -3829,6 +4027,12 @@
             "state" : "translated",
             "value" : "Nukkumaan %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidur %@"
+          }
         }
       }
     },
@@ -3940,6 +4144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nukkumaanmenoon"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hingga tidur"
           }
         }
       }
@@ -4054,6 +4264,12 @@
             "state" : "translated",
             "value" : "Aikaa nukkumaanmenoon"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisa waktu hingga tidur"
+          }
         }
       }
     },
@@ -4167,6 +4383,12 @@
             "state" : "translated",
             "value" : "Palauta projekti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serahkan proyek"
+          }
         }
       }
     },
@@ -4279,6 +4501,12 @@
             "state" : "translated",
             "value" : "🌅 Pian herätys · %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Segera bangun · %@"
+          }
         }
       }
     },
@@ -4390,6 +4618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 %@%% jäljellä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Sisa %@%%"
           }
         }
       }
@@ -4504,6 +4738,12 @@
             "state" : "translated",
             "value" : "🔥 %lld%% jäljellä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Sisa %lld%%"
+          }
         }
       }
     },
@@ -4616,6 +4856,12 @@
             "state" : "translated",
             "value" : "🔥 %@ nukkumaanmenoon"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@ lagi sebelum tidur"
+          }
         }
       }
     },
@@ -4727,6 +4973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ heräämiseen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 %@ lagi sebelum bangun"
           }
         }
       }

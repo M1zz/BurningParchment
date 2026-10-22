@@ -111,6 +111,12 @@
             "state" : "translated",
             "value" : "Palava Pergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
         }
       }
     },
@@ -225,6 +231,12 @@
             "state" : "translated",
             "value" : "Palava Pergamentti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
         }
       }
     },
@@ -338,6 +350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytetään vain hengityksesi voimakkuuden aistimiseen, kun sammutat pergamentin ennen nukkumaanmenoa. Ääntä ei tallenneta eikä säilytetä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanya digunakan untuk merasakan seberapa kuat kamu meniup saat memadamkan perkamen sebelum tidur. Tidak ada suara yang direkam atau disimpan."
           }
         }
       }

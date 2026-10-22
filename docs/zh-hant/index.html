@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>燃燒的羊皮紙 — 支援</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+      --yellow: #fbbf24;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* flame gradient top bar */
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .flame-icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 16px #f97316aa);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--text-dim);
+      font-size: 15px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+
+    .card + .card { margin-top: 12px; }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .card li { margin-bottom: 4px; }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: var(--orange);
+      color: #0f0d0a;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-link:hover { opacity: 0.85; }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: var(--orange-dim);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 26px; }
+      .card { padding: 20px; }
+    }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/zh-hant/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="index.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <span class="flame-icon">🔥</span>
+  <h1>燃燒的羊皮紙</h1>
+  <p>從起床到就寢，看著你的一天慢慢燃盡。</p>
+</header>
+
+<main>
+
+  <!-- About -->
+  <section>
+    <h2>關於 App</h2>
+    <div class="card">
+      <h3>什麼是燃燒的羊皮紙？</h3>
+      <p>燃燒的羊皮紙是一款倒數 App，用一張緩緩燃燒的羊皮紙來呈現今天還剩多少時間。從起床到睡覺，剩餘時間一目瞭然，幫你好好利用還沒過去的每一個小時。</p>
+      <div class="badge-row" style="margin-top: 14px;">
+        <span class="badge">每日倒數</span>
+        <span class="badge">週 / 月 / 年</span>
+        <span class="badge">主畫面小工具</span>
+        <span class="badge">動態島</span>
+        <span class="badge">鎖定畫面小工具</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section>
+    <h2>使用方法</h2>
+    <div class="card">
+      <h3>設定起床和就寢時間</h3>
+      <p>點按右上角的 ⚙️ 按鈕，設定起床時間和就寢時間。羊皮紙從你起床時開始燃燒，到就寢時間倒數結束。</p>
+    </div>
+    <div class="card">
+      <h3>選擇時間範圍</h3>
+      <p>在頂部標籤中選擇<strong>1天 · 1週 · 1個月 · 1年</strong>，羊皮紙會燃燒並顯示該時間範圍還剩多少。</p>
+    </div>
+    <div class="card">
+      <h3>主畫面小工具</h3>
+      <p>長按主畫面 → 新增小工具 → 搜尋<strong>燃燒的羊皮紙</strong>，即可新增日、週、月或年小工具，提供小、中、大三種尺寸。</p>
+    </div>
+    <div class="card">
+      <h3>動態島和鎖定畫面</h3>
+      <p>倒數開始後，可在動態島和鎖定畫面上即時查看剩餘時間。下拉動態島，還能看到更多詳情和羊皮紙燃燒的動畫。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>常見問題</h2>
+    <div class="card">
+      <h3>小工具顯示的時間和 App 裡不一樣</h3>
+      <p>受 iOS 機制限制，主畫面小工具無法即時更新。開啟 App 後，小工具資料會自動同步。如需即時倒數，請使用動態島和鎖定畫面。</p>
+    </div>
+    <div class="card">
+      <h3>睡覺期間會顯示什麼？</h3>
+      <p>過了就寢時間，會出現燃燒的心形動畫，顯示距離起床你已經睡了多久。起床前 30 分鐘，一張全新的羊皮紙會準備就緒。</p>
+    </div>
+    <div class="card">
+      <h3>通知什麼時候送達？</h3>
+      <p>就寢前 1 小時會收到一條通知。如果沒有收到，請前往<strong>設定 → 通知 → 燃燒的羊皮紙</strong>，確認已允許通知。</p>
+    </div>
+    <div class="card">
+      <h3>這個 App 耗電嗎？</h3>
+      <p>App 內的倒數每秒更新一次，而小工具由系統以低功耗的時間線來執行，對續航的影響降到了最低。</p>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section>
+    <h2>隱私</h2>
+    <div class="card">
+      <h3>你的資訊如何處理</h3>
+      <p>你的起床時間、就寢時間、截止日期、回顧和灰罐都只儲存在你的裝置上。開發者只會收到匿名的使用統計、當機診斷資訊，以及你主動傳送的意見回饋。</p>
+      <ul>
+        <li>App 與小工具僅透過裝置上的 App Group 共享資料。</li>
+        <li>沒有廣告，不做追蹤。</li>
+      </ul>
+      <a class="contact-link" href="privacy.html">Read the full Privacy Policy →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>聯絡我們</h2>
+    <div class="card">
+      <h3>遇到問題了？</h3>
+      <p>如需回報問題、提出功能建議或有其他疑問，請寄電子郵件至下方地址，我們會盡快回覆。</p>
+      <a class="contact-link" href="mailto:leeo@kakao.com">
+        ✉️ &nbsp;leeo@kakao.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  <p style="margin-top: 8px;"><a href="privacy.html">隱私權政策</a></p>
+  <p style="margin-top: 6px;">以 🔥 在韓國製作</p>
+</footer>
+
+</body>
+</html>

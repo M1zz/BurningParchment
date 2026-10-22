@@ -45,6 +45,12 @@
             "state" : "translated",
             "value" : "燃烧的羊皮纸"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
+          }
         }
       }
     },
@@ -93,6 +99,12 @@
             "state" : "translated",
             "value" : "燃烧的羊皮纸"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
+          }
         }
       }
     },
@@ -140,6 +152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "就寝前 30 分钟，对着羊皮纸吹气熄火时，仅检测吹气的力度，不会录制或保存任何声音。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寢前 30 分鐘，對著羊皮紙吹氣熄火時，僅檢測吹氣的力度，不會錄製或儲存任何聲音。"
           }
         }
       }

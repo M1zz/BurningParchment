@@ -46,6 +46,12 @@
             "state" : "translated",
             "value" : "燃烧的羊皮纸"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
+          }
         }
       }
     },
@@ -93,6 +99,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "燃烧的羊皮纸"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
           }
         }
       }

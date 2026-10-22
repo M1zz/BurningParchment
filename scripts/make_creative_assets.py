@@ -38,6 +38,7 @@ SEARCH = {
     "ko": ("남은 시간", "남은 시간이<br>눈앞에서 타들어갑니다", "하루 · 한 주 · 한 달 · 한 해"),
     "en": ("Time remaining", "Watch your time<br>burn away", "Your day, week, month and year"),
     "ja": ("残り時間", "残り時間が<br>目の前で燃えていく", "一日・一週間・一か月・一年"),
+    "zh-Hant": ("剩餘時間", "剩餘的時間<br>在眼前燃燒", "一天、一週、一個月、一年"),
 }
 
 # 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
@@ -47,6 +48,7 @@ HEADER = {
     "ko": ("불타는 내인생", "후 불어 끄면<br>오늘이 끝나요"),
     "en": ("Burning Parchment", "Blow out the flame,<br>close your day"),
     "ja": ("燃える羊皮紙", "ふーっと消せば<br>今日が終わる"),
+    "zh-Hant": ("燃燒的羊皮紙", "吹一口氣熄火<br>今天就結束了"),
 }
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:

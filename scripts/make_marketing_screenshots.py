@@ -67,15 +67,29 @@ SHOTS = {
   ("09-year-light.png",    "top-crop",    False, "一年の灰を<br>ひと目で",           "Pro・12か月がどこへ流れたか",             0.62),
   ("10-book-pdf.png",      "pages",       False, "ふりかえりを<br>一冊の本に",       "Pro・日付ごとのページでPDFに",            None),
  ],
+ "zh-Hant": [
+  ("01-week-dark.png",     "hero-bleed",  False, "剩餘的時間<br>在眼前燃燒", "一天、一週、一個月、一年",                  None),
+  ("02-month-light.png",   "hero-bleed",  True,  "淺色或深色",               "跟隨裝置設定，或自己挑選",                  None),
+  ("03-urn-dark.png",      "left-text",   False, "每一天的盡頭<br>都化為灰燼", "寫下的內容會落進當週的灰罐",              None),
+  ("04-flow-light.png",    "hero-bleed",  True,  "時間都花在<br>哪裡了",       "分布圖與餘燼月曆，一目瞭然",              None),
+  ("05-book-dark.png",     "top-crop",    False, "重讀你留下的灰燼",           "那些留在羊皮紙上的字句",                  0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "從就寢時間<br>到主題",       "照自己的習慣來設定",                      None),
+  # ── Pro ──
+  ("07-theme-dark.png",    "hero-bleed",  True,  "挑選火焰<br>的顏色",         "Pro 主題：月光韓紙、青瓷、晚霞",          None),
+  ("08-poster-dark.png",   "text-bottom", False, "熄滅的夜晚<br>集成一張",     "Pro・把收集的碎片做成海報與卡片",         None),
+  ("09-year-light.png",    "top-crop",    False, "一整年的灰燼<br>一目瞭然",   "Pro・十二個月流向了哪裡",                 0.62),
+  ("10-book-pdf.png",      "pages",       False, "把回顧<br>裝訂成一本書",     "Pro・依日期逐頁匯出 PDF",                 None),
+ ],
 }
 
 FONTS = {
     "ko": '-apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif',
     "en": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "ja": '-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif',
+    "zh-Hant": '-apple-system, "PingFang TC", "Heiti TC", sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40}
 
 
 def base_css(lang, dark):

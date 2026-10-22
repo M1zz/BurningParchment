@@ -98,6 +98,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -198,6 +204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld λ."
           }
         }
       }
@@ -300,6 +312,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld sek"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld λ. %2$lld δ."
+          }
         }
       }
     },
@@ -400,6 +418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld t %2$lld min"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ώρ. %2$lld λ."
           }
         }
       }
@@ -502,6 +526,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld t"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ημ. %2$lld ώρ."
+          }
         }
       }
     },
@@ -602,6 +632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld sek"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld δ."
           }
         }
       }
@@ -704,6 +740,12 @@
             "state" : "translated",
             "value" : "31.12.2025 (ons) 23.59"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31/12/2025 (Τετ) 23:59"
+          }
         }
       }
     },
@@ -804,6 +846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 d 4 t"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 ημ. 4 ώρ."
           }
         }
       }
@@ -906,6 +954,12 @@
             "state" : "translated",
             "value" : "5 t 24 min"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 ώρ. 24 λ."
+          }
         }
       }
     },
@@ -1005,6 +1059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snart opvågning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύντομα ξύπνημα"
           }
         }
       }
@@ -1106,6 +1166,12 @@
             "state" : "translated",
             "value" : "Opvågning %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξύπνημα %@"
+          }
         }
       }
     },
@@ -1206,6 +1272,12 @@
             "state" : "translated",
             "value" : "%@ til opvågning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ μέχρι το ξύπνημα"
+          }
         }
       }
     },
@@ -1305,6 +1377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid tilbage til opvågning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει μέχρι το ξύπνημα"
           }
         }
       }
@@ -1407,6 +1485,12 @@
             "state" : "translated",
             "value" : "Tid tilbage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει"
+          }
         }
       }
     },
@@ -1507,6 +1591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid tilbage til næste frist"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος μέχρι την επόμενη προθεσμία"
           }
         }
       }
@@ -1609,6 +1699,12 @@
             "state" : "translated",
             "value" : "Fristpergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περγαμηνή προθεσμιών"
+          }
         }
       }
     },
@@ -1708,6 +1804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen frister"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καμία προθεσμία"
           }
         }
       }
@@ -1809,6 +1911,12 @@
             "state" : "translated",
             "value" : "Fristen er udløbet 🏁"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η προθεσμία πέρασε 🏁"
+          }
         }
       }
     },
@@ -1909,6 +2017,12 @@
             "state" : "translated",
             "value" : "En ny dag begynder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινά μια νέα μέρα"
+          }
         }
       }
     },
@@ -2008,6 +2122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sover"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ύπνος"
           }
         }
       }
@@ -2110,6 +2230,12 @@
             "state" : "translated",
             "value" : "Årspergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ετήσια περγαμηνή"
+          }
         }
       }
     },
@@ -2210,6 +2336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid tilbage til sengetid i dag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει μέχρι τον ύπνο σήμερα"
           }
         }
       }
@@ -2312,6 +2444,12 @@
             "state" : "translated",
             "value" : "I år"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φέτος"
+          }
         }
       }
     },
@@ -2412,6 +2550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid tilbage i år"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει φέτος"
           }
         }
       }
@@ -2514,6 +2658,12 @@
             "state" : "translated",
             "value" : "Månedspergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μηνιαία περγαμηνή"
+          }
         }
       }
     },
@@ -2614,6 +2764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne måned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτός ο μήνας"
           }
         }
       }
@@ -2716,6 +2872,12 @@
             "state" : "translated",
             "value" : "Tid tilbage denne måned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει αυτόν τον μήνα"
+          }
         }
       }
     },
@@ -2816,6 +2978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne uge"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτή η εβδομάδα"
           }
         }
       }
@@ -2918,6 +3086,12 @@
             "state" : "translated",
             "value" : "Tid tilbage denne uge"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει αυτή την εβδομάδα"
+          }
         }
       }
     },
@@ -3018,6 +3192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dagspergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημερήσια περγαμηνή"
           }
         }
       }
@@ -3120,6 +3300,12 @@
             "state" : "translated",
             "value" : "Se, hvor lang tid der er til sengetid, direkte på låseskærmen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε πόσο απομένει μέχρι τον ύπνο, κατευθείαν στην οθόνη κλειδώματος"
+          }
         }
       }
     },
@@ -3219,6 +3405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Søde drømme"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γλυκά όνειρα"
           }
         }
       }
@@ -3321,6 +3513,12 @@
             "state" : "translated",
             "value" : "Ugepergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εβδομαδιαία περγαμηνή"
+          }
         }
       }
     },
@@ -3421,6 +3619,12 @@
             "state" : "translated",
             "value" : "Seng %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ύπνος %@"
+          }
         }
       }
     },
@@ -3520,6 +3724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Til sengetid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μέχρι τον ύπνο"
           }
         }
       }
@@ -3622,6 +3832,12 @@
             "state" : "translated",
             "value" : "Tid tilbage til sengetid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει μέχρι τον ύπνο"
+          }
         }
       }
     },
@@ -3723,6 +3939,12 @@
             "state" : "translated",
             "value" : "Aflever projektet"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παράδοση του project"
+          }
         }
       }
     },
@@ -3823,6 +4045,12 @@
             "state" : "translated",
             "value" : "🌅 Snart opvågning · %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Σύντομα ξύπνημα · %@"
+          }
         }
       }
     },
@@ -3922,6 +4150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 %@%% tilbage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Απομένει %@%%"
           }
         }
       }
@@ -4024,6 +4258,12 @@
             "state" : "translated",
             "value" : "🔥 %lld%% tilbage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Απομένει %lld%%"
+          }
         }
       }
     },
@@ -4124,6 +4364,12 @@
             "state" : "translated",
             "value" : "🔥 %@ til sengetid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@ μέχρι τον ύπνο"
+          }
         }
       }
     },
@@ -4223,6 +4469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ til opvågning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 %@ μέχρι το ξύπνημα"
           }
         }
       }

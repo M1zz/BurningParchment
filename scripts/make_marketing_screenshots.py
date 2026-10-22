@@ -184,6 +184,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Et helt år<br>med aske", "Pro viser, hvor tolv måneder blev af", 0.62),
   ("10-book-pdf.png", "pages", False, "Dine refleksioner<br>som en bog", "Pro: en PDF, en side pr. dag", None),
  ],
+ "el": [
+  ("01-week-dark.png", "hero-bleed", False, "Δείτε τον χρόνο σας<br>να καίγεται", "Ημέρα, εβδομάδα, μήνας, έτος", None),
+  ("02-month-light.png", "hero-bleed", True, "Φωτεινό ή σκοτεινό", "Ακολουθήστε τη συσκευή ή επιλέξτε", None),
+  ("03-urn-dark.png", "left-text", False, "Κάθε μέρα τελειώνει<br>σε στάχτη", "Όσα γράφετε κατακάθονται στο τεφροδοχείο", None),
+  ("04-flow-light.png", "hero-bleed", True, "Πού πήγε<br>ο χρόνος σας", "Γράφημα κατανομής και ημερολόγιο κάρβουνων", None),
+  ("05-book-dark.png", "top-crop", False, "Διαβάστε ξανά τη στάχτη σας", "Οι γραμμές που αφήσατε στην περγαμηνή", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Από την ώρα ύπνου<br>έως το θέμα", "Ρυθμίστε το όπως θέλετε", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Διαλέξτε το χρώμα<br>της φλόγας σας", "Θέματα Pro: χάντζι, σελαντόν, δειλινό", None),
+  ("08-poster-dark.png", "text-bottom", False, "Όλες οι νύχτες σας<br>σε μία σελίδα", "Το Pro κάνει τα θραύσματα αφίσες", None),
+  ("09-year-light.png", "top-crop", False, "Ένα έτος<br>στάχτης", "Το Pro δείχνει πού πήγαν δώδεκα μήνες", 0.62),
+  ("10-book-pdf.png", "pages", False, "Οι απολογισμοί σας<br>σε ένα βιβλίο", "Pro: PDF, μία σελίδα ανά ημέρα", None),
+ ],
 }
 
 FONTS = {
@@ -199,9 +212,10 @@ FONTS = {
     "vi": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "cs": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "da": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "el": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40}
 
 
 def base_css(lang, dark):

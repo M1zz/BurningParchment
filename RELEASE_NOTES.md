@@ -130,6 +130,14 @@ Tydelig med stor tekst og kontrast
 Indløs tilbudskoder for at få Pro
 Se kommende funktioner i Indstillinger
 
+### 앱스토어 (el)
+
+Τώρα και στα ελληνικά
+Σύντομος οδηγός για νέους χρήστες
+Καθαρή εμφάνιση με μεγάλο κείμενο
+Κωδικοί προσφοράς για το Pro
+Νέες λειτουργίες στις Ρυθμίσεις
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

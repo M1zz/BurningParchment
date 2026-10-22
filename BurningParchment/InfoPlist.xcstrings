@@ -99,6 +99,12 @@
             "state" : "translated",
             "value" : "Brændende Pergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
         }
       }
     },
@@ -201,6 +207,12 @@
             "state" : "translated",
             "value" : "Brændende Pergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
         }
       }
     },
@@ -302,6 +314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bruges kun til at mærke, hvor hårdt du puster, når du slukker pergamentet før sengetid. Der optages eller gemmes ingen lyd."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιείται μόνο για να αντιληφθεί πόσο δυνατά φυσάτε όταν σβήνετε την περγαμηνή πριν τον ύπνο. Δεν καταγράφεται ούτε αποθηκεύεται ήχος."
           }
         }
       }

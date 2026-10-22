@@ -103,6 +103,12 @@
             "state" : "translated",
             "value" : ":%lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
+          }
         }
       }
     },
@@ -213,6 +219,12 @@
             "state" : "translated",
             "value" : "Frist: %@ %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προθεσμία: %@ %@"
+          }
         }
       }
     },
@@ -314,6 +326,12 @@
             "state" : "translated",
             "value" : "%@ · uge %lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · εβδομάδα %lld"
+          }
         }
       }
     },
@@ -410,6 +428,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -515,6 +539,12 @@
             "state" : "translated",
             "value" : "%@ — tid, der endnu ikke er kommet i nogen urne."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — χρόνος που δεν έχει μπει ακόμη σε κανένα τεφροδοχείο."
+          }
         }
       }
     },
@@ -615,6 +645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du faldt i søvn %@ for sent. Morgenen i dag er svedet af tilsvarende"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοιμηθήκατε %@ αργότερα. Το σημερινό πρωινό έχει ζεματιστεί κατά τόσο"
           }
         }
       }
@@ -717,6 +753,12 @@
             "state" : "translated",
             "value" : "I morgens pergament brændte efter %@.\\nKun den tid, du var vågen, efterlader en svidning."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η περγαμηνή του αύριο κάηκε μετά τις %@.\\nΜόνο ο χρόνος που μείνατε ξύπνιοι αφήνει καψάλισμα."
+          }
         }
       }
     },
@@ -817,6 +859,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnen %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τεφροδοχείο «%@»"
           }
         }
       }
@@ -919,6 +967,12 @@
             "state" : "translated",
             "value" : "Kommer i urnen %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θα μπει στο τεφροδοχείο «%@»"
+          }
         }
       }
     },
@@ -1020,6 +1074,12 @@
             "state" : "translated",
             "value" : "Giv urnen %@ en betydning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δώστε νόημα στο τεφροδοχείο «%@»"
+          }
         }
       }
     },
@@ -1119,6 +1179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnen %1$@ rummer askekorn: %2$@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στο τεφροδοχείο «%1$@» απομένουν κόκκοι στάχτης: %2$@"
           }
         }
       }
@@ -1221,6 +1287,12 @@
             "state" : "translated",
             "value" : "Urnen %1$@ rummer askekorn: %2$lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στο τεφροδοχείο «%1$@» απομένουν κόκκοι στάχτης: %2$lld"
+          }
         }
       }
     },
@@ -1321,6 +1393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksioner: %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απολογισμοί: %@"
           }
         }
       }
@@ -1423,6 +1501,12 @@
             "state" : "translated",
             "value" : "Starter om %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινά σε %@"
+          }
         }
       }
     },
@@ -1523,6 +1607,12 @@
             "state" : "translated",
             "value" : "Pergamentet begynder at brænde om %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η περγαμηνή αρχίζει να καίγεται σε %@"
+          }
         }
       }
     },
@@ -1622,6 +1712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@%% tilbage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απομένει %@%%"
           }
         }
       }
@@ -1724,6 +1820,12 @@
             "state" : "translated",
             "value" : "%1$@, %2$lld%% tilbage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, απομένει %2$lld%%"
+          }
         }
       }
     },
@@ -1824,6 +1926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, ilden slukket med %2$lld min i overskud"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, η φωτιά έσβησε με %2$lld λεπτά περιθώριο"
           }
         }
       }
@@ -1926,6 +2034,12 @@
             "state" : "translated",
             "value" : "%@, ingen indlæg"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, καμία καταχώριση"
+          }
         }
       }
     },
@@ -2026,6 +2140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, aske: %2$lld"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, στάχτη: %2$lld"
           }
         }
       }
@@ -2128,6 +2248,12 @@
             "state" : "translated",
             "value" : "%1$@, refleksioner: %2$lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, απολογισμοί: %2$lld"
+          }
         }
       }
     },
@@ -2228,6 +2354,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -2323,6 +2455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nætter med pustet ild: %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νύχτες με φωτιά που έσβησε: %@"
           }
         }
       }
@@ -2425,6 +2563,12 @@
             "state" : "translated",
             "value" : "Appen var åben kl. %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η εφαρμογή ήταν ανοιχτή στις %@"
+          }
         }
       }
     },
@@ -2525,6 +2669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du pustede ilden ud kl. %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σβήσατε τη φωτιά στις %@"
           }
         }
       }
@@ -2628,6 +2778,12 @@
             "state" : "translated",
             "value" : "%1$@ d · aske: %2$@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ ημ. · στάχτη: %2$@"
+          }
         }
       }
     },
@@ -2729,6 +2885,12 @@
             "state" : "translated",
             "value" : "%lld%% tilbage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απομένει %lld%%"
+          }
         }
       }
     },
@@ -2826,6 +2988,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -2931,6 +3099,12 @@
             "state" : "translated",
             "value" : "%lld gange"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld φορές"
+          }
         }
       }
     },
@@ -3031,6 +3205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nætter med pustet ild: %lld"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νύχτες με φωτιά που έσβησε: %lld"
           }
         }
       }
@@ -3133,6 +3313,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld λ."
+          }
         }
       }
     },
@@ -3233,6 +3419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld min %2$lld sek"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld λ. %2$lld δ."
           }
         }
       }
@@ -3335,6 +3527,12 @@
             "state" : "translated",
             "value" : "Med %lld min i overskud"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με %lld λεπτά περιθώριο"
+          }
         }
       }
     },
@@ -3435,6 +3633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilden slukket med %lld min i overskud"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η φωτιά έσβησε με %lld λεπτά περιθώριο"
           }
         }
       }
@@ -3537,6 +3741,12 @@
             "state" : "translated",
             "value" : "%lld t"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ώρ."
+          }
         }
       }
     },
@@ -3637,6 +3847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld t %2$lld min"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ώρ. %2$lld λ."
           }
         }
       }
@@ -3739,6 +3955,12 @@
             "state" : "translated",
             "value" : "%lld d"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ημ."
+          }
         }
       }
     },
@@ -3839,6 +4061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld d %2$lld t"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ημ. %2$lld ώρ."
           }
         }
       }
@@ -3941,6 +4169,12 @@
             "state" : "translated",
             "value" : "%1$lld d · aske: %2$lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ημ. · στάχτη: %2$lld"
+          }
         }
       }
     },
@@ -4041,6 +4275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uge %lld"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εβδομάδα %lld"
           }
         }
       }
@@ -4143,6 +4383,12 @@
             "state" : "translated",
             "value" : "%lld sek"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld δ."
+          }
         }
       }
     },
@@ -4243,6 +4489,12 @@
             "state" : "translated",
             "value" : "Slet “%@”?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή του «%@»;"
+          }
         }
       }
     },
@@ -4342,6 +4594,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilføj en med +-knappen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθέστε μία με το κουμπί +"
           }
         }
       }
@@ -4444,6 +4702,12 @@
             "state" : "translated",
             "value" : "Inden for 10 minutter regnes som til tiden"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μέσα σε 10 λεπτά θεωρείται εγκαίρως"
+          }
         }
       }
     },
@@ -4544,6 +4808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "År"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έτος"
           }
         }
       }
@@ -4646,6 +4916,12 @@
             "state" : "translated",
             "value" : "Måned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μήνας"
+          }
         }
       }
     },
@@ -4747,6 +5023,12 @@
             "state" : "translated",
             "value" : "Dag"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημέρα"
+          }
         }
       }
     },
@@ -4847,6 +5129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uge"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εβδομάδα"
           }
         }
       }
@@ -4952,6 +5240,12 @@
             "state" : "translated",
             "value" : "Del eller gem PDF"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοινοποίηση ή αποθήκευση PDF"
+          }
         }
       }
     },
@@ -5055,6 +5349,12 @@
             "state" : "translated",
             "value" : "· ⊕ tyngdepunkt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ κέντρο βάρους"
+          }
         }
       }
     },
@@ -5154,6 +5454,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %@ ældre refleksioner uden gemt punkt er spredt i deres kvadrant"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ παλαιότεροι απολογισμοί χωρίς αποθηκευμένο σημείο είναι διάσπαρτοι στο τεταρτημόριό τους"
           }
         }
       }
@@ -5255,6 +5561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %lld ældre refleksioner uden gemt punkt er spredt i deres kvadrant"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld παλαιότεροι απολογισμοί χωρίς αποθηκευμένο σημείο είναι διάσπαρτοι στο τεταρτημόριό τους"
           }
         }
       }
@@ -5370,6 +5682,12 @@
             "state" : "translated",
             "value" : "Hent pris igen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφόρτωση τιμής"
+          }
         }
       }
     },
@@ -5470,6 +5788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Længste stime"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μεγαλύτερη σειρά"
           }
         }
       }
@@ -5572,6 +5896,12 @@
             "state" : "translated",
             "value" : "Taknemmelighed"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ευγνωμοσύνη"
+          }
         }
       }
     },
@@ -5672,6 +6002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakt udvikleren"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικοινωνία με τον προγραμματιστή"
           }
         }
       }
@@ -5774,6 +6110,12 @@
             "state" : "translated",
             "value" : "Privatlivspolitik"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πολιτική απορρήτου"
+          }
         }
       }
     },
@@ -5875,6 +6217,12 @@
             "state" : "translated",
             "value" : "Brølende, springende flammer"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλόγες που βρυχώνται και πηδούν"
+          }
         }
       }
     },
@@ -5974,6 +6322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data fra Helbred: faldt i søvn kl. %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεδομένα Υγείας: κοιμηθήκατε στις %@"
           }
         }
       }
@@ -6076,6 +6430,12 @@
             "state" : "translated",
             "value" : "Søvndata fra Helbred"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεδομένα ύπνου από την Υγεία"
+          }
         }
       }
     },
@@ -6176,6 +6536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilslut søvndata fra Helbred"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύνδεση δεδομένων ύπνου από την Υγεία"
           }
         }
       }
@@ -6278,6 +6644,12 @@
             "state" : "translated",
             "value" : "Tilslut søvndata fra Helbred"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύνδεση δεδομένων ύπνου από την Υγεία"
+          }
         }
       }
     },
@@ -6379,6 +6751,12 @@
             "state" : "translated",
             "value" : "Tilsluttet søvndata fra Helbred"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνδεδεμένο με δεδομένα ύπνου από την Υγεία"
+          }
         }
       }
     },
@@ -6478,6 +6856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der er ingen søvndata for i nat i Helbred"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχει καταγραφή ύπνου για χθες βράδυ στην Υγεία"
           }
         }
       }
@@ -6580,6 +6964,12 @@
             "state" : "translated",
             "value" : "Et roligt, blidt flimmer"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ένα ήρεμο, απαλό τρεμόπαιγμα"
+          }
         }
       }
     },
@@ -6680,6 +7070,12 @@
             "state" : "translated",
             "value" : "Skriv om"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξαναγράψτε"
+          }
         }
       }
     },
@@ -6779,6 +7175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snart tid til at stå op"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σχεδόν ώρα να ξυπνήσετε"
           }
         }
       }
@@ -6881,6 +7283,12 @@
             "state" : "translated",
             "value" : "Relationer"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σχέσεις"
+          }
         }
       }
     },
@@ -6981,6 +7389,12 @@
             "state" : "translated",
             "value" : "Det er ikke et abonnement. Betal én gang, og behold det for altid."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν είναι συνδρομή. Πληρώνετε μία φορά και το έχετε για πάντα."
+          }
         }
       }
     },
@@ -7080,6 +7494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gendan køb"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά αγορών"
           }
         }
       }
@@ -7182,6 +7602,12 @@
             "state" : "translated",
             "value" : "Købet kunne ikke gennemføres"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η αγορά δεν ολοκληρώθηκε"
+          }
         }
       }
     },
@@ -7282,6 +7708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid, der gled væk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που χάθηκε"
           }
         }
       }
@@ -7384,6 +7816,12 @@
             "state" : "translated",
             "value" : "Gled bare væk"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απλώς χάθηκε"
+          }
         }
       }
     },
@@ -7485,6 +7923,12 @@
             "state" : "translated",
             "value" : "Ting at holde op med"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πράγματα να σταματήσουν"
+          }
         }
       }
     },
@@ -7584,6 +8028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Er indlægget forkert? Ret det selv"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λάθος καταχώριση; Διορθώστε την μόνοι σας"
           }
         }
       }
@@ -7686,6 +8136,12 @@
             "state" : "translated",
             "value" : "Gem"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καταγραφή"
+          }
         }
       }
     },
@@ -7786,6 +8242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dage med indlæg"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημέρες με καταγραφή"
           }
         }
       }
@@ -7888,6 +8350,12 @@
             "state" : "translated",
             "value" : "Glæde"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χαρά"
+          }
         }
       }
     },
@@ -7988,6 +8456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indstillinger for opvågning og sengetid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις ξυπνήματος και ύπνου"
           }
         }
       }
@@ -8090,6 +8564,12 @@
             "state" : "translated",
             "value" : "Opvågningstid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ώρα ξυπνήματος"
+          }
         }
       }
     },
@@ -8190,6 +8670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fra du står op til sengetid brænder dit pergament langsomt ned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από το ξύπνημα ως την ώρα του ύπνου, η περγαμηνή σας καίγεται σιγά σιγά"
           }
         }
       }
@@ -8292,6 +8778,12 @@
             "state" : "translated",
             "value" : "Før opvågning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πριν το ξύπνημα"
+          }
         }
       }
     },
@@ -8391,6 +8883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ til opvågning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ μέχρι το ξύπνημα"
           }
         }
       }
@@ -8493,6 +8991,12 @@
             "state" : "translated",
             "value" : "Automatisk nedtælling fra opvågning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτόματη αντίστροφη μέτρηση από το ξύπνημα"
+          }
         }
       }
     },
@@ -8594,6 +9098,12 @@
             "state" : "translated",
             "value" : "Fra du står op til sengetid\\nbrænder pergamentet langsomt ned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από το ξύπνημα ως την ώρα του ύπνου\\nη περγαμηνή καίγεται σιγά σιγά"
+          }
         }
       }
     },
@@ -8688,6 +9198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "af din vågne tid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "του χρόνου εγρήγορσης"
           }
         }
       }
@@ -8790,6 +9306,12 @@
             "state" : "translated",
             "value" : "Hvil trygt ved den slukkede ild"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκουραστείτε ήσυχα δίπλα στη σβησμένη φωτιά"
+          }
         }
       }
     },
@@ -8890,6 +9412,12 @@
             "state" : "translated",
             "value" : "Fra"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανενεργό"
+          }
         }
       }
     },
@@ -8985,6 +9513,12 @@
             "state" : "translated",
             "value" : "Slut"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τέλος"
+          }
         }
       }
     },
@@ -9079,6 +9613,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brænd kun den tid, der er din"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάψτε μόνο τον χρόνο που είναι δικός σας"
           }
         }
       }
@@ -9181,6 +9721,12 @@
             "state" : "translated",
             "value" : "Mine mål"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι στόχοι μου"
+          }
         }
       }
     },
@@ -9276,6 +9822,12 @@
             "state" : "translated",
             "value" : "Min fritid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο ελεύθερος χρόνος μου"
+          }
         }
       }
     },
@@ -9370,6 +9922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indstil min fritid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ορισμός του ελεύθερου χρόνου μου"
           }
         }
       }
@@ -9472,6 +10030,12 @@
             "state" : "translated",
             "value" : "Senere"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αργότερα"
+          }
         }
       }
     },
@@ -9573,6 +10137,12 @@
             "state" : "translated",
             "value" : "Puste væk"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φύσηξέ το"
+          }
         }
       }
     },
@@ -9672,6 +10242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dato"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημερομηνία"
           }
         }
       }
@@ -9774,6 +10350,12 @@
             "state" : "translated",
             "value" : "I morgen venter i det brudstykke, jeg gemte"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το αύριο περιμένει στο θραύσμα που κράτησα"
+          }
         }
       }
     },
@@ -9874,6 +10456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De sidste gløder overlader jeg til mit morgen-jeg"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τα τελευταία κάρβουνα τα αφήνω στον εαυτό μου του αύριο"
           }
         }
       }
@@ -9976,6 +10564,12 @@
             "state" : "translated",
             "value" : "Vi gemmer det, der er tilbage.\\nNu skal du sove godt."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θα κρατήσουμε ό,τι απέμεινε.\\nΤώρα κοιμηθείτε καλά."
+          }
         }
       }
     },
@@ -10076,6 +10670,12 @@
             "state" : "translated",
             "value" : "Gemmer det, der var tilbage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρατάμε ό,τι απέμεινε"
+          }
         }
       }
     },
@@ -10175,6 +10775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "tilbage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "απομένει"
           }
         }
       }
@@ -10277,6 +10883,12 @@
             "state" : "translated",
             "value" : "Et lavt, åndende skær"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια χαμηλή, ανασαίνουσα λάμψη"
+          }
         }
       }
     },
@@ -10377,6 +10989,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trinnet Note til i morgen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βήμα Σημείωμα για αύριο"
           }
         }
       }
@@ -10479,6 +11097,12 @@
             "state" : "translated",
             "value" : "Hvad vil du prøve nyt i morgen?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι καινούργιο θα δοκιμάσετε αύριο;"
+          }
         }
       }
     },
@@ -10578,6 +11202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I morgen tidlig dukker det op som et bånd øverst på pergamentet og brænder sammen med din dag."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αύριο το πρωί εμφανίζεται ως λωρίδα πάνω στην περγαμηνή και καίγεται μαζί με τη μέρα σας."
           }
         }
       }
@@ -10680,6 +11310,12 @@
             "state" : "translated",
             "value" : "Hvordan vil du gribe det an i morgen?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πώς θα το προσεγγίσετε αύριο;"
+          }
         }
       }
     },
@@ -10780,6 +11416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvad vil du skære fra i morgen?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι θα κόψετε αύριο;"
           }
         }
       }
@@ -10882,6 +11524,12 @@
             "state" : "translated",
             "value" : "Hvordan vil du bruge i morgen anderledes?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πώς θα περάσετε διαφορετικά το αύριο;"
+          }
         }
       }
     },
@@ -10981,6 +11629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I morgens pergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η περγαμηνή του αύριο"
           }
         }
       }
@@ -11083,6 +11737,12 @@
             "state" : "translated",
             "value" : "I morgens pergament stoppede her.\\nSøde drømme"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η περγαμηνή του αύριο σταμάτησε εδώ.\\nΓλυκά όνειρα"
+          }
         }
       }
     },
@@ -11182,6 +11842,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I morgens pergament brænder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η περγαμηνή του αύριο καίγεται"
           }
         }
       }
@@ -11284,6 +11950,12 @@
             "state" : "translated",
             "value" : "Slukker ilden på i morgens pergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σβήνει τη φωτιά στην περγαμηνή του αύριο"
+          }
         }
       }
     },
@@ -11384,6 +12056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tjek din netværksforbindelse, og prøv igen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ελέγξτε τη σύνδεση δικτύου και δοκιμάστε ξανά."
           }
         }
       }
@@ -11486,6 +12164,12 @@
             "state" : "translated",
             "value" : "Solnedgang"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δειλινό"
+          }
         }
       }
     },
@@ -11586,6 +12270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jeg gik sent i seng"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοιμήθηκα αργά"
           }
         }
       }
@@ -11688,6 +12378,12 @@
             "state" : "translated",
             "value" : "En dag, der ikke brændte helt ned, er stadig en hel dag"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια μέρα που δεν κάηκε ολόκληρη είναι κι αυτή μια ολόκληρη μέρα"
+          }
         }
       }
     },
@@ -11788,6 +12484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vis en anden sætning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση άλλης φράσης"
           }
         }
       }
@@ -11890,6 +12592,12 @@
             "state" : "translated",
             "value" : "Brænd i en anden farve"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάψτε σε άλλο χρώμα"
+          }
         }
       }
     },
@@ -11990,6 +12698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Næste"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επόμενο"
           }
         }
       }
@@ -12092,6 +12806,12 @@
             "state" : "translated",
             "value" : "Næste måned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επόμενος μήνας"
+          }
         }
       }
     },
@@ -12186,6 +12906,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Næste fritid · %1$@ %2$@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επόμενος ελεύθερος χρόνος · %1$@ %2$@"
           }
         }
       }
@@ -12288,6 +13014,12 @@
             "state" : "translated",
             "value" : "Hvordan kunne du blive færdig næste gang?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πώς θα μπορούσατε να τελειώσετε την επόμενη φορά;"
+          }
         }
       }
     },
@@ -12388,6 +13120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Live-opdateringer i Dynamic Island"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ζωντανή ενημέρωση στο Dynamic Island"
           }
         }
       }
@@ -12490,6 +13228,12 @@
             "state" : "translated",
             "value" : "Mørk"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σκοτεινή"
+          }
         }
       }
     },
@@ -12589,6 +13333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλείσιμο"
           }
         }
       }
@@ -12691,6 +13441,12 @@
             "state" : "translated",
             "value" : "Luk — alt, hvad du har skrevet, er gemt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλείσιμο — όσα γράψατε έχουν αποθηκευτεί"
+          }
         }
       }
     },
@@ -12791,6 +13547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Måne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φεγγάρι"
           }
         }
       }
@@ -12893,6 +13655,12 @@
             "state" : "translated",
             "value" : "Måneskins-hanji"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χάντζι του φεγγαριού"
+          }
         }
       }
     },
@@ -12993,6 +13761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Måneskins-hanji, celadon, solnedgang. Skift farven på papiret og flammen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χάντζι του φεγγαριού, σελαντόν, δειλινό. Αλλάζουν το χρώμα του χαρτιού και της φλόγας."
           }
         }
       }
@@ -13095,6 +13869,12 @@
             "state" : "translated",
             "value" : "Brænd i måneskins-hanji, celadon eller solnedgang som prærieild, gløder eller stjernekaster"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάψτε σε χάντζι του φεγγαριού, σελαντόν ή δειλινό, ως φωτιά στο λιβάδι, κάρβουνα ή σπίθες"
+          }
         }
       }
     },
@@ -13196,6 +13976,12 @@
             "state" : "translated",
             "value" : "Åbn en måned for at finde dens ugeurner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανοίξτε έναν μήνα για να βρείτε τα εβδομαδιαία τεφροδοχεία του"
+          }
         }
       }
     },
@@ -13296,6 +14082,12 @@
             "state" : "translated",
             "value" : "Aske indeni"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη μέσα"
+          }
         }
       }
     },
@@ -13395,6 +14187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du kan roligt lukke uden at svare. Ubekræftede nætter går uden svidning."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μπορείτε να κλείσετε χωρίς να απαντήσετε. Οι νύχτες που δεν επιβεβαιώθηκαν περνούν χωρίς καψάλισμα."
           }
         }
       }
@@ -13497,6 +14295,12 @@
             "state" : "translated",
             "value" : "Et groft bud er fint"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Και κατά προσέγγιση είναι εντάξει"
+          }
         }
       }
     },
@@ -13598,6 +14402,12 @@
             "state" : "translated",
             "value" : "Hvad gør du i morgen for at gøre det endnu bedre?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι θα κάνετε αύριο για να πάει ακόμη καλύτερα;"
+          }
         }
       }
     },
@@ -13691,6 +14501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilføj"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη"
           }
         }
       }
@@ -13793,6 +14609,12 @@
             "state" : "translated",
             "value" : "Frister"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προθεσμίες"
+          }
         }
       }
     },
@@ -13893,6 +14715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ubegrænsede frister"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απεριόριστες προθεσμίες"
           }
         }
       }
@@ -13995,6 +14823,12 @@
             "state" : "translated",
             "value" : "Slet frist"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή προθεσμίας"
+          }
         }
       }
     },
@@ -14095,6 +14929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rediger frist"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επεξεργασία προθεσμίας"
           }
         }
       }
@@ -14197,6 +15037,12 @@
             "state" : "translated",
             "value" : "Fanen Frister vises automatisk, når du tilføjer en frist"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η καρτέλα προθεσμιών εμφανίζεται αυτόματα μόλις προσθέσετε μια προθεσμία"
+          }
         }
       }
     },
@@ -14297,6 +15143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Til fristen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μέχρι την προθεσμία"
           }
         }
       }
@@ -14399,6 +15251,12 @@
             "state" : "translated",
             "value" : "Vil du have flere frister?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θέλετε περισσότερες προθεσμίες;"
+          }
         }
       }
     },
@@ -14498,6 +15356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen frister"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καμία προθεσμία"
           }
         }
       }
@@ -14600,6 +15464,12 @@
             "state" : "translated",
             "value" : "Udfordring"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πρόκληση"
+          }
         }
       }
     },
@@ -14699,6 +15569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Form"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σχήμα"
           }
         }
       }
@@ -14801,6 +15677,12 @@
             "state" : "translated",
             "value" : "Dobbelttryk for at vende brudstykket"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε δύο φορές για να γυρίσετε το θραύσμα"
+          }
         }
       }
     },
@@ -14901,6 +15783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sortér ved at trykke på et punkt langs de to akser"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ταξινομήστε πατώντας ένα σημείο κατά μήκος των δύο αξόνων"
           }
         }
       }
@@ -15003,6 +15891,12 @@
             "state" : "translated",
             "value" : "Vend det, og efterlad en linje på bagsiden."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γυρίστε το και αφήστε μια γραμμή στην πίσω όψη."
+          }
         }
       }
     },
@@ -15104,6 +15998,12 @@
             "state" : "translated",
             "value" : "Skriv bagsiden om"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξαναγράψτε την πίσω όψη"
+          }
         }
       }
     },
@@ -15204,6 +16104,12 @@
             "state" : "translated",
             "value" : "En linje til bagsiden"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια γραμμή για την πίσω όψη"
+          }
         }
       }
     },
@@ -15303,6 +16209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skriv på bagsiden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε στην πίσω όψη"
           }
         }
       }
@@ -15405,6 +16317,12 @@
             "state" : "translated",
             "value" : "Bagsiden er tom"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η πίσω όψη είναι κενή"
+          }
         }
       }
     },
@@ -15505,6 +16423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prærieild"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φωτιά στο λιβάδι"
           }
         }
       }
@@ -15607,6 +16531,12 @@
             "state" : "translated",
             "value" : "Lys"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανοιχτό"
+          }
         }
       }
     },
@@ -15706,6 +16636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fristen er udløbet 🏁"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η προθεσμία πέρασε 🏁"
           }
         }
       }
@@ -15807,6 +16743,12 @@
             "state" : "translated",
             "value" : "Tid tilbage til fristen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος μέχρι την προθεσμία"
+          }
         }
       }
     },
@@ -15906,6 +16848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forfaldsdato"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημερομηνία λήξης"
           }
         }
       }
@@ -16008,6 +16956,12 @@
             "state" : "translated",
             "value" : "Måneden, hvor du gjorde mest af det, du havde tænkt dig"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο μήνας που κάνατε τα περισσότερα από όσα σκοπεύατε"
+          }
         }
       }
     },
@@ -16108,6 +17062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjorde, som jeg havde tænkt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έκανα όπως σκόπευα"
           }
         }
       }
@@ -16210,6 +17170,12 @@
             "state" : "translated",
             "value" : "Gjorde, hvad jeg ville"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έκανα ό,τι ήθελα"
+          }
         }
       }
     },
@@ -16310,6 +17276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slå mikrofonen til for at slukke ilden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενεργοποιήστε το μικρόφωνο για να σβήσετε τη φωτιά"
           }
         }
       }
@@ -16412,6 +17384,12 @@
             "state" : "translated",
             "value" : "Opret"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δημιουργία"
+          }
         }
       }
     },
@@ -16506,6 +17484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hver dag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάθε μέρα"
           }
         }
       }
@@ -16608,6 +17592,12 @@
             "state" : "translated",
             "value" : "Stop"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διακοπή"
+          }
         }
       }
     },
@@ -16708,6 +17698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvornår faldt du i søvn?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι ώρα κοιμηθήκατε;"
           }
         }
       }
@@ -16810,6 +17806,12 @@
             "state" : "translated",
             "value" : "Du behøver ikke brænde alt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν χρειάζεται να κάψετε τα πάντα"
+          }
         }
       }
     },
@@ -16910,6 +17912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Samlet aske"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη που μαζεύτηκε"
           }
         }
       }
@@ -17012,6 +18020,12 @@
             "state" : "translated",
             "value" : "Stil"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στιλ"
+          }
         }
       }
     },
@@ -17113,6 +18127,12 @@
             "state" : "translated",
             "value" : "Gemte brudstykker"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θραύσματα που κρατήθηκαν"
+          }
         }
       }
     },
@@ -17212,6 +18232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gemte brudstykker: %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θραύσματα που κρατήθηκαν: %@"
           }
         }
       }
@@ -17314,6 +18340,12 @@
             "state" : "translated",
             "value" : "Gemte brudstykker: %lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θραύσματα που κρατήθηκαν: %lld"
+          }
         }
       }
     },
@@ -17414,6 +18446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tag dine brudstykker med dig"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πάρτε τα θραύσματά σας μαζί σας"
           }
         }
       }
@@ -17516,6 +18554,12 @@
             "state" : "translated",
             "value" : "Del dine brudstykker som kort og plakater"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μοιραστείτε τα θραύσματά σας ως κάρτες και αφίσες"
+          }
         }
       }
     },
@@ -17616,6 +18660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Missede"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν έγινε"
           }
         }
       }
@@ -17718,6 +18768,12 @@
             "state" : "translated",
             "value" : "Den gratis version rummer op til %lld frist. Med Pro kan du tælle ned til lige så mange mål, du vil."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η δωρεάν έκδοση κρατά έως και %lld προθεσμία. Με το Pro μετράτε αντίστροφα όσους στόχους θέλετε."
+          }
         }
       }
     },
@@ -17818,6 +18874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvad holdt dig oppe? (valgfrit)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι σας κράτησε ξύπνιους; (προαιρετικό)"
           }
         }
       }
@@ -17920,6 +18982,12 @@
             "state" : "translated",
             "value" : "Bjælke"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ράβδος"
+          }
         }
       }
     },
@@ -18020,6 +19088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Baggrund"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φόντο"
           }
         }
       }
@@ -18122,6 +19196,12 @@
             "state" : "translated",
             "value" : "Gnist"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σπίθα"
+          }
         }
       }
     },
@@ -18222,6 +19302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nat"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νύχτα"
           }
         }
       }
@@ -18324,6 +19410,12 @@
             "state" : "translated",
             "value" : "Dråbe"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σταγόνα"
+          }
         }
       }
     },
@@ -18424,6 +19516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Læring"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μάθηση"
           }
         }
       }
@@ -18526,6 +19624,12 @@
             "state" : "translated",
             "value" : "Fejlrapporter og idéer til funktioner er meget velkomne."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναφορές σφαλμάτων και ιδέες για λειτουργίες είναι ευπρόσδεκτες."
+          }
         }
       }
     },
@@ -18626,6 +19730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kassér"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απόρριψη"
           }
         }
       }
@@ -18728,6 +19838,12 @@
             "state" : "translated",
             "value" : "Lyn"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κεραυνός"
+          }
         }
       }
     },
@@ -18828,6 +19944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Område"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εύρος"
           }
         }
       }
@@ -18930,6 +20052,12 @@
             "state" : "translated",
             "value" : "Stjerne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αστέρι"
+          }
         }
       }
     },
@@ -19030,6 +20158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Intet køb at gendanne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχει αγορά για επαναφορά"
           }
         }
       }
@@ -19132,6 +20266,12 @@
             "state" : "translated",
             "value" : "Trinnet Skrivning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βήμα Γραφή"
+          }
         }
       }
     },
@@ -19232,6 +20372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gem teksten, og gå til sortering"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση του κειμένου και μετάβαση στην ταξινόμηση"
           }
         }
       }
@@ -19334,6 +20480,12 @@
             "state" : "translated",
             "value" : "min"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "λ."
+          }
         }
       }
     },
@@ -19434,6 +20586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sorteringsgraf"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράφημα ταξινόμησης"
           }
         }
       }
@@ -19536,6 +20694,12 @@
             "state" : "translated",
             "value" : "Trinnet Sortering"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βήμα Ταξινόμηση"
+          }
         }
       }
     },
@@ -19636,6 +20800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ikke sorteret"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χωρίς ταξινόμηση"
           }
         }
       }
@@ -19738,6 +20908,12 @@
             "state" : "translated",
             "value" : "Gem sorteringen, og gå til noten til i morgen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση της ταξινόμησης και μετάβαση στο σημείωμα για αύριο"
+          }
         }
       }
     },
@@ -19838,6 +21014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flamme"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλόγα"
           }
         }
       }
@@ -19940,6 +21122,12 @@
             "state" : "translated",
             "value" : "Flammetype"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τύπος φλόγας"
+          }
         }
       }
     },
@@ -20040,6 +21228,12 @@
             "state" : "translated",
             "value" : "Ilden er slukket · Se gemte brudstykker"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η φωτιά έσβησε · Δείτε τα θραύσματα που κρατήθηκαν"
+          }
         }
       }
     },
@@ -20139,6 +21333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilden er slukket. Søde drømme"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η φωτιά έσβησε. Γλυκά όνειρα"
           }
         }
       }
@@ -20241,6 +21441,12 @@
             "state" : "translated",
             "value" : "Gør de gemte brudstykker til kort og plakater."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάντε τα θραύσματα που κρατήσατε κάρτες και αφίσες."
+          }
         }
       }
     },
@@ -20341,6 +21547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det kræver også mod at slukke ilden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Και το σβήσιμο της φωτιάς θέλει θάρρος"
           }
         }
       }
@@ -20443,6 +21655,12 @@
             "state" : "translated",
             "value" : "Du pustede ikke ud, men faldt i søvn til tiden, så ilden gik ud af sig selv."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν φυσήξατε, αλλά κοιμηθήκατε εγκαίρως, οπότε η φωτιά έσβησε μόνη της."
+          }
         }
       }
     },
@@ -20543,6 +21761,12 @@
             "state" : "translated",
             "value" : "Ilden er slukket"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η φωτιά έσβησε"
+          }
         }
       }
     },
@@ -20642,6 +21866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brændende Pergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
           }
         }
       }
@@ -20744,6 +21974,12 @@
             "state" : "translated",
             "value" : "Brændende Pergament Pro"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή Pro"
+          }
         }
       }
     },
@@ -20844,6 +22080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brændende Pergament 🔥"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή 🔥"
           }
         }
       }
@@ -20946,6 +22188,12 @@
             "state" : "translated",
             "value" : "Brændende Pergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
         }
       }
     },
@@ -21039,6 +22287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brændende Fritid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενος Ελεύθερος Χρόνος"
           }
         }
       }
@@ -21141,6 +22395,12 @@
             "state" : "translated",
             "value" : "Få Brændende Fritid, farver og flammetyper, brudstykkekort, PDF af refleksionsbogen, et års aske og ubegrænsede frister."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποκτήστε τον Φλεγόμενο Ελεύθερο Χρόνο, χρώματα και τύπους φλόγας, κάρτες θραυσμάτων, το PDF του βιβλίου απολογισμών, ένα έτος στάχτης και απεριόριστες προθεσμίες."
+          }
         }
       }
     },
@@ -21235,6 +22495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Få Brændende Fritid, temaer, brudstykkekort, PDF af refleksionsbogen, et års aske og ubegrænsede frister."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποκτήστε τον Φλεγόμενο Ελεύθερο Χρόνο, θέματα, κάρτες θραυσμάτων, το PDF του βιβλίου απολογισμών, ένα έτος στάχτης και απεριόριστες προθεσμίες."
           }
         }
       }
@@ -21337,6 +22603,12 @@
             "state" : "translated",
             "value" : "Stjernekaster"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σπίθες"
+          }
         }
       }
     },
@@ -21436,6 +22708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lad det stå tomt for at bruge den svage sætning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφήστε το κενό για να χρησιμοποιηθεί η αχνή φράση"
           }
         }
       }
@@ -21538,6 +22816,12 @@
             "state" : "translated",
             "value" : "Farve"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρώμα"
+          }
         }
       }
     },
@@ -21638,6 +22922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Farven bestemmer papirets og flammens nuance. Flammetypen bestemmer, hvordan den brænder. Vælg hver for sig"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το χρώμα ορίζει την απόχρωση του χαρτιού και της φλόγας. Ο τύπος φλόγας ορίζει πώς καίγεται. Επιλέξτε το καθένα χωριστά"
           }
         }
       }
@@ -21740,6 +23030,12 @@
             "state" : "translated",
             "value" : "I brug"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σε χρήση"
+          }
         }
       }
     },
@@ -21840,6 +23136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slet"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή"
           }
         }
       }
@@ -21942,6 +23244,12 @@
             "state" : "translated",
             "value" : "Ny frist"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νέα προθεσμία"
+          }
         }
       }
     },
@@ -22042,6 +23350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ny urne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νέο τεφροδοχείο"
           }
         }
       }
@@ -22144,6 +23458,12 @@
             "state" : "translated",
             "value" : "Opret ny urne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δημιουργία νέου τεφροδοχείου"
+          }
         }
       }
     },
@@ -22243,6 +23563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ny refleksion"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νέος απολογισμός"
           }
         }
       }
@@ -22345,6 +23671,12 @@
             "state" : "translated",
             "value" : "Skriv en ny refleksion"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε έναν νέο απολογισμό"
+          }
         }
       }
     },
@@ -22445,6 +23777,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indgravér"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χάραξη"
           }
         }
       }
@@ -22547,6 +23885,12 @@
             "state" : "translated",
             "value" : "Inkluderer alle Pro-funktioner, vi tilføjer senere"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περιλαμβάνει κάθε λειτουργία Pro που θα προσθέσουμε αργότερα"
+          }
         }
       }
     },
@@ -22647,6 +23991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Linje"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γραμμή"
           }
         }
       }
@@ -22749,6 +24099,12 @@
             "state" : "translated",
             "value" : "Valgt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλέχθηκε"
+          }
         }
       }
     },
@@ -22849,6 +24205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indstillinger"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις"
           }
         }
       },
@@ -22951,6 +24313,12 @@
             "state" : "translated",
             "value" : "Slå mikrofonen til i Indstillinger"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενεργοποίηση μικροφώνου στις Ρυθμίσεις"
+          }
         }
       }
     },
@@ -23051,6 +24419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vækst"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανάπτυξη"
           }
         }
       }
@@ -23153,6 +24527,12 @@
             "state" : "translated",
             "value" : "Vær ærlig..."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε ειλικρινά..."
+          }
         }
       }
     },
@@ -23253,6 +24633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Søvndata"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καταγραφές ύπνου"
           }
         }
       }
@@ -23355,6 +24741,12 @@
             "state" : "translated",
             "value" : "Søvndata læses kun og forlader aldrig din enhed"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι καταγραφές ύπνου μόνο διαβάζονται και δεν φεύγουν ποτέ από τη συσκευή σας"
+          }
         }
       }
     },
@@ -23454,6 +24846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sover"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ύπνος"
           }
         }
       }
@@ -23556,6 +24954,12 @@
             "state" : "translated",
             "value" : "Rediger"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επεξεργασία"
+          }
         }
       }
     },
@@ -23656,6 +25060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gløder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάρβουνα"
           }
         }
       }
@@ -23758,6 +25168,12 @@
             "state" : "translated",
             "value" : "t"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ώρ."
+          }
         }
       }
     },
@@ -23858,6 +25274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ώρα"
           }
         }
       }
@@ -23960,6 +25382,12 @@
             "state" : "translated",
             "value" : "Tidsindstillinger"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις ώρας"
+          }
         }
       }
     },
@@ -24060,6 +25488,12 @@
             "state" : "translated",
             "value" : "Brugte tid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφιερώθηκε χρόνος"
+          }
         }
       }
     },
@@ -24159,6 +25593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brugte ikke tid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν αφιερώθηκε χρόνος"
           }
         }
       }
@@ -24261,6 +25701,12 @@
             "state" : "translated",
             "value" : "System"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύστημα"
+          }
         }
       }
     },
@@ -24362,6 +25808,12 @@
             "state" : "translated",
             "value" : "Vælg System for at følge enhedens indstilling for mørk tilstand"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλέξτε Σύστημα για να ακολουθείται η ρύθμιση σκούρας λειτουργίας της συσκευής"
+          }
         }
       }
     },
@@ -24456,6 +25908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έναρξη"
           }
         }
       }
@@ -24556,6 +26014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Starttidspunkt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ώρα έναρξης"
           }
         }
       }
@@ -24658,6 +26122,12 @@
             "state" : "translated",
             "value" : "Fejl"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λάθη"
+          }
         }
       }
     },
@@ -24757,6 +26227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbol"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύμβολο"
           }
         }
       }
@@ -24858,6 +26334,12 @@
             "state" : "translated",
             "value" : "Endnu ingen aske"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχει ακόμη στάχτη"
+          }
         }
       }
     },
@@ -24958,6 +26440,12 @@
             "state" : "translated",
             "value" : "Endnu ingen gemte brudstykker"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχουν ακόμη θραύσματα που κρατήθηκαν"
+          }
         }
       }
     },
@@ -25057,6 +26545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Endnu ingen sorteret aske. Tryk på grafen, når du skriver en refleksion."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχει ακόμη ταξινομημένη στάχτη. Πατήστε στο γράφημα όταν γράφετε έναν απολογισμό."
           }
         }
       }
@@ -25159,6 +26653,12 @@
             "state" : "translated",
             "value" : "Stadig tom"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακόμη κενό"
+          }
         }
       }
     },
@@ -25260,6 +26760,12 @@
             "state" : "translated",
             "value" : "Stadig tom."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακόμη κενό."
+          }
         }
       }
     },
@@ -25359,6 +26865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aske uden navn endnu"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη χωρίς όνομα ακόμη"
           }
         }
       }
@@ -25461,6 +26973,12 @@
             "state" : "translated",
             "value" : "Intet skrevet endnu"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν έχει γραφτεί ακόμη τίποτα"
+          }
         }
       }
     },
@@ -25560,6 +27078,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stadig på første side"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακόμη στην πρώτη σελίδα"
           }
         }
       }
@@ -25662,6 +27186,12 @@
             "state" : "translated",
             "value" : "Endnu ingen urner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχουν ακόμη τεφροδοχεία"
+          }
         }
       }
     },
@@ -25763,6 +27293,12 @@
             "state" : "translated",
             "value" : "Ingen aske har sat sig endnu"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καμία στάχτη δεν έχει κατακαθίσει ακόμη"
+          }
         }
       }
     },
@@ -25862,6 +27398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indtil videre bare aske"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προς το παρόν είναι απλώς στάχτη"
           }
         }
       }
@@ -25964,6 +27506,12 @@
             "state" : "translated",
             "value" : "Kommende Pro-funktioner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μελλοντικές λειτουργίες Pro"
+          }
         }
       }
     },
@@ -26058,6 +27606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Omkring %lld dage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περίπου %lld ημέρες"
           }
         }
       }
@@ -26160,6 +27714,12 @@
             "state" : "translated",
             "value" : "Pergament"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περγαμηνή"
+          }
         }
       }
     },
@@ -26260,6 +27820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergament og flamme"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περγαμηνή και φλόγα"
           }
         }
       }
@@ -26362,6 +27928,12 @@
             "state" : "translated",
             "value" : "Pergament- og flammetemaer"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θέματα περγαμηνής και φλόγας"
+          }
         }
       }
     },
@@ -26462,6 +28034,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vælg, hvordan dit pergament brænder. Farven følger temaet ovenfor"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλέξτε πώς καίγεται η περγαμηνή σας. Το χρώμα ακολουθεί το παραπάνω θέμα"
           }
         }
       }
@@ -26564,6 +28142,12 @@
             "state" : "translated",
             "value" : "Pergament og flamme"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περγαμηνή και φλόγα"
+          }
         }
       }
     },
@@ -26664,6 +28248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Papirets farve og flammen skifter sammen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το χρώμα του χαρτιού και η φλόγα αλλάζουν μαζί"
           }
         }
       }
@@ -26766,6 +28356,12 @@
             "state" : "translated",
             "value" : "Hvilken urne skal det i?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σε ποιο τεφροδοχείο να μπει;"
+          }
         }
       }
     },
@@ -26865,6 +28461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ufærdigt fra i går"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημιτελή από χθες"
           }
         }
       }
@@ -26967,6 +28569,12 @@
             "state" : "translated",
             "value" : "Ufærdigt fra i går: %lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημιτελή από χθες: %lld"
+          }
         }
       }
     },
@@ -27066,6 +28674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du faldt i søvn %@ for sent i nat,\\nså morgenen i dag er svedet"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χθες βράδυ κοιμηθήκατε %@ αργότερα,\\nοπότε το σημερινό πρωινό έχει ζεματιστεί"
           }
         }
       }
@@ -27168,6 +28782,12 @@
             "state" : "translated",
             "value" : "Du faldt i søvn %@ for sent i nat.\\nPrøv at slukke ilden lidt tidligere i aften."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χθες βράδυ κοιμηθήκατε %@ αργότερα.\\nΔοκιμάστε απόψε να σβήσετε τη φωτιά λίγο νωρίτερα."
+          }
         }
       }
     },
@@ -27269,6 +28889,12 @@
             "state" : "translated",
             "value" : "Nattens brudstykke er blevet koldt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το θραύσμα της χθεσινής νύχτας κρύωσε"
+          }
         }
       }
     },
@@ -27368,6 +28994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvordan var i nat?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πώς ήταν η χθεσινή νύχτα;"
           }
         }
       }
@@ -27470,6 +29102,12 @@
             "state" : "translated",
             "value" : "Tilfældigt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τυχαία"
+          }
         }
       }
     },
@@ -27570,6 +29208,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Endte med at gøre det"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κατέληξα να το κάνω"
           }
         }
       }
@@ -27672,6 +29316,12 @@
             "state" : "translated",
             "value" : "Det, jeg endte med at gøre"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτό που κατέληξα να κάνω"
+          }
         }
       }
     },
@@ -27773,6 +29423,12 @@
             "state" : "translated",
             "value" : "Ingen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κανένα"
+          }
         }
       }
     },
@@ -27872,6 +29528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det, der ligger her, er bare aske, indtil du giver det et navn."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ό,τι βρίσκεται εδώ είναι απλώς στάχτη μέχρι να του δώσετε όνομα."
           }
         }
       }
@@ -27974,6 +29636,12 @@
             "state" : "translated",
             "value" : "Hvad denne aske har betydet for mig…"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι ήταν για μένα αυτή η στάχτη…"
+          }
         }
       }
     },
@@ -28074,6 +29742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tæl ned til flere mål på én gang"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μετράτε αντίστροφα πολλούς στόχους ταυτόχρονα"
           }
         }
       }
@@ -28176,6 +29850,12 @@
             "state" : "translated",
             "value" : "Tilsluttet"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνδεδεμένο"
+          }
         }
       }
     },
@@ -28276,6 +29956,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du afbryder forbindelsen i iOS Indstillinger ▸ Helbred ▸ Dataadgang og enheder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για αποσύνδεση, μεταβείτε στις Ρυθμίσεις iOS ▸ Υγεία ▸ Πρόσβαση σε δεδομένα και συσκευές"
           }
         }
       }
@@ -28378,6 +30064,12 @@
             "state" : "translated",
             "value" : "Du afbryder forbindelsen i iOS Indstillinger ▸ Helbred ▸ Dataadgang og enheder. Søvndata læses kun og forlader aldrig din enhed"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για αποσύνδεση, μεταβείτε στις Ρυθμίσεις iOS ▸ Υγεία ▸ Πρόσβαση σε δεδομένα και συσκευές. Τα δεδομένα ύπνου μόνο διαβάζονται και δεν φεύγουν ποτέ από τη συσκευή σας"
+          }
         }
       }
     },
@@ -28478,6 +30170,12 @@
             "state" : "translated",
             "value" : "Tilslut"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύνδεση"
+          }
         }
       }
     },
@@ -28577,6 +30275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Når du har tilsluttet, spørger vi ikke hver morgen og sætter ilden tilbage til det tidspunkt, hvor du faldt i søvn. Søvndata læses kun og forlader aldrig din enhed."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μόλις συνδεθεί, δεν θα ρωτάμε κάθε πρωί και θα γυρνάμε τη φωτιά στην ώρα που κοιμηθήκατε. Οι καταγραφές ύπνου μόνο διαβάζονται και δεν φεύγουν ποτέ από τη συσκευή σας."
           }
         }
       }
@@ -28679,6 +30383,12 @@
             "state" : "translated",
             "value" : "Når du har tilsluttet, spørger vi ikke hver morgen. I morgens pergament sættes tilbage til det tidspunkt, hvor du faktisk faldt i søvn"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μόλις συνδεθεί, δεν θα ρωτάμε κάθε πρωί. Η περγαμηνή του αύριο γυρνά στην ώρα που κοιμηθήκατε πραγματικά"
+          }
         }
       }
     },
@@ -28779,6 +30489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Når du har tilsluttet, bruger vi din registrerede søvntid i stedet for at spørge hver morgen. Søvndata læses kun og forlader aldrig din enhed"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μόλις συνδεθεί, χρησιμοποιούμε την καταγεγραμμένη ώρα ύπνου αντί να ρωτάμε κάθε πρωί. Τα δεδομένα ύπνου μόνο διαβάζονται και δεν φεύγουν ποτέ από τη συσκευή σας"
           }
         }
       }
@@ -28881,6 +30597,12 @@
             "state" : "translated",
             "value" : "Åbn"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Άνοιγμα"
+          }
         }
       }
     },
@@ -28981,6 +30703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F.eks. højst 15 minutter på sociale medier"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. όριο 15 λεπτών στα κοινωνικά δίκτυα"
           }
         }
       }
@@ -29083,6 +30811,12 @@
             "state" : "translated",
             "value" : "F.eks. ugen, hvor jeg holdt ud"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. η εβδομάδα που άντεξα"
+          }
         }
       }
     },
@@ -29183,6 +30917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F.eks. skift til en gåtur på 20 minutter"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. αλλαγή σε βόλτα 20 λεπτών"
           }
         }
       }
@@ -29285,6 +31025,12 @@
             "state" : "translated",
             "value" : "F.eks. træn 30 minutter ekstra"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. επιπλέον 30 λεπτά προπόνησης"
+          }
         }
       }
     },
@@ -29385,6 +31131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F.eks. træning, relationer, årets udfordring"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. γυμναστική, σχέσεις, πρόκληση της χρονιάς"
           }
         }
       }
@@ -29487,6 +31239,12 @@
             "state" : "translated",
             "value" : "F.eks. 30 minutters træning lige efter frokost"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. 30 λεπτά προπόνησης αμέσως μετά το μεσημεριανό"
+          }
         }
       }
     },
@@ -29587,6 +31345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F.eks. læs ét kapitel"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. διάβασμα ενός κεφαλαίου"
           }
         }
       }
@@ -29689,6 +31453,12 @@
             "state" : "translated",
             "value" : "F.eks. aflever projektet"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Π.χ. παράδοση του project"
+          }
         }
       }
     },
@@ -29789,6 +31559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I dag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σήμερα"
           }
         }
       }
@@ -29891,6 +31667,12 @@
             "state" : "translated",
             "value" : "Hvorfor i dag blev ufærdig"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γιατί η σημερινή μέρα έμεινε ημιτελής"
+          }
         }
       }
     },
@@ -29991,6 +31773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morgenen i dag er lidt svedet"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το σημερινό πρωινό είναι λίγο ζεματισμένο"
           }
         }
       }
@@ -30093,6 +31881,12 @@
             "state" : "translated",
             "value" : "Efterlad en linje om din dag."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφήστε μία γραμμή για τη μέρα σας."
+          }
         }
       }
     },
@@ -30193,6 +31987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du nåede ikke\\nat afslutte din dag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν καταφέρατε\\nνα ολοκληρώσετε τη μέρα σας"
           }
         }
       }
@@ -30295,6 +32095,12 @@
             "state" : "translated",
             "value" : "Hvad forhindrede dig i\\nat afslutte din dag?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι σας εμπόδισε\\nνα ολοκληρώσετε τη μέρα σας;"
+          }
         }
       }
     },
@@ -30396,6 +32202,12 @@
             "state" : "translated",
             "value" : "Slukker dagens ild og gemmer det resterende brudstykke"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σβήνει τη σημερινή φωτιά και κρατά το θραύσμα που απέμεινε"
+          }
         }
       }
     },
@@ -30495,6 +32307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Efterlade en linje, før du sover?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μία γραμμή πριν κοιμηθείτε;"
           }
         }
       }
@@ -30597,6 +32415,12 @@
             "state" : "translated",
             "value" : "I dag, "
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σήμερα, "
+          }
         }
       }
     },
@@ -30698,6 +32522,12 @@
             "state" : "translated",
             "value" : "Spring i dag over"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παράλειψη σήμερα"
+          }
         }
       }
     },
@@ -30797,6 +32627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvordan var din dag? — Tryk for at placere den"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πώς ήταν η μέρα σας; — Πατήστε για να την τοποθετήσετε"
           }
         }
       }
@@ -30899,6 +32735,12 @@
             "state" : "translated",
             "value" : "Hvad vil du prøve i aften? (valgfrit)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι θα δοκιμάσετε απόψε; (προαιρετικό)"
+          }
         }
       }
     },
@@ -30999,6 +32841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det er nok for i dag. Det brændte godt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για σήμερα αρκεί. Κάηκε καλά."
           }
         }
       }
@@ -31101,6 +32949,12 @@
             "state" : "translated",
             "value" : "Jeg bestemmer, hvor i dag slutter"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εγώ αποφασίζω πού τελειώνει η σημερινή μέρα"
+          }
         }
       }
     },
@@ -31201,6 +33055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skrive dagens refleksion? Tryk for at åbne editoren"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Να γράψετε τον σημερινό απολογισμό; Πατήστε για να ανοίξει ο επεξεργαστής"
           }
         }
       }
@@ -31303,6 +33163,12 @@
             "state" : "translated",
             "value" : "om morgenen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "π.μ."
+          }
         }
       }
     },
@@ -31403,6 +33269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "om aftenen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "μ.μ."
           }
         }
       }
@@ -31505,6 +33377,12 @@
             "state" : "translated",
             "value" : "I år"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φέτος"
+          }
         }
       }
     },
@@ -31606,6 +33484,12 @@
             "state" : "translated",
             "value" : "Tid tilbage i år"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει φέτος"
+          }
         }
       }
     },
@@ -31705,6 +33589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Færdig"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τέλος"
           }
         }
       }
@@ -31806,6 +33696,12 @@
             "state" : "translated",
             "value" : "+%@ mere"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@ ακόμη"
+          }
         }
       }
     },
@@ -31899,6 +33795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "og %@ mere"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "και %@ ακόμη"
           }
         }
       }
@@ -32001,6 +33903,12 @@
             "state" : "translated",
             "value" : "+%lld mere"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld ακόμη"
+          }
         }
       }
     },
@@ -32101,6 +34009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "og %lld mere"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "και %lld ακόμη"
           }
         }
       }
@@ -32203,6 +34117,12 @@
             "state" : "translated",
             "value" : "Cirkel"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κύκλος"
+          }
         }
       }
     },
@@ -32304,6 +34224,12 @@
             "state" : "translated",
             "value" : "Stryg op eller ned for at skifte side"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύρετε πάνω ή κάτω για αλλαγή σελίδας"
+          }
         }
       }
     },
@@ -32403,6 +34329,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skriv betydningen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε το νόημα"
           }
         }
       }
@@ -32505,6 +34437,12 @@
             "state" : "translated",
             "value" : "Skriv det ned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καταγράψτε το"
+          }
         }
       }
     },
@@ -32604,6 +34542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slet betydningen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή του νοήματος"
           }
         }
       }
@@ -32705,6 +34649,12 @@
             "state" : "translated",
             "value" : "Uden\\nintention"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χωρίς\\nπρόθεση"
+          }
         }
       }
     },
@@ -32804,6 +34754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med\\nintention"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με\\nπρόθεση"
           }
         }
       }
@@ -32905,6 +34861,12 @@
             "state" : "translated",
             "value" : "Vi fandt ikke noget Pro-køb på denne Apple-konto. Tjek, at du er logget ind med den konto, du købte med."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν βρήκαμε αγορά Pro σε αυτόν τον λογαριασμό Apple. Βεβαιωθείτε ότι έχετε συνδεθεί με τον λογαριασμό που χρησιμοποιήσατε για την αγορά."
+          }
         }
       }
     },
@@ -33004,6 +34966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der er ingen aske tilbage fra denne dag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν έχει μείνει στάχτη από αυτή τη μέρα"
           }
         }
       }
@@ -33106,6 +35074,12 @@
             "state" : "translated",
             "value" : "Hvad betød denne måned for dig?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι σήμαινε αυτός ο μήνας για εσάς;"
+          }
         }
       }
     },
@@ -33205,6 +35179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ugeurner i denne måned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εβδομαδιαία τεφροδοχεία αυτού του μήνα"
           }
         }
       }
@@ -33307,6 +35287,12 @@
             "state" : "translated",
             "value" : "Hvordan vil du håndtere denne tid i morgen?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πώς θα διαχειριστείτε αυτόν τον χρόνο αύριο;"
+          }
         }
       }
     },
@@ -33408,6 +35394,12 @@
             "state" : "translated",
             "value" : "Kassér dette brudstykke?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Να απορριφθεί αυτό το θραύσμα;"
+          }
         }
       }
     },
@@ -33508,6 +35500,12 @@
             "state" : "translated",
             "value" : "Hvad betød denne uge for dig?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι σήμαινε αυτή η εβδομάδα για εσάς;"
+          }
         }
       }
     },
@@ -33607,6 +35605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne urne er tom."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτό το τεφροδοχείο είναι άδειο."
           }
         }
       }
@@ -33709,6 +35713,12 @@
             "state" : "translated",
             "value" : "Gør denne urne til aske uden navn igen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιστρέφει αυτό το τεφροδοχείο σε στάχτη χωρίς όνομα"
+          }
         }
       }
     },
@@ -33808,6 +35818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det, der er tilbage i denne urne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι απομένει σε αυτό το τεφροδοχείο"
           }
         }
       }
@@ -33910,6 +35926,12 @@
             "state" : "translated",
             "value" : "Navn"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όνομα"
+          }
         }
       }
     },
@@ -34010,6 +36032,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Omdøb"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μετονομασία"
           }
         }
       }
@@ -34112,6 +36140,12 @@
             "state" : "translated",
             "value" : "Urne uden titel"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τεφροδοχείο χωρίς τίτλο"
+          }
         }
       }
     },
@@ -34213,6 +36247,12 @@
             "state" : "translated",
             "value" : "Send os en e-mail"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στείλτε μας email"
+          }
         }
       }
     },
@@ -34309,6 +36349,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -34414,6 +36460,12 @@
             "state" : "translated",
             "value" : "Del billede"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοινοποίηση εικόνας"
+          }
         }
       }
     },
@@ -34514,6 +36566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne måned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτός ο μήνας"
           }
         }
       }
@@ -34616,6 +36674,12 @@
             "state" : "translated",
             "value" : "Tid tilbage denne måned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει αυτόν τον μήνα"
+          }
         }
       }
     },
@@ -34716,6 +36780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne uge"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτή η εβδομάδα"
           }
         }
       }
@@ -34818,6 +36888,12 @@
             "state" : "translated",
             "value" : "Tid tilbage denne uge"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει αυτή την εβδομάδα"
+          }
         }
       }
     },
@@ -34913,6 +36989,12 @@
             "state" : "translated",
             "value" : "Fritid tilbage denne uge"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ελεύθερος χρόνος που απομένει αυτή την εβδομάδα"
+          }
         }
       }
     },
@@ -35007,6 +37089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denne uges fritid er brændt helt ned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο ελεύθερος χρόνος αυτής της εβδομάδας κάηκε ολόκληρος"
           }
         }
       }
@@ -35109,6 +37197,12 @@
             "state" : "translated",
             "value" : "Det gentager sig også denne uge"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναλαμβάνεται και αυτή την εβδομάδα"
+          }
         }
       }
     },
@@ -35209,6 +37303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det skete også tidligere på ugen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνέβη και νωρίτερα αυτή την εβδομάδα"
           }
         }
       }
@@ -35311,6 +37411,12 @@
             "state" : "translated",
             "value" : "Brugsvilkår (EULA)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όροι χρήσης (EULA)"
+          }
         }
       }
     },
@@ -35411,6 +37517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forrige måned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προηγούμενος μήνας"
           }
         }
       }
@@ -35513,6 +37625,12 @@
             "state" : "translated",
             "value" : "DM på Instagram (@lee25_ios)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM στο Instagram (@lee25_ios)"
+          }
         }
       }
     },
@@ -35608,6 +37726,12 @@
             "state" : "translated",
             "value" : "Min tid hver uge"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο χρόνος μου κάθε εβδομάδα"
+          }
         }
       }
     },
@@ -35702,6 +37826,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamentet brænder kun i dine egne timer"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η περγαμηνή καίγεται μόνο στις δικές σας ώρες"
           }
         }
       }
@@ -35802,6 +37932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun styrken af dit åndedræt bruges. Intet optages."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιείται μόνο η ένταση της πνοής σας. Δεν καταγράφεται τίποτα."
           }
         }
       }
@@ -35904,6 +38040,12 @@
             "state" : "translated",
             "value" : "Blad"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φύλλο"
+          }
         }
       }
     },
@@ -36004,6 +38146,12 @@
             "state" : "translated",
             "value" : "Autogem"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτόματη αποθήκευση"
+          }
         }
       }
     },
@@ -36098,6 +38246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fritid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ελεύθερος χρόνος"
           }
         }
       }
@@ -36194,6 +38348,12 @@
             "state" : "translated",
             "value" : "Rediger fritid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επεξεργασία ελεύθερου χρόνου"
+          }
         }
       }
     },
@@ -36288,6 +38448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilføj fritid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη ελεύθερου χρόνου"
           }
         }
       }
@@ -36390,6 +38556,12 @@
             "state" : "translated",
             "value" : "Fritid vises som et timeglas i sideprikkerne. Frister dukker op af sig selv, når du tilføjer dem"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο ελεύθερος χρόνος εμφανίζεται ως κλεψύδρα στις τελείες σελίδων. Οι προθεσμίες εμφανίζονται μόνες τους μόλις τις προσθέσετε"
+          }
         }
       }
     },
@@ -36483,6 +38655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det tændes, mens din fritid går, og venter slukket resten af ugen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανάβει όσο περνά ο ελεύθερος χρόνος σας και περιμένει σβηστή τον υπόλοιπο χρόνο της εβδομάδας"
           }
         }
       }
@@ -36585,6 +38763,12 @@
             "state" : "translated",
             "value" : "Små ændringer er et fint sted at begynde..."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακόμη και οι μικρές αλλαγές είναι καλή αρχή..."
+          }
         }
       }
     },
@@ -36685,6 +38869,12 @@
             "state" : "translated",
             "value" : "Tryk på en glød for at se dagens refleksioner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε ένα κάρβουνο για να δείτε τους απολογισμούς εκείνης της μέρας"
+          }
         }
       }
     },
@@ -36784,6 +38974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Godnat"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καληνύχτα"
           }
         }
       }
@@ -36886,6 +39082,12 @@
             "state" : "translated",
             "value" : "En veltilbragt dag. Tid til at lade den køle af."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια μέρα που κάηκε καλά. Ώρα να κρυώσει."
+          }
         }
       }
     },
@@ -36979,6 +39181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Udelad søvn, arbejde og pligter, og tilføj kun den tid, du bruger på dig selv. Denne uges pergament brænder kun, mens den går."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφήστε έξω τον ύπνο, τη δουλειά και τις υποχρεώσεις και προσθέστε μόνο τον χρόνο που περνάτε για τον εαυτό σας. Η περγαμηνή αυτής της εβδομάδας καίγεται μόνο όσο περνά."
           }
         }
       }
@@ -37074,6 +39282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vælg de timer, der virkelig er dine, ud over søvn og arbejde. Denne uges pergament brænder kun, mens de går."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλέξτε τις ώρες που είναι πραγματικά δικές σας, πέρα από τον ύπνο και τη δουλειά. Η περγαμηνή αυτής της εβδομάδας καίγεται μόνο όσο περνούν."
           }
         }
       }
@@ -37176,6 +39390,12 @@
             "state" : "translated",
             "value" : "Tidspunkt for søvn"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ώρα ύπνου"
+          }
         }
       }
     },
@@ -37276,6 +39496,12 @@
             "state" : "translated",
             "value" : "Det stopper af sig selv, når du sover. Om morgenen tjekker vi, hvornår du faldt i søvn, og sætter det tilbage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σταματά μόνη της μόλις κοιμηθείτε. Το πρωί ελέγχουμε πότε κοιμηθήκατε και την επαναφέρουμε"
+          }
         }
       }
     },
@@ -37370,6 +39596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Overlapper din søvn"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικαλύπτεται με τον ύπνο σας"
           }
         }
       }
@@ -37466,6 +39698,12 @@
             "state" : "translated",
             "value" : "Det overlapper din søvn. Hold det inden for din vågne tid."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικαλύπτεται με τον ύπνο σας. Κρατήστε την μέσα στις ώρες εγρήγορσης."
+          }
         }
       }
     },
@@ -37559,6 +39797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uden søvn, uden arbejde,\\nvælg kun de timer, der er dine.\\nDenne uges pergament brænder kun, mens de går."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χωρίς ύπνο, χωρίς δουλειά,\\nεπιλέξτε μόνο τις ώρες που είναι δικές σας.\\nΗ περγαμηνή αυτής της εβδομάδας καίγεται μόνο όσο περνούν."
           }
         }
       }
@@ -37661,6 +39905,12 @@
             "state" : "translated",
             "value" : "Aske"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη"
+          }
         }
       }
     },
@@ -37761,6 +40011,12 @@
             "state" : "translated",
             "value" : "Baseret på %@ aske"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με βάση %@ στάχτες"
+          }
         }
       }
     },
@@ -37854,6 +40110,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aske: %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη: %@"
           }
         }
       }
@@ -37950,6 +40212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aske: %@ · A5-størrelse"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη: %@ · μέγεθος A5"
           }
         }
       }
@@ -38052,6 +40320,12 @@
             "state" : "translated",
             "value" : "Baseret på %lld aske"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με βάση %lld στάχτες"
+          }
         }
       }
     },
@@ -38152,6 +40426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aske: %lld"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη: %lld"
           }
         }
       }
@@ -38254,6 +40534,12 @@
             "state" : "translated",
             "value" : "Aske: %lld · A5-størrelse"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη: %lld · μέγεθος A5"
+          }
         }
       }
     },
@@ -38355,6 +40641,12 @@
             "state" : "translated",
             "value" : "Askeurner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τεφροδοχεία στάχτης"
+          }
         }
       }
     },
@@ -38454,6 +40746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Læg den i din askeurne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βάλτε την στο τεφροδοχείο σας"
           }
         }
       }
@@ -38556,6 +40854,12 @@
             "state" : "translated",
             "value" : "Måneden med mest aske"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο μήνας με την περισσότερη στάχτη"
+          }
         }
       }
     },
@@ -38657,6 +40961,12 @@
             "state" : "translated",
             "value" : "Gem lidt aske, så vises\\nfordelingen og glødekalenderen her."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρατήστε λίγη στάχτη και\\nεδώ θα εμφανιστούν η κατανομή και το ημερολόγιο με τα κάρβουνα."
+          }
         }
       }
     },
@@ -38756,6 +41066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fordeling af aske"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κατανομή στάχτης"
           }
         }
       }
@@ -38858,6 +41174,12 @@
             "state" : "translated",
             "value" : "Askens strøm"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ροή της στάχτης"
+          }
         }
       }
     },
@@ -38958,6 +41280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se askens strøm"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προβολή της ροής της στάχτης"
           }
         }
       }
@@ -39060,6 +41388,12 @@
             "state" : "translated",
             "value" : "Gem"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση"
+          }
         }
       }
     },
@@ -39161,6 +41495,12 @@
             "state" : "translated",
             "value" : "Gemmer"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση"
+          }
         }
       }
     },
@@ -39261,6 +41601,12 @@
             "state" : "translated",
             "value" : "Gemmer…"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση…"
+          }
         }
       }
     },
@@ -39360,6 +41706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gemt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθηκεύτηκε"
           }
         }
       }
@@ -39462,6 +41814,12 @@
             "state" : "translated",
             "value" : "Gem, og start en ny refleksion"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση και έναρξη νέου απολογισμού"
+          }
         }
       }
     },
@@ -39562,6 +41920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gem og luk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση και κλείσιμο"
           }
         }
       }
@@ -39664,6 +42028,12 @@
             "state" : "translated",
             "value" : "Gik ud af sig selv"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έσβησε μόνο του"
+          }
         }
       }
     },
@@ -39764,6 +42134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du gemte et brudstykke, der gik ud af sig selv"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρατήσατε ένα θραύσμα που έσβησε μόνο του"
           }
         }
       }
@@ -39866,6 +42242,12 @@
             "state" : "translated",
             "value" : "Saml dine refleksioner i én PDF til at gemme eller udskrive."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγκεντρώστε τους απολογισμούς σας σε ένα PDF για να το φυλάξετε ή να το εκτυπώσετε."
+          }
         }
       }
     },
@@ -39966,6 +42348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα"
           }
         }
       }
@@ -40068,6 +42456,12 @@
             "state" : "translated",
             "value" : "Punkt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τελεία"
+          }
         }
       }
     },
@@ -40163,6 +42557,12 @@
             "state" : "translated",
             "value" : "Din fritid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο ελεύθερος χρόνος σας"
+          }
         }
       }
     },
@@ -40256,6 +42656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det er gratis at indstille den og se tallene. At brænde kun de timer er Pro."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο ορισμός και η προβολή των αριθμών είναι δωρεάν. Η καύση μόνο αυτών των ωρών είναι Pro."
           }
         }
       }
@@ -40357,6 +42763,12 @@
             "state" : "translated",
             "value" : "Titel"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τίτλος"
+          }
         }
       }
     },
@@ -40456,6 +42868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du slukkede ilden til tiden. I morgens pergament er urørt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σβήσατε τη φωτιά εγκαίρως. Η περγαμηνή του αύριο μένει άθικτη"
           }
         }
       }
@@ -40558,6 +42976,12 @@
             "state" : "translated",
             "value" : "Du faldt i søvn til tiden, så ilden gik ud af sig selv"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοιμηθήκατε εγκαίρως, οπότε η φωτιά έσβησε μόνη της"
+          }
         }
       }
     },
@@ -40658,6 +43082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jeg sov til tiden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοιμήθηκα εγκαίρως"
           }
         }
       }
@@ -40760,6 +43190,12 @@
             "state" : "translated",
             "value" : "Kassér brudstykke"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απόρριψη θραύσματος"
+          }
         }
       }
     },
@@ -40860,6 +43296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brudstykkekort"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάρτα θραύσματος"
           }
         }
       }
@@ -40962,6 +43404,12 @@
             "state" : "translated",
             "value" : "Brudstykkekort og plakater"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάρτες και αφίσες θραυσμάτων"
+          }
         }
       }
     },
@@ -41062,6 +43510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Del som brudstykkekort"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κοινοποίηση ως κάρτα θραύσματος"
           }
         }
       }
@@ -41164,6 +43618,12 @@
             "state" : "translated",
             "value" : "Brudstykkeplakat"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφίσα θραύσματος"
+          }
         }
       }
     },
@@ -41265,6 +43725,12 @@
             "state" : "translated",
             "value" : "Lav en brudstykkeplakat"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δημιουργία αφίσας θραύσματος"
+          }
         }
       }
     },
@@ -41364,6 +43830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryk på brudstykket for at vende det"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε το θραύσμα για να το γυρίσετε"
           }
         }
       }
@@ -41466,6 +43938,12 @@
             "state" : "translated",
             "value" : "Brudstykkets bagside"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πίσω όψη του θραύσματος"
+          }
         }
       }
     },
@@ -41566,6 +44044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brudstykkets forside"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μπροστινή όψη του θραύσματος"
           }
         }
       }
@@ -41668,6 +44152,12 @@
             "state" : "translated",
             "value" : "En dag, der er lidt ubrændt, huskes længere"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια μέρα που έμεινε λίγο άκαυτη μένει πιο πολύ στη μνήμη"
+          }
         }
       }
     },
@@ -41767,6 +44257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vil du skrive mere? (valgfrit)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θέλετε να πείτε κάτι ακόμη; (προαιρετικό)"
           }
         }
       }
@@ -41869,6 +44365,12 @@
             "state" : "translated",
             "value" : "Slags"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Είδος"
+          }
         }
       }
     },
@@ -41970,6 +44472,12 @@
             "state" : "translated",
             "value" : "Søde drømme"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γλυκά όνειρα"
+          }
         }
       }
     },
@@ -42064,6 +44572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weekender"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σαββατοκύριακα"
           }
         }
       }
@@ -42166,6 +44680,12 @@
             "state" : "translated",
             "value" : "Opret lige så mange askeurner, du vil, efter emne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δημιουργήστε όσα τεφροδοχεία στάχτης θέλετε, ανά θέμα"
+          }
         }
       }
     },
@@ -42267,6 +44787,12 @@
             "state" : "translated",
             "value" : "Fyldes lige nu"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γεμίζει τώρα"
+          }
         }
       }
     },
@@ -42361,6 +44887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brænder nu · indtil %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καίγεται τώρα · έως %@"
           }
         }
       }
@@ -42463,6 +44995,12 @@
             "state" : "translated",
             "value" : "Gemmer denne refleksion og åbner en tom"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθηκεύει αυτόν τον απολογισμό και ανοίγει έναν κενό"
+          }
         }
       }
     },
@@ -42563,6 +45101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvad skal vi gøre med asken fra de seneste %lld dage?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι να κάνουμε με τη στάχτη των τελευταίων %lld ημερών;"
           }
         }
       }
@@ -42665,6 +45209,12 @@
             "state" : "translated",
             "value" : "Hvad skal vi gøre med asken fra de seneste %lld uger?"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι να κάνουμε με τη στάχτη των τελευταίων %lld εβδομάδων;"
+          }
         }
       }
     },
@@ -42766,6 +45316,12 @@
             "state" : "translated",
             "value" : "Aske pr. måned de seneste 12 måneder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στάχτη ανά μήνα τους τελευταίους 12 μήνες"
+          }
         }
       }
     },
@@ -42865,6 +45421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvor de seneste 12 måneder blev af, måned for måned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πού πήγαν οι τελευταίοι 12 μήνες, μήνα με τον μήνα"
           }
         }
       }
@@ -42967,6 +45529,12 @@
             "state" : "translated",
             "value" : "Se asken fra de seneste 12 måneder, måned for måned"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η στάχτη των τελευταίων 12 μηνών, μήνα με τον μήνα"
+          }
         }
       }
     },
@@ -43068,6 +45636,12 @@
             "state" : "translated",
             "value" : "Se, hvor din tid blev af hver måned de seneste tolv måneder."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε πού πήγε ο χρόνος σας κάθε μήνα στους τελευταίους δώδεκα μήνες."
+          }
         }
       }
     },
@@ -43162,6 +45736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slet"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή"
           }
         }
       }
@@ -43266,6 +45846,12 @@
             "state" : "translated",
             "value" : "Support"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Υποστήριξη"
+          }
         }
       }
     },
@@ -43365,6 +45951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilføj den første aske"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη της πρώτης στάχτης"
           }
         }
       }
@@ -43467,6 +46059,12 @@
             "state" : "translated",
             "value" : "Opret din første urne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δημιουργήστε το πρώτο σας τεφροδοχείο"
+          }
         }
       }
     },
@@ -43567,6 +46165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start med at oprette din første urne.\\nDet fungerer godt at navngive den efter emne eller område."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε δημιουργώντας το πρώτο σας τεφροδοχείο.\\nΤο όνομα ανά θέμα ή τομέα ταιριάζει καλά."
           }
         }
       }
@@ -43669,6 +46273,12 @@
             "state" : "translated",
             "value" : "Celadon"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σελαντόν"
+          }
         }
       }
     },
@@ -43769,6 +46379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stearinlys"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κερί"
           }
         }
       }
@@ -43871,6 +46487,12 @@
             "state" : "translated",
             "value" : "Seneste 30 dage"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τελευταίες 30 ημέρες"
+          }
         }
       }
     },
@@ -43971,6 +46593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilføj"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη"
           }
         }
       }
@@ -44073,6 +46701,12 @@
             "state" : "translated",
             "value" : "Foreslåede sengetider"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προτεινόμενες ώρες ύπνου"
+          }
         }
       }
     },
@@ -44173,6 +46807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuller"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακύρωση"
           }
         }
       }
@@ -44275,6 +46915,12 @@
             "state" : "translated",
             "value" : "1 time til sengetid. Godt gået i dag!"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 ώρα μέχρι τον ύπνο. Μπράβο για σήμερα!"
+          }
         }
       }
     },
@@ -44374,6 +47020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fra 30 minutter før sengetid kan du puste på det brændende\\npergament for at slukke ilden og gemme det, der er tilbage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από 30 λεπτά πριν τον ύπνο, φυσήξτε την καιόμενη\\nπεργαμηνή για να σβήσει η φωτιά και να κρατήσετε ό,τι απομένει"
           }
         }
       }
@@ -44476,6 +47128,12 @@
             "state" : "translated",
             "value" : "Sengetid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ώρα ύπνου"
+          }
         }
       }
     },
@@ -44577,6 +47235,12 @@
             "state" : "translated",
             "value" : "Sengetid %2$lld%3$@ %1$@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ύπνος στις %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -44676,6 +47340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ til sengetid"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ μέχρι τον ύπνο"
           }
         }
       }
@@ -44778,6 +47448,12 @@
             "state" : "translated",
             "value" : "Tid tilbage til sengetid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρόνος που απομένει μέχρι τον ύπνο"
+          }
         }
       }
     },
@@ -44879,6 +47555,12 @@
             "state" : "translated",
             "value" : "Kapsel"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάψουλα"
+          }
         }
       }
     },
@@ -44978,6 +47660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nøgleord (valgfrit)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λέξη-κλειδί (προαιρετικό)"
           }
         }
       }
@@ -45080,6 +47768,12 @@
             "state" : "translated",
             "value" : "Vis faner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση καρτελών"
+          }
         }
       }
     },
@@ -45179,6 +47873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryk for at lukke"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για κλείσιμο"
           }
         }
       }
@@ -45281,6 +47981,12 @@
             "state" : "translated",
             "value" : "Tryk for at administrere frister"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για διαχείριση προθεσμιών"
+          }
         }
       }
     },
@@ -45381,6 +48087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryk for at vende tilbage til trinnet Skrivning"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για επιστροφή στο βήμα Γραφή"
           }
         }
       }
@@ -45483,6 +48195,12 @@
             "state" : "translated",
             "value" : "Tryk for at vælge"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για επιλογή"
+          }
         }
       }
     },
@@ -45584,6 +48302,12 @@
             "state" : "translated",
             "value" : "Tryk for at redigere"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για επεξεργασία"
+          }
         }
       }
     },
@@ -45683,6 +48407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryk for at ændre tiden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για αλλαγή της ώρας"
           }
         }
       }
@@ -45785,6 +48515,12 @@
             "state" : "translated",
             "value" : "Tryk for at administrere urner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για διαχείριση τεφροδοχείων"
+          }
         }
       }
     },
@@ -45885,6 +48621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryk for at åbne urnen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε για άνοιγμα του τεφροδοχείου"
           }
         }
       }
@@ -45987,6 +48729,12 @@
             "state" : "translated",
             "value" : "Knitrende, sprættende gnister"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σπίθες που τρίζουν και πετάγονται"
+          }
         }
       }
     },
@@ -46087,6 +48835,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sider"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σελίδες"
           }
         }
       }
@@ -46189,6 +48943,12 @@
             "state" : "translated",
             "value" : "Side %1$lld af %2$lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σελίδα %1$lld από %2$lld"
+          }
         }
       }
     },
@@ -46289,6 +49049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sideindikator"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείκτης σελίδας"
           }
         }
       }
@@ -46391,6 +49157,12 @@
             "state" : "translated",
             "value" : "Sideprikker"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τελείες σελίδων"
+          }
         }
       }
     },
@@ -46491,6 +49263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stil på sideprikker"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στιλ τελειών σελίδων"
           }
         }
       }
@@ -46593,6 +49371,12 @@
             "state" : "translated",
             "value" : "Livstidsadgang · %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πρόσβαση εφ' όρου ζωής · %@"
+          }
         }
       }
     },
@@ -46687,6 +49471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hverdage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καθημερινές"
           }
         }
       }
@@ -46789,6 +49579,12 @@
             "state" : "translated",
             "value" : "Plakat"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφίσα"
+          }
         }
       }
     },
@@ -46890,6 +49686,12 @@
             "state" : "translated",
             "value" : "Vis"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση"
+          }
         }
       }
     },
@@ -46986,6 +49788,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -47091,6 +49899,12 @@
             "state" : "translated",
             "value" : "Du har Pro. Tak 🔥"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έχετε το Pro. Ευχαριστούμε 🔥"
+          }
         }
       }
     },
@@ -47192,6 +50006,12 @@
             "state" : "translated",
             "value" : "Opgrader til Pro"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναβάθμιση σε Pro"
+          }
         }
       }
     },
@@ -47286,6 +50106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brænd min fritid med Pro"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάψτε τον ελεύθερο χρόνο μου με το Pro"
           }
         }
       }
@@ -47388,6 +50214,12 @@
             "state" : "translated",
             "value" : "Fås med Pro"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαθέσιμο με το Pro"
+          }
         }
       }
     },
@@ -47481,6 +50313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med Pro brænder pergamentet kun i disse timer"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με το Pro, η περγαμηνή καίγεται μόνο σε αυτές τις ώρες"
           }
         }
       }
@@ -47581,6 +50419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lås årets strøm op med Pro"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκλειδώστε τη ροή της χρονιάς με το Pro"
           }
         }
       }
@@ -47683,6 +50527,12 @@
             "state" : "translated",
             "value" : "Ville gøre det, men gjorde det ikke"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ήθελα να το κάνω, αλλά δεν το έκανα"
+          }
         }
       }
     },
@@ -47783,6 +50633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ville gøre det, men gjorde det ikke"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σκόπευα να το κάνω, αλλά δεν το έκανα"
           }
         }
       }
@@ -47885,6 +50741,12 @@
             "state" : "translated",
             "value" : "Fang din dag, uden at noget går tabt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρατήστε τη μέρα σας, χωρίς να μείνει τίποτα απ' έξω"
+          }
         }
       }
     },
@@ -47985,6 +50847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hjerte"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καρδιά"
           }
         }
       }
@@ -48087,6 +50955,12 @@
             "state" : "translated",
             "value" : "Betal én gang, brug for altid"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πληρώνετε μία φορά, το χρησιμοποιείτε για πάντα"
+          }
         }
       }
     },
@@ -48181,6 +51055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Over et år"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σε ένα έτος"
           }
         }
       }
@@ -48281,6 +51161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Et års aske"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ένα έτος στάχτης"
           }
         }
       }
@@ -48383,6 +51269,12 @@
             "state" : "translated",
             "value" : "Et års aske"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ένα έτος στάχτης"
+          }
         }
       }
     },
@@ -48483,6 +51375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Et helt års aske på et øjeblik"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ένα ολόκληρο έτος στάχτης με μια ματιά"
           }
         }
       }
@@ -48585,6 +51483,12 @@
             "state" : "translated",
             "value" : "%1$lld urner, %2$lld refleksioner"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld τεφροδοχεία, %2$lld απολογισμοί"
+          }
         }
       }
     },
@@ -48685,6 +51589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ubegrænsede urner"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απεριόριστα τεφροδοχεία"
           }
         }
       }
@@ -48787,6 +51697,12 @@
             "state" : "translated",
             "value" : "Slet urne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή τεφροδοχείου"
+          }
         }
       }
     },
@@ -48887,6 +51803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnehylden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το ράφι των τεφροδοχείων"
           }
         }
       }
@@ -48989,6 +51911,12 @@
             "state" : "translated",
             "value" : "Rediger urne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επεξεργασία τεφροδοχείου"
+          }
         }
       }
     },
@@ -49090,6 +52018,12 @@
             "state" : "translated",
             "value" : "Lås ubegrænsede urner og frister op."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκλειδώστε απεριόριστα τεφροδοχεία και προθεσμίες."
+          }
         }
       }
     },
@@ -49190,6 +52124,12 @@
             "state" : "translated",
             "value" : "Urnen venter allerede.\\nDin første aske kommer i %@."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το τεφροδοχείο περιμένει ήδη.\\nΗ πρώτη σας στάχτη θα μπει στο «%@»."
+          }
         }
       }
     },
@@ -49289,6 +52229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Et ord at indgravere på urnen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια λέξη για να χαραχτεί στο τεφροδοχείο"
           }
         }
       }
@@ -49391,6 +52337,12 @@
             "state" : "translated",
             "value" : "Sol"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ήλιος"
+          }
         }
       }
     },
@@ -49491,6 +52443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjort"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έγινε"
           }
         }
       }
@@ -49593,6 +52551,12 @@
             "state" : "translated",
             "value" : "Pust ind i mikrofonen nederst på telefonen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φυσήξτε στο μικρόφωνο στο κάτω μέρος του τηλεφώνου"
+          }
         }
       }
     },
@@ -49694,6 +52658,12 @@
             "state" : "translated",
             "value" : "Udseende"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση"
+          }
         }
       }
     },
@@ -49791,6 +52761,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -49896,6 +52872,12 @@
             "state" : "translated",
             "value" : "Refleksioner: %1$lld. Gjorde, som jeg havde tænkt: %2$lld procent; endte med at gøre det: %3$lld procent; ville, men gjorde ikke: %4$lld procent; gled bare væk: %5$lld procent"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απολογισμοί: %1$lld. Έκανα όπως σκόπευα %2$lld τοις εκατό, κατέληξα να το κάνω %3$lld τοις εκατό, ήθελα αλλά δεν το έκανα %4$lld τοις εκατό, απλώς χάθηκε %5$lld τοις εκατό"
+          }
         }
       }
     },
@@ -49995,6 +52977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksionsbog"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βιβλίο απολογισμών"
           }
         }
       }
@@ -50097,6 +53085,12 @@
             "state" : "translated",
             "value" : "PDF af refleksionsbogen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF βιβλίου απολογισμών"
+          }
         }
       }
     },
@@ -50197,6 +53191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eksportér refleksionsbogen som PDF"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εξαγωγή βιβλίου απολογισμών σε PDF"
           }
         }
       }
@@ -50299,6 +53299,12 @@
             "state" : "translated",
             "value" : "Se som bog"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προβολή ως βιβλίο"
+          }
         }
       }
     },
@@ -50400,6 +53406,12 @@
             "state" : "translated",
             "value" : "Hold din refleksionsbog i hånden"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρατήστε στα χέρια σας το βιβλίο απολογισμών"
+          }
         }
       }
     },
@@ -50499,6 +53511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saml dine refleksioner i én PDF"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγκεντρώστε τους απολογισμούς σε ένα PDF"
           }
         }
       }
@@ -50601,6 +53619,12 @@
             "state" : "translated",
             "value" : "Saml refleksioner i en PDF, en side pr. dag"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγκεντρώστε τους απολογισμούς σε PDF, μία σελίδα ανά ημέρα"
+          }
         }
       }
     },
@@ -50702,6 +53726,12 @@
             "state" : "translated",
             "value" : "Rediger din refleksion."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επεξεργαστείτε τον απολογισμό σας."
+          }
         }
       }
     },
@@ -50801,6 +53831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilføj en refleksion,\\nså begynder denne bog at fylde."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθέστε έναν απολογισμό\\nκαι αυτό το βιβλίο θα αρχίσει να γεμίζει."
           }
         }
       }
@@ -50903,6 +53939,12 @@
             "state" : "translated",
             "value" : "Træk refleksioner til en urne for at flytte dem"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύρετε τους απολογισμούς σε ένα τεφροδοχείο για να τους μετακινήσετε"
+          }
         }
       }
     },
@@ -51003,6 +54045,12 @@
             "state" : "translated",
             "value" : "Puste ilden ud"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σβήσιμο της φωτιάς"
+          }
         }
       }
     },
@@ -51102,6 +54150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puste flammen ud\\nog afslut din dag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φυσήξτε για να σβήσει η φλόγα\\nκαι να κλείσει η μέρα σας"
           }
         }
       }
@@ -51204,6 +54258,12 @@
             "state" : "translated",
             "value" : "Hvile"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανάπαυση"
+          }
         }
       }
     },
@@ -51305,6 +54365,12 @@
             "state" : "translated",
             "value" : "Gled væk"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χάθηκε"
+          }
         }
       }
     },
@@ -51404,6 +54470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Søde drømme"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Γλυκά όνειρα"
           }
         }
       }
@@ -51512,6 +54584,12 @@
             "state" : "translated",
             "value" : "Skærme til større tekst"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οθόνες για μεγαλύτερο κείμενο"
+          }
         }
       }
     },
@@ -51612,6 +54690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selv med de største tekststørrelser omarrangeres skærmene pænt i stedet for at blive skåret af."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακόμη και στα μεγαλύτερα μεγέθη κειμένου, οι οθόνες αναδιατάσσονται σωστά αντί να κόβονται."
           }
         }
       }
@@ -51714,6 +54798,12 @@
             "state" : "translated",
             "value" : "Nemmere farver og kontrast"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πιο άνετα χρώματα και αντίθεση"
+          }
         }
       }
     },
@@ -51814,6 +54904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se tydeligt, hvordan din tid brænder, selv med Øg kontrast slået til, eller hvis farver er svære at skelne."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε καθαρά τον χρόνο σας να καίγεται, ακόμη και με ενεργή την Αύξηση αντίθεσης ή αν δυσκολεύεστε να ξεχωρίσετε χρώματα."
           }
         }
       }
@@ -51916,6 +55012,12 @@
             "state" : "translated",
             "value" : "Flere sprog"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περισσότερες γλώσσες"
+          }
         }
       }
     },
@@ -52016,6 +55118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En kort rundtur for nye brugere"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια σύντομη ξενάγηση για νέους χρήστες"
           }
         }
       }
@@ -52118,6 +55226,12 @@
             "state" : "translated",
             "value" : "En kort guide til, hvad du kan, første gang du åbner appen."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ένας σύντομος οδηγός για όσα μπορείτε να κάνετε, την πρώτη φορά που ανοίγετε την εφαρμογή."
+          }
         }
       }
     },
@@ -52218,6 +55332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyheder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι νέο υπάρχει"
           }
         }
       }
@@ -52320,6 +55440,12 @@
             "state" : "translated",
             "value" : "Første gang du åbner efter en opdatering, kan du se, hvad der er nyt."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Την πρώτη φορά που θα ανοίξετε την εφαρμογή μετά από μια ενημέρωση, δείτε τι νέο υπάρχει."
+          }
         }
       }
     },
@@ -52420,6 +55546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Praktiske tips"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρήσιμες συμβουλές"
           }
         }
       }
@@ -52522,6 +55654,12 @@
             "state" : "translated",
             "value" : "Diskrete tip om nyttige funktioner, lige når du har brug for dem."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διακριτικές υποδείξεις για χρήσιμες λειτουργίες, ακριβώς όταν τις χρειάζεστε."
+          }
         }
       }
     },
@@ -52622,6 +55760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri og Genveje"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri και Συντομεύσεις"
           }
         }
       }
@@ -52724,6 +55868,12 @@
             "state" : "translated",
             "value" : "Spørg Siri, hvor meget der er tilbage af i dag."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρωτήστε τη Siri πόσο απομένει από τη σημερινή μέρα."
+          }
         }
       }
     },
@@ -52824,6 +55974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synkronisering mellem enheder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγχρονισμός μεταξύ συσκευών"
           }
         }
       }
@@ -52926,6 +56082,12 @@
             "state" : "translated",
             "value" : "Hav de samme refleksioner og frister på alle dine enheder med iCloud."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έχετε τους ίδιους απολογισμούς και τις ίδιες προθεσμίες σε όλες τις συσκευές σας μέσω iCloud."
+          }
         }
       }
     },
@@ -53026,6 +56188,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sikkerhedskopi og gendannelse"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αντίγραφο ασφαλείας και επαναφορά"
           }
         }
       }
@@ -53128,6 +56296,12 @@
             "state" : "translated",
             "value" : "Gem dine refleksioner og frister i en fil, og hent dem tilbage senere."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθηκεύστε τους απολογισμούς και τις προθεσμίες σε αρχείο και φέρτε τα πίσω αργότερα."
+          }
         }
       }
     },
@@ -53228,6 +56402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Face ID-lås"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλείδωμα με Face ID"
           }
         }
       }
@@ -53330,6 +56510,12 @@
             "state" : "translated",
             "value" : "Lås appen med Face ID eller Touch ID for at holde dine refleksioner private."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδώστε την εφαρμογή με Face ID ή Touch ID για να μένουν ιδιωτικοί οι απολογισμοί σας."
+          }
         }
       }
     },
@@ -53430,6 +56616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout til foldbar iPhone"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διάταξη για αναδιπλούμενο iPhone"
           }
         }
       }
@@ -53532,6 +56724,12 @@
             "state" : "translated",
             "value" : "Brug den brede skærm på en foldbar iPhone som to paneler side om side."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε τη μεγάλη οθόνη ενός αναδιπλούμενου iPhone ως δύο πλαίσια δίπλα δίπλα."
+          }
         }
       }
     },
@@ -53632,6 +56830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slet alle mine data"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή όλων των δεδομένων μου"
           }
         }
       }
@@ -53734,6 +56938,12 @@
             "state" : "translated",
             "value" : "Slet alle dine refleksioner og frister direkte i appen, når du vil."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγράψτε όλους τους απολογισμούς και τις προθεσμίες απευθείας στην εφαρμογή, όποτε θέλετε."
+          }
         }
       }
     },
@@ -53834,6 +57044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortsæt din refleksion, hvor du slap"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνεχίστε τον απολογισμό από εκεί που μείνατε"
           }
         }
       }
@@ -53936,6 +57152,12 @@
             "state" : "translated",
             "value" : "Det, du skrev, bliver stående, selv hvis appen lukker midt i en refleksion."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όσα γράφατε παραμένουν, ακόμη κι αν η εφαρμογή κλείσει στη μέση."
+          }
         }
       }
     },
@@ -54035,6 +57257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Efter koreansk og engelsk taler appen nu også dansk."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μετά τα κορεατικά και τα αγγλικά, η εφαρμογή μιλά πλέον και ελληνικά."
           }
         }
       },
@@ -54137,6 +57365,12 @@
             "state" : "translated",
             "value" : "Prøv at stryge til siden"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δοκιμάστε να σύρετε προς τα πλάγια"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -54237,6 +57471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se, hvad der er tilbage af denne uge, måned og år, på det samme pergament."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε τι απομένει από αυτή την εβδομάδα, τον μήνα και το έτος στην ίδια περγαμηνή."
           }
         }
       },
@@ -54339,6 +57579,12 @@
             "state" : "translated",
             "value" : "Vend et brudstykke"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γυρίστε ένα θραύσμα"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -54439,6 +57685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryk på et brudstykke for at skrive en linje om dagen på bagsiden."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε ένα θραύσμα για να γράψετε στην πίσω όψη μια γραμμή για εκείνη τη μέρα."
           }
         }
       },
@@ -54541,6 +57793,12 @@
             "state" : "translated",
             "value" : "Mål"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στόχοι"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -54641,6 +57899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brudstykker"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θραύσματα"
           }
         }
       },
@@ -54743,6 +58007,12 @@
             "state" : "translated",
             "value" : "Urne"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τεφροδοχείο"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -54843,6 +58113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksion"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απολογισμός"
           }
         }
       },
@@ -54945,6 +58221,12 @@
             "state" : "translated",
             "value" : "Tilføj frist"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη προθεσμίας"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -55045,6 +58327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frist %@ tilføjet"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προστέθηκε η προθεσμία %@"
           }
         }
       },
@@ -55147,6 +58435,12 @@
             "state" : "translated",
             "value" : "Frist %@ slettet"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγράφηκε η προθεσμία %@"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -55247,6 +58541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ilden er slukket. Dit brudstykke er gemt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η φωτιά έσβησε. Το θραύσμα σας κρατήθηκε."
           }
         }
       },
@@ -55349,6 +58649,12 @@
             "state" : "translated",
             "value" : "Din refleksion er i askeurnen."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο απολογισμός σας μπήκε στο τεφροδοχείο στάχτης."
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -55449,6 +58755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spring over"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παράλειψη"
           }
         }
       },
@@ -55551,6 +58863,12 @@
             "state" : "translated",
             "value" : "Kom i gang"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έναρξη"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -55651,6 +58969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se din tid brænde ned"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε τον χρόνο σας να καίγεται"
           }
         }
       },
@@ -55753,6 +59077,12 @@
             "state" : "translated",
             "value" : "Fra du står op til sengetid brænder pergamentet langsomt ned. Stryg til siden for at se uge, måned og år."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από το ξύπνημα ως την ώρα του ύπνου, η περγαμηνή καίγεται σιγά σιγά. Σύρετε προς τα πλάγια για να δείτε την εβδομάδα, τον μήνα και το έτος."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -55853,6 +59183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 minutter før sengetid: puste ud"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 λεπτά πριν τον ύπνο, φυσήξτε να σβήσει"
           }
         }
       },
@@ -55955,6 +59291,12 @@
             "state" : "translated",
             "value" : "Pust ind i mikrofonen for at slukke ilden og gemme det, der er tilbage. Kun styrken af dit åndedræt tjekkes; intet optages."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φυσήξτε στο μικρόφωνο για να σβήσει η φωτιά και να κρατήσετε ό,τι απομένει. Ελέγχεται μόνο η ένταση της πνοής· δεν καταγράφεται τίποτα."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -56055,6 +59397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hver dag bliver til aske"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κάθε μέρα γίνεται στάχτη"
           }
         }
       },
@@ -56157,6 +59505,12 @@
             "state" : "translated",
             "value" : "Skriv en linje om din dag, så lægger den sig i ugens askeurne. Skift tidspunkt for opvågning og sengetid i Indstillinger."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε μία γραμμή για τη μέρα σας και θα κατακαθίσει στο τεφροδοχείο στάχτης εκείνης της εβδομάδας. Αλλάξτε τις ώρες ξυπνήματος και ύπνου στις Ρυθμίσεις."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -56257,6 +59611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiér"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αντιγραφή"
           }
         }
       },
@@ -56359,6 +59719,12 @@
             "state" : "translated",
             "value" : "Nyheder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι νέο υπάρχει"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -56459,6 +59825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se velkomstguiden igen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση του οδηγού καλωσορίσματος"
           }
         }
       },
@@ -56561,6 +59933,12 @@
             "state" : "translated",
             "value" : "Koden kunne ikke indløses. Prøv igen om lidt."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν ήταν δυνατή η εξαργύρωση του κωδικού. Δοκιμάστε ξανά σε λίγο."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -56661,6 +60039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indløs tilbudskode"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εξαργύρωση κωδικού προσφοράς"
           }
         }
       },
@@ -56763,6 +60147,12 @@
             "state" : "translated",
             "value" : "Version %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έκδοση %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -56863,6 +60253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nu på dansk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τώρα και στα ελληνικά"
           }
         }
       },
@@ -56965,6 +60361,12 @@
             "state" : "translated",
             "value" : "Hvis din enhed er sat til dansk, vises appen og dens widgets på dansk."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αν η συσκευή σας είναι ρυθμισμένη στα ελληνικά, η εφαρμογή και τα widget της εμφανίζονται στα ελληνικά."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -57065,6 +60467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bedre med stor tekst og høj kontrast"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καλύτερα με μεγάλο κείμενο και υψηλή αντίθεση"
           }
         }
       },
@@ -57167,6 +60575,12 @@
             "state" : "translated",
             "value" : "Indstillinger bliver ikke længere skåret af ved meget stor tekst, og Øg kontrast gør tekst og gløder mørkere."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι Ρυθμίσεις δεν κόβονται πια σε πολύ μεγάλα μεγέθη κειμένου και η Αύξηση αντίθεσης σκουραίνει το κείμενο και τα κάρβουνα."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -57267,6 +60681,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skjulte funktioner, som at stryge for at skifte periode, bliver nu vist på det rette tidspunkt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρυφές λειτουργίες, όπως η μετακίνηση με σύρσιμο για αλλαγή περιόδου, υποδεικνύονται πλέον τη σωστή στιγμή."
           }
         }
       },
@@ -57369,6 +60789,12 @@
             "state" : "translated",
             "value" : "Se, hvad der kommer"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε τι έρχεται"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -57469,6 +60895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Under Indstillinger ▸ Support kan du se kommende funktioner og foreslå dem, du ønsker."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στις Ρυθμίσεις ▸ Υποστήριξη δείτε τις επερχόμενες λειτουργίες και προτείνετε όσες θέλετε."
           }
         }
       },
@@ -57571,6 +61003,12 @@
             "state" : "translated",
             "value" : "Tilbudskoder er her"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έφτασαν οι κωδικοί προσφοράς"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -57672,6 +61110,12 @@
             "state" : "translated",
             "value" : "Hvis du har en kode, så indtast den i Indstillinger ▸ Pro."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αν έχετε κωδικό, εισαγάγετέ τον στις Ρυθμίσεις ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -57772,6 +61216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forstået"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εντάξει"
           }
         }
       },

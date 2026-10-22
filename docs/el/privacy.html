@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Πολιτική απορρήτου — Φλεγόμενη Περγαμηνή</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/el/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/BurningParchment/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/BurningParchment/el/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/privacy.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/privacy.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/privacy.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="privacy.html" hreflang="el" lang="el" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Πίσω στην Υποστήριξη</a>
+  <h1>Πολιτική απορρήτου</h1>
+  <p>Τελευταία ενημέρωση: 18 Αυγούστου 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Περίληψη</h2>
+    <div class="card">
+      <h3>Η Φλεγόμενη Περγαμηνή δεν συλλέγει πληροφορίες που σας ταυτοποιούν</h3>
+      <p>Ό,τι δημιουργείτε στην εφαρμογή (ώρα ξυπνήματος, ώρα ύπνου, προθεσμίες, απολογισμοί και τεφροδοχεία) μένει στη συσκευή σας. Στον προγραμματιστή φτάνουν μόνο τα ανώνυμα στατιστικά και τα διαγνωστικά κατάρρευσης που περιγράφονται παρακάτω, καθώς και τα σχόλια που στέλνετε εσείς.</p>
+      <span class="highlight">🔒 Οι απολογισμοί σας δεν φεύγουν ποτέ από τη συσκευή σας · Χωρίς διαφημίσεις, χωρίς παρακολούθηση</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Αποθηκεύονται μόνο στη συσκευή σας</h2>
+    <div class="card">
+      <h3>Ό,τι δημιουργείτε στην εφαρμογή</h3>
+      <p>Τα παρακάτω αποθηκεύονται μόνο στη συσκευή σας (στο UserDefaults):</p>
+      <ul>
+        <li>Ώρα ξυπνήματος και ώρα ύπνου</li>
+        <li>Προθεσμίες</li>
+        <li>Απολογισμοί και τεφροδοχεία</li>
+      </ul>
+      <p style="margin-top: 10px;">Τα δεδομένα αυτά μοιράζονται μεταξύ της εφαρμογής και των widget της μόνο μέσω του χώρου αποθήκευσης App Group στη συσκευή σας και διαγράφονται όταν διαγράψετε την εφαρμογή.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Αποστολή στον προγραμματιστή</h2>
+    <div class="card">
+      <h3>Ανώνυμα στατιστικά χρήσης</h3>
+      <p>Για να βελτιώνεται η εφαρμογή, τα παρακάτω στέλνονται στον χώρο αποθήκευσης iCloud (CloudKit) του προγραμματιστή:</p>
+      <ul>
+        <li>Ένα τυχαία παραγόμενο αναγνωριστικό εγκατάστασης (UUID)</li>
+        <li>Έκδοση εφαρμογής, πλατφόρμα και έκδοση OS, ρύθμιση γλώσσας</li>
+        <li>Αριθμός εκκινήσεων, ημέρες χρήσης και ονόματα βασικών συμβάντων λειτουργιών</li>
+      </ul>
+      <p style="margin-top: 10px;">Το αναγνωριστικό εγκατάστασης δεν έχει καμία σχέση με τα αναγνωριστικά συσκευής (IDFA ή IDFV) ή με τον Apple Account σας και δημιουργείται νέο αν διαγράψετε και επανεγκαταστήσετε την εφαρμογή.</p>
+    </div>
+    <div class="card">
+      <h3>Διαγνωστικά κατάρρευσης και πάγωματος</h3>
+      <p>Αν η εφαρμογή καταρρεύσει ή παγώσει, στέλνεται η διαγνωστική αναφορά που δημιουργεί το iOS (MetricKit): ο τύπος του προβλήματος, το stack trace, οι εκδόσεις της εφαρμογής και του OS και το μοντέλο της συσκευής. Δεν περιλαμβάνεται τίποτα από όσα έχετε εισαγάγει στην εφαρμογή, όπως οι απολογισμοί σας.</p>
+    </div>
+    <div class="card">
+      <h3>Σχόλια που στέλνετε</h3>
+      <p>Τα σχόλια στέλνονται μόνο όταν τα υποβάλλετε από την οθόνη Ρυθμίσεις. Περιλαμβάνουν όσα γράψατε μαζί με τη συσκευή και την έκδοση της εφαρμογής, καθώς και το όνομα και το email σας μόνο αν τα εισαγάγετε εσείς για να λάβετε απάντηση.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Τι δεν συλλέγουμε</h2>
+    <div class="card">
+      <h3>Δεν συλλέγουμε ποτέ τα παρακάτω</h3>
+      <ul>
+        <li>Οτιδήποτε εισαγάγετε στην εφαρμογή, όπως απολογισμούς ή προθεσμίες (εκτός αν το γράψετε εσείς στα σχόλια)</li>
+        <li>Προσωπικά στοιχεία όπως όνομα, email ή τηλέφωνο (εκτός αν τα εισαγάγετε εσείς στα σχόλια)</li>
+        <li>Τοποθεσία</li>
+        <li>Επαφές ή φωτογραφίες</li>
+        <li>Αναγνωριστικά συσκευής (IDFA, IDFV κ.λπ.)</li>
+        <li>Διαφημιστικά δεδομένα</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Τρίτα μέρη</h2>
+    <div class="card">
+      <h3>Δεν μοιραζόμαστε τα δεδομένα σας</h3>
+      <p>Η εφαρμογή δεν χρησιμοποιεί διαφημιστικά δίκτυα ούτε SDK ανάλυσης τρίτων. Τα στατιστικά, τα διαγνωστικά και τα σχόλια που περιγράφονται παραπάνω πηγαίνουν μόνο στον δικό του χώρο αποθήκευσης iCloud του προγραμματιστή. Δεν συνδυάζονται ποτέ με δεδομένα άλλων εταιρειών ούτε χρησιμοποιούνται για να σας παρακολουθούν για διαφημιστικούς σκοπούς.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Αγορά εντός εφαρμογής</h2>
+    <div class="card">
+      <h3>Την πληρωμή χειρίζεται η Apple</h3>
+      <p>Την πληρωμή για την εφάπαξ αγορά του Pro χειρίζεται η Apple μέσω του App Store. Ο προγραμματιστής δεν λαμβάνει ποτέ στοιχεία πληρωμής, όπως τον αριθμό κάρτας ή τον Apple Account. Η εφαρμογή απλώς κρατά στη συσκευή σας μια εγγραφή για το αν έχετε αγοράσει το Pro, ώστε να ξεκλειδώνει τις λειτουργίες Pro.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ειδοποιήσεις</h2>
+    <div class="card">
+      <h3>Μόνο τοπικές ειδοποιήσεις</h3>
+      <p>Η υπενθύμιση μία ώρα πριν τον ύπνο είναι τοπική ειδοποίηση που προγραμματίζεται στη συσκευή σας και δεν περνά ποτέ από εξωτερικό διακομιστή. Μπορείτε να αλλάξετε την άδεια ειδοποιήσεων ανά πάσα στιγμή στις Ρυθμίσεις iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Μικρόφωνο</h2>
+    <div class="card">
+      <h3>Ελέγχει μόνο πόσο δυνατά φυσάτε</h3>
+      <p>Το μικρόφωνο χρησιμοποιείται μόνο όταν φυσάτε την περγαμηνή για να σβήσετε τη φωτιά, 30 λεπτά πριν τον ύπνο. Η εφαρμογή μετρά μόνο την ένταση της πνοής σας στη συσκευή και δεν καταγράφει, αποθηκεύει ή στέλνει ποτέ κανέναν ήχο. Μπορείτε να αλλάξετε την άδεια μικροφώνου ανά πάσα στιγμή στις Ρυθμίσεις iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Απόρρητο παιδιών</h2>
+    <div class="card">
+      <h3>Παιδιά κάτω των 14 ετών</h3>
+      <p>Αυτή η εφαρμογή δεν απευθύνεται σε παιδιά κάτω των 14 ετών και δεν συλλέγουμε εν γνώσει μας προσωπικά στοιχεία παιδιών.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Αλλαγές σε αυτή την πολιτική</h2>
+    <div class="card">
+      <h3>Θα δημοσιεύουμε τυχόν αλλαγές σε αυτή τη σελίδα</h3>
+      <p>Αν αλλάξει αυτή η Πολιτική απορρήτου, θα ενημερώσουμε το περιεχόμενό της και την ημερομηνία «Τελευταία ενημέρωση» σε αυτή τη σελίδα. Για σημαντικές αλλαγές, ενδέχεται να σας ενημερώσουμε και στις σημειώσεις έκδοσης της εφαρμογής.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Επικοινωνία</h2>
+    <div class="card">
+      <h3>Ερωτήσεις για το απόρρητο</h3>
+      <p>Αν έχετε ερωτήσεις σχετικά με αυτή την Πολιτική απορρήτου, στείλτε μας email στη διεύθυνση παρακάτω.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Αυτή η πολιτική διατίθεται σε πολλές γλώσσες. Αν οι εκδόσεις διαφέρουν, υπερισχύει η <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">κορεατική έκδοση</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

@@ -132,6 +132,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Um ano<br>de cinzas", "O Pro mostra para onde foram doze meses", 0.62),
   ("10-book-pdf.png", "pages", False, "Suas reflexões<br>em um livro", "Pro: um PDF, uma página por dia", None),
  ],
+ "th": [
+  ("01-week-dark.png", "hero-bleed", False, "เวลาที่เหลือ<br>กำลังไหม้ตรงหน้า", "วัน สัปดาห์ เดือน ปี", None),
+  ("02-month-light.png", "hero-bleed", True, "สว่างหรือมืด", "ตามอุปกรณ์ หรือเลือกเอง", None),
+  ("03-urn-dark.png", "left-text", False, "ทุกวันจบลง<br>เป็นเถ้า", "สิ่งที่เขียนจะตกลงในโถของสัปดาห์นั้น", None),
+  ("04-flow-light.png", "hero-bleed", True, "เวลาของคุณ<br>ไปอยู่ที่ไหน", "กราฟการกระจายและปฏิทินถ่านไฟ", None),
+  ("05-book-dark.png", "top-crop", False, "อ่านเถ้าของคุณอีกครั้ง", "บรรทัดที่คุณทิ้งไว้บนกระดาษหนัง", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "ตั้งแต่เวลานอน<br>ถึงธีม", "ปรับให้เป็นแบบของคุณ", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "เลือกสี<br>ของเปลวไฟ", "ธีม Pro: ฮันจิ เซลาดอน ยามพลบค่ำ", None),
+  ("08-poster-dark.png", "text-bottom", False, "ทุกคืนที่ดับไฟ<br>ในหน้าเดียว", "Pro เปลี่ยนเศษเป็นโปสเตอร์", None),
+  ("09-year-light.png", "top-crop", False, "เถ้าทั้งปี<br>ในมุมมองเดียว", "Pro แสดงว่าสิบสองเดือนไปอยู่ที่ไหน", 0.62),
+  ("10-book-pdf.png", "pages", False, "บันทึกทบทวน<br>เป็นสมุดเล่มเดียว", "Pro: PDF หนึ่งหน้าต่อวัน", None),
+ ],
 }
 
 FONTS = {
@@ -143,9 +156,10 @@ FONTS = {
     "fr": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "it": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "pt-BR": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "th": '-apple-system, "Thonburi", "Sukhumvit Set", sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38}
 
 
 def base_css(lang, dark):

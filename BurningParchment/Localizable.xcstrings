@@ -79,6 +79,12 @@
             "state" : "translated",
             "value" : ":%lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
+          }
         }
       }
     },
@@ -165,6 +171,12 @@
             "state" : "translated",
             "value" : "Prazo: %@ %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดส่ง %@ %@"
+          }
         }
       }
     },
@@ -242,6 +254,12 @@
             "state" : "translated",
             "value" : "%@ · semana %lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · สัปดาห์ที่ %lld"
+          }
         }
       }
     },
@@ -314,6 +332,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "th" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -395,6 +419,12 @@
             "state" : "translated",
             "value" : "%@ — tempo que ainda não entrou em nenhuma urna."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — เวลาที่ยังไม่ได้ใส่ในโถใบไหนเลย"
+          }
         }
       }
     },
@@ -471,6 +501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você dormiu %@ mais tarde. A manhã de hoje ficou chamuscada na mesma medida"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณหลับช้าไป %@ เช้านี้จึงไหม้เกรียมตามนั้น"
           }
         }
       }
@@ -549,6 +585,12 @@
             "state" : "translated",
             "value" : "O pergaminho de amanhã queimou depois de %@.\\nSó o tempo que você ficou acordado deixa chamuscado."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังของพรุ่งนี้ไหม้หลัง %@\\nรอยไหม้เกิดจากเวลาที่ยังตื่นอยู่เท่านั้น"
+          }
         }
       }
     },
@@ -625,6 +667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถ%@"
           }
         }
       }
@@ -703,6 +751,12 @@
             "state" : "translated",
             "value" : "Vai para a urna %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จะใส่ลงในโถ%@"
+          }
         }
       }
     },
@@ -780,6 +834,12 @@
             "state" : "translated",
             "value" : "Dar significado à urna %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ให้ความหมายกับโถ%@"
+          }
         }
       }
     },
@@ -855,6 +915,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A urna %1$@ guarda grãos de cinza: %2$@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถ%1$@มีเถ้าเหลืออยู่ %2$@ เม็ด"
           }
         }
       }
@@ -933,6 +999,12 @@
             "state" : "translated",
             "value" : "A urna %1$@ guarda grãos de cinza: %2$lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถ%1$@มีเถ้าเหลืออยู่ %2$lld เม็ด"
+          }
         }
       }
     },
@@ -1009,6 +1081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexões: %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกทบทวน %@"
           }
         }
       }
@@ -1087,6 +1165,12 @@
             "state" : "translated",
             "value" : "Começa em %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มในอีก %@"
+          }
         }
       }
     },
@@ -1163,6 +1247,12 @@
             "state" : "translated",
             "value" : "O pergaminho começa a queimar em %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังจะเริ่มไหม้ในอีก %@"
+          }
         }
       }
     },
@@ -1238,6 +1328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restam %@%%"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เหลือ %@%%"
           }
         }
       }
@@ -1316,6 +1412,12 @@
             "state" : "translated",
             "value" : "%1$@, restam %2$lld%%"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ เหลือ %2$lld%%"
+          }
         }
       }
     },
@@ -1392,6 +1494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, fogo apagado com %2$lld min de folga"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ ดับไฟโดยเหลือเวลา %2$lld นาที"
           }
         }
       }
@@ -1470,6 +1578,12 @@
             "state" : "translated",
             "value" : "%@, sem registros"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ไม่มีรายการ"
+          }
         }
       }
     },
@@ -1546,6 +1660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, cinzas: %2$lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ เถ้า %2$lld เม็ด"
           }
         }
       }
@@ -1624,6 +1744,12 @@
             "state" : "translated",
             "value" : "%1$@, reflexões: %2$lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ บันทึกทบทวน %2$lld รายการ"
+          }
         }
       }
     },
@@ -1700,6 +1826,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1771,6 +1903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noites com o fogo soprado: %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าไฟดับมา %@ คืน"
           }
         }
       }
@@ -1849,6 +1987,12 @@
             "state" : "translated",
             "value" : "O app estava aberto às %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เคยเปิดแอปตอน %@"
+          }
         }
       }
     },
@@ -1925,6 +2069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você soprou o fogo às %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณเป่าไฟดับตอน %@"
           }
         }
       }
@@ -2004,6 +2154,12 @@
             "state" : "translated",
             "value" : "%1$@ d · cinzas: %2$@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ วัน · เถ้า %2$@ เม็ด"
+          }
         }
       }
     },
@@ -2081,6 +2237,12 @@
             "state" : "translated",
             "value" : "Restam %lld%%"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เหลือ %lld%%"
+          }
         }
       }
     },
@@ -2154,6 +2316,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "th" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -2235,6 +2403,12 @@
             "state" : "translated",
             "value" : "%lld vezes"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ครั้ง"
+          }
         }
       }
     },
@@ -2311,6 +2485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noites com o fogo soprado: %lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าไฟดับมา %lld คืน"
           }
         }
       }
@@ -2389,6 +2569,12 @@
             "state" : "translated",
             "value" : "%lld min"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld นาที"
+          }
         }
       }
     },
@@ -2465,6 +2651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld นาที %2$lld วินาที"
           }
         }
       }
@@ -2543,6 +2735,12 @@
             "state" : "translated",
             "value" : "Com %lld min de folga"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เหลือเวลา %lld นาที"
+          }
         }
       }
     },
@@ -2619,6 +2817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fogo apagado com %lld min de folga"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดับไฟโดยเหลือเวลา %lld นาที"
           }
         }
       }
@@ -2697,6 +2901,12 @@
             "state" : "translated",
             "value" : "%lld h"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ชม."
+          }
         }
       }
     },
@@ -2773,6 +2983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ชม. %2$lld นาที"
           }
         }
       }
@@ -2851,6 +3067,12 @@
             "state" : "translated",
             "value" : "%lld d"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld วัน"
+          }
         }
       }
     },
@@ -2927,6 +3149,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld d %2$lld h"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld วัน %2$lld ชม."
           }
         }
       }
@@ -3005,6 +3233,12 @@
             "state" : "translated",
             "value" : "%1$lld d · cinzas: %2$lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld วัน · เถ้า %2$lld เม็ด"
+          }
         }
       }
     },
@@ -3081,6 +3315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semana %lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัปดาห์ที่ %lld"
           }
         }
       }
@@ -3159,6 +3399,12 @@
             "state" : "translated",
             "value" : "%lld s"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld วินาที"
+          }
         }
       }
     },
@@ -3235,6 +3481,12 @@
             "state" : "translated",
             "value" : "Excluir “%@”?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบ ‘%@’ ไหม"
+          }
         }
       }
     },
@@ -3310,6 +3562,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicione um com o botão +"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มกำหนดส่งได้ด้วยปุ่ม +"
           }
         }
       }
@@ -3388,6 +3646,12 @@
             "state" : "translated",
             "value" : "Até 10 minutos conta como no horário"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ภายใน 10 นาทีถือว่าตรงเวลา"
+          }
         }
       }
     },
@@ -3464,6 +3728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ano"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปี"
           }
         }
       }
@@ -3542,6 +3812,12 @@
             "state" : "translated",
             "value" : "Mês"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือน"
+          }
         }
       }
     },
@@ -3619,6 +3895,12 @@
             "state" : "translated",
             "value" : "Dia"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วัน"
+          }
         }
       }
     },
@@ -3695,6 +3977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semana"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัปดาห์"
           }
         }
       }
@@ -3776,6 +4064,12 @@
             "state" : "translated",
             "value" : "Compartilhar ou salvar PDF"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แชร์หรือบันทึก PDF"
+          }
         }
       }
     },
@@ -3855,6 +4149,12 @@
             "state" : "translated",
             "value" : "· ⊕ centro de massa"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ จุดศูนย์ถ่วง"
+          }
         }
       }
     },
@@ -3930,6 +4230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %@ reflexões antigas sem ponto salvo estão espalhadas dentro do quadrante"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· บันทึกทบทวนเก่า %@ รายการที่ไม่มีจุดที่บันทึกไว้ จะกระจายอยู่ในช่องของมัน"
           }
         }
       }
@@ -4007,6 +4313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %lld reflexões antigas sem ponto salvo estão espalhadas dentro do quadrante"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· บันทึกทบทวนเก่า %lld รายการที่ไม่มีจุดที่บันทึกไว้ จะกระจายอยู่ในช่องของมัน"
           }
         }
       }
@@ -4098,6 +4410,12 @@
             "state" : "translated",
             "value" : "Recarregar preço"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โหลดราคาใหม่"
+          }
         }
       }
     },
@@ -4174,6 +4492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maior sequência"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ต่อเนื่องนานที่สุด"
           }
         }
       }
@@ -4252,6 +4576,12 @@
             "state" : "translated",
             "value" : "Gratidão"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความขอบคุณ"
+          }
         }
       }
     },
@@ -4328,6 +4658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Falar com o desenvolvedor"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ติดต่อผู้พัฒนา"
           }
         }
       }
@@ -4406,6 +4742,12 @@
             "state" : "translated",
             "value" : "Política de Privacidade"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นโยบายความเป็นส่วนตัว"
+          }
         }
       }
     },
@@ -4483,6 +4825,12 @@
             "state" : "translated",
             "value" : "Chamas rugindo e saltando"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลวไฟโหมกระโจนคำราม"
+          }
         }
       }
     },
@@ -4558,6 +4906,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dados do Saúde: adormeceu às %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้อมูลจากแอปสุขภาพ: หลับตอน %@"
           }
         }
       }
@@ -4636,6 +4990,12 @@
             "state" : "translated",
             "value" : "Dados de sono do Saúde"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้อมูลการนอนจากแอปสุขภาพ"
+          }
         }
       }
     },
@@ -4712,6 +5072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conectar dados de sono do Saúde"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เชื่อมต่อข้อมูลการนอนจากแอปสุขภาพ"
           }
         }
       }
@@ -4790,6 +5156,12 @@
             "state" : "translated",
             "value" : "Conectar dados de sono do Saúde"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เชื่อมต่อข้อมูลการนอนจากแอปสุขภาพ"
+          }
         }
       }
     },
@@ -4867,6 +5239,12 @@
             "state" : "translated",
             "value" : "Conectado aos dados de sono do Saúde"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เชื่อมต่อกับข้อมูลการนอนของแอปสุขภาพแล้ว"
+          }
         }
       }
     },
@@ -4942,6 +5320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não há registro de sono da noite passada no Saúde"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีบันทึกการนอนของเมื่อคืนในแอปสุขภาพ"
           }
         }
       }
@@ -5020,6 +5404,12 @@
             "state" : "translated",
             "value" : "Uma oscilação calma e suave"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สั่นไหวเบา ๆ อย่างสงบ"
+          }
         }
       }
     },
@@ -5096,6 +5486,12 @@
             "state" : "translated",
             "value" : "Reescrever"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนใหม่"
+          }
         }
       }
     },
@@ -5171,6 +5567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quase hora de acordar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใกล้ถึงเวลาตื่นแล้ว"
           }
         }
       }
@@ -5249,6 +5651,12 @@
             "state" : "translated",
             "value" : "Relacionamentos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความสัมพันธ์"
+          }
         }
       }
     },
@@ -5325,6 +5733,12 @@
             "state" : "translated",
             "value" : "Não é uma assinatura. Pague uma vez e use para sempre."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่ใช่การสมัครสมาชิก จ่ายครั้งเดียวใช้ได้ตลอดไป"
+          }
         }
       }
     },
@@ -5400,6 +5814,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurar compras"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กู้คืนการซื้อ"
           }
         }
       }
@@ -5478,6 +5898,12 @@
             "state" : "translated",
             "value" : "Não foi possível concluir a compra"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่สามารถซื้อให้เสร็จสมบูรณ์ได้"
+          }
         }
       }
     },
@@ -5554,6 +5980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo que escorreu"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่ไหลผ่านไป"
           }
         }
       }
@@ -5632,6 +6064,12 @@
             "state" : "translated",
             "value" : "Simplesmente escorreu"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ผ่านไปเฉย ๆ"
+          }
         }
       }
     },
@@ -5709,6 +6147,12 @@
             "state" : "translated",
             "value" : "Coisas para parar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่จะเลิก"
+          }
         }
       }
     },
@@ -5784,6 +6228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Registro errado? Corrija você mesmo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกผิดไหม แก้ไขเองได้"
           }
         }
       }
@@ -5862,6 +6312,12 @@
             "state" : "translated",
             "value" : "Registrar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึก"
+          }
         }
       }
     },
@@ -5938,6 +6394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dias registrados"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จำนวนวันที่บันทึก"
           }
         }
       }
@@ -6016,6 +6478,12 @@
             "state" : "translated",
             "value" : "Alegria"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความสุข"
+          }
         }
       }
     },
@@ -6092,6 +6560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes de acordar e dormir"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งค่าเวลาตื่นและเวลานอน"
           }
         }
       }
@@ -6170,6 +6644,12 @@
             "state" : "translated",
             "value" : "Hora de acordar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาตื่น"
+          }
         }
       }
     },
@@ -6246,6 +6726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do acordar até a hora de dormir, seu pergaminho queima devagar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งแต่ตื่นจนถึงเวลานอน กระดาษหนังจะค่อย ๆ ไหม้ไป"
           }
         }
       }
@@ -6324,6 +6810,12 @@
             "state" : "translated",
             "value" : "Antes de acordar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ก่อนตื่น"
+          }
         }
       }
     },
@@ -6399,6 +6891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ para acordar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีก %@ จะถึงเวลาตื่น"
           }
         }
       }
@@ -6477,6 +6975,12 @@
             "state" : "translated",
             "value" : "Contagem automática desde a hora de acordar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นับถอยหลังอัตโนมัติตั้งแต่เวลาตื่น"
+          }
         }
       }
     },
@@ -6554,6 +7058,12 @@
             "state" : "translated",
             "value" : "Do acordar até a hora de dormir,\\no pergaminho queima devagar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งแต่ตื่นจนถึงเวลานอน\\nกระดาษหนังจะค่อย ๆ ไหม้ไป"
+          }
         }
       }
     },
@@ -6624,6 +7134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "das horas acordado"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ของเวลาที่ตื่นอยู่"
           }
         }
       }
@@ -6702,6 +7218,12 @@
             "state" : "translated",
             "value" : "Descanse tranquilo ao lado do fogo apagado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พักผ่อนสบาย ๆ ข้างกองไฟที่ดับแล้ว"
+          }
         }
       }
     },
@@ -6778,6 +7300,12 @@
             "state" : "translated",
             "value" : "Desligado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปิด"
+          }
         }
       }
     },
@@ -6849,6 +7377,12 @@
             "state" : "translated",
             "value" : "Fim"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จบ"
+          }
         }
       }
     },
@@ -6919,6 +7453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Queime só o tempo que é seu"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เผาเฉพาะเวลาที่เป็นของคุณ"
           }
         }
       }
@@ -6997,6 +7537,12 @@
             "state" : "translated",
             "value" : "Minhas metas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป้าหมายของฉัน"
+          }
         }
       }
     },
@@ -7068,6 +7614,12 @@
             "state" : "translated",
             "value" : "Meu tempo livre"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างของฉัน"
+          }
         }
       }
     },
@@ -7138,6 +7690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Definir meu tempo livre"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดเวลาว่างของฉัน"
           }
         }
       }
@@ -7216,6 +7774,12 @@
             "state" : "translated",
             "value" : "Depois"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไว้ทีหลัง"
+          }
         }
       }
     },
@@ -7293,6 +7857,12 @@
             "state" : "translated",
             "value" : "Soprar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าทิ้ง"
+          }
         }
       }
     },
@@ -7368,6 +7938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันที่"
           }
         }
       }
@@ -7446,6 +8022,12 @@
             "state" : "translated",
             "value" : "O amanhã espera no fragmento que guardei"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้รออยู่ในเศษที่ฉันเก็บไว้"
+          }
         }
       }
     },
@@ -7522,6 +8104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deixo as últimas brasas para o eu de amanhã"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถ่านไฟที่เหลือ ขอฝากให้ตัวฉันของพรุ่งนี้"
           }
         }
       }
@@ -7600,6 +8188,12 @@
             "state" : "translated",
             "value" : "Vamos guardar o que sobrou.\\nAgora é só dormir bem."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เราจะเก็บส่วนที่เหลือไว้ให้\\nตอนนี้นอนหลับให้สบายนะ"
+          }
         }
       }
     },
@@ -7676,6 +8270,12 @@
             "state" : "translated",
             "value" : "Guardando o que sobrou"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังเก็บส่วนที่เหลือไว้"
+          }
         }
       }
     },
@@ -7751,6 +8351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "restante"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เหลือ"
           }
         }
       }
@@ -7829,6 +8435,12 @@
             "state" : "translated",
             "value" : "Um brilho baixo que respira"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เรืองแสงต่ำ ๆ เหมือนหายใจ"
+          }
         }
       }
     },
@@ -7905,6 +8517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Etapa Nota para amanhã"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ขั้นตอนโน้ตสำหรับพรุ่งนี้"
           }
         }
       }
@@ -7983,6 +8601,12 @@
             "state" : "translated",
             "value" : "O que você vai tentar de novo amanhã?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้จะลองอะไรใหม่ ๆ ดี"
+          }
         }
       }
     },
@@ -8058,6 +8682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Amanhã de manhã ele aparece como uma faixa no topo do pergaminho e queima junto com o seu dia."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช้าพรุ่งนี้ มันจะปรากฏเป็นแถบอยู่บนกระดาษหนังและไหม้ไปพร้อมกับวันของคุณ"
           }
         }
       }
@@ -8136,6 +8766,12 @@
             "state" : "translated",
             "value" : "Como você vai encarar amanhã?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้จะทำอย่างไรดี"
+          }
         }
       }
     },
@@ -8212,6 +8848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O que você vai cortar amanhã?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้จะตัดอะไรทิ้งดี"
           }
         }
       }
@@ -8290,6 +8932,12 @@
             "state" : "translated",
             "value" : "Como você vai passar o amanhã de um jeito diferente?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้จะใช้วันให้ต่างไปอย่างไรดี"
+          }
         }
       }
     },
@@ -8365,6 +9013,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergaminho de amanhã"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังของพรุ่งนี้"
           }
         }
       }
@@ -8443,6 +9097,12 @@
             "state" : "translated",
             "value" : "O pergaminho de amanhã parou aqui.\\nBons sonhos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังของพรุ่งนี้หยุดอยู่ตรงนี้\\nฝันดีนะ"
+          }
         }
       }
     },
@@ -8518,6 +9178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O pergaminho de amanhã está queimando"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังของพรุ่งนี้กำลังไหม้"
           }
         }
       }
@@ -8596,6 +9262,12 @@
             "state" : "translated",
             "value" : "Apaga o fogo do pergaminho de amanhã"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดับไฟบนกระดาษหนังของพรุ่งนี้"
+          }
         }
       }
     },
@@ -8672,6 +9344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verifique sua conexão com a internet e tente de novo."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โปรดตรวจสอบการเชื่อมต่อเครือข่ายแล้วลองอีกครั้ง"
           }
         }
       }
@@ -8750,6 +9428,12 @@
             "state" : "translated",
             "value" : "Entardecer"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยามพลบค่ำ"
+          }
         }
       }
     },
@@ -8826,6 +9510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fui dormir tarde"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฉันนอนดึก"
           }
         }
       }
@@ -8904,6 +9594,12 @@
             "state" : "translated",
             "value" : "Um dia que não queimou por inteiro ainda é um dia inteiro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันที่ไหม้ไม่หมดก็ยังเป็นวันที่สมบูรณ์"
+          }
         }
       }
     },
@@ -8980,6 +9676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostrar outra frase"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูข้อความอื่น"
           }
         }
       }
@@ -9058,6 +9760,12 @@
             "state" : "translated",
             "value" : "Queime em outra cor"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เผาด้วยสีอื่น"
+          }
         }
       }
     },
@@ -9134,6 +9842,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Próximo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถัดไป"
           }
         }
       }
@@ -9212,6 +9926,12 @@
             "state" : "translated",
             "value" : "Próximo mês"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนหน้า"
+          }
         }
       }
     },
@@ -9282,6 +10002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Próximo tempo livre · %1$@ %2$@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างครั้งถัดไป · %1$@ %2$@"
           }
         }
       }
@@ -9360,6 +10086,12 @@
             "state" : "translated",
             "value" : "Como você poderia terminar da próxima vez?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ครั้งหน้าจะทำให้เสร็จได้อย่างไร"
+          }
         }
       }
     },
@@ -9436,6 +10168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acompanhe ao vivo na Dynamic Island"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูสถานะสดบน Dynamic Island"
           }
         }
       }
@@ -9514,6 +10252,12 @@
             "state" : "translated",
             "value" : "Escuro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มืด"
+          }
         }
       }
     },
@@ -9589,6 +10333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fechar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปิด"
           }
         }
       }
@@ -9667,6 +10417,12 @@
             "state" : "translated",
             "value" : "Fechar — tudo o que você escreveu fica salvo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปิด — สิ่งที่คุณเขียนไว้ทั้งหมดถูกบันทึกแล้ว"
+          }
         }
       }
     },
@@ -9743,6 +10499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lua"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พระจันทร์"
           }
         }
       }
@@ -9821,6 +10583,12 @@
             "state" : "translated",
             "value" : "Hanji ao luar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฮันจิใต้แสงจันทร์"
+          }
         }
       }
     },
@@ -9897,6 +10665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hanji ao luar, celadon, entardecer. Muda a cor do papel e da chama."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฮันจิใต้แสงจันทร์ เซลาดอน ยามพลบค่ำ เปลี่ยนสีของกระดาษและเปลวไฟ"
           }
         }
       }
@@ -9975,6 +10749,12 @@
             "state" : "translated",
             "value" : "Queime em hanji ao luar, celadon ou entardecer, como fogo de campo, brasas ou estrelinha"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เผาด้วยฮันจิใต้แสงจันทร์ เซลาดอน หรือยามพลบค่ำ ในรูปไฟป่าทุ่ง ถ่านไฟ หรือประทัดดอกไม้ไฟ"
+          }
         }
       }
     },
@@ -10052,6 +10832,12 @@
             "state" : "translated",
             "value" : "Abra um mês para ver suas urnas semanais"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปิดเดือนเพื่อดูโถรายสัปดาห์ของเดือนนั้น"
+          }
         }
       }
     },
@@ -10128,6 +10914,12 @@
             "state" : "translated",
             "value" : "Cinza guardada"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าในโถ"
+          }
         }
       }
     },
@@ -10203,6 +10995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tudo bem fechar sem responder. Noites não confirmadas passam sem chamuscado."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปิดโดยไม่ตอบก็ได้ คืนที่ไม่ได้ยืนยันจะผ่านไปโดยไม่มีรอยไหม้"
           }
         }
       }
@@ -10281,6 +11079,12 @@
             "state" : "translated",
             "value" : "Um palpite já serve"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดาคร่าว ๆ ก็ได้"
+          }
         }
       }
     },
@@ -10358,6 +11162,12 @@
             "state" : "translated",
             "value" : "O que você vai fazer amanhã para ir ainda melhor?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้จะทำอะไรเพื่อให้ดียิ่งขึ้น"
+          }
         }
       }
     },
@@ -10427,6 +11237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่ม"
           }
         }
       }
@@ -10505,6 +11321,12 @@
             "state" : "translated",
             "value" : "Prazos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดส่ง"
+          }
         }
       }
     },
@@ -10581,6 +11403,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prazos ilimitados"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดส่งไม่จำกัด"
           }
         }
       }
@@ -10659,6 +11487,12 @@
             "state" : "translated",
             "value" : "Excluir prazo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบกำหนดส่ง"
+          }
         }
       }
     },
@@ -10735,6 +11569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Editar prazo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แก้ไขกำหนดส่ง"
           }
         }
       }
@@ -10813,6 +11653,12 @@
             "state" : "translated",
             "value" : "A aba de prazos aparece sozinha quando você adiciona um prazo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แท็บกำหนดส่งจะปรากฏเองเมื่อคุณเพิ่มกำหนดส่ง"
+          }
         }
       }
     },
@@ -10889,6 +11735,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Até o prazo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จนถึงกำหนดส่ง"
           }
         }
       }
@@ -10967,6 +11819,12 @@
             "state" : "translated",
             "value" : "Quer mais prazos?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ต้องการกำหนดส่งเพิ่มไหม"
+          }
         }
       }
     },
@@ -11042,6 +11900,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sem prazos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีกำหนดส่ง"
           }
         }
       }
@@ -11120,6 +11984,12 @@
             "state" : "translated",
             "value" : "Desafio"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความท้าทาย"
+          }
         }
       }
     },
@@ -11195,6 +12065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forma"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รูปทรง"
           }
         }
       }
@@ -11273,6 +12149,12 @@
             "state" : "translated",
             "value" : "Toque duas vezes para virar o fragmento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะสองครั้งเพื่อพลิกเศษ"
+          }
         }
       }
     },
@@ -11349,6 +12231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Classifique tocando em um ponto ao longo dos dois eixos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จัดหมวดหมู่โดยแตะจุดตามแกนทั้งสอง"
           }
         }
       }
@@ -11427,6 +12315,12 @@
             "state" : "translated",
             "value" : "Vire e deixe uma linha no verso."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พลิกกลับแล้วเขียนหนึ่งบรรทัดไว้ด้านหลัง"
+          }
         }
       }
     },
@@ -11504,6 +12398,12 @@
             "state" : "translated",
             "value" : "Reescrever o verso"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนด้านหลังใหม่"
+          }
         }
       }
     },
@@ -11580,6 +12480,12 @@
             "state" : "translated",
             "value" : "Uma linha para o verso"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หนึ่งบรรทัดสำหรับด้านหลัง"
+          }
         }
       }
     },
@@ -11655,6 +12561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escrever no verso"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนที่ด้านหลัง"
           }
         }
       }
@@ -11733,6 +12645,12 @@
             "state" : "translated",
             "value" : "O verso está em branco"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ด้านหลังยังว่างอยู่"
+          }
         }
       }
     },
@@ -11809,6 +12727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fogo de campo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไฟป่าทุ่ง"
           }
         }
       }
@@ -11887,6 +12811,12 @@
             "state" : "translated",
             "value" : "Claro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สว่าง"
+          }
         }
       }
     },
@@ -11962,6 +12892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prazo encerrado 🏁"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลยกำหนด 🏁"
           }
         }
       }
@@ -12039,6 +12975,12 @@
             "state" : "translated",
             "value" : "Tempo restante até o prazo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือจนถึงกำหนดส่ง"
+          }
         }
       }
     },
@@ -12114,6 +13056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data limite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันครบกำหนด"
           }
         }
       }
@@ -12192,6 +13140,12 @@
             "state" : "translated",
             "value" : "O mês em que você mais fez o que pretendia"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนที่ทำได้ตามตั้งใจมากที่สุด"
+          }
         }
       }
     },
@@ -12268,6 +13222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fiz como pretendia"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำได้ตามตั้งใจ"
           }
         }
       }
@@ -12346,6 +13306,12 @@
             "state" : "translated",
             "value" : "Fiz o que eu queria"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำตามที่ตั้งใจ"
+          }
         }
       }
     },
@@ -12422,6 +13388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ative o microfone para apagar o fogo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปิดไมโครโฟนเพื่อดับไฟ"
           }
         }
       }
@@ -12500,6 +13472,12 @@
             "state" : "translated",
             "value" : "Criar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้าง"
+          }
         }
       }
     },
@@ -12570,6 +13548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todo dia"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทุกวัน"
           }
         }
       }
@@ -12648,6 +13632,12 @@
             "state" : "translated",
             "value" : "Parar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หยุด"
+          }
         }
       }
     },
@@ -12724,6 +13714,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A que horas você adormeceu?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณหลับตอนกี่โมง"
           }
         }
       }
@@ -12802,6 +13798,12 @@
             "state" : "translated",
             "value" : "Você não precisa queimar tudo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่ต้องเผาทุกอย่างก็ได้"
+          }
         }
       }
     },
@@ -12878,6 +13880,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cinzas reunidas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าที่รวบรวมไว้"
           }
         }
       }
@@ -12956,6 +13964,12 @@
             "state" : "translated",
             "value" : "Estilo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รูปแบบ"
+          }
         }
       }
     },
@@ -13033,6 +14047,12 @@
             "state" : "translated",
             "value" : "Fragmentos guardados"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เศษที่เก็บไว้"
+          }
         }
       }
     },
@@ -13108,6 +14128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fragmentos guardados: %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เศษที่เก็บไว้ %@ ชิ้น"
           }
         }
       }
@@ -13186,6 +14212,12 @@
             "state" : "translated",
             "value" : "Fragmentos guardados: %lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เศษที่เก็บไว้ %lld ชิ้น"
+          }
         }
       }
     },
@@ -13262,6 +14294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leve seus fragmentos com você"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นำเศษที่เก็บไว้ติดตัวไปด้วย"
           }
         }
       }
@@ -13340,6 +14378,12 @@
             "state" : "translated",
             "value" : "Compartilhe seus fragmentos como cartões e pôsteres"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แชร์เศษของคุณเป็นการ์ดและโปสเตอร์"
+          }
         }
       }
     },
@@ -13416,6 +14460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não fiz"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำไม่ได้"
           }
         }
       }
@@ -13494,6 +14544,12 @@
             "state" : "translated",
             "value" : "A versão gratuita permite até %lld prazo. Com o Pro, você conta quantas metas quiser."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวอร์ชันฟรีตั้งกำหนดส่งได้ถึง %lld รายการ ด้วย Pro คุณนับถอยหลังได้หลายเป้าหมายตามต้องการ"
+          }
         }
       }
     },
@@ -13570,6 +14626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O que te manteve acordado? (opcional)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อะไรทำให้คุณนอนดึก (ไม่บังคับ)"
           }
         }
       }
@@ -13648,6 +14710,12 @@
             "state" : "translated",
             "value" : "Barra"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แถบ"
+          }
         }
       }
     },
@@ -13724,6 +14792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fundo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พื้นหลัง"
           }
         }
       }
@@ -13802,6 +14876,12 @@
             "state" : "translated",
             "value" : "Brilho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ประกาย"
+          }
         }
       }
     },
@@ -13878,6 +14958,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กลางคืน"
           }
         }
       }
@@ -13956,6 +15042,12 @@
             "state" : "translated",
             "value" : "Gota"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หยด"
+          }
         }
       }
     },
@@ -14032,6 +15124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aprendizado"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การเรียนรู้"
           }
         }
       }
@@ -14110,6 +15208,12 @@
             "state" : "translated",
             "value" : "Relatos de bugs e ideias de recursos são bem-vindos."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยินดีรับรายงานบั๊กและไอเดียฟีเจอร์"
+          }
         }
       }
     },
@@ -14186,6 +15290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Descartar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทิ้ง"
           }
         }
       }
@@ -14264,6 +15374,12 @@
             "state" : "translated",
             "value" : "Raio"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สายฟ้า"
+          }
         }
       }
     },
@@ -14340,6 +15456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Intervalo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ช่วง"
           }
         }
       }
@@ -14418,6 +15540,12 @@
             "state" : "translated",
             "value" : "Estrela"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดาว"
+          }
         }
       }
     },
@@ -14494,6 +15622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nenhuma compra para restaurar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีการซื้อให้กู้คืน"
           }
         }
       }
@@ -14572,6 +15706,12 @@
             "state" : "translated",
             "value" : "Etapa Escrita"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ขั้นตอนเขียน"
+          }
         }
       }
     },
@@ -14648,6 +15788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvar o texto e ir para a classificação"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกข้อความแล้วไปขั้นตอนจัดหมวดหมู่"
           }
         }
       }
@@ -14726,6 +15872,12 @@
             "state" : "translated",
             "value" : "min"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่จัดหมวดหมู่"
+          }
         }
       }
     },
@@ -14802,6 +15954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gráfico de classificação"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กราฟจัดหมวดหมู่"
           }
         }
       }
@@ -14880,6 +16038,12 @@
             "state" : "translated",
             "value" : "Etapa Classificação"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ขั้นตอนจัดหมวดหมู่"
+          }
         }
       }
     },
@@ -14956,6 +16120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sem categoria"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่ได้จัดหมวดหมู่"
           }
         }
       }
@@ -15034,6 +16204,12 @@
             "state" : "translated",
             "value" : "Salvar a classificação e ir para a nota para amanhã"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกการจัดหมวดหมู่แล้วไปโน้ตสำหรับพรุ่งนี้"
+          }
         }
       }
     },
@@ -15110,6 +16286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chama"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลวไฟ"
           }
         }
       }
@@ -15188,6 +16370,12 @@
             "state" : "translated",
             "value" : "Tipo de chama"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชนิดเปลวไฟ"
+          }
         }
       }
     },
@@ -15264,6 +16452,12 @@
             "state" : "translated",
             "value" : "Fogo apagado · Ver fragmentos guardados"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไฟดับแล้ว · ดูเศษที่เก็บไว้"
+          }
         }
       }
     },
@@ -15339,6 +16533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O fogo apagou. Bons sonhos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไฟดับแล้ว ฝันดีนะ"
           }
         }
       }
@@ -15417,6 +16617,12 @@
             "state" : "translated",
             "value" : "Transforme os fragmentos guardados em cartões e pôsteres."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลี่ยนเศษที่เก็บไว้เป็นการ์ดและโปสเตอร์ไว้เก็บเป็นที่ระลึก"
+          }
         }
       }
     },
@@ -15493,6 +16699,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apagar o fogo também exige coragem"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การดับไฟก็ต้องใช้ความกล้าเหมือนกัน"
           }
         }
       }
@@ -15571,6 +16783,12 @@
             "state" : "translated",
             "value" : "Você não soprou, mas dormiu no horário, então o fogo se apagou sozinho."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณไม่ได้เป่า แต่หลับตรงเวลา ไฟจึงดับไปเอง"
+          }
         }
       }
     },
@@ -15647,6 +16865,12 @@
             "state" : "translated",
             "value" : "O fogo apagou"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไฟดับแล้ว"
+          }
         }
       }
     },
@@ -15722,6 +16946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergaminho em Chamas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
           }
         }
       }
@@ -15800,6 +17030,12 @@
             "state" : "translated",
             "value" : "Pergaminho em Chamas Pro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้ Pro"
+          }
         }
       }
     },
@@ -15876,6 +17112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergaminho em Chamas 🔥"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้ 🔥"
           }
         }
       }
@@ -15954,6 +17196,12 @@
             "state" : "translated",
             "value" : "Pergaminho em Chamas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
         }
       }
     },
@@ -16023,6 +17271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo Livre em Chamas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างลุกไหม้"
           }
         }
       }
@@ -16101,6 +17355,12 @@
             "state" : "translated",
             "value" : "Tenha o Tempo Livre em Chamas, cores e tipos de chama, cartões de fragmentos, o PDF do livro de reflexões, um ano de cinzas e prazos ilimitados."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รับเวลาว่างลุกไหม้ สีและชนิดเปลวไฟ การ์ดเศษ PDF สมุดบันทึกทบทวน เถ้าตลอดทั้งปี และกำหนดส่งไม่จำกัด"
+          }
         }
       }
     },
@@ -16171,6 +17431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tenha o Tempo Livre em Chamas, temas, cartões de fragmentos, o PDF do livro de reflexões, um ano de cinzas e prazos ilimitados."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รับเวลาว่างลุกไหม้ ธีม การ์ดเศษ PDF สมุดบันทึกทบทวน เถ้าตลอดทั้งปี และกำหนดส่งไม่จำกัด"
           }
         }
       }
@@ -16249,6 +17515,12 @@
             "state" : "translated",
             "value" : "Estrelinha"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ประทัดดอกไม้ไฟ"
+          }
         }
       }
     },
@@ -16324,6 +17596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deixe em branco para usar a frase esmaecida"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เว้นว่างไว้เพื่อใช้ข้อความจาง ๆ"
           }
         }
       }
@@ -16402,6 +17680,12 @@
             "state" : "translated",
             "value" : "Cor"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สี"
+          }
         }
       }
     },
@@ -16478,6 +17762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A cor define o tom do papel e da chama. O tipo de chama define como ela queima. Escolha cada um separadamente"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สีกำหนดโทนของกระดาษและเปลวไฟ ชนิดเปลวไฟกำหนดลักษณะการไหม้ เลือกแยกกันได้"
           }
         }
       }
@@ -16556,6 +17846,12 @@
             "state" : "translated",
             "value" : "Em uso"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังใช้"
+          }
         }
       }
     },
@@ -16632,6 +17928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Excluir"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบ"
           }
         }
       }
@@ -16710,6 +18012,12 @@
             "state" : "translated",
             "value" : "Novo prazo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดส่งใหม่"
+          }
         }
       }
     },
@@ -16786,6 +18094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nova urna"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถใบใหม่"
           }
         }
       }
@@ -16864,6 +18178,12 @@
             "state" : "translated",
             "value" : "Criar nova urna"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างโถใบใหม่"
+          }
         }
       }
     },
@@ -16939,6 +18259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nova reflexão"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกทบทวนใหม่"
           }
         }
       }
@@ -17017,6 +18343,12 @@
             "state" : "translated",
             "value" : "Escrever uma nova reflexão"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนบันทึกทบทวนใหม่"
+          }
         }
       }
     },
@@ -17093,6 +18425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gravar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สลัก"
           }
         }
       }
@@ -17171,6 +18509,12 @@
             "state" : "translated",
             "value" : "Inclui todos os recursos Pro que adicionarmos depois"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รวมฟีเจอร์ Pro ที่เพิ่มในอนาคตทั้งหมด"
+          }
         }
       }
     },
@@ -17247,6 +18591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Linha"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เส้น"
           }
         }
       }
@@ -17325,6 +18675,12 @@
             "state" : "translated",
             "value" : "Selecionado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือกแล้ว"
+          }
         }
       }
     },
@@ -17401,6 +18757,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การตั้งค่า"
           }
         }
       },
@@ -17479,6 +18841,12 @@
             "state" : "translated",
             "value" : "Ativar o microfone nos Ajustes"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปิดไมโครโฟนในการตั้งค่า"
+          }
         }
       }
     },
@@ -17555,6 +18923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crescimento"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การเติบโต"
           }
         }
       }
@@ -17633,6 +19007,12 @@
             "state" : "translated",
             "value" : "Seja sincero..."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนตามตรงเลย..."
+          }
         }
       }
     },
@@ -17709,6 +19089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Registros de sono"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกการนอน"
           }
         }
       }
@@ -17787,6 +19173,12 @@
             "state" : "translated",
             "value" : "Os registros de sono só são lidos e nunca saem do seu aparelho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกการนอนจะถูกอ่านเท่านั้น และไม่ออกจากอุปกรณ์ของคุณ"
+          }
         }
       }
     },
@@ -17862,6 +19254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dormindo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังนอนหลับ"
           }
         }
       }
@@ -17940,6 +19338,12 @@
             "state" : "translated",
             "value" : "Editar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แก้ไข"
+          }
         }
       }
     },
@@ -18016,6 +19420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brasas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถ่านไฟ"
           }
         }
       }
@@ -18094,6 +19504,12 @@
             "state" : "translated",
             "value" : "h"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชม."
+          }
         }
       }
     },
@@ -18170,6 +19586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลา"
           }
         }
       }
@@ -18248,6 +19670,12 @@
             "state" : "translated",
             "value" : "Ajustes de horário"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งค่าเวลา"
+          }
         }
       }
     },
@@ -18324,6 +19752,12 @@
             "state" : "translated",
             "value" : "Tempo dedicado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้เวลากับมัน"
+          }
         }
       }
     },
@@ -18399,6 +19833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sem tempo dedicado"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่ได้ใช้เวลากับมัน"
           }
         }
       }
@@ -18477,6 +19917,12 @@
             "state" : "translated",
             "value" : "Sistema"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตามระบบ"
+          }
         }
       }
     },
@@ -18554,6 +20000,12 @@
             "state" : "translated",
             "value" : "Escolha Sistema para seguir o modo escuro do seu aparelho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือก ตามระบบ เพื่อใช้โหมดมืดตามการตั้งค่าของอุปกรณ์"
+          }
         }
       }
     },
@@ -18624,6 +20076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Início"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่ม"
           }
         }
       }
@@ -18700,6 +20158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de início"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาเริ่ม"
           }
         }
       }
@@ -18778,6 +20242,12 @@
             "state" : "translated",
             "value" : "Erros"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความผิดพลาด"
+          }
         }
       }
     },
@@ -18853,6 +20323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Símbolo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัญลักษณ์"
           }
         }
       }
@@ -18930,6 +20406,12 @@
             "state" : "translated",
             "value" : "Ainda sem cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่มีเถ้า"
+          }
         }
       }
     },
@@ -19006,6 +20488,12 @@
             "state" : "translated",
             "value" : "Ainda sem fragmentos guardados"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่มีเศษที่เก็บไว้"
+          }
         }
       }
     },
@@ -19081,6 +20569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ainda sem cinzas classificadas. Toque no gráfico ao escrever uma reflexão."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่มีเถ้าที่จัดหมวดหมู่ แตะที่กราฟตอนเขียนบันทึกทบทวน"
           }
         }
       }
@@ -19159,6 +20653,12 @@
             "state" : "translated",
             "value" : "Ainda em branco"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังว่างอยู่"
+          }
         }
       }
     },
@@ -19236,6 +20736,12 @@
             "state" : "translated",
             "value" : "Ainda vazio."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังว่างอยู่"
+          }
         }
       }
     },
@@ -19311,6 +20817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cinza sem nome ainda"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าที่ยังไม่มีชื่อ"
           }
         }
       }
@@ -19389,6 +20901,12 @@
             "state" : "translated",
             "value" : "Nada escrito ainda"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่มีข้อความ"
+          }
         }
       }
     },
@@ -19464,6 +20982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ainda na primeira página"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังอยู่หน้าแรก"
           }
         }
       }
@@ -19542,6 +21066,12 @@
             "state" : "translated",
             "value" : "Ainda sem urnas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่มีโถ"
+          }
         }
       }
     },
@@ -19619,6 +21149,12 @@
             "state" : "translated",
             "value" : "Nenhuma cinza assentou ainda"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยังไม่มีเถ้าตกตะกอน"
+          }
         }
       }
     },
@@ -19694,6 +21230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Por enquanto é só cinza"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตอนนี้ยังเป็นแค่เถ้า"
           }
         }
       }
@@ -19772,6 +21314,12 @@
             "state" : "translated",
             "value" : "Recursos Pro futuros"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฟีเจอร์ Pro ในอนาคต"
+          }
         }
       }
     },
@@ -19842,6 +21390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cerca de %lld dias"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ประมาณ %lld วัน"
           }
         }
       }
@@ -19920,6 +21474,12 @@
             "state" : "translated",
             "value" : "Pergaminho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนัง"
+          }
         }
       }
     },
@@ -19996,6 +21556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergaminho e chama"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังและเปลวไฟ"
           }
         }
       }
@@ -20074,6 +21640,12 @@
             "state" : "translated",
             "value" : "Temas de pergaminho e chama"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ธีมกระดาษหนังและเปลวไฟ"
+          }
         }
       }
     },
@@ -20150,6 +21722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escolha como seu pergaminho queima. A cor segue o tema acima"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือกว่ากระดาษหนังจะไหม้แบบไหน สีเป็นไปตามธีมด้านบน"
           }
         }
       }
@@ -20228,6 +21806,12 @@
             "state" : "translated",
             "value" : "Pergaminho e chama"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังและเปลวไฟ"
+          }
         }
       }
     },
@@ -20304,6 +21888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A cor do papel e a chama mudam juntas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สีกระดาษและเปลวไฟเปลี่ยนไปพร้อมกัน"
           }
         }
       }
@@ -20382,6 +21972,12 @@
             "state" : "translated",
             "value" : "Em qual urna guardar?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จะใส่ลงโถใบไหน"
+          }
         }
       }
     },
@@ -20457,6 +22053,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não concluído ontem"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ที่ยังไม่เสร็จเมื่อวาน"
           }
         }
       }
@@ -20535,6 +22137,12 @@
             "state" : "translated",
             "value" : "Não concluído ontem: %lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ที่ยังไม่เสร็จเมื่อวาน %lld รายการ"
+          }
         }
       }
     },
@@ -20610,6 +22218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você dormiu %@ mais tarde ontem à noite,\\npor isso a manhã de hoje ficou chamuscada"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อคืนคุณหลับช้าไป %@\\nเช้านี้จึงไหม้เกรียม"
           }
         }
       }
@@ -20688,6 +22302,12 @@
             "state" : "translated",
             "value" : "Você dormiu %@ mais tarde ontem à noite.\\nTente apagar o fogo um pouco mais cedo hoje."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อคืนคุณหลับช้าไป %@\\nคืนนี้ลองดับไฟให้เร็วขึ้นอีกนิด"
+          }
         }
       }
     },
@@ -20765,6 +22385,12 @@
             "state" : "translated",
             "value" : "O fragmento da noite passada esfriou"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เศษของเมื่อคืนเย็นลงแล้ว"
+          }
         }
       }
     },
@@ -20840,6 +22466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Como foi a noite passada?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อคืนเป็นอย่างไรบ้าง"
           }
         }
       }
@@ -20918,6 +22550,12 @@
             "state" : "translated",
             "value" : "Sem querer"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บังเอิญ"
+          }
         }
       }
     },
@@ -20994,6 +22632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acabei fazendo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บังเอิญได้ทำ"
           }
         }
       }
@@ -21072,6 +22716,12 @@
             "state" : "translated",
             "value" : "Acabei fazendo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่บังเอิญได้ทำ"
+          }
         }
       }
     },
@@ -21149,6 +22799,12 @@
             "state" : "translated",
             "value" : "Nenhum"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มี"
+          }
         }
       }
     },
@@ -21224,6 +22880,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O que está aqui é só cinza até você dar um nome."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่อยู่ในนี้เป็นแค่เถ้า จนกว่าคุณจะตั้งชื่อให้"
           }
         }
       }
@@ -21302,6 +22964,12 @@
             "state" : "translated",
             "value" : "O que essa cinza foi para mim…"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าที่สะสมอยู่ตรงนี้ เคยเป็นอะไรสำหรับฉัน…"
+          }
         }
       }
     },
@@ -21378,6 +23046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conte quantas metas quiser ao mesmo tempo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นับถอยหลังหลายเป้าหมายพร้อมกัน"
           }
         }
       }
@@ -21456,6 +23130,12 @@
             "state" : "translated",
             "value" : "Conectado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เชื่อมต่อแล้ว"
+          }
         }
       }
     },
@@ -21532,6 +23212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Para desconectar, vá em Ajustes do iOS ▸ Saúde ▸ Acesso a Dados e Dispositivos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หากต้องการยกเลิกการเชื่อมต่อ ไปที่ การตั้งค่า iOS ▸ สุขภาพ ▸ การเข้าถึงข้อมูลและอุปกรณ์"
           }
         }
       }
@@ -21610,6 +23296,12 @@
             "state" : "translated",
             "value" : "Para desconectar, vá em Ajustes do iOS ▸ Saúde ▸ Acesso a Dados e Dispositivos. Os dados de sono só são lidos e nunca saem do seu aparelho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หากต้องการยกเลิกการเชื่อมต่อ ไปที่ การตั้งค่า iOS ▸ สุขภาพ ▸ การเข้าถึงข้อมูลและอุปกรณ์ ข้อมูลการนอนจะถูกอ่านเท่านั้น และไม่ออกจากอุปกรณ์ของคุณ"
+          }
         }
       }
     },
@@ -21686,6 +23378,12 @@
             "state" : "translated",
             "value" : "Conectar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เชื่อมต่อ"
+          }
         }
       }
     },
@@ -21761,6 +23459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depois de conectar, não vamos perguntar toda manhã e voltaremos o fogo para a hora em que você adormeceu. Os registros de sono só são lidos e nunca saem do seu aparelho."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อเชื่อมต่อแล้ว เราจะไม่ถามทุกเช้า และจะย้อนไฟกลับไปที่เวลาที่คุณหลับ ข้อมูลการนอนจะถูกอ่านเท่านั้น และไม่ออกจากอุปกรณ์ของคุณ"
           }
         }
       }
@@ -21839,6 +23543,12 @@
             "state" : "translated",
             "value" : "Depois de conectar, não vamos perguntar toda manhã. O pergaminho de amanhã volta para a hora em que você realmente adormeceu"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อเชื่อมต่อแล้ว เราจะไม่ถามทุกเช้า กระดาษหนังของพรุ่งนี้จะย้อนกลับไปที่เวลาที่คุณหลับจริง"
+          }
         }
       }
     },
@@ -21915,6 +23625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depois de conectar, usamos a hora de sono registrada em vez de perguntar toda manhã. Os dados de sono só são lidos e nunca saem do seu aparelho"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อเชื่อมต่อแล้ว เราจะใช้เวลาหลับที่บันทึกไว้แทนการถามทุกเช้า ข้อมูลการนอนจะถูกอ่านเท่านั้น และไม่ออกจากอุปกรณ์ของคุณ"
           }
         }
       }
@@ -21993,6 +23709,12 @@
             "state" : "translated",
             "value" : "Abrir"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปิด"
+          }
         }
       }
     },
@@ -22069,6 +23791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex.: limitar redes sociais a 15 minutos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น จำกัดโซเชียลมีเดียไว้ 15 นาที"
           }
         }
       }
@@ -22147,6 +23875,12 @@
             "state" : "translated",
             "value" : "Ex.: a semana em que eu aguentei"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น สัปดาห์ที่ฉันผ่านมาได้"
+          }
         }
       }
     },
@@ -22223,6 +23957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex.: trocar por uma caminhada de 20 min"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น เปลี่ยนเป็นเดิน 20 นาที"
           }
         }
       }
@@ -22301,6 +24041,12 @@
             "state" : "translated",
             "value" : "Ex.: aumentar o treino em 30 minutos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น ออกกำลังกายเพิ่มอีก 30 นาที"
+          }
         }
       }
     },
@@ -22377,6 +24123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex.: exercício, relacionamentos, desafio do ano"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น ออกกำลังกาย ความสัมพันธ์ ความท้าทายของปีนี้"
           }
         }
       }
@@ -22455,6 +24207,12 @@
             "state" : "translated",
             "value" : "Ex.: 30 min de treino logo depois do almoço"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น ออกกำลังกาย 30 นาทีหลังมื้อกลางวัน"
+          }
         }
       }
     },
@@ -22531,6 +24289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex.: ler um capítulo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น อ่านหนังสือหนึ่งบท"
           }
         }
       }
@@ -22609,6 +24373,12 @@
             "state" : "translated",
             "value" : "Ex.: entregar o projeto"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช่น ส่งโปรเจกต์"
+          }
         }
       }
     },
@@ -22685,6 +24455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hoje"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันนี้"
           }
         }
       }
@@ -22763,6 +24539,12 @@
             "state" : "translated",
             "value" : "Por que o dia de hoje ficou inacabado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เหตุผลที่วันนี้ยังไม่เสร็จ"
+          }
         }
       }
     },
@@ -22839,6 +24621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A manhã de hoje ficou um pouco chamuscada"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เช้านี้ไหม้เกรียมเล็กน้อย"
           }
         }
       }
@@ -22917,6 +24705,12 @@
             "state" : "translated",
             "value" : "Deixe uma linha sobre o seu dia."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนวันของคุณไว้หนึ่งบรรทัด"
+          }
         }
       }
     },
@@ -22993,6 +24787,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você não conseguiu\\nterminar o seu dia hoje"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณยังทำวันนี้\\nไม่เสร็จ"
           }
         }
       }
@@ -23071,6 +24871,12 @@
             "state" : "translated",
             "value" : "O que te impediu\\nde terminar o seu dia?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อะไรที่ทำให้คุณ\\nทำวันนี้ไม่เสร็จ"
+          }
         }
       }
     },
@@ -23148,6 +24954,12 @@
             "state" : "translated",
             "value" : "Apaga o fogo de hoje e guarda o fragmento que sobrou"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดับไฟของวันนี้และเก็บเศษที่เหลือไว้"
+          }
         }
       }
     },
@@ -23223,6 +25035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uma linha antes de dormir?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนไว้หนึ่งบรรทัดก่อนนอนไหม"
           }
         }
       }
@@ -23301,6 +25119,12 @@
             "state" : "translated",
             "value" : "Hoje, "
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันนี้ "
+          }
         }
       }
     },
@@ -23378,6 +25202,12 @@
             "state" : "translated",
             "value" : "Pular hoje"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้ามวันนี้"
+          }
         }
       }
     },
@@ -23453,6 +25283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Como foi o seu dia? — Toque para marcar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันนี้เป็นอย่างไรบ้าง — แตะเพื่อปักจุด"
           }
         }
       }
@@ -23531,6 +25367,12 @@
             "state" : "translated",
             "value" : "O que você vai tentar hoje à noite? (opcional)"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คืนนี้จะลองอะไร (ไม่บังคับ)"
+          }
         }
       }
     },
@@ -23607,6 +25449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Por hoje chega. Queimou bem."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พอแค่นี้สำหรับวันนี้ ไหม้ได้ดีแล้ว"
           }
         }
       }
@@ -23685,6 +25533,12 @@
             "state" : "translated",
             "value" : "Eu decido onde hoje termina"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฉันเป็นคนกำหนดว่าวันนี้จบตรงไหน"
+          }
         }
       }
     },
@@ -23761,6 +25615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escrever a reflexão de hoje? Toque para abrir o editor"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนบันทึกทบทวนของวันนี้ไหม แตะเพื่อเปิดตัวแก้ไข"
           }
         }
       }
@@ -23839,6 +25699,12 @@
             "state" : "translated",
             "value" : "da manhã"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AM"
+          }
         }
       }
     },
@@ -23915,6 +25781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "da noite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PM"
           }
         }
       }
@@ -23993,6 +25865,12 @@
             "state" : "translated",
             "value" : "Este ano"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปีนี้"
+          }
         }
       }
     },
@@ -24070,6 +25948,12 @@
             "state" : "translated",
             "value" : "Tempo restante este ano"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือในปีนี้"
+          }
         }
       }
     },
@@ -24145,6 +26029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Concluído"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เสร็จสิ้น"
           }
         }
       }
@@ -24222,6 +26112,12 @@
             "state" : "translated",
             "value" : "+%@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "และอีก %@ รายการ"
+          }
         }
       }
     },
@@ -24291,6 +26187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "e mais %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "และอีก %@ เม็ด"
           }
         }
       }
@@ -24369,6 +26271,12 @@
             "state" : "translated",
             "value" : "+%lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "และอีก %lld รายการ"
+          }
         }
       }
     },
@@ -24445,6 +26353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "e mais %lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "และอีก %lld เม็ด"
           }
         }
       }
@@ -24523,6 +26437,12 @@
             "state" : "translated",
             "value" : "Círculo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วงกลม"
+          }
         }
       }
     },
@@ -24600,6 +26520,12 @@
             "state" : "translated",
             "value" : "Deslize para cima ou para baixo para mudar de página"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปัดขึ้นหรือลงเพื่อเปลี่ยนหน้า"
+          }
         }
       }
     },
@@ -24675,6 +26601,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escrever o significado"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนความหมาย"
           }
         }
       }
@@ -24753,6 +26685,12 @@
             "state" : "translated",
             "value" : "Anotar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนลงไป"
+          }
         }
       }
     },
@@ -24828,6 +26766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apagar o significado"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบความหมาย"
           }
         }
       }
@@ -24905,6 +26849,12 @@
             "state" : "translated",
             "value" : "Sem\\nintenção"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่\\nตั้งใจ"
+          }
         }
       }
     },
@@ -24980,6 +26930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Com\\nintenção"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งใจ"
           }
         }
       }
@@ -25057,6 +27013,12 @@
             "state" : "translated",
             "value" : "Não encontramos uma compra do Pro nesta conta Apple. Confira se você entrou com a conta usada na compra."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่พบการซื้อ Pro ใน Apple Account นี้ โปรดตรวจสอบว่าเข้าสู่ระบบด้วยบัญชีที่ใช้ซื้อ"
+          }
         }
       }
     },
@@ -25132,6 +27094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não restam cinzas deste dia"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีเถ้าเหลือจากวันนี้"
           }
         }
       }
@@ -25210,6 +27178,12 @@
             "state" : "translated",
             "value" : "O que este mês significou para você?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนนี้มีความหมายกับคุณอย่างไร"
+          }
         }
       }
     },
@@ -25285,6 +27259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnas semanais deste mês"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถรายสัปดาห์ของเดือนนี้"
           }
         }
       }
@@ -25363,6 +27343,12 @@
             "state" : "translated",
             "value" : "Como você vai lidar com este tempo amanhã?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรุ่งนี้จะจัดการกับเวลานี้อย่างไร"
+          }
         }
       }
     },
@@ -25440,6 +27426,12 @@
             "state" : "translated",
             "value" : "Descartar este fragmento?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทิ้งเศษนี้ไหม"
+          }
         }
       }
     },
@@ -25516,6 +27508,12 @@
             "state" : "translated",
             "value" : "O que esta semana significou para você?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัปดาห์นี้มีความหมายกับคุณอย่างไร"
+          }
         }
       }
     },
@@ -25591,6 +27589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esta urna está vazia."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถใบนี้ว่างเปล่า"
           }
         }
       }
@@ -25669,6 +27673,12 @@
             "state" : "translated",
             "value" : "Devolve esta urna ao estado de cinza sem nome"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คืนโถใบนี้กลับเป็นเถ้าที่ไม่มีชื่อ"
+          }
         }
       }
     },
@@ -25744,6 +27754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O que sobrou nesta urna"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่เหลืออยู่ในโถใบนี้"
           }
         }
       }
@@ -25822,6 +27838,12 @@
             "state" : "translated",
             "value" : "Nome"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชื่อ"
+          }
         }
       }
     },
@@ -25898,6 +27920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Renomear"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลี่ยนชื่อ"
           }
         }
       }
@@ -25976,6 +28004,12 @@
             "state" : "translated",
             "value" : "Urna sem título"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถที่ไม่มีชื่อ"
+          }
         }
       }
     },
@@ -26053,6 +28087,12 @@
             "state" : "translated",
             "value" : "Enviar e-mail"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ส่งอีเมลหาเรา"
+          }
         }
       }
     },
@@ -26128,6 +28168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีโมจิ"
           }
         }
       }
@@ -26206,6 +28252,12 @@
             "state" : "translated",
             "value" : "Compartilhar imagem"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แชร์รูปภาพ"
+          }
         }
       }
     },
@@ -26282,6 +28334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Este mês"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนนี้"
           }
         }
       }
@@ -26360,6 +28418,12 @@
             "state" : "translated",
             "value" : "Tempo restante este mês"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือในเดือนนี้"
+          }
         }
       }
     },
@@ -26436,6 +28500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esta semana"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัปดาห์นี้"
           }
         }
       }
@@ -26514,6 +28584,12 @@
             "state" : "translated",
             "value" : "Tempo restante esta semana"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือในสัปดาห์นี้"
+          }
         }
       }
     },
@@ -26585,6 +28661,12 @@
             "state" : "translated",
             "value" : "Tempo livre restante esta semana"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างที่เหลือในสัปดาห์นี้"
+          }
         }
       }
     },
@@ -26655,6 +28737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O tempo livre desta semana queimou todo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างของสัปดาห์นี้ไหม้หมดแล้ว"
           }
         }
       }
@@ -26733,6 +28821,12 @@
             "state" : "translated",
             "value" : "Isso também se repete esta semana"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัปดาห์นี้ก็เกิดซ้ำอีก"
+          }
         }
       }
     },
@@ -26809,6 +28903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Isso também aconteceu no início desta semana"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เรื่องนี้เกิดขึ้นเมื่อต้นสัปดาห์นี้ด้วย"
           }
         }
       }
@@ -26887,6 +28987,12 @@
             "state" : "translated",
             "value" : "Termos de Uso (EULA)"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้อกำหนดการใช้งาน (EULA)"
+          }
         }
       }
     },
@@ -26963,6 +29069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mês anterior"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนก่อนหน้า"
           }
         }
       }
@@ -27041,6 +29153,12 @@
             "state" : "translated",
             "value" : "DM no Instagram (@lee25_ios)"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -27112,6 +29230,12 @@
             "state" : "translated",
             "value" : "Meu tempo toda semana"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาของฉันในแต่ละสัปดาห์"
+          }
         }
       }
     },
@@ -27182,6 +29306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O pergaminho queima só durante as suas horas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังจะไหม้เฉพาะในชั่วโมงของคุณเอง"
           }
         }
       }
@@ -27258,6 +29388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Só a força do seu sopro é usada. Nada é gravado."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้เฉพาะแรงลมเป่าของคุณ ไม่มีการบันทึกเสียง"
           }
         }
       }
@@ -27336,6 +29472,12 @@
             "state" : "translated",
             "value" : "Folha"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใบไม้"
+          }
         }
       }
     },
@@ -27412,6 +29554,12 @@
             "state" : "translated",
             "value" : "Salvamento automático"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกอัตโนมัติ"
+          }
         }
       }
     },
@@ -27482,6 +29630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo livre"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่าง"
           }
         }
       }
@@ -27554,6 +29708,12 @@
             "state" : "translated",
             "value" : "Editar tempo livre"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แก้ไขเวลาว่าง"
+          }
         }
       }
     },
@@ -27624,6 +29784,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar tempo livre"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มเวลาว่าง"
           }
         }
       }
@@ -27702,6 +29868,12 @@
             "state" : "translated",
             "value" : "O tempo livre aparece como uma ampulheta nos pontos de página. Os prazos aparecem sozinhos quando você os adiciona"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างแสดงเป็นนาฬิกาทรายในจุดบอกหน้า กำหนดส่งจะปรากฏเองเมื่อเพิ่ม"
+          }
         }
       }
     },
@@ -27771,6 +29943,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acende enquanto seu tempo livre passa e espera apagado no resto da semana"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไฟจะติดขณะที่เวลาว่างของคุณผ่านไป และรออยู่โดยไม่ติดตลอดช่วงที่เหลือของสัปดาห์"
           }
         }
       }
@@ -27849,6 +30027,12 @@
             "state" : "translated",
             "value" : "Começar com pequenas mudanças já é ótimo..."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มจากการเปลี่ยนแปลงเล็ก ๆ ก็ดีแล้ว..."
+          }
         }
       }
     },
@@ -27925,6 +30109,12 @@
             "state" : "translated",
             "value" : "Toque em uma brasa para ver as reflexões daquele dia"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะถ่านไฟเพื่อดูบันทึกทบทวนของวันนั้น"
+          }
         }
       }
     },
@@ -28000,6 +30190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Boa noite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ราตรีสวัสดิ์"
           }
         }
       }
@@ -28078,6 +30274,12 @@
             "state" : "translated",
             "value" : "Um dia bem queimado. Hora de deixar esfriar."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันที่ไหม้ได้ดี ถึงเวลาปล่อยให้เย็นลง"
+          }
         }
       }
     },
@@ -28147,6 +30349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deixe de fora sono, trabalho e tarefas e adicione só o tempo que você dedica a si mesmo. O pergaminho desta semana queima só enquanto ele passa."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เว้นการนอน งาน และธุระ แล้วเพิ่มเฉพาะเวลาที่คุณใช้กับตัวเอง กระดาษหนังของสัปดาห์นี้จะไหม้เฉพาะตอนที่เวลานั้นผ่านไป"
           }
         }
       }
@@ -28218,6 +30426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escolha as horas que são de fato suas, além de sono e trabalho. O pergaminho desta semana queima só enquanto elas passam."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือกชั่วโมงที่เป็นของคุณจริง ๆ นอกเหนือจากการนอนและงาน กระดาษหนังของสัปดาห์นี้จะไหม้เฉพาะตอนที่เวลานั้นผ่านไป"
           }
         }
       }
@@ -28296,6 +30510,12 @@
             "state" : "translated",
             "value" : "Hora em que adormeceu"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่หลับ"
+          }
         }
       }
     },
@@ -28372,6 +30592,12 @@
             "state" : "translated",
             "value" : "Para sozinho quando você dorme. De manhã conferimos a hora em que você adormeceu e voltamos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หยุดเองเมื่อคุณหลับ เราจะตรวจสอบเวลาที่คุณหลับในตอนเช้าแล้วย้อนกลับ"
+          }
         }
       }
     },
@@ -28442,6 +30668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sobrepõe o seu sono"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทับกับเวลานอนของคุณ"
           }
         }
       }
@@ -28514,6 +30746,12 @@
             "state" : "translated",
             "value" : "Isso se sobrepõe ao seu sono. Mantenha dentro das horas acordado."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทับกับเวลานอนของคุณ โปรดให้อยู่ในช่วงที่ตื่นอยู่"
+          }
         }
       }
     },
@@ -28583,6 +30821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sem o sono, sem o trabalho,\\nescolha só as horas que são suas.\\nO pergaminho desta semana queima só enquanto elas passam."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่นับการนอน ไม่นับงาน\\nเลือกเฉพาะชั่วโมงที่เป็นของคุณ\\nกระดาษหนังของสัปดาห์นี้จะไหม้เฉพาะตอนที่เวลานั้นผ่านไป"
           }
         }
       }
@@ -28661,6 +30905,12 @@
             "state" : "translated",
             "value" : "Cinza"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้า"
+          }
         }
       }
     },
@@ -28737,6 +30987,12 @@
             "state" : "translated",
             "value" : "Com base em %@ cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จากเถ้า %@ เม็ด"
+          }
         }
       }
     },
@@ -28806,6 +31062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cinzas: %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้า %@ เม็ด"
           }
         }
       }
@@ -28878,6 +31140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cinzas: %@ · tamanho A5"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้า %@ เม็ด · ขนาด A5"
           }
         }
       }
@@ -28956,6 +31224,12 @@
             "state" : "translated",
             "value" : "Com base em %lld cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จากเถ้า %lld เม็ด"
+          }
         }
       }
     },
@@ -29032,6 +31306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cinzas: %lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้า %lld เม็ด"
           }
         }
       }
@@ -29110,6 +31390,12 @@
             "state" : "translated",
             "value" : "Cinzas: %lld · tamanho A5"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้า %lld เม็ด · ขนาด A5"
+          }
         }
       }
     },
@@ -29187,6 +31473,12 @@
             "state" : "translated",
             "value" : "Urnas de cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถเถ้า"
+          }
         }
       }
     },
@@ -29262,6 +31554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guarde na sua urna de cinzas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใส่ลงในโถเถ้าของคุณ"
           }
         }
       }
@@ -29340,6 +31638,12 @@
             "state" : "translated",
             "value" : "Mês com mais cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนที่มีเถ้ามากที่สุด"
+          }
         }
       }
     },
@@ -29417,6 +31721,12 @@
             "state" : "translated",
             "value" : "Guarde algumas cinzas e\\na distribuição e o calendário de brasas aparecerão aqui."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เก็บเถ้าไว้สักเล็กน้อย\\nแล้วการกระจายและปฏิทินถ่านไฟจะปรากฏที่นี่"
+          }
         }
       }
     },
@@ -29492,6 +31802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Distribuição das cinzas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การกระจายของเถ้า"
           }
         }
       }
@@ -29570,6 +31886,12 @@
             "state" : "translated",
             "value" : "Fluxo das cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระแสของเถ้า"
+          }
         }
       }
     },
@@ -29646,6 +31968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ver fluxo das cinzas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูกระแสของเถ้า"
           }
         }
       }
@@ -29724,6 +32052,12 @@
             "state" : "translated",
             "value" : "Salvar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึก"
+          }
         }
       }
     },
@@ -29801,6 +32135,12 @@
             "state" : "translated",
             "value" : "Salvando"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังบันทึก"
+          }
         }
       }
     },
@@ -29877,6 +32217,12 @@
             "state" : "translated",
             "value" : "Salvando…"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังบันทึก…"
+          }
         }
       }
     },
@@ -29952,6 +32298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกแล้ว"
           }
         }
       }
@@ -30030,6 +32382,12 @@
             "state" : "translated",
             "value" : "Salvar e começar uma nova reflexão"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกและเริ่มบันทึกทบทวนใหม่"
+          }
         }
       }
     },
@@ -30106,6 +32464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvar e fechar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกและปิด"
           }
         }
       }
@@ -30184,6 +32548,12 @@
             "state" : "translated",
             "value" : "Apagou sozinho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เศษที่ดับไปเอง"
+          }
         }
       }
     },
@@ -30260,6 +32630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você guardou um fragmento que apagou sozinho"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณเก็บเศษที่ดับไปเองไว้"
           }
         }
       }
@@ -30338,6 +32714,12 @@
             "state" : "translated",
             "value" : "Reúna suas reflexões em um único PDF para guardar ou imprimir."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รวมบันทึกทบทวนเป็น PDF เล่มเดียวไว้เก็บหรือพิมพ์"
+          }
         }
       }
     },
@@ -30414,6 +32796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tudo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทั้งหมด"
           }
         }
       }
@@ -30492,6 +32880,12 @@
             "state" : "translated",
             "value" : "Ponto"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จุด"
+          }
         }
       }
     },
@@ -30563,6 +32957,12 @@
             "state" : "translated",
             "value" : "Seu tempo livre"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาว่างของคุณ"
+          }
         }
       }
     },
@@ -30632,6 +33032,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Definir e ver os números é grátis. Queimar só essas horas é Pro."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งค่าและดูตัวเลขได้ฟรี ส่วนการเผาเฉพาะชั่วโมงนั้นเป็นของ Pro"
           }
         }
       }
@@ -30709,6 +33115,12 @@
             "state" : "translated",
             "value" : "Título"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชื่อเรื่อง"
+          }
         }
       }
     },
@@ -30784,6 +33196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você apagou o fogo no horário. O pergaminho de amanhã está intacto"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณดับไฟตรงเวลา กระดาษหนังของพรุ่งนี้ยังอยู่เหมือนเดิม"
           }
         }
       }
@@ -30862,6 +33280,12 @@
             "state" : "translated",
             "value" : "Você dormiu no horário, então o fogo se apagou sozinho"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณหลับตรงเวลา ไฟจึงดับไปเอง"
+          }
         }
       }
     },
@@ -30938,6 +33362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dormi no horário"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฉันนอนตรงเวลา"
           }
         }
       }
@@ -31016,6 +33446,12 @@
             "state" : "translated",
             "value" : "Descartar fragmento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทิ้งเศษ"
+          }
         }
       }
     },
@@ -31092,6 +33528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cartão de fragmento"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การ์ดเศษ"
           }
         }
       }
@@ -31170,6 +33612,12 @@
             "state" : "translated",
             "value" : "Cartões e pôsteres de fragmentos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การ์ดและโปสเตอร์เศษ"
+          }
         }
       }
     },
@@ -31246,6 +33694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compartilhar como cartão de fragmento"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แชร์เป็นการ์ดเศษ"
           }
         }
       }
@@ -31324,6 +33778,12 @@
             "state" : "translated",
             "value" : "Pôster de fragmento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โปสเตอร์เศษ"
+          }
         }
       }
     },
@@ -31401,6 +33861,12 @@
             "state" : "translated",
             "value" : "Criar um pôster de fragmento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างโปสเตอร์เศษ"
+          }
         }
       }
     },
@@ -31476,6 +33942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toque no fragmento para virar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะที่เศษเพื่อพลิก"
           }
         }
       }
@@ -31554,6 +34026,12 @@
             "state" : "translated",
             "value" : "Verso do fragmento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ด้านหลังของเศษ"
+          }
         }
       }
     },
@@ -31630,6 +34108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frente do fragmento"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ด้านหน้าของเศษ"
           }
         }
       }
@@ -31708,6 +34192,12 @@
             "state" : "translated",
             "value" : "Um dia que sobra um pouco sem queimar fica mais tempo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันที่เหลือไม่ไหม้ไว้นิดหนึ่งจะอยู่ในความทรงจำนานกว่า"
+          }
         }
       }
     },
@@ -31783,6 +34273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quer dizer mais? (opcional)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อยากเล่าเพิ่มไหม (ไม่บังคับ)"
           }
         }
       }
@@ -31861,6 +34357,12 @@
             "state" : "translated",
             "value" : "Tipo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชนิด"
+          }
         }
       }
     },
@@ -31938,6 +34440,12 @@
             "state" : "translated",
             "value" : "Bons sonhos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฝันดีนะ"
+          }
         }
       }
     },
@@ -32008,6 +34516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fins de semana"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันหยุดสุดสัปดาห์"
           }
         }
       }
@@ -32086,6 +34600,12 @@
             "state" : "translated",
             "value" : "Crie quantas urnas de cinzas quiser, por tema"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างโถเถ้าได้ไม่จำกัดตามหัวข้อ"
+          }
         }
       }
     },
@@ -32163,6 +34683,12 @@
             "state" : "translated",
             "value" : "Enchendo agora"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังใส่อยู่ตอนนี้"
+          }
         }
       }
     },
@@ -32233,6 +34759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Queimando agora · até %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังไหม้ · ถึง %@"
           }
         }
       }
@@ -32311,6 +34843,12 @@
             "state" : "translated",
             "value" : "Salva esta reflexão e começa uma em branco"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกบันทึกทบทวนนี้และเริ่มอันใหม่ที่ว่างเปล่า"
+          }
         }
       }
     },
@@ -32387,6 +34925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O que fazer com as cinzas dos últimos %lld dias?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จะทำอย่างไรกับเถ้าของ %lld วันที่ผ่านมา"
           }
         }
       }
@@ -32465,6 +35009,12 @@
             "state" : "translated",
             "value" : "O que fazer com as cinzas das últimas %lld semanas?"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จะทำอย่างไรกับเถ้าของ %lld สัปดาห์ที่ผ่านมา"
+          }
         }
       }
     },
@@ -32542,6 +35092,12 @@
             "state" : "translated",
             "value" : "Cinzas por mês nos últimos 12 meses"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้ารายเดือนในรอบ 12 เดือนที่ผ่านมา"
+          }
         }
       }
     },
@@ -32617,6 +35173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Para onde foram os últimos 12 meses, mês a mês"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 เดือนที่ผ่านมาไปอยู่ที่ไหน ทีละเดือน"
           }
         }
       }
@@ -32695,6 +35257,12 @@
             "state" : "translated",
             "value" : "Veja as cinzas dos últimos 12 meses, mês a mês"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงเถ้าของ 12 เดือนที่ผ่านมาทีละเดือน"
+          }
         }
       }
     },
@@ -32772,6 +35340,12 @@
             "state" : "translated",
             "value" : "Veja para onde seu tempo foi a cada mês nos últimos doze meses."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูว่าเวลาของคุณหายไปไหนในแต่ละเดือนของสิบสองเดือนที่ผ่านมา"
+          }
         }
       }
     },
@@ -32842,6 +35416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Excluir"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบ"
           }
         }
       }
@@ -32922,6 +35502,12 @@
             "state" : "translated",
             "value" : "Suporte"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ช่วยเหลือ"
+          }
         }
       }
     },
@@ -32997,6 +35583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar a primeira cinza"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มเถ้าแรก"
           }
         }
       }
@@ -33075,6 +35667,12 @@
             "state" : "translated",
             "value" : "Criar sua primeira urna"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างโถใบแรก"
+          }
         }
       }
     },
@@ -33151,6 +35749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Comece criando sua primeira urna.\\nDar um nome por tema ou área funciona bem."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มจากการสร้างโถใบแรก\\nตั้งชื่อตามหัวข้อหรือเรื่องราวก็ดี"
           }
         }
       }
@@ -33229,6 +35833,12 @@
             "state" : "translated",
             "value" : "Celadon"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เซลาดอน"
+          }
         }
       }
     },
@@ -33305,6 +35915,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vela"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เทียน"
           }
         }
       }
@@ -33383,6 +35999,12 @@
             "state" : "translated",
             "value" : "Últimos 30 dias"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 วันที่ผ่านมา"
+          }
         }
       }
     },
@@ -33459,6 +36081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่ม"
           }
         }
       }
@@ -33537,6 +36165,12 @@
             "state" : "translated",
             "value" : "Horários de dormir sugeridos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลานอนที่แนะนำ"
+          }
         }
       }
     },
@@ -33613,6 +36247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยกเลิก"
           }
         }
       }
@@ -33691,6 +36331,12 @@
             "state" : "translated",
             "value" : "Falta 1 hora para dormir. Mandou bem hoje!"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีก 1 ชั่วโมงถึงเวลานอน วันนี้เหนื่อยแล้วนะ"
+          }
         }
       }
     },
@@ -33766,6 +36412,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A partir de 30 minutos antes de dormir, sopre o pergaminho que queima\\npara apagar o fogo e guardar o que sobrou"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งแต่ 30 นาทีก่อนนอน เป่าที่กระดาษหนังที่กำลังไหม้\\nเพื่อดับไฟและเก็บส่วนที่เหลือไว้"
           }
         }
       }
@@ -33844,6 +36496,12 @@
             "state" : "translated",
             "value" : "Hora de dormir"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลานอน"
+          }
         }
       }
     },
@@ -33921,6 +36579,12 @@
             "state" : "translated",
             "value" : "Hora de dormir %2$lld%3$@ %1$@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาเข้านอน %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -33996,6 +36660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ para dormir"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีก %@ จะถึงเวลานอน"
           }
         }
       }
@@ -34074,6 +36744,12 @@
             "state" : "translated",
             "value" : "Tempo restante para dormir"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือก่อนนอน"
+          }
         }
       }
     },
@@ -34151,6 +36827,12 @@
             "state" : "translated",
             "value" : "Cápsula"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แคปซูล"
+          }
         }
       }
     },
@@ -34226,6 +36908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Palavra-chave (opcional)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำสำคัญ (ไม่บังคับ)"
           }
         }
       }
@@ -34304,6 +36992,12 @@
             "state" : "translated",
             "value" : "Mostrar abas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงแท็บ"
+          }
         }
       }
     },
@@ -34379,6 +37073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toque para fechar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อปิด"
           }
         }
       }
@@ -34457,6 +37157,12 @@
             "state" : "translated",
             "value" : "Toque para gerenciar prazos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อจัดการกำหนดส่ง"
+          }
         }
       }
     },
@@ -34533,6 +37239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toque para voltar à etapa Escrita"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อกลับไปขั้นตอนเขียน"
           }
         }
       }
@@ -34611,6 +37323,12 @@
             "state" : "translated",
             "value" : "Toque para selecionar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อเลือก"
+          }
         }
       }
     },
@@ -34688,6 +37406,12 @@
             "state" : "translated",
             "value" : "Toque para editar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อแก้ไข"
+          }
         }
       }
     },
@@ -34763,6 +37487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toque para mudar o horário"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อเปลี่ยนเวลา"
           }
         }
       }
@@ -34841,6 +37571,12 @@
             "state" : "translated",
             "value" : "Toque para gerenciar urnas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อจัดการโถ"
+          }
         }
       }
     },
@@ -34917,6 +37653,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toque para abrir a urna"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเพื่อเปิดโถ"
           }
         }
       }
@@ -34995,6 +37737,12 @@
             "state" : "translated",
             "value" : "Faíscas crepitando e saltando"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ประกายแตกกระเด็นเปรี๊ยะ ๆ"
+          }
         }
       }
     },
@@ -35071,6 +37819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Páginas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้า"
           }
         }
       }
@@ -35149,6 +37903,12 @@
             "state" : "translated",
             "value" : "Página %1$lld de %2$lld"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้า %1$lld จาก %2$lld"
+          }
         }
       }
     },
@@ -35225,6 +37985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indicador de página"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตัวบอกหน้า"
           }
         }
       }
@@ -35303,6 +38069,12 @@
             "state" : "translated",
             "value" : "Pontos de página"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จุดบอกหน้า"
+          }
         }
       }
     },
@@ -35379,6 +38151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Estilo dos pontos de página"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รูปแบบจุดบอกหน้า"
           }
         }
       }
@@ -35457,6 +38235,12 @@
             "state" : "translated",
             "value" : "Acesso vitalício · %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้ได้ตลอดชีพ · %@"
+          }
         }
       }
     },
@@ -35527,6 +38311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dias úteis"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันธรรมดา"
           }
         }
       }
@@ -35605,6 +38395,12 @@
             "state" : "translated",
             "value" : "Pôster"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โปสเตอร์"
+          }
         }
       }
     },
@@ -35682,6 +38478,12 @@
             "state" : "translated",
             "value" : "Mostrar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดง"
+          }
         }
       }
     },
@@ -35754,6 +38556,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "th" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -35835,6 +38643,12 @@
             "state" : "translated",
             "value" : "Você está no Pro. Obrigado 🔥"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณใช้ Pro อยู่ ขอบคุณ 🔥"
+          }
         }
       }
     },
@@ -35912,6 +38726,12 @@
             "state" : "translated",
             "value" : "Fazer upgrade para o Pro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อัปเกรดเป็น Pro"
+          }
         }
       }
     },
@@ -35982,6 +38802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Queimar meu tempo livre com o Pro"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เผาเฉพาะเวลาว่างด้วย Pro"
           }
         }
       }
@@ -36060,6 +38886,12 @@
             "state" : "translated",
             "value" : "Disponível no Pro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้ได้ใน Pro"
+          }
         }
       }
     },
@@ -36129,6 +38961,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No Pro, o pergaminho queima só nestas horas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ด้วย Pro กระดาษหนังจะไหม้เฉพาะช่วงเวลานี้"
           }
         }
       }
@@ -36205,6 +39043,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desbloqueie o fluxo do ano com o Pro"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปลดล็อกกระแสทั้งปีด้วย Pro"
           }
         }
       }
@@ -36283,6 +39127,12 @@
             "state" : "translated",
             "value" : "Tentei, mas não fiz"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งใจจะทำ แต่ไม่ได้ทำ"
+          }
         }
       }
     },
@@ -36359,6 +39209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pretendia, mas não fiz"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งใจจะทำ แต่ไม่ได้ทำ"
           }
         }
       }
@@ -36437,6 +39293,12 @@
             "state" : "translated",
             "value" : "Guarde seu dia, sem deixar nada de fora"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เก็บวันของคุณไว้ ไม่ให้เหลือสิ่งใดตกหล่น"
+          }
         }
       }
     },
@@ -36513,6 +39375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coração"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หัวใจ"
           }
         }
       }
@@ -36591,6 +39459,12 @@
             "state" : "translated",
             "value" : "Pague uma vez, use para sempre"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จ่ายครั้งเดียว ใช้ได้ตลอดไป"
+          }
         }
       }
     },
@@ -36661,6 +39535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Em um ano"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อคิดเป็นทั้งปี"
           }
         }
       }
@@ -36737,6 +39617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Um ano de cinzas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าทั้งปี"
           }
         }
       }
@@ -36815,6 +39701,12 @@
             "state" : "translated",
             "value" : "Um ano de cinzas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าทั้งปี"
+          }
         }
       }
     },
@@ -36891,6 +39783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Um ano inteiro de cinzas de relance"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เถ้าตลอดทั้งปีในมุมมองเดียว"
           }
         }
       }
@@ -36969,6 +39867,12 @@
             "state" : "translated",
             "value" : "%1$lld urnas, %2$lld reflexões"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถ %1$lld ใบ บันทึกทบทวน %2$lld รายการ"
+          }
         }
       }
     },
@@ -37045,6 +39949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnas ilimitadas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถไม่จำกัด"
           }
         }
       }
@@ -37123,6 +40033,12 @@
             "state" : "translated",
             "value" : "Excluir urna"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบโถ"
+          }
         }
       }
     },
@@ -37199,6 +40115,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A prateleira de urnas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชั้นวางโถ"
           }
         }
       }
@@ -37277,6 +40199,12 @@
             "state" : "translated",
             "value" : "Editar urna"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แก้ไขโถ"
+          }
         }
       }
     },
@@ -37354,6 +40282,12 @@
             "state" : "translated",
             "value" : "Desbloqueie urnas e prazos ilimitados."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปลดล็อกโถและกำหนดส่งไม่จำกัด"
+          }
         }
       }
     },
@@ -37430,6 +40364,12 @@
             "state" : "translated",
             "value" : "A urna já está esperando.\\nSua primeira cinza vai para %@."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถรออยู่แล้ว\\nเถ้าแรกของคุณจะลงในโถ%@"
+          }
         }
       }
     },
@@ -37505,6 +40445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uma palavra para gravar na urna"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำที่จะสลักบนโถ"
           }
         }
       }
@@ -37583,6 +40529,12 @@
             "state" : "translated",
             "value" : "Sol"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดวงอาทิตย์"
+          }
         }
       }
     },
@@ -37659,6 +40611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Feito"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำแล้ว"
           }
         }
       }
@@ -37737,6 +40695,12 @@
             "state" : "translated",
             "value" : "Sopre no microfone na parte de baixo do celular"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าใส่ไมโครโฟนที่ด้านล่างของโทรศัพท์"
+          }
         }
       }
     },
@@ -37813,6 +40777,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aparência"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รูปลักษณ์"
           }
         }
       }
@@ -37891,6 +40861,12 @@
             "state" : "translated",
             "value" : "OK"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตกลง"
+          }
         }
       }
     },
@@ -37968,6 +40944,12 @@
             "state" : "translated",
             "value" : "Reflexões: %1$lld. Fiz como pretendia: %2$lld por cento; acabei fazendo: %3$lld por cento; tentei, mas não fiz: %4$lld por cento; simplesmente escorreu: %5$lld por cento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกทบทวน %1$lld รายการ ทำได้ตามตั้งใจ %2$lld เปอร์เซ็นต์ บังเอิญได้ทำ %3$lld เปอร์เซ็นต์ ตั้งใจแต่ไม่ได้ทำ %4$lld เปอร์เซ็นต์ ผ่านไปเฉย ๆ %5$lld เปอร์เซ็นต์"
+          }
         }
       }
     },
@@ -38043,6 +41025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Livro de reflexões"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สมุดบันทึกทบทวน"
           }
         }
       }
@@ -38121,6 +41109,12 @@
             "state" : "translated",
             "value" : "PDF do livro de reflexões"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF สมุดบันทึกทบทวน"
+          }
         }
       }
     },
@@ -38197,6 +41191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exportar livro de reflexões em PDF"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ส่งออกสมุดบันทึกทบทวนเป็น PDF"
           }
         }
       }
@@ -38275,6 +41275,12 @@
             "state" : "translated",
             "value" : "Ver como livro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูเป็นสมุด"
+          }
         }
       }
     },
@@ -38352,6 +41358,12 @@
             "state" : "translated",
             "value" : "Tenha seu livro de reflexões nas mãos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถือสมุดบันทึกทบทวนของคุณไว้ในมือ"
+          }
         }
       }
     },
@@ -38427,6 +41439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reúna suas reflexões em um único PDF"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รวมบันทึกทบทวนเป็น PDF เล่มเดียว"
           }
         }
       }
@@ -38505,6 +41523,12 @@
             "state" : "translated",
             "value" : "Reúna as reflexões em um PDF, uma página por dia"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รวมบันทึกทบทวนเป็น PDF หนึ่งหน้าต่อวัน"
+          }
         }
       }
     },
@@ -38582,6 +41606,12 @@
             "state" : "translated",
             "value" : "Edite sua reflexão."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แก้ไขบันทึกทบทวนของคุณ"
+          }
         }
       }
     },
@@ -38657,6 +41687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicione uma reflexão\\ne este livro começa a se encher."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มบันทึกทบทวน\\nแล้วสมุดเล่มนี้จะเริ่มเต็ม"
           }
         }
       }
@@ -38735,6 +41771,12 @@
             "state" : "translated",
             "value" : "Arraste reflexões para uma urna para movê-las"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลากบันทึกทบทวนเข้าโถเพื่อย้าย"
+          }
         }
       }
     },
@@ -38811,6 +41853,12 @@
             "state" : "translated",
             "value" : "Soprar o fogo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าให้ไฟดับ"
+          }
         }
       }
     },
@@ -38886,6 +41934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sopre para apagar a chama\\ne encerrar o dia"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าให้เปลวไฟดับ\\nแล้วปิดวันของคุณ"
           }
         }
       }
@@ -38964,6 +42018,12 @@
             "state" : "translated",
             "value" : "Descanso"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พักผ่อน"
+          }
         }
       }
     },
@@ -39041,6 +42101,12 @@
             "state" : "translated",
             "value" : "Escorreu"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ผ่านไป"
+          }
         }
       }
     },
@@ -39116,6 +42182,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Bons sonhos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 ฝันดีนะ"
           }
         }
       }
@@ -39200,6 +42272,12 @@
             "state" : "translated",
             "value" : "Telas para textos maiores"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้าจอสำหรับตัวอักษรใหญ่"
+          }
         }
       }
     },
@@ -39276,6 +42354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mesmo nos maiores tamanhos de texto, as telas se reorganizam direitinho em vez de serem cortadas."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แม้ขยายตัวอักษรใหญ่ที่สุด หน้าจอก็จัดเรียงใหม่อย่างเรียบร้อยแทนที่จะถูกตัด"
           }
         }
       }
@@ -39354,6 +42438,12 @@
             "state" : "translated",
             "value" : "Cores e contraste mais fáceis"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สีและคอนทราสต์ที่ดูง่ายขึ้น"
+          }
         }
       }
     },
@@ -39430,6 +42520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veja claramente seu tempo queimando, mesmo com Aumentar Contraste ligado ou se for difícil distinguir cores."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เห็นเวลาที่กำลังไหม้ชัดเจน แม้เปิดเพิ่มคอนทราสต์ หรือแยกสีได้ยาก"
           }
         }
       }
@@ -39508,6 +42604,12 @@
             "state" : "translated",
             "value" : "Mais idiomas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หลายภาษายิ่งขึ้น"
+          }
         }
       }
     },
@@ -39584,6 +42686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Um tour rápido para quem está começando"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทัวร์สั้น ๆ สำหรับมือใหม่"
           }
         }
       }
@@ -39662,6 +42770,12 @@
             "state" : "translated",
             "value" : "Um guia curto do que você pode fazer, na primeira vez que abrir o app."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำแนะนำสั้น ๆ ว่าทำอะไรได้บ้าง ตอนเปิดแอปครั้งแรก"
+          }
         }
       }
     },
@@ -39738,6 +42852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novidades"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีอะไรใหม่"
           }
         }
       }
@@ -39816,6 +42936,12 @@
             "state" : "translated",
             "value" : "Na primeira abertura depois de uma atualização, veja o que há de novo."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อเปิดครั้งแรกหลังอัปเดต ดูว่ามีอะไรใหม่"
+          }
         }
       }
     },
@@ -39892,6 +43018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dicas práticas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เคล็ดลับที่ใช้ได้จริง"
           }
         }
       }
@@ -39970,6 +43102,12 @@
             "state" : "translated",
             "value" : "Sugestões discretas sobre recursos úteis, na hora em que você precisa."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำแนะนำเบา ๆ เกี่ยวกับฟีเจอร์ที่มีประโยชน์ ในจังหวะที่คุณต้องการ"
+          }
         }
       }
     },
@@ -40046,6 +43184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri e Atalhos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri และคำสั่งลัด"
           }
         }
       }
@@ -40124,6 +43268,12 @@
             "state" : "translated",
             "value" : "Pergunte à Siri quanto falta do dia de hoje."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถาม Siri ว่าวันนี้เหลือเวลาเท่าไร"
+          }
         }
       }
     },
@@ -40200,6 +43350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sincronização entre aparelhos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ซิงก์ข้ามอุปกรณ์"
           }
         }
       }
@@ -40278,6 +43434,12 @@
             "state" : "translated",
             "value" : "Com o iCloud, tenha as mesmas reflexões e prazos em todos os seus aparelhos."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้บันทึกทบทวนและกำหนดส่งชุดเดียวกันบนทุกอุปกรณ์ผ่าน iCloud"
+          }
         }
       }
     },
@@ -40354,6 +43516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Backup e restauração"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สำรองและกู้คืน"
           }
         }
       }
@@ -40432,6 +43600,12 @@
             "state" : "translated",
             "value" : "Salve suas reflexões e prazos em um arquivo e traga de volta depois."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกบันทึกทบทวนและกำหนดส่งเป็นไฟล์ แล้วนำกลับมาภายหลังได้"
+          }
         }
       }
     },
@@ -40508,6 +43682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloqueio com Face ID"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ล็อกด้วย Face ID"
           }
         }
       }
@@ -40586,6 +43766,12 @@
             "state" : "translated",
             "value" : "Bloqueie o app com Face ID ou Touch ID para manter suas reflexões privadas."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ล็อกแอปด้วย Face ID หรือ Touch ID เพื่อรักษาความเป็นส่วนตัวของบันทึกทบทวน"
+          }
         }
       }
     },
@@ -40662,6 +43848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout para iPhone dobrável"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลย์เอาต์สำหรับ iPhone แบบพับได้"
           }
         }
       }
@@ -40740,6 +43932,12 @@
             "state" : "translated",
             "value" : "Use a tela larga de um iPhone dobrável como dois painéis lado a lado."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้หน้าจอกว้างของ iPhone แบบพับได้เป็นสองแผงเคียงข้างกัน"
+          }
         }
       }
     },
@@ -40816,6 +44014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apagar todos os meus dados"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบข้อมูลทั้งหมดของฉัน"
           }
         }
       }
@@ -40894,6 +44098,12 @@
             "state" : "translated",
             "value" : "Apague todas as reflexões e prazos direto no app, quando quiser."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบบันทึกทบทวนและกำหนดส่งทั้งหมดในแอปได้ทุกเมื่อ"
+          }
         }
       }
     },
@@ -40970,6 +44180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continue a reflexão de onde parou"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนบันทึกทบทวนต่อจากที่ค้างไว้"
           }
         }
       }
@@ -41048,6 +44264,12 @@
             "state" : "translated",
             "value" : "O que você estava escrevendo continua lá, mesmo que o app feche no meio."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่กำลังเขียนยังอยู่ แม้แอปจะปิดกลางคัน"
+          }
         }
       }
     },
@@ -41123,6 +44345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depois do coreano e do inglês, o app agora também fala português."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หลังภาษาเกาหลีและอังกฤษ ตอนนี้แอปพูดภาษาไทยได้แล้ว"
           }
         }
       },
@@ -41201,6 +44429,12 @@
             "state" : "translated",
             "value" : "Experimente deslizar para o lado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลองปัดไปทางข้าง"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -41277,6 +44511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veja o que resta desta semana, mês e ano no mesmo pergaminho."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูเวลาที่เหลือของสัปดาห์ เดือน และปีนี้บนกระดาษหนังแผ่นเดียวกัน"
           }
         }
       },
@@ -41355,6 +44595,12 @@
             "state" : "translated",
             "value" : "Vire um fragmento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พลิกเศษดู"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -41431,6 +44677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toque em um fragmento para escrever no verso uma linha sobre aquele dia."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะเศษเพื่อเขียนบรรทัดเกี่ยวกับวันนั้นไว้ด้านหลัง"
           }
         }
       },
@@ -41509,6 +44761,12 @@
             "state" : "translated",
             "value" : "Metas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป้าหมาย"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -41585,6 +44843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fragmentos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เศษ"
           }
         }
       },
@@ -41663,6 +44927,12 @@
             "state" : "translated",
             "value" : "Urna"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โถ"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -41739,6 +45009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexão"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกทบทวน"
           }
         }
       },
@@ -41817,6 +45093,12 @@
             "state" : "translated",
             "value" : "Adicionar prazo"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มกำหนดส่ง"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -41893,6 +45175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prazo %@ adicionado"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มกำหนดส่ง %@ แล้ว"
           }
         }
       },
@@ -41971,6 +45259,12 @@
             "state" : "translated",
             "value" : "Prazo %@ excluído"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบกำหนดส่ง %@ แล้ว"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -42047,6 +45341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O fogo apagou. Seu fragmento foi guardado."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไฟดับแล้ว เก็บเศษของคุณไว้แล้ว"
           }
         }
       },
@@ -42125,6 +45425,12 @@
             "state" : "translated",
             "value" : "Sua reflexão está na urna de cinzas."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใส่บันทึกทบทวนลงในโถเถ้าแล้ว"
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -42201,6 +45507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pular"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้าม"
           }
         }
       },
@@ -42279,6 +45591,12 @@
             "state" : "translated",
             "value" : "Começar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มต้นใช้งาน"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -42355,6 +45673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veja seu tempo queimar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูเวลาของคุณไหม้ไป"
           }
         }
       },
@@ -42433,6 +45757,12 @@
             "state" : "translated",
             "value" : "Do acordar até a hora de dormir, o pergaminho queima devagar. Deslize para o lado para ver a semana, o mês e o ano."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งแต่ตื่นจนถึงเวลานอน กระดาษหนังจะค่อย ๆ ไหม้ ปัดไปทางข้างเพื่อดูสัปดาห์ เดือน และปี"
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -42509,6 +45839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 minutos antes de dormir, sopre"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 นาทีก่อนนอน เป่าให้ดับ"
           }
         }
       },
@@ -42587,6 +45923,12 @@
             "state" : "translated",
             "value" : "Sopre no microfone para apagar o fogo e guardar o que sobrou. Só a força do sopro é verificada; nada é gravado."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เป่าใส่ไมโครโฟนเพื่อดับไฟและเก็บส่วนที่เหลือไว้ ตรวจเฉพาะแรงลมเป่า ไม่มีการบันทึกเสียง"
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -42663,6 +46005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cada dia vira cinza"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทุกวันกลายเป็นเถ้า"
           }
         }
       },
@@ -42741,6 +46089,12 @@
             "state" : "translated",
             "value" : "Escreva uma linha sobre o seu dia e ela assenta na urna de cinzas daquela semana. Mude os horários de acordar e dormir nos Ajustes."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนวันของคุณหนึ่งบรรทัด แล้วมันจะตกลงในโถเถ้าของสัปดาห์นั้น เปลี่ยนเวลาตื่นและเวลานอนได้ในการตั้งค่า"
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -42817,6 +46171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คัดลอก"
           }
         }
       },
@@ -42895,6 +46255,12 @@
             "state" : "translated",
             "value" : "Novidades"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีอะไรใหม่"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -42971,6 +46337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rever o guia de boas-vindas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูคู่มือต้อนรับอีกครั้ง"
           }
         }
       },
@@ -43049,6 +46421,12 @@
             "state" : "translated",
             "value" : "Não foi possível resgatar o código. Tente de novo daqui a pouco."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่สามารถใช้รหัสได้ โปรดลองอีกครั้งในอีกสักครู่"
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -43125,6 +46503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Resgatar código promocional"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แลกโค้ดโปรโมชัน"
           }
         }
       },
@@ -43203,6 +46587,12 @@
             "state" : "translated",
             "value" : "Versão %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวอร์ชัน %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -43279,6 +46669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Agora em português"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตอนนี้มีภาษาไทยแล้ว"
           }
         }
       },
@@ -43357,6 +46753,12 @@
             "state" : "translated",
             "value" : "Se o seu aparelho estiver em português, o app e os widgets aparecem em português."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หากอุปกรณ์ตั้งเป็นภาษาไทย แอปและวิดเจ็ตจะแสดงเป็นภาษาไทย"
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -43433,6 +46835,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Melhor com texto grande e alto contraste"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดียิ่งขึ้นกับตัวอักษรใหญ่และคอนทราสต์สูง"
           }
         }
       },
@@ -43511,6 +46919,12 @@
             "state" : "translated",
             "value" : "Os Ajustes não são mais cortados com textos muito grandes, e Aumentar Contraste deixa o texto e as brasas mais escuros."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การตั้งค่าไม่ถูกตัดอีกต่อไปเมื่อใช้ตัวอักษรใหญ่มาก และเพิ่มคอนทราสต์จะทำให้ตัวอักษรและถ่านไฟเข้มขึ้น"
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -43587,6 +47001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recursos escondidos, como deslizar para mudar o período, agora são indicados na hora certa."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฟีเจอร์ที่ซ่อนอยู่ เช่น การปัดเพื่อเปลี่ยนช่วงเวลา จะถูกแนะนำในจังหวะที่เหมาะสม"
           }
         }
       },
@@ -43665,6 +47085,12 @@
             "state" : "translated",
             "value" : "Veja o que vem por aí"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูว่าจะมีอะไรต่อไป"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -43741,6 +47167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Em Ajustes ▸ Suporte, veja os recursos futuros e sugira os que você quer."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใน การตั้งค่า ▸ ช่วยเหลือ ดูฟีเจอร์ที่กำลังจะมา และเสนอฟีเจอร์ที่คุณอยากได้"
           }
         }
       },
@@ -43819,6 +47251,12 @@
             "state" : "translated",
             "value" : "Chegaram os códigos promocionais"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โค้ดโปรโมชันมาแล้ว"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -43896,6 +47334,12 @@
             "state" : "translated",
             "value" : "Se você tem um código, digite em Ajustes ▸ Pro."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หากมีโค้ด ให้ป้อนใน การตั้งค่า ▸ Pro"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -43972,6 +47416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entendi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เข้าใจแล้ว"
           }
         }
       },

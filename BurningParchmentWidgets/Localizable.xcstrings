@@ -74,6 +74,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -150,6 +156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld นาที"
           }
         }
       }
@@ -228,6 +240,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld นาที %2$lld วินาที"
+          }
         }
       }
     },
@@ -304,6 +322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ชม. %2$lld นาที"
           }
         }
       }
@@ -382,6 +406,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld h"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld วัน %2$lld ชม."
+          }
         }
       }
     },
@@ -458,6 +488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld วินาที"
           }
         }
       }
@@ -536,6 +572,12 @@
             "state" : "translated",
             "value" : "31/12/2025 (qua) 23:59"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31/12/2025 (พุธ) 23:59"
+          }
         }
       }
     },
@@ -612,6 +654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 d 4 h"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 วัน 4 ชม."
           }
         }
       }
@@ -690,6 +738,12 @@
             "state" : "translated",
             "value" : "5 h 24 min"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 ชม. 24 นาที"
+          }
         }
       }
     },
@@ -765,6 +819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acordando em breve"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใกล้ตื่นแล้ว"
           }
         }
       }
@@ -842,6 +902,12 @@
             "state" : "translated",
             "value" : "Acordar %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตื่น %@"
+          }
         }
       }
     },
@@ -918,6 +984,12 @@
             "state" : "translated",
             "value" : "%@ para acordar"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีก %@ จะถึงเวลาตื่น"
+          }
         }
       }
     },
@@ -993,6 +1065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo restante para acordar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือก่อนตื่น"
           }
         }
       }
@@ -1071,6 +1149,12 @@
             "state" : "translated",
             "value" : "Tempo restante"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือ"
+          }
         }
       }
     },
@@ -1147,6 +1231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo restante para o próximo prazo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือก่อนกำหนดส่งถัดไป"
           }
         }
       }
@@ -1225,6 +1315,12 @@
             "state" : "translated",
             "value" : "Pergaminho de prazos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังกำหนดส่ง"
+          }
         }
       }
     },
@@ -1300,6 +1396,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sem prazos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีกำหนดส่ง"
           }
         }
       }
@@ -1377,6 +1479,12 @@
             "state" : "translated",
             "value" : "Prazo encerrado 🏁"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลยกำหนด 🏁"
+          }
         }
       }
     },
@@ -1453,6 +1561,12 @@
             "state" : "translated",
             "value" : "Um novo dia começa"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันใหม่เริ่มขึ้น"
+          }
         }
       }
     },
@@ -1528,6 +1642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dormindo"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังนอนหลับ"
           }
         }
       }
@@ -1606,6 +1726,12 @@
             "state" : "translated",
             "value" : "Pergaminho do ano"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังรายปี"
+          }
         }
       }
     },
@@ -1682,6 +1808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo restante para dormir hoje"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือก่อนนอนวันนี้"
           }
         }
       }
@@ -1760,6 +1892,12 @@
             "state" : "translated",
             "value" : "Este ano"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปีนี้"
+          }
         }
       }
     },
@@ -1836,6 +1974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo restante este ano"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือในปีนี้"
           }
         }
       }
@@ -1914,6 +2058,12 @@
             "state" : "translated",
             "value" : "Pergaminho do mês"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังรายเดือน"
+          }
         }
       }
     },
@@ -1990,6 +2140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Este mês"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เดือนนี้"
           }
         }
       }
@@ -2068,6 +2224,12 @@
             "state" : "translated",
             "value" : "Tempo restante este mês"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือในเดือนนี้"
+          }
         }
       }
     },
@@ -2144,6 +2306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esta semana"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สัปดาห์นี้"
           }
         }
       }
@@ -2222,6 +2390,12 @@
             "state" : "translated",
             "value" : "Tempo restante esta semana"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือในสัปดาห์นี้"
+          }
         }
       }
     },
@@ -2298,6 +2472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergaminho do dia"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังรายวัน"
           }
         }
       }
@@ -2376,6 +2556,12 @@
             "state" : "translated",
             "value" : "Veja quanto falta para dormir, direto na tela de bloqueio"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูเวลาที่เหลือก่อนนอนได้บนหน้าจอล็อก"
+          }
         }
       }
     },
@@ -2451,6 +2637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bons sonhos"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฝันดีนะ"
           }
         }
       }
@@ -2529,6 +2721,12 @@
             "state" : "translated",
             "value" : "Pergaminho da semana"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังรายสัปดาห์"
+          }
         }
       }
     },
@@ -2605,6 +2803,12 @@
             "state" : "translated",
             "value" : "Dormir %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นอน %@"
+          }
         }
       }
     },
@@ -2680,6 +2884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Até dormir"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จนถึงเวลานอน"
           }
         }
       }
@@ -2758,6 +2968,12 @@
             "state" : "translated",
             "value" : "Tempo restante para dormir"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาที่เหลือก่อนนอน"
+          }
         }
       }
     },
@@ -2835,6 +3051,12 @@
             "state" : "translated",
             "value" : "Entregar o projeto"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ส่งโปรเจกต์"
+          }
         }
       }
     },
@@ -2911,6 +3133,12 @@
             "state" : "translated",
             "value" : "🌅 Acordando em breve · %@"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 ใกล้ตื่นแล้ว · %@"
+          }
         }
       }
     },
@@ -2986,6 +3214,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 Restam %@%%"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 เหลือ %@%%"
           }
         }
       }
@@ -3064,6 +3298,12 @@
             "state" : "translated",
             "value" : "🔥 Restam %lld%%"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 เหลือ %lld%%"
+          }
         }
       }
     },
@@ -3140,6 +3380,12 @@
             "state" : "translated",
             "value" : "🔥 %@ para dormir"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 อีก %@ จะถึงเวลานอน"
+          }
         }
       }
     },
@@ -3215,6 +3461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ para acordar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 อีก %@ จะถึงเวลาตื่น"
           }
         }
       }

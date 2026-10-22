@@ -76,6 +76,12 @@
             "state" : "translated",
             "value" : "Pergaminho em Chamas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
         }
       }
     },
@@ -153,6 +159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergaminho em Chamas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
           }
         }
       }

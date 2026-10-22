@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>นโยบายความเป็นส่วนตัว — กระดาษหนังลุกไหม้</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="privacy.html" hreflang="th" lang="th" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← กลับไปหน้าช่วยเหลือ</a>
+  <h1>นโยบายความเป็นส่วนตัว</h1>
+  <p>อัปเดตล่าสุด: 18 สิงหาคม 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>สรุป</h2>
+    <div class="card">
+      <h3>กระดาษหนังลุกไหม้ไม่เก็บข้อมูลที่ระบุตัวตนของคุณ</h3>
+      <p>ทุกอย่างที่คุณสร้างในแอป (เวลาตื่น เวลานอน กำหนดส่ง บันทึกทบทวน และโถ) อยู่ในอุปกรณ์ของคุณ สิ่งที่ถึงผู้พัฒนามีเพียงสถิติแบบไม่ระบุตัวตนและข้อมูลวินิจฉัยการแครชที่อธิบายไว้ด้านล่าง รวมถึงความคิดเห็นที่คุณส่งเอง</p>
+      <span class="highlight">🔒 บันทึกทบทวนของคุณไม่เคยออกจากอุปกรณ์ · ไม่มีโฆษณา ไม่มีการติดตาม</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>เก็บไว้ในอุปกรณ์ของคุณเท่านั้น</h2>
+    <div class="card">
+      <h3>สิ่งที่คุณสร้างในแอป</h3>
+      <p>ข้อมูลต่อไปนี้เก็บไว้ในอุปกรณ์ของคุณเท่านั้น (ใน UserDefaults):</p>
+      <ul>
+        <li>เวลาตื่นและเวลานอน</li>
+        <li>กำหนดส่ง</li>
+        <li>บันทึกทบทวนและโถ</li>
+      </ul>
+      <p style="margin-top: 10px;">ข้อมูลนี้แชร์ระหว่างแอปกับวิดเจ็ตผ่านพื้นที่เก็บข้อมูล App Group บนอุปกรณ์ของคุณเท่านั้น และจะถูกลบเมื่อคุณลบแอป</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>สิ่งที่ส่งถึงผู้พัฒนา</h2>
+    <div class="card">
+      <h3>สถิติการใช้งานแบบไม่ระบุตัวตน</h3>
+      <p>เพื่อช่วยปรับปรุงแอป ข้อมูลต่อไปนี้จะถูกส่งไปยังที่เก็บข้อมูล iCloud (CloudKit) ของผู้พัฒนา:</p>
+      <ul>
+        <li>รหัสประจำการติดตั้งที่สุ่มสร้างขึ้น (UUID)</li>
+        <li>เวอร์ชันแอป แพลตฟอร์มและเวอร์ชัน OS การตั้งค่าภาษา</li>
+        <li>จำนวนครั้งที่เปิด จำนวนวันที่ใช้ และชื่อเหตุการณ์ของฟีเจอร์หลัก</li>
+      </ul>
+      <p style="margin-top: 10px;">รหัสประจำการติดตั้งไม่เกี่ยวข้องกับรหัสประจำอุปกรณ์ (IDFA หรือ IDFV) หรือ Apple Account ของคุณ และจะสร้างรหัสใหม่หากคุณลบแล้วติดตั้งแอปอีกครั้ง</p>
+    </div>
+    <div class="card">
+      <h3>ข้อมูลวินิจฉัยการแครชและการค้าง</h3>
+      <p>หากแอปแครชหรือค้าง รายงานวินิจฉัยที่ iOS สร้างขึ้น (MetricKit) จะถูกส่ง ประกอบด้วยประเภทของปัญหา stack trace เวอร์ชันของแอปและ OS และรุ่นอุปกรณ์ ไม่มีสิ่งที่คุณป้อนในแอป เช่น บันทึกทบทวน รวมอยู่ด้วย</p>
+    </div>
+    <div class="card">
+      <h3>ความคิดเห็นที่คุณส่ง</h3>
+      <p>ความคิดเห็นจะถูกส่งเมื่อคุณส่งจากหน้าจอการตั้งค่าเท่านั้น ประกอบด้วยสิ่งที่คุณเขียนพร้อมข้อมูลอุปกรณ์และเวอร์ชันแอป และชื่อกับอีเมลของคุณเฉพาะเมื่อคุณกรอกเองเพื่อรับการตอบกลับ</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>สิ่งที่เราไม่เก็บ</h2>
+    <div class="card">
+      <h3>เราไม่เก็บสิ่งต่อไปนี้เด็ดขาด</h3>
+      <ul>
+        <li>สิ่งที่คุณป้อนในแอป เช่น บันทึกทบทวนหรือกำหนดส่ง (เว้นแต่คุณเขียนไว้ในความคิดเห็นเอง)</li>
+        <li>ข้อมูลส่วนบุคคล เช่น ชื่อ อีเมล หรือเบอร์โทรศัพท์ (เว้นแต่คุณกรอกในความคิดเห็นเอง)</li>
+        <li>ตำแหน่งที่ตั้ง</li>
+        <li>รายชื่อติดต่อหรือรูปภาพ</li>
+        <li>รหัสประจำอุปกรณ์ (IDFA, IDFV และอื่น ๆ)</li>
+        <li>ข้อมูลโฆษณา</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>บุคคลที่สาม</h2>
+    <div class="card">
+      <h3>เราไม่แบ่งปันข้อมูลของคุณ</h3>
+      <p>แอปนี้ไม่ใช้เครือข่ายโฆษณาและไม่ใช้ SDK วิเคราะห์ข้อมูลของบุคคลที่สาม สถิติ ข้อมูลวินิจฉัย และความคิดเห็นที่อธิบายไว้ข้างต้นไปยังที่เก็บข้อมูล iCloud ของผู้พัฒนาเองเท่านั้น และจะไม่ถูกนำไปรวมกับข้อมูลของบริษัทอื่นหรือใช้ติดตามคุณเพื่อการโฆษณา</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>การซื้อในแอป</h2>
+    <div class="card">
+      <h3>Apple จัดการการชำระเงิน</h3>
+      <p>การชำระเงินสำหรับการซื้อ Pro แบบครั้งเดียวดำเนินการโดย Apple ผ่าน App Store ผู้พัฒนาไม่เคยได้รับข้อมูลการชำระเงิน เช่น หมายเลขบัตรหรือ Apple Account แอปเพียงบันทึกบนอุปกรณ์ของคุณว่าคุณซื้อ Pro แล้วหรือไม่ เพื่อปลดล็อกฟีเจอร์ Pro</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>การแจ้งเตือน</h2>
+    <div class="card">
+      <h3>เฉพาะการแจ้งเตือนในเครื่อง</h3>
+      <p>การเตือนหนึ่งชั่วโมงก่อนเวลานอนเป็นการแจ้งเตือนในเครื่องที่ตั้งเวลาไว้บนอุปกรณ์ของคุณ และไม่ผ่านเซิร์ฟเวอร์ภายนอก คุณเปลี่ยนสิทธิ์การแจ้งเตือนได้ทุกเมื่อในการตั้งค่า iOS</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ไมโครโฟน</h2>
+    <div class="card">
+      <h3>ตรวจเฉพาะแรงลมเป่าของคุณ</h3>
+      <p>ไมโครโฟนถูกใช้เฉพาะตอนที่คุณเป่ากระดาษหนังเพื่อดับไฟ 30 นาทีก่อนเวลานอน แอปวัดเฉพาะแรงลมเป่าของคุณบนอุปกรณ์ และไม่บันทึก เก็บ หรือส่งเสียงใด ๆ คุณเปลี่ยนสิทธิ์ไมโครโฟนได้ทุกเมื่อในการตั้งค่า iOS</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ความเป็นส่วนตัวของเด็ก</h2>
+    <div class="card">
+      <h3>เด็กอายุต่ำกว่า 14 ปี</h3>
+      <p>แอปนี้ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 14 ปี และเราไม่เก็บข้อมูลส่วนบุคคลของเด็กโดยเจตนา</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>การเปลี่ยนแปลงนโยบายนี้</h2>
+    <div class="card">
+      <h3>เราจะประกาศการเปลี่ยนแปลงในหน้านี้</h3>
+      <p>หากนโยบายความเป็นส่วนตัวนี้เปลี่ยนแปลง เราจะอัปเดตเนื้อหาและวันที่ “อัปเดตล่าสุด” ในหน้านี้ หากเป็นการเปลี่ยนแปลงสำคัญ เราอาจแจ้งในบันทึกประจำรุ่นของแอปด้วย</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ติดต่อเรา</h2>
+    <div class="card">
+      <h3>คำถามเรื่องความเป็นส่วนตัว</h3>
+      <p>หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ ส่งอีเมลมาที่ที่อยู่ด้านล่าง</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">นโยบายนี้มีหลายภาษา หากแต่ละฉบับไม่ตรงกัน ให้ยึด<a href="../privacy.html" style="color: var(--orange); text-decoration: none;">ฉบับภาษาเกาหลี</a>เป็นหลัก</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

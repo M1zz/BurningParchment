@@ -98,6 +98,14 @@ Nítido com texto grande e contraste
 Códigos promocionais para ter o Pro
 Veja nos Ajustes os próximos recursos
 
+### 앱스토어 (th)
+
+รองรับภาษาไทยแล้ว
+คู่มือสั้น ๆ สำหรับผู้ใช้ครั้งแรก
+ชัดเจนกับตัวอักษรใหญ่และคอนทราสต์
+แลกโค้ดโปรโมชันเพื่อรับ Pro
+ดูฟีเจอร์ที่กำลังจะมาในการตั้งค่า
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

@@ -75,6 +75,12 @@
             "state" : "translated",
             "value" : "Pergaminho em Chamas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
         }
       }
     },
@@ -153,6 +159,12 @@
             "state" : "translated",
             "value" : "Pergaminho em Chamas"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
         }
       }
     },
@@ -230,6 +242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usado apenas para detectar a força do seu sopro ao apagar o pergaminho antes de dormir. Nenhum som é gravado ou salvo."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้เพื่อตรวจแรงลมเป่าตอนดับกระดาษหนังก่อนนอนเท่านั้น ไม่มีการบันทึกหรือเก็บเสียงใด ๆ"
           }
         }
       }

@@ -138,6 +138,14 @@ Se kommende funktioner i Indstillinger
 Κωδικοί προσφοράς για το Pro
 Νέες λειτουργίες στις Ρυθμίσεις
 
+### 앱스토어 (fi)
+
+Nyt myös suomeksi
+Lyhyt opas uusille käyttäjille
+Selkeä suurella tekstillä
+Lunasta tarjouskoodit ja saat Pron
+Tulevat ominaisuudet näet Asetuksissa
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

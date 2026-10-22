@@ -105,6 +105,12 @@
             "state" : "translated",
             "value" : "Φλεγόμενη Περγαμηνή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palava Pergamentti"
+          }
         }
       }
     },
@@ -213,6 +219,12 @@
             "state" : "translated",
             "value" : "Φλεγόμενη Περγαμηνή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palava Pergamentti"
+          }
         }
       }
     },
@@ -320,6 +332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρησιμοποιείται μόνο για να αντιληφθεί πόσο δυνατά φυσάτε όταν σβήνετε την περγαμηνή πριν τον ύπνο. Δεν καταγράφεται ούτε αποθηκεύεται ήχος."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytetään vain hengityksesi voimakkuuden aistimiseen, kun sammutat pergamentin ennen nukkumaanmenoa. Ääntä ei tallenneta eikä säilytetä."
           }
         }
       }

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tietosuojakäytäntö — Palava Pergamentti</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/fi/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/BurningParchment/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/BurningParchment/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/BurningParchment/fi/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/privacy.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/privacy.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/privacy.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/privacy.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="privacy.html" hreflang="fi" lang="fi" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Takaisin tukeen</a>
+  <h1>Tietosuojakäytäntö</h1>
+  <p>Päivitetty viimeksi: 18. elokuuta 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Yhteenveto</h2>
+    <div class="card">
+      <h3>Palava Pergamentti ei kerää tietoja, jotka tunnistavat sinut</h3>
+      <p>Kaikki, minkä luot sovelluksessa (herätysaika, nukkumaanmenoaika, määräajat, pohdinnat ja uurnat), pysyy laitteellasi. Kehittäjälle päätyy vain alla kuvatut nimettömät tilastot ja kaatumisdiagnostiikka sekä palaute, jonka lähetät itse.</p>
+      <span class="highlight">🔒 Pohdintasi eivät koskaan poistu laitteeltasi · Ei mainoksia, ei seurantaa</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tallennetaan vain laitteellesi</h2>
+    <div class="card">
+      <h3>Mitä luot sovelluksessa</h3>
+      <p>Seuraavat tallennetaan vain laitteellesi (UserDefaultsiin):</p>
+      <ul>
+        <li>Herätysaika ja nukkumaanmenoaika</li>
+        <li>Määräajat</li>
+        <li>Pohdinnat ja uurnat</li>
+      </ul>
+      <p style="margin-top: 10px;">Nämä tiedot jaetaan sovelluksen ja sen widgetien välillä vain laitteesi App Group -tallennustilan kautta, ja ne poistetaan, kun poistat sovelluksen.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lähetetään kehittäjälle</h2>
+    <div class="card">
+      <h3>Nimettömät käyttötilastot</h3>
+      <p>Sovelluksen parantamiseksi kehittäjän iCloud-tallennustilaan (CloudKit) lähetetään seuraavat tiedot:</p>
+      <ul>
+        <li>Satunnaisesti luotu asennustunniste (UUID)</li>
+        <li>Sovelluksen versio, alusta ja käyttöjärjestelmän versio, kieliasetus</li>
+        <li>Käynnistysten määrä, käyttöpäivien määrä ja keskeisten ominaisuustapahtumien nimet</li>
+      </ul>
+      <p style="margin-top: 10px;">Asennustunnisteella ei ole mitään tekemistä laitetunnisteiden (IDFA tai IDFV) tai Apple-tilisi kanssa, ja uusi tunniste luodaan, jos poistat sovelluksen ja asennat sen uudelleen.</p>
+    </div>
+    <div class="card">
+      <h3>Kaatumis- ja jumiutumisdiagnostiikka</h3>
+      <p>Jos sovellus kaatuu tai jumiutuu, lähetetään iOS:n luoma diagnostiikkaraportti (MetricKit): ongelman tyyppi, pinojälki, sovelluksen ja käyttöjärjestelmän versiot sekä laitemalli. Mitään sovellukseen syöttämääsi, kuten pohdintojasi, ei sisällytetä.</p>
+    </div>
+    <div class="card">
+      <h3>Lähettämäsi palaute</h3>
+      <p>Palaute lähetetään vain, kun lähetät sen Asetukset-näytöstä. Se sisältää kirjoittamasi tekstin sekä laitteesi ja sovelluksen version, sekä nimesi ja sähköpostiosoitteesi vain, jos syötät ne itse vastauksen saamiseksi.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mitä emme kerää</h2>
+    <div class="card">
+      <h3>Emme koskaan kerää seuraavia</h3>
+      <ul>
+        <li>Mitään sovellukseen syöttämääsi, kuten pohdintoja tai määräaikoja (ellet kirjoita sitä itse palautteeseen)</li>
+        <li>Henkilötietoja, kuten nimeä, sähköpostiosoitetta tai puhelinnumeroa (ellet syötä niitä itse palautteeseen)</li>
+        <li>Sijaintia</li>
+        <li>Yhteystietoja tai valokuvia</li>
+        <li>Laitetunnisteita (IDFA, IDFV jne.)</li>
+        <li>Mainostietoja</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kolmannet osapuolet</h2>
+    <div class="card">
+      <h3>Emme jaa tietojasi</h3>
+      <p>Sovellus ei käytä mainosverkostoja eikä kolmansien osapuolten analytiikka-SDK:ita. Edellä kuvatut tilastot, diagnostiikka ja palaute menevät vain kehittäjän omaan iCloud-tallennustilaan. Niitä ei koskaan yhdistetä muiden yritysten tietoihin eikä niitä käytetä sinun seuraamiseesi mainontaa varten.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sovelluksen sisäinen osto</h2>
+    <div class="card">
+      <h3>Apple hoitaa maksun</h3>
+      <p>Pro-kertaoston maksun käsittelee Apple App Storen kautta. Kehittäjä ei koskaan saa maksutietoja, kuten korttinumeroasi tai Apple-tiliäsi. Sovellus vain tallentaa laitteellesi tiedon siitä, oletko ostanut Pron, jotta se voi avata Pro-ominaisuudet.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ilmoitukset</h2>
+    <div class="card">
+      <h3>Vain paikallisia ilmoituksia</h3>
+      <p>Tuntia ennen nukkumaanmenoa tuleva muistutus on laitteellesi ajastettu paikallinen ilmoitus, joka ei koskaan kulje ulkoisen palvelimen kautta. Voit muuttaa ilmoitusoikeutta milloin tahansa iOS:n Asetuksissa.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mikrofoni</h2>
+    <div class="card">
+      <h3>Se tarkistaa vain, kuinka voimakkaasti puhallat</h3>
+      <p>Mikrofonia käytetään vain, kun puhallat pergamenttia sammuttaaksesi tulen 30 minuuttia ennen nukkumaanmenoa. Sovellus mittaa vain hengityksesi voimakkuuden laitteellasi, eikä se koskaan tallenna, säilytä tai lähetä mitään ääntä. Voit muuttaa mikrofonioikeutta milloin tahansa iOS:n Asetuksissa.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lasten yksityisyys</h2>
+    <div class="card">
+      <h3>Alle 14-vuotiaat lapset</h3>
+      <p>Tämä sovellus ei ole suunnattu alle 14-vuotiaille lapsille, emmekä tietoisesti kerää lasten henkilötietoja.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Muutokset tähän käytäntöön</h2>
+    <div class="card">
+      <h3>Julkaisemme kaikki muutokset tällä sivulla</h3>
+      <p>Jos tämä tietosuojakäytäntö muuttuu, päivitämme sen sisällön ja ”Päivitetty viimeksi” -päivämäärän tällä sivulla. Merkittävistä muutoksista voimme ilmoittaa myös sovelluksen julkaisutiedoissa.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Yhteystiedot</h2>
+    <div class="card">
+      <h3>Tietosuojakysymykset</h3>
+      <p>Jos sinulla on kysyttävää tästä tietosuojakäytännöstä, lähetä sähköpostia alla olevaan osoitteeseen.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Tämä käytäntö on saatavilla useilla kielillä. Jos versiot eroavat toisistaan, <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">korean kielinen versio</a> on ensisijainen.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

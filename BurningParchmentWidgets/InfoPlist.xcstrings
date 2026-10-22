@@ -106,6 +106,12 @@
             "state" : "translated",
             "value" : "Φλεγόμενη Περγαμηνή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palava Pergamentti"
+          }
         }
       }
     },
@@ -213,6 +219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Φλεγόμενη Περγαμηνή"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palava Pergamentti"
           }
         }
       }

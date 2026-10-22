@@ -968,3 +968,60 @@ https://m1zz.github.io/BurningParchment/el/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/el/
+
+## fi
+
+### 이름
+
+Palava Pergamentti: nukkumaan
+
+### 부제
+
+Jäljellä oleva päivä palaa
+
+### 키워드
+
+ajastin,päiväkirja,tavat,widget,määräaika,kuri,rituaali,ilta,tavoitteet,pohdinta,unettomuus,rutiini
+
+### 프로모션 텍스트
+
+Puhalla ennen nukkumaanmenoa palava pergamentti sammuksiin: pieni rituaali päivän päättämiseksi. Jäljelle jääneet sirpaleet säilytetään.
+
+### 설명
+
+Päiväsi jäljellä oleva aika palaa silmiesi edessä.
+Palava Pergamentti näyttää jäljellä olevan ajan numeroiden sijaan hitaasti palavana pergamenttiarkkina. Se on tehty niille, jotka eivät halua nähdä illan vain katoavan.
+
+Päivä, viikko, kuukausi, vuosi
+Herätyksestä nukkumaanmenoon pergamentti palaa hitaasti. Tämän viikon, kuukauden ja vuoden jäljellä olevan ajan näet samalta pergamentilta.
+Lisää tavoite määräajalla, niin myös aika siihen päivään lasketaan alaspäin.
+
+Puhalla ja päätä päivä
+Alkaen 30 minuuttia ennen nukkumaanmenoa voit puhaltaa palavaa pergamenttia sammuttaaksesi tulen. Käytetään vain hengityksesi voimakkuutta, eikä mitään ääntä tallenneta.
+Sammuttamisen jälkeen jäljelle jääneet sirpaleet säilytetään. Kun haluat, käännä sirpale ja kirjoita yksi rivi kääntöpuolelle.
+
+Päivä, joka muuttuu tuhkaksi
+Katso taaksepäin kulunutta aikaa, jätä yhden rivin pohdinta ja merkitse pisteellä kahden akselin kaaviossa, minne aika meni.
+Pohdinnat kertyvät aiheittain uurniin, ja voit lukea ne uudelleen pohdintakirjasta.
+Tuhkan virta -näyttö kertoo, minne aika meni, jakaumakaaviolla ja hiilikalenterilla.
+
+Aina silmiesi edessä
+Koti- ja lukitusnäytön widgetit, Dynamic Island ja lukitusnäytön Live Activity näyttävät jäljellä olevan ajan.
+Vaalea ja tumma teema, ehdotetut nukkumaanmenoajat ja valinta siitä, mitkä välilehdet haluat nähdä.
+
+Palava Pergamentti Pro
+Palava pergamentti, pohdinnat ja puhaltamalla sammuttamisen rituaali ovat ilmaisia, samoin yksi määräaika. Pro ei ole tilaus: yksi osto, ikuisesti.
+Se avaa Palava Vapaa-aika -toiminnon, joka polttaa vain asettamasi vapaa-ajan; pergamentin ja liekin värit (kuutamo-hanji, seladoni, hämärä); liekkityypit (aavikkotuli, hiilet, tähtisädetikku); sirpaleiden jakamisen kortteina ja julisteina; pohdintakirjan viennin PDF:nä; viimeisen kahdentoista kuukauden tuhkan virran; ja rajattomat määräajat. Myös kaikki tulevat Pro-ominaisuudet sisältyvät.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/fi/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/fi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/fi/

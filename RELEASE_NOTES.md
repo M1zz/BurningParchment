@@ -122,6 +122,14 @@ Krátký průvodce pro nováčky
 Kódy nabídky pro získání Pro
 Připravované funkce najdete v Nastavení
 
+### 앱스토어 (da)
+
+Nu også på dansk
+En kort guide til nye brugere
+Tydelig med stor tekst og kontrast
+Indløs tilbudskoder for at få Pro
+Se kommende funktioner i Indstillinger
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

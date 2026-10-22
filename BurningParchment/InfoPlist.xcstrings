@@ -93,6 +93,12 @@
             "state" : "translated",
             "value" : "Hořící pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
         }
       }
     },
@@ -189,6 +195,12 @@
             "state" : "translated",
             "value" : "Hořící pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
         }
       }
     },
@@ -284,6 +296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Používá se jen ke zjištění síly vašeho foukání při hašení pergamenu před spaním. Žádný zvuk se nenahrává ani neukládá."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruges kun til at mærke, hvor hårdt du puster, når du slukker pergamentet før sengetid. Der optages eller gemmes ingen lyd."
           }
         }
       }

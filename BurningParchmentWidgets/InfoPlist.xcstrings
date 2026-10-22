@@ -94,6 +94,12 @@
             "state" : "translated",
             "value" : "Hořící pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
         }
       }
     },
@@ -189,6 +195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hořící pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
           }
         }
       }

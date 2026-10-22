@@ -92,6 +92,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -183,6 +189,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -282,6 +294,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld sek"
+          }
         }
       }
     },
@@ -376,6 +394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld t %2$lld min"
           }
         }
       }
@@ -472,6 +496,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld h"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld t"
+          }
         }
       }
     },
@@ -566,6 +596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sek"
           }
         }
       }
@@ -662,6 +698,12 @@
             "state" : "translated",
             "value" : "31. 12. 2025 (st) 23:59"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31.12.2025 (ons) 23.59"
+          }
         }
       }
     },
@@ -756,6 +798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 d 4 h"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 d 4 t"
           }
         }
       }
@@ -852,6 +900,12 @@
             "state" : "translated",
             "value" : "5 h 24 min"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 t 24 min"
+          }
         }
       }
     },
@@ -945,6 +999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brzy vstávání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snart opvågning"
           }
         }
       }
@@ -1040,6 +1100,12 @@
             "state" : "translated",
             "value" : "Vstávání %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opvågning %@"
+          }
         }
       }
     },
@@ -1134,6 +1200,12 @@
             "state" : "translated",
             "value" : "Do vstávání %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ til opvågning"
+          }
         }
       }
     },
@@ -1227,6 +1299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbývající čas do vstávání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage til opvågning"
           }
         }
       }
@@ -1323,6 +1401,12 @@
             "state" : "translated",
             "value" : "Zbývající čas"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage"
+          }
         }
       }
     },
@@ -1417,6 +1501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbývající čas do dalšího termínu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage til næste frist"
           }
         }
       }
@@ -1513,6 +1603,12 @@
             "state" : "translated",
             "value" : "Pergamen termínů"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fristpergament"
+          }
         }
       }
     },
@@ -1606,6 +1702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Žádné termíny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen frister"
           }
         }
       }
@@ -1701,6 +1803,12 @@
             "state" : "translated",
             "value" : "Termín uplynul 🏁"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fristen er udløbet 🏁"
+          }
         }
       }
     },
@@ -1795,6 +1903,12 @@
             "state" : "translated",
             "value" : "Začíná nový den"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En ny dag begynder"
+          }
         }
       }
     },
@@ -1888,6 +2002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spánek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sover"
           }
         }
       }
@@ -1984,6 +2104,12 @@
             "state" : "translated",
             "value" : "Roční pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årspergament"
+          }
         }
       }
     },
@@ -2078,6 +2204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbývající čas do usnutí dnes"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage til sengetid i dag"
           }
         }
       }
@@ -2174,6 +2306,12 @@
             "state" : "translated",
             "value" : "Letos"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I år"
+          }
         }
       }
     },
@@ -2268,6 +2406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbývající čas letos"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage i år"
           }
         }
       }
@@ -2364,6 +2508,12 @@
             "state" : "translated",
             "value" : "Měsíční pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månedspergament"
+          }
         }
       }
     },
@@ -2458,6 +2608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tento měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne måned"
           }
         }
       }
@@ -2554,6 +2710,12 @@
             "state" : "translated",
             "value" : "Zbývající čas tento měsíc"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage denne måned"
+          }
         }
       }
     },
@@ -2648,6 +2810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tento týden"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne uge"
           }
         }
       }
@@ -2744,6 +2912,12 @@
             "state" : "translated",
             "value" : "Zbývající čas tento týden"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage denne uge"
+          }
         }
       }
     },
@@ -2838,6 +3012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Denní pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dagspergament"
           }
         }
       }
@@ -2934,6 +3114,12 @@
             "state" : "translated",
             "value" : "Na zamčené obrazovce uvidíte, kolik zbývá do usnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se, hvor lang tid der er til sengetid, direkte på låseskærmen"
+          }
         }
       }
     },
@@ -3027,6 +3213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sladké sny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søde drømme"
           }
         }
       }
@@ -3123,6 +3315,12 @@
             "state" : "translated",
             "value" : "Týdenní pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ugepergament"
+          }
         }
       }
     },
@@ -3217,6 +3415,12 @@
             "state" : "translated",
             "value" : "Spánek %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seng %@"
+          }
         }
       }
     },
@@ -3310,6 +3514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do usnutí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Til sengetid"
           }
         }
       }
@@ -3406,6 +3616,12 @@
             "state" : "translated",
             "value" : "Zbývající čas do usnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage til sengetid"
+          }
         }
       }
     },
@@ -3501,6 +3717,12 @@
             "state" : "translated",
             "value" : "Odevzdat projekt"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aflever projektet"
+          }
         }
       }
     },
@@ -3595,6 +3817,12 @@
             "state" : "translated",
             "value" : "🌅 Brzy vstávání · %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Snart opvågning · %@"
+          }
         }
       }
     },
@@ -3688,6 +3916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 Zbývá %@%%"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@%% tilbage"
           }
         }
       }
@@ -3784,6 +4018,12 @@
             "state" : "translated",
             "value" : "🔥 Zbývá %lld%%"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %lld%% tilbage"
+          }
         }
       }
     },
@@ -3878,6 +4118,12 @@
             "state" : "translated",
             "value" : "🔥 Do usnutí %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@ til sengetid"
+          }
         }
       }
     },
@@ -3971,6 +4217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 Do vstávání %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 %@ til opvågning"
           }
         }
       }

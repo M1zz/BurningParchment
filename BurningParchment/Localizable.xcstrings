@@ -97,6 +97,12 @@
             "state" : "translated",
             "value" : ":%lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
+          }
         }
       }
     },
@@ -201,6 +207,12 @@
             "state" : "translated",
             "value" : "Termín: %@ %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frist: %@ %@"
+          }
         }
       }
     },
@@ -296,6 +308,12 @@
             "state" : "translated",
             "value" : "%@ · týden %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · uge %lld"
+          }
         }
       }
     },
@@ -386,6 +404,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -485,6 +509,12 @@
             "state" : "translated",
             "value" : "%@ — čas, který ještě nepadl do žádné urny."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — tid, der endnu ikke er kommet i nogen urne."
+          }
         }
       }
     },
@@ -579,6 +609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Šli jste spát o %@ později. Dnešní ráno je o tolik přiškvařené"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du faldt i søvn %@ for sent. Morgenen i dag er svedet af tilsvarende"
           }
         }
       }
@@ -675,6 +711,12 @@
             "state" : "translated",
             "value" : "Zítřejší pergamen shořel po %@.\\nPřiškvařený zůstává jen čas, kdy jste byli vzhůru."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament brændte efter %@.\\nKun den tid, du var vågen, efterlader en svidning."
+          }
         }
       }
     },
@@ -769,6 +811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen %@"
           }
         }
       }
@@ -865,6 +913,12 @@
             "state" : "translated",
             "value" : "Vloží se do urny %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommer i urnen %@"
+          }
         }
       }
     },
@@ -960,6 +1014,12 @@
             "state" : "translated",
             "value" : "Dát urně %@ význam"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giv urnen %@ en betydning"
+          }
         }
       }
     },
@@ -1053,6 +1113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "V urně %1$@ zbývá zrnek popela: %2$@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen %1$@ rummer askekorn: %2$@"
           }
         }
       }
@@ -1149,6 +1215,12 @@
             "state" : "translated",
             "value" : "V urně %1$@ zbývá zrnek popela: %2$lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen %1$@ rummer askekorn: %2$lld"
+          }
         }
       }
     },
@@ -1243,6 +1315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ohlédnutí: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksioner: %@"
           }
         }
       }
@@ -1339,6 +1417,12 @@
             "state" : "translated",
             "value" : "Začne za %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starter om %@"
+          }
         }
       }
     },
@@ -1433,6 +1517,12 @@
             "state" : "translated",
             "value" : "Pergamen začne hořet za %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamentet begynder at brænde om %@"
+          }
         }
       }
     },
@@ -1526,6 +1616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbývá %@%%"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%% tilbage"
           }
         }
       }
@@ -1622,6 +1718,12 @@
             "state" : "translated",
             "value" : "%1$@, zbývá %2$lld%%"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, %2$lld%% tilbage"
+          }
         }
       }
     },
@@ -1716,6 +1818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, oheň zhasnut s rezervou %2$lld min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, ilden slukket med %2$lld min i overskud"
           }
         }
       }
@@ -1812,6 +1920,12 @@
             "state" : "translated",
             "value" : "%@, žádné záznamy"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, ingen indlæg"
+          }
         }
       }
     },
@@ -1906,6 +2020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, popel: %2$lld"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, aske: %2$lld"
           }
         }
       }
@@ -2002,6 +2122,12 @@
             "state" : "translated",
             "value" : "%1$@, ohlédnutí: %2$lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, refleksioner: %2$lld"
+          }
         }
       }
     },
@@ -2096,6 +2222,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -2185,6 +2317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nocí se sfouknutým ohněm: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nætter med pustet ild: %@"
           }
         }
       }
@@ -2281,6 +2419,12 @@
             "state" : "translated",
             "value" : "Aplikace byla otevřená v %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appen var åben kl. %@"
+          }
         }
       }
     },
@@ -2375,6 +2519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oheň jste sfoukli v %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du pustede ilden ud kl. %@"
           }
         }
       }
@@ -2472,6 +2622,12 @@
             "state" : "translated",
             "value" : "%1$@ d · popel: %2$@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ d · aske: %2$@"
+          }
         }
       }
     },
@@ -2567,6 +2723,12 @@
             "state" : "translated",
             "value" : "Zbývá %lld%%"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% tilbage"
+          }
         }
       }
     },
@@ -2658,6 +2820,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -2757,6 +2925,12 @@
             "state" : "translated",
             "value" : "%lld×"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld gange"
+          }
         }
       }
     },
@@ -2852,6 +3026,12 @@
             "state" : "translated",
             "value" : "Nocí se sfouknutým ohněm: %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nætter med pustet ild: %lld"
+          }
         }
       }
     },
@@ -2943,6 +3123,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -3042,6 +3228,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld sek"
+          }
         }
       }
     },
@@ -3136,6 +3328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "S rezervou %lld min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med %lld min i overskud"
           }
         }
       }
@@ -3232,6 +3430,12 @@
             "state" : "translated",
             "value" : "Oheň zhasnut s rezervou %lld min"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden slukket med %lld min i overskud"
+          }
         }
       }
     },
@@ -3326,6 +3530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld h"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld t"
           }
         }
       }
@@ -3422,6 +3632,12 @@
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld t %2$lld min"
+          }
         }
       }
     },
@@ -3513,6 +3729,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld d"
@@ -3612,6 +3834,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld h"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld t"
+          }
         }
       }
     },
@@ -3706,6 +3934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld d · popel: %2$lld"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d · aske: %2$lld"
           }
         }
       }
@@ -3802,6 +4036,12 @@
             "state" : "translated",
             "value" : "Týden %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uge %lld"
+          }
         }
       }
     },
@@ -3897,6 +4137,12 @@
             "state" : "translated",
             "value" : "%lld s"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sek"
+          }
         }
       }
     },
@@ -3991,6 +4237,12 @@
             "state" : "translated",
             "value" : "Smazat „%@“?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet “%@”?"
+          }
         }
       }
     },
@@ -4084,6 +4336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte termín tlačítkem +"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj en med +-knappen"
           }
         }
       }
@@ -4180,6 +4438,12 @@
             "state" : "translated",
             "value" : "Do 10 minut se počítá jako včas"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inden for 10 minutter regnes som til tiden"
+          }
         }
       }
     },
@@ -4274,6 +4538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rok"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "År"
           }
         }
       }
@@ -4370,6 +4640,12 @@
             "state" : "translated",
             "value" : "Měsíc"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måned"
+          }
         }
       }
     },
@@ -4465,6 +4741,12 @@
             "state" : "translated",
             "value" : "Den"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag"
+          }
         }
       }
     },
@@ -4559,6 +4841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Týden"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uge"
           }
         }
       }
@@ -4658,6 +4946,12 @@
             "state" : "translated",
             "value" : "Sdílet nebo uložit PDF"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del eller gem PDF"
+          }
         }
       }
     },
@@ -4755,6 +5049,12 @@
             "state" : "translated",
             "value" : "· ⊕ těžiště"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ tyngdepunkt"
+          }
         }
       }
     },
@@ -4848,6 +5148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· Starší ohlédnutí bez uloženého bodu (%@) jsou rozptýlena v rámci svého kvadrantu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ ældre refleksioner uden gemt punkt er spredt i deres kvadrant"
           }
         }
       }
@@ -4943,6 +5249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· Starší ohlédnutí bez uloženého bodu (%lld) jsou rozptýlena v rámci svého kvadrantu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld ældre refleksioner uden gemt punkt er spredt i deres kvadrant"
           }
         }
       }
@@ -5052,6 +5364,12 @@
             "state" : "translated",
             "value" : "Znovu načíst cenu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hent pris igen"
+          }
         }
       }
     },
@@ -5146,6 +5464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nejdelší série"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Længste stime"
           }
         }
       }
@@ -5242,6 +5566,12 @@
             "state" : "translated",
             "value" : "Vděčnost"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taknemmelighed"
+          }
         }
       }
     },
@@ -5336,6 +5666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontaktovat vývojáře"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt udvikleren"
           }
         }
       }
@@ -5432,6 +5768,12 @@
             "state" : "translated",
             "value" : "Zásady ochrany osobních údajů"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privatlivspolitik"
+          }
         }
       }
     },
@@ -5527,6 +5869,12 @@
             "state" : "translated",
             "value" : "Burácející, vzplanující plameny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brølende, springende flammer"
+          }
         }
       }
     },
@@ -5620,6 +5968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data ze Zdraví: usnuli jste v %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data fra Helbred: faldt i søvn kl. %@"
           }
         }
       }
@@ -5716,6 +6070,12 @@
             "state" : "translated",
             "value" : "Data o spánku ze Zdraví"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søvndata fra Helbred"
+          }
         }
       }
     },
@@ -5810,6 +6170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Propojit data o spánku ze Zdraví"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilslut søvndata fra Helbred"
           }
         }
       }
@@ -5906,6 +6272,12 @@
             "state" : "translated",
             "value" : "Propojit data o spánku ze Zdraví"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilslut søvndata fra Helbred"
+          }
         }
       }
     },
@@ -6001,6 +6373,12 @@
             "state" : "translated",
             "value" : "Propojeno s daty o spánku ze Zdraví"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilsluttet søvndata fra Helbred"
+          }
         }
       }
     },
@@ -6094,6 +6472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ve Zdraví není záznam o spánku z minulé noci"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der er ingen søvndata for i nat i Helbred"
           }
         }
       }
@@ -6190,6 +6574,12 @@
             "state" : "translated",
             "value" : "Klidné, jemné chvění"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et roligt, blidt flimmer"
+          }
         }
       }
     },
@@ -6284,6 +6674,12 @@
             "state" : "translated",
             "value" : "Přepsat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv om"
+          }
         }
       }
     },
@@ -6377,6 +6773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brzy je čas vstávat"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snart tid til at stå op"
           }
         }
       }
@@ -6473,6 +6875,12 @@
             "state" : "translated",
             "value" : "Vztahy"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relationer"
+          }
         }
       }
     },
@@ -6567,6 +6975,12 @@
             "state" : "translated",
             "value" : "Není to předplatné. Zaplatíte jednou a máte navždy."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det er ikke et abonnement. Betal én gang, og behold det for altid."
+          }
         }
       }
     },
@@ -6660,6 +7074,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obnovit nákupy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gendan køb"
           }
         }
       }
@@ -6756,6 +7176,12 @@
             "state" : "translated",
             "value" : "Nákup se nepodařilo dokončit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Købet kunne ikke gennemføres"
+          }
         }
       }
     },
@@ -6850,6 +7276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čas, který utekl"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid, der gled væk"
           }
         }
       }
@@ -6946,6 +7378,12 @@
             "state" : "translated",
             "value" : "Prostě to uteklo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gled bare væk"
+          }
         }
       }
     },
@@ -7041,6 +7479,12 @@
             "state" : "translated",
             "value" : "Co přestat dělat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ting at holde op med"
+          }
         }
       }
     },
@@ -7134,6 +7578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Záznam není správně? Opravte ho sami"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er indlægget forkert? Ret det selv"
           }
         }
       }
@@ -7230,6 +7680,12 @@
             "state" : "translated",
             "value" : "Zapsat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem"
+          }
         }
       }
     },
@@ -7324,6 +7780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnů se záznamem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dage med indlæg"
           }
         }
       }
@@ -7420,6 +7882,12 @@
             "state" : "translated",
             "value" : "Radost"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glæde"
+          }
         }
       }
     },
@@ -7514,6 +7982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavení vstávání a usínání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstillinger for opvågning og sengetid"
           }
         }
       }
@@ -7610,6 +8084,12 @@
             "state" : "translated",
             "value" : "Čas vstávání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opvågningstid"
+          }
         }
       }
     },
@@ -7704,6 +8184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Od vstávání do usnutí pergamen pomalu hoří"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du står op til sengetid brænder dit pergament langsomt ned"
           }
         }
       }
@@ -7800,6 +8286,12 @@
             "state" : "translated",
             "value" : "Před vstáváním"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Før opvågning"
+          }
         }
       }
     },
@@ -7893,6 +8385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do vstávání %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ til opvågning"
           }
         }
       }
@@ -7989,6 +8487,12 @@
             "state" : "translated",
             "value" : "Automatické odpočítávání od vstávání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk nedtælling fra opvågning"
+          }
         }
       }
     },
@@ -8084,6 +8588,12 @@
             "state" : "translated",
             "value" : "Od vstávání do usnutí\\npergamen pomalu hoří"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du står op til sengetid\\nbrænder pergamentet langsomt ned"
+          }
         }
       }
     },
@@ -8172,6 +8682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "z doby bdění"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "af din vågne tid"
           }
         }
       }
@@ -8268,6 +8784,12 @@
             "state" : "translated",
             "value" : "Odpočívejte klidně u zhaslého ohně"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvil trygt ved den slukkede ild"
+          }
         }
       }
     },
@@ -8362,6 +8884,12 @@
             "state" : "translated",
             "value" : "Vyp."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra"
+          }
         }
       }
     },
@@ -8451,6 +8979,12 @@
             "state" : "translated",
             "value" : "Konec"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slut"
+          }
         }
       }
     },
@@ -8539,6 +9073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spalte jen čas, který patří vám"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brænd kun den tid, der er din"
           }
         }
       }
@@ -8635,6 +9175,12 @@
             "state" : "translated",
             "value" : "Moje cíle"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mine mål"
+          }
         }
       }
     },
@@ -8724,6 +9270,12 @@
             "state" : "translated",
             "value" : "Můj volný čas"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min fritid"
+          }
         }
       }
     },
@@ -8812,6 +9364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavit můj volný čas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstil min fritid"
           }
         }
       }
@@ -8908,6 +9466,12 @@
             "state" : "translated",
             "value" : "Později"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senere"
+          }
         }
       }
     },
@@ -9003,6 +9567,12 @@
             "state" : "translated",
             "value" : "Sfouknout"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puste væk"
+          }
         }
       }
     },
@@ -9096,6 +9666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Datum"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dato"
           }
         }
       }
@@ -9192,6 +9768,12 @@
             "state" : "translated",
             "value" : "Zítřek čeká v úlomku, který jsem si nechal(a)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen venter i det brudstykke, jeg gemte"
+          }
         }
       }
     },
@@ -9286,6 +9868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poslední žhavé uhlíky nechám zítřejšímu já"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De sidste gløder overlader jeg til mit morgen-jeg"
           }
         }
       }
@@ -9382,6 +9970,12 @@
             "state" : "translated",
             "value" : "Zbytek uschováme.\\nTeď se dobře vyspěte."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi gemmer det, der er tilbage.\\nNu skal du sove godt."
+          }
         }
       }
     },
@@ -9476,6 +10070,12 @@
             "state" : "translated",
             "value" : "Uschováváme, co zbylo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemmer det, der var tilbage"
+          }
         }
       }
     },
@@ -9569,6 +10169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "zbývá"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tilbage"
           }
         }
       }
@@ -9665,6 +10271,12 @@
             "state" : "translated",
             "value" : "Tiše dýchající žár"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et lavt, åndende skær"
+          }
         }
       }
     },
@@ -9759,6 +10371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krok Poznámka na zítra"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trinnet Note til i morgen"
           }
         }
       }
@@ -9855,6 +10473,12 @@
             "state" : "translated",
             "value" : "Co nového zkusíte zítra?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad vil du prøve nyt i morgen?"
+          }
         }
       }
     },
@@ -9948,6 +10572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zítra ráno se objeví jako pruh nahoře na pergamenu a shoří spolu s vaším dnem."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgen tidlig dukker det op som et bånd øverst på pergamentet og brænder sammen med din dag."
           }
         }
       }
@@ -10044,6 +10674,12 @@
             "state" : "translated",
             "value" : "Jak to zítra uchopíte?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan vil du gribe det an i morgen?"
+          }
         }
       }
     },
@@ -10138,6 +10774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čeho se zítra vzdáte?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad vil du skære fra i morgen?"
           }
         }
       }
@@ -10234,6 +10876,12 @@
             "state" : "translated",
             "value" : "Jak strávíte zítřek jinak?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan vil du bruge i morgen anderledes?"
+          }
         }
       }
     },
@@ -10327,6 +10975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zítřejší pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament"
           }
         }
       }
@@ -10423,6 +11077,12 @@
             "state" : "translated",
             "value" : "Zítřejší pergamen se tu zastavil.\\nSladké sny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament stoppede her.\\nSøde drømme"
+          }
         }
       }
     },
@@ -10516,6 +11176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zítřejší pergamen hoří"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgens pergament brænder"
           }
         }
       }
@@ -10612,6 +11278,12 @@
             "state" : "translated",
             "value" : "Uhasí oheň na zítřejším pergamenu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slukker ilden på i morgens pergament"
+          }
         }
       }
     },
@@ -10706,6 +11378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zkontrolujte připojení k síti a zkuste to znovu."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tjek din netværksforbindelse, og prøv igen."
           }
         }
       }
@@ -10802,6 +11480,12 @@
             "state" : "translated",
             "value" : "Soumrak"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solnedgang"
+          }
         }
       }
     },
@@ -10896,6 +11580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Šel/šla jsem spát pozdě"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg gik sent i seng"
           }
         }
       }
@@ -10992,6 +11682,12 @@
             "state" : "translated",
             "value" : "Nedohořelý den je stále celý den"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En dag, der ikke brændte helt ned, er stadig en hel dag"
+          }
         }
       }
     },
@@ -11086,6 +11782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobrazit jinou větu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis en anden sætning"
           }
         }
       }
@@ -11182,6 +11884,12 @@
             "state" : "translated",
             "value" : "Spalte v jiné barvě"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brænd i en anden farve"
+          }
         }
       }
     },
@@ -11276,6 +11984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Další"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Næste"
           }
         }
       }
@@ -11372,6 +12086,12 @@
             "state" : "translated",
             "value" : "Příští měsíc"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Næste måned"
+          }
         }
       }
     },
@@ -11460,6 +12180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Další volný čas · %1$@ %2$@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Næste fritid · %1$@ %2$@"
           }
         }
       }
@@ -11556,6 +12282,12 @@
             "state" : "translated",
             "value" : "Jak byste to příště mohli dokončit?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan kunne du blive færdig næste gang?"
+          }
         }
       }
     },
@@ -11650,6 +12382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Živé zobrazení v Dynamic Island"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Live-opdateringer i Dynamic Island"
           }
         }
       }
@@ -11746,6 +12484,12 @@
             "state" : "translated",
             "value" : "Tmavý"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk"
+          }
         }
       }
     },
@@ -11839,6 +12583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zavřít"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luk"
           }
         }
       }
@@ -11935,6 +12685,12 @@
             "state" : "translated",
             "value" : "Zavřít — vše, co jste napsali, je uloženo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luk — alt, hvad du har skrevet, er gemt"
+          }
         }
       }
     },
@@ -12029,6 +12785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måne"
           }
         }
       }
@@ -12125,6 +12887,12 @@
             "state" : "translated",
             "value" : "Měsíční hanji"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneskins-hanji"
+          }
         }
       }
     },
@@ -12219,6 +12987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Měsíční hanji, celadon, soumrak. Mění barvu papíru i plamene."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneskins-hanji, celadon, solnedgang. Skift farven på papiret og flammen."
           }
         }
       }
@@ -12315,6 +13089,12 @@
             "state" : "translated",
             "value" : "Hořte v měsíčním hanji, celadonu nebo soumraku — jako stepní požár, uhlíky nebo prskavka"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brænd i måneskins-hanji, celadon eller solnedgang som prærieild, gløder eller stjernekaster"
+          }
         }
       }
     },
@@ -12410,6 +13190,12 @@
             "state" : "translated",
             "value" : "Otevřete měsíc a najdete jeho týdenní urny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbn en måned for at finde dens ugeurner"
+          }
         }
       }
     },
@@ -12504,6 +13290,12 @@
             "state" : "translated",
             "value" : "Popel uvnitř"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske indeni"
+          }
         }
       }
     },
@@ -12597,6 +13389,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zavřít můžete i bez odpovědi. Nepotvrzené noci proběhnou bez přiškvaření."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan roligt lukke uden at svare. Ubekræftede nætter går uden svidning."
           }
         }
       }
@@ -12693,6 +13491,12 @@
             "state" : "translated",
             "value" : "Stačí zhruba"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et groft bud er fint"
+          }
         }
       }
     },
@@ -12788,6 +13592,12 @@
             "state" : "translated",
             "value" : "Co uděláte zítra, abyste to zvládli ještě lépe?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad gør du i morgen for at gøre det endnu bedre?"
+          }
         }
       }
     },
@@ -12875,6 +13685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj"
           }
         }
       }
@@ -12971,6 +13787,12 @@
             "state" : "translated",
             "value" : "Termíny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frister"
+          }
         }
       }
     },
@@ -13065,6 +13887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Neomezené termíny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrænsede frister"
           }
         }
       }
@@ -13161,6 +13989,12 @@
             "state" : "translated",
             "value" : "Smazat termín"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet frist"
+          }
         }
       }
     },
@@ -13255,6 +14089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upravit termín"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger frist"
           }
         }
       }
@@ -13351,6 +14191,12 @@
             "state" : "translated",
             "value" : "Karta termínů se zobrazí sama, jakmile termín přidáte"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fanen Frister vises automatisk, når du tilføjer en frist"
+          }
         }
       }
     },
@@ -13445,6 +14291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do termínu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Til fristen"
           }
         }
       }
@@ -13541,6 +14393,12 @@
             "state" : "translated",
             "value" : "Chcete víc termínů?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vil du have flere frister?"
+          }
         }
       }
     },
@@ -13634,6 +14492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Žádné termíny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen frister"
           }
         }
       }
@@ -13730,6 +14594,12 @@
             "state" : "translated",
             "value" : "Výzva"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udfordring"
+          }
         }
       }
     },
@@ -13823,6 +14693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tvar"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Form"
           }
         }
       }
@@ -13919,6 +14795,12 @@
             "state" : "translated",
             "value" : "Dvojitým klepnutím úlomek otočíte"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dobbelttryk for at vende brudstykket"
+          }
         }
       }
     },
@@ -14013,6 +14895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím na bod na obou osách ohlédnutí zařadíte"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sortér ved at trykke på et punkt langs de to akser"
           }
         }
       }
@@ -14109,6 +14997,12 @@
             "state" : "translated",
             "value" : "Otočte ho a zanechte na rubu řádek."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vend det, og efterlad en linje på bagsiden."
+          }
         }
       }
     },
@@ -14204,6 +15098,12 @@
             "state" : "translated",
             "value" : "Přepsat rub"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv bagsiden om"
+          }
         }
       }
     },
@@ -14298,6 +15198,12 @@
             "state" : "translated",
             "value" : "Řádek na rub"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En linje til bagsiden"
+          }
         }
       }
     },
@@ -14391,6 +15297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napsat na rub"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv på bagsiden"
           }
         }
       }
@@ -14487,6 +15399,12 @@
             "state" : "translated",
             "value" : "Rub je prázdný"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagsiden er tom"
+          }
         }
       }
     },
@@ -14581,6 +15499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepní požár"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prærieild"
           }
         }
       }
@@ -14677,6 +15601,12 @@
             "state" : "translated",
             "value" : "Světlý"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lys"
+          }
         }
       }
     },
@@ -14770,6 +15700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Termín uplynul 🏁"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fristen er udløbet 🏁"
           }
         }
       }
@@ -14865,6 +15801,12 @@
             "state" : "translated",
             "value" : "Čas do termínu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage til fristen"
+          }
         }
       }
     },
@@ -14958,6 +15900,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Datum termínu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forfaldsdato"
           }
         }
       }
@@ -15054,6 +16002,12 @@
             "state" : "translated",
             "value" : "Měsíc, kdy jste splnili nejvíc z toho, co jste chtěli"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneden, hvor du gjorde mest af det, du havde tænkt dig"
+          }
         }
       }
     },
@@ -15148,6 +16102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Udělal(a) jsem, co jsem chtěl(a)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjorde, som jeg havde tænkt"
           }
         }
       }
@@ -15244,6 +16204,12 @@
             "state" : "translated",
             "value" : "Udělal(a) jsem, co jsem zamýšlel(a)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjorde, hvad jeg ville"
+          }
         }
       }
     },
@@ -15338,6 +16304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapněte mikrofon, abyste mohli oheň sfouknout"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå mikrofonen til for at slukke ilden"
           }
         }
       }
@@ -15434,6 +16406,12 @@
             "state" : "translated",
             "value" : "Vytvořit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opret"
+          }
         }
       }
     },
@@ -15522,6 +16500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Každý den"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver dag"
           }
         }
       }
@@ -15614,6 +16598,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop"
@@ -15713,6 +16703,12 @@
             "state" : "translated",
             "value" : "V kolik jste usnuli?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvornår faldt du i søvn?"
+          }
         }
       }
     },
@@ -15807,6 +16803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nemusíte spálit všechno"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du behøver ikke brænde alt"
           }
         }
       }
@@ -15903,6 +16905,12 @@
             "state" : "translated",
             "value" : "Nasbíraný popel"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samlet aske"
+          }
         }
       }
     },
@@ -15997,6 +17005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Styl"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil"
           }
         }
       }
@@ -16093,6 +17107,12 @@
             "state" : "translated",
             "value" : "Uschované úlomky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemte brudstykker"
+          }
         }
       }
     },
@@ -16186,6 +17206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uschované úlomky: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemte brudstykker: %@"
           }
         }
       }
@@ -16282,6 +17308,12 @@
             "state" : "translated",
             "value" : "Uschované úlomky: %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemte brudstykker: %lld"
+          }
         }
       }
     },
@@ -16376,6 +17408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vezměte si uschované úlomky s sebou"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag dine brudstykker med dig"
           }
         }
       }
@@ -16472,6 +17510,12 @@
             "state" : "translated",
             "value" : "Sdílejte své úlomky jako karty a plakáty"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del dine brudstykker som kort og plakater"
+          }
         }
       }
     },
@@ -16566,6 +17610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nevyšlo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missede"
           }
         }
       }
@@ -16662,6 +17712,12 @@
             "state" : "translated",
             "value" : "Bezplatná verze udrží až %lld termín. S Pro odpočítáváte tolik cílů, kolik chcete."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den gratis version rummer op til %lld frist. Med Pro kan du tælle ned til lige så mange mål, du vil."
+          }
         }
       }
     },
@@ -16756,6 +17812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co vás drželo vzhůru? (volitelné)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad holdt dig oppe? (valgfrit)"
           }
         }
       }
@@ -16852,6 +17914,12 @@
             "state" : "translated",
             "value" : "Pruh"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bjælke"
+          }
         }
       }
     },
@@ -16946,6 +18014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pozadí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baggrund"
           }
         }
       }
@@ -17042,6 +18116,12 @@
             "state" : "translated",
             "value" : "Jiskra"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gnist"
+          }
         }
       }
     },
@@ -17136,6 +18216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nat"
           }
         }
       }
@@ -17232,6 +18318,12 @@
             "state" : "translated",
             "value" : "Kapka"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dråbe"
+          }
         }
       }
     },
@@ -17326,6 +18418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Učení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Læring"
           }
         }
       }
@@ -17422,6 +18520,12 @@
             "state" : "translated",
             "value" : "Hlášení chyb a nápady na funkce jsou vítány."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fejlrapporter og idéer til funktioner er meget velkomne."
+          }
         }
       }
     },
@@ -17516,6 +18620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zahodit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kassér"
           }
         }
       }
@@ -17612,6 +18722,12 @@
             "state" : "translated",
             "value" : "Blesk"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lyn"
+          }
         }
       }
     },
@@ -17706,6 +18822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozsah"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Område"
           }
         }
       }
@@ -17802,6 +18924,12 @@
             "state" : "translated",
             "value" : "Hvězda"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjerne"
+          }
         }
       }
     },
@@ -17896,6 +19024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Není co obnovit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intet køb at gendanne"
           }
         }
       }
@@ -17992,6 +19126,12 @@
             "state" : "translated",
             "value" : "Krok Psaní"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trinnet Skrivning"
+          }
         }
       }
     },
@@ -18087,6 +19227,12 @@
             "state" : "translated",
             "value" : "Uložit text a přejít na zařazení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem teksten, og gå til sortering"
+          }
         }
       }
     },
@@ -18178,6 +19324,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
@@ -18277,6 +19429,12 @@
             "state" : "translated",
             "value" : "Graf zařazení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorteringsgraf"
+          }
         }
       }
     },
@@ -18371,6 +19529,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krok Zařazení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trinnet Sortering"
           }
         }
       }
@@ -18467,6 +19631,12 @@
             "state" : "translated",
             "value" : "Nezařazeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke sorteret"
+          }
         }
       }
     },
@@ -18561,6 +19731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uložit zařazení a přejít na poznámku na zítra"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem sorteringen, og gå til noten til i morgen"
           }
         }
       }
@@ -18657,6 +19833,12 @@
             "state" : "translated",
             "value" : "Plamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flamme"
+          }
         }
       }
     },
@@ -18752,6 +19934,12 @@
             "state" : "translated",
             "value" : "Typ plamene"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flammetype"
+          }
         }
       }
     },
@@ -18846,6 +20034,12 @@
             "state" : "translated",
             "value" : "Oheň zhasl · Zobrazit uschované úlomky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket · Se gemte brudstykker"
+          }
         }
       }
     },
@@ -18939,6 +20133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oheň zhasl. Sladké sny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket. Søde drømme"
           }
         }
       }
@@ -19035,6 +20235,12 @@
             "state" : "translated",
             "value" : "Proměňte uschované úlomky v karty a plakáty."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gør de gemte brudstykker til kort og plakater."
+          }
         }
       }
     },
@@ -19129,6 +20335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "I zhasnout oheň vyžaduje odvahu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det kræver også mod at slukke ilden"
           }
         }
       }
@@ -19225,6 +20437,12 @@
             "state" : "translated",
             "value" : "Nesfoukli jste ho, ale usnuli jste včas, takže oheň zhasl sám."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du pustede ikke ud, men faldt i søvn til tiden, så ilden gik ud af sig selv."
+          }
         }
       }
     },
@@ -19319,6 +20537,12 @@
             "state" : "translated",
             "value" : "Oheň zhasl"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket"
+          }
         }
       }
     },
@@ -19412,6 +20636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hořící pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
           }
         }
       }
@@ -19508,6 +20738,12 @@
             "state" : "translated",
             "value" : "Hořící pergamen Pro"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament Pro"
+          }
         }
       }
     },
@@ -19602,6 +20838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hořící pergamen 🔥"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament 🔥"
           }
         }
       }
@@ -19698,6 +20940,12 @@
             "state" : "translated",
             "value" : "Hořící pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
         }
       }
     },
@@ -19785,6 +21033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hořící volný čas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Fritid"
           }
         }
       }
@@ -19881,6 +21135,12 @@
             "state" : "translated",
             "value" : "Získejte Hořící volný čas, barvy a typy plamene, karty úlomků, PDF knihy ohlédnutí, rok popela a neomezené termíny."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få Brændende Fritid, farver og flammetyper, brudstykkekort, PDF af refleksionsbogen, et års aske og ubegrænsede frister."
+          }
         }
       }
     },
@@ -19969,6 +21229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Získejte Hořící volný čas, motivy, karty úlomků, PDF knihy ohlédnutí, rok popela a neomezené termíny."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få Brændende Fritid, temaer, brudstykkekort, PDF af refleksionsbogen, et års aske og ubegrænsede frister."
           }
         }
       }
@@ -20065,6 +21331,12 @@
             "state" : "translated",
             "value" : "Prskavka"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjernekaster"
+          }
         }
       }
     },
@@ -20158,6 +21430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nechte prázdné a použije se vybledlá věta"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lad det stå tomt for at bruge den svage sætning"
           }
         }
       }
@@ -20254,6 +21532,12 @@
             "state" : "translated",
             "value" : "Barva"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farve"
+          }
         }
       }
     },
@@ -20348,6 +21632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Barva určuje odstín papíru a plamene. Typ plamene určuje, jak hoří. Každé vyberete zvlášť"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farven bestemmer papirets og flammens nuance. Flammetypen bestemmer, hvordan den brænder. Vælg hver for sig"
           }
         }
       }
@@ -20444,6 +21734,12 @@
             "state" : "translated",
             "value" : "Používá se"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I brug"
+          }
         }
       }
     },
@@ -20538,6 +21834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smazat"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet"
           }
         }
       }
@@ -20634,6 +21936,12 @@
             "state" : "translated",
             "value" : "Nový termín"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny frist"
+          }
         }
       }
     },
@@ -20728,6 +22036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nová urna"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny urne"
           }
         }
       }
@@ -20824,6 +22138,12 @@
             "state" : "translated",
             "value" : "Vytvořit novou urnu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opret ny urne"
+          }
         }
       }
     },
@@ -20917,6 +22237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nové ohlédnutí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny refleksion"
           }
         }
       }
@@ -21013,6 +22339,12 @@
             "state" : "translated",
             "value" : "Napsat nové ohlédnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en ny refleksion"
+          }
         }
       }
     },
@@ -21107,6 +22439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vyryt"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indgravér"
           }
         }
       }
@@ -21203,6 +22541,12 @@
             "state" : "translated",
             "value" : "Zahrnuje všechny funkce Pro, které přidáme později"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inkluderer alle Pro-funktioner, vi tilføjer senere"
+          }
         }
       }
     },
@@ -21297,6 +22641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čára"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linje"
           }
         }
       }
@@ -21393,6 +22743,12 @@
             "state" : "translated",
             "value" : "Vybráno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgt"
+          }
         }
       }
     },
@@ -21487,6 +22843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstillinger"
           }
         }
       },
@@ -21583,6 +22945,12 @@
             "state" : "translated",
             "value" : "Zapnout mikrofon v Nastavení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå mikrofonen til i Indstillinger"
+          }
         }
       }
     },
@@ -21677,6 +23045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Růst"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vækst"
           }
         }
       }
@@ -21773,6 +23147,12 @@
             "state" : "translated",
             "value" : "Buďte upřímní..."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vær ærlig..."
+          }
         }
       }
     },
@@ -21867,6 +23247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Záznamy o spánku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søvndata"
           }
         }
       }
@@ -21963,6 +23349,12 @@
             "state" : "translated",
             "value" : "Záznamy o spánku se pouze čtou a nikdy neopustí vaše zařízení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søvndata læses kun og forlader aldrig din enhed"
+          }
         }
       }
     },
@@ -22056,6 +23448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spánek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sover"
           }
         }
       }
@@ -22152,6 +23550,12 @@
             "state" : "translated",
             "value" : "Upravit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger"
+          }
         }
       }
     },
@@ -22246,6 +23650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uhlíky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gløder"
           }
         }
       }
@@ -22342,6 +23752,12 @@
             "state" : "translated",
             "value" : "h"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "t"
+          }
         }
       }
     },
@@ -22436,6 +23852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid"
           }
         }
       }
@@ -22532,6 +23954,12 @@
             "state" : "translated",
             "value" : "Nastavení času"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidsindstillinger"
+          }
         }
       }
     },
@@ -22626,6 +24054,12 @@
             "state" : "translated",
             "value" : "Čas jsem věnoval(a)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brugte tid"
+          }
         }
       }
     },
@@ -22719,6 +24153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čas jsem nevěnoval(a)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brugte ikke tid"
           }
         }
       }
@@ -22815,6 +24255,12 @@
             "state" : "translated",
             "value" : "Systém"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
         }
       }
     },
@@ -22910,6 +24356,12 @@
             "state" : "translated",
             "value" : "Zvolte Systém a bude se řídit nastavením tmavého režimu zařízení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg System for at følge enhedens indstilling for mørk tilstand"
+          }
         }
       }
     },
@@ -22998,6 +24450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Začátek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
           }
         }
       }
@@ -23092,6 +24550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čas začátku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starttidspunkt"
           }
         }
       }
@@ -23188,6 +24652,12 @@
             "state" : "translated",
             "value" : "Chyby"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fejl"
+          }
         }
       }
     },
@@ -23278,6 +24748,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbol"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbol"
@@ -23376,6 +24852,12 @@
             "state" : "translated",
             "value" : "Zatím žádný popel"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endnu ingen aske"
+          }
         }
       }
     },
@@ -23470,6 +24952,12 @@
             "state" : "translated",
             "value" : "Zatím žádné uschované úlomky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endnu ingen gemte brudstykker"
+          }
         }
       }
     },
@@ -23563,6 +25051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zatím žádný zařazený popel. Při psaní ohlédnutí klepněte do grafu."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endnu ingen sorteret aske. Tryk på grafen, når du skriver en refleksion."
           }
         }
       }
@@ -23659,6 +25153,12 @@
             "state" : "translated",
             "value" : "Zatím prázdné"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stadig tom"
+          }
         }
       }
     },
@@ -23754,6 +25254,12 @@
             "state" : "translated",
             "value" : "Zatím prázdné."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stadig tom."
+          }
         }
       }
     },
@@ -23847,6 +25353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popel bez jména"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske uden navn endnu"
           }
         }
       }
@@ -23943,6 +25455,12 @@
             "state" : "translated",
             "value" : "Zatím nic nenapsáno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intet skrevet endnu"
+          }
         }
       }
     },
@@ -24036,6 +25554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stále na první stránce"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stadig på første side"
           }
         }
       }
@@ -24132,6 +25656,12 @@
             "state" : "translated",
             "value" : "Zatím žádné urny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endnu ingen urner"
+          }
         }
       }
     },
@@ -24227,6 +25757,12 @@
             "state" : "translated",
             "value" : "Žádný popel se ještě neusadil"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aske har sat sig endnu"
+          }
         }
       }
     },
@@ -24320,6 +25856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zatím jen popel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indtil videre bare aske"
           }
         }
       }
@@ -24416,6 +25958,12 @@
             "state" : "translated",
             "value" : "Budoucí funkce Pro"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommende Pro-funktioner"
+          }
         }
       }
     },
@@ -24504,6 +26052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asi %lld dní"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omkring %lld dage"
           }
         }
       }
@@ -24600,6 +26154,12 @@
             "state" : "translated",
             "value" : "Pergamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament"
+          }
         }
       }
     },
@@ -24694,6 +26254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamen a plamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament og flamme"
           }
         }
       }
@@ -24790,6 +26356,12 @@
             "state" : "translated",
             "value" : "Motivy pergamenu a plamene"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament- og flammetemaer"
+          }
         }
       }
     },
@@ -24884,6 +26456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vyberte, jak pergamen hoří. Barva se řídí motivem výše"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg, hvordan dit pergament brænder. Farven følger temaet ovenfor"
           }
         }
       }
@@ -24980,6 +26558,12 @@
             "state" : "translated",
             "value" : "Pergamen a plamen"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament og flamme"
+          }
         }
       }
     },
@@ -25074,6 +26658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Barva papíru i plamene se mění společně"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Papirets farve og flammen skifter sammen"
           }
         }
       }
@@ -25170,6 +26760,12 @@
             "state" : "translated",
             "value" : "Do které urny to vložit?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilken urne skal det i?"
+          }
         }
       }
     },
@@ -25263,6 +26859,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Včerejší nedokončené"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ufærdigt fra i går"
           }
         }
       }
@@ -25359,6 +26961,12 @@
             "state" : "translated",
             "value" : "Včerejší nedokončené: %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ufærdigt fra i går: %lld"
+          }
         }
       }
     },
@@ -25452,6 +27060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Včera v noci jste usnuli o %@ později,\\ntakže dnešní ráno je přiškvařené"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du faldt i søvn %@ for sent i nat,\\nså morgenen i dag er svedet"
           }
         }
       }
@@ -25548,6 +27162,12 @@
             "state" : "translated",
             "value" : "Včera v noci jste usnuli o %@ později.\\nZkuste dnes večer zhasnout oheň o něco dřív."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du faldt i søvn %@ for sent i nat.\\nPrøv at slukke ilden lidt tidligere i aften."
+          }
         }
       }
     },
@@ -25643,6 +27263,12 @@
             "state" : "translated",
             "value" : "Včerejší úlomek vychladl"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nattens brudstykke er blevet koldt"
+          }
         }
       }
     },
@@ -25736,6 +27362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jaká byla včerejší noc?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan var i nat?"
           }
         }
       }
@@ -25832,6 +27464,12 @@
             "state" : "translated",
             "value" : "Jen tak"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilfældigt"
+          }
         }
       }
     },
@@ -25926,6 +27564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nakonec jsem to udělal(a)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endte med at gøre det"
           }
         }
       }
@@ -26022,6 +27666,12 @@
             "state" : "translated",
             "value" : "Co jsem nakonec udělal(a)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det, jeg endte med at gøre"
+          }
         }
       }
     },
@@ -26117,6 +27767,12 @@
             "state" : "translated",
             "value" : "Nic"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen"
+          }
         }
       }
     },
@@ -26210,6 +27866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co je tady, je jen popel, dokud tomu nedáte jméno."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det, der ligger her, er bare aske, indtil du giver det et navn."
           }
         }
       }
@@ -26306,6 +27968,12 @@
             "state" : "translated",
             "value" : "Čím pro mě tenhle popel byl…"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad denne aske har betydet for mig…"
+          }
         }
       }
     },
@@ -26400,6 +28068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odpočítávejte víc cílů najednou"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tæl ned til flere mål på én gang"
           }
         }
       }
@@ -26496,6 +28170,12 @@
             "state" : "translated",
             "value" : "Propojeno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilsluttet"
+          }
         }
       }
     },
@@ -26590,6 +28270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odpojíte v Nastavení iOS ▸ Zdraví ▸ Přístup k datům a zařízení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du afbryder forbindelsen i iOS Indstillinger ▸ Helbred ▸ Dataadgang og enheder"
           }
         }
       }
@@ -26686,6 +28372,12 @@
             "state" : "translated",
             "value" : "Odpojíte v Nastavení iOS ▸ Zdraví ▸ Přístup k datům a zařízení. Záznamy o spánku se pouze čtou a nikdy neopustí vaše zařízení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du afbryder forbindelsen i iOS Indstillinger ▸ Helbred ▸ Dataadgang og enheder. Søvndata læses kun og forlader aldrig din enhed"
+          }
         }
       }
     },
@@ -26780,6 +28472,12 @@
             "state" : "translated",
             "value" : "Propojit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilslut"
+          }
         }
       }
     },
@@ -26873,6 +28571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po propojení se už nebudeme každé ráno ptát a oheň vrátíme na dobu, kdy jste usnuli. Záznamy o spánku se pouze čtou a nikdy neopustí vaše zařízení."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du har tilsluttet, spørger vi ikke hver morgen og sætter ilden tilbage til det tidspunkt, hvor du faldt i søvn. Søvndata læses kun og forlader aldrig din enhed."
           }
         }
       }
@@ -26969,6 +28673,12 @@
             "state" : "translated",
             "value" : "Po propojení se už nebudeme každé ráno ptát. Zítřejší pergamen se vrátí na dobu, kdy jste skutečně usnuli"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du har tilsluttet, spørger vi ikke hver morgen. I morgens pergament sættes tilbage til det tidspunkt, hvor du faktisk faldt i søvn"
+          }
         }
       }
     },
@@ -27063,6 +28773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po propojení použijeme zaznamenanou dobu spánku místo každodenní otázky. Data o spánku se pouze čtou a nikdy neopustí vaše zařízení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du har tilsluttet, bruger vi din registrerede søvntid i stedet for at spørge hver morgen. Søvndata læses kun og forlader aldrig din enhed"
           }
         }
       }
@@ -27159,6 +28875,12 @@
             "state" : "translated",
             "value" : "Otevřít"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbn"
+          }
         }
       }
     },
@@ -27253,6 +28975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Např. sociální sítě max. 15 minut"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. højst 15 minutter på sociale medier"
           }
         }
       }
@@ -27349,6 +29077,12 @@
             "state" : "translated",
             "value" : "Např. týden, který jsem zvládl(a)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. ugen, hvor jeg holdt ud"
+          }
         }
       }
     },
@@ -27443,6 +29177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Např. nahradit procházkou na 20 minut"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. skift til en gåtur på 20 minutter"
           }
         }
       }
@@ -27539,6 +29279,12 @@
             "state" : "translated",
             "value" : "Např. prodloužit cvičení o 30 minut"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. træn 30 minutter ekstra"
+          }
         }
       }
     },
@@ -27633,6 +29379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Např. cvičení, vztahy, výzva roku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. træning, relationer, årets udfordring"
           }
         }
       }
@@ -27729,6 +29481,12 @@
             "state" : "translated",
             "value" : "Např. 30 minut cvičení hned po obědě"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. 30 minutters træning lige efter frokost"
+          }
         }
       }
     },
@@ -27823,6 +29581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Např. přečíst jednu kapitolu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. læs ét kapitel"
           }
         }
       }
@@ -27919,6 +29683,12 @@
             "state" : "translated",
             "value" : "Např. odevzdat projekt"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F.eks. aflever projektet"
+          }
         }
       }
     },
@@ -28013,6 +29783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnes"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag"
           }
         }
       }
@@ -28109,6 +29885,12 @@
             "state" : "translated",
             "value" : "Proč dnešek zůstal nedokončený"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvorfor i dag blev ufærdig"
+          }
         }
       }
     },
@@ -28203,6 +29985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnešní ráno je trochu přiškvařené"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgenen i dag er lidt svedet"
           }
         }
       }
@@ -28299,6 +30087,12 @@
             "state" : "translated",
             "value" : "Zanechte o svém dni jeden řádek."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Efterlad en linje om din dag."
+          }
         }
       }
     },
@@ -28393,6 +30187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dnešní den se vám\\nnepodařilo dokončit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du nåede ikke\\nat afslutte din dag"
           }
         }
       }
@@ -28489,6 +30289,12 @@
             "state" : "translated",
             "value" : "Co vám zabránilo\\ndokončit dnešní den?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad forhindrede dig i\\nat afslutte din dag?"
+          }
         }
       }
     },
@@ -28584,6 +30390,12 @@
             "state" : "translated",
             "value" : "Uhasí dnešní oheň a uschová zbylý úlomek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slukker dagens ild og gemmer det resterende brudstykke"
+          }
         }
       }
     },
@@ -28677,6 +30489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zanechat před spaním řádek?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Efterlade en linje, før du sover?"
           }
         }
       }
@@ -28773,6 +30591,12 @@
             "state" : "translated",
             "value" : "Dnes, "
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag, "
+          }
         }
       }
     },
@@ -28868,6 +30692,12 @@
             "state" : "translated",
             "value" : "Dnešek přeskočit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spring i dag over"
+          }
         }
       }
     },
@@ -28961,6 +30791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jaký byl váš den? — Klepnutím ho zaznačte"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan var din dag? — Tryk for at placere den"
           }
         }
       }
@@ -29057,6 +30893,12 @@
             "state" : "translated",
             "value" : "Co zkusíte dnes večer? (volitelné)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad vil du prøve i aften? (valgfrit)"
+          }
         }
       }
     },
@@ -29151,6 +30993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro dnešek stačí. Hořelo to krásně."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det er nok for i dag. Det brændte godt."
           }
         }
       }
@@ -29247,6 +31095,12 @@
             "state" : "translated",
             "value" : "Já rozhoduji, kde dnešek končí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg bestemmer, hvor i dag slutter"
+          }
         }
       }
     },
@@ -29341,6 +31195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napsat dnešní ohlédnutí? Klepnutím otevřete editor"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrive dagens refleksion? Tryk for at åbne editoren"
           }
         }
       }
@@ -29437,6 +31297,12 @@
             "state" : "translated",
             "value" : "dop."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "om morgenen"
+          }
         }
       }
     },
@@ -29531,6 +31397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "odp."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "om aftenen"
           }
         }
       }
@@ -29627,6 +31499,12 @@
             "state" : "translated",
             "value" : "Letos"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I år"
+          }
         }
       }
     },
@@ -29722,6 +31600,12 @@
             "state" : "translated",
             "value" : "Zbývající čas letos"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage i år"
+          }
         }
       }
     },
@@ -29815,6 +31699,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotovo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Færdig"
           }
         }
       }
@@ -29910,6 +31800,12 @@
             "state" : "translated",
             "value" : "+%@ dalších"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@ mere"
+          }
         }
       }
     },
@@ -29997,6 +31893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "a %@ dalších"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "og %@ mere"
           }
         }
       }
@@ -30093,6 +31995,12 @@
             "state" : "translated",
             "value" : "+%lld dalších"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld mere"
+          }
         }
       }
     },
@@ -30187,6 +32095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "a %lld dalších"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "og %lld mere"
           }
         }
       }
@@ -30283,6 +32197,12 @@
             "state" : "translated",
             "value" : "Kruh"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cirkel"
+          }
         }
       }
     },
@@ -30378,6 +32298,12 @@
             "state" : "translated",
             "value" : "Stránky měníte přejetím nahoru nebo dolů"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stryg op eller ned for at skifte side"
+          }
         }
       }
     },
@@ -30471,6 +32397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napsat význam"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv betydningen"
           }
         }
       }
@@ -30567,6 +32499,12 @@
             "state" : "translated",
             "value" : "Zapsat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv det ned"
+          }
         }
       }
     },
@@ -30660,6 +32598,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smazat význam"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet betydningen"
           }
         }
       }
@@ -30755,6 +32699,12 @@
             "state" : "translated",
             "value" : "Bez\\nzáměru"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uden\\nintention"
+          }
         }
       }
     },
@@ -30848,6 +32798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se\\nzáměrem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med\\nintention"
           }
         }
       }
@@ -30943,6 +32899,12 @@
             "state" : "translated",
             "value" : "V tomto účtu Apple jsme nenašli nákup Pro. Ověřte, že jste přihlášeni účtem, kterým jste nakupovali."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi fandt ikke noget Pro-køb på denne Apple-konto. Tjek, at du er logget ind med den konto, du købte med."
+          }
         }
       }
     },
@@ -31036,6 +32998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z tohoto dne nezůstal žádný popel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der er ingen aske tilbage fra denne dag"
           }
         }
       }
@@ -31132,6 +33100,12 @@
             "state" : "translated",
             "value" : "Co pro vás tento měsíc znamenal?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad betød denne måned for dig?"
+          }
         }
       }
     },
@@ -31225,6 +33199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Týdenní urny tohoto měsíce"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ugeurner i denne måned"
           }
         }
       }
@@ -31321,6 +33301,12 @@
             "state" : "translated",
             "value" : "Jak naložíte s tímto časem zítra?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan vil du håndtere denne tid i morgen?"
+          }
         }
       }
     },
@@ -31416,6 +33402,12 @@
             "state" : "translated",
             "value" : "Zahodit tento úlomek?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kassér dette brudstykke?"
+          }
         }
       }
     },
@@ -31510,6 +33502,12 @@
             "state" : "translated",
             "value" : "Co pro vás tento týden znamenal?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad betød denne uge for dig?"
+          }
         }
       }
     },
@@ -31603,6 +33601,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tato urna je prázdná."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne urne er tom."
           }
         }
       }
@@ -31699,6 +33703,12 @@
             "state" : "translated",
             "value" : "Vrátí tuto urnu do stavu popela bez jména"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gør denne urne til aske uden navn igen"
+          }
         }
       }
     },
@@ -31792,6 +33802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co zbylo v této urně"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det, der er tilbage i denne urne"
           }
         }
       }
@@ -31888,6 +33904,12 @@
             "state" : "translated",
             "value" : "Název"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navn"
+          }
         }
       }
     },
@@ -31982,6 +34004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přejmenovat"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omdøb"
           }
         }
       }
@@ -32078,6 +34106,12 @@
             "state" : "translated",
             "value" : "Urna bez názvu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne uden titel"
+          }
         }
       }
     },
@@ -32173,6 +34207,12 @@
             "state" : "translated",
             "value" : "Napsat e-mail"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send os en e-mail"
+          }
         }
       }
     },
@@ -32263,6 +34303,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -32362,6 +34408,12 @@
             "state" : "translated",
             "value" : "Sdílet obrázek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del billede"
+          }
         }
       }
     },
@@ -32456,6 +34508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tento měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne måned"
           }
         }
       }
@@ -32552,6 +34610,12 @@
             "state" : "translated",
             "value" : "Zbývající čas tento měsíc"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage denne måned"
+          }
         }
       }
     },
@@ -32646,6 +34710,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tento týden"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne uge"
           }
         }
       }
@@ -32742,6 +34812,12 @@
             "state" : "translated",
             "value" : "Zbývající čas tento týden"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage denne uge"
+          }
         }
       }
     },
@@ -32831,6 +34907,12 @@
             "state" : "translated",
             "value" : "Zbývající volný čas tento týden"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid tilbage denne uge"
+          }
         }
       }
     },
@@ -32919,6 +35001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volný čas tohoto týdne celý shořel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denne uges fritid er brændt helt ned"
           }
         }
       }
@@ -33015,6 +35103,12 @@
             "state" : "translated",
             "value" : "Opakuje se to i tento týden"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gentager sig også denne uge"
+          }
         }
       }
     },
@@ -33109,6 +35203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stalo se to i dříve tento týden"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det skete også tidligere på ugen"
           }
         }
       }
@@ -33205,6 +35305,12 @@
             "state" : "translated",
             "value" : "Podmínky použití (EULA)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brugsvilkår (EULA)"
+          }
         }
       }
     },
@@ -33299,6 +35405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Předchozí měsíc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forrige måned"
           }
         }
       }
@@ -33395,6 +35507,12 @@
             "state" : "translated",
             "value" : "DM na Instagramu (@lee25_ios)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM på Instagram (@lee25_ios)"
+          }
         }
       }
     },
@@ -33484,6 +35602,12 @@
             "state" : "translated",
             "value" : "Můj čas každý týden"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min tid hver uge"
+          }
         }
       }
     },
@@ -33572,6 +35696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamen hoří jen v hodinách, které patří vám"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamentet brænder kun i dine egne timer"
           }
         }
       }
@@ -33666,6 +35796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Využívá se jen síla vašeho dechu. Nic se nenahrává."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun styrken af dit åndedræt bruges. Intet optages."
           }
         }
       }
@@ -33762,6 +35898,12 @@
             "state" : "translated",
             "value" : "List"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blad"
+          }
         }
       }
     },
@@ -33856,6 +35998,12 @@
             "state" : "translated",
             "value" : "Automatické ukládání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autogem"
+          }
         }
       }
     },
@@ -33944,6 +36092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volný čas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid"
           }
         }
       }
@@ -34034,6 +36188,12 @@
             "state" : "translated",
             "value" : "Upravit volný čas"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger fritid"
+          }
         }
       }
     },
@@ -34122,6 +36282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat volný čas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj fritid"
           }
         }
       }
@@ -34218,6 +36384,12 @@
             "state" : "translated",
             "value" : "Volný čas se mezi tečkami stránek zobrazí jako přesýpací hodiny. Termíny se objeví samy, jakmile je přidáte"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid vises som et timeglas i sideprikkerne. Frister dukker op af sig selv, når du tilføjer dem"
+          }
         }
       }
     },
@@ -34305,6 +36477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozsvítí se, dokud váš volný čas plyne, a zbytek týdne čeká zhasnutý"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det tændes, mens din fritid går, og venter slukket resten af ugen"
           }
         }
       }
@@ -34401,6 +36579,12 @@
             "state" : "translated",
             "value" : "I malé změny jsou dobrý začátek..."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Små ændringer er et fint sted at begynde..."
+          }
         }
       }
     },
@@ -34495,6 +36679,12 @@
             "state" : "translated",
             "value" : "Klepnutím na uhlík zobrazíte ohlédnutí z toho dne"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk på en glød for at se dagens refleksioner"
+          }
         }
       }
     },
@@ -34588,6 +36778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dobrou noc"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Godnat"
           }
         }
       }
@@ -34684,6 +36880,12 @@
             "state" : "translated",
             "value" : "Dobře prohořelý den. Je čas nechat ho vychladnout."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En veltilbragt dag. Tid til at lade den køle af."
+          }
         }
       }
     },
@@ -34771,6 +36973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vynechte spánek, práci a povinnosti a přidejte jen čas, který věnujete sobě. Pergamen tohoto týdne hoří jen po dobu jeho plynutí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udelad søvn, arbejde og pligter, og tilføj kun den tid, du bruger på dig selv. Denne uges pergament brænder kun, mens den går."
           }
         }
       }
@@ -34860,6 +37068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vyberte hodiny, které jsou opravdu vaše, mimo spánek a práci. Pergamen tohoto týdne hoří jen po dobu jejich plynutí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg de timer, der virkelig er dine, ud over søvn og arbejde. Denne uges pergament brænder kun, mens de går."
           }
         }
       }
@@ -34956,6 +37170,12 @@
             "state" : "translated",
             "value" : "Čas usnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidspunkt for søvn"
+          }
         }
       }
     },
@@ -35050,6 +37270,12 @@
             "state" : "translated",
             "value" : "Samo se zastaví, jakmile usnete. Ráno zkontrolujeme, kdy jste usnuli, a vrátíme ho zpět"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det stopper af sig selv, når du sover. Om morgenen tjekker vi, hvornår du faldt i søvn, og sætter det tilbage"
+          }
         }
       }
     },
@@ -35138,6 +37364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Překrývá se se spánkem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overlapper din søvn"
           }
         }
       }
@@ -35228,6 +37460,12 @@
             "state" : "translated",
             "value" : "Překrývá se to s vaším spánkem. Držte to v době bdění."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det overlapper din søvn. Hold det inden for din vågne tid."
+          }
         }
       }
     },
@@ -35315,6 +37553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bez spánku, bez práce,\\nvyberte jen hodiny, které jsou vaše.\\nPergamen tohoto týdne hoří jen po dobu jejich plynutí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uden søvn, uden arbejde,\\nvælg kun de timer, der er dine.\\nDenne uges pergament brænder kun, mens de går."
           }
         }
       }
@@ -35411,6 +37655,12 @@
             "state" : "translated",
             "value" : "Popel"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske"
+          }
         }
       }
     },
@@ -35505,6 +37755,12 @@
             "state" : "translated",
             "value" : "Podle %@ popelů"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baseret på %@ aske"
+          }
         }
       }
     },
@@ -35592,6 +37848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popel: %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %@"
           }
         }
       }
@@ -35682,6 +37944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popel: %@ · velikost A5"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %@ · A5-størrelse"
           }
         }
       }
@@ -35778,6 +38046,12 @@
             "state" : "translated",
             "value" : "Podle %lld popelů"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baseret på %lld aske"
+          }
         }
       }
     },
@@ -35872,6 +38146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popel: %lld"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %lld"
           }
         }
       }
@@ -35968,6 +38248,12 @@
             "state" : "translated",
             "value" : "Popel: %lld · velikost A5"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske: %lld · A5-størrelse"
+          }
         }
       }
     },
@@ -36063,6 +38349,12 @@
             "state" : "translated",
             "value" : "Urny s popelem"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askeurner"
+          }
         }
       }
     },
@@ -36156,6 +38448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte ho do urny s popelem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Læg den i din askeurne"
           }
         }
       }
@@ -36252,6 +38550,12 @@
             "state" : "translated",
             "value" : "Měsíc s nejvíce popelem"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måneden med mest aske"
+          }
         }
       }
     },
@@ -36347,6 +38651,12 @@
             "state" : "translated",
             "value" : "Uschovejte trochu popela a\\nzde se objeví rozložení a kalendář uhlíků."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem lidt aske, så vises\\nfordelingen og glødekalenderen her."
+          }
         }
       }
     },
@@ -36440,6 +38750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozložení popela"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fordeling af aske"
           }
         }
       }
@@ -36536,6 +38852,12 @@
             "state" : "translated",
             "value" : "Tok popela"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askens strøm"
+          }
         }
       }
     },
@@ -36630,6 +38952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobrazit tok popela"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se askens strøm"
           }
         }
       }
@@ -36726,6 +39054,12 @@
             "state" : "translated",
             "value" : "Uložit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem"
+          }
         }
       }
     },
@@ -36821,6 +39155,12 @@
             "state" : "translated",
             "value" : "Ukládání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemmer"
+          }
         }
       }
     },
@@ -36915,6 +39255,12 @@
             "state" : "translated",
             "value" : "Ukládání…"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemmer…"
+          }
         }
       }
     },
@@ -37008,6 +39354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uloženo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemt"
           }
         }
       }
@@ -37104,6 +39456,12 @@
             "state" : "translated",
             "value" : "Uložit a začít nové ohlédnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem, og start en ny refleksion"
+          }
         }
       }
     },
@@ -37198,6 +39556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uložit a zavřít"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem og luk"
           }
         }
       }
@@ -37294,6 +39658,12 @@
             "state" : "translated",
             "value" : "Zhaslo samo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gik ud af sig selv"
+          }
         }
       }
     },
@@ -37388,6 +39758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uschovali jste úlomek, který zhasl sám"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du gemte et brudstykke, der gik ud af sig selv"
           }
         }
       }
@@ -37484,6 +39860,12 @@
             "state" : "translated",
             "value" : "Sloučte ohlédnutí do jednoho PDF k uchování nebo vytištění."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saml dine refleksioner i én PDF til at gemme eller udskrive."
+          }
         }
       }
     },
@@ -37578,6 +39960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vše"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
           }
         }
       }
@@ -37674,6 +40062,12 @@
             "state" : "translated",
             "value" : "Bod"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkt"
+          }
         }
       }
     },
@@ -37763,6 +40157,12 @@
             "state" : "translated",
             "value" : "Váš volný čas"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din fritid"
+          }
         }
       }
     },
@@ -37850,6 +40250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavení a zobrazení čísel je zdarma. Spalování jen těchto hodin je v Pro."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det er gratis at indstille den og se tallene. At brænde kun de timer er Pro."
           }
         }
       }
@@ -37945,6 +40351,12 @@
             "state" : "translated",
             "value" : "Název"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
         }
       }
     },
@@ -38038,6 +40450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oheň jste zhasili včas. Zítřejší pergamen zůstal nedotčený"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du slukkede ilden til tiden. I morgens pergament er urørt"
           }
         }
       }
@@ -38134,6 +40552,12 @@
             "state" : "translated",
             "value" : "Usnuli jste včas, takže oheň zhasl sám"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du faldt i søvn til tiden, så ilden gik ud af sig selv"
+          }
         }
       }
     },
@@ -38228,6 +40652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Šel/šla jsem spát včas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg sov til tiden"
           }
         }
       }
@@ -38324,6 +40754,12 @@
             "state" : "translated",
             "value" : "Zahodit úlomek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kassér brudstykke"
+          }
         }
       }
     },
@@ -38418,6 +40854,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karta úlomku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudstykkekort"
           }
         }
       }
@@ -38514,6 +40956,12 @@
             "state" : "translated",
             "value" : "Karty a plakáty úlomků"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudstykkekort og plakater"
+          }
         }
       }
     },
@@ -38608,6 +41056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sdílet jako kartu úlomku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del som brudstykkekort"
           }
         }
       }
@@ -38704,6 +41158,12 @@
             "state" : "translated",
             "value" : "Plakát úlomku"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudstykkeplakat"
+          }
         }
       }
     },
@@ -38799,6 +41259,12 @@
             "state" : "translated",
             "value" : "Vytvořit plakát úlomku"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lav en brudstykkeplakat"
+          }
         }
       }
     },
@@ -38892,6 +41358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím na úlomek ho otočíte"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk på brudstykket for at vende det"
           }
         }
       }
@@ -38988,6 +41460,12 @@
             "state" : "translated",
             "value" : "Rub úlomku"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudstykkets bagside"
+          }
         }
       }
     },
@@ -39082,6 +41560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Líc úlomku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudstykkets forside"
           }
         }
       }
@@ -39178,6 +41662,12 @@
             "state" : "translated",
             "value" : "Den, který zůstal trochu nedohořelý, se pamatuje déle"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En dag, der er lidt ubrændt, huskes længere"
+          }
         }
       }
     },
@@ -39271,6 +41761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chcete říct víc? (volitelné)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vil du skrive mere? (valgfrit)"
           }
         }
       }
@@ -39367,6 +41863,12 @@
             "state" : "translated",
             "value" : "Druh"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slags"
+          }
         }
       }
     },
@@ -39462,6 +41964,12 @@
             "state" : "translated",
             "value" : "Sladké sny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søde drømme"
+          }
         }
       }
     },
@@ -39550,6 +42058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Víkendy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekender"
           }
         }
       }
@@ -39646,6 +42160,12 @@
             "state" : "translated",
             "value" : "Vytvářejte urny s popelem podle témat, kolik chcete"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opret lige så mange askeurner, du vil, efter emne"
+          }
         }
       }
     },
@@ -39741,6 +42261,12 @@
             "state" : "translated",
             "value" : "Právě se plní"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fyldes lige nu"
+          }
         }
       }
     },
@@ -39829,6 +42355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Právě hoří · do %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brænder nu · indtil %@"
           }
         }
       }
@@ -39925,6 +42457,12 @@
             "state" : "translated",
             "value" : "Uloží toto ohlédnutí a otevře prázdné"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemmer denne refleksion og åbner en tom"
+          }
         }
       }
     },
@@ -40019,6 +42557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co s popelem za posledních %lld dní?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad skal vi gøre med asken fra de seneste %lld dage?"
           }
         }
       }
@@ -40115,6 +42659,12 @@
             "state" : "translated",
             "value" : "Co s popelem za posledních %lld týdnů?"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad skal vi gøre med asken fra de seneste %lld uger?"
+          }
         }
       }
     },
@@ -40210,6 +42760,12 @@
             "state" : "translated",
             "value" : "Popel po měsících za posledních 12 měsíců"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aske pr. måned de seneste 12 måneder"
+          }
         }
       }
     },
@@ -40303,6 +42859,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kam se poděly posledních 12 měsíců, měsíc po měsíci"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvor de seneste 12 måneder blev af, måned for måned"
           }
         }
       }
@@ -40399,6 +42961,12 @@
             "state" : "translated",
             "value" : "Popel za posledních 12 měsíců po měsících"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se asken fra de seneste 12 måneder, måned for måned"
+          }
         }
       }
     },
@@ -40494,6 +43062,12 @@
             "state" : "translated",
             "value" : "Podívejte se, kam utekl váš čas v každém z posledních dvanácti měsíců."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se, hvor din tid blev af hver måned de seneste tolv måneder."
+          }
         }
       }
     },
@@ -40582,6 +43156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smazat"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet"
           }
         }
       }
@@ -40680,6 +43260,12 @@
             "state" : "translated",
             "value" : "Podpora"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
         }
       }
     },
@@ -40773,6 +43359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat první popel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj den første aske"
           }
         }
       }
@@ -40869,6 +43461,12 @@
             "state" : "translated",
             "value" : "Vytvořit první urnu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opret din første urne"
+          }
         }
       }
     },
@@ -40964,6 +43562,12 @@
             "state" : "translated",
             "value" : "Začněte vytvořením první urny.\\nPojmenovat ji podle tématu nebo oblasti funguje dobře."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start med at oprette din første urne.\\nDet fungerer godt at navngive den efter emne eller område."
+          }
         }
       }
     },
@@ -41055,6 +43659,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celadon"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celadon"
@@ -41154,6 +43764,12 @@
             "state" : "translated",
             "value" : "Svíčka"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stearinlys"
+          }
         }
       }
     },
@@ -41248,6 +43864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Posledních 30 dní"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seneste 30 dage"
           }
         }
       }
@@ -41344,6 +43966,12 @@
             "state" : "translated",
             "value" : "Přidat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj"
+          }
         }
       }
     },
@@ -41438,6 +44066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doporučené časy usínání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foreslåede sengetider"
           }
         }
       }
@@ -41534,6 +44168,12 @@
             "state" : "translated",
             "value" : "Zrušit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuller"
+          }
         }
       }
     },
@@ -41629,6 +44269,12 @@
             "state" : "translated",
             "value" : "Do usnutí zbývá 1 hodina. Dnes jste odvedli skvělou práci!"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 time til sengetid. Godt gået i dag!"
+          }
         }
       }
     },
@@ -41722,6 +44368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Od 30 minut před spaním můžete na hořící\\npergamen foukat, uhasit oheň a uschovat zbytek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra 30 minutter før sengetid kan du puste på det brændende\\npergament for at slukke ilden og gemme det, der er tilbage"
           }
         }
       }
@@ -41818,6 +44470,12 @@
             "state" : "translated",
             "value" : "Čas usínání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sengetid"
+          }
         }
       }
     },
@@ -41913,6 +44571,12 @@
             "state" : "translated",
             "value" : "Usínání %2$lld%3$@ %1$@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sengetid %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -42006,6 +44670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do usnutí %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ til sengetid"
           }
         }
       }
@@ -42102,6 +44772,12 @@
             "state" : "translated",
             "value" : "Zbývající čas do usnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid tilbage til sengetid"
+          }
         }
       }
     },
@@ -42197,6 +44873,12 @@
             "state" : "translated",
             "value" : "Kapsle"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapsel"
+          }
         }
       }
     },
@@ -42290,6 +44972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klíčové slovo (volitelné)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nøgleord (valgfrit)"
           }
         }
       }
@@ -42386,6 +45074,12 @@
             "state" : "translated",
             "value" : "Zobrazit karty"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis faner"
+          }
         }
       }
     },
@@ -42479,6 +45173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím zavřete"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at lukke"
           }
         }
       }
@@ -42575,6 +45275,12 @@
             "state" : "translated",
             "value" : "Klepnutím spravujte termíny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at administrere frister"
+          }
         }
       }
     },
@@ -42669,6 +45375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím se vrátíte ke kroku Psaní"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at vende tilbage til trinnet Skrivning"
           }
         }
       }
@@ -42765,6 +45477,12 @@
             "state" : "translated",
             "value" : "Klepnutím vyberete"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at vælge"
+          }
         }
       }
     },
@@ -42860,6 +45578,12 @@
             "state" : "translated",
             "value" : "Klepnutím upravíte"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at redigere"
+          }
         }
       }
     },
@@ -42953,6 +45677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím změníte čas"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at ændre tiden"
           }
         }
       }
@@ -43049,6 +45779,12 @@
             "state" : "translated",
             "value" : "Klepnutím spravujte urny"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at administrere urner"
+          }
         }
       }
     },
@@ -43143,6 +45879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím otevřete urnu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk for at åbne urnen"
           }
         }
       }
@@ -43239,6 +45981,12 @@
             "state" : "translated",
             "value" : "Praskající, odletující jiskry"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knitrende, sprættende gnister"
+          }
         }
       }
     },
@@ -43333,6 +46081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stránky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sider"
           }
         }
       }
@@ -43429,6 +46183,12 @@
             "state" : "translated",
             "value" : "Stránka %1$lld z %2$lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side %1$lld af %2$lld"
+          }
         }
       }
     },
@@ -43523,6 +46283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indikátor stránek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sideindikator"
           }
         }
       }
@@ -43619,6 +46385,12 @@
             "state" : "translated",
             "value" : "Tečky stránek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sideprikker"
+          }
         }
       }
     },
@@ -43713,6 +46485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Styl teček stránek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil på sideprikker"
           }
         }
       }
@@ -43809,6 +46587,12 @@
             "state" : "translated",
             "value" : "Doživotní přístup · %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidsadgang · %@"
+          }
         }
       }
     },
@@ -43897,6 +46681,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pracovní dny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hverdage"
           }
         }
       }
@@ -43993,6 +46783,12 @@
             "state" : "translated",
             "value" : "Plakát"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plakat"
+          }
         }
       }
     },
@@ -44088,6 +46884,12 @@
             "state" : "translated",
             "value" : "Zobrazit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis"
+          }
         }
       }
     },
@@ -44178,6 +46980,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -44277,6 +47085,12 @@
             "state" : "translated",
             "value" : "Používáte Pro. Děkujeme 🔥"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har Pro. Tak 🔥"
+          }
         }
       }
     },
@@ -44372,6 +47186,12 @@
             "state" : "translated",
             "value" : "Přejít na Pro"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opgrader til Pro"
+          }
         }
       }
     },
@@ -44460,6 +47280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spalte svůj volný čas s Pro"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brænd min fritid med Pro"
           }
         }
       }
@@ -44556,6 +47382,12 @@
             "state" : "translated",
             "value" : "Dostupné v Pro"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fås med Pro"
+          }
         }
       }
     },
@@ -44643,6 +47475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "S Pro pergamen hoří jen v těchto hodinách"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Pro brænder pergamentet kun i disse timer"
           }
         }
       }
@@ -44737,6 +47575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odemkněte s Pro tok celého roku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås årets strøm op med Pro"
           }
         }
       }
@@ -44833,6 +47677,12 @@
             "state" : "translated",
             "value" : "Chtěl(a) jsem, ale nepovedlo se"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville gøre det, men gjorde det ikke"
+          }
         }
       }
     },
@@ -44927,6 +47777,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zamýšlel(a) jsem, ale neudělal(a)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville gøre det, men gjorde det ikke"
           }
         }
       }
@@ -45023,6 +47879,12 @@
             "state" : "translated",
             "value" : "Zachyťte svůj den, nic nezůstane stranou"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fang din dag, uden at noget går tabt"
+          }
         }
       }
     },
@@ -45117,6 +47979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Srdce"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjerte"
           }
         }
       }
@@ -45213,6 +48081,12 @@
             "state" : "translated",
             "value" : "Zaplatíte jednou, používáte navždy"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betal én gang, brug for altid"
+          }
         }
       }
     },
@@ -45301,6 +48175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Za celý rok"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over et år"
           }
         }
       }
@@ -45395,6 +48275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rok popela"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et års aske"
           }
         }
       }
@@ -45491,6 +48377,12 @@
             "state" : "translated",
             "value" : "Rok popela"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et års aske"
+          }
         }
       }
     },
@@ -45585,6 +48477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celý rok popela na první pohled"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et helt års aske på et øjeblik"
           }
         }
       }
@@ -45681,6 +48579,12 @@
             "state" : "translated",
             "value" : "Urny: %1$lld, ohlédnutí: %2$lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld urner, %2$lld refleksioner"
+          }
         }
       }
     },
@@ -45775,6 +48679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Neomezené urny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrænsede urner"
           }
         }
       }
@@ -45871,6 +48781,12 @@
             "state" : "translated",
             "value" : "Smazat urnu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet urne"
+          }
         }
       }
     },
@@ -45965,6 +48881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Police s urnami"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnehylden"
           }
         }
       }
@@ -46061,6 +48983,12 @@
             "state" : "translated",
             "value" : "Upravit urnu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger urne"
+          }
         }
       }
     },
@@ -46156,6 +49084,12 @@
             "state" : "translated",
             "value" : "Odemkněte neomezené urny a termíny."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås ubegrænsede urner og frister op."
+          }
         }
       }
     },
@@ -46250,6 +49184,12 @@
             "state" : "translated",
             "value" : "Urna už čeká.\\nPrvní popel půjde do urny %@."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnen venter allerede.\\nDin første aske kommer i %@."
+          }
         }
       }
     },
@@ -46343,6 +49283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slovo k vyrytí na urnu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et ord at indgravere på urnen"
           }
         }
       }
@@ -46439,6 +49385,12 @@
             "state" : "translated",
             "value" : "Slunce"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sol"
+          }
         }
       }
     },
@@ -46533,6 +49485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotovo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjort"
           }
         }
       }
@@ -46629,6 +49587,12 @@
             "state" : "translated",
             "value" : "Foukněte do mikrofonu ve spodní části telefonu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pust ind i mikrofonen nederst på telefonen"
+          }
         }
       }
     },
@@ -46724,6 +49688,12 @@
             "state" : "translated",
             "value" : "Vzhled"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udseende"
+          }
         }
       }
     },
@@ -46815,6 +49785,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -46914,6 +49890,12 @@
             "state" : "translated",
             "value" : "Ohlédnutí: %1$lld. Udělal(a) jsem, co jsem chtěl(a): %2$lld procent; nakonec jsem to udělal(a): %3$lld procent; chtěl(a) jsem, ale nepovedlo se: %4$lld procent; prostě to uteklo: %5$lld procent"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksioner: %1$lld. Gjorde, som jeg havde tænkt: %2$lld procent; endte med at gøre det: %3$lld procent; ville, men gjorde ikke: %4$lld procent; gled bare væk: %5$lld procent"
+          }
         }
       }
     },
@@ -47007,6 +49989,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kniha ohlédnutí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksionsbog"
           }
         }
       }
@@ -47103,6 +50091,12 @@
             "state" : "translated",
             "value" : "PDF knihy ohlédnutí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF af refleksionsbogen"
+          }
         }
       }
     },
@@ -47197,6 +50191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exportovat knihu ohlédnutí do PDF"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eksportér refleksionsbogen som PDF"
           }
         }
       }
@@ -47293,6 +50293,12 @@
             "state" : "translated",
             "value" : "Zobrazit jako knihu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se som bog"
+          }
         }
       }
     },
@@ -47388,6 +50394,12 @@
             "state" : "translated",
             "value" : "Vezměte si svou knihu ohlédnutí do ruky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold din refleksionsbog i hånden"
+          }
         }
       }
     },
@@ -47481,6 +50493,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sloučte ohlédnutí do jednoho PDF"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saml dine refleksioner i én PDF"
           }
         }
       }
@@ -47577,6 +50595,12 @@
             "state" : "translated",
             "value" : "Sloučte ohlédnutí do PDF, jedna stránka na den"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saml refleksioner i en PDF, en side pr. dag"
+          }
         }
       }
     },
@@ -47672,6 +50696,12 @@
             "state" : "translated",
             "value" : "Upravte své ohlédnutí."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rediger din refleksion."
+          }
         }
       }
     },
@@ -47765,6 +50795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidejte ohlédnutí\\na tato kniha se začne plnit."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj en refleksion,\\nså begynder denne bog at fylde."
           }
         }
       }
@@ -47861,6 +50897,12 @@
             "state" : "translated",
             "value" : "Přetažením ohlédnutí do urny je přesunete"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Træk refleksioner til en urne for at flytte dem"
+          }
         }
       }
     },
@@ -47955,6 +50997,12 @@
             "state" : "translated",
             "value" : "Sfouknout oheň"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puste ilden ud"
+          }
         }
       }
     },
@@ -48048,6 +51096,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sfoukněte plamen\\na ukončete svůj den"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puste flammen ud\\nog afslut din dag"
           }
         }
       }
@@ -48144,6 +51198,12 @@
             "state" : "translated",
             "value" : "Odpočinek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvile"
+          }
         }
       }
     },
@@ -48239,6 +51299,12 @@
             "state" : "translated",
             "value" : "Uteklo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gled væk"
+          }
         }
       }
     },
@@ -48332,6 +51398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Sladké sny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Søde drømme"
           }
         }
       }
@@ -48434,6 +51506,12 @@
             "state" : "translated",
             "value" : "Obrazovky pro větší text"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skærme til større tekst"
+          }
         }
       }
     },
@@ -48528,6 +51606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ani při největší velikosti textu se obrazovky neořezávají, ale úhledně přeskupí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selv med de største tekststørrelser omarrangeres skærmene pænt i stedet for at blive skåret af."
           }
         }
       }
@@ -48624,6 +51708,12 @@
             "state" : "translated",
             "value" : "Pohodlnější barvy a kontrast"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nemmere farver og kontrast"
+          }
         }
       }
     },
@@ -48718,6 +51808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hořící čas je dobře vidět, i když zapnete Zvýšit kontrast nebo se barvy špatně rozlišují."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se tydeligt, hvordan din tid brænder, selv med Øg kontrast slået til, eller hvis farver er svære at skelne."
           }
         }
       }
@@ -48814,6 +51910,12 @@
             "state" : "translated",
             "value" : "Více jazyků"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere sprog"
+          }
         }
       }
     },
@@ -48908,6 +52010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rychlá prohlídka pro nováčky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort rundtur for nye brugere"
           }
         }
       }
@@ -49004,6 +52112,12 @@
             "state" : "translated",
             "value" : "Krátký přehled toho, co umíte, při prvním otevření aplikace."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort guide til, hvad du kan, første gang du åbner appen."
+          }
         }
       }
     },
@@ -49098,6 +52212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co je nového"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheder"
           }
         }
       }
@@ -49194,6 +52314,12 @@
             "state" : "translated",
             "value" : "Při prvním otevření po aktualizaci uvidíte, co je nového."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åbner efter en opdatering, kan du se, hvad der er nyt."
+          }
         }
       }
     },
@@ -49288,6 +52414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Užitečné tipy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Praktiske tips"
           }
         }
       }
@@ -49384,6 +52516,12 @@
             "state" : "translated",
             "value" : "Nenápadné rady o užitečných funkcích, přesně když je potřebujete."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskrete tip om nyttige funktioner, lige når du har brug for dem."
+          }
         }
       }
     },
@@ -49478,6 +52616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri a Zkratky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri og Genveje"
           }
         }
       }
@@ -49574,6 +52718,12 @@
             "state" : "translated",
             "value" : "Zeptejte se Siri, kolik z dnešního dne zbývá."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spørg Siri, hvor meget der er tilbage af i dag."
+          }
         }
       }
     },
@@ -49668,6 +52818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synchronizace mezi zařízeními"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronisering mellem enheder"
           }
         }
       }
@@ -49764,6 +52920,12 @@
             "state" : "translated",
             "value" : "Přes iCloud mějte stejná ohlédnutí a termíny na všech zařízeních."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hav de samme refleksioner og frister på alle dine enheder med iCloud."
+          }
         }
       }
     },
@@ -49858,6 +53020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Záloha a obnovení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sikkerhedskopi og gendannelse"
           }
         }
       }
@@ -49954,6 +53122,12 @@
             "state" : "translated",
             "value" : "Uložte ohlédnutí a termíny do souboru a později je vraťte."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem dine refleksioner og frister i en fil, og hent dem tilbage senere."
+          }
         }
       }
     },
@@ -50048,6 +53222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zámek Face ID"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID-lås"
           }
         }
       }
@@ -50144,6 +53324,12 @@
             "state" : "translated",
             "value" : "Zamkněte aplikaci přes Face ID nebo Touch ID, aby ohlédnutí zůstala soukromá."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås appen med Face ID eller Touch ID for at holde dine refleksioner private."
+          }
         }
       }
     },
@@ -50238,6 +53424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozložení pro skládací iPhone"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout til foldbar iPhone"
           }
         }
       }
@@ -50334,6 +53526,12 @@
             "state" : "translated",
             "value" : "Širokou obrazovku skládacího iPhonu využijte jako dva panely vedle sebe."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug den brede skærm på en foldbar iPhone som to paneler side om side."
+          }
         }
       }
     },
@@ -50428,6 +53626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smazat všechna moje data"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet alle mine data"
           }
         }
       }
@@ -50524,6 +53728,12 @@
             "state" : "translated",
             "value" : "Kdykoli můžete přímo v aplikaci smazat všechna ohlédnutí a termíny."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet alle dine refleksioner og frister direkte i appen, når du vil."
+          }
         }
       }
     },
@@ -50618,6 +53828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pokračování v rozepsaném ohlédnutí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsæt din refleksion, hvor du slap"
           }
         }
       }
@@ -50714,6 +53930,12 @@
             "state" : "translated",
             "value" : "Co jste psali, zůstane zachováno, i když se aplikace uprostřed zavře."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det, du skrev, bliver stående, selv hvis appen lukker midt i en refleksion."
+          }
         }
       }
     },
@@ -50807,6 +54029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po korejštině a angličtině mluví aplikace nově i česky."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Efter koreansk og engelsk taler appen nu også dansk."
           }
         }
       },
@@ -50903,6 +54131,12 @@
             "state" : "translated",
             "value" : "Zkuste přejet do strany"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prøv at stryge til siden"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -50997,6 +54231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbytek tohoto týdne, měsíce a roku uvidíte na stejném pergamenu."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se, hvad der er tilbage af denne uge, måned og år, på det samme pergament."
           }
         }
       },
@@ -51093,6 +54333,12 @@
             "state" : "translated",
             "value" : "Otočte úlomek"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vend et brudstykke"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -51187,6 +54433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klepnutím na úlomek napíšete na rub řádek o tom dni."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk på et brudstykke for at skrive en linje om dagen på bagsiden."
           }
         }
       },
@@ -51283,6 +54535,12 @@
             "state" : "translated",
             "value" : "Cíle"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mål"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -51377,6 +54635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Úlomky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudstykker"
           }
         }
       },
@@ -51473,6 +54737,12 @@
             "state" : "translated",
             "value" : "Urna"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -51567,6 +54837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ohlédnutí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksion"
           }
         }
       },
@@ -51663,6 +54939,12 @@
             "state" : "translated",
             "value" : "Přidat termín"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj frist"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -51757,6 +55039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Termín %@ přidán"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frist %@ tilføjet"
           }
         }
       },
@@ -51853,6 +55141,12 @@
             "state" : "translated",
             "value" : "Termín %@ smazán"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frist %@ slettet"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -51947,6 +55241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oheň zhasl. Váš úlomek je uschován."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilden er slukket. Dit brudstykke er gemt."
           }
         }
       },
@@ -52043,6 +55343,12 @@
             "state" : "translated",
             "value" : "Vaše ohlédnutí je v urně s popelem."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din refleksion er i askeurnen."
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -52137,6 +55443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přeskočit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spring over"
           }
         }
       },
@@ -52233,6 +55545,12 @@
             "state" : "translated",
             "value" : "Začít"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom i gang"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -52327,6 +55645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sledujte, jak váš čas hoří"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se din tid brænde ned"
           }
         }
       },
@@ -52423,6 +55747,12 @@
             "state" : "translated",
             "value" : "Od vstávání do usnutí pergamen pomalu hoří. Přejetím do strany uvidíte týden, měsíc a rok."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du står op til sengetid brænder pergamentet langsomt ned. Stryg til siden for at se uge, måned og år."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -52517,6 +55847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 minut před spaním oheň sfoukněte"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 minutter før sengetid: puste ud"
           }
         }
       },
@@ -52613,6 +55949,12 @@
             "state" : "translated",
             "value" : "Foukněte do mikrofonu, uhaste oheň a uschovejte zbytek. Kontroluje se jen síla dechu, nic se nenahrává."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pust ind i mikrofonen for at slukke ilden og gemme det, der er tilbage. Kun styrken af dit åndedræt tjekkes; intet optages."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -52707,6 +56049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Každý den se promění v popel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver dag bliver til aske"
           }
         }
       },
@@ -52803,6 +56151,12 @@
             "state" : "translated",
             "value" : "Napište o svém dni jeden řádek a usadí se v urně s popelem toho týdne. Čas vstávání a spaní změníte v Nastavení."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en linje om din dag, så lægger den sig i ugens askeurne. Skift tidspunkt for opvågning og sengetid i Indstillinger."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -52897,6 +56251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopírovat"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiér"
           }
         }
       },
@@ -52993,6 +56353,12 @@
             "state" : "translated",
             "value" : "Co je nového"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheder"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -53087,6 +56453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobrazit úvodní průvodce znovu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se velkomstguiden igen"
           }
         }
       },
@@ -53183,6 +56555,12 @@
             "state" : "translated",
             "value" : "Kód se nepodařilo uplatnit. Zkuste to za chvíli znovu."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koden kunne ikke indløses. Prøv igen om lidt."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -53277,6 +56655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uplatnit kód nabídky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indløs tilbudskode"
           }
         }
       },
@@ -53373,6 +56757,12 @@
             "state" : "translated",
             "value" : "Verze %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -53467,6 +56857,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nově i česky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu på dansk"
           }
         }
       },
@@ -53563,6 +56959,12 @@
             "state" : "translated",
             "value" : "Pokud je zařízení nastaveno na češtinu, aplikace i widgety se zobrazí česky."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis din enhed er sat til dansk, vises appen og dens widgets på dansk."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -53657,6 +57059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lepší s velkým textem a vysokým kontrastem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre med stor tekst og høj kontrast"
           }
         }
       },
@@ -53753,6 +57161,12 @@
             "state" : "translated",
             "value" : "Nastavení se při velmi velkém textu už neořezává a Zvýšit kontrast ztmaví text i uhlíky."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstillinger bliver ikke længere skåret af ved meget stor tekst, og Øg kontrast gør tekst og gløder mørkere."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -53847,6 +57261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skryté funkce, třeba přejetí pro změnu období, vám nově ukážeme ve správnou chvíli."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjulte funktioner, som at stryge for at skifte periode, bliver nu vist på det rette tidspunkt."
           }
         }
       },
@@ -53943,6 +57363,12 @@
             "state" : "translated",
             "value" : "Nahlédněte, co přijde"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se, hvad der kommer"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -54037,6 +57463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "V Nastavení ▸ Podpora uvidíte připravované funkce a můžete navrhnout ty, které chcete."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Under Indstillinger ▸ Support kan du se kommende funktioner og foreslå dem, du ønsker."
           }
         }
       },
@@ -54133,6 +57565,12 @@
             "state" : "translated",
             "value" : "Jsou tu kódy nabídky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilbudskoder er her"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -54228,6 +57666,12 @@
             "state" : "translated",
             "value" : "Máte-li kód, zadejte ho v Nastavení ▸ Pro."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis du har en kode, så indtast den i Indstillinger ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -54322,6 +57766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozumím"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forstået"
           }
         }
       },

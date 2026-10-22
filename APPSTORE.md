@@ -854,3 +854,60 @@ https://m1zz.github.io/BurningParchment/cs/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/cs/
+
+## da
+
+### 이름
+
+Brændende Pergament: sengetid
+
+### 부제
+
+Dagens resterende tid brænder
+
+### 키워드
+
+timer,dagbog,vaner,widget,frist,disciplin,ritual,aften,mål,refleksion,søvnløs,rutine,søvn,nedtælling
+
+### 프로모션 텍스트
+
+Puster du på det brændende pergament før sengetid, slukker ilden: et lille ritual, der afslutter dagen. De resterende brudstykker bliver gemt.
+
+### 설명
+
+Resten af din dag brænder lige for øjnene af dig.
+Brændende Pergament viser den tid, der er tilbage, ikke med tal, men som et ark pergament, der langsomt brænder ned. Appen er lavet til dem, der ikke vil se aftenen forsvinde uden at lægge mærke til det.
+
+Dag, uge, måned, år
+Fra du vågner, til du går i seng, brænder pergamentet langsomt ned. Tiden, der er tilbage af denne uge, måned og år, kan du også se på det samme pergament.
+Tilføj et mål med en frist, så tæller tiden frem til den dag også ned.
+
+Puste ud og slutte dagen
+Fra 30 minutter før sengetid kan du puste på det brændende pergament for at slukke ilden. Kun styrken af dit åndedræt bruges, og der optages ingen lyd.
+De brudstykker, der er tilbage efter slukningen, bliver gemt. Når du vil, kan du vende et brudstykke og skrive en linje på bagsiden.
+
+En dag, der bliver til aske
+Se tilbage på den tid, der er gået, skriv en refleksion på én linje, og sæt et punkt i en graf med to akser for at se, hvor tiden blev af.
+Refleksionerne samler sig i urner efter emne, og du kan læse dem igen i refleksionsbogen.
+Skærmen Askens strøm viser, hvor tiden blev af, med en fordelingsgraf og en glødekalender.
+
+Altid lige foran dig
+Widgets på hjemmeskærmen og låseskærmen, Dynamic Island og Live Activities på låseskærmen viser den resterende tid.
+Lyst og mørkt tema, foreslåede sengetider og valg af de faner, du vil se.
+
+Brændende Pergament Pro
+Det brændende pergament, refleksionerne og ritualet med at puste ud er gratis, ligesom én frist. Pro er ikke et abonnement: ét køb, for altid.
+Det låser Brændende Fritid op, som kun brænder den fritid, du har indstillet; farver til pergament og flamme (måneskins-hanji, celadon, solnedgang); flammetyper (prærieild, gløder, stjernekaster); deling af brudstykker som kort og plakater; eksport af refleksionsbogen som PDF; askens strøm for de seneste tolv måneder; og ubegrænsede frister. Alle fremtidige Pro-funktioner er også med.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/da/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/da/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/da/

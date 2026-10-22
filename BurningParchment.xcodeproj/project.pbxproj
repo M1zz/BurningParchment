@@ -536,6 +536,7 @@
 				th,
 				vi,
 				cs,
+				da,
 			);
 			mainGroup = 39EC316FADCCDA4DC5875847;
 			minimizedProjectReferenceProxies = 1;

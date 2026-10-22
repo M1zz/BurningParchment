@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brændende Pergament — Support</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+      --yellow: #fbbf24;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* flame gradient top bar */
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .flame-icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 16px #f97316aa);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--text-dim);
+      font-size: 15px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+
+    .card + .card { margin-top: 12px; }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .card li { margin-bottom: 4px; }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: var(--orange);
+      color: #0f0d0a;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-link:hover { opacity: 0.85; }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: var(--orange-dim);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 26px; }
+      .card { padding: 20px; }
+    }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/da/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/BurningParchment/da/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="index.html" hreflang="da" lang="da" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <span class="flame-icon">🔥</span>
+  <h1>Brændende Pergament</h1>
+  <p>Fra du vågner, til du går i seng, kan du se din dag brænde ned.</p>
+</header>
+
+<main>
+
+  <!-- About -->
+  <section>
+    <h2>Om appen</h2>
+    <div class="card">
+      <h3>Hvad er Brændende Pergament?</h3>
+      <p>Brændende Pergament er en nedtællings-app, der viser, hvor meget af din dag der er tilbage, som et ark pergament, der langsomt brænder ned. Fra du vågner, til du går i seng, kan du med et blik se, hvor meget tid der er tilbage, så du kan få mest muligt ud af de timer, du stadig har.</p>
+      <div class="badge-row" style="margin-top: 14px;">
+        <span class="badge">Daglig nedtælling</span>
+        <span class="badge">Uge / måned / år</span>
+        <span class="badge">Widgets på hjemmeskærmen</span>
+        <span class="badge">Dynamic Island</span>
+        <span class="badge">Widgets på låseskærmen</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section>
+    <h2>Sådan bruger du den</h2>
+    <div class="card">
+      <h3>Indstil din opvågnings- og sengetid</h3>
+      <p>Tryk på knappen ⚙️ øverst til højre for at indstille tidspunktet for opvågning og sengetid. Pergamentet begynder at brænde, når du vågner, og nedtællingen slutter ved sengetid.</p>
+    </div>
+    <div class="card">
+      <h3>Vælg en tidsperiode</h3>
+      <p>Vælg <strong>1 dag · 1 uge · 1 måned · 1 år</strong> i fanerne øverst, så brænder pergamentet og viser, hvor meget der er tilbage af perioden.</p>
+    </div>
+    <div class="card">
+      <h3>Widgets på hjemmeskærmen</h3>
+      <p>Hold fingeren på hjemmeskærmen → Tilføj widget → søg efter <strong>Brændende Pergament</strong> for at tilføje en dags-, uge-, måneds- eller årswidget. Der findes små, mellemstore og store størrelser.</p>
+    </div>
+    <div class="card">
+      <h3>Dynamic Island og låseskærm</h3>
+      <p>Når nedtællingen er startet, kan du følge den resterende tid live i Dynamic Island og på låseskærmen. Træk Dynamic Island ned for at se flere detaljer sammen med animationen af det brændende pergament.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Ofte stillede spørgsmål</h2>
+    <div class="card">
+      <h3>Widgetten viser et andet tidspunkt end appen</h3>
+      <p>På grund af den måde, iOS fungerer på, kan widgets på hjemmeskærmen ikke opdateres i realtid. Når du åbner appen, synkroniseres widgettens data automatisk. Brug Dynamic Island og låseskærmen til en live-nedtælling.</p>
+    </div>
+    <div class="card">
+      <h3>Hvad vises, mens jeg sover?</h3>
+      <p>Efter sengetid vises en animation af et brændende hjerte, der viser, hvor langt din søvn er nået frem til opvågning. Et nyt stykke pergament gøres klar 30 minutter, før du vågner.</p>
+    </div>
+    <div class="card">
+      <h3>Hvornår kommer notifikationerne?</h3>
+      <p>Du får en notifikation en time før sengetid. Hvis den ikke kommer, så tjek, at notifikationer er tilladt under <strong>Indstillinger → Notifikationer → Brændende Pergament</strong>.</p>
+    </div>
+    <div class="card">
+      <h3>Dræner appen mit batteri?</h3>
+      <p>Nedtællingen i appen tikker én gang i sekundet, men widgets kører efter en strømbesparende tidsplan, som systemet styrer, så påvirkningen af batteriet holdes på et minimum.</p>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section>
+    <h2>Privatliv</h2>
+    <div class="card">
+      <h3>Sådan behandles dine oplysninger</h3>
+      <p>Dit tidspunkt for opvågning, din sengetid, frister, refleksioner og urner gemmes kun på din enhed. Udvikleren modtager kun anonym brugsstatistik, nedbrudsdiagnostik og den feedback, du selv vælger at sende.</p>
+      <ul>
+        <li>Appen og dens widgets deler kun data via en App Group på din enhed.</li>
+        <li>Ingen reklamer, ingen sporing.</li>
+      </ul>
+      <a class="contact-link" href="privacy.html">Læs hele privatlivspolitikken →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Kontakt</h2>
+    <div class="card">
+      <h3>Virker noget ikke, som det skal?</h3>
+      <p>Til fejlrapporter, idéer til funktioner eller andre spørgsmål kan du skrive til adressen nedenfor. Vi svarer, så hurtigt vi kan.</p>
+      <a class="contact-link" href="mailto:leeo@kakao.com">
+        ✉️ &nbsp;leeo@kakao.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  <p style="margin-top: 8px;"><a href="privacy.html">Privatlivspolitik</a></p>
+  <p style="margin-top: 6px;">Lavet med 🔥 i Korea</p>
+</footer>
+
+</body>
+</html>

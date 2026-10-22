@@ -90,6 +90,14 @@ Chiara con testo grande e contrasto
 Codici promozionali per ottenere Pro
 Le funzioni in arrivo nelle Impostazioni
 
+### 앱스토어 (pt-BR)
+
+Agora disponível em português
+Um guia curto para quem está começando
+Nítido com texto grande e contraste
+Códigos promocionais para ter o Pro
+Veja nos Ajustes os próximos recursos
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

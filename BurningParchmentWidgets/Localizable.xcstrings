@@ -68,6 +68,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -135,6 +141,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -210,6 +222,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
+          }
         }
       }
     },
@@ -277,6 +295,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
@@ -352,6 +376,12 @@
             "state" : "translated",
             "value" : "%1$lld g %2$lld h"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld h"
+          }
         }
       }
     },
@@ -419,6 +449,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
@@ -494,6 +530,12 @@
             "state" : "translated",
             "value" : "31/12/2025 (mer) 23:59"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31/12/2025 (qua) 23:59"
+          }
         }
       }
     },
@@ -565,6 +607,12 @@
             "state" : "translated",
             "value" : "3 g 4 h"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 d 4 h"
+          }
         }
       }
     },
@@ -632,6 +680,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 h 24 min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "5 h 24 min"
@@ -706,6 +760,12 @@
             "state" : "translated",
             "value" : "Sveglia a breve"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acordando em breve"
+          }
         }
       }
     },
@@ -775,6 +835,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sveglia %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acordar %@"
           }
         }
       }
@@ -846,6 +912,12 @@
             "state" : "translated",
             "value" : "%@ alla sveglia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ para acordar"
+          }
         }
       }
     },
@@ -915,6 +987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo rimasto alla sveglia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante para acordar"
           }
         }
       }
@@ -987,6 +1065,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante"
+          }
         }
       }
     },
@@ -1057,6 +1141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo rimasto alla prossima scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante para o próximo prazo"
           }
         }
       }
@@ -1129,6 +1219,12 @@
             "state" : "translated",
             "value" : "Pergamena delle scadenze"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho de prazos"
+          }
         }
       }
     },
@@ -1198,6 +1294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessuna scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem prazos"
           }
         }
       }
@@ -1269,6 +1371,12 @@
             "state" : "translated",
             "value" : "Scadenza passata 🏁"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazo encerrado 🏁"
+          }
         }
       }
     },
@@ -1339,6 +1447,12 @@
             "state" : "translated",
             "value" : "Inizia un nuovo giorno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um novo dia começa"
+          }
         }
       }
     },
@@ -1408,6 +1522,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sonno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormindo"
           }
         }
       }
@@ -1480,6 +1600,12 @@
             "state" : "translated",
             "value" : "Pergamena dell’anno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho do ano"
+          }
         }
       }
     },
@@ -1550,6 +1676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo rimasto al riposo oggi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante para dormir hoje"
           }
         }
       }
@@ -1622,6 +1754,12 @@
             "state" : "translated",
             "value" : "Quest’anno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este ano"
+          }
         }
       }
     },
@@ -1692,6 +1830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo rimasto quest’anno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante este ano"
           }
         }
       }
@@ -1764,6 +1908,12 @@
             "state" : "translated",
             "value" : "Pergamena del mese"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho do mês"
+          }
         }
       }
     },
@@ -1834,6 +1984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questo mese"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este mês"
           }
         }
       }
@@ -1906,6 +2062,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto questo mese"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante este mês"
+          }
         }
       }
     },
@@ -1976,6 +2138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa settimana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta semana"
           }
         }
       }
@@ -2048,6 +2216,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto questa settimana"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante esta semana"
+          }
         }
       }
     },
@@ -2118,6 +2292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena del giorno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho do dia"
           }
         }
       }
@@ -2190,6 +2370,12 @@
             "state" : "translated",
             "value" : "Vedi quanto manca al riposo, direttamente nella schermata di blocco"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja quanto falta para dormir, direto na tela de bloqueio"
+          }
         }
       }
     },
@@ -2259,6 +2445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sogni d’oro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bons sonhos"
           }
         }
       }
@@ -2331,6 +2523,12 @@
             "state" : "translated",
             "value" : "Pergamena della settimana"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho da semana"
+          }
         }
       }
     },
@@ -2401,6 +2599,12 @@
             "state" : "translated",
             "value" : "Riposo %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormir %@"
+          }
         }
       }
     },
@@ -2470,6 +2674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fino al riposo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Até dormir"
           }
         }
       }
@@ -2542,6 +2752,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto al riposo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante para dormir"
+          }
         }
       }
     },
@@ -2613,6 +2829,12 @@
             "state" : "translated",
             "value" : "Consegnare il progetto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entregar o projeto"
+          }
         }
       }
     },
@@ -2683,6 +2905,12 @@
             "state" : "translated",
             "value" : "🌅 Sveglia a breve · %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Acordando em breve · %@"
+          }
         }
       }
     },
@@ -2752,6 +2980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 Resta il %@%%"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Restam %@%%"
           }
         }
       }
@@ -2824,6 +3058,12 @@
             "state" : "translated",
             "value" : "🔥 Resta il %lld%%"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Restam %lld%%"
+          }
         }
       }
     },
@@ -2894,6 +3134,12 @@
             "state" : "translated",
             "value" : "🔥 %@ al riposo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@ para dormir"
+          }
         }
       }
     },
@@ -2963,6 +3209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ alla sveglia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 %@ para acordar"
           }
         }
       }

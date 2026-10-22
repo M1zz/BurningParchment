@@ -626,3 +626,60 @@ https://m1zz.github.io/BurningParchment/it/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/it/
+
+## pt-BR
+
+### 이름
+
+Pergaminho em Chamas: dormir
+
+### 부제
+
+O resto do dia queimando
+
+### 키워드
+
+timer,contagem,diário,hábitos,widget,prazo,disciplina,ritual,noite,metas,reflexão,insônia,rotina
+
+### 프로모션 텍스트
+
+Antes de dormir, sopre o pergaminho que queima para apagar o fogo: um pequeno ritual para encerrar o dia. Os fragmentos que sobram são guardados.
+
+### 설명
+
+O que resta do seu dia queima diante dos seus olhos.
+O Pergaminho em Chamas mostra o tempo que falta não em números, mas em uma folha de pergaminho que se consome. Foi feito para quem não quer ver a noite simplesmente escapar.
+
+Dia, semana, mês, ano
+Do acordar até a hora de dormir, o pergaminho queima devagar. O que resta desta semana, deste mês e deste ano também aparece no mesmo pergaminho.
+Adicione uma meta com prazo e o tempo até essa data também entra na contagem.
+
+Sopre e encerre o dia
+A partir de 30 minutos antes de dormir, você pode soprar o pergaminho que queima para apagar o fogo. Só a força do sopro é usada, e nenhum som é gravado.
+Os fragmentos que sobram depois de apagar são guardados. Quando quiser, vire um fragmento e escreva uma linha no verso.
+
+Um dia que vira cinza
+Olhe para o tempo que passou, deixe uma reflexão de uma linha e marque com um ponto em um gráfico de dois eixos onde ele foi parar.
+As reflexões se acumulam em urnas por tema, e você pode relê-las no livro de reflexões.
+A tela Fluxo das cinzas mostra para onde o tempo foi, com um gráfico de distribuição e um calendário de brasas.
+
+Sempre à vista
+Widgets na Tela de Início e na Tela Bloqueada, Dynamic Island e Atividades ao Vivo na Tela Bloqueada mostram o tempo restante.
+Temas claro e escuro, horários de dormir sugeridos e escolha das abas que você quer ver.
+
+Pergaminho em Chamas Pro
+O pergaminho queimando, as reflexões e o ritual do sopro são gratuitos, assim como um prazo. O Pro não é assinatura: uma única compra, para sempre.
+Ele libera o Tempo Livre em Chamas, que queima só o tempo livre que você definiu; as cores do pergaminho e da chama (hanji ao luar, celadon, entardecer); os tipos de chama (fogo de campo, brasas, estrelinha); o compartilhamento de fragmentos como cartões e pôsteres; a exportação do livro de reflexões em PDF; o fluxo das cinzas dos últimos doze meses; e prazos ilimitados. Todos os recursos Pro futuros também estão incluídos.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/pt-br/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/pt-br/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/pt-br/

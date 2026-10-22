@@ -119,6 +119,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Un anno<br>di cenere", "Pro mostra dove sono andati dodici mesi", 0.62),
   ("10-book-pdf.png", "pages", False, "Le tue riflessioni<br>in un libro", "Pro: un PDF, una pagina al giorno", None),
  ],
+ "pt-BR": [
+  ("01-week-dark.png", "hero-bleed", False, "Veja o seu tempo<br>queimar", "Dia, semana, mês, ano", None),
+  ("02-month-light.png", "hero-bleed", True, "Claro ou escuro", "Siga o aparelho ou escolha o seu", None),
+  ("03-urn-dark.png", "left-text", False, "Cada dia termina<br>em cinzas", "O que você escreve vai para a urna da semana", None),
+  ("04-flow-light.png", "hero-bleed", True, "Para onde foi<br>o seu tempo", "Um gráfico e um calendário de brasas", None),
+  ("05-book-dark.png", "top-crop", False, "Releia suas cinzas", "As linhas que você deixou no pergaminho", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Da hora de dormir<br>ao tema", "Deixe do seu jeito", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Escolha a cor<br>da sua chama", "Temas Pro: hanji, celadon, entardecer", None),
+  ("08-poster-dark.png", "text-bottom", False, "Todas as suas noites<br>em uma folha", "O Pro transforma fragmentos em pôsteres", None),
+  ("09-year-light.png", "top-crop", False, "Um ano<br>de cinzas", "O Pro mostra para onde foram doze meses", 0.62),
+  ("10-book-pdf.png", "pages", False, "Suas reflexões<br>em um livro", "Pro: um PDF, uma página por dia", None),
+ ],
 }
 
 FONTS = {
@@ -129,9 +142,10 @@ FONTS = {
     "ru": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "fr": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "it": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "pt-BR": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42}
 
 
 def base_css(lang, dark):

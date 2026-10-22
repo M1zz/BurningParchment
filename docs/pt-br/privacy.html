@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Pergaminho em Chamas</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="privacy.html" hreflang="pt-BR" lang="pt-BR" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Voltar ao Suporte</a>
+  <h1>Política de Privacidade</h1>
+  <p>Última atualização: 18 de agosto de 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Resumo</h2>
+    <div class="card">
+      <h3>O Pergaminho em Chamas não coleta informações que identifiquem você</h3>
+      <p>Tudo o que você cria no app (hora de acordar, hora de dormir, prazos, reflexões e urnas) fica no seu aparelho. O que chega ao desenvolvedor são apenas as estatísticas anônimas e os diagnósticos de falhas descritos abaixo, além dos feedbacks que você mesmo enviar.</p>
+      <span class="highlight">🔒 Suas reflexões nunca saem do seu aparelho · Sem anúncios, sem rastreamento</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Guardado apenas no seu aparelho</h2>
+    <div class="card">
+      <h3>O que você cria no app</h3>
+      <p>O seguinte fica guardado apenas no seu aparelho (em UserDefaults):</p>
+      <ul>
+        <li>Hora de acordar e hora de dormir</li>
+        <li>Prazos</li>
+        <li>Reflexões e urnas</li>
+      </ul>
+      <p style="margin-top: 10px;">Esses dados são compartilhados entre o app e seus widgets apenas pelo armazenamento do App Group no seu aparelho e são apagados quando você exclui o app.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Enviado ao desenvolvedor</h2>
+    <div class="card">
+      <h3>Estatísticas de uso anônimas</h3>
+      <p>Para ajudar a melhorar o app, o seguinte é enviado ao armazenamento iCloud (CloudKit) do desenvolvedor:</p>
+      <ul>
+        <li>Um identificador de instalação gerado aleatoriamente (UUID)</li>
+        <li>Versão do app, plataforma e versão do sistema, idioma configurado</li>
+        <li>Número de aberturas, dias de uso e nomes dos principais eventos de recursos</li>
+      </ul>
+      <p style="margin-top: 10px;">O identificador de instalação não tem relação com identificadores do aparelho (IDFA ou IDFV) nem com o seu Apple Account, e um novo é criado se você excluir e reinstalar o app.</p>
+    </div>
+    <div class="card">
+      <h3>Diagnósticos de falhas e travamentos</h3>
+      <p>Se o app falhar ou travar, é enviado o relatório de diagnóstico criado pelo iOS (MetricKit): o tipo de problema, o stack trace, as versões do app e do sistema e o modelo do aparelho. Nada do que você digitou no app, como as reflexões, é incluído.</p>
+    </div>
+    <div class="card">
+      <h3>Feedback que você envia</h3>
+      <p>O feedback só é enviado quando você o envia pela tela de Ajustes. Inclui o que você escreveu junto com o aparelho e a versão do app, além do seu nome e e-mail apenas se você mesmo os digitar para receber resposta.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>O que não coletamos</h2>
+    <div class="card">
+      <h3>Nunca coletamos o seguinte</h3>
+      <ul>
+        <li>O que você digita no app, como reflexões ou prazos (a menos que você escreva isso no feedback)</li>
+        <li>Dados pessoais como nome, e-mail ou telefone (a menos que você os digite no feedback)</li>
+        <li>Localização</li>
+        <li>Contatos ou fotos</li>
+        <li>Identificadores do aparelho (IDFA, IDFV e semelhantes)</li>
+        <li>Dados de publicidade</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Terceiros</h2>
+    <div class="card">
+      <h3>Não compartilhamos seus dados</h3>
+      <p>O app não usa redes de anúncios nem SDKs de análise de terceiros. As estatísticas, os diagnósticos e o feedback descritos acima vão apenas para o armazenamento iCloud do próprio desenvolvedor. Nunca são combinados com dados de outras empresas nem usados para rastrear você para publicidade.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Compra no app</h2>
+    <div class="card">
+      <h3>A Apple cuida do pagamento</h3>
+      <p>O pagamento da compra única do Pro é processado pela Apple por meio da App Store. O desenvolvedor nunca recebe dados de pagamento, como o número do cartão ou o Apple Account. O app apenas guarda no seu aparelho um registro de que você comprou o Pro, para liberar os recursos Pro.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notificações</h2>
+    <div class="card">
+      <h3>Somente notificações locais</h3>
+      <p>O lembrete uma hora antes de dormir é uma notificação local agendada no seu aparelho e nunca passa por um servidor externo. Você pode mudar a permissão de notificações a qualquer momento nos Ajustes do iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Microfone</h2>
+    <div class="card">
+      <h3>Só verifica a força do seu sopro</h3>
+      <p>O microfone é usado apenas quando você sopra o pergaminho para apagar o fogo, 30 minutos antes de dormir. O app mede somente a força do seu sopro no aparelho e nunca grava, salva ou envia nenhum som. Você pode mudar a permissão do microfone a qualquer momento nos Ajustes do iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacidade infantil</h2>
+    <div class="card">
+      <h3>Crianças menores de 14 anos</h3>
+      <p>Este app não é direcionado a crianças menores de 14 anos, e não coletamos intencionalmente informações pessoais de crianças.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Alterações nesta política</h2>
+    <div class="card">
+      <h3>Publicaremos qualquer alteração nesta página</h3>
+      <p>Se esta Política de Privacidade mudar, atualizaremos o conteúdo e a data de “Última atualização” nesta página. Para mudanças importantes, também poderemos avisar nas notas de versão do app.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <div class="card">
+      <h3>Dúvidas sobre privacidade</h3>
+      <p>Se você tiver dúvidas sobre esta Política de Privacidade, escreva para o endereço abaixo.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Esta política está disponível em vários idiomas. Se as versões forem diferentes, prevalece a <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">versão em coreano</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

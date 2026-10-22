@@ -59,19 +59,25 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " :%lld"
+            "value" : ":%lld"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " :%lld"
+            "value" : ":%lld"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " :%lld"
+            "value" : ":%lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
           }
         }
       }
@@ -153,6 +159,12 @@
             "state" : "translated",
             "value" : "Scadenza: %@ %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazo: %@ %@"
+          }
         }
       }
     },
@@ -224,6 +236,12 @@
             "state" : "translated",
             "value" : "%@ · settimana %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · semana %lld"
+          }
         }
       }
     },
@@ -290,6 +308,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -365,6 +389,12 @@
             "state" : "translated",
             "value" : "%@ — tempo che non è ancora finito in nessuna urna."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — tempo que ainda não entrou em nenhuma urna."
+          }
         }
       }
     },
@@ -435,6 +465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ti sei addormentato/a %@ più tardi. Stamattina è bruciacchiata di altrettanto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você dormiu %@ mais tarde. A manhã de hoje ficou chamuscada na mesma medida"
           }
         }
       }
@@ -507,6 +543,12 @@
             "state" : "translated",
             "value" : "La pergamena di domani è bruciata dopo le %@.\\nSolo il tempo passato sveglio lascia una bruciatura."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O pergaminho de amanhã queimou depois de %@.\\nSó o tempo que você ficou acordado deixa chamuscado."
+          }
         }
       }
     },
@@ -577,6 +619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna «%@»"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna %@"
           }
         }
       }
@@ -649,6 +697,12 @@
             "state" : "translated",
             "value" : "Finirà nell’urna «%@»"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vai para a urna %@"
+          }
         }
       }
     },
@@ -720,6 +774,12 @@
             "state" : "translated",
             "value" : "Dai un significato all’urna «%@»"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dar significado à urna %@"
+          }
         }
       }
     },
@@ -789,6 +849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nell’urna «%1$@» restano granelli di cenere: %2$@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A urna %1$@ guarda grãos de cinza: %2$@"
           }
         }
       }
@@ -861,6 +927,12 @@
             "state" : "translated",
             "value" : "Nell’urna «%1$@» restano granelli di cenere: %2$lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A urna %1$@ guarda grãos de cinza: %2$lld"
+          }
         }
       }
     },
@@ -931,6 +1003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riflessioni: %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflexões: %@"
           }
         }
       }
@@ -1003,6 +1081,12 @@
             "state" : "translated",
             "value" : "Inizia tra %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começa em %@"
+          }
         }
       }
     },
@@ -1073,6 +1157,12 @@
             "state" : "translated",
             "value" : "La pergamena inizia a bruciare tra %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O pergaminho começa a queimar em %@"
+          }
         }
       }
     },
@@ -1142,6 +1232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Resta il %@%%"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restam %@%%"
           }
         }
       }
@@ -1214,6 +1310,12 @@
             "state" : "translated",
             "value" : "%1$@, resta il %2$lld%%"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, restam %2$lld%%"
+          }
         }
       }
     },
@@ -1284,6 +1386,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, fuoco spento con %2$lld min di anticipo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, fogo apagado com %2$lld min de folga"
           }
         }
       }
@@ -1356,6 +1464,12 @@
             "state" : "translated",
             "value" : "%@, nessuna voce"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, sem registros"
+          }
         }
       }
     },
@@ -1426,6 +1540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, cenere: %2$lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, cinzas: %2$lld"
           }
         }
       }
@@ -1498,6 +1618,12 @@
             "state" : "translated",
             "value" : "%1$@, riflessioni: %2$lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, reflexões: %2$lld"
+          }
         }
       }
     },
@@ -1568,6 +1694,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1633,6 +1765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notti con il fuoco spento: %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noites com o fogo soprado: %@"
           }
         }
       }
@@ -1705,6 +1843,12 @@
             "state" : "translated",
             "value" : "L’app era aperta alle %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O app estava aberto às %@"
+          }
         }
       }
     },
@@ -1775,6 +1919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hai soffiato sul fuoco alle %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você soprou o fogo às %@"
           }
         }
       }
@@ -1848,6 +1998,12 @@
             "state" : "translated",
             "value" : "%1$@ g · cenere: %2$@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ d · cinzas: %2$@"
+          }
         }
       }
     },
@@ -1919,6 +2075,12 @@
             "state" : "translated",
             "value" : "Resta il %lld%%"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restam %lld%%"
+          }
         }
       }
     },
@@ -1986,6 +2148,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -2061,6 +2229,12 @@
             "state" : "translated",
             "value" : "%lld volte"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld vezes"
+          }
         }
       }
     },
@@ -2132,6 +2306,12 @@
             "state" : "translated",
             "value" : "Notti con il fuoco spento: %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noites com o fogo soprado: %lld"
+          }
         }
       }
     },
@@ -2199,6 +2379,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -2274,6 +2460,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
+          }
         }
       }
     },
@@ -2344,6 +2536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Con %lld min di anticipo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com %lld min de folga"
           }
         }
       }
@@ -2416,6 +2614,12 @@
             "state" : "translated",
             "value" : "Fuoco spento con %lld min di anticipo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fogo apagado com %lld min de folga"
+          }
         }
       }
     },
@@ -2483,6 +2687,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld h"
@@ -2558,6 +2768,12 @@
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
+          }
         }
       }
     },
@@ -2628,6 +2844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld g"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d"
           }
         }
       }
@@ -2700,6 +2922,12 @@
             "state" : "translated",
             "value" : "%1$lld g %2$lld h"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld h"
+          }
         }
       }
     },
@@ -2770,6 +2998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld g · cenere: %2$lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d · cinzas: %2$lld"
           }
         }
       }
@@ -2842,6 +3076,12 @@
             "state" : "translated",
             "value" : "Settimana %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semana %lld"
+          }
         }
       }
     },
@@ -2909,6 +3149,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
@@ -2983,6 +3229,12 @@
             "state" : "translated",
             "value" : "Eliminare «%@»?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir “%@”?"
+          }
         }
       }
     },
@@ -3052,6 +3304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungine una con il pulsante +"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione um com o botão +"
           }
         }
       }
@@ -3124,6 +3382,12 @@
             "state" : "translated",
             "value" : "Entro 10 minuti conta come puntuale"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Até 10 minutos conta como no horário"
+          }
         }
       }
     },
@@ -3194,6 +3458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ano"
           }
         }
       }
@@ -3266,6 +3536,12 @@
             "state" : "translated",
             "value" : "Mese"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mês"
+          }
         }
       }
     },
@@ -3337,6 +3613,12 @@
             "state" : "translated",
             "value" : "Giorno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dia"
+          }
         }
       }
     },
@@ -3407,6 +3689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settimana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semana"
           }
         }
       }
@@ -3482,6 +3770,12 @@
             "state" : "translated",
             "value" : "Condividi o salva il PDF"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar ou salvar PDF"
+          }
         }
       }
     },
@@ -3555,6 +3849,12 @@
             "state" : "translated",
             "value" : "· ⊕ baricentro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ centro de massa"
+          }
         }
       }
     },
@@ -3624,6 +3924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %@ vecchie riflessioni senza punto salvato sono sparse nel loro quadrante"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ reflexões antigas sem ponto salvo estão espalhadas dentro do quadrante"
           }
         }
       }
@@ -3695,6 +4001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %lld vecchie riflessioni senza punto salvato sono sparse nel loro quadrante"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld reflexões antigas sem ponto salvo estão espalhadas dentro do quadrante"
           }
         }
       }
@@ -3780,6 +4092,12 @@
             "state" : "translated",
             "value" : "Ricarica il prezzo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recarregar preço"
+          }
         }
       }
     },
@@ -3850,6 +4168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serie più lunga"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maior sequência"
           }
         }
       }
@@ -3922,6 +4246,12 @@
             "state" : "translated",
             "value" : "Gratitudine"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratidão"
+          }
         }
       }
     },
@@ -3992,6 +4322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contatta lo sviluppatore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falar com o desenvolvedor"
           }
         }
       }
@@ -4064,6 +4400,12 @@
             "state" : "translated",
             "value" : "Informativa sulla privacy"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de Privacidade"
+          }
         }
       }
     },
@@ -4135,6 +4477,12 @@
             "state" : "translated",
             "value" : "Fiamme ruggenti e guizzanti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chamas rugindo e saltando"
+          }
         }
       }
     },
@@ -4204,6 +4552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dati Salute: addormentato/a alle %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dados do Saúde: adormeceu às %@"
           }
         }
       }
@@ -4276,6 +4630,12 @@
             "state" : "translated",
             "value" : "Dati del sonno da Salute"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dados de sono do Saúde"
+          }
         }
       }
     },
@@ -4346,6 +4706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Collega i dati del sonno di Salute"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectar dados de sono do Saúde"
           }
         }
       }
@@ -4418,6 +4784,12 @@
             "state" : "translated",
             "value" : "Collega i dati del sonno di Salute"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectar dados de sono do Saúde"
+          }
         }
       }
     },
@@ -4489,6 +4861,12 @@
             "state" : "translated",
             "value" : "Collegato ai dati del sonno di Salute"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectado aos dados de sono do Saúde"
+          }
         }
       }
     },
@@ -4558,6 +4936,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "In Salute non c’è nessun dato del sonno per ieri notte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não há registro de sono da noite passada no Saúde"
           }
         }
       }
@@ -4630,6 +5014,12 @@
             "state" : "translated",
             "value" : "Un tremolio calmo e delicato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma oscilação calma e suave"
+          }
         }
       }
     },
@@ -4700,6 +5090,12 @@
             "state" : "translated",
             "value" : "Riscrivi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reescrever"
+          }
         }
       }
     },
@@ -4769,6 +5165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quasi ora di svegliarsi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quase hora de acordar"
           }
         }
       }
@@ -4841,6 +5243,12 @@
             "state" : "translated",
             "value" : "Relazioni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relacionamentos"
+          }
         }
       }
     },
@@ -4911,6 +5319,12 @@
             "state" : "translated",
             "value" : "Non è un abbonamento. Paghi una volta e lo hai per sempre."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não é uma assinatura. Pague uma vez e use para sempre."
+          }
         }
       }
     },
@@ -4980,6 +5394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ripristina acquisti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
           }
         }
       }
@@ -5052,6 +5472,12 @@
             "state" : "translated",
             "value" : "Impossibile completare l’acquisto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível concluir a compra"
+          }
         }
       }
     },
@@ -5122,6 +5548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il tempo che è scivolato via"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo que escorreu"
           }
         }
       }
@@ -5194,6 +5626,12 @@
             "state" : "translated",
             "value" : "È solo scivolato via"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simplesmente escorreu"
+          }
         }
       }
     },
@@ -5265,6 +5703,12 @@
             "state" : "translated",
             "value" : "Da smettere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coisas para parar"
+          }
         }
       }
     },
@@ -5334,6 +5778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voce sbagliata? Correggila tu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registro errado? Corrija você mesmo"
           }
         }
       }
@@ -5406,6 +5856,12 @@
             "state" : "translated",
             "value" : "Salva"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrar"
+          }
         }
       }
     },
@@ -5476,6 +5932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giorni registrati"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias registrados"
           }
         }
       }
@@ -5548,6 +6010,12 @@
             "state" : "translated",
             "value" : "Gioia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alegria"
+          }
         }
       }
     },
@@ -5618,6 +6086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni di sveglia e riposo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes de acordar e dormir"
           }
         }
       }
@@ -5690,6 +6164,12 @@
             "state" : "translated",
             "value" : "Ora della sveglia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de acordar"
+          }
         }
       }
     },
@@ -5760,6 +6240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dalla sveglia al riposo, la pergamena brucia lentamente"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do acordar até a hora de dormir, seu pergaminho queima devagar"
           }
         }
       }
@@ -5832,6 +6318,12 @@
             "state" : "translated",
             "value" : "Prima della sveglia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de acordar"
+          }
         }
       }
     },
@@ -5901,6 +6393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ alla sveglia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ para acordar"
           }
         }
       }
@@ -5973,6 +6471,12 @@
             "state" : "translated",
             "value" : "Conto alla rovescia automatico dalla sveglia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contagem automática desde a hora de acordar"
+          }
         }
       }
     },
@@ -6044,6 +6548,12 @@
             "state" : "translated",
             "value" : "Dalla sveglia al riposo,\\nla pergamena brucia lentamente"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do acordar até a hora de dormir,\\no pergaminho queima devagar"
+          }
         }
       }
     },
@@ -6108,6 +6618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "delle ore di veglia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "das horas acordado"
           }
         }
       }
@@ -6180,6 +6696,12 @@
             "state" : "translated",
             "value" : "Riposa serenamente accanto al fuoco spento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descanse tranquilo ao lado do fogo apagado"
+          }
         }
       }
     },
@@ -6250,6 +6772,12 @@
             "state" : "translated",
             "value" : "No"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desligado"
+          }
         }
       }
     },
@@ -6315,6 +6843,12 @@
             "state" : "translated",
             "value" : "Fine"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fim"
+          }
         }
       }
     },
@@ -6379,6 +6913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brucia solo il tempo che è tuo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Queime só o tempo que é seu"
           }
         }
       }
@@ -6451,6 +6991,12 @@
             "state" : "translated",
             "value" : "I miei obiettivi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minhas metas"
+          }
         }
       }
     },
@@ -6516,6 +7062,12 @@
             "state" : "translated",
             "value" : "Il mio tempo libero"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meu tempo livre"
+          }
         }
       }
     },
@@ -6580,6 +7132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Imposta il mio tempo libero"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir meu tempo livre"
           }
         }
       }
@@ -6652,6 +7210,12 @@
             "state" : "translated",
             "value" : "Più tardi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois"
+          }
         }
       }
     },
@@ -6723,6 +7287,12 @@
             "state" : "translated",
             "value" : "Soffia via"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soprar"
+          }
         }
       }
     },
@@ -6789,6 +7359,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data"
@@ -6864,6 +7440,12 @@
             "state" : "translated",
             "value" : "Domani ti aspetta nel frammento che ho tenuto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O amanhã espera no fragmento que guardei"
+          }
         }
       }
     },
@@ -6934,6 +7516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lascio le ultime braci al me di domani"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deixo as últimas brasas para o eu de amanhã"
           }
         }
       }
@@ -7006,6 +7594,12 @@
             "state" : "translated",
             "value" : "Conserviamo quello che resta.\\nOra dormi bene."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vamos guardar o que sobrou.\\nAgora é só dormir bem."
+          }
         }
       }
     },
@@ -7076,6 +7670,12 @@
             "state" : "translated",
             "value" : "Conserviamo ciò che restava"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardando o que sobrou"
+          }
         }
       }
     },
@@ -7145,6 +7745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "rimasto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "restante"
           }
         }
       }
@@ -7217,6 +7823,12 @@
             "state" : "translated",
             "value" : "Un bagliore basso che respira"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um brilho baixo que respira"
+          }
         }
       }
     },
@@ -7287,6 +7899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Passo Nota per domani"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etapa Nota para amanhã"
           }
         }
       }
@@ -7359,6 +7977,12 @@
             "state" : "translated",
             "value" : "Cosa proverai di nuovo domani?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você vai tentar de novo amanhã?"
+          }
         }
       }
     },
@@ -7428,6 +8052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Domani mattina comparirà come una fascia in cima alla pergamena e brucerà insieme alla tua giornata."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amanhã de manhã ele aparece como uma faixa no topo do pergaminho e queima junto com o seu dia."
           }
         }
       }
@@ -7500,6 +8130,12 @@
             "state" : "translated",
             "value" : "Come affronterai domani?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você vai encarar amanhã?"
+          }
         }
       }
     },
@@ -7570,6 +8206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cosa lascerai perdere domani?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você vai cortar amanhã?"
           }
         }
       }
@@ -7642,6 +8284,12 @@
             "state" : "translated",
             "value" : "Come passerai domani in modo diverso?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você vai passar o amanhã de um jeito diferente?"
+          }
         }
       }
     },
@@ -7711,6 +8359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena di domani"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho de amanhã"
           }
         }
       }
@@ -7783,6 +8437,12 @@
             "state" : "translated",
             "value" : "La pergamena di domani si è fermata qui.\\nSogni d’oro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O pergaminho de amanhã parou aqui.\\nBons sonhos"
+          }
         }
       }
     },
@@ -7852,6 +8512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La pergamena di domani sta bruciando"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O pergaminho de amanhã está queimando"
           }
         }
       }
@@ -7924,6 +8590,12 @@
             "state" : "translated",
             "value" : "Spegne il fuoco sulla pergamena di domani"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apaga o fogo do pergaminho de amanhã"
+          }
         }
       }
     },
@@ -7994,6 +8666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Controlla la connessione di rete e riprova."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifique sua conexão com a internet e tente de novo."
           }
         }
       }
@@ -8066,6 +8744,12 @@
             "state" : "translated",
             "value" : "Tramonto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entardecer"
+          }
         }
       }
     },
@@ -8136,6 +8820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sono andato/a a letto tardi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fui dormir tarde"
           }
         }
       }
@@ -8208,6 +8898,12 @@
             "state" : "translated",
             "value" : "Una giornata non bruciata del tutto è comunque una giornata intera"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um dia que não queimou por inteiro ainda é um dia inteiro"
+          }
         }
       }
     },
@@ -8278,6 +8974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostra un’altra frase"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar outra frase"
           }
         }
       }
@@ -8350,6 +9052,12 @@
             "state" : "translated",
             "value" : "Brucia con un altro colore"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Queime em outra cor"
+          }
         }
       }
     },
@@ -8420,6 +9128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avanti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo"
           }
         }
       }
@@ -8492,6 +9206,12 @@
             "state" : "translated",
             "value" : "Mese successivo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo mês"
+          }
         }
       }
     },
@@ -8556,6 +9276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prossimo tempo libero · %1$@ %2$@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo tempo livre · %1$@ %2$@"
           }
         }
       }
@@ -8628,6 +9354,12 @@
             "state" : "translated",
             "value" : "Come potresti finirlo la prossima volta?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você poderia terminar da próxima vez?"
+          }
         }
       }
     },
@@ -8698,6 +9430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiornamenti in diretta nella Dynamic Island"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acompanhe ao vivo na Dynamic Island"
           }
         }
       }
@@ -8770,6 +9508,12 @@
             "state" : "translated",
             "value" : "Scuro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escuro"
+          }
         }
       }
     },
@@ -8839,6 +9583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiudi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechar"
           }
         }
       }
@@ -8911,6 +9661,12 @@
             "state" : "translated",
             "value" : "Chiudi — tutto ciò che hai scritto è salvato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechar — tudo o que você escreveu fica salvo"
+          }
         }
       }
     },
@@ -8981,6 +9737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luna"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lua"
           }
         }
       }
@@ -9053,6 +9815,12 @@
             "state" : "translated",
             "value" : "Hanji al chiaro di luna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanji ao luar"
+          }
         }
       }
     },
@@ -9123,6 +9891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hanji al chiaro di luna, celadon, tramonto. Cambia il colore della carta e della fiamma."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanji ao luar, celadon, entardecer. Muda a cor do papel e da chama."
           }
         }
       }
@@ -9195,6 +9969,12 @@
             "state" : "translated",
             "value" : "Brucia in hanji al chiaro di luna, celadon o tramonto, come fuoco di prateria, braci o stellina"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Queime em hanji ao luar, celadon ou entardecer, como fogo de campo, brasas ou estrelinha"
+          }
         }
       }
     },
@@ -9266,6 +10046,12 @@
             "state" : "translated",
             "value" : "Apri un mese per trovare le sue urne settimanali"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abra um mês para ver suas urnas semanais"
+          }
         }
       }
     },
@@ -9336,6 +10122,12 @@
             "state" : "translated",
             "value" : "Cenere contenuta"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinza guardada"
+          }
         }
       }
     },
@@ -9405,6 +10197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puoi chiudere senza rispondere. Le notti non confermate passano senza bruciature."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tudo bem fechar sem responder. Noites não confirmadas passam sem chamuscado."
           }
         }
       }
@@ -9477,6 +10275,12 @@
             "state" : "translated",
             "value" : "Va bene anche a grandi linee"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um palpite já serve"
+          }
         }
       }
     },
@@ -9548,6 +10352,12 @@
             "state" : "translated",
             "value" : "Cosa farai domani per fare ancora meglio?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você vai fazer amanhã para ir ainda melhor?"
+          }
         }
       }
     },
@@ -9611,6 +10421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar"
           }
         }
       }
@@ -9683,6 +10499,12 @@
             "state" : "translated",
             "value" : "Scadenze"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazos"
+          }
         }
       }
     },
@@ -9753,6 +10575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scadenze illimitate"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazos ilimitados"
           }
         }
       }
@@ -9825,6 +10653,12 @@
             "state" : "translated",
             "value" : "Elimina scadenza"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir prazo"
+          }
         }
       }
     },
@@ -9895,6 +10729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar prazo"
           }
         }
       }
@@ -9967,6 +10807,12 @@
             "state" : "translated",
             "value" : "La scheda Scadenze compare da sola quando ne aggiungi una"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A aba de prazos aparece sozinha quando você adiciona um prazo"
+          }
         }
       }
     },
@@ -10037,6 +10883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fino alla scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Até o prazo"
           }
         }
       }
@@ -10109,6 +10961,12 @@
             "state" : "translated",
             "value" : "Vuoi più scadenze?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quer mais prazos?"
+          }
         }
       }
     },
@@ -10178,6 +11036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessuna scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem prazos"
           }
         }
       }
@@ -10250,6 +11114,12 @@
             "state" : "translated",
             "value" : "Sfida"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desafio"
+          }
         }
       }
     },
@@ -10316,6 +11186,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forma"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forma"
@@ -10391,6 +11267,12 @@
             "state" : "translated",
             "value" : "Tocca due volte per girare il frammento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque duas vezes para virar o fragmento"
+          }
         }
       }
     },
@@ -10461,6 +11343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Classifica toccando un punto lungo i due assi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Classifique tocando em um ponto ao longo dos dois eixos"
           }
         }
       }
@@ -10533,6 +11421,12 @@
             "state" : "translated",
             "value" : "Giralo e lascia una riga sul retro."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vire e deixe uma linha no verso."
+          }
         }
       }
     },
@@ -10604,6 +11498,12 @@
             "state" : "translated",
             "value" : "Riscrivi il retro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reescrever o verso"
+          }
         }
       }
     },
@@ -10674,6 +11574,12 @@
             "state" : "translated",
             "value" : "Una riga per il retro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma linha para o verso"
+          }
         }
       }
     },
@@ -10743,6 +11649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scrivi sul retro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escrever no verso"
           }
         }
       }
@@ -10815,6 +11727,12 @@
             "state" : "translated",
             "value" : "Il retro è vuoto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O verso está em branco"
+          }
         }
       }
     },
@@ -10885,6 +11803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fuoco di prateria"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fogo de campo"
           }
         }
       }
@@ -10957,6 +11881,12 @@
             "state" : "translated",
             "value" : "Chiaro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claro"
+          }
         }
       }
     },
@@ -11026,6 +11956,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scadenza passata 🏁"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazo encerrado 🏁"
           }
         }
       }
@@ -11097,6 +12033,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto alla scadenza"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante até o prazo"
+          }
         }
       }
     },
@@ -11166,6 +12108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data di scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data limite"
           }
         }
       }
@@ -11238,6 +12186,12 @@
             "state" : "translated",
             "value" : "Il mese in cui hai fatto di più ciò che volevi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O mês em que você mais fez o que pretendia"
+          }
         }
       }
     },
@@ -11308,6 +12262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ho fatto come volevo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiz como pretendia"
           }
         }
       }
@@ -11380,6 +12340,12 @@
             "state" : "translated",
             "value" : "Ho fatto quello che volevo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiz o que eu queria"
+          }
         }
       }
     },
@@ -11450,6 +12416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attiva il microfono per spegnere il fuoco"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ative o microfone para apagar o fogo"
           }
         }
       }
@@ -11522,6 +12494,12 @@
             "state" : "translated",
             "value" : "Crea"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criar"
+          }
         }
       }
     },
@@ -11586,6 +12564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ogni giorno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todo dia"
           }
         }
       }
@@ -11658,6 +12642,12 @@
             "state" : "translated",
             "value" : "Stop"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parar"
+          }
         }
       }
     },
@@ -11728,6 +12718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A che ora ti sei addormentato/a?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A que horas você adormeceu?"
           }
         }
       }
@@ -11800,6 +12796,12 @@
             "state" : "translated",
             "value" : "Non devi bruciare tutto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você não precisa queimar tudo"
+          }
         }
       }
     },
@@ -11870,6 +12872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cenere raccolta"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinzas reunidas"
           }
         }
       }
@@ -11942,6 +12950,12 @@
             "state" : "translated",
             "value" : "Stile"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilo"
+          }
         }
       }
     },
@@ -12013,6 +13027,12 @@
             "state" : "translated",
             "value" : "Frammenti conservati"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragmentos guardados"
+          }
         }
       }
     },
@@ -12082,6 +13102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frammenti conservati: %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragmentos guardados: %@"
           }
         }
       }
@@ -12154,6 +13180,12 @@
             "state" : "translated",
             "value" : "Frammenti conservati: %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragmentos guardados: %lld"
+          }
         }
       }
     },
@@ -12224,6 +13256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Porta con te i tuoi frammenti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leve seus fragmentos com você"
           }
         }
       }
@@ -12296,6 +13334,12 @@
             "state" : "translated",
             "value" : "Condividi i frammenti come cartoline e poster"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhe seus fragmentos como cartões e pôsteres"
+          }
         }
       }
     },
@@ -12366,6 +13410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mancato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não fiz"
           }
         }
       }
@@ -12438,6 +13488,12 @@
             "state" : "translated",
             "value" : "La versione gratuita permette fino a %lld scadenza. Con Pro conti alla rovescia quanti obiettivi vuoi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A versão gratuita permite até %lld prazo. Com o Pro, você conta quantas metas quiser."
+          }
         }
       }
     },
@@ -12509,6 +13565,12 @@
             "state" : "translated",
             "value" : "Cosa ti ha tenuto sveglio/a? (facoltativo)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que te manteve acordado? (opcional)"
+          }
         }
       }
     },
@@ -12576,6 +13638,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barra"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Barra"
@@ -12651,6 +13719,12 @@
             "state" : "translated",
             "value" : "Sfondo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fundo"
+          }
         }
       }
     },
@@ -12721,6 +13795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scintilla"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brilho"
           }
         }
       }
@@ -12793,6 +13873,12 @@
             "state" : "translated",
             "value" : "Notte"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noite"
+          }
         }
       }
     },
@@ -12863,6 +13949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Goccia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gota"
           }
         }
       }
@@ -12935,6 +14027,12 @@
             "state" : "translated",
             "value" : "Apprendimento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aprendizado"
+          }
         }
       }
     },
@@ -13005,6 +14103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Segnalazioni di bug e idee per nuove funzioni sono benvenute."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relatos de bugs e ideias de recursos são bem-vindos."
           }
         }
       }
@@ -13077,6 +14181,12 @@
             "state" : "translated",
             "value" : "Scarta"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descartar"
+          }
         }
       }
     },
@@ -13147,6 +14257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fulmine"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raio"
           }
         }
       }
@@ -13219,6 +14335,12 @@
             "state" : "translated",
             "value" : "Intervallo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervalo"
+          }
         }
       }
     },
@@ -13289,6 +14411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stella"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estrela"
           }
         }
       }
@@ -13361,6 +14489,12 @@
             "state" : "translated",
             "value" : "Nessun acquisto da ripristinare"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhuma compra para restaurar"
+          }
         }
       }
     },
@@ -13431,6 +14565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Passo Scrittura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etapa Escrita"
           }
         }
       }
@@ -13503,6 +14643,12 @@
             "state" : "translated",
             "value" : "Salva il testo e passa alla classificazione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar o texto e ir para a classificação"
+          }
         }
       }
     },
@@ -13570,6 +14716,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
@@ -13645,6 +14797,12 @@
             "state" : "translated",
             "value" : "Grafico di classificazione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gráfico de classificação"
+          }
         }
       }
     },
@@ -13715,6 +14873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Passo Classificazione"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etapa Classificação"
           }
         }
       }
@@ -13787,6 +14951,12 @@
             "state" : "translated",
             "value" : "Non classificato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem categoria"
+          }
         }
       }
     },
@@ -13857,6 +15027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salva la classificazione e passa alla nota per domani"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar a classificação e ir para a nota para amanhã"
           }
         }
       }
@@ -13929,6 +15105,12 @@
             "state" : "translated",
             "value" : "Fiamma"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chama"
+          }
         }
       }
     },
@@ -14000,6 +15182,12 @@
             "state" : "translated",
             "value" : "Tipo di fiamma"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo de chama"
+          }
         }
       }
     },
@@ -14070,6 +15258,12 @@
             "state" : "translated",
             "value" : "Fuoco spento · Vedi i frammenti conservati"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fogo apagado · Ver fragmentos guardados"
+          }
         }
       }
     },
@@ -14139,6 +15333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il fuoco è spento. Sogni d’oro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O fogo apagou. Bons sonhos"
           }
         }
       }
@@ -14211,6 +15411,12 @@
             "state" : "translated",
             "value" : "Trasforma i frammenti conservati in cartoline e poster."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transforme os fragmentos guardados em cartões e pôsteres."
+          }
         }
       }
     },
@@ -14281,6 +15487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spegnere il fuoco richiede coraggio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar o fogo também exige coragem"
           }
         }
       }
@@ -14353,6 +15565,12 @@
             "state" : "translated",
             "value" : "Non hai soffiato, ma ti sei addormentato/a in orario, quindi il fuoco si è spento da solo."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você não soprou, mas dormiu no horário, então o fogo se apagou sozinho."
+          }
         }
       }
     },
@@ -14423,6 +15641,12 @@
             "state" : "translated",
             "value" : "Il fuoco è spento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O fogo apagou"
+          }
         }
       }
     },
@@ -14492,6 +15716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena in fiamme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
           }
         }
       }
@@ -14564,6 +15794,12 @@
             "state" : "translated",
             "value" : "Pergamena in fiamme Pro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas Pro"
+          }
         }
       }
     },
@@ -14634,6 +15870,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena in fiamme 🔥"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas 🔥"
           }
         }
       }
@@ -14706,6 +15948,12 @@
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
         }
       }
     },
@@ -14769,6 +16017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo libero in fiamme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo Livre em Chamas"
           }
         }
       }
@@ -14841,6 +16095,12 @@
             "state" : "translated",
             "value" : "Ottieni Tempo libero in fiamme, colori e tipi di fiamma, cartoline dei frammenti, il PDF del libro delle riflessioni, un anno di cenere e scadenze illimitate."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tenha o Tempo Livre em Chamas, cores e tipos de chama, cartões de fragmentos, o PDF do livro de reflexões, um ano de cinzas e prazos ilimitados."
+          }
         }
       }
     },
@@ -14905,6 +16165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ottieni Tempo libero in fiamme, temi, cartoline dei frammenti, il PDF del libro delle riflessioni, un anno di cenere e scadenze illimitate."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tenha o Tempo Livre em Chamas, temas, cartões de fragmentos, o PDF do livro de reflexões, um ano de cinzas e prazos ilimitados."
           }
         }
       }
@@ -14977,6 +16243,12 @@
             "state" : "translated",
             "value" : "Stellina"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estrelinha"
+          }
         }
       }
     },
@@ -15046,6 +16318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lascia vuoto per usare la frase sbiadita"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deixe em branco para usar a frase esmaecida"
           }
         }
       }
@@ -15118,6 +16396,12 @@
             "state" : "translated",
             "value" : "Colore"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cor"
+          }
         }
       }
     },
@@ -15188,6 +16472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il colore imposta la tinta della carta e della fiamma. Il tipo di fiamma imposta come brucia. Scegli ciascuno separatamente"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A cor define o tom do papel e da chama. O tipo de chama define como ela queima. Escolha cada um separadamente"
           }
         }
       }
@@ -15260,6 +16550,12 @@
             "state" : "translated",
             "value" : "In uso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em uso"
+          }
         }
       }
     },
@@ -15330,6 +16626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir"
           }
         }
       }
@@ -15402,6 +16704,12 @@
             "state" : "translated",
             "value" : "Nuova scadenza"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novo prazo"
+          }
         }
       }
     },
@@ -15472,6 +16780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuova urna"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nova urna"
           }
         }
       }
@@ -15544,6 +16858,12 @@
             "state" : "translated",
             "value" : "Crea una nuova urna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criar nova urna"
+          }
         }
       }
     },
@@ -15613,6 +16933,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuova riflessione"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nova reflexão"
           }
         }
       }
@@ -15685,6 +17011,12 @@
             "state" : "translated",
             "value" : "Scrivi una nuova riflessione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escrever uma nova reflexão"
+          }
         }
       }
     },
@@ -15755,6 +17087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Incidi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gravar"
           }
         }
       }
@@ -15827,6 +17165,12 @@
             "state" : "translated",
             "value" : "Include tutte le funzioni Pro che aggiungeremo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inclui todos os recursos Pro que adicionarmos depois"
+          }
         }
       }
     },
@@ -15897,6 +17241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Linea"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linha"
           }
         }
       }
@@ -15969,6 +17319,12 @@
             "state" : "translated",
             "value" : "Selezionato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecionado"
+          }
         }
       }
     },
@@ -16039,6 +17395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
           }
         }
       },
@@ -16111,6 +17473,12 @@
             "state" : "translated",
             "value" : "Attiva il microfono nelle Impostazioni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar o microfone nos Ajustes"
+          }
         }
       }
     },
@@ -16181,6 +17549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crescita"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crescimento"
           }
         }
       }
@@ -16253,6 +17627,12 @@
             "state" : "translated",
             "value" : "Sii sincero/a..."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seja sincero..."
+          }
         }
       }
     },
@@ -16323,6 +17703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dati del sonno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registros de sono"
           }
         }
       }
@@ -16395,6 +17781,12 @@
             "state" : "translated",
             "value" : "I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os registros de sono só são lidos e nunca saem do seu aparelho"
+          }
         }
       }
     },
@@ -16464,6 +17856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sonno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormindo"
           }
         }
       }
@@ -16536,6 +17934,12 @@
             "state" : "translated",
             "value" : "Modifica"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
         }
       }
     },
@@ -16607,6 +18011,12 @@
             "state" : "translated",
             "value" : "Braci"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brasas"
+          }
         }
       }
     },
@@ -16674,6 +18084,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "h"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "h"
@@ -16749,6 +18165,12 @@
             "state" : "translated",
             "value" : "Ora"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora"
+          }
         }
       }
     },
@@ -16820,6 +18242,12 @@
             "state" : "translated",
             "value" : "Impostazioni orario"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes de horário"
+          }
         }
       }
     },
@@ -16889,6 +18317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo dedicato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo dedicado"
           }
         }
       }
@@ -16960,6 +18394,12 @@
             "state" : "translated",
             "value" : "Nessun tempo dedicato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem tempo dedicado"
+          }
         }
       }
     },
@@ -17027,6 +18467,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sistema"
@@ -17102,6 +18548,12 @@
             "state" : "translated",
             "value" : "Scegli Sistema per seguire l’impostazione di modalità scura del dispositivo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha Sistema para seguir o modo escuro do seu aparelho"
+          }
         }
       }
     },
@@ -17166,6 +18618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inizio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início"
           }
         }
       }
@@ -17236,6 +18694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ora di inizio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de início"
           }
         }
       }
@@ -17308,6 +18772,12 @@
             "state" : "translated",
             "value" : "Errori"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erros"
+          }
         }
       }
     },
@@ -17377,6 +18847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Simbolo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Símbolo"
           }
         }
       }
@@ -17448,6 +18924,12 @@
             "state" : "translated",
             "value" : "Ancora nessuna cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda sem cinzas"
+          }
         }
       }
     },
@@ -17518,6 +19000,12 @@
             "state" : "translated",
             "value" : "Ancora nessun frammento conservato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda sem fragmentos guardados"
+          }
         }
       }
     },
@@ -17587,6 +19075,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ancora nessuna cenere classificata. Tocca il grafico mentre scrivi una riflessione."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda sem cinzas classificadas. Toque no gráfico ao escrever uma reflexão."
           }
         }
       }
@@ -17659,6 +19153,12 @@
             "state" : "translated",
             "value" : "Ancora vuoto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda em branco"
+          }
         }
       }
     },
@@ -17730,6 +19230,12 @@
             "state" : "translated",
             "value" : "Ancora vuoto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda vazio."
+          }
         }
       }
     },
@@ -17799,6 +19305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cenere senza nome"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinza sem nome ainda"
           }
         }
       }
@@ -17871,6 +19383,12 @@
             "state" : "translated",
             "value" : "Ancora niente di scritto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nada escrito ainda"
+          }
         }
       }
     },
@@ -17940,6 +19458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sei ancora alla prima pagina"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda na primeira página"
           }
         }
       }
@@ -18012,6 +19536,12 @@
             "state" : "translated",
             "value" : "Ancora nessuna urna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda sem urnas"
+          }
         }
       }
     },
@@ -18083,6 +19613,12 @@
             "state" : "translated",
             "value" : "La cenere non si è ancora depositata"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhuma cinza assentou ainda"
+          }
         }
       }
     },
@@ -18152,6 +19688,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Per ora è solo cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por enquanto é só cinza"
           }
         }
       }
@@ -18224,6 +19766,12 @@
             "state" : "translated",
             "value" : "Funzioni Pro future"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recursos Pro futuros"
+          }
         }
       }
     },
@@ -18288,6 +19836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Circa %lld giorni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca de %lld dias"
           }
         }
       }
@@ -18360,6 +19914,12 @@
             "state" : "translated",
             "value" : "Pergamena"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho"
+          }
         }
       }
     },
@@ -18430,6 +19990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena e fiamma"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho e chama"
           }
         }
       }
@@ -18502,6 +20068,12 @@
             "state" : "translated",
             "value" : "Temi pergamena e fiamma"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temas de pergaminho e chama"
+          }
         }
       }
     },
@@ -18572,6 +20144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scegli come brucia la pergamena. Il colore segue il tema qui sopra"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha como seu pergaminho queima. A cor segue o tema acima"
           }
         }
       }
@@ -18644,6 +20222,12 @@
             "state" : "translated",
             "value" : "Pergamena e fiamma"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho e chama"
+          }
         }
       }
     },
@@ -18714,6 +20298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il colore della carta e la fiamma cambiano insieme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A cor do papel e a chama mudam juntas"
           }
         }
       }
@@ -18786,6 +20376,12 @@
             "state" : "translated",
             "value" : "In quale urna va messa?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em qual urna guardar?"
+          }
         }
       }
     },
@@ -18855,6 +20451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non finito ieri"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não concluído ontem"
           }
         }
       }
@@ -18927,6 +20529,12 @@
             "state" : "translated",
             "value" : "Non finito ieri: %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não concluído ontem: %lld"
+          }
         }
       }
     },
@@ -18996,6 +20604,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ieri notte ti sei addormentato/a %@ più tardi,\\nquindi stamattina è bruciacchiata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você dormiu %@ mais tarde ontem à noite,\\npor isso a manhã de hoje ficou chamuscada"
           }
         }
       }
@@ -19068,6 +20682,12 @@
             "state" : "translated",
             "value" : "Ieri notte ti sei addormentato/a %@ più tardi.\\nProva a spegnere il fuoco un po’ prima stasera."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você dormiu %@ mais tarde ontem à noite.\\nTente apagar o fogo um pouco mais cedo hoje."
+          }
         }
       }
     },
@@ -19139,6 +20759,12 @@
             "state" : "translated",
             "value" : "Il frammento di ieri notte si è raffreddato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O fragmento da noite passada esfriou"
+          }
         }
       }
     },
@@ -19208,6 +20834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Com’è andata ieri notte?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como foi a noite passada?"
           }
         }
       }
@@ -19280,6 +20912,12 @@
             "state" : "translated",
             "value" : "Per caso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem querer"
+          }
         }
       }
     },
@@ -19350,6 +20988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sono finito/a a farlo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acabei fazendo"
           }
         }
       }
@@ -19422,6 +21066,12 @@
             "state" : "translated",
             "value" : "Fatto per caso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acabei fazendo"
+          }
         }
       }
     },
@@ -19493,6 +21143,12 @@
             "state" : "translated",
             "value" : "Nessuno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum"
+          }
         }
       }
     },
@@ -19562,6 +21218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quello che c’è qui resta solo cenere finché non gli dai un nome."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que está aqui é só cinza até você dar um nome."
           }
         }
       }
@@ -19634,6 +21296,12 @@
             "state" : "translated",
             "value" : "Cosa è stata per me questa cenere…"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que essa cinza foi para mim…"
+          }
         }
       }
     },
@@ -19704,6 +21372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conta alla rovescia più obiettivi insieme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conte quantas metas quiser ao mesmo tempo"
           }
         }
       }
@@ -19776,6 +21450,12 @@
             "state" : "translated",
             "value" : "Collegato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectado"
+          }
         }
       }
     },
@@ -19846,6 +21526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Per scollegare, vai in Impostazioni iOS ▸ Salute ▸ Accesso ai dati e dispositivi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para desconectar, vá em Ajustes do iOS ▸ Saúde ▸ Acesso a Dados e Dispositivos"
           }
         }
       }
@@ -19918,6 +21604,12 @@
             "state" : "translated",
             "value" : "Per scollegare, vai in Impostazioni iOS ▸ Salute ▸ Accesso ai dati e dispositivi. I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para desconectar, vá em Ajustes do iOS ▸ Saúde ▸ Acesso a Dados e Dispositivos. Os dados de sono só são lidos e nunca saem do seu aparelho"
+          }
         }
       }
     },
@@ -19988,6 +21680,12 @@
             "state" : "translated",
             "value" : "Collega"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectar"
+          }
         }
       }
     },
@@ -20057,6 +21755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Una volta collegato, non chiederemo ogni mattina e riporteremo il fuoco all’ora in cui ti sei addormentato/a. I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de conectar, não vamos perguntar toda manhã e voltaremos o fogo para a hora em que você adormeceu. Os registros de sono só são lidos e nunca saem do seu aparelho."
           }
         }
       }
@@ -20129,6 +21833,12 @@
             "state" : "translated",
             "value" : "Una volta collegato, non chiederemo ogni mattina. La pergamena di domani torna all’ora in cui ti sei davvero addormentato/a"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de conectar, não vamos perguntar toda manhã. O pergaminho de amanhã volta para a hora em que você realmente adormeceu"
+          }
         }
       }
     },
@@ -20199,6 +21909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Una volta collegato, useremo l’ora di sonno registrata invece di chiedere ogni mattina. I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de conectar, usamos a hora de sono registrada em vez de perguntar toda manhã. Os dados de sono só são lidos e nunca saem do seu aparelho"
           }
         }
       }
@@ -20271,6 +21987,12 @@
             "state" : "translated",
             "value" : "Apri"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir"
+          }
         }
       }
     },
@@ -20341,6 +22063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es. limitare i social a 15 minuti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: limitar redes sociais a 15 minutos"
           }
         }
       }
@@ -20413,6 +22141,12 @@
             "state" : "translated",
             "value" : "Es. la settimana in cui ho resistito"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: a semana em que eu aguentei"
+          }
         }
       }
     },
@@ -20483,6 +22217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es. passare a una camminata di 20 minuti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: trocar por uma caminhada de 20 min"
           }
         }
       }
@@ -20555,6 +22295,12 @@
             "state" : "translated",
             "value" : "Es. allungare l’allenamento di 30 minuti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: aumentar o treino em 30 minutos"
+          }
         }
       }
     },
@@ -20625,6 +22371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es. sport, relazioni, sfida dell’anno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: exercício, relacionamentos, desafio do ano"
           }
         }
       }
@@ -20697,6 +22449,12 @@
             "state" : "translated",
             "value" : "Es. 30 minuti di allenamento subito dopo pranzo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: 30 min de treino logo depois do almoço"
+          }
         }
       }
     },
@@ -20767,6 +22525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es. leggere un capitolo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: ler um capítulo"
           }
         }
       }
@@ -20839,6 +22603,12 @@
             "state" : "translated",
             "value" : "Es. consegnare il progetto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ex.: entregar o projeto"
+          }
         }
       }
     },
@@ -20909,6 +22679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oggi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje"
           }
         }
       }
@@ -20981,6 +22757,12 @@
             "state" : "translated",
             "value" : "Perché oggi è rimasto incompiuto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por que o dia de hoje ficou inacabado"
+          }
         }
       }
     },
@@ -21051,6 +22833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stamattina è un po’ bruciacchiata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A manhã de hoje ficou um pouco chamuscada"
           }
         }
       }
@@ -21123,6 +22911,12 @@
             "state" : "translated",
             "value" : "Lascia una riga sulla tua giornata."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deixe uma linha sobre o seu dia."
+          }
         }
       }
     },
@@ -21193,6 +22987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non sei riuscito/a\\na finire la giornata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você não conseguiu\\nterminar o seu dia hoje"
           }
         }
       }
@@ -21265,6 +23065,12 @@
             "state" : "translated",
             "value" : "Cosa ti ha impedito\\ndi finire la giornata?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que te impediu\\nde terminar o seu dia?"
+          }
         }
       }
     },
@@ -21336,6 +23142,12 @@
             "state" : "translated",
             "value" : "Spegne il fuoco di oggi e conserva il frammento rimasto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apaga o fogo de hoje e guarda o fragmento que sobrou"
+          }
         }
       }
     },
@@ -21405,6 +23217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Una riga prima di dormire?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma linha antes de dormir?"
           }
         }
       }
@@ -21477,6 +23295,12 @@
             "state" : "translated",
             "value" : "Oggi, "
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje, "
+          }
         }
       }
     },
@@ -21548,6 +23372,12 @@
             "state" : "translated",
             "value" : "Salta oggi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pular hoje"
+          }
         }
       }
     },
@@ -21617,6 +23447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Com’è andata la giornata? — Tocca per segnarla"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como foi o seu dia? — Toque para marcar"
           }
         }
       }
@@ -21689,6 +23525,12 @@
             "state" : "translated",
             "value" : "Cosa proverai stasera? (facoltativo)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você vai tentar hoje à noite? (opcional)"
+          }
         }
       }
     },
@@ -21759,6 +23601,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Per oggi basta così. Ha bruciato bene."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por hoje chega. Queimou bem."
           }
         }
       }
@@ -21831,6 +23679,12 @@
             "state" : "translated",
             "value" : "Decido io dove finisce oggi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eu decido onde hoje termina"
+          }
         }
       }
     },
@@ -21901,6 +23755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scrivere la riflessione di oggi? Tocca per aprire l’editor"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escrever a reflexão de hoje? Toque para abrir o editor"
           }
         }
       }
@@ -21973,6 +23833,12 @@
             "state" : "translated",
             "value" : "di mattina"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "da manhã"
+          }
         }
       }
     },
@@ -22043,6 +23909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "di sera"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "da noite"
           }
         }
       }
@@ -22115,6 +23987,12 @@
             "state" : "translated",
             "value" : "Quest’anno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este ano"
+          }
         }
       }
     },
@@ -22186,6 +24064,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto quest’anno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante este ano"
+          }
         }
       }
     },
@@ -22255,6 +24139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fatto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concluído"
           }
         }
       }
@@ -22326,6 +24216,12 @@
             "state" : "translated",
             "value" : "altri %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@"
+          }
         }
       }
     },
@@ -22389,6 +24285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "e altri %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e mais %@"
           }
         }
       }
@@ -22461,6 +24363,12 @@
             "state" : "translated",
             "value" : "altri %lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld"
+          }
         }
       }
     },
@@ -22531,6 +24439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "e altri %lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e mais %lld"
           }
         }
       }
@@ -22603,6 +24517,12 @@
             "state" : "translated",
             "value" : "Cerchio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Círculo"
+          }
         }
       }
     },
@@ -22674,6 +24594,12 @@
             "state" : "translated",
             "value" : "Scorri su o giù per cambiare pagina"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deslize para cima ou para baixo para mudar de página"
+          }
         }
       }
     },
@@ -22743,6 +24669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scrivi il significato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escrever o significado"
           }
         }
       }
@@ -22815,6 +24747,12 @@
             "state" : "translated",
             "value" : "Annota"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anotar"
+          }
         }
       }
     },
@@ -22884,6 +24822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancella il significato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar o significado"
           }
         }
       }
@@ -22955,6 +24899,12 @@
             "state" : "translated",
             "value" : "Senza\\nintenzione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem\\nintenção"
+          }
         }
       }
     },
@@ -23024,6 +24974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Con\\nintenzione"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com\\nintenção"
           }
         }
       }
@@ -23095,6 +25051,12 @@
             "state" : "translated",
             "value" : "Non abbiamo trovato un acquisto Pro su questo Apple Account. Verifica di aver effettuato l’accesso con l’account usato per l’acquisto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não encontramos uma compra do Pro nesta conta Apple. Confira se você entrou com a conta usada na compra."
+          }
         }
       }
     },
@@ -23164,6 +25126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Di questo giorno non resta cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não restam cinzas deste dia"
           }
         }
       }
@@ -23236,6 +25204,12 @@
             "state" : "translated",
             "value" : "Cosa ha significato per te questo mese?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que este mês significou para você?"
+          }
         }
       }
     },
@@ -23305,6 +25279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urne settimanali di questo mese"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnas semanais deste mês"
           }
         }
       }
@@ -23377,6 +25357,12 @@
             "state" : "translated",
             "value" : "Come gestirai questo tempo domani?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você vai lidar com este tempo amanhã?"
+          }
         }
       }
     },
@@ -23448,6 +25434,12 @@
             "state" : "translated",
             "value" : "Scartare questo frammento?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descartar este fragmento?"
+          }
         }
       }
     },
@@ -23518,6 +25510,12 @@
             "state" : "translated",
             "value" : "Cosa ha significato per te questa settimana?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que esta semana significou para você?"
+          }
         }
       }
     },
@@ -23587,6 +25585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa urna è vuota."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta urna está vazia."
           }
         }
       }
@@ -23659,6 +25663,12 @@
             "state" : "translated",
             "value" : "Riporta questa urna a cenere senza nome"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devolve esta urna ao estado de cinza sem nome"
+          }
         }
       }
     },
@@ -23729,6 +25739,12 @@
             "state" : "translated",
             "value" : "Cosa resta in questa urna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que sobrou nesta urna"
+          }
         }
       }
     },
@@ -23796,6 +25812,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nome"
@@ -23871,6 +25893,12 @@
             "state" : "translated",
             "value" : "Rinomina"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renomear"
+          }
         }
       }
     },
@@ -23941,6 +25969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna senza titolo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna sem título"
           }
         }
       }
@@ -24013,6 +26047,12 @@
             "state" : "translated",
             "value" : "Scrivici"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviar e-mail"
+          }
         }
       }
     },
@@ -24079,6 +26119,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -24154,6 +26200,12 @@
             "state" : "translated",
             "value" : "Condividi immagine"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar imagem"
+          }
         }
       }
     },
@@ -24224,6 +26276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questo mese"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este mês"
           }
         }
       }
@@ -24296,6 +26354,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto questo mese"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante este mês"
+          }
         }
       }
     },
@@ -24366,6 +26430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa settimana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta semana"
           }
         }
       }
@@ -24438,6 +26508,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto questa settimana"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante esta semana"
+          }
         }
       }
     },
@@ -24503,6 +26579,12 @@
             "state" : "translated",
             "value" : "Tempo libero rimasto questa settimana"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo livre restante esta semana"
+          }
         }
       }
     },
@@ -24567,6 +26649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il tempo libero di questa settimana è tutto bruciato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O tempo livre desta semana queimou todo"
           }
         }
       }
@@ -24639,6 +26727,12 @@
             "state" : "translated",
             "value" : "Si ripete anche questa settimana"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isso também se repete esta semana"
+          }
         }
       }
     },
@@ -24709,6 +26803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "È successo anche prima in questa settimana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isso também aconteceu no início desta semana"
           }
         }
       }
@@ -24781,6 +26881,12 @@
             "state" : "translated",
             "value" : "Condizioni d’uso (EULA)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termos de Uso (EULA)"
+          }
         }
       }
     },
@@ -24851,6 +26957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mese precedente"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mês anterior"
           }
         }
       }
@@ -24923,6 +27035,12 @@
             "state" : "translated",
             "value" : "DM su Instagram (@lee25_ios)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM no Instagram (@lee25_ios)"
+          }
         }
       }
     },
@@ -24988,6 +27106,12 @@
             "state" : "translated",
             "value" : "Il mio tempo ogni settimana"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meu tempo toda semana"
+          }
         }
       }
     },
@@ -25052,6 +27176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La pergamena brucia solo durante le tue ore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O pergaminho queima só durante as suas horas"
           }
         }
       }
@@ -25122,6 +27252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Viene usata solo la forza del tuo soffio. Non viene registrato nulla."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Só a força do seu sopro é usada. Nada é gravado."
           }
         }
       }
@@ -25194,6 +27330,12 @@
             "state" : "translated",
             "value" : "Foglia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folha"
+          }
         }
       }
     },
@@ -25264,6 +27406,12 @@
             "state" : "translated",
             "value" : "Salvataggio automatico"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvamento automático"
+          }
         }
       }
     },
@@ -25328,6 +27476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo libero"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo livre"
           }
         }
       }
@@ -25394,6 +27548,12 @@
             "state" : "translated",
             "value" : "Modifica il tempo libero"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar tempo livre"
+          }
         }
       }
     },
@@ -25458,6 +27618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi tempo libero"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar tempo livre"
           }
         }
       }
@@ -25530,6 +27696,12 @@
             "state" : "translated",
             "value" : "Il tempo libero appare come clessidra nei puntini delle pagine. Le scadenze compaiono da sole quando le aggiungi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O tempo livre aparece como uma ampulheta nos pontos de página. Os prazos aparecem sozinhos quando você os adiciona"
+          }
         }
       }
     },
@@ -25593,6 +27765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Si accende mentre passa il tuo tempo libero e resta spento nel resto della settimana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acende enquanto seu tempo livre passa e espera apagado no resto da semana"
           }
         }
       }
@@ -25665,6 +27843,12 @@
             "state" : "translated",
             "value" : "Anche piccoli cambiamenti sono un buon inizio..."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começar com pequenas mudanças já é ótimo..."
+          }
         }
       }
     },
@@ -25735,6 +27919,12 @@
             "state" : "translated",
             "value" : "Tocca una brace per vedere le riflessioni di quel giorno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque em uma brasa para ver as reflexões daquele dia"
+          }
         }
       }
     },
@@ -25804,6 +27994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buonanotte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boa noite"
           }
         }
       }
@@ -25876,6 +28072,12 @@
             "state" : "translated",
             "value" : "Una giornata ben bruciata. È ora di lasciarla raffreddare."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um dia bem queimado. Hora de deixar esfriar."
+          }
         }
       }
     },
@@ -25939,6 +28141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escludi sonno, lavoro e faccende e aggiungi solo il tempo che dedichi a te. La pergamena di questa settimana brucia solo mentre passa."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deixe de fora sono, trabalho e tarefas e adicione só o tempo que você dedica a si mesmo. O pergaminho desta semana queima só enquanto ele passa."
           }
         }
       }
@@ -26004,6 +28212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scegli le ore davvero tue, oltre a sonno e lavoro. La pergamena di questa settimana brucia solo mentre passano."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha as horas que são de fato suas, além de sono e trabalho. O pergaminho desta semana queima só enquanto elas passam."
           }
         }
       }
@@ -26076,6 +28290,12 @@
             "state" : "translated",
             "value" : "Ora in cui ti sei addormentato/a"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora em que adormeceu"
+          }
         }
       }
     },
@@ -26146,6 +28366,12 @@
             "state" : "translated",
             "value" : "Si ferma da sola quando ti addormenti. La mattina controlliamo a che ora ti sei addormentato/a e la riportiamo indietro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para sozinho quando você dorme. De manhã conferimos a hora em que você adormeceu e voltamos"
+          }
         }
       }
     },
@@ -26210,6 +28436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Si sovrappone al tuo sonno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobrepõe o seu sono"
           }
         }
       }
@@ -26276,6 +28508,12 @@
             "state" : "translated",
             "value" : "Si sovrappone al tuo sonno. Tienila entro le ore di veglia."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isso se sobrepõe ao seu sono. Mantenha dentro das horas acordado."
+          }
         }
       }
     },
@@ -26339,6 +28577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Senza sonno, senza lavoro,\\nscegli solo le ore che sono tue.\\nLa pergamena di questa settimana brucia solo mentre passano."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem o sono, sem o trabalho,\\nescolha só as horas que são suas.\\nO pergaminho desta semana queima só enquanto elas passam."
           }
         }
       }
@@ -26411,6 +28655,12 @@
             "state" : "translated",
             "value" : "Cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinza"
+          }
         }
       }
     },
@@ -26481,6 +28731,12 @@
             "state" : "translated",
             "value" : "In base a %@ ceneri"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com base em %@ cinzas"
+          }
         }
       }
     },
@@ -26544,6 +28800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cenere: %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinzas: %@"
           }
         }
       }
@@ -26610,6 +28872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cenere: %@ · formato A5"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinzas: %@ · tamanho A5"
           }
         }
       }
@@ -26682,6 +28950,12 @@
             "state" : "translated",
             "value" : "In base a %lld ceneri"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com base em %lld cinzas"
+          }
         }
       }
     },
@@ -26752,6 +29026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cenere: %lld"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinzas: %lld"
           }
         }
       }
@@ -26824,6 +29104,12 @@
             "state" : "translated",
             "value" : "Cenere: %lld · formato A5"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinzas: %lld · tamanho A5"
+          }
         }
       }
     },
@@ -26895,6 +29181,12 @@
             "state" : "translated",
             "value" : "Urne di cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnas de cinzas"
+          }
         }
       }
     },
@@ -26964,6 +29256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mettila nella tua urna di cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarde na sua urna de cinzas"
           }
         }
       }
@@ -27036,6 +29334,12 @@
             "state" : "translated",
             "value" : "Mese con più cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mês com mais cinzas"
+          }
         }
       }
     },
@@ -27107,6 +29411,12 @@
             "state" : "translated",
             "value" : "Conserva un po’ di cenere e\\nla distribuzione e il calendario delle braci appariranno qui."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarde algumas cinzas e\\na distribuição e o calendário de brasas aparecerão aqui."
+          }
         }
       }
     },
@@ -27176,6 +29486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Distribuzione della cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Distribuição das cinzas"
           }
         }
       }
@@ -27248,6 +29564,12 @@
             "state" : "translated",
             "value" : "Flusso della cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fluxo das cinzas"
+          }
         }
       }
     },
@@ -27318,6 +29640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vedi il flusso della cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver fluxo das cinzas"
           }
         }
       }
@@ -27390,6 +29718,12 @@
             "state" : "translated",
             "value" : "Salva"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar"
+          }
         }
       }
     },
@@ -27461,6 +29795,12 @@
             "state" : "translated",
             "value" : "Salvataggio"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvando"
+          }
         }
       }
     },
@@ -27531,6 +29871,12 @@
             "state" : "translated",
             "value" : "Salvataggio…"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvando…"
+          }
         }
       }
     },
@@ -27600,6 +29946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvato"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvo"
           }
         }
       }
@@ -27672,6 +30024,12 @@
             "state" : "translated",
             "value" : "Salva e inizia una nuova riflessione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar e começar uma nova reflexão"
+          }
         }
       }
     },
@@ -27742,6 +30100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salva e chiudi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar e fechar"
           }
         }
       }
@@ -27814,6 +30178,12 @@
             "state" : "translated",
             "value" : "Spento da solo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagou sozinho"
+          }
         }
       }
     },
@@ -27884,6 +30254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hai conservato un frammento che si è spento da solo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você guardou um fragmento que apagou sozinho"
           }
         }
       }
@@ -27956,6 +30332,12 @@
             "state" : "translated",
             "value" : "Raccogli le riflessioni in un unico PDF da conservare o stampare."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reúna suas reflexões em um único PDF para guardar ou imprimir."
+          }
         }
       }
     },
@@ -28026,6 +30408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tudo"
           }
         }
       }
@@ -28098,6 +30486,12 @@
             "state" : "translated",
             "value" : "Punto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ponto"
+          }
         }
       }
     },
@@ -28163,6 +30557,12 @@
             "state" : "translated",
             "value" : "Il tuo tempo libero"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seu tempo livre"
+          }
         }
       }
     },
@@ -28226,6 +30626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostarlo e vedere i numeri è gratis. Bruciare solo quelle ore è Pro."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir e ver os números é grátis. Queimar só essas horas é Pro."
           }
         }
       }
@@ -28297,6 +30703,12 @@
             "state" : "translated",
             "value" : "Titolo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título"
+          }
         }
       }
     },
@@ -28366,6 +30778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hai spento il fuoco in orario. La pergamena di domani è intatta"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você apagou o fogo no horário. O pergaminho de amanhã está intacto"
           }
         }
       }
@@ -28438,6 +30856,12 @@
             "state" : "translated",
             "value" : "Ti sei addormentato/a in orario, quindi il fuoco si è spento da solo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você dormiu no horário, então o fogo se apagou sozinho"
+          }
         }
       }
     },
@@ -28508,6 +30932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ho dormito in orario"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormi no horário"
           }
         }
       }
@@ -28580,6 +31010,12 @@
             "state" : "translated",
             "value" : "Scarta frammento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descartar fragmento"
+          }
         }
       }
     },
@@ -28650,6 +31086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cartolina del frammento"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartão de fragmento"
           }
         }
       }
@@ -28722,6 +31164,12 @@
             "state" : "translated",
             "value" : "Cartoline e poster dei frammenti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartões e pôsteres de fragmentos"
+          }
         }
       }
     },
@@ -28792,6 +31240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condividi come cartolina del frammento"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar como cartão de fragmento"
           }
         }
       }
@@ -28864,6 +31318,12 @@
             "state" : "translated",
             "value" : "Poster del frammento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pôster de fragmento"
+          }
         }
       }
     },
@@ -28935,6 +31395,12 @@
             "state" : "translated",
             "value" : "Crea un poster del frammento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criar um pôster de fragmento"
+          }
         }
       }
     },
@@ -29004,6 +31470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tocca il frammento per girarlo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque no fragmento para virar"
           }
         }
       }
@@ -29076,6 +31548,12 @@
             "state" : "translated",
             "value" : "Retro del frammento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verso do fragmento"
+          }
         }
       }
     },
@@ -29146,6 +31624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fronte del frammento"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frente do fragmento"
           }
         }
       }
@@ -29218,6 +31702,12 @@
             "state" : "translated",
             "value" : "Una giornata lasciata un po’ non bruciata dura più a lungo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um dia que sobra um pouco sem queimar fica mais tempo"
+          }
         }
       }
     },
@@ -29288,6 +31778,12 @@
             "state" : "translated",
             "value" : "Vuoi dire di più? (facoltativo)"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quer dizer mais? (opcional)"
+          }
         }
       }
     },
@@ -29355,6 +31851,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipo"
@@ -29430,6 +31932,12 @@
             "state" : "translated",
             "value" : "Sogni d’oro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bons sonhos"
+          }
         }
       }
     },
@@ -29494,6 +32002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weekend"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fins de semana"
           }
         }
       }
@@ -29566,6 +32080,12 @@
             "state" : "translated",
             "value" : "Crea quante urne di cenere vuoi, per argomento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crie quantas urnas de cinzas quiser, por tema"
+          }
         }
       }
     },
@@ -29637,6 +32157,12 @@
             "state" : "translated",
             "value" : "In riempimento adesso"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enchendo agora"
+          }
         }
       }
     },
@@ -29701,6 +32227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sta bruciando · fino alle %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Queimando agora · até %@"
           }
         }
       }
@@ -29773,6 +32305,12 @@
             "state" : "translated",
             "value" : "Salva questa riflessione e ne apre una vuota"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva esta reflexão e começa uma em branco"
+          }
         }
       }
     },
@@ -29843,6 +32381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cosa fare con la cenere degli ultimi %lld giorni?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que fazer com as cinzas dos últimos %lld dias?"
           }
         }
       }
@@ -29915,6 +32459,12 @@
             "state" : "translated",
             "value" : "Cosa fare con la cenere delle ultime %lld settimane?"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que fazer com as cinzas das últimas %lld semanas?"
+          }
         }
       }
     },
@@ -29986,6 +32536,12 @@
             "state" : "translated",
             "value" : "Cenere per mese negli ultimi 12 mesi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinzas por mês nos últimos 12 meses"
+          }
         }
       }
     },
@@ -30055,6 +32611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dove sono andati gli ultimi 12 mesi, mese per mese"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para onde foram os últimos 12 meses, mês a mês"
           }
         }
       }
@@ -30127,6 +32689,12 @@
             "state" : "translated",
             "value" : "La cenere degli ultimi 12 mesi, mese per mese"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja as cinzas dos últimos 12 meses, mês a mês"
+          }
         }
       }
     },
@@ -30198,6 +32766,12 @@
             "state" : "translated",
             "value" : "Scopri dove è andato il tuo tempo ogni mese negli ultimi dodici mesi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja para onde seu tempo foi a cada mês nos últimos doze meses."
+          }
         }
       }
     },
@@ -30262,6 +32836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir"
           }
         }
       }
@@ -30336,6 +32916,12 @@
             "state" : "translated",
             "value" : "Supporto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suporte"
+          }
         }
       }
     },
@@ -30405,6 +32991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi la prima cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar a primeira cinza"
           }
         }
       }
@@ -30477,6 +33069,12 @@
             "state" : "translated",
             "value" : "Crea la tua prima urna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criar sua primeira urna"
+          }
         }
       }
     },
@@ -30548,6 +33146,12 @@
             "state" : "translated",
             "value" : "Inizia creando la tua prima urna.\\nDarle un nome per argomento o ambito funziona bene."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comece criando sua primeira urna.\\nDar um nome por tema ou área funciona bem."
+          }
         }
       }
     },
@@ -30615,6 +33219,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celadon"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celadon"
@@ -30690,6 +33300,12 @@
             "state" : "translated",
             "value" : "Candela"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vela"
+          }
         }
       }
     },
@@ -30760,6 +33376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ultimi 30 giorni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Últimos 30 dias"
           }
         }
       }
@@ -30832,6 +33454,12 @@
             "state" : "translated",
             "value" : "Aggiungi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar"
+          }
         }
       }
     },
@@ -30902,6 +33530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Orari di riposo suggeriti"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horários de dormir sugeridos"
           }
         }
       }
@@ -30974,6 +33608,12 @@
             "state" : "translated",
             "value" : "Annulla"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
         }
       }
     },
@@ -31045,6 +33685,12 @@
             "state" : "translated",
             "value" : "Manca 1 ora al riposo. Ottimo lavoro oggi!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falta 1 hora para dormir. Mandou bem hoje!"
+          }
         }
       }
     },
@@ -31114,6 +33760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Da 30 minuti prima di andare a letto, soffia sulla pergamena che brucia\\nper spegnerla e conservare ciò che resta"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A partir de 30 minutos antes de dormir, sopre o pergaminho que queima\\npara apagar o fogo e guardar o que sobrou"
           }
         }
       }
@@ -31186,6 +33838,12 @@
             "state" : "translated",
             "value" : "Ora di andare a letto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de dormir"
+          }
         }
       }
     },
@@ -31257,6 +33915,12 @@
             "state" : "translated",
             "value" : "Riposo alle %2$lld%3$@ %1$@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de dormir %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -31326,6 +33990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ al riposo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ para dormir"
           }
         }
       }
@@ -31398,6 +34068,12 @@
             "state" : "translated",
             "value" : "Tempo rimasto al riposo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo restante para dormir"
+          }
         }
       }
     },
@@ -31469,6 +34145,12 @@
             "state" : "translated",
             "value" : "Capsula"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cápsula"
+          }
         }
       }
     },
@@ -31538,6 +34220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parola chiave (facoltativo)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palavra-chave (opcional)"
           }
         }
       }
@@ -31610,6 +34298,12 @@
             "state" : "translated",
             "value" : "Mostra schede"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar abas"
+          }
         }
       }
     },
@@ -31679,6 +34373,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tocca per chiudere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para fechar"
           }
         }
       }
@@ -31751,6 +34451,12 @@
             "state" : "translated",
             "value" : "Tocca per gestire le scadenze"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para gerenciar prazos"
+          }
         }
       }
     },
@@ -31821,6 +34527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tocca per tornare al passo Scrittura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para voltar à etapa Escrita"
           }
         }
       }
@@ -31893,6 +34605,12 @@
             "state" : "translated",
             "value" : "Tocca per selezionare"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para selecionar"
+          }
         }
       }
     },
@@ -31964,6 +34682,12 @@
             "state" : "translated",
             "value" : "Tocca per modificare"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para editar"
+          }
         }
       }
     },
@@ -32033,6 +34757,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tocca per cambiare l’ora"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para mudar o horário"
           }
         }
       }
@@ -32105,6 +34835,12 @@
             "state" : "translated",
             "value" : "Tocca per gestire le urne"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para gerenciar urnas"
+          }
         }
       }
     },
@@ -32175,6 +34911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tocca per aprire l’urna"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque para abrir a urna"
           }
         }
       }
@@ -32247,6 +34989,12 @@
             "state" : "translated",
             "value" : "Scintille scoppiettanti e saltellanti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faíscas crepitando e saltando"
+          }
         }
       }
     },
@@ -32317,6 +35065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pagine"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Páginas"
           }
         }
       }
@@ -32389,6 +35143,12 @@
             "state" : "translated",
             "value" : "Pagina %1$lld di %2$lld"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Página %1$lld de %2$lld"
+          }
         }
       }
     },
@@ -32459,6 +35219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indicatore di pagina"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indicador de página"
           }
         }
       }
@@ -32531,6 +35297,12 @@
             "state" : "translated",
             "value" : "Puntini delle pagine"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pontos de página"
+          }
         }
       }
     },
@@ -32601,6 +35373,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stile dei puntini delle pagine"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilo dos pontos de página"
           }
         }
       }
@@ -32673,6 +35451,12 @@
             "state" : "translated",
             "value" : "Accesso a vita · %@"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesso vitalício · %@"
+          }
         }
       }
     },
@@ -32737,6 +35521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giorni feriali"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias úteis"
           }
         }
       }
@@ -32809,6 +35599,12 @@
             "state" : "translated",
             "value" : "Poster"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pôster"
+          }
         }
       }
     },
@@ -32880,6 +35676,12 @@
             "state" : "translated",
             "value" : "Mostra"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar"
+          }
         }
       }
     },
@@ -32946,6 +35748,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -33021,6 +35829,12 @@
             "state" : "translated",
             "value" : "Sei su Pro. Grazie 🔥"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você está no Pro. Obrigado 🔥"
+          }
         }
       }
     },
@@ -33092,6 +35906,12 @@
             "state" : "translated",
             "value" : "Passa a Pro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fazer upgrade para o Pro"
+          }
         }
       }
     },
@@ -33156,6 +35976,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brucia il mio tempo libero con Pro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Queimar meu tempo livre com o Pro"
           }
         }
       }
@@ -33228,6 +36054,12 @@
             "state" : "translated",
             "value" : "Disponibile con Pro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponível no Pro"
+          }
         }
       }
     },
@@ -33291,6 +36123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Con Pro la pergamena brucia solo in queste ore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Pro, o pergaminho queima só nestas horas"
           }
         }
       }
@@ -33361,6 +36199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sblocca il flusso dell’anno con Pro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueie o fluxo do ano com o Pro"
           }
         }
       }
@@ -33433,6 +36277,12 @@
             "state" : "translated",
             "value" : "Volevo, ma non l’ho fatto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentei, mas não fiz"
+          }
         }
       }
     },
@@ -33503,6 +36353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volevo farlo, ma non l’ho fatto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pretendia, mas não fiz"
           }
         }
       }
@@ -33575,6 +36431,12 @@
             "state" : "translated",
             "value" : "Conserva la tua giornata, senza lasciare nulla"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarde seu dia, sem deixar nada de fora"
+          }
         }
       }
     },
@@ -33645,6 +36507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cuore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coração"
           }
         }
       }
@@ -33717,6 +36585,12 @@
             "state" : "translated",
             "value" : "Paghi una volta, usi per sempre"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pague uma vez, use para sempre"
+          }
         }
       }
     },
@@ -33781,6 +36655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Su un anno"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em um ano"
           }
         }
       }
@@ -33851,6 +36731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un anno di cenere"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um ano de cinzas"
           }
         }
       }
@@ -33923,6 +36809,12 @@
             "state" : "translated",
             "value" : "Un anno di cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um ano de cinzas"
+          }
         }
       }
     },
@@ -33993,6 +36885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un intero anno di cenere a colpo d’occhio"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um ano inteiro de cinzas de relance"
           }
         }
       }
@@ -34065,6 +36963,12 @@
             "state" : "translated",
             "value" : "%1$lld urne, %2$lld riflessioni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld urnas, %2$lld reflexões"
+          }
         }
       }
     },
@@ -34135,6 +37039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urne illimitate"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnas ilimitadas"
           }
         }
       }
@@ -34207,6 +37117,12 @@
             "state" : "translated",
             "value" : "Elimina urna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir urna"
+          }
         }
       }
     },
@@ -34277,6 +37193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lo scaffale delle urne"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A prateleira de urnas"
           }
         }
       }
@@ -34349,6 +37271,12 @@
             "state" : "translated",
             "value" : "Modifica urna"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar urna"
+          }
         }
       }
     },
@@ -34420,6 +37348,12 @@
             "state" : "translated",
             "value" : "Sblocca urne e scadenze illimitate."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueie urnas e prazos ilimitados."
+          }
         }
       }
     },
@@ -34490,6 +37424,12 @@
             "state" : "translated",
             "value" : "L’urna ti aspetta già.\\nLa tua prima cenere finirà in «%@»."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A urna já está esperando.\\nSua primeira cinza vai para %@."
+          }
         }
       }
     },
@@ -34559,6 +37499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Una parola da incidere sull’urna"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma palavra para gravar na urna"
           }
         }
       }
@@ -34631,6 +37577,12 @@
             "state" : "translated",
             "value" : "Sole"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sol"
+          }
         }
       }
     },
@@ -34701,6 +37653,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fatto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feito"
           }
         }
       }
@@ -34773,6 +37731,12 @@
             "state" : "translated",
             "value" : "Soffia nel microfono in basso sul telefono"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sopre no microfone na parte de baixo do celular"
+          }
         }
       }
     },
@@ -34844,6 +37808,12 @@
             "state" : "translated",
             "value" : "Aspetto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aparência"
+          }
         }
       }
     },
@@ -34911,6 +37881,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -34986,6 +37962,12 @@
             "state" : "translated",
             "value" : "Riflessioni: %1$lld. Ho fatto come volevo: %2$lld per cento; fatto per caso: %3$lld per cento; volevo ma non l’ho fatto: %4$lld per cento; solo scivolato via: %5$lld per cento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflexões: %1$lld. Fiz como pretendia: %2$lld por cento; acabei fazendo: %3$lld por cento; tentei, mas não fiz: %4$lld por cento; simplesmente escorreu: %5$lld por cento"
+          }
         }
       }
     },
@@ -35055,6 +38037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Libro delle riflessioni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livro de reflexões"
           }
         }
       }
@@ -35127,6 +38115,12 @@
             "state" : "translated",
             "value" : "PDF del libro delle riflessioni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF do livro de reflexões"
+          }
         }
       }
     },
@@ -35197,6 +38191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esporta il libro delle riflessioni in PDF"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportar livro de reflexões em PDF"
           }
         }
       }
@@ -35269,6 +38269,12 @@
             "state" : "translated",
             "value" : "Vedi come libro"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver como livro"
+          }
         }
       }
     },
@@ -35340,6 +38346,12 @@
             "state" : "translated",
             "value" : "Tieni in mano il tuo libro delle riflessioni"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tenha seu livro de reflexões nas mãos"
+          }
         }
       }
     },
@@ -35409,6 +38421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Raccogli le riflessioni in un unico PDF"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reúna suas reflexões em um único PDF"
           }
         }
       }
@@ -35481,6 +38499,12 @@
             "state" : "translated",
             "value" : "Raccogli le riflessioni in un PDF, una pagina al giorno"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reúna as reflexões em um PDF, uma página por dia"
+          }
         }
       }
     },
@@ -35552,6 +38576,12 @@
             "state" : "translated",
             "value" : "Modifica la tua riflessione."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edite sua reflexão."
+          }
         }
       }
     },
@@ -35621,6 +38651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi una riflessione\\ne questo libro inizierà a riempirsi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione uma reflexão\\ne este livro começa a se encher."
           }
         }
       }
@@ -35693,6 +38729,12 @@
             "state" : "translated",
             "value" : "Trascina le riflessioni in un’urna per spostarle"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arraste reflexões para uma urna para movê-las"
+          }
         }
       }
     },
@@ -35763,6 +38805,12 @@
             "state" : "translated",
             "value" : "Soffia sul fuoco"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soprar o fogo"
+          }
         }
       }
     },
@@ -35832,6 +38880,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Soffia per spegnere la fiamma\\ne chiudere la giornata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sopre para apagar a chama\\ne encerrar o dia"
           }
         }
       }
@@ -35904,6 +38958,12 @@
             "state" : "translated",
             "value" : "Riposo"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descanso"
+          }
         }
       }
     },
@@ -35975,6 +39035,12 @@
             "state" : "translated",
             "value" : "Scivolato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escorreu"
+          }
         }
       }
     },
@@ -36044,6 +39110,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Sogni d’oro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Bons sonhos"
           }
         }
       }
@@ -36122,6 +39194,12 @@
             "state" : "translated",
             "value" : "Schermate per testo più grande"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telas para textos maiores"
+          }
         }
       }
     },
@@ -36192,6 +39270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anche con le dimensioni di testo più grandi, le schermate si riorganizzano bene senza tagliare nulla."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesmo nos maiores tamanhos de texto, as telas se reorganizam direitinho em vez de serem cortadas."
           }
         }
       }
@@ -36264,6 +39348,12 @@
             "state" : "translated",
             "value" : "Colori e contrasto più comodi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cores e contraste mais fáceis"
+          }
         }
       }
     },
@@ -36334,6 +39424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vedi chiaramente il tempo che brucia, anche con Aumenta contrasto attivo o se fai fatica a distinguere i colori."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja claramente seu tempo queimando, mesmo com Aumentar Contraste ligado ou se for difícil distinguir cores."
           }
         }
       }
@@ -36406,6 +39502,12 @@
             "state" : "translated",
             "value" : "Più lingue"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mais idiomas"
+          }
         }
       }
     },
@@ -36476,6 +39578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un breve tour per chi inizia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um tour rápido para quem está começando"
           }
         }
       }
@@ -36548,6 +39656,12 @@
             "state" : "translated",
             "value" : "Una breve guida a ciò che puoi fare, alla prima apertura dell’app."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um guia curto do que você pode fazer, na primeira vez que abrir o app."
+          }
         }
       }
     },
@@ -36618,6 +39732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novità"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novidades"
           }
         }
       }
@@ -36690,6 +39810,12 @@
             "state" : "translated",
             "value" : "Alla prima apertura dopo un aggiornamento, scopri cosa c’è di nuovo."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na primeira abertura depois de uma atualização, veja o que há de novo."
+          }
         }
       }
     },
@@ -36760,6 +39886,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Piccoli consigli"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas práticas"
           }
         }
       }
@@ -36832,6 +39964,12 @@
             "state" : "translated",
             "value" : "Suggerimenti discreti su funzioni utili, proprio quando servono."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sugestões discretas sobre recursos úteis, na hora em que você precisa."
+          }
         }
       }
     },
@@ -36902,6 +40040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri e Comandi rapidi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri e Atalhos"
           }
         }
       }
@@ -36974,6 +40118,12 @@
             "state" : "translated",
             "value" : "Chiedi a Siri quanto resta della giornata."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergunte à Siri quanto falta do dia de hoje."
+          }
         }
       }
     },
@@ -37044,6 +40194,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sincronizzazione tra dispositivi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronização entre aparelhos"
           }
         }
       }
@@ -37116,6 +40272,12 @@
             "state" : "translated",
             "value" : "Con iCloud ritrovi le stesse riflessioni e scadenze su tutti i tuoi dispositivi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com o iCloud, tenha as mesmas reflexões e prazos em todos os seus aparelhos."
+          }
         }
       }
     },
@@ -37186,6 +40348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Backup e ripristino"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup e restauração"
           }
         }
       }
@@ -37258,6 +40426,12 @@
             "state" : "translated",
             "value" : "Salva riflessioni e scadenze in un file e recuperale in seguito."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salve suas reflexões e prazos em um arquivo e traga de volta depois."
+          }
         }
       }
     },
@@ -37328,6 +40502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blocco con Face ID"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloqueio com Face ID"
           }
         }
       }
@@ -37400,6 +40580,12 @@
             "state" : "translated",
             "value" : "Blocca l’app con Face ID o Touch ID per tenere private le tue riflessioni."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloqueie o app com Face ID ou Touch ID para manter suas reflexões privadas."
+          }
         }
       }
     },
@@ -37470,6 +40656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout per iPhone pieghevole"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout para iPhone dobrável"
           }
         }
       }
@@ -37542,6 +40734,12 @@
             "state" : "translated",
             "value" : "Usa lo schermo ampio di un iPhone pieghevole come due pannelli affiancati."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use a tela larga de um iPhone dobrável como dois painéis lado a lado."
+          }
         }
       }
     },
@@ -37612,6 +40810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina tutti i miei dati"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar todos os meus dados"
           }
         }
       }
@@ -37684,6 +40888,12 @@
             "state" : "translated",
             "value" : "Cancella tutte le riflessioni e le scadenze direttamente nell’app, quando vuoi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apague todas as reflexões e prazos direto no app, quando quiser."
+          }
         }
       }
     },
@@ -37754,6 +40964,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riprendi la riflessione da dove l’avevi lasciata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue a reflexão de onde parou"
           }
         }
       }
@@ -37826,6 +41042,12 @@
             "state" : "translated",
             "value" : "Quello che stavi scrivendo resta lì, anche se l’app si chiude a metà."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você estava escrevendo continua lá, mesmo que o app feche no meio."
+          }
         }
       }
     },
@@ -37895,6 +41117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dopo coreano e inglese, ora l’app parla anche italiano."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois do coreano e do inglês, o app agora também fala português."
           }
         }
       },
@@ -37967,6 +41195,12 @@
             "state" : "translated",
             "value" : "Prova a scorrere di lato"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experimente deslizar para o lado"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -38037,6 +41271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vedi cosa resta di questa settimana, mese e anno sulla stessa pergamena."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja o que resta desta semana, mês e ano no mesmo pergaminho."
           }
         }
       },
@@ -38109,6 +41349,12 @@
             "state" : "translated",
             "value" : "Gira un frammento"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vire um fragmento"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -38179,6 +41425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tocca un frammento per scrivere sul retro una riga su quel giorno."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque em um fragmento para escrever no verso uma linha sobre aquele dia."
           }
         }
       },
@@ -38251,6 +41503,12 @@
             "state" : "translated",
             "value" : "Obiettivi"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metas"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -38322,6 +41580,12 @@
             "state" : "translated",
             "value" : "Frammenti"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragmentos"
+          }
         }
       },
       "comment" : "Voice Control name for the collected fragments button"
@@ -38389,6 +41653,12 @@
           }
         },
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna"
@@ -38464,6 +41734,12 @@
             "state" : "translated",
             "value" : "Riflessione"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflexão"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -38534,6 +41810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi scadenza"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar prazo"
           }
         }
       },
@@ -38606,6 +41888,12 @@
             "state" : "translated",
             "value" : "Scadenza «%@» aggiunta"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazo %@ adicionado"
+          }
         }
       },
       "comment" : "VoiceOver announcement after adding a deadline. Argument is the deadline title"
@@ -38676,6 +41964,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scadenza «%@» eliminata"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prazo %@ excluído"
           }
         }
       },
@@ -38748,6 +42042,12 @@
             "state" : "translated",
             "value" : "Il fuoco è spento. Il tuo frammento è stato conservato."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O fogo apagou. Seu fragmento foi guardado."
+          }
         }
       },
       "comment" : "VoiceOver announcement after blowing out today's parchment"
@@ -38818,6 +42118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La tua riflessione è nell’urna di cenere."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua reflexão está na urna de cinzas."
           }
         }
       },
@@ -38890,6 +42196,12 @@
             "state" : "translated",
             "value" : "Salta"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pular"
+          }
         }
       },
       "comment" : "Onboarding: skip button"
@@ -38960,6 +42272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inizia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começar"
           }
         }
       },
@@ -39032,6 +42350,12 @@
             "state" : "translated",
             "value" : "Guarda il tuo tempo bruciare"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja seu tempo queimar"
+          }
         }
       },
       "comment" : "Onboarding page 1 title"
@@ -39102,6 +42426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dalla sveglia al riposo la pergamena brucia lentamente. Scorri di lato per vedere settimana, mese e anno."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do acordar até a hora de dormir, o pergaminho queima devagar. Deslize para o lado para ver a semana, o mês e o ano."
           }
         }
       },
@@ -39174,6 +42504,12 @@
             "state" : "translated",
             "value" : "30 minuti prima di dormire, soffiaci sopra"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 minutos antes de dormir, sopre"
+          }
         }
       },
       "comment" : "Onboarding page 2 title"
@@ -39244,6 +42580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Soffia nel microfono per spegnere il fuoco e conservare ciò che resta. Viene controllata solo la forza del soffio; non viene registrato nulla."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sopre no microfone para apagar o fogo e guardar o que sobrou. Só a força do sopro é verificada; nada é gravado."
           }
         }
       },
@@ -39316,6 +42658,12 @@
             "state" : "translated",
             "value" : "Ogni giorno diventa cenere"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada dia vira cinza"
+          }
         }
       },
       "comment" : "Onboarding page 3 title"
@@ -39386,6 +42734,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scrivi una riga sulla tua giornata e si deposita nell’urna di cenere di quella settimana. Cambia gli orari di sveglia e riposo nelle Impostazioni."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escreva uma linha sobre o seu dia e ela assenta na urna de cinzas daquela semana. Mude os horários de acordar e dormir nos Ajustes."
           }
         }
       },
@@ -39458,6 +42812,12 @@
             "state" : "translated",
             "value" : "Copia"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar"
+          }
         }
       },
       "comment" : "Context menu: copy reflection text"
@@ -39528,6 +42888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novità"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novidades"
           }
         }
       },
@@ -39600,6 +42966,12 @@
             "state" : "translated",
             "value" : "Rivedi la guida di benvenuto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rever o guia de boas-vindas"
+          }
         }
       },
       "comment" : "Settings row: show onboarding again"
@@ -39670,6 +43042,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossibile usare il codice. Riprova tra un attimo."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível resgatar o código. Tente de novo daqui a pouco."
           }
         }
       },
@@ -39742,6 +43120,12 @@
             "state" : "translated",
             "value" : "Riscatta codice promozionale"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resgatar código promocional"
+          }
         }
       },
       "comment" : "Settings row: redeem an App Store offer code"
@@ -39812,6 +43196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versione %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versão %@"
           }
         }
       },
@@ -39884,6 +43274,12 @@
             "state" : "translated",
             "value" : "Ora anche in italiano"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agora em português"
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese"
@@ -39954,6 +43350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se il dispositivo è impostato sull’italiano, l’app e i suoi widget appaiono in italiano."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se o seu aparelho estiver em português, o app e os widgets aparecem em português."
           }
         }
       },
@@ -40026,6 +43428,12 @@
             "state" : "translated",
             "value" : "Meglio con testo grande e contrasto alto"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melhor com texto grande e alto contraste"
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility title"
@@ -40096,6 +43504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le Impostazioni non vengono più tagliate con testo molto grande e Aumenta contrasto rende testo e braci più scuri."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os Ajustes não são mais cortados com textos muito grandes, e Aumentar Contraste deixa o texto e as brasas mais escuros."
           }
         }
       },
@@ -40168,6 +43582,12 @@
             "state" : "translated",
             "value" : "Le funzioni nascoste, come scorrere per cambiare periodo, ora vengono segnalate al momento giusto."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recursos escondidos, como deslizar para mudar o período, agora são indicados na hora certa."
+          }
         }
       },
       "comment" : "What's new 1.2.1: tips detail"
@@ -40238,6 +43658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scopri cosa arriverà"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja o que vem por aí"
           }
         }
       },
@@ -40310,6 +43736,12 @@
             "state" : "translated",
             "value" : "In Impostazioni ▸ Supporto vedi le funzioni in arrivo e proponi quelle che vuoi."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em Ajustes ▸ Suporte, veja os recursos futuros e sugira os que você quer."
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap detail"
@@ -40380,6 +43812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ecco i codici promozionali"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chegaram os códigos promocionais"
           }
         }
       },
@@ -40452,6 +43890,12 @@
             "state" : "translated",
             "value" : "Se hai un codice, inseriscilo in Impostazioni ▸ Pro."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se você tem um código, digite em Ajustes ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -40522,6 +43966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ho capito"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entendi"
           }
         }
       },

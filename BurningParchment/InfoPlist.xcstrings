@@ -69,6 +69,12 @@
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
         }
       }
     },
@@ -141,6 +147,12 @@
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
         }
       }
     },
@@ -212,6 +224,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usato solo per rilevare la forza del tuo soffio quando spegni la pergamena prima di dormire. Nessun suono viene registrato o salvato."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usado apenas para detectar a força do seu sopro ao apagar o pergaminho antes de dormir. Nenhum som é gravado ou salvo."
           }
         }
       }

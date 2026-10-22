@@ -1196,3 +1196,60 @@ https://m1zz.github.io/BurningParchment/nl/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/nl/
+
+## pl
+
+### 이름
+
+Płonący Pergamin: pora snu
+
+### 부제
+
+Reszta dnia dopala się
+
+### 키워드
+
+minutnik,dziennik,nawyki,widżet,termin,dyscyplina,rytuał,wieczór,cele,refleksja,bezsenność,rutyna
+
+### 프로모션 텍스트
+
+Przed snem zdmuchnij płonący pergamin i zgaś ogień: mały rytuał, który kończy dzień. Pozostałe okruchy zostaną zachowane.
+
+### 설명
+
+To, co zostało z Twojego dnia, płonie na Twoich oczach.
+Płonący Pergamin pokazuje pozostały czas nie liczbami, lecz powoli spalającym się arkuszem pergaminu. Aplikacja powstała dla tych, którzy nie chcą patrzeć, jak wieczór po prostu przecieka im przez palce.
+
+Dzień, tydzień, miesiąc, rok
+Od pobudki do pory snu pergamin powoli się spala. To, co zostało z tego tygodnia, miesiąca i roku, zobaczysz na tym samym pergaminie.
+Dodaj cel z terminem, a czas do tego dnia również zostanie odliczony.
+
+Dmuchnij i zakończ dzień
+Od 30 minut przed snem możesz dmuchnąć na płonący pergamin, aby zgasić ogień. Używana jest tylko siła oddechu, a dźwięk nie jest nagrywany.
+Okruchy, które zostają po zgaszeniu, są zachowywane. Gdy chcesz, odwróć okruch i napisz na odwrocie jedną linijkę.
+
+Dzień, który staje się popiołem
+Spójrz wstecz na miniony czas, zostaw jednolinijkową refleksję i zaznacz punkt na wykresie o dwóch osiach, aby zobaczyć, dokąd uciekł.
+Refleksje osiadają w urnach według tematów, a w księdze refleksji możesz je przeczytać ponownie.
+Ekran Przepływ popiołu pokazuje, dokąd poszedł czas, za pomocą wykresu rozkładu i kalendarza żaru.
+
+Zawsze przed oczami
+Widżety na ekranie początkowym i ekranie blokady, Dynamic Island oraz Live Activity na ekranie blokady pokazują pozostały czas.
+Jasny i ciemny motyw, sugerowane pory snu oraz wybór kart, które chcesz widzieć.
+
+Płonący Pergamin Pro
+Płonący pergamin, refleksje i rytuał zdmuchiwania są bezpłatne, tak jak jeden termin. Pro to nie subskrypcja: jeden zakup, na zawsze.
+Odblokowuje Płonący Wolny Czas, który spala tylko ustawiony przez Ciebie wolny czas; kolory pergaminu i płomienia (księżycowe hanji, seladon, zmierzch); rodzaje płomienia (pożar stepu, żar, zimne ognie); udostępnianie okruchów jako kart i plakatów; eksport księgi refleksji do PDF; przepływ popiołu z ostatnich dwunastu miesięcy; i nieograniczone terminy. Wszystkie przyszłe funkcje Pro są również wliczone.
+Warunki użytkowania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/pl/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/pl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/pl/

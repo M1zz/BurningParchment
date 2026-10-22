@@ -129,6 +129,12 @@
             "state" : "translated",
             "value" : "Brandend Perkament"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Płonący Pergamin"
+          }
         }
       }
     },
@@ -261,6 +267,12 @@
             "state" : "translated",
             "value" : "Brandend Perkament"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Płonący Pergamin"
+          }
         }
       }
     },
@@ -392,6 +404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alleen gebruikt om te meten hoe hard je blaast als je het perkament voor het slapengaan dooft. Er wordt geen geluid opgenomen of bewaard."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Używany tylko do wyczucia siły Twojego dmuchnięcia przy gaszeniu pergaminu przed snem. Żaden dźwięk nie jest nagrywany ani zapisywany."
           }
         }
       }

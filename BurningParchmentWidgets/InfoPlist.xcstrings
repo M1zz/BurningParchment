@@ -130,6 +130,12 @@
             "state" : "translated",
             "value" : "Brandend Perkament"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Płonący Pergamin"
+          }
         }
       }
     },
@@ -261,6 +267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brandend Perkament"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Płonący Pergamin"
           }
         }
       }

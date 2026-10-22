@@ -170,6 +170,14 @@ Duidelijk met grote tekst en contrast
 Wissel aanbiedingscodes in voor Pro
 Bekijk nieuwe functies in Instellingen
 
+### 앱스토어 (pl)
+
+Teraz także po polsku
+Krótki przewodnik dla nowych
+Wyraźnie przy dużym tekście
+Kody promocyjne odblokowują Pro
+Nowe funkcje zobaczysz w Ustawieniach
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

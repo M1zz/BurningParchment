@@ -512,3 +512,60 @@ https://m1zz.github.io/BurningParchment/ru/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/ru/
+
+## fr
+
+### 이름
+
+Parchemin en flammes : coucher
+
+### 부제
+
+Le reste du jour qui brûle
+
+### 키워드
+
+minuteur,journal,habitudes,widget,échéance,discipline,rituel,soir,objectifs,bilan,insomnie,routine
+
+### 프로모션 텍스트
+
+30 minutes avant le coucher, soufflez sur le parchemin qui brûle pour éteindre le feu : un petit rituel pour clore la journée. Les fragments restants sont gardés.
+
+### 설명
+
+Ce qu’il reste de votre journée brûle sous vos yeux.
+Parchemin en flammes montre le temps restant non pas avec des chiffres, mais avec un parchemin qui se consume. Il est fait pour celles et ceux qui ne veulent plus voir leur soirée filer sans la remarquer.
+
+Jour, semaine, mois, année
+Du réveil au coucher, le parchemin brûle lentement. Ce qu’il reste de la semaine, du mois et de l’année se lit aussi sur le même parchemin.
+Ajoutez un objectif avec une échéance et le temps qui reste jusque-là est décompté lui aussi.
+
+Souffler pour finir la journée
+Dès 30 minutes avant le coucher, vous pouvez souffler sur le parchemin qui brûle pour éteindre le feu. Seule la force de votre souffle est utilisée, et rien n’est enregistré.
+Les fragments restants sont gardés. Quand vous le voulez, retournez un fragment et écrivez une ligne au dos.
+
+Une journée qui devient cendre
+Repensez au temps écoulé, laissez un bilan d’une ligne et placez-le d’un point sur un graphique à deux axes pour voir où il est passé.
+Vos bilans se déposent dans des urnes par sujet, et vous pouvez les relire dans le livre des bilans.
+L’écran Flux de cendres montre où est passé votre temps avec un graphique de répartition et un calendrier des braises.
+
+Toujours sous les yeux
+Les widgets de l’écran d’accueil et de l’écran verrouillé, la Dynamic Island et l’activité en direct de l’écran verrouillé affichent le temps restant.
+Thèmes clair et sombre, heures de coucher suggérées et choix des onglets à afficher.
+
+Parchemin en flammes Pro
+Le parchemin qui brûle, les bilans et le rituel du souffle sont gratuits, ainsi qu’une échéance. Pro n’est pas un abonnement : un seul achat, pour toujours.
+Il débloque le Temps libre en flammes, qui ne brûle que le temps libre que vous avez défini ; les couleurs du parchemin et de la flamme (hanji au clair de lune, céladon, crépuscule) ; les types de flamme (feu de prairie, braises, cierge magique) ; le partage de vos fragments en cartes et en affiches ; l’export du livre des bilans en PDF ; le flux de cendres des douze derniers mois ; et des échéances illimitées. Les futures fonctionnalités Pro sont toutes incluses.
+Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/fr/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/fr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/fr/

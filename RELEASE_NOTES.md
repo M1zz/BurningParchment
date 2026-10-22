@@ -74,6 +74,14 @@ Kommende Funktionen in den Einstellungen
 Промокоды открывают Pro
 Будущие функции видны в настройках
 
+### 앱스토어 (fr)
+
+Disponible en français
+Un court guide pour les nouveaux
+Net avec texte agrandi et contraste
+Des codes promo pour obtenir Pro
+Les futures fonctions, dans les Réglages
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

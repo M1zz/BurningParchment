@@ -59,13 +59,19 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " %lld мин"
+            "value" : " :%lld"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " %lld min"
+            "value" : " :%lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " :%lld"
           }
         }
       }
@@ -141,6 +147,12 @@
             "state" : "translated",
             "value" : "Échéance : %@ %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenza: %@ %@"
+          }
         }
       }
     },
@@ -206,6 +218,12 @@
             "state" : "translated",
             "value" : "%@ · semaine %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · settimana %lld"
+          }
         }
       }
     },
@@ -266,6 +284,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -335,6 +359,12 @@
             "state" : "translated",
             "value" : "%@ — du temps qui n’est encore entré dans aucune urne."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — tempo che non è ancora finito in nessuna urna."
+          }
         }
       }
     },
@@ -399,6 +429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous vous êtes endormi(e) %@ trop tard. Ce matin est roussi d’autant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ti sei addormentato/a %@ più tardi. Stamattina è bruciacchiata di altrettanto"
           }
         }
       }
@@ -465,6 +501,12 @@
             "state" : "translated",
             "value" : "Le parchemin de demain a brûlé après %@.\\nSeul le temps passé éveillé laisse une trace de roussi."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La pergamena di domani è bruciata dopo le %@.\\nSolo il tempo passato sveglio lascia una bruciatura."
+          }
         }
       }
     },
@@ -529,6 +571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urne « %@ »"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna «%@»"
           }
         }
       }
@@ -595,6 +643,12 @@
             "state" : "translated",
             "value" : "Ira dans l’urne « %@ »"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finirà nell’urna «%@»"
+          }
         }
       }
     },
@@ -660,6 +714,12 @@
             "state" : "translated",
             "value" : "Donner un sens à l’urne « %@ »"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dai un significato all’urna «%@»"
+          }
         }
       }
     },
@@ -723,6 +783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "L’urne « %1$@ » contient des grains de cendre : %2$@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nell’urna «%1$@» restano granelli di cenere: %2$@"
           }
         }
       }
@@ -789,6 +855,12 @@
             "state" : "translated",
             "value" : "L’urne « %1$@ » contient des grains de cendre : %2$lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nell’urna «%1$@» restano granelli di cenere: %2$lld"
+          }
         }
       }
     },
@@ -853,6 +925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bilans : %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riflessioni: %@"
           }
         }
       }
@@ -919,6 +997,12 @@
             "state" : "translated",
             "value" : "Début dans %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia tra %@"
+          }
         }
       }
     },
@@ -983,6 +1067,12 @@
             "state" : "translated",
             "value" : "Le parchemin commence à brûler dans %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La pergamena inizia a bruciare tra %@"
+          }
         }
       }
     },
@@ -1046,6 +1136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@%% restant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resta il %@%%"
           }
         }
       }
@@ -1112,6 +1208,12 @@
             "state" : "translated",
             "value" : "%1$@, %2$lld%% restant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, resta il %2$lld%%"
+          }
         }
       }
     },
@@ -1176,6 +1278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, feu éteint avec %2$lld min d’avance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, fuoco spento con %2$lld min di anticipo"
           }
         }
       }
@@ -1242,6 +1350,12 @@
             "state" : "translated",
             "value" : "%@, aucune entrée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, nessuna voce"
+          }
         }
       }
     },
@@ -1306,6 +1420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, cendres : %2$lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, cenere: %2$lld"
           }
         }
       }
@@ -1372,6 +1492,12 @@
             "state" : "translated",
             "value" : "%1$@, bilans : %2$lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, riflessioni: %2$lld"
+          }
         }
       }
     },
@@ -1436,6 +1562,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -1495,6 +1627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuits où le feu a été soufflé : %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notti con il fuoco spento: %@"
           }
         }
       }
@@ -1561,6 +1699,12 @@
             "state" : "translated",
             "value" : "L’app était ouverte à %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’app era aperta alle %@"
+          }
         }
       }
     },
@@ -1625,6 +1769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous avez soufflé le feu à %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hai soffiato sul fuoco alle %@"
           }
         }
       }
@@ -1692,6 +1842,12 @@
             "state" : "translated",
             "value" : "%1$@ j · cendres : %2$@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ g · cenere: %2$@"
+          }
         }
       }
     },
@@ -1757,6 +1913,12 @@
             "state" : "translated",
             "value" : "%lld%% restant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resta il %lld%%"
+          }
         }
       }
     },
@@ -1818,6 +1980,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -1887,6 +2055,12 @@
             "state" : "translated",
             "value" : "%lld fois"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld volte"
+          }
         }
       }
     },
@@ -1952,6 +2126,12 @@
             "state" : "translated",
             "value" : "Nuits où le feu a été soufflé : %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notti con il fuoco spento: %lld"
+          }
         }
       }
     },
@@ -2013,6 +2193,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -2082,6 +2268,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
+          }
         }
       }
     },
@@ -2146,6 +2338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avec %lld min d’avance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con %lld min di anticipo"
           }
         }
       }
@@ -2212,6 +2410,12 @@
             "state" : "translated",
             "value" : "Feu éteint avec %lld min d’avance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuoco spento con %lld min di anticipo"
+          }
         }
       }
     },
@@ -2273,6 +2477,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld h"
@@ -2342,6 +2552,12 @@
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
+          }
         }
       }
     },
@@ -2406,6 +2622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld j"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld g"
           }
         }
       }
@@ -2472,6 +2694,12 @@
             "state" : "translated",
             "value" : "%1$lld j %2$lld h"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld g %2$lld h"
+          }
         }
       }
     },
@@ -2536,6 +2764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld j · cendres : %2$lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld g · cenere: %2$lld"
           }
         }
       }
@@ -2602,6 +2836,12 @@
             "state" : "translated",
             "value" : "Semaine %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settimana %lld"
+          }
         }
       }
     },
@@ -2663,6 +2903,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
@@ -2731,6 +2977,12 @@
             "state" : "translated",
             "value" : "Supprimer « %@ » ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminare «%@»?"
+          }
         }
       }
     },
@@ -2794,6 +3046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajoutez une échéance avec le bouton +"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungine una con il pulsante +"
           }
         }
       }
@@ -2860,6 +3118,12 @@
             "state" : "translated",
             "value" : "Moins de 10 minutes de retard : c’est à l’heure"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entro 10 minuti conta come puntuale"
+          }
         }
       }
     },
@@ -2924,6 +3188,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Année"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anno"
           }
         }
       }
@@ -2990,6 +3260,12 @@
             "state" : "translated",
             "value" : "Mois"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mese"
+          }
         }
       }
     },
@@ -3055,6 +3331,12 @@
             "state" : "translated",
             "value" : "Jour"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorno"
+          }
         }
       }
     },
@@ -3119,6 +3401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settimana"
           }
         }
       }
@@ -3188,6 +3476,12 @@
             "state" : "translated",
             "value" : "Partager ou enregistrer le PDF"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi o salva il PDF"
+          }
         }
       }
     },
@@ -3255,6 +3549,12 @@
             "state" : "translated",
             "value" : "· ⊕ centre de gravité"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ baricentro"
+          }
         }
       }
     },
@@ -3318,6 +3618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %@ anciens bilans sans point enregistré sont dispersés dans leur quadrant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ vecchie riflessioni senza punto salvato sono sparse nel loro quadrante"
           }
         }
       }
@@ -3383,6 +3689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· %lld anciens bilans sans point enregistré sont dispersés dans leur quadrant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld vecchie riflessioni senza punto salvato sono sparse nel loro quadrante"
           }
         }
       }
@@ -3462,6 +3774,12 @@
             "state" : "translated",
             "value" : "Recharger le prix"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricarica il prezzo"
+          }
         }
       }
     },
@@ -3526,6 +3844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus longue série"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serie più lunga"
           }
         }
       }
@@ -3592,6 +3916,12 @@
             "state" : "translated",
             "value" : "Gratitude"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratitudine"
+          }
         }
       }
     },
@@ -3656,6 +3986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contacter le développeur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contatta lo sviluppatore"
           }
         }
       }
@@ -3722,6 +4058,12 @@
             "state" : "translated",
             "value" : "Politique de confidentialité"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informativa sulla privacy"
+          }
         }
       }
     },
@@ -3787,6 +4129,12 @@
             "state" : "translated",
             "value" : "Flammes rugissantes et bondissantes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiamme ruggenti e guizzanti"
+          }
         }
       }
     },
@@ -3850,6 +4198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Données Santé : endormi(e) à %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dati Salute: addormentato/a alle %@"
           }
         }
       }
@@ -3916,6 +4270,12 @@
             "state" : "translated",
             "value" : "Données de sommeil de Santé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dati del sonno da Salute"
+          }
         }
       }
     },
@@ -3980,6 +4340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connecter les données de sommeil de Santé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collega i dati del sonno di Salute"
           }
         }
       }
@@ -4046,6 +4412,12 @@
             "state" : "translated",
             "value" : "Connecter les données de sommeil de Santé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collega i dati del sonno di Salute"
+          }
         }
       }
     },
@@ -4111,6 +4483,12 @@
             "state" : "translated",
             "value" : "Connecté aux données de sommeil de Santé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collegato ai dati del sonno di Salute"
+          }
         }
       }
     },
@@ -4174,6 +4552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune donnée de sommeil pour la nuit dernière dans Santé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Salute non c’è nessun dato del sonno per ieri notte"
           }
         }
       }
@@ -4240,6 +4624,12 @@
             "state" : "translated",
             "value" : "Une douce vacillation, calme"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un tremolio calmo e delicato"
+          }
         }
       }
     },
@@ -4304,6 +4694,12 @@
             "state" : "translated",
             "value" : "Réécrire"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riscrivi"
+          }
         }
       }
     },
@@ -4367,6 +4763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bientôt l’heure du réveil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quasi ora di svegliarsi"
           }
         }
       }
@@ -4433,6 +4835,12 @@
             "state" : "translated",
             "value" : "Relations"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relazioni"
+          }
         }
       }
     },
@@ -4497,6 +4905,12 @@
             "state" : "translated",
             "value" : "Ce n’est pas un abonnement. Payez une fois, gardez-le pour toujours."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non è un abbonamento. Paghi una volta e lo hai per sempre."
+          }
         }
       }
     },
@@ -4560,6 +4974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurer les achats"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina acquisti"
           }
         }
       }
@@ -4626,6 +5046,12 @@
             "state" : "translated",
             "value" : "L’achat n’a pas pu être finalisé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile completare l’acquisto"
+          }
         }
       }
     },
@@ -4690,6 +5116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le temps qui s’est envolé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tempo che è scivolato via"
           }
         }
       }
@@ -4756,6 +5188,12 @@
             "state" : "translated",
             "value" : "Juste envolé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "È solo scivolato via"
+          }
         }
       }
     },
@@ -4821,6 +5259,12 @@
             "state" : "translated",
             "value" : "À arrêter"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da smettere"
+          }
         }
       }
     },
@@ -4884,6 +5328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une erreur dans l’entrée ? Corrigez-la vous-même"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voce sbagliata? Correggila tu"
           }
         }
       }
@@ -4950,6 +5400,12 @@
             "state" : "translated",
             "value" : "Enregistrer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
+          }
         }
       }
     },
@@ -5014,6 +5470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jours enregistrés"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni registrati"
           }
         }
       }
@@ -5080,6 +5542,12 @@
             "state" : "translated",
             "value" : "Joie"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioia"
+          }
         }
       }
     },
@@ -5144,6 +5612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réglages du réveil et du coucher"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni di sveglia e riposo"
           }
         }
       }
@@ -5210,6 +5684,12 @@
             "state" : "translated",
             "value" : "Heure de réveil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora della sveglia"
+          }
         }
       }
     },
@@ -5274,6 +5754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du réveil au coucher, votre parchemin brûle lentement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalla sveglia al riposo, la pergamena brucia lentamente"
           }
         }
       }
@@ -5340,6 +5826,12 @@
             "state" : "translated",
             "value" : "Avant le réveil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima della sveglia"
+          }
         }
       }
     },
@@ -5403,6 +5895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ avant le réveil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ alla sveglia"
           }
         }
       }
@@ -5469,6 +5967,12 @@
             "state" : "translated",
             "value" : "Compte à rebours automatique dès le réveil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conto alla rovescia automatico dalla sveglia"
+          }
         }
       }
     },
@@ -5534,6 +6038,12 @@
             "state" : "translated",
             "value" : "Du réveil au coucher,\\nle parchemin brûle lentement"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalla sveglia al riposo,\\nla pergamena brucia lentamente"
+          }
         }
       }
     },
@@ -5592,6 +6102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "des heures d’éveil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "delle ore di veglia"
           }
         }
       }
@@ -5658,6 +6174,12 @@
             "state" : "translated",
             "value" : "Reposez-vous sereinement près du feu éteint"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riposa serenamente accanto al fuoco spento"
+          }
         }
       }
     },
@@ -5722,6 +6244,12 @@
             "state" : "translated",
             "value" : "Désactivé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
         }
       }
     },
@@ -5781,6 +6309,12 @@
             "state" : "translated",
             "value" : "Fin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
+          }
         }
       }
     },
@@ -5839,6 +6373,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ne brûlez que le temps qui est à vous"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brucia solo il tempo che è tuo"
           }
         }
       }
@@ -5905,6 +6445,12 @@
             "state" : "translated",
             "value" : "Mes objectifs"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I miei obiettivi"
+          }
         }
       }
     },
@@ -5964,6 +6510,12 @@
             "state" : "translated",
             "value" : "Mon temps libre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il mio tempo libero"
+          }
         }
       }
     },
@@ -6022,6 +6574,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Définir mon temps libre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imposta il mio tempo libero"
           }
         }
       }
@@ -6088,6 +6646,12 @@
             "state" : "translated",
             "value" : "Plus tard"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più tardi"
+          }
         }
       }
     },
@@ -6153,6 +6717,12 @@
             "state" : "translated",
             "value" : "Souffler"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soffia via"
+          }
         }
       }
     },
@@ -6216,6 +6786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
           }
         }
       }
@@ -6282,6 +6858,12 @@
             "state" : "translated",
             "value" : "Demain attend dans le fragment que j’ai gardé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domani ti aspetta nel frammento che ho tenuto"
+          }
         }
       }
     },
@@ -6346,6 +6928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je laisse les dernières braises au moi de demain"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascio le ultime braci al me di domani"
           }
         }
       }
@@ -6412,6 +7000,12 @@
             "state" : "translated",
             "value" : "Nous gardons ce qu’il reste.\\nMaintenant, dormez bien."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conserviamo quello che resta.\\nOra dormi bene."
+          }
         }
       }
     },
@@ -6476,6 +7070,12 @@
             "state" : "translated",
             "value" : "On garde ce qu’il restait"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conserviamo ciò che restava"
+          }
         }
       }
     },
@@ -6539,6 +7139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "restant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "rimasto"
           }
         }
       }
@@ -6605,6 +7211,12 @@
             "state" : "translated",
             "value" : "Une lueur basse qui respire"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un bagliore basso che respira"
+          }
         }
       }
     },
@@ -6669,6 +7281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Étape Note pour demain"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passo Nota per domani"
           }
         }
       }
@@ -6735,6 +7353,12 @@
             "state" : "translated",
             "value" : "Qu’essaierez-vous de nouveau demain ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa proverai di nuovo domani?"
+          }
         }
       }
     },
@@ -6798,6 +7422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Demain matin, il apparaît en bandeau en haut du parchemin et brûle avec votre journée."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domani mattina comparirà come una fascia in cima alla pergamena e brucerà insieme alla tua giornata."
           }
         }
       }
@@ -6864,6 +7494,12 @@
             "state" : "translated",
             "value" : "Comment vous y prendrez-vous demain ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come affronterai domani?"
+          }
         }
       }
     },
@@ -6928,6 +7564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qu’abandonnerez-vous demain ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa lascerai perdere domani?"
           }
         }
       }
@@ -6994,6 +7636,12 @@
             "state" : "translated",
             "value" : "Comment passerez-vous demain différemment ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come passerai domani in modo diverso?"
+          }
         }
       }
     },
@@ -7057,6 +7705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parchemin de demain"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena di domani"
           }
         }
       }
@@ -7123,6 +7777,12 @@
             "state" : "translated",
             "value" : "Le parchemin de demain s’est arrêté ici.\\nDoux rêves"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La pergamena di domani si è fermata qui.\\nSogni d’oro"
+          }
         }
       }
     },
@@ -7186,6 +7846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le parchemin de demain brûle"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La pergamena di domani sta bruciando"
           }
         }
       }
@@ -7252,6 +7918,12 @@
             "state" : "translated",
             "value" : "Éteint le feu du parchemin de demain"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spegne il fuoco sulla pergamena di domani"
+          }
         }
       }
     },
@@ -7316,6 +7988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vérifiez votre connexion réseau et réessayez."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla la connessione di rete e riprova."
           }
         }
       }
@@ -7382,6 +8060,12 @@
             "state" : "translated",
             "value" : "Crépuscule"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tramonto"
+          }
         }
       }
     },
@@ -7446,6 +8130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je me suis couché(e) tard"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sono andato/a a letto tardi"
           }
         }
       }
@@ -7512,6 +8202,12 @@
             "state" : "translated",
             "value" : "Une journée non brûlée jusqu’au bout reste une journée entière"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una giornata non bruciata del tutto è comunque una giornata intera"
+          }
         }
       }
     },
@@ -7576,6 +8272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voir une autre phrase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra un’altra frase"
           }
         }
       }
@@ -7642,6 +8344,12 @@
             "state" : "translated",
             "value" : "Brûlez dans une autre couleur"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brucia con un altro colore"
+          }
         }
       }
     },
@@ -7706,6 +8414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suivant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanti"
           }
         }
       }
@@ -7772,6 +8486,12 @@
             "state" : "translated",
             "value" : "Mois suivant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mese successivo"
+          }
         }
       }
     },
@@ -7830,6 +8550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prochain temps libre · %1$@ %2$@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossimo tempo libero · %1$@ %2$@"
           }
         }
       }
@@ -7896,6 +8622,12 @@
             "state" : "translated",
             "value" : "Comment pourriez-vous finir la prochaine fois ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come potresti finirlo la prossima volta?"
+          }
         }
       }
     },
@@ -7960,6 +8692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suivi en direct dans la Dynamic Island"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiornamenti in diretta nella Dynamic Island"
           }
         }
       }
@@ -8026,6 +8764,12 @@
             "state" : "translated",
             "value" : "Sombre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scuro"
+          }
         }
       }
     },
@@ -8089,6 +8833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
           }
         }
       }
@@ -8155,6 +8905,12 @@
             "state" : "translated",
             "value" : "Fermer — tout ce que vous avez écrit est enregistré"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi — tutto ciò che hai scritto è salvato"
+          }
         }
       }
     },
@@ -8219,6 +8975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lune"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luna"
           }
         }
       }
@@ -8285,6 +9047,12 @@
             "state" : "translated",
             "value" : "Hanji au clair de lune"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanji al chiaro di luna"
+          }
         }
       }
     },
@@ -8349,6 +9117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hanji au clair de lune, céladon, crépuscule. Changez la couleur du papier et de la flamme."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanji al chiaro di luna, celadon, tramonto. Cambia il colore della carta e della fiamma."
           }
         }
       }
@@ -8415,6 +9189,12 @@
             "state" : "translated",
             "value" : "Brûlez en hanji au clair de lune, céladon ou crépuscule, en feu de prairie, braises ou cierge magique"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brucia in hanji al chiaro di luna, celadon o tramonto, come fuoco di prateria, braci o stellina"
+          }
         }
       }
     },
@@ -8480,6 +9260,12 @@
             "state" : "translated",
             "value" : "Ouvrez un mois pour trouver ses urnes hebdomadaires"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri un mese per trovare le sue urne settimanali"
+          }
         }
       }
     },
@@ -8544,6 +9330,12 @@
             "state" : "translated",
             "value" : "Cendres contenues"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere contenuta"
+          }
         }
       }
     },
@@ -8607,6 +9399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous pouvez fermer sans répondre. Les nuits non confirmées passent sans trace de roussi."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi chiudere senza rispondere. Le notti non confermate passano senza bruciature."
           }
         }
       }
@@ -8673,6 +9471,12 @@
             "state" : "translated",
             "value" : "Une estimation suffit"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Va bene anche a grandi linee"
+          }
         }
       }
     },
@@ -8738,6 +9542,12 @@
             "state" : "translated",
             "value" : "Que ferez-vous demain pour faire encore mieux ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa farai domani per fare ancora meglio?"
+          }
         }
       }
     },
@@ -8795,6 +9605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi"
           }
         }
       }
@@ -8861,6 +9677,12 @@
             "state" : "translated",
             "value" : "Échéances"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenze"
+          }
         }
       }
     },
@@ -8925,6 +9747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Échéances illimitées"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenze illimitate"
           }
         }
       }
@@ -8991,6 +9819,12 @@
             "state" : "translated",
             "value" : "Supprimer l’échéance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina scadenza"
+          }
         }
       }
     },
@@ -9055,6 +9889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier l’échéance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica scadenza"
           }
         }
       }
@@ -9121,6 +9961,12 @@
             "state" : "translated",
             "value" : "L’onglet des échéances apparaît automatiquement dès que vous en ajoutez une"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La scheda Scadenze compare da sola quando ne aggiungi una"
+          }
         }
       }
     },
@@ -9185,6 +10031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jusqu’à l’échéance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fino alla scadenza"
           }
         }
       }
@@ -9251,6 +10103,12 @@
             "state" : "translated",
             "value" : "Besoin de plus d’échéances ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuoi più scadenze?"
+          }
         }
       }
     },
@@ -9314,6 +10172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune échéance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna scadenza"
           }
         }
       }
@@ -9380,6 +10244,12 @@
             "state" : "translated",
             "value" : "Défi"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sfida"
+          }
         }
       }
     },
@@ -9443,6 +10313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forme"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forma"
           }
         }
       }
@@ -9509,6 +10385,12 @@
             "state" : "translated",
             "value" : "Touchez deux fois pour retourner le fragment"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca due volte per girare il frammento"
+          }
         }
       }
     },
@@ -9573,6 +10455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Classez en touchant un point sur les deux axes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Classifica toccando un punto lungo i due assi"
           }
         }
       }
@@ -9639,6 +10527,12 @@
             "state" : "translated",
             "value" : "Retournez-le et laissez une ligne au dos."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giralo e lascia una riga sul retro."
+          }
         }
       }
     },
@@ -9704,6 +10598,12 @@
             "state" : "translated",
             "value" : "Réécrire le dos"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riscrivi il retro"
+          }
         }
       }
     },
@@ -9768,6 +10668,12 @@
             "state" : "translated",
             "value" : "Une ligne pour le dos"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una riga per il retro"
+          }
         }
       }
     },
@@ -9831,6 +10737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Écrire au dos"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivi sul retro"
           }
         }
       }
@@ -9897,6 +10809,12 @@
             "state" : "translated",
             "value" : "Le dos est vide"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il retro è vuoto"
+          }
         }
       }
     },
@@ -9961,6 +10879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Feu de prairie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuoco di prateria"
           }
         }
       }
@@ -10027,6 +10951,12 @@
             "state" : "translated",
             "value" : "Clair"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiaro"
+          }
         }
       }
     },
@@ -10090,6 +11020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Échéance passée 🏁"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenza passata 🏁"
           }
         }
       }
@@ -10155,6 +11091,12 @@
             "state" : "translated",
             "value" : "Temps restant avant l’échéance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto alla scadenza"
+          }
         }
       }
     },
@@ -10218,6 +11160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date d’échéance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data di scadenza"
           }
         }
       }
@@ -10284,6 +11232,12 @@
             "state" : "translated",
             "value" : "Le mois où vous avez le plus fait ce que vous aviez prévu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il mese in cui hai fatto di più ciò che volevi"
+          }
         }
       }
     },
@@ -10348,6 +11302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "J’ai fait ce que j’avais prévu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ho fatto come volevo"
           }
         }
       }
@@ -10414,6 +11374,12 @@
             "state" : "translated",
             "value" : "J’ai fait ce que je voulais"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ho fatto quello che volevo"
+          }
         }
       }
     },
@@ -10478,6 +11444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activez le micro pour éteindre le feu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva il microfono per spegnere il fuoco"
           }
         }
       }
@@ -10544,6 +11516,12 @@
             "state" : "translated",
             "value" : "Créer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea"
+          }
         }
       }
     },
@@ -10602,6 +11580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chaque jour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni giorno"
           }
         }
       }
@@ -10664,6 +11648,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop"
@@ -10733,6 +11723,12 @@
             "state" : "translated",
             "value" : "À quelle heure vous êtes-vous endormi(e) ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A che ora ti sei addormentato/a?"
+          }
         }
       }
     },
@@ -10797,6 +11793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pas besoin de tout brûler"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non devi bruciare tutto"
           }
         }
       }
@@ -10863,6 +11865,12 @@
             "state" : "translated",
             "value" : "Cendres rassemblées"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere raccolta"
+          }
         }
       }
     },
@@ -10927,6 +11935,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Style"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stile"
           }
         }
       }
@@ -10993,6 +12007,12 @@
             "state" : "translated",
             "value" : "Fragments gardés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frammenti conservati"
+          }
         }
       }
     },
@@ -11056,6 +12076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fragments gardés : %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frammenti conservati: %@"
           }
         }
       }
@@ -11122,6 +12148,12 @@
             "state" : "translated",
             "value" : "Fragments gardés : %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frammenti conservati: %lld"
+          }
         }
       }
     },
@@ -11186,6 +12218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emportez vos fragments avec vous"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Porta con te i tuoi frammenti"
           }
         }
       }
@@ -11252,6 +12290,12 @@
             "state" : "translated",
             "value" : "Partagez vos fragments en cartes et en affiches"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi i frammenti come cartoline e poster"
+          }
         }
       }
     },
@@ -11316,6 +12360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Manqué"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mancato"
           }
         }
       }
@@ -11382,6 +12432,12 @@
             "state" : "translated",
             "value" : "La version gratuite garde jusqu’à %lld échéance. Avec Pro, décomptez autant d’objectifs que vous voulez."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La versione gratuita permette fino a %lld scadenza. Con Pro conti alla rovescia quanti obiettivi vuoi."
+          }
         }
       }
     },
@@ -11446,6 +12502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qu’est-ce qui vous a gardé(e) éveillé(e) ? (facultatif)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ti ha tenuto sveglio/a? (facoltativo)"
           }
         }
       }
@@ -11512,6 +12574,12 @@
             "state" : "translated",
             "value" : "Barre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barra"
+          }
         }
       }
     },
@@ -11576,6 +12644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arrière-plan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sfondo"
           }
         }
       }
@@ -11642,6 +12716,12 @@
             "state" : "translated",
             "value" : "Étincelle"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scintilla"
+          }
         }
       }
     },
@@ -11706,6 +12786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuit"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notte"
           }
         }
       }
@@ -11772,6 +12858,12 @@
             "state" : "translated",
             "value" : "Goutte"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Goccia"
+          }
         }
       }
     },
@@ -11836,6 +12928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apprentissage"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apprendimento"
           }
         }
       }
@@ -11902,6 +13000,12 @@
             "state" : "translated",
             "value" : "Les rapports de bugs et les idées de fonctionnalités sont les bienvenus."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segnalazioni di bug e idee per nuove funzioni sono benvenute."
+          }
         }
       }
     },
@@ -11966,6 +13070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jeter"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarta"
           }
         }
       }
@@ -12032,6 +13142,12 @@
             "state" : "translated",
             "value" : "Éclair"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fulmine"
+          }
         }
       }
     },
@@ -12096,6 +13212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plage"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervallo"
           }
         }
       }
@@ -12162,6 +13284,12 @@
             "state" : "translated",
             "value" : "Étoile"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stella"
+          }
         }
       }
     },
@@ -12226,6 +13354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun achat à restaurer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun acquisto da ripristinare"
           }
         }
       }
@@ -12292,6 +13426,12 @@
             "state" : "translated",
             "value" : "Étape Rédaction"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passo Scrittura"
+          }
         }
       }
     },
@@ -12357,6 +13497,12 @@
             "state" : "translated",
             "value" : "Enregistrer le texte et passer à la classification"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva il testo e passa alla classificazione"
+          }
         }
       }
     },
@@ -12418,6 +13564,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
@@ -12487,6 +13639,12 @@
             "state" : "translated",
             "value" : "Graphique de classification"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grafico di classificazione"
+          }
         }
       }
     },
@@ -12551,6 +13709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Étape Classification"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passo Classificazione"
           }
         }
       }
@@ -12617,6 +13781,12 @@
             "state" : "translated",
             "value" : "Non classé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non classificato"
+          }
         }
       }
     },
@@ -12681,6 +13851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enregistrer la classification et passer à la note pour demain"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva la classificazione e passa alla nota per domani"
           }
         }
       }
@@ -12747,6 +13923,12 @@
             "state" : "translated",
             "value" : "Flamme"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiamma"
+          }
         }
       }
     },
@@ -12812,6 +13994,12 @@
             "state" : "translated",
             "value" : "Type de flamme"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo di fiamma"
+          }
         }
       }
     },
@@ -12876,6 +14064,12 @@
             "state" : "translated",
             "value" : "Feu éteint · Voir les fragments gardés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuoco spento · Vedi i frammenti conservati"
+          }
         }
       }
     },
@@ -12939,6 +14133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le feu est éteint. Doux rêves"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il fuoco è spento. Sogni d’oro"
           }
         }
       }
@@ -13005,6 +14205,12 @@
             "state" : "translated",
             "value" : "Transformez les fragments gardés en cartes et en affiches."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trasforma i frammenti conservati in cartoline e poster."
+          }
         }
       }
     },
@@ -13069,6 +14275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Éteindre le feu demande aussi du courage"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spegnere il fuoco richiede coraggio"
           }
         }
       }
@@ -13135,6 +14347,12 @@
             "state" : "translated",
             "value" : "Vous n’avez pas soufflé, mais vous vous êtes endormi(e) à l’heure : le feu s’est éteint tout seul."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non hai soffiato, ma ti sei addormentato/a in orario, quindi il fuoco si è spento da solo."
+          }
         }
       }
     },
@@ -13199,6 +14417,12 @@
             "state" : "translated",
             "value" : "Le feu est éteint"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il fuoco è spento"
+          }
         }
       }
     },
@@ -13262,6 +14486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parchemin en flammes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme"
           }
         }
       }
@@ -13328,6 +14558,12 @@
             "state" : "translated",
             "value" : "Parchemin en flammes Pro"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme Pro"
+          }
         }
       }
     },
@@ -13392,6 +14628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parchemin en flammes 🔥"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme 🔥"
           }
         }
       }
@@ -13458,6 +14700,12 @@
             "state" : "translated",
             "value" : "Parchemin en flammes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme"
+          }
         }
       }
     },
@@ -13515,6 +14763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps libre en flammes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo libero in fiamme"
           }
         }
       }
@@ -13581,6 +14835,12 @@
             "state" : "translated",
             "value" : "Profitez du Temps libre en flammes, des couleurs et types de flamme, des cartes de fragments, du PDF du livre des bilans, d’une année de cendres et d’échéances illimitées."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ottieni Tempo libero in fiamme, colori e tipi di fiamma, cartoline dei frammenti, il PDF del libro delle riflessioni, un anno di cenere e scadenze illimitate."
+          }
         }
       }
     },
@@ -13639,6 +14899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Profitez du Temps libre en flammes, des thèmes, des cartes de fragments, du PDF du livre des bilans, d’une année de cendres et d’échéances illimitées."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ottieni Tempo libero in fiamme, temi, cartoline dei frammenti, il PDF del libro delle riflessioni, un anno di cenere e scadenze illimitate."
           }
         }
       }
@@ -13705,6 +14971,12 @@
             "state" : "translated",
             "value" : "Cierge magique"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stellina"
+          }
         }
       }
     },
@@ -13768,6 +15040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Laissez vide pour utiliser la phrase en filigrane"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia vuoto per usare la frase sbiadita"
           }
         }
       }
@@ -13834,6 +15112,12 @@
             "state" : "translated",
             "value" : "Couleur"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colore"
+          }
         }
       }
     },
@@ -13898,6 +15182,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La couleur règle la teinte du papier et de la flamme. Le type de flamme règle la façon de brûler. Choisissez-les séparément"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il colore imposta la tinta della carta e della fiamma. Il tipo di fiamma imposta come brucia. Scegli ciascuno separatamente"
           }
         }
       }
@@ -13964,6 +15254,12 @@
             "state" : "translated",
             "value" : "Utilisé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In uso"
+          }
         }
       }
     },
@@ -14028,6 +15324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
           }
         }
       }
@@ -14094,6 +15396,12 @@
             "state" : "translated",
             "value" : "Nouvelle échéance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuova scadenza"
+          }
         }
       }
     },
@@ -14158,6 +15466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nouvelle urne"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuova urna"
           }
         }
       }
@@ -14224,6 +15538,12 @@
             "state" : "translated",
             "value" : "Créer une nouvelle urne"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una nuova urna"
+          }
         }
       }
     },
@@ -14287,6 +15607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nouveau bilan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuova riflessione"
           }
         }
       }
@@ -14353,6 +15679,12 @@
             "state" : "translated",
             "value" : "Écrire un nouveau bilan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivi una nuova riflessione"
+          }
         }
       }
     },
@@ -14417,6 +15749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Graver"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incidi"
           }
         }
       }
@@ -14483,6 +15821,12 @@
             "state" : "translated",
             "value" : "Inclut toutes les fonctionnalités Pro à venir"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Include tutte le funzioni Pro che aggiungeremo"
+          }
         }
       }
     },
@@ -14547,6 +15891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ligne"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linea"
           }
         }
       }
@@ -14613,6 +15963,12 @@
             "state" : "translated",
             "value" : "Sélectionné"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selezionato"
+          }
         }
       }
     },
@@ -14677,6 +16033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réglages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
           }
         }
       },
@@ -14743,6 +16105,12 @@
             "state" : "translated",
             "value" : "Activer le micro dans les Réglages"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva il microfono nelle Impostazioni"
+          }
         }
       }
     },
@@ -14807,6 +16175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Évolution"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crescita"
           }
         }
       }
@@ -14873,6 +16247,12 @@
             "state" : "translated",
             "value" : "Soyez honnête..."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sii sincero/a..."
+          }
         }
       }
     },
@@ -14937,6 +16317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Données de sommeil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dati del sonno"
           }
         }
       }
@@ -15003,6 +16389,12 @@
             "state" : "translated",
             "value" : "Les données de sommeil sont seulement lues et ne quittent jamais votre appareil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo"
+          }
         }
       }
     },
@@ -15066,6 +16458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sommeil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonno"
           }
         }
       }
@@ -15132,6 +16530,12 @@
             "state" : "translated",
             "value" : "Modifier"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica"
+          }
         }
       }
     },
@@ -15197,6 +16601,12 @@
             "state" : "translated",
             "value" : "Braises"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Braci"
+          }
         }
       }
     },
@@ -15258,6 +16668,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "h"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "h"
@@ -15327,6 +16743,12 @@
             "state" : "translated",
             "value" : "Heure"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora"
+          }
         }
       }
     },
@@ -15392,6 +16814,12 @@
             "state" : "translated",
             "value" : "Réglages de l’heure"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni orario"
+          }
         }
       }
     },
@@ -15456,6 +16884,12 @@
             "state" : "translated",
             "value" : "Temps consacré"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo dedicato"
+          }
         }
       }
     },
@@ -15519,6 +16953,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun temps consacré"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun tempo dedicato"
           }
         }
       }
@@ -15585,6 +17025,12 @@
             "state" : "translated",
             "value" : "Système"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema"
+          }
         }
       }
     },
@@ -15650,6 +17096,12 @@
             "state" : "translated",
             "value" : "Choisissez Système pour suivre le réglage du mode sombre de votre appareil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli Sistema per seguire l’impostazione di modalità scura del dispositivo"
+          }
         }
       }
     },
@@ -15708,6 +17160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Début"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizio"
           }
         }
       }
@@ -15772,6 +17230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heure de début"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora di inizio"
           }
         }
       }
@@ -15838,6 +17302,12 @@
             "state" : "translated",
             "value" : "Erreurs"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Errori"
+          }
         }
       }
     },
@@ -15901,6 +17371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbole"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simbolo"
           }
         }
       }
@@ -15966,6 +17442,12 @@
             "state" : "translated",
             "value" : "Pas encore de cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora nessuna cenere"
+          }
         }
       }
     },
@@ -16030,6 +17512,12 @@
             "state" : "translated",
             "value" : "Aucun fragment gardé pour l’instant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora nessun frammento conservato"
+          }
         }
       }
     },
@@ -16093,6 +17581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune cendre classée pour l’instant. Touchez le graphique en écrivant un bilan."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora nessuna cenere classificata. Tocca il grafico mentre scrivi una riflessione."
           }
         }
       }
@@ -16159,6 +17653,12 @@
             "state" : "translated",
             "value" : "Encore vide"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora vuoto"
+          }
         }
       }
     },
@@ -16224,6 +17724,12 @@
             "state" : "translated",
             "value" : "Encore vide."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora vuoto."
+          }
         }
       }
     },
@@ -16287,6 +17793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cendres sans nom"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere senza nome"
           }
         }
       }
@@ -16353,6 +17865,12 @@
             "state" : "translated",
             "value" : "Rien d’écrit pour l’instant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora niente di scritto"
+          }
         }
       }
     },
@@ -16416,6 +17934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Encore sur la première page"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sei ancora alla prima pagina"
           }
         }
       }
@@ -16482,6 +18006,12 @@
             "state" : "translated",
             "value" : "Pas encore d’urnes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora nessuna urna"
+          }
         }
       }
     },
@@ -16547,6 +18077,12 @@
             "state" : "translated",
             "value" : "Aucune cendre n’est encore retombée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La cenere non si è ancora depositata"
+          }
         }
       }
     },
@@ -16610,6 +18146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pour l’instant, juste de la cendre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per ora è solo cenere"
           }
         }
       }
@@ -16676,6 +18218,12 @@
             "state" : "translated",
             "value" : "Fonctionnalités Pro à venir"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzioni Pro future"
+          }
         }
       }
     },
@@ -16734,6 +18282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Environ %lld jours"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Circa %lld giorni"
           }
         }
       }
@@ -16800,6 +18354,12 @@
             "state" : "translated",
             "value" : "Parchemin"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena"
+          }
         }
       }
     },
@@ -16864,6 +18424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parchemin et flamme"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena e fiamma"
           }
         }
       }
@@ -16930,6 +18496,12 @@
             "state" : "translated",
             "value" : "Thèmes parchemin et flamme"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temi pergamena e fiamma"
+          }
         }
       }
     },
@@ -16994,6 +18566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisissez comment brûle votre parchemin. La couleur suit le thème ci-dessus"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli come brucia la pergamena. Il colore segue il tema qui sopra"
           }
         }
       }
@@ -17060,6 +18638,12 @@
             "state" : "translated",
             "value" : "Parchemin et flamme"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena e fiamma"
+          }
         }
       }
     },
@@ -17124,6 +18708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La couleur du papier et la flamme changent ensemble"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il colore della carta e la fiamma cambiano insieme"
           }
         }
       }
@@ -17190,6 +18780,12 @@
             "state" : "translated",
             "value" : "Dans quelle urne la ranger ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In quale urna va messa?"
+          }
         }
       }
     },
@@ -17253,6 +18849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non terminé hier"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non finito ieri"
           }
         }
       }
@@ -17319,6 +18921,12 @@
             "state" : "translated",
             "value" : "Non terminé hier : %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non finito ieri: %lld"
+          }
         }
       }
     },
@@ -17382,6 +18990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous vous êtes endormi(e) %@ trop tard hier soir,\\ndonc ce matin est roussi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ieri notte ti sei addormentato/a %@ più tardi,\\nquindi stamattina è bruciacchiata"
           }
         }
       }
@@ -17448,6 +19062,12 @@
             "state" : "translated",
             "value" : "Vous vous êtes endormi(e) %@ trop tard hier soir.\\nEssayez d’éteindre le feu un peu plus tôt ce soir."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ieri notte ti sei addormentato/a %@ più tardi.\\nProva a spegnere il fuoco un po’ prima stasera."
+          }
         }
       }
     },
@@ -17513,6 +19133,12 @@
             "state" : "translated",
             "value" : "Le fragment de la nuit dernière a refroidi"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il frammento di ieri notte si è raffreddato"
+          }
         }
       }
     },
@@ -17576,6 +19202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Comment était la nuit dernière ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com’è andata ieri notte?"
           }
         }
       }
@@ -17642,6 +19274,12 @@
             "state" : "translated",
             "value" : "Imprévu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per caso"
+          }
         }
       }
     },
@@ -17706,6 +19344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "J’ai fini par le faire"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sono finito/a a farlo"
           }
         }
       }
@@ -17772,6 +19416,12 @@
             "state" : "translated",
             "value" : "Fait sans l’avoir prévu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fatto per caso"
+          }
         }
       }
     },
@@ -17837,6 +19487,12 @@
             "state" : "translated",
             "value" : "Aucun"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuno"
+          }
         }
       }
     },
@@ -17900,6 +19556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce qui est ici reste de la cendre tant que vous ne lui avez pas donné un nom."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quello che c’è qui resta solo cenere finché non gli dai un nome."
           }
         }
       }
@@ -17966,6 +19628,12 @@
             "state" : "translated",
             "value" : "Ce que ces cendres ont été pour moi…"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa è stata per me questa cenere…"
+          }
         }
       }
     },
@@ -18030,6 +19698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Décomptez plusieurs objectifs à la fois"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conta alla rovescia più obiettivi insieme"
           }
         }
       }
@@ -18096,6 +19770,12 @@
             "state" : "translated",
             "value" : "Connecté"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collegato"
+          }
         }
       }
     },
@@ -18160,6 +19840,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pour déconnecter, allez dans Réglages iOS ▸ Santé ▸ Accès aux données et appareils"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per scollegare, vai in Impostazioni iOS ▸ Salute ▸ Accesso ai dati e dispositivi"
           }
         }
       }
@@ -18226,6 +19912,12 @@
             "state" : "translated",
             "value" : "Pour déconnecter, allez dans Réglages iOS ▸ Santé ▸ Accès aux données et appareils. Les données de sommeil sont seulement lues et ne quittent jamais votre appareil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per scollegare, vai in Impostazioni iOS ▸ Salute ▸ Accesso ai dati e dispositivi. I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo"
+          }
         }
       }
     },
@@ -18290,6 +19982,12 @@
             "state" : "translated",
             "value" : "Connecter"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collega"
+          }
         }
       }
     },
@@ -18353,6 +20051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une fois connecté, nous ne demandons plus chaque matin et remettons le feu à l’heure où vous vous êtes endormi(e). Les données de sommeil sont seulement lues et ne quittent jamais votre appareil."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una volta collegato, non chiederemo ogni mattina e riporteremo il fuoco all’ora in cui ti sei addormentato/a. I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo."
           }
         }
       }
@@ -18419,6 +20123,12 @@
             "state" : "translated",
             "value" : "Une fois connecté, nous ne demandons plus chaque matin. Le parchemin de demain revient à l’heure où vous vous êtes réellement endormi(e)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una volta collegato, non chiederemo ogni mattina. La pergamena di domani torna all’ora in cui ti sei davvero addormentato/a"
+          }
         }
       }
     },
@@ -18483,6 +20193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une fois connecté, nous utilisons votre heure de sommeil enregistrée au lieu de demander chaque matin. Les données de sommeil sont seulement lues et ne quittent jamais votre appareil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una volta collegato, useremo l’ora di sonno registrata invece di chiedere ogni mattina. I dati del sonno vengono solo letti e non lasciano mai il tuo dispositivo"
           }
         }
       }
@@ -18549,6 +20265,12 @@
             "state" : "translated",
             "value" : "Ouvrir"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri"
+          }
         }
       }
     },
@@ -18613,6 +20335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex. : limiter les réseaux sociaux à 15 minutes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. limitare i social a 15 minuti"
           }
         }
       }
@@ -18679,6 +20407,12 @@
             "state" : "translated",
             "value" : "Ex. : la semaine où j’ai tenu bon"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. la settimana in cui ho resistito"
+          }
         }
       }
     },
@@ -18743,6 +20477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex. : passer à 20 minutes de marche"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. passare a una camminata di 20 minuti"
           }
         }
       }
@@ -18809,6 +20549,12 @@
             "state" : "translated",
             "value" : "Ex. : prolonger l’entraînement de 30 minutes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. allungare l’allenamento di 30 minuti"
+          }
         }
       }
     },
@@ -18873,6 +20619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex. : sport, relations, défi de l’année"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. sport, relazioni, sfida dell’anno"
           }
         }
       }
@@ -18939,6 +20691,12 @@
             "state" : "translated",
             "value" : "Ex. : 30 minutes de sport juste après le déjeuner"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. 30 minuti di allenamento subito dopo pranzo"
+          }
         }
       }
     },
@@ -19003,6 +20761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ex. : lire un chapitre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. leggere un capitolo"
           }
         }
       }
@@ -19069,6 +20833,12 @@
             "state" : "translated",
             "value" : "Ex. : rendre le projet"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es. consegnare il progetto"
+          }
         }
       }
     },
@@ -19133,6 +20903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aujourd’hui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi"
           }
         }
       }
@@ -19199,6 +20975,12 @@
             "state" : "translated",
             "value" : "Pourquoi la journée est restée inachevée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perché oggi è rimasto incompiuto"
+          }
         }
       }
     },
@@ -19263,6 +21045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce matin est un peu roussi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stamattina è un po’ bruciacchiata"
           }
         }
       }
@@ -19329,6 +21117,12 @@
             "state" : "translated",
             "value" : "Laissez une ligne sur votre journée."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia una riga sulla tua giornata."
+          }
         }
       }
     },
@@ -19393,6 +21187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous n’avez pas pu\\nfinir votre journée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non sei riuscito/a\\na finire la giornata"
           }
         }
       }
@@ -19459,6 +21259,12 @@
             "state" : "translated",
             "value" : "Qu’est-ce qui vous a empêché(e)\\nde finir votre journée ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ti ha impedito\\ndi finire la giornata?"
+          }
         }
       }
     },
@@ -19524,6 +21330,12 @@
             "state" : "translated",
             "value" : "Éteint le feu d’aujourd’hui et garde le fragment restant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spegne il fuoco di oggi e conserva il frammento rimasto"
+          }
         }
       }
     },
@@ -19587,6 +21399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une ligne avant de dormir ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una riga prima di dormire?"
           }
         }
       }
@@ -19653,6 +21471,12 @@
             "state" : "translated",
             "value" : "Aujourd’hui, "
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi, "
+          }
         }
       }
     },
@@ -19718,6 +21542,12 @@
             "state" : "translated",
             "value" : "Passer aujourd’hui"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salta oggi"
+          }
         }
       }
     },
@@ -19781,6 +21611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Comment était votre journée ? — Touchez pour la placer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com’è andata la giornata? — Tocca per segnarla"
           }
         }
       }
@@ -19847,6 +21683,12 @@
             "state" : "translated",
             "value" : "Qu’essaierez-vous ce soir ? (facultatif)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa proverai stasera? (facoltativo)"
+          }
         }
       }
     },
@@ -19911,6 +21753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voilà pour aujourd’hui. Ça a bien brûlé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per oggi basta così. Ha bruciato bene."
           }
         }
       }
@@ -19977,6 +21825,12 @@
             "state" : "translated",
             "value" : "C’est moi qui décide où finit aujourd’hui"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decido io dove finisce oggi"
+          }
         }
       }
     },
@@ -20042,6 +21896,12 @@
             "state" : "translated",
             "value" : "Écrire le bilan du jour ? Touchez pour ouvrir l’éditeur"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivere la riflessione di oggi? Tocca per aprire l’editor"
+          }
         }
       }
     },
@@ -20099,13 +21959,19 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ДП"
+            "value" : "утра"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AM"
+            "value" : "du matin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "di mattina"
           }
         }
       }
@@ -20164,13 +22030,19 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ПП"
+            "value" : "вечера"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PM"
+            "value" : "du soir"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "di sera"
           }
         }
       }
@@ -20237,6 +22109,12 @@
             "state" : "translated",
             "value" : "Cette année"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quest’anno"
+          }
         }
       }
     },
@@ -20302,6 +22180,12 @@
             "state" : "translated",
             "value" : "Temps restant cette année"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto quest’anno"
+          }
         }
       }
     },
@@ -20365,6 +22249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fatto"
           }
         }
       }
@@ -20430,6 +22320,12 @@
             "state" : "translated",
             "value" : "+%@ de plus"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "altri %@"
+          }
         }
       }
     },
@@ -20487,6 +22383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "et %@ de plus"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e altri %@"
           }
         }
       }
@@ -20553,6 +22455,12 @@
             "state" : "translated",
             "value" : "+%lld de plus"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "altri %lld"
+          }
         }
       }
     },
@@ -20617,6 +22525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "et %lld de plus"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e altri %lld"
           }
         }
       }
@@ -20683,6 +22597,12 @@
             "state" : "translated",
             "value" : "Cercle"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerchio"
+          }
         }
       }
     },
@@ -20748,6 +22668,12 @@
             "state" : "translated",
             "value" : "Balayez vers le haut ou le bas pour changer de page"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scorri su o giù per cambiare pagina"
+          }
         }
       }
     },
@@ -20811,6 +22737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Écrire son sens"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivi il significato"
           }
         }
       }
@@ -20877,6 +22809,12 @@
             "state" : "translated",
             "value" : "Le noter"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annota"
+          }
         }
       }
     },
@@ -20940,6 +22878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Effacer le sens"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella il significato"
           }
         }
       }
@@ -21005,6 +22949,12 @@
             "state" : "translated",
             "value" : "Sans\\nintention"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senza\\nintenzione"
+          }
         }
       }
     },
@@ -21068,6 +23018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avec\\nintention"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con\\nintenzione"
           }
         }
       }
@@ -21133,6 +23089,12 @@
             "state" : "translated",
             "value" : "Nous n’avons trouvé aucun achat Pro sur ce compte Apple. Vérifiez que vous êtes connecté(e) avec le compte utilisé pour l’achat."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non abbiamo trovato un acquisto Pro su questo Apple Account. Verifica di aver effettuato l’accesso con l’account usato per l’acquisto."
+          }
         }
       }
     },
@@ -21196,6 +23158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune cendre ne reste de ce jour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di questo giorno non resta cenere"
           }
         }
       }
@@ -21262,6 +23230,12 @@
             "state" : "translated",
             "value" : "Que signifiait ce mois pour vous ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ha significato per te questo mese?"
+          }
         }
       }
     },
@@ -21325,6 +23299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnes hebdomadaires de ce mois"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne settimanali di questo mese"
           }
         }
       }
@@ -21391,6 +23371,12 @@
             "state" : "translated",
             "value" : "Comment gérerez-vous ce temps demain ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come gestirai questo tempo domani?"
+          }
         }
       }
     },
@@ -21456,6 +23442,12 @@
             "state" : "translated",
             "value" : "Jeter ce fragment ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scartare questo frammento?"
+          }
         }
       }
     },
@@ -21520,6 +23512,12 @@
             "state" : "translated",
             "value" : "Que signifiait cette semaine pour vous ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ha significato per te questa settimana?"
+          }
         }
       }
     },
@@ -21583,6 +23581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette urne est vide."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa urna è vuota."
           }
         }
       }
@@ -21649,6 +23653,12 @@
             "state" : "translated",
             "value" : "Remet cette urne à l’état de cendre sans nom"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riporta questa urna a cenere senza nome"
+          }
         }
       }
     },
@@ -21712,6 +23722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce qui reste dans cette urne"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa resta in questa urna"
           }
         }
       }
@@ -21778,6 +23794,12 @@
             "state" : "translated",
             "value" : "Nom"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
+          }
         }
       }
     },
@@ -21842,6 +23864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Renommer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rinomina"
           }
         }
       }
@@ -21908,6 +23936,12 @@
             "state" : "translated",
             "value" : "Urne sans titre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna senza titolo"
+          }
         }
       }
     },
@@ -21973,6 +24007,12 @@
             "state" : "translated",
             "value" : "Nous écrire"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivici"
+          }
         }
       }
     },
@@ -22033,6 +24073,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -22102,6 +24148,12 @@
             "state" : "translated",
             "value" : "Partager l’image"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi immagine"
+          }
         }
       }
     },
@@ -22166,6 +24218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce mois-ci"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo mese"
           }
         }
       }
@@ -22232,6 +24290,12 @@
             "state" : "translated",
             "value" : "Temps restant ce mois-ci"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto questo mese"
+          }
         }
       }
     },
@@ -22296,6 +24360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa settimana"
           }
         }
       }
@@ -22362,6 +24432,12 @@
             "state" : "translated",
             "value" : "Temps restant cette semaine"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto questa settimana"
+          }
         }
       }
     },
@@ -22421,6 +24497,12 @@
             "state" : "translated",
             "value" : "Temps libre restant cette semaine"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo libero rimasto questa settimana"
+          }
         }
       }
     },
@@ -22479,6 +24561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le temps libre de cette semaine a entièrement brûlé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tempo libero di questa settimana è tutto bruciato"
           }
         }
       }
@@ -22545,6 +24633,12 @@
             "state" : "translated",
             "value" : "Cela se répète aussi cette semaine"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si ripete anche questa settimana"
+          }
         }
       }
     },
@@ -22609,6 +24703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cela s’est aussi produit plus tôt cette semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "È successo anche prima in questa settimana"
           }
         }
       }
@@ -22675,6 +24775,12 @@
             "state" : "translated",
             "value" : "Conditions d’utilisation (EULA)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condizioni d’uso (EULA)"
+          }
         }
       }
     },
@@ -22739,6 +24845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mois précédent"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mese precedente"
           }
         }
       }
@@ -22805,6 +24917,12 @@
             "state" : "translated",
             "value" : "DM Instagram (@lee25_ios)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM su Instagram (@lee25_ios)"
+          }
         }
       }
     },
@@ -22864,6 +24982,12 @@
             "state" : "translated",
             "value" : "Mon temps chaque semaine"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il mio tempo ogni settimana"
+          }
         }
       }
     },
@@ -22922,6 +25046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le parchemin ne brûle que pendant vos propres heures"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La pergamena brucia solo durante le tue ore"
           }
         }
       }
@@ -22986,6 +25116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seule la force de votre souffle est utilisée. Rien n’est enregistré."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viene usata solo la forza del tuo soffio. Non viene registrato nulla."
           }
         }
       }
@@ -23052,6 +25188,12 @@
             "state" : "translated",
             "value" : "Feuille"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foglia"
+          }
         }
       }
     },
@@ -23116,6 +25258,12 @@
             "state" : "translated",
             "value" : "Enregistrement auto"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvataggio automatico"
+          }
         }
       }
     },
@@ -23174,6 +25322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps libre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo libero"
           }
         }
       }
@@ -23234,6 +25388,12 @@
             "state" : "translated",
             "value" : "Modifier le temps libre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica il tempo libero"
+          }
         }
       }
     },
@@ -23292,6 +25452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter du temps libre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi tempo libero"
           }
         }
       }
@@ -23358,6 +25524,12 @@
             "state" : "translated",
             "value" : "Le temps libre apparaît sous forme de sablier dans les points de pages. Les échéances apparaissent d’elles-mêmes dès que vous en ajoutez"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tempo libero appare come clessidra nei puntini delle pagine. Le scadenze compaiono da sole quando le aggiungi"
+          }
         }
       }
     },
@@ -23415,6 +25587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il s’allume tant que votre temps libre s’écoule et attend éteint le reste de la semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si accende mentre passa il tuo tempo libero e resta spento nel resto della settimana"
           }
         }
       }
@@ -23481,6 +25659,12 @@
             "state" : "translated",
             "value" : "De petits changements, c’est déjà un bon début..."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anche piccoli cambiamenti sono un buon inizio..."
+          }
         }
       }
     },
@@ -23545,6 +25729,12 @@
             "state" : "translated",
             "value" : "Touchez une braise pour voir les bilans de ce jour"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca una brace per vedere le riflessioni di quel giorno"
+          }
         }
       }
     },
@@ -23608,6 +25798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bonne nuit"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buonanotte"
           }
         }
       }
@@ -23674,6 +25870,12 @@
             "state" : "translated",
             "value" : "Une journée bien brûlée. Il est temps de laisser refroidir."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una giornata ben bruciata. È ora di lasciarla raffreddare."
+          }
         }
       }
     },
@@ -23731,6 +25933,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Écartez le sommeil, le travail et les corvées, et n’ajoutez que le temps que vous vous consacrez. Le parchemin de cette semaine ne brûle que pendant qu’il s’écoule."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escludi sonno, lavoro e faccende e aggiungi solo il tempo che dedichi a te. La pergamena di questa settimana brucia solo mentre passa."
           }
         }
       }
@@ -23790,6 +25998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisissez les heures qui sont vraiment à vous, en dehors du sommeil et du travail. Le parchemin de cette semaine ne brûle que pendant qu’elles s’écoulent."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli le ore davvero tue, oltre a sonno e lavoro. La pergamena di questa settimana brucia solo mentre passano."
           }
         }
       }
@@ -23856,6 +26070,12 @@
             "state" : "translated",
             "value" : "Heure d’endormissement"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora in cui ti sei addormentato/a"
+          }
         }
       }
     },
@@ -23920,6 +26140,12 @@
             "state" : "translated",
             "value" : "Il s’arrête tout seul dès que vous dormez. Nous vérifions le matin à quelle heure vous vous êtes endormi(e) et le remettons en arrière"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si ferma da sola quando ti addormenti. La mattina controlliamo a che ora ti sei addormentato/a e la riportiamo indietro"
+          }
         }
       }
     },
@@ -23978,6 +26204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chevauche votre sommeil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si sovrappone al tuo sonno"
           }
         }
       }
@@ -24038,6 +26270,12 @@
             "state" : "translated",
             "value" : "Cela chevauche votre sommeil. Gardez-le dans vos heures d’éveil."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si sovrappone al tuo sonno. Tienila entro le ore di veglia."
+          }
         }
       }
     },
@@ -24095,6 +26333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sans le sommeil, sans le travail,\\nchoisissez seulement les heures qui sont à vous.\\nLe parchemin de cette semaine ne brûle que pendant qu’elles s’écoulent."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senza sonno, senza lavoro,\\nscegli solo le ore che sono tue.\\nLa pergamena di questa settimana brucia solo mentre passano."
           }
         }
       }
@@ -24161,6 +26405,12 @@
             "state" : "translated",
             "value" : "Cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere"
+          }
         }
       }
     },
@@ -24225,6 +26475,12 @@
             "state" : "translated",
             "value" : "Basé sur %@ cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In base a %@ ceneri"
+          }
         }
       }
     },
@@ -24282,6 +26538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cendres : %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere: %@"
           }
         }
       }
@@ -24342,6 +26604,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cendres : %@ · format A5"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere: %@ · formato A5"
           }
         }
       }
@@ -24408,6 +26676,12 @@
             "state" : "translated",
             "value" : "Basé sur %lld cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In base a %lld ceneri"
+          }
         }
       }
     },
@@ -24472,6 +26746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cendres : %lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere: %lld"
           }
         }
       }
@@ -24538,6 +26818,12 @@
             "state" : "translated",
             "value" : "Cendres : %lld · format A5"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere: %lld · formato A5"
+          }
         }
       }
     },
@@ -24603,6 +26889,12 @@
             "state" : "translated",
             "value" : "Urnes de cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne di cenere"
+          }
         }
       }
     },
@@ -24666,6 +26958,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rangez-la dans votre urne de cendres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mettila nella tua urna di cenere"
           }
         }
       }
@@ -24732,6 +27030,12 @@
             "state" : "translated",
             "value" : "Mois avec le plus de cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mese con più cenere"
+          }
         }
       }
     },
@@ -24797,6 +27101,12 @@
             "state" : "translated",
             "value" : "Gardez quelques cendres et\\nla répartition et le calendrier des braises apparaîtront ici."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conserva un po’ di cenere e\\nla distribuzione e il calendario delle braci appariranno qui."
+          }
         }
       }
     },
@@ -24860,6 +27170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Répartition des cendres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Distribuzione della cenere"
           }
         }
       }
@@ -24926,6 +27242,12 @@
             "state" : "translated",
             "value" : "Flux de cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flusso della cenere"
+          }
         }
       }
     },
@@ -24990,6 +27312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voir le flux de cendres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi il flusso della cenere"
           }
         }
       }
@@ -25056,6 +27384,12 @@
             "state" : "translated",
             "value" : "Enregistrer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
+          }
         }
       }
     },
@@ -25121,6 +27455,12 @@
             "state" : "translated",
             "value" : "Enregistrement"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvataggio"
+          }
         }
       }
     },
@@ -25185,6 +27525,12 @@
             "state" : "translated",
             "value" : "Enregistrement…"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvataggio…"
+          }
         }
       }
     },
@@ -25248,6 +27594,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enregistré"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvato"
           }
         }
       }
@@ -25314,6 +27666,12 @@
             "state" : "translated",
             "value" : "Enregistrer et commencer un nouveau bilan"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva e inizia una nuova riflessione"
+          }
         }
       }
     },
@@ -25378,6 +27736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enregistrer et fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva e chiudi"
           }
         }
       }
@@ -25444,6 +27808,12 @@
             "state" : "translated",
             "value" : "Éteint tout seul"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spento da solo"
+          }
         }
       }
     },
@@ -25508,6 +27878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous avez gardé un fragment éteint tout seul"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hai conservato un frammento che si è spento da solo"
           }
         }
       }
@@ -25574,6 +27950,12 @@
             "state" : "translated",
             "value" : "Réunissez vos bilans en un seul PDF à conserver ou imprimer."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raccogli le riflessioni in un unico PDF da conservare o stampare."
+          }
         }
       }
     },
@@ -25638,6 +28020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tout"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutto"
           }
         }
       }
@@ -25704,6 +28092,12 @@
             "state" : "translated",
             "value" : "Point"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punto"
+          }
         }
       }
     },
@@ -25763,6 +28157,12 @@
             "state" : "translated",
             "value" : "Votre temps libre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo tempo libero"
+          }
         }
       }
     },
@@ -25820,6 +28220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le définir et voir les chiffres est gratuit. Ne brûler que ces heures est réservé à Pro."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostarlo e vedere i numeri è gratis. Bruciare solo quelle ore è Pro."
           }
         }
       }
@@ -25885,6 +28291,12 @@
             "state" : "translated",
             "value" : "Titre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titolo"
+          }
         }
       }
     },
@@ -25948,6 +28360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous avez éteint le feu à l’heure. Le parchemin de demain est intact"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hai spento il fuoco in orario. La pergamena di domani è intatta"
           }
         }
       }
@@ -26014,6 +28432,12 @@
             "state" : "translated",
             "value" : "Vous vous êtes endormi(e) à l’heure, donc le feu s’est éteint tout seul"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ti sei addormentato/a in orario, quindi il fuoco si è spento da solo"
+          }
         }
       }
     },
@@ -26078,6 +28502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je me suis couché(e) à l’heure"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ho dormito in orario"
           }
         }
       }
@@ -26144,6 +28574,12 @@
             "state" : "translated",
             "value" : "Jeter le fragment"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarta frammento"
+          }
         }
       }
     },
@@ -26208,6 +28644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Carte de fragment"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartolina del frammento"
           }
         }
       }
@@ -26274,6 +28716,12 @@
             "state" : "translated",
             "value" : "Cartes et affiches de fragments"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartoline e poster dei frammenti"
+          }
         }
       }
     },
@@ -26338,6 +28786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partager en carte de fragment"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi come cartolina del frammento"
           }
         }
       }
@@ -26404,6 +28858,12 @@
             "state" : "translated",
             "value" : "Affiche de fragment"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poster del frammento"
+          }
         }
       }
     },
@@ -26469,6 +28929,12 @@
             "state" : "translated",
             "value" : "Créer une affiche de fragment"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea un poster del frammento"
+          }
         }
       }
     },
@@ -26532,6 +28998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touchez le fragment pour le retourner"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca il frammento per girarlo"
           }
         }
       }
@@ -26598,6 +29070,12 @@
             "state" : "translated",
             "value" : "Dos du fragment"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retro del frammento"
+          }
         }
       }
     },
@@ -26662,6 +29140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Face du fragment"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fronte del frammento"
           }
         }
       }
@@ -26728,6 +29212,12 @@
             "state" : "translated",
             "value" : "Une journée laissée un peu non brûlée reste plus longtemps"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una giornata lasciata un po’ non bruciata dura più a lungo"
+          }
         }
       }
     },
@@ -26791,6 +29281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Envie d’en dire plus ? (facultatif)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuoi dire di più? (facoltativo)"
           }
         }
       }
@@ -26857,6 +29353,12 @@
             "state" : "translated",
             "value" : "Type"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo"
+          }
         }
       }
     },
@@ -26922,6 +29424,12 @@
             "state" : "translated",
             "value" : "Doux rêves"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sogni d’oro"
+          }
         }
       }
     },
@@ -26980,6 +29488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Week-ends"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekend"
           }
         }
       }
@@ -27046,6 +29560,12 @@
             "state" : "translated",
             "value" : "Créez autant d’urnes de cendres que vous voulez, par sujet"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea quante urne di cenere vuoi, per argomento"
+          }
         }
       }
     },
@@ -27111,6 +29631,12 @@
             "state" : "translated",
             "value" : "En cours de remplissage"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In riempimento adesso"
+          }
         }
       }
     },
@@ -27169,6 +29695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En train de brûler · jusqu’à %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sta bruciando · fino alle %@"
           }
         }
       }
@@ -27235,6 +29767,12 @@
             "state" : "translated",
             "value" : "Enregistre ce bilan et en ouvre un vierge"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva questa riflessione e ne apre una vuota"
+          }
         }
       }
     },
@@ -27299,6 +29837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Que faire des cendres des %lld derniers jours ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa fare con la cenere degli ultimi %lld giorni?"
           }
         }
       }
@@ -27365,6 +29909,12 @@
             "state" : "translated",
             "value" : "Que faire des cendres des %lld dernières semaines ?"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa fare con la cenere delle ultime %lld settimane?"
+          }
         }
       }
     },
@@ -27430,6 +29980,12 @@
             "state" : "translated",
             "value" : "Cendres par mois sur les 12 derniers mois"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cenere per mese negli ultimi 12 mesi"
+          }
         }
       }
     },
@@ -27493,6 +30049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Où sont passés les 12 derniers mois, mois par mois"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dove sono andati gli ultimi 12 mesi, mese per mese"
           }
         }
       }
@@ -27559,6 +30121,12 @@
             "state" : "translated",
             "value" : "Les cendres des 12 derniers mois, mois par mois"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La cenere degli ultimi 12 mesi, mese per mese"
+          }
         }
       }
     },
@@ -27624,6 +30192,12 @@
             "state" : "translated",
             "value" : "Voyez où est passé votre temps chaque mois sur les douze derniers mois."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scopri dove è andato il tuo tempo ogni mese negli ultimi dodici mesi."
+          }
         }
       }
     },
@@ -27682,6 +30256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
           }
         }
       }
@@ -27750,6 +30330,12 @@
             "state" : "translated",
             "value" : "Assistance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supporto"
+          }
         }
       }
     },
@@ -27813,6 +30399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter la première cendre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi la prima cenere"
           }
         }
       }
@@ -27879,6 +30471,12 @@
             "state" : "translated",
             "value" : "Créer votre première urne"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea la tua prima urna"
+          }
         }
       }
     },
@@ -27943,6 +30541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Commencez par créer votre première urne.\\nLa nommer par sujet ou par domaine fonctionne bien."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia creando la tua prima urna.\\nDarle un nome per argomento o ambito funziona bene."
           }
         }
       }
@@ -28009,6 +30613,12 @@
             "state" : "translated",
             "value" : "Céladon"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celadon"
+          }
         }
       }
     },
@@ -28073,6 +30683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bougie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Candela"
           }
         }
       }
@@ -28139,6 +30755,12 @@
             "state" : "translated",
             "value" : "30 derniers jours"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ultimi 30 giorni"
+          }
         }
       }
     },
@@ -28203,6 +30825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi"
           }
         }
       }
@@ -28269,6 +30897,12 @@
             "state" : "translated",
             "value" : "Heures de coucher suggérées"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orari di riposo suggeriti"
+          }
         }
       }
     },
@@ -28333,6 +30967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuler"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
           }
         }
       }
@@ -28399,6 +31039,12 @@
             "state" : "translated",
             "value" : "Plus qu’une heure avant le coucher. Bravo pour aujourd’hui !"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manca 1 ora al riposo. Ottimo lavoro oggi!"
+          }
         }
       }
     },
@@ -28462,6 +31108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dès 30 minutes avant le coucher, soufflez sur le parchemin qui brûle\\npour l’éteindre et garder ce qu’il reste"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da 30 minuti prima di andare a letto, soffia sulla pergamena che brucia\\nper spegnerla e conservare ciò che resta"
           }
         }
       }
@@ -28528,6 +31180,12 @@
             "state" : "translated",
             "value" : "Heure du coucher"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora di andare a letto"
+          }
         }
       }
     },
@@ -28585,13 +31243,19 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Отход ко сну: %3$@ %2$lld ч %1$@"
+            "value" : "Отход ко сну: %2$lld%3$@ %1$@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Coucher à %3$@ %2$lld h %1$@"
+            "value" : "Coucher à %2$lld%3$@ %1$@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riposo alle %2$lld%3$@ %1$@"
           }
         }
       }
@@ -28656,6 +31320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ avant le coucher"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ al riposo"
           }
         }
       }
@@ -28722,6 +31392,12 @@
             "state" : "translated",
             "value" : "Temps restant avant le coucher"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto al riposo"
+          }
         }
       }
     },
@@ -28787,6 +31463,12 @@
             "state" : "translated",
             "value" : "Capsule"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capsula"
+          }
         }
       }
     },
@@ -28850,6 +31532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mot-clé (facultatif)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola chiave (facoltativo)"
           }
         }
       }
@@ -28916,6 +31604,12 @@
             "state" : "translated",
             "value" : "Afficher les onglets"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra schede"
+          }
         }
       }
     },
@@ -28979,6 +31673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touchez pour fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per chiudere"
           }
         }
       }
@@ -29045,6 +31745,12 @@
             "state" : "translated",
             "value" : "Touchez pour gérer les échéances"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per gestire le scadenze"
+          }
         }
       }
     },
@@ -29109,6 +31815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touchez pour revenir à l’étape Rédaction"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per tornare al passo Scrittura"
           }
         }
       }
@@ -29175,6 +31887,12 @@
             "state" : "translated",
             "value" : "Touchez pour sélectionner"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per selezionare"
+          }
         }
       }
     },
@@ -29240,6 +31958,12 @@
             "state" : "translated",
             "value" : "Touchez pour modifier"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per modificare"
+          }
         }
       }
     },
@@ -29303,6 +32027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touchez pour changer l’heure"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per cambiare l’ora"
           }
         }
       }
@@ -29369,6 +32099,12 @@
             "state" : "translated",
             "value" : "Touchez pour gérer les urnes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per gestire le urne"
+          }
         }
       }
     },
@@ -29433,6 +32169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touchez pour ouvrir l’urne"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca per aprire l’urna"
           }
         }
       }
@@ -29499,6 +32241,12 @@
             "state" : "translated",
             "value" : "Étincelles crépitantes et jaillissantes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scintille scoppiettanti e saltellanti"
+          }
         }
       }
     },
@@ -29563,6 +32311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagine"
           }
         }
       }
@@ -29629,6 +32383,12 @@
             "state" : "translated",
             "value" : "Page %1$lld sur %2$lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagina %1$lld di %2$lld"
+          }
         }
       }
     },
@@ -29693,6 +32453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indicateur de page"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indicatore di pagina"
           }
         }
       }
@@ -29759,6 +32525,12 @@
             "state" : "translated",
             "value" : "Points de pages"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puntini delle pagine"
+          }
         }
       }
     },
@@ -29823,6 +32595,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Style des points de pages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stile dei puntini delle pagine"
           }
         }
       }
@@ -29889,6 +32667,12 @@
             "state" : "translated",
             "value" : "Accès à vie · %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesso a vita · %@"
+          }
         }
       }
     },
@@ -29947,6 +32731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jours de semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni feriali"
           }
         }
       }
@@ -30013,6 +32803,12 @@
             "state" : "translated",
             "value" : "Affiche"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poster"
+          }
         }
       }
     },
@@ -30078,6 +32874,12 @@
             "state" : "translated",
             "value" : "Afficher"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra"
+          }
         }
       }
     },
@@ -30138,6 +32940,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -30207,6 +33015,12 @@
             "state" : "translated",
             "value" : "Vous êtes sur Pro. Merci 🔥"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sei su Pro. Grazie 🔥"
+          }
         }
       }
     },
@@ -30272,6 +33086,12 @@
             "state" : "translated",
             "value" : "Passer à Pro"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passa a Pro"
+          }
         }
       }
     },
@@ -30330,6 +33150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brûler mon temps libre avec Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brucia il mio tempo libero con Pro"
           }
         }
       }
@@ -30396,6 +33222,12 @@
             "state" : "translated",
             "value" : "Disponible avec Pro"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponibile con Pro"
+          }
         }
       }
     },
@@ -30453,6 +33285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avec Pro, le parchemin ne brûle que pendant ces heures"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con Pro la pergamena brucia solo in queste ore"
           }
         }
       }
@@ -30517,6 +33355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Débloquez le flux de l’année avec Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sblocca il flusso dell’anno con Pro"
           }
         }
       }
@@ -30583,6 +33427,12 @@
             "state" : "translated",
             "value" : "Voulu, mais pas fait"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volevo, ma non l’ho fatto"
+          }
         }
       }
     },
@@ -30647,6 +33497,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voulu, mais pas fait"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volevo farlo, ma non l’ho fatto"
           }
         }
       }
@@ -30713,6 +33569,12 @@
             "state" : "translated",
             "value" : "Gardez votre journée, sans rien laisser de côté"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conserva la tua giornata, senza lasciare nulla"
+          }
         }
       }
     },
@@ -30777,6 +33639,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cœur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuore"
           }
         }
       }
@@ -30843,6 +33711,12 @@
             "state" : "translated",
             "value" : "Payez une fois, profitez-en toujours"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paghi una volta, usi per sempre"
+          }
         }
       }
     },
@@ -30901,6 +33775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sur une année"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su un anno"
           }
         }
       }
@@ -30965,6 +33845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une année de cendres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un anno di cenere"
           }
         }
       }
@@ -31031,6 +33917,12 @@
             "state" : "translated",
             "value" : "Une année de cendres"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un anno di cenere"
+          }
         }
       }
     },
@@ -31095,6 +33987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une année entière de cendres en un coup d’œil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un intero anno di cenere a colpo d’occhio"
           }
         }
       }
@@ -31161,6 +34059,12 @@
             "state" : "translated",
             "value" : "%1$lld urnes, %2$lld bilans"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld urne, %2$lld riflessioni"
+          }
         }
       }
     },
@@ -31225,6 +34129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urnes illimitées"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urne illimitate"
           }
         }
       }
@@ -31291,6 +34201,12 @@
             "state" : "translated",
             "value" : "Supprimer l’urne"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina urna"
+          }
         }
       }
     },
@@ -31355,6 +34271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "L’étagère des urnes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lo scaffale delle urne"
           }
         }
       }
@@ -31421,6 +34343,12 @@
             "state" : "translated",
             "value" : "Modifier l’urne"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica urna"
+          }
         }
       }
     },
@@ -31486,6 +34414,12 @@
             "state" : "translated",
             "value" : "Débloquez des urnes et des échéances illimitées."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sblocca urne e scadenze illimitate."
+          }
         }
       }
     },
@@ -31550,6 +34484,12 @@
             "state" : "translated",
             "value" : "L’urne vous attend déjà.\\nVotre première cendre ira dans « %@ »."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’urna ti aspetta già.\\nLa tua prima cenere finirà in «%@»."
+          }
         }
       }
     },
@@ -31613,6 +34553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un mot à graver sur l’urne"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una parola da incidere sull’urna"
           }
         }
       }
@@ -31679,6 +34625,12 @@
             "state" : "translated",
             "value" : "Soleil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sole"
+          }
         }
       }
     },
@@ -31743,6 +34695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fait"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fatto"
           }
         }
       }
@@ -31809,6 +34767,12 @@
             "state" : "translated",
             "value" : "Soufflez dans le micro en bas de votre téléphone"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soffia nel microfono in basso sul telefono"
+          }
         }
       }
     },
@@ -31874,6 +34838,12 @@
             "state" : "translated",
             "value" : "Apparence"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aspetto"
+          }
         }
       }
     },
@@ -31935,6 +34905,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -32004,6 +34980,12 @@
             "state" : "translated",
             "value" : "Bilans : %1$lld. J’ai fait ce que j’avais prévu : %2$lld pour cent ; fait sans l’avoir prévu : %3$lld pour cent ; voulu mais pas fait : %4$lld pour cent ; juste envolé : %5$lld pour cent"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riflessioni: %1$lld. Ho fatto come volevo: %2$lld per cento; fatto per caso: %3$lld per cento; volevo ma non l’ho fatto: %4$lld per cento; solo scivolato via: %5$lld per cento"
+          }
         }
       }
     },
@@ -32067,6 +35049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Livre des bilans"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libro delle riflessioni"
           }
         }
       }
@@ -32133,6 +35121,12 @@
             "state" : "translated",
             "value" : "PDF du livre des bilans"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF del libro delle riflessioni"
+          }
         }
       }
     },
@@ -32197,6 +35191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exporter le livre des bilans en PDF"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esporta il libro delle riflessioni in PDF"
           }
         }
       }
@@ -32263,6 +35263,12 @@
             "state" : "translated",
             "value" : "Voir en livre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi come libro"
+          }
         }
       }
     },
@@ -32328,6 +35334,12 @@
             "state" : "translated",
             "value" : "Tenez votre livre des bilans entre les mains"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni in mano il tuo libro delle riflessioni"
+          }
         }
       }
     },
@@ -32391,6 +35403,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réunissez vos bilans en un seul PDF"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raccogli le riflessioni in un unico PDF"
           }
         }
       }
@@ -32457,6 +35475,12 @@
             "state" : "translated",
             "value" : "Réunissez vos bilans dans un PDF, une page par jour"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raccogli le riflessioni in un PDF, una pagina al giorno"
+          }
         }
       }
     },
@@ -32522,6 +35546,12 @@
             "state" : "translated",
             "value" : "Modifiez votre bilan."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica la tua riflessione."
+          }
         }
       }
     },
@@ -32585,6 +35615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajoutez un bilan\\net ce livre commencera à se remplir."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi una riflessione\\ne questo libro inizierà a riempirsi."
           }
         }
       }
@@ -32651,6 +35687,12 @@
             "state" : "translated",
             "value" : "Faites glisser les bilans vers une urne pour les déplacer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trascina le riflessioni in un’urna per spostarle"
+          }
         }
       }
     },
@@ -32715,6 +35757,12 @@
             "state" : "translated",
             "value" : "Souffler le feu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soffia sul fuoco"
+          }
         }
       }
     },
@@ -32778,6 +35826,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Soufflez pour éteindre la flamme\\net clore votre journée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soffia per spegnere la fiamma\\ne chiudere la giornata"
           }
         }
       }
@@ -32844,6 +35898,12 @@
             "state" : "translated",
             "value" : "Repos"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riposo"
+          }
         }
       }
     },
@@ -32909,6 +35969,12 @@
             "state" : "translated",
             "value" : "Envolé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scivolato"
+          }
         }
       }
     },
@@ -32972,6 +36038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Doux rêves"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Sogni d’oro"
           }
         }
       }
@@ -33044,6 +36116,12 @@
             "state" : "translated",
             "value" : "Des écrans adaptés au texte agrandi"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schermate per testo più grande"
+          }
         }
       }
     },
@@ -33108,6 +36186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Même avec les plus grandes tailles de texte, les écrans se réorganisent proprement au lieu d’être coupés."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anche con le dimensioni di testo più grandi, le schermate si riorganizzano bene senza tagliare nulla."
           }
         }
       }
@@ -33174,6 +36258,12 @@
             "state" : "translated",
             "value" : "Couleurs et contraste plus lisibles"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colori e contrasto più comodi"
+          }
         }
       }
     },
@@ -33238,6 +36328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voyez clairement votre temps brûler, même avec Augmenter le contraste ou si les couleurs sont difficiles à distinguer."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi chiaramente il tempo che brucia, anche con Aumenta contrasto attivo o se fai fatica a distinguere i colori."
           }
         }
       }
@@ -33304,6 +36400,12 @@
             "state" : "translated",
             "value" : "Plus de langues"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più lingue"
+          }
         }
       }
     },
@@ -33368,6 +36470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une visite rapide pour les nouveaux"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un breve tour per chi inizia"
           }
         }
       }
@@ -33434,6 +36542,12 @@
             "state" : "translated",
             "value" : "Un court guide de ce que vous pouvez faire, à la première ouverture de l’app."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una breve guida a ciò che puoi fare, alla prima apertura dell’app."
+          }
         }
       }
     },
@@ -33498,6 +36612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nouveautés"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novità"
           }
         }
       }
@@ -33564,6 +36684,12 @@
             "state" : "translated",
             "value" : "À la première ouverture après une mise à jour, découvrez les nouveautés."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla prima apertura dopo un aggiornamento, scopri cosa c’è di nuovo."
+          }
         }
       }
     },
@@ -33628,6 +36754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Astuces pratiques"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piccoli consigli"
           }
         }
       }
@@ -33694,6 +36826,12 @@
             "state" : "translated",
             "value" : "De discrets conseils sur des fonctions utiles, au moment où vous en avez besoin."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggerimenti discreti su funzioni utili, proprio quando servono."
+          }
         }
       }
     },
@@ -33758,6 +36896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri et Raccourcis"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri e Comandi rapidi"
           }
         }
       }
@@ -33824,6 +36968,12 @@
             "state" : "translated",
             "value" : "Demandez à Siri ce qu’il reste de la journée."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiedi a Siri quanto resta della giornata."
+          }
         }
       }
     },
@@ -33888,6 +37038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synchronisation entre appareils"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizzazione tra dispositivi"
           }
         }
       }
@@ -33954,6 +37110,12 @@
             "state" : "translated",
             "value" : "Retrouvez les mêmes bilans et échéances sur tous vos appareils avec iCloud."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con iCloud ritrovi le stesse riflessioni e scadenze su tutti i tuoi dispositivi."
+          }
         }
       }
     },
@@ -34018,6 +37180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sauvegarde et restauration"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup e ripristino"
           }
         }
       }
@@ -34084,6 +37252,12 @@
             "state" : "translated",
             "value" : "Enregistrez vos bilans et échéances dans un fichier et récupérez-les plus tard."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva riflessioni e scadenze in un file e recuperale in seguito."
+          }
         }
       }
     },
@@ -34148,6 +37322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verrouillage Face ID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocco con Face ID"
           }
         }
       }
@@ -34214,6 +37394,12 @@
             "state" : "translated",
             "value" : "Verrouillez l’app avec Face ID ou Touch ID pour garder vos bilans privés."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocca l’app con Face ID o Touch ID per tenere private le tue riflessioni."
+          }
         }
       }
     },
@@ -34278,6 +37464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disposition pour iPhone pliable"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout per iPhone pieghevole"
           }
         }
       }
@@ -34344,6 +37536,12 @@
             "state" : "translated",
             "value" : "Utilisez le grand écran d’un iPhone pliable en deux volets côte à côte."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa lo schermo ampio di un iPhone pieghevole come due pannelli affiancati."
+          }
         }
       }
     },
@@ -34408,6 +37606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer toutes mes données"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutti i miei dati"
           }
         }
       }
@@ -34474,6 +37678,12 @@
             "state" : "translated",
             "value" : "Effacez tous vos bilans et échéances directement dans l’app, quand vous voulez."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella tutte le riflessioni e le scadenze direttamente nell’app, quando vuoi."
+          }
         }
       }
     },
@@ -34538,6 +37748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reprendre votre bilan là où vous en étiez"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riprendi la riflessione da dove l’avevi lasciata"
           }
         }
       }
@@ -34604,6 +37820,12 @@
             "state" : "translated",
             "value" : "Ce que vous écriviez reste en place, même si l’app se ferme en plein bilan."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quello che stavi scrivendo resta lì, anche se l’app si chiude a metà."
+          }
         }
       }
     },
@@ -34667,6 +37889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Après le coréen et l’anglais, l’app parle maintenant aussi français."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopo coreano e inglese, ora l’app parla anche italiano."
           }
         }
       },
@@ -34733,6 +37961,12 @@
             "state" : "translated",
             "value" : "Essayez de balayer sur le côté"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prova a scorrere di lato"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -34797,6 +38031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voyez ce qu’il reste de la semaine, du mois et de l’année sur le même parchemin."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi cosa resta di questa settimana, mese e anno sulla stessa pergamena."
           }
         }
       },
@@ -34863,6 +38103,12 @@
             "state" : "translated",
             "value" : "Retournez un fragment"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gira un frammento"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -34927,6 +38173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touchez un fragment pour écrire au dos une ligne sur ce jour-là."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca un frammento per scrivere sul retro una riga su quel giorno."
           }
         }
       },
@@ -34993,6 +38245,12 @@
             "state" : "translated",
             "value" : "Objectifs"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obiettivi"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -35057,6 +38315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fragments"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frammenti"
           }
         }
       },
@@ -35123,6 +38387,12 @@
             "state" : "translated",
             "value" : "Urne"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -35187,6 +38457,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bilan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riflessione"
           }
         }
       },
@@ -35253,6 +38529,12 @@
             "state" : "translated",
             "value" : "Ajouter une échéance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi scadenza"
+          }
         }
       },
       "comment" : "Button in the empty deadline list"
@@ -35317,6 +38599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Échéance « %@ » ajoutée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenza «%@» aggiunta"
           }
         }
       },
@@ -35383,6 +38671,12 @@
             "state" : "translated",
             "value" : "Échéance « %@ » supprimée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenza «%@» eliminata"
+          }
         }
       },
       "comment" : "VoiceOver announcement after deleting a deadline. Argument is the deadline title"
@@ -35447,6 +38741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le feu est éteint. Votre fragment a été gardé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il fuoco è spento. Il tuo frammento è stato conservato."
           }
         }
       },
@@ -35513,6 +38813,12 @@
             "state" : "translated",
             "value" : "Votre bilan est dans l’urne de cendres."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua riflessione è nell’urna di cenere."
+          }
         }
       },
       "comment" : "VoiceOver announcement after a new reflection is auto-saved"
@@ -35577,6 +38883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Passer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salta"
           }
         }
       },
@@ -35643,6 +38955,12 @@
             "state" : "translated",
             "value" : "Commencer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia"
+          }
         }
       },
       "comment" : "Onboarding: last page button"
@@ -35707,6 +39025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Regardez votre temps brûler"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarda il tuo tempo bruciare"
           }
         }
       },
@@ -35773,6 +39097,12 @@
             "state" : "translated",
             "value" : "Du réveil au coucher, le parchemin brûle lentement. Balayez sur le côté pour voir la semaine, le mois et l’année."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalla sveglia al riposo la pergamena brucia lentamente. Scorri di lato per vedere settimana, mese e anno."
+          }
         }
       },
       "comment" : "Onboarding page 1 detail"
@@ -35837,6 +39167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "30 minutes avant le coucher, soufflez dessus"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 minuti prima di dormire, soffiaci sopra"
           }
         }
       },
@@ -35903,6 +39239,12 @@
             "state" : "translated",
             "value" : "Soufflez dans le micro pour éteindre le feu et garder ce qu’il reste. Seule la force de votre souffle est vérifiée ; rien n’est enregistré."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soffia nel microfono per spegnere il fuoco e conservare ciò che resta. Viene controllata solo la forza del soffio; non viene registrato nulla."
+          }
         }
       },
       "comment" : "Onboarding page 2 detail"
@@ -35967,6 +39309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chaque jour devient cendre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni giorno diventa cenere"
           }
         }
       },
@@ -36033,6 +39381,12 @@
             "state" : "translated",
             "value" : "Écrivez une ligne sur votre journée et elle se dépose dans l’urne de cendres de la semaine. Changez vos heures de réveil et de coucher dans les Réglages."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivi una riga sulla tua giornata e si deposita nell’urna di cenere di quella settimana. Cambia gli orari di sveglia e riposo nelle Impostazioni."
+          }
         }
       },
       "comment" : "Onboarding page 3 detail"
@@ -36097,6 +39451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copier"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copia"
           }
         }
       },
@@ -36163,6 +39523,12 @@
             "state" : "translated",
             "value" : "Nouveautés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novità"
+          }
         }
       },
       "comment" : "What's new sheet title and settings row"
@@ -36227,6 +39593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Revoir le guide de bienvenue"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rivedi la guida di benvenuto"
           }
         }
       },
@@ -36293,6 +39665,12 @@
             "state" : "translated",
             "value" : "Le code n’a pas pu être utilisé. Réessayez dans un instant."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile usare il codice. Riprova tra un attimo."
+          }
         }
       },
       "comment" : "Alert: offer code redemption failed"
@@ -36357,6 +39735,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utiliser un code promo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riscatta codice promozionale"
           }
         }
       },
@@ -36423,6 +39807,12 @@
             "state" : "translated",
             "value" : "Version %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versione %@"
+          }
         }
       },
       "comment" : "What's new: version number"
@@ -36487,6 +39877,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désormais en français"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora anche in italiano"
           }
         }
       },
@@ -36553,6 +39949,12 @@
             "state" : "translated",
             "value" : "Si votre appareil est réglé sur le français, l’app et ses widgets s’affichent en français."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se il dispositivo è impostato sull’italiano, l’app e i suoi widget appaiono in italiano."
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese detail"
@@ -36617,6 +40019,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mieux avec le texte agrandi et le contraste élevé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meglio con testo grande e contrasto alto"
           }
         }
       },
@@ -36683,6 +40091,12 @@
             "state" : "translated",
             "value" : "Les Réglages ne sont plus coupés avec de très grandes tailles de texte, et Augmenter le contraste assombrit le texte et les braises."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Impostazioni non vengono più tagliate con testo molto grande e Aumenta contrasto rende testo e braci più scuri."
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility detail"
@@ -36747,6 +40161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les fonctions cachées, comme balayer pour changer de période, sont maintenant signalées au bon moment."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le funzioni nascoste, come scorrere per cambiare periodo, ora vengono segnalate al momento giusto."
           }
         }
       },
@@ -36813,6 +40233,12 @@
             "state" : "translated",
             "value" : "Découvrez ce qui arrive"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scopri cosa arriverà"
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap title"
@@ -36877,6 +40303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dans Réglages ▸ Assistance, voyez les fonctions à venir et proposez celles que vous voulez."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Impostazioni ▸ Supporto vedi le funzioni in arrivo e proponi quelle che vuoi."
           }
         }
       },
@@ -36943,6 +40375,12 @@
             "state" : "translated",
             "value" : "Les codes promo sont là"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ecco i codici promozionali"
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code title"
@@ -37008,6 +40446,12 @@
             "state" : "translated",
             "value" : "Si vous avez un code, saisissez-le dans Réglages ▸ Pro."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se hai un codice, inseriscilo in Impostazioni ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -37072,6 +40516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compris"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ho capito"
           }
         }
       },

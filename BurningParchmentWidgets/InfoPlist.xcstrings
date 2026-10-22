@@ -64,6 +64,12 @@
             "state" : "translated",
             "value" : "Parchemin en flammes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme"
+          }
         }
       }
     },
@@ -129,6 +135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parchemin en flammes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme"
           }
         }
       }

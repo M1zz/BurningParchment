@@ -62,6 +62,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -123,6 +129,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -192,6 +204,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
+          }
         }
       }
     },
@@ -253,6 +271,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld h %2$lld min"
@@ -322,6 +346,12 @@
             "state" : "translated",
             "value" : "%1$lld j %2$lld h"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld g %2$lld h"
+          }
         }
       }
     },
@@ -383,6 +413,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
@@ -452,6 +488,12 @@
             "state" : "translated",
             "value" : "31/12/2025 (mer.) 23:59"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31/12/2025 (mer) 23:59"
+          }
         }
       }
     },
@@ -517,6 +559,12 @@
             "state" : "translated",
             "value" : "3 j 4 h"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 g 4 h"
+          }
         }
       }
     },
@@ -578,6 +626,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 h 24 min"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "5 h 24 min"
@@ -646,6 +700,12 @@
             "state" : "translated",
             "value" : "Réveil bientôt"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sveglia a breve"
+          }
         }
       }
     },
@@ -709,6 +769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réveil %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sveglia %@"
           }
         }
       }
@@ -774,6 +840,12 @@
             "state" : "translated",
             "value" : "%@ avant le réveil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ alla sveglia"
+          }
         }
       }
     },
@@ -837,6 +909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps restant avant le réveil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto alla sveglia"
           }
         }
       }
@@ -903,6 +981,12 @@
             "state" : "translated",
             "value" : "Temps restant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto"
+          }
         }
       }
     },
@@ -967,6 +1051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps restant avant la prochaine échéance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto alla prossima scadenza"
           }
         }
       }
@@ -1033,6 +1123,12 @@
             "state" : "translated",
             "value" : "Parchemin des échéances"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena delle scadenze"
+          }
         }
       }
     },
@@ -1096,6 +1192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune échéance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna scadenza"
           }
         }
       }
@@ -1161,6 +1263,12 @@
             "state" : "translated",
             "value" : "Échéance passée 🏁"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenza passata 🏁"
+          }
         }
       }
     },
@@ -1225,6 +1333,12 @@
             "state" : "translated",
             "value" : "Un nouveau jour commence"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia un nuovo giorno"
+          }
         }
       }
     },
@@ -1288,6 +1402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sommeil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonno"
           }
         }
       }
@@ -1354,6 +1474,12 @@
             "state" : "translated",
             "value" : "Parchemin de l’année"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena dell’anno"
+          }
         }
       }
     },
@@ -1418,6 +1544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps restant avant le coucher aujourd’hui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto al riposo oggi"
           }
         }
       }
@@ -1484,6 +1616,12 @@
             "state" : "translated",
             "value" : "Cette année"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quest’anno"
+          }
         }
       }
     },
@@ -1548,6 +1686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps restant cette année"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto quest’anno"
           }
         }
       }
@@ -1614,6 +1758,12 @@
             "state" : "translated",
             "value" : "Parchemin du mois"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena del mese"
+          }
         }
       }
     },
@@ -1678,6 +1828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce mois-ci"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo mese"
           }
         }
       }
@@ -1744,6 +1900,12 @@
             "state" : "translated",
             "value" : "Temps restant ce mois-ci"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto questo mese"
+          }
         }
       }
     },
@@ -1808,6 +1970,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette semaine"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa settimana"
           }
         }
       }
@@ -1874,6 +2042,12 @@
             "state" : "translated",
             "value" : "Temps restant cette semaine"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto questa settimana"
+          }
         }
       }
     },
@@ -1938,6 +2112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parchemin du jour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena del giorno"
           }
         }
       }
@@ -2004,6 +2184,12 @@
             "state" : "translated",
             "value" : "Voyez le temps restant avant le coucher, directement sur l’écran verrouillé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi quanto manca al riposo, direttamente nella schermata di blocco"
+          }
         }
       }
     },
@@ -2067,6 +2253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doux rêves"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sogni d’oro"
           }
         }
       }
@@ -2133,6 +2325,12 @@
             "state" : "translated",
             "value" : "Parchemin de la semaine"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena della settimana"
+          }
         }
       }
     },
@@ -2197,6 +2395,12 @@
             "state" : "translated",
             "value" : "Coucher %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riposo %@"
+          }
         }
       }
     },
@@ -2260,6 +2464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avant le coucher"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fino al riposo"
           }
         }
       }
@@ -2326,6 +2536,12 @@
             "state" : "translated",
             "value" : "Temps restant avant le coucher"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo rimasto al riposo"
+          }
         }
       }
     },
@@ -2391,6 +2607,12 @@
             "state" : "translated",
             "value" : "Rendre le projet"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consegnare il progetto"
+          }
         }
       }
     },
@@ -2455,6 +2677,12 @@
             "state" : "translated",
             "value" : "🌅 Réveil bientôt · %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Sveglia a breve · %@"
+          }
         }
       }
     },
@@ -2518,6 +2746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 %@%% restant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Resta il %@%%"
           }
         }
       }
@@ -2584,6 +2818,12 @@
             "state" : "translated",
             "value" : "🔥 %lld%% restant"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Resta il %lld%%"
+          }
         }
       }
     },
@@ -2648,6 +2888,12 @@
             "state" : "translated",
             "value" : "🔥 %@ avant le coucher"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 %@ al riposo"
+          }
         }
       }
     },
@@ -2711,6 +2957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 %@ avant le réveil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 %@ alla sveglia"
           }
         }
       }

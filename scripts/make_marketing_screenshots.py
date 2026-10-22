@@ -106,6 +106,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Une année<br>de cendres", "Pro montre où sont passés douze mois", 0.62),
   ("10-book-pdf.png", "pages", False, "Vos bilans<br>reliés en livre", "Pro : un PDF, une page par jour", None),
  ],
+ "it": [
+  ("01-week-dark.png", "hero-bleed", False, "Guarda il tuo tempo<br>consumarsi", "Giorno, settimana, mese, anno", None),
+  ("02-month-light.png", "hero-bleed", True, "Chiaro o scuro", "Segui il dispositivo o scegli tu", None),
+  ("03-urn-dark.png", "left-text", False, "Ogni giorno finisce<br>in cenere", "Ciò che scrivi si deposita nell’urna della settimana", None),
+  ("04-flow-light.png", "hero-bleed", True, "Dove è andato<br>il tuo tempo", "Un grafico e un calendario delle braci", None),
+  ("05-book-dark.png", "top-crop", False, "Rileggi la tua cenere", "Le righe lasciate sulla pergamena", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Dal riposo<br>al tema", "Impostala a modo tuo", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Scegli il colore<br>della tua fiamma", "Temi Pro: hanji, celadon, tramonto", None),
+  ("08-poster-dark.png", "text-bottom", False, "Tutte le tue notti<br>su un foglio", "Pro trasforma i frammenti in poster", None),
+  ("09-year-light.png", "top-crop", False, "Un anno<br>di cenere", "Pro mostra dove sono andati dodici mesi", 0.62),
+  ("10-book-pdf.png", "pages", False, "Le tue riflessioni<br>in un libro", "Pro: un PDF, una pagina al giorno", None),
+ ],
 }
 
 FONTS = {
@@ -115,9 +128,10 @@ FONTS = {
     "zh-Hant": '-apple-system, "PingFang TC", "Heiti TC", sans-serif',
     "ru": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "fr": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "it": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43}
 
 
 def base_css(lang, dark):

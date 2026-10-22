@@ -82,6 +82,14 @@ Net avec texte agrandi et contraste
 Des codes promo pour obtenir Pro
 Les futures fonctions, dans les Réglages
 
+### 앱스토어 (it)
+
+Ora disponibile in italiano
+Una breve guida per chi inizia
+Chiara con testo grande e contrasto
+Codici promozionali per ottenere Pro
+Le funzioni in arrivo nelle Impostazioni
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

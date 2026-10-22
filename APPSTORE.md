@@ -569,3 +569,60 @@ https://m1zz.github.io/BurningParchment/fr/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/fr/
+
+## it
+
+### 이름
+
+Pergamena in fiamme: riposo
+
+### 부제
+
+Il resto del giorno che brucia
+
+### 키워드
+
+timer,diario,abitudini,widget,scadenza,disciplina,rituale,sera,obiettivi,riflessione,sonno,routine
+
+### 프로모션 텍스트
+
+Prima di dormire, soffia sulla pergamena che brucia per spegnere il fuoco: un piccolo rito per chiudere la giornata. I frammenti rimasti vengono conservati.
+
+### 설명
+
+Quello che resta della tua giornata brucia sotto i tuoi occhi.
+Pergamena in fiamme mostra il tempo rimasto non con i numeri, ma con una pergamena che si consuma. È fatta per chi non vuole vedere la serata sparire senza accorgersene.
+
+Giorno, settimana, mese, anno
+Dalla sveglia al riposo la pergamena brucia lentamente. Quello che resta di questa settimana, di questo mese e di quest’anno si vede sulla stessa pergamena.
+Aggiungi un obiettivo con una scadenza e anche il tempo che manca a quel giorno viene conteggiato.
+
+Soffia e chiudi la giornata
+Da 30 minuti prima di andare a letto puoi soffiare sulla pergamena che brucia per spegnere il fuoco. Viene usata solo la forza del soffio e non viene registrato nessun suono.
+I frammenti rimasti dopo lo spegnimento vengono conservati. Quando vuoi, gira un frammento e scrivi una riga sul retro.
+
+Una giornata che diventa cenere
+Ripensa al tempo trascorso, lascia una riflessione di una riga e segnala con un punto su un grafico a due assi dove è andato.
+Le riflessioni si depositano in urne per argomento e puoi rileggerle nel libro delle riflessioni.
+La schermata Flusso della cenere mostra dove è andato il tempo con un grafico di distribuzione e un calendario delle braci.
+
+Sempre sotto gli occhi
+I widget della schermata Home e di blocco, la Dynamic Island e le Live Activity sulla schermata di blocco mostrano il tempo rimasto.
+Temi chiaro e scuro, orari di riposo suggeriti e la scelta delle schede da mostrare.
+
+Pergamena in fiamme Pro
+La pergamena che brucia, le riflessioni e il rito del soffio sono gratuiti, così come una scadenza. Pro non è un abbonamento: un solo acquisto, per sempre.
+Sblocca Tempo libero in fiamme, che brucia solo il tempo libero che hai impostato; i colori di pergamena e fiamma (hanji al chiaro di luna, celadon, tramonto); i tipi di fiamma (fuoco di prateria, braci, stellina); la condivisione dei frammenti come cartoline e poster; l’esportazione del libro delle riflessioni in PDF; il flusso della cenere degli ultimi dodici mesi; e scadenze illimitate. Anche tutte le future funzioni Pro sono incluse.
+Condizioni d’uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/it/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/it/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/it/

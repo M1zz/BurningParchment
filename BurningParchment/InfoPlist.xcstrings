@@ -63,6 +63,12 @@
             "state" : "translated",
             "value" : "Parchemin en flammes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme"
+          }
         }
       }
     },
@@ -129,6 +135,12 @@
             "state" : "translated",
             "value" : "Parchemin en flammes"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamena in fiamme"
+          }
         }
       }
     },
@@ -194,6 +206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisé uniquement pour mesurer la force de votre souffle quand vous éteignez le parchemin avant de dormir. Aucun son n’est enregistré ni conservé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usato solo per rilevare la forza del tuo soffio quando spegni la pergamena prima di dormire. Nessun suono viene registrato o salvato."
           }
         }
       }

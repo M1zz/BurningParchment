@@ -41,6 +41,7 @@ SEARCH = {
     "zh-Hant": ("剩餘時間", "剩餘的時間<br>在眼前燃燒", "一天、一週、一個月、一年"),
     "ru": ('Осталось времени', 'Время сгорает<br>на ваших глазах', 'День, неделя, месяц и год'),
     "fr": ('Temps restant', 'Regardez votre temps<br>se consumer', 'Jour, semaine, mois et année'),
+    "it": ('Tempo rimasto', 'Guarda il tuo tempo<br>consumarsi', 'Giorno, settimana, mese e anno'),
 }
 
 # 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
@@ -53,6 +54,7 @@ HEADER = {
     "zh-Hant": ("燃燒的羊皮紙", "吹一口氣熄火<br>今天就結束了"),
     "ru": ('Горящий пергамент', 'Дуньте — и<br>день завершён'),
     "fr": ('Parchemin en flammes', 'Soufflez la flamme,<br>clôturez le jour'),
+    "it": ('Pergamena in fiamme', 'Soffia sulla fiamma,<br>chiudi la giornata'),
 }
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:

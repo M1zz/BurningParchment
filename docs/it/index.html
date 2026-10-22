@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pergamena in fiamme — Supporto</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+      --yellow: #fbbf24;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* flame gradient top bar */
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .flame-icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 16px #f97316aa);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--text-dim);
+      font-size: 15px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+
+    .card + .card { margin-top: 12px; }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .card li { margin-bottom: 4px; }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: var(--orange);
+      color: #0f0d0a;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-link:hover { opacity: 0.85; }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: var(--orange-dim);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 26px; }
+      .card { padding: 20px; }
+    }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/it/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="index.html" hreflang="it" lang="it" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <span class="flame-icon">🔥</span>
+  <h1>Pergamena in fiamme</h1>
+  <p>Dalla sveglia al riposo, guarda la tua giornata bruciare.</p>
+</header>
+
+<main>
+
+  <!-- About -->
+  <section>
+    <h2>Informazioni sull’app</h2>
+    <div class="card">
+      <h3>Cos’è Pergamena in fiamme?</h3>
+      <p>Pergamena in fiamme è un’app di conto alla rovescia che mostra quanto resta della tua giornata come una pergamena che brucia lentamente. Dalla sveglia al riposo vedi a colpo d’occhio quanto tempo rimane, così puoi sfruttare al meglio le ore che hai ancora davanti.</p>
+      <div class="badge-row" style="margin-top: 14px;">
+        <span class="badge">Conto alla rovescia del giorno</span>
+        <span class="badge">Settimana / mese / anno</span>
+        <span class="badge">Widget della schermata Home</span>
+        <span class="badge">Dynamic Island</span>
+        <span class="badge">Widget della schermata di blocco</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section>
+    <h2>Come si usa</h2>
+    <div class="card">
+      <h3>Imposta sveglia e ora di andare a letto</h3>
+      <p>Tocca il pulsante ⚙️ in alto a destra per impostare l’ora della sveglia e quella del riposo. La pergamena inizia a bruciare quando ti svegli e il conto alla rovescia termina all’ora di andare a letto.</p>
+    </div>
+    <div class="card">
+      <h3>Scegli un periodo</h3>
+      <p>Scegli <strong>1 giorno · 1 settimana · 1 mese · 1 anno</strong> dalle schede in alto e la pergamena brucia per mostrare quanto resta di quel periodo.</p>
+    </div>
+    <div class="card">
+      <h3>Widget della schermata Home</h3>
+      <p>Tieni premuta la schermata Home → Aggiungi widget → cerca <strong>Pergamena in fiamme</strong> per aggiungere un widget del giorno, della settimana, del mese o dell’anno. Sono disponibili le dimensioni piccola, media e grande.</p>
+    </div>
+    <div class="card">
+      <h3>Dynamic Island e schermata di blocco</h3>
+      <p>Quando il conto alla rovescia parte, puoi seguire il tempo rimasto in diretta nella Dynamic Island e sulla schermata di blocco. Trascina verso il basso la Dynamic Island per vedere più dettagli, insieme all’animazione della pergamena che brucia.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Domande frequenti</h2>
+    <div class="card">
+      <h3>Il widget mostra un’ora diversa da quella dell’app</h3>
+      <p>Per come funziona iOS, i widget della schermata Home non possono aggiornarsi in tempo reale. Aprendo l’app, i dati del widget si sincronizzano automaticamente. Per un conto alla rovescia in diretta, usa la Dynamic Island e la schermata di blocco.</p>
+    </div>
+    <div class="card">
+      <h3>Cosa mostra mentre dormo?</h3>
+      <p>Dopo l’ora di andare a letto compare un’animazione di un cuore in fiamme che mostra a che punto è il tuo sonno fino alla sveglia. Una pergamena nuova si prepara 30 minuti prima che ti svegli.</p>
+    </div>
+    <div class="card">
+      <h3>Quando arrivano le notifiche?</h3>
+      <p>Ricevi una notifica un’ora prima di andare a letto. Se non arriva, controlla che le notifiche siano consentite in <strong>Impostazioni → Notifiche → Pergamena in fiamme</strong>.</p>
+    </div>
+    <div class="card">
+      <h3>L’app consuma la batteria?</h3>
+      <p>Il conto alla rovescia nell’app avanza una volta al secondo, ma i widget seguono una pianificazione a basso consumo gestita dal sistema, quindi l’impatto sulla batteria è minimo.</p>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section>
+    <h2>Privacy</h2>
+    <div class="card">
+      <h3>Come vengono trattate le tue informazioni</h3>
+      <p>Ora della sveglia, ora del riposo, scadenze, riflessioni e urne sono salvate solo sul tuo dispositivo. Lo sviluppatore riceve soltanto statistiche d’uso anonime, diagnostica dei crash e gli eventuali feedback che decidi di inviare.</p>
+      <ul>
+        <li>L’app e i suoi widget condividono i dati solo tramite un App Group sul tuo dispositivo.</li>
+        <li>Nessuna pubblicità, nessun tracciamento.</li>
+      </ul>
+      <a class="contact-link" href="privacy.html">Leggi l’informativa completa sulla privacy →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contatti</h2>
+    <div class="card">
+      <h3>Qualcosa non funziona?</h3>
+      <p>Per segnalare un bug, proporre un’idea o fare qualsiasi altra domanda, scrivici all’indirizzo qui sotto. Ti risponderemo il prima possibile.</p>
+      <a class="contact-link" href="mailto:leeo@kakao.com">
+        ✉️ &nbsp;leeo@kakao.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  <p style="margin-top: 8px;"><a href="privacy.html">Informativa sulla privacy</a></p>
+  <p style="margin-top: 6px;">Fatto con 🔥 in Corea</p>
+</footer>
+
+</body>
+</html>

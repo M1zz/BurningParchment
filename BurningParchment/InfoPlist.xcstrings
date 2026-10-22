@@ -87,6 +87,12 @@
             "state" : "translated",
             "value" : "Giấy Da Cháy"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
         }
       }
     },
@@ -177,6 +183,12 @@
             "state" : "translated",
             "value" : "Giấy Da Cháy"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
         }
       }
     },
@@ -266,6 +278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chỉ dùng để cảm nhận sức thổi của bạn khi dập giấy da trước khi ngủ. Không có âm thanh nào được ghi âm hay lưu lại."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Používá se jen ke zjištění síly vašeho foukání při hašení pergamenu před spaním. Žádný zvuk se nenahrává ani neukládá."
           }
         }
       }

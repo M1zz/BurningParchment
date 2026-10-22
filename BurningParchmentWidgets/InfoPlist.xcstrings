@@ -88,6 +88,12 @@
             "state" : "translated",
             "value" : "Giấy Da Cháy"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
         }
       }
     },
@@ -177,6 +183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giấy Da Cháy"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
           }
         }
       }

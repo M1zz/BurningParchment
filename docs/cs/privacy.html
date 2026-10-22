@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zásady ochrany osobních údajů — Hořící pergamen</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/privacy.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="privacy.html" hreflang="cs" lang="cs" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">← Zpět na Podporu</a>
+  <h1>Zásady ochrany osobních údajů</h1>
+  <p>Poslední aktualizace: 18. srpna 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Shrnutí</h2>
+    <div class="card">
+      <h3>Hořící pergamen neshromažďuje informace, které by vás identifikovaly</h3>
+      <p>Vše, co v aplikaci vytvoříte (čas vstávání, čas usínání, termíny, ohlédnutí a urny), zůstává ve vašem zařízení. K vývojáři se dostanou jen anonymní statistiky a diagnostika pádů popsané níže a zpětná vazba, kterou odešlete sami.</p>
+      <span class="highlight">🔒 Vaše ohlédnutí nikdy neopustí vaše zařízení · Žádné reklamy, žádné sledování</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Uloženo jen ve vašem zařízení</h2>
+    <div class="card">
+      <h3>Co v aplikaci vytvoříte</h3>
+      <p>Následující údaje jsou uloženy jen ve vašem zařízení (v UserDefaults):</p>
+      <ul>
+        <li>Čas vstávání a čas usínání</li>
+        <li>Termíny</li>
+        <li>Ohlédnutí a urny</li>
+      </ul>
+      <p style="margin-top: 10px;">Tato data se mezi aplikací a jejími widgety sdílejí jen přes úložiště App Group ve vašem zařízení a při smazání aplikace se smažou.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Odesláno vývojáři</h2>
+    <div class="card">
+      <h3>Anonymní statistiky používání</h3>
+      <p>Aby bylo možné aplikaci vylepšovat, odesílá se do úložiště iCloud (CloudKit) vývojáře následující:</p>
+      <ul>
+        <li>Náhodně vygenerovaný identifikátor instalace (UUID)</li>
+        <li>Verze aplikace, platforma a verze systému, nastavení jazyka</li>
+        <li>Počet spuštění, počet dnů používání a názvy událostí hlavních funkcí</li>
+      </ul>
+      <p style="margin-top: 10px;">Identifikátor instalace nemá nic společného s identifikátory zařízení (IDFA nebo IDFV) ani s vaším účtem Apple a po smazání a opětovné instalaci aplikace se vytvoří nový.</p>
+    </div>
+    <div class="card">
+      <h3>Diagnostika pádů a zamrznutí</h3>
+      <p>Pokud aplikace spadne nebo zamrzne, odešle se diagnostická zpráva vytvořená iOS (MetricKit): typ problému, výpis zásobníku, verze aplikace a systému a model zařízení. Nic z toho, co jste do aplikace zadali, například ohlédnutí, v ní není.</p>
+    </div>
+    <div class="card">
+      <h3>Zpětná vazba, kterou odešlete</h3>
+      <p>Zpětná vazba se odesílá jen tehdy, když ji odešlete z obrazovky Nastavení. Obsahuje to, co jste napsali, spolu se zařízením a verzí aplikace, a vaše jméno a e-mail jen tehdy, když je pro odpověď zadáte sami.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Co neshromažďujeme</h2>
+    <div class="card">
+      <h3>Nikdy neshromažďujeme následující</h3>
+      <ul>
+        <li>Cokoli, co v aplikaci zadáte, například ohlédnutí nebo termíny (pokud to sami nenapíšete do zpětné vazby)</li>
+        <li>Osobní údaje jako jméno, e-mail nebo telefonní číslo (pokud je sami nezadáte do zpětné vazby)</li>
+        <li>Polohu</li>
+        <li>Kontakty nebo fotky</li>
+        <li>Identifikátory zařízení (IDFA, IDFV a podobně)</li>
+        <li>Reklamní data</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Třetí strany</h2>
+    <div class="card">
+      <h3>Vaše data nesdílíme</h3>
+      <p>Aplikace nepoužívá žádné reklamní sítě ani analytické sady SDK třetích stran. Výše popsané statistiky, diagnostika a zpětná vazba putují jen do vlastního úložiště iCloud vývojáře. Nikdy se nespojují s daty jiných firem ani se nepoužívají k vašemu sledování pro reklamu.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nákup v aplikaci</h2>
+    <div class="card">
+      <h3>Platbu zajišťuje Apple</h3>
+      <p>Platbu za jednorázový nákup Pro zpracovává Apple prostřednictvím App Store. Vývojář nikdy nedostane platební údaje, například číslo karty nebo účet Apple. Aplikace si ve vašem zařízení pouze ponechá záznam, zda jste Pro koupili, aby mohla odemknout funkce Pro.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Oznámení</h2>
+    <div class="card">
+      <h3>Pouze místní oznámení</h3>
+      <p>Připomenutí hodinu před časem usínání je místní oznámení naplánované ve vašem zařízení, které nikdy neprochází externím serverem. Oprávnění k oznámením můžete kdykoli změnit v Nastavení iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mikrofon</h2>
+    <div class="card">
+      <h3>Zjišťuje jen sílu vašeho foukání</h3>
+      <p>Mikrofon se používá jen tehdy, když 30 minut před spaním foukáte na pergamen, abyste uhasili oheň. Aplikace měří jen sílu vašeho dechu přímo ve vašem zařízení a nikdy žádný zvuk nenahrává, neukládá ani neodesílá. Oprávnění k mikrofonu můžete kdykoli změnit v Nastavení iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Soukromí dětí</h2>
+    <div class="card">
+      <h3>Děti do 14 let</h3>
+      <p>Tato aplikace není určena dětem do 14 let a vědomě neshromažďujeme osobní údaje od dětí.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Změny těchto zásad</h2>
+    <div class="card">
+      <h3>Změny zveřejníme na této stránce</h3>
+      <p>Pokud se tyto Zásady ochrany osobních údajů změní, aktualizujeme jejich obsah a datum „Poslední aktualizace“ na této stránce. U významných změn vás můžeme informovat i v poznámkách k verzi aplikace.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <div class="card">
+      <h3>Dotazy k soukromí</h3>
+      <p>Máte-li dotazy k těmto Zásadám ochrany osobních údajů, napište nám na adresu níže.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">Tyto zásady jsou k dispozici v několika jazycích. Pokud se verze liší, platí <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">korejská verze</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

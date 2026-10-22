@@ -86,6 +86,12 @@
             "state" : "translated",
             "value" : "%@%%"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
         }
       }
     },
@@ -174,6 +180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld phút"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
           }
         }
       }
@@ -264,6 +276,12 @@
             "state" : "translated",
             "value" : "%1$lld phút %2$lld giây"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
+          }
         }
       }
     },
@@ -352,6 +370,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld giờ %2$lld phút"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
           }
         }
       }
@@ -442,6 +466,12 @@
             "state" : "translated",
             "value" : "%1$lld ngày %2$lld giờ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld h"
+          }
         }
       }
     },
@@ -530,6 +560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld giây"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
           }
         }
       }
@@ -620,6 +656,12 @@
             "state" : "translated",
             "value" : "31/12/2025 (T4) 23:59"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "31. 12. 2025 (st) 23:59"
+          }
         }
       }
     },
@@ -708,6 +750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 ngày 4 giờ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 d 4 h"
           }
         }
       }
@@ -798,6 +846,12 @@
             "state" : "translated",
             "value" : "5 giờ 24 phút"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 h 24 min"
+          }
         }
       }
     },
@@ -885,6 +939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sắp thức dậy"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brzy vstávání"
           }
         }
       }
@@ -974,6 +1034,12 @@
             "state" : "translated",
             "value" : "Thức dậy %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vstávání %@"
+          }
         }
       }
     },
@@ -1062,6 +1128,12 @@
             "state" : "translated",
             "value" : "Còn %@ nữa là thức dậy"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do vstávání %@"
+          }
         }
       }
     },
@@ -1149,6 +1221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian còn lại đến giờ thức dậy"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas do vstávání"
           }
         }
       }
@@ -1239,6 +1317,12 @@
             "state" : "translated",
             "value" : "Thời gian còn lại"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas"
+          }
         }
       }
     },
@@ -1327,6 +1411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian còn lại đến hạn chót tiếp theo"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas do dalšího termínu"
           }
         }
       }
@@ -1417,6 +1507,12 @@
             "state" : "translated",
             "value" : "Giấy da hạn chót"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamen termínů"
+          }
         }
       }
     },
@@ -1504,6 +1600,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chưa có hạn chót"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné termíny"
           }
         }
       }
@@ -1593,6 +1695,12 @@
             "state" : "translated",
             "value" : "Đã qua hạn 🏁"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termín uplynul 🏁"
+          }
         }
       }
     },
@@ -1681,6 +1789,12 @@
             "state" : "translated",
             "value" : "Một ngày mới bắt đầu"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začíná nový den"
+          }
         }
       }
     },
@@ -1768,6 +1882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang ngủ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spánek"
           }
         }
       }
@@ -1858,6 +1978,12 @@
             "state" : "translated",
             "value" : "Giấy da theo năm"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roční pergamen"
+          }
         }
       }
     },
@@ -1946,6 +2072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian còn lại đến giờ ngủ hôm nay"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas do usnutí dnes"
           }
         }
       }
@@ -2036,6 +2168,12 @@
             "state" : "translated",
             "value" : "Năm nay"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letos"
+          }
         }
       }
     },
@@ -2124,6 +2262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian còn lại trong năm nay"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas letos"
           }
         }
       }
@@ -2214,6 +2358,12 @@
             "state" : "translated",
             "value" : "Giấy da theo tháng"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Měsíční pergamen"
+          }
         }
       }
     },
@@ -2302,6 +2452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tháng này"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tento měsíc"
           }
         }
       }
@@ -2392,6 +2548,12 @@
             "state" : "translated",
             "value" : "Thời gian còn lại trong tháng này"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas tento měsíc"
+          }
         }
       }
     },
@@ -2480,6 +2642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuần này"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tento týden"
           }
         }
       }
@@ -2570,6 +2738,12 @@
             "state" : "translated",
             "value" : "Thời gian còn lại trong tuần này"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas tento týden"
+          }
         }
       }
     },
@@ -2658,6 +2832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giấy da theo ngày"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denní pergamen"
           }
         }
       }
@@ -2748,6 +2928,12 @@
             "state" : "translated",
             "value" : "Xem còn bao lâu đến giờ ngủ ngay trên Màn hình khóa"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na zamčené obrazovce uvidíte, kolik zbývá do usnutí"
+          }
         }
       }
     },
@@ -2835,6 +3021,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chúc ngủ ngon"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sladké sny"
           }
         }
       }
@@ -2925,6 +3117,12 @@
             "state" : "translated",
             "value" : "Giấy da theo tuần"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Týdenní pergamen"
+          }
         }
       }
     },
@@ -3013,6 +3211,12 @@
             "state" : "translated",
             "value" : "Ngủ %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spánek %@"
+          }
         }
       }
     },
@@ -3100,6 +3304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đến giờ ngủ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do usnutí"
           }
         }
       }
@@ -3190,6 +3400,12 @@
             "state" : "translated",
             "value" : "Thời gian còn lại đến giờ ngủ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbývající čas do usnutí"
+          }
         }
       }
     },
@@ -3279,6 +3495,12 @@
             "state" : "translated",
             "value" : "Nộp dự án"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odevzdat projekt"
+          }
         }
       }
     },
@@ -3367,6 +3589,12 @@
             "state" : "translated",
             "value" : "🌅 Sắp thức dậy · %@"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌅 Brzy vstávání · %@"
+          }
         }
       }
     },
@@ -3454,6 +3682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔥 Còn %@%%"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Zbývá %@%%"
           }
         }
       }
@@ -3544,6 +3778,12 @@
             "state" : "translated",
             "value" : "🔥 Còn %lld%%"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Zbývá %lld%%"
+          }
         }
       }
     },
@@ -3632,6 +3872,12 @@
             "state" : "translated",
             "value" : "🔥 Còn %@ nữa là đến giờ ngủ"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔥 Do usnutí %@"
+          }
         }
       }
     },
@@ -3719,6 +3965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "😴 Còn %@ nữa là thức dậy"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😴 Do vstávání %@"
           }
         }
       }

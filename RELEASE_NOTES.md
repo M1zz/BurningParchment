@@ -114,6 +114,14 @@ Rõ nét với chữ lớn và độ tương phản
 Đổi mã ưu đãi để nhận Pro
 Xem tính năng sắp tới trong Cài đặt
 
+### 앱스토어 (cs)
+
+Nově i v češtině
+Krátký průvodce pro nováčky
+Čitelné s velkým textem a kontrastem
+Kódy nabídky pro získání Pro
+Připravované funkce najdete v Nastavení
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

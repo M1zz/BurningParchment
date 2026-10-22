@@ -158,6 +158,19 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Cả năm<br>trong một tro", "Pro cho thấy mười hai tháng đã đi đâu", 0.62),
   ("10-book-pdf.png", "pages", False, "Bản nhìn lại<br>thành một cuốn sổ", "Pro: PDF, mỗi ngày một trang", None),
  ],
+ "cs": [
+  ("01-week-dark.png", "hero-bleed", False, "Sledujte, jak váš čas<br>hoří", "Den, týden, měsíc, rok", None),
+  ("02-month-light.png", "hero-bleed", True, "Světlý nebo tmavý", "Podle zařízení, nebo si vyberte", None),
+  ("03-urn-dark.png", "left-text", False, "Každý den skončí<br>popelem", "Co napíšete, se usadí v urně týdne", None),
+  ("04-flow-light.png", "hero-bleed", True, "Kam váš čas<br>odešel", "Graf rozložení a kalendář uhlíků", None),
+  ("05-book-dark.png", "top-crop", False, "Přečtěte si svůj popel", "Řádky, které jste zanechali na pergamenu", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Od času usínání<br>po motiv", "Nastavte si to po svém", None),
+  # ── Pro ──
+  ("07-theme-dark.png", "hero-bleed", True, "Vyberte barvu<br>svého plamene", "Motivy Pro: hanji, celadon, soumrak", None),
+  ("08-poster-dark.png", "text-bottom", False, "Všechny zhasnuté noci<br>na jednom listu", "Pro promění úlomky v plakáty", None),
+  ("09-year-light.png", "top-crop", False, "Celý rok<br>popela", "Pro ukáže, kam odešlo dvanáct měsíců", 0.62),
+  ("10-book-pdf.png", "pages", False, "Vaše ohlédnutí<br>jako kniha", "Pro: PDF, jedna stránka na den", None),
+ ],
 }
 
 FONTS = {
@@ -171,9 +184,10 @@ FONTS = {
     "pt-BR": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "th": '-apple-system, "Thonburi", "Sukhumvit Set", sans-serif',
     "vi": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "cs": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42}
+HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88}
+SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42}
 
 
 def base_css(lang, dark):

@@ -797,3 +797,60 @@ https://m1zz.github.io/BurningParchment/vi/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/vi/
+
+## cs
+
+### 이름
+
+Hořící pergamen: před spaním
+
+### 부제
+
+Zbývající čas dohořívá
+
+### 키워드
+
+časovač,deník,návyky,widget,termín,disciplína,rituál,večer,cíle,ohlédnutí,nespavost,rutina,spánek
+
+### 프로모션 텍스트
+
+Před spaním sfoukněte hořící pergamen a uhaste oheň: malý rituál, který uzavře den. Zbylé úlomky se uschovají.
+
+### 설명
+
+Zbývající čas vašeho dne hoří přímo před očima.
+Hořící pergamen ukazuje zbývající čas ne čísly, ale pomalu hořícím listem pergamenu. Vznikl pro ty, kdo nechtějí, aby jim večer jen tak proklouzl mezi prsty.
+
+Den, týden, měsíc, rok
+Od probuzení do usnutí pergamen pomalu hoří. Zbývající čas tohoto týdne, měsíce i roku uvidíte na stejném pergamenu.
+Přidejte cíl s termínem a čas, který zbývá do toho dne, se odpočítává také.
+
+Sfoukněte a ukončete den
+Od 30 minut před spaním můžete na hořící pergamen foukat a oheň uhasit. Používá se jen síla dechu, nic se nenahrává.
+Úlomky, které po uhašení zbudou, se uschovají. Kdykoli chcete, úlomek otočte a napište na rub jeden řádek.
+
+Den, který se promění v popel
+Ohlédněte se za uplynulým časem, zanechte jednořádkové ohlédnutí a bodem v grafu o dvou osách označte, kam čas odešel.
+Ohlédnutí se usazují v urnách podle témat a můžete si je znovu přečíst v knize ohlédnutí.
+Obrazovka Tok popela ukazuje, kam čas utekl, pomocí grafu rozložení a kalendáře uhlíků.
+
+Vždy na očích
+Widgety na ploše a zamčené obrazovce, Dynamic Island a Živé aktivity na zamčené obrazovce ukazují zbývající čas.
+Světlý a tmavý motiv, doporučené časy usínání a výběr karet, které chcete vidět.
+
+Hořící pergamen Pro
+Hořící pergamen, ohlédnutí i rituál sfouknutí jsou zdarma, stejně jako jeden termín. Pro není předplatné: jednorázová platba, navždy.
+Odemyká Hořící volný čas, který spaluje jen vámi nastavený volný čas; barvy pergamenu a plamene (měsíční hanji, celadon, soumrak); typy plamene (stepní požár, uhlíky, prskavka); sdílení úlomků jako karet a plakátů; export knihy ohlédnutí do PDF; tok popela za posledních dvanáct měsíců; a neomezené termíny. Všechny budoucí funkce Pro jsou také zahrnuty.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/cs/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/cs/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/cs/

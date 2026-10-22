@@ -178,6 +178,14 @@ Wyraźnie przy dużym tekście
 Kody promocyjne odblokowują Pro
 Nowe funkcje zobaczysz w Ustawieniach
 
+### 앱스토어 (sv)
+
+Nu även på svenska
+En kort guide för nya användare
+Tydlig med stor text och kontrast
+Lös in erbjudandekoder för Pro
+Se kommande funktioner i Inställningar
+
 ## 1.2.0
 
 ### 앱스토어 (한국어)

@@ -1253,3 +1253,60 @@ https://m1zz.github.io/BurningParchment/pl/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/BurningParchment/pl/
+
+## sv
+
+### 이름
+
+Brinnande Pergament: läggdags
+
+### 부제
+
+Resten av dagen brinner ner
+
+### 키워드
+
+timer,dagbok,vanor,widget,deadline,disciplin,ritual,kväll,mål,reflektion,sömnlös,rutin,sömn
+
+### 프로모션 텍스트
+
+Blås ut det brinnande pergamentet före läggdags och släck elden: en liten ritual som avslutar dagen. Bitarna som blir kvar sparas.
+
+### 설명
+
+Det som är kvar av din dag brinner inför dina ögon.
+Brinnande Pergament visar återstående tid inte med siffror, utan som ett pergamentark som långsamt brinner ner. Appen är gjord för dig som inte vill se kvällen bara försvinna.
+
+Dag, vecka, månad, år
+Från uppvaknandet till läggdags brinner pergamentet långsamt ner. Det som är kvar av veckan, månaden och året ser du också på samma pergament.
+Lägg till ett mål med en deadline så räknas tiden fram till den dagen också ner.
+
+Blås ut och avsluta dagen
+Från 30 minuter före läggdags kan du blåsa på det brinnande pergamentet för att släcka elden. Bara styrkan i din andning används, och inget ljud spelas in.
+De bitar som blir kvar efter att elden släckts sparas. När du vill kan du vända en bit och skriva en rad på baksidan.
+
+En dag som blir aska
+Blicka tillbaka på tiden som gått, lämna en reflektion på en rad och sätt en punkt i ett diagram med två axlar för att se vart den tog vägen.
+Reflektionerna samlas i urnor efter ämne och du kan läsa dem igen i reflektionsboken.
+Skärmen Askans flöde visar vart tiden tog vägen med ett fördelningsdiagram och en glödkalender.
+
+Alltid framför dig
+Widgetar på hemskärmen och låsskärmen, Dynamic Island och Live Activities på låsskärmen visar den återstående tiden.
+Ljust och mörkt tema, föreslagna läggtider och val av vilka flikar du vill se.
+
+Brinnande Pergament Pro
+Det brinnande pergamentet, reflektionerna och ritualen att blåsa ut är gratis, liksom en deadline. Pro är ingen prenumeration: ett köp, för alltid.
+Det låser upp Brinnande Fritid, som bara bränner den fritid du ställt in; färger för pergament och låga (månskens-hanji, celadon, skymning); lågtyper (präriebrand, glöd, tomtebloss); delning av bitar som kort och affischer; export av reflektionsboken som PDF; askans flöde för de senaste tolv månaderna; och obegränsade deadlines. Alla framtida Pro-funktioner ingår också.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+### 지원 URL
+
+https://m1zz.github.io/BurningParchment/sv/
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/BurningParchment/sv/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/BurningParchment/sv/

@@ -139,6 +139,12 @@
             "state" : "translated",
             "value" : ":%lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ":%lld"
+          }
         }
       }
     },
@@ -285,6 +291,12 @@
             "state" : "translated",
             "value" : "Termin: %@ %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadline: %@ %@"
+          }
         }
       }
     },
@@ -422,6 +434,12 @@
             "state" : "translated",
             "value" : "%@ · tydzień %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · vecka %lld"
+          }
         }
       }
     },
@@ -554,6 +572,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / %@"
@@ -695,6 +719,12 @@
             "state" : "translated",
             "value" : "%@ — czas, który nie trafił jeszcze do żadnej urny."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — tid som ännu inte har hamnat i någon urna."
+          }
         }
       }
     },
@@ -831,6 +861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poszedłeś/aś spać o %@ później. Dzisiejszy poranek jest przypalony o tyle samo"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du somnade %@ för sent. Morgonen i dag är svedd lika mycket"
           }
         }
       }
@@ -969,6 +1005,12 @@
             "state" : "translated",
             "value" : "Jutrzejszy pergamin spłonął po %@.\\nPrzypalenie zostawia tylko czas, gdy nie spałeś/aś."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgondagens pergament brann efter %@.\\nBara tiden du var vaken lämnar en sviden fläck."
+          }
         }
       }
     },
@@ -1105,6 +1147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna „%@”"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnan %@"
           }
         }
       }
@@ -1243,6 +1291,12 @@
             "state" : "translated",
             "value" : "Trafi do urny „%@”"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hamnar i urnan %@"
+          }
         }
       }
     },
@@ -1380,6 +1434,12 @@
             "state" : "translated",
             "value" : "Nadaj urnie „%@” znaczenie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ge urnan %@ en betydelse"
+          }
         }
       }
     },
@@ -1515,6 +1575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "W urnie „%1$@” zostało ziaren popiołu: %2$@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I urnan %1$@ finns askkorn: %2$@"
           }
         }
       }
@@ -1653,6 +1719,12 @@
             "state" : "translated",
             "value" : "W urnie „%1$@” zostało ziaren popiołu: %2$lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I urnan %1$@ finns askkorn: %2$lld"
+          }
         }
       }
     },
@@ -1789,6 +1861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksje: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektioner: %@"
           }
         }
       }
@@ -1927,6 +2005,12 @@
             "state" : "translated",
             "value" : "Start za %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börjar om %@"
+          }
         }
       }
     },
@@ -2063,6 +2147,12 @@
             "state" : "translated",
             "value" : "Pergamin zacznie płonąć za %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamentet börjar brinna om %@"
+          }
         }
       }
     },
@@ -2198,6 +2288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zostało %@%%"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%% kvar"
           }
         }
       }
@@ -2336,6 +2432,12 @@
             "state" : "translated",
             "value" : "%1$@, zostało %2$lld%%"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, %2$lld%% kvar"
+          }
         }
       }
     },
@@ -2472,6 +2574,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, ogień zgaszony z zapasem %2$lld min"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, elden släckt med %2$lld min till godo"
           }
         }
       }
@@ -2610,6 +2718,12 @@
             "state" : "translated",
             "value" : "%@, brak wpisów"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, inga inlägg"
+          }
         }
       }
     },
@@ -2746,6 +2860,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@, popiół: %2$lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, aska: %2$lld"
           }
         }
       }
@@ -2884,6 +3004,12 @@
             "state" : "translated",
             "value" : "%1$@, refleksje: %2$lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, reflektioner: %2$lld"
+          }
         }
       }
     },
@@ -3020,6 +3146,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -3151,6 +3283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nocy ze zdmuchniętym ogniem: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nätter med utblåst eld: %@"
           }
         }
       }
@@ -3289,6 +3427,12 @@
             "state" : "translated",
             "value" : "Aplikacja była otwarta o %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appen var öppen kl. %@"
+          }
         }
       }
     },
@@ -3425,6 +3569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zdmuchnąłeś/aś ogień o %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du blåste ut elden kl. %@"
           }
         }
       }
@@ -3564,6 +3714,12 @@
             "state" : "translated",
             "value" : "%1$@ d · popiół: %2$@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ d · aska: %2$@"
+          }
         }
       }
     },
@@ -3701,6 +3857,12 @@
             "state" : "translated",
             "value" : "Zostało %lld%%"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% kvar"
+          }
         }
       }
     },
@@ -3834,6 +3996,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -3975,6 +4143,12 @@
             "state" : "translated",
             "value" : "%lld razy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld gånger"
+          }
         }
       }
     },
@@ -4112,6 +4286,12 @@
             "state" : "translated",
             "value" : "Nocy ze zdmuchniętym ogniem: %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nätter med utblåst eld: %lld"
+          }
         }
       }
     },
@@ -4245,6 +4425,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -4386,6 +4572,12 @@
             "state" : "translated",
             "value" : "%1$lld min %2$lld s"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld min %2$lld s"
+          }
         }
       }
     },
@@ -4522,6 +4714,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z zapasem %lld min"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med %lld min till godo"
           }
         }
       }
@@ -4660,6 +4858,12 @@
             "state" : "translated",
             "value" : "Ogień zgaszony z zapasem %lld min"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elden släckt med %lld min till godo"
+          }
         }
       }
     },
@@ -4796,6 +5000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld godz."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
           }
         }
       }
@@ -4934,6 +5144,12 @@
             "state" : "translated",
             "value" : "%1$lld godz. %2$lld min"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld h %2$lld min"
+          }
         }
       }
     },
@@ -5067,6 +5283,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld d"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld d"
@@ -5208,6 +5430,12 @@
             "state" : "translated",
             "value" : "%1$lld d %2$lld godz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d %2$lld h"
+          }
         }
       }
     },
@@ -5344,6 +5572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld d · popiół: %2$lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld d · aska: %2$lld"
           }
         }
       }
@@ -5482,6 +5716,12 @@
             "state" : "translated",
             "value" : "Tydzień %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vecka %lld"
+          }
         }
       }
     },
@@ -5615,6 +5855,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld s"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld s"
@@ -5755,6 +6001,12 @@
             "state" : "translated",
             "value" : "Usunąć „%@”?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort ”%@”?"
+          }
         }
       }
     },
@@ -5890,6 +6142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj nowy przyciskiem +"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till en med +-knappen"
           }
         }
       }
@@ -6028,6 +6286,12 @@
             "state" : "translated",
             "value" : "Do 10 minut liczy się jako na czas"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inom 10 minuter räknas som i tid"
+          }
         }
       }
     },
@@ -6164,6 +6428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rok"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "År"
           }
         }
       }
@@ -6302,6 +6572,12 @@
             "state" : "translated",
             "value" : "Miesiąc"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månad"
+          }
         }
       }
     },
@@ -6439,6 +6715,12 @@
             "state" : "translated",
             "value" : "Dzień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag"
+          }
         }
       }
     },
@@ -6575,6 +6857,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tydzień"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vecka"
           }
         }
       }
@@ -6716,6 +7004,12 @@
             "state" : "translated",
             "value" : "Udostępnij lub zapisz PDF"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dela eller spara PDF"
+          }
         }
       }
     },
@@ -6855,6 +7149,12 @@
             "state" : "translated",
             "value" : "· ⊕ środek ciężkości"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· ⊕ tyngdpunkt"
+          }
         }
       }
     },
@@ -6990,6 +7290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· Starsze refleksje bez zapisanego punktu (%@) są rozrzucone w obrębie swojej ćwiartki"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %@ äldre reflektioner utan sparad punkt är utspridda inom sin kvadrant"
           }
         }
       }
@@ -7127,6 +7433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "· Starsze refleksje bez zapisanego punktu (%lld) są rozrzucone w obrębie swojej ćwiartki"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld äldre reflektioner utan sparad punkt är utspridda inom sin kvadrant"
           }
         }
       }
@@ -7278,6 +7590,12 @@
             "state" : "translated",
             "value" : "Wczytaj cenę ponownie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hämta priset igen"
+          }
         }
       }
     },
@@ -7414,6 +7732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Najdłuższa seria"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Längsta svit"
           }
         }
       }
@@ -7552,6 +7876,12 @@
             "state" : "translated",
             "value" : "Wdzięczność"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tacksamhet"
+          }
         }
       }
     },
@@ -7688,6 +8018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skontaktuj się z twórcą"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakta utvecklaren"
           }
         }
       }
@@ -7826,6 +8162,12 @@
             "state" : "translated",
             "value" : "Polityka prywatności"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Integritetspolicy"
+          }
         }
       }
     },
@@ -7963,6 +8305,12 @@
             "state" : "translated",
             "value" : "Ryczące, skaczące płomienie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rytande, hoppande lågor"
+          }
         }
       }
     },
@@ -8098,6 +8446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dane ze Zdrowia: zasnąłeś/aś o %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hälsodata: somnade kl. %@"
           }
         }
       }
@@ -8236,6 +8590,12 @@
             "state" : "translated",
             "value" : "Dane o śnie ze Zdrowia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sömndata från Hälsa"
+          }
         }
       }
     },
@@ -8372,6 +8732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Połącz dane o śnie ze Zdrowia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anslut sömndata från Hälsa"
           }
         }
       }
@@ -8510,6 +8876,12 @@
             "state" : "translated",
             "value" : "Połącz dane o śnie ze Zdrowia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anslut sömndata från Hälsa"
+          }
         }
       }
     },
@@ -8647,6 +9019,12 @@
             "state" : "translated",
             "value" : "Połączono z danymi o śnie ze Zdrowia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ansluten till sömndata från Hälsa"
+          }
         }
       }
     },
@@ -8782,6 +9160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "W Zdrowiu nie ma zapisu snu z ubiegłej nocy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det finns ingen sömndata för i natt i Hälsa"
           }
         }
       }
@@ -8920,6 +9304,12 @@
             "state" : "translated",
             "value" : "Spokojne, łagodne migotanie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En lugn, mjuk fladdring"
+          }
         }
       }
     },
@@ -9056,6 +9446,12 @@
             "state" : "translated",
             "value" : "Napisz od nowa"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv om"
+          }
         }
       }
     },
@@ -9191,6 +9587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Niedługo pora wstawać"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snart dags att gå upp"
           }
         }
       }
@@ -9329,6 +9731,12 @@
             "state" : "translated",
             "value" : "Relacje"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relationer"
+          }
         }
       }
     },
@@ -9465,6 +9873,12 @@
             "state" : "translated",
             "value" : "To nie subskrypcja. Płacisz raz i masz na zawsze."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här är ingen prenumeration. Betala en gång och behåll det för alltid."
+          }
         }
       }
     },
@@ -9600,6 +10014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przywróć zakupy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ köp"
           }
         }
       }
@@ -9738,6 +10158,12 @@
             "state" : "translated",
             "value" : "Nie udało się dokończyć zakupu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Köpet kunde inte slutföras"
+          }
         }
       }
     },
@@ -9874,6 +10300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Czas, który uciekł"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid som rann iväg"
           }
         }
       }
@@ -10012,6 +10444,12 @@
             "state" : "translated",
             "value" : "Po prostu uciekło"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rann bara iväg"
+          }
         }
       }
     },
@@ -10149,6 +10587,12 @@
             "state" : "translated",
             "value" : "Rzeczy do rzucenia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saker att sluta med"
+          }
         }
       }
     },
@@ -10284,6 +10728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wpis jest błędny? Popraw go sam(a)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Är inlägget fel? Rätta det själv"
           }
         }
       }
@@ -10422,6 +10872,12 @@
             "state" : "translated",
             "value" : "Zapisz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara"
+          }
         }
       }
     },
@@ -10558,6 +11014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dni z wpisami"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dagar med inlägg"
           }
         }
       }
@@ -10696,6 +11158,12 @@
             "state" : "translated",
             "value" : "Radość"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glädje"
+          }
         }
       }
     },
@@ -10832,6 +11300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ustawienia budzenia i pory snu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar för uppvaknande och läggdags"
           }
         }
       }
@@ -10970,6 +11444,12 @@
             "state" : "translated",
             "value" : "Godzina budzenia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Väckningstid"
+          }
         }
       }
     },
@@ -11106,6 +11586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Od pobudki do pory snu pergamin powoli się spala"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från uppvaknandet till läggdags brinner pergamentet långsamt ner"
           }
         }
       }
@@ -11244,6 +11730,12 @@
             "state" : "translated",
             "value" : "Przed pobudką"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Före uppvaknandet"
+          }
         }
       }
     },
@@ -11379,6 +11871,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ do pobudki"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ till uppvaknandet"
           }
         }
       }
@@ -11517,6 +12015,12 @@
             "state" : "translated",
             "value" : "Automatyczne odliczanie od pobudki"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk nedräkning från uppvaknandet"
+          }
         }
       }
     },
@@ -11654,6 +12158,12 @@
             "state" : "translated",
             "value" : "Od pobudki do pory snu\\npergamin powoli się spala"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från uppvaknandet till läggdags\\nbrinner pergamentet långsamt ner"
+          }
         }
       }
     },
@@ -11784,6 +12294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "czasu na jawie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "av din vakna tid"
           }
         }
       }
@@ -11922,6 +12438,12 @@
             "state" : "translated",
             "value" : "Odpocznij spokojnie przy zgaszonym ogniu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vila tryggt vid den släckta elden"
+          }
         }
       }
     },
@@ -12058,6 +12580,12 @@
             "state" : "translated",
             "value" : "Wył."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av"
+          }
         }
       }
     },
@@ -12189,6 +12717,12 @@
             "state" : "translated",
             "value" : "Koniec"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slut"
+          }
         }
       }
     },
@@ -12319,6 +12853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pal tylko czas, który należy do Ciebie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bränn bara den tid som är din"
           }
         }
       }
@@ -12457,6 +12997,12 @@
             "state" : "translated",
             "value" : "Moje cele"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mina mål"
+          }
         }
       }
     },
@@ -12588,6 +13134,12 @@
             "state" : "translated",
             "value" : "Mój wolny czas"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min fritid"
+          }
         }
       }
     },
@@ -12718,6 +13270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ustaw mój wolny czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ställ in min fritid"
           }
         }
       }
@@ -12856,6 +13414,12 @@
             "state" : "translated",
             "value" : "Później"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senare"
+          }
         }
       }
     },
@@ -12993,6 +13557,12 @@
             "state" : "translated",
             "value" : "Zdmuchnij"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås bort"
+          }
         }
       }
     },
@@ -13128,6 +13698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum"
           }
         }
       }
@@ -13266,6 +13842,12 @@
             "state" : "translated",
             "value" : "Jutro czeka w okruchu, który zachowałem/am"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgondagen väntar i biten jag sparade"
+          }
         }
       }
     },
@@ -13402,6 +13984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ostatnie żarzące się węgielki zostawiam sobie z jutra"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De sista glöden lämnar jag åt mitt morgondags-jag"
           }
         }
       }
@@ -13540,6 +14128,12 @@
             "state" : "translated",
             "value" : "Zachowamy to, co zostało.\\nA teraz śpij dobrze."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi tar hand om det som blev kvar.\\nSov gott nu."
+          }
         }
       }
     },
@@ -13676,6 +14270,12 @@
             "state" : "translated",
             "value" : "Zachowujemy to, co zostało"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tar hand om det som blev kvar"
+          }
         }
       }
     },
@@ -13811,6 +14411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "zostało"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kvar"
           }
         }
       }
@@ -13949,6 +14555,12 @@
             "state" : "translated",
             "value" : "Niski, oddychający żar"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett lågt, andande sken"
+          }
         }
       }
     },
@@ -14085,6 +14697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krok Notatka na jutro"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Steget Anteckning till i morgon"
           }
         }
       }
@@ -14223,6 +14841,12 @@
             "state" : "translated",
             "value" : "Co nowego wypróbujesz jutro?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad nytt ska du prova i morgon?"
+          }
         }
       }
     },
@@ -14358,6 +14982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jutro rano pojawi się jako pasek u góry pergaminu i spłonie razem z Twoim dniem."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I morgon bitti dyker det upp som ett band överst på pergamentet och brinner tillsammans med din dag."
           }
         }
       }
@@ -14496,6 +15126,12 @@
             "state" : "translated",
             "value" : "Jak podejdziesz do jutra?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur ska du ta dig an i morgon?"
+          }
         }
       }
     },
@@ -14632,6 +15268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z czego zrezygnujesz jutro?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad ska du sluta med i morgon?"
           }
         }
       }
@@ -14770,6 +15412,12 @@
             "state" : "translated",
             "value" : "Jak inaczej spędzisz jutro?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur ska du tillbringa morgondagen annorlunda?"
+          }
         }
       }
     },
@@ -14905,6 +15553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jutrzejszy pergamin"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgondagens pergament"
           }
         }
       }
@@ -15043,6 +15697,12 @@
             "state" : "translated",
             "value" : "Jutrzejszy pergamin zatrzymał się tutaj.\\nSłodkich snów"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgondagens pergament stannade här.\\nSöta drömmar"
+          }
         }
       }
     },
@@ -15178,6 +15838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jutrzejszy pergamin płonie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgondagens pergament brinner"
           }
         }
       }
@@ -15316,6 +15982,12 @@
             "state" : "translated",
             "value" : "Gasi ogień na jutrzejszym pergaminie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Släcker elden på morgondagens pergament"
+          }
         }
       }
     },
@@ -15452,6 +16124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sprawdź połączenie z siecią i spróbuj ponownie."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrollera nätverksanslutningen och försök igen."
           }
         }
       }
@@ -15590,6 +16268,12 @@
             "state" : "translated",
             "value" : "Zmierzch"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skymning"
+          }
         }
       }
     },
@@ -15726,6 +16410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poszedłem/Poszłam spać późno"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jag gick och la mig sent"
           }
         }
       }
@@ -15864,6 +16554,12 @@
             "state" : "translated",
             "value" : "Dzień, który nie spłonął do końca, to wciąż cały dzień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En dag som inte brann ner helt är ändå en hel dag"
+          }
         }
       }
     },
@@ -16000,6 +16696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pokaż inne zdanie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa en annan mening"
           }
         }
       }
@@ -16138,6 +16840,12 @@
             "state" : "translated",
             "value" : "Pal w innym kolorze"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bränn i en annan färg"
+          }
         }
       }
     },
@@ -16274,6 +16982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dalej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästa"
           }
         }
       }
@@ -16412,6 +17126,12 @@
             "state" : "translated",
             "value" : "Następny miesiąc"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästa månad"
+          }
         }
       }
     },
@@ -16542,6 +17262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Następny wolny czas · %1$@ %2$@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästa fritid · %1$@ %2$@"
           }
         }
       }
@@ -16680,6 +17406,12 @@
             "state" : "translated",
             "value" : "Jak mógłbyś/mogłabyś skończyć to następnym razem?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur kunde du bli klar nästa gång?"
+          }
         }
       }
     },
@@ -16816,6 +17548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktualizacje na żywo w Dynamic Island"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liveuppdateringar i Dynamic Island"
           }
         }
       }
@@ -16954,6 +17692,12 @@
             "state" : "translated",
             "value" : "Ciemny"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mörkt"
+          }
         }
       }
     },
@@ -17089,6 +17833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zamknij"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stäng"
           }
         }
       }
@@ -17227,6 +17977,12 @@
             "state" : "translated",
             "value" : "Zamknij — wszystko, co napisano, jest zapisane"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stäng — allt du har skrivit är sparat"
+          }
         }
       }
     },
@@ -17363,6 +18119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Księżyc"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måne"
           }
         }
       }
@@ -17501,6 +18263,12 @@
             "state" : "translated",
             "value" : "Księżycowe hanji"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månskens-hanji"
+          }
         }
       }
     },
@@ -17637,6 +18405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Księżycowe hanji, seladon, zmierzch. Zmieniają kolor papieru i płomienia."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månskens-hanji, celadon, skymning. Ändrar färgen på papperet och lågan."
           }
         }
       }
@@ -17775,6 +18549,12 @@
             "state" : "translated",
             "value" : "Pal w księżycowym hanji, seladonie lub zmierzchu — jak pożar stepu, żar lub zimne ognie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bränn i månskens-hanji, celadon eller skymning, som präriebrand, glöd eller tomtebloss"
+          }
         }
       }
     },
@@ -17912,6 +18692,12 @@
             "state" : "translated",
             "value" : "Otwórz miesiąc, aby znaleźć jego urny tygodniowe"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna en månad för att hitta dess veckournor"
+          }
         }
       }
     },
@@ -18048,6 +18834,12 @@
             "state" : "translated",
             "value" : "Popiół w środku"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska inuti"
+          }
         }
       }
     },
@@ -18183,6 +18975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Możesz zamknąć bez odpowiadania. Niepotwierdzone noce mijają bez przypalenia."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det går bra att stänga utan att svara. Obekräftade nätter går förbi utan svedda fläckar."
           }
         }
       }
@@ -18321,6 +19119,12 @@
             "state" : "translated",
             "value" : "Wystarczy z grubsza"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En grov gissning duger"
+          }
         }
       }
     },
@@ -18458,6 +19262,12 @@
             "state" : "translated",
             "value" : "Co zrobisz jutro, żeby było jeszcze lepiej?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad gör du i morgon för att det ska gå ännu bättre?"
+          }
         }
       }
     },
@@ -18587,6 +19397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till"
           }
         }
       }
@@ -18725,6 +19541,12 @@
             "state" : "translated",
             "value" : "Terminy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadlines"
+          }
         }
       }
     },
@@ -18861,6 +19683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nieograniczone terminy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obegränsat med deadlines"
           }
         }
       }
@@ -18999,6 +19827,12 @@
             "state" : "translated",
             "value" : "Usuń termin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort deadline"
+          }
         }
       }
     },
@@ -19135,6 +19969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Edytuj termin"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redigera deadline"
           }
         }
       }
@@ -19273,6 +20113,12 @@
             "state" : "translated",
             "value" : "Karta terminów pojawi się sama, gdy dodasz termin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fliken Deadlines visas automatiskt när du lägger till en deadline"
+          }
         }
       }
     },
@@ -19409,6 +20255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do terminu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Till deadline"
           }
         }
       }
@@ -19547,6 +20399,12 @@
             "state" : "translated",
             "value" : "Potrzebujesz więcej terminów?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vill du ha fler deadlines?"
+          }
         }
       }
     },
@@ -19682,6 +20540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brak terminów"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga deadlines"
           }
         }
       }
@@ -19820,6 +20684,12 @@
             "state" : "translated",
             "value" : "Wyzwanie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utmaning"
+          }
         }
       }
     },
@@ -19955,6 +20825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kształt"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Form"
           }
         }
       }
@@ -20093,6 +20969,12 @@
             "state" : "translated",
             "value" : "Dotknij dwukrotnie, aby odwrócić okruch"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubbeltryck för att vända biten"
+          }
         }
       }
     },
@@ -20229,6 +21111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sklasyfikuj, dotykając punktu na obu osiach"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klassificera genom att trycka på en punkt längs de två axlarna"
           }
         }
       }
@@ -20367,6 +21255,12 @@
             "state" : "translated",
             "value" : "Odwróć go i zostaw jedną linijkę na odwrocie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vänd på den och lämna en rad på baksidan."
+          }
         }
       }
     },
@@ -20504,6 +21398,12 @@
             "state" : "translated",
             "value" : "Napisz odwrót od nowa"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv om baksidan"
+          }
         }
       }
     },
@@ -20640,6 +21540,12 @@
             "state" : "translated",
             "value" : "Linijka na odwrót"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En rad till baksidan"
+          }
         }
       }
     },
@@ -20775,6 +21681,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napisz na odwrocie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv på baksidan"
           }
         }
       }
@@ -20913,6 +21825,12 @@
             "state" : "translated",
             "value" : "Odwrót jest pusty"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baksidan är tom"
+          }
         }
       }
     },
@@ -21049,6 +21967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pożar stepu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Präriebrand"
           }
         }
       }
@@ -21187,6 +22111,12 @@
             "state" : "translated",
             "value" : "Jasny"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ljust"
+          }
         }
       }
     },
@@ -21322,6 +22252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Termin minął 🏁"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadline passerad 🏁"
           }
         }
       }
@@ -21459,6 +22395,12 @@
             "state" : "translated",
             "value" : "Czas do terminu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid kvar till deadline"
+          }
         }
       }
     },
@@ -21594,6 +22536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Termin"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förfallodatum"
           }
         }
       }
@@ -21732,6 +22680,12 @@
             "state" : "translated",
             "value" : "Miesiąc, w którym zrobiłeś/aś najwięcej z tego, co planowałeś/aś"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månaden då du gjorde mest av det du tänkt"
+          }
         }
       }
     },
@@ -21868,6 +22822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zrobiłem/am, co planowałem/am"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjorde som jag tänkt"
           }
         }
       }
@@ -22006,6 +22966,12 @@
             "state" : "translated",
             "value" : "Zrobiłem/am to, co chciałem/am"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjorde det jag ville"
+          }
         }
       }
     },
@@ -22142,6 +23108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Włącz mikrofon, aby zgasić ogień"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på mikrofonen för att släcka elden"
           }
         }
       }
@@ -22280,6 +23252,12 @@
             "state" : "translated",
             "value" : "Utwórz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skapa"
+          }
         }
       }
     },
@@ -22410,6 +23388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Codziennie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varje dag"
           }
         }
       }
@@ -22548,6 +23532,12 @@
             "state" : "translated",
             "value" : "Stop"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopp"
+          }
         }
       }
     },
@@ -22684,6 +23674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O której zasnąłeś/aś?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När somnade du?"
           }
         }
       }
@@ -22822,6 +23818,12 @@
             "state" : "translated",
             "value" : "Nie musisz spalić wszystkiego"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du behöver inte bränna allt"
+          }
         }
       }
     },
@@ -22958,6 +23960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zebrany popiół"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samlad aska"
           }
         }
       }
@@ -23096,6 +24104,12 @@
             "state" : "translated",
             "value" : "Styl"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil"
+          }
         }
       }
     },
@@ -23233,6 +24247,12 @@
             "state" : "translated",
             "value" : "Zachowane okruchy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparade bitar"
+          }
         }
       }
     },
@@ -23368,6 +24388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zachowane okruchy: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparade bitar: %@"
           }
         }
       }
@@ -23506,6 +24532,12 @@
             "state" : "translated",
             "value" : "Zachowane okruchy: %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparade bitar: %lld"
+          }
         }
       }
     },
@@ -23642,6 +24674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zabierz zachowane okruchy ze sobą"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta med dig dina sparade bitar"
           }
         }
       }
@@ -23780,6 +24818,12 @@
             "state" : "translated",
             "value" : "Udostępniaj okruchy jako karty i plakaty"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dela dina bitar som kort och affischer"
+          }
         }
       }
     },
@@ -23916,6 +24960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nie udało się"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blev inte av"
           }
         }
       }
@@ -24054,6 +25104,12 @@
             "state" : "translated",
             "value" : "Wersja bezpłatna zachowuje do %lld terminu. Z Pro odliczasz tyle celów, ile chcesz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratisversionen rymmer upp till %lld deadline. Med Pro räknar du ner till så många mål du vill."
+          }
         }
       }
     },
@@ -24190,6 +25246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co nie dało Ci zasnąć? (opcjonalnie)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad höll dig vaken? (valfritt)"
           }
         }
       }
@@ -24328,6 +25390,12 @@
             "state" : "translated",
             "value" : "Pasek"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stapel"
+          }
         }
       }
     },
@@ -24464,6 +25532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tło"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bakgrund"
           }
         }
       }
@@ -24602,6 +25676,12 @@
             "state" : "translated",
             "value" : "Iskra"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gnista"
+          }
         }
       }
     },
@@ -24738,6 +25818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noc"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natt"
           }
         }
       }
@@ -24876,6 +25962,12 @@
             "state" : "translated",
             "value" : "Kropla"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Droppe"
+          }
         }
       }
     },
@@ -25012,6 +26104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nauka"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lärande"
           }
         }
       }
@@ -25150,6 +26248,12 @@
             "state" : "translated",
             "value" : "Zgłoszenia błędów i pomysły na funkcje są mile widziane."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felrapporter och funktionsidéer är välkomna."
+          }
         }
       }
     },
@@ -25286,6 +26390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odrzuć"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Släng"
           }
         }
       }
@@ -25424,6 +26534,12 @@
             "state" : "translated",
             "value" : "Błyskawica"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blixt"
+          }
         }
       }
     },
@@ -25560,6 +26676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zakres"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervall"
           }
         }
       }
@@ -25698,6 +26820,12 @@
             "state" : "translated",
             "value" : "Gwiazda"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjärna"
+          }
         }
       }
     },
@@ -25834,6 +26962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brak zakupów do przywrócenia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inget köp att återställa"
           }
         }
       }
@@ -25972,6 +27106,12 @@
             "state" : "translated",
             "value" : "Krok Pisanie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Steget Skrivande"
+          }
         }
       }
     },
@@ -26109,6 +27249,12 @@
             "state" : "translated",
             "value" : "Zapisz tekst i przejdź do klasyfikacji"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara texten och gå till klassificeringen"
+          }
         }
       }
     },
@@ -26242,6 +27388,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "min"
@@ -26383,6 +27535,12 @@
             "state" : "translated",
             "value" : "Wykres klasyfikacji"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klassificeringsdiagram"
+          }
         }
       }
     },
@@ -26519,6 +27677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krok Klasyfikacja"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Steget Klassificering"
           }
         }
       }
@@ -26657,6 +27821,12 @@
             "state" : "translated",
             "value" : "Bez kategorii"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inte klassificerad"
+          }
         }
       }
     },
@@ -26793,6 +27963,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapisz klasyfikację i przejdź do notatki na jutro"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara klassificeringen och gå till anteckningen till i morgon"
           }
         }
       }
@@ -26931,6 +28107,12 @@
             "state" : "translated",
             "value" : "Płomień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Låga"
+          }
         }
       }
     },
@@ -27068,6 +28250,12 @@
             "state" : "translated",
             "value" : "Rodzaj płomienia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Typ av låga"
+          }
         }
       }
     },
@@ -27204,6 +28392,12 @@
             "state" : "translated",
             "value" : "Ogień zgaszony · Zobacz zachowane okruchy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elden är släckt · Se sparade bitar"
+          }
         }
       }
     },
@@ -27339,6 +28533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ogień zgasł. Słodkich snów"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elden är släckt. Söta drömmar"
           }
         }
       }
@@ -27477,6 +28677,12 @@
             "state" : "translated",
             "value" : "Zamień zachowane okruchy w karty i plakaty."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förvandla de sparade bitarna till kort och affischer."
+          }
         }
       }
     },
@@ -27613,6 +28819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zgaszenie ognia też wymaga odwagi"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det krävs mod att släcka elden också"
           }
         }
       }
@@ -27751,6 +28963,12 @@
             "state" : "translated",
             "value" : "Nie zdmuchnąłeś/aś go, ale zasnąłeś/aś na czas, więc ogień zgasł sam."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du blåste inte, men somnade i tid, så elden slocknade av sig själv."
+          }
         }
       }
     },
@@ -27887,6 +29105,12 @@
             "state" : "translated",
             "value" : "Ogień zgasł"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elden är släckt"
+          }
         }
       }
     },
@@ -28022,6 +29246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Płonący Pergamin"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Pergament"
           }
         }
       }
@@ -28160,6 +29390,12 @@
             "state" : "translated",
             "value" : "Płonący Pergamin Pro"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Pergament Pro"
+          }
         }
       }
     },
@@ -28296,6 +29532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Płonący Pergamin 🔥"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Pergament 🔥"
           }
         }
       }
@@ -28434,6 +29676,12 @@
             "state" : "translated",
             "value" : "Płonący Pergamin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Pergament"
+          }
         }
       }
     },
@@ -28563,6 +29811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Płonący Wolny Czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Fritid"
           }
         }
       }
@@ -28701,6 +29955,12 @@
             "state" : "translated",
             "value" : "Zyskaj Płonący Wolny Czas, kolory i rodzaje płomienia, karty okruchów, PDF księgi refleksji, rok popiołu i nieograniczone terminy."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skaffa Brinnande Fritid, färger och lågtyper, bitkort, PDF av reflektionsboken, ett års aska och obegränsade deadlines."
+          }
         }
       }
     },
@@ -28831,6 +30091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zyskaj Płonący Wolny Czas, motywy, karty okruchów, PDF księgi refleksji, rok popiołu i nieograniczone terminy."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skaffa Brinnande Fritid, teman, bitkort, PDF av reflektionsboken, ett års aska och obegränsade deadlines."
           }
         }
       }
@@ -28969,6 +30235,12 @@
             "state" : "translated",
             "value" : "Zimne ognie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomtebloss"
+          }
         }
       }
     },
@@ -29104,6 +30376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zostaw puste, aby użyć wyblakłego zdania"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lämna tomt för att använda den bleka meningen"
           }
         }
       }
@@ -29242,6 +30520,12 @@
             "state" : "translated",
             "value" : "Kolor"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Färg"
+          }
         }
       }
     },
@@ -29378,6 +30662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kolor ustala odcień papieru i płomienia. Rodzaj płomienia ustala, jak się pali. Wybierz każde osobno"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Färgen styr nyansen på papper och låga. Lågtypen styr hur den brinner. Välj var och en för sig"
           }
         }
       }
@@ -29516,6 +30806,12 @@
             "state" : "translated",
             "value" : "W użyciu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Används"
+          }
         }
       }
     },
@@ -29652,6 +30948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuń"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort"
           }
         }
       }
@@ -29790,6 +31092,12 @@
             "state" : "translated",
             "value" : "Nowy termin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny deadline"
+          }
         }
       }
     },
@@ -29926,6 +31234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nowa urna"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny urna"
           }
         }
       }
@@ -30064,6 +31378,12 @@
             "state" : "translated",
             "value" : "Utwórz nową urnę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skapa ny urna"
+          }
         }
       }
     },
@@ -30199,6 +31519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nowa refleksja"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny reflektion"
           }
         }
       }
@@ -30337,6 +31663,12 @@
             "state" : "translated",
             "value" : "Napisz nową refleksję"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en ny reflektion"
+          }
         }
       }
     },
@@ -30473,6 +31805,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wygraweruj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gravera"
           }
         }
       }
@@ -30611,6 +31949,12 @@
             "state" : "translated",
             "value" : "Obejmuje wszystkie funkcje Pro, które dodamy później"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inkluderar alla Pro-funktioner vi lägger till senare"
+          }
         }
       }
     },
@@ -30747,6 +32091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Linia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linje"
           }
         }
       }
@@ -30885,6 +32235,12 @@
             "state" : "translated",
             "value" : "Wybrano"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vald"
+          }
         }
       }
     },
@@ -31021,6 +32377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ustawienia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
           }
         }
       },
@@ -31159,6 +32521,12 @@
             "state" : "translated",
             "value" : "Włącz mikrofon w Ustawieniach"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på mikrofonen i Inställningar"
+          }
         }
       }
     },
@@ -31295,6 +32663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozwój"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Växande"
           }
         }
       }
@@ -31433,6 +32807,12 @@
             "state" : "translated",
             "value" : "Bądź szczery/a..."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Var ärlig..."
+          }
         }
       }
     },
@@ -31569,6 +32949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapisy snu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sömndata"
           }
         }
       }
@@ -31707,6 +33093,12 @@
             "state" : "translated",
             "value" : "Zapisy snu są tylko odczytywane i nigdy nie opuszczają Twojego urządzenia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sömndata läses bara och lämnar aldrig din enhet"
+          }
         }
       }
     },
@@ -31842,6 +33234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sen"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sover"
           }
         }
       }
@@ -31980,6 +33378,12 @@
             "state" : "translated",
             "value" : "Edytuj"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redigera"
+          }
         }
       }
     },
@@ -32116,6 +33520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Żar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glöd"
           }
         }
       }
@@ -32254,6 +33664,12 @@
             "state" : "translated",
             "value" : "godz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "h"
+          }
         }
       }
     },
@@ -32390,6 +33806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid"
           }
         }
       }
@@ -32528,6 +33950,12 @@
             "state" : "translated",
             "value" : "Ustawienia czasu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidsinställningar"
+          }
         }
       }
     },
@@ -32663,6 +34091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poświęcono czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lade tid på det"
           }
         }
       }
@@ -32800,6 +34234,12 @@
             "state" : "translated",
             "value" : "Nie poświęcono czasu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lade ingen tid på det"
+          }
         }
       }
     },
@@ -32933,6 +34373,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "System"
@@ -33074,6 +34520,12 @@
             "state" : "translated",
             "value" : "Wybierz System, aby podążać za ustawieniem trybu ciemnego urządzenia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj System för att följa enhetens inställning för mörkt läge"
+          }
         }
       }
     },
@@ -33201,6 +34653,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start"
@@ -33341,6 +34799,12 @@
             "state" : "translated",
             "value" : "Godzina rozpoczęcia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starttid"
+          }
         }
       }
     },
@@ -33478,6 +34942,12 @@
             "state" : "translated",
             "value" : "Błędy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Misstag"
+          }
         }
       }
     },
@@ -33610,6 +35080,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbol"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbol"
@@ -33750,6 +35226,12 @@
             "state" : "translated",
             "value" : "Na razie brak popiołu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aska än"
+          }
         }
       }
     },
@@ -33886,6 +35368,12 @@
             "state" : "translated",
             "value" : "Na razie brak zachowanych okruchów"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga sparade bitar än"
+          }
         }
       }
     },
@@ -34021,6 +35509,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brak sklasyfikowanego popiołu. Dotknij wykresu podczas pisania refleksji."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen klassificerad aska än. Tryck på diagrammet när du skriver en reflektion."
           }
         }
       }
@@ -34159,6 +35653,12 @@
             "state" : "translated",
             "value" : "Wciąż pusto"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortfarande tomt"
+          }
         }
       }
     },
@@ -34296,6 +35796,12 @@
             "state" : "translated",
             "value" : "Wciąż pusto."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortfarande tomt."
+          }
         }
       }
     },
@@ -34431,6 +35937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popiół bez nazwy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska utan namn än"
           }
         }
       }
@@ -34569,6 +36081,12 @@
             "state" : "translated",
             "value" : "Nic jeszcze nie napisano"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inget skrivet än"
+          }
         }
       }
     },
@@ -34704,6 +36222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wciąż na pierwszej stronie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortfarande på första sidan"
           }
         }
       }
@@ -34842,6 +36366,12 @@
             "state" : "translated",
             "value" : "Brak urn"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga urnor än"
+          }
         }
       }
     },
@@ -34979,6 +36509,12 @@
             "state" : "translated",
             "value" : "Popiół jeszcze nie opadł"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aska har lagt sig än"
+          }
         }
       }
     },
@@ -35114,6 +36650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Na razie to tylko popiół"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Än så länge bara aska"
           }
         }
       }
@@ -35252,6 +36794,12 @@
             "state" : "translated",
             "value" : "Przyszłe funkcje Pro"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommande Pro-funktioner"
+          }
         }
       }
     },
@@ -35382,6 +36930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Około %lld dni"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ungefär %lld dagar"
           }
         }
       }
@@ -35520,6 +37074,12 @@
             "state" : "translated",
             "value" : "Pergamin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament"
+          }
         }
       }
     },
@@ -35656,6 +37216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamin i płomień"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament och låga"
           }
         }
       }
@@ -35794,6 +37360,12 @@
             "state" : "translated",
             "value" : "Motywy pergaminu i płomienia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teman för pergament och låga"
+          }
         }
       }
     },
@@ -35930,6 +37502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wybierz, jak pali się pergamin. Kolor podąża za motywem powyżej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj hur ditt pergament brinner. Färgen följer temat ovan"
           }
         }
       }
@@ -36068,6 +37646,12 @@
             "state" : "translated",
             "value" : "Pergamin i płomień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergament och låga"
+          }
         }
       }
     },
@@ -36204,6 +37788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kolor papieru i płomień zmieniają się razem"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Papperets färg och lågan ändras tillsammans"
           }
         }
       }
@@ -36342,6 +37932,12 @@
             "state" : "translated",
             "value" : "Do której urny to włożyć?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilken urna ska det i?"
+          }
         }
       }
     },
@@ -36477,6 +38073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Niedokończone ze wczoraj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogjort från i går"
           }
         }
       }
@@ -36615,6 +38217,12 @@
             "state" : "translated",
             "value" : "Niedokończone ze wczoraj: %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogjort från i går: %lld"
+          }
         }
       }
     },
@@ -36750,6 +38358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zeszłej nocy zasnąłeś/aś o %@ później,\\nwięc dzisiejszy poranek jest przypalony"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du somnade %@ för sent i natt,\\nså morgonen i dag är svedd"
           }
         }
       }
@@ -36888,6 +38502,12 @@
             "state" : "translated",
             "value" : "Zeszłej nocy zasnąłeś/aś o %@ później.\\nSpróbuj dziś wieczorem zgasić ogień trochę wcześniej."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du somnade %@ för sent i natt.\\nTesta att släcka elden lite tidigare i kväll."
+          }
         }
       }
     },
@@ -37025,6 +38645,12 @@
             "state" : "translated",
             "value" : "Okruch z zeszłej nocy wystygł"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gårdagens bit har kallnat"
+          }
         }
       }
     },
@@ -37160,6 +38786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jak minęła zeszła noc?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur var natten?"
           }
         }
       }
@@ -37298,6 +38930,12 @@
             "state" : "translated",
             "value" : "Przypadkiem"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av en slump"
+          }
         }
       }
     },
@@ -37434,6 +39072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skończyło się na tym, że to zrobiłem/am"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det blev så att jag gjorde det"
           }
         }
       }
@@ -37572,6 +39216,12 @@
             "state" : "translated",
             "value" : "To, co ostatecznie zrobiłem/am"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det som det blev av"
+          }
         }
       }
     },
@@ -37709,6 +39359,12 @@
             "state" : "translated",
             "value" : "Brak"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen"
+          }
         }
       }
     },
@@ -37844,6 +39500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "To, co tu leży, jest tylko popiołem, dopóki nie nadasz temu nazwy."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det som ligger här är bara aska tills du ger det ett namn."
           }
         }
       }
@@ -37982,6 +39644,12 @@
             "state" : "translated",
             "value" : "Czym był dla mnie ten popiół…"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad den här askan betydde för mig…"
+          }
         }
       }
     },
@@ -38118,6 +39786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odliczaj kilka celów naraz"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Räkna ner till flera mål samtidigt"
           }
         }
       }
@@ -38256,6 +39930,12 @@
             "state" : "translated",
             "value" : "Połączono"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ansluten"
+          }
         }
       }
     },
@@ -38392,6 +40072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aby odłączyć, otwórz Ustawienia iOS ▸ Zdrowie ▸ Dostęp do danych i urządzeń"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "För att koppla från, gå till Inställningar i iOS ▸ Hälsa ▸ Dataåtkomst och enheter"
           }
         }
       }
@@ -38530,6 +40216,12 @@
             "state" : "translated",
             "value" : "Aby odłączyć, otwórz Ustawienia iOS ▸ Zdrowie ▸ Dostęp do danych i urządzeń. Dane o śnie są tylko odczytywane i nigdy nie opuszczają Twojego urządzenia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "För att koppla från, gå till Inställningar i iOS ▸ Hälsa ▸ Dataåtkomst och enheter. Sömndata läses bara och lämnar aldrig din enhet"
+          }
         }
       }
     },
@@ -38666,6 +40358,12 @@
             "state" : "translated",
             "value" : "Połącz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anslut"
+          }
         }
       }
     },
@@ -38801,6 +40499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po połączeniu nie będziemy pytać co rano i cofniemy ogień do chwili, gdy zasnąłeś/aś. Zapisy snu są tylko odczytywane i nigdy nie opuszczają Twojego urządzenia."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När du har anslutit frågar vi inte varje morgon utan sätter tillbaka elden till när du somnade. Sömndata läses bara och lämnar aldrig din enhet."
           }
         }
       }
@@ -38939,6 +40643,12 @@
             "state" : "translated",
             "value" : "Po połączeniu nie będziemy pytać co rano. Jutrzejszy pergamin zostanie cofnięty do chwili, gdy naprawdę zasnąłeś/aś"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När du har anslutit frågar vi inte varje morgon. Morgondagens pergament sätts tillbaka till när du faktiskt somnade"
+          }
         }
       }
     },
@@ -39075,6 +40785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po połączeniu użyjemy zapisanej pory snu zamiast pytać co rano. Dane o śnie są tylko odczytywane i nigdy nie opuszczają Twojego urządzenia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När du har anslutit använder vi din registrerade sömntid i stället för att fråga varje morgon. Sömndata läses bara och lämnar aldrig din enhet"
           }
         }
       }
@@ -39213,6 +40929,12 @@
             "state" : "translated",
             "value" : "Otwórz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna"
+          }
         }
       }
     },
@@ -39349,6 +41071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Np. media społecznościowe maks. 15 minut"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. max 15 minuter på sociala medier"
           }
         }
       }
@@ -39487,6 +41215,12 @@
             "state" : "translated",
             "value" : "Np. tydzień, który przetrwałem/am"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. veckan jag höll ut"
+          }
         }
       }
     },
@@ -39623,6 +41357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Np. zamień na 20-minutowy spacer"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. byt till en 20 minuters promenad"
           }
         }
       }
@@ -39761,6 +41501,12 @@
             "state" : "translated",
             "value" : "Np. wydłuż trening o 30 minut"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. förläng träningen med 30 minuter"
+          }
         }
       }
     },
@@ -39897,6 +41643,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Np. sport, relacje, wyzwanie roku"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. träning, relationer, årets utmaning"
           }
         }
       }
@@ -40035,6 +41787,12 @@
             "state" : "translated",
             "value" : "Np. 30 minut treningu zaraz po obiedzie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. 30 minuters träning direkt efter lunch"
+          }
         }
       }
     },
@@ -40171,6 +41929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Np. przeczytaj jeden rozdział"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. läs ett kapitel"
           }
         }
       }
@@ -40309,6 +42073,12 @@
             "state" : "translated",
             "value" : "Np. oddaj projekt"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "T.ex. lämna in projektet"
+          }
         }
       }
     },
@@ -40445,6 +42215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dziś"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag"
           }
         }
       }
@@ -40583,6 +42359,12 @@
             "state" : "translated",
             "value" : "Dlaczego dzisiejszy dzień został niedokończony"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varför dagen blev ogjord"
+          }
         }
       }
     },
@@ -40719,6 +42501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dzisiejszy poranek jest lekko przypalony"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgonen i dag är lite svedd"
           }
         }
       }
@@ -40857,6 +42645,12 @@
             "state" : "translated",
             "value" : "Zostaw jedną linijkę o swoim dniu."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lämna en rad om din dag."
+          }
         }
       }
     },
@@ -40993,6 +42787,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nie udało Ci się\\nzakończyć dzisiejszego dnia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hann inte\\navsluta din dag"
           }
         }
       }
@@ -41131,6 +42931,12 @@
             "state" : "translated",
             "value" : "Co przeszkodziło Ci\\nzakończyć dzisiejszy dzień?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad hindrade dig från att\\navsluta din dag?"
+          }
         }
       }
     },
@@ -41268,6 +43074,12 @@
             "state" : "translated",
             "value" : "Gasi dzisiejszy ogień i zachowuje pozostały okruch"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Släcker dagens eld och sparar biten som blev kvar"
+          }
         }
       }
     },
@@ -41403,6 +43215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zostawić jedną linijkę przed snem?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lämna en rad innan du sover?"
           }
         }
       }
@@ -41541,6 +43359,12 @@
             "state" : "translated",
             "value" : "Dziś, "
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag, "
+          }
         }
       }
     },
@@ -41678,6 +43502,12 @@
             "state" : "translated",
             "value" : "Pomiń dziś"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoppa över i dag"
+          }
         }
       }
     },
@@ -41813,6 +43643,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jaki był Twój dzień? — Dotknij, aby zaznaczyć"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur var din dag? — Tryck för att markera"
           }
         }
       }
@@ -41951,6 +43787,12 @@
             "state" : "translated",
             "value" : "Co wypróbujesz dziś wieczorem? (opcjonalnie)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad ska du prova i kväll? (valfritt)"
+          }
         }
       }
     },
@@ -42087,6 +43929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Na dziś wystarczy. Dobrze się paliło."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det räcker för i dag. Det brann bra."
           }
         }
       }
@@ -42225,6 +44073,12 @@
             "state" : "translated",
             "value" : "To ja decyduję, gdzie kończy się dzisiejszy dzień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jag bestämmer var i dag slutar"
+          }
         }
       }
     },
@@ -42361,6 +44215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napisać dzisiejszą refleksję? Dotknij, aby otworzyć edytor"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriva dagens reflektion? Tryck för att öppna redigeraren"
           }
         }
       }
@@ -42499,6 +44359,12 @@
             "state" : "translated",
             "value" : "rano"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "fm"
+          }
         }
       }
     },
@@ -42635,6 +44501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "wieczorem"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "em"
           }
         }
       }
@@ -42773,6 +44645,12 @@
             "state" : "translated",
             "value" : "W tym roku"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I år"
+          }
         }
       }
     },
@@ -42910,6 +44788,12 @@
             "state" : "translated",
             "value" : "Pozostały czas w tym roku"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid kvar i år"
+          }
         }
       }
     },
@@ -43045,6 +44929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gotowe"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar"
           }
         }
       }
@@ -43182,6 +45072,12 @@
             "state" : "translated",
             "value" : "+%@ więcej"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@ till"
+          }
         }
       }
     },
@@ -43311,6 +45207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "i %@ więcej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "och %@ till"
           }
         }
       }
@@ -43449,6 +45351,12 @@
             "state" : "translated",
             "value" : "+%lld więcej"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld till"
+          }
         }
       }
     },
@@ -43585,6 +45493,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "i %lld więcej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "och %lld till"
           }
         }
       }
@@ -43723,6 +45637,12 @@
             "state" : "translated",
             "value" : "Koło"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cirkel"
+          }
         }
       }
     },
@@ -43860,6 +45780,12 @@
             "state" : "translated",
             "value" : "Przesuń w górę lub w dół, aby zmienić stronę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svep uppåt eller nedåt för att byta sida"
+          }
         }
       }
     },
@@ -43995,6 +45921,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napisz znaczenie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv betydelsen"
           }
         }
       }
@@ -44133,6 +46065,12 @@
             "state" : "translated",
             "value" : "Zapisz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv ner det"
+          }
         }
       }
     },
@@ -44268,6 +46206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuń znaczenie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera betydelsen"
           }
         }
       }
@@ -44405,6 +46349,12 @@
             "state" : "translated",
             "value" : "Bez\\nintencji"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utan\\navsikt"
+          }
         }
       }
     },
@@ -44540,6 +46490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z\\nintencją"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med\\navsikt"
           }
         }
       }
@@ -44677,6 +46633,12 @@
             "state" : "translated",
             "value" : "Nie znaleziono zakupu Pro na tym koncie Apple. Upewnij się, że zalogowano się na konto użyte do zakupu."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi hittade inget Pro-köp på det här Apple-kontot. Kontrollera att du är inloggad med kontot du köpte med."
+          }
         }
       }
     },
@@ -44812,6 +46774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z tego dnia nie został żaden popiół"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aska finns kvar från den här dagen"
           }
         }
       }
@@ -44950,6 +46918,12 @@
             "state" : "translated",
             "value" : "Co ten miesiąc znaczył dla Ciebie?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad betydde den här månaden för dig?"
+          }
         }
       }
     },
@@ -45085,6 +47059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urny tygodniowe tego miesiąca"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veckournor i den här månaden"
           }
         }
       }
@@ -45223,6 +47203,12 @@
             "state" : "translated",
             "value" : "Jak poradzisz sobie z tym czasem jutro?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur ska du hantera den här tiden i morgon?"
+          }
         }
       }
     },
@@ -45360,6 +47346,12 @@
             "state" : "translated",
             "value" : "Odrzucić ten okruch?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Släng den här biten?"
+          }
         }
       }
     },
@@ -45496,6 +47488,12 @@
             "state" : "translated",
             "value" : "Co ten tydzień znaczył dla Ciebie?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad betydde den här veckan för dig?"
+          }
         }
       }
     },
@@ -45631,6 +47629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ta urna jest pusta."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den här urnan är tom."
           }
         }
       }
@@ -45769,6 +47773,12 @@
             "state" : "translated",
             "value" : "Zamienia tę urnę z powrotem w popiół bez nazwy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gör den här urnan till aska utan namn igen"
+          }
         }
       }
     },
@@ -45904,6 +47914,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co zostało w tej urnie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det som finns kvar i den här urnan"
           }
         }
       }
@@ -46042,6 +48058,12 @@
             "state" : "translated",
             "value" : "Nazwa"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namn"
+          }
         }
       }
     },
@@ -46178,6 +48200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zmień nazwę"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Byt namn"
           }
         }
       }
@@ -46316,6 +48344,12 @@
             "state" : "translated",
             "value" : "Urna bez tytułu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna utan titel"
+          }
         }
       }
     },
@@ -46453,6 +48487,12 @@
             "state" : "translated",
             "value" : "Napisz do nas"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mejla oss"
+          }
         }
       }
     },
@@ -46585,6 +48625,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
@@ -46726,6 +48772,12 @@
             "state" : "translated",
             "value" : "Udostępnij obraz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dela bild"
+          }
         }
       }
     },
@@ -46862,6 +48914,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ten miesiąc"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den här månaden"
           }
         }
       }
@@ -47000,6 +49058,12 @@
             "state" : "translated",
             "value" : "Pozostały czas w tym miesiącu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid kvar den här månaden"
+          }
         }
       }
     },
@@ -47136,6 +49200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ten tydzień"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den här veckan"
           }
         }
       }
@@ -47274,6 +49344,12 @@
             "state" : "translated",
             "value" : "Pozostały czas w tym tygodniu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid kvar den här veckan"
+          }
         }
       }
     },
@@ -47405,6 +49481,12 @@
             "state" : "translated",
             "value" : "Pozostały wolny czas w tym tygodniu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid kvar den här veckan"
+          }
         }
       }
     },
@@ -47535,6 +49617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wolny czas z tego tygodnia całkowicie się spalił"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veckans fritid har brunnit upp helt"
           }
         }
       }
@@ -47673,6 +49761,12 @@
             "state" : "translated",
             "value" : "To powtarza się też w tym tygodniu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det upprepas även den här veckan"
+          }
         }
       }
     },
@@ -47809,6 +49903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zdarzyło się to też wcześniej w tym tygodniu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det hände även tidigare den här veckan"
           }
         }
       }
@@ -47947,6 +50047,12 @@
             "state" : "translated",
             "value" : "Warunki użytkowania (EULA)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Användarvillkor (EULA)"
+          }
         }
       }
     },
@@ -48083,6 +50189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poprzedni miesiąc"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Föregående månad"
           }
         }
       }
@@ -48221,6 +50333,12 @@
             "state" : "translated",
             "value" : "Wiadomość na Instagramie (@lee25_ios)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -48352,6 +50470,12 @@
             "state" : "translated",
             "value" : "Mój czas w każdym tygodniu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min tid varje vecka"
+          }
         }
       }
     },
@@ -48482,6 +50606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamin pali się tylko w Twoich własnych godzinach"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergamentet brinner bara under dina egna timmar"
           }
         }
       }
@@ -48618,6 +50748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Używana jest tylko siła Twojego oddechu. Nic nie jest nagrywane."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bara styrkan i din andning används. Inget spelas in."
           }
         }
       }
@@ -48756,6 +50892,12 @@
             "state" : "translated",
             "value" : "Liść"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löv"
+          }
         }
       }
     },
@@ -48892,6 +51034,12 @@
             "state" : "translated",
             "value" : "Autozapis"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autospara"
+          }
         }
       }
     },
@@ -49022,6 +51170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wolny czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid"
           }
         }
       }
@@ -49154,6 +51308,12 @@
             "state" : "translated",
             "value" : "Edytuj wolny czas"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redigera fritid"
+          }
         }
       }
     },
@@ -49284,6 +51444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj wolny czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till fritid"
           }
         }
       }
@@ -49422,6 +51588,12 @@
             "state" : "translated",
             "value" : "Wolny czas pojawia się jako klepsydra wśród kropek stron. Terminy pojawiają się same po dodaniu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritid visas som ett timglas bland sidprickarna. Deadlines dyker upp av sig själva när du lägger till dem"
+          }
         }
       }
     },
@@ -49551,6 +51723,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapala się, gdy Twój wolny czas upływa, i czeka zgaszony przez resztę tygodnia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det tänds medan din fritid går och väntar släckt resten av veckan"
           }
         }
       }
@@ -49689,6 +51867,12 @@
             "state" : "translated",
             "value" : "Nawet małe zmiany to dobry początek..."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Små förändringar är en bra början..."
+          }
         }
       }
     },
@@ -49825,6 +52009,12 @@
             "state" : "translated",
             "value" : "Dotknij żaru, aby zobaczyć refleksje z tego dnia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck på en glöd för att se den dagens reflektioner"
+          }
         }
       }
     },
@@ -49960,6 +52150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dobranoc"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "God natt"
           }
         }
       }
@@ -50098,6 +52294,12 @@
             "state" : "translated",
             "value" : "Dobrze spalony dzień. Czas pozwolić mu ostygnąć."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En väl bränd dag. Dags att låta den svalna."
+          }
         }
       }
     },
@@ -50227,6 +52429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomiń sen, pracę i obowiązki i dodaj tylko czas, który poświęcasz sobie. Pergamin tego tygodnia pali się tylko wtedy, gdy ten czas upływa."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utelämna sömn, arbete och måsten och lägg bara till den tid du ägnar åt dig själv. Veckans pergament brinner bara medan den går."
           }
         }
       }
@@ -50358,6 +52566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wybierz godziny, które naprawdę są Twoje, poza snem i pracą. Pergamin tego tygodnia pali się tylko wtedy, gdy one upływają."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj de timmar som verkligen är dina, utöver sömn och arbete. Veckans pergament brinner bara medan de går."
           }
         }
       }
@@ -50496,6 +52710,12 @@
             "state" : "translated",
             "value" : "Pora zaśnięcia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insomningstid"
+          }
         }
       }
     },
@@ -50632,6 +52852,12 @@
             "state" : "translated",
             "value" : "Zatrzymuje się sam, gdy zaśniesz. Rano sprawdzamy, kiedy zasnąłeś/aś, i cofamy go"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det stannar av sig självt när du sover. På morgonen kontrollerar vi när du somnade och sätter tillbaka det"
+          }
         }
       }
     },
@@ -50762,6 +52988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pokrywa się z Twoim snem"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Överlappar din sömn"
           }
         }
       }
@@ -50894,6 +53126,12 @@
             "state" : "translated",
             "value" : "To pokrywa się z Twoim snem. Zmieść to w godzinach na jawie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här överlappar din sömn. Håll det inom din vakna tid."
+          }
         }
       }
     },
@@ -51023,6 +53261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bez snu, bez pracy,\\nwybierz tylko godziny, które są Twoje.\\nPergamin tego tygodnia pali się tylko wtedy, gdy one upływają."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utan sömn, utan arbete,\\nvälj bara de timmar som är dina.\\nVeckans pergament brinner bara medan de går."
           }
         }
       }
@@ -51161,6 +53405,12 @@
             "state" : "translated",
             "value" : "Popiół"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska"
+          }
         }
       }
     },
@@ -51297,6 +53547,12 @@
             "state" : "translated",
             "value" : "Na podstawie popiołów: %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baserat på %@ aska"
+          }
         }
       }
     },
@@ -51426,6 +53682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popiół: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska: %@"
           }
         }
       }
@@ -51558,6 +53820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popiół: %@ · rozmiar A5"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska: %@ · A5-storlek"
           }
         }
       }
@@ -51696,6 +53964,12 @@
             "state" : "translated",
             "value" : "Na podstawie popiołów: %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baserat på %lld aska"
+          }
         }
       }
     },
@@ -51832,6 +54106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popiół: %lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska: %lld"
           }
         }
       }
@@ -51970,6 +54250,12 @@
             "state" : "translated",
             "value" : "Popiół: %lld · rozmiar A5"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska: %lld · A5-storlek"
+          }
         }
       }
     },
@@ -52107,6 +54393,12 @@
             "state" : "translated",
             "value" : "Urny z popiołem"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askurnor"
+          }
         }
       }
     },
@@ -52242,6 +54534,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Włóż go do swojej urny z popiołem"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg den i din askurna"
           }
         }
       }
@@ -52380,6 +54678,12 @@
             "state" : "translated",
             "value" : "Miesiąc z największą ilością popiołu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månaden med mest aska"
+          }
         }
       }
     },
@@ -52517,6 +54821,12 @@
             "state" : "translated",
             "value" : "Zachowaj trochę popiołu, a\\nrozkład i kalendarz żaru pojawią się tutaj."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara lite aska så visas\\nfördelningen och glödkalendern här."
+          }
         }
       }
     },
@@ -52652,6 +54962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozkład popiołu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askans fördelning"
           }
         }
       }
@@ -52790,6 +55106,12 @@
             "state" : "translated",
             "value" : "Przepływ popiołu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askans flöde"
+          }
         }
       }
     },
@@ -52926,6 +55248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobacz przepływ popiołu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa askans flöde"
           }
         }
       }
@@ -53064,6 +55392,12 @@
             "state" : "translated",
             "value" : "Zapisz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara"
+          }
         }
       }
     },
@@ -53201,6 +55535,12 @@
             "state" : "translated",
             "value" : "Zapisywanie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparar"
+          }
         }
       }
     },
@@ -53337,6 +55677,12 @@
             "state" : "translated",
             "value" : "Zapisywanie…"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparar…"
+          }
         }
       }
     },
@@ -53472,6 +55818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapisano"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparad"
           }
         }
       }
@@ -53610,6 +55962,12 @@
             "state" : "translated",
             "value" : "Zapisz i zacznij nową refleksję"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara och börja en ny reflektion"
+          }
         }
       }
     },
@@ -53746,6 +56104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapisz i zamknij"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara och stäng"
           }
         }
       }
@@ -53884,6 +56248,12 @@
             "state" : "translated",
             "value" : "Zgasł sam"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slocknade av sig själv"
+          }
         }
       }
     },
@@ -54020,6 +56390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zachowałeś/aś okruch, który zgasł sam"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du sparade en bit som slocknade av sig själv"
           }
         }
       }
@@ -54158,6 +56534,12 @@
             "state" : "translated",
             "value" : "Zbierz refleksje w jeden PDF do zachowania lub wydruku."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samla dina reflektioner i en PDF att spara eller skriva ut."
+          }
         }
       }
     },
@@ -54294,6 +56676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wszystko"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla"
           }
         }
       }
@@ -54432,6 +56820,12 @@
             "state" : "translated",
             "value" : "Punkt"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkt"
+          }
         }
       }
     },
@@ -54563,6 +56957,12 @@
             "state" : "translated",
             "value" : "Twój wolny czas"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din fritid"
+          }
         }
       }
     },
@@ -54692,6 +57092,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ustawienie go i oglądanie liczb jest bezpłatne. Palenie tylko tych godzin to Pro."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Att ställa in den och se siffrorna är gratis. Att bränna just de timmarna är Pro."
           }
         }
       }
@@ -54829,6 +57235,12 @@
             "state" : "translated",
             "value" : "Tytuł"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
         }
       }
     },
@@ -54964,6 +57376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zgasiłeś/aś ogień na czas. Jutrzejszy pergamin jest nietknięty"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du släckte elden i tid. Morgondagens pergament är orört"
           }
         }
       }
@@ -55102,6 +57520,12 @@
             "state" : "translated",
             "value" : "Zasnąłeś/aś na czas, więc ogień zgasł sam"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du somnade i tid, så elden slocknade av sig själv"
+          }
         }
       }
     },
@@ -55238,6 +57662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spałem/am o czasie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jag sov i tid"
           }
         }
       }
@@ -55376,6 +57806,12 @@
             "state" : "translated",
             "value" : "Odrzuć okruch"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Släng bit"
+          }
         }
       }
     },
@@ -55512,6 +57948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karta okruchu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitkort"
           }
         }
       }
@@ -55650,6 +58092,12 @@
             "state" : "translated",
             "value" : "Karty i plakaty okruchów"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitkort och affischer"
+          }
         }
       }
     },
@@ -55786,6 +58234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Udostępnij jako kartę okruchu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dela som bitkort"
           }
         }
       }
@@ -55924,6 +58378,12 @@
             "state" : "translated",
             "value" : "Plakat okruchu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitaffisch"
+          }
         }
       }
     },
@@ -56061,6 +58521,12 @@
             "state" : "translated",
             "value" : "Utwórz plakat okruchu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skapa en bitaffisch"
+          }
         }
       }
     },
@@ -56196,6 +58662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotknij okruchu, aby go odwrócić"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck på biten för att vända den"
           }
         }
       }
@@ -56334,6 +58806,12 @@
             "state" : "translated",
             "value" : "Odwrót okruchu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitens baksida"
+          }
         }
       }
     },
@@ -56470,6 +58948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przód okruchu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitens framsida"
           }
         }
       }
@@ -56608,6 +59092,12 @@
             "state" : "translated",
             "value" : "Dzień, który zostaje trochę niespalony, zostaje na dłużej"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En dag som blir lite obränd stannar längre kvar"
+          }
         }
       }
     },
@@ -56743,6 +59233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chcesz powiedzieć więcej? (opcjonalnie)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vill du skriva mer? (valfritt)"
           }
         }
       }
@@ -56881,6 +59377,12 @@
             "state" : "translated",
             "value" : "Rodzaj"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort"
+          }
         }
       }
     },
@@ -57018,6 +59520,12 @@
             "state" : "translated",
             "value" : "Słodkich snów"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Söta drömmar"
+          }
         }
       }
     },
@@ -57148,6 +59656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weekendy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helger"
           }
         }
       }
@@ -57286,6 +59800,12 @@
             "state" : "translated",
             "value" : "Twórz tyle urn z popiołem, ile chcesz, według tematów"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skapa så många askurnor du vill, efter ämne"
+          }
         }
       }
     },
@@ -57423,6 +59943,12 @@
             "state" : "translated",
             "value" : "Wypełnia się teraz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fylls just nu"
+          }
         }
       }
     },
@@ -57553,6 +60079,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Płonie teraz · do %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinner nu · till kl. %@"
           }
         }
       }
@@ -57691,6 +60223,12 @@
             "state" : "translated",
             "value" : "Zapisuje tę refleksję i otwiera pustą"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparar den här reflektionen och öppnar en tom"
+          }
         }
       }
     },
@@ -57827,6 +60365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co zrobić z popiołem z ostatnich dni: %lld?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad ska vi göra med askan från de senaste %lld dagarna?"
           }
         }
       }
@@ -57965,6 +60509,12 @@
             "state" : "translated",
             "value" : "Co zrobić z popiołem z ostatnich tygodni: %lld?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad ska vi göra med askan från de senaste %lld veckorna?"
+          }
         }
       }
     },
@@ -58102,6 +60652,12 @@
             "state" : "translated",
             "value" : "Popiół według miesięcy z ostatnich 12 miesięcy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aska per månad de senaste 12 månaderna"
+          }
         }
       }
     },
@@ -58237,6 +60793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dokąd poszło ostatnie 12 miesięcy, miesiąc po miesiącu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vart de senaste 12 månaderna tog vägen, månad för månad"
           }
         }
       }
@@ -58375,6 +60937,12 @@
             "state" : "translated",
             "value" : "Popiół z ostatnich 12 miesięcy, miesiąc po miesiącu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Askan från de senaste 12 månaderna, månad för månad"
+          }
         }
       }
     },
@@ -58512,6 +61080,12 @@
             "state" : "translated",
             "value" : "Zobacz, dokąd odpłynął Twój czas w każdym z ostatnich dwunastu miesięcy."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se vart din tid tog vägen varje månad under de senaste tolv månaderna."
+          }
         }
       }
     },
@@ -58642,6 +61216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuń"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort"
           }
         }
       }
@@ -58782,6 +61362,12 @@
             "state" : "translated",
             "value" : "Pomoc"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
         }
       }
     },
@@ -58917,6 +61503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj pierwszy popiół"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till första askan"
           }
         }
       }
@@ -59055,6 +61647,12 @@
             "state" : "translated",
             "value" : "Utwórz pierwszą urnę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skapa din första urna"
+          }
         }
       }
     },
@@ -59191,6 +61789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zacznij od utworzenia pierwszej urny.\\nNazwanie jej według tematu lub dziedziny sprawdza się dobrze."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja med att skapa din första urna.\\nDet funkar bra att namnge den efter ämne eller område."
           }
         }
       }
@@ -59329,6 +61933,12 @@
             "state" : "translated",
             "value" : "Seladon"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celadon"
+          }
         }
       }
     },
@@ -59465,6 +62075,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Świeca"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ljus"
           }
         }
       }
@@ -59603,6 +62219,12 @@
             "state" : "translated",
             "value" : "Ostatnie 30 dni"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senaste 30 dagarna"
+          }
         }
       }
     },
@@ -59739,6 +62361,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till"
           }
         }
       }
@@ -59877,6 +62505,12 @@
             "state" : "translated",
             "value" : "Sugerowane pory snu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Föreslagna läggtider"
+          }
         }
       }
     },
@@ -60013,6 +62647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anuluj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
           }
         }
       }
@@ -60151,6 +62791,12 @@
             "state" : "translated",
             "value" : "Do pory snu 1 godzina. Dobra robota dzisiaj!"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 timme till läggdags. Bra jobbat i dag!"
+          }
         }
       }
     },
@@ -60286,6 +62932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Od 30 minut przed snem możesz dmuchnąć na płonący\\npergamin, aby zgasić ogień i zachować to, co zostało"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från 30 minuter före läggdags kan du blåsa på det brinnande\\npergamentet för att släcka elden och spara det som blev kvar"
           }
         }
       }
@@ -60424,6 +63076,12 @@
             "state" : "translated",
             "value" : "Pora snu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läggdags"
+          }
         }
       }
     },
@@ -60561,6 +63219,12 @@
             "state" : "translated",
             "value" : "Pora snu: %2$lld%3$@ %1$@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läggdags %2$lld%3$@ %1$@"
+          }
         }
       }
     },
@@ -60696,6 +63360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ do pory snu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ till läggdags"
           }
         }
       }
@@ -60834,6 +63504,12 @@
             "state" : "translated",
             "value" : "Czas do pory snu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tid kvar till läggdags"
+          }
         }
       }
     },
@@ -60971,6 +63647,12 @@
             "state" : "translated",
             "value" : "Kapsuła"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapsel"
+          }
         }
       }
     },
@@ -61106,6 +63788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Słowo kluczowe (opcjonalnie)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyckelord (valfritt)"
           }
         }
       }
@@ -61244,6 +63932,12 @@
             "state" : "translated",
             "value" : "Pokaż karty"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa flikar"
+          }
         }
       }
     },
@@ -61379,6 +64073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotknij, aby zamknąć"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att stänga"
           }
         }
       }
@@ -61517,6 +64217,12 @@
             "state" : "translated",
             "value" : "Dotknij, aby zarządzać terminami"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att hantera deadlines"
+          }
         }
       }
     },
@@ -61653,6 +64359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotknij, aby wrócić do kroku Pisanie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att gå tillbaka till steget Skrivande"
           }
         }
       }
@@ -61791,6 +64503,12 @@
             "state" : "translated",
             "value" : "Dotknij, aby wybrać"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att välja"
+          }
         }
       }
     },
@@ -61928,6 +64646,12 @@
             "state" : "translated",
             "value" : "Dotknij, aby edytować"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att redigera"
+          }
         }
       }
     },
@@ -62063,6 +64787,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotknij, aby zmienić czas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att ändra tiden"
           }
         }
       }
@@ -62201,6 +64931,12 @@
             "state" : "translated",
             "value" : "Dotknij, aby zarządzać urnami"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att hantera urnor"
+          }
         }
       }
     },
@@ -62337,6 +65073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotknij, aby otworzyć urnę"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck för att öppna urnan"
           }
         }
       }
@@ -62475,6 +65217,12 @@
             "state" : "translated",
             "value" : "Trzaskające, odskakujące iskry"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knastrande, studsande gnistor"
+          }
         }
       }
     },
@@ -62611,6 +65359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Strony"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sidor"
           }
         }
       }
@@ -62749,6 +65503,12 @@
             "state" : "translated",
             "value" : "Strona %1$lld z %2$lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sida %1$lld av %2$lld"
+          }
         }
       }
     },
@@ -62885,6 +65645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wskaźnik stron"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sidindikator"
           }
         }
       }
@@ -63023,6 +65789,12 @@
             "state" : "translated",
             "value" : "Kropki stron"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sidprickar"
+          }
         }
       }
     },
@@ -63159,6 +65931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Styl kropek stron"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil på sidprickar"
           }
         }
       }
@@ -63297,6 +66075,12 @@
             "state" : "translated",
             "value" : "Dostęp dożywotni · %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidsåtkomst · %@"
+          }
         }
       }
     },
@@ -63427,6 +66211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dni robocze"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vardagar"
           }
         }
       }
@@ -63565,6 +66355,12 @@
             "state" : "translated",
             "value" : "Plakat"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affisch"
+          }
         }
       }
     },
@@ -63702,6 +66498,12 @@
             "state" : "translated",
             "value" : "Pokaż"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa"
+          }
         }
       }
     },
@@ -63834,6 +66636,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -63975,6 +66783,12 @@
             "state" : "translated",
             "value" : "Masz Pro. Dziękujemy 🔥"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har Pro. Tack 🔥"
+          }
         }
       }
     },
@@ -64112,6 +66926,12 @@
             "state" : "translated",
             "value" : "Przejdź na Pro"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppgradera till Pro"
+          }
         }
       }
     },
@@ -64242,6 +67062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pal mój wolny czas z Pro"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bränn min fritid med Pro"
           }
         }
       }
@@ -64380,6 +67206,12 @@
             "state" : "translated",
             "value" : "Dostępne w Pro"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finns med Pro"
+          }
         }
       }
     },
@@ -64509,6 +67341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "W Pro pergamin pali się tylko w tych godzinach"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Pro brinner pergamentet bara under de här timmarna"
           }
         }
       }
@@ -64645,6 +67483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odblokuj przepływ całego roku z Pro"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås upp årets flöde med Pro"
           }
         }
       }
@@ -64783,6 +67627,12 @@
             "state" : "translated",
             "value" : "Chciałem/am, ale nie zrobiłem/am"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tänkte, men gjorde inte"
+          }
         }
       }
     },
@@ -64919,6 +67769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zamierzałem/am, ale nie zrobiłem/am"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hade tänkt, men blev inte av"
           }
         }
       }
@@ -65057,6 +67913,12 @@
             "state" : "translated",
             "value" : "Uchwyć swój dzień, niczego nie pomijając"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fånga din dag, utan att något lämnas utanför"
+          }
         }
       }
     },
@@ -65193,6 +68055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serce"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjärta"
           }
         }
       }
@@ -65331,6 +68199,12 @@
             "state" : "translated",
             "value" : "Zapłać raz, używaj na zawsze"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betala en gång, använd för alltid"
+          }
         }
       }
     },
@@ -65461,6 +68335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "W skali roku"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Över ett år"
           }
         }
       }
@@ -65597,6 +68477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rok popiołu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett års aska"
           }
         }
       }
@@ -65735,6 +68621,12 @@
             "state" : "translated",
             "value" : "Rok popiołu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett års aska"
+          }
         }
       }
     },
@@ -65871,6 +68763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cały rok popiołu w jednym rzucie oka"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett helt års aska i en blick"
           }
         }
       }
@@ -66009,6 +68907,12 @@
             "state" : "translated",
             "value" : "Urny: %1$lld, refleksje: %2$lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnor: %1$lld, reflektioner: %2$lld"
+          }
         }
       }
     },
@@ -66145,6 +69049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nieograniczone urny"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obegränsat med urnor"
           }
         }
       }
@@ -66283,6 +69193,12 @@
             "state" : "translated",
             "value" : "Usuń urnę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort urna"
+          }
         }
       }
     },
@@ -66419,6 +69335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Półka z urnami"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnhyllan"
           }
         }
       }
@@ -66557,6 +69479,12 @@
             "state" : "translated",
             "value" : "Edytuj urnę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redigera urna"
+          }
         }
       }
     },
@@ -66694,6 +69622,12 @@
             "state" : "translated",
             "value" : "Odblokuj nieograniczone urny i terminy."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås upp obegränsat med urnor och deadlines."
+          }
         }
       }
     },
@@ -66830,6 +69764,12 @@
             "state" : "translated",
             "value" : "Urna już czeka.\\nTwój pierwszy popiół trafi do urny „%@”."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urnan väntar redan.\\nDin första aska hamnar i %@."
+          }
         }
       }
     },
@@ -66965,6 +69905,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Słowo do wygrawerowania na urnie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett ord att gravera på urnan"
           }
         }
       }
@@ -67103,6 +70049,12 @@
             "state" : "translated",
             "value" : "Słońce"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sol"
+          }
         }
       }
     },
@@ -67239,6 +70191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zrobione"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjort"
           }
         }
       }
@@ -67377,6 +70335,12 @@
             "state" : "translated",
             "value" : "Dmuchnij w mikrofon u dołu telefonu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås i mikrofonen längst ned på telefonen"
+          }
         }
       }
     },
@@ -67514,6 +70478,12 @@
             "state" : "translated",
             "value" : "Wygląd"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utseende"
+          }
         }
       }
     },
@@ -67647,6 +70617,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -67788,6 +70764,12 @@
             "state" : "translated",
             "value" : "Refleksje: %1$lld. Zrobiłem/am, co planowałem/am: %2$lld procent; skończyło się na tym, że to zrobiłem/am: %3$lld procent; chciałem/am, ale nie zrobiłem/am: %4$lld procent; po prostu uciekło: %5$lld procent"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektioner: %1$lld. Gjorde som jag tänkt: %2$lld procent; det blev så att jag gjorde det: %3$lld procent; tänkte men gjorde inte: %4$lld procent; rann bara iväg: %5$lld procent"
+          }
         }
       }
     },
@@ -67923,6 +70905,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Księga refleksji"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektionsbok"
           }
         }
       }
@@ -68061,6 +71049,12 @@
             "state" : "translated",
             "value" : "PDF księgi refleksji"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF av reflektionsboken"
+          }
         }
       }
     },
@@ -68197,6 +71191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eksportuj księgę refleksji do PDF"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportera reflektionsboken som PDF"
           }
         }
       }
@@ -68335,6 +71335,12 @@
             "state" : "translated",
             "value" : "Zobacz jako książkę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa som bok"
+          }
         }
       }
     },
@@ -68472,6 +71478,12 @@
             "state" : "translated",
             "value" : "Weź swoją księgę refleksji do ręki"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Håll din reflektionsbok i handen"
+          }
         }
       }
     },
@@ -68607,6 +71619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zbierz refleksje w jeden PDF"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samla dina reflektioner i en PDF"
           }
         }
       }
@@ -68745,6 +71763,12 @@
             "state" : "translated",
             "value" : "Zbierz refleksje w PDF, jedna strona na dzień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samla reflektioner i en PDF, en sida per dag"
+          }
         }
       }
     },
@@ -68882,6 +71906,12 @@
             "state" : "translated",
             "value" : "Edytuj swoją refleksję."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redigera din reflektion."
+          }
         }
       }
     },
@@ -69017,6 +72047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj refleksję,\\na ta księga zacznie się wypełniać."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till en reflektion\\noch den här boken börjar fyllas."
           }
         }
       }
@@ -69155,6 +72191,12 @@
             "state" : "translated",
             "value" : "Przeciągnij refleksje do urny, aby je przenieść"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dra reflektioner till en urna för att flytta dem"
+          }
         }
       }
     },
@@ -69291,6 +72333,12 @@
             "state" : "translated",
             "value" : "Zdmuchnij ogień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås ut elden"
+          }
         }
       }
     },
@@ -69426,6 +72474,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zdmuchnij płomień\\ni zakończ swój dzień"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås ut lågan\\noch avsluta din dag"
           }
         }
       }
@@ -69564,6 +72618,12 @@
             "state" : "translated",
             "value" : "Odpoczynek"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vila"
+          }
         }
       }
     },
@@ -69701,6 +72761,12 @@
             "state" : "translated",
             "value" : "Uciekło"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rann iväg"
+          }
         }
       }
     },
@@ -69836,6 +72902,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🌙 Słodkich snów"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌙 Söta drömmar"
           }
         }
       }
@@ -69980,6 +73052,12 @@
             "state" : "translated",
             "value" : "Ekrany dla większego tekstu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skärmar för större text"
+          }
         }
       }
     },
@@ -70116,6 +73194,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nawet przy największych rozmiarach tekstu ekrany przeukładają się porządnie, zamiast być ucinane."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Även med de största textstorlekarna ordnas skärmarna snyggt om i stället för att klippas av."
           }
         }
       }
@@ -70254,6 +73338,12 @@
             "state" : "translated",
             "value" : "Wygodniejsze kolory i kontrast"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behagligare färger och kontrast"
+          }
         }
       }
     },
@@ -70390,6 +73480,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wyraźnie widzisz płonący czas, nawet gdy włączono Zwiększ kontrast lub trudno odróżnić kolory."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se tydligt hur din tid brinner, även med Öka kontrast på eller om färger är svåra att skilja åt."
           }
         }
       }
@@ -70528,6 +73624,12 @@
             "state" : "translated",
             "value" : "Więcej języków"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fler språk"
+          }
         }
       }
     },
@@ -70664,6 +73766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krótkie wprowadzenie dla nowych"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort rundtur för nya användare"
           }
         }
       }
@@ -70802,6 +73910,12 @@
             "state" : "translated",
             "value" : "Krótki przewodnik po tym, co możesz robić, przy pierwszym otwarciu aplikacji."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort guide till vad du kan göra, första gången du öppnar appen."
+          }
         }
       }
     },
@@ -70938,6 +74052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co nowego"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheter"
           }
         }
       }
@@ -71076,6 +74196,12 @@
             "state" : "translated",
             "value" : "Przy pierwszym otwarciu po aktualizacji zobaczysz, co nowego."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Första gången du öppnar efter en uppdatering ser du vad som är nytt."
+          }
         }
       }
     },
@@ -71212,6 +74338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przydatne wskazówki"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smarta tips"
           }
         }
       }
@@ -71350,6 +74482,12 @@
             "state" : "translated",
             "value" : "Subtelne podpowiedzi o przydatnych funkcjach, dokładnie wtedy, gdy ich potrzebujesz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskreta tips om användbara funktioner, precis när du behöver dem."
+          }
         }
       }
     },
@@ -71486,6 +74624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri i Skróty"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri och Genvägar"
           }
         }
       }
@@ -71624,6 +74768,12 @@
             "state" : "translated",
             "value" : "Zapytaj Siri, ile zostało z dzisiejszego dnia."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fråga Siri hur mycket som är kvar av i dag."
+          }
         }
       }
     },
@@ -71760,6 +74910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synchronizacja między urządzeniami"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronisering mellan enheter"
           }
         }
       }
@@ -71898,6 +75054,12 @@
             "state" : "translated",
             "value" : "Miej te same refleksje i terminy na wszystkich urządzeniach dzięki iCloud."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha samma reflektioner och deadlines på alla dina enheter med iCloud."
+          }
         }
       }
     },
@@ -72034,6 +75196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopia zapasowa i przywracanie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säkerhetskopia och återställning"
           }
         }
       }
@@ -72172,6 +75340,12 @@
             "state" : "translated",
             "value" : "Zapisz refleksje i terminy w pliku i przywróć je później."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara dina reflektioner och deadlines i en fil och hämta tillbaka dem senare."
+          }
         }
       }
     },
@@ -72308,6 +75482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blokada Face ID"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID-lås"
           }
         }
       }
@@ -72446,6 +75626,12 @@
             "state" : "translated",
             "value" : "Zablokuj aplikację za pomocą Face ID lub Touch ID, aby refleksje pozostały prywatne."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås appen med Face ID eller Touch ID för att hålla dina reflektioner privata."
+          }
         }
       }
     },
@@ -72582,6 +75768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Układ dla składanego iPhone’a"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout för vikbar iPhone"
           }
         }
       }
@@ -72720,6 +75912,12 @@
             "state" : "translated",
             "value" : "Wykorzystaj szeroki ekran składanego iPhone’a jako dwa panele obok siebie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd den breda skärmen på en vikbar iPhone som två paneler sida vid sida."
+          }
         }
       }
     },
@@ -72856,6 +76054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuń wszystkie moje dane"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera alla mina data"
           }
         }
       }
@@ -72994,6 +76198,12 @@
             "state" : "translated",
             "value" : "Usuń wszystkie refleksje i terminy bezpośrednio w aplikacji, kiedy chcesz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera alla reflektioner och deadlines direkt i appen när du vill."
+          }
         }
       }
     },
@@ -73130,6 +76340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dokończ refleksję tam, gdzie skończyłeś/aś"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsätt din reflektion där du slutade"
           }
         }
       }
@@ -73268,6 +76484,12 @@
             "state" : "translated",
             "value" : "To, co pisałeś/aś, zostaje, nawet jeśli aplikacja zamknie się w trakcie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det du skrev finns kvar, även om appen stängs mitt i en reflektion."
+          }
         }
       }
     },
@@ -73403,6 +76625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po koreańskim i angielskim aplikacja mówi teraz także po polsku."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Efter koreanska och engelska talar appen nu även svenska."
           }
         }
       },
@@ -73541,6 +76769,12 @@
             "state" : "translated",
             "value" : "Spróbuj przesunąć w bok"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prova att svepa åt sidan"
+          }
         }
       },
       "comment" : "Tip title: swipe the main screen sideways"
@@ -73677,6 +76911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobacz, co zostało z tego tygodnia, miesiąca i roku, na tym samym pergaminie."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se vad som är kvar av veckan, månaden och året på samma pergament."
           }
         }
       },
@@ -73815,6 +77055,12 @@
             "state" : "translated",
             "value" : "Odwróć okruch"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vänd på en bit"
+          }
         }
       },
       "comment" : "Tip title: tap a fragment to flip it"
@@ -73951,6 +77197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotknij okruchu, aby napisać na odwrocie linijkę o tamtym dniu."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck på en bit för att skriva en rad om den dagen på baksidan."
           }
         }
       },
@@ -74089,6 +77341,12 @@
             "state" : "translated",
             "value" : "Cele"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mål"
+          }
         }
       },
       "comment" : "Voice Control name for the deadlines button"
@@ -74226,6 +77484,12 @@
             "state" : "translated",
             "value" : "Okruchy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitar"
+          }
         }
       },
       "comment" : "Voice Control name for the collected fragments button"
@@ -74359,6 +77623,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urna"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Urna"
@@ -74500,6 +77770,12 @@
             "state" : "translated",
             "value" : "Refleksja"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektion"
+          }
         }
       },
       "comment" : "Voice Control name for the ash urn button"
@@ -74636,6 +77912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dodaj termin"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till deadline"
           }
         }
       },
@@ -74774,6 +78056,12 @@
             "state" : "translated",
             "value" : "Dodano termin „%@”"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadline %@ tillagd"
+          }
         }
       },
       "comment" : "VoiceOver announcement after adding a deadline. Argument is the deadline title"
@@ -74910,6 +78198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usunięto termin „%@”"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadline %@ borttagen"
           }
         }
       },
@@ -75048,6 +78342,12 @@
             "state" : "translated",
             "value" : "Ogień zgasł. Twój okruch został zachowany."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elden är släckt. Din bit har sparats."
+          }
         }
       },
       "comment" : "VoiceOver announcement after blowing out today's parchment"
@@ -75184,6 +78484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Twoja refleksja jest w urnie z popiołem."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din reflektion ligger i askurnan."
           }
         }
       },
@@ -75322,6 +78628,12 @@
             "state" : "translated",
             "value" : "Pomiń"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoppa över"
+          }
         }
       },
       "comment" : "Onboarding: skip button"
@@ -75458,6 +78770,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zaczynamy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom igång"
           }
         }
       },
@@ -75596,6 +78914,12 @@
             "state" : "translated",
             "value" : "Zobacz, jak płonie Twój czas"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se din tid brinna ner"
+          }
         }
       },
       "comment" : "Onboarding page 1 title"
@@ -75732,6 +79056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Od pobudki do pory snu pergamin powoli się spala. Przesuń w bok, aby zobaczyć tydzień, miesiąc i rok."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från uppvaknandet till läggdags brinner pergamentet långsamt ner. Svep åt sidan för att se vecka, månad och år."
           }
         }
       },
@@ -75870,6 +79200,12 @@
             "state" : "translated",
             "value" : "30 minut przed snem zdmuchnij ogień"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 minuter före läggdags, blås ut det"
+          }
         }
       },
       "comment" : "Onboarding page 2 title"
@@ -76006,6 +79342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dmuchnij w mikrofon, aby zgasić ogień i zachować to, co zostało. Sprawdzana jest tylko siła oddechu; nic nie jest nagrywane."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blås i mikrofonen för att släcka elden och spara det som blev kvar. Bara styrkan i din andning kontrolleras; inget spelas in."
           }
         }
       },
@@ -76144,6 +79486,12 @@
             "state" : "translated",
             "value" : "Każdy dzień zamienia się w popiół"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varje dag blir aska"
+          }
         }
       },
       "comment" : "Onboarding page 3 title"
@@ -76280,6 +79628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napisz o swoim dniu jedną linijkę, a osiądzie w urnie z popiołem tamtego tygodnia. Godziny budzenia i snu zmienisz w Ustawieniach."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en rad om din dag så lägger den sig i veckans askurna. Ändra väcknings- och läggtid i Inställningar."
           }
         }
       },
@@ -76418,6 +79772,12 @@
             "state" : "translated",
             "value" : "Kopiuj"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiera"
+          }
         }
       },
       "comment" : "Context menu: copy reflection text"
@@ -76554,6 +79914,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co nowego"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheter"
           }
         }
       },
@@ -76692,6 +80058,12 @@
             "state" : "translated",
             "value" : "Pokaż przewodnik powitalny ponownie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa välkomstguiden igen"
+          }
         }
       },
       "comment" : "Settings row: show onboarding again"
@@ -76828,6 +80200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nie udało się zrealizować kodu. Spróbuj ponownie za chwilę."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koden kunde inte lösas in. Försök igen om en stund."
           }
         }
       },
@@ -76966,6 +80344,12 @@
             "state" : "translated",
             "value" : "Zrealizuj kod promocyjny"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lös in erbjudandekod"
+          }
         }
       },
       "comment" : "Settings row: redeem an App Store offer code"
@@ -77102,6 +80486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wersja %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@"
           }
         }
       },
@@ -77240,6 +80630,12 @@
             "state" : "translated",
             "value" : "Teraz także po polsku"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu även på svenska"
+          }
         }
       },
       "comment" : "What's new 1.2.1: Japanese"
@@ -77376,6 +80772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jeśli na urządzeniu ustawiono polski, aplikacja i jej widżety wyświetlają się po polsku."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om din enhet är inställd på svenska visas appen och dess widgetar på svenska."
           }
         }
       },
@@ -77514,6 +80916,12 @@
             "state" : "translated",
             "value" : "Lepiej przy dużym tekście i wysokim kontraście"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bättre med stor text och hög kontrast"
+          }
         }
       },
       "comment" : "What's new 1.2.1: accessibility title"
@@ -77650,6 +81058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ustawienia nie są już ucinane przy bardzo dużym tekście, a Zwiększ kontrast przyciemnia tekst i żar."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar klipps inte längre av vid mycket stor text, och Öka kontrast gör text och glöd mörkare."
           }
         }
       },
@@ -77788,6 +81202,12 @@
             "state" : "translated",
             "value" : "Ukryte funkcje, jak przesunięcie w celu zmiany okresu, są teraz wskazywane we właściwej chwili."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dolda funktioner, som att svepa för att byta period, visas nu i rätt ögonblick."
+          }
         }
       },
       "comment" : "What's new 1.2.1: tips detail"
@@ -77924,6 +81344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobacz, co nadchodzi"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se vad som kommer"
           }
         }
       },
@@ -78062,6 +81488,12 @@
             "state" : "translated",
             "value" : "W Ustawienia ▸ Pomoc zobaczysz nadchodzące funkcje i zaproponujesz te, które chcesz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Under Inställningar ▸ Support ser du kommande funktioner och kan föreslå dem du vill ha."
+          }
         }
       },
       "comment" : "What's new 1.2.1: roadmap detail"
@@ -78198,6 +81630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Są kody promocyjne"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erbjudandekoder är här"
           }
         }
       },
@@ -78336,6 +81774,12 @@
             "state" : "translated",
             "value" : "Jeśli masz kod, wpisz go w Ustawienia ▸ Pro."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Har du en kod anger du den i Inställningar ▸ Pro."
+          }
         }
       },
       "comment" : "What's new 1.2.1: offer code detail"
@@ -78472,6 +81916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozumiem"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppfattat"
           }
         }
       },

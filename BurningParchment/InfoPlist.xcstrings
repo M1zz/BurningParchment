@@ -135,6 +135,12 @@
             "state" : "translated",
             "value" : "Płonący Pergamin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Pergament"
+          }
         }
       }
     },
@@ -273,6 +279,12 @@
             "state" : "translated",
             "value" : "Płonący Pergamin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brinnande Pergament"
+          }
         }
       }
     },
@@ -410,6 +422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Używany tylko do wyczucia siły Twojego dmuchnięcia przy gaszeniu pergaminu przed snem. Żaden dźwięk nie jest nagrywany ani zapisywany."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Används bara för att känna av hur hårt du blåser när du släcker pergamentet före läggdags. Inget ljud spelas in eller sparas."
           }
         }
       }

@@ -46,6 +46,30 @@ enum IndicatorShape: String, CaseIterable, Identifiable {
     }
 }
 
+/// 잠금화면·다이나믹 아일랜드의 실시간 현황을 언제 띄울지.
+/// 다이나믹 아일랜드는 누르면 늘 앱이 열리고 iOS 가 이걸 막을 방법을 주지 않는다 —
+/// 하루 종일 떠 있으면 화면 위쪽을 건드릴 때마다 앱으로 넘어가서, 기본은 잠들기 전 1시간만 띄운다.
+enum LiveActivityMode: String, CaseIterable, Identifiable {
+    case off
+    case beforeBed
+    case allDay
+    var id: String { rawValue }
+    var label: String {
+        switch self {
+        case .off:       return String(localized: "끄기")
+        case .beforeBed: return String(localized: "잠들기 전")
+        case .allDay:    return String(localized: "하루 종일")
+        }
+    }
+    func shows(remaining: TimeInterval) -> Bool {
+        switch self {
+        case .off:       return false
+        case .beforeBed: return remaining <= 3600
+        case .allDay:    return true
+        }
+    }
+}
+
 class BedtimeManager: ObservableObject {
     // MARK: - Published Properties
     @Published var bedtimeHour: Int {
@@ -81,6 +105,12 @@ class BedtimeManager: ObservableObject {
     }
     @Published var indicatorSymbol: String = "" {
         didSet { saveIndicatorSettings() }
+    }
+    @Published var liveActivityMode: LiveActivityMode = .beforeBed {
+        didSet {
+            sharedDefaults?.set(liveActivityMode.rawValue, forKey: "liveActivityMode")
+            recalculate()
+        }
     }
 
     private var timer: Timer?
@@ -345,6 +375,7 @@ class BedtimeManager: ObservableObject {
         }
         self.indicatorSymbol = sd?.string(forKey: "indicatorSymbol")
             ?? ud.string(forKey: "indicatorSymbol") ?? ""
+        self.liveActivityMode = sd?.string(forKey: "liveActivityMode").flatMap(LiveActivityMode.init) ?? .beforeBed
 
         // 기본값 포함 현재 설정을 App Group에 즉시 확정 기록
         sd?.set(self.bedtimeHour,   forKey: "bedtimeHour")
@@ -580,7 +611,9 @@ class BedtimeManager: ObservableObject {
                 scheduleNotification(bedDate: bedDate)
                 scheduledNotifBedDate = bedDate
             }
-            if liveActivity == nil {
+            if !liveActivityMode.shows(remaining: remaining) {
+                endLiveActivity(immediately: true)
+            } else if liveActivity == nil {
                 startLiveActivity(bedDate: bedDate)
             } else {
                 updateLiveActivity(bedDate: bedDate)
@@ -704,7 +737,15 @@ class BedtimeManager: ObservableObject {
         Task { await activity.update(ActivityContent(state: state, staleDate: nil)) }
     }
 
-    private func endLiveActivity() {
+    /// immediately — 설정이나 시간대 때문에 숨길 때. 이 앱이 띄운 실시간 현황을 모두 바로 내린다.
+    private func endLiveActivity(immediately: Bool = false) {
+        if immediately {
+            liveActivity = nil
+            let all = Activity<BedtimeActivityAttributes>.activities
+            guard !all.isEmpty else { return }
+            Task { for activity in all { await activity.end(nil, dismissalPolicy: .immediate) } }
+            return
+        }
         guard let activity = liveActivity else { return }
         let final = BedtimeActivityAttributes.ContentState(
             remainingSeconds: 0, progress: 1.0,

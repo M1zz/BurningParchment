@@ -44,6 +44,7 @@ struct SettingsView: View {
                 VStack(spacing: 28) {
                     timeGroup
                     pageGroup
+                    liveActivityGroup
                     if NightManager.isEnabled && SleepHealth.isAvailable { sleepRecordGroup }
                     appearanceGroup
                     flameSizeGroup
@@ -313,6 +314,21 @@ struct SettingsView: View {
             Picker("화면 테마", selection: $appThemeRaw) {
                 ForEach(AppTheme.allCases) { theme in
                     Text(theme.label).tag(theme.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(12)
+        }
+    }
+
+    // MARK: - 다이나믹 아일랜드
+
+    private var liveActivityGroup: some View {
+        SettingsGroup(title: String(localized: "다이나믹 아일랜드"),
+                      footer: String(localized: "잠들기 전을 고르면 취침 1시간 전부터 잠금화면과 다이나믹 아일랜드에 남은 시간이 보여요. 다이나믹 아일랜드를 누르면 앱이 열려요")) {
+            Picker("다이나믹 아일랜드", selection: $bedtimeManager.liveActivityMode) {
+                ForEach(LiveActivityMode.allCases) { mode in
+                    Text(mode.label).tag(mode)
                 }
             }
             .pickerStyle(.segmented)

@@ -4,7 +4,7 @@
 
 ### 앱스토어 (한국어)
 
-이제 일본어로도 쓸 수 있어요
+이제 24개 언어로 쓸 수 있어요
 처음 여는 분께 쓰는 법을 짧게 알려 드려요
 큰 글씨와 대비 증가에서도 또렷하게 보여요
 프로모션 코드로 프로를 받을 수 있어요
@@ -12,21 +12,21 @@
 
 ### App Store (English)
 
-Now available in Japanese
+Now available in 24 languages
 A short welcome guide for first-time users
 Clearer with large text and higher contrast
 Redeem offer codes for Pro
 See upcoming features in Settings
 
-### 앱스토어 (ja)
+### 앱스토어 (일본어)
 
-日本語に対応しました
+24の言語に対応しました
 はじめての方に使い方を短くご案内します
 大きな文字やコントラスト強調でも見やすく
 プロモーションコードでProを入手できます
 これから作る機能を設定で見られます
 
-### 앱스토어 (en-GB)
+### App Store (en-GB)
 
 Now available in British English
 A short welcome guide for new users
@@ -34,7 +34,7 @@ Clearer with large text and contrast
 Redeem offer codes for Pro
 See upcoming features in Settings
 
-### 앱스토어 (es)
+### 앱스토어 (스페인어)
 
 Ahora disponible en español
 Guía de bienvenida para empezar
@@ -42,7 +42,7 @@ Más nítida con texto grande y contraste
 Canjea códigos promocionales de Pro
 Mira en Ajustes las próximas funciones
 
-### 앱스토어 (de)
+### 앱스토어 (독일어)
 
 Jetzt auch auf Deutsch verfügbar
 Kurze Einführung für neue Nutzer
@@ -66,7 +66,7 @@ Kommende Funktionen in den Einstellungen
 可使用優惠代碼取得 Pro
 可在設定中查看即將推出的功能
 
-### 앱스토어 (ru)
+### 앱스토어 (러시아어)
 
 Теперь приложение есть и на русском
 Краткая подсказка при первом запуске
@@ -74,7 +74,7 @@ Kommende Funktionen in den Einstellungen
 Промокоды открывают Pro
 Будущие функции видны в настройках
 
-### 앱스토어 (fr)
+### 앱스토어 (프랑스어)
 
 Disponible en français
 Un court guide pour les nouveaux
@@ -82,7 +82,7 @@ Net avec texte agrandi et contraste
 Des codes promo pour obtenir Pro
 Les futures fonctions, dans les Réglages
 
-### 앱스토어 (it)
+### 앱스토어 (이탈리아어)
 
 Ora disponibile in italiano
 Una breve guida per chi inizia
@@ -98,7 +98,7 @@ Nítido com texto grande e contraste
 Códigos promocionais para ter o Pro
 Veja nos Ajustes os próximos recursos
 
-### 앱스토어 (th)
+### 앱스토어 (태국어)
 
 รองรับภาษาไทยแล้ว
 คู่มือสั้น ๆ สำหรับผู้ใช้ครั้งแรก
@@ -106,7 +106,7 @@ Veja nos Ajustes os próximos recursos
 แลกโค้ดโปรโมชันเพื่อรับ Pro
 ดูฟีเจอร์ที่กำลังจะมาในการตั้งค่า
 
-### 앱스토어 (vi)
+### 앱스토어 (베트남어)
 
 Giờ đã có tiếng Việt
 Hướng dẫn ngắn cho người mới
@@ -114,7 +114,7 @@ Rõ nét với chữ lớn và độ tương phản
 Đổi mã ưu đãi để nhận Pro
 Xem tính năng sắp tới trong Cài đặt
 
-### 앱스토어 (cs)
+### 앱스토어 (체코어)
 
 Nově i v češtině
 Krátký průvodce pro nováčky
@@ -122,7 +122,7 @@ Krátký průvodce pro nováčky
 Kódy nabídky pro získání Pro
 Připravované funkce najdete v Nastavení
 
-### 앱스토어 (da)
+### 앱스토어 (덴마크어)
 
 Nu også på dansk
 En kort guide til nye brugere
@@ -130,7 +130,7 @@ Tydelig med stor tekst og kontrast
 Indløs tilbudskoder for at få Pro
 Se kommende funktioner i Indstillinger
 
-### 앱스토어 (el)
+### 앱스토어 (그리스어)
 
 Τώρα και στα ελληνικά
 Σύντομος οδηγός για νέους χρήστες
@@ -138,7 +138,7 @@ Se kommende funktioner i Indstillinger
 Κωδικοί προσφοράς για το Pro
 Νέες λειτουργίες στις Ρυθμίσεις
 
-### 앱스토어 (fi)
+### 앱스토어 (핀란드어)
 
 Nyt myös suomeksi
 Lyhyt opas uusille käyttäjille
@@ -146,7 +146,7 @@ Selkeä suurella tekstillä
 Lunasta tarjouskoodit ja saat Pron
 Tulevat ominaisuudet näet Asetuksissa
 
-### 앱스토어 (id)
+### 앱스토어 (인도네시아어)
 
 Kini dalam bahasa Indonesia
 Panduan singkat untuk pengguna baru
@@ -154,7 +154,7 @@ Jelas dengan teks besar
 Tukarkan kode penawaran untuk Pro
 Lihat fitur mendatang di Pengaturan
 
-### 앱스토어 (nb)
+### 앱스토어 (노르웨이어(보크말))
 
 Nå på norsk
 En kort guide for nye brukere
@@ -162,7 +162,7 @@ Tydelig med stor tekst og kontrast
 Løs inn tilbudskoder for å få Pro
 Se kommende funksjoner i Innstillinger
 
-### 앱스토어 (nl)
+### 앱스토어 (네덜란드어)
 
 Nu in het Nederlands
 Een korte gids voor nieuwe gebruikers
@@ -170,7 +170,7 @@ Duidelijk met grote tekst en contrast
 Wissel aanbiedingscodes in voor Pro
 Bekijk nieuwe functies in Instellingen
 
-### 앱스토어 (pl)
+### 앱스토어 (폴란드어)
 
 Teraz także po polsku
 Krótki przewodnik dla nowych
@@ -178,7 +178,7 @@ Wyraźnie przy dużym tekście
 Kody promocyjne odblokowują Pro
 Nowe funkcje zobaczysz w Ustawieniach
 
-### 앱스토어 (sv)
+### 앱스토어 (스웨덴어)
 
 Nu även på svenska
 En kort guide för nya användare
@@ -186,7 +186,7 @@ Tydlig med stor text och kontrast
 Lös in erbjudandekoder för Pro
 Se kommande funktioner i Inställningar
 
-### 앱스토어 (tr)
+### 앱스토어 (튀르키예어)
 
 Artık Türkçe
 Yeni başlayanlar için kısa rehber

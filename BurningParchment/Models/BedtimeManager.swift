@@ -182,9 +182,14 @@ class BedtimeManager: ObservableObject {
         }
     }
 
+    /// 기간 시작·끝의 짧은 날짜. 언어마다 순서·구분자가 다르다(미국 10/1 · 영국 1/10 · 독일 1.10.).
+    /// 한국어는 예전처럼 "10/1" 로 둔다(포맷터는 "10. 1." 로 써서 좁은 자리에서 길어진다).
     private func shortDateString(_ date: Date) -> String {
         let cal = Calendar.current
-        return "\(cal.component(.month, from: date))/\(cal.component(.day, from: date))"
+        if Locale.current.language.languageCode?.identifier == "ko" {
+            return "\(cal.component(.month, from: date))/\(cal.component(.day, from: date))"
+        }
+        return date.formatted(.dateTime.month(.defaultDigits).day())
     }
 
     // MARK: - Calendar Boundary Helpers

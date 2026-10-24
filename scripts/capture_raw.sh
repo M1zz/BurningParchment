@@ -1,7 +1,7 @@
 #!/bin/zsh
 # 스크린샷 원본(raw-<언어>/) 전부를 시뮬레이터에서 찍는다 — 마케팅 10장 + 헤더용 불 끄기 화면.
 #
-#   scripts/capture_raw.sh <시뮬레이터 UDID> <ko|en|ja> [Debug 앱 경로]
+#   scripts/capture_raw.sh <시뮬레이터 UDID> <언어: ko|en|en-GB|ja|es|de|zh-Hans|… LOCALES 의 로케일> [Debug 앱 경로]
 #
 # 6.9" 시뮬레이터(1320x2868, 예: iPhone 17 Pro Max)에 Debug 빌드가 필요하다:
 #   xcodebuild -project BurningParchment.xcodeproj -scheme BurningParchment \
@@ -17,9 +17,30 @@ ROOT=${0:A:h:h}
 APP=${3:-$ROOT/build/dd/Build/Products/Debug-iphonesimulator/BurningParchment.app}
 OUT=$ROOT/docs/screenshots/raw-$L
 case $L in
-  en) LOC=en_US ;;
-  ja) LOC=ja_JP ;;
-  *)  LOC=ko_KR ;;
+  en)      LOC=en_US ;;
+  en-GB)   LOC=en_GB ;;
+  ja)      LOC=ja_JP ;;
+  es)      LOC=es_ES ;;
+  de)      LOC=de_DE ;;
+  zh-Hans) LOC=zh_CN ;;
+  zh-Hant) LOC=zh_TW ;;
+  ru)      LOC=ru_RU ;;
+  fr)      LOC=fr_FR ;;
+  it)      LOC=it_IT ;;
+  pt-BR)   LOC=pt_BR ;;
+  th)      LOC=th_TH ;;
+  vi)      LOC=vi_VN ;;
+  cs)      LOC=cs_CZ ;;
+  da)      LOC=da_DK ;;
+  el)      LOC=el_GR ;;
+  fi)      LOC=fi_FI ;;
+  id)      LOC=id_ID ;;
+  nb)      LOC=nb_NO ;;
+  nl)      LOC=nl_NL ;;
+  pl)      LOC=pl_PL ;;
+  sv)      LOC=sv_SE ;;
+  tr)      LOC=tr_TR ;;
+  *)       LOC=ko_KR ;;
 esac
 mkdir -p $OUT
 
@@ -32,10 +53,11 @@ shot() { name=$1; mode=$2; shift 2
   xcrun simctl ui $D appearance $mode
   sleep 2
   xcrun simctl terminate $D com.burningparchment.app 2>/dev/null || true
-  xcrun simctl launch $D com.burningparchment.app -skipNotifications YES -skipOnboarding YES -hideTips YES \
+  perl -e 'alarm 120; exec @ARGV' xcrun simctl launch $D com.burningparchment.app -skipNotifications YES -skipOnboarding YES -hideTips YES \
     -seedDemo YES -forcePro YES -AppleLanguages "($L)" -AppleLocale $LOC "$@" >/dev/null
   sleep 10
-  xcrun simctl io $D screenshot $OUT/$name.png >/dev/null 2>&1
+  # 기계가 바쁘면 screenshot 이 멈춘 채 돌아오지 않는다 — 60초에서 끊는다
+  perl -e 'alarm 60; exec @ARGV' xcrun simctl io $D screenshot $OUT/$name.png >/dev/null 2>&1 || echo "⚠️ 캡처 실패: $name"
   echo "captured $OUT/$name.png"
 }
 
@@ -44,7 +66,7 @@ shot 02-month-light light  -period month -demoProgress 0.45 -parchmentStyle clas
 shot 03-urn-dark dark      -debugScreen urn
 shot 04-flow-light light   -debugScreen insights
 shot 05-book-dark dark     -debugScreen book
-shot 06-settings-dark dark -debugScreen settings
+shot 06-settings-dark dark -debugScreen settings -demoSchedule 7:00-23:00   # 찍는 시각과 상관없이 자연스러운 기상·취침 시각
 shot 07-theme-dark dark    -parchmentStyle moonlit -demoProgress 0.45
 shot 08-poster-dark dark   -debugScreen poster
 shot 09-year-light light   -debugScreen year

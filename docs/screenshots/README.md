@@ -4,8 +4,8 @@
 
 | 폴더 | 내용 | 크기 |
 |---|---|---|
-| `raw-ko/`, `raw-en/`, `raw-ja/` | 시뮬레이터 원본 캡처 | 1320×2868 (iPhone 17 Pro Max) |
-| `marketing-ko/`, `marketing-en/`, `marketing-ja/` | **App Store Connect 에 올리는 것** | 1242×2688 |
+| `raw-<로케일>/` (ko · en · en-GB · ja · es · de · zh-Hans …) | 시뮬레이터 원본 캡처 | 1320×2868 (iPhone 17 Pro Max) |
+| `marketing-ko/`, `marketing-en/`, `marketing-ja/`, `marketing/<로케일>/` (그 밖의 언어) | **App Store Connect 에 올리는 것** | 1242×2688 |
 | `creative/<로케일>/` | 제품 페이지 헤더(3840×1646) · 검색 결과(3840×2560) | `scripts/make_creative_assets.py` |
 | `preview-ko/` | 앱 미리보기 영상 (한국어, 29.8초) | 886×1920 · H.264 · 무음 오디오 |
 
@@ -14,7 +14,7 @@
 
 ## 다시 만들기
 
-원본은 `scripts/capture_raw.sh <UDID> <ko|en|ja>` 가 예시 데이터(-seedDemo, 언어별 예시 글)로 한 번에 찍는다.
+원본은 `scripts/capture_raw.sh <UDID> <로케일>` 이 예시 데이터(-seedDemo, 언어별 예시 글)로 한 번에 찍는다.
 일본어(ja)는 이 스크립트로 찍었다. 아래는 손으로 찍을 때의 순서다.
 
 1. 6.9인치 시뮬레이터(iPhone 17 Pro Max)를 켜고 앱을 설치한다.

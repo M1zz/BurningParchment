@@ -6,7 +6,7 @@
     python3 scripts/make_marketing_screenshots.py ja
 
 원본은 docs/screenshots/raw-<lang>/ 의 시뮬레이터 캡처(1320x2868)를 쓰고,
-결과는 docs/screenshots/marketing-<lang>/ 에 **제출 규격 1242x2688 그대로** 나온다.
+결과는 docs/screenshots/marketing-<lang>/ (ko·en·ja) 또는 marketing/<로케일>/ (그 밖의 언어) 에 **제출 규격 1242x2688 그대로** 나온다.
 리사이즈가 아니라 캔버스 자체가 그 크기라서 글자가 뭉개지지 않는다.
 
 다음 릴리즈 때는 원본만 다시 찍어 이 스크립트를 그대로 돌리면 된다.
@@ -66,6 +66,54 @@ SHOTS = {
   ("08-poster-dark.png",   "text-bottom", False, "消した夜を<br>一枚に",             "Pro・集めたかけらをポスターとカードに",   None),
   ("09-year-light.png",    "top-crop",    False, "一年の灰を<br>ひと目で",           "Pro・12か月がどこへ流れたか",             0.62),
   ("10-book-pdf.png",      "pages",       False, "ふりかえりを<br>一冊の本に",       "Pro・日付ごとのページでPDFに",            None),
+ ],
+ "en-GB": [
+  ("01-week-dark.png",     "hero-bleed",  False, "Watch your time<br>burn away", "Day, week, month, year",                      None),
+  ("02-month-light.png",   "hero-bleed",  True,  "Light or dark",                "Follow your device, or choose your own",       None),
+  ("03-urn-dark.png",      "left-text",   False, "Every day ends<br>as ash",     "What you write settles into that week's urn",  None),
+  ("04-flow-light.png",    "hero-bleed",  True,  "See where<br>your time went",  "A distribution graph and an ember calendar",   None),
+  ("05-book-dark.png",     "top-crop",    False, "Read your ashes again",        "The lines you left on the parchment",          0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "From bedtime<br>to theme",     "Set it up just the way you like",              None),
+  ("07-theme-dark.png",    "hero-bleed",  True,  "Pick the colour<br>of your flame",   "Pro themes: Moonlit Hanji, Celadon, Dusk",  None),
+  ("08-poster-dark.png",   "text-bottom", False, "All your nights<br>on one page",     "Pro turns kept fragments into posters",     None),
+  ("09-year-light.png",    "top-crop",    False, "A whole year<br>of ash",             "Pro shows where twelve months went",        0.62),
+  ("10-book-pdf.png",      "pages",       False, "Your reflections,<br>bound as a book", "Pro exports a PDF, a page for every day", None),
+ ],
+ "es": [
+  ("01-week-dark.png", "hero-bleed", False, "Mira cómo tu tiempo<br>se consume", "Día, semana, mes y año", None),
+  ("02-month-light.png", "hero-bleed", True, "Claro u oscuro", "Como tu dispositivo o a tu elección", None),
+  ("03-urn-dark.png", "left-text", False, "Cada día acaba<br>en ceniza", "Lo que escribes va a la urna de esa semana", None),
+  ("04-flow-light.png", "hero-bleed", True, "Adónde se fue<br>tu tiempo", "Un gráfico y un calendario de brasas", None),
+  ("05-book-dark.png", "top-crop", False, "Relee tus cenizas", "Las líneas que dejaste en el pergamino", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "De la hora de dormir<br>al tema", "Ajústala a tu manera", None),
+  ("07-theme-dark.png", "hero-bleed", True, "Elige el color<br>de tu llama", "Temas Pro: hanji lunar, celadón, ocaso", None),
+  ("08-poster-dark.png", "text-bottom", False, "Todas tus noches<br>en una hoja", "Pro convierte tus fragmentos en pósteres", None),
+  ("09-year-light.png", "top-crop", False, "Un año<br>de ceniza", "Pro muestra adónde fueron doce meses", 0.62),
+  ("10-book-pdf.png", "pages", False, "Tus reflexiones<br>en un libro", "Pro: un PDF con una página por día", None),
+ ],
+ "de": [
+  ("01-week-dark.png", "hero-bleed", False, "Sieh zu, wie<br>deine Zeit verbrennt", "Tag, Woche, Monat, Jahr", None),
+  ("02-month-light.png", "hero-bleed", True, "Hell oder dunkel", "Wie dein Gerät oder ganz nach Wahl", None),
+  ("03-urn-dark.png", "left-text", False, "Jeder Tag endet<br>als Asche", "Was du schreibst, landet in der Urne der Woche", None),
+  ("04-flow-light.png", "hero-bleed", True, "Wohin ist<br>deine Zeit?", "Verteilungsgrafik und Glutkalender", None),
+  ("05-book-dark.png", "top-crop", False, "Lies deine Asche neu", "Die Zeilen auf deinem Pergament", 0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "Von der Schlafenszeit<br>bis zum Design", "Stell alles so ein, wie du willst", None),
+  ("07-theme-dark.png", "hero-bleed", True, "Wähle die Farbe<br>deiner Flamme", "Pro-Designs: Mond-Hanji, Seladon, Abendrot", None),
+  ("08-poster-dark.png", "text-bottom", False, "All deine Nächte<br>auf einem Blatt", "Pro macht aus Fragmenten Poster", None),
+  ("09-year-light.png", "top-crop", False, "Ein ganzes Jahr<br>Asche", "Pro zeigt, wohin zwölf Monate gingen", 0.62),
+  ("10-book-pdf.png", "pages", False, "Deine Rückblicke<br>als Buch", "Pro: ein PDF, eine Seite pro Tag", None),
+ ],
+ "zh-Hans": [
+  ("01-week-dark.png",     "hero-bleed",  False, "剩下的时间<br>在眼前燃烧", "一天、一周、一个月、一年",            None),
+  ("02-month-light.png",   "hero-bleed",  True,  "浅色或深色",               "跟随设备设置，或自己选择",            None),
+  ("03-urn-dark.png",      "left-text",   False, "每一天的尽头<br>都化为灰烬", "写下的内容会落进当周的灰罐",        None),
+  ("04-flow-light.png",    "hero-bleed",  True,  "时间都花在<br>哪里了",       "分布图和余烬日历，一目了然",        None),
+  ("05-book-dark.png",     "top-crop",    False, "重读你留下的灰烬",           "那些留在羊皮纸上的字句",            0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "从就寝时间<br>到主题",       "按自己的习惯来设置",                None),
+  ("07-theme-dark.png",    "hero-bleed",  True,  "挑选火焰<br>的颜色",         "Pro 主题：月光韩纸、青瓷、晚霞",    None),
+  ("08-poster-dark.png",   "text-bottom", False, "熄灭的夜晚<br>汇成一张",     "Pro・把收集的碎片做成海报和卡片",   None),
+  ("09-year-light.png",    "top-crop",    False, "一整年的灰烬<br>一目了然",   "Pro・十二个月流向了哪里",           0.62),
+  ("10-book-pdf.png",      "pages",       False, "把回顾<br>装订成一本书",     "Pro・按日期逐页导出 PDF",           None),
  ],
  "zh-Hant": [
   ("01-week-dark.png",     "hero-bleed",  False, "剩餘的時間<br>在眼前燃燒", "一天、一週、一個月、一年",                  None),
@@ -294,6 +342,10 @@ FONTS = {
     "ko": '-apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif',
     "en": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "ja": '-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif',
+    "en-GB": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "es": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "de": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "zh-Hans": '-apple-system, "PingFang SC", "Heiti SC", sans-serif',
     "zh-Hant": '-apple-system, "PingFang TC", "Heiti TC", sans-serif',
     "ru": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "fr": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
@@ -312,8 +364,8 @@ FONTS = {
     "sv": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "tr": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
 }
-HEAD_SIZE = {"ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84, "fi": 88, "id": 90, "nb": 88, "nl": 90, "pl": 86, "sv": 88, "tr": 88}
-SUB_SIZE  = {"ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40, "fi": 42, "id": 42, "nb": 42, "nl": 42, "pl": 40, "sv": 42, "tr": 42}
+HEAD_SIZE = {"en-GB": 96, "es": 90, "de": 86, "zh-Hans": 84, "ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84, "fi": 88, "id": 90, "nb": 88, "nl": 90, "pl": 86, "sv": 88, "tr": 88}
+SUB_SIZE  = {"en-GB": 44, "es": 42, "de": 40, "zh-Hans": 40, "ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40, "fi": 42, "id": 42, "nb": 42, "nl": 42, "pl": 40, "sv": 42, "tr": 42}
 
 
 def base_css(lang, dark):
@@ -392,7 +444,10 @@ HTML = '<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></h
 
 def main(lang, only=None):
     src  = ROOT / "docs" / "screenshots" / f"raw-{lang}"
-    out  = ROOT / "docs" / "screenshots" / f"marketing-{lang}"
+    # ko · en · ja 는 예전 자리(marketing-<언어>/)를 그대로 쓰고, 그 뒤에 늘린 언어는
+    # DeployBar 가 읽는 marketing/<스토어 로케일>/ 에 둔다 (marketing-en-GB 같은 이름은 못 읽는다).
+    out  = (ROOT / "docs" / "screenshots" / f"marketing-{lang}" if lang in ("ko", "en", "ja")
+            else ROOT / "docs" / "screenshots" / "marketing" / lang)
     work = ROOT / "docs" / "screenshots" / ".build"
     out.mkdir(parents=True, exist_ok=True)
     work.mkdir(parents=True, exist_ok=True)

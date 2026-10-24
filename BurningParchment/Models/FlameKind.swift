@@ -69,3 +69,43 @@ extension EnvironmentValues {
         set { self[FlameKindKey.self] = newValue }
     }
 }
+
+// MARK: - 불꽃 크기 (무료)
+// 불꽃이 솟는 높이만 바꾼다. 기본은 작게 — 양피지를 가리지 않는 정도.
+
+enum FlameSize: String, CaseIterable, Identifiable {
+    case small, medium, large
+
+    var id: String { rawValue }
+
+    static let storageKey = "flameSize"
+
+    var label: String {
+        switch self {
+        case .small:  return String(localized: "작게")
+        case .medium: return String(localized: "보통")
+        case .large:  return String(localized: "크게")
+        }
+    }
+
+    /// 불꽃 높이 배율 (보통 = 1)
+    var height: Double {
+        switch self {
+        case .small:  return 0.75
+        case .medium: return 1.0
+        case .large:  return 1.4
+        }
+    }
+}
+
+private struct FlameSizeKey: EnvironmentKey {
+    static let defaultValue: FlameSize = .small
+}
+
+extension EnvironmentValues {
+    /// 불꽃 높이. 최상위(BurningParchmentApp)에서 설정값을 넣는다.
+    var flameSize: FlameSize {
+        get { self[FlameSizeKey.self] }
+        set { self[FlameSizeKey.self] = newValue }
+    }
+}

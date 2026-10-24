@@ -65,7 +65,7 @@ Burning Parchment: Bedtime
 
 ### 부제
 
-Watch your evening burn down
+Your day is burning down
 
 ### 키워드
 
@@ -122,7 +122,7 @@ https://m1zz.github.io/BurningParchment/en/
 
 ### 부제
 
-寝るまでの時間が目に見える
+あなたの今日が燃えていく
 
 ### 키워드
 
@@ -179,7 +179,7 @@ Burning Parchment: Bedtime
 
 ### 부제
 
-Watch your evening burn down
+Your day is burning down
 
 ### 키워드
 
@@ -236,7 +236,7 @@ Pergamino en Llamas: Tu día
 
 ### 부제
 
-Cuenta atrás hasta dormir
+Tu tiempo arde hasta dormir
 
 ### 키워드
 
@@ -293,7 +293,7 @@ Brennendes Pergament: Bettzeit
 
 ### 부제
 
-Dein Abend brennt langsam ab
+Dein Tag brennt langsam ab
 
 ### 키워드
 
@@ -350,7 +350,7 @@ https://m1zz.github.io/BurningParchment/de/
 
 ### 부제
 
-一天剩余时间，看得见的燃烧
+你的今天，正在燃烧
 
 ### 키워드
 
@@ -407,7 +407,7 @@ https://m1zz.github.io/BurningParchment/zh-hans/
 
 ### 부제
 
-一天剩餘的時間，看得見地燃燒
+你的今天，正在燃燒
 
 ### 키워드
 
@@ -464,7 +464,7 @@ https://m1zz.github.io/BurningParchment/zh-hant/
 
 ### 부제
 
-Остаток дня сгорает на глазах
+Ваш день сгорает на глазах
 
 ### 키워드
 
@@ -521,7 +521,7 @@ Parchemin en flammes : coucher
 
 ### 부제
 
-Le reste du jour qui brûle
+Votre journée brûle doucement
 
 ### 키워드
 
@@ -578,7 +578,7 @@ Pergamena in fiamme: riposo
 
 ### 부제
 
-Il resto del giorno che brucia
+La tua giornata brucia piano
 
 ### 키워드
 
@@ -635,7 +635,7 @@ Pergaminho em Chamas: dormir
 
 ### 부제
 
-O resto do dia queimando
+Seu dia queimando até dormir
 
 ### 키워드
 
@@ -692,7 +692,7 @@ https://m1zz.github.io/BurningParchment/pt-br/
 
 ### 부제
 
-เวลาที่เหลือของวันกำลังไหม้
+วันของคุณกำลังไหม้ลง
 
 ### 키워드
 
@@ -749,7 +749,7 @@ Giấy Da Cháy: đến giờ ngủ
 
 ### 부제
 
-Thời gian còn lại đang cháy
+Ngày của bạn đang cháy dần
 
 ### 키워드
 
@@ -806,7 +806,7 @@ Hořící pergamen: před spaním
 
 ### 부제
 
-Zbývající čas dohořívá
+Váš den pomalu dohořívá
 
 ### 키워드
 
@@ -863,7 +863,7 @@ Brændende Pergament: sengetid
 
 ### 부제
 
-Dagens resterende tid brænder
+Din dag brænder langsomt ned
 
 ### 키워드
 
@@ -920,7 +920,7 @@ https://m1zz.github.io/BurningParchment/da/
 
 ### 부제
 
-Η μέρα που απομένει καίγεται
+Η μέρα σας καίγεται σιγά σιγά
 
 ### 키워드
 
@@ -977,7 +977,7 @@ Palava Pergamentti: nukkumaan
 
 ### 부제
 
-Jäljellä oleva päivä palaa
+Päiväsi palaa hiljalleen
 
 ### 키워드
 
@@ -1091,7 +1091,7 @@ Brennende Pergament: leggetid
 
 ### 부제
 
-Resten av dagen brenner ned
+Dagen din brenner sakte ned
 
 ### 키워드
 
@@ -1148,7 +1148,7 @@ Brandend Perkament: bedtijd
 
 ### 부제
 
-De rest van je dag brandt op
+Je dag brandt langzaam op
 
 ### 키워드
 
@@ -1205,7 +1205,7 @@ Płonący Pergamin: pora snu
 
 ### 부제
 
-Reszta dnia dopala się
+Twój dzień powoli się dopala
 
 ### 키워드
 
@@ -1262,7 +1262,7 @@ Brinnande Pergament: läggdags
 
 ### 부제
 
-Resten av dagen brinner ner
+Din dag brinner sakta ner
 
 ### 키워드
 
@@ -1319,7 +1319,7 @@ Yanan Parşömen: Uyku Saati
 
 ### 부제
 
-Günün kalan zamanı yanıyor
+Günün yavaş yavaş yanıyor
 
 ### 키워드
 

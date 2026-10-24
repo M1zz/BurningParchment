@@ -840,7 +840,10 @@ struct BurningParchmentView: View {
         return ZStack {
             shape.fill(parchmentGradient)
             if charred > 0 { charredOverlay(fraction: charred, shape: shape) }
-            if progress > 0 { scorchOverlay(progress: progress, shape: shape) }
+            if progress > 0 {
+                scorchOverlay(progress: progress, shape: shape)
+                charEdgeOverlay(pw: pw, ph: ph, progress: progress, phase: edgePhase ?? phase, shape: shape)
+            }
             shape.stroke(Color.brown.opacity(0.2), lineWidth: 1)
         }
         .frame(width: pw, height: ph)
@@ -861,6 +864,47 @@ struct BurningParchmentView: View {
             ],
             startPoint: .topLeading, endPoint: .bottomTrailing
         )
+        .clipShape(shape)
+    }
+
+    // MARK: - Char Edge
+    // 직선 그라데이션만으로는 그을음이 자로 그은 띠처럼 보인다. 실제 종이는 타는 경계선을 그대로 따라
+    // 바로 옆이 새까맣고, 조금 떨어진 곳은 갈색으로 익는다. 불이 살아 있으면 그 너머로 불빛이 비친다.
+
+    private func charEdgeOverlay(pw: CGFloat, ph: CGFloat, progress: Double, phase: Double,
+                                 shape: DiagonalBurnShape) -> some View {
+        let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: progress, phase: phase)
+        let lit = isLit && progress < 0.995
+        return Canvas { ctx, _ in
+            var line = Path()
+            line.addLines(pts)
+            ctx.drawLayer { layer in
+                layer.addFilter(.blur(radius: 14))
+                layer.opacity = 0.55
+                layer.stroke(line, with: .color(Color(red: 0.34, green: 0.18, blue: 0.06)),
+                             style: StrokeStyle(lineWidth: 80, lineCap: .round, lineJoin: .round))
+            }
+            ctx.drawLayer { layer in
+                layer.addFilter(.blur(radius: 6))
+                layer.opacity = 0.95
+                layer.stroke(line, with: .color(Color(red: 0.06, green: 0.03, blue: 0.02)),
+                             style: StrokeStyle(lineWidth: 26, lineCap: .round, lineJoin: .round))
+            }
+        }
+        .overlay {
+            if lit {
+                Canvas { ctx, _ in
+                    var line = Path()
+                    line.addLines(pts)
+                    ctx.addFilter(.blur(radius: 26))
+                    ctx.opacity = 0.30 + 0.07 * sin(phase * 3.1) + 0.04 * sin(phase * 7.3)
+                    ctx.stroke(line, with: .color(Color(red: 1.0, green: 0.55, blue: 0.18)),
+                               style: StrokeStyle(lineWidth: 70, lineCap: .round, lineJoin: .round))
+                }
+                .flameTint(style)
+                .fireBlend()
+            }
+        }
         .clipShape(shape)
     }
 

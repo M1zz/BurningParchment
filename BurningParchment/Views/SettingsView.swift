@@ -21,6 +21,7 @@ struct SettingsView: View {
     @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
     @Environment(\.parchmentStyle) private var currentStyle
     @AppStorage(FlameKind.storageKey) private var flameKindRaw = FlameKind.classic.rawValue
+    @AppStorage(FlameSize.storageKey) private var flameSizeRaw = FlameSize.small.rawValue
     @Environment(\.flameKind) private var currentFlameKind
     @State private var selBedH: Int = 23
     @State private var selBedM: Int = 0
@@ -45,6 +46,7 @@ struct SettingsView: View {
                     pageGroup
                     if NightManager.isEnabled && SleepHealth.isAvailable { sleepRecordGroup }
                     appearanceGroup
+                    flameSizeGroup
                     parchmentGroup
                     proGroup
                     supportGroup
@@ -311,6 +313,21 @@ struct SettingsView: View {
             Picker("화면 테마", selection: $appThemeRaw) {
                 ForEach(AppTheme.allCases) { theme in
                     Text(theme.label).tag(theme.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(12)
+        }
+    }
+
+    // MARK: - 불꽃 크기
+
+    private var flameSizeGroup: some View {
+        SettingsGroup(title: String(localized: "불꽃 크기"),
+                      footer: String(localized: "양피지를 태우는 불꽃이 솟는 높이예요")) {
+            Picker("불꽃 크기", selection: $flameSizeRaw) {
+                ForEach(FlameSize.allCases) { size in
+                    Text(size.label).tag(size.rawValue)
                 }
             }
             .pickerStyle(.segmented)

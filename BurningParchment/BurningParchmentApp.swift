@@ -22,6 +22,7 @@ struct BurningParchmentApp: App {
     // 양피지·불꽃 테마도 여기서 프로 여부를 반영해 한 번만 정하고 아래로 흘려보낸다.
     @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
     @AppStorage(FlameKind.storageKey) private var flameKindRaw = FlameKind.classic.rawValue
+    @AppStorage(FlameSize.storageKey) private var flameSizeRaw = FlameSize.small.rawValue
 
     init() {
         // 계약(BurningParchmentSpec)에 선언한 것을 전부 켠다 —
@@ -66,6 +67,7 @@ struct BurningParchmentApp: App {
                              ParchmentStyle.effective(raw: parchmentStyleRaw, isPro: storeManager.isPro))
                 .environment(\.flameKind,
                              FlameKind.effective(raw: flameKindRaw, isPro: storeManager.isPro))
+                .environment(\.flameSize, FlameSize(rawValue: flameSizeRaw) ?? .small)
                 .preferredColorScheme(appTheme.colorScheme)
                 // 만족도 질문은 앱을 켤 때가 아니라 해낸 직후에 묻는다 (ContentView)
         }

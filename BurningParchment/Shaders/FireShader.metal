@@ -432,3 +432,40 @@ static float fbmRidge4(float2 p) {
     temp += smoothstep(0.60f, 0.78f, cells) * heat * 0.35f;    // 드문드문 달아오른 숯
     return fireRamp(saturate(temp));
 }
+
+// 촛불 — 종이 위로 곧게 솟는 불. 들불보다 잔잔하지만 혀끝은 잘게 찢어져 떨어져 나간다.
+// 뿌리는 하얗게, 몸통은 노랑·주황, 끝은 붉게 식으며 끊어진다 (실제 종이 불의 온도 분포).
+[[stitchable]] half4 candleFire(float2 pos, SwiftUI::Layer layer,
+                                float time, float2 flow, float scale) {
+    float2 n = normalize(flow);
+    float2 t = float2(-n.y, n.x);
+
+    float reach = 22.0f * scale;
+    float probe = max(max(layer.sample(pos).a, layer.sample(pos - n * reach).a),
+                      max(layer.sample(pos + t * reach * 0.5f).a, layer.sample(pos - t * reach * 0.5f).a));
+    if (probe < 0.003f) return half4(0);
+
+    // 흐름 좌표계 — 세로로 늘인 노이즈를 위로 빠르게 흘려 보내 가는 혀가 연달아 솟게 한다
+    float2 q = float2(dot(pos, t), dot(pos, n)) / (14.0f * scale);
+    q.y = q.y * 0.55f - time * 1.25f;
+
+    float2 w = float2(fbm4(q + float2(0.0f, time * 0.20f)),
+                      fbm4(q * 1.4f + float2(3.7f, 8.1f))) - 0.5f;
+
+    // 뿌리는 붙어 있고 끝으로 갈수록 크게 흔들린다
+    float h0  = layer.sample(pos).a;
+    float amp = mix(16.0f, 3.0f, saturate(h0 * 1.5f)) * scale;
+    float2 off = (t * w.x * 1.1f + n * (w.y - 0.32f)) * amp;
+    float heat = layer.sample(pos + off).a;
+    if (heat < 0.004f) return half4(0);
+
+    float ridge  = fbmRidge4(q * float2(2.6f, 1.6f) + w * 1.5f);
+    float detail = gnoise(q * 6.0f + float2(0.0f, -time * 2.2f));
+    float flick  = 0.90f + 0.06f * sin(time * 13.0f + q.x * 2.3f) + 0.04f * sin(time * 23.0f + q.x * 5.1f);
+
+    // 열이 낮은 끝자락은 능선 노이즈 사이로 끊겨 떨어져 나간다 (혀끝의 불똥 덩어리)
+    float temp = pow(heat, 1.15f) * 1.05f * flick
+               - (1.0f - ridge) * 0.52f * (1.15f - heat)
+               - (detail - 0.5f) * 0.12f;
+    return fireRamp(saturate(temp));
+}

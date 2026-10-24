@@ -4,7 +4,7 @@
 // 모든 종류가 같은 입력을 받는다: 경계선 위 점들, 불꽃이 솟는 방향, 시간(phase).
 // 양피지·불 끄기 화면·설정 카드가 이 뷰 하나를 쓰므로 어디서 고르든 같은 불이 탄다.
 //
-//   촛불 — 곡선 혀 모양 Canvas (예전 불꽃 그대로)
+//   촛불 — 열 지도 → Metal(candleFire) 로 위로 솟는 종이 불 + 숯처럼 달아오른 경계선 + 옅은 연기
 //   들불 — Canvas 로 그린 열 지도 → Metal(blazeFire) 로 일렁임·흑체 색 + 글로우 + 솟는 불씨
 //   숯불 — 낮은 열 띠 → Metal(smolderFire) 로 숨 쉬는 숯 + 붉은 글로우 + 느린 불씨
 //   불티 — 하얗게 달아오른 선 + 꼬리를 끄는 스파크
@@ -25,6 +25,7 @@ struct FlameView: View {
 
     // 미색 바탕(라이트)에서는 하얗게 달아오른 색이 바탕에 묻힌다 — 불티는 그때 한 톤 짙게 그린다
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.flameSize) private var flameSize
     private var onLight: Bool { colorScheme == .light }
 
     /// 셰이더에 넘기는 시간 — float 정밀도가 무너지지 않게 적당히 감는다
@@ -44,9 +45,73 @@ struct FlameView: View {
 
     // MARK: - 촛불
 
+    // 실제 종이 불처럼 — 타 들어가는 방향과 상관없이 위로 솟고, 가장자리는 숯처럼 달아오르고, 옅은 연기가 오른다.
     private var classic: some View {
-        BurningParchmentView.flameCanvas(along: points, normal: normal, phase: phase,
-                                         intensity: intensity, breath: breath, scale: scale)
+        let up = Self.rising(normal)
+        let a = min(1, intensity * 1.2)
+        return ZStack {
+            Self.glow(points, color: Color(red: 1.0, green: 0.50, blue: 0.12),
+                      width: 34 * scale, radius: 18 * scale,
+                      opacity: (0.24 + 0.06 * sin(phase * 3.1) + 0.03 * sin(phase * 7.3)) * a)
+
+            Self.smoke(points, up: up, phase: phase, intensity: intensity, scale: scale)
+
+            // 타는 경계선 — 숯불 셰이더로 얼룩덜룩 숨 쉬는 붉은 테두리
+            Self.heatMask(points, normal: normal, phase: phase * 0.4, intensity: intensity, breath: 0,
+                          scale: scale, height: 0, width: 0, band: 5)
+                .blur(radius: 1.2 * scale)
+                .layerEffect(ShaderLibrary.smolderFire(.float(shaderTime), .float2(flow.0, flow.1),
+                                                       .float(Float(scale * 0.7))),
+                             maxSampleOffset: CGSize(width: 8 * scale, height: 8 * scale))
+                .fireBlend()
+
+            Self.heatMask(points, normal: up, phase: phase, intensity: intensity, breath: breath,
+                          scale: scale, height: 1.35 * flameSize.height, width: 1.3, band: 6)
+                .blur(radius: 2.2 * scale)
+                .layerEffect(ShaderLibrary.candleFire(.float(shaderTime), .float2(Float(up.dx), Float(up.dy)),
+                                                      .float(Float(scale))),
+                             maxSampleOffset: CGSize(width: 30 * scale, height: 30 * scale))
+                .fireBlend()
+
+            Self.sparks(points, normal: up, phase: phase, intensity: intensity * 0.45, scale: scale,
+                        style: .rising)
+        }
+        .allowsHitTesting(false)
+    }
+
+    /// 불꽃이 솟는 방향 — 거의 곧장 위, 경계선 바깥쪽으로 살짝 기운다
+    private static func rising(_ normal: CGVector) -> CGVector {
+        let dx = Double(normal.dx) * 0.22, dy = -1.0
+        let len = sqrt(dx * dx + dy * dy)
+        return CGVector(dx: dx / len, dy: dy / len)
+    }
+
+    // MARK: - 연기
+    // 불꽃 위로 옅게 피어올라 흩어진다. 스파크처럼 phase 만으로 그린다.
+
+    private static func smoke(_ pts: [CGPoint], up: CGVector, phase: Double,
+                              intensity: Double, scale: Double) -> some View {
+        Canvas { ctx, _ in
+            guard pts.count > 1 else { return }
+            ctx.addFilter(.blur(radius: 9 * scale))
+            let ux = Double(up.dx), uy = Double(up.dy)
+            for j in 0..<16 {
+                let fj = Double(j)
+                let period = 2.6 + 1.6 * hash(fj, 9.1)
+                let raw = phase / period + hash(fj, 2.7) * 5.0
+                let cycle = floor(raw)
+                let c = raw - cycle
+                let o = pts[min(pts.count - 1, Int(hash(fj, cycle + 0.9) * Double(pts.count)))]
+                let rise = (30 + 90 * c) * scale
+                let drift = sin(phase * 0.9 + fj * 1.7) * 14 * c * scale
+                let px = Double(o.x) + ux * rise - uy * drift
+                let py = Double(o.y) + uy * rise + ux * drift
+                let r = (8 + 26 * c) * scale
+                ctx.opacity = sin(c * .pi) * 0.22 * min(1, intensity)
+                ctx.fill(Path(ellipseIn: CGRect(x: px - r, y: py - r, width: r * 2, height: r * 2)),
+                         with: .color(Color(red: 0.55, green: 0.52, blue: 0.50)))
+            }
+        }
     }
 
     // MARK: - 들불
@@ -58,7 +123,7 @@ struct FlameView: View {
                       opacity: (0.30 + 0.08 * sin(phase * 2.3)) * min(1, intensity * 1.2))
 
             Self.heatMask(points, normal: normal, phase: phase, intensity: intensity, breath: breath,
-                          scale: scale, height: 1.75, width: 2.1, band: 10)
+                          scale: scale, height: 1.75 * flameSize.height, width: 2.1, band: 10)
                 .blur(radius: 3 * scale)
                 .layerEffect(ShaderLibrary.blazeFire(.float(shaderTime), .float2(flow.0, flow.1),
                                                      .float(Float(scale))),
@@ -80,7 +145,7 @@ struct FlameView: View {
                       opacity: (0.32 + 0.10 * sin(phase * 1.1)) * min(1, intensity * 1.2))
 
             Self.heatMask(points, normal: normal, phase: phase * 0.4, intensity: intensity, breath: breath,
-                          scale: scale, height: 0.42, width: 1.5, band: 12)
+                          scale: scale, height: 0.42 * flameSize.height, width: 1.5, band: 12)
                 .blur(radius: 2.5 * scale)
                 .layerEffect(ShaderLibrary.smolderFire(.float(shaderTime), .float2(flow.0, flow.1),
                                                        .float(Float(scale))),
@@ -139,6 +204,7 @@ struct FlameView: View {
             ctx.opacity = min(1, intensity * 1.3)
             ctx.stroke(line, with: .color(.white.opacity(0.92)),
                        style: StrokeStyle(lineWidth: band * scale, lineCap: .round, lineJoin: .round))
+            guard height > 0 else { return }
 
             for i in stride(from: 0, to: pts.count, by: 2) {
                 let pt = pts[i]

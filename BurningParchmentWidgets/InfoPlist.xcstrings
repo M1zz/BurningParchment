@@ -3,24 +3,35 @@
   "strings" : {
     "CFBundleDisplayName" : {
       "comment" : "Bundle display name",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennendes Pergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Burning Parchment"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃える羊皮紙"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불타는 내인생"
           }
         },
         "en-GB" : {
@@ -35,28 +46,10 @@
             "value" : "Pergamino en Llamas"
           }
         },
-        "de" : {
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Brennendes Pergament"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃烧的羊皮纸"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃燒的羊皮紙"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Горящий пергамент"
+            "value" : "Palava Pergamentti"
           }
         },
         "fr" : {
@@ -65,58 +58,28 @@
             "value" : "Parchemin en flammes"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
         },
-        "pt-BR" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pergaminho em Chamas"
+            "value" : "燃える羊皮紙"
           }
         },
-        "th" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "กระดาษหนังลุกไหม้"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Giấy Da Cháy"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hořící pergamen"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Brændende Pergament"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Φλεγόμενη Περγαμηνή"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palava Pergamentti"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perkamen Terbakar"
+            "value" : "불타는 내인생"
           }
         },
         "nb" : {
@@ -137,40 +100,87 @@
             "value" : "Płonący Pergamin"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Pergament"
           }
         },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yanan Parşömen"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧的羊皮纸"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
           }
         }
       }
     },
     "CFBundleName" : {
       "comment" : "Bundle name",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennendes Pergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Burning Parchment"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃える羊皮紙"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불타는 내인생"
           }
         },
         "en-GB" : {
@@ -185,28 +195,10 @@
             "value" : "Pergamino en Llamas"
           }
         },
-        "de" : {
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Brennendes Pergament"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃烧的羊皮纸"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃燒的羊皮紙"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Горящий пергамент"
+            "value" : "Palava Pergamentti"
           }
         },
         "fr" : {
@@ -215,58 +207,28 @@
             "value" : "Parchemin en flammes"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
         },
-        "pt-BR" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pergaminho em Chamas"
+            "value" : "燃える羊皮紙"
           }
         },
-        "th" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "กระดาษหนังลุกไหม้"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Giấy Da Cháy"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hořící pergamen"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Brændende Pergament"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Φλεγόμενη Περγαμηνή"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palava Pergamentti"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perkamen Terbakar"
+            "value" : "불타는 내인생"
           }
         },
         "nb" : {
@@ -287,16 +249,52 @@
             "value" : "Płonący Pergamin"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Pergament"
           }
         },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yanan Parşömen"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧的羊皮纸"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
           }
         }
       }

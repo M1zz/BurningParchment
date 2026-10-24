@@ -4,22 +4,34 @@
     "CFBundleDisplayName" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennendes Pergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Burning Parchment"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃える羊皮紙"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불타는 내인생"
           }
         },
         "en-GB" : {
@@ -34,28 +46,10 @@
             "value" : "Pergamino en Llamas"
           }
         },
-        "de" : {
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Brennendes Pergament"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃烧的羊皮纸"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃燒的羊皮紙"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Горящий пергамент"
+            "value" : "Palava Pergamentti"
           }
         },
         "fr" : {
@@ -64,58 +58,28 @@
             "value" : "Parchemin en flammes"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
         },
-        "pt-BR" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pergaminho em Chamas"
+            "value" : "燃える羊皮紙"
           }
         },
-        "th" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "กระดาษหนังลุกไหม้"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Giấy Da Cháy"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hořící pergamen"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Brændende Pergament"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Φλεγόμενη Περγαμηνή"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palava Pergamentti"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perkamen Terbakar"
+            "value" : "불타는 내인생"
           }
         },
         "nb" : {
@@ -136,40 +100,87 @@
             "value" : "Płonący Pergamin"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Pergament"
           }
         },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yanan Parşömen"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧的羊皮纸"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
           }
         }
       }
     },
     "CFBundleName" : {
       "comment" : "Bundle name",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hořící pergamen"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brændende Pergament"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brennendes Pergament"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φλεγόμενη Περγαμηνή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Burning Parchment"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃える羊皮紙"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불타는 내인생"
           }
         },
         "en-GB" : {
@@ -184,28 +195,10 @@
             "value" : "Pergamino en Llamas"
           }
         },
-        "de" : {
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Brennendes Pergament"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃烧的羊皮纸"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "燃燒的羊皮紙"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Горящий пергамент"
+            "value" : "Palava Pergamentti"
           }
         },
         "fr" : {
@@ -214,58 +207,28 @@
             "value" : "Parchemin en flammes"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkamen Terbakar"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pergamena in fiamme"
           }
         },
-        "pt-BR" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pergaminho em Chamas"
+            "value" : "燃える羊皮紙"
           }
         },
-        "th" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "กระดาษหนังลุกไหม้"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Giấy Da Cháy"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hořící pergamen"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Brændende Pergament"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Φλεγόμενη Περγαμηνή"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palava Pergamentti"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perkamen Terbakar"
+            "value" : "불타는 내인생"
           }
         },
         "nb" : {
@@ -286,16 +249,52 @@
             "value" : "Płonący Pergamin"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pergaminho em Chamas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Горящий пергамент"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brinnande Pergament"
           }
         },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กระดาษหนังลุกไหม้"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yanan Parşömen"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy Da Cháy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧的羊皮纸"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒的羊皮紙"
           }
         }
       }
@@ -304,22 +303,34 @@
       "comment" : "Privacy - Microphone Usage Description",
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Používá se jen ke zjištění síly vašeho foukání při hašení pergamenu před spaním. Žádný zvuk se nenahrává ani neukládá."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruges kun til at mærke, hvor hårdt du puster, når du slukker pergamentet før sengetid. Der optages eller gemmes ingen lyd."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird nur verwendet, um zu erkennen, wie stark du pustest, wenn du vor dem Schlafen das Pergament löschst. Es wird kein Ton aufgenommen oder gespeichert."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιείται μόνο για να αντιληφθεί πόσο δυνατά φυσάτε όταν σβήνετε την περγαμηνή πριν τον ύπνο. Δεν καταγράφεται ούτε αποθηκεύεται ήχος."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Used only to sense how hard you blow when putting out the parchment before bed. No sound is recorded or saved."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "寝る30分前に羊皮紙へふーっと吹いて火を消すとき、息の強さを確かめるためだけに使います。音声を録音・保存することはありません。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
           }
         },
         "en-GB" : {
@@ -334,28 +345,10 @@
             "value" : "Se usa solo para detectar la intensidad con la que soplas al apagar el pergamino antes de dormir. No se graba ni se guarda ningún sonido."
           }
         },
-        "de" : {
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wird nur verwendet, um zu erkennen, wie stark du pustest, wenn du vor dem Schlafen das Pergament löschst. Es wird kein Ton aufgenommen oder gespeichert."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "就寝前 30 分钟，对着羊皮纸吹气熄火时，仅检测吹气的力度，不会录制或保存任何声音。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "就寢前 30 分鐘，對著羊皮紙吹氣熄火時，僅檢測吹氣的力度，不會錄製或儲存任何聲音。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Используется только для оценки силы вашего дыхания, когда вы гасите пергамент перед сном. Звук не записывается и не сохраняется."
+            "value" : "Käytetään vain hengityksesi voimakkuuden aistimiseen, kun sammutat pergamentin ennen nukkumaanmenoa. Ääntä ei tallenneta eikä säilytetä."
           }
         },
         "fr" : {
@@ -364,58 +357,28 @@
             "value" : "Utilisé uniquement pour mesurer la force de votre souffle quand vous éteignez le parchemin avant de dormir. Aucun son n’est enregistré ni conservé."
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanya digunakan untuk merasakan seberapa kuat kamu meniup saat memadamkan perkamen sebelum tidur. Tidak ada suara yang direkam atau disimpan."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usato solo per rilevare la forza del tuo soffio quando spegni la pergamena prima di dormire. Nessun suono viene registrato o salvato."
           }
         },
-        "pt-BR" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Usado apenas para detectar a força do seu sopro ao apagar o pergaminho antes de dormir. Nenhum som é gravado ou salvo."
+            "value" : "寝る30分前に羊皮紙へふーっと吹いて火を消すとき、息の強さを確かめるためだけに使います。音声を録音・保存することはありません。"
           }
         },
-        "th" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ใช้เพื่อตรวจแรงลมเป่าตอนดับกระดาษหนังก่อนนอนเท่านั้น ไม่มีการบันทึกหรือเก็บเสียงใด ๆ"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chỉ dùng để cảm nhận sức thổi của bạn khi dập giấy da trước khi ngủ. Không có âm thanh nào được ghi âm hay lưu lại."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Používá se jen ke zjištění síly vašeho foukání při hašení pergamenu před spaním. Žádný zvuk se nenahrává ani neukládá."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bruges kun til at mærke, hvor hårdt du puster, når du slukker pergamentet før sengetid. Der optages eller gemmes ingen lyd."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Χρησιμοποιείται μόνο για να αντιληφθεί πόσο δυνατά φυσάτε όταν σβήνετε την περγαμηνή πριν τον ύπνο. Δεν καταγράφεται ούτε αποθηκεύεται ήχος."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Käytetään vain hengityksesi voimakkuuden aistimiseen, kun sammutat pergamentin ennen nukkumaanmenoa. Ääntä ei tallenneta eikä säilytetä."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hanya digunakan untuk merasakan seberapa kuat kamu meniup saat memadamkan perkamen sebelum tidur. Tidak ada suara yang direkam atau disimpan."
+            "value" : "취침 30분 전, 양피지에 후 불어 불을 끌 때 입김의 세기만 확인합니다. 소리는 녹음하거나 저장하지 않습니다."
           }
         },
         "nb" : {
@@ -436,16 +399,52 @@
             "value" : "Używany tylko do wyczucia siły Twojego dmuchnięcia przy gaszeniu pergaminu przed snem. Żaden dźwięk nie jest nagrywany ani zapisywany."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usado apenas para detectar a força do seu sopro ao apagar o pergaminho antes de dormir. Nenhum som é gravado ou salvo."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Используется только для оценки силы вашего дыхания, когда вы гасите пергамент перед сном. Звук не записывается и не сохраняется."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Används bara för att känna av hur hårt du blåser när du släcker pergamentet före läggdags. Inget ljud spelas in eller sparas."
           }
         },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้เพื่อตรวจแรงลมเป่าตอนดับกระดาษหนังก่อนนอนเท่านั้น ไม่มีการบันทึกหรือเก็บเสียงใด ๆ"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yalnızca uyumadan önce parşömeni söndürürken üfleme gücünü algılamak için kullanılır. Hiçbir ses kaydedilmez veya saklanmaz."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ dùng để cảm nhận sức thổi của bạn khi dập giấy da trước khi ngủ. Không có âm thanh nào được ghi âm hay lưu lại."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寝前 30 分钟，对着羊皮纸吹气熄火时，仅检测吹气的力度，不会录制或保存任何声音。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就寢前 30 分鐘，對著羊皮紙吹氣熄火時，僅檢測吹氣的力度，不會錄製或儲存任何聲音。"
           }
         }
       }

@@ -1,5 +1,175 @@
 # 릴리즈 노트
 
+## 1.2.2
+
+### 앱스토어 (한국어)
+
+촛불이 진짜 불처럼 위로 타올라요
+설정에서 불꽃 크기를 고를 수 있어요
+다이나믹 아일랜드는 잠들기 전 1시간만 떠요
+설정에서 끄거나 하루 종일 띄울 수 있어요
+
+### App Store (English)
+
+The candle burns upward like real fire
+Choose your flame size in Settings
+Dynamic Island now shows only before bed
+Turn it off or keep it on all day
+
+### 앱스토어 (일본어)
+
+ろうそくの炎が本物のように立ちのぼります
+炎の大きさを設定で選べます
+ダイナミックアイランドは寝る前の1時間だけ表示
+設定でオフにも一日中表示にもできます
+
+### App Store (en-GB)
+
+The candle burns upward like real fire
+Choose your flame size in Settings
+Dynamic Island now shows only before bed
+Turn it off or keep it on all day
+
+### 앱스토어 (스페인어)
+
+La vela arde como un fuego de verdad
+Elige el tamaño de la llama en Ajustes
+Dynamic Island solo antes de dormir
+Desactívala o déjala todo el día
+
+### 앱스토어 (독일어)
+
+Die Kerze lodert jetzt wie echtes Feuer
+Flammengröße in den Einstellungen wählen
+Dynamic Island nur noch vor dem Schlafen
+Ausschalten oder ganztägig zeigen
+
+### 앱스토어 (zh-Hans)
+
+烛火像真火一样向上燃烧
+可在设置中选择火焰大小
+灵动岛只在睡前1小时显示
+也可在设置中关闭或全天显示
+
+### 앱스토어 (zh-Hant)
+
+燭火像真火一樣向上燃燒
+可在設定中選擇火焰大小
+動態島只在睡前1小時顯示
+也可在設定中關閉或全天顯示
+
+### 앱스토어 (러시아어)
+
+Свеча горит вверх, как настоящий огонь
+Выберите размер пламени в настройках
+Dynamic Island виден только перед сном
+Его можно выключить или оставить на день
+
+### 앱스토어 (프랑스어)
+
+La bougie brûle comme un vrai feu
+Choisissez la taille de la flamme
+Dynamic Island, juste avant le coucher
+Désactivable ou visible toute la journée
+
+### 앱스토어 (이탈리아어)
+
+La candela arde come un vero fuoco
+Scegli la dimensione della fiamma
+Dynamic Island solo prima di dormire
+Disattivala o tienila tutto il giorno
+
+### 앱스토어 (pt-BR)
+
+A vela queima como fogo de verdade
+Escolha o tamanho da chama nos Ajustes
+Ilha Dinâmica só antes de dormir
+Desative ou deixe o dia todo nos Ajustes
+
+### 앱스토어 (태국어)
+
+เปลวเทียนลุกขึ้นด้านบนเหมือนไฟจริง
+เลือกขนาดเปลวไฟได้ในการตั้งค่า
+Dynamic Island แสดงแค่ก่อนนอน 1 ชม.
+ปิดหรือให้แสดงทั้งวันได้ในการตั้งค่า
+
+### 앱스토어 (베트남어)
+
+Ngọn nến bốc lên như lửa thật
+Chọn kích thước ngọn lửa trong Cài đặt
+Dynamic Island chỉ hiện trước khi ngủ
+Có thể tắt hoặc để hiện cả ngày
+
+### 앱스토어 (체코어)
+
+Svíčka hoří vzhůru jako skutečný oheň
+Velikost plamene zvolíte v Nastavení
+Dynamic Island jen hodinu před spaním
+Můžete ho vypnout nebo nechat celý den
+
+### 앱스토어 (덴마크어)
+
+Stearinlyset brænder opad som ægte ild
+Vælg flammestørrelse i Indstillinger
+Dynamic Island vises kun før sengetid
+Slå den fra eller vis den hele dagen
+
+### 앱스토어 (그리스어)
+
+Το κερί καίει σαν αληθινή φωτιά
+Διάλεξε το μέγεθος της φλόγας
+Το Dynamic Island μόνο πριν τον ύπνο
+Απενεργοποίησέ το ή κράτησέ το όλη μέρα
+
+### 앱스토어 (핀란드어)
+
+Kynttilä palaa ylöspäin kuin oikea tuli
+Valitse liekin koko Asetuksista
+Dynamic Island vain ennen nukkumaan
+Pois päältä tai näkyviin koko päivän
+
+### 앱스토어 (인도네시아어)
+
+Lilin menyala ke atas seperti api asli
+Pilih ukuran api di Pengaturan
+Dynamic Island muncul sebelum tidur
+Matikan atau tampilkan sepanjang hari
+
+### 앱스토어 (노르웨이어(보크말))
+
+Lyset brenner oppover som ekte ild
+Velg flammestørrelse i Innstillinger
+Dynamic Island vises bare før leggetid
+Slå den av eller vis den hele dagen
+
+### 앱스토어 (네덜란드어)
+
+De kaars brandt omhoog als echt vuur
+Kies de vlamgrootte in Instellingen
+Dynamic Island alleen nog voor bedtijd
+Zet hem uit of laat hem de hele dag aan
+
+### 앱스토어 (폴란드어)
+
+Świeca płonie w górę jak prawdziwy ogień
+Wybierz rozmiar płomienia w Ustawieniach
+Dynamic Island tylko przed snem
+Wyłącz ją lub zostaw na cały dzień
+
+### 앱스토어 (스웨덴어)
+
+Ljuset brinner uppåt som riktig eld
+Välj flammans storlek i Inställningar
+Dynamic Island visas bara före läggdags
+Stäng av den eller visa den hela dagen
+
+### 앱스토어 (튀르키예어)
+
+Mum gerçek ateş gibi yukarı yanıyor
+Alev boyutunu Ayarlar’da seç
+Dynamic Island yalnızca uyumadan önce
+Kapat ya da tüm gün açık tut
+
 ## 1.2.1
 
 ### 앱스토어 (한국어)

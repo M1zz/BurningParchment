@@ -25,10 +25,12 @@ struct BedtimeLiveActivity: Widget {
                         }
 
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(timerInterval: Self.countdown(to: context.state.bedtimeDate), countsDown: true)
-                                .font(.system(size: 26, weight: .light, design: .monospaced))
+                            Self.remaining(context)
+                                .font(.system(size: 22, weight: .light))
                                 .foregroundColor(.orange)
                                 .monospacedDigit()
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.6)
 
                             Text("🔥 \(Int((1.0 - context.state.progress) * 100))% 남음")
                                 .font(.system(size: 10))
@@ -59,11 +61,13 @@ struct BedtimeLiveActivity: Widget {
                 }
 
             } compactTrailing: {
-                Text(timerInterval: Self.countdown(to: context.state.bedtimeDate), countsDown: true)
-                    .font(.system(size: 11, weight: .medium, design: .monospaced))
+                Self.remaining(context)
+                    .font(.system(size: 11, weight: .medium))
                     .foregroundColor(.orange)
                     .monospacedDigit()
-                    .frame(width: 52)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
+                    .frame(maxWidth: 64)
 
             } minimal: {
                 if context.state.showMiniParchment {
@@ -78,11 +82,15 @@ struct BedtimeLiveActivity: Widget {
         }
     }
 
-    /// 지금부터 취침까지. 취침 시각이 이미 지났으면 0 에서 멈춘다 —
-    /// Date()...과거 는 범위가 뒤집혀 크래시한다 (앱이 활동을 끝내기 전 잠깐 사이에 그려질 수 있다).
-    private static func countdown(to bedtime: Date) -> ClosedRange<Date> {
-        let now = Date()
-        return now...max(now, bedtime)
+    /// 취침까지 남은 시간을 '1시간 23분' 처럼 쓴다. 타이머(.timer)는 '1:23:41' 같은 시계 숫자로 나와
+    /// 시각으로 읽혔다. 취침이 지나면(앱이 활동을 끝내기 전 사이, staleDate 가 지난 뒤) 거꾸로 세지 않고 '수면 중'.
+    @ViewBuilder
+    private static func remaining(_ context: ActivityViewContext<BedtimeActivityAttributes>) -> some View {
+        if context.isStale || context.state.bedtimeDate <= .now {
+            Text("수면 중")
+        } else {
+            Text(context.state.bedtimeDate, style: .relative)
+        }
     }
 
     // MARK: - Lock Screen
@@ -105,10 +113,12 @@ struct BedtimeLiveActivity: Widget {
                     .font(.system(size: 11, weight: .medium))
                     .foregroundColor(.orange.opacity(0.7))
 
-                Text(timerInterval: Self.countdown(to: context.state.bedtimeDate), countsDown: true)
-                    .font(.system(size: 24, weight: .light, design: .monospaced))
+                Self.remaining(context)
+                    .font(.system(size: 22, weight: .light))
                     .foregroundColor(.white)
                     .monospacedDigit()
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
 
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {

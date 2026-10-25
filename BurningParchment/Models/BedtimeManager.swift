@@ -713,7 +713,7 @@ class BedtimeManager: ObservableObject {
         do {
             liveActivity = try Activity<BedtimeActivityAttributes>.request(
                 attributes: attrs,
-                content: ActivityContent(state: state, staleDate: nil),
+                content: ActivityContent(state: state, staleDate: bedDate),
                 pushType: nil
             )
             AppLog.liveActivity.info("실시간 현황 시작")
@@ -734,7 +734,7 @@ class BedtimeManager: ObservableObject {
             bedtimeDate: bedDate,
             showMiniParchment: true
         )
-        Task { await activity.update(ActivityContent(state: state, staleDate: nil)) }
+        Task { await activity.update(ActivityContent(state: state, staleDate: bedDate)) }
     }
 
     /// immediately — 설정이나 시간대 때문에 숨길 때. 이 앱이 띄운 실시간 현황을 모두 바로 내린다.

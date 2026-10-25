@@ -521,30 +521,30 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
-				en,
-				ja,
-				ko,
-				"en-GB",
-				es,
-				de,
-				"zh-Hans",
-				"zh-Hant",
-				ru,
-				fr,
-				it,
-				"pt-BR",
-				th,
-				vi,
 				cs,
 				da,
+				de,
 				el,
+				en,
+				"en-GB",
+				es,
 				fi,
+				fr,
 				id,
+				it,
+				ja,
+				ko,
 				nb,
 				nl,
 				pl,
+				"pt-BR",
+				ru,
 				sv,
+				th,
 				tr,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 39EC316FADCCDA4DC5875847;
 			minimizedProjectReferenceProxies = 1;
@@ -776,7 +776,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -813,7 +813,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -850,7 +850,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -927,7 +927,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

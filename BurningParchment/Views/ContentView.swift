@@ -116,6 +116,8 @@ struct ContentView: View {
                     reflectionNudgeBanner
                     pageIndicator
                 }
+                // iPad 에서는 양피지가 화면 폭만큼 납작하게 늘어나지 않도록 아이폰과 비슷한 폭의 기둥으로 세운다
+                .frame(maxWidth: 600)
             }
             .gesture(
                 DragGesture(minimumDistance: 30)

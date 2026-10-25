@@ -11,10 +11,12 @@
 
 다음 릴리즈 때는 원본만 다시 찍어 이 스크립트를 그대로 돌리면 된다.
 """
-import subprocess, sys, pathlib
+import subprocess, sys, pathlib, tempfile
 
 ROOT   = pathlib.Path(__file__).resolve().parent.parent
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# 평소 쓰는 Chrome 이 켜져 있으면 기본 프로필을 두고 다투다 멈춘다 — 따로 쓴다
+PROFILE = pathlib.Path(tempfile.gettempdir()) / "burningparchment-marketing-chrome"
 W, H   = 1242, 2688          # App Store Connect 제출 규격
 
 # 앱의 색을 그대로 쓴다 — 마케팅 이미지가 앱과 다른 세계처럼 보이면 안 된다.
@@ -475,10 +477,17 @@ def main(lang, only=None):
         html = work / f"{lang}-{fname.replace('.png','.html')}"
         html.write_text(HTML.format(css=css, body=body), encoding="utf-8")
         png = out / fname
-        subprocess.run([CHROME, "--headless=new", f"--screenshot={png}",
-                        f"--window-size={W},{H}", "--force-device-scale-factor=1",
-                        "--hide-scrollbars", "--disable-gpu", html.as_uri()],
-                       check=True, capture_output=True)
+        png.unlink(missing_ok=True)
+        # 그림을 다 쓰고 나서 끝내다가 죽는 일이 잦아(종료 코드 ≠ 0) 종료 코드 대신 파일이 생겼는지를 본다
+        try:
+            subprocess.run([CHROME, "--headless=new", f"--user-data-dir={PROFILE}", f"--screenshot={png}",
+                            f"--window-size={W},{H}", "--force-device-scale-factor=1",
+                            "--hide-scrollbars", "--disable-gpu", html.as_uri()],
+                           capture_output=True, timeout=300)
+        except subprocess.TimeoutExpired:
+            pass
+        if not png.exists():
+            sys.exit(f"❌ 렌더 실패: {png.relative_to(ROOT)}")
         print(f"rendered {png.relative_to(ROOT)}")
 
 

@@ -56,8 +56,10 @@ shot() { name=$1; mode=$2; shift 2
   perl -e 'alarm 120; exec @ARGV' xcrun simctl launch $D com.burningparchment.app -skipNotifications YES -skipOnboarding YES -hideTips YES \
     -seedDemo YES -forcePro YES -AppleLanguages "($L)" -AppleLocale $LOC "$@" >/dev/null
   sleep 10
-  # 기계가 바쁘면 screenshot 이 멈춘 채 돌아오지 않는다 — 60초에서 끊는다
-  perl -e 'alarm 60; exec @ARGV' xcrun simctl io $D screenshot $OUT/$name.png >/dev/null 2>&1 || echo "⚠️ 캡처 실패: $name"
+  # 시뮬레이터는 이미 있는 파일을 덮어쓰지 못한다(Operation not permitted) — 먼저 지운다
+  rm -f $OUT/$name.png
+  # 기계가 바쁘면 screenshot 이 멈춘 채 돌아오지 않는다 — 150초에서 끊는다 (촛불 셰이더가 돌면 한 장에 40초 넘게 걸린다)
+  perl -e 'alarm 150; exec @ARGV' xcrun simctl io $D screenshot $OUT/$name.png >/dev/null 2>&1 || echo "⚠️ 캡처 실패: $name"
   echo "captured $OUT/$name.png"
 }
 

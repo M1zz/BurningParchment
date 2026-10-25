@@ -326,13 +326,23 @@ struct SettingsView: View {
     private var liveActivityGroup: some View {
         SettingsGroup(title: String(localized: "다이나믹 아일랜드"),
                       footer: String(localized: "잠들기 전을 고르면 취침 1시간 전부터 잠금화면과 다이나믹 아일랜드에 남은 시간이 보여요. 다이나믹 아일랜드를 누르면 앱이 열려요")) {
-            Picker("다이나믹 아일랜드", selection: $bedtimeManager.liveActivityMode) {
-                ForEach(LiveActivityMode.allCases) { mode in
-                    Text(mode.label).tag(mode)
-                }
+            SettingsRow(icon: "capsule", title: String(localized: "다이나믹 아일랜드")) {
+                Toggle("", isOn: Binding(
+                    get: { bedtimeManager.liveActivityMode != .off },
+                    set: { bedtimeManager.liveActivityMode = $0 ? .beforeBed : .off }))
+                .labelsHidden()
+                .tint(.ember)
             }
-            .pickerStyle(.segmented)
-            .padding(12)
+            if bedtimeManager.liveActivityMode != .off {
+                SettingsDivider()
+                Picker("다이나믹 아일랜드", selection: $bedtimeManager.liveActivityMode) {
+                    ForEach(LiveActivityMode.allCases.filter { $0 != .off }) { mode in
+                        Text(mode.label).tag(mode)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding(12)
+            }
         }
     }
 

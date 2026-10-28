@@ -16,6 +16,10 @@ import LeeoKit
 @MainActor
 final class StoreManager: ObservableObject {
     static let proProductID = "com.burningparchment.app.pro"
+    /// 프로 선물 (소모성). 산 사람이 아니라 **코드를 받은 사람**에게 프로(`proProductID`)를 연다(`LeeoGiftStore`).
+    /// ⚠️ 계약의 `productIDs` 에 넣지 않는다 — 넣으면 선물을 산 사람이 프로가 되고, 결제가 코드 없이 끝난다.
+    /// App Store Connect 에 소모성 상품으로 만들어야 뜬다. 없으면 설정의 선물 줄이 숨는다.
+    static let giftProductID = "com.burningparchment.app.gift.pro"
 
     /// 무료 사용 한도 — 선언은 BurningParchmentSpec.monetization 의 게이트 정책 한 곳에만 있다.
     static let freeDeadlineLimit = BurningParchmentSpec.gate.freeLimits[BurningParchmentSpec.GateKey.deadline] ?? 1
@@ -44,6 +48,9 @@ final class StoreManager: ObservableObject {
     var isLoadingProduct: Bool { store.isLoadingProducts }
     /// 마지막 구매·복원·상품 로드 오류 (사용자에게 그대로 보여줄 문장). 취소는 오류가 아니라 nil 이다.
     var lastError: String? { store.lastError }
+    /// 프로 선물하기 엔진. 받은 선물은 LeeoStore 가 권한에 합치므로 `isPro` 가 그대로 열린다.
+    /// ⚠️ 화면은 이것을 따로 관찰해야 한다 — 선물 상품·기록이 바뀌어도 위의 전파는 오지 않는다.
+    var gift: LeeoGiftStore? { store.gift }
 
     // MARK: - Gates
 

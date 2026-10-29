@@ -44,3 +44,21 @@ enum Moments {
         AccessibilityNotification.Announcement(message).post()
     }
 }
+
+// MARK: - 팁을 부탁할 순간
+
+/// 이 앱이 그 사람에게 도움이 됐다는 것이 숫자로 보이는 순간 — 재 항아리에 담은 회고 수.
+/// 부탁 카드(`LeeoTipAskSlot`)는 재 항아리 화면에서 **이미 프로인 사람**에게만 선다. 묻는 횟수는 LeeoKit 이 정한다.
+enum BurningParchmentTipMoments {
+    /// 담은 회고 수. 큰 것부터.
+    static let reflections = [100, 30, 10]
+
+    /// 넘어선 순간, **인상적인 것부터**.
+    static func reached(reflections count: Int) -> [LeeoTipMoment] {
+        reflections.filter { count >= $0 }.map { threshold in
+            LeeoTipMoment(id: "reflections.\(threshold)",
+                          message: String(localized: "지금까지 회고 \(count)개를 재 항아리에 담았어요",
+                                          comment: "Tip ask card: how many reflections the person has saved so far"))
+        }
+    }
+}

@@ -33,7 +33,9 @@ enum BurningParchmentSpec: LeeoAppSpec {
                 productID: StoreManager.giftProductID,
                 grantsProductID: StoreManager.proProductID,
                 containerIdentifier: "iCloud.com.Ysoup.FeedbackHub"
-            )
+            ),
+            // 팁(응원). 이미 프로인 사람이 더 보태고 싶을 때. 선물과 같은 이유로 productIDs 에 넣지 않는다.
+            tipJar: LeeoTipJarConfig(productIDs: StoreManager.tipProductIDs)
         )
     )
 

@@ -53,6 +53,66 @@
       "productID" : "com.burningparchment.app.gift.pro",
       "referenceName" : "Gift Pro",
       "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "63AF64DB-0173-4056-A742-CD7FEB62BAA3",
+      "localizations" : [
+        {
+          "description" : "개발자에게 커피 한 잔을 보냅니다.",
+          "displayName" : "작은 응원",
+          "locale" : "ko"
+        },
+        {
+          "description" : "Buy the developer a coffee.",
+          "displayName" : "Small Tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.burningparchment.app.tip.small",
+      "referenceName" : "Tip Small",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "BE22C3D9-7922-4C4D-9BD6-F771175FD961",
+      "localizations" : [
+        {
+          "description" : "불타는 내인생을 계속 다듬을 수 있게 힘을 보탭니다.",
+          "displayName" : "든든한 응원",
+          "locale" : "ko"
+        },
+        {
+          "description" : "Help keep Burning Parchment improving.",
+          "displayName" : "Medium Tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.burningparchment.app.tip.medium",
+      "referenceName" : "Tip Medium",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "640CC303-4897-426C-AF9B-BABB5CD188CD",
+      "localizations" : [
+        {
+          "description" : "불타는 내인생의 다음 기능을 함께 만듭니다.",
+          "displayName" : "큰 응원",
+          "locale" : "ko"
+        },
+        {
+          "description" : "Help build what comes next.",
+          "displayName" : "Large Tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.burningparchment.app.tip.large",
+      "referenceName" : "Tip Large",
+      "type" : "Consumable"
     }
   ],
   "settings" : {

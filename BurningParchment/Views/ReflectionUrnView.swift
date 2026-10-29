@@ -2,6 +2,7 @@
 // 사용자가 직접 만드는 여러 항아리. 한 항아리 안에 4종 카테고리의 재 입자가 섞여 쌓임.
 
 import SwiftUI
+import LeeoKit
 
 // MARK: - Urn Shape
 
@@ -488,6 +489,7 @@ struct ReflectionUrnView: View {
                         sweepPrompt
                         meaningPrompt
                         currentWeekCard
+                        tipAsk
                         monthShelf
                     }
                     .padding(.top, 8)
@@ -548,6 +550,20 @@ struct ReflectionUrnView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
                 showInput = true
             }
+        }
+    }
+
+    // MARK: - 응원 부탁
+    // 회고를 담고 돌아온 이 자리에서, 담은 수가 고비를 넘었을 때만 한 장 선다(모달 아님).
+    // 이미 프로인 사람에게만 — 아직 아닌 사람에게는 페이월이 맞는 길이다.
+
+    @ViewBuilder
+    private var tipAsk: some View {
+        if storeManager.isPro, let tipJar = storeManager.tipJar {
+            LeeoTipAskSlot<BurningParchmentSpec>(
+                tipJar: tipJar,
+                reached: BurningParchmentTipMoments.reached(reflections: reflectionManager.totalReflectionCount))
+                .padding(.horizontal, 16)
         }
     }
 

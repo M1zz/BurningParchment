@@ -506,6 +506,21 @@ struct SettingsView: View {
             if let gift = storeManager.gift {
                 GiftRows(gift: gift, isPro: storeManager.isPro)
             }
+
+            // 개발자 응원하기(팁) — 선물 바로 아래. 판매 중인 팁이 있어야 선다(문구는 LeeoKit 카탈로그).
+            // 아래 지원 카드의 LeeoKit 행과 같은 모양을 입힌다.
+            if let tipJar = storeManager.tipJar {
+                LeeoTipJarLink<BurningParchmentSpec>(tipJar: tipJar)
+                    .labelStyle(SettingsLabelStyle())
+                    .font(.system(size: rowFontSize))
+                    .foregroundStyle(Color.inkMuted.opacity(0.8))
+                    .tint(.ember)
+                    .buttonStyle(.plain)
+                    .padding(.horizontal, 14)
+                    .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+                    .contentShape(Rectangle())
+                    .overlay(alignment: .top) { SettingsDivider() }
+            }
         }
     }
 

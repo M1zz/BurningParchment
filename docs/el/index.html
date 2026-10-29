@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Φλεγόμενη Περγαμηνή — Υποστήριξη</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Φλεγόμενη Περγαμηνή: δες ό,τι απομένει από τη μέρα σου να καίγεται</title>
+  <meta name="description" content="Από τη στιγμή που ξυπνάς ως την ώρα του ύπνου, ο χρόνος που σου μένει σήμερα καίγεται σαν περγαμηνή. Μισή ώρα πριν κοιμηθείς, σβήνεις τη φλόγα με ένα φύσημα.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/el/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Φλεγόμενη Περγαμηνή: δες ό,τι απομένει από τη μέρα σου να καίγεται">
+  <meta property="og:description" content="Από τη στιγμή που ξυπνάς ως την ώρα του ύπνου, ο χρόνος που σου μένει σήμερα καίγεται σαν περγαμηνή. Μισή ώρα πριν κοιμηθείς, σβήνεις τη φλόγα με ένα φύσημα.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/el/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="index.html" hreflang="el" lang="el" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/"><img src="../icon.png" alt="" width="32" height="32">Φλεγόμενη Περγαμηνή</a>
+    <a class="lang-link" href="#languages">Γλώσσα</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Φλεγόμενη Περγαμηνή</h1>
-  <p>Από το ξύπνημα ως την ώρα του ύπνου, δείτε τη μέρα σας να καίγεται.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Σχετικά με την εφαρμογή</h2>
-    <div class="card">
-      <h3>Τι είναι η Φλεγόμενη Περγαμηνή;</h3>
-      <p>Η Φλεγόμενη Περγαμηνή είναι μια εφαρμογή αντίστροφης μέτρησης που δείχνει πόσο απομένει από τη μέρα σας ως ένα φύλλο περγαμηνής που καίγεται αργά. Από το ξύπνημα ως την ώρα του ύπνου βλέπετε με μια ματιά πόσος χρόνος απομένει, ώστε να αξιοποιήσετε τις ώρες που σας μένουν.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Ημερήσια αντίστροφη μέτρηση</span>
-        <span class="badge">Εβδομάδα / μήνας / έτος</span>
-        <span class="badge">Widget αρχικής οθόνης</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widget οθόνης κλειδώματος</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Ό,τι μένει από το σήμερα<br>καίγεται μπροστά σου</h1>
+        <p class="lead">Ένα βράδυ που σε αριθμούς μοιάζει αθώο φαίνεται αλλιώς όταν είναι περγαμηνή που φλέγεται. Μισή ώρα πριν τον ύπνο, φύσα στην οθόνη, σβήσε τη φωτιά και κλείσε τη μέρα.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Δωρεάν λήψη στο App Store</a><a class="try" href="#try">Δοκίμασε να τη σβήσεις ↓</a></div>
+        <p class="muted small">Η φλεγόμενη περγαμηνή, το σβήσιμο με φύσημα και οι απολογισμοί είναι δωρεάν.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/el/01-week-dark.jpg" alt="Ό,τι μένει από το σήμερα καίγεται μπροστά σου" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Πώς να τη χρησιμοποιήσετε</h2>
-    <div class="card">
-      <h3>Ορίστε την ώρα ξυπνήματος και ύπνου</h3>
-      <p>Πατήστε το κουμπί ⚙️ πάνω δεξιά για να ορίσετε την ώρα ξυπνήματος και την ώρα ύπνου. Η περγαμηνή αρχίζει να καίγεται όταν ξυπνάτε και η αντίστροφη μέτρηση τελειώνει την ώρα του ύπνου.</p>
-    </div>
-    <div class="card">
-      <h3>Επιλέξτε χρονικό διάστημα</h3>
-      <p>Επιλέξτε <strong>1 ημέρα · 1 εβδομάδα · 1 μήνας · 1 έτος</strong> από τις καρτέλες στην κορυφή και η περγαμηνή καίγεται για να δείξει πόσο απομένει από το διάστημα.</p>
-    </div>
-    <div class="card">
-      <h3>Widget αρχικής οθόνης</h3>
-      <p>Πατήστε παρατεταμένα την αρχική οθόνη → Προσθήκη widget → αναζητήστε <strong>Φλεγόμενη Περγαμηνή</strong> για να προσθέσετε widget ημέρας, εβδομάδας, μήνα ή έτους. Διατίθενται μικρό, μεσαίο και μεγάλο μέγεθος.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island και οθόνη κλειδώματος</h3>
-      <p>Μόλις ξεκινήσει η αντίστροφη μέτρηση, μπορείτε να παρακολουθείτε τον χρόνο που απομένει ζωντανά στο Dynamic Island και στην οθόνη κλειδώματος. Τραβήξτε προς τα κάτω το Dynamic Island για περισσότερες λεπτομέρειες, μαζί με το animation της περγαμηνής που καίγεται.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Συχνές ερωτήσεις</h2>
-    <div class="card">
-      <h3>Το widget δείχνει διαφορετική ώρα από την εφαρμογή</h3>
-      <p>Λόγω του τρόπου λειτουργίας του iOS, τα widget της αρχικής οθόνης δεν μπορούν να ενημερώνονται σε πραγματικό χρόνο. Όταν ανοίγετε την εφαρμογή, τα δεδομένα του widget συγχρονίζονται αυτόματα. Για ζωντανή αντίστροφη μέτρηση, χρησιμοποιήστε το Dynamic Island και την οθόνη κλειδώματος.</p>
-    </div>
-    <div class="card">
-      <h3>Τι εμφανίζεται όσο κοιμάμαι;</h3>
-      <p>Μετά την ώρα του ύπνου εμφανίζεται ένα animation με μια φλεγόμενη καρδιά που δείχνει πόσο έχει προχωρήσει ο ύπνος σας ως το ξύπνημα. Ένα φρέσκο φύλλο περγαμηνής ετοιμάζεται 30 λεπτά πριν ξυπνήσετε.</p>
-    </div>
-    <div class="card">
-      <h3>Πότε φτάνουν οι ειδοποιήσεις;</h3>
-      <p>Λαμβάνετε μια ειδοποίηση μία ώρα πριν την ώρα του ύπνου. Αν δεν φτάσει, ελέγξτε ότι επιτρέπονται οι ειδοποιήσεις στις <strong>Ρυθμίσεις → Ειδοποιήσεις → Φλεγόμενη Περγαμηνή</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>Αδειάζει η εφαρμογή την μπαταρία μου;</h3>
-      <p>Η αντίστροφη μέτρηση μέσα στην εφαρμογή προχωρά μία φορά το δευτερόλεπτο, ενώ τα widget ακολουθούν ένα χρονοδιάγραμμα χαμηλής κατανάλωσης που διαχειρίζεται το σύστημα, οπότε η επίδραση στη διάρκεια της μπαταρίας είναι ελάχιστη.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Δοκίμασε να τη σβήσεις</h2>
+      <p class="muted">Πήγαινε την ώρα λίγο πριν τον ύπνο και μετά κράτα πατημένο το κουμπί ή φύσα στο μικρόφωνο.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Δοκίμασε να τη σβήσεις&quot;, &quot;lead&quot;: &quot;Πήγαινε την ώρα λίγο πριν τον ύπνο και μετά κράτα πατημένο το κουμπί ή φύσα στο μικρόφωνο.&quot;, &quot;clock&quot;: &quot;Ώρα τώρα&quot;, &quot;now&quot;: &quot;Τώρα&quot;, &quot;late&quot;: &quot;20 λεπτά πριν τον ύπνο&quot;, &quot;remain&quot;: &quot;Μέχρι τον ύπνο&quot;, &quot;hm&quot;: &quot;{h} ώ. {m} λ.&quot;, &quot;m&quot;: &quot;{m} λεπτά&quot;, &quot;range&quot;: &quot;Ξύπνημα {wake} · Ύπνος {bed}&quot;, &quot;blow&quot;: &quot;Κράτα πατημένο για φύσημα&quot;, &quot;mic&quot;: &quot;Φύσα στο μικρόφωνο&quot;, &quot;micOn&quot;: &quot;Ακούω. Φύσα στο μικρόφωνο&quot;, &quot;micNone&quot;: &quot;Αυτό το πρόγραμμα περιήγησης δεν μπορεί να χρησιμοποιήσει μικρόφωνο. Κράτα πατημένο το κουμπί.&quot;, &quot;wait&quot;: &quot;Μπορείς να τη σβήσεις από 30 λεπτά πριν τον ύπνο&quot;, &quot;out&quot;: &quot;Η φωτιά έσβησε&quot;, &quot;kept&quot;: &quot;Την έσβησες όταν έμεναν {m} λεπτά. Το θραύσμα που απέμεινε φυλάγεται.&quot;, &quot;again&quot;: &quot;Άναψέ τη ξανά&quot;, &quot;note&quot;: &quot;Όπως η εφαρμογή, μετράει μόνο τη δύναμη της ανάσας και δεν ηχογραφεί τίποτα. Οι ώρες ξυπνήματος και ύπνου είναι οι προεπιλογές της εφαρμογής.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Απόρρητο</h2>
-    <div class="card">
-      <h3>Πώς χειριζόμαστε τα στοιχεία σας</h3>
-      <p>Η ώρα ξυπνήματος, η ώρα ύπνου, οι προθεσμίες, οι απολογισμοί και τα τεφροδοχεία σας αποθηκεύονται μόνο στη συσκευή σας. Ο προγραμματιστής λαμβάνει μόνο ανώνυμα στατιστικά χρήσης, διαγνωστικά κατάρρευσης και τα σχόλια που επιλέγετε να στείλετε.</p>
-      <ul>
-        <li>Η εφαρμογή και τα widget της μοιράζονται δεδομένα μόνο μέσω ενός App Group στη συσκευή σας.</li>
-        <li>Χωρίς διαφημίσεις, χωρίς παρακολούθηση.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Διαβάστε ολόκληρη την Πολιτική απορρήτου →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Σου έχει τύχει να δεις ξαφνικά ότι πήγε μεσάνυχτα;</h2>
+      <p>Τρως βραδινό, κάθεσαι λίγο, και η μέρα έχει τελειώσει. Οι αριθμοί στο ρολόι μοιάζουν ίδιοι κάθε βράδυ, γι' αυτό δεν νιώθεις τον χρόνο να λιγοστεύει. Η Φλεγόμενη Περγαμηνή δείχνει ό,τι απομένει σαν περγαμηνή που καίγεται, για να το καταλάβεις πριν χαθεί το βράδυ.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Επικοινωνία</h2>
-    <div class="card">
-      <h3>Κάτι δεν λειτουργεί σωστά;</h3>
-      <p>Για αναφορά σφαλμάτων, ιδέες για λειτουργίες ή οποιαδήποτε άλλη ερώτηση, στείλτε μας email στη διεύθυνση παρακάτω. Θα απαντήσουμε το συντομότερο δυνατό.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Η μέρα, η εβδομάδα, η χρονιά καίγονται</h2>
+        <p>Από τη στιγμή που ξυπνάς ως την ώρα του ύπνου, η περγαμηνή καίγεται αργά. Με τον ίδιο τρόπο βλέπεις τι μένει από την εβδομάδα, τον μήνα και τη χρονιά.<br>Πρόσθεσε έναν στόχο με ημερομηνία ως προθεσμία και η αντίστροφη μέτρηση τρέχει δίπλα.</p>
+      </div>
+      <div class="phone"><img src="../img/el/02-month-light.jpg" alt="Η μέρα, η εβδομάδα, η χρονιά καίγονται" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Σβήσε τη μέρα με ένα φύσημα</h2>
+        <p>Από 30 λεπτά πριν τον ύπνο, φύσα στη φλεγόμενη περγαμηνή για να σβήσεις τη φωτιά. Χρησιμοποιείται μόνο η δύναμη της ανάσας, τίποτα δεν ηχογραφείται.<br>Το θραύσμα που μένει φυλάγεται. Γύρισέ το και γράψε στην πίσω πλευρά μια γραμμή για τη μέρα σου.</p>
+      </div>
+      <div class="phone"><img src="../img/el/blowout-dark.jpg" alt="Σβήσε τη μέρα με ένα φύσημα" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Πολιτική απορρήτου</a></p>
-  <p style="margin-top: 6px;">Φτιαγμένο με 🔥 στην Κορέα</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ο χρόνος που πέρασε μένει στάχτη</h2>
+        <p>Κάνε τον απολογισμό της μέρας σε μία γραμμή και τοποθέτησέ τον ως σημείο σε ένα γράφημα δύο αξόνων, ανάλογα με το πού πήγε ο χρόνος. Οι απολογισμοί μαζεύονται σε εβδομαδιαία και μηνιαία τεφροδοχεία και τους ξαναδιαβάζεις στο Βιβλίο απολογισμών.<br>Η Ροή της στάχτης δείχνει πού πήγε ο χρόνος σου, με γράφημα κατανομής και ημερολόγιο από κάρβουνα.</p>
+      </div>
+      <div class="phone"><img src="../img/el/03-urn-dark.jpg" alt="Ο χρόνος που πέρασε μένει στάχτη" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Ξεκινάς σε τρία βήματα</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Όρισε ξύπνημα και ύπνο</h3><p>Πάτα το γρανάζι πάνω δεξιά. Η περγαμηνή ανάβει και σβήνει με αυτό το πρόγραμμα.</p></li>
+<li class="card"><span class="n">2</span><h3>Διάλεξε περίοδο</h3><p>Σάρωσε ανάμεσα σε μέρα, εβδομάδα, μήνα και χρονιά ή κρύψε από τις Ρυθμίσεις όσες σελίδες δεν χρειάζεσαι.</p></li>
+<li class="card"><span class="n">3</span><h3>Πρόσθεσε widget</h3><p>Στην οθόνη Αφετηρίας ή στην οθόνη κλειδώματος βλέπεις τον χρόνο που μένει χωρίς να ανοίξεις την εφαρμογή.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Πού βλέπεις τον χρόνο που μένει</h2>
+      <div class="card table">
+        <dl><div><dt>Μέρα</dt><dd>Από το ξύπνημα ως την ώρα του ύπνου</dd></div><div><dt>Εβδομάδα · Μήνας · Χρονιά</dt><dd>Τι μένει από την εβδομάδα, τον μήνα και τη χρονιά</dd></div><div><dt>Ελεύθερος χρόνος</dt><dd>Η περγαμηνή της εβδομάδας καίγεται μόνο τις ώρες που κρατάς για σένα (Pro)</dd></div><div><dt>Προθεσμίες</dt><dd>Χρόνος ως την ημερομηνία ενός στόχου. Μία δωρεάν</dd></div><div><dt>Widget οθόνης Αφετηρίας</dt><dd>Περγαμηνή μέρας σε μικρό, μεσαίο και μεγάλο μέγεθος. Εβδομάδα, μήνας, χρονιά και προθεσμίες σε μικρό και μεσαίο</dd></div><div><dt>Widget οθόνης κλειδώματος</dt><dd>Κυκλικό, ορθογώνιο και σε μία γραμμή</dd></div><div><dt>Dynamic Island · Ζωντανή δραστηριότητα</dt><dd>Από μία ώρα πριν τον ύπνο ή όλη μέρα. Επιλέγεται ή απενεργοποιείται στις Ρυθμίσεις</dd></div></dl>
+      </div>
+      <p class="muted">Ανάπτυξε το Dynamic Island για να δεις τη φλεγόμενη περγαμηνή με ολόκληρη την αντίστροφη μέτρηση.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Η περγαμηνή είναι δωρεάν. Το Pro κρατάει περισσότερα.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Δωρεάν</h3>
+          <ul><li>Περγαμηνές για μέρα, εβδομάδα, μήνα και χρονιά</li><li>Σβήσιμο της φλόγας και συλλογή θραυσμάτων</li><li>Απολογισμοί μιας γραμμής, τεφροδοχεία και Βιβλίο απολογισμών</li><li>Πρωινός έλεγχος, προαιρετικά με δεδομένα ύπνου από την Υγεία</li><li>Widget για οθόνη Αφετηρίας και κλειδώματος, Dynamic Island</li><li>Μία προθεσμία</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Φλεγόμενη Περγαμηνή Pro</h3>
+          <ul><li>Κάψε μόνο τον δικό σου ελεύθερο χρόνο</li><li>Θέματα: Χάντζι του φεγγαριού, Σελαντόν, Δειλινό</li><li>Φλόγες: Φωτιά στο λιβάδι, Κάρβουνα, Σπίθες</li><li>Κοινοποίηση θραυσμάτων ως κάρτες και αφίσες</li><li>Εξαγωγή του Βιβλίου απολογισμών σε PDF</li><li>Δώδεκα μήνες Ροής της στάχτης</li><li>Απεριόριστες προθεσμίες</li></ul>
+          <p class="muted">Δεν είναι συνδρομή. Μία αγορά για πάντα, μαζί με κάθε μελλοντική λειτουργία Pro.</p>
+        </div>
+      </div>
+      <p class="muted">Νέα συσκευή; Πάτα Επαναφορά αγορών στις Ρυθμίσεις.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Συχνές ερωτήσεις</h2>
+      <div class="faq"><details><summary>Το widget δείχνει άλλη ώρα από την εφαρμογή.</summary><p>Το iOS δεν ξανασχεδιάζει τα widget της οθόνης Αφετηρίας κάθε δευτερόλεπτο. Μόλις ανοίξεις την εφαρμογή, συγχρονίζονται. Για αντίστροφη μέτρηση ανά δευτερόλεπτο, δες το Dynamic Island και τη Ζωντανή δραστηριότητα στην οθόνη κλειδώματος.</p></details>
+<details><summary>Φυσάω αλλά η φωτιά δεν σβήνει.</summary><p>Σβήνει μόνο από 30 λεπτά πριν τον ύπνο. Έλεγξε ότι επιτρέπεται η πρόσβαση στο μικρόφωνο και φύσα σταθερά για περίπου ένα δευτερόλεπτο κοντά στο μικρόφωνο στο κάτω μέρος του iPhone. Ένας σύντομος ήχος δεν αρκεί.</p></details>
+<details><summary>Ηχογραφείται η φωνή μου;</summary><p>Όχι. Μετριέται μόνο η δύναμη του φυσήματος. Κανένας ήχος δεν ηχογραφείται ούτε αποθηκεύεται.</p></details>
+<details><summary>Τι δείχνει όσο κοιμάμαι;</summary><p>Μετά την ώρα του ύπνου εμφανίζεται μια φλεγόμενη καρδιά που δείχνει πόσο έχει προχωρήσει η νύχτα ως το ξύπνημα. Το πρωί η εφαρμογή ρωτά αν κοιμήθηκες στην ώρα σου. Αν άργησες, η σημερινή περγαμηνή ξεκινά ανάλογα καψαλισμένη. Συνδεδεμένη με την Υγεία, χρησιμοποιεί την καταγεγραμμένη ώρα που αποκοιμήθηκες χωρίς να ρωτά.</p></details>
+<details><summary>Πότε έρχονται οι ειδοποιήσεις;</summary><p>Μία ώρα πριν τον ύπνο. Αν δεν έρχονται, έλεγξε Ρυθμίσεις &gt; Γνωστοποιήσεις &gt; Φλεγόμενη Περγαμηνή.</p></details>
+<details><summary>Καταναλώνει πολλή μπαταρία;</summary><p>Η αντίστροφη μέτρηση μέσα στην εφαρμογή αλλάζει κάθε δευτερόλεπτο, αλλά τα widget ανανεώνονται οικονομικά από το iOS, οπότε η επίδραση είναι μικρή.</p></details>
+<details><summary>Πού αποθηκεύονται τα δεδομένα μου;</summary><p>Οι ώρες, οι προθεσμίες, οι απολογισμοί και τα τεφροδοχεία μένουν στη συσκευή σου. Ο προγραμματιστής λαμβάνει μόνο ανώνυμα στατιστικά χρήσης, διαγνωστικά σφαλμάτων και τα σχόλια που επιλέγεις να στείλεις. Χωρίς διαφημίσεις, χωρίς παρακολούθηση.</p></details>
+<details><summary>Είναι το Pro συνδρομή;</summary><p>Όχι. Πληρώνεις μία φορά και το κρατάς για πάντα. Σε νέα συσκευή, πάτα Επαναφορά αγορών στις Ρυθμίσεις.</p></details></div>
+      <p class="contact">Σφάλματα, ιδέες ή άλλες ερωτήσεις; Γράψε στο <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Πρόλαβε το απόψε<br>πριν χαθεί</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Δωρεάν λήψη στο App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Γλώσσα"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Πολιτική απορρήτου</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

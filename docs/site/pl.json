@@ -1,0 +1,156 @@
+{
+  "title": "Płonący Pergamin: patrz, jak dopala się reszta Twojego dnia",
+  "description": "Od przebudzenia do pory snu czas, który zostaje Ci dziś, płonie jak pergamin. Pół godziny przed snem zdmuchujesz płomień i zamykasz dzień.",
+  "hero": {
+    "headline": "To, co zostało z dziś,\npłonie na Twoich oczach",
+    "lead": "Wieczór, który w liczbach wygląda niewinnie, jako płonący pergamin wygląda zupełnie inaczej. Pół godziny przed snem dmuchasz w ekran, gasisz ogień i zamykasz dzień.",
+    "cta": "Pobierz za darmo z App Store",
+    "note": "Płonący pergamin, zdmuchiwanie płomienia i refleksje są za darmo."
+  },
+  "demo": {
+    "title": "Spróbuj go zdmuchnąć",
+    "lead": "Przesuń zegar tuż przed porę snu, a potem przytrzymaj przycisk albo dmuchnij w mikrofon.",
+    "clock": "Teraz jest",
+    "now": "Teraz",
+    "late": "20 min przed snem",
+    "remain": "Do pory snu zostało",
+    "hm": "{h} godz. {m} min",
+    "m": "{m} min",
+    "range": "Pobudka {wake} · Sen {bed}",
+    "blow": "Przytrzymaj, by dmuchać",
+    "mic": "Dmuchnij w mikrofon",
+    "micOn": "Słucham. Dmuchnij w mikrofon",
+    "micNone": "Ta przeglądarka nie może użyć mikrofonu. Przytrzymaj przycisk.",
+    "wait": "Zdmuchnąć możesz od 30 minut przed snem",
+    "out": "Ogień zgasł",
+    "kept": "Zdmuchnięto go, gdy zostało {m} min. Ocalały okruch zostaje zachowany.",
+    "again": "Zapal ponownie",
+    "note": "Tak jak w aplikacji liczy się tylko siła oddechu i nic nie jest nagrywane. Pora pobudki i snu to wartości domyślne aplikacji."
+  },
+  "problem": {
+    "title": "Nagle północ?",
+    "text": "Kolacja, chwila na kanapie i dzień minął. Cyfry na zegarze co wieczór wyglądają tak samo, więc nie czujesz, że czasu ubywa. Płonący Pergamin pokazuje resztę dnia jako dopalający się pergamin, żebyś zauważył to, zanim wieczór zniknie."
+  },
+  "features": [
+    {
+      "title": "Dzień, tydzień i rok płoną",
+      "text": "Od przebudzenia do pory snu pergamin powoli się spala. Tak samo zobaczysz, ile zostało z tego tygodnia, miesiąca i roku.\nDodaj cel z datą jako termin, a odliczanie pobiegnie obok.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Zdmuchnij dzień",
+      "text": "Od 30 minut przed snem dmuchasz w płonący pergamin i gasisz ogień. Liczy się tylko siła oddechu, nic nie jest nagrywane.\nOcalały okruch zostaje zachowany. Odwróć go i napisz na odwrocie zdanie o dzisiejszym dniu.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Miniony czas zostaje popiołem",
+      "text": "Podsumuj dzień jednym zdaniem i umieść go jako punkt na wykresie o dwóch osiach, zależnie od tego, na co poszedł czas. Refleksje gromadzą się w tygodniowych i miesięcznych urnach z popiołem, a przeczytasz je ponownie w Księdze refleksji.\nPrzepływ popiołu pokazuje na wykresie rozkładu i kalendarzu żaru, dokąd poszedł Twój czas.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Zacznij w trzech krokach",
+    "items": [
+      {
+        "title": "Ustaw pobudkę i porę snu",
+        "text": "Stuknij zębatkę w prawym górnym rogu. Pergamin zapala się i gaśnie według tych godzin."
+      },
+      {
+        "title": "Wybierz okres",
+        "text": "Przesuwaj między dniem, tygodniem, miesiącem i rokiem albo ukryj zbędne strony w Ustawieniach."
+      },
+      {
+        "title": "Dodaj widżet",
+        "text": "Na ekranie początkowym lub blokady zobaczysz pozostały czas bez otwierania aplikacji."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Gdzie zobaczysz pozostały czas",
+    "rows": [
+      ["Dzień", "Od przebudzenia do pory snu"],
+      ["Tydzień · Miesiąc · Rok", "Ile zostało z tego tygodnia, miesiąca i roku"],
+      ["Wolny czas", "Pergamin tygodnia płonie tylko w godzinach, które zostawiasz dla siebie (Pro)"],
+      ["Terminy", "Czas do daty celu. Jeden za darmo"],
+      ["Widżety ekranu początkowego", "Pergamin dnia w rozmiarze małym, średnim i dużym. Tydzień, miesiąc, rok i terminy w małym i średnim"],
+      ["Widżety ekranu blokady", "Okrągły, prostokątny i w jednej linii"],
+      ["Dynamic Island · Aktywność na żywo", "Od godziny przed snem albo przez cały dzień. Wybierz lub wyłącz w Ustawieniach"]
+    ],
+    "note": "Rozwiń Dynamic Island, by zobaczyć płonący pergamin z pełnym odliczaniem."
+  },
+  "pricing": {
+    "title": "Pergamin jest za darmo. Pro mieści więcej.",
+    "free": {
+      "name": "Za darmo",
+      "items": [
+        "Pergaminy dnia, tygodnia, miesiąca i roku",
+        "Zdmuchiwanie płomienia i zbieranie okruchów",
+        "Refleksje w jednym zdaniu, urny z popiołem i Księga refleksji",
+        "Poranne sprawdzenie, opcjonalnie z danymi snu ze Zdrowia",
+        "Widżety ekranu początkowego i blokady, Dynamic Island",
+        "Jeden termin"
+      ]
+    },
+    "pro": {
+      "name": "Płonący Pergamin Pro",
+      "items": [
+        "Spalaj tylko swój wolny czas",
+        "Motywy: Księżycowe hanji, Seladon, Zmierzch",
+        "Płomienie: Pożar stepu, Żar, Zimne ognie",
+        "Udostępniaj okruchy jako karty i plakaty",
+        "Eksportuj Księgę refleksji do PDF",
+        "Dwanaście miesięcy przepływu popiołu",
+        "Nieograniczone terminy"
+      ],
+      "note": "To nie subskrypcja. Jeden zakup na zawsze, razem ze wszystkimi przyszłymi funkcjami Pro."
+    },
+    "note": "Nowe urządzenie? Stuknij Przywróć zakupy w Ustawieniach."
+  },
+  "faq": {
+    "title": "Częste pytania",
+    "items": [
+      {
+        "q": "Widżet pokazuje inny czas niż aplikacja.",
+        "a": "iOS nie odrysowuje widżetów ekranu początkowego co sekundę. Po otwarciu aplikacji wszystko się zgadza. Odliczanie co do sekundy znajdziesz w Dynamic Island i w aktywności na żywo na ekranie blokady."
+      },
+      {
+        "q": "Dmucham, ale ogień nie gaśnie.",
+        "a": "Zdmuchnąć można dopiero od 30 minut przed snem. Sprawdź, czy dostęp do mikrofonu jest dozwolony, i dmuchaj równo przez około sekundę blisko mikrofonu na dole iPhone'a. Krótki dźwięk nie wystarczy."
+      },
+      {
+        "q": "Czy mój głos jest nagrywany?",
+        "a": "Nie. Mierzona jest tylko siła dmuchnięcia. Żaden dźwięk nie jest nagrywany ani zapisywany."
+      },
+      {
+        "q": "Co widać, gdy śpię?",
+        "a": "Po porze snu pojawia się płonące serce i pokazuje, jak daleko jest noc do pobudki. Rano aplikacja pyta, czy położyłeś się o czasie; jeśli późno, dzisiejszy pergamin zaczyna się o tyle przypalony. Po połączeniu ze Zdrowiem bierze zapisany czas zaśnięcia bez pytania."
+      },
+      {
+        "q": "Kiedy przychodzą powiadomienia?",
+        "a": "Godzinę przed snem. Jeśli nie przychodzą, sprawdź Ustawienia > Powiadomienia > Płonący Pergamin."
+      },
+      {
+        "q": "Czy zużywa dużo baterii?",
+        "a": "Odliczanie w aplikacji zmienia się co sekundę, ale widżety iOS odświeża oszczędnie, więc wpływ jest niewielki."
+      },
+      {
+        "q": "Gdzie są moje dane?",
+        "a": "Pora pobudki i snu, terminy, refleksje i urny zostają na Twoim urządzeniu. Twórca dostaje tylko anonimowe statystyki użycia, diagnostykę awarii i opinie, które sam wyślesz. Bez reklam i śledzenia."
+      },
+      {
+        "q": "Czy Pro to subskrypcja?",
+        "a": "Nie. Płacisz raz i masz na zawsze. Na nowym urządzeniu stuknij Przywróć zakupy w Ustawieniach."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Złap ten wieczór,\nzanim zniknie",
+    "cta": "Pobierz za darmo z App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Język",
+    "privacy": "Polityka prywatności",
+    "contact": "Błędy, pomysły lub inne pytania? Napisz na {email}."
+  }
+}

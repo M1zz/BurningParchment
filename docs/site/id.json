@@ -1,0 +1,156 @@
+{
+  "title": "Perkamen Terbakar: lihat sisa harimu terbakar sebelum tidur",
+  "description": "Dari bangun sampai waktu tidur, sisa waktumu hari ini terbakar seperti selembar perkamen. Setengah jam sebelum tidur, tiup untuk memadamkan apinya.",
+  "hero": {
+    "headline": "Sisa hari ini\nterbakar di depan matamu",
+    "lead": "Malam yang terasa biasa saja dalam angka jadi terasa lain saat berupa perkamen yang terbakar. Setengah jam sebelum tidur, tiup layar untuk memadamkan api dan menutup hari.",
+    "cta": "Unduh gratis di App Store",
+    "note": "Perkamen terbakar, ritual meniup api, dan refleksi semuanya gratis."
+  },
+  "demo": {
+    "title": "Coba tiup sampai padam",
+    "lead": "Geser jam ke menjelang tidur, lalu tahan tombolnya atau tiup ke mikrofon.",
+    "clock": "Jam sekarang",
+    "now": "Sekarang",
+    "late": "20 menit sebelum tidur",
+    "remain": "Sisa waktu sampai tidur",
+    "hm": "{h} jam {m} mnt",
+    "m": "{m} menit",
+    "range": "Bangun {wake} · Tidur {bed}",
+    "blow": "Tahan untuk meniup",
+    "mic": "Tiup ke mikrofon",
+    "micOn": "Mendengarkan. Tiup ke mikrofon",
+    "micNone": "Browser ini tidak bisa memakai mikrofon. Tahan tombolnya saja.",
+    "wait": "Api bisa ditiup mulai 30 menit sebelum tidur",
+    "out": "Api padam",
+    "kept": "Kamu memadamkannya saat sisa {m} menit. Pecahan yang tersisa disimpan untukmu.",
+    "again": "Nyalakan lagi",
+    "note": "Sama seperti di aplikasi, yang diukur hanya kekuatan tiupan dan tidak ada yang direkam. Jam bangun dan tidur memakai bawaan aplikasi."
+  },
+  "problem": {
+    "title": "Pernah kaget, \"lho, sudah tengah malam?\"",
+    "text": "Selesai makan malam, duduk sebentar, eh harinya sudah habis. Angka di jam terlihat sama setiap malam, jadi waktu yang berkurang tidak terasa. Perkamen Terbakar menampilkan sisa waktu sebagai perkamen yang terbakar, supaya kamu sadar sebelum malam lenyap."
+  },
+  "features": [
+    {
+      "title": "Hari, minggu, dan tahunmu terbakar",
+      "text": "Dari bangun sampai waktu tidur, perkamen terbakar perlahan. Lihat juga sisa minggu ini, bulan ini, dan tahun ini dengan cara yang sama.\nTambahkan target bertanggal sebagai tenggat, dan hitung mundurnya berjalan berdampingan.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Tiup untuk menutup hari",
+      "text": "Mulai 30 menit sebelum tidur, tiup perkamen yang terbakar untuk memadamkan api. Hanya kekuatan napasmu yang dipakai, tidak ada yang direkam.\nPecahan yang tersisa disimpan. Balik dan tulis satu baris tentang hari ini di baliknya.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Waktu yang berlalu menjadi abu",
+      "text": "Renungkan harimu dalam satu baris, lalu letakkan sebagai titik di grafik dua sumbu sesuai cara waktu itu dipakai. Refleksi terkumpul di Guci Abu mingguan dan bulanan, dan bisa dibaca lagi di Buku Refleksi.\nAliran abu menunjukkan ke mana waktumu pergi lewat grafik sebaran dan kalender bara.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Atur jam bangun dan tidur",
+        "text": "Ketuk roda gigi di kanan atas. Perkamen menyala dan padam mengikuti jadwal itu."
+      },
+      {
+        "title": "Pilih periode",
+        "text": "Geser antara hari, minggu, bulan, dan tahun, atau sembunyikan halaman yang tidak perlu di Pengaturan."
+      },
+      {
+        "title": "Tambahkan widget",
+        "text": "Di Layar Utama atau Layar Terkunci, sisa waktu terlihat tanpa membuka aplikasi."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Tempat melihat sisa waktu",
+    "rows": [
+      ["Hari", "Dari bangun sampai waktu tidur"],
+      ["Minggu · Bulan · Tahun", "Sisa minggu ini, bulan ini, dan tahun ini"],
+      ["Waktu luang", "Perkamen minggu ini hanya terbakar di jam yang kamu sisihkan untuk diri sendiri (Pro)"],
+      ["Tenggat", "Sisa waktu sampai tanggal target. Satu gratis"],
+      ["Widget Layar Utama", "Perkamen harian ukuran kecil, sedang, dan besar. Minggu, bulan, tahun, dan tenggat ukuran kecil dan sedang"],
+      ["Widget Layar Terkunci", "Lingkaran, persegi panjang, dan satu baris"],
+      ["Dynamic Island · Aktivitas Langsung", "Mulai satu jam sebelum tidur atau sepanjang hari. Pilih atau matikan di Pengaturan"]
+    ],
+    "note": "Bentangkan Dynamic Island untuk melihat perkamen terbakar beserta hitung mundur lengkap."
+  },
+  "pricing": {
+    "title": "Perkamennya gratis. Pro menyimpan lebih banyak.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Perkamen harian, mingguan, bulanan, dan tahunan",
+        "Meniup api dan mengumpulkan pecahan",
+        "Refleksi satu baris, Guci Abu, dan Buku Refleksi",
+        "Cek pagi, bisa dihubungkan ke data tidur dari app Kesehatan",
+        "Widget Layar Utama dan Layar Terkunci, Dynamic Island",
+        "Satu tenggat"
+      ]
+    },
+    "pro": {
+      "name": "Perkamen Terbakar Pro",
+      "items": [
+        "Bakar hanya waktu luangmu sendiri",
+        "Tema: Hanji Cahaya Bulan, Celadon, Senja",
+        "Api: Api padang, Bara, Kembang api tangan",
+        "Bagikan pecahan sebagai kartu dan poster",
+        "Ekspor Buku Refleksi ke PDF",
+        "Aliran abu dua belas bulan",
+        "Tenggat tanpa batas"
+      ],
+      "note": "Bukan langganan. Sekali beli untuk selamanya, termasuk semua fitur Pro yang hadir nanti."
+    },
+    "note": "Ganti perangkat? Ketuk Pulihkan pembelian di Pengaturan."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Waktu di widget berbeda dengan di aplikasi.",
+        "a": "iOS tidak menggambar ulang widget Layar Utama setiap detik. Begitu aplikasi dibuka, widget langsung sinkron. Untuk hitung mundur per detik, lihat Dynamic Island dan Aktivitas Langsung di Layar Terkunci."
+      },
+      {
+        "q": "Sudah ditiup, tapi apinya tidak padam.",
+        "a": "Api baru bisa ditiup mulai 30 menit sebelum tidur. Pastikan akses mikrofon sudah diizinkan, lalu tiup dengan stabil sekitar satu detik di dekat mikrofon di bagian bawah iPhone. Bunyi singkat tidak cukup."
+      },
+      {
+        "q": "Apakah suaraku direkam?",
+        "a": "Tidak. Aplikasi hanya mengukur kekuatan tiupan. Tidak ada suara yang direkam atau disimpan."
+      },
+      {
+        "q": "Apa yang tampil saat aku tidur?",
+        "a": "Setelah waktu tidur lewat, muncul hati yang menyala dan menunjukkan sejauh mana tidurmu berjalan sampai bangun. Paginya, aplikasi menanyakan apakah semalam kamu tidur tepat waktu; kalau terlambat, perkamen pagi ini mulai dengan bagian yang hangus sebanyak itu. Jika dihubungkan dengan app Kesehatan, aplikasi memakai jam tertidur yang tercatat tanpa bertanya."
+      },
+      {
+        "q": "Kapan notifikasi datang?",
+        "a": "Satu jam sebelum tidur. Kalau tidak datang, periksa Pengaturan > Notifikasi > Perkamen Terbakar."
+      },
+      {
+        "q": "Apakah boros baterai?",
+        "a": "Hitung mundur di dalam aplikasi berganti setiap detik, tapi widget diperbarui iOS dengan cara hemat daya, jadi dampaknya kecil."
+      },
+      {
+        "q": "Di mana dataku disimpan?",
+        "a": "Jam bangun dan tidur, tenggat, refleksi, dan guci hanya disimpan di perangkatmu. Pengembang hanya menerima statistik penggunaan anonim, diagnosis kerusakan, dan masukan yang kamu kirim sendiri. Tanpa iklan, tanpa pelacakan."
+      },
+      {
+        "q": "Apakah Pro berlangganan?",
+        "a": "Tidak. Bayar sekali dan milikmu selamanya. Di perangkat baru, ketuk Pulihkan pembelian di Pengaturan."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Nikmati malam ini\nsebelum hilang",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Lewati ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Laporan bug, ide fitur, atau pertanyaan lain? Kirim ke {email}."
+  }
+}

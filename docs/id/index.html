@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perkamen Terbakar — Dukungan</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perkamen Terbakar: lihat sisa harimu terbakar sebelum tidur</title>
+  <meta name="description" content="Dari bangun sampai waktu tidur, sisa waktumu hari ini terbakar seperti selembar perkamen. Setengah jam sebelum tidur, tiup untuk memadamkan apinya.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/id/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Perkamen Terbakar: lihat sisa harimu terbakar sebelum tidur">
+  <meta property="og:description" content="Dari bangun sampai waktu tidur, sisa waktumu hari ini terbakar seperti selembar perkamen. Setengah jam sebelum tidur, tiup untuk memadamkan apinya.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/id/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/id/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="index.html" hreflang="id" lang="id" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Lewati ke konten</a>
+  <header class="bar">
+    <a class="brand" href="../id/"><img src="../icon.png" alt="" width="32" height="32">Perkamen Terbakar</a>
+    <a class="lang-link" href="#languages">Bahasa</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Perkamen Terbakar</h1>
-  <p>Dari saat bangun hingga waktu tidur, lihat harimu terbakar habis.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Tentang Aplikasi</h2>
-    <div class="card">
-      <h3>Apa itu Perkamen Terbakar?</h3>
-      <p>Perkamen Terbakar adalah aplikasi hitung mundur yang menunjukkan sisa harimu sebagai selembar perkamen yang terbakar perlahan. Dari bangun hingga waktu tidur, kamu bisa melihat sekilas berapa banyak waktu yang tersisa, agar bisa memanfaatkan jam-jam yang masih ada sebaik mungkin.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Hitung mundur harian</span>
-        <span class="badge">Minggu / Bulan / Tahun</span>
-        <span class="badge">Widget Layar Utama</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widget Layar Kunci</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Sisa hari ini<br>terbakar di depan matamu</h1>
+        <p class="lead">Malam yang terasa biasa saja dalam angka jadi terasa lain saat berupa perkamen yang terbakar. Setengah jam sebelum tidur, tiup layar untuk memadamkan api dan menutup hari.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Unduh gratis di App Store</a><a class="try" href="#try">Coba tiup sampai padam ↓</a></div>
+        <p class="muted small">Perkamen terbakar, ritual meniup api, dan refleksi semuanya gratis.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/id/01-week-dark.jpg" alt="Sisa hari ini terbakar di depan matamu" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Cara Menggunakan</h2>
-    <div class="card">
-      <h3>Atur waktu bangun dan waktu tidur</h3>
-      <p>Ketuk tombol ⚙️ di kanan atas untuk mengatur waktu bangun dan waktu tidurmu. Perkamen mulai terbakar saat kamu bangun, dan hitung mundur berakhir pada waktu tidur.</p>
-    </div>
-    <div class="card">
-      <h3>Pilih rentang waktu</h3>
-      <p>Pilih <strong>1 Hari · 1 Minggu · 1 Bulan · 1 Tahun</strong> dari tab di atas, lalu perkamen terbakar untuk menunjukkan berapa banyak yang tersisa dari rentang itu.</p>
-    </div>
-    <div class="card">
-      <h3>Widget Layar Utama</h3>
-      <p>Sentuh dan tahan Layar Utama → Tambah Widget → cari <strong>Perkamen Terbakar</strong> untuk menambahkan widget hari, minggu, bulan, atau tahun. Tersedia ukuran Kecil, Sedang, dan Besar.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island dan Layar Kunci</h3>
-      <p>Setelah hitung mundur dimulai, kamu bisa mengikuti sisa waktu secara langsung di Dynamic Island dan Layar Kunci. Tarik Dynamic Island ke bawah untuk melihat detail lebih banyak, lengkap dengan animasi perkamen yang terbakar.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Tanya Jawab</h2>
-    <div class="card">
-      <h3>Widget menampilkan waktu yang berbeda dari aplikasi</h3>
-      <p>Karena cara kerja iOS, widget Layar Utama tidak bisa diperbarui secara real time. Membuka aplikasi akan menyinkronkan data widget secara otomatis. Untuk hitung mundur langsung, gunakan Dynamic Island dan Layar Kunci.</p>
-    </div>
-    <div class="card">
-      <h3>Apa yang ditampilkan saat aku tidur?</h3>
-      <p>Setelah waktu tidur, animasi hati yang terbakar muncul dan menunjukkan sejauh mana tidurmu berjalan hingga waktu bangun. Selembar perkamen baru disiapkan 30 menit sebelum kamu bangun.</p>
-    </div>
-    <div class="card">
-      <h3>Kapan notifikasi datang?</h3>
-      <p>Kamu mendapat notifikasi satu jam sebelum waktu tidur. Jika tidak muncul, periksa apakah notifikasi diizinkan di <strong>Pengaturan → Notifikasi → Perkamen Terbakar</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>Apakah aplikasi menguras baterai?</h3>
-      <p>Hitung mundur di dalam aplikasi berdetak sekali per detik, tetapi widget berjalan pada jadwal hemat daya yang dikelola sistem, sehingga dampaknya pada baterai ditekan seminimal mungkin.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Coba tiup sampai padam</h2>
+      <p class="muted">Geser jam ke menjelang tidur, lalu tahan tombolnya atau tiup ke mikrofon.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Coba tiup sampai padam&quot;, &quot;lead&quot;: &quot;Geser jam ke menjelang tidur, lalu tahan tombolnya atau tiup ke mikrofon.&quot;, &quot;clock&quot;: &quot;Jam sekarang&quot;, &quot;now&quot;: &quot;Sekarang&quot;, &quot;late&quot;: &quot;20 menit sebelum tidur&quot;, &quot;remain&quot;: &quot;Sisa waktu sampai tidur&quot;, &quot;hm&quot;: &quot;{h} jam {m} mnt&quot;, &quot;m&quot;: &quot;{m} menit&quot;, &quot;range&quot;: &quot;Bangun {wake} · Tidur {bed}&quot;, &quot;blow&quot;: &quot;Tahan untuk meniup&quot;, &quot;mic&quot;: &quot;Tiup ke mikrofon&quot;, &quot;micOn&quot;: &quot;Mendengarkan. Tiup ke mikrofon&quot;, &quot;micNone&quot;: &quot;Browser ini tidak bisa memakai mikrofon. Tahan tombolnya saja.&quot;, &quot;wait&quot;: &quot;Api bisa ditiup mulai 30 menit sebelum tidur&quot;, &quot;out&quot;: &quot;Api padam&quot;, &quot;kept&quot;: &quot;Kamu memadamkannya saat sisa {m} menit. Pecahan yang tersisa disimpan untukmu.&quot;, &quot;again&quot;: &quot;Nyalakan lagi&quot;, &quot;note&quot;: &quot;Sama seperti di aplikasi, yang diukur hanya kekuatan tiupan dan tidak ada yang direkam. Jam bangun dan tidur memakai bawaan aplikasi.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Privasi</h2>
-    <div class="card">
-      <h3>Bagaimana informasimu ditangani</h3>
-      <p>Waktu bangun, waktu tidur, tenggat, refleksi, dan gucimu hanya disimpan di perangkatmu. Pengembang hanya menerima statistik penggunaan anonim, diagnostik kerusakan, dan masukan yang kamu pilih untuk dikirim.</p>
-      <ul>
-        <li>Aplikasi dan widgetnya hanya berbagi data melalui App Group di perangkatmu.</li>
-        <li>Tanpa iklan, tanpa pelacakan.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Baca Kebijakan Privasi lengkap →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Pernah kaget, "lho, sudah tengah malam?"</h2>
+      <p>Selesai makan malam, duduk sebentar, eh harinya sudah habis. Angka di jam terlihat sama setiap malam, jadi waktu yang berkurang tidak terasa. Perkamen Terbakar menampilkan sisa waktu sebagai perkamen yang terbakar, supaya kamu sadar sebelum malam lenyap.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Kontak</h2>
-    <div class="card">
-      <h3>Ada yang tidak berfungsi dengan benar?</h3>
-      <p>Untuk laporan bug, ide fitur, atau pertanyaan lainnya, kirim email ke alamat di bawah. Kami akan membalas secepat mungkin.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Hari, minggu, dan tahunmu terbakar</h2>
+        <p>Dari bangun sampai waktu tidur, perkamen terbakar perlahan. Lihat juga sisa minggu ini, bulan ini, dan tahun ini dengan cara yang sama.<br>Tambahkan target bertanggal sebagai tenggat, dan hitung mundurnya berjalan berdampingan.</p>
+      </div>
+      <div class="phone"><img src="../img/id/02-month-light.jpg" alt="Hari, minggu, dan tahunmu terbakar" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tiup untuk menutup hari</h2>
+        <p>Mulai 30 menit sebelum tidur, tiup perkamen yang terbakar untuk memadamkan api. Hanya kekuatan napasmu yang dipakai, tidak ada yang direkam.<br>Pecahan yang tersisa disimpan. Balik dan tulis satu baris tentang hari ini di baliknya.</p>
+      </div>
+      <div class="phone"><img src="../img/id/blowout-dark.jpg" alt="Tiup untuk menutup hari" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Kebijakan Privasi</a></p>
-  <p style="margin-top: 6px;">Dibuat dengan 🔥 di Korea</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Waktu yang berlalu menjadi abu</h2>
+        <p>Renungkan harimu dalam satu baris, lalu letakkan sebagai titik di grafik dua sumbu sesuai cara waktu itu dipakai. Refleksi terkumpul di Guci Abu mingguan dan bulanan, dan bisa dibaca lagi di Buku Refleksi.<br>Aliran abu menunjukkan ke mana waktumu pergi lewat grafik sebaran dan kalender bara.</p>
+      </div>
+      <div class="phone"><img src="../img/id/03-urn-dark.jpg" alt="Waktu yang berlalu menjadi abu" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Mulai dalam tiga langkah</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Atur jam bangun dan tidur</h3><p>Ketuk roda gigi di kanan atas. Perkamen menyala dan padam mengikuti jadwal itu.</p></li>
+<li class="card"><span class="n">2</span><h3>Pilih periode</h3><p>Geser antara hari, minggu, bulan, dan tahun, atau sembunyikan halaman yang tidak perlu di Pengaturan.</p></li>
+<li class="card"><span class="n">3</span><h3>Tambahkan widget</h3><p>Di Layar Utama atau Layar Terkunci, sisa waktu terlihat tanpa membuka aplikasi.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Tempat melihat sisa waktu</h2>
+      <div class="card table">
+        <dl><div><dt>Hari</dt><dd>Dari bangun sampai waktu tidur</dd></div><div><dt>Minggu · Bulan · Tahun</dt><dd>Sisa minggu ini, bulan ini, dan tahun ini</dd></div><div><dt>Waktu luang</dt><dd>Perkamen minggu ini hanya terbakar di jam yang kamu sisihkan untuk diri sendiri (Pro)</dd></div><div><dt>Tenggat</dt><dd>Sisa waktu sampai tanggal target. Satu gratis</dd></div><div><dt>Widget Layar Utama</dt><dd>Perkamen harian ukuran kecil, sedang, dan besar. Minggu, bulan, tahun, dan tenggat ukuran kecil dan sedang</dd></div><div><dt>Widget Layar Terkunci</dt><dd>Lingkaran, persegi panjang, dan satu baris</dd></div><div><dt>Dynamic Island · Aktivitas Langsung</dt><dd>Mulai satu jam sebelum tidur atau sepanjang hari. Pilih atau matikan di Pengaturan</dd></div></dl>
+      </div>
+      <p class="muted">Bentangkan Dynamic Island untuk melihat perkamen terbakar beserta hitung mundur lengkap.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Perkamennya gratis. Pro menyimpan lebih banyak.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Perkamen harian, mingguan, bulanan, dan tahunan</li><li>Meniup api dan mengumpulkan pecahan</li><li>Refleksi satu baris, Guci Abu, dan Buku Refleksi</li><li>Cek pagi, bisa dihubungkan ke data tidur dari app Kesehatan</li><li>Widget Layar Utama dan Layar Terkunci, Dynamic Island</li><li>Satu tenggat</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Perkamen Terbakar Pro</h3>
+          <ul><li>Bakar hanya waktu luangmu sendiri</li><li>Tema: Hanji Cahaya Bulan, Celadon, Senja</li><li>Api: Api padang, Bara, Kembang api tangan</li><li>Bagikan pecahan sebagai kartu dan poster</li><li>Ekspor Buku Refleksi ke PDF</li><li>Aliran abu dua belas bulan</li><li>Tenggat tanpa batas</li></ul>
+          <p class="muted">Bukan langganan. Sekali beli untuk selamanya, termasuk semua fitur Pro yang hadir nanti.</p>
+        </div>
+      </div>
+      <p class="muted">Ganti perangkat? Ketuk Pulihkan pembelian di Pengaturan.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Pertanyaan umum</h2>
+      <div class="faq"><details><summary>Waktu di widget berbeda dengan di aplikasi.</summary><p>iOS tidak menggambar ulang widget Layar Utama setiap detik. Begitu aplikasi dibuka, widget langsung sinkron. Untuk hitung mundur per detik, lihat Dynamic Island dan Aktivitas Langsung di Layar Terkunci.</p></details>
+<details><summary>Sudah ditiup, tapi apinya tidak padam.</summary><p>Api baru bisa ditiup mulai 30 menit sebelum tidur. Pastikan akses mikrofon sudah diizinkan, lalu tiup dengan stabil sekitar satu detik di dekat mikrofon di bagian bawah iPhone. Bunyi singkat tidak cukup.</p></details>
+<details><summary>Apakah suaraku direkam?</summary><p>Tidak. Aplikasi hanya mengukur kekuatan tiupan. Tidak ada suara yang direkam atau disimpan.</p></details>
+<details><summary>Apa yang tampil saat aku tidur?</summary><p>Setelah waktu tidur lewat, muncul hati yang menyala dan menunjukkan sejauh mana tidurmu berjalan sampai bangun. Paginya, aplikasi menanyakan apakah semalam kamu tidur tepat waktu; kalau terlambat, perkamen pagi ini mulai dengan bagian yang hangus sebanyak itu. Jika dihubungkan dengan app Kesehatan, aplikasi memakai jam tertidur yang tercatat tanpa bertanya.</p></details>
+<details><summary>Kapan notifikasi datang?</summary><p>Satu jam sebelum tidur. Kalau tidak datang, periksa Pengaturan &gt; Notifikasi &gt; Perkamen Terbakar.</p></details>
+<details><summary>Apakah boros baterai?</summary><p>Hitung mundur di dalam aplikasi berganti setiap detik, tapi widget diperbarui iOS dengan cara hemat daya, jadi dampaknya kecil.</p></details>
+<details><summary>Di mana dataku disimpan?</summary><p>Jam bangun dan tidur, tenggat, refleksi, dan guci hanya disimpan di perangkatmu. Pengembang hanya menerima statistik penggunaan anonim, diagnosis kerusakan, dan masukan yang kamu kirim sendiri. Tanpa iklan, tanpa pelacakan.</p></details>
+<details><summary>Apakah Pro berlangganan?</summary><p>Tidak. Bayar sekali dan milikmu selamanya. Di perangkat baru, ketuk Pulihkan pembelian di Pengaturan.</p></details></div>
+      <p class="contact">Laporan bug, ide fitur, atau pertanyaan lain? Kirim ke <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Nikmati malam ini<br>sebelum hilang</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Unduh gratis di App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Bahasa"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id" aria-current="page">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Kebijakan Privasi</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

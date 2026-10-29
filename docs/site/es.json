@@ -1,0 +1,156 @@
+{
+  "title": "Pergamino en Llamas: mira cómo se consume lo que queda de tu día",
+  "description": "Desde que te levantas hasta la hora de dormir, el tiempo que te queda hoy arde como un pergamino. Media hora antes de acostarte, sopla para apagar la llama.",
+  "hero": {
+    "headline": "Lo que queda de hoy\narde ante tus ojos",
+    "lead": "Una tarde que parece inofensiva en cifras se ve muy distinta como un pergamino en llamas. Media hora antes de dormir, sopla sobre la pantalla para apagar el fuego y cerrar el día.",
+    "cta": "Descárgala gratis en el App Store",
+    "note": "El pergamino en llamas, el ritual de soplar y las reflexiones son gratis."
+  },
+  "demo": {
+    "title": "Pruébalo: sopla y apágalo",
+    "lead": "Lleva la hora a justo antes de dormir y mantén pulsado el botón o sopla al micrófono.",
+    "clock": "Hora actual",
+    "now": "Ahora",
+    "late": "20 min antes de dormir",
+    "remain": "Hasta la hora de dormir",
+    "hm": "{h} h {m} min",
+    "m": "{m} min",
+    "range": "Despertar {wake} · Dormir {bed}",
+    "blow": "Mantén pulsado para soplar",
+    "mic": "Soplar al micrófono",
+    "micOn": "Escuchando. Sopla al micrófono",
+    "micNone": "Este navegador no puede usar el micrófono. Mantén pulsado el botón.",
+    "wait": "Puedes apagarlo desde 30 minutos antes de dormir",
+    "out": "El fuego se apagó",
+    "kept": "Lo apagaste cuando quedaban {m} min. Guardamos el fragmento que quedó.",
+    "again": "Volver a encender",
+    "note": "Igual que la app, solo mide la fuerza del soplo y no graba nada. Las horas de despertar y dormir son las predeterminadas de la app."
+  },
+  "problem": {
+    "title": "¿Te ha pasado eso de \"¿ya son las doce?\"",
+    "text": "Cenas, te sientas un rato y el día se ha ido. Los números del reloj se ven igual cada noche, así que no notas cómo se acaba el tiempo. Pergamino en Llamas te muestra lo que queda como un pergamino ardiendo, para que lo notes antes de que la tarde desaparezca."
+  },
+  "features": [
+    {
+      "title": "Tu día, tu semana y tu año, ardiendo",
+      "text": "Desde que te levantas hasta la hora de dormir, el pergamino arde poco a poco. También puedes ver lo que queda de esta semana, este mes y este año.\nAñade una meta con fecha como fecha límite y la cuenta atrás corre a la vez.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Apaga el día de un soplo",
+      "text": "Desde 30 minutos antes de dormir, sopla sobre el pergamino para apagar el fuego. Solo se usa la fuerza de tu soplo y no se graba nada.\nEl fragmento que queda se guarda. Dale la vuelta y escribe en el reverso una línea sobre tu día.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "El tiempo que pasó se queda en ceniza",
+      "text": "Repasa el día con una reflexión de una línea y colócala como un punto en un gráfico de dos ejes según cómo usaste ese tiempo. Las reflexiones se acumulan en urnas de ceniza semanales y mensuales, y puedes releerlas en el Libro de reflexiones.\nEl Flujo de ceniza te enseña adónde se fue el tiempo con un gráfico de distribución y un calendario de brasas.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Empieza en tres pasos",
+    "items": [
+      {
+        "title": "Elige tus horas",
+        "text": "Toca el engranaje de arriba a la derecha. El pergamino se enciende y se apaga según ese horario."
+      },
+      {
+        "title": "Elige el periodo",
+        "text": "Desliza entre día, semana, mes y año, u oculta en Ajustes las páginas que no necesites."
+      },
+      {
+        "title": "Añade un widget",
+        "text": "En la pantalla de inicio o la pantalla bloqueada verás el tiempo que queda sin abrir la app."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Dónde ver el tiempo que queda",
+    "rows": [
+      ["Día", "Desde que te levantas hasta la hora de dormir"],
+      ["Semana · Mes · Año", "Lo que queda de esta semana, este mes y este año"],
+      ["Tiempo libre", "El pergamino de la semana solo arde durante las horas que reservas para ti (Pro)"],
+      ["Fechas límite", "Tiempo que queda hasta la fecha de una meta. Una es gratis"],
+      ["Widgets de inicio", "Pergamino del día en tamaño pequeño, mediano y grande. Semana, mes, año y fechas límite en pequeño y mediano"],
+      ["Widgets de pantalla bloqueada", "Circular, rectangular y en línea"],
+      ["Dynamic Island · Actividad en vivo", "Desde una hora antes de dormir o todo el día. Elígelo o desactívalo en Ajustes"]
+    ],
+    "note": "Expande la Dynamic Island para ver el pergamino en llamas con la cuenta atrás completa."
+  },
+  "pricing": {
+    "title": "El pergamino es gratis. Pro guarda más.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Pergaminos de día, semana, mes y año",
+        "Soplar para apagar la llama y guardar fragmentos",
+        "Reflexiones de una línea, urnas de ceniza y Libro de reflexiones",
+        "Revisión matutina, con datos de sueño de Salud si quieres",
+        "Widgets de inicio y de pantalla bloqueada, Dynamic Island",
+        "Una fecha límite"
+      ]
+    },
+    "pro": {
+      "name": "Pergamino en Llamas Pro",
+      "items": [
+        "Quemar solo tu tiempo libre",
+        "Temas: Hanji a la luz de la luna, Celadón, Atardecer",
+        "Llamas: Incendio, Brasas, Chispas",
+        "Compartir tus fragmentos como tarjetas y pósters",
+        "Exportar el Libro de reflexiones en PDF",
+        "Doce meses de Flujo de ceniza",
+        "Fechas límite ilimitadas"
+      ],
+      "note": "No es una suscripción. Pagas una vez y es tuyo para siempre, con todas las funciones Pro que lleguen después."
+    },
+    "note": "¿Dispositivo nuevo? Toca Restaurar compras en Ajustes."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "El widget muestra otra hora que la app.",
+        "a": "iOS no redibuja los widgets de inicio cada segundo. Al abrir la app se sincronizan. Para una cuenta atrás que avanza segundo a segundo, usa la Dynamic Island y la Actividad en vivo de la pantalla bloqueada."
+      },
+      {
+        "q": "Soplo y el fuego no se apaga.",
+        "a": "Solo se puede apagar desde 30 minutos antes de dormir. Comprueba que has permitido el acceso al micrófono y sopla de forma continua, cerca del micrófono de la parte inferior del iPhone, durante un segundo más o menos. Un ruido corto no basta."
+      },
+      {
+        "q": "¿Se graba mi voz?",
+        "a": "No. Solo comprueba la fuerza del soplo. No se graba ni se guarda ningún sonido."
+      },
+      {
+        "q": "¿Qué muestra mientras duermo?",
+        "a": "Pasada la hora de dormir aparece un corazón en llamas que muestra cuánto llevas de noche hasta despertar. Por la mañana te pregunta si te acostaste a tu hora y, si fue tarde, el pergamino de hoy empieza chamuscado en esa medida. Si conectas la app Salud, usa la hora en que te dormiste sin preguntarte."
+      },
+      {
+        "q": "¿Cuándo llegan las notificaciones?",
+        "a": "Una hora antes de dormir. Si no te llegan, revisa Ajustes > Notificaciones > Pergamino en Llamas."
+      },
+      {
+        "q": "¿Gasta mucha batería?",
+        "a": "La cuenta atrás dentro de la app avanza cada segundo, pero los widgets se actualizan con un sistema de bajo consumo que gestiona iOS, así que el impacto es pequeño."
+      },
+      {
+        "q": "¿Dónde se guardan mis datos?",
+        "a": "Tus horas, fechas límite, reflexiones y urnas se quedan en tu dispositivo. El desarrollador solo recibe estadísticas de uso anónimas, diagnósticos de errores y los comentarios que decidas enviar. Sin anuncios ni rastreo."
+      },
+      {
+        "q": "¿Pro es una suscripción?",
+        "a": "No. Pagas una vez y lo conservas para siempre. En un dispositivo nuevo, toca Restaurar compras en Ajustes."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Atrapa esta tarde\nantes de que se vaya",
+    "cta": "Descárgala gratis en el App Store"
+  },
+  "ui": {
+    "skip": "Saltar al contenido",
+    "languages": "Idioma",
+    "privacy": "Política de privacidad",
+    "contact": "Errores, ideas o cualquier otra consulta: escríbenos a {email}."
+  }
+}

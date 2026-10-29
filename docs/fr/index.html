@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parchemin en flammes — Assistance</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parchemin en flammes : regardez le reste de votre journée se consumer</title>
+  <meta name="description" content="Du réveil jusqu&#x27;au coucher, le temps qu&#x27;il vous reste aujourd&#x27;hui brûle comme un parchemin. Trente minutes avant de dormir, soufflez pour éteindre la flamme.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Parchemin en flammes : regardez le reste de votre journée se consumer">
+  <meta property="og:description" content="Du réveil jusqu&#x27;au coucher, le temps qu&#x27;il vous reste aujourd&#x27;hui brûle comme un parchemin. Trente minutes avant de dormir, soufflez pour éteindre la flamme.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/fr/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/fr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="index.html" hreflang="fr" lang="fr" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="bar">
+    <a class="brand" href="../fr/"><img src="../icon.png" alt="" width="32" height="32">Parchemin en flammes</a>
+    <a class="lang-link" href="#languages">Langue</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Parchemin en flammes</h1>
-  <p>Du réveil au coucher, regardez votre journée se consumer.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>À propos de l’app</h2>
-    <div class="card">
-      <h3>Qu’est-ce que Parchemin en flammes ?</h3>
-      <p>Parchemin en flammes est une app de compte à rebours qui montre ce qu’il reste de votre journée sous la forme d’un parchemin qui brûle lentement. Du réveil au coucher, vous voyez d’un coup d’œil combien de temps il vous reste, pour profiter au mieux des heures à venir.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Compte à rebours du jour</span>
-        <span class="badge">Semaine / mois / année</span>
-        <span class="badge">Widgets de l’écran d’accueil</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widgets de l’écran verrouillé</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Ce qu'il reste d'aujourd'hui<br>brûle sous vos yeux</h1>
+        <p class="lead">Une soirée qui semble anodine en chiffres prend un autre visage sous la forme d'un parchemin en feu. Trente minutes avant le coucher, soufflez sur l'écran pour éteindre la flamme et clore la journée.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Télécharger gratuitement sur l'App Store</a><a class="try" href="#try">Soufflez pour essayer ↓</a></div>
+        <p class="muted small">Le parchemin en flammes, le rituel du souffle et les bilans sont gratuits.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/fr/01-week-dark.jpg" alt="Ce qu&#x27;il reste d&#x27;aujourd&#x27;hui brûle sous vos yeux" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Utilisation</h2>
-    <div class="card">
-      <h3>Réglez votre réveil et votre coucher</h3>
-      <p>Touchez le bouton ⚙️ en haut à droite pour régler votre heure de réveil et de coucher. Le parchemin commence à brûler à votre réveil, et le compte à rebours s’achève à l’heure du coucher.</p>
-    </div>
-    <div class="card">
-      <h3>Choisissez une période</h3>
-      <p>Choisissez <strong>1 jour · 1 semaine · 1 mois · 1 an</strong> dans les onglets du haut : le parchemin brûle pour montrer ce qu’il reste de cette période.</p>
-    </div>
-    <div class="card">
-      <h3>Widgets de l’écran d’accueil</h3>
-      <p>Maintenez le doigt sur l’écran d’accueil → Ajouter un widget → cherchez <strong>Parchemin en flammes</strong> pour ajouter un widget du jour, de la semaine, du mois ou de l’année. Les tailles petite, moyenne et grande sont disponibles.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island et écran verrouillé</h3>
-      <p>Une fois le compte à rebours lancé, suivez le temps restant en direct dans la Dynamic Island et sur l’écran verrouillé. Tirez la Dynamic Island vers le bas pour voir plus de détails, avec l’animation du parchemin qui brûle.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>FAQ</h2>
-    <div class="card">
-      <h3>Le widget affiche une heure différente de celle de l’app</h3>
-      <p>En raison du fonctionnement d’iOS, les widgets de l’écran d’accueil ne peuvent pas se mettre à jour en temps réel. L’ouverture de l’app synchronise automatiquement les données du widget. Pour un compte à rebours en direct, utilisez la Dynamic Island et l’écran verrouillé.</p>
-    </div>
-    <div class="card">
-      <h3>Qu’affiche l’app pendant mon sommeil ?</h3>
-      <p>Après l’heure du coucher, une animation de cœur en flammes apparaît et montre l’avancement de votre sommeil jusqu’au réveil. Un parchemin tout neuf se prépare 30 minutes avant votre réveil.</p>
-    </div>
-    <div class="card">
-      <h3>Quand les notifications arrivent-elles ?</h3>
-      <p>Vous recevez une notification une heure avant le coucher. Si elle n’arrive pas, vérifiez que les notifications sont autorisées dans <strong>Réglages → Notifications → Parchemin en flammes</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>L’app vide-t-elle ma batterie ?</h3>
-      <p>Le compte à rebours dans l’app avance une fois par seconde, mais les widgets suivent un calendrier économe géré par le système, ce qui limite au minimum l’impact sur l’autonomie.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Soufflez pour essayer</h2>
+      <p class="muted">Avancez l'heure juste avant le coucher, puis maintenez le bouton ou soufflez dans le micro.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Soufflez pour essayer&quot;, &quot;lead&quot;: &quot;Avancez l&#x27;heure juste avant le coucher, puis maintenez le bouton ou soufflez dans le micro.&quot;, &quot;clock&quot;: &quot;Heure actuelle&quot;, &quot;now&quot;: &quot;Maintenant&quot;, &quot;late&quot;: &quot;20 min avant le coucher&quot;, &quot;remain&quot;: &quot;Avant le coucher&quot;, &quot;hm&quot;: &quot;{h} h {m} min&quot;, &quot;m&quot;: &quot;{m} min&quot;, &quot;range&quot;: &quot;Réveil {wake} · Coucher {bed}&quot;, &quot;blow&quot;: &quot;Maintenir pour souffler&quot;, &quot;mic&quot;: &quot;Souffler dans le micro&quot;, &quot;micOn&quot;: &quot;À l&#x27;écoute. Soufflez dans le micro&quot;, &quot;micNone&quot;: &quot;Ce navigateur ne peut pas utiliser le micro. Maintenez plutôt le bouton.&quot;, &quot;wait&quot;: &quot;Vous pourrez l&#x27;éteindre 30 minutes avant le coucher&quot;, &quot;out&quot;: &quot;Le feu est éteint&quot;, &quot;kept&quot;: &quot;Vous l&#x27;avez éteint avec {m} min d&#x27;avance. Le fragment restant est mis de côté.&quot;, &quot;again&quot;: &quot;Rallumer&quot;, &quot;note&quot;: &quot;Comme dans l&#x27;app, seule la force du souffle compte : rien n&#x27;est enregistré. Les heures de réveil et de coucher sont celles par défaut de l&#x27;app.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Confidentialité</h2>
-    <div class="card">
-      <h3>Comment vos informations sont traitées</h3>
-      <p>Votre heure de réveil, votre heure de coucher, vos échéances, vos bilans et vos urnes sont stockés uniquement sur votre appareil. Le développeur ne reçoit que des statistiques d’usage anonymes, des diagnostics de plantage et les retours que vous choisissez d’envoyer.</p>
-      <ul>
-        <li>L’app et ses widgets ne partagent des données que via un App Group sur votre appareil.</li>
-        <li>Aucune publicité, aucun suivi.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Lire la politique de confidentialité complète →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>« Déjà minuit ? » Ça vous dit quelque chose ?</h2>
+      <p>On dîne, on se pose cinq minutes, et la journée est passée. Les chiffres de l'horloge se ressemblent chaque soir, alors on ne sent pas le temps filer. Parchemin en flammes montre ce qu'il reste sous la forme d'un parchemin qui se consume, pour que vous le remarquiez avant que la soirée ne disparaisse.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Contact</h2>
-    <div class="card">
-      <h3>Quelque chose ne fonctionne pas ?</h3>
-      <p>Pour signaler un bug, proposer une idée ou poser toute autre question, écrivez-nous à l’adresse ci-dessous. Nous vous répondrons dès que possible.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Votre journée, votre semaine, votre année se consument</h2>
+        <p>Du réveil jusqu'au coucher, le parchemin brûle lentement. Voyez aussi ce qu'il reste de la semaine, du mois et de l'année.<br>Ajoutez un objectif daté comme échéance et son compte à rebours avance en parallèle.</p>
+      </div>
+      <div class="phone"><img src="../img/fr/02-month-light.jpg" alt="Votre journée, votre semaine, votre année se consument" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Éteindre la journée d'un souffle</h2>
+        <p>Dès 30 minutes avant le coucher, soufflez sur le parchemin pour éteindre le feu. Seule la force du souffle est utilisée, rien n'est enregistré.<br>Le fragment qui reste est conservé. Retournez-le et écrivez une ligne sur votre journée au dos.</p>
+      </div>
+      <div class="phone"><img src="../img/fr/blowout-dark.jpg" alt="Éteindre la journée d&#x27;un souffle" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Politique de confidentialité</a></p>
-  <p style="margin-top: 6px;">Fait avec 🔥 en Corée</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Le temps passé devient cendre</h2>
+        <p>Faites le bilan du jour en une ligne et placez-le comme un point sur un graphique à deux axes selon l'usage de ce temps. Les bilans s'accumulent dans des urnes de cendres par semaine et par mois, à relire dans le Livre des bilans.<br>Le Flux de cendres montre où votre temps est parti, avec un graphique de répartition et un calendrier de braises.</p>
+      </div>
+      <div class="phone"><img src="../img/fr/03-urn-dark.jpg" alt="Le temps passé devient cendre" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Trois étapes pour commencer</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Réglez réveil et coucher</h3><p>Touchez la roue dentée en haut à droite. Le parchemin s'allume et s'éteint selon cet horaire.</p></li>
+<li class="card"><span class="n">2</span><h3>Choisissez la période</h3><p>Balayez entre jour, semaine, mois et année, ou masquez les pages inutiles dans les Réglages.</p></li>
+<li class="card"><span class="n">3</span><h3>Ajoutez un widget</h3><p>Sur l'écran d'accueil ou l'écran verrouillé, le temps restant s'affiche sans ouvrir l'app.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Où voir le temps qu'il reste</h2>
+      <div class="card table">
+        <dl><div><dt>Jour</dt><dd>Du réveil jusqu'au coucher</dd></div><div><dt>Semaine · Mois · Année</dt><dd>Ce qu'il reste de la semaine, du mois et de l'année</dd></div><div><dt>Temps libre</dt><dd>Le parchemin de la semaine ne brûle que pendant les heures que vous gardez pour vous (Pro)</dd></div><div><dt>Échéances</dt><dd>Temps restant jusqu'à la date d'un objectif. Une est gratuite</dd></div><div><dt>Widgets de l'écran d'accueil</dt><dd>Parchemin du jour en petit, moyen et grand. Semaine, mois, année et échéances en petit et moyen</dd></div><div><dt>Widgets de l'écran verrouillé</dt><dd>Circulaire, rectangulaire et en ligne</dd></div><div><dt>Dynamic Island · Activité en direct</dt><dd>Dès une heure avant le coucher, ou toute la journée. À choisir ou désactiver dans les Réglages</dd></div></dl>
+      </div>
+      <p class="muted">Développez la Dynamic Island pour voir le parchemin en flammes avec le compte à rebours complet.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Le parchemin est gratuit. Pro en garde davantage.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratuit</h3>
+          <ul><li>Parchemins du jour, de la semaine, du mois et de l'année</li><li>Souffler la flamme et garder les fragments</li><li>Bilans en une ligne, urnes de cendres et Livre des bilans</li><li>Point du matin, avec les données de sommeil de Santé si vous le souhaitez</li><li>Widgets d'accueil et d'écran verrouillé, Dynamic Island</li><li>Une échéance</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Parchemin en flammes Pro</h3>
+          <ul><li>Ne brûler que votre temps libre</li><li>Thèmes : Hanji au clair de lune, Céladon, Crépuscule</li><li>Flammes : Feu de prairie, Braises, Cierge magique</li><li>Partager vos fragments en cartes et en affiches</li><li>Exporter le Livre des bilans en PDF</li><li>Douze mois de Flux de cendres</li><li>Échéances illimitées</li></ul>
+          <p class="muted">Pas d'abonnement. Un seul achat, à vie, avec toutes les fonctions Pro à venir.</p>
+        </div>
+      </div>
+      <p class="muted">Nouvel appareil ? Touchez Restaurer les achats dans les Réglages.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Questions fréquentes</h2>
+      <div class="faq"><details><summary>Le widget n'affiche pas la même heure que l'app.</summary><p>iOS ne redessine pas les widgets de l'écran d'accueil chaque seconde. Ouvrir l'app les resynchronise. Pour un compte à rebours à la seconde, utilisez la Dynamic Island et l'Activité en direct de l'écran verrouillé.</p></details>
+<details><summary>Je souffle, mais le feu ne s'éteint pas.</summary><p>On ne peut l'éteindre qu'à partir de 30 minutes avant le coucher. Vérifiez que l'accès au micro est autorisé, puis soufflez régulièrement pendant environ une seconde près du micro en bas de l'iPhone. Un bruit bref ne suffit pas.</p></details>
+<details><summary>Ma voix est-elle enregistrée ?</summary><p>Non. Seule la force du souffle est mesurée. Aucun son n'est enregistré ni conservé.</p></details>
+<details><summary>Qu'affiche l'app pendant que je dors ?</summary><p>Après l'heure du coucher, un cœur en flammes apparaît et montre où en est votre nuit jusqu'au réveil. Le matin, l'app vous demande si vous vous êtes couché à l'heure ; si c'était tard, le parchemin du jour commence d'autant roussi. Reliée à l'app Santé, elle utilise l'heure d'endormissement enregistrée sans vous la demander.</p></details>
+<details><summary>Quand arrivent les notifications ?</summary><p>Une heure avant le coucher. Si rien n'arrive, vérifiez Réglages &gt; Notifications &gt; Parchemin en flammes.</p></details>
+<details><summary>L'app consomme-t-elle beaucoup de batterie ?</summary><p>Le compte à rebours dans l'app avance chaque seconde, mais les widgets sont actualisés par iOS en mode économe. L'impact reste faible.</p></details>
+<details><summary>Où sont stockées mes données ?</summary><p>Vos heures, échéances, bilans et urnes restent sur votre appareil. Le développeur ne reçoit que des statistiques d'utilisation anonymes, des diagnostics de plantage et les retours que vous choisissez d'envoyer. Ni publicité ni pistage.</p></details>
+<details><summary>Pro est-il un abonnement ?</summary><p>Non. Vous payez une fois et le gardez à vie. Sur un nouvel appareil, touchez Restaurer les achats dans les Réglages.</p></details></div>
+      <p class="contact">Bug, idée ou autre question : écrivez à <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Retenez cette soirée<br>avant qu'elle ne file</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Télécharger gratuitement sur l'App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Langue"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr" aria-current="page">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Politique de confidentialité</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

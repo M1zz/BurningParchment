@@ -1,0 +1,156 @@
+{
+  "title": "Hořící pergamen: sledujte, jak zbytek dne dohořívá",
+  "description": "Od probuzení až do večerky vám zbývající čas dne hoří jako pergamen. Půl hodiny před spaním plamen sfouknete a den uzavřete.",
+  "hero": {
+    "headline": "Co zbývá z dneška,\nhoří vám před očima",
+    "lead": "Večer, který v číslech vypadá nevinně, působí jako hořící pergamen úplně jinak. Půl hodiny před spaním foukněte na displej, oheň uhaste a den uzavřete.",
+    "cta": "Stáhnout zdarma v App Storu",
+    "note": "Hořící pergamen, sfouknutí plamene i ohlédnutí jsou zdarma."
+  },
+  "demo": {
+    "title": "Zkuste ho sfouknout",
+    "lead": "Posuňte čas těsně před spaní, pak podržte tlačítko nebo foukněte do mikrofonu.",
+    "clock": "Teď je",
+    "now": "Teď",
+    "late": "20 min před spaním",
+    "remain": "Do spaní zbývá",
+    "hm": "{h} h {m} min",
+    "m": "{m} min",
+    "range": "Vstávání {wake} · Spaní {bed}",
+    "blow": "Podržte a foukejte",
+    "mic": "Foukat do mikrofonu",
+    "micOn": "Poslouchám. Foukněte do mikrofonu",
+    "micNone": "Tento prohlížeč neumí použít mikrofon. Podržte tlačítko.",
+    "wait": "Sfouknout můžete od 30 minut před spaním",
+    "out": "Oheň zhasl",
+    "kept": "Sfoukli jste ho, když zbývalo {m} min. Zbylý úlomek se uschová.",
+    "again": "Zapálit znovu",
+    "note": "Stejně jako aplikace měří jen sílu dechu a nic nenahrává. Čas vstávání a spaní jsou výchozí hodnoty aplikace."
+  },
+  "problem": {
+    "title": "Taky jste se někdy divili, že už je půlnoc?",
+    "text": "Povečeříte, na chvíli si sednete a den je pryč. Čísla na hodinách vypadají každý večer stejně, takže necítíte, jak čas ubývá. Hořící pergamen ukazuje zbytek dne jako pergamen, který dohořívá, abyste si toho všimli dřív, než večer zmizí."
+  },
+  "features": [
+    {
+      "title": "Den, týden i rok dohořívají",
+      "text": "Od probuzení až do spaní pergamen pomalu hoří. Stejně uvidíte, kolik zbývá z tohoto týdne, měsíce a roku.\nPřidejte cíl s datem jako termín a odpočet poběží souběžně.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Sfoukněte den",
+      "text": "Od 30 minut před spaním foukněte na hořící pergamen a oheň uhaste. Využívá se jen síla dechu, nic se nenahrává.\nZbylý úlomek se uschová. Otočte ho a na rub napište řádek o dnešku.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Uplynulý čas zůstává jako popel",
+      "text": "Ohlédněte se za dnem jedním řádkem a umístěte ho jako bod do grafu se dvěma osami podle toho, jak jste čas využili. Ohlédnutí se ukládají do týdenních a měsíčních uren s popelem a můžete si je znovu přečíst v Knize ohlédnutí.\nTok popela ukazuje, kam se čas poděl, pomocí grafu rozložení a kalendáře uhlíků.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Začnete ve třech krocích",
+    "items": [
+      {
+        "title": "Nastavte vstávání a spaní",
+        "text": "Klepněte na ozubené kolo vpravo nahoře. Podle toho se pergamen zapálí a zhasne."
+      },
+      {
+        "title": "Vyberte období",
+        "text": "Přejíždějte mezi dnem, týdnem, měsícem a rokem, nebo nepotřebné stránky skryjte v Nastavení."
+      },
+      {
+        "title": "Přidejte widget",
+        "text": "Na ploše nebo zamčené obrazovce uvidíte zbývající čas bez otevírání aplikace."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kde uvidíte zbývající čas",
+    "rows": [
+      ["Den", "Od probuzení do spaní"],
+      ["Týden · Měsíc · Rok", "Kolik zbývá z tohoto týdne, měsíce a roku"],
+      ["Volný čas", "Týdenní pergamen hoří jen v hodinách, které si necháváte pro sebe (Pro)"],
+      ["Termíny", "Čas do data cíle. Jeden zdarma"],
+      ["Widgety na ploše", "Denní pergamen v malé, střední a velké velikosti. Týden, měsíc, rok a termíny v malé a střední"],
+      ["Widgety na zamčené obrazovce", "Kruhový, obdélníkový a v řádku"],
+      ["Dynamic Island · Živá aktivita", "Od hodiny před spaním, nebo celý den. Vyberete či vypnete v Nastavení"]
+    ],
+    "note": "Rozbalte Dynamic Island a uvidíte hořící pergamen s úplným odpočtem."
+  },
+  "pricing": {
+    "title": "Pergamen je zdarma. Pro uchová víc.",
+    "free": {
+      "name": "Zdarma",
+      "items": [
+        "Pergameny pro den, týden, měsíc a rok",
+        "Sfouknutí plamene a sbírání úlomků",
+        "Jednořádková ohlédnutí, urny s popelem a Kniha ohlédnutí",
+        "Ranní kontrola, volitelně s daty spánku ze Zdraví",
+        "Widgety na plochu a zamčenou obrazovku, Dynamic Island",
+        "Jeden termín"
+      ]
+    },
+    "pro": {
+      "name": "Hořící pergamen Pro",
+      "items": [
+        "Pálit jen svůj volný čas",
+        "Motivy: Měsíční hanji, Celadon, Soumrak",
+        "Plameny: Stepní požár, Uhlíky, Prskavka",
+        "Sdílet úlomky jako karty a plakáty",
+        "Exportovat Knihu ohlédnutí do PDF",
+        "Tok popela za dvanáct měsíců",
+        "Neomezené termíny"
+      ],
+      "note": "Není to předplatné. Jeden nákup navždy, včetně všech budoucích funkcí Pro."
+    },
+    "note": "Nové zařízení? V Nastavení klepněte na Obnovit nákupy."
+  },
+  "faq": {
+    "title": "Časté dotazy",
+    "items": [
+      {
+        "q": "Widget ukazuje jiný čas než aplikace.",
+        "a": "iOS nepřekresluje widgety na ploše každou sekundu. Po otevření aplikace se srovnají. Odpočet po sekundách najdete v Dynamic Islandu a v živé aktivitě na zamčené obrazovce."
+      },
+      {
+        "q": "Foukám, ale oheň nezhasne.",
+        "a": "Sfouknout jde až od 30 minut před spaním. Zkontrolujte, že je povolený přístup k mikrofonu, a zhruba sekundu rovnoměrně foukejte na mikrofon dole na iPhonu. Krátký zvuk nestačí."
+      },
+      {
+        "q": "Nahrává se můj hlas?",
+        "a": "Ne. Měří se jen síla foukání. Žádný zvuk se nenahrává ani neukládá."
+      },
+      {
+        "q": "Co se zobrazuje, když spím?",
+        "a": "Po čase spaní se objeví hořící srdce a ukazuje, kolik noci uplynulo do probuzení. Ráno se aplikace zeptá, jestli jste šli spát včas, a pokud ne, dnešní pergamen začne o tu dobu ohořelý. Po propojení se Zdravím použije zaznamenaný čas usnutí bez ptaní."
+      },
+      {
+        "q": "Kdy chodí oznámení?",
+        "a": "Hodinu před spaním. Pokud nepřijde, zkontrolujte Nastavení > Oznámení > Hořící pergamen."
+      },
+      {
+        "q": "Vybíjí aplikace hodně baterii?",
+        "a": "Odpočet v aplikaci se mění každou sekundu, ale widgety iOS aktualizuje úsporně, takže vliv je malý."
+      },
+      {
+        "q": "Kde jsou uložená moje data?",
+        "a": "Časy vstávání a spaní, termíny, ohlédnutí a urny zůstávají ve vašem zařízení. Vývojář dostává jen anonymní statistiky používání, diagnostiku pádů a zpětnou vazbu, kterou sami pošlete. Žádné reklamy ani sledování."
+      },
+      {
+        "q": "Je Pro předplatné?",
+        "a": "Ne. Zaplatíte jednou a máte ho napořád. Na novém zařízení klepněte v Nastavení na Obnovit nákupy."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Zachyťte dnešní večer,\nnež zmizí",
+    "cta": "Stáhnout zdarma v App Storu"
+  },
+  "ui": {
+    "skip": "Přejít na obsah",
+    "languages": "Jazyk",
+    "privacy": "Zásady ochrany soukromí",
+    "contact": "Chyby, nápady a další dotazy pište na {email}."
+  }
+}

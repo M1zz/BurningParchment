@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hořící pergamen — Podpora</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hořící pergamen: sledujte, jak zbytek dne dohořívá</title>
+  <meta name="description" content="Od probuzení až do večerky vám zbývající čas dne hoří jako pergamen. Půl hodiny před spaním plamen sfouknete a den uzavřete.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/cs/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hořící pergamen: sledujte, jak zbytek dne dohořívá">
+  <meta property="og:description" content="Od probuzení až do večerky vám zbývající čas dne hoří jako pergamen. Půl hodiny před spaním plamen sfouknete a den uzavřete.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="index.html" hreflang="cs" lang="cs" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Přejít na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">Hořící pergamen</a>
+    <a class="lang-link" href="#languages">Jazyk</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Hořící pergamen</h1>
-  <p>Od probuzení až po usnutí sledujte, jak váš den dohořívá.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>O aplikaci</h2>
-    <div class="card">
-      <h3>Co je Hořící pergamen?</h3>
-      <p>Hořící pergamen je aplikace pro odpočítávání, která ukazuje, kolik z vašeho dne zbývá, jako pomalu hořící list pergamenu. Od probuzení do usnutí na první pohled vidíte, kolik času zbývá, abyste mohli co nejlépe využít hodiny, které vás ještě čekají.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Odpočet dne</span>
-        <span class="badge">Týden / měsíc / rok</span>
-        <span class="badge">Widgety na ploše</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widgety na zamčené obrazovce</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Co zbývá z dneška,<br>hoří vám před očima</h1>
+        <p class="lead">Večer, který v číslech vypadá nevinně, působí jako hořící pergamen úplně jinak. Půl hodiny před spaním foukněte na displej, oheň uhaste a den uzavřete.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Stáhnout zdarma v App Storu</a><a class="try" href="#try">Zkuste ho sfouknout ↓</a></div>
+        <p class="muted small">Hořící pergamen, sfouknutí plamene i ohlédnutí jsou zdarma.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/cs/01-week-dark.jpg" alt="Co zbývá z dneška, hoří vám před očima" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Jak to používat</h2>
-    <div class="card">
-      <h3>Nastavte čas vstávání a usínání</h3>
-      <p>Klepněte na tlačítko ⚙️ vpravo nahoře a nastavte čas vstávání a usínání. Pergamen začne hořet, když se probudíte, a odpočet končí v čase usínání.</p>
-    </div>
-    <div class="card">
-      <h3>Vyberte časové období</h3>
-      <p>Na kartách nahoře zvolte <strong>1 den · 1 týden · 1 měsíc · 1 rok</strong> a pergamen bude hořet podle toho, kolik z daného období zbývá.</p>
-    </div>
-    <div class="card">
-      <h3>Widgety na ploše</h3>
-      <p>Podržte plochu → Přidat widget → vyhledejte <strong>Hořící pergamen</strong> a přidejte widget dne, týdne, měsíce nebo roku. K dispozici jsou malá, střední a velká velikost.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island a zamčená obrazovka</h3>
-      <p>Jakmile odpočet začne, můžete zbývající čas sledovat živě v Dynamic Island a na zamčené obrazovce. Přetažením Dynamic Island dolů uvidíte podrobnosti i animaci hořícího pergamenu.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Časté dotazy</h2>
-    <div class="card">
-      <h3>Widget ukazuje jiný čas než aplikace</h3>
-      <p>Kvůli způsobu, jakým iOS funguje, se widgety na ploše nemohou obnovovat v reálném čase. Otevřením aplikace se data widgetu automaticky synchronizují. Pro živý odpočet použijte Dynamic Island a zamčenou obrazovku.</p>
-    </div>
-    <div class="card">
-      <h3>Co se zobrazuje, když spím?</h3>
-      <p>Po čase usínání se objeví animace hořícího srdce, která ukazuje, jak daleko jste se svým spánkem až do probuzení. Nový list pergamenu se připraví 30 minut před vaším probuzením.</p>
-    </div>
-    <div class="card">
-      <h3>Kdy přicházejí oznámení?</h3>
-      <p>Oznámení dostanete hodinu před časem usínání. Pokud nepřijde, zkontrolujte, že jsou oznámení povolena v <strong>Nastavení → Oznámení → Hořící pergamen</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>Vybíjí aplikace baterii?</h3>
-      <p>Odpočet v aplikaci tiká jednou za sekundu, ale widgety běží podle úsporného plánu řízeného systémem, takže vliv na výdrž baterie je minimální.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Zkuste ho sfouknout</h2>
+      <p class="muted">Posuňte čas těsně před spaní, pak podržte tlačítko nebo foukněte do mikrofonu.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Zkuste ho sfouknout&quot;, &quot;lead&quot;: &quot;Posuňte čas těsně před spaní, pak podržte tlačítko nebo foukněte do mikrofonu.&quot;, &quot;clock&quot;: &quot;Teď je&quot;, &quot;now&quot;: &quot;Teď&quot;, &quot;late&quot;: &quot;20 min před spaním&quot;, &quot;remain&quot;: &quot;Do spaní zbývá&quot;, &quot;hm&quot;: &quot;{h} h {m} min&quot;, &quot;m&quot;: &quot;{m} min&quot;, &quot;range&quot;: &quot;Vstávání {wake} · Spaní {bed}&quot;, &quot;blow&quot;: &quot;Podržte a foukejte&quot;, &quot;mic&quot;: &quot;Foukat do mikrofonu&quot;, &quot;micOn&quot;: &quot;Poslouchám. Foukněte do mikrofonu&quot;, &quot;micNone&quot;: &quot;Tento prohlížeč neumí použít mikrofon. Podržte tlačítko.&quot;, &quot;wait&quot;: &quot;Sfouknout můžete od 30 minut před spaním&quot;, &quot;out&quot;: &quot;Oheň zhasl&quot;, &quot;kept&quot;: &quot;Sfoukli jste ho, když zbývalo {m} min. Zbylý úlomek se uschová.&quot;, &quot;again&quot;: &quot;Zapálit znovu&quot;, &quot;note&quot;: &quot;Stejně jako aplikace měří jen sílu dechu a nic nenahrává. Čas vstávání a spaní jsou výchozí hodnoty aplikace.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Soukromí</h2>
-    <div class="card">
-      <h3>Jak nakládáme s vašimi informacemi</h3>
-      <p>Čas vstávání, čas usínání, termíny, ohlédnutí a urny jsou uloženy jen ve vašem zařízení. Vývojář dostává pouze anonymní statistiky používání, diagnostiku pádů a zpětnou vazbu, kterou se rozhodnete odeslat.</p>
-      <ul>
-        <li>Aplikace a její widgety sdílejí data jen přes App Group ve vašem zařízení.</li>
-        <li>Žádné reklamy, žádné sledování.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Přečtěte si celé Zásady ochrany osobních údajů →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Taky jste se někdy divili, že už je půlnoc?</h2>
+      <p>Povečeříte, na chvíli si sednete a den je pryč. Čísla na hodinách vypadají každý večer stejně, takže necítíte, jak čas ubývá. Hořící pergamen ukazuje zbytek dne jako pergamen, který dohořívá, abyste si toho všimli dřív, než večer zmizí.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Kontakt</h2>
-    <div class="card">
-      <h3>Něco nefunguje, jak má?</h3>
-      <p>Pro hlášení chyb, nápady na funkce nebo jakékoli jiné dotazy nám napište na adresu níže. Odpovíme co nejdříve.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Den, týden i rok dohořívají</h2>
+        <p>Od probuzení až do spaní pergamen pomalu hoří. Stejně uvidíte, kolik zbývá z tohoto týdne, měsíce a roku.<br>Přidejte cíl s datem jako termín a odpočet poběží souběžně.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/02-month-light.jpg" alt="Den, týden i rok dohořívají" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sfoukněte den</h2>
+        <p>Od 30 minut před spaním foukněte na hořící pergamen a oheň uhaste. Využívá se jen síla dechu, nic se nenahrává.<br>Zbylý úlomek se uschová. Otočte ho a na rub napište řádek o dnešku.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/blowout-dark.jpg" alt="Sfoukněte den" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Zásady ochrany osobních údajů</a></p>
-  <p style="margin-top: 6px;">Vytvořeno s 🔥 v Koreji</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Uplynulý čas zůstává jako popel</h2>
+        <p>Ohlédněte se za dnem jedním řádkem a umístěte ho jako bod do grafu se dvěma osami podle toho, jak jste čas využili. Ohlédnutí se ukládají do týdenních a měsíčních uren s popelem a můžete si je znovu přečíst v Knize ohlédnutí.<br>Tok popela ukazuje, kam se čas poděl, pomocí grafu rozložení a kalendáře uhlíků.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/03-urn-dark.jpg" alt="Uplynulý čas zůstává jako popel" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Začnete ve třech krocích</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Nastavte vstávání a spaní</h3><p>Klepněte na ozubené kolo vpravo nahoře. Podle toho se pergamen zapálí a zhasne.</p></li>
+<li class="card"><span class="n">2</span><h3>Vyberte období</h3><p>Přejíždějte mezi dnem, týdnem, měsícem a rokem, nebo nepotřebné stránky skryjte v Nastavení.</p></li>
+<li class="card"><span class="n">3</span><h3>Přidejte widget</h3><p>Na ploše nebo zamčené obrazovce uvidíte zbývající čas bez otevírání aplikace.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kde uvidíte zbývající čas</h2>
+      <div class="card table">
+        <dl><div><dt>Den</dt><dd>Od probuzení do spaní</dd></div><div><dt>Týden · Měsíc · Rok</dt><dd>Kolik zbývá z tohoto týdne, měsíce a roku</dd></div><div><dt>Volný čas</dt><dd>Týdenní pergamen hoří jen v hodinách, které si necháváte pro sebe (Pro)</dd></div><div><dt>Termíny</dt><dd>Čas do data cíle. Jeden zdarma</dd></div><div><dt>Widgety na ploše</dt><dd>Denní pergamen v malé, střední a velké velikosti. Týden, měsíc, rok a termíny v malé a střední</dd></div><div><dt>Widgety na zamčené obrazovce</dt><dd>Kruhový, obdélníkový a v řádku</dd></div><div><dt>Dynamic Island · Živá aktivita</dt><dd>Od hodiny před spaním, nebo celý den. Vyberete či vypnete v Nastavení</dd></div></dl>
+      </div>
+      <p class="muted">Rozbalte Dynamic Island a uvidíte hořící pergamen s úplným odpočtem.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Pergamen je zdarma. Pro uchová víc.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Zdarma</h3>
+          <ul><li>Pergameny pro den, týden, měsíc a rok</li><li>Sfouknutí plamene a sbírání úlomků</li><li>Jednořádková ohlédnutí, urny s popelem a Kniha ohlédnutí</li><li>Ranní kontrola, volitelně s daty spánku ze Zdraví</li><li>Widgety na plochu a zamčenou obrazovku, Dynamic Island</li><li>Jeden termín</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Hořící pergamen Pro</h3>
+          <ul><li>Pálit jen svůj volný čas</li><li>Motivy: Měsíční hanji, Celadon, Soumrak</li><li>Plameny: Stepní požár, Uhlíky, Prskavka</li><li>Sdílet úlomky jako karty a plakáty</li><li>Exportovat Knihu ohlédnutí do PDF</li><li>Tok popela za dvanáct měsíců</li><li>Neomezené termíny</li></ul>
+          <p class="muted">Není to předplatné. Jeden nákup navždy, včetně všech budoucích funkcí Pro.</p>
+        </div>
+      </div>
+      <p class="muted">Nové zařízení? V Nastavení klepněte na Obnovit nákupy.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Časté dotazy</h2>
+      <div class="faq"><details><summary>Widget ukazuje jiný čas než aplikace.</summary><p>iOS nepřekresluje widgety na ploše každou sekundu. Po otevření aplikace se srovnají. Odpočet po sekundách najdete v Dynamic Islandu a v živé aktivitě na zamčené obrazovce.</p></details>
+<details><summary>Foukám, ale oheň nezhasne.</summary><p>Sfouknout jde až od 30 minut před spaním. Zkontrolujte, že je povolený přístup k mikrofonu, a zhruba sekundu rovnoměrně foukejte na mikrofon dole na iPhonu. Krátký zvuk nestačí.</p></details>
+<details><summary>Nahrává se můj hlas?</summary><p>Ne. Měří se jen síla foukání. Žádný zvuk se nenahrává ani neukládá.</p></details>
+<details><summary>Co se zobrazuje, když spím?</summary><p>Po čase spaní se objeví hořící srdce a ukazuje, kolik noci uplynulo do probuzení. Ráno se aplikace zeptá, jestli jste šli spát včas, a pokud ne, dnešní pergamen začne o tu dobu ohořelý. Po propojení se Zdravím použije zaznamenaný čas usnutí bez ptaní.</p></details>
+<details><summary>Kdy chodí oznámení?</summary><p>Hodinu před spaním. Pokud nepřijde, zkontrolujte Nastavení &gt; Oznámení &gt; Hořící pergamen.</p></details>
+<details><summary>Vybíjí aplikace hodně baterii?</summary><p>Odpočet v aplikaci se mění každou sekundu, ale widgety iOS aktualizuje úsporně, takže vliv je malý.</p></details>
+<details><summary>Kde jsou uložená moje data?</summary><p>Časy vstávání a spaní, termíny, ohlédnutí a urny zůstávají ve vašem zařízení. Vývojář dostává jen anonymní statistiky používání, diagnostiku pádů a zpětnou vazbu, kterou sami pošlete. Žádné reklamy ani sledování.</p></details>
+<details><summary>Je Pro předplatné?</summary><p>Ne. Zaplatíte jednou a máte ho napořád. Na novém zařízení klepněte v Nastavení na Obnovit nákupy.</p></details></div>
+      <p class="contact">Chyby, nápady a další dotazy pište na <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Zachyťte dnešní večer,<br>než zmizí</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Stáhnout zdarma v App Storu</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Jazyk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany soukromí</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

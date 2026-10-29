@@ -1,0 +1,156 @@
+{
+  "title": "Brinnande Pergament: se resten av dagen brinna ner före läggdags",
+  "description": "Från att du vaknar till läggdags brinner tiden du har kvar i dag som ett pergament. En halvtimme innan du somnar blåser du ut lågan.",
+  "hero": {
+    "headline": "Det som finns kvar av i dag\nbrinner framför dig",
+    "lead": "En kväll som ser harmlös ut som en siffra känns annorlunda som pergament i lågor. En halvtimme före läggdags blåser du på skärmen, släcker elden och avslutar dagen.",
+    "cta": "Hämta gratis i App Store",
+    "note": "Det brinnande pergamentet, att blåsa ut lågan och reflektionerna är gratis."
+  },
+  "demo": {
+    "title": "Testa att blåsa ut den",
+    "lead": "Flytta klockan till strax före läggdags, håll sedan in knappen eller blås i mikrofonen.",
+    "clock": "Klockan är",
+    "now": "Nu",
+    "late": "20 min före läggdags",
+    "remain": "Kvar till läggdags",
+    "hm": "{h} tim {m} min",
+    "m": "{m} min",
+    "range": "Uppstigning {wake} · Läggdags {bed}",
+    "blow": "Håll in för att blåsa",
+    "mic": "Blås i mikrofonen",
+    "micOn": "Lyssnar. Blås i mikrofonen",
+    "micNone": "Den här webbläsaren kan inte använda mikrofonen. Håll in knappen i stället.",
+    "wait": "Du kan blåsa ut den från 30 minuter före läggdags",
+    "out": "Elden är släckt",
+    "kept": "Du blåste ut den med {m} min kvar. Biten som blev kvar sparas.",
+    "again": "Tänd igen",
+    "note": "Precis som appen mäts bara hur hårt du blåser, och inget spelas in. Uppstigning och läggdags är appens standardvärden."
+  },
+  "problem": {
+    "title": "Har klockan plötsligt blivit midnatt?",
+    "text": "Du äter middag, sätter dig en stund och sedan är dagen slut. Siffrorna på klockan ser likadana ut varje kväll, så du märker inte att tiden rinner iväg. Brinnande Pergament visar resten av dagen som pergament som brinner ner, så att du märker det innan kvällen försvinner."
+  },
+  "features": [
+    {
+      "title": "Dag, vecka och år brinner ner",
+      "text": "Från att du vaknar till läggdags brinner pergamentet långsamt. Se på samma sätt vad som återstår av veckan, månaden och året.\nLägg till ett mål med datum som deadline så räknar den ner bredvid.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Blås ut dagen",
+      "text": "Från 30 minuter före läggdags blåser du på det brinnande pergamentet och släcker elden. Bara styrkan i andetaget används, inget spelas in.\nBiten som blir kvar sparas. Vänd på den och skriv en rad om dagen på baksidan.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Tiden som gått blir aska",
+      "text": "Se tillbaka på dagen med en rad och placera den som en punkt i ett diagram med två axlar efter vad tiden gick till. Reflektionerna samlas i askurnor per vecka och månad och kan läsas igen i Reflektionsboken.\nAskans flöde visar vart tiden tog vägen med ett fördelningsdiagram och en glödkalender.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Kom igång i tre steg",
+    "items": [
+      {
+        "title": "Ställ in uppstigning och läggdags",
+        "text": "Tryck på kugghjulet uppe till höger. Pergamentet tänds och slocknar efter det."
+      },
+      {
+        "title": "Välj period",
+        "text": "Svep mellan dag, vecka, månad och år, eller dölj sidor du inte behöver i Inställningar."
+      },
+      {
+        "title": "Lägg till en widget",
+        "text": "På hemskärmen eller låsskärmen ser du tiden som är kvar utan att öppna appen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Här ser du tiden som är kvar",
+    "rows": [
+      ["Dag", "Från att du vaknar till läggdags"],
+      ["Vecka · Månad · År", "Vad som återstår av veckan, månaden och året"],
+      ["Fritid", "Veckans pergament brinner bara under timmarna du sparar åt dig själv (Pro)"],
+      ["Deadlines", "Tid kvar till ett måls datum. En är gratis"],
+      ["Widgetar på hemskärmen", "Dagens pergament i liten, mellan och stor. Vecka, månad, år och deadlines i liten och mellan"],
+      ["Widgetar på låsskärmen", "Rund, rektangulär och på en rad"],
+      ["Dynamic Island · Live Activity", "Från en timme före läggdags eller hela dagen. Välj eller stäng av i Inställningar"]
+    ],
+    "note": "Expandera Dynamic Island för att se det brinnande pergamentet med hela nedräkningen."
+  },
+  "pricing": {
+    "title": "Pergamentet är gratis. Pro rymmer mer.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Pergament för dag, vecka, månad och år",
+        "Blås ut lågan och samla bitar",
+        "Reflektioner på en rad, askurnor och Reflektionsbok",
+        "Morgonkoll, gärna med sömndata från Hälsa",
+        "Widgetar för hem- och låsskärm, Dynamic Island",
+        "En deadline"
+      ]
+    },
+    "pro": {
+      "name": "Brinnande Pergament Pro",
+      "items": [
+        "Bränn bara din egen fritid",
+        "Teman: Månskens-hanji, Celadon, Skymning",
+        "Lågor: Präriebrand, Glöd, Tomtebloss",
+        "Dela bitarna som kort och affischer",
+        "Exportera Reflektionsboken som PDF",
+        "Tolv månader av askans flöde",
+        "Obegränsat med deadlines"
+      ],
+      "note": "Ingen prenumeration. Ett köp för alltid, med alla Pro-funktioner som kommer senare."
+    },
+    "note": "Ny enhet? Tryck på Återställ köp i Inställningar."
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Widgeten visar en annan tid än appen.",
+        "a": "iOS ritar inte om widgetar på hemskärmen varje sekund. När du öppnar appen stämmer de igen. En nedräkning sekund för sekund finns i Dynamic Island och i Live Activity på låsskärmen."
+      },
+      {
+        "q": "Jag blåser men elden slocknar inte.",
+        "a": "Du kan blåsa ut den först 30 minuter före läggdags. Kontrollera att mikrofonåtkomst är tillåten och blås jämnt i ungefär en sekund nära mikrofonen längst ner på iPhone. Ett kort ljud räcker inte."
+      },
+      {
+        "q": "Spelas min röst in?",
+        "a": "Nej. Bara hur hårt du blåser mäts. Inget ljud spelas in eller sparas."
+      },
+      {
+        "q": "Vad visas medan jag sover?",
+        "a": "Efter läggdags visas ett brinnande hjärta som visar hur långt natten har kommit tills du vaknar. På morgonen frågar appen om du gick och lade dig i tid; var du sen börjar dagens pergament med en lika stor svedd bit. Kopplad till Hälsa använder den din registrerade insomningstid utan att fråga."
+      },
+      {
+        "q": "När kommer notiserna?",
+        "a": "En timme före läggdags. Kommer de inte, kontrollera Inställningar > Notiser > Brinnande Pergament."
+      },
+      {
+        "q": "Drar appen mycket batteri?",
+        "a": "Nedräkningen i appen ändras varje sekund, men widgetar uppdateras strömsnålt av iOS, så påverkan är liten."
+      },
+      {
+        "q": "Var sparas mina data?",
+        "a": "Uppstigning och läggdags, deadlines, reflektioner och urnor stannar på din enhet. Utvecklaren får bara anonym användningsstatistik, kraschdiagnostik och feedback som du själv skickar. Ingen reklam, ingen spårning."
+      },
+      {
+        "q": "Är Pro en prenumeration?",
+        "a": "Nej. Du betalar en gång och har det för alltid. På en ny enhet trycker du på Återställ köp i Inställningar."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Fånga kvällen\ninnan den är borta",
+    "cta": "Hämta gratis i App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Buggar, idéer eller andra frågor? Skriv till {email}."
+  }
+}

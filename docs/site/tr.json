@@ -1,0 +1,156 @@
+{
+  "title": "Yanan Parşömen: günün geri kalanının yanıp bitişini izle",
+  "description": "Uyandığın andan yatma saatine kadar bugün kalan zamanın bir parşömen gibi yanar. Yatmadan yarım saat önce üfleyip alevi söndürürsün.",
+  "hero": {
+    "headline": "Bugünden kalan zaman\ngözünün önünde yanıyor",
+    "lead": "Rakamla bakınca masum görünen bir akşam, alev alan bir parşömen olunca bambaşka görünür. Yatmadan yarım saat önce ekrana üfle, ateşi söndür ve günü kapat.",
+    "cta": "App Store'dan ücretsiz indir",
+    "note": "Yanan parşömen, üfleyerek söndürme ve değerlendirmeler ücretsiz."
+  },
+  "demo": {
+    "title": "Üfleyip söndürmeyi dene",
+    "lead": "Saati yatmadan hemen önceye getir, sonra düğmeyi basılı tut ya da mikrofona üfle.",
+    "clock": "Şu an saat",
+    "now": "Şimdi",
+    "late": "Yatmadan 20 dk önce",
+    "remain": "Yatma saatine kalan",
+    "hm": "{h} sa {m} dk",
+    "m": "{m} dk",
+    "range": "Kalkış {wake} · Yatış {bed}",
+    "blow": "Üflemek için basılı tut",
+    "mic": "Mikrofona üfle",
+    "micOn": "Dinliyor. Mikrofona üfle",
+    "micNone": "Bu tarayıcı mikrofonu kullanamıyor. Düğmeyi basılı tut.",
+    "wait": "Yatmadan 30 dakika önce söndürebilirsin",
+    "out": "Ateş söndü",
+    "kept": "{m} dk kala söndürdün. Geriye kalan parça saklanıyor.",
+    "again": "Yeniden yak",
+    "note": "Uygulamadaki gibi yalnızca üfleme gücü ölçülür, hiçbir şey kaydedilmez. Kalkış ve yatış saati uygulamanın varsayılanlarıdır."
+  },
+  "problem": {
+    "title": "\"Saat ne ara on iki oldu?\" dediğin oldu mu?",
+    "text": "Akşam yemeğini yersin, biraz oturursun ve gün biter. Saatteki rakamlar her akşam aynı göründüğü için zamanın azaldığını hissetmezsin. Yanan Parşömen kalan zamanı yanıp biten bir parşömen olarak gösterir, akşam kaybolmadan fark edersin."
+  },
+  "features": [
+    {
+      "title": "Günün, haftan ve yılın yanıyor",
+      "text": "Uyandığın andan yatma saatine kadar parşömen yavaş yavaş yanar. Bu hafta, bu ay ve bu yıldan ne kaldığını da aynı şekilde görürsün.\nTarihi olan bir hedefi son tarih olarak ekle, geri sayımı da yanında akar.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Günü bir üflemeyle kapat",
+      "text": "Yatmadan 30 dakika önce yanan parşömene üfleyip ateşi söndürebilirsin. Yalnızca nefesinin gücü kullanılır, hiçbir şey kaydedilmez.\nGeriye kalan parça saklanır. Çevirip arkasına bugünle ilgili bir satır yazabilirsin.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Geçen zaman kül olarak kalır",
+      "text": "Günü tek satırlık bir değerlendirmeyle düşün ve zamanı nasıl kullandığına göre iki eksenli bir grafiğe nokta olarak koy. Değerlendirmeler haftalık ve aylık Kül Kavanozlarında birikir, Değerlendirme Kitabı'nda yeniden okunur.\nKülün Akışı, zamanının nereye gittiğini dağılım grafiği ve köz takvimiyle gösterir.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Üç adımda başla",
+    "items": [
+      {
+        "title": "Kalkış ve yatış saatini ayarla",
+        "text": "Sağ üstteki dişliye dokun. Parşömen bu saatlere göre tutuşur ve söner."
+      },
+      {
+        "title": "Dönemi seç",
+        "text": "Gün, hafta, ay ve yıl arasında kaydır ya da gerekmeyen sayfaları Ayarlar'dan gizle."
+      },
+      {
+        "title": "Widget ekle",
+        "text": "Ana ekranda ya da kilitli ekranda kalan zamanı uygulamayı açmadan görürsün."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kalan zamanı nerede görürsün",
+    "rows": [
+      ["Gün", "Uyandığın andan yatma saatine kadar"],
+      ["Hafta · Ay · Yıl", "Bu hafta, bu ay ve bu yıldan kalan"],
+      ["Boş zaman", "Haftanın parşömeni yalnızca kendine ayırdığın saatlerde yanar (Pro)"],
+      ["Son Tarihler", "Bir hedefin tarihine kalan süre. Biri ücretsiz"],
+      ["Ana ekran widget'ları", "Günlük parşömen küçük, orta ve büyük. Hafta, ay, yıl ve son tarihler küçük ve orta"],
+      ["Kilitli ekran widget'ları", "Yuvarlak, dikdörtgen ve tek satır"],
+      ["Dynamic Island · Canlı Etkinlik", "Yatmadan bir saat önceden ya da gün boyu. Ayarlar'dan seç ya da kapat"]
+    ],
+    "note": "Yanan parşömeni tam geri sayımla görmek için Dynamic Island'ı genişlet."
+  },
+  "pricing": {
+    "title": "Parşömen ücretsiz. Pro daha fazlasını saklar.",
+    "free": {
+      "name": "Ücretsiz",
+      "items": [
+        "Gün, hafta, ay ve yıl parşömenleri",
+        "Alevi üfleyip söndürme ve parça biriktirme",
+        "Tek satırlık değerlendirmeler, Kül Kavanozları ve Değerlendirme Kitabı",
+        "Sabah kontrolü, istersen Sağlık uygulamasındaki uyku verisiyle",
+        "Ana ekran ve kilitli ekran widget'ları, Dynamic Island",
+        "Bir son tarih"
+      ]
+    },
+    "pro": {
+      "name": "Yanan Parşömen Pro",
+      "items": [
+        "Yalnızca kendi boş zamanını yak",
+        "Temalar: Ay Işığı Hanji, Seladon, Alacakaranlık",
+        "Alevler: Bozkır yangını, Köz, Maytap",
+        "Parçaları kart ve poster olarak paylaş",
+        "Değerlendirme Kitabı'nı PDF olarak dışa aktar",
+        "On iki aylık Külün Akışı",
+        "Sınırsız son tarih"
+      ],
+      "note": "Abonelik değil. Bir kez al, ömür boyu kullan; sonradan gelecek tüm Pro özellikleri de dahil."
+    },
+    "note": "Yeni cihaz mı? Ayarlar'da Satın Alımları Geri Yükle'ye dokun."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Widget, uygulamadan farklı bir saat gösteriyor.",
+        "a": "iOS ana ekran widget'larını her saniye yeniden çizmez. Uygulamayı açınca hemen eşitlenir. Saniye saniye ilerleyen geri sayım için Dynamic Island'a ve kilitli ekrandaki Canlı Etkinlik'e bak."
+      },
+      {
+        "q": "Üflüyorum ama ateş sönmüyor.",
+        "a": "Söndürme yalnızca yatmadan 30 dakika önce açılır. Mikrofon erişimine izin verdiğini kontrol et ve iPhone'un altındaki mikrofona yakın, yaklaşık bir saniye düzgünce üfle. Kısa bir ses yetmez."
+      },
+      {
+        "q": "Sesim kaydediliyor mu?",
+        "a": "Hayır. Yalnızca üflemenin gücü ölçülür. Hiçbir ses kaydedilmez ya da saklanmaz."
+      },
+      {
+        "q": "Uyurken ne görünüyor?",
+        "a": "Yatma saati geçince yanan bir kalp belirir ve uyanana kadar gecenin ne kadarının geçtiğini gösterir. Sabah uygulama dün gece zamanında yatıp yatmadığını sorar; geç kaldıysan bu sabahın parşömeni o kadar kavrulmuş başlar. Sağlık uygulamasına bağlarsan sormadan kayıtlı uykuya dalma saatini kullanır."
+      },
+      {
+        "q": "Bildirimler ne zaman gelir?",
+        "a": "Yatmadan bir saat önce. Gelmiyorsa Ayarlar > Bildirimler > Yanan Parşömen'i kontrol et."
+      },
+      {
+        "q": "Çok pil harcar mı?",
+        "a": "Uygulama içindeki geri sayım her saniye değişir, ama widget'lar iOS tarafından tasarruflu şekilde güncellenir, etkisi küçüktür."
+      },
+      {
+        "q": "Verilerim nerede saklanıyor?",
+        "a": "Kalkış ve yatış saatleri, son tarihler, değerlendirmeler ve kavanozlar yalnızca cihazında kalır. Geliştiriciye yalnızca anonim kullanım istatistikleri, çökme tanılamaları ve senin gönderdiğin geri bildirimler ulaşır. Reklam yok, takip yok."
+      },
+      {
+        "q": "Pro abonelik mi?",
+        "a": "Hayır. Bir kez ödersin, sonsuza dek senindir. Yeni cihazda Ayarlar'da Satın Alımları Geri Yükle'ye dokun."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Bu akşam kaybolmadan\nona sahip çık",
+    "cta": "App Store'dan ücretsiz indir"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "languages": "Dil",
+    "privacy": "Gizlilik Politikası",
+    "contact": "Hata, fikir ya da başka bir soru için {email} adresine yaz."
+  }
+}

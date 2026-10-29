@@ -1,0 +1,156 @@
+{
+  "title": "Burning Parchment: watch the rest of your day burn down before bed",
+  "description": "From the moment you wake up until bedtime, the time you have left today burns away as a sheet of parchment. Thirty minutes before bed, blow out the flame.",
+  "hero": {
+    "headline": "Watch what's left\nof today burn down",
+    "lead": "An evening that looks harmless as a number feels different as a sheet of parchment on fire. Thirty minutes before bed, blow on the screen to put the flame out and close the day.",
+    "cta": "Get it free on the App Store",
+    "note": "The burning parchment, the blow-out ritual and reflections are all free."
+  },
+  "demo": {
+    "title": "Try blowing it out",
+    "lead": "Move the clock to just before bedtime, then hold the button or blow into your mic.",
+    "clock": "Time now",
+    "now": "Now",
+    "late": "20 min before bed",
+    "remain": "Left until bedtime",
+    "hm": "{h}h {m}m",
+    "m": "{m} min",
+    "range": "Wake {wake} · Bed {bed}",
+    "blow": "Hold to blow",
+    "mic": "Blow into the mic",
+    "micOn": "Listening. Blow into your mic",
+    "micNone": "Your browser can't use the mic here. Hold the button instead.",
+    "wait": "You can blow it out from 30 minutes before bedtime",
+    "out": "The fire is out",
+    "kept": "You blew it out with {m} min to spare. The piece that's left is kept for you.",
+    "again": "Light it again",
+    "note": "Like the app, this only measures how hard you blow. Nothing is recorded. Wake-up and bedtime are the app's defaults."
+  },
+  "problem": {
+    "title": "Ever looked up and it's suddenly midnight?",
+    "text": "You had dinner, sat down for a minute, and the day was gone. The numbers on a clock look the same every evening, so you never feel the time running out. Burning Parchment shows what's left as parchment burning away, so you notice before the evening disappears."
+  },
+  "features": [
+    {
+      "title": "Your day, week and year, burning down",
+      "text": "From the moment you wake up until bedtime, the parchment slowly burns. See what's left of this week, this month and this year the same way.\nAdd a goal with a date as a deadline and it counts down right alongside.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Blow out the day",
+      "text": "From 30 minutes before bedtime, blow on the burning parchment to put the fire out. Only the strength of your breath is used, and nothing is recorded.\nThe piece that's left is kept for you. Flip it over and write one line about today on the back.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Time gone by settles as ash",
+      "text": "Look back with a one-line reflection and place it as a dot on a two-axis graph of how the time was spent. Reflections pile up in weekly and monthly urns, and you can read them again in the Reflection Book.\nAsh Flow shows where your time went with a distribution graph and an ember calendar.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Set wake-up and bedtime",
+        "text": "Tap the gear in the top right. The parchment lights and goes out on that schedule."
+      },
+      {
+        "title": "Pick your time span",
+        "text": "Swipe between day, week, month and year, or hide the pages you don't need in Settings."
+      },
+      {
+        "title": "Add a widget",
+        "text": "Put it on your Home Screen or Lock Screen and see the time left without opening the app."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Where you can see the time left",
+    "rows": [
+      ["Day", "From waking up to bedtime"],
+      ["Week · Month · Year", "What's left of this week, month and year"],
+      ["Free Time", "This week's parchment burns only during the hours you set aside for yourself (Pro)"],
+      ["Deadlines", "Time left until a goal's date. One is free"],
+      ["Home Screen widgets", "Day parchment in small, medium and large. Week, month, year and deadlines in small and medium"],
+      ["Lock Screen widgets", "Circular, rectangular and inline"],
+      ["Dynamic Island · Live Activity", "From an hour before bed, or all day. Choose or turn it off in Settings"]
+    ],
+    "note": "Expand the Dynamic Island to see the burning parchment with the full countdown."
+  },
+  "pricing": {
+    "title": "The parchment is free. Pro holds more.",
+    "free": {
+      "name": "Free",
+      "items": [
+        "Day, week, month and year parchments",
+        "Blowing out the flame and collecting pieces",
+        "One-line reflections, urns and the Reflection Book",
+        "Morning check-in, with optional Health sleep data",
+        "Home Screen and Lock Screen widgets, Dynamic Island",
+        "One deadline"
+      ]
+    },
+    "pro": {
+      "name": "Burning Parchment Pro",
+      "items": [
+        "Burn only your own free time",
+        "Parchment themes: Moonlit Hanji, Celadon, Dusk",
+        "Flame styles: Wildfire, Embers, Sparkler",
+        "Share collected pieces as cards and posters",
+        "Export your Reflection Book as a PDF",
+        "Twelve months of Ash Flow",
+        "Unlimited deadlines"
+      ],
+      "note": "Not a subscription. One purchase, yours for life, including every Pro feature added later."
+    },
+    "note": "New device? Tap Restore Purchases in Settings."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "The widget shows a different time from the app.",
+        "a": "iOS doesn't redraw Home Screen widgets every second. Opening the app brings them back in sync. For a countdown that ticks by the second, use the Dynamic Island and the Live Activity on your Lock Screen."
+      },
+      {
+        "q": "Blowing doesn't put the flame out.",
+        "a": "You can blow it out from 30 minutes before bedtime. Check that microphone access is allowed, then blow steadily into the mic at the bottom of your phone for about a second. A single short burst of sound won't do it."
+      },
+      {
+        "q": "Is my voice recorded?",
+        "a": "No. It only checks how hard you blow. No sound is recorded or stored."
+      },
+      {
+        "q": "What does it show while I'm asleep?",
+        "a": "After bedtime a burning heart appears and shows how far along your night is until wake-up. In the morning it asks whether you got to bed on time, and if you were late, today's parchment starts out that much charred. Connect Apple Health and it uses your recorded sleep time instead of asking."
+      },
+      {
+        "q": "When do notifications arrive?",
+        "a": "One hour before bedtime. If nothing arrives, check Settings > Notifications > Burning Parchment."
+      },
+      {
+        "q": "Does it drain my battery?",
+        "a": "The countdown inside the app ticks every second, but widgets refresh on a low-power schedule managed by iOS, so the impact is small."
+      },
+      {
+        "q": "Where is my data stored?",
+        "a": "Your wake-up time, bedtime, deadlines, reflections and urns stay on your device. The developer only receives anonymous usage statistics, crash diagnostics and any feedback you choose to send. No ads, no tracking."
+      },
+      {
+        "q": "Is Pro a subscription?",
+        "a": "No. You pay once and keep it for life. On a new device, tap Restore Purchases in Settings."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Catch this evening\nbefore it's gone",
+    "cta": "Get it free on the App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Bug reports, feature ideas or anything else: write to {email}."
+  }
+}

@@ -1,0 +1,42 @@
+/* 불타는 내인생 웹 데모. 바닥은 앱의 다크 화면처럼 검정, 불꽃은 앱의 주황·노랑. */
+.demo-card { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: center; }
+.bp-stage { background: #000; border-radius: var(--r-inner); padding: var(--s5) var(--s5) var(--s4);
+            display: grid; justify-items: center; gap: var(--s3); }
+.bp-stage svg { width: min(100%, 240px); aspect-ratio: 300 / 380; height: auto; overflow: visible; }
+.bp-flame { fill: none; vector-effect: non-scaling-stroke; stroke-linejoin: round; stroke-linecap: round; transition: opacity .2s linear; }
+.bp-wide { stroke: #FF6A1A; stroke-width: 14; }
+.bp-core { stroke: #FFD27A; stroke-width: 3; }
+.bp-remain { text-align: center; color: #FF8033; font-variant-numeric: tabular-nums; }
+.bp-remain span { display: block; font-size: .875rem; }
+.bp-remain strong { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; }
+.is-out .bp-remain { color: #8a7560; }
+
+.bp-controls { display: grid; gap: var(--s3); align-content: start; }
+.bp-clock { display: grid; gap: var(--s2); font-weight: 600; }
+.bp-clock b { color: var(--accent); font-variant-numeric: tabular-nums; }
+.bp-clock input { width: 100%; min-height: 44px; accent-color: var(--accent); }
+.bp-chips { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.bp-range { margin: 0; }
+.chip { font: inherit; font-weight: 600; color: var(--accent); background: var(--bg); border: 0;
+        border-radius: 999px; padding: var(--s2) var(--s4); min-height: 44px; cursor: pointer;
+        transition: transform .15s var(--ease), background .15s var(--ease); }
+.chip:hover { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); }
+.chip:active { transform: scale(.95); }
+
+.bp-blow { position: relative; overflow: hidden; font: inherit; font-weight: 700; min-height: 52px; border: 0;
+           border-radius: 999px; padding: 0 var(--s5); cursor: pointer; color: var(--on-accent); background: var(--accent);
+           touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.bp-blow span { position: relative; z-index: 1; }
+.bp-blow i { position: absolute; inset: 0; background: rgb(255 255 255 / .35); transform-origin: left; transform: scaleX(0); }
+.bp-blow:disabled { cursor: default; opacity: .45; }
+.mic { display: inline-flex; align-items: center; justify-content: center; font: inherit; font-weight: 600;
+       min-height: 48px; padding: 0 var(--s5); border-radius: 999px; cursor: pointer;
+       color: var(--text); background: transparent; border: 2px solid var(--line);
+       transition: border-color .2s var(--ease), color .2s var(--ease); }
+.mic:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.mic[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.mic:disabled { cursor: default; opacity: .45; }
+.bp-status { margin: 0; min-height: 1.6em; font-weight: 600; }
+.bp-again { justify-self: start; }
+
+@media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } }

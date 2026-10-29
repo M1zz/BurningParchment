@@ -1,0 +1,156 @@
+{
+  "title": "Palava Pergamentti: katso, kun päivän loppu palaa ennen nukkumaanmenoa",
+  "description": "Heräämisestä nukkumaanmenoon tämän päivän jäljellä oleva aika palaa pergamenttina. Puoli tuntia ennen unta puhallat liekin sammuksiin.",
+  "hero": {
+    "headline": "Päivän loppu\npalaa silmiesi edessä",
+    "lead": "Ilta, joka numeroina näyttää harmittomalta, tuntuu erilaiselta palavana pergamenttina. Puoli tuntia ennen nukkumaanmenoa puhallat näyttöön, sammutat tulen ja päätät päivän.",
+    "cta": "Lataa ilmaiseksi App Storesta",
+    "note": "Palava pergamentti, sammuttaminen puhaltamalla ja pohdinnat ovat ilmaisia."
+  },
+  "demo": {
+    "title": "Kokeile puhaltaa se sammuksiin",
+    "lead": "Siirrä kello juuri ennen nukkumaanmenoa, ja pidä sitten painiketta pohjassa tai puhalla mikrofoniin.",
+    "clock": "Kello on",
+    "now": "Nyt",
+    "late": "20 min ennen unta",
+    "remain": "Nukkumaanmenoon",
+    "hm": "{h} t {m} min",
+    "m": "{m} min",
+    "range": "Herätys {wake} · Nukkumaan {bed}",
+    "blow": "Puhalla pitämällä pohjassa",
+    "mic": "Puhalla mikrofoniin",
+    "micOn": "Kuuntelen. Puhalla mikrofoniin",
+    "micNone": "Tämä selain ei voi käyttää mikrofonia. Pidä painiketta pohjassa.",
+    "wait": "Voit puhaltaa sen sammuksiin 30 minuuttia ennen nukkumaanmenoa",
+    "out": "Tuli sammui",
+    "kept": "Puhalsit sen sammuksiin, kun jäljellä oli {m} min. Jäljelle jäänyt sirpale säästetään.",
+    "again": "Sytytä uudelleen",
+    "note": "Kuten sovellus, tämä mittaa vain puhalluksen voimaa eikä nauhoita mitään. Herätys- ja nukkumaanmenoaika ovat sovelluksen oletuksia."
+  },
+  "problem": {
+    "title": "Onko kello yhtäkkiä keskiyö?",
+    "text": "Syöt illallisen, istahdat hetkeksi, ja päivä on mennyt. Kellon numerot näyttävät joka ilta samoilta, joten aika ei tunnu hupenevan. Palava Pergamentti näyttää jäljellä olevan ajan palavana pergamenttina, jotta huomaat sen ennen kuin ilta katoaa."
+  },
+  "features": [
+    {
+      "title": "Päivä, viikko ja vuosi palavat",
+      "text": "Heräämisestä nukkumaanmenoon pergamentti palaa hitaasti. Samalla tavalla näet, mitä tästä viikosta, kuukaudesta ja vuodesta on jäljellä.\nLisää tavoite, jolla on päivämäärä, määräajaksi, niin sen lähtölaskenta kulkee rinnalla.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Puhalla päivä sammuksiin",
+      "text": "30 minuuttia ennen nukkumaanmenoa voit puhaltaa palavaan pergamenttiin ja sammuttaa tulen. Vain puhalluksen voimaa käytetään, eikä mitään nauhoiteta.\nJäljelle jäävä sirpale säästetään. Käännä se ja kirjoita taakse rivi päivästäsi.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Kulunut aika jää tuhkaksi",
+      "text": "Katso päivää taaksepäin yhdellä rivillä ja aseta se pisteeksi kaksiakseliseen kaavioon sen mukaan, mihin aika kului. Pohdinnat kertyvät viikon ja kuukauden tuhkauurniin, ja voit lukea ne uudelleen Pohdintakirjasta.\nTuhkan virta näyttää jakaumakaaviolla ja hiilikalenterilla, mihin aikasi meni.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Alkuun kolmella askeleella",
+    "items": [
+      {
+        "title": "Aseta herätys ja nukkumaanmeno",
+        "text": "Napauta oikean yläkulman ratasta. Pergamentti syttyy ja sammuu sen mukaan."
+      },
+      {
+        "title": "Valitse ajanjakso",
+        "text": "Pyyhkäise päivän, viikon, kuukauden ja vuoden välillä tai piilota tarpeettomat sivut asetuksista."
+      },
+      {
+        "title": "Lisää widget",
+        "text": "Koti- tai lukitusnäytöllä näet jäljellä olevan ajan avaamatta sovellusta."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Missä näet jäljellä olevan ajan",
+    "rows": [
+      ["Päivä", "Heräämisestä nukkumaanmenoon"],
+      ["Viikko · Kuukausi · Vuosi", "Mitä tästä viikosta, kuukaudesta ja vuodesta on jäljellä"],
+      ["Vapaa-aika", "Viikon pergamentti palaa vain tunteina, jotka varaat itsellesi (Pro)"],
+      ["Määräajat", "Aika tavoitteen päivämäärään. Yksi on ilmainen"],
+      ["Kotinäytön widgetit", "Päivän pergamentti pienenä, keskikokoisena ja suurena. Viikko, kuukausi, vuosi ja määräajat pienenä ja keskikokoisena"],
+      ["Lukitusnäytön widgetit", "Pyöreä, suorakulmainen ja rivinä"],
+      ["Dynamic Island · Live Activity", "Tuntia ennen nukkumaanmenoa tai koko päivän. Valitse tai poista käytöstä asetuksissa"]
+    ],
+    "note": "Laajenna Dynamic Island, niin näet palavan pergamentin ja koko lähtölaskennan."
+  },
+  "pricing": {
+    "title": "Pergamentti on ilmainen. Pro säilyttää enemmän.",
+    "free": {
+      "name": "Ilmainen",
+      "items": [
+        "Päivän, viikon, kuukauden ja vuoden pergamentit",
+        "Liekin puhaltaminen sammuksiin ja sirpaleiden keruu",
+        "Yhden rivin pohdinnat, tuhkauurnat ja Pohdintakirja",
+        "Aamutarkistus, halutessasi Terveys-apin unitiedoilla",
+        "Koti- ja lukitusnäytön widgetit, Dynamic Island",
+        "Yksi määräaika"
+      ]
+    },
+    "pro": {
+      "name": "Palava Pergamentti Pro",
+      "items": [
+        "Polta vain omaa vapaa-aikaasi",
+        "Teemat: Kuutamo-hanji, Seladoni, Hämärä",
+        "Liekit: Aavikkotuli, Hiilet, Tähtisädetikku",
+        "Jaa sirpaleet kortteina ja julisteina",
+        "Vie Pohdintakirja PDF-tiedostoksi",
+        "Kahdentoista kuukauden tuhkan virta",
+        "Rajattomasti määräaikoja"
+      ],
+      "note": "Ei tilaus. Yksi osto loppuelämäksi, mukana kaikki myöhemmin tulevat Pro-ominaisuudet."
+    },
+    "note": "Uusi laite? Napauta asetuksissa Palauta ostokset."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {
+        "q": "Widget näyttää eri ajan kuin sovellus.",
+        "a": "iOS ei piirrä kotinäytön widgettejä uudelleen joka sekunti. Kun avaat sovelluksen, ne täsmäävät taas. Sekunnin tarkkuudella etenevän lähtölaskennan näet Dynamic Islandissa ja lukitusnäytön Live Activityssä."
+      },
+      {
+        "q": "Puhallan, mutta tuli ei sammu.",
+        "a": "Sammuttaa voi vasta 30 minuuttia ennen nukkumaanmenoa. Tarkista, että mikrofonin käyttö on sallittu, ja puhalla tasaisesti noin sekunnin ajan iPhonen alareunan mikrofonin lähellä. Lyhyt ääni ei riitä."
+      },
+      {
+        "q": "Nauhoitetaanko ääneni?",
+        "a": "Ei. Vain puhalluksen voimakkuus tarkistetaan. Ääntä ei nauhoiteta eikä tallenneta."
+      },
+      {
+        "q": "Mitä näkyy, kun nukun?",
+        "a": "Nukkumaanmenoajan jälkeen ilmestyy palava sydän, joka näyttää, kuinka pitkällä yö on herätykseen asti. Aamulla sovellus kysyy, menitkö nukkumaan ajoissa. Jos valvoit, tämän päivän pergamentti alkaa sen verran kärventyneenä. Kun yhdistät Terveys-apin, se käyttää tallennettua nukahtamisaikaa kysymättä."
+      },
+      {
+        "q": "Milloin ilmoitukset tulevat?",
+        "a": "Tuntia ennen nukkumaanmenoa. Jos niitä ei tule, tarkista Asetukset > Ilmoitukset > Palava Pergamentti."
+      },
+      {
+        "q": "Kuluttaako sovellus paljon akkua?",
+        "a": "Sovelluksen lähtölaskenta päivittyy joka sekunti, mutta iOS päivittää widgetit virtaa säästäen, joten vaikutus on pieni."
+      },
+      {
+        "q": "Mihin tietoni tallennetaan?",
+        "a": "Herätys- ja nukkumaanmenoajat, määräajat, pohdinnat ja uurnat pysyvät laitteellasi. Kehittäjä saa vain nimettömiä käyttötilastoja, kaatumisdiagnostiikkaa ja itse lähettämäsi palautteen. Ei mainoksia, ei seurantaa."
+      },
+      {
+        "q": "Onko Pro tilaus?",
+        "a": "Ei. Maksat kerran ja se on sinun pysyvästi. Uudella laitteella napauta asetuksissa Palauta ostokset."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Ehdi huomata tämä ilta\nennen kuin se katoaa",
+    "cta": "Lataa ilmaiseksi App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Virheet, ideat ja muut kysymykset: kirjoita osoitteeseen {email}."
+  }
+}

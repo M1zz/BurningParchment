@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>불타는 내인생 — 지원</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>불타는 내인생: 오늘 남은 시간이 타들어 가는 취침 카운트다운</title>
+  <meta name="description" content="일어난 순간부터 잠들 시각까지, 오늘 남은 시간을 타오르는 양피지로 보여 줘요. 잠들기 30분 전에는 후 불어 불을 끄고 하루를 마쳐요.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="불타는 내인생: 오늘 남은 시간이 타들어 가는 취침 카운트다운">
+  <meta property="og:description" content="일어난 순간부터 잠들 시각까지, 오늘 남은 시간을 타오르는 양피지로 보여 줘요. 잠들기 30분 전에는 후 불어 불을 끄고 하루를 마쳐요.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/ko/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="언어" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="index.html" hreflang="ko" lang="ko" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="bar">
+    <a class="brand" href=""><img src="icon.png" alt="" width="32" height="32">불타는 내인생</a>
+    <a class="lang-link" href="#languages">언어</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>불타는 내인생</h1>
-  <p>기상시간부터 취침시간까지, 하루가 타들어가는 것을 지켜보세요.</p>
-</header>
-
-<main>
-
-  <!-- 앱 소개 -->
-  <section>
-    <h2>앱 소개</h2>
-    <div class="card">
-      <h3>어떤 앱인가요?</h3>
-      <p>불타는 내인생은 하루의 남은 시간을 양피지가 타들어가는 시각적 효과로 보여주는 카운트다운 앱입니다. 기상 시간부터 취침 시간까지, 시간이 얼마나 남았는지 직관적으로 확인하고 하루를 더 의미있게 보낼 수 있도록 도와줍니다.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">일간 카운트다운</span>
-        <span class="badge">주간 / 월간 / 연간</span>
-        <span class="badge">홈 화면 위젯</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">잠금화면 위젯</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>오늘 남은 시간이<br>눈앞에서 타들어 가요</h1>
+        <p class="lead">숫자로 보면 아무렇지 않던 저녁이, 타오르는 양피지로 보면 달라져요. 잠들기 30분 전에는 화면에 후 불어 불을 끄고 하루를 마쳐요.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">App Store에서 무료로 받기</a><a class="try" href="#try">직접 불어 꺼 보세요 ↓</a></div>
+        <p class="muted small">타오르는 양피지, 후 불어 끄기, 회고는 모두 무료예요.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><video src="screenshots/preview-ko/01-preview.mp4" poster="img/ko/01-week-dark.jpg" autoplay muted loop playsinline width="720" height="1564" aria-label="오늘 남은 시간이 눈앞에서 타들어 가요"></video></div>
+    </section>
 
-  <!-- 사용 방법 -->
-  <section>
-    <h2>사용 방법</h2>
-    <div class="card">
-      <h3>기상 / 취침 시간 설정</h3>
-      <p>오른쪽 상단 ⚙️ 버튼을 눌러 기상 시간과 취침 시간을 설정하세요. 기상 시간이 되면 양피지가 타들어가기 시작하고, 취침 시간이 되면 카운트다운이 종료됩니다.</p>
-    </div>
-    <div class="card">
-      <h3>기간 선택</h3>
-      <p>상단 탭에서 <strong>1일 · 1주 · 1달 · 1년</strong> 중 원하는 기간을 선택하면 해당 기간의 남은 시간을 양피지 연소로 표현합니다.</p>
-    </div>
-    <div class="card">
-      <h3>홈 화면 위젯</h3>
-      <p>홈 화면 길게 누르기 → 위젯 추가 → <strong>불타는 내인생</strong>을 검색해 일간 / 주간 / 월간 / 연간 위젯을 추가할 수 있습니다. 소형(Small)·중형(Medium)·대형(Large) 크기를 지원합니다.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island · 잠금화면</h3>
-      <p>카운트다운이 시작되면 Dynamic Island와 잠금화면에서 실시간으로 남은 시간을 확인할 수 있습니다. Dynamic Island를 아래로 당기면 양피지 연소 애니메이션과 함께 상세 정보가 표시됩니다.</p>
-    </div>
-  </section>
 
-  <!-- 자주 묻는 질문 -->
-  <section>
-    <h2>자주 묻는 질문</h2>
-    <div class="card">
-      <h3>위젯과 앱의 시간이 다르게 표시돼요</h3>
-      <p>홈 화면 위젯은 iOS의 구조적 제한으로 실시간 갱신이 불가능합니다. 앱을 열면 위젯 데이터가 자동으로 동기화됩니다. 실시간 카운트다운은 Dynamic Island와 잠금화면 위젯에서 확인하세요.</p>
-    </div>
-    <div class="card">
-      <h3>수면 중에는 어떻게 표시되나요?</h3>
-      <p>취침 시간이 지나면 불타는 하트 애니메이션이 표시되며, 기상 시간까지의 수면 진행률을 보여줍니다. 기상 30분 전부터는 새 양피지가 준비됩니다.</p>
-    </div>
-    <div class="card">
-      <h3>알림은 언제 오나요?</h3>
-      <p>취침 1시간 전에 알림이 발송됩니다. 알림이 오지 않는다면 <strong>설정 → 알림 → 불타는 내인생</strong>에서 알림이 허용되어 있는지 확인해주세요.</p>
-    </div>
-    <div class="card">
-      <h3>앱이 배터리를 많이 소모하나요?</h3>
-      <p>앱 내 카운트다운은 1초 타이머를 사용하지만, 위젯은 시스템이 관리하는 저전력 타임라인 방식으로 동작해 배터리 영향을 최소화합니다.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>직접 불어 꺼 보세요</h2>
+      <p class="muted">시각을 잠들기 직전으로 옮긴 뒤 버튼을 길게 누르거나, 마이크에 대고 후 불어 보세요.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;직접 불어 꺼 보세요&quot;, &quot;lead&quot;: &quot;시각을 잠들기 직전으로 옮긴 뒤 버튼을 길게 누르거나, 마이크에 대고 후 불어 보세요.&quot;, &quot;clock&quot;: &quot;지금 시각&quot;, &quot;now&quot;: &quot;지금&quot;, &quot;late&quot;: &quot;잠들기 20분 전&quot;, &quot;remain&quot;: &quot;취침까지 남은 시간&quot;, &quot;hm&quot;: &quot;{h}시간 {m}분&quot;, &quot;m&quot;: &quot;{m}분&quot;, &quot;range&quot;: &quot;기상 {wake} · 취침 {bed}&quot;, &quot;blow&quot;: &quot;길게 눌러 후 불기&quot;, &quot;mic&quot;: &quot;마이크에 대고 불기&quot;, &quot;micOn&quot;: &quot;듣고 있어요. 마이크에 대고 후 불어 보세요&quot;, &quot;micNone&quot;: &quot;이 브라우저에서는 마이크를 쓸 수 없어요. 버튼을 길게 눌러 보세요.&quot;, &quot;wait&quot;: &quot;잠들기 30분 전부터 불을 끌 수 있어요&quot;, &quot;out&quot;: &quot;불이 꺼졌어요&quot;, &quot;kept&quot;: &quot;{m}분을 남기고 불을 껐어요. 남은 조각은 모아 둬요.&quot;, &quot;again&quot;: &quot;다시 태우기&quot;, &quot;note&quot;: &quot;앱처럼 입김의 세기만 보고 소리는 녹음하지 않아요. 기상과 취침 시각은 앱의 기본값이에요.&quot;}"></div>
+    </section>
 
-  <!-- 개인정보 처리방침 -->
-  <section>
-    <h2>개인정보 처리방침</h2>
-    <div class="card">
-      <h3>개인정보는 이렇게 다룹니다</h3>
-      <p>기상·취침 시간, 데드라인, 회고와 항아리는 기기 안에만 저장됩니다. 개발자에게는 익명 사용 통계와 크래시 진단, 그리고 직접 보낸 피드백만 전달됩니다.</p>
-      <ul>
-        <li>앱과 위젯은 기기 내 App Group으로만 데이터를 나눕니다.</li>
-        <li>광고와 추적이 없습니다.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">개인정보 처리방침 전문 보기 →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>"벌써 열두 시?" 하고 놀란 적 있나요?</h2>
+      <p>저녁을 먹고 잠깐 쉬었을 뿐인데 하루가 끝나 있어요. 시계의 숫자는 매일 똑같아 보여서, 시간이 줄어드는 게 잘 느껴지지 않아요. 불타는 내인생은 남은 시간을 타들어 가는 양피지로 보여 줘서, 저녁이 사라지기 전에 알아차리게 해 줘요.</p>
+    </section>
 
-  <!-- 문의 -->
-  <section>
-    <h2>문의</h2>
-    <div class="card">
-      <h3>불편한 점이 있으신가요?</h3>
-      <p>버그 신고, 기능 제안, 기타 문의는 아래 이메일로 연락해주세요. 빠른 시일 내에 답변드리겠습니다.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>하루, 한 주, 한 해가 타들어 가요</h2>
+        <p>일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 이번 주, 이번 달, 올해 남은 시간도 같은 양피지로 볼 수 있어요.<br>목표 날짜가 있는 일은 데드라인으로 더해 두면 그 날까지 남은 시간을 함께 세요.</p>
+      </div>
+      <div class="phone"><img src="img/ko/02-month-light.jpg" alt="하루, 한 주, 한 해가 타들어 가요" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>후 불어 끄는 하루의 끝</h2>
+        <p>잠들기 30분 전부터 타오르는 양피지에 숨을 불어 불을 꺼요. 입김의 세기만 보고 아무것도 녹음하지 않아요.<br>불을 끄고 남은 조각은 모아 둬요. 조각을 뒤집어 뒷면에 오늘을 한 줄로 남길 수도 있어요.</p>
+      </div>
+      <div class="phone"><img src="img/ko/blowout-dark.jpg" alt="후 불어 끄는 하루의 끝" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 불타는 내인생 &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">개인정보 처리방침</a></p>
-  <p style="margin-top: 6px;">Made with 🔥 in Korea</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>지나간 시간은 재로 남아요</h2>
+        <p>하루를 돌아보며 한 줄 회고를 쓰고, 그 시간을 어디에 썼는지 두 축 위에 점으로 놓아요. 회고는 주와 달마다 재 항아리에 쌓이고, 회고 책에서 다시 읽을 수 있어요.<br>재의 흐름 화면은 시간이 어디로 갔는지 분포 그래프와 불씨 달력으로 보여 줘요.</p>
+      </div>
+      <div class="phone"><img src="img/ko/03-urn-dark.jpg" alt="지나간 시간은 재로 남아요" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>시작은 세 단계면 돼요</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>기상과 취침 시각을 정해요</h3><p>오른쪽 위 톱니바퀴에서 바꿔요. 그 시각에 맞춰 양피지가 타기 시작하고 꺼져요.</p></li>
+<li class="card"><span class="n">2</span><h3>보고 싶은 기간을 골라요</h3><p>하루, 한 주, 한 달, 한 해 중 넘겨 보거나, 설정에서 필요 없는 페이지를 숨겨요.</p></li>
+<li class="card"><span class="n">3</span><h3>위젯을 더해요</h3><p>홈 화면이나 잠금화면에 두면 앱을 열지 않아도 남은 시간이 보여요.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>남은 시간을 보는 곳</h2>
+      <div class="card table">
+        <dl><div><dt>하루</dt><dd>일어난 순간부터 잠들 시각까지</dd></div><div><dt>한 주 · 한 달 · 한 해</dt><dd>이번 주, 이번 달, 올해 남은 시간</dd></div><div><dt>자유시간</dt><dd>잠과 일을 뺀 나만의 시간이 지나갈 때만 이번 주 양피지가 타요 (프로)</dd></div><div><dt>데드라인</dt><dd>목표 날짜까지 남은 시간. 1개까지 무료</dd></div><div><dt>홈 화면 위젯</dt><dd>하루 양피지는 소형·중형·대형, 주·달·해와 데드라인은 소형·중형</dd></div><div><dt>잠금화면 위젯</dt><dd>원형, 직사각형, 한 줄 모양</dd></div><div><dt>다이나믹 아일랜드 · 잠금화면 실시간 현황</dt><dd>잠들기 1시간 전부터, 또는 하루 종일. 설정에서 고르거나 끌 수 있어요</dd></div></dl>
+      </div>
+      <p class="muted">다이나믹 아일랜드를 펼치면 타는 양피지와 함께 자세한 시간이 펼쳐져요.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>양피지는 무료, 더 담고 싶으면 프로</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>무료</h3>
+          <ul><li>하루, 한 주, 한 달, 한 해 양피지</li><li>잠들기 30분 전 후 불어 끄기와 조각 모으기</li><li>한 줄 회고, 재 항아리, 회고 책</li><li>아침 확인과 건강 앱 수면 기록 연결</li><li>홈 화면·잠금화면 위젯과 다이나믹 아일랜드</li><li>데드라인 1개</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>불타는 내인생 프로</h3>
+          <ul><li>나만의 자유시간만 태우기</li><li>양피지 빛깔 테마: 달빛 한지, 청자, 노을</li><li>불꽃 종류: 들불, 숯불, 불티</li><li>모은 조각을 카드와 포스터 이미지로 공유</li><li>회고 책을 PDF로 내보내기</li><li>지난 열두 달의 재 흐름</li><li>데드라인 무제한</li></ul>
+          <p class="muted">구독이 아니에요. 한 번 결제로 평생 쓰고, 앞으로 생기는 프로 기능도 모두 포함돼요.</p>
+        </div>
+      </div>
+      <p class="muted">프로를 산 기기가 바뀌었다면 설정에서 구매 복원을 누르면 돼요.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>자주 묻는 질문</h2>
+      <div class="faq"><details><summary>위젯과 앱의 시간이 다르게 보여요.</summary><p>홈 화면 위젯은 iOS 구조상 매초 새로 그려지지 않아요. 앱을 열면 위젯이 바로 맞춰져요. 초 단위로 줄어드는 시간은 다이나믹 아일랜드와 잠금화면 실시간 현황에서 볼 수 있어요.</p></details>
+<details><summary>후 불어도 불이 꺼지지 않아요.</summary><p>불 끄기는 잠들기 30분 전부터 할 수 있어요. 마이크 권한을 허용했는지 확인하고, 화면 아래쪽 마이크에 가까이 대고 1초쯤 길게 불어 주세요. 짧게 한 번 튀는 소리로는 꺼지지 않아요.</p></details>
+<details><summary>제 목소리가 녹음되나요?</summary><p>아니요. 입김의 세기만 확인하고 소리는 녹음하거나 저장하지 않아요.</p></details>
+<details><summary>잠든 뒤에는 무엇이 보이나요?</summary><p>취침 시각이 지나면 불타는 하트가 나타나 일어날 때까지 잠이 얼마나 지났는지 보여 줘요. 다음 날 아침에는 어젯밤 제시간에 잤는지 묻고, 늦게 잤다면 그만큼 오늘 아침 양피지가 그을려요. 건강 앱을 연결하면 묻지 않고 기록된 잠든 시각을 써요.</p></details>
+<details><summary>알림은 언제 오나요?</summary><p>취침 1시간 전에 와요. 오지 않으면 설정 &gt; 알림 &gt; 불타는 내인생에서 알림이 허용되어 있는지 확인해 주세요.</p></details>
+<details><summary>배터리를 많이 쓰나요?</summary><p>앱 안의 카운트다운은 1초마다 바뀌지만, 위젯은 iOS가 관리하는 저전력 방식으로 갱신돼서 배터리 영향이 적어요.</p></details>
+<details><summary>제 기록은 어디에 저장되나요?</summary><p>기상·취침 시각, 데드라인, 회고와 항아리는 기기 안에만 저장돼요. 개발자에게는 익명 사용 통계와 오류 진단, 직접 보낸 의견만 전달돼요. 광고와 추적은 없어요.</p></details>
+<details><summary>프로는 구독인가요?</summary><p>아니요. 한 번 결제하면 평생 쓸 수 있어요. 기기를 바꿨다면 설정에서 구매 복원을 눌러 주세요.</p></details></div>
+      <p class="contact">버그 신고, 기능 제안, 그 밖의 문의는 <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>로 보내 주세요.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>오늘 저녁이 사라지기 전에<br>지켜보세요</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">App Store에서 무료로 받기</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="언어"><a href="" hreflang="ko" lang="ko" aria-current="page">한국어</a>
+<a href="en/" hreflang="en" lang="en">English</a>
+<a href="ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="es/" hreflang="es" lang="es">Español</a>
+<a href="de/" hreflang="de" lang="de">Deutsch</a>
+<a href="fr/" hreflang="fr" lang="fr">Français</a>
+<a href="it/" hreflang="it" lang="it">Italiano</a>
+<a href="pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="th/" hreflang="th" lang="th">ไทย</a>
+<a href="vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="da/" hreflang="da" lang="da">Dansk</a>
+<a href="el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">개인정보처리방침</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="demo.js"></script>
 </body>
 </html>

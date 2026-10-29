@@ -1,0 +1,156 @@
+{
+  "title": "Pergamena in fiamme: guarda bruciare quello che resta della tua giornata",
+  "description": "Dal risveglio all'ora di dormire, il tempo che ti resta oggi brucia come una pergamena. Mezz'ora prima di andare a letto, soffi e spegni la fiamma.",
+  "hero": {
+    "headline": "Quello che resta di oggi\nbrucia davanti a te",
+    "lead": "Una serata che in numeri sembra innocua appare diversa come pergamena in fiamme. Mezz'ora prima di dormire soffi sullo schermo, spegni il fuoco e chiudi la giornata.",
+    "cta": "Scarica gratis su App Store",
+    "note": "La pergamena in fiamme, il rito del soffio e le riflessioni sono gratis."
+  },
+  "demo": {
+    "title": "Prova a spegnerla",
+    "lead": "Porta l'orario a poco prima di dormire, poi tieni premuto il pulsante o soffia nel microfono.",
+    "clock": "Ora attuale",
+    "now": "Adesso",
+    "late": "20 min prima di dormire",
+    "remain": "Mancano all'ora di dormire",
+    "hm": "{h} h {m} min",
+    "m": "{m} min",
+    "range": "Sveglia {wake} · A letto {bed}",
+    "blow": "Tieni premuto per soffiare",
+    "mic": "Soffia nel microfono",
+    "micOn": "In ascolto. Soffia nel microfono",
+    "micNone": "Questo browser non può usare il microfono. Tieni premuto il pulsante.",
+    "wait": "Puoi spegnerla da 30 minuti prima di dormire",
+    "out": "Il fuoco è spento",
+    "kept": "L'hai spenta con {m} min di anticipo. Il frammento rimasto viene conservato.",
+    "again": "Riaccendi",
+    "note": "Come nell'app, conta solo la forza del soffio e non viene registrato nulla. Gli orari di sveglia e riposo sono quelli predefiniti dell'app."
+  },
+  "problem": {
+    "title": "Ti è mai capitato di dire \"è già mezzanotte?\"",
+    "text": "Ceni, ti siedi un attimo e la giornata è finita. I numeri dell'orologio sembrano sempre uguali, così non senti il tempo che si accorcia. Pergamena in fiamme mostra quello che resta come una pergamena che brucia, così te ne accorgi prima che la serata sparisca."
+  },
+  "features": [
+    {
+      "title": "Giorno, settimana e anno che bruciano",
+      "text": "Dal risveglio all'ora di dormire la pergamena brucia piano. Allo stesso modo vedi quanto resta di questa settimana, di questo mese e di quest'anno.\nAggiungi un obiettivo con data come scadenza e il conto alla rovescia scorre insieme.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Spegni la giornata con un soffio",
+      "text": "Da 30 minuti prima di dormire, soffi sulla pergamena e spegni il fuoco. Si usa solo la forza del respiro, non si registra nulla.\nIl frammento che resta viene conservato. Giralo e scrivi sul retro una riga sulla tua giornata.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Il tempo passato resta come cenere",
+      "text": "Ripensa alla giornata con una riflessione di una riga e mettila come un punto su un grafico a due assi, in base a come hai usato quel tempo. Le riflessioni si accumulano in urne di cenere settimanali e mensili e puoi rileggerle nel Libro delle riflessioni.\nIl Flusso della cenere mostra dove è finito il tuo tempo con un grafico di distribuzione e un calendario di braci.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Si parte in tre passi",
+    "items": [
+      {
+        "title": "Imposta sveglia e ora di dormire",
+        "text": "Tocca l'ingranaggio in alto a destra. La pergamena si accende e si spegne secondo questi orari."
+      },
+      {
+        "title": "Scegli il periodo",
+        "text": "Scorri tra giorno, settimana, mese e anno, oppure nascondi nelle Impostazioni le pagine che non ti servono."
+      },
+      {
+        "title": "Aggiungi un widget",
+        "text": "Nella schermata Home o di blocco vedi il tempo rimasto senza aprire l'app."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Dove vedere il tempo che resta",
+    "rows": [
+      ["Giorno", "Dal risveglio all'ora di dormire"],
+      ["Settimana · Mese · Anno", "Quanto resta di questa settimana, di questo mese e di quest'anno"],
+      ["Tempo libero", "La pergamena della settimana brucia solo nelle ore che tieni per te (Pro)"],
+      ["Scadenze", "Il tempo che manca alla data di un obiettivo. Una è gratis"],
+      ["Widget della schermata Home", "Pergamena del giorno in piccolo, medio e grande. Settimana, mese, anno e scadenze in piccolo e medio"],
+      ["Widget della schermata di blocco", "Circolare, rettangolare e in linea"],
+      ["Dynamic Island · Attività in tempo reale", "Da un'ora prima di dormire o tutto il giorno. Si sceglie o si disattiva nelle Impostazioni"]
+    ],
+    "note": "Espandi la Dynamic Island per vedere la pergamena in fiamme con il conto alla rovescia completo."
+  },
+  "pricing": {
+    "title": "La pergamena è gratis. Pro ne conserva di più.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Pergamene di giorno, settimana, mese e anno",
+        "Soffiare sulla fiamma e raccogliere i frammenti",
+        "Riflessioni di una riga, urne di cenere e Libro delle riflessioni",
+        "Controllo del mattino, con i dati del sonno di Salute se vuoi",
+        "Widget Home e schermata di blocco, Dynamic Island",
+        "Una scadenza"
+      ]
+    },
+    "pro": {
+      "name": "Pergamena in fiamme Pro",
+      "items": [
+        "Bruciare solo il tuo tempo libero",
+        "Temi: Hanji al chiaro di luna, Celadon, Tramonto",
+        "Fiamme: Fuoco di prateria, Braci, Stellina",
+        "Condividere i frammenti come card e poster",
+        "Esportare il Libro delle riflessioni in PDF",
+        "Dodici mesi di Flusso della cenere",
+        "Scadenze illimitate"
+      ],
+      "note": "Non è un abbonamento. Paghi una volta e resta tuo per sempre, incluse tutte le funzioni Pro future."
+    },
+    "note": "Nuovo dispositivo? Tocca Ripristina acquisti nelle Impostazioni."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Il widget mostra un orario diverso dall'app.",
+        "a": "iOS non ridisegna i widget della schermata Home ogni secondo. Aprendo l'app si risincronizzano. Per un conto alla rovescia al secondo, usa la Dynamic Island e l'Attività in tempo reale nella schermata di blocco."
+      },
+      {
+        "q": "Soffio ma il fuoco non si spegne.",
+        "a": "Si può spegnere solo da 30 minuti prima di dormire. Controlla di aver consentito l'accesso al microfono e soffia in modo costante per circa un secondo vicino al microfono in basso sull'iPhone. Un suono breve non basta."
+      },
+      {
+        "q": "La mia voce viene registrata?",
+        "a": "No. Viene misurata solo la forza del soffio. Nessun suono viene registrato o salvato."
+      },
+      {
+        "q": "Cosa mostra mentre dormo?",
+        "a": "Dopo l'ora di dormire appare un cuore in fiamme che mostra a che punto è la notte fino alla sveglia. Al mattino l'app ti chiede se sei andato a letto in orario e, se hai fatto tardi, la pergamena di oggi parte bruciacchiata di conseguenza. Collegando l'app Salute, usa l'orario in cui ti sei addormentato senza chiedertelo."
+      },
+      {
+        "q": "Quando arrivano le notifiche?",
+        "a": "Un'ora prima di dormire. Se non arrivano, controlla Impostazioni > Notifiche > Pergamena in fiamme."
+      },
+      {
+        "q": "Consuma molta batteria?",
+        "a": "Il conto alla rovescia nell'app scorre ogni secondo, ma i widget si aggiornano con il sistema a basso consumo gestito da iOS. L'impatto è minimo."
+      },
+      {
+        "q": "Dove vengono salvati i miei dati?",
+        "a": "Orari, scadenze, riflessioni e urne restano sul tuo dispositivo. Lo sviluppatore riceve solo statistiche d'uso anonime, diagnosi degli arresti anomali e i feedback che scegli di inviare. Niente pubblicità, niente tracciamento."
+      },
+      {
+        "q": "Pro è un abbonamento?",
+        "a": "No. Paghi una volta e resta tuo per sempre. Su un nuovo dispositivo, tocca Ripristina acquisti nelle Impostazioni."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Fermati a guardare la serata\nprima che sparisca",
+    "cta": "Scarica gratis su App Store"
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "languages": "Lingua",
+    "privacy": "Informativa sulla privacy",
+    "contact": "Bug, idee o altre domande? Scrivi a {email}."
+  }
+}

@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brændende Pergament — Support</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brændende Pergament: se resten af din dag brænde ned før sengetid</title>
+  <meta name="description" content="Fra du vågner til sengetid, brænder den tid, du har tilbage i dag, som et stykke pergament. En halv time før sengetid puster du flammen ud.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/da/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brændende Pergament: se resten af din dag brænde ned før sengetid">
+  <meta property="og:description" content="Fra du vågner til sengetid, brænder den tid, du har tilbage i dag, som et stykke pergament. En halv time før sengetid puster du flammen ud.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/da/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/da/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="index.html" hreflang="da" lang="da" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Gå til indhold</a>
+  <header class="bar">
+    <a class="brand" href="../da/"><img src="../icon.png" alt="" width="32" height="32">Brændende Pergament</a>
+    <a class="lang-link" href="#languages">Sprog</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Brændende Pergament</h1>
-  <p>Fra du vågner, til du går i seng, kan du se din dag brænde ned.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Om appen</h2>
-    <div class="card">
-      <h3>Hvad er Brændende Pergament?</h3>
-      <p>Brændende Pergament er en nedtællings-app, der viser, hvor meget af din dag der er tilbage, som et ark pergament, der langsomt brænder ned. Fra du vågner, til du går i seng, kan du med et blik se, hvor meget tid der er tilbage, så du kan få mest muligt ud af de timer, du stadig har.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Daglig nedtælling</span>
-        <span class="badge">Uge / måned / år</span>
-        <span class="badge">Widgets på hjemmeskærmen</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widgets på låseskærmen</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Det, der er tilbage af i dag,<br>brænder foran dig</h1>
+        <p class="lead">En aften, der ser harmløs ud som et tal, føles anderledes som pergament i flammer. En halv time før sengetid puster du på skærmen, slukker ilden og afslutter dagen.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Hent gratis i App Store</a><a class="try" href="#try">Prøv at puste det ud ↓</a></div>
+        <p class="muted small">Det brændende pergament, udpustningen og refleksionerne er gratis.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/da/01-week-dark.jpg" alt="Det, der er tilbage af i dag, brænder foran dig" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Sådan bruger du den</h2>
-    <div class="card">
-      <h3>Indstil din opvågnings- og sengetid</h3>
-      <p>Tryk på knappen ⚙️ øverst til højre for at indstille tidspunktet for opvågning og sengetid. Pergamentet begynder at brænde, når du vågner, og nedtællingen slutter ved sengetid.</p>
-    </div>
-    <div class="card">
-      <h3>Vælg en tidsperiode</h3>
-      <p>Vælg <strong>1 dag · 1 uge · 1 måned · 1 år</strong> i fanerne øverst, så brænder pergamentet og viser, hvor meget der er tilbage af perioden.</p>
-    </div>
-    <div class="card">
-      <h3>Widgets på hjemmeskærmen</h3>
-      <p>Hold fingeren på hjemmeskærmen → Tilføj widget → søg efter <strong>Brændende Pergament</strong> for at tilføje en dags-, uge-, måneds- eller årswidget. Der findes små, mellemstore og store størrelser.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island og låseskærm</h3>
-      <p>Når nedtællingen er startet, kan du følge den resterende tid live i Dynamic Island og på låseskærmen. Træk Dynamic Island ned for at se flere detaljer sammen med animationen af det brændende pergament.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Ofte stillede spørgsmål</h2>
-    <div class="card">
-      <h3>Widgetten viser et andet tidspunkt end appen</h3>
-      <p>På grund af den måde, iOS fungerer på, kan widgets på hjemmeskærmen ikke opdateres i realtid. Når du åbner appen, synkroniseres widgettens data automatisk. Brug Dynamic Island og låseskærmen til en live-nedtælling.</p>
-    </div>
-    <div class="card">
-      <h3>Hvad vises, mens jeg sover?</h3>
-      <p>Efter sengetid vises en animation af et brændende hjerte, der viser, hvor langt din søvn er nået frem til opvågning. Et nyt stykke pergament gøres klar 30 minutter, før du vågner.</p>
-    </div>
-    <div class="card">
-      <h3>Hvornår kommer notifikationerne?</h3>
-      <p>Du får en notifikation en time før sengetid. Hvis den ikke kommer, så tjek, at notifikationer er tilladt under <strong>Indstillinger → Notifikationer → Brændende Pergament</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>Dræner appen mit batteri?</h3>
-      <p>Nedtællingen i appen tikker én gang i sekundet, men widgets kører efter en strømbesparende tidsplan, som systemet styrer, så påvirkningen af batteriet holdes på et minimum.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Prøv at puste det ud</h2>
+      <p class="muted">Ryk uret frem til lige før sengetid, og hold så knappen inde eller pust i mikrofonen.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Prøv at puste det ud&quot;, &quot;lead&quot;: &quot;Ryk uret frem til lige før sengetid, og hold så knappen inde eller pust i mikrofonen.&quot;, &quot;clock&quot;: &quot;Klokken er&quot;, &quot;now&quot;: &quot;Nu&quot;, &quot;late&quot;: &quot;20 min før sengetid&quot;, &quot;remain&quot;: &quot;Tilbage til sengetid&quot;, &quot;hm&quot;: &quot;{h} t {m} min&quot;, &quot;m&quot;: &quot;{m} min&quot;, &quot;range&quot;: &quot;Op {wake} · I seng {bed}&quot;, &quot;blow&quot;: &quot;Hold inde for at puste&quot;, &quot;mic&quot;: &quot;Pust i mikrofonen&quot;, &quot;micOn&quot;: &quot;Lytter. Pust i mikrofonen&quot;, &quot;micNone&quot;: &quot;Denne browser kan ikke bruge mikrofonen. Hold knappen inde i stedet.&quot;, &quot;wait&quot;: &quot;Du kan puste den ud fra 30 minutter før sengetid&quot;, &quot;out&quot;: &quot;Ilden er slukket&quot;, &quot;kept&quot;: &quot;Du pustede den ud med {m} min tilbage. Brudstykket, der er tilbage, bliver gemt.&quot;, &quot;again&quot;: &quot;Tænd igen&quot;, &quot;note&quot;: &quot;Ligesom appen måles kun, hvor hårdt du puster, og intet optages. Op- og sengetid er appens standardværdier.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Privatliv</h2>
-    <div class="card">
-      <h3>Sådan behandles dine oplysninger</h3>
-      <p>Dit tidspunkt for opvågning, din sengetid, frister, refleksioner og urner gemmes kun på din enhed. Udvikleren modtager kun anonym brugsstatistik, nedbrudsdiagnostik og den feedback, du selv vælger at sende.</p>
-      <ul>
-        <li>Appen og dens widgets deler kun data via en App Group på din enhed.</li>
-        <li>Ingen reklamer, ingen sporing.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Læs hele privatlivspolitikken →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Er klokken pludselig blevet midnat?</h2>
+      <p>Du spiser aftensmad, sætter dig et øjeblik, og så er dagen væk. Tallene på uret ser ens ud hver aften, så du mærker ikke, at tiden løber ud. Brændende Pergament viser resten af dagen som pergament, der brænder ned, så du opdager det, før aftenen forsvinder.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Kontakt</h2>
-    <div class="card">
-      <h3>Virker noget ikke, som det skal?</h3>
-      <p>Til fejlrapporter, idéer til funktioner eller andre spørgsmål kan du skrive til adressen nedenfor. Vi svarer, så hurtigt vi kan.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Dag, uge og år brænder ned</h2>
+        <p>Fra du vågner til sengetid brænder pergamentet langsomt. Se på samme måde, hvad der er tilbage af ugen, måneden og året.<br>Tilføj et mål med en dato som frist, så tæller den ned ved siden af.</p>
+      </div>
+      <div class="phone"><img src="../img/da/02-month-light.jpg" alt="Dag, uge og år brænder ned" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Pust dagen ud</h2>
+        <p>Fra 30 minutter før sengetid puster du på det brændende pergament og slukker ilden. Kun styrken af dit pust bruges, og intet optages.<br>Brudstykket, der er tilbage, bliver gemt. Vend det, og skriv en linje om dagen på bagsiden.</p>
+      </div>
+      <div class="phone"><img src="../img/da/blowout-dark.jpg" alt="Pust dagen ud" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Privatlivspolitik</a></p>
-  <p style="margin-top: 6px;">Lavet med 🔥 i Korea</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tiden, der gik, bliver til aske</h2>
+        <p>Se tilbage på dagen med en linje, og sæt den som en prik i en graf med to akser efter, hvad tiden gik til. Refleksionerne samler sig i askeurner for uge og måned og kan læses igen i Refleksionsbogen.<br>Askens strøm viser, hvor tiden blev af, med en fordelingsgraf og en glødekalender.</p>
+      </div>
+      <div class="phone"><img src="../img/da/03-urn-dark.jpg" alt="Tiden, der gik, bliver til aske" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Kom i gang i tre trin</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Vælg op- og sengetid</h3><p>Tryk på tandhjulet øverst til højre. Pergamentet tændes og slukkes efter det.</p></li>
+<li class="card"><span class="n">2</span><h3>Vælg periode</h3><p>Swipe mellem dag, uge, måned og år, eller skjul de sider, du ikke bruger, i Indstillinger.</p></li>
+<li class="card"><span class="n">3</span><h3>Tilføj en widget</h3><p>På hjemmeskærmen eller låseskærmen kan du se tiden tilbage uden at åbne appen.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Her kan du se tiden tilbage</h2>
+      <div class="card table">
+        <dl><div><dt>Dag</dt><dd>Fra du vågner til sengetid</dd></div><div><dt>Uge · Måned · År</dt><dd>Hvad der er tilbage af ugen, måneden og året</dd></div><div><dt>Fritid</dt><dd>Ugens pergament brænder kun i de timer, du holder fri til dig selv (Pro)</dd></div><div><dt>Frister</dt><dd>Tid tilbage til et måls dato. Én er gratis</dd></div><div><dt>Widgets på hjemmeskærmen</dt><dd>Dagens pergament i lille, mellem og stor. Uge, måned, år og frister i lille og mellem</dd></div><div><dt>Widgets på låseskærmen</dt><dd>Rund, rektangulær og på én linje</dd></div><div><dt>Dynamic Island · Live-aktivitet</dt><dd>Fra en time før sengetid eller hele dagen. Vælg eller slå fra i Indstillinger</dd></div></dl>
+      </div>
+      <p class="muted">Udvid Dynamic Island for at se det brændende pergament med hele nedtællingen.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Pergamentet er gratis. Pro rummer mere.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Pergamenter for dag, uge, måned og år</li><li>Pust flammen ud og saml brudstykker</li><li>Refleksioner på én linje, askeurner og Refleksionsbog</li><li>Morgentjek, eventuelt med søvndata fra Sundhed</li><li>Widgets til hjemme- og låseskærm, Dynamic Island</li><li>Én frist</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Brændende Pergament Pro</h3>
+          <ul><li>Brænd kun din egen fritid</li><li>Temaer: Måneskins-hanji, Celadon, Solnedgang</li><li>Flammer: Prærieild, Gløder, Stjernekaster</li><li>Del dine brudstykker som kort og plakater</li><li>Eksportér Refleksionsbogen som PDF</li><li>Tolv måneders askestrøm</li><li>Ubegrænsede frister</li></ul>
+          <p class="muted">Ikke et abonnement. Ét køb for altid, inklusive alle Pro-funktioner, der kommer senere.</p>
+        </div>
+      </div>
+      <p class="muted">Ny enhed? Tryk på Gendan køb i Indstillinger.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Ofte stillede spørgsmål</h2>
+      <div class="faq"><details><summary>Widgetten viser en anden tid end appen.</summary><p>iOS tegner ikke widgets på hjemmeskærmen igen hvert sekund. Når du åbner appen, passer de igen. En nedtælling sekund for sekund finder du i Dynamic Island og live-aktiviteten på låseskærmen.</p></details>
+<details><summary>Jeg puster, men ilden går ikke ud.</summary><p>Du kan først puste den ud 30 minutter før sengetid. Tjek, at adgang til mikrofonen er tilladt, og pust jævnt i cirka et sekund tæt på mikrofonen nederst på iPhone. En kort lyd er ikke nok.</p></details>
+<details><summary>Bliver min stemme optaget?</summary><p>Nej. Den måler kun, hvor hårdt du puster. Ingen lyd optages eller gemmes.</p></details>
+<details><summary>Hvad vises, mens jeg sover?</summary><p>Efter sengetid dukker et brændende hjerte op og viser, hvor langt natten er nået frem til du vågner. Om morgenen spørger appen, om du kom i seng til tiden; var du sent på den, starter dagens pergament tilsvarende svedet. Forbundet til Sundhed bruger den dit registrerede indsovningstidspunkt uden at spørge.</p></details>
+<details><summary>Hvornår kommer notifikationerne?</summary><p>En time før sengetid. Hvis de ikke kommer, så tjek Indstillinger &gt; Notifikationer &gt; Brændende Pergament.</p></details>
+<details><summary>Bruger appen meget strøm?</summary><p>Nedtællingen i appen skifter hvert sekund, men widgets opdateres strømbesparende af iOS, så påvirkningen er lille.</p></details>
+<details><summary>Hvor gemmes mine data?</summary><p>Op- og sengetid, frister, refleksioner og urner bliver på din enhed. Udvikleren modtager kun anonym brugsstatistik, nedbrudsdiagnostik og den feedback, du selv sender. Ingen reklamer, ingen sporing.</p></details>
+<details><summary>Er Pro et abonnement?</summary><p>Nej. Du betaler én gang og har det for altid. På en ny enhed trykker du på Gendan køb i Indstillinger.</p></details></div>
+      <p class="contact">Fejl, idéer eller andre spørgsmål? Skriv til <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Fang aftenen,<br>før den er væk</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Hent gratis i App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Sprog"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da" aria-current="page">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privatlivspolitik</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

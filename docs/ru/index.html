@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Горящий пергамент — Поддержка</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Горящий пергамент: смотрите, как сгорает остаток дня</title>
+  <meta name="description" content="С момента пробуждения и до отбоя время, что осталось на сегодня, сгорает листом пергамента. За полчаса до сна задуйте пламя и завершите день.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Горящий пергамент: смотрите, как сгорает остаток дня">
+  <meta property="og:description" content="С момента пробуждения и до отбоя время, что осталось на сегодня, сгорает листом пергамента. За полчаса до сна задуйте пламя и завершите день.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/ru/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/ru/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="index.html" hreflang="ru" lang="ru" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+  <header class="bar">
+    <a class="brand" href="../ru/"><img src="../icon.png" alt="" width="32" height="32">Горящий пергамент</a>
+    <a class="lang-link" href="#languages">Язык</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Горящий пергамент</h1>
-  <p>От момента пробуждения до отхода ко сну — смотрите, как сгорает ваш день.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>О приложении</h2>
-    <div class="card">
-      <h3>Что такое «Горящий пергамент»?</h3>
-      <p>«Горящий пергамент» — это приложение-отсчёт, которое показывает, сколько осталось от вашего дня, в виде медленно горящего листа пергамента. От подъёма до отхода ко сну сразу видно, сколько времени ещё впереди, и можно распорядиться оставшимися часами с толком.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Отсчёт дня</span>
-        <span class="badge">Неделя / месяц / год</span>
-        <span class="badge">Виджеты на экране «Домой»</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Виджеты на экране блокировки</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Остаток дня<br>сгорает у вас на глазах</h1>
+        <p class="lead">Вечер, который в цифрах кажется безобидным, выглядит иначе, когда это горящий пергамент. За полчаса до сна подуйте на экран, погасите огонь и закройте день.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Скачать бесплатно в App Store</a><a class="try" href="#try">Попробуйте задуть ↓</a></div>
+        <p class="muted small">Горящий пергамент, ритуал задувания и записи бесплатны.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/ru/01-week-dark.jpg" alt="Остаток дня сгорает у вас на глазах" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Как пользоваться</h2>
-    <div class="card">
-      <h3>Задайте время подъёма и сна</h3>
-      <p>Нажмите кнопку ⚙️ в правом верхнем углу и задайте время подъёма и отхода ко сну. Пергамент начинает гореть, когда вы просыпаетесь, а отсчёт заканчивается в час сна.</p>
-    </div>
-    <div class="card">
-      <h3>Выберите период</h3>
-      <p>Выберите во вкладках вверху <strong>1 день · 1 неделя · 1 месяц · 1 год</strong> — пергамент сгорит ровно настолько, сколько осталось от этого периода.</p>
-    </div>
-    <div class="card">
-      <h3>Виджеты на экране «Домой»</h3>
-      <p>Нажмите и удерживайте экран «Домой» → «Добавить виджет» → найдите <strong>«Горящий пергамент»</strong> и добавьте виджет дня, недели, месяца или года. Доступны маленький, средний и большой размеры.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island и экран блокировки</h3>
-      <p>Когда отсчёт начнётся, оставшееся время можно следить в реальном времени в Dynamic Island и на экране блокировки. Потяните Dynamic Island вниз, чтобы увидеть подробности и анимацию горящего пергамента.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Частые вопросы</h2>
-    <div class="card">
-      <h3>Виджет показывает не то время, что в приложении</h3>
-      <p>Из-за особенностей iOS виджеты на экране «Домой» не могут обновляться в реальном времени. При открытии приложения данные виджета синхронизируются сами. Для живого отсчёта используйте Dynamic Island и экран блокировки.</p>
-    </div>
-    <div class="card">
-      <h3>Что показывается, пока я сплю?</h3>
-      <p>После времени сна появляется анимация горящего сердца, показывающая, какая часть сна уже прошла до подъёма. Новый лист пергамента готовится за 30 минут до вашего пробуждения.</p>
-    </div>
-    <div class="card">
-      <h3>Когда приходят уведомления?</h3>
-      <p>Уведомление приходит за час до сна. Если его нет, проверьте, что уведомления разрешены в разделе <strong>Настройки → Уведомления → Горящий пергамент</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>Приложение расходует заряд батареи?</h3>
-      <p>Отсчёт в приложении обновляется раз в секунду, а виджеты работают по энергосберегающему расписанию, которым управляет система, поэтому влияние на батарею минимально.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Попробуйте задуть</h2>
+      <p class="muted">Передвиньте время ближе ко сну, затем удерживайте кнопку или подуйте в микрофон.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Попробуйте задуть&quot;, &quot;lead&quot;: &quot;Передвиньте время ближе ко сну, затем удерживайте кнопку или подуйте в микрофон.&quot;, &quot;clock&quot;: &quot;Сейчас&quot;, &quot;now&quot;: &quot;Сейчас&quot;, &quot;late&quot;: &quot;За 20 мин до сна&quot;, &quot;remain&quot;: &quot;До сна осталось&quot;, &quot;hm&quot;: &quot;{h} ч {m} мин&quot;, &quot;m&quot;: &quot;{m} мин&quot;, &quot;range&quot;: &quot;Подъём {wake} · Отбой {bed}&quot;, &quot;blow&quot;: &quot;Удерживайте, чтобы подуть&quot;, &quot;mic&quot;: &quot;Подуть в микрофон&quot;, &quot;micOn&quot;: &quot;Слушаю. Подуйте в микрофон&quot;, &quot;micNone&quot;: &quot;Этот браузер не может использовать микрофон. Удерживайте кнопку.&quot;, &quot;wait&quot;: &quot;Задуть можно за 30 минут до сна&quot;, &quot;out&quot;: &quot;Огонь погас&quot;, &quot;kept&quot;: &quot;Вы задули огонь, когда оставалось {m} мин. Оставшийся осколок сохранён.&quot;, &quot;again&quot;: &quot;Зажечь снова&quot;, &quot;note&quot;: &quot;Как и в приложении, учитывается только сила дыхания, ничего не записывается. Время подъёма и отбоя стоят по умолчанию.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Конфиденциальность</h2>
-    <div class="card">
-      <h3>Как обрабатываются ваши данные</h3>
-      <p>Время подъёма и сна, дедлайны, записи и урны хранятся только на вашем устройстве. Разработчик получает лишь обезличенную статистику использования, отчёты о сбоях и отзывы, которые вы решите отправить.</p>
-      <ul>
-        <li>Приложение и его виджеты обмениваются данными только через App Group на вашем устройстве.</li>
-        <li>Никакой рекламы и слежки.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Читать политику конфиденциальности полностью →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Бывало, что внезапно уже полночь?</h2>
+      <p>Поужинали, присели на минутку, а день уже прошёл. Цифры на часах каждый вечер выглядят одинаково, поэтому не чувствуется, как уходит время. Горящий пергамент показывает остаток дня как сгорающий лист, и вы замечаете это до того, как вечер исчезнет.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Связь с нами</h2>
-    <div class="card">
-      <h3>Что-то работает не так?</h3>
-      <p>Если нашли ошибку, хотите предложить функцию или задать вопрос, напишите на адрес ниже. Мы ответим как можно скорее.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>День, неделя и год сгорают</h2>
+        <p>С момента пробуждения и до отбоя пергамент медленно горит. Так же видно, сколько осталось от этой недели, месяца и года.<br>Добавьте цель с датой как дедлайн, и обратный отсчёт пойдёт рядом.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/02-month-light.jpg" alt="День, неделя и год сгорают" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Задуйте день</h2>
+        <p>За 30 минут до сна подуйте на горящий пергамент, чтобы погасить огонь. Учитывается только сила дыхания, ничего не записывается.<br>Оставшийся осколок сохраняется. Переверните его и напишите на обороте строчку о сегодняшнем дне.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/blowout-dark.jpg" alt="Задуйте день" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Политика конфиденциальности</a></p>
-  <p style="margin-top: 6px;">Сделано с 🔥 в Корее</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Прошедшее время оседает пеплом</h2>
+        <p>Подведите итог дня одной строкой и поставьте точку на графике с двумя осями: на что ушло это время. Записи копятся в урнах пепла за неделю и месяц, их можно перечитать в Книге записей.<br>Поток пепла показывает, куда ушло время, с графиком распределения и календарём угольков.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/03-urn-dark.jpg" alt="Прошедшее время оседает пеплом" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Три шага, чтобы начать</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Задайте подъём и отбой</h3><p>Нажмите на шестерёнку справа вверху. Пергамент загорается и гаснет по этому расписанию.</p></li>
+<li class="card"><span class="n">2</span><h3>Выберите период</h3><p>Листайте между днём, неделей, месяцем и годом или скройте лишние страницы в настройках.</p></li>
+<li class="card"><span class="n">3</span><h3>Добавьте виджет</h3><p>На экране «Домой» или на экране блокировки остаток времени виден без открытия приложения.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Где видно оставшееся время</h2>
+      <div class="card table">
+        <dl><div><dt>День</dt><dd>От пробуждения до отбоя</dd></div><div><dt>Неделя · Месяц · Год</dt><dd>Сколько осталось от этой недели, месяца и года</dd></div><div><dt>Свободное время</dt><dd>Пергамент недели горит только в часы, которые вы оставили для себя (Pro)</dd></div><div><dt>Дедлайны</dt><dd>Время до даты цели. Один бесплатно</dd></div><div><dt>Виджеты экрана «Домой»</dt><dd>Пергамент дня маленький, средний и большой. Неделя, месяц, год и дедлайны маленькие и средние</dd></div><div><dt>Виджеты экрана блокировки</dt><dd>Круглый, прямоугольный и строкой</dd></div><div><dt>Dynamic Island · Live Activity</dt><dd>За час до сна или весь день. Выбирается или отключается в настройках</dd></div></dl>
+      </div>
+      <p class="muted">Разверните Dynamic Island, чтобы увидеть горящий пергамент с полным отсчётом.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Пергамент бесплатен. Pro хранит больше.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Бесплатно</h3>
+          <ul><li>Пергаменты дня, недели, месяца и года</li><li>Задувание пламени и сбор осколков</li><li>Записи в одну строку, урны пепла и Книга записей</li><li>Утренняя проверка, по желанию с данными сна из «Здоровья»</li><li>Виджеты для экрана «Домой» и блокировки, Dynamic Island</li><li>Один дедлайн</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Горящий пергамент Pro</h3>
+          <ul><li>Сжигать только своё свободное время</li><li>Темы: Лунная бумага ханджи, Селадон, Закат</li><li>Пламя: Степной пожар, Угли, Бенгальский огонь</li><li>Делиться осколками в виде карточек и постеров</li><li>Экспорт Книги записей в PDF</li><li>Поток пепла за двенадцать месяцев</li><li>Неограниченные дедлайны</li></ul>
+          <p class="muted">Не подписка. Одна покупка навсегда, включая все будущие функции Pro.</p>
+        </div>
+      </div>
+      <p class="muted">Новое устройство? Нажмите «Восстановить покупки» в настройках.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Частые вопросы</h2>
+      <div class="faq"><details><summary>Виджет показывает другое время, чем приложение.</summary><p>iOS не перерисовывает виджеты экрана «Домой» каждую секунду. Откройте приложение, и они синхронизируются. Посекундный отсчёт показывают Dynamic Island и Live Activity на экране блокировки.</p></details>
+<details><summary>Дую, а огонь не гаснет.</summary><p>Задуть можно только за 30 минут до сна. Проверьте, что доступ к микрофону разрешён, и ровно подуйте около секунды на микрофон внизу iPhone. Короткого звука недостаточно.</p></details>
+<details><summary>Мой голос записывается?</summary><p>Нет. Проверяется только сила выдоха. Звук не записывается и не сохраняется.</p></details>
+<details><summary>Что видно, пока я сплю?</summary><p>После отбоя появляется горящее сердце и показывает, какая часть ночи прошла до подъёма. Утром приложение спросит, легли ли вы вовремя; если поздно, сегодняшний пергамент начнётся обугленным на это время. Если подключить «Здоровье», оно возьмёт записанное время засыпания без вопросов.</p></details>
+<details><summary>Когда приходят уведомления?</summary><p>За час до сна. Если их нет, проверьте Настройки &gt; Уведомления &gt; Горящий пергамент.</p></details>
+<details><summary>Сильно ли садится батарея?</summary><p>Отсчёт в приложении обновляется каждую секунду, но виджеты iOS обновляет в экономном режиме, так что влияние небольшое.</p></details>
+<details><summary>Где хранятся мои данные?</summary><p>Время подъёма и отбоя, дедлайны, записи и урны остаются на вашем устройстве. Разработчик получает только анонимную статистику использования, отчёты о сбоях и отзывы, которые вы сами отправите. Никакой рекламы и отслеживания.</p></details>
+<details><summary>Pro оформляется как подписка?</summary><p>Нет. Вы платите один раз и пользуетесь всегда. На новом устройстве нажмите «Восстановить покупки» в настройках.</p></details></div>
+      <p class="contact">Ошибки, идеи и другие вопросы: пишите на <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Поймайте этот вечер,<br>пока он не исчез</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Скачать бесплатно в App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Язык"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Политика конфиденциальности</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

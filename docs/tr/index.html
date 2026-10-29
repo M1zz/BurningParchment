@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yanan Parşömen — Destek</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yanan Parşömen: günün geri kalanının yanıp bitişini izle</title>
+  <meta name="description" content="Uyandığın andan yatma saatine kadar bugün kalan zamanın bir parşömen gibi yanar. Yatmadan yarım saat önce üfleyip alevi söndürürsün.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yanan Parşömen: günün geri kalanının yanıp bitişini izle">
+  <meta property="og:description" content="Uyandığın andan yatma saatine kadar bugün kalan zamanın bir parşömen gibi yanar. Yatmadan yarım saat önce üfleyip alevi söndürürsün.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/tr/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/tr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="index.html" hreflang="tr" lang="tr" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="bar">
+    <a class="brand" href="../tr/"><img src="../icon.png" alt="" width="32" height="32">Yanan Parşömen</a>
+    <a class="lang-link" href="#languages">Dil</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Yanan Parşömen</h1>
-  <p>Uyandığın andan yattığın ana kadar, gününün yanıp bitişini izle.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Uygulama Hakkında</h2>
-    <div class="card">
-      <h3>Yanan Parşömen nedir?</h3>
-      <p>Yanan Parşömen, gününden ne kadarının kaldığını yavaşça yanan bir parşömen yaprağı olarak gösteren bir geri sayım uygulamasıdır. Uyanmaktan uyku saatine kadar ne kadar zaman kaldığını tek bakışta görür, kalan saatleri en iyi şekilde değerlendirirsin.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Günlük geri sayım</span>
-        <span class="badge">Hafta / Ay / Yıl</span>
-        <span class="badge">Ana Ekran widget’ları</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Kilit Ekranı widget’ları</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Bugünden kalan zaman<br>gözünün önünde yanıyor</h1>
+        <p class="lead">Rakamla bakınca masum görünen bir akşam, alev alan bir parşömen olunca bambaşka görünür. Yatmadan yarım saat önce ekrana üfle, ateşi söndür ve günü kapat.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">App Store'dan ücretsiz indir</a><a class="try" href="#try">Üfleyip söndürmeyi dene ↓</a></div>
+        <p class="muted small">Yanan parşömen, üfleyerek söndürme ve değerlendirmeler ücretsiz.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/tr/01-week-dark.jpg" alt="Bugünden kalan zaman gözünün önünde yanıyor" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Nasıl Kullanılır</h2>
-    <div class="card">
-      <h3>Uyanma ve uyku saatini ayarla</h3>
-      <p>Uyanma ve uyku saatini ayarlamak için sağ üstteki ⚙️ düğmesine dokun. Parşömen uyandığında yanmaya başlar, geri sayım uyku saatinde biter.</p>
-    </div>
-    <div class="card">
-      <h3>Bir zaman aralığı seç</h3>
-      <p>Üstteki sekmelerden <strong>1 Gün · 1 Hafta · 1 Ay · 1 Yıl</strong> seç; parşömen o aralıktan ne kadar kaldığını göstermek için yanar.</p>
-    </div>
-    <div class="card">
-      <h3>Ana Ekran widget’ları</h3>
-      <p>Ana Ekran’a dokunup basılı tut → Widget Ekle → <strong>Yanan Parşömen</strong>’i ara ve gün, hafta, ay ya da yıl widget’ı ekle. Küçük, Orta ve Büyük boyutlar mevcut.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island ve Kilit Ekranı</h3>
-      <p>Geri sayım başladığında kalan süreyi Dynamic Island’da ve Kilit Ekranı’nda canlı takip edebilirsin. Daha fazla ayrıntı ve yanan parşömen animasyonu için Dynamic Island’ı aşağı çek.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>SSS</h2>
-    <div class="card">
-      <h3>Widget uygulamadan farklı bir saat gösteriyor</h3>
-      <p>iOS’un çalışma biçimi nedeniyle Ana Ekran widget’ları gerçek zamanlı yenilenemez. Uygulamayı açmak widget verilerini otomatik senkronize eder. Canlı geri sayım için Dynamic Island’ı ve Kilit Ekranı’nı kullan.</p>
-    </div>
-    <div class="card">
-      <h3>Uyurken ne gösteriliyor?</h3>
-      <p>Uyku saatinden sonra, uykunun uyanışa kadar ne kadar ilerlediğini gösteren yanan bir kalp animasyonu belirir. Taze bir parşömen yaprağı uyanmandan 30 dakika önce hazırlanır.</p>
-    </div>
-    <div class="card">
-      <h3>Bildirimler ne zaman gelir?</h3>
-      <p>Uyku saatinden bir saat önce bildirim alırsın. Gelmezse <strong>Ayarlar → Bildirimler → Yanan Parşömen</strong> altında bildirimlere izin verildiğini kontrol et.</p>
-    </div>
-    <div class="card">
-      <h3>Uygulama pili tüketir mi?</h3>
-      <p>Uygulama içindeki geri sayım saniyede bir ilerler; widget’lar ise sistemin yönettiği düşük güç tüketimli bir zaman çizelgesiyle çalışır, bu yüzden pil ömrüne etkisi en aza indirilir.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Üfleyip söndürmeyi dene</h2>
+      <p class="muted">Saati yatmadan hemen önceye getir, sonra düğmeyi basılı tut ya da mikrofona üfle.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Üfleyip söndürmeyi dene&quot;, &quot;lead&quot;: &quot;Saati yatmadan hemen önceye getir, sonra düğmeyi basılı tut ya da mikrofona üfle.&quot;, &quot;clock&quot;: &quot;Şu an saat&quot;, &quot;now&quot;: &quot;Şimdi&quot;, &quot;late&quot;: &quot;Yatmadan 20 dk önce&quot;, &quot;remain&quot;: &quot;Yatma saatine kalan&quot;, &quot;hm&quot;: &quot;{h} sa {m} dk&quot;, &quot;m&quot;: &quot;{m} dk&quot;, &quot;range&quot;: &quot;Kalkış {wake} · Yatış {bed}&quot;, &quot;blow&quot;: &quot;Üflemek için basılı tut&quot;, &quot;mic&quot;: &quot;Mikrofona üfle&quot;, &quot;micOn&quot;: &quot;Dinliyor. Mikrofona üfle&quot;, &quot;micNone&quot;: &quot;Bu tarayıcı mikrofonu kullanamıyor. Düğmeyi basılı tut.&quot;, &quot;wait&quot;: &quot;Yatmadan 30 dakika önce söndürebilirsin&quot;, &quot;out&quot;: &quot;Ateş söndü&quot;, &quot;kept&quot;: &quot;{m} dk kala söndürdün. Geriye kalan parça saklanıyor.&quot;, &quot;again&quot;: &quot;Yeniden yak&quot;, &quot;note&quot;: &quot;Uygulamadaki gibi yalnızca üfleme gücü ölçülür, hiçbir şey kaydedilmez. Kalkış ve yatış saati uygulamanın varsayılanlarıdır.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Gizlilik</h2>
-    <div class="card">
-      <h3>Bilgilerin nasıl işlenir</h3>
-      <p>Uyanma saatin, uyku saatin, son tarihlerin, değerlendirmelerin ve kavanozların yalnızca cihazında saklanır. Geliştiriciye yalnızca anonim kullanım istatistikleri, çökme tanılamaları ve göndermeyi seçtiğin geri bildirimler ulaşır.</p>
-      <ul>
-        <li>Uygulama ve widget’ları, verileri yalnızca cihazındaki bir App Group üzerinden paylaşır.</li>
-        <li>Reklam yok, takip yok.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Gizlilik Politikası’nın tamamını oku →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>"Saat ne ara on iki oldu?" dediğin oldu mu?</h2>
+      <p>Akşam yemeğini yersin, biraz oturursun ve gün biter. Saatteki rakamlar her akşam aynı göründüğü için zamanın azaldığını hissetmezsin. Yanan Parşömen kalan zamanı yanıp biten bir parşömen olarak gösterir, akşam kaybolmadan fark edersin.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>İletişim</h2>
-    <div class="card">
-      <h3>Bir şey düzgün çalışmıyor mu?</h3>
-      <p>Hata bildirimleri, özellik fikirleri veya başka sorular için aşağıdaki adrese e-posta gönder. En kısa sürede yanıtlarız.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Günün, haftan ve yılın yanıyor</h2>
+        <p>Uyandığın andan yatma saatine kadar parşömen yavaş yavaş yanar. Bu hafta, bu ay ve bu yıldan ne kaldığını da aynı şekilde görürsün.<br>Tarihi olan bir hedefi son tarih olarak ekle, geri sayımı da yanında akar.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/02-month-light.jpg" alt="Günün, haftan ve yılın yanıyor" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Günü bir üflemeyle kapat</h2>
+        <p>Yatmadan 30 dakika önce yanan parşömene üfleyip ateşi söndürebilirsin. Yalnızca nefesinin gücü kullanılır, hiçbir şey kaydedilmez.<br>Geriye kalan parça saklanır. Çevirip arkasına bugünle ilgili bir satır yazabilirsin.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/blowout-dark.jpg" alt="Günü bir üflemeyle kapat" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Gizlilik Politikası</a></p>
-  <p style="margin-top: 6px;">Kore’de 🔥 ile yapıldı</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Geçen zaman kül olarak kalır</h2>
+        <p>Günü tek satırlık bir değerlendirmeyle düşün ve zamanı nasıl kullandığına göre iki eksenli bir grafiğe nokta olarak koy. Değerlendirmeler haftalık ve aylık Kül Kavanozlarında birikir, Değerlendirme Kitabı'nda yeniden okunur.<br>Külün Akışı, zamanının nereye gittiğini dağılım grafiği ve köz takvimiyle gösterir.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/03-urn-dark.jpg" alt="Geçen zaman kül olarak kalır" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Üç adımda başla</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Kalkış ve yatış saatini ayarla</h3><p>Sağ üstteki dişliye dokun. Parşömen bu saatlere göre tutuşur ve söner.</p></li>
+<li class="card"><span class="n">2</span><h3>Dönemi seç</h3><p>Gün, hafta, ay ve yıl arasında kaydır ya da gerekmeyen sayfaları Ayarlar'dan gizle.</p></li>
+<li class="card"><span class="n">3</span><h3>Widget ekle</h3><p>Ana ekranda ya da kilitli ekranda kalan zamanı uygulamayı açmadan görürsün.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kalan zamanı nerede görürsün</h2>
+      <div class="card table">
+        <dl><div><dt>Gün</dt><dd>Uyandığın andan yatma saatine kadar</dd></div><div><dt>Hafta · Ay · Yıl</dt><dd>Bu hafta, bu ay ve bu yıldan kalan</dd></div><div><dt>Boş zaman</dt><dd>Haftanın parşömeni yalnızca kendine ayırdığın saatlerde yanar (Pro)</dd></div><div><dt>Son Tarihler</dt><dd>Bir hedefin tarihine kalan süre. Biri ücretsiz</dd></div><div><dt>Ana ekran widget'ları</dt><dd>Günlük parşömen küçük, orta ve büyük. Hafta, ay, yıl ve son tarihler küçük ve orta</dd></div><div><dt>Kilitli ekran widget'ları</dt><dd>Yuvarlak, dikdörtgen ve tek satır</dd></div><div><dt>Dynamic Island · Canlı Etkinlik</dt><dd>Yatmadan bir saat önceden ya da gün boyu. Ayarlar'dan seç ya da kapat</dd></div></dl>
+      </div>
+      <p class="muted">Yanan parşömeni tam geri sayımla görmek için Dynamic Island'ı genişlet.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Parşömen ücretsiz. Pro daha fazlasını saklar.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Ücretsiz</h3>
+          <ul><li>Gün, hafta, ay ve yıl parşömenleri</li><li>Alevi üfleyip söndürme ve parça biriktirme</li><li>Tek satırlık değerlendirmeler, Kül Kavanozları ve Değerlendirme Kitabı</li><li>Sabah kontrolü, istersen Sağlık uygulamasındaki uyku verisiyle</li><li>Ana ekran ve kilitli ekran widget'ları, Dynamic Island</li><li>Bir son tarih</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Yanan Parşömen Pro</h3>
+          <ul><li>Yalnızca kendi boş zamanını yak</li><li>Temalar: Ay Işığı Hanji, Seladon, Alacakaranlık</li><li>Alevler: Bozkır yangını, Köz, Maytap</li><li>Parçaları kart ve poster olarak paylaş</li><li>Değerlendirme Kitabı'nı PDF olarak dışa aktar</li><li>On iki aylık Külün Akışı</li><li>Sınırsız son tarih</li></ul>
+          <p class="muted">Abonelik değil. Bir kez al, ömür boyu kullan; sonradan gelecek tüm Pro özellikleri de dahil.</p>
+        </div>
+      </div>
+      <p class="muted">Yeni cihaz mı? Ayarlar'da Satın Alımları Geri Yükle'ye dokun.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Sık sorulan sorular</h2>
+      <div class="faq"><details><summary>Widget, uygulamadan farklı bir saat gösteriyor.</summary><p>iOS ana ekran widget'larını her saniye yeniden çizmez. Uygulamayı açınca hemen eşitlenir. Saniye saniye ilerleyen geri sayım için Dynamic Island'a ve kilitli ekrandaki Canlı Etkinlik'e bak.</p></details>
+<details><summary>Üflüyorum ama ateş sönmüyor.</summary><p>Söndürme yalnızca yatmadan 30 dakika önce açılır. Mikrofon erişimine izin verdiğini kontrol et ve iPhone'un altındaki mikrofona yakın, yaklaşık bir saniye düzgünce üfle. Kısa bir ses yetmez.</p></details>
+<details><summary>Sesim kaydediliyor mu?</summary><p>Hayır. Yalnızca üflemenin gücü ölçülür. Hiçbir ses kaydedilmez ya da saklanmaz.</p></details>
+<details><summary>Uyurken ne görünüyor?</summary><p>Yatma saati geçince yanan bir kalp belirir ve uyanana kadar gecenin ne kadarının geçtiğini gösterir. Sabah uygulama dün gece zamanında yatıp yatmadığını sorar; geç kaldıysan bu sabahın parşömeni o kadar kavrulmuş başlar. Sağlık uygulamasına bağlarsan sormadan kayıtlı uykuya dalma saatini kullanır.</p></details>
+<details><summary>Bildirimler ne zaman gelir?</summary><p>Yatmadan bir saat önce. Gelmiyorsa Ayarlar &gt; Bildirimler &gt; Yanan Parşömen'i kontrol et.</p></details>
+<details><summary>Çok pil harcar mı?</summary><p>Uygulama içindeki geri sayım her saniye değişir, ama widget'lar iOS tarafından tasarruflu şekilde güncellenir, etkisi küçüktür.</p></details>
+<details><summary>Verilerim nerede saklanıyor?</summary><p>Kalkış ve yatış saatleri, son tarihler, değerlendirmeler ve kavanozlar yalnızca cihazında kalır. Geliştiriciye yalnızca anonim kullanım istatistikleri, çökme tanılamaları ve senin gönderdiğin geri bildirimler ulaşır. Reklam yok, takip yok.</p></details>
+<details><summary>Pro abonelik mi?</summary><p>Hayır. Bir kez ödersin, sonsuza dek senindir. Yeni cihazda Ayarlar'da Satın Alımları Geri Yükle'ye dokun.</p></details></div>
+      <p class="contact">Hata, fikir ya da başka bir soru için <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> adresine yaz.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bu akşam kaybolmadan<br>ona sahip çık</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">App Store'dan ücretsiz indir</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Dil"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></nav>
+    <p><a href="privacy.html">Gizlilik Politikası</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

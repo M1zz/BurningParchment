@@ -1,0 +1,156 @@
+{
+  "title": "Brændende Pergament: se resten af din dag brænde ned før sengetid",
+  "description": "Fra du vågner til sengetid, brænder den tid, du har tilbage i dag, som et stykke pergament. En halv time før sengetid puster du flammen ud.",
+  "hero": {
+    "headline": "Det, der er tilbage af i dag,\nbrænder foran dig",
+    "lead": "En aften, der ser harmløs ud som et tal, føles anderledes som pergament i flammer. En halv time før sengetid puster du på skærmen, slukker ilden og afslutter dagen.",
+    "cta": "Hent gratis i App Store",
+    "note": "Det brændende pergament, udpustningen og refleksionerne er gratis."
+  },
+  "demo": {
+    "title": "Prøv at puste det ud",
+    "lead": "Ryk uret frem til lige før sengetid, og hold så knappen inde eller pust i mikrofonen.",
+    "clock": "Klokken er",
+    "now": "Nu",
+    "late": "20 min før sengetid",
+    "remain": "Tilbage til sengetid",
+    "hm": "{h} t {m} min",
+    "m": "{m} min",
+    "range": "Op {wake} · I seng {bed}",
+    "blow": "Hold inde for at puste",
+    "mic": "Pust i mikrofonen",
+    "micOn": "Lytter. Pust i mikrofonen",
+    "micNone": "Denne browser kan ikke bruge mikrofonen. Hold knappen inde i stedet.",
+    "wait": "Du kan puste den ud fra 30 minutter før sengetid",
+    "out": "Ilden er slukket",
+    "kept": "Du pustede den ud med {m} min tilbage. Brudstykket, der er tilbage, bliver gemt.",
+    "again": "Tænd igen",
+    "note": "Ligesom appen måles kun, hvor hårdt du puster, og intet optages. Op- og sengetid er appens standardværdier."
+  },
+  "problem": {
+    "title": "Er klokken pludselig blevet midnat?",
+    "text": "Du spiser aftensmad, sætter dig et øjeblik, og så er dagen væk. Tallene på uret ser ens ud hver aften, så du mærker ikke, at tiden løber ud. Brændende Pergament viser resten af dagen som pergament, der brænder ned, så du opdager det, før aftenen forsvinder."
+  },
+  "features": [
+    {
+      "title": "Dag, uge og år brænder ned",
+      "text": "Fra du vågner til sengetid brænder pergamentet langsomt. Se på samme måde, hvad der er tilbage af ugen, måneden og året.\nTilføj et mål med en dato som frist, så tæller den ned ved siden af.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Pust dagen ud",
+      "text": "Fra 30 minutter før sengetid puster du på det brændende pergament og slukker ilden. Kun styrken af dit pust bruges, og intet optages.\nBrudstykket, der er tilbage, bliver gemt. Vend det, og skriv en linje om dagen på bagsiden.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Tiden, der gik, bliver til aske",
+      "text": "Se tilbage på dagen med en linje, og sæt den som en prik i en graf med to akser efter, hvad tiden gik til. Refleksionerne samler sig i askeurner for uge og måned og kan læses igen i Refleksionsbogen.\nAskens strøm viser, hvor tiden blev af, med en fordelingsgraf og en glødekalender.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre trin",
+    "items": [
+      {
+        "title": "Vælg op- og sengetid",
+        "text": "Tryk på tandhjulet øverst til højre. Pergamentet tændes og slukkes efter det."
+      },
+      {
+        "title": "Vælg periode",
+        "text": "Swipe mellem dag, uge, måned og år, eller skjul de sider, du ikke bruger, i Indstillinger."
+      },
+      {
+        "title": "Tilføj en widget",
+        "text": "På hjemmeskærmen eller låseskærmen kan du se tiden tilbage uden at åbne appen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Her kan du se tiden tilbage",
+    "rows": [
+      ["Dag", "Fra du vågner til sengetid"],
+      ["Uge · Måned · År", "Hvad der er tilbage af ugen, måneden og året"],
+      ["Fritid", "Ugens pergament brænder kun i de timer, du holder fri til dig selv (Pro)"],
+      ["Frister", "Tid tilbage til et måls dato. Én er gratis"],
+      ["Widgets på hjemmeskærmen", "Dagens pergament i lille, mellem og stor. Uge, måned, år og frister i lille og mellem"],
+      ["Widgets på låseskærmen", "Rund, rektangulær og på én linje"],
+      ["Dynamic Island · Live-aktivitet", "Fra en time før sengetid eller hele dagen. Vælg eller slå fra i Indstillinger"]
+    ],
+    "note": "Udvid Dynamic Island for at se det brændende pergament med hele nedtællingen."
+  },
+  "pricing": {
+    "title": "Pergamentet er gratis. Pro rummer mere.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Pergamenter for dag, uge, måned og år",
+        "Pust flammen ud og saml brudstykker",
+        "Refleksioner på én linje, askeurner og Refleksionsbog",
+        "Morgentjek, eventuelt med søvndata fra Sundhed",
+        "Widgets til hjemme- og låseskærm, Dynamic Island",
+        "Én frist"
+      ]
+    },
+    "pro": {
+      "name": "Brændende Pergament Pro",
+      "items": [
+        "Brænd kun din egen fritid",
+        "Temaer: Måneskins-hanji, Celadon, Solnedgang",
+        "Flammer: Prærieild, Gløder, Stjernekaster",
+        "Del dine brudstykker som kort og plakater",
+        "Eksportér Refleksionsbogen som PDF",
+        "Tolv måneders askestrøm",
+        "Ubegrænsede frister"
+      ],
+      "note": "Ikke et abonnement. Ét køb for altid, inklusive alle Pro-funktioner, der kommer senere."
+    },
+    "note": "Ny enhed? Tryk på Gendan køb i Indstillinger."
+  },
+  "faq": {
+    "title": "Ofte stillede spørgsmål",
+    "items": [
+      {
+        "q": "Widgetten viser en anden tid end appen.",
+        "a": "iOS tegner ikke widgets på hjemmeskærmen igen hvert sekund. Når du åbner appen, passer de igen. En nedtælling sekund for sekund finder du i Dynamic Island og live-aktiviteten på låseskærmen."
+      },
+      {
+        "q": "Jeg puster, men ilden går ikke ud.",
+        "a": "Du kan først puste den ud 30 minutter før sengetid. Tjek, at adgang til mikrofonen er tilladt, og pust jævnt i cirka et sekund tæt på mikrofonen nederst på iPhone. En kort lyd er ikke nok."
+      },
+      {
+        "q": "Bliver min stemme optaget?",
+        "a": "Nej. Den måler kun, hvor hårdt du puster. Ingen lyd optages eller gemmes."
+      },
+      {
+        "q": "Hvad vises, mens jeg sover?",
+        "a": "Efter sengetid dukker et brændende hjerte op og viser, hvor langt natten er nået frem til du vågner. Om morgenen spørger appen, om du kom i seng til tiden; var du sent på den, starter dagens pergament tilsvarende svedet. Forbundet til Sundhed bruger den dit registrerede indsovningstidspunkt uden at spørge."
+      },
+      {
+        "q": "Hvornår kommer notifikationerne?",
+        "a": "En time før sengetid. Hvis de ikke kommer, så tjek Indstillinger > Notifikationer > Brændende Pergament."
+      },
+      {
+        "q": "Bruger appen meget strøm?",
+        "a": "Nedtællingen i appen skifter hvert sekund, men widgets opdateres strømbesparende af iOS, så påvirkningen er lille."
+      },
+      {
+        "q": "Hvor gemmes mine data?",
+        "a": "Op- og sengetid, frister, refleksioner og urner bliver på din enhed. Udvikleren modtager kun anonym brugsstatistik, nedbrudsdiagnostik og den feedback, du selv sender. Ingen reklamer, ingen sporing."
+      },
+      {
+        "q": "Er Pro et abonnement?",
+        "a": "Nej. Du betaler én gang og har det for altid. På en ny enhed trykker du på Gendan køb i Indstillinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Fang aftenen,\nfør den er væk",
+    "cta": "Hent gratis i App Store"
+  },
+  "ui": {
+    "skip": "Gå til indhold",
+    "languages": "Sprog",
+    "privacy": "Privatlivspolitik",
+    "contact": "Fejl, idéer eller andre spørgsmål? Skriv til {email}."
+  }
+}

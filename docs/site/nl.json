@@ -1,0 +1,156 @@
+{
+  "title": "Brandend Perkament: zie de rest van je dag opbranden voor het slapen",
+  "description": "Van wakker worden tot bedtijd brandt de tijd die je vandaag nog hebt op als een vel perkament. Een halfuur voor het slapen blaas je de vlam uit.",
+  "hero": {
+    "headline": "Wat er over is van vandaag,\nbrandt voor je ogen op",
+    "lead": "Een avond die als getal onschuldig lijkt, voelt heel anders als brandend perkament. Een halfuur voor bedtijd blaas je op het scherm, dooft het vuur en sluit je de dag af.",
+    "cta": "Gratis downloaden in de App Store",
+    "note": "Het brandende perkament, het uitblazen en de reflecties zijn gratis."
+  },
+  "demo": {
+    "title": "Probeer het uit te blazen",
+    "lead": "Zet de klok op vlak voor bedtijd en houd dan de knop ingedrukt of blaas in de microfoon.",
+    "clock": "Het is nu",
+    "now": "Nu",
+    "late": "20 min voor bedtijd",
+    "remain": "Nog tot bedtijd",
+    "hm": "{h} u {m} min",
+    "m": "{m} min",
+    "range": "Opstaan {wake} · Naar bed {bed}",
+    "blow": "Ingedrukt houden om te blazen",
+    "mic": "Blaas in de microfoon",
+    "micOn": "Luistert. Blaas in de microfoon",
+    "micNone": "Deze browser kan de microfoon niet gebruiken. Houd de knop ingedrukt.",
+    "wait": "Uitblazen kan vanaf 30 minuten voor bedtijd",
+    "out": "Het vuur is gedoofd",
+    "kept": "Je blies het uit met nog {m} min te gaan. Het overgebleven fragment wordt bewaard.",
+    "again": "Opnieuw aansteken",
+    "note": "Net als de app meet dit alleen hoe hard je blaast, er wordt niets opgenomen. Opstaan en bedtijd zijn de standaardwaarden van de app."
+  },
+  "problem": {
+    "title": "Is het ineens middernacht?",
+    "text": "Je eet, gaat even zitten en de dag is voorbij. De cijfers op de klok zien er elke avond hetzelfde uit, dus je voelt niet dat de tijd opraakt. Brandend Perkament toont wat er over is als perkament dat opbrandt, zodat je het merkt voordat de avond verdwijnt."
+  },
+  "features": [
+    {
+      "title": "Je dag, week en jaar branden op",
+      "text": "Van wakker worden tot bedtijd brandt het perkament langzaam op. Zie op dezelfde manier wat er over is van deze week, deze maand en dit jaar.\nVoeg een doel met een datum toe als deadline en het aftellen loopt mee.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Blaas de dag uit",
+      "text": "Vanaf 30 minuten voor bedtijd blaas je op het brandende perkament om het vuur te doven. Alleen de kracht van je adem telt, er wordt niets opgenomen.\nHet fragment dat overblijft, wordt bewaard. Draai het om en schrijf op de achterkant een regel over vandaag.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Verstreken tijd blijft over als as",
+      "text": "Blik terug op de dag in één regel en zet die als stip in een grafiek met twee assen, naar hoe je de tijd besteedde. Reflecties stapelen zich op in asurnen per week en maand en zijn terug te lezen in het Reflectieboek.\nDe asstroom laat met een spreidingsgrafiek en een gloedkalender zien waar je tijd naartoe ging.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "In drie stappen aan de slag",
+    "items": [
+      {
+        "title": "Stel opstaan en bedtijd in",
+        "text": "Tik rechtsboven op het tandwiel. Het perkament gaat aan en uit volgens dat schema."
+      },
+      {
+        "title": "Kies een periode",
+        "text": "Veeg tussen dag, week, maand en jaar, of verberg pagina's die je niet nodig hebt in Instellingen."
+      },
+      {
+        "title": "Voeg een widget toe",
+        "text": "Op je beginscherm of toegangsscherm zie je de resterende tijd zonder de app te openen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Waar je de resterende tijd ziet",
+    "rows": [
+      ["Dag", "Van wakker worden tot bedtijd"],
+      ["Week · Maand · Jaar", "Wat er over is van deze week, maand en dit jaar"],
+      ["Vrije tijd", "Het weekperkament brandt alleen tijdens de uren die je voor jezelf vrijhoudt (Pro)"],
+      ["Deadlines", "Tijd tot de datum van een doel. Eén is gratis"],
+      ["Beginschermwidgets", "Dagperkament in klein, middelgroot en groot. Week, maand, jaar en deadlines in klein en middelgroot"],
+      ["Toegangsschermwidgets", "Rond, rechthoekig en op één regel"],
+      ["Dynamic Island · Live Activity", "Vanaf een uur voor bedtijd of de hele dag. Kies of zet uit in Instellingen"]
+    ],
+    "note": "Klap het Dynamic Island uit om het brandende perkament met het volledige aftellen te zien."
+  },
+  "pricing": {
+    "title": "Het perkament is gratis. Pro bewaart meer.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Perkamenten voor dag, week, maand en jaar",
+        "De vlam uitblazen en fragmenten verzamelen",
+        "Reflecties van één regel, asurnen en Reflectieboek",
+        "Ochtendcheck, desgewenst met slaapgegevens uit Gezondheid",
+        "Widgets voor begin- en toegangsscherm, Dynamic Island",
+        "Eén deadline"
+      ]
+    },
+    "pro": {
+      "name": "Brandend Perkament Pro",
+      "items": [
+        "Alleen je eigen vrije tijd laten branden",
+        "Thema's: Maanlicht-hanji, Celadon, Schemering",
+        "Vlammen: Prairiebrand, Kolen, Sterretje",
+        "Fragmenten delen als kaarten en posters",
+        "Reflectieboek exporteren als pdf",
+        "Twaalf maanden asstroom",
+        "Onbeperkt deadlines"
+      ],
+      "note": "Geen abonnement. Eén keer kopen en voor altijd van jou, inclusief alle Pro-functies die nog komen."
+    },
+    "note": "Nieuw apparaat? Tik in Instellingen op Aankopen herstellen."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "De widget toont een andere tijd dan de app.",
+        "a": "iOS tekent beginschermwidgets niet elke seconde opnieuw. Zodra je de app opent, lopen ze weer gelijk. Aftellen per seconde zie je in het Dynamic Island en de Live Activity op het toegangsscherm."
+      },
+      {
+        "q": "Ik blaas, maar het vuur gaat niet uit.",
+        "a": "Uitblazen kan pas vanaf 30 minuten voor bedtijd. Controleer of toegang tot de microfoon is toegestaan en blaas ongeveer een seconde gelijkmatig dicht bij de microfoon onderaan de iPhone. Een kort geluid is niet genoeg."
+      },
+      {
+        "q": "Wordt mijn stem opgenomen?",
+        "a": "Nee. Alleen de kracht van het blazen wordt gemeten. Er wordt geen geluid opgenomen of bewaard."
+      },
+      {
+        "q": "Wat zie ik terwijl ik slaap?",
+        "a": "Na bedtijd verschijnt een brandend hart dat laat zien hoe ver de nacht is tot je wakker wordt. 's Ochtends vraagt de app of je op tijd naar bed ging; was je laat, dan begint het perkament van vandaag zoveel geschroeid. Gekoppeld aan Gezondheid gebruikt de app je geregistreerde inslaaptijd zonder te vragen."
+      },
+      {
+        "q": "Wanneer komen meldingen?",
+        "a": "Een uur voor bedtijd. Komen ze niet, controleer dan Instellingen > Berichtgeving > Brandend Perkament."
+      },
+      {
+        "q": "Kost het veel batterij?",
+        "a": "Het aftellen in de app verspringt elke seconde, maar widgets worden zuinig door iOS bijgewerkt, dus de invloed is klein."
+      },
+      {
+        "q": "Waar worden mijn gegevens bewaard?",
+        "a": "Opstaan en bedtijd, deadlines, reflecties en urnen blijven op je apparaat. De ontwikkelaar ontvangt alleen anonieme gebruiksstatistieken, crashdiagnoses en feedback die je zelf stuurt. Geen advertenties, geen tracking."
+      },
+      {
+        "q": "Is Pro een abonnement?",
+        "a": "Nee. Je betaalt één keer en houdt het voor altijd. Tik op een nieuw apparaat in Instellingen op Aankopen herstellen."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Grijp deze avond\nvoordat hij weg is",
+    "cta": "Gratis downloaden in de App Store"
+  },
+  "ui": {
+    "skip": "Naar inhoud",
+    "languages": "Taal",
+    "privacy": "Privacybeleid",
+    "contact": "Bugs, ideeën of andere vragen? Mail naar {email}."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "title": "Brennendes Pergament: Sieh zu, wie der Rest deines Tages verbrennt",
+  "description": "Vom Aufwachen bis zur Bettzeit verbrennt die Zeit, die dir heute bleibt, als Pergament. Eine halbe Stunde vor dem Schlafen pustest du die Flamme aus.",
+  "hero": {
+    "headline": "Was von heute bleibt,\nverbrennt vor deinen Augen",
+    "lead": "Ein Abend, der als Zahl harmlos wirkt, fühlt sich als brennendes Pergament ganz anders an. Eine halbe Stunde vor dem Schlafen pustest du auf den Bildschirm, löschst das Feuer und schließt den Tag ab.",
+    "cta": "Kostenlos im App Store laden",
+    "note": "Das brennende Pergament, das Auspusten und die Rückblicke sind kostenlos."
+  },
+  "demo": {
+    "title": "Puste es selbst aus",
+    "lead": "Stell die Uhr auf kurz vor dem Schlafengehen, dann halte die Taste gedrückt oder puste ins Mikrofon.",
+    "clock": "Uhrzeit",
+    "now": "Jetzt",
+    "late": "20 Min. vor dem Schlafen",
+    "remain": "Bis zur Bettzeit",
+    "hm": "{h} Std. {m} Min.",
+    "m": "{m} Min.",
+    "range": "Aufstehen {wake} · Bettzeit {bed}",
+    "blow": "Gedrückt halten zum Pusten",
+    "mic": "Ins Mikrofon pusten",
+    "micOn": "Hört zu. Puste ins Mikrofon",
+    "micNone": "Dieser Browser kann das Mikrofon nicht nutzen. Halte stattdessen die Taste gedrückt.",
+    "wait": "Ab 30 Minuten vor der Bettzeit kannst du es auspusten",
+    "out": "Das Feuer ist aus",
+    "kept": "Du hast es mit {m} Min. Vorsprung ausgepustet. Das übrige Fragment wird aufbewahrt.",
+    "again": "Neu entzünden",
+    "note": "Wie in der App zählt nur die Stärke deines Atems, aufgenommen wird nichts. Aufsteh- und Bettzeit sind die Standardwerte der App."
+  },
+  "problem": {
+    "title": "Plötzlich Mitternacht?",
+    "text": "Abendessen, kurz hingesetzt, und der Tag ist vorbei. Die Zahlen auf der Uhr sehen jeden Abend gleich aus, deshalb spürst du nicht, wie die Zeit schwindet. Brennendes Pergament zeigt, was übrig ist, als Pergament, das abbrennt. So merkst du es, bevor der Abend verschwindet."
+  },
+  "features": [
+    {
+      "title": "Tag, Woche und Jahr brennen herunter",
+      "text": "Vom Aufwachen bis zur Bettzeit verbrennt das Pergament langsam. Genauso siehst du, was von dieser Woche, diesem Monat und diesem Jahr bleibt.\nLeg ein Ziel mit Datum als Deadline an, und der Countdown läuft gleich mit.",
+      "shot": "02-month-light"
+    },
+    {
+      "title": "Den Tag auspusten",
+      "text": "Ab 30 Minuten vor der Bettzeit pustest du auf das brennende Pergament und löschst das Feuer. Genutzt wird nur die Stärke deines Atems, aufgenommen wird nichts.\nDas übrige Fragment wird aufbewahrt. Dreh es um und schreib eine Zeile über den Tag auf die Rückseite.",
+      "shot": "blowout-dark"
+    },
+    {
+      "title": "Vergangene Zeit bleibt als Asche",
+      "text": "Halte den Tag mit einem einzeiligen Rückblick fest und setz ihn als Punkt in ein Diagramm mit zwei Achsen, je nachdem, wofür die Zeit draufging. Rückblicke sammeln sich in wöchentlichen und monatlichen Ascheurnen und lassen sich im Rückblickbuch wieder lesen.\nDer Aschefluss zeigt mit Verteilungsdiagramm und Glutkalender, wohin deine Zeit gegangen ist.",
+      "shot": "03-urn-dark"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten loslegen",
+    "items": [
+      {
+        "title": "Aufsteh- und Bettzeit festlegen",
+        "text": "Tipp oben rechts auf das Zahnrad. Danach richtet sich, wann das Pergament brennt und erlischt."
+      },
+      {
+        "title": "Zeitraum wählen",
+        "text": "Wisch zwischen Tag, Woche, Monat und Jahr, oder blende nicht benötigte Seiten in den Einstellungen aus."
+      },
+      {
+        "title": "Widget hinzufügen",
+        "text": "Auf dem Home- oder Sperrbildschirm siehst du die Restzeit, ohne die App zu öffnen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Wo du die Restzeit siehst",
+    "rows": [
+      ["Tag", "Vom Aufwachen bis zur Bettzeit"],
+      ["Woche · Monat · Jahr", "Was von dieser Woche, diesem Monat und diesem Jahr bleibt"],
+      ["Freizeit", "Das Wochenpergament brennt nur in den Stunden, die du dir freihältst (Pro)"],
+      ["Deadlines", "Restzeit bis zum Datum eines Ziels. Eine ist kostenlos"],
+      ["Widgets auf dem Home-Bildschirm", "Tagespergament in klein, mittel und groß. Woche, Monat, Jahr und Deadlines in klein und mittel"],
+      ["Widgets auf dem Sperrbildschirm", "Rund, rechteckig und einzeilig"],
+      ["Dynamic Island · Live-Aktivität", "Ab einer Stunde vor dem Schlafen oder den ganzen Tag. In den Einstellungen wählbar oder abschaltbar"]
+    ],
+    "note": "Erweitere die Dynamic Island, um das brennende Pergament mit dem vollständigen Countdown zu sehen."
+  },
+  "pricing": {
+    "title": "Das Pergament ist kostenlos. Pro hält mehr fest.",
+    "free": {
+      "name": "Kostenlos",
+      "items": [
+        "Pergamente für Tag, Woche, Monat und Jahr",
+        "Flamme auspusten und Fragmente sammeln",
+        "Einzeilige Rückblicke, Ascheurnen und Rückblickbuch",
+        "Morgendliche Abfrage, auf Wunsch mit Schlafdaten aus Health",
+        "Widgets für Home- und Sperrbildschirm, Dynamic Island",
+        "Eine Deadline"
+      ]
+    },
+    "pro": {
+      "name": "Brennendes Pergament Pro",
+      "items": [
+        "Nur deine eigene Freizeit verbrennen",
+        "Themen: Mondlicht-Hanji, Seladon, Abendrot",
+        "Flammen: Lauffeuer, Glut, Funkenflug",
+        "Gesammelte Fragmente als Karten und Poster teilen",
+        "Rückblickbuch als PDF exportieren",
+        "Zwölf Monate Aschefluss",
+        "Unbegrenzt viele Deadlines"
+      ],
+      "note": "Kein Abo. Einmal kaufen, für immer nutzen, inklusive aller Pro-Funktionen, die noch dazukommen."
+    },
+    "note": "Neues Gerät? Tipp in den Einstellungen auf Käufe wiederherstellen."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Das Widget zeigt eine andere Zeit als die App.",
+        "a": "iOS zeichnet Widgets auf dem Home-Bildschirm nicht jede Sekunde neu. Sobald du die App öffnest, sind sie wieder synchron. Einen sekundengenauen Countdown zeigen die Dynamic Island und die Live-Aktivität auf dem Sperrbildschirm."
+      },
+      {
+        "q": "Ich puste, aber das Feuer geht nicht aus.",
+        "a": "Auspusten geht erst ab 30 Minuten vor der Bettzeit. Prüf, ob der Mikrofonzugriff erlaubt ist, und puste etwa eine Sekunde lang gleichmäßig auf das Mikrofon unten am iPhone. Ein kurzer Laut reicht nicht."
+      },
+      {
+        "q": "Wird meine Stimme aufgenommen?",
+        "a": "Nein. Es wird nur geprüft, wie stark du pustest. Kein Ton wird aufgenommen oder gespeichert."
+      },
+      {
+        "q": "Was sehe ich, während ich schlafe?",
+        "a": "Nach der Bettzeit erscheint ein brennendes Herz und zeigt, wie weit die Nacht bis zum Aufwachen fortgeschritten ist. Morgens fragt die App, ob du pünktlich im Bett warst. Warst du spät dran, startet das heutige Pergament um diese Zeit angesengt. Mit Apple Health verbunden, nimmt sie ohne Nachfrage deine erfasste Einschlafzeit."
+      },
+      {
+        "q": "Wann kommen Mitteilungen?",
+        "a": "Eine Stunde vor der Bettzeit. Kommt nichts an, prüf Einstellungen > Mitteilungen > Brennendes Pergament."
+      },
+      {
+        "q": "Verbraucht die App viel Akku?",
+        "a": "Der Countdown in der App tickt jede Sekunde, aber Widgets werden von iOS stromsparend aktualisiert. Der Einfluss auf den Akku ist gering."
+      },
+      {
+        "q": "Wo werden meine Daten gespeichert?",
+        "a": "Aufsteh- und Bettzeit, Deadlines, Rückblicke und Urnen bleiben auf deinem Gerät. Der Entwickler erhält nur anonyme Nutzungsstatistiken, Absturzdiagnosen und Feedback, das du selbst schickst. Keine Werbung, kein Tracking."
+      },
+      {
+        "q": "Ist Pro ein Abo?",
+        "a": "Nein. Du zahlst einmal und behältst es für immer. Auf einem neuen Gerät tippst du in den Einstellungen auf Käufe wiederherstellen."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Halt den Abend fest,\nbevor er weg ist",
+    "cta": "Kostenlos im App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Fehler, Ideen oder andere Fragen? Schreib an {email}."
+  }
+}

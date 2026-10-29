@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pergaminho em Chamas — Suporte</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pergaminho em Chamas: veja o resto do seu dia queimar antes de dormir</title>
+  <meta name="description" content="Do momento em que você acorda até a hora de dormir, o tempo que sobra hoje queima como um pergaminho. Meia hora antes de deitar, sopre para apagar a chama.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/pt-br/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pergaminho em Chamas: veja o resto do seu dia queimar antes de dormir">
+  <meta property="og:description" content="Do momento em que você acorda até a hora de dormir, o tempo que sobra hoje queima como um pergaminho. Meia hora antes de deitar, sopre para apagar a chama.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/pt-br/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/pt-BR/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="index.html" hreflang="pt-BR" lang="pt-BR" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <header class="bar">
+    <a class="brand" href="../pt-br/"><img src="../icon.png" alt="" width="32" height="32">Pergaminho em Chamas</a>
+    <a class="lang-link" href="#languages">Idioma</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Pergaminho em Chamas</h1>
-  <p>Do acordar até a hora de dormir, veja o seu dia queimar.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Sobre o app</h2>
-    <div class="card">
-      <h3>O que é o Pergaminho em Chamas?</h3>
-      <p>O Pergaminho em Chamas é um app de contagem regressiva que mostra quanto resta do seu dia como uma folha de pergaminho queimando devagar. Do acordar até a hora de dormir, você vê de relance quanto tempo falta, para aproveitar melhor as horas que ainda tem.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Contagem do dia</span>
-        <span class="badge">Semana / mês / ano</span>
-        <span class="badge">Widgets da Tela de Início</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widgets da Tela Bloqueada</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>O que sobra de hoje<br>queima na sua frente</h1>
+        <p class="lead">Uma noite que parece inofensiva em números fica bem diferente como um pergaminho em chamas. Meia hora antes de dormir, sopre na tela, apague o fogo e encerre o dia.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Baixe grátis na App Store</a><a class="try" href="#try">Experimente apagar com um sopro ↓</a></div>
+        <p class="muted small">O pergaminho em chamas, o ritual do sopro e as reflexões são grátis.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/pt-BR/01-week-dark.jpg" alt="O que sobra de hoje queima na sua frente" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Como usar</h2>
-    <div class="card">
-      <h3>Defina a hora de acordar e de dormir</h3>
-      <p>Toque no botão ⚙️ no canto superior direito para definir a hora de acordar e a hora de dormir. O pergaminho começa a queimar quando você acorda, e a contagem termina na hora de dormir.</p>
-    </div>
-    <div class="card">
-      <h3>Escolha um período</h3>
-      <p>Escolha <strong>1 dia · 1 semana · 1 mês · 1 ano</strong> nas abas no topo, e o pergaminho queima para mostrar quanto resta daquele período.</p>
-    </div>
-    <div class="card">
-      <h3>Widgets da Tela de Início</h3>
-      <p>Toque e segure a Tela de Início → Adicionar Widget → procure <strong>Pergaminho em Chamas</strong> para adicionar um widget de dia, semana, mês ou ano. Há os tamanhos pequeno, médio e grande.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island e Tela Bloqueada</h3>
-      <p>Quando a contagem começa, você pode acompanhar o tempo restante ao vivo na Dynamic Island e na Tela Bloqueada. Puxe a Dynamic Island para baixo para ver mais detalhes, junto com a animação do pergaminho queimando.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Perguntas frequentes</h2>
-    <div class="card">
-      <h3>O widget mostra um horário diferente do app</h3>
-      <p>Pelo jeito como o iOS funciona, os widgets da Tela de Início não conseguem atualizar em tempo real. Ao abrir o app, os dados do widget são sincronizados automaticamente. Para uma contagem ao vivo, use a Dynamic Island e a Tela Bloqueada.</p>
-    </div>
-    <div class="card">
-      <h3>O que aparece enquanto eu durmo?</h3>
-      <p>Depois da hora de dormir, aparece uma animação de coração em chamas que mostra o quanto do seu sono já passou até a hora de acordar. Um pergaminho novo é preparado 30 minutos antes de você acordar.</p>
-    </div>
-    <div class="card">
-      <h3>Quando as notificações chegam?</h3>
-      <p>Você recebe uma notificação uma hora antes de dormir. Se ela não chegar, confira se as notificações estão permitidas em <strong>Ajustes → Notificações → Pergaminho em Chamas</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>O app gasta muita bateria?</h3>
-      <p>A contagem dentro do app avança uma vez por segundo, mas os widgets seguem uma programação de baixo consumo gerenciada pelo sistema, então o impacto na bateria é mínimo.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Experimente apagar com um sopro</h2>
+      <p class="muted">Leve o horário para pouco antes de dormir e segure o botão ou sopre no microfone.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Experimente apagar com um sopro&quot;, &quot;lead&quot;: &quot;Leve o horário para pouco antes de dormir e segure o botão ou sopre no microfone.&quot;, &quot;clock&quot;: &quot;Agora são&quot;, &quot;now&quot;: &quot;Agora&quot;, &quot;late&quot;: &quot;20 min antes de dormir&quot;, &quot;remain&quot;: &quot;Até a hora de dormir&quot;, &quot;hm&quot;: &quot;{h} h {m} min&quot;, &quot;m&quot;: &quot;{m} min&quot;, &quot;range&quot;: &quot;Acordar {wake} · Dormir {bed}&quot;, &quot;blow&quot;: &quot;Segure para soprar&quot;, &quot;mic&quot;: &quot;Soprar no microfone&quot;, &quot;micOn&quot;: &quot;Ouvindo. Sopre no microfone&quot;, &quot;micNone&quot;: &quot;Este navegador não consegue usar o microfone. Segure o botão.&quot;, &quot;wait&quot;: &quot;Dá para apagar a partir de 30 minutos antes de dormir&quot;, &quot;out&quot;: &quot;O fogo apagou&quot;, &quot;kept&quot;: &quot;Você apagou faltando {m} min. O fragmento que sobrou fica guardado.&quot;, &quot;again&quot;: &quot;Acender de novo&quot;, &quot;note&quot;: &quot;Como no app, só a força do sopro conta e nada é gravado. Os horários de acordar e dormir são os padrões do app.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Privacidade</h2>
-    <div class="card">
-      <h3>Como suas informações são tratadas</h3>
-      <p>Sua hora de acordar, hora de dormir, prazos, reflexões e urnas ficam guardados apenas no seu aparelho. O desenvolvedor recebe somente estatísticas de uso anônimas, diagnósticos de falhas e os feedbacks que você decidir enviar.</p>
-      <ul>
-        <li>O app e seus widgets compartilham dados apenas por um App Group no seu aparelho.</li>
-        <li>Sem anúncios, sem rastreamento.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Leia a Política de Privacidade completa →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Já levou aquele susto de "já é meia-noite?"</h2>
+      <p>Você janta, senta um pouquinho e o dia acabou. Os números do relógio parecem iguais toda noite, então você não sente o tempo indo embora. O Pergaminho em Chamas mostra o que sobra como um pergaminho queimando, para você perceber antes que a noite suma.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Contato</h2>
-    <div class="card">
-      <h3>Algo não está funcionando direito?</h3>
-      <p>Para relatar um bug, sugerir um recurso ou tirar qualquer outra dúvida, escreva para o endereço abaixo. Responderemos o quanto antes.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Seu dia, sua semana e seu ano queimando</h2>
+        <p>Do momento em que você acorda até a hora de dormir, o pergaminho queima devagar. Veja também quanto sobra desta semana, deste mês e deste ano.<br>Adicione uma meta com data como prazo e a contagem regressiva corre junto.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/02-month-light.jpg" alt="Seu dia, sua semana e seu ano queimando" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Encerre o dia com um sopro</h2>
+        <p>A partir de 30 minutos antes de dormir, sopre no pergaminho para apagar o fogo. Só a força do sopro é usada, nada é gravado.<br>O fragmento que sobra fica guardado. Vire e escreva no verso uma linha sobre o seu dia.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/blowout-dark.jpg" alt="Encerre o dia com um sopro" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Política de Privacidade</a></p>
-  <p style="margin-top: 6px;">Feito com 🔥 na Coreia</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>O tempo que passou vira cinza</h2>
+        <p>Relembre o dia com uma reflexão de uma linha e coloque um ponto num gráfico de dois eixos conforme o uso daquele tempo. As reflexões se acumulam em urnas de cinzas semanais e mensais e podem ser relidas no Livro de reflexões.<br>O Fluxo das cinzas mostra para onde foi o seu tempo, com um gráfico de distribuição e um calendário de brasas.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/03-urn-dark.jpg" alt="O tempo que passou vira cinza" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Comece em três passos</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Defina os horários</h3><p>Toque na engrenagem no canto superior direito. O pergaminho acende e apaga nesse horário.</p></li>
+<li class="card"><span class="n">2</span><h3>Escolha o período</h3><p>Deslize entre dia, semana, mês e ano, ou oculte nos Ajustes as páginas que não usa.</p></li>
+<li class="card"><span class="n">3</span><h3>Adicione um widget</h3><p>Na Tela de Início ou na Tela Bloqueada, você vê o tempo que sobra sem abrir o app.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Onde ver o tempo que sobra</h2>
+      <div class="card table">
+        <dl><div><dt>Dia</dt><dd>Do momento em que você acorda até a hora de dormir</dd></div><div><dt>Semana · Mês · Ano</dt><dd>Quanto sobra desta semana, deste mês e deste ano</dd></div><div><dt>Tempo livre</dt><dd>O pergaminho da semana só queima nas horas que você reserva para si (Pro)</dd></div><div><dt>Prazos</dt><dd>Tempo até a data de uma meta. Um é grátis</dd></div><div><dt>Widgets da Tela de Início</dt><dd>Pergaminho do dia nos tamanhos pequeno, médio e grande. Semana, mês, ano e prazos em pequeno e médio</dd></div><div><dt>Widgets da Tela Bloqueada</dt><dd>Circular, retangular e em linha</dd></div><div><dt>Dynamic Island · Atividade ao Vivo</dt><dd>A partir de uma hora antes de dormir ou o dia todo. Escolha ou desative nos Ajustes</dd></div></dl>
+      </div>
+      <p class="muted">Expanda a Dynamic Island para ver o pergaminho em chamas com a contagem completa.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>O pergaminho é grátis. O Pro guarda mais.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Grátis</h3>
+          <ul><li>Pergaminhos de dia, semana, mês e ano</li><li>Soprar a chama e guardar fragmentos</li><li>Reflexões de uma linha, urnas de cinzas e Livro de reflexões</li><li>Check-in da manhã, com dados de sono do app Saúde se quiser</li><li>Widgets da Tela de Início e da Tela Bloqueada, Dynamic Island</li><li>Um prazo</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Pergaminho em Chamas Pro</h3>
+          <ul><li>Queimar só o seu tempo livre</li><li>Temas: Hanji ao luar, Celadon, Entardecer</li><li>Chamas: Fogo de campo, Brasas, Estrelinha</li><li>Compartilhar fragmentos como cartões e pôsteres</li><li>Exportar o Livro de reflexões em PDF</li><li>Doze meses de Fluxo das cinzas</li><li>Prazos ilimitados</li></ul>
+          <p class="muted">Não é assinatura. Uma compra só, para sempre, com todos os recursos Pro que vierem depois.</p>
+        </div>
+      </div>
+      <p class="muted">Trocou de aparelho? Toque em Restaurar compras nos Ajustes.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq"><details><summary>O widget mostra um horário diferente do app.</summary><p>O iOS não redesenha os widgets da Tela de Início a cada segundo. Abrir o app sincroniza tudo. Para uma contagem que anda segundo a segundo, use a Dynamic Island e a Atividade ao Vivo na Tela Bloqueada.</p></details>
+<details><summary>Eu sopro, mas o fogo não apaga.</summary><p>Só dá para apagar a partir de 30 minutos antes de dormir. Confira se o acesso ao microfone está permitido e sopre de forma contínua, por cerca de um segundo, perto do microfone na parte de baixo do iPhone. Um som rápido não basta.</p></details>
+<details><summary>Minha voz é gravada?</summary><p>Não. O app só mede a força do sopro. Nenhum som é gravado ou salvo.</p></details>
+<details><summary>O que aparece enquanto eu durmo?</summary><p>Depois da hora de dormir, surge um coração em chamas mostrando quanto da noite já passou até você acordar. De manhã, o app pergunta se você dormiu no horário; se foi tarde, o pergaminho de hoje começa chamuscado na mesma medida. Conectado ao app Saúde, ele usa o horário em que você pegou no sono sem perguntar.</p></details>
+<details><summary>Quando chegam as notificações?</summary><p>Uma hora antes de dormir. Se não chegarem, confira Ajustes &gt; Notificações &gt; Pergaminho em Chamas.</p></details>
+<details><summary>Gasta muita bateria?</summary><p>A contagem dentro do app anda a cada segundo, mas os widgets são atualizados pelo iOS em modo de baixo consumo. O impacto é pequeno.</p></details>
+<details><summary>Onde ficam meus dados?</summary><p>Horários, prazos, reflexões e urnas ficam só no seu aparelho. O desenvolvedor recebe apenas estatísticas de uso anônimas, diagnósticos de falhas e o feedback que você decidir enviar. Sem anúncios, sem rastreamento.</p></details>
+<details><summary>O Pro é assinatura?</summary><p>Não. Você paga uma vez e fica com ele para sempre. Em outro aparelho, toque em Restaurar compras nos Ajustes.</p></details></div>
+      <p class="contact">Bugs, ideias ou outras dúvidas: escreva para <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Aproveite esta noite<br>antes que ela suma</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Baixe grátis na App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Idioma"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR" aria-current="page">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Política de Privacidade</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>燃える羊皮紙 — サポート</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>燃える羊皮紙：今日の残り時間が燃えていく就寝カウントダウン</title>
+  <meta name="description" content="起きた瞬間から寝る時間まで、今日の残り時間を燃える羊皮紙で見せます。寝る30分前には、ふーっと息を吹きかけて火を消し、一日を締めくくります。">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="燃える羊皮紙：今日の残り時間が燃えていく就寝カウントダウン">
+  <meta property="og:description" content="起きた瞬間から寝る時間まで、今日の残り時間を燃える羊皮紙で見せます。寝る30分前には、ふーっと息を吹きかけて火を消し、一日を締めくくります。">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/ja/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/ja/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="言語" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="index.html" hreflang="ja" lang="ja" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <a class="brand" href="../ja/"><img src="../icon.png" alt="" width="32" height="32">燃える羊皮紙</a>
+    <a class="lang-link" href="#languages">言語</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>燃える羊皮紙</h1>
-  <p>起きてから眠るまで、1日が燃えていく様子を見届けましょう。</p>
-</header>
-
-<main>
-
-  <!-- アプリについて -->
-  <section>
-    <h2>アプリについて</h2>
-    <div class="card">
-      <h3>どんなアプリですか？</h3>
-      <p>燃える羊皮紙は、1日の残り時間を羊皮紙が少しずつ燃えていく姿で表すカウントダウンアプリです。起床時刻から就寝時刻まで、あとどれくらい時間が残っているかがひと目でわかるので、1日をより大切に過ごせます。</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">1日のカウントダウン</span>
-        <span class="badge">週 / 月 / 年</span>
-        <span class="badge">ホーム画面ウィジェット</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">ロック画面ウィジェット</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>今日の残り時間が<br>目の前で燃えていく</h1>
+        <p class="lead">数字では気にならない夜の時間も、燃える羊皮紙で見ると違って見えます。寝る30分前には画面にふーっと息を吹きかけて火を消し、一日を終えます。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">App Storeで無料ダウンロード</a><a class="try" href="#try">息で火を消してみる ↓</a></div>
+        <p class="muted small">燃える羊皮紙、息で火を消す儀式、ふりかえりはすべて無料です。</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/ja/01-week-dark.jpg" alt="今日の残り時間が 目の前で燃えていく" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- 使い方 -->
-  <section>
-    <h2>使い方</h2>
-    <div class="card">
-      <h3>起床時刻と就寝時刻を設定する</h3>
-      <p>右上の ⚙️ ボタンをタップして、起床時刻と就寝時刻を設定してください。起床時刻になると羊皮紙が燃えはじめ、就寝時刻になるとカウントダウンが終わります。</p>
-    </div>
-    <div class="card">
-      <h3>期間を選ぶ</h3>
-      <p>上部のタブで <strong>1日・1週間・1か月・1年</strong> から期間を選ぶと、その期間の残り時間を羊皮紙の燃え具合で表示します。</p>
-    </div>
-    <div class="card">
-      <h3>ホーム画面ウィジェット</h3>
-      <p>ホーム画面を長押し → ウィジェットを追加 → <strong>燃える羊皮紙</strong> を検索すると、日・週・月・年のウィジェットを追加できます。小・中・大の3サイズに対応しています。</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island とロック画面</h3>
-      <p>カウントダウンが始まると、Dynamic Island とロック画面で残り時間をリアルタイムに確認できます。Dynamic Island を下に引くと、羊皮紙が燃えるアニメーションとともに詳しい情報が表示されます。</p>
-    </div>
-  </section>
 
-  <!-- よくある質問 -->
-  <section>
-    <h2>よくある質問</h2>
-    <div class="card">
-      <h3>ウィジェットとアプリで時間の表示が違います</h3>
-      <p>iOS の仕組み上、ホーム画面ウィジェットはリアルタイムに更新できません。アプリを開くとウィジェットのデータが自動で同期されます。リアルタイムのカウントダウンは Dynamic Island とロック画面でご確認ください。</p>
-    </div>
-    <div class="card">
-      <h3>寝ているあいだは何が表示されますか？</h3>
-      <p>就寝時刻を過ぎると燃えるハートのアニメーションが表示され、起床時刻までの睡眠の進み具合がわかります。起床の30分前には、新しい羊皮紙が用意されます。</p>
-    </div>
-    <div class="card">
-      <h3>通知はいつ届きますか？</h3>
-      <p>就寝時刻の1時間前に通知が届きます。届かない場合は、<strong>設定 → 通知 → 燃える羊皮紙</strong> で通知が許可されているかご確認ください。</p>
-    </div>
-    <div class="card">
-      <h3>バッテリーをたくさん消費しますか？</h3>
-      <p>アプリ内のカウントダウンは1秒ごとに更新されますが、ウィジェットはシステムが管理する省電力のタイムライン方式で動くため、バッテリーへの影響は最小限に抑えています。</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>息で火を消してみる</h2>
+      <p class="muted">時刻を寝る直前に動かしてから、ボタンを長押しするか、マイクにふーっと吹きかけてください。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;息で火を消してみる&quot;, &quot;lead&quot;: &quot;時刻を寝る直前に動かしてから、ボタンを長押しするか、マイクにふーっと吹きかけてください。&quot;, &quot;clock&quot;: &quot;いまの時刻&quot;, &quot;now&quot;: &quot;いま&quot;, &quot;late&quot;: &quot;寝る20分前&quot;, &quot;remain&quot;: &quot;就寝までの残り時間&quot;, &quot;hm&quot;: &quot;{h}時間{m}分&quot;, &quot;m&quot;: &quot;{m}分&quot;, &quot;range&quot;: &quot;起床 {wake}・就寝 {bed}&quot;, &quot;blow&quot;: &quot;長押しで吹きかける&quot;, &quot;mic&quot;: &quot;マイクに吹きかける&quot;, &quot;micOn&quot;: &quot;聞いています。マイクにふーっと吹きかけてください&quot;, &quot;micNone&quot;: &quot;このブラウザではマイクを使えません。ボタンを長押ししてください。&quot;, &quot;wait&quot;: &quot;寝る30分前から火を消せます&quot;, &quot;out&quot;: &quot;火が消えました&quot;, &quot;kept&quot;: &quot;残り{m}分で火を消しました。残ったかけらはしまっておきます。&quot;, &quot;again&quot;: &quot;もう一度燃やす&quot;, &quot;note&quot;: &quot;アプリと同じく息の強さだけを見て、音は録音しません。起床・就寝時刻はアプリの初期設定です。&quot;}"></div>
+    </section>
 
-  <!-- プライバシー -->
-  <section>
-    <h2>プライバシー</h2>
-    <div class="card">
-      <h3>情報の取り扱いについて</h3>
-      <p>起床・就寝時刻、締め切り、ふりかえり、灰の壺は、お使いのデバイスの中だけに保存されます。開発者に届くのは、匿名の利用統計とクラッシュ診断、そしてご自身で送っていただいたフィードバックだけです。</p>
-      <ul>
-        <li>アプリとウィジェットは、デバイス内の App Group を通じてのみデータを共有します。</li>
-        <li>広告もトラッキングもありません。</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">プライバシーポリシーの全文を見る →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>「もう12時？」と驚いたことはありませんか</h2>
+      <p>夕食のあと少し休んだだけなのに、気づけば一日が終わっている。時計の数字は毎晩同じに見えるので、時間が減っていく感覚がありません。燃える羊皮紙は残り時間を燃えていく羊皮紙で見せるので、夜が消える前に気づけます。</p>
+    </section>
 
-  <!-- お問い合わせ -->
-  <section>
-    <h2>お問い合わせ</h2>
-    <div class="card">
-      <h3>うまく動かないところはありますか？</h3>
-      <p>不具合のご報告、機能のご要望、そのほかのお問い合わせは、下記のメールアドレスまでお気軽にご連絡ください。できるだけ早くお返事いたします。</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>一日も一週間も一年も、燃えていく</h2>
+        <p>起きた瞬間から寝る時間まで、羊皮紙がゆっくり燃えていきます。今週、今月、今年の残り時間も同じ羊皮紙で確かめられます。<br>期日のある目標は締め切りとして追加すれば、その日までの残り時間も一緒に数えます。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/02-month-light.jpg" alt="一日も一週間も一年も、燃えていく" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ふーっと吹いて終える一日</h2>
+        <p>寝る30分前から、燃える羊皮紙に息を吹きかけて火を消せます。使うのは息の強さだけで、何も録音しません。<br>火を消して残ったかけらはしまっておけます。裏返して、今日のことをひとこと書き残すこともできます。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/blowout-dark.jpg" alt="ふーっと吹いて終える一日" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 燃える羊皮紙 &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">プライバシーポリシー</a></p>
-  <p style="margin-top: 6px;">Made with 🔥 in Korea</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>過ぎた時間は灰になって残る</h2>
+        <p>一日をふりかえってひとことを書き、その時間を何に使ったかを2つの軸の上に点で置きます。ふりかえりは週ごと、月ごとの灰の壺に積もり、ふりかえりの本で読み返せます。<br>灰の流れでは、時間がどこへ行ったのかを分布グラフと火種のカレンダーで見られます。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/03-urn-dark.jpg" alt="過ぎた時間は灰になって残る" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>始めるのは3ステップ</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>起床と就寝の時刻を決める</h3><p>右上の歯車から変更します。その時刻に合わせて羊皮紙が燃えはじめ、消えます。</p></li>
+<li class="card"><span class="n">2</span><h3>見たい期間を選ぶ</h3><p>1日、1週間、1か月、1年をスワイプで切り替え。いらないページは設定で隠せます。</p></li>
+<li class="card"><span class="n">3</span><h3>ウィジェットを置く</h3><p>ホーム画面やロック画面に置けば、アプリを開かなくても残り時間が見えます。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>残り時間が見える場所</h2>
+      <div class="card table">
+        <dl><div><dt>1日</dt><dd>起きた瞬間から寝る時間まで</dd></div><div><dt>1週間・1か月・1年</dt><dd>今週、今月、今年の残り時間</dd></div><div><dt>自由時間</dt><dd>仕事と睡眠を除いた自分だけの時間が過ぎるときだけ、今週の羊皮紙が燃えます（Pro）</dd></div><div><dt>締め切り</dt><dd>目標の日までの残り時間。1件まで無料</dd></div><div><dt>ホーム画面ウィジェット</dt><dd>1日の羊皮紙は小・中・大、週・月・年と締め切りは小・中</dd></div><div><dt>ロック画面ウィジェット</dt><dd>円形、長方形、1行</dd></div><div><dt>Dynamic Island・ライブアクティビティ</dt><dd>寝る1時間前から、または一日中。設定で選んだりオフにしたりできます</dd></div></dl>
+      </div>
+      <p class="muted">Dynamic Islandを広げると、燃える羊皮紙と一緒に詳しい残り時間が表示されます。</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>羊皮紙は無料。もっと残したいならPro</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>無料</h3>
+          <ul><li>1日、1週間、1か月、1年の羊皮紙</li><li>寝る前に息で火を消して、かけらを集める</li><li>ひとことのふりかえり、灰の壺、ふりかえりの本</li><li>朝の確認とヘルスケアの睡眠データ連携</li><li>ホーム画面・ロック画面ウィジェットとDynamic Island</li><li>締め切り1件</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>燃える羊皮紙 Pro</h3>
+          <ul><li>自分の自由時間だけを燃やす</li><li>羊皮紙の色合い：月明かりの韓紙、青磁、夕焼け</li><li>炎の種類：野火、炭火、火の粉</li><li>集めたかけらをカードやポスター画像で共有</li><li>ふりかえりの本をPDFで書き出す</li><li>過去12か月の灰の流れ</li><li>締め切りを無制限に追加</li></ul>
+          <p class="muted">サブスクリプションではありません。一度の購入でずっと使え、今後追加されるPro機能もすべて含まれます。</p>
+        </div>
+      </div>
+      <p class="muted">機種変更したときは、設定の「購入を復元」をタップしてください。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>よくある質問</h2>
+      <div class="faq"><details><summary>ウィジェットとアプリの時間が違います。</summary><p>iOSの仕組み上、ホーム画面のウィジェットは毎秒は更新されません。アプリを開くとすぐに合います。秒単位で減っていく時間は、Dynamic Islandとロック画面のライブアクティビティで確認できます。</p></details>
+<details><summary>息を吹きかけても火が消えません。</summary><p>火を消せるのは寝る30分前からです。マイクへのアクセスを許可しているか確認し、iPhone下部のマイクに近づけて1秒ほど長めに吹いてください。一瞬の短い音では消えません。</p></details>
+<details><summary>声は録音されますか？</summary><p>いいえ。息の強さだけを確認し、音を録音したり保存したりすることはありません。</p></details>
+<details><summary>寝ている間は何が表示されますか？</summary><p>就寝時刻を過ぎると燃えるハートが現れ、起きるまでの睡眠の進み具合を表示します。翌朝は昨夜時間どおりに寝たかを尋ね、遅かった分だけ今朝の羊皮紙が焦げます。ヘルスケアと連携すると、尋ねずに記録された入眠時刻を使います。</p></details>
+<details><summary>通知はいつ届きますか？</summary><p>就寝の1時間前に届きます。届かない場合は、設定 &gt; 通知 &gt; 燃える羊皮紙で通知が許可されているか確認してください。</p></details>
+<details><summary>バッテリーをたくさん使いますか？</summary><p>アプリ内のカウントダウンは1秒ごとに動きますが、ウィジェットはiOSが管理する省電力の方式で更新されるため、影響はわずかです。</p></details>
+<details><summary>記録はどこに保存されますか？</summary><p>起床・就寝時刻、締め切り、ふりかえりと壺はデバイスの中にだけ保存されます。開発者に届くのは匿名の利用統計とクラッシュ診断、ご自身で送ったフィードバックだけです。広告もトラッキングもありません。</p></details>
+<details><summary>Proはサブスクリプションですか？</summary><p>いいえ。一度購入すればずっと使えます。機種変更したときは、設定の「購入を復元」をタップしてください。</p></details></div>
+      <p class="contact">不具合の報告、機能のご要望、そのほかのお問い合わせは <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> までお送りください。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>今夜が消えてしまう前に<br>見届けよう</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">App Storeで無料ダウンロード</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="言語"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">プライバシーポリシー</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

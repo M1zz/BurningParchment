@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giấy Da Cháy — Hỗ trợ</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giấy Da Cháy: nhìn phần còn lại của ngày hôm nay cháy dần trước giờ ngủ</title>
+  <meta name="description" content="Từ lúc thức dậy đến giờ đi ngủ, thời gian còn lại hôm nay cháy dần như một tờ giấy da. Nửa tiếng trước khi ngủ, hãy thổi tắt ngọn lửa.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Giấy Da Cháy: nhìn phần còn lại của ngày hôm nay cháy dần trước giờ ngủ">
+  <meta property="og:description" content="Từ lúc thức dậy đến giờ đi ngủ, thời gian còn lại hôm nay cháy dần như một tờ giấy da. Nửa tiếng trước khi ngủ, hãy thổi tắt ngọn lửa.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="index.html" hreflang="vi" lang="vi" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">Giấy Da Cháy</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Giấy Da Cháy</h1>
-  <p>Từ lúc thức dậy đến giờ đi ngủ, hãy xem ngày của bạn cháy dần.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Về ứng dụng</h2>
-    <div class="card">
-      <h3>Giấy Da Cháy là gì?</h3>
-      <p>Giấy Da Cháy là ứng dụng đếm ngược cho bạn thấy ngày còn lại bao nhiêu qua một tờ giấy da đang cháy dần. Từ lúc thức dậy đến giờ đi ngủ, bạn nhìn một cái là biết còn bao nhiêu thời gian, để tận dụng trọn những giờ phút còn lại.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Đếm ngược theo ngày</span>
-        <span class="badge">Tuần / tháng / năm</span>
-        <span class="badge">Tiện ích Màn hình chính</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Tiện ích Màn hình khóa</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Phần còn lại của hôm nay<br>đang cháy trước mắt bạn</h1>
+        <p class="lead">Một buổi tối trông vô hại khi nhìn bằng con số sẽ khác hẳn khi thành một tờ giấy da đang cháy. Nửa tiếng trước khi ngủ, thổi vào màn hình để dập lửa và khép lại một ngày.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Tải miễn phí trên App Store</a><a class="try" href="#try">Thử thổi tắt xem ↓</a></div>
+        <p class="muted small">Tờ giấy da cháy, nghi thức thổi tắt lửa và nhìn lại đều miễn phí.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/vi/01-week-dark.jpg" alt="Phần còn lại của hôm nay đang cháy trước mắt bạn" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Cách sử dụng</h2>
-    <div class="card">
-      <h3>Cài giờ thức dậy và giờ đi ngủ</h3>
-      <p>Chạm nút ⚙️ ở góc trên bên phải để đặt giờ thức dậy và giờ đi ngủ. Giấy da bắt đầu cháy khi bạn thức dậy và phần đếm ngược kết thúc vào giờ đi ngủ.</p>
-    </div>
-    <div class="card">
-      <h3>Chọn một khoảng thời gian</h3>
-      <p>Chọn <strong>1 ngày · 1 tuần · 1 tháng · 1 năm</strong> từ các tab phía trên, giấy da sẽ cháy để cho thấy khoảng thời gian đó còn lại bao nhiêu.</p>
-    </div>
-    <div class="card">
-      <h3>Tiện ích Màn hình chính</h3>
-      <p>Nhấn giữ Màn hình chính → Thêm tiện ích → tìm <strong>Giấy Da Cháy</strong> để thêm tiện ích theo ngày, tuần, tháng hoặc năm. Có các kích cỡ nhỏ, vừa và lớn.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island và Màn hình khóa</h3>
-      <p>Khi đếm ngược bắt đầu, bạn có thể theo dõi thời gian còn lại trực tiếp trên Dynamic Island và Màn hình khóa. Kéo Dynamic Island xuống để xem chi tiết hơn, cùng hiệu ứng giấy da đang cháy.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Câu hỏi thường gặp</h2>
-    <div class="card">
-      <h3>Tiện ích hiển thị giờ khác với ứng dụng</h3>
-      <p>Do cách iOS hoạt động, tiện ích trên Màn hình chính không thể làm mới theo thời gian thực. Mở ứng dụng sẽ tự động đồng bộ dữ liệu cho tiện ích. Để đếm ngược trực tiếp, hãy dùng Dynamic Island và Màn hình khóa.</p>
-    </div>
-    <div class="card">
-      <h3>Nó hiển thị gì khi tôi đang ngủ?</h3>
-      <p>Sau giờ đi ngủ, một hiệu ứng trái tim đang cháy xuất hiện, cho thấy giấc ngủ của bạn đã đi được bao xa đến giờ thức dậy. Một tờ giấy da mới được chuẩn bị 30 phút trước khi bạn thức dậy.</p>
-    </div>
-    <div class="card">
-      <h3>Khi nào thông báo đến?</h3>
-      <p>Bạn nhận một thông báo trước giờ đi ngủ một tiếng. Nếu không thấy, hãy kiểm tra thông báo đã được cho phép trong <strong>Cài đặt → Thông báo → Giấy Da Cháy</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>Ứng dụng có hao pin không?</h3>
-      <p>Phần đếm ngược trong ứng dụng chạy mỗi giây một lần, còn tiện ích chạy theo lịch tiết kiệm điện do hệ thống quản lý, nên ảnh hưởng đến pin được giữ ở mức tối thiểu.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Thử thổi tắt xem</h2>
+      <p class="muted">Kéo giờ đến sát giờ ngủ, rồi giữ nút hoặc thổi vào micro.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Thử thổi tắt xem&quot;, &quot;lead&quot;: &quot;Kéo giờ đến sát giờ ngủ, rồi giữ nút hoặc thổi vào micro.&quot;, &quot;clock&quot;: &quot;Bây giờ là&quot;, &quot;now&quot;: &quot;Bây giờ&quot;, &quot;late&quot;: &quot;20 phút trước giờ ngủ&quot;, &quot;remain&quot;: &quot;Còn đến giờ ngủ&quot;, &quot;hm&quot;: &quot;{h} giờ {m} phút&quot;, &quot;m&quot;: &quot;{m} phút&quot;, &quot;range&quot;: &quot;Thức dậy {wake} · Đi ngủ {bed}&quot;, &quot;blow&quot;: &quot;Giữ để thổi&quot;, &quot;mic&quot;: &quot;Thổi vào micro&quot;, &quot;micOn&quot;: &quot;Đang nghe. Hãy thổi vào micro&quot;, &quot;micNone&quot;: &quot;Trình duyệt này không dùng được micro. Hãy giữ nút.&quot;, &quot;wait&quot;: &quot;Có thể thổi tắt từ 30 phút trước giờ ngủ&quot;, &quot;out&quot;: &quot;Lửa đã tắt&quot;, &quot;kept&quot;: &quot;Bạn đã thổi tắt khi còn {m} phút. Mảnh còn lại được giữ cho bạn.&quot;, &quot;again&quot;: &quot;Thắp lại&quot;, &quot;note&quot;: &quot;Giống như trong ứng dụng, chỉ đo sức thổi và không ghi âm gì cả. Giờ thức dậy và đi ngủ là mặc định của ứng dụng.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Quyền riêng tư</h2>
-    <div class="card">
-      <h3>Thông tin của bạn được xử lý thế nào</h3>
-      <p>Giờ thức dậy, giờ đi ngủ, hạn chót, bản nhìn lại và bình của bạn chỉ được lưu trên thiết bị của bạn. Nhà phát triển chỉ nhận được thống kê sử dụng ẩn danh, chẩn đoán sự cố và phản hồi mà bạn chọn gửi.</p>
-      <ul>
-        <li>Ứng dụng và tiện ích chỉ chia sẻ dữ liệu qua App Group trên thiết bị của bạn.</li>
-        <li>Không quảng cáo, không theo dõi.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Đọc toàn bộ Chính sách quyền riêng tư →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Bạn từng giật mình "sao đã nửa đêm rồi?"</h2>
+      <p>Ăn tối xong, ngồi nghỉ một chút là hết ngày. Con số trên đồng hồ tối nào trông cũng như nhau, nên bạn không cảm thấy thời gian đang vơi đi. Giấy Da Cháy cho thấy phần còn lại như một tờ giấy da đang cháy, để bạn nhận ra trước khi buổi tối biến mất.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Liên hệ</h2>
-    <div class="card">
-      <h3>Có gì đó không hoạt động đúng?</h3>
-      <p>Để báo lỗi, đề xuất tính năng hoặc hỏi bất cứ điều gì khác, hãy gửi email đến địa chỉ bên dưới. Chúng tôi sẽ phản hồi sớm nhất có thể.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ngày, tuần và năm đang cháy dần</h2>
+        <p>Từ lúc thức dậy đến giờ đi ngủ, tờ giấy da cháy chậm rãi. Bạn cũng xem được tuần này, tháng này và năm nay còn bao nhiêu theo cùng cách.<br>Thêm mục tiêu có ngày làm hạn chót, và đồng hồ đếm ngược chạy song song.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/02-month-light.jpg" alt="Ngày, tuần và năm đang cháy dần" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Thổi tắt một ngày</h2>
+        <p>Từ 30 phút trước giờ ngủ, thổi vào tờ giấy da đang cháy để dập lửa. Chỉ dùng sức thổi của bạn, không ghi âm gì cả.<br>Mảnh còn lại được giữ cho bạn. Lật mặt sau và viết một dòng về hôm nay.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/blowout-dark.jpg" alt="Thổi tắt một ngày" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Chính sách quyền riêng tư</a></p>
-  <p style="margin-top: 6px;">Làm bằng 🔥 tại Hàn Quốc</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Thời gian đã qua lắng lại thành tro</h2>
+        <p>Nhìn lại ngày hôm nay bằng một dòng, rồi đặt nó thành một điểm trên biểu đồ hai trục theo cách bạn đã dùng thời gian đó. Những dòng nhìn lại tích lại trong bình tro theo tuần và tháng, và đọc lại được trong Sổ nhìn lại.<br>Dòng chảy của tro cho thấy thời gian đã đi đâu bằng biểu đồ phân bố và lịch than hồng.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/03-urn-dark.jpg" alt="Thời gian đã qua lắng lại thành tro" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Bắt đầu trong ba bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Đặt giờ thức dậy và đi ngủ</h3><p>Chạm vào bánh răng ở góc trên bên phải. Tờ giấy da bắt lửa và tắt theo giờ này.</p></li>
+<li class="card"><span class="n">2</span><h3>Chọn khoảng thời gian</h3><p>Vuốt qua lại giữa ngày, tuần, tháng và năm, hoặc ẩn trang không cần trong Cài đặt.</p></li>
+<li class="card"><span class="n">3</span><h3>Thêm tiện ích</h3><p>Đặt trên Màn hình chính hoặc Màn hình khóa để thấy thời gian còn lại mà không cần mở ứng dụng.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Xem thời gian còn lại ở đâu</h2>
+      <div class="card table">
+        <dl><div><dt>Ngày</dt><dd>Từ lúc thức dậy đến giờ đi ngủ</dd></div><div><dt>Tuần · Tháng · Năm</dt><dd>Tuần này, tháng này và năm nay còn bao nhiêu</dd></div><div><dt>Thời gian rảnh</dt><dd>Tờ giấy da của tuần chỉ cháy trong những giờ bạn dành cho riêng mình (Pro)</dd></div><div><dt>Hạn chót</dt><dd>Thời gian còn lại đến ngày của mục tiêu. Miễn phí 1 mục</dd></div><div><dt>Tiện ích Màn hình chính</dt><dd>Giấy da theo ngày có cỡ nhỏ, vừa và lớn. Tuần, tháng, năm và hạn chót có cỡ nhỏ và vừa</dd></div><div><dt>Tiện ích Màn hình khóa</dt><dd>Tròn, chữ nhật và một dòng</dd></div><div><dt>Dynamic Island · Hoạt động trực tiếp</dt><dd>Từ 1 giờ trước khi ngủ hoặc cả ngày. Chọn hoặc tắt trong Cài đặt</dd></div></dl>
+      </div>
+      <p class="muted">Mở rộng Dynamic Island để thấy tờ giấy da đang cháy cùng đồng hồ đếm ngược đầy đủ.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Giấy da miễn phí. Pro giữ được nhiều hơn.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Miễn phí</h3>
+          <ul><li>Giấy da theo ngày, tuần, tháng và năm</li><li>Thổi tắt lửa và gom các mảnh</li><li>Nhìn lại một dòng, bình tro và Sổ nhìn lại</li><li>Kiểm tra buổi sáng, có thể kết nối dữ liệu ngủ từ Sức khỏe</li><li>Tiện ích Màn hình chính, Màn hình khóa và Dynamic Island</li><li>1 hạn chót</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Giấy Da Cháy Pro</h3>
+          <ul><li>Chỉ đốt thời gian rảnh của riêng bạn</li><li>Chủ đề: Giấy hanji dưới trăng, Men ngọc, Hoàng hôn</li><li>Ngọn lửa: Lửa đồng, Than hồng, Pháo bông cầm tay</li><li>Chia sẻ các mảnh dưới dạng thẻ và áp phích</li><li>Xuất Sổ nhìn lại thành PDF</li><li>Dòng chảy của tro trong 12 tháng</li><li>Hạn chót không giới hạn</li></ul>
+          <p class="muted">Không phải gói đăng ký. Mua một lần, dùng mãi mãi, gồm cả mọi tính năng Pro ra mắt sau này.</p>
+        </div>
+      </div>
+      <p class="muted">Đổi máy mới? Chạm Khôi phục giao dịch mua trong Cài đặt.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Tiện ích hiện giờ khác với ứng dụng.</summary><p>iOS không vẽ lại tiện ích Màn hình chính mỗi giây. Mở ứng dụng là tiện ích khớp lại ngay. Muốn xem đếm ngược từng giây, hãy dùng Dynamic Island và Hoạt động trực tiếp trên Màn hình khóa.</p></details>
+<details><summary>Tôi thổi mà lửa không tắt.</summary><p>Chỉ thổi tắt được từ 30 phút trước giờ ngủ. Kiểm tra bạn đã cho phép truy cập micro, rồi thổi đều khoảng một giây gần micro ở cạnh dưới iPhone. Một tiếng động ngắn sẽ không đủ.</p></details>
+<details><summary>Giọng tôi có bị ghi âm không?</summary><p>Không. Ứng dụng chỉ đo sức thổi, không ghi âm hay lưu bất kỳ âm thanh nào.</p></details>
+<details><summary>Khi tôi ngủ, ứng dụng hiện gì?</summary><p>Sau giờ ngủ, một trái tim rực lửa xuất hiện và cho thấy giấc ngủ đã đi đến đâu cho tới lúc thức dậy. Sáng hôm sau, ứng dụng hỏi tối qua bạn có ngủ đúng giờ không; nếu ngủ muộn, tờ giấy da sáng nay sẽ bị cháy sém tương ứng. Khi kết nối ứng dụng Sức khỏe, nó dùng giờ bạn chìm vào giấc ngủ đã ghi lại mà không cần hỏi.</p></details>
+<details><summary>Khi nào có thông báo?</summary><p>Một giờ trước giờ ngủ. Nếu không nhận được, hãy kiểm tra Cài đặt &gt; Thông báo &gt; Giấy Da Cháy.</p></details>
+<details><summary>Ứng dụng có tốn pin không?</summary><p>Đồng hồ đếm ngược trong ứng dụng chạy từng giây, nhưng tiện ích được iOS cập nhật theo cách tiết kiệm điện, nên ảnh hưởng rất nhỏ.</p></details>
+<details><summary>Dữ liệu của tôi được lưu ở đâu?</summary><p>Giờ thức dậy, giờ ngủ, hạn chót, những dòng nhìn lại và bình tro chỉ lưu trên thiết bị của bạn. Nhà phát triển chỉ nhận thống kê sử dụng ẩn danh, chẩn đoán sự cố và phản hồi bạn tự gửi. Không quảng cáo, không theo dõi.</p></details>
+<details><summary>Pro có phải gói đăng ký không?</summary><p>Không. Trả một lần, dùng mãi mãi. Trên máy mới, chạm Khôi phục giao dịch mua trong Cài đặt.</p></details></div>
+      <p class="contact">Báo lỗi, góp ý tính năng hay câu hỏi khác, hãy gửi về <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Giữ lấy buổi tối nay<br>trước khi nó trôi qua</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Tải miễn phí trên App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

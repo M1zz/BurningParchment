@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pergamena in fiamme — Supporto</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pergamena in fiamme: guarda bruciare quello che resta della tua giornata</title>
+  <meta name="description" content="Dal risveglio all&#x27;ora di dormire, il tempo che ti resta oggi brucia come una pergamena. Mezz&#x27;ora prima di andare a letto, soffi e spegni la fiamma.">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pergamena in fiamme: guarda bruciare quello che resta della tua giornata">
+  <meta property="og:description" content="Dal risveglio all&#x27;ora di dormire, il tempo che ti resta oggi brucia come una pergamena. Mezz&#x27;ora prima di andare a letto, soffi e spegni la fiamma.">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/it/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/it/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="index.html" hreflang="it" lang="it" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/index.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">Vai al contenuto</a>
+  <header class="bar">
+    <a class="brand" href="../it/"><img src="../icon.png" alt="" width="32" height="32">Pergamena in fiamme</a>
+    <a class="lang-link" href="#languages">Lingua</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>Pergamena in fiamme</h1>
-  <p>Dalla sveglia al riposo, guarda la tua giornata bruciare.</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>Informazioni sull’app</h2>
-    <div class="card">
-      <h3>Cos’è Pergamena in fiamme?</h3>
-      <p>Pergamena in fiamme è un’app di conto alla rovescia che mostra quanto resta della tua giornata come una pergamena che brucia lentamente. Dalla sveglia al riposo vedi a colpo d’occhio quanto tempo rimane, così puoi sfruttare al meglio le ore che hai ancora davanti.</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">Conto alla rovescia del giorno</span>
-        <span class="badge">Settimana / mese / anno</span>
-        <span class="badge">Widget della schermata Home</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">Widget della schermata di blocco</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Quello che resta di oggi<br>brucia davanti a te</h1>
+        <p class="lead">Una serata che in numeri sembra innocua appare diversa come pergamena in fiamme. Mezz'ora prima di dormire soffi sullo schermo, spegni il fuoco e chiudi la giornata.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">Scarica gratis su App Store</a><a class="try" href="#try">Prova a spegnerla ↓</a></div>
+        <p class="muted small">La pergamena in fiamme, il rito del soffio e le riflessioni sono gratis.</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/it/01-week-dark.jpg" alt="Quello che resta di oggi brucia davanti a te" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>Come si usa</h2>
-    <div class="card">
-      <h3>Imposta sveglia e ora di andare a letto</h3>
-      <p>Tocca il pulsante ⚙️ in alto a destra per impostare l’ora della sveglia e quella del riposo. La pergamena inizia a bruciare quando ti svegli e il conto alla rovescia termina all’ora di andare a letto.</p>
-    </div>
-    <div class="card">
-      <h3>Scegli un periodo</h3>
-      <p>Scegli <strong>1 giorno · 1 settimana · 1 mese · 1 anno</strong> dalle schede in alto e la pergamena brucia per mostrare quanto resta di quel periodo.</p>
-    </div>
-    <div class="card">
-      <h3>Widget della schermata Home</h3>
-      <p>Tieni premuta la schermata Home → Aggiungi widget → cerca <strong>Pergamena in fiamme</strong> per aggiungere un widget del giorno, della settimana, del mese o dell’anno. Sono disponibili le dimensioni piccola, media e grande.</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island e schermata di blocco</h3>
-      <p>Quando il conto alla rovescia parte, puoi seguire il tempo rimasto in diretta nella Dynamic Island e sulla schermata di blocco. Trascina verso il basso la Dynamic Island per vedere più dettagli, insieme all’animazione della pergamena che brucia.</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>Domande frequenti</h2>
-    <div class="card">
-      <h3>Il widget mostra un’ora diversa da quella dell’app</h3>
-      <p>Per come funziona iOS, i widget della schermata Home non possono aggiornarsi in tempo reale. Aprendo l’app, i dati del widget si sincronizzano automaticamente. Per un conto alla rovescia in diretta, usa la Dynamic Island e la schermata di blocco.</p>
-    </div>
-    <div class="card">
-      <h3>Cosa mostra mentre dormo?</h3>
-      <p>Dopo l’ora di andare a letto compare un’animazione di un cuore in fiamme che mostra a che punto è il tuo sonno fino alla sveglia. Una pergamena nuova si prepara 30 minuti prima che ti svegli.</p>
-    </div>
-    <div class="card">
-      <h3>Quando arrivano le notifiche?</h3>
-      <p>Ricevi una notifica un’ora prima di andare a letto. Se non arriva, controlla che le notifiche siano consentite in <strong>Impostazioni → Notifiche → Pergamena in fiamme</strong>.</p>
-    </div>
-    <div class="card">
-      <h3>L’app consuma la batteria?</h3>
-      <p>Il conto alla rovescia nell’app avanza una volta al secondo, ma i widget seguono una pianificazione a basso consumo gestita dal sistema, quindi l’impatto sulla batteria è minimo.</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>Prova a spegnerla</h2>
+      <p class="muted">Porta l'orario a poco prima di dormire, poi tieni premuto il pulsante o soffia nel microfono.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Prova a spegnerla&quot;, &quot;lead&quot;: &quot;Porta l&#x27;orario a poco prima di dormire, poi tieni premuto il pulsante o soffia nel microfono.&quot;, &quot;clock&quot;: &quot;Ora attuale&quot;, &quot;now&quot;: &quot;Adesso&quot;, &quot;late&quot;: &quot;20 min prima di dormire&quot;, &quot;remain&quot;: &quot;Mancano all&#x27;ora di dormire&quot;, &quot;hm&quot;: &quot;{h} h {m} min&quot;, &quot;m&quot;: &quot;{m} min&quot;, &quot;range&quot;: &quot;Sveglia {wake} · A letto {bed}&quot;, &quot;blow&quot;: &quot;Tieni premuto per soffiare&quot;, &quot;mic&quot;: &quot;Soffia nel microfono&quot;, &quot;micOn&quot;: &quot;In ascolto. Soffia nel microfono&quot;, &quot;micNone&quot;: &quot;Questo browser non può usare il microfono. Tieni premuto il pulsante.&quot;, &quot;wait&quot;: &quot;Puoi spegnerla da 30 minuti prima di dormire&quot;, &quot;out&quot;: &quot;Il fuoco è spento&quot;, &quot;kept&quot;: &quot;L&#x27;hai spenta con {m} min di anticipo. Il frammento rimasto viene conservato.&quot;, &quot;again&quot;: &quot;Riaccendi&quot;, &quot;note&quot;: &quot;Come nell&#x27;app, conta solo la forza del soffio e non viene registrato nulla. Gli orari di sveglia e riposo sono quelli predefiniti dell&#x27;app.&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>Privacy</h2>
-    <div class="card">
-      <h3>Come vengono trattate le tue informazioni</h3>
-      <p>Ora della sveglia, ora del riposo, scadenze, riflessioni e urne sono salvate solo sul tuo dispositivo. Lo sviluppatore riceve soltanto statistiche d’uso anonime, diagnostica dei crash e gli eventuali feedback che decidi di inviare.</p>
-      <ul>
-        <li>L’app e i suoi widget condividono i dati solo tramite un App Group sul tuo dispositivo.</li>
-        <li>Nessuna pubblicità, nessun tracciamento.</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">Leggi l’informativa completa sulla privacy →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>Ti è mai capitato di dire "è già mezzanotte?"</h2>
+      <p>Ceni, ti siedi un attimo e la giornata è finita. I numeri dell'orologio sembrano sempre uguali, così non senti il tempo che si accorcia. Pergamena in fiamme mostra quello che resta come una pergamena che brucia, così te ne accorgi prima che la serata sparisca.</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>Contatti</h2>
-    <div class="card">
-      <h3>Qualcosa non funziona?</h3>
-      <p>Per segnalare un bug, proporre un’idea o fare qualsiasi altra domanda, scrivici all’indirizzo qui sotto. Ti risponderemo il prima possibile.</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Giorno, settimana e anno che bruciano</h2>
+        <p>Dal risveglio all'ora di dormire la pergamena brucia piano. Allo stesso modo vedi quanto resta di questa settimana, di questo mese e di quest'anno.<br>Aggiungi un obiettivo con data come scadenza e il conto alla rovescia scorre insieme.</p>
+      </div>
+      <div class="phone"><img src="../img/it/02-month-light.jpg" alt="Giorno, settimana e anno che bruciano" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Spegni la giornata con un soffio</h2>
+        <p>Da 30 minuti prima di dormire, soffi sulla pergamena e spegni il fuoco. Si usa solo la forza del respiro, non si registra nulla.<br>Il frammento che resta viene conservato. Giralo e scrivi sul retro una riga sulla tua giornata.</p>
+      </div>
+      <div class="phone"><img src="../img/it/blowout-dark.jpg" alt="Spegni la giornata con un soffio" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">Informativa sulla privacy</a></p>
-  <p style="margin-top: 6px;">Fatto con 🔥 in Corea</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Il tempo passato resta come cenere</h2>
+        <p>Ripensa alla giornata con una riflessione di una riga e mettila come un punto su un grafico a due assi, in base a come hai usato quel tempo. Le riflessioni si accumulano in urne di cenere settimanali e mensili e puoi rileggerle nel Libro delle riflessioni.<br>Il Flusso della cenere mostra dove è finito il tuo tempo con un grafico di distribuzione e un calendario di braci.</p>
+      </div>
+      <div class="phone"><img src="../img/it/03-urn-dark.jpg" alt="Il tempo passato resta come cenere" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>Si parte in tre passi</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Imposta sveglia e ora di dormire</h3><p>Tocca l'ingranaggio in alto a destra. La pergamena si accende e si spegne secondo questi orari.</p></li>
+<li class="card"><span class="n">2</span><h3>Scegli il periodo</h3><p>Scorri tra giorno, settimana, mese e anno, oppure nascondi nelle Impostazioni le pagine che non ti servono.</p></li>
+<li class="card"><span class="n">3</span><h3>Aggiungi un widget</h3><p>Nella schermata Home o di blocco vedi il tempo rimasto senza aprire l'app.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Dove vedere il tempo che resta</h2>
+      <div class="card table">
+        <dl><div><dt>Giorno</dt><dd>Dal risveglio all'ora di dormire</dd></div><div><dt>Settimana · Mese · Anno</dt><dd>Quanto resta di questa settimana, di questo mese e di quest'anno</dd></div><div><dt>Tempo libero</dt><dd>La pergamena della settimana brucia solo nelle ore che tieni per te (Pro)</dd></div><div><dt>Scadenze</dt><dd>Il tempo che manca alla data di un obiettivo. Una è gratis</dd></div><div><dt>Widget della schermata Home</dt><dd>Pergamena del giorno in piccolo, medio e grande. Settimana, mese, anno e scadenze in piccolo e medio</dd></div><div><dt>Widget della schermata di blocco</dt><dd>Circolare, rettangolare e in linea</dd></div><div><dt>Dynamic Island · Attività in tempo reale</dt><dd>Da un'ora prima di dormire o tutto il giorno. Si sceglie o si disattiva nelle Impostazioni</dd></div></dl>
+      </div>
+      <p class="muted">Espandi la Dynamic Island per vedere la pergamena in fiamme con il conto alla rovescia completo.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>La pergamena è gratis. Pro ne conserva di più.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Pergamene di giorno, settimana, mese e anno</li><li>Soffiare sulla fiamma e raccogliere i frammenti</li><li>Riflessioni di una riga, urne di cenere e Libro delle riflessioni</li><li>Controllo del mattino, con i dati del sonno di Salute se vuoi</li><li>Widget Home e schermata di blocco, Dynamic Island</li><li>Una scadenza</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Pergamena in fiamme Pro</h3>
+          <ul><li>Bruciare solo il tuo tempo libero</li><li>Temi: Hanji al chiaro di luna, Celadon, Tramonto</li><li>Fiamme: Fuoco di prateria, Braci, Stellina</li><li>Condividere i frammenti come card e poster</li><li>Esportare il Libro delle riflessioni in PDF</li><li>Dodici mesi di Flusso della cenere</li><li>Scadenze illimitate</li></ul>
+          <p class="muted">Non è un abbonamento. Paghi una volta e resta tuo per sempre, incluse tutte le funzioni Pro future.</p>
+        </div>
+      </div>
+      <p class="muted">Nuovo dispositivo? Tocca Ripristina acquisti nelle Impostazioni.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Domande frequenti</h2>
+      <div class="faq"><details><summary>Il widget mostra un orario diverso dall'app.</summary><p>iOS non ridisegna i widget della schermata Home ogni secondo. Aprendo l'app si risincronizzano. Per un conto alla rovescia al secondo, usa la Dynamic Island e l'Attività in tempo reale nella schermata di blocco.</p></details>
+<details><summary>Soffio ma il fuoco non si spegne.</summary><p>Si può spegnere solo da 30 minuti prima di dormire. Controlla di aver consentito l'accesso al microfono e soffia in modo costante per circa un secondo vicino al microfono in basso sull'iPhone. Un suono breve non basta.</p></details>
+<details><summary>La mia voce viene registrata?</summary><p>No. Viene misurata solo la forza del soffio. Nessun suono viene registrato o salvato.</p></details>
+<details><summary>Cosa mostra mentre dormo?</summary><p>Dopo l'ora di dormire appare un cuore in fiamme che mostra a che punto è la notte fino alla sveglia. Al mattino l'app ti chiede se sei andato a letto in orario e, se hai fatto tardi, la pergamena di oggi parte bruciacchiata di conseguenza. Collegando l'app Salute, usa l'orario in cui ti sei addormentato senza chiedertelo.</p></details>
+<details><summary>Quando arrivano le notifiche?</summary><p>Un'ora prima di dormire. Se non arrivano, controlla Impostazioni &gt; Notifiche &gt; Pergamena in fiamme.</p></details>
+<details><summary>Consuma molta batteria?</summary><p>Il conto alla rovescia nell'app scorre ogni secondo, ma i widget si aggiornano con il sistema a basso consumo gestito da iOS. L'impatto è minimo.</p></details>
+<details><summary>Dove vengono salvati i miei dati?</summary><p>Orari, scadenze, riflessioni e urne restano sul tuo dispositivo. Lo sviluppatore riceve solo statistiche d'uso anonime, diagnosi degli arresti anomali e i feedback che scegli di inviare. Niente pubblicità, niente tracciamento.</p></details>
+<details><summary>Pro è un abbonamento?</summary><p>No. Paghi una volta e resta tuo per sempre. Su un nuovo dispositivo, tocca Ripristina acquisti nelle Impostazioni.</p></details></div>
+      <p class="contact">Bug, idee o altre domande? Scrivi a <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Fermati a guardare la serata<br>prima che sparisca</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">Scarica gratis su App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Lingua"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it" aria-current="page">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Informativa sulla privacy</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

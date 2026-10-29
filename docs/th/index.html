@@ -1,181 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>กระดาษหนังลุกไหม้ — ช่วยเหลือ</title>
-  <style>
-    :root {
-      --bg: #0f0d0a;
-      --surface: #1a1510;
-      --border: #2e2218;
-      --orange: #f97316;
-      --orange-dim: #c2570e;
-      --text: #e8d5b0;
-      --text-dim: #8a7560;
-      --yellow: #fbbf24;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    /* flame gradient top bar */
-    .topbar {
-      height: 3px;
-      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
-    }
-
-    header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .flame-icon {
-      font-size: 56px;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 16px #f97316aa);
-    }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: var(--text-dim);
-      font-size: 15px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 16px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 28px;
-    }
-
-    .card + .card { margin-top: 12px; }
-
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .card p, .card li {
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
-    .card ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    .card li { margin-bottom: 4px; }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 24px;
-      background: var(--orange);
-      color: #0f0d0a;
-      font-weight: 700;
-      font-size: 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .contact-link:hover { opacity: 0.85; }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .badge {
-      font-size: 12px;
-      color: var(--orange-dim);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.2);
-      border-radius: 999px;
-      padding: 4px 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--orange-dim);
-      text-decoration: none;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 26px; }
-      .card { padding: 20px; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กระดาษหนังลุกไหม้: ดูเวลาที่เหลือของวันนี้ค่อยๆ มอดไหม้ก่อนนอน</title>
+  <meta name="description" content="ตั้งแต่ตื่นนอนจนถึงเวลานอน เวลาที่เหลือของวันนี้จะลุกไหม้เป็นกระดาษหนัง ก่อนนอน 30 นาที เป่าให้ไฟดับแล้วปิดวันอย่างสงบ">
+  <meta name="theme-color" content="#AD4D13" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6758995390">
   <link rel="canonical" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
   <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/">
   <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/">
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/">
   <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/">
   <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/">
   <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/">
   <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/">
   <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/">
@@ -189,111 +33,157 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="กระดาษหนังลุกไหม้: ดูเวลาที่เหลือของวันนี้ค่อยๆ มอดไหม้ก่อนนอน">
+  <meta property="og:description" content="ตั้งแต่ตื่นนอนจนถึงเวลานอน เวลาที่เหลือของวันนี้จะลุกไหม้เป็นกระดาษหนัง ก่อนนอน 30 นาที เป่าให้ไฟดับแล้วปิดวันอย่างสงบ">
+  <meta property="og:url" content="https://m1zz.github.io/BurningParchment/th/">
+  <meta property="og:image" content="https://m1zz.github.io/BurningParchment/img/th/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#AD4D13}@media (prefers-color-scheme:dark){:root{--accent:#FF8033}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<nav class="langs" aria-label="Language" style="text-align:right;padding:12px 24px 0;font-size:13px"><a href="../index.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/index.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/index.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/index.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/index.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/index.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/index.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="index.html" hreflang="th" lang="th" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/index.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/index.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/index.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/index.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/index.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/index.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/index.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/index.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/index.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/index.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/index.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a></nav>
+  <a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+  <header class="bar">
+    <a class="brand" href="../th/"><img src="../icon.png" alt="" width="32" height="32">กระดาษหนังลุกไหม้</a>
+    <a class="lang-link" href="#languages">ภาษา</a>
+  </header>
 
-<div class="topbar"></div>
-
-<header>
-  <span class="flame-icon">🔥</span>
-  <h1>กระดาษหนังลุกไหม้</h1>
-  <p>ตั้งแต่ตื่นจนถึงเวลานอน ดูวันของคุณไหม้ไปทีละนิด</p>
-</header>
-
-<main>
-
-  <!-- About -->
-  <section>
-    <h2>เกี่ยวกับแอป</h2>
-    <div class="card">
-      <h3>กระดาษหนังลุกไหม้คืออะไร</h3>
-      <p>กระดาษหนังลุกไหม้เป็นแอปนับถอยหลังที่แสดงว่าวันของคุณเหลืออีกเท่าไรด้วยแผ่นกระดาษหนังที่ค่อย ๆ ไหม้ ตั้งแต่ตื่นจนถึงเวลานอน คุณเห็นได้ในพริบตาว่าเหลือเวลาเท่าไร เพื่อใช้ชั่วโมงที่เหลือให้คุ้มที่สุด</p>
-      <div class="badge-row" style="margin-top: 14px;">
-        <span class="badge">นับถอยหลังรายวัน</span>
-        <span class="badge">สัปดาห์ / เดือน / ปี</span>
-        <span class="badge">วิดเจ็ตหน้าจอโฮม</span>
-        <span class="badge">Dynamic Island</span>
-        <span class="badge">วิดเจ็ตหน้าจอล็อก</span>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>เวลาที่เหลือของวันนี้<br>กำลังลุกไหม้ตรงหน้า</h1>
+        <p class="lead">ค่ำคืนที่ดูไม่มีอะไรเมื่อเป็นตัวเลข จะรู้สึกต่างไปเมื่อเห็นเป็นกระดาษหนังที่ลุกไหม้ ก่อนนอน 30 นาที เป่าที่หน้าจอให้ไฟดับแล้วปิดวันนี้</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6758995390">ดาวน์โหลดฟรีบน App Store</a><a class="try" href="#try">ลองเป่าให้ดับ ↓</a></div>
+        <p class="muted small">กระดาษหนังลุกไหม้ การเป่าไฟ และการทบทวน ใช้ได้ฟรีทั้งหมด</p>
       </div>
-    </div>
-  </section>
+      <div class="phone"><img src="../img/th/01-week-dark.jpg" alt="เวลาที่เหลือของวันนี้ กำลังลุกไหม้ตรงหน้า" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <!-- How to use -->
-  <section>
-    <h2>วิธีใช้</h2>
-    <div class="card">
-      <h3>ตั้งเวลาตื่นและเวลานอน</h3>
-      <p>แตะปุ่ม ⚙️ ที่มุมขวาบนเพื่อตั้งเวลาตื่นและเวลานอน กระดาษหนังจะเริ่มไหม้เมื่อคุณตื่น และการนับถอยหลังจะสิ้นสุดตอนเวลานอน</p>
-    </div>
-    <div class="card">
-      <h3>เลือกช่วงเวลา</h3>
-      <p>เลือก <strong>1 วัน · 1 สัปดาห์ · 1 เดือน · 1 ปี</strong> จากแท็บด้านบน แล้วกระดาษหนังจะไหม้เพื่อแสดงว่าช่วงเวลานั้นเหลืออีกเท่าไร</p>
-    </div>
-    <div class="card">
-      <h3>วิดเจ็ตหน้าจอโฮม</h3>
-      <p>แตะหน้าจอโฮมค้างไว้ → เพิ่มวิดเจ็ต → ค้นหา <strong>กระดาษหนังลุกไหม้</strong> เพื่อเพิ่มวิดเจ็ตรายวัน รายสัปดาห์ รายเดือน หรือรายปี มีขนาดเล็ก กลาง และใหญ่ให้เลือก</p>
-    </div>
-    <div class="card">
-      <h3>Dynamic Island และหน้าจอล็อก</h3>
-      <p>เมื่อเริ่มนับถอยหลังแล้ว คุณติดตามเวลาที่เหลือแบบสดได้ใน Dynamic Island และบนหน้าจอล็อก ลาก Dynamic Island ลงเพื่อดูรายละเอียดเพิ่มเติมพร้อมแอนิเมชันกระดาษหนังที่กำลังไหม้</p>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section>
-    <h2>คำถามที่พบบ่อย</h2>
-    <div class="card">
-      <h3>วิดเจ็ตแสดงเวลาไม่ตรงกับในแอป</h3>
-      <p>เนื่องจากข้อจำกัดของ iOS วิดเจ็ตบนหน้าจอโฮมจึงอัปเดตแบบเรียลไทม์ไม่ได้ เมื่อเปิดแอป ข้อมูลของวิดเจ็ตจะซิงก์โดยอัตโนมัติ หากต้องการนับถอยหลังแบบสด ให้ใช้ Dynamic Island และหน้าจอล็อก</p>
-    </div>
-    <div class="card">
-      <h3>ระหว่างที่ฉันหลับจะแสดงอะไร</h3>
-      <p>หลังเวลานอน จะมีแอนิเมชันหัวใจที่กำลังลุกไหม้ แสดงว่าการนอนของคุณผ่านไปถึงไหนแล้วจนถึงเวลาตื่น กระดาษหนังแผ่นใหม่จะเตรียมพร้อมก่อนคุณตื่น 30 นาที</p>
-    </div>
-    <div class="card">
-      <h3>การแจ้งเตือนมาตอนไหน</h3>
-      <p>คุณจะได้รับการแจ้งเตือนหนึ่งชั่วโมงก่อนเวลานอน หากไม่ได้รับ ให้ตรวจสอบว่าอนุญาตการแจ้งเตือนไว้ที่ <strong>การตั้งค่า → การแจ้งเตือน → กระดาษหนังลุกไหม้</strong></p>
-    </div>
-    <div class="card">
-      <h3>แอปกินแบตเตอรี่ไหม</h3>
-      <p>การนับถอยหลังในแอปเดินทุกวินาที แต่วิดเจ็ตทำงานตามตารางเวลาประหยัดพลังงานที่ระบบจัดการ ผลต่ออายุแบตเตอรี่จึงน้อยที่สุด</p>
-    </div>
-  </section>
+    <section class="reveal" id="try">
+      <h2>ลองเป่าให้ดับ</h2>
+      <p class="muted">เลื่อนเวลาไปใกล้เวลานอน แล้วกดปุ่มค้างไว้ หรือเป่าใส่ไมโครโฟน</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;ลองเป่าให้ดับ&quot;, &quot;lead&quot;: &quot;เลื่อนเวลาไปใกล้เวลานอน แล้วกดปุ่มค้างไว้ หรือเป่าใส่ไมโครโฟน&quot;, &quot;clock&quot;: &quot;เวลาตอนนี้&quot;, &quot;now&quot;: &quot;ตอนนี้&quot;, &quot;late&quot;: &quot;ก่อนนอน 20 นาที&quot;, &quot;remain&quot;: &quot;เหลือเวลาก่อนนอน&quot;, &quot;hm&quot;: &quot;{h} ชม. {m} นาที&quot;, &quot;m&quot;: &quot;{m} นาที&quot;, &quot;range&quot;: &quot;ตื่น {wake} · นอน {bed}&quot;, &quot;blow&quot;: &quot;กดค้างเพื่อเป่า&quot;, &quot;mic&quot;: &quot;เป่าใส่ไมโครโฟน&quot;, &quot;micOn&quot;: &quot;กำลังฟังอยู่ ลองเป่าใส่ไมโครโฟน&quot;, &quot;micNone&quot;: &quot;เบราว์เซอร์นี้ใช้ไมโครโฟนไม่ได้ ลองกดปุ่มค้างไว้แทน&quot;, &quot;wait&quot;: &quot;เป่าไฟได้ตั้งแต่ 30 นาทีก่อนนอน&quot;, &quot;out&quot;: &quot;ไฟดับแล้ว&quot;, &quot;kept&quot;: &quot;คุณเป่าไฟดับตอนเหลือ {m} นาที เศษที่เหลือถูกเก็บไว้ให้แล้ว&quot;, &quot;again&quot;: &quot;จุดไฟอีกครั้ง&quot;, &quot;note&quot;: &quot;เหมือนในแอป ดูแค่แรงลมหายใจและไม่บันทึกเสียงใดๆ เวลาตื่นและเวลานอนเป็นค่าเริ่มต้นของแอป&quot;}"></div>
+    </section>
 
-  <!-- Privacy -->
-  <section>
-    <h2>ความเป็นส่วนตัว</h2>
-    <div class="card">
-      <h3>เราจัดการข้อมูลของคุณอย่างไร</h3>
-      <p>เวลาตื่น เวลานอน กำหนดส่ง บันทึกทบทวน และโถของคุณถูกเก็บไว้ในอุปกรณ์ของคุณเท่านั้น ผู้พัฒนาจะได้รับเพียงสถิติการใช้งานแบบไม่ระบุตัวตน ข้อมูลวินิจฉัยการแครช และความคิดเห็นที่คุณเลือกส่งมาเท่านั้น</p>
-      <ul>
-        <li>แอปและวิดเจ็ตแชร์ข้อมูลกันผ่าน App Group บนอุปกรณ์ของคุณเท่านั้น</li>
-        <li>ไม่มีโฆษณา ไม่มีการติดตาม</li>
-      </ul>
-      <a class="contact-link" href="privacy.html">อ่านนโยบายความเป็นส่วนตัวฉบับเต็ม →</a>
-    </div>
-  </section>
+    <section class="problem reveal">
+      <h2>เคยเงยหน้าขึ้นมาแล้วตกใจว่า "เที่ยงคืนแล้วเหรอ" ไหม</h2>
+      <p>กินข้าวเย็น นั่งพักแป๊บเดียว วันก็หมดไปแล้ว ตัวเลขบนนาฬิกาดูเหมือนเดิมทุกคืน เลยไม่รู้สึกว่าเวลากำลังลดลง กระดาษหนังลุกไหม้แสดงเวลาที่เหลือเป็นกระดาษหนังที่กำลังไหม้ ให้คุณรู้ตัวก่อนที่ค่ำคืนจะหายไป</p>
+    </section>
 
-  <!-- Contact -->
-  <section>
-    <h2>ติดต่อเรา</h2>
-    <div class="card">
-      <h3>มีอะไรทำงานไม่ถูกต้องไหม</h3>
-      <p>หากต้องการแจ้งบั๊ก เสนอไอเดียฟีเจอร์ หรือมีคำถามอื่น ๆ ส่งอีเมลมาที่ที่อยู่ด้านล่าง เราจะตอบกลับโดยเร็วที่สุด</p>
-      <a class="contact-link" href="mailto:leeo@kakao.com">
-        ✉️ &nbsp;leeo@kakao.com
-      </a>
-    </div>
-  </section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>วัน สัปดาห์ และปี ค่อยๆ มอดไหม้</h2>
+        <p>ตั้งแต่ตื่นนอนจนถึงเวลานอน กระดาษหนังจะค่อยๆ ไหม้ไป ดูเวลาที่เหลือของสัปดาห์นี้ เดือนนี้ และปีนี้ได้แบบเดียวกัน<br>เพิ่มเป้าหมายที่มีวันที่เป็นกำหนดส่ง แล้วการนับถอยหลังจะเดินไปพร้อมกัน</p>
+      </div>
+      <div class="phone"><img src="../img/th/02-month-light.jpg" alt="วัน สัปดาห์ และปี ค่อยๆ มอดไหม้" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-</main>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>เป่าไฟปิดวัน</h2>
+        <p>ตั้งแต่ 30 นาทีก่อนนอน เป่าที่กระดาษหนังที่ลุกไหม้ให้ไฟดับ ใช้แค่แรงลมหายใจ ไม่มีการบันทึกเสียง<br>เศษที่เหลือจะถูกเก็บไว้ พลิกด้านหลังแล้วเขียนถึงวันนี้สักบรรทัดได้</p>
+      </div>
+      <div class="phone"><img src="../img/th/blowout-dark.jpg" alt="เป่าไฟปิดวัน" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
-  <p style="margin-top: 8px;"><a href="privacy.html">นโยบายความเป็นส่วนตัว</a></p>
-  <p style="margin-top: 6px;">สร้างด้วย 🔥 ในเกาหลี</p>
-</footer>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>เวลาที่ผ่านไปกลายเป็นเถ้า</h2>
+        <p>ทบทวนวันนี้ด้วยข้อความสั้นๆ หนึ่งบรรทัด แล้ววางเป็นจุดบนกราฟสองแกนตามที่ใช้เวลานั้นไป บันทึกทบทวนจะสะสมในโถเถ้ารายสัปดาห์และรายเดือน และกลับมาอ่านได้ในสมุดบันทึกทบทวน<br>กระแสของเถ้าแสดงให้เห็นว่าเวลาหายไปไหน ด้วยกราฟการกระจายและปฏิทินถ่านไฟ</p>
+      </div>
+      <div class="phone"><img src="../img/th/03-urn-dark.jpg" alt="เวลาที่ผ่านไปกลายเป็นเถ้า" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
 
+    <section class="reveal">
+      <h2>เริ่มได้ใน 3 ขั้นตอน</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>ตั้งเวลาตื่นและเวลานอน</h3><p>แตะรูปเฟืองมุมขวาบน กระดาษหนังจะเริ่มไหม้และดับตามเวลานี้</p></li>
+<li class="card"><span class="n">2</span><h3>เลือกช่วงเวลา</h3><p>ปัดสลับระหว่างวัน สัปดาห์ เดือน และปี หรือซ่อนหน้าที่ไม่ใช้ในการตั้งค่า</p></li>
+<li class="card"><span class="n">3</span><h3>เพิ่มวิดเจ็ต</h3><p>วางบนหน้าจอโฮมหรือหน้าจอล็อก ก็เห็นเวลาที่เหลือได้โดยไม่ต้องเปิดแอป</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>ดูเวลาที่เหลือได้ที่ไหนบ้าง</h2>
+      <div class="card table">
+        <dl><div><dt>วัน</dt><dd>ตั้งแต่ตื่นนอนจนถึงเวลานอน</dd></div><div><dt>สัปดาห์ · เดือน · ปี</dt><dd>เวลาที่เหลือของสัปดาห์นี้ เดือนนี้ และปีนี้</dd></div><div><dt>เวลาว่าง</dt><dd>กระดาษหนังของสัปดาห์จะไหม้เฉพาะช่วงเวลาที่คุณกันไว้ให้ตัวเอง (Pro)</dd></div><div><dt>กำหนดส่ง</dt><dd>เวลาที่เหลือจนถึงวันของเป้าหมาย ใช้ฟรีได้ 1 รายการ</dd></div><div><dt>วิดเจ็ตหน้าจอโฮม</dt><dd>กระดาษหนังรายวันมีขนาดเล็ก กลาง และใหญ่ ส่วนสัปดาห์ เดือน ปี และกำหนดส่งมีขนาดเล็กและกลาง</dd></div><div><dt>วิดเจ็ตหน้าจอล็อก</dt><dd>แบบวงกลม สี่เหลี่ยม และแบบบรรทัดเดียว</dd></div><div><dt>Dynamic Island · กิจกรรมสด</dt><dd>ตั้งแต่ 1 ชั่วโมงก่อนนอน หรือทั้งวัน เลือกหรือปิดได้ในการตั้งค่า</dd></div></dl>
+      </div>
+      <p class="muted">ขยาย Dynamic Island เพื่อดูกระดาษหนังที่ลุกไหม้พร้อมการนับถอยหลังแบบเต็ม</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>กระดาษหนังใช้ฟรี อยากเก็บได้มากขึ้นก็มี Pro</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>ฟรี</h3>
+          <ul><li>กระดาษหนังรายวัน สัปดาห์ เดือน และปี</li><li>เป่าไฟให้ดับและเก็บเศษกระดาษ</li><li>บันทึกทบทวนบรรทัดเดียว โถเถ้า และสมุดบันทึกทบทวน</li><li>เช็กอินตอนเช้า เชื่อมข้อมูลการนอนจากแอปสุขภาพได้</li><li>วิดเจ็ตหน้าจอโฮมและหน้าจอล็อก และ Dynamic Island</li><li>กำหนดส่ง 1 รายการ</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>กระดาษหนังลุกไหม้ Pro</h3>
+          <ul><li>เผาเฉพาะเวลาว่างของคุณเอง</li><li>ธีม: ฮันจิใต้แสงจันทร์ เซลาดอน ยามพลบค่ำ</li><li>เปลวไฟ: ไฟป่าทุ่ง ถ่านไฟ ประทัดดอกไม้ไฟ</li><li>แชร์เศษที่เก็บไว้เป็นการ์ดและโปสเตอร์</li><li>ส่งออกสมุดบันทึกทบทวนเป็น PDF</li><li>กระแสของเถ้าย้อนหลัง 12 เดือน</li><li>กำหนดส่งได้ไม่จำกัด</li></ul>
+          <p class="muted">ไม่ใช่การสมัครสมาชิก ซื้อครั้งเดียวใช้ได้ตลอด รวมฟีเจอร์ Pro ที่จะเพิ่มในอนาคตทั้งหมด</p>
+        </div>
+      </div>
+      <p class="muted">เปลี่ยนเครื่องใหม่ แตะ กู้คืนการซื้อ ในการตั้งค่าได้เลย</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+      <div class="faq"><details><summary>เวลาในวิดเจ็ตไม่ตรงกับในแอป</summary><p>iOS ไม่ได้วาดวิดเจ็ตหน้าจอโฮมใหม่ทุกวินาที เปิดแอปแล้ววิดเจ็ตจะตรงกันทันที ถ้าอยากเห็นการนับถอยหลังทีละวินาที ให้ดูที่ Dynamic Island และกิจกรรมสดบนหน้าจอล็อก</p></details>
+<details><summary>เป่าแล้วไฟไม่ดับ</summary><p>เป่าไฟได้ตั้งแต่ 30 นาทีก่อนนอนเท่านั้น ตรวจสอบว่าอนุญาตให้ใช้ไมโครโฟนแล้ว จากนั้นเป่าต่อเนื่องราว 1 วินาทีใกล้ไมโครโฟนด้านล่างของ iPhone เสียงสั้นๆ ครั้งเดียวจะไม่ทำให้ไฟดับ</p></details>
+<details><summary>แอปบันทึกเสียงของฉันไหม</summary><p>ไม่ แอปดูแค่แรงลมที่เป่า ไม่บันทึกหรือเก็บเสียงใดๆ</p></details>
+<details><summary>ระหว่างนอนหลับ แอปแสดงอะไร</summary><p>พอเลยเวลานอน จะมีหัวใจลุกไฟปรากฏขึ้น บอกว่าการนอนผ่านไปถึงไหนแล้วจนถึงเวลาตื่น เช้าวันถัดไปแอปจะถามว่าเมื่อคืนนอนตรงเวลาไหม ถ้านอนดึก กระดาษหนังของเช้านี้จะไหม้เกรียมไปตามนั้น ถ้าเชื่อมแอปสุขภาพ แอปจะใช้เวลาที่หลับตามที่บันทึกไว้โดยไม่ต้องถาม</p></details>
+<details><summary>การแจ้งเตือนมาเมื่อไร</summary><p>1 ชั่วโมงก่อนเวลานอน ถ้าไม่ได้รับ ให้ตรวจที่ การตั้งค่า &gt; การแจ้งเตือน &gt; กระดาษหนังลุกไหม้</p></details>
+<details><summary>กินแบตเตอรี่มากไหม</summary><p>การนับถอยหลังในแอปเปลี่ยนทุกวินาที แต่วิดเจ็ตอัปเดตแบบประหยัดพลังงานที่ iOS จัดการให้ จึงกระทบแบตเตอรี่น้อยมาก</p></details>
+<details><summary>ข้อมูลของฉันเก็บไว้ที่ไหน</summary><p>เวลาตื่น เวลานอน กำหนดส่ง บันทึกทบทวน และโถเถ้า เก็บไว้ในเครื่องของคุณเท่านั้น นักพัฒนาได้รับแค่สถิติการใช้งานแบบไม่ระบุตัวตน ข้อมูลวินิจฉัยเมื่อแอปขัดข้อง และความคิดเห็นที่คุณส่งมาเอง ไม่มีโฆษณาและไม่มีการติดตาม</p></details>
+<details><summary>Pro เป็นแบบสมัครสมาชิกไหม</summary><p>ไม่ใช่ จ่ายครั้งเดียวใช้ได้ตลอด ถ้าเปลี่ยนเครื่อง แตะ กู้คืนการซื้อ ในการตั้งค่า</p></details></div>
+      <p class="contact">แจ้งปัญหา เสนอฟีเจอร์ หรือสอบถามอื่นๆ ส่งอีเมลมาที่ <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>เฝ้ามองค่ำคืนนี้<br>ก่อนที่มันจะหายไป</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6758995390">ดาวน์โหลดฟรีบน App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="ภาษา"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th" aria-current="page">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Burning Parchment</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

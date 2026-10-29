@@ -1,5 +1,175 @@
 # 릴리즈 노트
 
+## 1.2.3
+
+### 앱스토어 (한국어)
+
+고마울 때 개발자에게 작은 팁을 보낼 수 있어요
+친구에게 Pro를 선물할 수 있어요
+VoiceOver와 음성 제어로 더 편하게 쓸 수 있어요
+큰 글씨와 동작 줄이기 설정에도 잘 맞춰요
+
+### App Store (English)
+
+Leave a small tip if the app helps you
+You can now gift Pro to a friend
+Better with VoiceOver and Voice Control
+Respects larger text and Reduce Motion
+
+### 앱스토어 (일본어)
+
+気に入ったら開発者に小さなチップを送れます
+友だちにProをプレゼントできるようになりました
+VoiceOverや音声コントロールで使いやすくなりました
+大きな文字や視差効果を減らす設定に対応しました
+
+### App Store (en-GB)
+
+Leave a small tip if the app helps you
+You can now gift Pro to a friend
+Better with VoiceOver and Voice Control
+Respects larger text and Reduce Motion
+
+### 앱스토어 (스페인어)
+
+Deja una pequeña propina si te gusta
+Ya puedes regalar Pro a un amigo
+Mejor con VoiceOver y Control por voz
+Admite texto grande y Reducir movimiento
+
+### 앱스토어 (독일어)
+
+Sag Danke mit einem kleinen Trinkgeld
+Verschenke Pro an Freunde
+Besser mit VoiceOver und Sprachsteuerung
+Für großen Text und reduzierte Bewegung
+
+### 앱스토어 (zh-Hans)
+
+想表达感谢时，可以给开发者一点小费
+现在可以把 Pro 送给朋友了
+使用旁白和语音控制时更加顺手
+支持大字体和减弱动态效果
+
+### 앱스토어 (zh-Hant)
+
+想表達感謝時，可以給開發者一點小費
+現在可以把 Pro 送給朋友了
+使用旁白和語音控制時更加順手
+支援大字體和減少動態效果
+
+### 앱스토어 (러시아어)
+
+Можно оставить разработчику чаевые
+Теперь Pro можно подарить другу
+Удобно с VoiceOver и Управлением голосом
+Крупный текст и спокойная анимация
+
+### 앱스토어 (프랑스어)
+
+Dites merci avec un petit pourboire
+Offrez Pro à un ami
+Pensé pour VoiceOver et Contrôle vocal
+Gros texte et animations réduites gérés
+
+### 앱스토어 (이탈리아어)
+
+Lascia una piccola mancia se ti piace
+Ora puoi regalare Pro a un amico
+VoiceOver e Controllo vocale migliorati
+Supporta testo grande e Riduci movimento
+
+### 앱스토어 (pt-BR)
+
+Deixe uma gorjeta se o app te ajudar
+Presenteie um amigo com o Pro
+Melhor com VoiceOver e Controle por Voz
+Aceita texto grande e Reduzir Movimento
+
+### 앱스토어 (태국어)
+
+ส่งทิปให้นักพัฒนาได้เมื่ออยากขอบคุณ
+ส่ง Pro เป็นของขวัญให้เพื่อนได้แล้ว
+รองรับ VoiceOver และการควบคุมด้วยเสียง
+รองรับตัวอักษรใหญ่และลดการเคลื่อนไหว
+
+### 앱스토어 (베트남어)
+
+Gửi nhà phát triển chút tiền tip cảm ơn
+Giờ bạn có thể tặng Pro cho bạn bè
+Dùng tốt hơn với VoiceOver và Khẩu lệnh
+Hỗ trợ chữ lớn và Giảm chuyển động
+
+### 앱스토어 (체코어)
+
+Poděkujte vývojáři malým spropitným
+Pro teď můžete darovat kamarádovi
+Lepší s VoiceOverem a Ovládáním hlasem
+Podpora velkého písma a omezení pohybu
+
+### 앱스토어 (덴마크어)
+
+Sig tak med lidt drikkepenge
+Nu kan du give Pro i gave til en ven
+Bedre med VoiceOver og Stemmestyring
+Tilpasset stor tekst og mindre bevægelse
+
+### 앱스토어 (그리스어)
+
+Πείτε ευχαριστώ με ένα μικρό φιλοδώρημα
+Χαρίστε το Pro σε έναν φίλο
+Καλύτερο με VoiceOver και έλεγχο φωνής
+Μεγάλο κείμενο και μείωση κίνησης
+
+### 앱스토어 (핀란드어)
+
+Kiitä kehittäjää pienellä tipillä
+Voit nyt antaa Pron lahjaksi ystävälle
+Parempi VoiceOverilla ja ääniohjauksella
+Suuri teksti ja liikkeen vähennys tuettu
+
+### 앱스토어 (인도네시아어)
+
+Beri tip kecil untuk berterima kasih
+Kini Pro bisa dihadiahkan ke teman
+Mendukung VoiceOver dan Kontrol Suara
+Mendukung teks besar dan Kurangi Gerakan
+
+### 앱스토어 (노르웨이어(보크말))
+
+Si takk med litt tips til utvikleren
+Nå kan du gi Pro i gave til en venn
+Bedre med VoiceOver og Talekontroll
+Støtter stor tekst og Reduser bevegelse
+
+### 앱스토어 (네덜란드어)
+
+Bedank de maker met een kleine fooi
+Geef Pro cadeau aan een vriend
+Beter met VoiceOver en Stembediening
+Grote tekst en minder beweging werken nu
+
+### 앱스토어 (폴란드어)
+
+Podziękuj twórcy drobnym napiwkiem
+Podaruj Pro znajomemu
+Lepiej z VoiceOver i Sterowaniem głosem
+Duży tekst i mniej ruchu są obsługiwane
+
+### 앱스토어 (스웨덴어)
+
+Tacka utvecklaren med lite dricks
+Nu kan du ge bort Pro till en vän
+Bättre med VoiceOver och Röststyrning
+Stöd för stor text och Minska rörelse
+
+### 앱스토어 (튀르키예어)
+
+Geliştiriciye küçük bir bahşiş bırakın
+Pro'yu bir arkadaşınıza hediye edin
+VoiceOver ve Sesle Denetim ile kolay
+Büyük yazı ve Hareketi Azalt desteği
+
 ## 1.2.2
 
 ### 앱스토어 (한국어)

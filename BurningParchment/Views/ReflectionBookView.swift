@@ -54,7 +54,7 @@ struct ReflectionBookView: View {
                 if !pages.isEmpty {
                     HStack(spacing: 14) {
                         Text("\(currentPage + 1) / \(pages.count)")
-                            .font(.system(size: 12, design: .monospaced))
+                            .scaledFont(size: 12, design: .monospaced)
                             .foregroundColor(.ember.opacity(0.6))
                         Button {
                             if storeManager.isPro { showExport = true } else { showPaywall = true }
@@ -118,7 +118,7 @@ struct ReflectionBookView: View {
             }
             if pages.count > 30 {
                 Text("…")
-                    .font(.system(size: 10))
+                    .scaledFont(size: 10)
                     .foregroundColor(.inkMuted.opacity(0.5))
             }
         }
@@ -140,11 +140,11 @@ struct ReflectionBookView: View {
             // 날짜 헤더
             HStack(alignment: .firstTextBaseline) {
                 Text(headerDateString(page.date))
-                    .font(.system(size: 13, weight: .medium, design: .serif))
+                    .scaledFont(size: 13, weight: .medium, design: .serif)
                     .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16))
                 Spacer()
                 Text("\(page.items.count)개")
-                    .font(.system(size: 10, design: .monospaced))
+                    .scaledFont(size: 10, design: .monospaced)
                     .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.6))
             }
 
@@ -180,22 +180,22 @@ struct ReflectionBookView: View {
                     .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                     .frame(width: 6, height: 6)
                 Text(period.title)
-                    .font(.system(size: 10, weight: .medium))
+                    .scaledFont(size: 10, weight: .medium)
                     .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.75))
                 if item.category != .uncategorized {
                     Text(item.category.shortLabel)
-                        .font(.system(size: 10))
+                        .scaledFont(size: 10)
                         .foregroundColor(Color(red: rgb.0 * 0.7, green: rgb.1 * 0.6, blue: rgb.2 * 0.5))
                 }
                 Spacer()
                 Text(timeString(item.createdAt))
-                    .font(.system(size: 9, design: .monospaced))
+                    .scaledFont(size: 9, design: .monospaced)
                     .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.45))
             }
 
             // 본문
             Text(item.text)
-                .font(.system(size: 15, design: .serif))
+                .scaledFont(size: 15, design: .serif)
                 .foregroundColor(Color(red: 0.28, green: 0.18, blue: 0.10))
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
@@ -203,7 +203,7 @@ struct ReflectionBookView: View {
             // 키워드
             if let kw = item.keyword, !kw.isEmpty {
                 Text("#\(kw)")
-                    .font(.system(size: 10, weight: .medium))
+                    .scaledFont(size: 10, weight: .medium)
                     .foregroundColor(Color(red: 0.55, green: 0.32, blue: 0.10))
                     .padding(.vertical, 2)
                     .padding(.horizontal, 6)
@@ -216,9 +216,9 @@ struct ReflectionBookView: View {
             if let intent = item.tomorrowIntent, !intent.isEmpty {
                 HStack(spacing: 5) {
                     Image(systemName: "sunrise")
-                        .font(.system(size: 9))
+                        .scaledFont(size: 9)
                     Text(intent)
-                        .font(.system(size: 11, design: .serif))
+                        .scaledFont(size: 11, design: .serif)
                 }
                 .foregroundColor(Color(red: 0.62, green: 0.38, blue: 0.14))
                 .padding(.top, 2)
@@ -250,6 +250,8 @@ struct ReflectionBookView: View {
         .accessibilityLabel("\(period.title) 회고")
         .accessibilityValue(item.text)
         .accessibilityHint("탭하여 수정")
+        .accessibilityAddTraits(.isButton)
+        .accessibilityAction(named: Text("삭제")) { reflectionManager.delete(id: item.id) }
     }
 
     // MARK: - Style

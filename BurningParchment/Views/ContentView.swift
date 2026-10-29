@@ -297,7 +297,7 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 4) {
                 HStack(spacing: 5) {
                     Image(systemName: "scroll")
-                        .font(.system(size: 10))
+                        .scaledFont(size: 10)
                         .foregroundColor(.ember.opacity(0.75))
                     Text("어제 못한 것")
                         .font(.system(.caption2, design: .serif).weight(.medium))
@@ -394,11 +394,11 @@ struct ContentView: View {
                 Button { showFragments = true } label: {
                     HStack(spacing: 8) {
                         Image(systemName: "smoke.fill")
-                            .font(.system(size: 12))
+                            .scaledFont(size: 12)
                         Text("불을 껐어요 · 모은 조각 보기")
                             .font(.system(.footnote, design: .serif).weight(.medium))
                         Image(systemName: "chevron.right")
-                            .font(.system(size: 10, weight: .semibold))
+                            .scaledFont(size: 10, weight: .semibold)
                     }
                     .foregroundColor(.inkMuted.opacity(0.75))
                     .padding(.vertical, 8)
@@ -417,7 +417,7 @@ struct ContentView: View {
         Button { showBlowOut = true } label: {
             HStack(spacing: 10) {
                 Image(systemName: "wind")
-                    .font(.system(size: 14, weight: .semibold))
+                    .scaledFont(size: 14, weight: .semibold)
                 Text("후 불어서 불 끄기")
                     .font(.system(.subheadline, design: .serif).weight(.semibold))
             }
@@ -444,7 +444,7 @@ struct ContentView: View {
             } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "moon.stars.fill")
-                        .font(.system(size: 13))
+                        .scaledFont(size: 13)
                         .foregroundColor(.ember.opacity(0.85))
                     VStack(alignment: .leading, spacing: 2) {
                         Text("오늘 한 줄, 남기고 잘까요?")
@@ -456,7 +456,7 @@ struct ContentView: View {
                     }
                     Spacer(minLength: 8)
                     Image(systemName: "chevron.right")
-                        .font(.system(size: 11, weight: .semibold))
+                        .scaledFont(size: 11, weight: .semibold)
                         .foregroundColor(.ember.opacity(0.55))
                 }
                 .padding(.vertical, 10)
@@ -471,6 +471,7 @@ struct ContentView: View {
             .padding(.bottom, 6)
             .transition(.move(edge: .bottom).combined(with: .opacity))
             .accessibilityLabel("오늘의 회고를 남길까요? 탭하면 작성 화면으로 이동합니다")
+            .accessibilityInputLabels([Text("회고")])
         }
     }
 
@@ -704,7 +705,7 @@ struct ContentView: View {
             if !fragmentManager.fragments.isEmpty {
                 Button(action: { showFragments = true }) {
                     Image(systemName: "square.stack.fill")
-                        .font(.system(size: 17))
+                        .scaledFont(size: 17)
                         .foregroundColor(.ember.opacity(headerIconOpacity))
                 }
                 .accessibilityLabel("모은 조각")
@@ -717,7 +718,7 @@ struct ContentView: View {
 
             Button(action: { showDeadlines = true }) {
                 Image(systemName: "flag.fill")
-                    .font(.system(size: 18))
+                    .scaledFont(size: 18)
                     .foregroundColor(.ember.opacity(headerIconOpacity))
             }
             .accessibilityLabel("데드라인")
@@ -731,7 +732,7 @@ struct ContentView: View {
 
             Button(action: { showSettings = true }) {
                 Image(systemName: "gearshape.fill")
-                    .font(.system(size: 20))
+                    .scaledFont(size: 20)
                     .foregroundColor(.ember.opacity(headerIconOpacity))
             }
             .accessibilityLabel("시간 설정")

@@ -68,7 +68,7 @@ struct SettingsView: View {
                         )
                         dismiss()
                     }
-                    .font(.system(size: 16, weight: .semibold))
+                    .scaledFont(size: 16, weight: .semibold)
                     .foregroundColor(.ember)
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -161,7 +161,7 @@ struct SettingsView: View {
             .frame(width: 140)
 
             Text(":")
-                .font(.system(size: 24, weight: .light))
+                .scaledFont(size: 24, weight: .light)
                 .foregroundColor(.inkMuted.opacity(0.6))
 
             Picker("분", selection: minute) {
@@ -201,7 +201,7 @@ struct SettingsView: View {
             selBedM = minute
         } label: {
             Text(TimeFormat.short(hour: hour, minute: minute))
-                .font(.system(size: 12, weight: .medium))
+                .scaledFont(size: 12, weight: .medium)
                 .foregroundColor(isSelected ? .onEmber : .ember.opacity(0.8))
                 .padding(.horizontal, 12)
                 .padding(.vertical, 7)
@@ -266,11 +266,11 @@ struct SettingsView: View {
     private var indicatorSummary: some View {
         if !bedtimeManager.indicatorVisible {
             Text("끔")
-                .font(.system(size: 14))
+                .scaledFont(size: 14)
                 .foregroundColor(.inkMuted.opacity(0.6))
         } else if !bedtimeManager.indicatorSymbol.isEmpty {
             Image(systemName: bedtimeManager.indicatorSymbol)
-                .font(.system(size: 12))
+                .scaledFont(size: 12)
                 .foregroundColor(.ember)
         } else {
             IndicatorSettingsPage.preview(for: bedtimeManager.indicatorShape)
@@ -290,7 +290,7 @@ struct SettingsView: View {
                 SettingsRow(icon: "bed.double", title: String(localized: "건강 앱 수면 기록")) {
                     Label("연결됨", systemImage: "checkmark.circle.fill")
                         .labelStyle(.titleAndIcon)
-                        .font(.system(size: 14, weight: .medium))
+                        .scaledFont(size: 14, weight: .medium)
                         .foregroundColor(.ember)
                 }
             } else {
@@ -398,7 +398,7 @@ struct SettingsView: View {
 
     private func subheading(_ text: String) -> some View {
         Text(text)
-            .font(.system(size: 12, weight: .medium))
+            .scaledFont(size: 12, weight: .medium)
             .foregroundColor(.inkMuted.opacity(0.7))
     }
 
@@ -418,7 +418,7 @@ struct SettingsView: View {
                     .frame(height: 44)
                     .overlay(alignment: .bottomTrailing) {
                         Image(systemName: "flame.fill")
-                            .font(.system(size: 16))
+                            .scaledFont(size: 16)
                             .foregroundStyle(LinearGradient(colors: [.yellow, .orange, .red],
                                                             startPoint: .top, endPoint: .bottom))
                             .flameTint(style)
@@ -427,7 +427,7 @@ struct SettingsView: View {
                     .overlay(alignment: .topLeading) {
                         if locked {
                             Image(systemName: "lock.fill")
-                                .font(.system(size: 9, weight: .semibold))
+                                .scaledFont(size: 9, weight: .semibold)
                                 .foregroundColor(.black.opacity(0.45))
                                 .padding(5)
                         }
@@ -438,14 +438,14 @@ struct SettingsView: View {
                         // 색을 구별하기 어려우면 테두리 색만으로는 고른 것을 알 수 없다 — 표시를 더한다
                         if isSelected && differentiateWithoutColor {
                             Image(systemName: "checkmark.circle.fill")
-                                .font(.system(size: 14, weight: .semibold))
+                                .scaledFont(size: 14, weight: .semibold)
                                 .foregroundStyle(Color.onEmber, Color.ember)
                                 .padding(4)
                                 .accessibilityHidden(true)
                         }
                     }
                 Text(style.label)
-                    .font(.system(size: 11, weight: isSelected ? .semibold : .regular))
+                    .scaledFont(size: 11, weight: isSelected ? .semibold : .regular)
                     .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.7))
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)

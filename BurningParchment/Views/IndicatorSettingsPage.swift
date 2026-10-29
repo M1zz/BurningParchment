@@ -84,7 +84,7 @@ struct IndicatorSettingsPage: View {
                 let isSelected = bedtimeManager.indicatorSymbol == opt.name
                 choice(isSelected: isSelected, label: opt.label) {
                     Image(systemName: opt.name)
-                        .font(.system(size: 18))
+                        .scaledFont(size: 18)
                         .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.5))
                         .frame(height: 20)
                 } action: {
@@ -101,7 +101,7 @@ struct IndicatorSettingsPage: View {
             VStack(spacing: 6) {
                 content()
                 Text(label)
-                    .font(.system(size: 11))
+                    .scaledFont(size: 11)
                     .foregroundColor(isSelected ? .ember : .inkMuted.opacity(0.6))
             }
             .frame(maxWidth: .infinity)
@@ -163,11 +163,11 @@ struct SettingsGroup<Content: View>: View {
             if let title {
                 HStack(spacing: 6) {
                     Text(title)
-                        .font(.system(size: 13, weight: .semibold))
+                        .scaledFont(size: 13, weight: .semibold)
                         .foregroundColor(.inkMuted.opacity(0.75))
                     if let badge {
                         Text(badge)
-                            .font(.system(size: 10, weight: .semibold))
+                            .scaledFont(size: 10, weight: .semibold)
                             .foregroundColor(.onEmber)
                             .padding(.horizontal, 6)
                             .padding(.vertical, 2)
@@ -184,7 +184,7 @@ struct SettingsGroup<Content: View>: View {
 
             if let footer {
                 Text(footer)
-                    .font(.system(size: 12))
+                    .scaledFont(size: 12)
                     .foregroundColor(.inkMuted.opacity(0.6))
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal, 6)
@@ -263,7 +263,7 @@ struct SettingsChevron: View {
     var external = false
     var body: some View {
         Image(systemName: external ? "arrow.up.right" : "chevron.right")
-            .font(.system(size: 12, weight: .semibold))
+            .scaledFont(size: 12, weight: .semibold)
             .foregroundColor(.inkMuted.opacity(0.4))
     }
 }

@@ -60,16 +60,16 @@ struct AshYearView: View {
         HStack(alignment: .firstTextBaseline) {
             VStack(alignment: .leading, spacing: 2) {
                 Text("한 해의 재")
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .scaledFont(size: 15, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
                 Text("지난 12개월, 달마다 어디로 흘렀나")
-                    .font(.system(size: 11, design: .serif))
+                    .scaledFont(size: 11, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.5))
             }
             Spacer()
             if !storeManager.isPro {
                 Text("프로")
-                    .font(.system(size: 10, weight: .semibold))
+                    .scaledFont(size: 10, weight: .semibold)
                     .foregroundColor(.onEmber)
                     .padding(.horizontal, 6)
                     .padding(.vertical, 2)
@@ -125,7 +125,7 @@ struct AshYearView: View {
                 HStack(spacing: 4) {
                     Circle().fill(color(for: cat)).frame(width: 7, height: 7)
                     Text(cat.shortLabel)
-                        .font(.system(size: 10))
+                        .scaledFont(size: 10)
                         .foregroundColor(.inkMuted.opacity(0.65))
                 }
             }
@@ -157,15 +157,15 @@ struct AshYearView: View {
     private func highlightRow(icon: String, title: String, value: String) -> some View {
         HStack(spacing: 10) {
             Image(systemName: icon)
-                .font(.system(size: 12))
+                .scaledFont(size: 12)
                 .foregroundColor(.ember.opacity(0.7))
                 .frame(width: 18)
             Text(title)
-                .font(.system(size: 13, design: .serif))
+                .scaledFont(size: 13, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.75))
             Spacer()
             Text(value)
-                .font(.system(size: 13, weight: .medium, design: .serif))
+                .scaledFont(size: 13, weight: .medium, design: .serif)
                 .foregroundColor(.ink.opacity(0.85))
         }
         .accessibilityElement(children: .combine)
@@ -175,9 +175,9 @@ struct AshYearView: View {
         Button { showPaywall = true } label: {
             VStack(spacing: 8) {
                 Image(systemName: "lock.fill")
-                    .font(.system(size: 18))
+                    .scaledFont(size: 18)
                 Text("프로에서 한 해의 흐름을 열어요")
-                    .font(.system(size: 14, weight: .medium, design: .serif))
+                    .scaledFont(size: 14, weight: .medium, design: .serif)
             }
             .foregroundColor(.ember)
             .padding(.vertical, 14)

@@ -91,7 +91,7 @@ struct PaywallView: View {
                 dismiss()
             } label: {
                 Image(systemName: "xmark")
-                    .font(.system(size: 15, weight: .semibold))
+                    .scaledFont(size: 15, weight: .semibold)
                     .foregroundColor(.inkMuted.opacity(0.7))
                     .frame(width: 38, height: 38)
             }
@@ -116,7 +116,7 @@ struct PaywallView: View {
                     )
                     .frame(width: 110, height: 110)
                 Image(systemName: "flame.fill")
-                    .font(.system(size: 52))
+                    .scaledFont(size: 52)
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.yellow, .orange, Color(red: 0.9, green: 0.25, blue: 0.05)],
@@ -126,12 +126,12 @@ struct PaywallView: View {
             }
 
             Text(headline)
-                .font(.system(size: 26, weight: .semibold, design: .serif))
+                .scaledFont(size: 26, weight: .semibold, design: .serif)
                 .foregroundColor(.ember.opacity(0.95))
                 .multilineTextAlignment(.center)
 
             Text(subheadline)
-                .font(.system(size: 14, design: .serif))
+                .scaledFont(size: 14, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.65))
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
@@ -238,16 +238,16 @@ struct PaywallView: View {
     private func featureRow(icon: String, title: LocalizedStringKey, detail: LocalizedStringKey) -> some View {
         HStack(alignment: .top, spacing: 14) {
             Image(systemName: icon)
-                .font(.system(size: 18))
+                .scaledFont(size: 18)
                 .foregroundColor(.ember.opacity(0.85))
                 .frame(width: 28)
 
             VStack(alignment: .leading, spacing: 3) {
                 Text(title)
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .scaledFont(size: 15, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
                 Text(detail)
-                    .font(.system(size: 12))
+                    .scaledFont(size: 12)
                     .foregroundColor(.inkMuted.opacity(0.6))
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -269,7 +269,7 @@ struct PaywallView: View {
                             .tint(.white)
                     } else {
                         Text(purchaseButtonTitle)
-                            .font(.system(size: 17, weight: .semibold, design: .serif))
+                            .scaledFont(size: 17, weight: .semibold, design: .serif)
                     }
                 }
                 .foregroundColor(.white)
@@ -289,14 +289,14 @@ struct PaywallView: View {
             .disabled(storeManager.purchaseInProgress || storeManager.isLoadingProduct)
 
             Text("구독이 아니에요. 한 번 결제로 평생 이용할 수 있어요")
-                .font(.system(size: 11))
+                .scaledFont(size: 11)
                 .foregroundColor(.inkMuted.opacity(0.5))
 
             Button {
                 Task { await restore() }
             } label: {
                 Text("구매 복원")
-                    .font(.system(size: 13, weight: .medium))
+                    .scaledFont(size: 13, weight: .medium)
                     .foregroundColor(.ember.opacity(0.7))
             }
             .disabled(storeManager.purchaseInProgress)
@@ -312,7 +312,7 @@ struct PaywallView: View {
             Text("·")
             Link("개인정보처리방침", destination: Self.privacyURL)
         }
-        .font(.system(size: 11))
+        .scaledFont(size: 11)
         .foregroundColor(.inkMuted.opacity(0.5))
         .tint(.inkMuted.opacity(0.5))
     }

@@ -428,7 +428,7 @@ struct AshUrnButton: View {
 
                 if count > 0 {
                     Text("\(count)")
-                        .font(.system(size: 9, weight: .bold))
+                        .scaledFont(size: 9, weight: .bold)
                         .foregroundColor(.white)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 1)
@@ -510,7 +510,7 @@ struct ReflectionUrnView: View {
                             .environmentObject(storeManager)
                     } label: {
                         Image(systemName: "chart.dots.scatter")
-                            .font(.system(size: 17))
+                            .scaledFont(size: 17)
                             .foregroundColor(.ember)
                     }
                     .accessibilityLabel("재의 흐름 보기")
@@ -521,7 +521,7 @@ struct ReflectionUrnView: View {
                             .environmentObject(storeManager)
                     } label: {
                         Image(systemName: "book.closed.fill")
-                            .font(.system(size: 17))
+                            .scaledFont(size: 17)
                             .foregroundColor(.ember)
                     }
                     .accessibilityLabel("회고 책으로 보기")
@@ -577,10 +577,10 @@ struct ReflectionUrnView: View {
                 .accessibilityHidden(true)
 
             Text("아직 담긴 재가 없어요")
-                .font(.system(size: 17, weight: .medium, design: .serif))
+                .scaledFont(size: 17, weight: .medium, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.55))
             Text("항아리는 이미 준비돼 있어요.\n첫 재는 \(period.title) 항아리에 담깁니다.")
-                .font(.system(size: 12, design: .serif))
+                .scaledFont(size: 12, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.4))
                 .multilineTextAlignment(.center)
 
@@ -591,7 +591,7 @@ struct ReflectionUrnView: View {
                     Image(systemName: "square.and.pencil")
                     Text("첫 재 담기")
                 }
-                .font(.system(size: 14, weight: .semibold))
+                .scaledFont(size: 14, weight: .semibold)
                 .foregroundColor(.ember)
                 .padding(.vertical, 10)
                 .padding(.horizontal, 18)
@@ -614,19 +614,19 @@ struct ReflectionUrnView: View {
             VStack(alignment: .leading, spacing: 10) {
                 HStack(spacing: 6) {
                     Image(systemName: "wind")
-                        .font(.system(size: 12))
+                        .scaledFont(size: 12)
                     Text("모아둔 재")
-                        .font(.system(size: 12, weight: .semibold))
+                        .scaledFont(size: 12, weight: .semibold)
                 }
                 .foregroundColor(.ember.opacity(0.75))
 
                 Text(gapQuestion(gap.days))
-                    .font(.system(size: 16, weight: .semibold, design: .serif))
+                    .scaledFont(size: 16, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.92))
                     .fixedSize(horizontal: false, vertical: true)
 
                 Text("\(rangeLabel(gap)) — 아직 어느 항아리에도 담기지 않은 시간이에요.")
-                    .font(.system(size: 11, design: .serif))
+                    .scaledFont(size: 11, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.5))
                     .fixedSize(horizontal: false, vertical: true)
 
@@ -646,7 +646,7 @@ struct ReflectionUrnView: View {
                             Image(systemName: "wind")
                             Text("날려버리기")
                         }
-                        .font(.system(size: 13, weight: .medium))
+                        .scaledFont(size: 13, weight: .medium)
                         .foregroundColor(.inkMuted.opacity(0.75))
                         .padding(.vertical, 9)
                         .frame(maxWidth: .infinity)
@@ -663,7 +663,7 @@ struct ReflectionUrnView: View {
                             Image(systemName: "square.and.pencil")
                             Text("의미 적어 담기")
                         }
-                        .font(.system(size: 13, weight: .semibold))
+                        .scaledFont(size: 13, weight: .semibold)
                         .foregroundColor(Color(red: 0.10, green: 0.07, blue: 0.05))
                         .padding(.vertical, 9)
                         .frame(maxWidth: .infinity)
@@ -766,16 +766,16 @@ struct ReflectionUrnView: View {
 
                     VStack(alignment: .leading, spacing: 4) {
                         Text("\(period.title) 항아리에 재 \(count)톨이 남았어요")
-                            .font(.system(size: 13, weight: .semibold, design: .serif))
+                            .scaledFont(size: 13, weight: .semibold, design: .serif)
                             .foregroundColor(.ember.opacity(0.9))
                             .multilineTextAlignment(.leading)
                         Text("이 주는 당신에게 어떤 의미였나요?")
-                            .font(.system(size: 12, design: .serif))
+                            .scaledFont(size: 12, design: .serif)
                             .foregroundColor(.inkMuted.opacity(0.6))
                     }
                     Spacer(minLength: 0)
                     Image(systemName: "square.and.pencil")
-                        .font(.system(size: 14))
+                        .scaledFont(size: 14)
                         .foregroundColor(.ember.opacity(0.7))
                 }
                 .padding(14)
@@ -842,11 +842,11 @@ struct ReflectionUrnView: View {
     private func sectionHeader(_ title: String, _ subtitle: String) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(title)
-                .font(.system(size: 13, weight: .semibold, design: .serif))
+                .scaledFont(size: 13, weight: .semibold, design: .serif)
                 .foregroundColor(.ember.opacity(0.8))
             if !subtitle.isEmpty {
                 Text(subtitle)
-                    .font(.system(size: 11, design: .serif))
+                    .scaledFont(size: 11, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.45))
             }
         }
@@ -870,17 +870,17 @@ struct ReflectionUrnView: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(period.title)
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .scaledFont(size: 15, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.88))
 
                 if let meaning {
                     Text(meaning.displayName)
-                        .font(.system(size: 12, design: .serif))
+                        .scaledFont(size: 12, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.65))
                         .lineLimit(1)
                 } else {
                     Text("아직 이름 없는 재")
-                        .font(.system(size: 12, design: .serif))
+                        .scaledFont(size: 12, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.4))
                 }
             }
@@ -889,10 +889,10 @@ struct ReflectionUrnView: View {
 
             VStack(alignment: .trailing, spacing: 6) {
                 Text("재 \(count)톨")
-                    .font(.system(size: 11, design: .monospaced))
+                    .scaledFont(size: 11, design: .monospaced)
                     .foregroundColor(.inkMuted.opacity(0.5))
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 11, weight: .semibold))
+                    .scaledFont(size: 11, weight: .semibold)
                     .foregroundColor(.ember.opacity(0.5))
             }
         }
@@ -923,7 +923,7 @@ struct ReflectionUrnView: View {
                 Spacer()
                 Button { showInput = true } label: {
                     Image(systemName: "square.and.pencil")
-                        .font(.system(size: 20, weight: .semibold))
+                        .scaledFont(size: 20, weight: .semibold)
                         .foregroundColor(.white)
                         .frame(width: 56, height: 56)
                         .background(
@@ -981,13 +981,13 @@ struct AshInsightsView: View {
     private var emptyState: some View {
         VStack(spacing: 12) {
             Image(systemName: "chart.dots.scatter")
-                .font(.system(size: 48))
+                .scaledFont(size: 48)
                 .foregroundColor(.ember.opacity(0.22))
             Text("아직 흘러간 재가 없어요")
-                .font(.system(size: 16, weight: .medium, design: .serif))
+                .scaledFont(size: 16, weight: .medium, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.55))
             Text("재를 몇 톨 담으면\n분포와 잔불 달력이 여기에 나타나요.")
-                .font(.system(size: 12, design: .serif))
+                .scaledFont(size: 12, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.4))
                 .multilineTextAlignment(.center)
         }
@@ -1012,7 +1012,7 @@ struct ReflectionRow: View {
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.text)
-                    .font(.system(size: 14, design: .serif))
+                    .scaledFont(size: 14, design: .serif)
                     .foregroundColor(.ember.opacity(0.88))
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: true)
@@ -1020,20 +1020,20 @@ struct ReflectionRow: View {
                 HStack(spacing: 8) {
                     if let periodLabel {
                         Text(periodLabel)
-                            .font(.system(size: 10, weight: .medium))
+                            .scaledFont(size: 10, weight: .medium)
                             .foregroundColor(.ember.opacity(0.65))
                     }
                     if item.category != .uncategorized {
                         Text(item.category.shortLabel)
-                            .font(.system(size: 10, weight: .medium))
+                            .scaledFont(size: 10, weight: .medium)
                             .foregroundColor(rowDotColor)
                     }
                     Text(item.dateString)
-                        .font(.system(size: 10))
+                        .scaledFont(size: 10)
                         .foregroundColor(.inkMuted.opacity(0.45))
                     if let kw = item.keyword, !kw.isEmpty {
                         Text("#\(kw)")
-                            .font(.system(size: 10, weight: .medium))
+                            .scaledFont(size: 10, weight: .medium)
                             .foregroundColor(.ember.opacity(0.7))
                             .padding(.vertical, 2)
                             .padding(.horizontal, 6)
@@ -1130,10 +1130,10 @@ struct EmberCalendarView: View {
         HStack {
             HStack(spacing: 6) {
                 Image(systemName: "flame")
-                    .font(.system(size: 11))
+                    .scaledFont(size: 11)
                     .foregroundColor(.ember.opacity(0.6))
                 Text(monthTitle)
-                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .scaledFont(size: 14, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
             }
 
@@ -1142,7 +1142,7 @@ struct EmberCalendarView: View {
             HStack(spacing: 4) {
                 Button { moveMonth(-1) } label: {
                     Image(systemName: "chevron.left")
-                        .font(.system(size: 12, weight: .semibold))
+                        .scaledFont(size: 12, weight: .semibold)
                         .foregroundColor(.ember.opacity(0.7))
                         .frame(width: 30, height: 30)
                         .background(Circle().fill(Color.ink.opacity(0.04)))
@@ -1151,7 +1151,7 @@ struct EmberCalendarView: View {
 
                 Button { moveMonth(1) } label: {
                     Image(systemName: "chevron.right")
-                        .font(.system(size: 12, weight: .semibold))
+                        .scaledFont(size: 12, weight: .semibold)
                         .foregroundColor(canGoNext ? .ember.opacity(0.7) : .inkMuted.opacity(0.25))
                         .frame(width: 30, height: 30)
                         .background(Circle().fill(Color.ink.opacity(0.04)))
@@ -1183,7 +1183,7 @@ struct EmberCalendarView: View {
         HStack(spacing: 4) {
             ForEach(weekdaySymbols, id: \.self) { symbol in
                 Text(symbol)
-                    .font(.system(size: 10, design: .serif))
+                    .scaledFont(size: 10, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.45))
                     .frame(maxWidth: .infinity)
             }
@@ -1230,7 +1230,7 @@ struct EmberCalendarView: View {
         } label: {
             VStack(spacing: 4) {
                 Text("\(cal.component(.day, from: day))")
-                    .font(.system(size: 9, design: .monospaced))
+                    .scaledFont(size: 9, design: .monospaced)
                     .foregroundColor(isToday
                         ? .ember.opacity(0.95)
                         : .inkMuted.opacity(isFuture ? 0.2 : 0.5))
@@ -1306,21 +1306,23 @@ struct EmberCalendarView: View {
             let items = (byDay[sel] ?? []).sorted { $0.createdAt > $1.createdAt }
             VStack(alignment: .leading, spacing: 8) {
                 Text(selectedDayTitle(sel))
-                    .font(.system(size: 12, weight: .medium, design: .serif))
+                    .scaledFont(size: 12, weight: .medium, design: .serif)
                     .foregroundColor(.ember.opacity(0.7))
 
                 if items.isEmpty {
                     Text("이 날의 재는 남아 있지 않아요")
-                        .font(.system(size: 12, design: .serif))
+                        .scaledFont(size: 12, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.45))
                         .padding(.vertical, 4)
                 } else {
                     ForEach(items) { item in
                         let period = item.weekPeriod
-                        ReflectionRow(item: item,
-                                      periodLabel: period.title,
-                                      muted: !reflectionManager.hasMeaning(period))
-                            .onTapGesture { onEdit(item) }
+                        Button { onEdit(item) } label: {
+                            ReflectionRow(item: item,
+                                          periodLabel: period.title,
+                                          muted: !reflectionManager.hasMeaning(period))
+                        }
+                        .buttonStyle(.plain)
                             .contextMenu {
                                 Button {
                                     UIPasteboard.general.string = item.text
@@ -1339,7 +1341,7 @@ struct EmberCalendarView: View {
             }
         } else {
             Text("잔불을 탭하면 그날의 회고가 나와요")
-                .font(.system(size: 11, design: .serif))
+                .scaledFont(size: 11, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.4))
         }
     }
@@ -1415,7 +1417,7 @@ struct UrnDetailView: View {
             .accessibilityHidden(true)
 
             Text(period.rangeLabel)
-                .font(.system(size: 12, design: .serif))
+                .scaledFont(size: 12, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.5))
         }
     }
@@ -1429,21 +1431,21 @@ struct UrnDetailView: View {
             VStack(alignment: .leading, spacing: 10) {
                 HStack(alignment: .firstTextBaseline) {
                     Text(m.displayName)
-                        .font(.system(size: 17, weight: .semibold, design: .serif))
+                        .scaledFont(size: 17, weight: .semibold, design: .serif)
                         .foregroundColor(.ember.opacity(0.92))
                     Spacer(minLength: 8)
                     Button {
                         meaningTarget = period
                     } label: {
                         Text("고쳐 적기")
-                            .font(.system(size: 12, weight: .medium))
+                            .scaledFont(size: 12, weight: .medium)
                             .foregroundColor(.ember.opacity(0.7))
                     }
                 }
 
                 if !m.trimmedText.isEmpty, m.trimmedText != m.displayName {
                     Text(m.trimmedText)
-                        .font(.system(size: 14, design: .serif))
+                        .scaledFont(size: 14, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.8))
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -1461,16 +1463,16 @@ struct UrnDetailView: View {
         } else {
             VStack(alignment: .leading, spacing: 10) {
                 Text("아직은 그냥 재예요")
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .scaledFont(size: 15, weight: .semibold, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.7))
 
                 Text("여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요.")
-                    .font(.system(size: 12, design: .serif))
+                    .scaledFont(size: 12, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.5))
                     .fixedSize(horizontal: false, vertical: true)
 
                 Text(meaningQuestion)
-                    .font(.system(size: 15, weight: .medium, design: .serif))
+                    .scaledFont(size: 15, weight: .medium, design: .serif)
                     .foregroundColor(.ember.opacity(0.88))
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 2)
@@ -1480,9 +1482,9 @@ struct UrnDetailView: View {
                 } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "square.and.pencil")
-                            .font(.system(size: 12, weight: .semibold))
+                            .scaledFont(size: 12, weight: .semibold)
                         Text("의미 적기")
-                            .font(.system(size: 14, weight: .semibold, design: .serif))
+                            .scaledFont(size: 14, weight: .semibold, design: .serif)
                     }
                     .foregroundColor(.ember)
                     .padding(.vertical, 9)
@@ -1524,10 +1526,10 @@ struct UrnDetailView: View {
                         .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                         .frame(width: 10, height: 10)
                     Text("\(counts[cat] ?? 0)")
-                        .font(.system(size: 14, weight: .semibold, design: .monospaced))
+                        .scaledFont(size: 14, weight: .semibold, design: .monospaced)
                         .foregroundColor(.ember.opacity(hasMeaning ? 0.85 : 0.45))
                     Text(cat.shortLabel)
-                        .font(.system(size: 10))
+                        .scaledFont(size: 10)
                         .foregroundColor(.inkMuted.opacity(0.55))
                 }
                 .frame(maxWidth: .infinity)
@@ -1547,7 +1549,7 @@ struct UrnDetailView: View {
         let weeks = reflectionManager.weekPeriods(in: period)
         return VStack(alignment: .leading, spacing: 10) {
             Text("이 달의 주 항아리")
-                .font(.system(size: 13, weight: .semibold, design: .serif))
+                .scaledFont(size: 13, weight: .semibold, design: .serif)
                 .foregroundColor(.ember.opacity(0.8))
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -1582,11 +1584,11 @@ struct UrnDetailView: View {
             .accessibilityHidden(true)
 
             Text(week.shortTitle)
-                .font(.system(size: 12, weight: .semibold, design: .serif))
+                .scaledFont(size: 12, weight: .semibold, design: .serif)
                 .foregroundColor(.ember.opacity(0.85))
 
             Text(m?.displayName ?? String(localized: "재 \(count)톨"))
-                .font(.system(size: 10, design: .serif))
+                .scaledFont(size: 10, design: .serif)
                 .foregroundColor(.inkMuted.opacity(m == nil ? 0.45 : 0.7))
                 .lineLimit(1)
         }
@@ -1613,18 +1615,20 @@ struct UrnDetailView: View {
         let items = reflectionManager.reflections(in: period)
         if items.isEmpty {
             Text("이 항아리는 비어 있어요.")
-                .font(.system(size: 13, design: .serif))
+                .scaledFont(size: 13, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.5))
                 .padding(.top, 12)
         } else {
             VStack(alignment: .leading, spacing: 8) {
                 Text("담긴 재")
-                    .font(.system(size: 13, weight: .semibold, design: .serif))
+                    .scaledFont(size: 13, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.8))
 
                 ForEach(items) { item in
-                    ReflectionRow(item: item, muted: !hasMeaning)
-                        .onTapGesture { editing = item }
+                    Button { editing = item } label: {
+                        ReflectionRow(item: item, muted: !hasMeaning)
+                    }
+                    .buttonStyle(.plain)
                         .contextMenu {
                             Button {
                                 UIPasteboard.general.string = item.text
@@ -1695,7 +1699,7 @@ struct UrnMeaningEditView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("새기기") { save() }
-                        .font(.system(size: 16, weight: .semibold))
+                        .scaledFont(size: 16, weight: .semibold)
                         .foregroundColor(canSave ? .ember : .inkMuted)
                         .disabled(!canSave)
                 }
@@ -1728,13 +1732,13 @@ struct UrnMeaningEditView: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(period.title)
-                    .font(.system(size: 17, weight: .semibold, design: .serif))
+                    .scaledFont(size: 17, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
                 Text(period.rangeLabel)
-                    .font(.system(size: 11, design: .serif))
+                    .scaledFont(size: 11, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.5))
                 Text("재 \(count)톨")
-                    .font(.system(size: 11, design: .monospaced))
+                    .scaledFont(size: 11, design: .monospaced)
                     .foregroundColor(.inkMuted.opacity(0.5))
             }
             Spacer(minLength: 0)
@@ -1750,7 +1754,7 @@ struct UrnMeaningEditView: View {
         if !items.isEmpty {
             VStack(alignment: .leading, spacing: 6) {
                 Text("이 항아리에 남은 것들")
-                    .font(.system(size: 12, weight: .medium))
+                    .scaledFont(size: 12, weight: .medium)
                     .foregroundColor(.inkMuted.opacity(0.55))
 
                 ForEach(items.prefix(6)) { item in
@@ -1760,7 +1764,7 @@ struct UrnMeaningEditView: View {
                             .frame(width: 5, height: 5)
                             .padding(.top, 6)
                         Text(item.text)
-                            .font(.system(size: 13, design: .serif))
+                            .scaledFont(size: 13, design: .serif)
                             .foregroundColor(.inkMuted.opacity(0.75))
                             .fixedSize(horizontal: false, vertical: true)
                             // 지난 회고를 길게 눌러 골라 복사할 수 있게 한다
@@ -1771,7 +1775,7 @@ struct UrnMeaningEditView: View {
 
                 if items.count > 6 {
                     Text("외 \(items.count - 6)톨")
-                        .font(.system(size: 11, design: .serif))
+                        .scaledFont(size: 11, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.4))
                         .padding(.leading, 13)
                 }
@@ -1790,16 +1794,16 @@ struct UrnMeaningEditView: View {
     private var nameField: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(question)
-                .font(.system(size: 15, weight: .semibold, design: .serif))
+                .scaledFont(size: 15, weight: .semibold, design: .serif)
                 .foregroundColor(.ember.opacity(0.9))
                 .fixedSize(horizontal: false, vertical: true)
 
             Text("항아리에 새길 한 마디")
-                .font(.system(size: 12, weight: .medium))
+                .scaledFont(size: 12, weight: .medium)
                 .foregroundColor(.inkMuted.opacity(0.55))
 
             TextField("예: 버텨낸 주", text: $name)
-                .font(.system(size: 17, design: .serif))
+                .scaledFont(size: 17, design: .serif)
                 .foregroundColor(.ember.opacity(0.95))
                 .tint(.ember)
                 .focused($focusedField, equals: .name)
@@ -1818,12 +1822,12 @@ struct UrnMeaningEditView: View {
     private var bodyField: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("조금 더 적어두고 싶다면 (선택)")
-                .font(.system(size: 12, weight: .medium))
+                .scaledFont(size: 12, weight: .medium)
                 .foregroundColor(.inkMuted.opacity(0.55))
 
             TextField("여기 쌓인 재가 나에게 무엇이었는지…", text: $text, axis: .vertical)
                 .lineLimit(3...10)
-                .font(.system(size: 15, design: .serif))
+                .scaledFont(size: 15, design: .serif)
                 .foregroundColor(.ember.opacity(0.9))
                 .tint(.ember)
                 .focused($focusedField, equals: .body)
@@ -1844,9 +1848,9 @@ struct UrnMeaningEditView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: "eraser")
-                    .font(.system(size: 12))
+                    .scaledFont(size: 12)
                 Text("의미 지우기")
-                    .font(.system(size: 13, weight: .medium))
+                    .scaledFont(size: 13, weight: .medium)
             }
             .foregroundColor(.emberDeep.opacity(0.7))
         }
@@ -1947,7 +1951,7 @@ struct ReflectionInputView: View {
                         if (existing != nil || initialDate != nil) && currentStep == .text {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("날짜")
-                                    .font(.system(size: 12, weight: .medium))
+                                    .scaledFont(size: 12, weight: .medium)
                                     .foregroundColor(.inkMuted.opacity(0.55))
                                 DatePicker("", selection: $date, displayedComponents: [.date])
                                     .datePickerStyle(.compact)
@@ -1993,11 +1997,12 @@ struct ReflectionInputView: View {
                 dismiss()
             } label: {
                 Image(systemName: "xmark")
-                    .font(.system(size: 16, weight: .semibold))
+                    .scaledFont(size: 16, weight: .semibold)
                     .foregroundColor(.inkMuted.opacity(0.75))
                     .frame(width: 38, height: 38)
             }
             .accessibilityLabel("닫기 — 지금까지 적은 내용은 저장됩니다")
+            .accessibilityInputLabels([Text("닫기")])
 
             Spacer()
 
@@ -2020,9 +2025,9 @@ struct ReflectionInputView: View {
             // 비어 있을 때 — 자리를 잡고 있되 거의 안 보이게
             HStack(spacing: 5) {
                 Image(systemName: "circle.dotted")
-                    .font(.system(size: 15))
+                    .scaledFont(size: 15)
                 Text("자동 저장")
-                    .font(.system(size: 11, design: .serif))
+                    .scaledFont(size: 11, design: .serif)
             }
             .foregroundColor(.inkMuted.opacity(0.35))
             .accessibilityLabel("아직 적힌 내용이 없습니다")
@@ -2030,9 +2035,9 @@ struct ReflectionInputView: View {
         case .scheduled:
             HStack(spacing: 5) {
                 Image(systemName: "circle.dotted")
-                    .font(.system(size: 15))
+                    .scaledFont(size: 15)
                 Text("저장 중…")
-                    .font(.system(size: 11, design: .serif))
+                    .scaledFont(size: 11, design: .serif)
             }
             .foregroundColor(.ember.opacity(0.7))
             .accessibilityLabel("저장 중")
@@ -2040,9 +2045,9 @@ struct ReflectionInputView: View {
         case .saved:
             HStack(spacing: 5) {
                 Image(systemName: "checkmark.circle.fill")
-                    .font(.system(size: 16))
+                    .scaledFont(size: 16)
                 Text("저장됨")
-                    .font(.system(size: 11, weight: .medium, design: .serif))
+                    .scaledFont(size: 11, weight: .medium, design: .serif)
             }
             .foregroundColor(.successInk)
             .accessibilityLabel("저장됨")
@@ -2094,9 +2099,9 @@ struct ReflectionInputView: View {
         } label: {
             HStack(spacing: 6) {
                 Text(nextLabel)
-                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .scaledFont(size: 14, weight: .semibold, design: .serif)
                 Image(systemName: nextIcon)
-                    .font(.system(size: 11, weight: .semibold))
+                    .scaledFont(size: 11, weight: .semibold)
             }
             .foregroundColor(canAdvance ? .white : .inkMuted.opacity(0.4))
             .padding(.horizontal, 14)
@@ -2118,9 +2123,9 @@ struct ReflectionInputView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: "plus.circle")
-                    .font(.system(size: 11, weight: .semibold))
+                    .scaledFont(size: 11, weight: .semibold)
                 Text("새 회고")
-                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .scaledFont(size: 14, weight: .semibold, design: .serif)
             }
             .foregroundColor(canAdvance ? .ember.opacity(0.9) : .inkMuted.opacity(0.4))
             .padding(.horizontal, 14)
@@ -2149,9 +2154,9 @@ struct ReflectionInputView: View {
         } label: {
             HStack(spacing: 6) {
                 Text("닫기")
-                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .scaledFont(size: 14, weight: .semibold, design: .serif)
                 Image(systemName: "checkmark")
-                    .font(.system(size: 11, weight: .semibold))
+                    .scaledFont(size: 11, weight: .semibold)
             }
             .foregroundColor(.white)
             .padding(.horizontal, 14)
@@ -2260,7 +2265,7 @@ struct ReflectionInputView: View {
         )
         .lineLimit(1...8)
         .focused($focusedField, equals: .body)
-        .font(.system(size: 20, design: .serif))
+        .scaledFont(size: 20, design: .serif)
         .foregroundColor(.ember.opacity(0.95))
         .tint(.ember)
         .padding(.horizontal, 14)
@@ -2277,7 +2282,7 @@ struct ReflectionInputView: View {
             ToolbarItemGroup(placement: .keyboard) {
                 Spacer()
                 Button("다음") { if canAdvance { advance() } }
-                    .font(.system(size: 15, weight: .semibold))
+                    .scaledFont(size: 15, weight: .semibold)
                     .foregroundColor(canAdvance ? .ember : .inkMuted.opacity(0.4))
                     .disabled(!canAdvance)
             }
@@ -2292,9 +2297,9 @@ struct ReflectionInputView: View {
     private var destinationUrnLabel: some View {
         HStack(spacing: 5) {
             Image(systemName: "archivebox.fill")
-                .font(.system(size: 10))
+                .scaledFont(size: 10)
             Text(destinationPeriod.title)
-                .font(.system(size: 12, weight: .medium, design: .serif))
+                .scaledFont(size: 12, weight: .medium, design: .serif)
                 .lineLimit(1)
         }
         .foregroundColor(.ember.opacity(0.6))
@@ -2330,12 +2335,12 @@ struct ReflectionInputView: View {
                     .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                     .frame(width: 9, height: 9)
                 Text("→ \(cat.title)")
-                    .font(.system(size: 13, weight: .medium, design: .serif))
+                    .scaledFont(size: 13, weight: .medium, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
             }
         } else {
             Text("오늘은 어떤 하루였나요? — 콕 찍어보세요")
-                .font(.system(size: 12, weight: .medium))
+                .scaledFont(size: 12, weight: .medium)
                 .foregroundColor(.inkMuted.opacity(0.6))
         }
     }
@@ -2353,7 +2358,7 @@ struct ReflectionInputView: View {
                                       value: Binding<Bool?>) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(title)
-                .font(.system(size: 12, weight: .medium))
+                .scaledFont(size: 12, weight: .medium)
                 .foregroundColor(.ember.opacity(0.75))
             HStack(spacing: 8) {
                 togglePill(label: yesLabel, isOn: value.wrappedValue == true) { value.wrappedValue = true }
@@ -2365,7 +2370,7 @@ struct ReflectionInputView: View {
     private func togglePill(label: String, isOn: Bool, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Text(label)
-                .font(.system(size: 13, weight: isOn ? .semibold : .regular))
+                .scaledFont(size: 13, weight: isOn ? .semibold : .regular)
                 .foregroundColor(isOn ? .ember : .inkMuted.opacity(0.65))
                 .padding(.vertical, 8)
                 .padding(.horizontal, 14)
@@ -2380,11 +2385,11 @@ struct ReflectionInputView: View {
     private var keywordSection: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("키워드 (선택)")
-                .font(.system(size: 12, weight: .medium))
+                .scaledFont(size: 12, weight: .medium)
                 .foregroundColor(.inkMuted.opacity(0.55))
 
             TextField("", text: $keyword)
-                .font(.system(size: 14))
+                .scaledFont(size: 14)
                 .foregroundColor(.ember.opacity(0.9))
                 .padding(12)
                 .background(
@@ -2399,7 +2404,7 @@ struct ReflectionInputView: View {
                     ForEach(suggestions, id: \.self) { s in
                         Button { keyword = s } label: {
                             Text("#\(s)")
-                                .font(.system(size: 12, weight: .medium))
+                                .scaledFont(size: 12, weight: .medium)
                                 .foregroundColor(keyword == s ? .ember : .inkMuted.opacity(0.6))
                                 .padding(.vertical, 5)
                                 .padding(.horizontal, 10)
@@ -2421,15 +2426,15 @@ struct ReflectionInputView: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 6) {
                 Image(systemName: "sunrise")
-                    .font(.system(size: 11))
+                    .scaledFont(size: 11)
                     .foregroundColor(.ember.opacity(0.7))
                 Text(tomorrowQuestion)
-                    .font(.system(size: 12, weight: .medium))
+                    .scaledFont(size: 12, weight: .medium)
                     .foregroundColor(.inkMuted.opacity(0.65))
             }
 
             TextField(tomorrowPlaceholder, text: $tomorrowIntent)
-                .font(.system(size: 14, design: .serif))
+                .scaledFont(size: 14, design: .serif)
                 .foregroundColor(.ember.opacity(0.9))
                 .focused($focusedField, equals: .tomorrow)
                 .submitLabel(.done)
@@ -2443,7 +2448,7 @@ struct ReflectionInputView: View {
                 )
 
             Text("내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요.")
-                .font(.system(size: 10))
+                .scaledFont(size: 10)
                 .foregroundColor(.inkMuted.opacity(0.45))
         }
     }
@@ -2675,8 +2680,33 @@ struct ClassificationGraph: View {
             )
             .accessibilityElement()
             .accessibilityLabel("분류 그래프")
+            .accessibilityValue(accessibilityValue)
             .accessibilityHint("두 축에 따라 손가락으로 콕 찍어 분류합니다")
+            // 끌어 찍기 대신 네 분면을 이름으로 고른다 (VoiceOver 동작 · 음성 명령)
+            .accessibilityActions {
+                ForEach(Self.quadrants, id: \.0) { quadrant in
+                    Button(quadrant.0.title) {
+                        point = quadrant.1
+                        onPick(quadrant.1)
+                    }
+                }
+            }
         }
+    }
+
+    /// 분면마다 가운데 점. 분류는 applyClassificationPoint 가 점의 위치로 정한다.
+    private static let quadrants: [(ReflectionCategory, CGPoint)] = [
+        (.forged, CGPoint(x: 0.75, y: 0.75)),
+        (.missed, CGPoint(x: 0.75, y: 0.25)),
+        (.accept, CGPoint(x: 0.25, y: 0.75)),
+        (.scattered, CGPoint(x: 0.25, y: 0.25))
+    ]
+
+    private var accessibilityValue: String {
+        guard let p = point else { return String(localized: "분류 안 됨") }
+        let category = ReflectionCategory.from(intent: p.x > 0.5, spentTime: p.y > 0.5,
+                                               drift: p.x < 0.5 && p.y > 0.5 ? .accept : nil)
+        return (category ?? .uncategorized).title
     }
 
     private var pinView: some View {
@@ -2798,7 +2828,7 @@ struct ClassificationGraphBackground: View {
                                rgb: (Double, Double, Double),
                                at: CGPoint) -> some View {
         Text(text)
-            .font(.system(size: 10, weight: .semibold, design: .serif))
+            .scaledFont(size: 10, weight: .semibold, design: .serif)
             .foregroundColor(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(0.85))
             .position(at)
     }
@@ -2806,23 +2836,23 @@ struct ClassificationGraphBackground: View {
     private var axisLabels: some View {
         ZStack {
             Text("시간을 들였다")
-                .font(.system(size: 10, design: .serif))
+                .scaledFont(size: 10, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.7))
                 .position(x: size / 2, y: 12)
 
             Text("시간을 안 들였다")
-                .font(.system(size: 10, design: .serif))
+                .scaledFont(size: 10, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.7))
                 .position(x: size / 2, y: size - 12)
 
             Text("의지\n없음")
-                .font(.system(size: 10, design: .serif))
+                .scaledFont(size: 10, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.7))
                 .multilineTextAlignment(.center)
                 .position(x: 22, y: size / 2)
 
             Text("의지\n있음")
-                .font(.system(size: 10, design: .serif))
+                .scaledFont(size: 10, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.7))
                 .multilineTextAlignment(.center)
                 .position(x: size - 22, y: size / 2)
@@ -2863,7 +2893,7 @@ struct ReflectionDistributionView: View {
 
             if plotted.isEmpty {
                 Text("아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요.")
-                    .font(.system(size: 12, design: .serif))
+                    .scaledFont(size: 12, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.45))
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -2958,10 +2988,10 @@ struct ReflectionDistributionView: View {
         HStack {
             HStack(spacing: 6) {
                 Image(systemName: "chart.dots.scatter")
-                    .font(.system(size: 11))
+                    .scaledFont(size: 11)
                     .foregroundColor(.ember.opacity(0.6))
                 Text("재의 분포")
-                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .scaledFont(size: 14, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
             }
 
@@ -2973,7 +3003,7 @@ struct ReflectionDistributionView: View {
                         withAnimation(.easeInOut(duration: 0.18)) { scope = s }
                     } label: {
                         Text(s.title)
-                            .font(.system(size: 11, weight: scope == s ? .semibold : .regular))
+                            .scaledFont(size: 11, weight: scope == s ? .semibold : .regular)
                             .foregroundColor(scope == s ? .ember : .inkMuted.opacity(0.55))
                             .padding(.vertical, 5)
                             .padding(.horizontal, 10)
@@ -3063,7 +3093,7 @@ struct ReflectionDistributionView: View {
                               count: Int) -> some View {
         if count > 0 {
             Text(text)
-                .font(.system(size: 15, weight: .bold, design: .serif))
+                .scaledFont(size: 15, weight: .bold, design: .serif)
                 .foregroundColor(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(0.50))
                 .position(at)
         }
@@ -3101,7 +3131,7 @@ struct ReflectionDistributionView: View {
                 Text("· ⊕ 무게중심")
             }
         }
-        .font(.system(size: 10, design: .serif))
+        .scaledFont(size: 10, design: .serif)
         .foregroundColor(.inkMuted.opacity(0.4))
     }
 

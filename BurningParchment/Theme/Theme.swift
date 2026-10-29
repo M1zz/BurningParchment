@@ -182,3 +182,45 @@ private struct FireBlend: ViewModifier {
 extension View {
     func fireBlend() -> some View { modifier(FireBlend()) }
 }
+
+// MARK: - 더 큰 텍스트를 따르는 글꼴
+
+extension View {
+    /// `.font(.system(size:))` 자리에 쓴다. 디자인이 정한 크기를 기본값으로 두고,
+    /// 설정 ▸ 손쉬운 사용 ▸ 더 큰 텍스트에 맞춰 함께 커진다.
+    func scaledFont(size: CGFloat, weight: Font.Weight? = nil, design: Font.Design? = nil) -> some View {
+        modifier(ScaledSystemFont(size: size, weight: weight, design: design))
+    }
+}
+
+private struct ScaledSystemFont: ViewModifier {
+    @ScaledMetric private var size: CGFloat
+    let weight: Font.Weight?
+    let design: Font.Design?
+
+    init(size: CGFloat, weight: Font.Weight?, design: Font.Design?) {
+        _size = ScaledMetric(wrappedValue: size, relativeTo: Self.textStyle(near: size))
+        self.weight = weight
+        self.design = design
+    }
+
+    func body(content: Content) -> some View {
+        content.font(.system(size: size, weight: weight, design: design))
+    }
+
+    /// 크기가 가장 가까운 글자 스타일의 비율로 커진다 — 작은 글자는 많이, 큰 숫자는 덜.
+    private static func textStyle(near size: CGFloat) -> Font.TextStyle {
+        switch size {
+        case ..<12: return .caption2
+        case ..<13: return .caption
+        case ..<15: return .footnote
+        case ..<16: return .subheadline
+        case ..<17: return .callout
+        case ..<20: return .body
+        case ..<22: return .title3
+        case ..<28: return .title2
+        case ..<34: return .title
+        default:    return .largeTitle
+        }
+    }
+}

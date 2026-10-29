@@ -104,10 +104,10 @@ struct FlameKindPicker: View {
         VStack(spacing: 6) {
             Spacer()
             Image(systemName: kind.icon)
-                .font(.system(size: 24, weight: .light))
+                .scaledFont(size: 24, weight: .light)
                 .foregroundStyle(.white.opacity(0.9))
             Text(kind.label)
-                .font(.system(size: 15, weight: .semibold, design: .serif))
+                .scaledFont(size: 15, weight: .semibold, design: .serif)
                 .foregroundStyle(.white)
             Group {
                 if locked {
@@ -118,7 +118,7 @@ struct FlameKindPicker: View {
                     Text(" ")
                 }
             }
-            .font(.system(size: 9, weight: .semibold))
+            .scaledFont(size: 9, weight: .semibold)
             .foregroundStyle(.white.opacity(0.6))
             .labelStyle(.titleAndIcon)
             .padding(.bottom, 22)
@@ -144,7 +144,7 @@ struct FlameKindPicker: View {
             Text("·")
             Text(kind.tagline)
         }
-        .font(.system(size: 12, design: .serif))
+        .scaledFont(size: 12, design: .serif)
         .foregroundColor(.inkMuted.opacity(0.65))
         .animation(.default, value: focused)
         .accessibilityHidden(true)

@@ -325,7 +325,7 @@ struct MorningCheckInView: View {
     private func header(icon: String, title: String, subtitle: String) -> some View {
         VStack(spacing: 10) {
             Image(systemName: icon)
-                .font(.system(size: 34))
+                .scaledFont(size: 34)
                 .foregroundColor(.ember.opacity(0.7))
             Text(title)
                 .font(.system(.title2, design: .serif).weight(.medium))

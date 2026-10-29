@@ -24,8 +24,11 @@ struct DeadlineListView: View {
                     ScrollView {
                         VStack(spacing: 10) {
                             ForEach(deadlineManager.deadlines) { deadline in
-                                DeadlineRow(deadline: deadline)
-                                    .onTapGesture { selectedDeadline = deadline }
+                                // 버튼이어야 VoiceOver·음성 명령으로도 열린다
+                                Button { selectedDeadline = deadline } label: {
+                                    DeadlineRow(deadline: deadline)
+                                }
+                                .buttonStyle(.plain)
                                     .contextMenu {
                                         Button(role: .destructive) {
                                             delete(deadline)
@@ -55,7 +58,7 @@ struct DeadlineListView: View {
                     } label: {
                         Image(systemName: "plus")
                             .foregroundColor(.ember)
-                            .font(.system(size: 16, weight: .semibold))
+                            .scaledFont(size: 16, weight: .semibold)
                     }
                     .accessibilityLabel("데드라인 추가")
                 }
@@ -117,15 +120,15 @@ struct DeadlineRow: View {
     var body: some View {
         HStack(spacing: 14) {
             Text(deadline.emoji)
-                .font(.system(size: 28))
+                .scaledFont(size: 28)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(deadline.title)
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .scaledFont(size: 15, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
-                    .lineLimit(1)
+                    .lineLimit(2)
                 Text(deadline.targetDateString)
-                    .font(.system(size: 11))
+                    .scaledFont(size: 11)
                     .foregroundColor(.inkMuted.opacity(0.45))
             }
 
@@ -134,15 +137,15 @@ struct DeadlineRow: View {
             VStack(alignment: .trailing, spacing: 4) {
                 if deadline.isExpired(at: now) {
                     Text("완료")
-                        .font(.system(size: 13, weight: .medium))
+                        .scaledFont(size: 13, weight: .medium)
                         .foregroundColor(.inkMuted.opacity(0.45))
                 } else {
                     Text(deadline.remainingString(at: now))
-                        .font(.system(size: 13, weight: .medium, design: .monospaced))
+                        .scaledFont(size: 13, weight: .medium, design: .monospaced)
                         .foregroundColor(.ember)
                         .lineLimit(1)
                     Text("남음")
-                        .font(.system(size: 10))
+                        .scaledFont(size: 10)
                         .foregroundColor(.inkMuted.opacity(0.45))
                 }
             }
@@ -209,7 +212,7 @@ struct DeadlineFormView: View {
                         // 이모지 선택
                         VStack(alignment: .leading, spacing: 8) {
                             Text("이모지")
-                                .font(.system(size: 13, weight: .medium))
+                                .scaledFont(size: 13, weight: .medium)
                                 .foregroundColor(.inkMuted.opacity(0.6))
                                 .padding(.horizontal, 20)
 
@@ -218,7 +221,7 @@ struct DeadlineFormView: View {
                                     ForEach(emojis, id: \.self) { e in
                                         Button { emoji = e } label: {
                                             Text(e)
-                                                .font(.system(size: 26))
+                                                .scaledFont(size: 26)
                                                 .padding(9)
                                                 .background(
                                                     Circle().fill(emoji == e
@@ -240,11 +243,11 @@ struct DeadlineFormView: View {
                         // 제목
                         VStack(alignment: .leading, spacing: 8) {
                             Text("제목")
-                                .font(.system(size: 13, weight: .medium))
+                                .scaledFont(size: 13, weight: .medium)
                                 .foregroundColor(.inkMuted.opacity(0.6))
                             TextField("예: 프로젝트 제출", text: $title)
                                 .accessibilityIdentifier("deadline.title")
-                                .font(.system(size: 17))
+                                .scaledFont(size: 17)
                                 .foregroundColor(.ember.opacity(0.9))
                                 .padding(14)
                                 .background(
@@ -259,7 +262,7 @@ struct DeadlineFormView: View {
                         // 시작 시간
                         VStack(alignment: .leading, spacing: 8) {
                             Text("시작 시간")
-                                .font(.system(size: 13, weight: .medium))
+                                .scaledFont(size: 13, weight: .medium)
                                 .foregroundColor(.inkMuted.opacity(0.6))
                             DatePicker("", selection: $startDate, displayedComponents: [.date, .hourAndMinute])
                                 .datePickerStyle(.compact)
@@ -280,7 +283,7 @@ struct DeadlineFormView: View {
                         // 마감일
                         VStack(alignment: .leading, spacing: 8) {
                             Text("마감일")
-                                .font(.system(size: 13, weight: .medium))
+                                .scaledFont(size: 13, weight: .medium)
                                 .foregroundColor(.inkMuted.opacity(0.6))
                             DatePicker("", selection: $targetDate)
                                 .datePickerStyle(.graphical)
@@ -316,7 +319,7 @@ struct DeadlineFormView: View {
                         }
                         dismiss()
                     }
-                    .font(.system(size: 16, weight: .semibold))
+                    .scaledFont(size: 16, weight: .semibold)
                     .foregroundColor(title.isEmpty ? .inkMuted : .ember)
                     .disabled(title.isEmpty)
                 }

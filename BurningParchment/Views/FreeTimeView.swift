@@ -54,12 +54,12 @@ struct FreeTimeSummary: View {
     private func stat(value: String, caption: String) -> some View {
         VStack(spacing: 4) {
             Text(value)
-                .font(.system(size: 18, weight: .medium, design: .serif))
+                .scaledFont(size: 18, weight: .medium, design: .serif)
                 .foregroundColor(.ember.opacity(0.9))
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
             Text(caption)
-                .font(.system(size: 11))
+                .scaledFont(size: 11)
                 .foregroundColor(.inkMuted.opacity(0.6))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
@@ -81,7 +81,7 @@ struct FreeTimeWeekStrip: View {
             ForEach(1...7, id: \.self) { day in
                 HStack(spacing: 8) {
                     Text(FreeTimeBlock.weekdaySymbol(day))
-                        .font(.system(size: 11, design: .serif))
+                        .scaledFont(size: 11, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.7))
                         .frame(width: 30, alignment: .leading)
                     Canvas { ctx, size in
@@ -107,7 +107,7 @@ struct FreeTimeWeekStrip: View {
                 HStack {
                     ForEach([0, 6, 12, 18, 24], id: \.self) { h in
                         Text("\(h)")
-                            .font(.system(size: 9))
+                            .scaledFont(size: 9)
                             .foregroundColor(.inkMuted.opacity(0.45))
                         if h != 24 { Spacer() }
                     }
@@ -151,16 +151,16 @@ struct FreeTimeIntroView: View {
         ScrollView {
             VStack(spacing: 18) {
                 Image(systemName: "hourglass")
-                    .font(.system(size: 40, weight: .light))
+                    .scaledFont(size: 40, weight: .light)
                     .foregroundColor(.ember.opacity(0.75))
                     .padding(.top, 24)
 
                 Text("불타는 자유시간")
-                    .font(.system(size: 22, weight: .semibold, design: .serif))
+                    .scaledFont(size: 22, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
 
                 Text("잠자는 시간도, 일하는 시간도 빼고\n정말 나만을 위한 시간만 골라 두세요.\n그 시간이 지나갈 때만 이번 주 양피지가 타요.")
-                    .font(.system(size: 14, design: .serif))
+                    .scaledFont(size: 14, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.75))
                     .multilineTextAlignment(.center)
                     .lineSpacing(4)
@@ -178,13 +178,13 @@ struct FreeTimeIntroView: View {
                             showPaywall = true
                         }
                         Button("자유시간 고치기", action: onEdit)
-                            .font(.system(size: 14, design: .serif))
+                            .scaledFont(size: 14, design: .serif)
                             .foregroundColor(.ember.opacity(0.8))
                     } else {
                         primaryButton(String(localized: "나의 자유시간 정하기"), icon: "plus", action: onEdit)
                         if !storeManager.isPro {
                             Text("정해 보고 셈을 보는 건 무료예요. 그 시간만 태우는 건 프로예요.")
-                                .font(.system(size: 11))
+                                .scaledFont(size: 11)
                                 .foregroundColor(.inkMuted.opacity(0.5))
                                 .multilineTextAlignment(.center)
                         }
@@ -207,7 +207,7 @@ struct FreeTimeIntroView: View {
                 Image(systemName: icon)
                 Text(title)
             }
-            .font(.system(size: 16, weight: .semibold, design: .serif))
+            .scaledFont(size: 16, weight: .semibold, design: .serif)
             .foregroundColor(.onEmber)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
@@ -236,7 +236,7 @@ struct FreeTimeEditorView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 22) {
                         Text("잠·일·해야 할 일을 빼고, 온전히 나를 위해 쓰는 시간만 적어 주세요. 이 시간이 지나갈 때만 이번 주 양피지가 타요.")
-                            .font(.system(size: 13, design: .serif))
+                            .scaledFont(size: 13, design: .serif)
                             .foregroundColor(.inkMuted.opacity(0.7))
                             .fixedSize(horizontal: false, vertical: true)
 
@@ -294,7 +294,7 @@ struct FreeTimeEditorView: View {
                             if on { selectedDays.remove(day) } else { selectedDays.insert(day) }
                         } label: {
                             Text(FreeTimeBlock.weekdaySymbol(day))
-                                .font(.system(size: 13, weight: on ? .semibold : .regular))
+                                .scaledFont(size: 13, weight: on ? .semibold : .regular)
                                 .foregroundColor(on ? .onEmber : .ember.opacity(0.8))
                                 .frame(maxWidth: .infinity, minHeight: 34)
                                 .background(RoundedRectangle(cornerRadius: 9)
@@ -320,14 +320,14 @@ struct FreeTimeEditorView: View {
                     Spacer()
                     Text(BurningParchmentView.durationString(TimeInterval(
                         FreeTimeBlock(weekday: 1, startMinute: startMinute, endMinute: endMinute).durationMinutes * 60)))
-                        .font(.system(size: 13, design: .serif))
+                        .scaledFont(size: 13, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.7))
                 }
                 .tint(.ember)
 
                 if draftOverlapsSleep {
                     Label("잠자는 시간과 겹쳐요. 깨어 있는 시간 안으로 잡아 주세요.", systemImage: "moon.zzz")
-                        .font(.system(size: 11))
+                        .scaledFont(size: 11)
                         .foregroundColor(.inkMuted.opacity(0.65))
                 }
 
@@ -335,7 +335,7 @@ struct FreeTimeEditorView: View {
                     freeTimeManager.add(weekdays: selectedDays, startMinute: startMinute, endMinute: endMinute)
                 } label: {
                     Text("더하기")
-                        .font(.system(size: 15, weight: .semibold, design: .serif))
+                        .scaledFont(size: 15, weight: .semibold, design: .serif)
                         .foregroundColor(.onEmber)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 12)
@@ -353,7 +353,7 @@ struct FreeTimeEditorView: View {
     private func quickChip(_ title: String, days: Set<Int>) -> some View {
         Button { selectedDays = days } label: {
             Text(title)
-                .font(.system(size: 12, weight: selectedDays == days ? .semibold : .regular))
+                .scaledFont(size: 12, weight: selectedDays == days ? .semibold : .regular)
                 .foregroundColor(.ember.opacity(0.85))
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
@@ -372,28 +372,28 @@ struct FreeTimeEditorView: View {
                 ForEach(freeTimeManager.blocks) { block in
                     HStack(spacing: 10) {
                         Text(FreeTimeBlock.weekdaySymbol(block.weekday))
-                            .font(.system(size: 14, weight: .semibold, design: .serif))
+                            .scaledFont(size: 14, weight: .semibold, design: .serif)
                             .foregroundColor(.ember.opacity(0.85))
                             .frame(width: 34, alignment: .leading)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(block.rangeString)
-                                .font(.system(size: 14, design: .serif))
+                                .scaledFont(size: 14, design: .serif)
                                 .foregroundColor(.ink.opacity(0.85))
                             if !block.fitsAwake(wakeMinute: wakeMinute, bedMinute: bedMinute) {
                                 Label("잠자는 시간과 겹쳐요", systemImage: "moon.zzz")
-                                    .font(.system(size: 10))
+                                    .scaledFont(size: 10)
                                     .foregroundColor(.inkMuted.opacity(0.6))
                             }
                         }
                         Spacer()
                         Text(BurningParchmentView.durationString(TimeInterval(block.durationMinutes * 60)))
-                            .font(.system(size: 12, design: .serif))
+                            .scaledFont(size: 12, design: .serif)
                             .foregroundColor(.inkMuted.opacity(0.6))
                         Button {
                             withAnimation { freeTimeManager.remove(block) }
                         } label: {
                             Image(systemName: "trash")
-                                .font(.system(size: 13))
+                                .scaledFont(size: 13)
                                 .foregroundColor(.inkMuted.opacity(0.55))
                                 .frame(width: 32, height: 32)
                         }
@@ -417,20 +417,20 @@ struct FreeTimeEditorView: View {
         Button { showPaywall = true } label: {
             HStack(spacing: 12) {
                 Image(systemName: "flame.fill")
-                    .font(.system(size: 18))
+                    .scaledFont(size: 18)
                     .foregroundColor(.ember)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("프로에서 이 시간만 양피지가 타요")
-                        .font(.system(size: 14, weight: .semibold, design: .serif))
+                        .scaledFont(size: 14, weight: .semibold, design: .serif)
                         .foregroundColor(.ember.opacity(0.9))
                     Text("자유시간이 지나갈 때만 불이 붙고, 밖에서는 꺼진 채 기다려요")
-                        .font(.system(size: 11))
+                        .scaledFont(size: 11)
                         .foregroundColor(.inkMuted.opacity(0.6))
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 0)
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 12))
+                    .scaledFont(size: 12)
                     .foregroundColor(.inkMuted.opacity(0.4))
             }
             .padding(14)
@@ -451,7 +451,7 @@ struct FreeTimeEditorView: View {
         HStack(spacing: 6) {
             Image(systemName: icon).foregroundColor(.ember.opacity(0.6))
             Text(title)
-                .font(.system(size: 14, weight: .medium))
+                .scaledFont(size: 14, weight: .medium)
                 .foregroundColor(.ember.opacity(0.5))
         }
     }

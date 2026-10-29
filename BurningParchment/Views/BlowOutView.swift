@@ -90,7 +90,7 @@ struct BlowOutView: View {
                 if stage == .blowing {
                     Button { dismiss() } label: {
                         Image(systemName: "xmark")
-                            .font(.system(size: 17, weight: .semibold))
+                            .scaledFont(size: 17, weight: .semibold)
                             .foregroundColor(.inkMuted.opacity(0.7))
                             .frame(width: 44, height: 44)
                     }
@@ -143,7 +143,7 @@ struct BlowOutView: View {
         VStack(spacing: 14) {
             if stage == .extinguished {
                 Text("불이 꺼졌어요")
-                    .font(.system(size: 22, weight: .medium, design: .serif))
+                    .scaledFont(size: 22, weight: .medium, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
                 Text(night == nil
                      ? "남은 조각은 모아 둘게요.\n오늘은 이대로 푹 자요"
@@ -164,7 +164,7 @@ struct BlowOutView: View {
                 Text(detector.availability == .unavailable
                      ? "마이크를 켜야 불을 끌 수 있어요"
                      : "화면 아래 마이크에 대고 후 불어 주세요")
-                    .font(.system(size: 20, weight: .medium, design: .serif))
+                    .scaledFont(size: 20, weight: .medium, design: .serif)
                     .foregroundColor(.ember.opacity(0.9))
                     .multilineTextAlignment(.center)
                 if night != nil {
@@ -173,14 +173,14 @@ struct BlowOutView: View {
                         .foregroundColor(.inkMuted.opacity(0.8))
                 } else {
                     Text("취침까지 \(bedtimeManager.remainingKoreanString)")
-                        .font(.system(size: 13, design: .serif))
+                        .scaledFont(size: 13, design: .serif)
                         .foregroundColor(.inkMuted.opacity(0.7))
                         .monospacedDigit()
                 }
                 if detector.availability == .unavailable {
                     // 불은 입김으로만 꺼진다 — 누르기 같은 다른 길은 두지 않는다
                     Text("입김의 세기만 확인하고 소리는 녹음하지 않아요")
-                        .font(.system(size: 11))
+                        .scaledFont(size: 11)
                         .foregroundColor(.inkMuted.opacity(0.5))
                         .multilineTextAlignment(.center)
                     Button {
@@ -189,7 +189,7 @@ struct BlowOutView: View {
                         }
                     } label: {
                         Text("설정에서 마이크 켜기")
-                            .font(.system(size: 13, weight: .medium))
+                            .scaledFont(size: 13, weight: .medium)
                             .foregroundColor(.ember.opacity(0.85))
                             .padding(.vertical, 10)
                             .padding(.horizontal, 18)

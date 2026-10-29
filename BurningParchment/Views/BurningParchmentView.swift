@@ -205,7 +205,7 @@ struct BurningParchmentView: View {
 
                 VStack(spacing: 12) {
                     Image(systemName: "sunrise.fill")
-                        .font(.system(size: 32))
+                        .scaledFont(size: 32)
                         .foregroundColor(.ember.opacity(0.5))
                     Text("곧 기상 시간이에요")
                         .font(.system(.subheadline, design: .serif).weight(.medium))
@@ -756,7 +756,7 @@ struct BurningParchmentView: View {
         return HStack(spacing: 10) {
             HStack(spacing: 4) {
                 Image(systemName: burning ? "flame.fill" : "moon.zzz")
-                    .font(.system(size: 11))
+                    .scaledFont(size: 11)
                 Text(freeTimeStatusText)
                     .font(.system(.caption, design: .serif))
             }
@@ -764,7 +764,7 @@ struct BurningParchmentView: View {
 
             Button { showFreeTimeEditor = true } label: {
                 Image(systemName: "slider.horizontal.3")
-                    .font(.system(size: 12, weight: .medium))
+                    .scaledFont(size: 12, weight: .medium)
                     .foregroundColor(.ember.opacity(0.7))
                     .padding(6)
                     .background(Circle().fill(Color.ember.opacity(0.08)))

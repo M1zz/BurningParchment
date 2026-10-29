@@ -8,6 +8,7 @@ struct DeadlineDetailView: View {
     let deadline: Deadline
     @EnvironmentObject var deadlineManager: DeadlineManager
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var phase: Double = 0
     @State private var embers: [Ember] = []
@@ -65,6 +66,8 @@ struct DeadlineDetailView: View {
                     ashes  = (0..<20).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
                 }
                 .onReceive(displayTimer) { _ in
+                    // 동작 줄이기: 불꽃·불씨를 멈춘 채 둔다 (남은 시간은 dataTimer 가 계속 갱신)
+                    guard !reduceMotion else { return }
                     phase += 0.05
                     stepParticles(pw: pw, ph: ph, ox: ox, oy: oy)
                 }
@@ -95,18 +98,19 @@ struct DeadlineDetailView: View {
         HStack {
             Button { dismiss() } label: {
                 Image(systemName: "xmark")
-                    .font(.system(size: 15, weight: .medium))
+                    .scaledFont(size: 15, weight: .medium)
                     .foregroundColor(.inkMuted.opacity(0.6))
                     .padding(10)
                     .background(Circle().fill(Color.ink.opacity(0.07)))
             }
+            .accessibilityLabel("닫기")
 
             Spacer()
 
             VStack(spacing: 2) {
-                Text(deadline.emoji).font(.system(size: 22))
+                Text(deadline.emoji).scaledFont(size: 22)
                 Text(deadline.title)
-                    .font(.system(size: 15, weight: .semibold, design: .serif))
+                    .scaledFont(size: 15, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
                     .lineLimit(1)
             }
@@ -122,11 +126,12 @@ struct DeadlineDetailView: View {
                 }
             } label: {
                 Image(systemName: "ellipsis")
-                    .font(.system(size: 15, weight: .medium))
+                    .scaledFont(size: 15, weight: .medium)
                     .foregroundColor(.inkMuted.opacity(0.6))
                     .padding(10)
                     .background(Circle().fill(Color.ink.opacity(0.07)))
             }
+            .accessibilityLabel("더 보기")
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)
@@ -137,12 +142,12 @@ struct DeadlineDetailView: View {
     private var infoSection: some View {
         VStack(spacing: 14) {
             Text("마감까지 남은 시간")
-                .font(.system(size: 13, weight: .medium, design: .serif))
+                .scaledFont(size: 13, weight: .medium, design: .serif)
                 .foregroundColor(.ember.opacity(0.6))
 
             if deadline.isExpired() {
                 Text("마감 완료 🏁")
-                    .font(.system(size: 32, weight: .light, design: .serif))
+                    .scaledFont(size: 32, weight: .light, design: .serif)
                     .foregroundColor(.inkMuted.opacity(0.6))
             } else {
                 remainingDisplay
@@ -150,7 +155,7 @@ struct DeadlineDetailView: View {
 
             // 게이지 바
             HStack(spacing: 8) {
-                Text("🔥").font(.system(size: 13))
+                Text("🔥").scaledFont(size: 13)
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {
                         RoundedRectangle(cornerRadius: 4)
@@ -162,12 +167,12 @@ struct DeadlineDetailView: View {
                     }
                 }
                 .frame(height: 8)
-                Text("🏁").font(.system(size: 13))
+                Text("🏁").scaledFont(size: 13)
             }
             .padding(.horizontal, 32)
 
             Text("\(Int((1.0 - currentProgress) * 100))% 남음")
-                .font(.system(size: 12, weight: .medium, design: .serif))
+                .scaledFont(size: 12, weight: .medium, design: .serif)
                 .foregroundColor(.inkMuted.opacity(0.6))
 
             HStack(spacing: 6) {
@@ -175,10 +180,16 @@ struct DeadlineDetailView: View {
                 Text("→")
                 Text(deadline.targetDateString)
             }
-            .font(.system(size: 11, design: .serif))
+            .scaledFont(size: 11, design: .serif)
             .foregroundColor(.inkMuted.opacity(0.35))
         }
         .padding(.bottom, 28)
+        // 시·분·초 숫자와 쌍점을 따로 읽지 않도록 한 줄로 묶는다
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("마감까지 남은 시간")
+        .accessibilityValue(deadline.isExpired()
+            ? String(localized: "마감 완료 🏁")
+            : String(localized: "\(deadline.remainingString(at: Date())), \(Int((1.0 - currentProgress) * 100))% 남음"))
     }
 
     @ViewBuilder
@@ -186,7 +197,7 @@ struct DeadlineDetailView: View {
         let rem = Int(currentRemaining)
         if rem >= 86400 {
             Text(deadline.remainingString(at: Date()))
-                .font(.system(size: 36, weight: .ultraLight, design: .serif))
+                .scaledFont(size: 36, weight: .ultraLight, design: .serif)
                 .foregroundColor(.ember.opacity(0.9))
         } else {
             let h = rem / 3600
@@ -194,10 +205,10 @@ struct DeadlineDetailView: View {
             let s = rem % 60
             HStack(alignment: .firstTextBaseline, spacing: 3) {
                 TimeDigitView(value: h, label: "h")
-                Text(":").font(.system(size: 34, weight: .light, design: .serif))
+                Text(":").scaledFont(size: 34, weight: .light, design: .serif)
                     .foregroundColor(.ember.opacity(0.5))
                 TimeDigitView(value: m, label: "m")
-                Text(":").font(.system(size: 34, weight: .light, design: .serif))
+                Text(":").scaledFont(size: 34, weight: .light, design: .serif)
                     .foregroundColor(.ember.opacity(0.5))
                 TimeDigitView(value: s, label: "s")
             }

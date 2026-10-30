@@ -69,6 +69,8 @@ struct BurningParchmentApp: App {
                              FlameKind.effective(raw: flameKindRaw, isPro: storeManager.isPro))
                 .environment(\.flameSize, FlameSize(rawValue: flameSizeRaw) ?? .small)
                 .preferredColorScheme(appTheme.colorScheme)
+                // 아이폰 듀오: 시트 · 알림창이 접힌 선을 비킨다. 접혀 있으면 아무것도 바뀌지 않는다.
+                .foldAware()
                 // 만족도 질문은 앱을 켤 때가 아니라 해낸 직후에 묻는다 (ContentView)
         }
     }

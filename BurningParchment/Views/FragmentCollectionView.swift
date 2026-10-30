@@ -71,7 +71,7 @@ struct FragmentCollectionView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("닫기") { dismiss() }
+                    Button { dismiss() } label: { Label("닫기", systemImage: "xmark") }
                         .foregroundColor(.ember)
                 }
             }

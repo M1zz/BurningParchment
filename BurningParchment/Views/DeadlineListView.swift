@@ -63,7 +63,7 @@ struct DeadlineListView: View {
                     .accessibilityLabel("데드라인 추가")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("닫기") { dismiss() }
+                    Button { dismiss() } label: { Label("닫기", systemImage: "xmark") }
                         .foregroundColor(.inkMuted)
                 }
             }
@@ -304,7 +304,7 @@ struct DeadlineFormView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(editing == nil ? "추가" : "저장") {
+                    Button {
                         guard !title.isEmpty else { return }
                         if let d = editing {
                             var updated = d
@@ -318,13 +318,19 @@ struct DeadlineFormView: View {
                             Moments.deadlineAdded(title)
                         }
                         dismiss()
+                    } label: {
+                        if editing == nil {
+                            Label("추가", systemImage: "plus")
+                        } else {
+                            Label("저장", systemImage: "checkmark")
+                        }
                     }
                     .scaledFont(size: 16, weight: .semibold)
                     .foregroundColor(title.isEmpty ? .inkMuted : .ember)
                     .disabled(title.isEmpty)
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                         .foregroundColor(.inkMuted)
                 }
             }

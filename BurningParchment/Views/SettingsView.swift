@@ -61,18 +61,20 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("완료") {
+                    Button {
                         bedtimeManager.updateSettings(
                             wakeHour: selWakeH, wakeMinute: selWakeM,
                             bedHour: selBedH, bedMinute: selBedM
                         )
                         dismiss()
+                    } label: {
+                        Label("완료", systemImage: "checkmark")
                     }
                     .scaledFont(size: 16, weight: .semibold)
                     .foregroundColor(.ember)
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                         .foregroundColor(.inkMuted)
                 }
             }
@@ -101,6 +103,7 @@ struct SettingsView: View {
         }
         .fullScreenCover(isPresented: $showOnboarding) {
             BurningOnboardingView { showOnboarding = false }
+                .foldConfined()
         }
         .sheet(isPresented: $showWhatsNew) {
             WhatsNewView { showWhatsNew = false }

@@ -1694,11 +1694,11 @@ struct UrnMeaningEditView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                         .foregroundColor(.inkMuted)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("새기기") { save() }
+                    Button { save() } label: { Label("새기기", systemImage: "checkmark") }
                         .scaledFont(size: 16, weight: .semibold)
                         .foregroundColor(canSave ? .ember : .inkMuted)
                         .disabled(!canSave)

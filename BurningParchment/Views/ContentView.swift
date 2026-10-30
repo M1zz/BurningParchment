@@ -40,6 +40,10 @@ struct ContentView: View {
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
     @Environment(\.colorSchemeContrast) private var contrast
     @Environment(\.dynamicTypeSize) private var typeSize
+    /// 아이폰 듀오를 펴면 재 항아리는 양피지 옆 판에 늘 서 있다. 밀어 넣지 않는다.
+    @Environment(\.foldLayout) private var fold
+    /// 옆 판의 재 항아리를 회고 입력을 연 채로 다시 세울 때 올린다.
+    @State private var foldUrnRequest = 0
 
     /// 처음 연 사람에게 보이는 안내, 업데이트 뒤 한 번 보이는 새 소식
     @State private var showOnboarding = false
@@ -94,6 +98,39 @@ struct ContentView: View {
     }
 
     var body: some View {
+        // 아이폰 듀오를 펴면 왼쪽(세로면 아래)은 양피지, 오른쪽(위)은 재 항아리다.
+        // 손은 양피지에서 기간을 넘기고 불을 끄고, 눈은 옆 판에서 지난 밤들이 남긴 재를 본다.
+        // 접혀 있거나 보통 아이폰이면 양피지만 그린다. 지금 화면 그대로다.
+        FoldSplitView {
+            main
+        } result: {
+            NavigationStack {
+                ReflectionUrnView(autoOpenInput: foldUrnRequest > 0)
+                    .environmentObject(reflectionManager)
+                    .environmentObject(storeManager)
+            }
+            .id(foldUrnRequest)
+            .environment(\.foldLayout, .single)
+        }
+        // 접힌 채 재 항아리에 들어가 있다가 펴면, 같은 항아리가 옆 판에 서므로 왼쪽은 양피지로 돌아온다.
+        .onChange(of: fold.isUnfolded) { _, unfolded in
+            if unfolded, showReflections { showReflections = false }
+            // 접으면 옆 판이 내려간다. 다시 펼 때 회고 입력이 저절로 또 열리지 않게 처음으로 돌린다.
+            if !unfolded { foldUrnRequest = 0 }
+        }
+    }
+
+    /// 재 항아리를 연다. 펼쳐 있으면 이미 옆 판에 있으니, 회고를 쓰러 갈 때만 그 판을 입력을 연 채로 다시 세운다.
+    private func openReflections(withInput: Bool) {
+        if fold.isUnfolded {
+            if withInput { foldUrnRequest += 1 }
+            return
+        }
+        autoOpenReflectionInput = withInput
+        showReflections = true
+    }
+
+    private var main: some View {
         NavigationStack {
             ZStack {
                 Color.appBackground.ignoresSafeArea()
@@ -160,6 +197,7 @@ struct ContentView: View {
                 .environmentObject(bedtimeManager)
                 .environmentObject(fragmentManager)
                 .environmentObject(nightManager)
+                .foldConfined()
         }
         .sheet(isPresented: $showFragments) {
             FragmentCollectionView()
@@ -215,6 +253,7 @@ struct ContentView: View {
                 hasCompletedOnboarding = true
                 showOnboarding = false
             }
+            .foldConfined()
         }
         .sheet(isPresented: $showWhatsNew) {
             WhatsNewView { showWhatsNew = false }
@@ -437,8 +476,7 @@ struct ContentView: View {
     private var reflectionNudgeBanner: some View {
         if showReflectionNudge {
             Button {
-                autoOpenReflectionInput = true
-                showReflections = true
+                openReflections(withInput: true)
                 markNudgeDismissedToday()
                 withAnimation(.easeIn(duration: 0.3)) { showReflectionNudge = false }
             } label: {
@@ -713,7 +751,7 @@ struct ContentView: View {
                 .accessibilityInputLabels([Text("모은 조각"), Text("조각")])
             }
 
-            AshUrnButton { showReflections = true }
+            AshUrnButton { openReflections(withInput: false) }
                 .environmentObject(reflectionManager)
 
             Button(action: { showDeadlines = true }) {

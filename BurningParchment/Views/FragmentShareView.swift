@@ -173,9 +173,7 @@ struct FragmentPosterImage: View {
 
     private var rangeText: String? {
         guard let newest = fragments.first, let oldest = fragments.last else { return nil }
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMMMd")
+        let f = TimeFormat.formatter("yMMMd")
         if fragments.count == 1 { return f.string(from: newest.bedtimeDate) }
         return "\(f.string(from: oldest.bedtimeDate)) – \(f.string(from: newest.bedtimeDate))"
     }

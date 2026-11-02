@@ -114,7 +114,6 @@ class BedtimeManager: ObservableObject {
     }
 
     private var timer: Timer?
-    private var lastWidgetReload: Date = .distantPast
     private var scheduledNotifBedDate: Date?
     private(set) var currentBedDate: Date = .distantFuture
     /// 지금 지나고 있는 밤(취침~기상). 낮이면 nil — 이 동안 "내일의 양피지"가 탄다.
@@ -503,23 +502,6 @@ class BedtimeManager: ObservableObject {
         WidgetCenter.shared.reloadAllTimelines()
     }
 
-    // MARK: - Shared UserDefaults (위젯용 계산값)
-    private func saveSharedData() {
-        guard let sd = sharedDefaults else { return }
-        // 계산된 값만 업데이트 — 설정값(bedtimeHour 등)은 save()에서 이미 App Group에 저장됨
-        sd.set(progress,          forKey: "shared_progress")
-        sd.set(remainingSeconds,  forKey: "shared_remainingSeconds")
-        sd.set(currentBedDate,    forKey: "shared_bedtimeDate")
-        sd.set(isCountdownActive, forKey: "shared_isCountdownActive")
-        sd.set(isBeforeWakeTime,  forKey: "shared_isBeforeWakeTime")
-
-        // 1분 간격으로 위젯 타임라인 리로드
-        if Date().timeIntervalSince(lastWidgetReload) > 60 {
-            lastWidgetReload = Date()
-            WidgetCenter.shared.reloadAllTimelines()
-        }
-    }
-
     // MARK: - Timer
     func startMonitoring() {
         timer?.invalidate()
@@ -527,6 +509,8 @@ class BedtimeManager: ObservableObject {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             self?.recalculate()
         }
+        // 1초 단위 표시라 조금 밀려도 보이지 않는다 — 시스템이 깨어나는 때에 묶을 수 있게 둔다
+        timer?.tolerance = 0.1
     }
 
     func recalculate() {
@@ -576,7 +560,6 @@ class BedtimeManager: ObservableObject {
                 if totalSleep > 0 {
                     sleepProgress = min(max(now.timeIntervalSince(bd) / totalSleep, 0), 1)
                 }
-                saveSharedData()
                 return
             }
         }
@@ -620,7 +603,6 @@ class BedtimeManager: ObservableObject {
             }
         }
 
-        saveSharedData()
     }
 
     private func setNight(_ night: DateInterval?) {

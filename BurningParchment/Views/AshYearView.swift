@@ -252,9 +252,7 @@ struct AshYearView: View {
     }
 
     private func monthName(_ date: Date) -> String {
-        let f = DateFormatter()
-        f.locale = .current
-        f.setLocalizedDateFormatFromTemplate("yMMM")
+        let f = TimeFormat.formatter("yMMM")
         return f.string(from: date)
     }
 

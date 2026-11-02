@@ -108,9 +108,7 @@ struct UrnPeriod: Hashable, Identifiable, Codable {
     /// "3월" / "March"
     var monthName: String {
         guard let start = parentMonth.startDate else { return "\(month)" }
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("MMMM")
+        let f = TimeFormat.formatter("MMMM")
         return f.string(from: start)
     }
 
@@ -119,9 +117,7 @@ struct UrnPeriod: Hashable, Identifiable, Codable {
         switch scope {
         case .month:
             guard let start = startDate else { return "\(year). \(month)" }
-            let f = DateFormatter()
-            f.locale = Locale.current
-            f.setLocalizedDateFormatFromTemplate("yMMMM")
+            let f = TimeFormat.formatter("yMMMM")
             return f.string(from: start)
         case .week:
             return String(localized: "\(monthName) \(week)주차")

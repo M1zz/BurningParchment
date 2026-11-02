@@ -694,9 +694,7 @@ struct ReflectionUrnView: View {
     }
 
     private func rangeLabel(_ gap: (start: Date, end: Date, days: Int)) -> String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("Md")
+        let f = TimeFormat.formatter("Md")
         return "\(f.string(from: gap.start)) ~ \(f.string(from: gap.end))"
     }
 
@@ -1115,9 +1113,7 @@ struct EmberCalendarView: View {
     // MARK: Header
 
     private var monthTitle: String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMMMM")
+        let f = TimeFormat.formatter("yMMMM")
         return f.string(from: displayedMonth)
     }
 
@@ -1204,10 +1200,11 @@ struct EmberCalendarView: View {
     }
 
     private var dayGrid: some View {
-        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 4) {
+        let grouped = byDay  // 칸마다 회고 전체를 다시 묶지 않게 한 번만 구한다
+        return LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 4) {
             ForEach(Array(monthDays.enumerated()), id: \.offset) { _, day in
                 if let day {
-                    dayCell(day)
+                    dayCell(day, items: grouped[cal.startOfDay(for: day)] ?? [])
                 } else {
                     Color.clear.frame(height: 40)
                 }
@@ -1215,8 +1212,7 @@ struct EmberCalendarView: View {
         }
     }
 
-    private func dayCell(_ day: Date) -> some View {
-        let items = byDay[cal.startOfDay(for: day)] ?? []
+    private func dayCell(_ day: Date, items: [DayReflection]) -> some View {
         let isToday = cal.isDateInToday(day)
         let isSelected = selectedDay.map { cal.isDate($0, inSameDayAs: day) } ?? false
         let isFuture = day > Date() && !isToday
@@ -1291,9 +1287,7 @@ struct EmberCalendarView: View {
     }
 
     private func dayAccessibilityLabel(_ day: Date, count: Int, isToday: Bool) -> String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("Md")
+        let f = TimeFormat.formatter("Md")
         let base = (isToday ? String(localized: "오늘, ") : "") + f.string(from: day)
         return count > 0 ? String(localized: "\(base), 회고 \(count)개") : String(localized: "\(base), 기록 없음")
     }
@@ -1347,9 +1341,7 @@ struct EmberCalendarView: View {
     }
 
     private func selectedDayTitle(_ day: Date) -> String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("MdE")
+        let f = TimeFormat.formatter("MdE")
         return f.string(from: day)
     }
 }

@@ -61,7 +61,11 @@ struct FreeTimeWeek {
 }
 
 final class FreeTimeManager: ObservableObject {
-    @Published private(set) var blocks: [FreeTimeBlock] = []
+    @Published private(set) var blocks: [FreeTimeBlock] = [] {
+        didSet { cachedWeek = nil }
+    }
+    /// 양피지는 초당 30번 그려지므로 달력 계산은 1초에 한 번만 한다.
+    private var cachedWeek: (second: Int, week: FreeTimeWeek)?
 
     static let storageKey = "freeTimeBlocks_v1"
     private let defaults = UserDefaults(suiteName: "group.com.burningparchment.app") ?? .standard
@@ -147,6 +151,14 @@ final class FreeTimeManager: ObservableObject {
     }
 
     func week(at now: Date = Date()) -> FreeTimeWeek {
+        let second = Int(now.timeIntervalSince1970)
+        if let cachedWeek, cachedWeek.second == second { return cachedWeek.week }
+        let result = computeWeek(at: now)
+        cachedWeek = (second, result)
+        return result
+    }
+
+    private func computeWeek(at now: Date) -> FreeTimeWeek {
         let week = weekInterval(containing: now)
         let list = intervals(inWeekOf: now)
         var total: TimeInterval = 0, elapsed: TimeInterval = 0

@@ -146,9 +146,7 @@ struct DayReflection: Codable, Identifiable, Hashable {
     var monthPeriod: UrnPeriod { UrnPeriod.month(of: date) }
 
     var dateString: String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMdE")
+        let f = TimeFormat.formatter("yMdE")
         return f.string(from: date)
     }
 }

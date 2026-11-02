@@ -71,9 +71,7 @@ struct ParchmentFragment: Codable, Identifiable, Hashable {
     }
 
     var dateString: String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMdE")
+        let f = TimeFormat.formatter("yMdE")
         return f.string(from: nightDate)
     }
 }

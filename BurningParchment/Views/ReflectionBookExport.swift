@@ -26,9 +26,7 @@ enum BookExportScope: Hashable, Identifiable {
         case .month(let y, let m):
             var c = DateComponents(); c.year = y; c.month = m; c.day = 1
             let date = Calendar.current.date(from: c) ?? Date()
-            let f = DateFormatter()
-            f.locale = .current
-            f.setLocalizedDateFormatFromTemplate("yMMMM")
+            let f = TimeFormat.formatter("yMMMM")
             return f.string(from: date)
         }
     }
@@ -207,9 +205,7 @@ private struct BookCoverBlock: View {
 
     private var rangeText: String? {
         guard let first, let last else { return nil }
-        let f = DateFormatter()
-        f.locale = .current
-        f.setLocalizedDateFormatFromTemplate("yMMMd")
+        let f = TimeFormat.formatter("yMMMd")
         let a = f.string(from: first), b = f.string(from: last)
         return a == b ? a : "\(a) – \(b)"
     }
@@ -237,9 +233,7 @@ private struct BookDayHeaderBlock: View {
     }
 
     private var dateString: String {
-        let f = DateFormatter()
-        f.locale = .current
-        f.setLocalizedDateFormatFromTemplate("yMdEEEE")
+        let f = TimeFormat.formatter("yMdEEEE")
         return f.string(from: date)
     }
 }
@@ -298,9 +292,7 @@ private struct BookReflectionBlock: View {
     }
 
     private var timeString: String {
-        let f = DateFormatter()
-        f.locale = .current
-        f.setLocalizedDateFormatFromTemplate("jm")
+        let f = TimeFormat.formatter("jm")
         return f.string(from: item.createdAt)
     }
 }

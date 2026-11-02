@@ -45681,145 +45681,712 @@
         }
       }
     },
-    "양피지를 태우는 불꽃이 솟는 높이예요" : {
-      "extractionState" : "stale",
+    "가벼운 불꽃" : {
       "localizations" : {
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jak vysoko šlehají plameny, které pálí pergamen"
+            "value" : "Lehké plameny"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hvor højt flammerne stiger, når pergamentet brænder"
+            "value" : "Lette flammer"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wie hoch die Flammen am Pergament aufsteigen"
+            "value" : "Leichte Flammen"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Πόσο ψηλά υψώνονται οι φλόγες που καίνε την περγαμηνή"
+            "value" : "Ελαφριές φλόγες"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "How tall the flames rise as they burn the parchment"
+            "value" : "Light flames"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "How tall the flames rise as they burn the parchment"
+            "value" : "Light flames"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La altura de las llamas que queman el pergamino"
+            "value" : "Llamas ligeras"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kuinka korkealle pergamenttia polttavat liekit nousevat"
+            "value" : "Kevyet liekit"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La hauteur des flammes qui brûlent le parchemin"
+            "value" : "Flammes légères"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seberapa tinggi api yang membakar perkamen"
+            "value" : "Api ringan"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "L’altezza delle fiamme che bruciano la pergamena"
+            "value" : "Fiamme leggere"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "羊皮紙を燃やす炎の高さです"
+            "value" : "軽い炎"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hvor høyt flammene stiger når pergamentet brenner"
+            "value" : "Lette flammer"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hoe hoog de vlammen oplaaien die het perkament verbranden"
+            "value" : "Lichte vlammen"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jak wysoko wznoszą się płomienie, które palą pergamin"
+            "value" : "Lekkie płomienie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A altura das chamas que queimam o pergaminho"
+            "value" : "Chamas leves"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Высота пламени, которое сжигает пергамент"
+            "value" : "Лёгкое пламя"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hur högt lågorna stiger när pergamentet brinner"
+            "value" : "Lätta lågor"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ความสูงของเปลวไฟที่เผากระดาษหนัง"
+            "value" : "เปลวไฟแบบเบา"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Parşömeni yakan alevlerin yüksekliği"
+            "value" : "Hafif alevler"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Độ cao của ngọn lửa đốt tấm giấy da"
+            "value" : "Lửa nhẹ"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "燃烧羊皮纸的火焰升起的高度"
+            "value" : "轻量火焰"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "燃燒羊皮紙的火焰升起的高度"
+            "value" : "輕量火焰"
+          }
+        }
+      }
+    },
+    "가볍게 바꾸기" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přepnout na lehké"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skift til lette"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf leicht umstellen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αλλαγή σε ελαφριές"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch to light"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch to light"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar a ligeras"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaihda kevyisiin"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer aux flammes légères"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beralih ke ringan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passa a leggere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "軽くする"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bytt til lette"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overschakelen naar licht"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przełącz na lekkie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mudar para leves"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить лёгкое"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Byt till lätta"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลี่ยนเป็นแบบเบา"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafife geç"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyển sang lửa nhẹ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换为轻量"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切換為輕量"
+          }
+        }
+      }
+    },
+    "불꽃이 기기에 부담을 주고 있어요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plameny zatěžují vaše zařízení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flammerne belaster din enhed"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Flammen belasten dein Gerät"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι φλόγες επιβαρύνουν τη συσκευή σου"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The flames are working your device hard"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The flames are working your device hard"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las llamas están exigiendo mucho a tu dispositivo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liekit kuormittavat laitettasi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les flammes sollicitent beaucoup votre appareil"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Api membebani perangkatmu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le fiamme stanno affaticando il dispositivo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "炎が端末に負担をかけています"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flammene belaster enheten din"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De vlammen belasten je apparaat zwaar"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Płomienie mocno obciążają urządzenie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As chamas estão exigindo muito do seu aparelho"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пламя сильно нагружает устройство"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lågorna belastar din enhet"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลวไฟกำลังทำให้เครื่องทำงานหนัก"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alevler cihazını yoruyor"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngọn lửa đang khiến máy hoạt động nặng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "火焰正在加重设备负担"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "火焰正在加重裝置負擔"
+          }
+        }
+      }
+    },
+    "양피지를 태우는 불꽃이 솟는 높이예요. 가벼운 불꽃은 불꽃을 덜 자주 그려서 배터리와 발열을 줄여요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak vysoko šlehají plameny, které pálí pergamen. Lehké plameny se kreslí méně často, šetří baterii a snižují zahřívání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvor højt flammerne stiger, når pergamentet brænder. Lette flammer tegnes sjældnere for at spare batteri og mindske varme"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie hoch die Flammen am Pergament aufsteigen. Leichte Flammen werden seltener gezeichnet und schonen Akku und Temperatur"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πόσο ψηλά υψώνονται οι φλόγες που καίνε την περγαμηνή. Οι ελαφριές φλόγες σχεδιάζονται πιο αραιά για λιγότερη μπαταρία και θερμότητα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How tall the flames rise as they burn the parchment. Light flames are drawn less often to save battery and reduce heat"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How tall the flames rise as they burn the parchment. Light flames are drawn less often to save battery and reduce heat"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La altura de las llamas que queman el pergamino. Las llamas ligeras se dibujan con menos frecuencia para ahorrar batería y calentar menos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuinka korkealle pergamenttia polttavat liekit nousevat. Kevyet liekit piirretään harvemmin, mikä säästää akkua ja vähentää lämpenemistä"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La hauteur des flammes qui brûlent le parchemin. Les flammes légères sont dessinées moins souvent pour économiser la batterie et limiter la chauffe"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seberapa tinggi api yang membakar perkamen. Api ringan digambar lebih jarang untuk menghemat baterai dan mengurangi panas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’altezza delle fiamme che bruciano la pergamena. Le fiamme leggere vengono disegnate meno spesso per risparmiare batteria e scaldare meno"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "羊皮紙を燃やす炎の高さです。軽い炎は描く回数を減らして、バッテリーと発熱を抑えます"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvor høyt flammene stiger når pergamentet brenner. Lette flammer tegnes sjeldnere for å spare batteri og gi mindre varme"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoe hoog de vlammen oplaaien die het perkament verbranden. Lichte vlammen worden minder vaak getekend om batterij te sparen en minder warmte te geven"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak wysoko wznoszą się płomienie, które palą pergamin. Lekkie płomienie są rysowane rzadziej, co oszczędza baterię i ogranicza nagrzewanie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A altura das chamas que queimam o pergaminho. Chamas leves são desenhadas com menos frequência para poupar bateria e esquentar menos"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Высота пламени, которое сжигает пергамент. Лёгкое пламя рисуется реже, чтобы экономить батарею и меньше нагреваться"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur högt lågorna stiger när pergamentet brinner. Lätta lågor ritas mer sällan för att spara batteri och minska värmen"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความสูงของเปลวไฟที่เผากระดาษหนัง เปลวไฟแบบเบาจะวาดน้อยครั้งลง ช่วยประหยัดแบตเตอรี่และลดความร้อน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parşömeni yakan alevlerin yüksekliği. Hafif alevler daha seyrek çizilir; pil tasarrufu sağlar ve ısınmayı azaltır"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Độ cao của ngọn lửa đốt tấm giấy da. Lửa nhẹ được vẽ thưa hơn để tiết kiệm pin và giảm nóng máy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃烧羊皮纸的火焰升起的高度。轻量火焰会降低绘制频率，更省电、发热更少"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "燃燒羊皮紙的火焰升起的高度。輕量火焰會降低繪製頻率，更省電、發熱更少"
+          }
+        }
+      }
+    },
+    "가벼운 불꽃은 불꽃을 덜 자주 그려서 배터리와 발열을 줄여요. 설정 ▸ 불꽃 크기에서 언제든 바꿀 수 있어요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lehké plameny se kreslí méně často, šetří baterii a snižují zahřívání. Kdykoli to můžete změnit v Nastavení ▸ Velikost plamene"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lette flammer tegnes sjældnere for at spare batteri og mindske varme. Du kan altid ændre det under Indstillinger ▸ Flammestørrelse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leichte Flammen werden seltener gezeichnet und schonen Akku und Temperatur. Du kannst das jederzeit unter Einstellungen ▸ Flammengröße ändern"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι ελαφριές φλόγες σχεδιάζονται πιο αραιά για λιγότερη μπαταρία και θερμότητα. Μπορείς να το αλλάξεις όποτε θέλεις στο Ρυθμίσεις ▸ Μέγεθος φλόγας"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light flames are drawn less often to save battery and reduce heat. You can change this anytime in Settings ▸ Flame Size"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light flames are drawn less often to save battery and reduce heat. You can change this any time in Settings ▸ Flame Size"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las llamas ligeras se dibujan con menos frecuencia para ahorrar batería y calentar menos. Puedes cambiarlo cuando quieras en Ajustes ▸ Tamaño de la llama"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kevyet liekit piirretään harvemmin, mikä säästää akkua ja vähentää lämpenemistä. Voit muuttaa tämän milloin tahansa kohdassa Asetukset ▸ Liekin koko"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les flammes légères sont dessinées moins souvent pour économiser la batterie et limiter la chauffe. Vous pouvez changer cela à tout moment dans Réglages ▸ Taille de la flamme"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Api ringan digambar lebih jarang untuk menghemat baterai dan mengurangi panas. Kamu bisa mengubahnya kapan saja di Pengaturan ▸ Ukuran api"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le fiamme leggere vengono disegnate meno spesso per risparmiare batteria e scaldare meno. Puoi cambiarlo quando vuoi in Impostazioni ▸ Dimensione della fiamma"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "軽い炎は描く回数を減らして、バッテリーと発熱を抑えます。設定 ▸ 炎の大きさでいつでも変更できます"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lette flammer tegnes sjeldnere for å spare batteri og gi mindre varme. Du kan endre dette når som helst under Innstillinger ▸ Flammestørrelse"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lichte vlammen worden minder vaak getekend om batterij te sparen en minder warmte te geven. Je kunt dit altijd wijzigen bij Instellingen ▸ Vlamgrootte"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lekkie płomienie są rysowane rzadziej, co oszczędza baterię i ogranicza nagrzewanie. Możesz to zmienić w dowolnej chwili w Ustawienia ▸ Rozmiar płomienia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chamas leves são desenhadas com menos frequência para poupar bateria e esquentar menos. Você pode mudar isso quando quiser em Ajustes ▸ Tamanho da chama"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лёгкое пламя рисуется реже, чтобы экономить батарею и меньше нагреваться. Изменить это можно в любой момент: Настройки ▸ Размер пламени"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lätta lågor ritas mer sällan för att spara batteri och minska värmen. Du kan ändra det när som helst under Inställningar ▸ Flammans storlek"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เปลวไฟแบบเบาจะวาดน้อยครั้งลง ช่วยประหยัดแบตเตอรี่และลดความร้อน เปลี่ยนได้ทุกเมื่อที่ การตั้งค่า ▸ ขนาดเปลวไฟ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafif alevler daha seyrek çizilir; pil tasarrufu sağlar ve ısınmayı azaltır. Bunu istediğin zaman Ayarlar ▸ Alev boyutu bölümünden değiştirebilirsin"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lửa nhẹ được vẽ thưa hơn để tiết kiệm pin và giảm nóng máy. Bạn có thể đổi lại bất cứ lúc nào trong Cài đặt ▸ Kích thước ngọn lửa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "轻量火焰会降低绘制频率，更省电、发热更少。可随时在设置 ▸ 火焰大小中更改"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輕量火焰會降低繪製頻率，更省電、發熱更少。可隨時在設定 ▸ 火焰大小中更改"
           }
         }
       }

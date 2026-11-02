@@ -45,6 +45,12 @@ struct ContentView: View {
     /// 옆 판의 재 항아리를 회고 입력을 연 채로 다시 세울 때 올린다.
     @State private var foldUrnRequest = 0
 
+    /// 불꽃이 기기에 부담을 주면 가벼운 불꽃으로 바꾸자고 한 번 묻는다
+    @StateObject private var flameLoad = FlameLoadMonitor()
+    @AppStorage(LightFlame.storageKey) private var lightFlame = false
+    @AppStorage(LightFlame.suggestedKey) private var lightFlameSuggested = false
+    @State private var showLightFlameSuggestion = false
+
     /// 처음 연 사람에게 보이는 안내, 업데이트 뒤 한 번 보이는 새 소식
     @State private var showOnboarding = false
     @State private var showWhatsNew = false
@@ -255,6 +261,21 @@ struct ContentView: View {
             askForReviewIfAccomplished(returning: !isShowing)
         }
         .leeoReviewGate(BurningParchmentSpec.self, isPresented: $showReviewGate)
+        // 양피지가 보이며 타는 동안에만 잰다. 이미 가볍거나 한 번 물었으면 재지 않는다.
+        .onChange(of: !lightFlame && !lightFlameSuggested && !reduceMotion && !isParchmentCovered, initial: true) { _, watch in
+            if watch { flameLoad.start() } else { flameLoad.stop() }
+        }
+        .onChange(of: flameLoad.isHeavy) { _, heavy in
+            guard heavy, !lightFlame, !lightFlameSuggested, !isParchmentCovered, !showReviewGate else { return }
+            lightFlameSuggested = true
+            showLightFlameSuggestion = true
+        }
+        .alert("불꽃이 기기에 부담을 주고 있어요", isPresented: $showLightFlameSuggestion) {
+            Button("가볍게 바꾸기") { lightFlame = true }
+            Button("나중에", role: .cancel) {}
+        } message: {
+            Text("가벼운 불꽃은 불꽃을 덜 자주 그려서 배터리와 발열을 줄여요. 설정 ▸ 불꽃 크기에서 언제든 바꿀 수 있어요")
+        }
         .fullScreenCover(isPresented: $showOnboarding) {
             BurningOnboardingView {
                 hasCompletedOnboarding = true

@@ -19,6 +19,7 @@ struct FlameKindPicker: View, Equatable {
     @State private var centerX: CGFloat = 0
     @State private var isOnScreen = true
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @AppStorage(LightFlame.storageKey) private var lightFlame = false
 
     static let cardSize = CGSize(width: 104, height: 156)
     /// 카드 위로 불꽃이 솟을 자리
@@ -92,7 +93,7 @@ struct FlameKindPicker: View, Equatable {
                     .frame(width: size.width, height: size.height)
                     .padding(.top, room)
 
-                TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: !isLive)) { timeline in
+                TimelineView(.animation(minimumInterval: LightFlame.frameInterval(light: lightFlame), paused: !isLive)) { timeline in
                     let phase = timeline.date.timeIntervalSinceReferenceDate
                         .truncatingRemainder(dividingBy: 800) * 1.5
                     FlameView(kind: kind, points: edge, normal: CGVector(dx: 0, dy: -1), phase: phase + offset,

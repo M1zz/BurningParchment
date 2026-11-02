@@ -18,6 +18,8 @@ struct DeadlineDetailView: View {
     @State private var showDeleteAlert = false
     @State private var showEdit = false
 
+    @AppStorage(LightFlame.storageKey) private var lightFlame = false
+    @State private var frameSkip = FrameSkip()
     private let displayTimer = Timer.publish(every: 1.0/30.0, on: .main, in: .common).autoconnect()
     private let dataTimer    = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
 
@@ -68,8 +70,11 @@ struct DeadlineDetailView: View {
                 .onReceive(displayTimer) { _ in
                     // 동작 줄이기: 불꽃·불씨를 멈춘 채 둔다 (남은 시간은 dataTimer 가 계속 갱신)
                     guard !reduceMotion else { return }
-                    phase += 0.05
-                    stepParticles(pw: pw, ph: ph, ox: ox, oy: oy)
+                    if lightFlame, frameSkip.skipThisTick() { return }
+                    for _ in 0..<(lightFlame ? 2 : 1) {
+                        phase += 0.05
+                        stepParticles(pw: pw, ph: ph, ox: ox, oy: oy)
+                    }
                 }
                 .onReceive(dataTimer) { _ in
                     currentProgress  = deadline.progress()

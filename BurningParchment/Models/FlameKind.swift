@@ -109,3 +109,76 @@ extension EnvironmentValues {
         set { self[FlameSizeKey.self] = newValue }
     }
 }
+
+// MARK: - 가벼운 불꽃 (무료)
+// 불꽃을 초당 15번만 그린다(기본 30번). 움직이는 빠르기는 그대로다.
+// 불꽃이 기기에 부담을 주면(앱이 쓰는 CPU 가 1분 내내 높거나 기기가 뜨거우면) 한 번 바꾸자고 묻는다.
+
+enum LightFlame {
+    static let storageKey = "lightFlame"
+    /// 바꾸자고 이미 물었는지. 한 번만 묻는다 — 거절해도 설정 ▸ 불꽃 크기에서 켤 수 있다.
+    static let suggestedKey = "lightFlameSuggested"
+
+    /// 불꽃 캐러셀처럼 시간으로 그리는 곳의 갱신 간격
+    static func frameInterval(light: Bool) -> TimeInterval { light ? 1.0 / 15.0 : 1.0 / 30.0 }
+}
+
+/// 양피지가 타는 동안 앱이 쓴 CPU 시간을 10초마다 재서, 1분 평균이 높거나 기기가 뜨거우면 `isHeavy` 를 켠다.
+/// 양피지가 가려지거나 앱이 뒤로 가면 `stop()` 으로 멈추고, 다시 시작하면 처음부터 1분을 잰다.
+@MainActor
+final class FlameLoadMonitor: ObservableObject {
+    @Published private(set) var isHeavy = false
+
+    /// 코어 하나를 기준으로 한 비율. 실기기에서 아직 맞춰 보지 않은 값이다.
+    static let cpuThreshold = 0.6
+    private static let interval: TimeInterval = 10
+    private static let windowCount = 6
+
+    private var timer: Timer?
+    private var last: (cpu: Double, wall: Double)?
+    private var samples: [Double] = []
+
+    func start() {
+        guard timer == nil else { return }
+        #if DEBUG
+        // 제안 화면 확인용: -forceFlameHeavy YES
+        if UserDefaults.standard.bool(forKey: "forceFlameHeavy") { isHeavy = true; return }
+        #endif
+        last = Self.reading()
+        let t = Timer.scheduledTimer(withTimeInterval: Self.interval, repeats: true) { [weak self] _ in
+            Task { @MainActor in self?.sample() }
+        }
+        t.tolerance = 2
+        timer = t
+    }
+
+    func stop() {
+        timer?.invalidate()
+        timer = nil
+        last = nil
+        samples.removeAll()
+    }
+
+    private func sample() {
+        let now = Self.reading()
+        defer { last = now }
+        guard let last, now.wall > last.wall else { return }
+        samples.append((now.cpu - last.cpu) / (now.wall - last.wall))
+        if samples.count > Self.windowCount { samples.removeFirst() }
+
+        let hot = ProcessInfo.processInfo.thermalState.rawValue >= ProcessInfo.ThermalState.serious.rawValue
+        let average = samples.reduce(0, +) / Double(samples.count)
+        if hot || (samples.count == Self.windowCount && average > Self.cpuThreshold) {
+            isHeavy = true
+            stop()
+        }
+    }
+
+    /// 이 앱이 지금까지 쓴 CPU 시간(초)과 지금 시각
+    private static func reading() -> (cpu: Double, wall: Double) {
+        var usage = rusage()
+        getrusage(RUSAGE_SELF, &usage)
+        func seconds(_ t: timeval) -> Double { Double(t.tv_sec) + Double(t.tv_usec) / 1_000_000 }
+        return (seconds(usage.ru_utime) + seconds(usage.ru_stime), ProcessInfo.processInfo.systemUptime)
+    }
+}

@@ -136,6 +136,7 @@ final class NightManager: ObservableObject {
     @discardableResult
     func resolve(_ night: DateInterval, outcome: NightRecord.Outcome,
                  sleptAt: Date? = nil, healthOnset: Date? = nil) -> NightRecord {
+        // 고친 기록을 update 가 돌려준다 — 다시 찾으면 보관 한도에서 잘려 나간 오래된 밤은 못 찾아 죽는다
         update(night) { rec in
             rec.outcome = outcome
             rec.resolvedAt = Date()
@@ -150,7 +151,6 @@ final class NightManager: ObservableObject {
                 rec.charredSeconds = sleptAt.map(rec.lateSeconds(sleptAt:)) ?? 0
             }
         }
-        return record(forBedtime: night.start)!
     }
 
     /// 확인받지 못한 채 지나간 밤들은 그을음 없이 닫는다.
@@ -168,17 +168,22 @@ final class NightManager: ObservableObject {
 
     // MARK: - Private
 
-    private func update(_ night: DateInterval, _ body: (inout NightRecord) -> Void) {
+    @discardableResult
+    private func update(_ night: DateInterval, _ body: (inout NightRecord) -> Void) -> NightRecord {
+        let result: NightRecord
         if let i = records.firstIndex(where: { abs($0.bedtimeDate.timeIntervalSince(night.start)) < 1 }) {
             body(&records[i])
+            result = records[i]
         } else {
             var rec = NightRecord(bedtimeDate: night.start, wakeDate: night.end)
             body(&rec)
+            result = rec
             records.insert(rec, at: 0)
             records.sort { $0.bedtimeDate > $1.bedtimeDate }
             if records.count > Self.keepCount { records.removeLast(records.count - Self.keepCount) }
         }
         save()
+        return result
     }
 
     private func save() {

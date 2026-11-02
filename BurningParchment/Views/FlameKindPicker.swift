@@ -1,12 +1,13 @@
 // FlameKindPicker.swift
 // 설정 ▸ 불꽃 종류. 알약 모양 카드가 옆으로 늘어선 캐러셀이다.
-// 가운데 카드가 크고 밝고, 양옆은 작고 어둡다. 카드마다 그 종류의 불꽃이 실제로 타서
-// 고르기 전에 결을 볼 수 있다. 탭하면 고른다 — 잠긴 종류는 페이월을 연다.
+// 가운데 카드가 크고 밝고, 양옆은 작고 어둡다. 가운데 카드의 불꽃만 실제로 타고 양옆은 멈춰 있어
+// 고르기 전에 결을 볼 수 있다. 불꽃은 비싸서, 화면 밖으로 나가면 가운데 카드도 멈춘다.
+// 탭하면 고른다 — 잠긴 종류는 페이월을 연다.
 // 지금 고른 양피지·불꽃 테마의 빛깔도 그대로 입혀 보여 준다.
 
 import SwiftUI
 
-struct FlameKindPicker: View {
+struct FlameKindPicker: View, Equatable {
     /// 지금 실제로 그리는 불꽃 (프로가 아니면 촛불)
     let current: FlameKind
     let style: ParchmentStyle
@@ -14,43 +15,49 @@ struct FlameKindPicker: View {
     let onSelect: (FlameKind) -> Void
 
     @State private var focused: FlameKind?
+    /// 전역 좌표의 가로 가운데. 세로 스크롤에는 변하지 않아 스크롤 중에 카드를 다시 그리지 않는다.
+    @State private var centerX: CGFloat = 0
+    @State private var isOnScreen = true
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     static let cardSize = CGSize(width: 104, height: 156)
     /// 카드 위로 불꽃이 솟을 자리
     static let flameRoom: CGFloat = 64
 
+    /// 선택 동작은 비교하지 않는다. 고르는 곳에서 쓰는 값은 모두 저장소를 거치므로 달라지지 않는다.
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.current == rhs.current && lhs.style == rhs.style && lhs.isPro == rhs.isPro
+    }
+
     var body: some View {
         VStack(spacing: 10) {
             GeometryReader { geo in
                 let width = geo.size.width
                 // 스크롤 좌표는 contentMargins 만큼 밀려 있어서, 화면 좌표로 가운데를 잰다
-                let centerX = geo.frame(in: .global).midX
-                TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: reduceMotion)) { timeline in
-                    let phase = timeline.date.timeIntervalSinceReferenceDate
-                        .truncatingRemainder(dividingBy: 800) * 1.5
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 18) {
-                            ForEach(FlameKind.allCases) { kind in
-                                card(kind, phase: phase)
-                                    .id(kind)
-                                    .visualEffect { content, proxy in
-                                        let d = proxy.frame(in: .global).midX - centerX
-                                        let t = min(abs(d) / 170, 1)
-                                        return content
-                                            .scaleEffect(1 - 0.24 * t, anchor: .bottom)
-                                            .opacity(1 - 0.5 * t)
-                                    }
-                            }
+                let centerX = centerX
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 18) {
+                        ForEach(FlameKind.allCases) { kind in
+                            card(kind)
+                                .id(kind)
+                                .visualEffect { content, proxy in
+                                    let d = proxy.frame(in: .global).midX - centerX
+                                    let t = min(abs(d) / 170, 1)
+                                    return content
+                                        .scaleEffect(1 - 0.24 * t, anchor: .bottom)
+                                        .opacity(1 - 0.5 * t)
+                                }
                         }
-                        .scrollTargetLayout()
                     }
-                    .contentMargins(.horizontal, max((width - Self.cardSize.width) / 2, 0), for: .scrollContent)
-                    .scrollTargetBehavior(.viewAligned)
-                    .scrollPosition(id: $focused, anchor: .center)
+                    .scrollTargetLayout()
                 }
+                .contentMargins(.horizontal, max((width - Self.cardSize.width) / 2, 0), for: .scrollContent)
+                .scrollTargetBehavior(.viewAligned)
+                .scrollPosition(id: $focused, anchor: .center)
             }
             .frame(height: Self.cardSize.height + Self.flameRoom)
+            .onGeometryChange(for: CGFloat.self) { $0.frame(in: .global).midX } action: { centerX = $0 }
+            .modifier(ScrollVisibility(isVisible: $isOnScreen))
             .background(alignment: .bottom) { floorGlow }
 
             caption
@@ -60,12 +67,14 @@ struct FlameKindPicker: View {
 
     // MARK: - Card
 
-    private func card(_ kind: FlameKind, phase: Double) -> some View {
+    private func card(_ kind: FlameKind) -> some View {
         let size = Self.cardSize
         let room = Self.flameRoom
         let isSelected = current == kind
         let locked = kind.isPro && !isPro
         let edge = Self.arcPoints(in: CGRect(x: 0, y: room, width: size.width, height: size.height))
+        let isLive = (focused ?? current) == kind && isOnScreen && !reduceMotion
+        let offset = Double(FlameKind.allCases.firstIndex(of: kind) ?? 0) * 3.7
 
         return Button {
             withAnimation(.snappy) { focused = kind }
@@ -83,10 +92,14 @@ struct FlameKindPicker: View {
                     .frame(width: size.width, height: size.height)
                     .padding(.top, room)
 
-                FlameView(kind: kind, points: edge, normal: CGVector(dx: 0, dy: -1), phase: phase + Double(FlameKind.allCases.firstIndex(of: kind) ?? 0) * 3.7,
-                          scale: 0.8)
-                    .flameTint(style)
-                    .frame(width: size.width, height: size.height + room)
+                TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: !isLive)) { timeline in
+                    let phase = timeline.date.timeIntervalSinceReferenceDate
+                        .truncatingRemainder(dividingBy: 800) * 1.5
+                    FlameView(kind: kind, points: edge, normal: CGVector(dx: 0, dy: -1), phase: phase + offset,
+                              scale: 0.8)
+                        .flameTint(style)
+                }
+                .frame(width: size.width, height: size.height + room)
             }
             .frame(width: size.width, height: size.height + room)
             // 카드는 늘 어두운 바탕이라 불꽃을 어두운 쪽 합성(screen)으로 얹는다
@@ -158,6 +171,19 @@ struct FlameKindPicker: View {
         return (0...n).map { i in
             let a = Double.pi * (1.12 + 0.76 * Double(i) / Double(n))
             return CGPoint(x: c.x + r * cos(a), y: c.y + r * sin(a) + 1)
+        }
+    }
+}
+
+/// 바깥 세로 스크롤에서 화면에 보이는지 알린다. iOS 17 에는 이 기능이 없어 늘 보이는 것으로 둔다.
+private struct ScrollVisibility: ViewModifier {
+    @Binding var isVisible: Bool
+
+    func body(content: Content) -> some View {
+        if #available(iOS 18.0, *) {
+            content.onScrollVisibilityChange(threshold: 0.01) { isVisible = $0 }
+        } else {
+            content
         }
     }
 }

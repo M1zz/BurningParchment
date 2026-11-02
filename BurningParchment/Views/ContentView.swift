@@ -130,6 +130,12 @@ struct ContentView: View {
         showReflections = true
     }
 
+    /// 양피지가 다른 화면에 가려졌거나 앱이 앞에 있지 않을 때
+    private var isParchmentCovered: Bool {
+        showSettings || showDeadlines || showFragments || showBlowOut || showReflections
+            || showOnboarding || showWhatsNew || morningCheckIn != nil || scenePhase != .active
+    }
+
     private var main: some View {
         NavigationStack {
             ZStack {
@@ -147,6 +153,7 @@ struct ContentView: View {
                         .padding(.horizontal, 20)
                     tomorrowIntentStrip
                     BurningParchmentView()
+                        .environment(\.parchmentAnimationPaused, isParchmentCovered)
                         .environmentObject(bedtimeManager)
                         .environmentObject(nightManager)
                     blowOutPrompt

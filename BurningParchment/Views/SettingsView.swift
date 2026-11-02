@@ -393,6 +393,8 @@ struct SettingsView: View {
                         flameKindRaw = kind.rawValue
                     }
                 }
+                // BedtimeManager 가 1초마다 설정 화면을 다시 그려도 불꽃 카드는 건드리지 않는다
+                .equatable()
                 .padding(.bottom, 12)
             }
             .clipShape(RoundedRectangle(cornerRadius: 14))

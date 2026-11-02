@@ -248,11 +248,16 @@ class ReflectionManager: ObservableObject {
             } catch {
                 // 읽지 못한 회고가 있다 — 조용히 넘어가면 다음 저장이 빈 목록으로 덮어쓴 것처럼 보인다
                 AppLog.storage.fault("회고를 읽지 못함 (\(data.count) bytes): \(error.localizedDescription, privacy: .public)")
+                // 그래서 원본을 옆에 남긴다 — 덮어써져도 되찾을 수 있게
+                sharedDefaults?.set(data, forKey: keyReflections + ".unreadable")
             }
         }
-        if let data = sharedDefaults?.data(forKey: keyMeanings),
-           let decoded = try? JSONDecoder().decode([String: UrnMeaning].self, from: data) {
-            meanings = decoded
+        if let data = sharedDefaults?.data(forKey: keyMeanings) {
+            if let decoded = try? JSONDecoder().decode([String: UrnMeaning].self, from: data) {
+                meanings = decoded
+            } else {
+                sharedDefaults?.set(data, forKey: keyMeanings + ".unreadable")
+            }
         }
         if let ts = sharedDefaults?.object(forKey: keySweptUntil) as? Double {
             ashSweptUntil = Date(timeIntervalSince1970: ts)

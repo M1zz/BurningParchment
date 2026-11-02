@@ -43,9 +43,12 @@ class DeadlineManager: ObservableObject {
         // REMOVE standard fallback AFTER: 앱 v2.0.0 (v2 마이그레이션 완료 시점)
         let data = sharedDefaults?.data(forKey: "shared_deadlines")
             ?? UserDefaults.standard.data(forKey: key)
-        guard let data,
-              let decoded = try? JSONDecoder().decode([Deadline].self, from: data)
-        else { return }
+        guard let data else { return }
+        guard let decoded = try? JSONDecoder().decode([Deadline].self, from: data) else {
+            // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
+            UserDefaults.standard.set(data, forKey: key + ".unreadable")
+            return
+        }
         deadlines = decoded
     }
 }

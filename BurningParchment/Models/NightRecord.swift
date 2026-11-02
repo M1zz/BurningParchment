@@ -192,9 +192,12 @@ final class NightManager: ObservableObject {
     }
 
     private func load() {
-        guard let data = sd?.data(forKey: key),
-              let decoded = try? JSONDecoder().decode([NightRecord].self, from: data)
-        else { return }
+        guard let data = sd?.data(forKey: key) else { return }
+        guard let decoded = try? JSONDecoder().decode([NightRecord].self, from: data) else {
+            // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
+            sd?.set(data, forKey: key + ".unreadable")
+            return
+        }
         records = decoded.sorted { $0.bedtimeDate > $1.bedtimeDate }
     }
 }

@@ -210,7 +210,14 @@ struct ContentView: View {
                 .environmentObject(fragmentManager)
                 .environmentObject(excuseManager)
         }
+        // Siri · Spotlight 에서 데드라인을 누르면 목록을 연다(목록이 그 데드라인을 띄운다)
+        .onChange(of: DeadlineRouter.shared.deadlineID, initial: true) { _, id in
+            if id != nil { showDeadlines = true }
+        }
         .onChange(of: scenePhase) { _, phase in
+            if phase == .active || phase == .background {
+                Task { await DeadlineEntity.reindex() }
+            }
             if phase == .active {
                 bedtimeManager.recalculate()
                 WidgetCenter.shared.reloadAllTimelines()

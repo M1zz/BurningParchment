@@ -80,6 +80,15 @@ struct DeadlineListView: View {
             DeadlineDetailView(deadline: deadline)
                 .environmentObject(deadlineManager)
         }
+        // Siri · Spotlight 가 열어 달라는 데드라인
+        .onAppear(perform: openRequestedDeadline)
+        .onChange(of: DeadlineRouter.shared.deadlineID) { _, _ in openRequestedDeadline() }
+    }
+
+    private func openRequestedDeadline() {
+        guard let id = DeadlineRouter.shared.deadlineID else { return }
+        DeadlineRouter.shared.deadlineID = nil
+        selectedDeadline = deadlineManager.deadlines.first { $0.id == id }
     }
 
     private func delete(_ deadline: Deadline) {

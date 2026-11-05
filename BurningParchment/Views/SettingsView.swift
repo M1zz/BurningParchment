@@ -22,6 +22,7 @@ struct SettingsView: View {
     @Environment(\.parchmentStyle) private var currentStyle
     @AppStorage(FlameKind.storageKey) private var flameKindRaw = FlameKind.classic.rawValue
     @AppStorage(FlameSize.storageKey) private var flameSizeRaw = FlameSize.small.rawValue
+    @AppStorage(LightFlame.storageKey) private var lightFlame = false
     @Environment(\.flameKind) private var currentFlameKind
     @State private var selBedH: Int = 23
     @State private var selBedM: Int = 0
@@ -353,7 +354,7 @@ struct SettingsView: View {
 
     private var flameSizeGroup: some View {
         SettingsGroup(title: String(localized: "불꽃 크기"),
-                      footer: String(localized: "양피지를 태우는 불꽃이 솟는 높이예요")) {
+                      footer: String(localized: "양피지를 태우는 불꽃이 솟는 높이예요. 가벼운 불꽃은 불꽃을 덜 자주 그려서 배터리와 발열을 줄여요")) {
             Picker("불꽃 크기", selection: $flameSizeRaw) {
                 ForEach(FlameSize.allCases) { size in
                     Text(size.label).tag(size.rawValue)
@@ -361,6 +362,12 @@ struct SettingsView: View {
             }
             .pickerStyle(.segmented)
             .padding(12)
+            SettingsDivider()
+            SettingsRow(icon: "leaf", title: String(localized: "가벼운 불꽃")) {
+                Toggle("", isOn: $lightFlame)
+                    .labelsHidden()
+                    .tint(.ember)
+            }
         }
     }
 
@@ -393,6 +400,8 @@ struct SettingsView: View {
                         flameKindRaw = kind.rawValue
                     }
                 }
+                // BedtimeManager 가 1초마다 설정 화면을 다시 그려도 불꽃 카드는 건드리지 않는다
+                .equatable()
                 .padding(.bottom, 12)
             }
             .clipShape(RoundedRectangle(cornerRadius: 14))

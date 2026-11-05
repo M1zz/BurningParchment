@@ -7,6 +7,11 @@ import Combine
 
 // MARK: - Main View
 
+extension EnvironmentValues {
+    /// 양피지를 거의 가리는 화면이 떠 있는 동안 불꽃과 입자를 멈춘다. 보이지 않는 불을 그리느라 위 화면이 끊기지 않게.
+    @Entry var parchmentAnimationPaused = false
+}
+
 struct BurningParchmentView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
     @EnvironmentObject var deadlineManager: DeadlineManager
@@ -21,6 +26,10 @@ struct BurningParchmentView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.parchmentStyle) private var style
     @Environment(\.flameKind) private var flameKind
+    @Environment(\.parchmentAnimationPaused) private var animationPaused
+    @AppStorage(LightFlame.storageKey) private var lightFlame = false
+    /// 가벼운 불꽃에서 한 번 건너뛸 차례인지. 그리는 값이 아니라 상태로 두지 않는다.
+    @State private var frameSkip = FrameSkip()
 
     private let timer = Timer.publish(every: 1.0 / 30.0, on: .main, in: .common).autoconnect()
 
@@ -82,10 +91,23 @@ struct BurningParchmentView: View {
                 }
             }
             .onReceive(timer) { _ in
-                guard !reduceMotion else { return }
-                phase += 0.05
-                if ((bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil && isLit) || night?.isBurning == true {
-                    updateParticles(pw: pw, ph: ph, ox: ox, oy: oy)
+                guard !reduceMotion, !animationPaused, !showFreeTimeEditor else { return }
+                // 움직이는 것이 없는 화면은 다시 그리지 않는다 (위 ZStack 의 분기와 같은 순서)
+                if showsFreeTimeIntro || (isDayPeriod && bedtimeManager.isBeforeWakeTime && bedtimeManager.remainingSeconds <= 1800) {
+                    return
+                }
+                if let night {
+                    guard night.isBurning else { return }
+                } else if blownOut != nil,
+                          NightManager.isEnabled || !(isDayPeriod && (bedtimeManager.isBeforeWakeTime || (!bedtimeManager.isCountdownActive && bedtimeManager.progress >= 1.0))) {
+                    return
+                }
+                // 가벼운 불꽃: 두 번에 한 번만 그리고, 그때 두 걸음을 가서 빠르기는 같게 한다
+                if lightFlame, frameSkip.skipThisTick() { return }
+                let moveParticles = ((bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil && isLit) || night?.isBurning == true
+                for _ in 0..<(lightFlame ? 2 : 1) {
+                    phase += 0.05
+                    if moveParticles { updateParticles(pw: pw, ph: ph, ox: ox, oy: oy) }
                 }
             }
             .onAppear {
@@ -1254,6 +1276,12 @@ struct BurningParchmentView: View {
             }
         }
     }
+}
+
+/// 초당 30번 오는 타이머에서 두 번에 한 번을 고른다
+final class FrameSkip {
+    private var odd = false
+    func skipThisTick() -> Bool { odd.toggle(); return odd }
 }
 
 // MARK: - Diagonal Burn Shape

@@ -269,16 +269,12 @@ struct ReflectionBookView: View {
     }
 
     private func headerDateString(_ date: Date) -> String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMdEEEE")
+        let f = TimeFormat.formatter("yMdEEEE")
         return f.string(from: date)
     }
 
     private func timeString(_ date: Date) -> String {
-        let f = DateFormatter()
-        f.locale = .current
-        f.setLocalizedDateFormatFromTemplate("jm")
+        let f = TimeFormat.formatter("jm")
         return f.string(from: date)
     }
 }

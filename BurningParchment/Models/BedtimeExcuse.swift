@@ -23,9 +23,7 @@ struct BedtimeExcuse: Codable, Identifiable {
     }
 
     var dateString: String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("MdE")
+        let f = TimeFormat.formatter("MdE")
         return f.string(from: date)
     }
 }

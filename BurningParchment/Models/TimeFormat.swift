@@ -6,6 +6,20 @@
 import Foundation
 
 enum TimeFormat {
+    private static let formatters = NSCache<NSString, DateFormatter>()
+
+    /// 템플릿에 맞춘 포맷터. 만드는 값이 비싸서 재사용한다 — 받은 쪽에서 속성을 바꾸지 말 것.
+    /// 언어·지역·시간대가 바뀌면 키가 달라져 새로 만든다.
+    static func formatter(_ template: String) -> DateFormatter {
+        let key = "\(template)|\(Locale.current.identifier)|\(TimeZone.current.identifier)" as NSString
+        if let cached = formatters.object(forKey: key) { return cached }
+        let f = DateFormatter()
+        f.locale = .current
+        f.setLocalizedDateFormatFromTemplate(template)
+        formatters.setObject(f, forKey: key)
+        return f
+    }
+
     /// "오전 7:00" (ko) / "7:00 AM" (en) / "07:00" (24시간제 설정)
     static func short(hour: Int, minute: Int) -> String {
         guard let date = date(hour: hour, minute: minute) else {
@@ -22,9 +36,7 @@ enum TimeFormat {
     /// 시(hour) 피커 한 칸에 들어갈 라벨. 12시간제 지역에서는 "오전 7" / "AM 7",
     /// 24시간제 지역에서는 "07" 로 나온다.
     static func hourLabel(_ hour: Int) -> String {
-        let f = DateFormatter()
-        f.locale = .current
-        f.setLocalizedDateFormatFromTemplate("j")
+        let f = formatter("j")
         guard f.dateFormat?.contains("a") == true else {
             return String(format: "%02d", hour)
         }

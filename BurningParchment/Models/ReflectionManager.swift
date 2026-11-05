@@ -8,7 +8,14 @@ import Foundation
 import SwiftUI
 
 class ReflectionManager: ObservableObject {
-    @Published var reflections: [DayReflection] = []
+    @Published var reflections: [DayReflection] = [] {
+        didSet { clearPeriodCache() }
+    }
+    /// 항아리마다 회고 전체를 달력으로 훑는 값이라, 회고가 바뀔 때까지 기억해 둔다.
+    private var periodCache: [UrnPeriod: [DayReflection]] = [:]
+    private var monthPeriodsCache: [UrnPeriod]?
+    /// 어느 달·주에 드는지는 시간대에 따라 달라진다
+    private var cacheTimeZone = TimeZone.current
     /// periodId → 의미
     @Published var meanings: [String: UrnMeaning] = [:]
 
@@ -71,8 +78,23 @@ class ReflectionManager: ObservableObject {
 
     /// 재가 한 톨이라도 담긴 달 항아리 — 최신 달이 먼저.
     var monthPeriods: [UrnPeriod] {
+        refreshCacheIfTimeZoneChanged()
+        if let monthPeriodsCache { return monthPeriodsCache }
         let set = Set(reflections.map { UrnPeriod.month(of: $0.date) })
-        return set.sorted { ($0.year, $0.month) > ($1.year, $1.month) }
+        let result = set.sorted { ($0.year, $0.month) > ($1.year, $1.month) }
+        monthPeriodsCache = result
+        return result
+    }
+
+    private func clearPeriodCache() {
+        periodCache.removeAll(keepingCapacity: true)
+        monthPeriodsCache = nil
+    }
+
+    private func refreshCacheIfTimeZoneChanged() {
+        guard TimeZone.current != cacheTimeZone else { return }
+        cacheTimeZone = .current
+        clearPeriodCache()
     }
 
     /// 한 달 안의 주 항아리 — 1주차가 먼저.
@@ -92,13 +114,17 @@ class ReflectionManager: ObservableObject {
     var currentWeekPeriod: UrnPeriod { UrnPeriod.week(of: Date()) }
 
     func reflections(in period: UrnPeriod) -> [DayReflection] {
-        reflections
+        refreshCacheIfTimeZoneChanged()
+        if let cached = periodCache[period] { return cached }
+        let result = reflections
             .filter { period.contains($0.date) }
             .sorted { $0.date == $1.date ? $0.createdAt > $1.createdAt : $0.date > $1.date }
+        periodCache[period] = result
+        return result
     }
 
     func reflectionCount(in period: UrnPeriod) -> Int {
-        reflections.reduce(0) { $0 + (period.contains($1.date) ? 1 : 0) }
+        reflections(in: period).count
     }
 
     /// 항아리의 채움 비율.  주 항아리는 7톨, 달 항아리는 30톨에서 가득 찬 느낌.

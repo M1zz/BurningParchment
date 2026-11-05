@@ -59,16 +59,12 @@ struct Deadline: Codable, Identifiable {
     }
 
     var targetDateString: String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMdEHm")
+        let f = TimeFormat.formatter("yMdEHm")
         return f.string(from: targetDate)
     }
 
     var startDateString: String {
-        let f = DateFormatter()
-        f.locale = Locale.current
-        f.setLocalizedDateFormatFromTemplate("yMdEHm")
+        let f = TimeFormat.formatter("yMdEHm")
         return f.string(from: startDate)
     }
 }

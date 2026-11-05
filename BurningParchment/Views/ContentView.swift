@@ -25,6 +25,11 @@ struct ContentView: View {
     @State private var nudgeEvaluatedThisSession = false
     @State private var showBlowOut     = false
     @State private var showFragments   = false
+    /// 가운데 "남은 시간" 페이지에서 볼 것 — 자유시간 또는 크리스마스 · 생일 같은 남은 날
+    @AppStorage(RemainingKind.storageKey) private var remainingKind = RemainingKind.list
+    /// 칩 줄이 놓인 자리 — 거기서 시작한 가로 쓸기는 페이지를 넘기지 않는다
+    @State private var remainingPickerFrame: CGRect = .zero
+    private static let mainSpace = "main"
     // 만족도 질문 — 회고·데드라인 화면에서 무언가를 해내고 돌아온 때 묻는다 (앱을 켜자마자가 아니라)
     @State private var showReviewGate  = false
     @State private var eventsAtVisit   = 0
@@ -44,6 +49,12 @@ struct ContentView: View {
     @Environment(\.foldLayout) private var fold
     /// 옆 판의 재 항아리를 회고 입력을 연 채로 다시 세울 때 올린다.
     @State private var foldUrnRequest = 0
+
+    /// 불꽃이 기기에 부담을 주면 가벼운 불꽃으로 바꾸자고 한 번 묻는다
+    @StateObject private var flameLoad = FlameLoadMonitor()
+    @AppStorage(LightFlame.storageKey) private var lightFlame = false
+    @AppStorage(LightFlame.suggestedKey) private var lightFlameSuggested = false
+    @State private var showLightFlameSuggestion = false
 
     /// 처음 연 사람에게 보이는 안내, 업데이트 뒤 한 번 보이는 새 소식
     @State private var showOnboarding = false
@@ -130,6 +141,12 @@ struct ContentView: View {
         showReflections = true
     }
 
+    /// 양피지가 다른 화면에 가려졌거나 앱이 앞에 있지 않을 때
+    private var isParchmentCovered: Bool {
+        showSettings || showDeadlines || showFragments || showBlowOut || showReflections
+            || showOnboarding || showWhatsNew || morningCheckIn != nil || scenePhase != .active
+    }
+
     private var main: some View {
         NavigationStack {
             ZStack {
@@ -146,9 +163,24 @@ struct ContentView: View {
                         .tipBackground(Color.appBackgroundWarm)
                         .padding(.horizontal, 20)
                     tomorrowIntentStrip
-                    BurningParchmentView()
-                        .environmentObject(bedtimeManager)
-                        .environmentObject(nightManager)
+                    if bedtimeManager.selectedPeriod == .freeTime {
+                        RemainingKindPicker(selection: $remainingKind)
+                            .padding(.bottom, 4)
+                            .onGeometryChange(for: CGRect.self) { $0.frame(in: .named(Self.mainSpace)) } action: {
+                                remainingPickerFrame = $0
+                            }
+                            .onDisappear { remainingPickerFrame = .zero }
+                    }
+                    if bedtimeManager.selectedPeriod == .freeTime {
+                        // 가운데 페이지는 양피지 대신 세어 보기 — 자유시간도 그 한 종류다
+                        RemainingPage(selection: $remainingKind)
+                            .environment(\.parchmentAnimationPaused, isParchmentCovered)
+                    } else {
+                        BurningParchmentView()
+                            .environment(\.parchmentAnimationPaused, isParchmentCovered)
+                            .environmentObject(bedtimeManager)
+                            .environmentObject(nightManager)
+                    }
                     blowOutPrompt
                     reflectionNudgeBanner
                     pageIndicator
@@ -156,9 +188,13 @@ struct ContentView: View {
                 // iPad 에서는 양피지가 화면 폭만큼 납작하게 늘어나지 않도록 아이폰과 비슷한 폭의 기둥으로 세운다
                 .frame(maxWidth: 600)
             }
-            .gesture(
-                DragGesture(minimumDistance: 30)
+            // 남은 시간 페이지는 목록 · 세어 보기가 세로로 스크롤되므로 스크롤과 함께 받는다.
+            // 다만 칩 줄에서 시작한 쓸기는 칩을 넘기는 것이니 페이지를 넘기지 않는다.
+            .coordinateSpace(name: Self.mainSpace)
+            .simultaneousGesture(
+                DragGesture(minimumDistance: 30, coordinateSpace: .named(Self.mainSpace))
                     .onEnded { value in
+                        guard !remainingPickerFrame.contains(value.startLocation) else { return }
                         let dx = value.translation.width
                         let dy = value.translation.height
                         guard abs(dx) > abs(dy) * 1.5 else { return }
@@ -255,6 +291,21 @@ struct ContentView: View {
             askForReviewIfAccomplished(returning: !isShowing)
         }
         .leeoReviewGate(BurningParchmentSpec.self, isPresented: $showReviewGate)
+        // 양피지가 보이며 타는 동안에만 잰다. 이미 가볍거나 한 번 물었으면 재지 않는다.
+        .onChange(of: !lightFlame && !lightFlameSuggested && !reduceMotion && !isParchmentCovered, initial: true) { _, watch in
+            if watch { flameLoad.start() } else { flameLoad.stop() }
+        }
+        .onChange(of: flameLoad.isHeavy) { _, heavy in
+            guard heavy, !lightFlame, !lightFlameSuggested, !isParchmentCovered, !showReviewGate else { return }
+            lightFlameSuggested = true
+            showLightFlameSuggestion = true
+        }
+        .alert("불꽃이 기기에 부담을 주고 있어요", isPresented: $showLightFlameSuggestion) {
+            Button("가볍게 바꾸기") { lightFlame = true }
+            Button("나중에", role: .cancel) {}
+        } message: {
+            Text("가벼운 불꽃은 불꽃을 덜 자주 그려서 배터리와 발열을 줄여요. 설정 ▸ 불꽃 크기에서 언제든 바꿀 수 있어요")
+        }
         .fullScreenCover(isPresented: $showOnboarding) {
             BurningOnboardingView {
                 hasCompletedOnboarding = true
@@ -792,7 +843,7 @@ struct ContentView: View {
         case .week:     return String(localized: "이번 주")
         case .month:    return String(localized: "이번 달")
         case .year:     return String(localized: "올해")
-        case .freeTime: return String(localized: "나의 자유시간")
+        case .freeTime: return String(localized: "남은 시간")
         case .deadline: return String(localized: "나의 목표")
         }
     }

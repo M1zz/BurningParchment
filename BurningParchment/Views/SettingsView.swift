@@ -14,7 +14,6 @@ struct SettingsView: View {
     @State private var showPaywall = false
     @State private var restoreMessage: String?
     @State private var showThemePaywall = false
-    @State private var showOfferCode = false
     @State private var showOnboarding = false
     @State private var showWhatsNew = false
     @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
@@ -94,13 +93,6 @@ struct SettingsView: View {
         .sheet(isPresented: $showThemePaywall) {
             PaywallView(reason: .theme)
                 .environmentObject(storeManager)
-        }
-        .offerCodeRedemption(isPresented: $showOfferCode) { result in
-            // 코드가 받아지면 거래 리스너(LeeoStore)가 프로를 연다. 실패만 알린다.
-            if case .failure(let error) = result {
-                AppLog.lifecycle.error("프로모션 코드 사용 실패: \(error.localizedDescription, privacy: .public)")
-                restoreMessage = String(localized: "코드를 사용하지 못했어요. 잠시 뒤 다시 시도해 주세요.")
-            }
         }
         .fullScreenCover(isPresented: $showOnboarding) {
             BurningOnboardingView { showOnboarding = false }
@@ -503,15 +495,6 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .disabled(storeManager.purchaseInProgress)
-
-                SettingsDivider()
-
-                Button { showOfferCode = true } label: {
-                    SettingsRow(icon: "ticket", title: String(localized: "프로모션 코드 사용")) {
-                        SettingsChevron()
-                    }
-                }
-                .buttonStyle(.plain)
             }
 
             // 프로 선물하기 · 선물 코드 넣기 — 프로 카드 안, 맨 아래 (→ GiftRows).
@@ -614,12 +597,12 @@ struct SettingsView: View {
 
 /// 설정 ▸ 프로 카드의 **선물** 줄.
 ///
-/// - 보내기: 프로를 다른 사람에게 보낸다(보내는 사람은 소모성 선물 상품을 산다).
-/// - 받기: 받은 코드를 넣는다. 받는 사람은 프로(`StoreManager.proProductID`)를 산 것과 같아진다.
+/// - 받기: 받은 App Store 코드(오퍼 코드 · 프로모션 코드)를 넣는다. 예전의 "프로모션 코드 사용" 줄도 이것 하나로 합쳤다.
+/// - 보내기: 판매를 연 뒤에만(`LeeoGiftConfig.sellsGifts`) 프로를 다른 사람에게 보낸다. 지금은 닫혀 있다.
 ///
-/// ⚠️ 상품이 App Store 에서 와야 줄이 선다(`isAvailable`). App Store Connect 에 상품을 만들기 전에
-///    이 빌드가 나가도 눌러도 안 되는 줄은 보이지 않는다. 단, 이미 결제했거나 주고받은 선물이 있는
-///    사람에게는 늘 보인다 — 상품을 못 불러온 날에도 코드를 다시 보거나 문의까지 갈 길이 있어야 한다.
+/// ⚠️ 보내기는 `isAvailable`(판매가 열렸고 상품이 왔다), 받기는 `canRedeem` 을 본다.
+///    판매가 닫혀 있어도 이미 결제했거나 보낸 선물이 있는 사람에게는 보내기 줄이 남는다 —
+///    코드를 다시 보거나 문의까지 갈 길이 있어야 한다.
 /// ⚠️ 문구는 LeeoKit 카탈로그(`LeeoGiftText`)에 있다 — 24개 언어가 이미 들어 있다.
 /// ⚠️ 엔진(`LeeoGiftStore`)은 따로 관찰해야 한다. 상품은 앱이 뜬 뒤에 오는데 `StoreManager` 는
 ///    그 변화를 알리지 않는다.
@@ -629,22 +612,26 @@ private struct GiftRows: View {
     @State private var showSupport = false
 
     var body: some View {
-        if gift.isAvailable || gift.pendingCount > 0 || !gift.sentGifts.isEmpty || gift.redeemed != nil {
+        let sends = gift.isAvailable || gift.pendingCount > 0 || !gift.sentGifts.isEmpty
+        // 이미 프로인 사람은 받을 것이 없다 — 받은 적이 있으면 그 기록을 볼 수 있게만 남긴다.
+        let receives = gift.canRedeem && (!isPro || gift.redeemed != nil)
+        if sends || receives {
             // 카드 안의 다른 줄과 같은 간격(0)으로 쌓는다.
             VStack(spacing: 0) {
-                SettingsDivider()
-                NavigationLink {
-                    // 선물이 안 되면 결제 번호·코드를 붙여 문의하게 한다 — 막힌 사람을 놓치지 않게.
-                    LeeoGiftView<BurningParchmentSpec>(gift: gift, showsRedeemLink: false,
-                                                       onContactSupport: { showSupport = true })
-                } label: {
-                    SettingsRow(icon: "gift.fill", title: LeeoGiftText.sendEntry) {
-                        SettingsChevron()
+                if sends {
+                    SettingsDivider()
+                    NavigationLink {
+                        // 선물이 안 되면 결제 번호·코드를 붙여 문의하게 한다 — 막힌 사람을 놓치지 않게.
+                        LeeoGiftView<BurningParchmentSpec>(gift: gift, showsRedeemLink: false,
+                                                           onContactSupport: { showSupport = true })
+                    } label: {
+                        SettingsRow(icon: "gift.fill", title: LeeoGiftText.sendEntry) {
+                            SettingsChevron()
+                        }
                     }
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
-                // 이미 프로인 사람은 받을 것이 없다 — 받은 적이 있으면 그 기록을 볼 수 있게만 남긴다.
-                if !isPro || gift.redeemed != nil {
+                if receives {
                     SettingsDivider()
                     NavigationLink {
                         LeeoGiftRedeemView<BurningParchmentSpec>(gift: gift,

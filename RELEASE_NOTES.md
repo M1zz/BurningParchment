@@ -4,171 +4,195 @@
 
 ### 앱스토어 (한국어)
 
-고마울 때 개발자에게 작은 팁을 보낼 수 있어요
+남은 크리스마스와 생일을 세어 볼 수 있어요
+부모님과의 시간처럼 직접 정해 세어 볼 수도 있어요
+Siri에게 남은 시간을 물어볼 수 있어요
 친구에게 Pro를 선물할 수 있어요
-VoiceOver와 음성 제어로 더 편하게 쓸 수 있어요
-큰 글씨와 동작 줄이기 설정에도 잘 맞춰요
+VoiceOver와 큰 글씨에서 더 편해졌어요
 
 ### App Store (English)
 
-Leave a small tip if the app helps you
+Count the Christmases and birthdays left
+Or count the days with your parents
+Ask Siri how much time is left
 You can now gift Pro to a friend
-Better with VoiceOver and Voice Control
-Respects larger text and Reduce Motion
+Better with VoiceOver and larger text
 
 ### 앱스토어 (일본어)
 
-気に入ったら開発者に小さなチップを送れます
+残りのクリスマスと誕生日を数えられます
+親と過ごす時間など自分で決めて数えられます
+Siriに残り時間をたずねられます
 友だちにProをプレゼントできるようになりました
-VoiceOverや音声コントロールで使いやすくなりました
-大きな文字や視差効果を減らす設定に対応しました
+VoiceOverや大きな文字で使いやすくなりました
 
 ### App Store (en-GB)
 
-Leave a small tip if the app helps you
+Count the Christmases and birthdays left
+Or count the days with your parents
+Ask Siri how much time is left
 You can now gift Pro to a friend
-Better with VoiceOver and Voice Control
-Respects larger text and Reduce Motion
+Better with VoiceOver and larger text
 
 ### 앱스토어 (스페인어)
 
-Deja una pequeña propina si te gusta
+Descubre cuántas Navidades te quedan
+O cuenta los días con tus padres
+Pregunta a Siri cuánto tiempo queda
 Ya puedes regalar Pro a un amigo
-Mejor con VoiceOver y Control por voz
-Admite texto grande y Reducir movimiento
+Mejor con VoiceOver y texto grande
 
 ### 앱스토어 (독일어)
 
-Sag Danke mit einem kleinen Trinkgeld
+Wie viele Weihnachten bleiben dir noch?
+Oder zähl die Tage mit deinen Eltern
+Frag Siri, wie viel Zeit noch bleibt
 Verschenke Pro an Freunde
-Besser mit VoiceOver und Sprachsteuerung
-Für großen Text und reduzierte Bewegung
+Besser mit VoiceOver und großem Text
 
 ### 앱스토어 (zh-Hans)
 
-想表达感谢时，可以给开发者一点小费
+数一数还剩几个圣诞节和生日
+也能自己设定来数，比如陪伴父母的时间
+可以问 Siri 还剩多少时间
 现在可以把 Pro 送给朋友了
-使用旁白和语音控制时更加顺手
-支持大字体和减弱动态效果
+使用旁白和大字体时更加顺手
 
 ### 앱스토어 (zh-Hant)
 
-想表達感謝時，可以給開發者一點小費
+數一數還剩幾個聖誕節和生日
+也能自己設定來數，例如陪伴父母的時間
+可以問 Siri 還剩多少時間
 現在可以把 Pro 送給朋友了
-使用旁白和語音控制時更加順手
-支援大字體和減少動態效果
+使用旁白和大字體時更加順手
 
 ### 앱스토어 (러시아어)
 
-Можно оставить разработчику чаевые
+Сколько Рождеств ещё впереди
+Можно считать и дни с родителями
+Siri подскажет, сколько осталось
 Теперь Pro можно подарить другу
-Удобно с VoiceOver и Управлением голосом
-Крупный текст и спокойная анимация
+Удобнее с VoiceOver и крупным текстом
 
 ### 앱스토어 (프랑스어)
 
-Dites merci avec un petit pourboire
+Combien de Noëls vous reste-t-il ?
+Ou comptez les jours avec vos parents
+Demandez à Siri le temps qu’il reste
 Offrez Pro à un ami
-Pensé pour VoiceOver et Contrôle vocal
-Gros texte et animations réduites gérés
+Mieux avec VoiceOver et le gros texte
 
 ### 앱스토어 (이탈리아어)
 
-Lascia una piccola mancia se ti piace
+Scopri quanti Natali ti restano
+O conta i giorni con i tuoi genitori
+Chiedi a Siri quanto tempo resta
 Ora puoi regalare Pro a un amico
-VoiceOver e Controllo vocale migliorati
-Supporta testo grande e Riduci movimento
+Meglio con VoiceOver e testo grande
 
 ### 앱스토어 (pt-BR)
 
-Deixe uma gorjeta se o app te ajudar
+Veja quantos Natais ainda faltam
+Ou conte os dias com seus pais
+Pergunte à Siri quanto tempo falta
 Presenteie um amigo com o Pro
-Melhor com VoiceOver e Controle por Voz
-Aceita texto grande e Reduzir Movimento
+Melhor com VoiceOver e texto grande
 
 ### 앱스토어 (태국어)
 
-ส่งทิปให้นักพัฒนาได้เมื่ออยากขอบคุณ
+นับดูว่าเหลือคริสต์มาสอีกกี่ครั้ง
+นับเองได้ เช่น วันที่ได้อยู่กับพ่อแม่
+ถาม Siri ได้ว่าเหลือเวลาอีกเท่าไร
 ส่ง Pro เป็นของขวัญให้เพื่อนได้แล้ว
-รองรับ VoiceOver และการควบคุมด้วยเสียง
-รองรับตัวอักษรใหญ่และลดการเคลื่อนไหว
+รองรับ VoiceOver และตัวอักษรใหญ่ดีขึ้น
 
 ### 앱스토어 (베트남어)
 
-Gửi nhà phát triển chút tiền tip cảm ơn
+Đếm xem còn bao nhiêu mùa Giáng sinh
+Hoặc tự đếm, như ngày bên bố mẹ
+Hỏi Siri xem còn bao nhiêu thời gian
 Giờ bạn có thể tặng Pro cho bạn bè
-Dùng tốt hơn với VoiceOver và Khẩu lệnh
-Hỗ trợ chữ lớn và Giảm chuyển động
+Dùng tốt hơn với VoiceOver và chữ lớn
 
 ### 앱스토어 (체코어)
 
-Poděkujte vývojáři malým spropitným
+Kolik Vánoc vám ještě zbývá
+Nebo spočítejte dny s rodiči
+Zeptejte se Siri, kolik času zbývá
 Pro teď můžete darovat kamarádovi
-Lepší s VoiceOverem a Ovládáním hlasem
-Podpora velkého písma a omezení pohybu
+Lepší s VoiceOverem a velkým písmem
 
 ### 앱스토어 (덴마크어)
 
-Sig tak med lidt drikkepenge
+Hvor mange juleaftener har du tilbage?
+Eller tæl dagene med dine forældre
+Spørg Siri om den tid, der er tilbage
 Nu kan du give Pro i gave til en ven
-Bedre med VoiceOver og Stemmestyring
-Tilpasset stor tekst og mindre bevægelse
+Bedre med VoiceOver og stor tekst
 
 ### 앱스토어 (그리스어)
 
-Πείτε ευχαριστώ με ένα μικρό φιλοδώρημα
+Πόσα Χριστούγεννα σας απομένουν;
+Ή μετρήστε τις μέρες με τους γονείς σας
+Ρωτήστε τη Siri πόσος χρόνος απομένει
 Χαρίστε το Pro σε έναν φίλο
-Καλύτερο με VoiceOver και έλεγχο φωνής
-Μεγάλο κείμενο και μείωση κίνησης
+Καλύτερο με VoiceOver και μεγάλο κείμενο
 
 ### 앱스토어 (핀란드어)
 
-Kiitä kehittäjää pienellä tipillä
+Laske, montako joulua on jäljellä
+Tai laske päivät vanhempiesi kanssa
+Kysy Siriltä, paljonko aikaa on jäljellä
 Voit nyt antaa Pron lahjaksi ystävälle
-Parempi VoiceOverilla ja ääniohjauksella
-Suuri teksti ja liikkeen vähennys tuettu
+Parempi VoiceOver ja suuri teksti
 
 ### 앱스토어 (인도네시아어)
 
-Beri tip kecil untuk berterima kasih
+Hitung sisa Natal dalam hidupmu
+Atau hitung hari bersama orang tua
+Tanya Siri berapa sisa waktumu
 Kini Pro bisa dihadiahkan ke teman
-Mendukung VoiceOver dan Kontrol Suara
-Mendukung teks besar dan Kurangi Gerakan
+Mendukung VoiceOver dan teks besar
 
 ### 앱스토어 (노르웨이어(보크말))
 
-Si takk med litt tips til utvikleren
+Hvor mange julaftener har du igjen?
+Eller tell dagene med foreldrene dine
+Spør Siri hvor mye tid som er igjen
 Nå kan du gi Pro i gave til en venn
-Bedre med VoiceOver og Talekontroll
-Støtter stor tekst og Reduser bevegelse
+Bedre med VoiceOver og stor tekst
 
 ### 앱스토어 (네덜란드어)
 
-Bedank de maker met een kleine fooi
+Hoeveel kerstfeesten heb je nog?
+Of tel de dagen met je ouders
+Vraag Siri hoeveel tijd er nog is
 Geef Pro cadeau aan een vriend
-Beter met VoiceOver en Stembediening
-Grote tekst en minder beweging werken nu
+Beter met VoiceOver en grote tekst
 
 ### 앱스토어 (폴란드어)
 
-Podziękuj twórcy drobnym napiwkiem
+Ile świąt Bożego Narodzenia ci zostało
+Albo policz dni z rodzicami
+Zapytaj Siri, ile czasu zostało
 Podaruj Pro znajomemu
-Lepiej z VoiceOver i Sterowaniem głosem
-Duży tekst i mniej ruchu są obsługiwane
+Lepiej z VoiceOver i dużym tekstem
 
 ### 앱스토어 (스웨덴어)
 
-Tacka utvecklaren med lite dricks
+Hur många julaftnar har du kvar?
+Eller räkna dagarna med dina föräldrar
+Fråga Siri hur mycket tid som är kvar
 Nu kan du ge bort Pro till en vän
-Bättre med VoiceOver och Röststyrning
-Stöd för stor text och Minska rörelse
+Bättre med VoiceOver och stor text
 
 ### 앱스토어 (튀르키예어)
 
-Geliştiriciye küçük bir bahşiş bırakın
+Kaç Noel'iniz kaldığını görün
+Ya da anne babanızla günleri sayın
+Siri'ye ne kadar süre kaldığını sorun
 Pro'yu bir arkadaşınıza hediye edin
-VoiceOver ve Sesle Denetim ile kolay
-Büyük yazı ve Hareketi Azalt desteği
+VoiceOver ve büyük yazıyla daha rahat
 
 ## 1.2.2
 

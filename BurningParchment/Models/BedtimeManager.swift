@@ -24,7 +24,7 @@ enum PeriodType: String, CaseIterable, Identifiable {
         case .week:     return String(localized: "1주")
         case .month:    return String(localized: "1달")
         case .year:     return String(localized: "1년")
-        case .freeTime: return String(localized: "자유시간")
+        case .freeTime: return String(localized: "남은 시간")
         case .deadline: return "D-Day"
         }
     }

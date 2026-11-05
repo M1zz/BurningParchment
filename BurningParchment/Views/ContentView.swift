@@ -25,6 +25,8 @@ struct ContentView: View {
     @State private var nudgeEvaluatedThisSession = false
     @State private var showBlowOut     = false
     @State private var showFragments   = false
+    /// 가운데 "남은 시간" 페이지에서 볼 것 — 자유시간 또는 크리스마스 · 생일 같은 남은 날
+    @AppStorage(RemainingKind.storageKey) private var remainingKind = RemainingKind.freeTime
     // 만족도 질문 — 회고·데드라인 화면에서 무언가를 해내고 돌아온 때 묻는다 (앱을 켜자마자가 아니라)
     @State private var showReviewGate  = false
     @State private var eventsAtVisit   = 0
@@ -136,6 +138,11 @@ struct ContentView: View {
         showReflections = true
     }
 
+    /// 남은 시간 페이지에서 자유시간이 아닌 것을 골랐을 때 — 양피지 대신 남은 날을 센다
+    private var lifeMoment: LifeMoment? {
+        bedtimeManager.selectedPeriod == .freeTime ? LifeMoment(rawValue: remainingKind) : nil
+    }
+
     /// 양피지가 다른 화면에 가려졌거나 앱이 앞에 있지 않을 때
     private var isParchmentCovered: Bool {
         showSettings || showDeadlines || showFragments || showBlowOut || showReflections
@@ -158,10 +165,19 @@ struct ContentView: View {
                         .tipBackground(Color.appBackgroundWarm)
                         .padding(.horizontal, 20)
                     tomorrowIntentStrip
-                    BurningParchmentView()
-                        .environment(\.parchmentAnimationPaused, isParchmentCovered)
-                        .environmentObject(bedtimeManager)
-                        .environmentObject(nightManager)
+                    if bedtimeManager.selectedPeriod == .freeTime {
+                        RemainingKindPicker(selection: $remainingKind)
+                            .padding(.bottom, 4)
+                    }
+                    if let moment = lifeMoment {
+                        LifeCountPage(moment: moment)
+                            .environment(\.parchmentAnimationPaused, isParchmentCovered)
+                    } else {
+                        BurningParchmentView()
+                            .environment(\.parchmentAnimationPaused, isParchmentCovered)
+                            .environmentObject(bedtimeManager)
+                            .environmentObject(nightManager)
+                    }
                     blowOutPrompt
                     reflectionNudgeBanner
                     pageIndicator
@@ -813,7 +829,7 @@ struct ContentView: View {
         case .week:     return String(localized: "이번 주")
         case .month:    return String(localized: "이번 달")
         case .year:     return String(localized: "올해")
-        case .freeTime: return String(localized: "나의 자유시간")
+        case .freeTime: return String(localized: "남은 시간")
         case .deadline: return String(localized: "나의 목표")
         }
     }

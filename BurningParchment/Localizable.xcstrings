@@ -5681,23 +5681,6 @@
         }
       }
     },
-    "%lld세" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld years"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld세"
-          }
-        }
-      }
-    },
     "%lld시간" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -7198,6 +7181,22 @@
         }
       }
     },
+    "1년에" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per year"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1년에"
+          }
+        }
+      }
+    },
     "1달" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -8539,6 +8538,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri 與捷徑"
+          }
+        }
+      }
+    },
+    "unit.day" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일"
+          }
+        }
+      }
+    },
+    "unit.hour" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hours"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시간"
+          }
+        }
+      }
+    },
+    "unit.times" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "times"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "번"
           }
         }
       }
@@ -11203,6 +11253,22 @@
         }
       }
     },
+    "고치기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "고치기"
+          }
+        }
+      }
+    },
     "곧 기상 시간이에요" : {
       "localizations" : {
         "cs" : {
@@ -11496,6 +11562,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關係"
+          }
+        }
+      }
+    },
+    "구간 나누기" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Split by age"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "구간 나누기"
           }
         }
       }
@@ -12992,22 +13075,6 @@
         }
       }
     },
-    "기대 수명" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Life expectancy"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "기대 수명"
-          }
-        }
-      }
-    },
     "기대 수명은 짐작일 뿐이에요. 숫자보다 다음 한 번을 어떻게 보낼지 생각해 보세요." : {
       "localizations" : {
         "en" : {
@@ -13025,6 +13092,7 @@
       }
     },
     "기대 수명을 넘었어요. 이제부터는 모두 덤이에요" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -14969,6 +15037,149 @@
         }
       }
     },
+    "끝" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konec"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slut"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τέλος"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "End"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "End"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loppu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "終了"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slutt"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einde"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koniec"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fim"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Конец"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slut"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จบ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kết thúc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "结束"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "結束"
+          }
+        }
+      }
+    },
     "끄기" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -15256,149 +15467,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關閉"
-          }
-        }
-      }
-    },
-    "끝" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konec"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slut"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ende"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Τέλος"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "End"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "End"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fin"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Loppu"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fin"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selesai"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fine"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "終了"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slutt"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Einde"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Koniec"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fim"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Конец"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slut"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "จบ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Son"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kết thúc"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "结束"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "結束"
           }
         }
       }
@@ -16576,23 +16644,6 @@
         }
       }
     },
-    "남은 보름달" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Full moons left"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "남은 보름달"
-          }
-        }
-      }
-    },
     "남은 봄" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -16606,6 +16657,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "남은 봄"
+          }
+        }
+      }
+    },
+    "남은 보름달" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full moons left"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "남은 보름달"
           }
         }
       }
@@ -16789,6 +16857,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "남은 생일"
+          }
+        }
+      }
+    },
+    "남은 시간" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Left"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "남은 시간"
           }
         }
       }
@@ -17720,6 +17805,10 @@
           }
         }
       }
+    },
+    "내가 %@세가 될 때까지" : {
+      "comment" : "A label displaying the user's age until which they expect to live. The argument is the user's age.",
+      "isCommentAutoGenerated" : true
     },
     "내일 메모 단계" : {
       "extractionState" : "stale",
@@ -19804,151 +19893,328 @@
         }
       }
     },
-    "다이나믹 아일랜드로 실시간 확인" : {
+    "다른 글귀 보기" : {
       "extractionState" : "stale",
       "localizations" : {
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Živé zobrazení v Dynamic Island"
+            "value" : "Zobrazit jinou větu"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Live-opdateringer i Dynamic Island"
+            "value" : "Vis en anden sætning"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Live-Anzeige in der Dynamic Island"
+            "value" : "Anderen Spruch zeigen"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ζωντανή ενημέρωση στο Dynamic Island"
+            "value" : "Εμφάνιση άλλης φράσης"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Live updates in Dynamic Island"
+            "value" : "Show another phrase"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Live updates in Dynamic Island"
+            "value" : "Show another phrase"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seguimiento en vivo en la Dynamic Island"
+            "value" : "Ver otra frase"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reaaliaikaiset päivitykset Dynamic Islandissa"
+            "value" : "Näytä toinen lause"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suivi en direct dans la Dynamic Island"
+            "value" : "Voir une autre phrase"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pembaruan langsung di Dynamic Island"
+            "value" : "Tampilkan kalimat lain"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aggiornamenti in diretta nella Dynamic Island"
+            "value" : "Mostra un’altra frase"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Islandでリアルタイム表示"
+            "value" : "別の言葉を見る"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "다이나믹 아일랜드로 실시간 확인"
+            "value" : "다른 글귀 보기"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Direkteoppdateringer i Dynamic Island"
+            "value" : "Vis en annen setning"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Live-updates in het Dynamic Island"
+            "value" : "Andere zin tonen"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aktualizacje na żywo w Dynamic Island"
+            "value" : "Pokaż inne zdanie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Acompanhe ao vivo na Dynamic Island"
+            "value" : "Mostrar outra frase"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Живые обновления в Dynamic Island"
+            "value" : "Показать другую фразу"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Liveuppdateringar i Dynamic Island"
+            "value" : "Visa en annan mening"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ดูสถานะสดบน Dynamic Island"
+            "value" : "ดูข้อความอื่น"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island’da canlı güncellemeler"
+            "value" : "Başka bir söz göster"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xem trực tiếp trên Dynamic Island"
+            "value" : "Xem câu khác"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "通过灵动岛实时查看"
+            "value" : "换一句"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "透過動態島即時查看"
+            "value" : "換一句"
+          }
+        }
+      }
+    },
+    "다음은 %lld일 뒤" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next in %lld days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다음은 %lld일 뒤"
+          }
+        }
+      }
+    },
+    "다이나믹 아일랜드" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダイナミックアイランド"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilha Dinâmica"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dynamic Island"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "灵动岛"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動態島"
+          }
+        }
+      }
+    },
+    "단위" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unit"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단위"
           }
         }
       }
@@ -20098,155 +20364,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月"
-          }
-        }
-      }
-    },
-    "다른 글귀 보기" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zobrazit jinou větu"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vis en anden sætning"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anderen Spruch zeigen"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Εμφάνιση άλλης φράσης"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show another phrase"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show another phrase"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ver otra frase"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Näytä toinen lause"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Voir une autre phrase"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tampilkan kalimat lain"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mostra un’altra frase"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "別の言葉を見る"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "다른 글귀 보기"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vis en annen setning"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Andere zin tonen"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pokaż inne zdanie"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mostrar outra frase"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Показать другую фразу"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Visa en annan mening"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ดูข้อความอื่น"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Başka bir söz göster"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Xem câu khác"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "换一句"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "換一句"
           }
         }
       }
@@ -20990,162 +21107,151 @@
         }
       }
     },
-    "다음은 %lld일 뒤" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Next in %lld days"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "다음은 %lld일 뒤"
-          }
-        }
-      }
-    },
-    "다이나믹 아일랜드" : {
+    "다이나믹 아일랜드로 실시간 확인" : {
       "extractionState" : "stale",
       "localizations" : {
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Živé zobrazení v Dynamic Island"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Live-opdateringer i Dynamic Island"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Live-Anzeige in der Dynamic Island"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Ζωντανή ενημέρωση στο Dynamic Island"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Live updates in Dynamic Island"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Live updates in Dynamic Island"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Seguimiento en vivo en la Dynamic Island"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Reaaliaikaiset päivitykset Dynamic Islandissa"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Suivi en direct dans la Dynamic Island"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Pembaruan langsung di Dynamic Island"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Aggiornamenti in diretta nella Dynamic Island"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ダイナミックアイランド"
+            "value" : "Dynamic Islandでリアルタイム表示"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다이나믹 아일랜드로 실시간 확인"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Direkteoppdateringer i Dynamic Island"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Live-updates in het Dynamic Island"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Aktualizacje na żywo w Dynamic Island"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ilha Dinâmica"
+            "value" : "Acompanhe ao vivo na Dynamic Island"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Живые обновления в Dynamic Island"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Liveuppdateringar i Dynamic Island"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "ดูสถานะสดบน Dynamic Island"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Dynamic Island’da canlı güncellemeler"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dynamic Island"
+            "value" : "Xem trực tiếp trên Dynamic Island"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "灵动岛"
+            "value" : "通过灵动岛实时查看"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "動態島"
+            "value" : "透過動態島即時查看"
           }
         }
       }
@@ -27847,6 +27953,18 @@
       "comment" : "A label displaying the user's age. The argument is the user's age.",
       "isCommentAutoGenerated" : true
     },
+    "만 %@세 · 기대 수명 %@세" : {
+      "comment" : "A button that opens a screen to change the user's birthdate and expected lifespan.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "만 %1$@세 · 기대 수명 %2$@세"
+          }
+        }
+      }
+    },
     "만 %lld세" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -27860,6 +27978,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "만 %lld세"
+          }
+        }
+      }
+    },
+    "만 %lld세 · 기대 수명 %lld세" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Age %1$lld · Expecting %2$lld"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "만 %lld세 · 기대 수명 %lld세"
           }
         }
       }
@@ -28301,6 +28436,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "停下"
+          }
+        }
+      }
+    },
+    "며칠" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Days"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "며칠"
+          }
+        }
+      }
+    },
+    "몇 번" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Times"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "몇 번"
+          }
+        }
+      }
+    },
+    "몇 시간" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hours"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "몇 시간"
           }
         }
       }
@@ -29640,6 +29826,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把收集的碎片分享成卡片和海報圖片"
+          }
+        }
+      }
+    },
+    "목록" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "List"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "목록"
           }
         }
       }
@@ -32030,6 +32233,23 @@
         }
       }
     },
+    "벌써 %lld%%를 보냈어요" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% already spent"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "벌써 %lld%%를 보냈어요"
+          }
+        }
+      }
+    },
     "범위" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -33397,6 +33617,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "分鐘"
+          }
+        }
+      }
+    },
+    "부모님과의 시간" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time with parents"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "부모님과의 시간"
           }
         }
       }
@@ -37543,10 +37780,6 @@
         }
       }
     },
-    "삶의 %@%%가 탔어요" : {
-      "comment" : "A label that displays the percentage of life that has already passed. The argument is the percentage of life that has passed.",
-      "isCommentAutoGenerated" : true
-    },
     "삶의 %lld%%가 탔어요" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -39679,6 +39912,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "成長"
+          }
+        }
+      }
+    },
+    "세어 보기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Count"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "세어 보기"
           }
         }
       }
@@ -57683,154 +57932,6 @@
         }
       }
     },
-    "입김의 세기만 확인하고 소리는 녹음하지 않아요" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Využívá se jen síla vašeho dechu. Nic se nenahrává."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kun styrken af dit åndedræt bruges. Intet optages."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nur die Stärke deines Atems wird erfasst. Es wird nichts aufgenommen."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Χρησιμοποιείται μόνο η ένταση της πνοής σας. Δεν καταγράφεται τίποτα."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Only the strength of your breath is used. Nothing is recorded."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Only the strength of your breath is used. Nothing is recorded."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solo se usa la intensidad de tu soplido. No se graba nada."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Käytetään vain hengityksesi voimakkuutta. Mitään ei tallenneta."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seule la force de votre souffle est utilisée. Rien n’est enregistré."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hanya kekuatan napasmu yang dipakai. Tidak ada yang direkam."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Viene usata solo la forza del tuo soffio. Non viene registrato nulla."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "息の強さを確かめるだけで、音は録音しません"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "입김의 세기만 확인하고 소리는 녹음하지 않아요"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bare styrken på pusten din brukes. Ingenting tas opp."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alleen de kracht van je adem wordt gebruikt. Er wordt niets opgenomen."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Używana jest tylko siła Twojego oddechu. Nic nie jest nagrywane."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Só a força do seu sopro é usada. Nada é gravado."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Учитывается только сила дыхания. Звук не записывается."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bara styrkan i din andning används. Inget spelas in."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ใช้เฉพาะแรงลมเป่าของคุณ ไม่มีการบันทึกเสียง"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yalnızca nefesinin gücü kullanılır. Hiçbir şey kaydedilmez."
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chỉ dùng sức thổi của bạn. Không ghi âm gì cả."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "只检测吹气的力度，不会录音"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "只檢測吹氣的力度，不會錄音"
-          }
-        }
-      }
-    },
     "잎" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -57981,7 +58082,6 @@
       }
     },
     "이름" : {
-      "extractionState" : "stale",
       "localizations" : {
         "cs" : {
           "stringUnit" : {
@@ -61082,6 +61182,154 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "只有一週中屬於你自己的時間流逝時，羊皮紙才會燃燒"
+          }
+        }
+      }
+    },
+    "입김의 세기만 확인하고 소리는 녹음하지 않아요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Využívá se jen síla vašeho dechu. Nic se nenahrává."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun styrken af dit åndedræt bruges. Intet optages."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur die Stärke deines Atems wird erfasst. Es wird nichts aufgenommen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιείται μόνο η ένταση της πνοής σας. Δεν καταγράφεται τίποτα."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only the strength of your breath is used. Nothing is recorded."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only the strength of your breath is used. Nothing is recorded."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo se usa la intensidad de tu soplido. No se graba nada."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytetään vain hengityksesi voimakkuutta. Mitään ei tallenneta."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seule la force de votre souffle est utilisée. Rien n’est enregistré."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanya kekuatan napasmu yang dipakai. Tidak ada yang direkam."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viene usata solo la forza del tuo soffio. Non viene registrato nulla."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "息の強さを確かめるだけで、音は録音しません"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "입김의 세기만 확인하고 소리는 녹음하지 않아요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bare styrken på pusten din brukes. Ingenting tas opp."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen de kracht van je adem wordt gebruikt. Er wordt niets opgenomen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Używana jest tylko siła Twojego oddechu. Nic nie jest nagrywane."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Só a força do seu sopro é usada. Nada é gravado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учитывается только сила дыхания. Звук не записывается."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bara styrkan i din andning används. Inget spelas in."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้เฉพาะแรงลมเป่าของคุณ ไม่มีการบันทึกเสียง"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca nefesinin gücü kullanılır. Hiçbir şey kaydedilmez."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ dùng sức thổi của bạn. Không ghi âm gì cả."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只检测吹气的力度，不会录音"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只檢測吹氣的力度，不會錄音"
           }
         }
       }
@@ -67248,155 +67496,6 @@
         }
       }
     },
-    "저절로 꺼진 조각을 모았어요" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uschovali jste úlomek, který zhasl sám"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du gemte et brudstykke, der gik ud af sig selv"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du hast ein Fragment gesammelt, das von selbst erloschen ist"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Κρατήσατε ένα θραύσμα που έσβησε μόνο του"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You kept a fragment that went out on its own"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You kept a fragment that went out on its own"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guardaste un fragmento que se apagó solo"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Säästit sirpaleen, joka sammui itsestään"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vous avez gardé un fragment éteint tout seul"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kamu menyimpan pecahan yang padam sendiri"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hai conservato un frammento che si è spento da solo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自然に消えたかけらを集めました"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "저절로 꺼진 조각을 모았어요"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du tok vare på et bruddstykke som gikk ut av seg selv"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Je bewaarde een fragment dat vanzelf doofde"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zachowałeś/aś okruch, który zgasł sam"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Você guardou um fragmento que apagou sozinho"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вы сохранили осколок, который погас сам"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du sparade en bit som slocknade av sig själv"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "คุณเก็บเศษที่ดับไปเองไว้"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kendiliğinden sönen bir parça sakladın"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bạn đã giữ một mảnh tự tắt"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "收集了一块自己熄灭的碎片"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "收集了一塊自己熄滅的碎片"
-          }
-        }
-      }
-    },
     "적어 온 회고를 PDF 한 권으로 묶어 보관하고 인쇄해요." : {
       "extractionState" : "stale",
       "localizations" : {
@@ -67546,155 +67645,6 @@
         }
       }
     },
-    "전체" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vše"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alle"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alle"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Όλα"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todo"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kaikki"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tout"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Semua"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tutto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "すべて"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "전체"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alle"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alles"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wszystko"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tudo"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Все"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alla"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ทั้งหมด"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tümü"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tất cả"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全部"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全部"
-          }
-        }
-      }
-    },
     "점" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -67840,6 +67790,304 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "圓點"
+          }
+        }
+      }
+    },
+    "저절로 꺼진 조각을 모았어요" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uschovali jste úlomek, který zhasl sám"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du gemte et brudstykke, der gik ud af sig selv"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast ein Fragment gesammelt, das von selbst erloschen ist"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρατήσατε ένα θραύσμα που έσβησε μόνο του"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You kept a fragment that went out on its own"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You kept a fragment that went out on its own"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardaste un fragmento que se apagó solo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säästit sirpaleen, joka sammui itsestään"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous avez gardé un fragment éteint tout seul"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamu menyimpan pecahan yang padam sendiri"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hai conservato un frammento che si è spento da solo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自然に消えたかけらを集めました"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저절로 꺼진 조각을 모았어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du tok vare på et bruddstykke som gikk ut av seg selv"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je bewaarde een fragment dat vanzelf doofde"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zachowałeś/aś okruch, który zgasł sam"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você guardou um fragmento que apagou sozinho"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы сохранили осколок, который погас сам"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du sparade en bit som slocknade av sig själv"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณเก็บเศษที่ดับไปเองไว้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendiliğinden sönen bir parça sakladın"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn đã giữ một mảnh tự tắt"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收集了一块自己熄灭的碎片"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收集了一塊自己熄滅的碎片"
+          }
+        }
+      }
+    },
+    "전체" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vše"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutto"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべて"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전체"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wszystko"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tudo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทั้งหมด"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümü"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部"
           }
         }
       }
@@ -72341,12 +72589,19 @@
         }
       }
     },
-    "지나온 %@번 · %@" : {
+    "지나온 %@" : {
+      "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ spent"
+          }
+        },
         "ko" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "지나온 %1$@번 · %2$@"
+            "state" : "translated",
+            "value" : "지나온 %@"
           }
         }
       }
@@ -77140,22 +77395,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關鍵詞（選填）"
-          }
-        }
-      }
-    },
-    "태어난 날" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Birthday"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "태어난 날"
           }
         }
       }
@@ -88601,98 +88840,306 @@
         }
       }
     },
-    "남은 시간" : {
+    "얼마나 보냈나요" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Time Left"
+            "value" : "How much have you spent"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "남은 시간"
+            "value" : "얼마나 보냈나요"
           }
         }
       }
     },
-    "세어 보기" : {
+    "앞으로 얼마나 남았나요" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Count"
+            "value" : "How much is left"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "세어 보기"
+            "value" : "앞으로 얼마나 남았나요"
           }
         }
       }
     },
-    "태어난 날 · 기대 수명" : {
+    "어떤 패턴인가요" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Birthday · Life Expectancy"
+            "value" : "What's the pattern"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "태어난 날 · 기대 수명"
+            "value" : "어떤 패턴인가요"
           }
         }
       }
     },
-    "태어난 날과 기대 수명을 적으면 앞으로 몇 번 남았는지 세어 볼 수 있어요" : {
+    "부모님과의 시간이라면 지금 내 나이" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enter your birthday and life expectancy to count how many are left"
+            "value" : "For time with parents, your age now"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "태어난 날과 기대 수명을 적으면 앞으로 몇 번 남았는지 세어 볼 수 있어요"
+            "value" : "부모님과의 시간이라면 지금 내 나이"
           }
         }
       }
     },
-    "만 %lld세 · 기대 수명 %lld세" : {
+    "부모님과의 시간이라면 부모님이 기대 수명까지 남은 해" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Age %1$lld · Expecting %2$lld"
+            "value" : "For time with parents, the years until their life expectancy"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "만 %lld세 · 기대 수명 %lld세"
+            "value" : "부모님과의 시간이라면 부모님이 기대 수명까지 남은 해"
           }
         }
       }
     },
-    "태어난 날과 기대 수명 고치기" : {
+    "예: 처음 20년은 1년에 365일, 그 뒤로는 명절과 휴가로 1년에 6일" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit birthday and life expectancy"
+            "value" : "e.g. 365 days a year for the first 20 years, then 6 days a year for holidays and visits"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "태어난 날과 기대 수명 고치기"
+            "value" : "예: 처음 20년은 1년에 365일, 그 뒤로는 명절과 휴가로 1년에 6일"
+          }
+        }
+      }
+    },
+    "%lld년" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld years"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld년"
+          }
+        }
+      }
+    },
+    "처음 %lld년" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "First %lld years"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "처음 %lld년"
+          }
+        }
+      }
+    },
+    "%lld년 뒤부터 %lld년까지" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Year %1$lld to %2$lld"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld년 뒤부터 %lld년까지"
+          }
+        }
+      }
+    },
+    "내내" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Throughout"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "내내"
+          }
+        }
+      }
+    },
+    "그 뒤로 쭉" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "After that"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "그 뒤로 쭉"
+          }
+        }
+      }
+    },
+    "구간 지우기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove range"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "구간 지우기"
+          }
+        }
+      }
+    },
+    "세어 볼 것 만들기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Count something new"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "세어 볼 것 만들기"
+          }
+        }
+      }
+    },
+    "%lld년 보냄 · %lld년 남음" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld yrs spent · %2$lld yrs left"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld년 보냄 · %lld년 남음"
+          }
+        }
+      }
+    },
+    "지금 내 나이" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your age now"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지금 내 나이"
+          }
+        }
+      }
+    },
+    "기대 수명까지 남은 해. 짐작이면 충분해요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Years until your life expectancy. A guess is enough"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기대 수명까지 남은 해. 짐작이면 충분해요"
+          }
+        }
+      }
+    },
+    "보낸 해와 남은 해 고치기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit years spent and left"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "보낸 해와 남은 해 고치기"
+          }
+        }
+      }
+    },
+    "남은 %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ left"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "남은 %@"
+          }
+        }
+      }
+    },
+    "예: 학생 때는 1년에 2,000시간, 일을 시작한 뒤로는 평일 저녁 2시간과 주말이면 1년에 약 1,100시간" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e.g. 2,000 hours a year as a student, then about 1,100 hours a year once you start working: 2 hours on weekday evenings plus weekends"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예: 학생 때는 1년에 2,000시간, 일을 시작한 뒤로는 평일 저녁 2시간과 주말이면 1년에 약 1,100시간"
           }
         }
       }

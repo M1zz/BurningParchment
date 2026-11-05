@@ -133,28 +133,40 @@ struct LifeCounter {
 
 // MARK: - 고르기
 
-/// 남은 시간 페이지에서 무엇을 볼지. 자유시간이 아니면 `LifeMoment` 의 rawValue 다.
+/// 남은 시간 페이지에서 무엇을 볼지. 자유시간 · 목록 · 새로 만들기가 아니면 `LifeMoment` 의 rawValue 거나 `custom:<id>` 다.
 enum RemainingKind {
     static let storageKey = "remainingKind"
     static let freeTime = "freeTime"
+    static let list = "list"
+    /// 새로 세어 보기 (페이지 안에서 바로)
+    static let new = "new"
 }
 
 struct RemainingKindPicker: View {
     @Binding var selection: String
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @AppStorage(RemainingItemStore.key) private var itemsData = Data()
 
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
+                    chip(id: RemainingKind.list, name: String(localized: "목록"), symbol: "list.bullet")
                     chip(id: RemainingKind.freeTime, name: String(localized: "자유시간"), symbol: "hourglass")
+                    ForEach(RemainingItemStore.decode(itemsData).filter { !$0.isFreeTime }) { item in
+                        chip(id: item.selectionID, name: item.name, symbol: item.symbol)
+                    }
                     ForEach(LifeMoment.allCases) { m in
                         chip(id: m.rawValue, name: m.name, symbol: m.symbol)
                     }
+                    chip(id: RemainingKind.new, name: String(localized: "세어 보기"), symbol: "plus")
                 }
                 .padding(.horizontal, 20)
             }
             .onAppear { proxy.scrollTo(selection, anchor: .center) }
+            .onChange(of: selection) { _, id in
+                withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) { proxy.scrollTo(id, anchor: .center) }
+            }
         }
     }
 
@@ -166,6 +178,7 @@ struct RemainingKindPicker: View {
             Label(name, systemImage: symbol)
                 .font(.system(.body, design: .serif))
                 .foregroundColor(selected ? .onEmber : .ink.opacity(0.8))
+                .lineLimit(1)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 8)
                 .background(Capsule().fill(selected ? Color.ember : Color.ink.opacity(0.05)))
@@ -176,64 +189,56 @@ struct RemainingKindPicker: View {
     }
 }
 
-// MARK: - 태어난 날 · 기대 수명
+// MARK: - 보낸 해 · 남은 해 (크리스마스 · 생일 같은 해마다 오는 날에 쓴다)
 
 enum LifeSettings {
-    /// 0 이면 아직 적지 않았다
+    /// 0 이면 아직 세어 보지 않았다. 보낸 해만큼 거슬러 올라간 날을 태어난 날로 둔다.
     static let birthdayKey = "lifeBirthday"
     static let expectancyKey = "lifeExpectancy"
     static let defaultExpectancy = 83
+    static let defaultAge = 30
     static let defaultBirthday: Date =
-        Calendar.current.date(from: DateComponents(year: 1990, month: 1, day: 1)) ?? Date()
+        Calendar.current.date(byAdding: .year, value: -defaultAge, to: Date()) ?? Date()
+
+    static func age(birthdayStamp: Double) -> Int {
+        guard birthdayStamp != 0 else { return defaultAge }
+        return Calendar.current.dateComponents([.year], from: Date(timeIntervalSince1970: birthdayStamp), to: Date()).year ?? defaultAge
+    }
+
+    static func birthdayStamp(forAge age: Int) -> Double {
+        (Calendar.current.date(byAdding: .year, value: -age, to: Date()) ?? Date()).timeIntervalSince1970
+    }
 }
 
+/// 얼마나 보냈나요(나이) · 앞으로 얼마나 남았나요. 값은 부르는 쪽이 저장한다.
 struct LifeInputForm: View {
-    @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
-    @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
-
-    private var birthday: Binding<Date> {
-        Binding(
-            get: { birthdayStamp == 0 ? LifeSettings.defaultBirthday : Date(timeIntervalSince1970: birthdayStamp) },
-            set: { birthdayStamp = $0.timeIntervalSince1970 }
-        )
-    }
-
-    private var age: Int {
-        Calendar.current.dateComponents([.year], from: birthday.wrappedValue, to: Date()).year ?? 0
-    }
+    @Binding var pastYears: Int
+    @Binding var remainingYears: Int
 
     var body: some View {
-        VStack(spacing: 0) {
-            DatePicker(selection: birthday, in: ...Date(), displayedComponents: .date) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("태어난 날")
-                        .font(.system(.body, design: .serif))
-                        .foregroundColor(.ink)
-                    Text("만 \(age)세")
-                        .font(.system(.body, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.7))
-                }
-            }
-            .tint(.ember)
-            .padding(.vertical, 10)
-
-            Divider().background(Color.ember.opacity(0.12))
-
-            Stepper(value: $expectancy, in: 40...120) {
-                HStack {
-                    Text("기대 수명")
-                        .font(.system(.body, design: .serif))
-                        .foregroundColor(.ink)
-                    Spacer()
-                    Text("\(expectancy)세")
-                        .font(.system(.body, design: .serif).weight(.medium))
-                        .foregroundColor(.ember)
-                        .monospacedDigit()
-                }
-            }
-            .padding(.vertical, 10)
+        VStack(alignment: .leading, spacing: 14) {
+            row(String(localized: "얼마나 보냈나요"), hint: String(localized: "지금 내 나이"), value: $pastYears)
+            row(String(localized: "앞으로 얼마나 남았나요"), hint: String(localized: "기대 수명까지 남은 해. 짐작이면 충분해요"), value: $remainingYears)
         }
-        .padding(.horizontal, 14)
+    }
+
+    private func row(_ title: String, hint: String, value: Binding<Int>) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.system(.body, design: .serif).weight(.semibold))
+                .foregroundColor(.ink)
+            Stepper(value: value, in: 0...120) {
+                Text("\(value.wrappedValue)년")
+                    .font(.system(.title3, design: .serif).weight(.semibold))
+                    .foregroundColor(.ember)
+                    .monospacedDigit()
+            }
+            Text(hint)
+                .font(.system(.body, design: .serif))
+                .foregroundColor(.inkMuted.opacity(0.7))
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 14)
                 .fill(Color.ink.opacity(0.03))
@@ -242,14 +247,18 @@ struct LifeInputForm: View {
     }
 }
 
-private struct LifeInputSheet: View {
+struct LifeInputSheet: View {
     @Environment(\.dismiss) private var dismiss
+    @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
+    @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
+    @State private var pastYears = LifeSettings.defaultAge
+    @State private var remainingYears = LifeSettings.defaultExpectancy - LifeSettings.defaultAge
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    LifeInputForm()
+                    LifeInputForm(pastYears: $pastYears, remainingYears: $remainingYears)
                     Text("기대 수명은 짐작일 뿐이에요. 숫자보다 다음 한 번을 어떻게 보낼지 생각해 보세요.")
                         .font(.system(.body, design: .serif))
                         .foregroundColor(.inkMuted.opacity(0.7))
@@ -258,13 +267,25 @@ private struct LifeInputSheet: View {
                 .padding(20)
             }
             .background(Color.appBackgroundWarm.ignoresSafeArea())
-            .navigationTitle("태어난 날 · 기대 수명")
+            .navigationTitle("세어 보기")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
+                        .foregroundColor(.inkMuted)
+                }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button { dismiss() } label: { Label("완료", systemImage: "checkmark") }
+                    Button {
+                        birthdayStamp = LifeSettings.birthdayStamp(forAge: pastYears)
+                        expectancy = pastYears + remainingYears
+                        dismiss()
+                    } label: { Label("저장", systemImage: "checkmark") }
                         .foregroundColor(.ember)
                 }
+            }
+            .onAppear {
+                pastYears = LifeSettings.age(birthdayStamp: birthdayStamp)
+                remainingYears = max(0, expectancy - pastYears)
             }
         }
         .presentationDetents([.medium, .large])
@@ -273,65 +294,75 @@ private struct LifeInputSheet: View {
 
 // MARK: - 페이지
 
-/// 남은 시간 페이지에서 자유시간이 아닌 것을 골랐을 때 양피지 자리에 서는 화면
-struct LifeCountPage: View {
-    let moment: LifeMoment
-
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @Environment(\.parchmentAnimationPaused) private var animationPaused
+/// 남은 시간 페이지. 무엇을 골라도 세어 보기(보낸 만큼 · 남은 만큼 · 패턴)로 시작해 그림으로 끝난다.
+struct RemainingPage: View {
+    @Binding var selection: String
+    @EnvironmentObject var freeTimeManager: FreeTimeManager
     @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
     @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
+    @AppStorage(RemainingItemStore.key) private var itemsData = Data()
+    @State private var newDraft = 0
 
-    @State private var glow = false
-    @State private var showInput = false
-
-    private var cal: Calendar { Calendar.current }
-    private var now: Date { Date() }
-    private var isSet: Bool { birthdayStamp != 0 }
-
-    private var birthday: Date {
-        birthdayStamp == 0 ? LifeSettings.defaultBirthday : Date(timeIntervalSince1970: birthdayStamp)
-    }
-    private var lifeEnd: Date { cal.date(byAdding: .year, value: expectancy, to: birthday) ?? now }
-    private var counter: LifeCounter { LifeCounter(birthday: birthday, lifeEnd: lifeEnd) }
-    private var past: Int { counter.count(moment, from: birthday, to: cal.startOfDay(for: now)) }
-    private var remaining: Int { counter.count(moment, from: cal.startOfDay(for: now), to: lifeEnd) }
-    private var age: Int { cal.dateComponents([.year], from: birthday, to: now).year ?? 0 }
-
-    private var burnedPercent: Int {
-        let total = lifeEnd.timeIntervalSince(birthday)
-        guard total > 0 else { return 100 }
-        return min(100, max(0, Int((now.timeIntervalSince(birthday) / total * 100).rounded())))
-    }
+    private var items: [RemainingItem] { RemainingItemStore.decode(itemsData) }
+    private var age: Int { LifeSettings.age(birthdayStamp: birthdayStamp) }
+    private var remainingLife: Int { max(0, expectancy - age) }
 
     var body: some View {
         Group {
-            if isSet {
-                counted
+            if selection == RemainingKind.list {
+                RemainingListView(selection: $selection)
+            } else if selection == RemainingKind.new {
+                CountSetupPage(item: .template(pastYears: age, remainingYears: remainingLife), nameEditable: true) {
+                    selection = $0.selectionID
+                }
+                .id(newDraft)
+            } else if selection == RemainingKind.freeTime {
+                if let item = items.first(where: \.isFreeTime) {
+                    CustomCountPage(item: item, selection: $selection)
+                } else {
+                    CountSetupPage(item: .freeTimeTemplate(pastYears: age, remainingYears: remainingLife,
+                                                           weeklyMinutes: freeTimeManager.weeklyMinutes),
+                                   nameEditable: false)
+                }
+            } else if let moment = LifeMoment(rawValue: selection) {
+                if birthdayStamp == 0 {
+                    LifeFirstInput(title: moment.remainingTitle)
+                } else {
+                    LifeCountPage(moment: moment)
+                }
+            } else if let item = items.first(where: { $0.selectionID == selection }) {
+                CustomCountPage(item: item, selection: $selection)
             } else {
-                firstInput
+                // 지워진 것을 가리키고 있으면 목록으로
+                RemainingListView(selection: $selection)
+                    .onAppear { selection = RemainingKind.list }
             }
         }
-        .padding(.horizontal, 24)
-        .padding(.top, 12)
-        .sheet(isPresented: $showInput) { LifeInputSheet() }
+        .onChange(of: selection) { _, s in if s == RemainingKind.new { newDraft += 1 } }
     }
+}
 
-    /// 처음에는 무엇을 적으면 무엇이 보이는지부터
-    private var firstInput: some View {
+/// 해마다 오는 날을 처음 볼 때 — 보낸 해와 남은 해만 묻는다. 패턴은 이미 정해져 있다 (해마다 한 번 · 주마다 한 번).
+private struct LifeFirstInput: View {
+    let title: String
+    @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
+    @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
+    @State private var pastYears = LifeSettings.defaultAge
+    @State private var remainingYears = LifeSettings.defaultExpectancy - LifeSettings.defaultAge
+
+    var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                Text(moment.remainingTitle)
+            VStack(alignment: .leading, spacing: 14) {
+                Text("세어 보기")
                     .font(.system(.title3, design: .serif).weight(.semibold))
                     .foregroundColor(.ember.opacity(0.9))
-                Text("태어난 날과 기대 수명을 적으면 앞으로 몇 번 남았는지 세어 볼 수 있어요")
+                Text(title)
                     .font(.system(.body, design: .serif))
                     .foregroundColor(.inkMuted.opacity(0.8))
-                    .fixedSize(horizontal: false, vertical: true)
-                LifeInputForm()
+                LifeInputForm(pastYears: $pastYears, remainingYears: $remainingYears)
                 Button {
-                    // 기본값 그대로여도 이대로 세겠다는 뜻이니 적어 둔다
-                    if birthdayStamp == 0 { birthdayStamp = LifeSettings.defaultBirthday.timeIntervalSince1970 }
+                    birthdayStamp = LifeSettings.birthdayStamp(forAge: pastYears)
+                    expectancy = pastYears + remainingYears
                 } label: {
                     Text("세어 보기")
                         .font(.system(.body, design: .serif).weight(.semibold))
@@ -342,65 +373,44 @@ struct LifeCountPage: View {
                 }
                 .buttonStyle(.plain)
             }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 8)
         }
     }
+}
 
-    private var counted: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            summary
-            LifeDotGrid(past: past, remaining: remaining, columns: moment.columns, glow: glow)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .accessibilityHidden(true)
-            footer
-        }
-        .onAppear(perform: startGlow)
-        .onChange(of: animationPaused) { _, _ in startGlow() }
+/// 해마다 오는 날 — 크리스마스 · 생일 · 주말 · 보름달
+struct LifeCountPage: View {
+    let moment: LifeMoment
+    @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
+    @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
+
+    private var cal: Calendar { Calendar.current }
+    private var now: Date { Date() }
+    private var birthday: Date { Date(timeIntervalSince1970: birthdayStamp) }
+    private var lifeEnd: Date { cal.date(byAdding: .year, value: expectancy, to: birthday) ?? now }
+    private var counter: LifeCounter { LifeCounter(birthday: birthday, lifeEnd: lifeEnd) }
+
+    var body: some View {
+        let today = cal.startOfDay(for: now)
+        let past = counter.count(moment, from: birthday, to: today)
+        let remaining = counter.count(moment, from: today, to: lifeEnd)
+        let overLife = remaining == 0 && now >= lifeEnd
+        CountDetailView(
+            title: moment.remainingTitle,
+            remainingText: "\(remaining)",
+            detail: overLife ? String(localized: "기대 수명을 넘었어요. 이제부터는 모두 덤이에요")
+                             : String(localized: "지나온 \(past)번 · \(nextText)"),
+            burned: String(localized: "삶의 \(burnedPercent)%가 탔어요"),
+            past: past, remaining: remaining, columns: moment.columns,
+            onEditItem: nil
+        )
     }
 
-    private func startGlow() {
-        guard !reduceMotion, !animationPaused else { glow = false; return }
-        withAnimation(.easeInOut(duration: 1.4).repeatForever(autoreverses: true)) { glow = true }
-    }
-
-    private var summary: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(moment.remainingTitle)
-                .font(.system(.title3, design: .serif).weight(.semibold))
-                .foregroundColor(.ember.opacity(0.9))
-            Text("\(remaining)")
-                .font(.system(.largeTitle, design: .serif).weight(.bold))
-                .foregroundColor(.ink)
-                .monospacedDigit()
-                .contentTransition(.numericText())
-            if remaining == 0 && now >= lifeEnd {
-                Text("기대 수명을 넘었어요. 이제부터는 모두 덤이에요")
-                    .font(.system(.body, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.8))
-            } else {
-                Text("지나온 \(past)번 · \(nextText)")
-                    .font(.system(.body, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.8))
-            }
-        }
-        .accessibilityElement(children: .combine)
-    }
-
-    private var footer: some View {
-        HStack(alignment: .firstTextBaseline) {
-            Text("삶의 \(burnedPercent)%가 탔어요")
-                .font(.system(.body, design: .serif))
-                .foregroundColor(.inkMuted.opacity(0.8))
-            Spacer()
-            Button { showInput = true } label: {
-                Text("만 \(age)세 · 기대 수명 \(expectancy)세")
-                    .font(.system(.body, design: .serif))
-                    .foregroundColor(.ember.opacity(0.85))
-                    .underline()
-            }
-            .buttonStyle(.plain)
-            .accessibilityHint("태어난 날과 기대 수명 고치기")
-        }
-        .padding(.bottom, 8)
+    private var burnedPercent: Int {
+        let total = lifeEnd.timeIntervalSince(birthday)
+        guard total > 0 else { return 100 }
+        return min(100, max(0, Int((now.timeIntervalSince(birthday) / total * 100).rounded())))
     }
 
     private var nextText: String {
@@ -410,34 +420,180 @@ struct LifeCountPage: View {
     }
 }
 
+/// 세어 둔 것 — 자유시간이나 직접 만든 것. 구간마다 1년에 쓰는 양이 다르다.
+struct CustomCountPage: View {
+    let item: RemainingItem
+    @Binding var selection: String
+    @AppStorage(RemainingItemStore.key) private var itemsData = Data()
+    @State private var editing = false
+
+    var body: some View {
+        let past = item.past
+        let remaining = item.remaining
+        let spent = past + remaining > 0 ? Int((Double(past) / Double(past + remaining) * 100).rounded()) : 100
+        let elapsed = Int(item.elapsedYears().rounded())
+        CountDetailView(
+            title: item.name,
+            remainingText: item.unit.format(remaining),
+            detail: String(localized: "지나온 \(item.unit.format(past))"),
+            burned: String(localized: "벌써 \(spent)%를 보냈어요"),
+            past: past, remaining: remaining, columns: nil,
+            footerLink: String(localized: "\(elapsed)년 보냄 · \(max(0, Int(item.spanYears.rounded()) - elapsed))년 남음"),
+            onFooterLink: { editing = true },
+            onEditItem: { editing = true }
+        )
+        .sheet(isPresented: $editing) {
+            RemainingItemEditor(item: item, onDelete: {
+                itemsData = RemainingItemStore.remove(item.id, in: itemsData)
+                selection = RemainingKind.list
+            })
+        }
+    }
+}
+
+/// 남은 양 · 지나온 양 · 점 격자 · 나이 고치기
+struct CountDetailView: View {
+    let title: String
+    let remainingText: String
+    let detail: String
+    let burned: String
+    let past: Int
+    let remaining: Int
+    /// nil 이면 자리에 맞춰 정한다
+    let columns: Int?
+    /// 아래 오른쪽 밑줄 글자. nil 이면 "만 N세 · 기대 수명 M세" 로 나이를 고친다.
+    var footerLink: String? = nil
+    var onFooterLink: (() -> Void)? = nil
+    let onEditItem: (() -> Void)?
+
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.parchmentAnimationPaused) private var animationPaused
+    @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
+    @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
+    @State private var glow = false
+    @State private var showInput = false
+
+    private var age: Int { LifeSettings.age(birthdayStamp: birthdayStamp) }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            summary
+            LifeDotGrid(past: past, remaining: remaining, columns: columns, glow: glow)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .accessibilityHidden(true)
+            footer
+        }
+        .padding(.horizontal, 24)
+        .padding(.top, 12)
+        .onAppear(perform: startGlow)
+        .onChange(of: animationPaused) { _, _ in startGlow() }
+        .sheet(isPresented: $showInput) { LifeInputSheet() }
+    }
+
+    private func startGlow() {
+        guard !reduceMotion, !animationPaused else { glow = false; return }
+        withAnimation(.easeInOut(duration: 1.4).repeatForever(autoreverses: true)) { glow = true }
+    }
+
+    private var summary: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text(title)
+                    .font(.system(.title3, design: .serif).weight(.semibold))
+                    .foregroundColor(.ember.opacity(0.9))
+                if let onEditItem {
+                    Spacer()
+                    Button(action: onEditItem) {
+                        Image(systemName: "slider.horizontal.3")
+                            .font(.body)
+                            .foregroundColor(.ember)
+                            .frame(width: 40, height: 40)
+                            .background(Circle().fill(Color.ember.opacity(0.1)))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(String(localized: "고치기"))
+                }
+            }
+            Text(remainingText)
+                .font(.system(.largeTitle, design: .serif).weight(.bold))
+                .foregroundColor(.ink)
+                .monospacedDigit()
+                .contentTransition(.numericText())
+            Text(detail)
+                .font(.system(.body, design: .serif))
+                .foregroundColor(.inkMuted.opacity(0.8))
+        }
+        .accessibilityElement(children: .contain)
+    }
+
+    private var footer: some View {
+        ViewThatFits(in: .horizontal) {
+            HStack(alignment: .firstTextBaseline) {
+                burnedText
+                Spacer()
+                ageButton
+            }
+            VStack(alignment: .leading, spacing: 4) {
+                burnedText
+                ageButton
+            }
+        }
+        .padding(.bottom, 8)
+    }
+
+    private var burnedText: some View {
+        Text(burned)
+            .font(.system(.body, design: .serif))
+            .foregroundColor(.inkMuted.opacity(0.8))
+    }
+
+    private var ageButton: some View {
+        Button { if let onFooterLink { onFooterLink() } else { showInput = true } } label: {
+            Text(footerLink ?? String(localized: "만 \(age)세 · 기대 수명 \(expectancy)세"))
+                .font(.system(.body, design: .serif))
+                .foregroundColor(.ember.opacity(0.85))
+                .underline()
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint(String(localized: "보낸 해와 남은 해 고치기"))
+    }
+}
+
 // MARK: - 점 격자
 
 /// 지나간 것은 재, 바로 다음은 밝은 불씨, 그 뒤는 옅은 불씨. 수천 개라도 한 번에 그리도록 캔버스로.
 /// 주어진 자리 안에 다 들어가게 점 크기를 정한다 — 페이지를 넘기는 가로 쓸기와 겹치지 않게 스크롤하지 않는다.
+/// 점이 너무 많으면(시간 단위 등) 점 하나에 여럿을 담는다.
 struct LifeDotGrid: View {
     let past: Int
     let remaining: Int
-    let columns: Int
+    /// nil 이면 자리 비율에 맞춰 정한다
+    let columns: Int?
     var glow: Bool
 
     static let ashColor = Color.inkMuted.opacity(0.28)
     static let emberColor = Color.ember.opacity(0.55)
-
-    private var total: Int { past + remaining }
-    private var rows: Int { max(1, Int((Double(total) / Double(columns)).rounded(.up))) }
+    private static let maxDots = 12_000
 
     var body: some View {
         GeometryReader { geo in
-            let cell = min(geo.size.width / CGFloat(columns), geo.size.height / CGFloat(rows), 40)
+            let rawTotal = past + remaining
+            let per = max(1, Int((Double(rawTotal) / Double(Self.maxDots)).rounded(.up)))
+            let pastDots = past / per
+            let total = pastDots + Int((Double(remaining) / Double(per)).rounded(.up))
+            let w = max(geo.size.width, 1), h = max(geo.size.height, 1)
+            let cols = columns ?? max(1, Int((Double(total) * Double(w / h)).squareRoot().rounded(.up)))
+            let rows = max(1, Int((Double(total) / Double(cols)).rounded(.up)))
+            let cell = min(w / CGFloat(cols), h / CGFloat(rows), 40)
             let dot = cell * 0.72
             let inset = (cell - dot) / 2
-            let ox = (geo.size.width - cell * CGFloat(columns)) / 2
+            let ox = (w - cell * CGFloat(cols)) / 2
             Canvas { ctx, _ in
                 for i in 0..<total {
-                    let rect = CGRect(x: ox + CGFloat(i % columns) * cell + inset,
-                                      y: CGFloat(i / columns) * cell + inset,
+                    let rect = CGRect(x: ox + CGFloat(i % cols) * cell + inset,
+                                      y: CGFloat(i / cols) * cell + inset,
                                       width: dot, height: dot)
-                    let color = i < past ? Self.ashColor : (i == past ? Color.ember : Self.emberColor)
+                    let color = i < pastDots ? Self.ashColor : (i == pastDots ? Color.ember : Self.emberColor)
                     ctx.fill(Path(ellipseIn: rect), with: .color(color))
                 }
             }
@@ -446,8 +602,8 @@ struct LifeDotGrid: View {
                 Circle()
                     .fill(Color.ember.opacity(glow ? 0.35 : 0.1))
                     .frame(width: max(cell * 1.4, 10), height: max(cell * 1.4, 10))
-                    .position(x: ox + (CGFloat(past % columns) + 0.5) * cell,
-                              y: (CGFloat(past / columns) + 0.5) * cell)
+                    .position(x: ox + (CGFloat(pastDots % cols) + 0.5) * cell,
+                              y: (CGFloat(pastDots / cols) + 0.5) * cell)
                     .allowsHitTesting(false)
             }
         }

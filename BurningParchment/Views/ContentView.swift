@@ -26,7 +26,10 @@ struct ContentView: View {
     @State private var showBlowOut     = false
     @State private var showFragments   = false
     /// 가운데 "남은 시간" 페이지에서 볼 것 — 자유시간 또는 크리스마스 · 생일 같은 남은 날
-    @AppStorage(RemainingKind.storageKey) private var remainingKind = RemainingKind.freeTime
+    @AppStorage(RemainingKind.storageKey) private var remainingKind = RemainingKind.list
+    /// 칩 줄이 놓인 자리 — 거기서 시작한 가로 쓸기는 페이지를 넘기지 않는다
+    @State private var remainingPickerFrame: CGRect = .zero
+    private static let mainSpace = "main"
     // 만족도 질문 — 회고·데드라인 화면에서 무언가를 해내고 돌아온 때 묻는다 (앱을 켜자마자가 아니라)
     @State private var showReviewGate  = false
     @State private var eventsAtVisit   = 0
@@ -138,11 +141,6 @@ struct ContentView: View {
         showReflections = true
     }
 
-    /// 남은 시간 페이지에서 자유시간이 아닌 것을 골랐을 때 — 양피지 대신 남은 날을 센다
-    private var lifeMoment: LifeMoment? {
-        bedtimeManager.selectedPeriod == .freeTime ? LifeMoment(rawValue: remainingKind) : nil
-    }
-
     /// 양피지가 다른 화면에 가려졌거나 앱이 앞에 있지 않을 때
     private var isParchmentCovered: Bool {
         showSettings || showDeadlines || showFragments || showBlowOut || showReflections
@@ -168,9 +166,14 @@ struct ContentView: View {
                     if bedtimeManager.selectedPeriod == .freeTime {
                         RemainingKindPicker(selection: $remainingKind)
                             .padding(.bottom, 4)
+                            .onGeometryChange(for: CGRect.self) { $0.frame(in: .named(Self.mainSpace)) } action: {
+                                remainingPickerFrame = $0
+                            }
+                            .onDisappear { remainingPickerFrame = .zero }
                     }
-                    if let moment = lifeMoment {
-                        LifeCountPage(moment: moment)
+                    if bedtimeManager.selectedPeriod == .freeTime {
+                        // 가운데 페이지는 양피지 대신 세어 보기 — 자유시간도 그 한 종류다
+                        RemainingPage(selection: $remainingKind)
                             .environment(\.parchmentAnimationPaused, isParchmentCovered)
                     } else {
                         BurningParchmentView()
@@ -185,9 +188,13 @@ struct ContentView: View {
                 // iPad 에서는 양피지가 화면 폭만큼 납작하게 늘어나지 않도록 아이폰과 비슷한 폭의 기둥으로 세운다
                 .frame(maxWidth: 600)
             }
-            .gesture(
-                DragGesture(minimumDistance: 30)
+            // 남은 시간 페이지는 목록 · 세어 보기가 세로로 스크롤되므로 스크롤과 함께 받는다.
+            // 다만 칩 줄에서 시작한 쓸기는 칩을 넘기는 것이니 페이지를 넘기지 않는다.
+            .coordinateSpace(name: Self.mainSpace)
+            .simultaneousGesture(
+                DragGesture(minimumDistance: 30, coordinateSpace: .named(Self.mainSpace))
                     .onEnded { value in
+                        guard !remainingPickerFrame.contains(value.startLocation) else { return }
                         let dx = value.translation.width
                         let dy = value.translation.height
                         guard abs(dx) > abs(dy) * 1.5 else { return }

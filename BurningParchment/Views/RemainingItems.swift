@@ -67,6 +67,39 @@ struct RemainingItem: Codable, Identifiable, Equatable {
     var startDate: Date
     /// 처음부터 끝까지 몇 해인지 (보낸 해 + 남은 해)
     var spanYears: Double
+    /// 함께한 날 — 남은 것이 줄어드는 대신 쌓이는 쪽. 옛 저장값에는 없어서 선택형이다.
+    var moments: [Moment]? = nil
+
+    /// 남겨 둔 하루 — 날짜와 한 줄(안 써도 된다)
+    struct Moment: Codable, Identifiable, Equatable {
+        var id = UUID()
+        var date: Date
+        var note: String?
+    }
+
+    /// 쌓인 날, 최근 것이 앞
+    var kept: [Moment] { (moments ?? []).sorted { $0.date > $1.date } }
+
+    func hasMoment(on day: Date, calendar: Calendar = .current) -> Bool {
+        (moments ?? []).contains { calendar.isDate($0.date, inSameDayAs: day) }
+    }
+
+    /// 하루를 남긴다. 같은 날 두 번 남기면 한 줄만 고친다(하루는 하루다).
+    mutating func keep(_ day: Date, note: String?, calendar: Calendar = .current) {
+        let text = note?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let note = (text?.isEmpty ?? true) ? nil : text
+        var list = moments ?? []
+        if let i = list.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: day) }) {
+            if note != nil { list[i].note = note }
+        } else {
+            list.append(Moment(date: day, note: note))
+        }
+        moments = list
+    }
+
+    mutating func forget(_ id: UUID) {
+        moments?.removeAll { $0.id == id }
+    }
 
     static let freeTimeID = UUID(uuidString: "00000000-0000-0000-0000-00000000F7EE")!
     static let symbols = ["person.2.fill", "heart.fill", "house.fill", "figure.2.and.child.holdinghands",

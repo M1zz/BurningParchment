@@ -62,6 +62,7 @@
 		A54C4BE2A4CBD8603A12F300 /* ParchmentFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10418B3347B422A24EEB63C /* ParchmentFragment.swift */; };
 		A80E6616692F3C66FAFB2CBE /* BlowOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */; };
 		A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */; };
+		AADDC2A8274E40C560008BC6 /* TogetherDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A218CE090ECA5735E4811 /* TogetherDays.swift */; };
 		AD6BA0F21F9CD9310AC410E1 /* NightRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD8D8DFF8C62FA2A43633E /* NightRecord.swift */; };
 		B61900F783977AF0FACBD854 /* FragmentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */; };
 		B9BCE1B8D659A9E12E61D435 /* FreeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B159E43B8E19147CFD9439 /* FreeTime.swift */; };
@@ -142,6 +143,7 @@
 		066C186AA161229FC7933070 /* BedtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeManager.swift; sourceTree = "<group>"; };
 		0A5622D803B37C2D518E9405 /* BurningParchmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentTests.swift; sourceTree = "<group>"; };
 		0E43CDD574DA221B4D2B5E25 /* BurningTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningTips.swift; sourceTree = "<group>"; };
+		0E5A218CE090ECA5735E4811 /* TogetherDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogetherDays.swift; sourceTree = "<group>"; };
 		13303D554800094D36024A8F /* ReflectionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionInputView.swift; sourceTree = "<group>"; };
 		1569ACEDED9B2F27FD1E4AA9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentCollectionView.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */,
 				7729491DC6F81F28D801A347 /* RemainingItems.swift */,
 				02478518C92DBEC5E15B33C5 /* SettingsView.swift */,
+				0E5A218CE090ECA5735E4811 /* TogetherDays.swift */,
 				AF6A5099CCB69537514A0210 /* UrnDetailView.swift */,
 				1CBA71511EFDBE88B00C4EAD /* UrnShapes.swift */,
 				656926DE30FE07A24BCDAC54 /* UrnVisuals.swift */,
@@ -723,6 +726,7 @@
 				1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */,
 				CCB61A1D23DC688057EFFFC3 /* Theme.swift in Sources */,
 				52D4D1D0F48B0F74C41B61D6 /* TimeFormat.swift in Sources */,
+				AADDC2A8274E40C560008BC6 /* TogetherDays.swift in Sources */,
 				90E4FB12822D2A851C82142C /* UrnDetailView.swift in Sources */,
 				62B51921A3B13E60C4BE4D60 /* UrnMeaning.swift in Sources */,
 				775B24E76AAD210FFD64FF2D /* UrnPeriod.swift in Sources */,

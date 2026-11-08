@@ -449,6 +449,7 @@ struct CustomCountPage: View {
             curve: item.phases.count > 1 ? item : nil,
             footerLink: String(localized: "\(elapsed)년 보냄 · \(max(0, Int(item.spanYears.rounded()) - elapsed))년 남음"),
             onFooterLink: { editing = true },
+            together: item.isFreeTime ? nil : item,
             onEditItem: { editing = true }
         )
         .sheet(isPresented: $editing) {
@@ -475,6 +476,8 @@ struct CountDetailView: View {
     /// 아래 오른쪽 밑줄 글자. nil 이면 "만 N세 · 기대 수명 M세" 로 나이를 고친다.
     var footerLink: String? = nil
     var onFooterLink: (() -> Void)? = nil
+    /// 요약 아래에 서는 줄 — 세어 둔 것의 "쌓인 날"
+    var together: RemainingItem? = nil
     let onEditItem: (() -> Void)?
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -489,6 +492,7 @@ struct CountDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             summary
+            if let together { TogetherRow(item: together) }
             if let curve {
                 CountCurveChart(item: curve)
                     .frame(height: 96)

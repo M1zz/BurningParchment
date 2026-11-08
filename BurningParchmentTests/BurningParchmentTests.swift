@@ -253,3 +253,33 @@ final class MonetizationTests: XCTestCase {
         XCTAssertEqual(RemainingItemStore.countBeforeAdding(.template(pastYears: 1, remainingYears: 1), in: data), 1)
     }
 }
+
+/// 함께한 날 남기기 — 하루는 하루, 옛 저장값은 그대로 읽힌다.
+final class TogetherDaysTests: XCTestCase {
+    func testSameDayKeepsOnceAndUpdatesNote() {
+        var item = RemainingItem.template(pastYears: 30, remainingYears: 20)
+        let morning = Calendar.current.startOfDay(for: Date()).addingTimeInterval(9 * 3600)
+        item.keep(morning, note: "  ")
+        item.keep(morning.addingTimeInterval(3600), note: "저녁을 함께 먹었다")
+        XCTAssertEqual(item.kept.count, 1)
+        XCTAssertEqual(item.kept.first?.note, "저녁을 함께 먹었다")
+        XCTAssertTrue(item.hasMoment(on: morning))
+
+        item.keep(morning.addingTimeInterval(-86_400), note: nil)
+        XCTAssertEqual(item.kept.count, 2)
+        XCTAssertGreaterThan(item.kept[0].date, item.kept[1].date)  // 최근 것이 앞
+
+        item.forget(item.kept[0].id)
+        XCTAssertEqual(item.kept.count, 1)
+    }
+
+    /// 이 기능 전에 저장한 세어 둔 것(moments 가 없는 JSON)도 그대로 읽힌다.
+    func testOldSavedItemsStillDecode() throws {
+        let old = RemainingItem.template(pastYears: 30, remainingYears: 20)
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: JSONEncoder().encode([old])) as? [[String: Any]])
+        json[0].removeValue(forKey: "moments")
+        let items = RemainingItemStore.decode(try JSONSerialization.data(withJSONObject: json))
+        XCTAssertEqual(items.count, 1)
+        XCTAssertEqual(items.first?.kept.count, 0)
+    }
+}

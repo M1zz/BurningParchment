@@ -38,7 +38,7 @@ NAME_MAX, DESC_MAX = 30, 55
 B = "com.burningparchment.app"
 
 # 평생 (비소모성): 상품 → 미국 값
-LIFETIMES = {f"{B}.plus": "12.99", f"{B}.pro": "9.99"}
+LIFETIMES = {f"{B}.plus": "12.99", f"{B}.pro": "29.99"}
 
 # 연 구독: 상품 → (미국 값, 그룹 단계 — 1 이 가장 높다)
 SUBSCRIPTIONS = {f"{B}.pro.yearly": ("9.99", 1), f"{B}.plus.yearly": ("4.99", 2)}
@@ -52,7 +52,8 @@ FIRST_YEAR = {f"{B}.plus.yearly": "2.49", f"{B}.pro.yearly": "4.99"}
 
 # 평생 값 올리기: 상품 → (새 미국 값, 시작일). LeeoKit `LeeoLadderSchedule.lifetimePriceChange` 와 같은 날.
 # 선물은 그 칸 평생과 언제나 같은 값이어야 해서 함께 올린다.
-PRICE_CHANGES = {f"{B}.pro": ("29.99", "2026-11-17"), f"{B}.gift.pro": ("29.99", "2026-11-17")}
+# 2026-11-08 사용자 결정으로 예정(11-17)보다 앞당겨 오늘부터 올린다.
+PRICE_CHANGES = {f"{B}.pro": ("29.99", "2026-11-08"), f"{B}.gift.pro": ("29.99", "2026-11-08")}
 
 PLACE = "Settings (gear icon, top right) > Plans & Support"
 REVIEW_NOTES = {
@@ -199,6 +200,15 @@ def sync_price_change(item, apply):
     pid = item["attributes"]["productId"]
     new, day = PRICE_CHANGES[pid]
     prices = iap_usa_prices(item["id"])
+    import datetime
+    if day <= datetime.date.today().isoformat():
+        # 그날이 이미 왔으면 지금 값을 새 값 하나로 바꾼다(지난 날짜는 일정에 넣을 수 없다)
+        if [(p, s) for p, s, _ in prices] == [(new, None)]:
+            return 0
+        print(f"  평생 값 {pid}: 지금부터 ${new}")
+        if apply:
+            set_iap_prices(item["id"], [(new, None, None)])
+        return 1
     if any(p == new and s == day for p, s, _ in prices):
         return 0
     now = next((p for p, s, e in prices if s is None), prices[0][0] if prices else None)

@@ -4,195 +4,195 @@
 
 ### 앱스토어 (한국어)
 
-남은 크리스마스와 생일을 세어 볼 수 있어요
-부모님과의 시간처럼 직접 정해 세어 볼 수도 있어요
+남은 아침과 보름달, 핼리 혜성까지 세어 봐요
+소중한 사람과 함께한 날을 남길 수 있어요
+한 줄 남긴 날은 재로 쌓여요
 Siri에게 남은 시간을 물어볼 수 있어요
-친구에게 Pro를 선물할 수 있어요
-VoiceOver와 큰 글씨에서 더 편해졌어요
+Plus와 Pro를 고르고 선물할 수도 있어요
 
 ### App Store (English)
 
-Count the Christmases and birthdays left
-Or count the days with your parents
+See how many full moons you have left
+Keep the days you share with loved ones
+Days you write about settle as ash
 Ask Siri how much time is left
-You can now gift Pro to a friend
-Better with VoiceOver and larger text
+Choose Plus or Pro, or gift one
 
 ### 앱스토어 (일본어)
 
-残りのクリスマスと誕生日を数えられます
-親と過ごす時間など自分で決めて数えられます
-Siriに残り時間をたずねられます
-友だちにProをプレゼントできるようになりました
-VoiceOverや大きな文字で使いやすくなりました
+朝や満月、ハレー彗星まで残りを数えられます
+大切な人と過ごした日を残せます
+一行残した日は灰として積もります
+Siriに残り時間を聞けます
+PlusとProを選べて、贈ることもできます
 
 ### App Store (en-GB)
 
-Count the Christmases and birthdays left
-Or count the days with your parents
+See how many full moons you have left
+Keep the days you share with loved ones
+Days you write about settle as ash
 Ask Siri how much time is left
-You can now gift Pro to a friend
-Better with VoiceOver and larger text
+Choose Plus or Pro, or gift one
 
 ### 앱스토어 (스페인어)
 
-Descubre cuántas Navidades te quedan
-O cuenta los días con tus padres
+Cuenta las lunas llenas que te quedan
+Guarda los días con quienes quieres
+Los días que escribes quedan en ceniza
 Pregunta a Siri cuánto tiempo queda
-Ya puedes regalar Pro a un amigo
-Mejor con VoiceOver y texto grande
+Elige Plus o Pro, o regálalo
 
 ### 앱스토어 (독일어)
 
-Wie viele Weihnachten bleiben dir noch?
-Oder zähl die Tage mit deinen Eltern
+Zähl, wie viele Vollmonde dir bleiben
+Halte Tage mit lieben Menschen fest
+Tage mit einer Zeile bleiben als Asche
 Frag Siri, wie viel Zeit noch bleibt
-Verschenke Pro an Freunde
-Besser mit VoiceOver und großem Text
+Wähle Plus oder Pro oder verschenke es
 
 ### 앱스토어 (zh-Hans)
 
-数一数还剩几个圣诞节和生日
-也能自己设定来数，比如陪伴父母的时间
+数一数剩下的早晨、满月甚至哈雷彗星
+留下与重要的人共度的日子
+写下一句话的日子会积成灰
 可以问 Siri 还剩多少时间
-现在可以把 Pro 送给朋友了
-使用旁白和大字体时更加顺手
+可选择 Plus 或 Pro，也能送给别人
 
 ### 앱스토어 (zh-Hant)
 
-數一數還剩幾個聖誕節和生日
-也能自己設定來數，例如陪伴父母的時間
+數一數剩下的早晨、滿月甚至哈雷彗星
+留下與重要的人共度的日子
+寫下一句話的日子會積成灰
 可以問 Siri 還剩多少時間
-現在可以把 Pro 送給朋友了
-使用旁白和大字體時更加順手
+可選擇 Plus 或 Pro，也能送給別人
 
 ### 앱스토어 (러시아어)
 
-Сколько Рождеств ещё впереди
-Можно считать и дни с родителями
-Siri подскажет, сколько осталось
-Теперь Pro можно подарить другу
-Удобнее с VoiceOver и крупным текстом
+Сколько полнолуний у вас осталось
+Сохраняйте дни с близкими людьми
+Дни со строкой остаются пеплом
+Спросите Siri, сколько осталось
+Выберите Plus или Pro или подарите
 
 ### 앱스토어 (프랑스어)
 
-Combien de Noëls vous reste-t-il ?
-Ou comptez les jours avec vos parents
-Demandez à Siri le temps qu’il reste
-Offrez Pro à un ami
-Mieux avec VoiceOver et le gros texte
+Comptez les pleines lunes qui restent
+Gardez les jours passés avec vos proches
+Les jours notés restent en cendre
+Demandez à Siri le temps qui reste
+Choisissez Plus ou Pro, ou offrez-le
 
 ### 앱스토어 (이탈리아어)
 
-Scopri quanti Natali ti restano
-O conta i giorni con i tuoi genitori
+Conta le lune piene che ti restano
+Custodisci i giorni con chi ami
+I giorni scritti restano come cenere
 Chiedi a Siri quanto tempo resta
-Ora puoi regalare Pro a un amico
-Meglio con VoiceOver e testo grande
+Scegli Plus o Pro, o regalalo
 
 ### 앱스토어 (pt-BR)
 
-Veja quantos Natais ainda faltam
-Ou conte os dias com seus pais
-Pergunte à Siri quanto tempo falta
-Presenteie um amigo com o Pro
-Melhor com VoiceOver e texto grande
+Conte as luas cheias que ainda restam
+Guarde os dias com quem você ama
+Os dias escritos viram cinza guardada
+Pergunte à Siri quanto tempo resta
+Escolha Plus ou Pro, ou dê de presente
 
 ### 앱스토어 (태국어)
 
-นับดูว่าเหลือคริสต์มาสอีกกี่ครั้ง
-นับเองได้ เช่น วันที่ได้อยู่กับพ่อแม่
-ถาม Siri ได้ว่าเหลือเวลาอีกเท่าไร
-ส่ง Pro เป็นของขวัญให้เพื่อนได้แล้ว
-รองรับ VoiceOver และตัวอักษรใหญ่ดีขึ้น
+นับพระจันทร์เต็มดวงที่ยังเหลืออยู่
+เก็บวันที่ได้อยู่กับคนสำคัญไว้ได้
+วันที่เขียนไว้จะสะสมเป็นเถ้า
+ถาม Siri ได้ว่าเหลือเวลาเท่าไร
+เลือก Plus หรือ Pro หรือมอบเป็นของขวัญ
 
 ### 앱스토어 (베트남어)
 
-Đếm xem còn bao nhiêu mùa Giáng sinh
-Hoặc tự đếm, như ngày bên bố mẹ
+Đếm số lần trăng tròn bạn còn lại
+Lưu lại những ngày bên người thân
+Ngày có ghi chép sẽ đọng thành tro
 Hỏi Siri xem còn bao nhiêu thời gian
-Giờ bạn có thể tặng Pro cho bạn bè
-Dùng tốt hơn với VoiceOver và chữ lớn
+Chọn Plus hoặc Pro, hoặc tặng bạn bè
 
 ### 앱스토어 (체코어)
 
-Kolik Vánoc vám ještě zbývá
-Nebo spočítejte dny s rodiči
+Spočítejte, kolik úplňků vám zbývá
+Uchovejte dny strávené s blízkými
+Dny s jednou větou zůstanou popelem
 Zeptejte se Siri, kolik času zbývá
-Pro teď můžete darovat kamarádovi
-Lepší s VoiceOverem a velkým písmem
+Vyberte Plus nebo Pro, nebo ho darujte
 
 ### 앱스토어 (덴마크어)
 
-Hvor mange juleaftener har du tilbage?
-Eller tæl dagene med dine forældre
-Spørg Siri om den tid, der er tilbage
-Nu kan du give Pro i gave til en ven
-Bedre med VoiceOver og stor tekst
+Se hvor mange fuldmåner du har tilbage
+Gem dagene med dem, du holder af
+Dage med en linje bliver til aske
+Spørg Siri, hvor meget tid der er
+Vælg Plus eller Pro, eller giv det væk
 
 ### 앱스토어 (그리스어)
 
-Πόσα Χριστούγεννα σας απομένουν;
-Ή μετρήστε τις μέρες με τους γονείς σας
-Ρωτήστε τη Siri πόσος χρόνος απομένει
-Χαρίστε το Pro σε έναν φίλο
-Καλύτερο με VoiceOver και μεγάλο κείμενο
+Δες πόσες πανσελήνους έχεις ακόμα
+Φύλαξε τις μέρες με όσους αγαπάς
+Οι μέρες με μια γραμμή μένουν στάχτη
+Ρώτα τη Siri πόσος χρόνος μένει
+Διάλεξε Plus ή Pro ή κάν' το δώρο
 
 ### 앱스토어 (핀란드어)
 
-Laske, montako joulua on jäljellä
-Tai laske päivät vanhempiesi kanssa
-Kysy Siriltä, paljonko aikaa on jäljellä
-Voit nyt antaa Pron lahjaksi ystävälle
-Parempi VoiceOver ja suuri teksti
+Laske, montako täysikuuta on jäljellä
+Talleta päivät läheistesi kanssa
+Kirjoitetut päivät jäävät tuhkaksi
+Kysy Siriltä, paljonko aikaa on
+Valitse Plus tai Pro tai anna lahjaksi
 
 ### 앱스토어 (인도네시아어)
 
-Hitung sisa Natal dalam hidupmu
-Atau hitung hari bersama orang tua
-Tanya Siri berapa sisa waktumu
-Kini Pro bisa dihadiahkan ke teman
-Mendukung VoiceOver dan teks besar
+Hitung sisa bulan purnama milikmu
+Simpan hari bersama orang tersayang
+Hari yang ditulis tersimpan jadi abu
+Tanya Siri berapa waktu yang tersisa
+Pilih Plus atau Pro, atau hadiahkan
 
 ### 앱스토어 (노르웨이어(보크말))
 
-Hvor mange julaftener har du igjen?
-Eller tell dagene med foreldrene dine
+Se hvor mange fullmåner du har igjen
+Ta vare på dagene med dem du er glad i
+Dager med en linje blir til aske
 Spør Siri hvor mye tid som er igjen
-Nå kan du gi Pro i gave til en venn
-Bedre med VoiceOver og stor tekst
+Velg Plus eller Pro, eller gi det bort
 
 ### 앱스토어 (네덜란드어)
 
-Hoeveel kerstfeesten heb je nog?
-Of tel de dagen met je ouders
+Tel hoeveel volle manen je nog hebt
+Bewaar de dagen met wie je liefhebt
+Dagen met een regel blijven als as
 Vraag Siri hoeveel tijd er nog is
-Geef Pro cadeau aan een vriend
-Beter met VoiceOver en grote tekst
+Kies Plus of Pro, of geef het cadeau
 
 ### 앱스토어 (폴란드어)
 
-Ile świąt Bożego Narodzenia ci zostało
-Albo policz dni z rodzicami
+Policz, ile pełni ci zostało
+Zapisuj dni spędzone z bliskimi
+Dni z jednym zdaniem zostają popiołem
 Zapytaj Siri, ile czasu zostało
-Podaruj Pro znajomemu
-Lepiej z VoiceOver i dużym tekstem
+Wybierz Plus lub Pro albo podaruj
 
 ### 앱스토어 (스웨덴어)
 
-Hur många julaftnar har du kvar?
-Eller räkna dagarna med dina föräldrar
+Se hur många fullmånar du har kvar
+Spara dagarna med dem du håller av
+Dagar med en rad blir aska som stannar
 Fråga Siri hur mycket tid som är kvar
-Nu kan du ge bort Pro till en vän
-Bättre med VoiceOver och stor text
+Välj Plus eller Pro, eller ge bort det
 
 ### 앱스토어 (튀르키예어)
 
-Kaç Noel'iniz kaldığını görün
-Ya da anne babanızla günleri sayın
-Siri'ye ne kadar süre kaldığını sorun
-Pro'yu bir arkadaşınıza hediye edin
-VoiceOver ve büyük yazıyla daha rahat
+Kaç dolunayın kaldığını say
+Sevdiklerinle geçen günleri sakla
+Bir satır yazdığın günler kül olur
+Siri'ye ne kadar zaman kaldığını sor
+Plus ya da Pro seç veya hediye et
 
 ## 1.2.2
 

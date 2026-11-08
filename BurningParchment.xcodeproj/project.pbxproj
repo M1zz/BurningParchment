@@ -10,6 +10,7 @@
 		0083FF00B6BED2D3DCDD74EE /* IndicatorSettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87525C95E5BE915F1C5CC4C7 /* IndicatorSettingsPage.swift */; };
 		0651A04A4DB4F600FE01B744 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CB6FF2098200B3878326E /* PaywallView.swift */; };
 		06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */; };
+		09B03E71B2FA0E0025F3F84B /* CycleParchment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E951F286908DB3DE5D4BE23 /* CycleParchment.swift */; };
 		0E36C0CE01C03F1E88571145 /* BurningParchmentRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C91B1677D8FE92B34517759 /* BurningParchmentRoadmap.swift */; };
 		1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E813AB837B41DC4EFA2B33 /* StoreManager.swift */; };
 		11EB49DE39479727E3195650 /* UrnShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA71511EFDBE88B00C4EAD /* UrnShapes.swift */; };
@@ -167,6 +168,7 @@
 		2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTimeView.swift; sourceTree = "<group>"; };
 		2CE9D82F2386631AD5CBF719 /* LifeTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTemplates.swift; sourceTree = "<group>"; };
 		2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineListView.swift; sourceTree = "<group>"; };
+		2E951F286908DB3DE5D4BE23 /* CycleParchment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleParchment.swift; sourceTree = "<group>"; };
 		312AA95A3FE1C57BC37DC242 /* BurningParchmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentApp.swift; sourceTree = "<group>"; };
 		356A581FCFFD6D5B5AC03B6D /* BurningParchmentUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BurningParchmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		358CB6FF2098200B3878326E /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */,
 				516DDD4AD2DA18037CEB9532 /* BurnParts.swift */,
 				36C24016F79235C3EAFE2D5F /* ContentView.swift */,
+				2E951F286908DB3DE5D4BE23 /* CycleParchment.swift */,
 				013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */,
 				2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */,
 				53C8C2F8587E612AECC9AF3E /* EmberCalendarView.swift */,
@@ -684,6 +687,7 @@
 				66D6D9631304A0D99C8807E0 /* BurningParchmentView.swift in Sources */,
 				D61BBD583D86F98A63F0577B /* BurningTips.swift in Sources */,
 				D3D28D4E5AF111DAAFD0915F /* ContentView.swift in Sources */,
+				09B03E71B2FA0E0025F3F84B /* CycleParchment.swift in Sources */,
 				1B273FC340456458C80B16EC /* DayReflection.swift in Sources */,
 				C273B9F2010771609AAE445B /* Deadline.swift in Sources */,
 				A35E2E75E37DBD4D39BBA9AA /* DeadlineDetailView.swift in Sources */,

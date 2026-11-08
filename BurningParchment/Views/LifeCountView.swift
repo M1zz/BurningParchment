@@ -1,5 +1,5 @@
 // LifeCountView.swift
-// 가운데 페이지 "남은 시간" — 이번 주 자유시간도, 남은 보름달도 같은 "남은 시간" 의 한 종류다.
+// 맨 끝 페이지 "남은 시간" — 이번 주 자유시간도, 남은 보름달도 같은 "남은 시간" 의 한 종류다.
 //
 // 자유시간을 고르면 지금처럼 양피지가 탄다. 아침 · 주말 · 보름달 · 생일 같은 것을 고르면
 // 태어난 날과 기대 수명으로 앞으로 몇 번 남았는지 세어, 지나간 것은 재로, 남은 것은 불씨로,
@@ -163,6 +163,36 @@ struct LifeCounter {
             }
             return nil
         }
+    }
+
+    /// 지금이 든 한 박자 — 지난 한 번부터 다음 한 번까지. 이 사이를 양피지가 탄다.
+    func cycle(_ moment: LifeMoment, at now: Date) -> DateInterval? {
+        let today = calendar.startOfDay(for: now)
+        let start: Date?, end: Date?
+        switch moment {
+        case .morning:
+            start = today
+            end = calendar.date(byAdding: .day, value: 1, to: today)
+        case .weekend:
+            start = calendar.component(.weekday, from: today) == 7 ? today
+                : calendar.nextDate(after: today, matching: DateComponents(weekday: 7),
+                                    matchingPolicy: .nextTime, direction: .backward)
+            end = start.flatMap { calendar.date(byAdding: .day, value: 7, to: $0) }
+        case .fullMoon:
+            let p = Self.synodicMonth
+            let k = (now.timeIntervalSince(Self.fullMoonReference) / p).rounded(.down)
+            start = Self.fullMoonReference.addingTimeInterval(k * p)
+            end = start?.addingTimeInterval(p)
+        case .halley, .birthday, .season, .leapDay:
+            let year = calendar.component(.year, from: today)
+            let dates = moment == .halley
+                ? Self.halleyDays.compactMap { calendar.date(from: $0) }
+                : (year - 5...year + 5).flatMap { yearlyDates(moment, year: $0) }.sorted()
+            start = dates.last { $0 <= now }
+            end = dates.first { $0 > now }
+        }
+        guard let start, let end, end > start else { return nil }
+        return DateInterval(start: start, end: end)
     }
 
     /// 그해에 오는 날들. 2월 29일 생일은 평년에 3월 1일로 친다. 2월 29일은 윤년에만 있다.
@@ -464,8 +494,16 @@ struct LifeCountPage: View {
             burned: String(localized: "삶의 \(burnedPercent)%가 탔어요"),
             past: past, remaining: remaining, columns: moment.columns,
             about: (moment.symbol, moment.rhythm, moment.explanation),
+            cycle: cycleBurn,
             onEditItem: nil
         )
+    }
+
+    /// 지난 한 번부터 다음 한 번까지 얼마나 탔나
+    private var cycleBurn: (progress: Double, caption: String)? {
+        guard let c = counter.cycle(moment, at: now) else { return nil }
+        let p = min(1, max(0, now.timeIntervalSince(c.start) / c.duration))
+        return (p, String(localized: "다음 한 번까지 \(Int((p * 100).rounded(.down)))% 탔어요"))
     }
 
     private var burnedPercent: Int {
@@ -533,6 +571,8 @@ struct CountDetailView: View {
     var together: RemainingItem? = nil
     /// 무엇을 세는지 — 아이콘 · 박자 · 설명
     var about: (symbol: String, rhythm: String, text: String)? = nil
+    /// 이번 한 박자가 타는 양피지 — 진행률 · 아래 글
+    var cycle: (progress: Double, caption: String)? = nil
     let onEditItem: (() -> Void)?
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -548,6 +588,7 @@ struct CountDetailView: View {
         VStack(alignment: .leading, spacing: 14) {
             summary
             if let about { aboutCard(about) }
+            if let cycle { CycleParchment(progress: cycle.progress, caption: cycle.caption) }
             if let together { TogetherRow(item: together) }
             if let curve {
                 CountCurveChart(item: curve)

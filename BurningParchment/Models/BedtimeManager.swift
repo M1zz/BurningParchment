@@ -17,6 +17,9 @@ enum PeriodType: String, CaseIterable, Identifiable {
     case deadline = "D-Day"
     var id: String { rawValue }
 
+    /// 넘기는 순서 — 일 · 주 · 달 · 해로 시간이 이어지고, 남은 시간은 그 뒤에 따로 선다. 설정에서 끌 수 있다.
+    static let pageOrder: [PeriodType] = [.day, .week, .month, .year, .freeTime]
+
     /// UI 표시용 이름.  rawValue는 UserDefaults(hiddenPeriods)에 저장되는 키라 로컬라이즈하지 않음.
     var displayName: String {
         switch self {
@@ -626,7 +629,7 @@ class BedtimeManager: ObservableObject {
     private func saveHiddenPeriods() {
         sharedDefaults?.set(Array(hiddenPeriods), forKey: keyHiddenPeriods)
         if hiddenPeriods.contains(selectedPeriod.rawValue) {
-            let visible = [PeriodType.day, .week, .freeTime, .month, .year].first { !hiddenPeriods.contains($0.rawValue) }
+            let visible = PeriodType.pageOrder.first { !hiddenPeriods.contains($0.rawValue) }
             selectedPeriod = visible ?? .day
         }
     }

@@ -209,7 +209,7 @@ struct SettingsView: View {
 
     // MARK: - 페이지
 
-    private let standardPeriods: [PeriodType] = [.day, .week, .freeTime, .month, .year]
+    private let standardPeriods = PeriodType.pageOrder
 
     private var pageGroup: some View {
         let visibleCount = standardPeriods.filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }.count

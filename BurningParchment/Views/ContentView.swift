@@ -25,7 +25,7 @@ struct ContentView: View {
     @State private var nudgeEvaluatedThisSession = false
     @State private var showBlowOut     = false
     @State private var showFragments   = false
-    /// 가운데 "남은 시간" 페이지에서 볼 것 — 자유시간 또는 주말 · 생일 같은 남은 날
+    /// 맨 끝 "남은 시간" 페이지에서 볼 것 — 자유시간 또는 주말 · 생일 같은 남은 날
     @AppStorage(RemainingKind.storageKey) private var remainingKind = RemainingKind.list
     /// 칩 줄이 놓인 자리 — 거기서 시작한 가로 쓸기는 페이지를 넘기지 않는다
     @State private var remainingPickerFrame: CGRect = .zero
@@ -71,7 +71,7 @@ struct ContentView: View {
     private static let nudgeAutoHideSeconds: Double = 9
 
     private var pages: [PeriodType] {
-        let basePeriods: [PeriodType] = [.day, .week, .freeTime, .month, .year]
+        let basePeriods: [PeriodType] = PeriodType.pageOrder
             .filter { !bedtimeManager.hiddenPeriods.contains($0.rawValue) }
         let nearestDeadline = deadlineManager.deadlines.first(where: { !$0.isExpired() })
         return basePeriods + (nearestDeadline != nil ? [.deadline] : [])
@@ -172,7 +172,7 @@ struct ContentView: View {
                             .onDisappear { remainingPickerFrame = .zero }
                     }
                     if bedtimeManager.selectedPeriod == .freeTime {
-                        // 가운데 페이지는 양피지 대신 세어 보기 — 자유시간도 그 한 종류다
+                        // 남은 시간 페이지는 양피지 대신 세어 보기 — 자유시간도 그 한 종류다
                         RemainingPage(selection: $remainingKind)
                             .environment(\.parchmentAnimationPaused, isParchmentCovered)
                     } else {

@@ -307,4 +307,24 @@ final class LifeRhythmTests: XCTestCase {
         XCTAssertEqual(c.count(.halley, from: day(1990, 1, 1), to: day(2073, 1, 1)), 1)
         XCTAssertEqual(c.next(.halley, after: day(2026, 11, 8)), day(2061, 7, 28))
     }
+
+    func testEachMomentBurnsOverItsOwnCycle() {
+        let c = LifeCounter(birthday: day(1990, 5, 10), lifeEnd: day(2073, 1, 1), calendar: cal)
+        let now = day(2026, 11, 8).addingTimeInterval(6 * 3600)
+        XCTAssertEqual(c.cycle(.morning, at: now)?.duration, 86_400)
+        XCTAssertEqual(c.cycle(.weekend, at: now)?.duration, 7 * 86_400)
+        XCTAssertEqual(c.cycle(.season, at: now), DateInterval(start: day(2026, 9, 1), end: day(2026, 12, 1)))
+        XCTAssertEqual(c.cycle(.birthday, at: now), DateInterval(start: day(2026, 5, 10), end: day(2027, 5, 10)))
+        XCTAssertEqual(c.cycle(.leapDay, at: now), DateInterval(start: day(2024, 2, 29), end: day(2028, 2, 29)))
+        XCTAssertEqual(c.cycle(.halley, at: now), DateInterval(start: day(1986, 2, 9), end: day(2061, 7, 28)))
+        for m in LifeMoment.allCases {
+            let i = c.cycle(m, at: now)
+            XCTAssertNotNil(i, m.rawValue)
+            XCTAssertTrue(i!.contains(now), m.rawValue)
+        }
+    }
+
+    func testTimeLeftPageComesLast() {
+        XCTAssertEqual(PeriodType.pageOrder.last, .freeTime)
+    }
 }

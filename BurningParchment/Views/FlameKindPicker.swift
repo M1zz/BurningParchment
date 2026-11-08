@@ -68,6 +68,12 @@ struct FlameKindPicker: View, Equatable {
 
     // MARK: - Card
 
+    /// 카드 바탕 — 늘 어두운 숯빛. 식 안에서 만들지 않고 한 번만 둔다(타입 검사가 가볍다).
+    private static let cardFill = LinearGradient(colors: [Color(red: 0.13, green: 0.08, blue: 0.07),
+                                                          Color(red: 0.07, green: 0.04, blue: 0.04),
+                                                          Color(red: 0.30, green: 0.06, blue: 0.04)],
+                                                 startPoint: .top, endPoint: .bottom)
+
     private func card(_ kind: FlameKind) -> some View {
         let size = Self.cardSize
         let room = Self.flameRoom
@@ -82,25 +88,11 @@ struct FlameKindPicker: View, Equatable {
             onSelect(kind)
         } label: {
             ZStack(alignment: .top) {
-                Capsule()
-                    .fill(LinearGradient(colors: [Color(red: 0.13, green: 0.08, blue: 0.07),
-                                                  Color(red: 0.07, green: 0.04, blue: 0.04),
-                                                  Color(red: 0.30, green: 0.06, blue: 0.04)],
-                                         startPoint: .top, endPoint: .bottom))
-                    .overlay(Capsule().stroke(isSelected ? Color.ember.opacity(0.9) : Color.white.opacity(0.08),
-                                              lineWidth: isSelected ? 1.5 : 1))
-                    .overlay { cardFace(kind, isSelected: isSelected, locked: locked) }
+                cardCapsule(kind, isSelected: isSelected, locked: locked)
                     .frame(width: size.width, height: size.height)
                     .padding(.top, room)
-
-                TimelineView(.animation(minimumInterval: LightFlame.frameInterval(light: lightFlame), paused: !isLive)) { timeline in
-                    let phase = timeline.date.timeIntervalSinceReferenceDate
-                        .truncatingRemainder(dividingBy: 800) * 1.5
-                    FlameView(kind: kind, points: edge, normal: CGVector(dx: 0, dy: -1), phase: phase + offset,
-                              scale: 0.8)
-                        .flameTint(style)
-                }
-                .frame(width: size.width, height: size.height + room)
+                liveFlame(kind, edge: edge, offset: offset, isLive: isLive)
+                    .frame(width: size.width, height: size.height + room)
             }
             .frame(width: size.width, height: size.height + room)
             // 카드는 늘 어두운 바탕이라 불꽃을 어두운 쪽 합성(screen)으로 얹는다
@@ -112,6 +104,27 @@ struct FlameKindPicker: View, Equatable {
         .accessibilityHint(kind.tagline)
         .accessibilityValue(locked ? String(localized: "Plus에서 열려요") : "")
         .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+    }
+
+    /// 숯빛 캡슐 + 고른 테두리 + 얼굴
+    private func cardCapsule(_ kind: FlameKind, isSelected: Bool, locked: Bool) -> some View {
+        let stroke: Color = isSelected ? Color.ember.opacity(0.9) : Color.white.opacity(0.08)
+        let width: CGFloat = isSelected ? 1.5 : 1
+        return Capsule()
+            .fill(Self.cardFill)
+            .overlay(Capsule().stroke(stroke, lineWidth: width))
+            .overlay { cardFace(kind, isSelected: isSelected, locked: locked) }
+    }
+
+    /// 카드 위에서 타는 불꽃. 보고 있는 카드만 움직인다.
+    private func liveFlame(_ kind: FlameKind, edge: [CGPoint], offset: Double, isLive: Bool) -> some View {
+        TimelineView(.animation(minimumInterval: LightFlame.frameInterval(light: lightFlame), paused: !isLive)) { timeline in
+            let phase = timeline.date.timeIntervalSinceReferenceDate
+                .truncatingRemainder(dividingBy: 800) * 1.5
+            FlameView(kind: kind, points: edge, normal: CGVector(dx: 0, dy: -1), phase: phase + offset,
+                      scale: 0.8)
+                .flameTint(style)
+        }
     }
 
     private func cardFace(_ kind: FlameKind, isSelected: Bool, locked: Bool) -> some View {

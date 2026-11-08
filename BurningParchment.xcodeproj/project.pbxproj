@@ -12,6 +12,7 @@
 		06526225458A5FDCB2B2E0EE /* FragmentScrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */; };
 		0E36C0CE01C03F1E88571145 /* BurningParchmentRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C91B1677D8FE92B34517759 /* BurningParchmentRoadmap.swift */; };
 		1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E813AB837B41DC4EFA2B33 /* StoreManager.swift */; };
+		11EB49DE39479727E3195650 /* UrnShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA71511EFDBE88B00C4EAD /* UrnShapes.swift */; };
 		14A8922B9B8A28BCF24DD1C5 /* FreeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */; };
 		15540253227E69CAD81A04F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */; };
 		1B273FC340456458C80B16EC /* DayReflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B5CD9701830C1165EDE4C /* DayReflection.swift */; };
@@ -42,11 +43,14 @@
 		7C62358FB8C43E60750ED3D0 /* RemainingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729491DC6F81F28D801A347 /* RemainingItems.swift */; };
 		80AE5367D202C56B46781CF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02478518C92DBEC5E15B33C5 /* SettingsView.swift */; };
 		82D6EBE2E5072C9BA3088358 /* BlowDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFF58C2AEF263382D4B35C /* BlowDetector.swift */; };
+		841FD4BC50ADD8B291B39AC4 /* ReflectionGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F4E92B81E155F044D7ECC /* ReflectionGraphs.swift */; };
+		85873365CE35E4124C4AFB32 /* ReflectionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13303D554800094D36024A8F /* ReflectionInputView.swift */; };
 		8955029F50F8FA12FD4984E7 /* FragmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FE7CC266CA77D35E7B037 /* FragmentManager.swift */; };
 		8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9A48B9CE0EF849E9418F6 /* ReflectionManager.swift */; };
 		8D03A9304999EBE1A2BC1300 /* FireShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 95D60B5770EF62427A47B171 /* FireShader.metal */; };
 		8DF557D2EC219FFC216A4665 /* DeadlineWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E46A4404E4D469BD9E3474 /* DeadlineWidget.swift */; };
 		8E901D0DC5A2596DEAE1F5CC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1569ACEDED9B2F27FD1E4AA9 /* Localizable.xcstrings */; };
+		90E4FB12822D2A851C82142C /* UrnDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A5099CCB69537514A0210 /* UrnDetailView.swift */; };
 		94D0963350865F4CDDEC53D6 /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9062A5518028E5E6F7CCB7 /* Deadline.swift */; };
 		98629562D444AC378164E110 /* FlameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26057CCAD4F499DC8A82C653 /* FlameView.swift */; };
 		A07823718B4AD4BBDBF9ED96 /* BurningParchmentWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2385724E2294B69985ECAADB /* BurningParchmentWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -75,10 +79,12 @@
 		D3511E9B455D110BD7C11E3D /* LifeTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9D82F2386631AD5CBF719 /* LifeTemplates.swift */; };
 		D3D28D4E5AF111DAAFD0915F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C24016F79235C3EAFE2D5F /* ContentView.swift */; };
 		D61BBD583D86F98A63F0577B /* BurningTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43CDD574DA221B4D2B5E25 /* BurningTips.swift */; };
+		D8F6FDFB567230E79269A46A /* EmberCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C2F8587E612AECC9AF3E /* EmberCalendarView.swift */; };
 		DB9ADE5C588533B00AA5B062 /* FragmentBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FE2E945D497EDC4B7F18B /* FragmentBackView.swift */; };
 		DC2E558C8B1A02466115233C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F37F39EE8576E0FDD6AF3 /* OnboardingView.swift */; };
 		DCB523B99902BB7F4EB17A8C /* AppLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9699F886F1BA52E55BCF8 /* AppLaunch.swift */; };
 		DE71C3C043494E3053E89763 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D1888FBD73088238AA4AA51A /* PrivacyInfo.xcprivacy */; };
+		DF26F57E84AE95449AED939F /* UrnVisuals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656926DE30FE07A24BCDAC54 /* UrnVisuals.swift */; };
 		E17E32621AE7EA8CC86B1DE6 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 55C56D71F06F71BA23C7EA10 /* AppShortcuts.xcstrings */; };
 		E524BCB03BFB40E30903B558 /* LaunchAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74477563E581A133347FEA /* LaunchAudience.swift */; };
 		E62886F3AD1839884731B920 /* BedtimeLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD618EED471F0E3628AA3ED6 /* BedtimeLockScreenWidget.swift */; };
@@ -86,6 +92,7 @@
 		ED706969CC398989E1B8E644 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC8D295881CB50E153E0C7B /* AppLog.swift */; };
 		F43B85F32130EAC6AFC9D0E7 /* BedtimeLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112EBB109347FBC35C6721D /* BedtimeLiveActivity.swift */; };
 		FCF5BCE791CF19AF4513B04D /* BurningParchmentWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38200BBE7AF4BD494979324 /* BurningParchmentWidgetsBundle.swift */; };
+		FEB18625FF8DE40E22EC1A83 /* BurnParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516DDD4AD2DA18037CEB9532 /* BurnParts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,11 +141,13 @@
 		066C186AA161229FC7933070 /* BedtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeManager.swift; sourceTree = "<group>"; };
 		0A5622D803B37C2D518E9405 /* BurningParchmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentTests.swift; sourceTree = "<group>"; };
 		0E43CDD574DA221B4D2B5E25 /* BurningTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningTips.swift; sourceTree = "<group>"; };
+		13303D554800094D36024A8F /* ReflectionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionInputView.swift; sourceTree = "<group>"; };
 		1569ACEDED9B2F27FD1E4AA9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentCollectionView.swift; sourceTree = "<group>"; };
 		18E813AB837B41DC4EFA2B33 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		18F256B31A77A4442890FB7D /* BurningParchmentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentSpec.swift; sourceTree = "<group>"; };
 		1A9C4AC38162FDEF9AE7727B /* Moments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moments.swift; sourceTree = "<group>"; };
+		1CBA71511EFDBE88B00C4EAD /* UrnShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnShapes.swift; sourceTree = "<group>"; };
 		1D028387DE4D784C3F7DA93C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1D78E3E6A053DD7E5D934A61 /* SleepHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepHealth.swift; sourceTree = "<group>"; };
 		1D7FE7CC266CA77D35E7B037 /* FragmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentManager.swift; sourceTree = "<group>"; };
@@ -164,11 +173,14 @@
 		4F3809310A920A95DD9F2096 /* FragmentShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentShareView.swift; sourceTree = "<group>"; };
 		4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		50EA88CCDD9479885FECAA93 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		516DDD4AD2DA18037CEB9532 /* BurnParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnParts.swift; sourceTree = "<group>"; };
 		528CB938C4EA147484351E74 /* ParchmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParchmentStyle.swift; sourceTree = "<group>"; };
+		53C8C2F8587E612AECC9AF3E /* EmberCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmberCalendarView.swift; sourceTree = "<group>"; };
 		55C56D71F06F71BA23C7EA10 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		5E9062A5518028E5E6F7CCB7 /* Deadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadline.swift; sourceTree = "<group>"; };
 		5FC0BECB4537CE69DA09B445 /* FragmentScrapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentScrapView.swift; sourceTree = "<group>"; };
 		6361058205DE51EE86CE5866 /* DebugLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLaunch.swift; sourceTree = "<group>"; };
+		656926DE30FE07A24BCDAC54 /* UrnVisuals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnVisuals.swift; sourceTree = "<group>"; };
 		6E74477563E581A133347FEA /* LaunchAudience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAudience.swift; sourceTree = "<group>"; };
 		71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeActivityAttributes.swift; sourceTree = "<group>"; };
 		73B159E43B8E19147CFD9439 /* FreeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTime.swift; sourceTree = "<group>"; };
@@ -182,6 +194,7 @@
 		95D60B5770EF62427A47B171 /* FireShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FireShader.metal; sourceTree = "<group>"; };
 		A9E108371E99FC1B2998C2CF /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6A5099CCB69537514A0210 /* UrnDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnDetailView.swift; sourceTree = "<group>"; };
 		B0EFF58C2AEF263382D4B35C /* BlowDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlowDetector.swift; sourceTree = "<group>"; };
 		B1E46A4404E4D469BD9E3474 /* DeadlineWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineWidget.swift; sourceTree = "<group>"; };
 		B246D1C85A72A7898E560054 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
@@ -197,6 +210,7 @@
 		C28E8FAEB4D44C8B2D9FB35F /* BedtimeIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeIntents.swift; sourceTree = "<group>"; };
 		C3DD8D8DFF8C62FA2A43633E /* NightRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightRecord.swift; sourceTree = "<group>"; };
 		C422EB6B8B07925C19D42B6C /* ReflectionBookExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBookExport.swift; sourceTree = "<group>"; };
+		C42F4E92B81E155F044D7ECC /* ReflectionGraphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionGraphs.swift; sourceTree = "<group>"; };
 		C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurningParchmentView.swift; sourceTree = "<group>"; };
 		D10418B3347B422A24EEB63C /* ParchmentFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParchmentFragment.swift; sourceTree = "<group>"; };
 		D1888FBD73088238AA4AA51A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -288,9 +302,11 @@
 				BA18C9F87D3BC53327719A3C /* AshYearView.swift */,
 				24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */,
 				C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */,
+				516DDD4AD2DA18037CEB9532 /* BurnParts.swift */,
 				36C24016F79235C3EAFE2D5F /* ContentView.swift */,
 				013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */,
 				2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */,
+				53C8C2F8587E612AECC9AF3E /* EmberCalendarView.swift */,
 				1FAEE27D929F93CF66867152 /* FlameKindPicker.swift */,
 				26057CCAD4F499DC8A82C653 /* FlameView.swift */,
 				298FE2E945D497EDC4B7F18B /* FragmentBackView.swift */,
@@ -306,9 +322,14 @@
 				358CB6FF2098200B3878326E /* PaywallView.swift */,
 				C422EB6B8B07925C19D42B6C /* ReflectionBookExport.swift */,
 				8A764CD5B3544078F9BECF39 /* ReflectionBookView.swift */,
+				C42F4E92B81E155F044D7ECC /* ReflectionGraphs.swift */,
+				13303D554800094D36024A8F /* ReflectionInputView.swift */,
 				DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */,
 				7729491DC6F81F28D801A347 /* RemainingItems.swift */,
 				02478518C92DBEC5E15B33C5 /* SettingsView.swift */,
+				AF6A5099CCB69537514A0210 /* UrnDetailView.swift */,
+				1CBA71511EFDBE88B00C4EAD /* UrnShapes.swift */,
+				656926DE30FE07A24BCDAC54 /* UrnVisuals.swift */,
 				0179EAEDDCC7D207E97BE2A4 /* WhatsNewView.swift */,
 			);
 			path = Views;
@@ -649,6 +670,7 @@
 				5BBE9589F3D41B5C48441AD0 /* BedtimeManager.swift in Sources */,
 				82D6EBE2E5072C9BA3088358 /* BlowDetector.swift in Sources */,
 				A80E6616692F3C66FAFB2CBE /* BlowOutView.swift in Sources */,
+				FEB18625FF8DE40E22EC1A83 /* BurnParts.swift in Sources */,
 				C68655E9F903282BAB6258D6 /* BurningFunnel.swift in Sources */,
 				6F0D7E8A801C4F5A7C637273 /* BurningParchmentApp.swift in Sources */,
 				0E36C0CE01C03F1E88571145 /* BurningParchmentRoadmap.swift in Sources */,
@@ -662,6 +684,7 @@
 				C5887D5E3D1CFB266A675AA3 /* DeadlineListView.swift in Sources */,
 				4E0A8DD3CED8F25008E35F16 /* DeadlineManager.swift in Sources */,
 				C717015209552BF12C67244B /* DebugLaunch.swift in Sources */,
+				D8F6FDFB567230E79269A46A /* EmberCalendarView.swift in Sources */,
 				8D03A9304999EBE1A2BC1300 /* FireShader.metal in Sources */,
 				E703459A046502471C286D06 /* FlameKind.swift in Sources */,
 				2C517BB4D73F941915C2D8C5 /* FlameKindPicker.swift in Sources */,
@@ -686,6 +709,8 @@
 				0651A04A4DB4F600FE01B744 /* PaywallView.swift in Sources */,
 				73EB6DFFE7484903B7DC7D17 /* ReflectionBookExport.swift in Sources */,
 				A95BF955B8CEA82E4D59DDAD /* ReflectionBookView.swift in Sources */,
+				841FD4BC50ADD8B291B39AC4 /* ReflectionGraphs.swift in Sources */,
+				85873365CE35E4124C4AFB32 /* ReflectionInputView.swift in Sources */,
 				8CC946179C42B1E66872E3AA /* ReflectionManager.swift in Sources */,
 				1F521ADAB0DC4F051433A917 /* ReflectionUrnView.swift in Sources */,
 				7C62358FB8C43E60750ED3D0 /* RemainingItems.swift in Sources */,
@@ -694,8 +719,11 @@
 				1176CBC4AD7E22D94D72B0A9 /* StoreManager.swift in Sources */,
 				CCB61A1D23DC688057EFFFC3 /* Theme.swift in Sources */,
 				52D4D1D0F48B0F74C41B61D6 /* TimeFormat.swift in Sources */,
+				90E4FB12822D2A851C82142C /* UrnDetailView.swift in Sources */,
 				62B51921A3B13E60C4BE4D60 /* UrnMeaning.swift in Sources */,
 				775B24E76AAD210FFD64FF2D /* UrnPeriod.swift in Sources */,
+				11EB49DE39479727E3195650 /* UrnShapes.swift in Sources */,
+				DF26F57E84AE95449AED939F /* UrnVisuals.swift in Sources */,
 				A07A7178A70177695FBD84D9 /* WhatsNewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

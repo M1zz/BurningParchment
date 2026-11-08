@@ -251,6 +251,37 @@ struct BurningParchmentView: View {
 
     private func bedtimeReachedView(size: CGSize) -> some View {
         ZStack {
+            bedtimeGlow
+
+            // 하트 불씨 파티클 (Canvas)
+            heartEmberCanvas(size: size)
+
+            // 아주 큰 글씨에서는 하트 아래 글이 화면을 넘을 수 있다 — 넘칠 때만 스크롤된다
+            ScrollView(.vertical) {
+            VStack(spacing: 24) {
+                Spacer()
+
+                // 불타는 하트
+                burningHeart
+
+                sleepTexts
+
+                Spacer()
+            }
+            .frame(minHeight: size.height)
+            }
+            .scrollBounceBehavior(.basedOnSize)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("수면 중")
+        .accessibilityValue(bedtimeManager.isBeforeWakeTime
+            ? "기상까지 \(sleepRemainingString)"
+            : "좋은 꿈 꾸세요")
+    }
+
+    /// 잠든 화면의 배경 빛 두 겹. 식을 나눠 두어 타입 검사가 가볍다.
+    private var bedtimeGlow: some View {
+        ZStack {
             // 배경 강렬한 글로우 (1층)
             RadialGradient(
                 colors: [
@@ -280,180 +311,168 @@ struct BurningParchmentView: View {
             )
             .ignoresSafeArea()
 
-            // 하트 불씨 파티클 (Canvas)
-            heartEmberCanvas(size: size)
-
-            // 아주 큰 글씨에서는 하트 아래 글이 화면을 넘을 수 있다 — 넘칠 때만 스크롤된다
-            ScrollView(.vertical) {
-            VStack(spacing: 24) {
-                Spacer()
-
-                // 불타는 하트
-                ZStack {
-                    // 외부 대형 글로우 (넓은 범위)
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 120))
-                        .foregroundStyle(
-                            RadialGradient(
-                                colors: [.orange.opacity(0.3), .red.opacity(0.15), .clear],
-                                center: .center,
-                                startRadius: 5,
-                                endRadius: 60
-                            )
-                        )
-                        .blur(radius: 35)
-                        .scaleEffect(1.1 + 0.08 * sin(phase * 2.0))
-
-                    // 중간 글로우
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 95))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.red.opacity(0.5), .orange.opacity(0.4), .yellow.opacity(0.2)],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .blur(radius: 18)
-                        .scaleEffect(1.05 + 0.06 * sin(phase * 2.8))
-
-                    // 하트 본체
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 75))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 0.7, green: 0.05, blue: 0.05),
-                                    Color(red: 0.95, green: 0.3, blue: 0.05),
-                                    Color(red: 1.0, green: 0.6, blue: 0.1),
-                                    Color(red: 1.0, green: 0.85, blue: 0.3)
-                                ],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .scaleEffect(1.0 + 0.03 * sin(phase * 3.0))
-
-                    // 중앙 대형 불꽃
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 44))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 1.0, green: 0.95, blue: 0.7),
-                                    .yellow,
-                                    .orange.opacity(0.7),
-                                    .red.opacity(0.2)
-                                ],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .offset(y: -50 + sin(phase * 3.5) * 5)
-                        .scaleEffect(1.0 + 0.2 * sin(phase * 4.5))
-                        .blur(radius: 1.5)
-
-                    // 좌상 불꽃 (크게)
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 28))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.yellow.opacity(0.9), .orange, .red.opacity(0.3)],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .offset(x: -22, y: -42 + sin(phase * 4.0) * 4)
-                        .scaleEffect(0.85 + 0.25 * sin(phase * 3.8))
-                        .opacity(0.7 + 0.3 * sin(phase * 3.2))
-                        .blur(radius: 0.5)
-
-                    // 우상 불꽃 (크게)
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 26))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.yellow.opacity(0.8), .orange, .red.opacity(0.3)],
-                                startPoint: .bottom, endPoint: .top
-                            )
-                        )
-                        .offset(x: 25, y: -45 + cos(phase * 3.7) * 5)
-                        .scaleEffect(0.8 + 0.3 * sin(phase * 4.2))
-                        .opacity(0.6 + 0.35 * cos(phase * 3.5))
-                        .blur(radius: 0.5)
-
-                    // 좌측 측면 불꽃
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 18))
-                        .foregroundColor(.orange.opacity(0.7))
-                        .offset(x: -35, y: -18 + sin(phase * 5.0) * 3)
-                        .scaleEffect(0.7 + 0.3 * sin(phase * 4.5))
-                        .opacity(0.4 + 0.4 * sin(phase * 3.0))
-                        .rotationEffect(.degrees(-15 + sin(phase * 2.5) * 10))
-
-                    // 우측 측면 불꽃
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 16))
-                        .foregroundColor(.orange.opacity(0.6))
-                        .offset(x: 37, y: -22 + cos(phase * 4.8) * 3)
-                        .scaleEffect(0.65 + 0.35 * cos(phase * 5.0))
-                        .opacity(0.35 + 0.4 * cos(phase * 2.8))
-                        .rotationEffect(.degrees(15 + cos(phase * 2.3) * 10))
-
-                    // 상단 떠오르는 작은 불씨
-                    Image(systemName: "flame")
-                        .font(.system(size: 12))
-                        .foregroundColor(.yellow.opacity(0.6))
-                        .offset(
-                            x: -10 + sin(phase * 2.0) * 5,
-                            y: -65 + sin(phase * 3.0) * 6
-                        )
-                        .scaleEffect(0.6 + 0.4 * sin(phase * 5.5))
-                        .opacity(0.3 + 0.4 * sin(phase * 4.0))
-
-                    Image(systemName: "flame")
-                        .font(.system(size: 10))
-                        .foregroundColor(.yellow.opacity(0.5))
-                        .offset(
-                            x: 12 + cos(phase * 2.5) * 4,
-                            y: -70 + cos(phase * 3.5) * 5
-                        )
-                        .scaleEffect(0.5 + 0.4 * cos(phase * 6.0))
-                        .opacity(0.25 + 0.35 * cos(phase * 4.5))
-                }
-
-                // 밤에 보는 화면이라 어둡게 두되, 글자는 바탕과 충분히 구별되게 (접근성 감사의 대비 기준)
-                Text("수면 중")
-                    .font(.system(.title2, design: .serif).weight(.medium))
-                    .foregroundColor(.ember)
-                    .multilineTextAlignment(.center)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(.horizontal, 24)
-
-                Text("🌙 좋은 꿈 꾸세요")
-                    .font(.system(.subheadline, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.8))
-                    .multilineTextAlignment(.center)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(.horizontal, 24)
-
-                if bedtimeManager.isBeforeWakeTime {
-                    Text("기상까지 \(sleepRemainingString)")
-                        .font(.system(.footnote, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.75))
-                        .padding(.top, 4)
-                        .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding(.horizontal, 24)
-                }
-
-                Spacer()
-            }
-            .frame(minHeight: size.height)
-            }
-            .scrollBounceBehavior(.basedOnSize)
         }
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel("수면 중")
-        .accessibilityValue(bedtimeManager.isBeforeWakeTime
-            ? "기상까지 \(sleepRemainingString)"
-            : "좋은 꿈 꾸세요")
+    }
+
+    /// 가운데의 불타는 하트와 둘레의 불꽃들
+    private var burningHeart: some View {
+        ZStack {
+            // 외부 대형 글로우 (넓은 범위)
+            Image(systemName: "heart.fill")
+                .font(.system(size: 120))
+                .foregroundStyle(
+                    RadialGradient(
+                        colors: [.orange.opacity(0.3), .red.opacity(0.15), .clear],
+                        center: .center,
+                        startRadius: 5,
+                        endRadius: 60
+                    )
+                )
+                .blur(radius: 35)
+                .scaleEffect(1.1 + 0.08 * sin(phase * 2.0))
+
+            // 중간 글로우
+            Image(systemName: "heart.fill")
+                .font(.system(size: 95))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.red.opacity(0.5), .orange.opacity(0.4), .yellow.opacity(0.2)],
+                        startPoint: .bottom, endPoint: .top
+                    )
+                )
+                .blur(radius: 18)
+                .scaleEffect(1.05 + 0.06 * sin(phase * 2.8))
+
+            // 하트 본체
+            Image(systemName: "heart.fill")
+                .font(.system(size: 75))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.7, green: 0.05, blue: 0.05),
+                            Color(red: 0.95, green: 0.3, blue: 0.05),
+                            Color(red: 1.0, green: 0.6, blue: 0.1),
+                            Color(red: 1.0, green: 0.85, blue: 0.3)
+                        ],
+                        startPoint: .bottom, endPoint: .top
+                    )
+                )
+                .scaleEffect(1.0 + 0.03 * sin(phase * 3.0))
+
+            // 중앙 대형 불꽃
+            Image(systemName: "flame.fill")
+                .font(.system(size: 44))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 1.0, green: 0.95, blue: 0.7),
+                            .yellow,
+                            .orange.opacity(0.7),
+                            .red.opacity(0.2)
+                        ],
+                        startPoint: .bottom, endPoint: .top
+                    )
+                )
+                .offset(y: -50 + sin(phase * 3.5) * 5)
+                .scaleEffect(1.0 + 0.2 * sin(phase * 4.5))
+                .blur(radius: 1.5)
+
+            // 좌상 불꽃 (크게)
+            Image(systemName: "flame.fill")
+                .font(.system(size: 28))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.yellow.opacity(0.9), .orange, .red.opacity(0.3)],
+                        startPoint: .bottom, endPoint: .top
+                    )
+                )
+                .offset(x: -22, y: -42 + sin(phase * 4.0) * 4)
+                .scaleEffect(0.85 + 0.25 * sin(phase * 3.8))
+                .opacity(0.7 + 0.3 * sin(phase * 3.2))
+                .blur(radius: 0.5)
+
+            // 우상 불꽃 (크게)
+            Image(systemName: "flame.fill")
+                .font(.system(size: 26))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.yellow.opacity(0.8), .orange, .red.opacity(0.3)],
+                        startPoint: .bottom, endPoint: .top
+                    )
+                )
+                .offset(x: 25, y: -45 + cos(phase * 3.7) * 5)
+                .scaleEffect(0.8 + 0.3 * sin(phase * 4.2))
+                .opacity(0.6 + 0.35 * cos(phase * 3.5))
+                .blur(radius: 0.5)
+
+            // 좌측 측면 불꽃
+            Image(systemName: "flame.fill")
+                .font(.system(size: 18))
+                .foregroundColor(.orange.opacity(0.7))
+                .offset(x: -35, y: -18 + sin(phase * 5.0) * 3)
+                .scaleEffect(0.7 + 0.3 * sin(phase * 4.5))
+                .opacity(0.4 + 0.4 * sin(phase * 3.0))
+                .rotationEffect(.degrees(-15 + sin(phase * 2.5) * 10))
+
+            // 우측 측면 불꽃
+            Image(systemName: "flame.fill")
+                .font(.system(size: 16))
+                .foregroundColor(.orange.opacity(0.6))
+                .offset(x: 37, y: -22 + cos(phase * 4.8) * 3)
+                .scaleEffect(0.65 + 0.35 * cos(phase * 5.0))
+                .opacity(0.35 + 0.4 * cos(phase * 2.8))
+                .rotationEffect(.degrees(15 + cos(phase * 2.3) * 10))
+
+            // 상단 떠오르는 작은 불씨
+            Image(systemName: "flame")
+                .font(.system(size: 12))
+                .foregroundColor(.yellow.opacity(0.6))
+                .offset(
+                    x: -10 + sin(phase * 2.0) * 5,
+                    y: -65 + sin(phase * 3.0) * 6
+                )
+                .scaleEffect(0.6 + 0.4 * sin(phase * 5.5))
+                .opacity(0.3 + 0.4 * sin(phase * 4.0))
+
+            Image(systemName: "flame")
+                .font(.system(size: 10))
+                .foregroundColor(.yellow.opacity(0.5))
+                .offset(
+                    x: 12 + cos(phase * 2.5) * 4,
+                    y: -70 + cos(phase * 3.5) * 5
+                )
+                .scaleEffect(0.5 + 0.4 * cos(phase * 6.0))
+                .opacity(0.25 + 0.35 * cos(phase * 4.5))
+        }
+    }
+
+    /// 수면 중 · 좋은 꿈 · 기상까지 남은 시간
+    @ViewBuilder
+    private var sleepTexts: some View {
+        // 밤에 보는 화면이라 어둡게 두되, 글자는 바탕과 충분히 구별되게 (접근성 감사의 대비 기준)
+        Text("수면 중")
+            .font(.system(.title2, design: .serif).weight(.medium))
+            .foregroundColor(.ember)
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.horizontal, 24)
+
+        Text("🌙 좋은 꿈 꾸세요")
+            .font(.system(.subheadline, design: .serif))
+            .foregroundColor(.inkMuted.opacity(0.8))
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.horizontal, 24)
+
+        if bedtimeManager.isBeforeWakeTime {
+            Text("기상까지 \(sleepRemainingString)")
+                .font(.system(.footnote, design: .serif))
+                .foregroundColor(.inkMuted.opacity(0.75))
+                .padding(.top, 4)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.horizontal, 24)
+        }
     }
 
     // MARK: - Heart Ember Canvas (하트 불씨 파티클)
@@ -1275,182 +1294,5 @@ struct BurningParchmentView: View {
                 ashes[i] = Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph)
             }
         }
-    }
-}
-
-/// 초당 30번 오는 타이머에서 두 번에 한 번을 고른다
-final class FrameSkip {
-    private var odd = false
-    func skipThisTick() -> Bool { odd.toggle(); return odd }
-}
-
-// MARK: - Diagonal Burn Shape
-
-struct DiagonalBurnShape: Shape {
-    var progress: Double
-    var phase: Double
-
-    var animatableData: AnimatablePair<Double, Double> {
-        get { AnimatablePair(progress, phase) }
-        set {
-            progress = newValue.first
-            phase = newValue.second
-        }
-    }
-
-    func path(in rect: CGRect) -> Path {
-        if progress >= 1.0 { return Path() }
-        if progress <= 0 { return oldParchmentPath(in: rect) }
-
-        let W = Double(rect.width)
-        let H = Double(rect.height)
-        let k = 2.0 * (1.0 - progress)
-
-        let pts = BurningParchmentView.burnLinePoints(
-            pw: rect.width, ph: rect.height, progress: progress, phase: phase
-        )
-
-        var path = Path()
-
-        if k >= 1.0 {
-            path.move(to: CGPoint(x: 0, y: 0))
-            path.addLine(to: CGPoint(x: W, y: 0))
-            path.addLine(to: pts.last!)
-            for pt in pts.reversed() { path.addLine(to: pt) }
-            path.addLine(to: CGPoint(x: 0, y: H))
-            path.closeSubpath()
-        } else {
-            path.move(to: CGPoint(x: 0, y: 0))
-            path.addLine(to: pts.last!)
-            for pt in pts.reversed() { path.addLine(to: pt) }
-            path.closeSubpath()
-        }
-
-        return path
-    }
-
-    private func oldParchmentPath(in rect: CGRect) -> Path {
-        var path = Path()
-        let W = rect.width
-        let H = rect.height
-        let segs = 30
-
-        path.move(to: CGPoint(x: 3, y: 4))
-        for i in 1...segs {
-            let t = CGFloat(i) / CGFloat(segs)
-            let n = sin(CGFloat(i) * 2.1 + 31) * 2.5 + cos(CGFloat(i) * 1.5 + 17) * 1.5
-            path.addLine(to: CGPoint(x: W * t - 2, y: 3 + n))
-        }
-        for i in 1...20 {
-            let t = CGFloat(i) / 20.0
-            let n = sin(CGFloat(i) * 2.7 + 42) * 2.0
-            path.addLine(to: CGPoint(x: W - 3 + n, y: H * t))
-        }
-        for i in 1...segs {
-            let t = CGFloat(i) / CGFloat(segs)
-            let n = sin(CGFloat(i) * 1.9 + 17) * 3.0 + cos(CGFloat(i) * 2.5 + 23) * 2.0
-            path.addLine(to: CGPoint(x: W * (1.0 - t) + 2, y: H - 4 + n))
-        }
-        for i in 1...20 {
-            let t = CGFloat(i) / 20.0
-            let n = sin(CGFloat(i) * 2.3 + 73) * 2.0
-            path.addLine(to: CGPoint(x: 3 + n, y: H * (1.0 - t)))
-        }
-        path.closeSubpath()
-        return path
-    }
-}
-
-// MARK: - Particle Protocol
-
-protocol Particle {
-    var pos: CGPoint { get set }
-    var size: CGFloat { get set }
-    var opacity: Double { get set }
-    var speed: CGFloat { get set }
-    var color: Color { get set }
-}
-
-// MARK: - Ember
-
-struct Ember: Particle, Identifiable {
-    let id = UUID()
-    var pos: CGPoint
-    var size: CGFloat
-    var opacity: Double
-    var speed: CGFloat
-    var color: Color
-
-    static func spawn(on burnPts: [CGPoint], ox: CGFloat, oy: CGFloat, pw: CGFloat, ph: CGFloat) -> Ember {
-        let pt = burnPts.randomElement() ?? CGPoint(x: pw * 0.5, y: ph * 0.5)
-        return Ember(
-            pos: CGPoint(x: pt.x + ox + .random(in: -8...8), y: pt.y + oy + .random(in: -8...8)),
-            size: .random(in: 2...5),
-            opacity: .random(in: 0.6...1.0),
-            speed: .random(in: 0.8...2.5),
-            color: [Color.yellow, .orange, Color(red: 1, green: 0.85, blue: 0.4)].randomElement()!
-        )
-    }
-}
-
-// MARK: - Ash
-
-struct Ash: Particle, Identifiable {
-    let id = UUID()
-    var pos: CGPoint
-    var size: CGFloat
-    var opacity: Double
-    var speed: CGFloat
-    var color: Color
-    var swayPhase: Double = 0
-    var swayFreq: Double = 1.0
-    var swayAmp: CGFloat = 2.0
-
-    static func spawn(on burnPts: [CGPoint], ox: CGFloat, oy: CGFloat, pw: CGFloat, ph: CGFloat) -> Ash {
-        let pt = burnPts.randomElement() ?? CGPoint(x: pw * 0.5, y: ph * 0.5)
-        let nLen = sqrt(Double(ph * ph + pw * pw))
-        let nx = Double(ph) / nLen
-        let ny = Double(pw) / nLen
-        let drift = Double.random(in: 10...40)
-        return Ash(
-            pos: CGPoint(
-                x: pt.x + ox + CGFloat(nx * drift) + .random(in: -10...10),
-                y: pt.y + oy + CGFloat(ny * drift) + .random(in: -10...10)
-            ),
-            size: .random(in: 1.5...4),
-            opacity: .random(in: 0.25...0.55),
-            speed: .random(in: 0.35...1.1),
-            color: Color(red: .random(in: 0.2...0.42), green: .random(in: 0.15...0.3), blue: .random(in: 0.1...0.22)),
-            swayPhase: .random(in: 0...(2 * .pi)),
-            swayFreq: .random(in: 0.6...1.8),
-            swayAmp: .random(in: 1.2...3.6)
-        )
-    }
-}
-
-// MARK: - Time Digit View
-
-struct TimeDigitView: View {
-    let value: Int
-    let label: String
-
-    var body: some View {
-        Text(String(format: "%02d", value))
-            .font(.system(.largeTitle, design: .serif).weight(.ultraLight))
-            .foregroundColor(.ember.opacity(0.9))
-            .monospacedDigit()
-    }
-}
-
-// MARK: - Preview
-
-#Preview {
-    ZStack {
-        Color.appBackground.ignoresSafeArea()
-        BurningParchmentView()
-            .environmentObject(BedtimeManager())
-            .environmentObject(DeadlineManager())
-            .environmentObject(FragmentManager())
-            .environmentObject(NightManager())
     }
 }

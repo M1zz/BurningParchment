@@ -6,6 +6,7 @@
 // 그래서 패턴을 구간으로 나눠 셈한다. 자유시간도 같은 방식으로 세는 한 종류다.
 
 import SwiftUI
+import os
 
 // MARK: - 모델
 
@@ -144,8 +145,15 @@ struct RemainingItem: Codable, Identifiable, Equatable {
 enum RemainingItemStore {
     static let key = "remainingItems"
 
+    /// 마지막으로 해독한 저장값과 그 결과. 화면 한 번 그릴 때 목록 · 칩 · 페이지가 같은 값을 여러 번 읽어서,
+    /// 바뀐 값일 때만 다시 해독한다(바이트 비교는 해독보다 훨씬 싸다).
+    private static let lastDecoded = OSAllocatedUnfairLock<(data: Data, items: [RemainingItem])?>(initialState: nil)
+
     static func decode(_ data: Data) -> [RemainingItem] {
-        (try? JSONDecoder().decode([RemainingItem].self, from: data)) ?? []
+        if let hit = lastDecoded.withLock({ $0 }), hit.data == data { return hit.items }
+        let items = (try? JSONDecoder().decode([RemainingItem].self, from: data)) ?? []
+        lastDecoded.withLock { $0 = (data, items) }
+        return items
     }
 
     static func encode(_ items: [RemainingItem]) -> Data {

@@ -12,6 +12,7 @@ final class SpecTests: XCTestCase {
         XCTAssertTrue(issues.isReleasable, issues.errors.map { "[\($0.code)] \($0.message)" }.joined(separator: "\n"))
     }
 
+    @MainActor
     func testFreeDeadlineLimitComesFromGatePolicy() {
         XCTAssertEqual(StoreManager.freeDeadlineLimit, 1)
     }

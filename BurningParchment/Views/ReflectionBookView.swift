@@ -169,34 +169,40 @@ struct ReflectionBookView: View {
         )
     }
 
-    private func reflectionCard(_ item: DayReflection) -> some View {
-        let period = item.weekPeriod
-        let hasMeaning = reflectionManager.hasMeaning(period)
-        let rgb: (Double, Double, Double) = hasMeaning ? item.category.particleColor : (0.60, 0.58, 0.55)
-        return VStack(alignment: .leading, spacing: 6) {
-            // 담긴 항아리 + 카테고리 + 시간
-            HStack(spacing: 6) {
-                Circle()
-                    .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
-                    .frame(width: 6, height: 6)
-                Text(period.title)
-                    .scaledFont(size: 10, weight: .medium)
-                    .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.75))
-                if item.category != .uncategorized {
-                    Text(item.category.shortLabel)
-                        .scaledFont(size: 10)
-                        .foregroundColor(Color(red: rgb.0 * 0.7, green: rgb.1 * 0.6, blue: rgb.2 * 0.5))
-                }
-                Spacer()
-                Text(timeString(item.createdAt))
-                    .scaledFont(size: 9, design: .monospaced)
-                    .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.45))
+    /// 카드 머리줄: 담긴 항아리 + 카테고리 + 시간
+    private func cardHeader(_ item: DayReflection, period: UrnPeriod) -> some View {
+        let rgb: (Double, Double, Double) = reflectionManager.hasMeaning(period)
+            ? item.category.particleColor : (0.60, 0.58, 0.55)
+        let dot = Color(red: rgb.0, green: rgb.1, blue: rgb.2)
+        let tag = Color(red: rgb.0 * 0.7, green: rgb.1 * 0.6, blue: rgb.2 * 0.5)
+        return HStack(spacing: 6) {
+            Circle()
+                .fill(dot)
+                .frame(width: 6, height: 6)
+            Text(period.title)
+                .scaledFont(size: 10, weight: .medium)
+                .foregroundColor(BookInk.brown.opacity(0.75))
+            if item.category != .uncategorized {
+                Text(item.category.shortLabel)
+                    .scaledFont(size: 10)
+                    .foregroundColor(tag)
             }
+            Spacer()
+            Text(timeString(item.createdAt))
+                .scaledFont(size: 9, design: .monospaced)
+                .foregroundColor(BookInk.brown.opacity(0.45))
+        }
+    }
+
+    /// 카드 안쪽 — 머리줄 · 본문 · 키워드 · 내일 메모
+    private func cardContent(_ item: DayReflection, period: UrnPeriod) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            cardHeader(item, period: period)
 
             // 본문
             Text(item.text)
                 .scaledFont(size: 15, design: .serif)
-                .foregroundColor(Color(red: 0.28, green: 0.18, blue: 0.10))
+                .foregroundColor(BookInk.text)
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -204,12 +210,10 @@ struct ReflectionBookView: View {
             if let kw = item.keyword, !kw.isEmpty {
                 Text("#\(kw)")
                     .scaledFont(size: 10, weight: .medium)
-                    .foregroundColor(Color(red: 0.55, green: 0.32, blue: 0.10))
+                    .foregroundColor(BookInk.keyword)
                     .padding(.vertical, 2)
                     .padding(.horizontal, 6)
-                    .background(
-                        Capsule().fill(Color(red: 0.55, green: 0.32, blue: 0.10).opacity(0.10))
-                    )
+                    .background(Capsule().fill(BookInk.keyword.opacity(0.10)))
             }
 
             // 내일 메모
@@ -220,18 +224,19 @@ struct ReflectionBookView: View {
                     Text(intent)
                         .scaledFont(size: 11, design: .serif)
                 }
-                .foregroundColor(Color(red: 0.62, green: 0.38, blue: 0.14))
+                .foregroundColor(BookInk.intent)
                 .padding(.top, 2)
             }
         }
+    }
+
+    /// 카드 한 장 — 안쪽에 바탕 · 누르기 · 메뉴 · 읽어 주기를 입힌다(식을 나눠 타입 검사가 가볍다).
+    private func reflectionCard(_ item: DayReflection) -> some View {
+        let period = item.weekPeriod
+        return cardContent(item, period: period)
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 8)
-                .fill(Color(red: 0.95, green: 0.88, blue: 0.74).opacity(0.55))
-                .overlay(RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color.brown.opacity(0.15), lineWidth: 0.5))
-        )
+        .background(Self.cardBackground)
         .contentShape(Rectangle())
         .onTapGesture { editing = item }
         .contextMenu {
@@ -252,6 +257,12 @@ struct ReflectionBookView: View {
         .accessibilityHint("탭하여 수정")
         .accessibilityAddTraits(.isButton)
         .accessibilityAction(named: Text("삭제")) { reflectionManager.delete(id: item.id) }
+    }
+
+    private static var cardBackground: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .fill(BookInk.card.opacity(0.55))
+            .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.brown.opacity(0.15), lineWidth: 0.5))
     }
 
     // MARK: - Style
@@ -294,4 +305,13 @@ private struct DayGroup: Identifiable {
             .environmentObject(StoreManager())
             .preferredColorScheme(.dark)
     }
+}
+
+/// 회고 책의 잉크 색. 식 안에서 `Color(red:green:blue:)` 를 여러 번 만들면 타입 검사가 느려져 이름을 붙여 둔다.
+private enum BookInk {
+    static let brown = Color(red: 0.42, green: 0.28, blue: 0.16)
+    static let text = Color(red: 0.28, green: 0.18, blue: 0.10)
+    static let keyword = Color(red: 0.55, green: 0.32, blue: 0.10)
+    static let intent = Color(red: 0.62, green: 0.38, blue: 0.14)
+    static let card = Color(red: 0.95, green: 0.88, blue: 0.74)
 }

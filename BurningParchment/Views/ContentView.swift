@@ -393,6 +393,24 @@ struct ContentView: View {
            bedtimeManager.isCountdownActive,
            !intents.isEmpty {
             let fade = max(0.0, 1.0 - bedtimeManager.progress * 1.3)
+            intentStripCard(intents)
+                .padding(.horizontal, 28)
+                .padding(.top, 4)
+                .opacity(fade)
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel("어제 못한 것 \(intents.count)개")
+                .accessibilityValue(intents.prefix(3).map { $0.intent }.joined(separator: ", "))
+        }
+    }
+
+    /// 양피지 빛깔의 띠. 식을 나눠 두어 타입 검사가 가볍다.
+    private static let intentInk = Color(red: 0.45, green: 0.32, blue: 0.18)
+    private static let intentPaper = LinearGradient(
+        colors: [Color(red: 0.86, green: 0.78, blue: 0.62).opacity(0.85),
+                 Color(red: 0.78, green: 0.68, blue: 0.50).opacity(0.78)],
+        startPoint: .topLeading, endPoint: .bottomTrailing)
+
+    private func intentStripCard(_ intents: [(text: String, intent: String)]) -> some View {
             VStack(alignment: .leading, spacing: 4) {
                 HStack(spacing: 5) {
                     Image(systemName: "scroll")
@@ -409,7 +427,7 @@ struct ContentView: View {
                             .foregroundColor(.ember.opacity(0.6))
                         Text(item.intent)
                             .font(.system(.caption, design: .serif))
-                            .foregroundColor(Color(red: 0.45, green: 0.32, blue: 0.18))
+                            .foregroundColor(Self.intentInk)
                             .lineLimit(1)
                             .truncationMode(.tail)
                     }
@@ -425,27 +443,13 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(LinearGradient(
-                        colors: [
-                            Color(red: 0.86, green: 0.78, blue: 0.62).opacity(0.85),
-                            Color(red: 0.78, green: 0.68, blue: 0.50).opacity(0.78)
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ))
+                    .fill(Self.intentPaper)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.brown.opacity(0.25), lineWidth: 1)
                     )
                     .shadow(color: .black.opacity(0.25), radius: 4, y: 2)
             )
-            .padding(.horizontal, 28)
-            .padding(.top, 4)
-            .opacity(fade)
-            .accessibilityElement(children: .combine)
-            .accessibilityLabel("어제 못한 것 \(intents.count)개")
-            .accessibilityValue(intents.prefix(3).map { $0.intent }.joined(separator: ", "))
-        }
     }
 
     // MARK: - Blow Out (취침 30분 전 불 끄기)
@@ -671,11 +675,16 @@ struct ContentView: View {
         nudgeDismissedISO = Self.todayKey()
     }
 
-    private static func todayKey() -> String {
+    /// 화면을 그릴 때마다 불리므로 포매터는 한 번만 만든다.
+    private static let dayKeyFormatter: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "yyyy-MM-dd"
         f.calendar = Calendar(identifier: .gregorian)
-        return f.string(from: Date())
+        return f
+    }()
+
+    private static func todayKey() -> String {
+        dayKeyFormatter.string(from: Date())
     }
 
     // MARK: - Page Indicator

@@ -283,3 +283,28 @@ final class TogetherDaysTests: XCTestCase {
         XCTAssertEqual(items.first?.kept.count, 0)
     }
 }
+
+final class LifeRhythmTests: XCTestCase {
+    private var cal: Calendar { var c = Calendar(identifier: .gregorian); c.timeZone = TimeZone(identifier: "UTC")!; return c }
+    private func day(_ y: Int, _ m: Int, _ d: Int) -> Date { cal.date(from: DateComponents(year: y, month: m, day: d))! }
+
+    func testEveryMomentHasItsOwnRhythm() {
+        let rhythms = LifeMoment.allCases.map(\.rhythm)
+        XCTAssertEqual(Set(rhythms).count, rhythms.count)
+    }
+
+    func testLeapDayOnlyInLeapYears() {
+        let c = LifeCounter(birthday: day(1990, 1, 1), lifeEnd: day(2073, 1, 1), calendar: cal)
+        // 2000 · 2004 · 2008 · 2012 · 2016 · 2020
+        XCTAssertEqual(c.count(.leapDay, from: day(2000, 1, 1), to: day(2021, 1, 1)), 6)
+        XCTAssertEqual(c.next(.leapDay, after: day(2025, 3, 1)), day(2028, 2, 29))
+    }
+
+    func testSeasonsAndMorningsAndHalley() {
+        let c = LifeCounter(birthday: day(1990, 1, 1), lifeEnd: day(2073, 1, 1), calendar: cal)
+        XCTAssertEqual(c.count(.season, from: day(2025, 1, 1), to: day(2026, 1, 1)), 4)
+        XCTAssertEqual(c.count(.morning, from: day(2025, 1, 1), to: day(2026, 1, 1)), 365)
+        XCTAssertEqual(c.count(.halley, from: day(1990, 1, 1), to: day(2073, 1, 1)), 1)
+        XCTAssertEqual(c.next(.halley, after: day(2026, 11, 8)), day(2061, 7, 28))
+    }
+}

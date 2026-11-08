@@ -1,7 +1,7 @@
 // LifeCountView.swift
-// 가운데 페이지 "남은 시간" — 이번 주 자유시간도, 남은 크리스마스도 같은 "남은 시간" 의 한 종류다.
+// 가운데 페이지 "남은 시간" — 이번 주 자유시간도, 남은 보름달도 같은 "남은 시간" 의 한 종류다.
 //
-// 자유시간을 고르면 지금처럼 양피지가 탄다. 크리스마스 · 생일 · 주말 같은 것을 고르면
+// 자유시간을 고르면 지금처럼 양피지가 탄다. 아침 · 주말 · 보름달 · 생일 같은 것을 고르면
 // 태어난 날과 기대 수명으로 앞으로 몇 번 남았는지 세어, 지나간 것은 재로, 남은 것은 불씨로,
 // 바로 다음 하나는 밝게 그린다. 기대 수명은 짐작일 뿐이라 숫자를 단정하지 않고 "다음 한 번" 으로 시선을 돌린다.
 
@@ -9,50 +9,83 @@ import SwiftUI
 
 // MARK: - 셀 거리
 
+/// 박자가 저마다 다른 것만 둔다 — 하루 · 한 주 · 한 달 · 한 계절 · 한 해 · 4년 · 평생 한 번.
+/// (크리스마스와 생일은 둘 다 "해마다 한 번" 이라 하나만 남겼다.)
 enum LifeMoment: String, CaseIterable, Identifiable {
-    case christmas, birthday, newYear, spring, weekend, fullMoon
+    case morning, weekend, fullMoon, season, birthday, leapDay, halley
 
     var id: String { rawValue }
 
     var name: String {
         switch self {
-        case .christmas: return String(localized: "크리스마스")
-        case .birthday:  return String(localized: "생일")
-        case .newYear:   return String(localized: "새해 첫날")
-        case .spring:    return String(localized: "봄")
-        case .weekend:   return String(localized: "주말")
-        case .fullMoon:  return String(localized: "보름달")
+        case .morning:  return String(localized: "아침")
+        case .weekend:  return String(localized: "주말")
+        case .fullMoon: return String(localized: "보름달")
+        case .season:   return String(localized: "계절")
+        case .birthday: return String(localized: "생일")
+        case .leapDay:  return String(localized: "2월 29일")
+        case .halley:   return String(localized: "핼리 혜성")
         }
     }
 
     var remainingTitle: String {
         switch self {
-        case .christmas: return String(localized: "남은 크리스마스")
-        case .birthday:  return String(localized: "남은 생일")
-        case .newYear:   return String(localized: "남은 새해 첫날")
-        case .spring:    return String(localized: "남은 봄")
-        case .weekend:   return String(localized: "남은 주말")
-        case .fullMoon:  return String(localized: "남은 보름달")
+        case .morning:  return String(localized: "남은 아침")
+        case .weekend:  return String(localized: "남은 주말")
+        case .fullMoon: return String(localized: "남은 보름달")
+        case .season:   return String(localized: "남은 계절")
+        case .birthday: return String(localized: "남은 생일")
+        case .leapDay:  return String(localized: "남은 2월 29일")
+        case .halley:   return String(localized: "남은 핼리 혜성")
+        }
+    }
+
+    /// 얼마 만에 한 번 오는지
+    var rhythm: String {
+        switch self {
+        case .morning:  return String(localized: "하루에 한 번")
+        case .weekend:  return String(localized: "일주일에 한 번")
+        case .fullMoon: return String(localized: "한 달에 한 번")
+        case .season:   return String(localized: "석 달에 한 번")
+        case .birthday: return String(localized: "1년에 한 번")
+        case .leapDay:  return String(localized: "4년에 한 번")
+        case .halley:   return String(localized: "76년에 한 번")
+        }
+    }
+
+    /// 눌렀을 때 보이는 설명 — 무엇을 세는지
+    var explanation: String {
+        switch self {
+        case .morning:  return String(localized: "눈뜨는 아침을 세요. 가장 촘촘한 박자라, 오늘 하루도 그중 하나예요.")
+        case .weekend:  return String(localized: "토요일마다 하나씩, 쉬는 날의 박자로 세요.")
+        case .fullMoon: return String(localized: "29.5일마다 차오르는 보름달을 세요. 고개만 들면 볼 수 있어요.")
+        case .season:   return String(localized: "봄 · 여름 · 가을 · 겨울이 바뀌는 첫날을 세요.")
+        case .birthday: return String(localized: "나에게만 오는 하루를 세요.")
+        case .leapDay:  return String(localized: "달력에 있다 없다 하는 하루를 세요. 4년을 기다려야 한 번 와요.")
+        case .halley:   return String(localized: "평생 한 번 볼까 말까 한 혜성이에요. 다음은 2061년 여름이에요.")
         }
     }
 
     var symbol: String {
         switch self {
-        case .christmas: return "gift.fill"
-        case .birthday:  return "birthday.cake.fill"
-        case .newYear:   return "sunrise.fill"
-        case .spring:    return "leaf.fill"
-        case .weekend:   return "cup.and.saucer.fill"
-        case .fullMoon:  return "moon.fill"
+        case .morning:  return "sunrise.fill"
+        case .weekend:  return "cup.and.saucer.fill"
+        case .fullMoon: return "moon.fill"
+        case .season:   return "leaf.fill"
+        case .birthday: return "birthday.cake.fill"
+        case .leapDay:  return "calendar.badge.plus"
+        case .halley:   return "sparkle"
         }
     }
 
-    /// 한 줄에 놓을 점 수 — 해마다 한 번이면 한 줄이 십 년, 주말이면 한 줄이 한 해
-    var columns: Int {
+    /// 한 줄에 놓을 점 수 — 생일이면 한 줄이 십 년, 주말이면 한 해, 계절이면 다섯 해. nil 이면 자리에 맞춘다.
+    var columns: Int? {
         switch self {
+        case .morning:  return nil
         case .weekend:  return 52
         case .fullMoon: return 25
-        default:        return 10
+        case .season:   return 20
+        case .birthday, .leapDay, .halley: return 10
         }
     }
 }
@@ -67,9 +100,20 @@ struct LifeCounter {
     private static let fullMoonReference = Date(timeIntervalSince1970: 948_429_660)
     private static let synodicMonth: TimeInterval = 29.530588853 * 86_400
 
+    /// 핼리 혜성이 해에 가장 가까이 오는 날(근일점)
+    private static let halleyDays: [DateComponents] = [
+        DateComponents(year: 1910, month: 4, day: 20),
+        DateComponents(year: 1986, month: 2, day: 9),
+        DateComponents(year: 2061, month: 7, day: 28),
+        DateComponents(year: 2134, month: 3, day: 27),
+    ]
+
     func count(_ moment: LifeMoment, from start: Date, to end: Date) -> Int {
         guard end > start else { return 0 }
         switch moment {
+        case .morning:
+            let a = calendar.startOfDay(for: start), b = calendar.startOfDay(for: end)
+            return max(0, calendar.dateComponents([.day], from: a, to: b).day ?? 0)
         case .weekend:
             // 토요일 수
             guard let first = calendar.nextDate(after: calendar.startOfDay(for: start).addingTimeInterval(-1),
@@ -83,15 +127,17 @@ struct LifeCounter {
             let a = (start.timeIntervalSince(Self.fullMoonReference) / p).rounded(.up)
             let b = (end.timeIntervalSince(Self.fullMoonReference) / p).rounded(.up)
             return max(0, Int(b - a))
-        default:
+        case .halley:
+            return Self.halleyDays.compactMap { calendar.date(from: $0) }.filter { $0 >= start && $0 < end }.count
+        case .birthday, .season, .leapDay:
             let y0 = calendar.component(.year, from: start)
             let y1 = calendar.component(.year, from: end)
             guard y0 <= y1 else { return 0 }
             let birthYear = calendar.component(.year, from: birthday)
             return (y0...y1).reduce(0) { n, year in
                 // 태어난 그날은 생일로 치지 않는다
-                guard let d = annualDate(moment, year: year), !(moment == .birthday && year == birthYear) else { return n }
-                return d >= start && d < end ? n + 1 : n
+                if moment == .birthday && year == birthYear { return n }
+                return n + yearlyDates(moment, year: year).filter { $0 >= start && $0 < end }.count
             }
         }
     }
@@ -99,6 +145,8 @@ struct LifeCounter {
     func next(_ moment: LifeMoment, after now: Date) -> Date? {
         let today = calendar.startOfDay(for: now)
         switch moment {
+        case .morning:
+            return today
         case .weekend:
             if calendar.component(.weekday, from: today) == 7 { return today }
             return calendar.nextDate(after: today, matching: DateComponents(weekday: 7), matchingPolicy: .nextTime)
@@ -106,28 +154,32 @@ struct LifeCounter {
             let p = Self.synodicMonth
             let k = (today.timeIntervalSince(Self.fullMoonReference) / p).rounded(.up)
             return Self.fullMoonReference.addingTimeInterval(k * p)
-        default:
+        case .halley:
+            return Self.halleyDays.compactMap { calendar.date(from: $0) }.first { $0 >= today }
+        case .birthday, .season, .leapDay:
             let year = calendar.component(.year, from: today)
-            for y in year...(year + 1) {
-                if let d = annualDate(moment, year: y), d >= today { return d }
+            for y in year...(year + 4) {
+                if let d = yearlyDates(moment, year: y).first(where: { $0 >= today }) { return d }
             }
             return nil
         }
     }
 
-    /// 해마다 오는 날. 2월 29일 생일은 평년에 3월 1일로 친다.
-    private func annualDate(_ moment: LifeMoment, year: Int) -> Date? {
-        let md: (Int, Int)
+    /// 그해에 오는 날들. 2월 29일 생일은 평년에 3월 1일로 친다. 2월 29일은 윤년에만 있다.
+    private func yearlyDates(_ moment: LifeMoment, year: Int) -> [Date] {
+        let mds: [(Int, Int)]
         switch moment {
-        case .christmas: md = (12, 25)
-        case .newYear:   md = (1, 1)
-        case .spring:    md = (3, 1)
+        case .season: mds = [(3, 1), (6, 1), (9, 1), (12, 1)]
+        case .leapDay:
+            guard let d = calendar.date(from: DateComponents(year: year, month: 2, day: 29)),
+                  calendar.component(.month, from: d) == 2 else { return [] }
+            return [d]
         case .birthday:
             let c = calendar.dateComponents([.month, .day], from: birthday)
-            md = (c.month ?? 1, c.day ?? 1)
-        case .weekend, .fullMoon: return nil
+            mds = [(c.month ?? 1, c.day ?? 1)]
+        default: return []
         }
-        return calendar.date(from: DateComponents(year: year, month: md.0, day: md.1))
+        return mds.compactMap { calendar.date(from: DateComponents(year: year, month: $0.0, day: $0.1)) }
     }
 }
 
@@ -189,7 +241,7 @@ struct RemainingKindPicker: View {
     }
 }
 
-// MARK: - 보낸 해 · 남은 해 (크리스마스 · 생일 같은 해마다 오는 날에 쓴다)
+// MARK: - 보낸 해 · 남은 해 (아침 · 주말 · 생일 같은 되풀이되는 날에 쓴다)
 
 enum LifeSettings {
     /// 0 이면 아직 세어 보지 않았다. 보낸 해만큼 거슬러 올라간 날을 태어난 날로 둔다.
@@ -387,7 +439,7 @@ private struct LifeFirstInput: View {
     }
 }
 
-/// 해마다 오는 날 — 크리스마스 · 생일 · 주말 · 보름달
+/// 되풀이되는 날 — 아침 · 주말 · 보름달 · 계절 · 생일 · 2월 29일 · 핼리 혜성
 struct LifeCountPage: View {
     let moment: LifeMoment
     @AppStorage(LifeSettings.birthdayKey) private var birthdayStamp: Double = 0
@@ -411,6 +463,7 @@ struct LifeCountPage: View {
                              : String(localized: "지나온 \(past)번 · \(nextText)"),
             burned: String(localized: "삶의 \(burnedPercent)%가 탔어요"),
             past: past, remaining: remaining, columns: moment.columns,
+            about: (moment.symbol, moment.rhythm, moment.explanation),
             onEditItem: nil
         )
     }
@@ -478,6 +531,8 @@ struct CountDetailView: View {
     var onFooterLink: (() -> Void)? = nil
     /// 요약 아래에 서는 줄 — 세어 둔 것의 "쌓인 날"
     var together: RemainingItem? = nil
+    /// 무엇을 세는지 — 아이콘 · 박자 · 설명
+    var about: (symbol: String, rhythm: String, text: String)? = nil
     let onEditItem: (() -> Void)?
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -492,6 +547,7 @@ struct CountDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             summary
+            if let about { aboutCard(about) }
             if let together { TogetherRow(item: together) }
             if let curve {
                 CountCurveChart(item: curve)
@@ -544,6 +600,27 @@ struct CountDetailView: View {
                 .foregroundColor(.inkMuted.opacity(0.8))
         }
         .accessibilityElement(children: .contain)
+    }
+
+    private func aboutCard(_ about: (symbol: String, rhythm: String, text: String)) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: about.symbol)
+                .foregroundColor(.ember)
+                .frame(width: 22)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(about.rhythm)
+                    .font(.system(.subheadline, design: .serif).weight(.semibold))
+                    .foregroundColor(.ember)
+                Text(about.text)
+                    .font(.system(.subheadline, design: .serif))
+                    .foregroundColor(.ink.opacity(0.8))
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(12)
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color.ink.opacity(0.03)))
+        .accessibilityElement(children: .combine)
     }
 
     private var footer: some View {

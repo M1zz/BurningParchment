@@ -22,6 +22,9 @@ struct ContentView: View {
     @State private var showReflections = false
     @State private var autoOpenReflectionInput = false
     @State private var showReflectionNudge = false
+    /// 아침의 재 알림이 떠 있는지 — 떠 있는 동안 다른 안내는 접는다
+    @State private var ashBannerShowing = false
+    @AppStorage(FirstLoopGuide.dismissedKey) private var firstLoopDismissed = false
     @State private var nudgeEvaluatedThisSession = false
     @State private var showBlowOut     = false
     @State private var showFragments   = false
@@ -159,11 +162,14 @@ struct ContentView: View {
 
                 VStack(spacing: 0) {
                     headerBar
-                    TipView(swipeTip, arrowEdge: .top)
-                        .tipBackground(Color.appBackgroundWarm)
-                        .padding(.horizontal, 20)
+                    // 안내는 한 번에 하나만 — 아침의 재 > 저녁의 한 줄 > 오늘 밤 할 두 가지 > 옆으로 밀기
+                    if activeGuide == .swipe {
+                        TipView(swipeTip, arrowEdge: .top)
+                            .tipBackground(Color.appBackgroundWarm)
+                            .padding(.horizontal, 20)
+                    }
                     tomorrowIntentStrip
-                    firstLoopGuide
+                    if activeGuide == .firstLoop { firstLoopGuide }
                     if bedtimeManager.selectedPeriod == .freeTime {
                         RemainingKindPicker(selection: $remainingKind)
                             .padding(.bottom, 4)
@@ -183,7 +189,7 @@ struct ContentView: View {
                             .environmentObject(nightManager)
                     }
                     blowOutPrompt
-                    AshMorningBanner(covered: isParchmentCovered) { openReflections(withInput: false) }
+                    AshMorningBanner(covered: isParchmentCovered, showing: $ashBannerShowing) { openReflections(withInput: false) }
                         .environmentObject(reflectionManager)
                     reflectionNudgeBanner
                     pageIndicator
@@ -386,12 +392,27 @@ struct ContentView: View {
 
     // MARK: - 처음 쓰는 사람의 오늘 밤 할 두 가지
 
+    /// 메인 화면에 지금 서 있는 안내. 겹치지 않게 하나만 고른다.
+    private enum Guide { case ashMorning, reflectionNudge, firstLoop, swipe }
+
+    private var activeGuide: Guide {
+        if ashBannerShowing { return .ashMorning }
+        if showReflectionNudge { return .reflectionNudge }
+        if wantsFirstLoopGuide { return .firstLoop }
+        return .swipe
+    }
+
+    private var wantsFirstLoopGuide: Bool {
+        !firstLoopDismissed
+            && bedtimeManager.selectedPeriod == .day
+            && bedtimeManager.isCountdownActive
+            && FirstLoopGuide.isNeeded(everWrote: !reflectionManager.reflections.isEmpty,
+                                       everBlew: !fragmentManager.fragments.isEmpty)
+    }
+
     @ViewBuilder
     private var firstLoopGuide: some View {
-        if bedtimeManager.selectedPeriod == .day,
-           bedtimeManager.isCountdownActive,
-           FirstLoopGuide.isNeeded(everWrote: !reflectionManager.reflections.isEmpty,
-                                   everBlew: !fragmentManager.fragments.isEmpty) {
+        if wantsFirstLoopGuide {
             FirstLoopGuide(
                 wroteToday: reflectionManager.hasReflectionToday,
                 blewTonight: tonightFragment != nil,
@@ -621,6 +642,7 @@ struct ContentView: View {
     private func evaluateReflectionNudge() {
         guard !nudgeEvaluatedThisSession,
               !showReflectionNudge,
+              !ashBannerShowing,
               shouldShowReflectionNudge else { return }
         nudgeEvaluatedThisSession = true
         withAnimation(reduceMotion ? .easeOut(duration: 0.2) : .spring(response: 0.55, dampingFraction: 0.85)) {

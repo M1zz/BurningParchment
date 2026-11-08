@@ -298,7 +298,7 @@ struct DebugLaunchModifier: ViewModifier {
             }
             .background(Color.appBackground.ignoresSafeArea())
         case "ashMorning":
-            VStack { Spacer(); AshMorningBanner(covered: false) {} }
+            VStack { Spacer(); AshMorningBanner(covered: false, showing: .constant(false)) {} }
                 .background(Color.appBackground.ignoresSafeArea())
         case "lifeMoment":
             LifeCountPage(moment: LifeMoment(rawValue: UserDefaults.standard.string(forKey: "lifeMoment") ?? "") ?? .morning)

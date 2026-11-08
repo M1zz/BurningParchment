@@ -54,6 +54,8 @@ enum AshMorning: Equatable {
 struct AshMorningBanner: View {
     /// 지금 양피지가 다른 화면에 가려져 있는지 — 가려져 있으면 띄우지 않는다
     let covered: Bool
+    /// 지금 떠 있는지 — 메인 화면은 안내를 한 번에 하나만 보이므로 다른 안내를 잠시 접는다
+    @Binding var showing: Bool
     let onOpenUrn: () -> Void
 
     @EnvironmentObject var reflectionManager: ReflectionManager
@@ -78,6 +80,7 @@ struct AshMorningBanner: View {
         }
         .onAppear(perform: evaluate)
         .onChange(of: covered) { _, _ in evaluate() }
+        .onChange(of: shown) { _, m in showing = m != nil }
     }
 
     @ViewBuilder

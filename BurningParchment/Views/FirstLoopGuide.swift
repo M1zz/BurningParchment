@@ -18,7 +18,8 @@ struct FirstLoopGuide: View {
     let onWrite: () -> Void
     let onBlow: () -> Void
 
-    @AppStorage("firstLoopGuideDismissed") private var dismissed = false
+    static let dismissedKey = "firstLoopGuideDismissed"
+    @AppStorage(FirstLoopGuide.dismissedKey) private var dismissed = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     /// 한 번이라도 둘 다 해 봤으면 이 안내는 끝이다 — 부르는 쪽이 판단해 넘긴다

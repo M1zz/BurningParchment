@@ -53,6 +53,32 @@ enum LifeMoment: String, CaseIterable, Identifiable {
         }
     }
 
+    /// 박자가 얼마나 고른지 — 정확한 간격, 들쭉날쭉하면 그 폭까지
+    var pattern: String {
+        switch self {
+        case .morning:  return String(localized: "24시간마다 · 늘 같아요")
+        case .weekend:  return String(localized: "7일마다 · 늘 같아요")
+        case .fullMoon: return String(localized: "평균 29.5일마다 · 29.3일에서 29.8일까지 조금씩 달라요")
+        case .season:   return String(localized: "3월 · 6월 · 9월 · 12월 1일 · 늘 같아요")
+        case .birthday: return String(localized: "365일마다 · 윤년이 끼면 366일")
+        case .leapDay:  return String(localized: "4년마다 · 100년에 한 번 건너뛰고, 400년에 한 번은 다시 와요")
+        case .halley:   return String(localized: "평균 76년마다 · 74년에서 79년까지 불규칙해요")
+        }
+    }
+
+    /// 다음 한 번까지 남은 시간 앞에 붙는 말
+    var nextTitle: String {
+        switch self {
+        case .morning:  return String(localized: "다음 아침까지")
+        case .weekend:  return String(localized: "다음 주말까지")
+        case .fullMoon: return String(localized: "다음 보름달까지")
+        case .season:   return String(localized: "다음 계절까지")
+        case .birthday: return String(localized: "다음 생일까지")
+        case .leapDay:  return String(localized: "다음 2월 29일까지")
+        case .halley:   return String(localized: "다음 핼리 혜성까지")
+        }
+    }
+
     /// 눌렀을 때 보이는 설명 — 무엇을 세는지
     var explanation: String {
         switch self {
@@ -490,20 +516,21 @@ struct LifeCountPage: View {
             title: moment.remainingTitle,
             remainingText: "\(remaining)",
             detail: overLife ? String(localized: "기대 수명을 넘었어요. 이제부터는 모두 덤이에요")
-                             : String(localized: "지나온 \(past)번 · \(nextText)"),
+                             : String(localized: "지나온 \(past)번"),
             burned: String(localized: "삶의 \(burnedPercent)%가 탔어요"),
             past: past, remaining: remaining, columns: moment.columns,
-            about: (moment.symbol, moment.rhythm, moment.explanation),
-            cycle: cycleBurn,
+            about: (moment.symbol, moment.rhythm, moment.pattern, moment.explanation),
+            cycle: cycle,
             onEditItem: nil
         )
     }
 
-    /// 지난 한 번부터 다음 한 번까지 얼마나 탔나
-    private var cycleBurn: (progress: Double, caption: String)? {
+    /// 지난 한 번부터 다음 한 번까지 — 이 사이를 작은 양피지가 탄다
+    private var cycle: (interval: DateInterval, nextTitle: String, isToday: Bool)? {
         guard let c = counter.cycle(moment, at: now) else { return nil }
-        let p = min(1, max(0, now.timeIntervalSince(c.start) / c.duration))
-        return (p, String(localized: "다음 한 번까지 \(Int((p * 100).rounded(.down)))% 탔어요"))
+        // 아침은 늘 오늘 시작하니 "오늘이에요" 라고 하지 않는다
+        let today = moment != .morning && cal.isDate(c.start, inSameDayAs: now)
+        return (c, moment.nextTitle, today)
     }
 
     private var burnedPercent: Int {
@@ -512,11 +539,6 @@ struct LifeCountPage: View {
         return min(100, max(0, Int((now.timeIntervalSince(birthday) / total * 100).rounded())))
     }
 
-    private var nextText: String {
-        guard let next = counter.next(moment, after: now) else { return "" }
-        let days = cal.dateComponents([.day], from: cal.startOfDay(for: now), to: cal.startOfDay(for: next)).day ?? 0
-        return days <= 0 ? String(localized: "오늘이에요") : String(localized: "다음은 \(days)일 뒤")
-    }
 }
 
 /// 세어 둔 것 — 자유시간이나 직접 만든 것. 구간마다 1년에 쓰는 양이 다르다.
@@ -570,9 +592,9 @@ struct CountDetailView: View {
     /// 요약 아래에 서는 줄 — 세어 둔 것의 "쌓인 날"
     var together: RemainingItem? = nil
     /// 무엇을 세는지 — 아이콘 · 박자 · 설명
-    var about: (symbol: String, rhythm: String, text: String)? = nil
-    /// 이번 한 박자가 타는 양피지 — 진행률 · 아래 글
-    var cycle: (progress: Double, caption: String)? = nil
+    var about: (symbol: String, rhythm: String, pattern: String, text: String)? = nil
+    /// 이번 한 박자가 타는 양피지 — 지난 한 번 ~ 다음 한 번 · 앞말 · 오늘이 그날인지
+    var cycle: (interval: DateInterval, nextTitle: String, isToday: Bool)? = nil
     let onEditItem: (() -> Void)?
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -588,7 +610,7 @@ struct CountDetailView: View {
         VStack(alignment: .leading, spacing: 14) {
             summary
             if let about { aboutCard(about) }
-            if let cycle { CycleParchment(progress: cycle.progress, caption: cycle.caption) }
+            if let cycle { CycleParchment(interval: cycle.interval, nextTitle: cycle.nextTitle, isToday: cycle.isToday) }
             if let together { TogetherRow(item: together) }
             if let curve {
                 CountCurveChart(item: curve)
@@ -643,7 +665,7 @@ struct CountDetailView: View {
         .accessibilityElement(children: .contain)
     }
 
-    private func aboutCard(_ about: (symbol: String, rhythm: String, text: String)) -> some View {
+    private func aboutCard(_ about: (symbol: String, rhythm: String, pattern: String, text: String)) -> some View {
         HStack(alignment: .top, spacing: 10) {
             Image(systemName: about.symbol)
                 .foregroundColor(.ember)
@@ -652,6 +674,10 @@ struct CountDetailView: View {
                 Text(about.rhythm)
                     .font(.system(.subheadline, design: .serif).weight(.semibold))
                     .foregroundColor(.ember)
+                Text(about.pattern)
+                    .font(.caption)
+                    .foregroundColor(.inkMuted.opacity(0.8))
+                    .fixedSize(horizontal: false, vertical: true)
                 Text(about.text)
                     .font(.system(.subheadline, design: .serif))
                     .foregroundColor(.ink.opacity(0.8))

@@ -12,7 +12,7 @@
 //                          ⚠️ 앱 그룹의 기상·취침 설정을 덮어쓴다 — 스크린샷용 시뮬레이터에서만 쓸 것
 //   -demoSchedule 7:00-23:00 기상·취침 시각을 이 값으로 덮는다 (설정 화면 스크린샷용)
 //   -period week|month|year 그 기간 페이지로 연다
-//   debugScreen 에 ashMorning(아침 재 알림, -ashFirstSeenDay <초> -ashMorningShownDay 0) · lifeMoment(되풀이되는 날, -lifeMoment halley · -lifeBirthday <초>) · lifeTemplates(인생의 시간 고르기, -lifeTemplate parents 면 그 묻기 화면) · gifts(선물 고르기) · urn(재 항아리) · year · blowout · freeTime(자유시간 정하기) · flames(불꽃 종류 캐러셀) 도 있다
+//   debugScreen 에 firstLoop(오늘 밤 할 두 가지) · ashMorning(아침 재 알림, -ashFirstSeenDay <초> -ashMorningShownDay 0) · lifeMoment(되풀이되는 날, -lifeMoment halley · -lifeBirthday <초>) · lifeTemplates(인생의 시간 고르기, -lifeTemplate parents 면 그 묻기 화면) · gifts(선물 고르기) · urn(재 항아리) · year · blowout · freeTime(자유시간 정하기) · flames(불꽃 종류 캐러셀) 도 있다
 //   -freeTimeDemo YES       자유시간이 비어 있으면 평일 저녁·주말 오후 예시를 넣고 자유시간 탭을 연다
 //   -reviewShot <상품 ID>   인앱 상품 **심사 이미지**. 선물 상품이면 선물 화면을 결제 없이 그리고
 //   -reviewShotPrice '$9.99' (값은 이것), 그 밖의 상품이면 그 칸이 앞에 선 페이월을 띄운다(-forcePro NO 와 함께).
@@ -289,6 +289,14 @@ struct DebugLaunchModifier: ViewModifier {
         case "paywall":    PaywallView()
         case "reviewShot": ReviewShotView(productID: UserDefaults.standard.string(forKey: "reviewShot") ?? "")
         case "settings":   SettingsView()
+        case "firstLoop":
+            VStack {
+                FirstLoopGuide(wroteToday: true, blewTonight: false, canBlow: false,
+                               blowFrom: Date().addingTimeInterval(3 * 3600), onWrite: {}, onBlow: {})
+                    .padding(24)
+                Spacer()
+            }
+            .background(Color.appBackground.ignoresSafeArea())
         case "ashMorning":
             VStack { Spacer(); AshMorningBanner(covered: false) {} }
                 .background(Color.appBackground.ignoresSafeArea())

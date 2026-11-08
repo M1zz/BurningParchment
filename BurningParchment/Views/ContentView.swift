@@ -163,6 +163,7 @@ struct ContentView: View {
                         .tipBackground(Color.appBackgroundWarm)
                         .padding(.horizontal, 20)
                     tomorrowIntentStrip
+                    firstLoopGuide
                     if bedtimeManager.selectedPeriod == .freeTime {
                         RemainingKindPicker(selection: $remainingKind)
                             .padding(.bottom, 4)
@@ -380,6 +381,26 @@ struct ContentView: View {
             showWhatsNew = true
         case .returning:
             break
+        }
+    }
+
+    // MARK: - 처음 쓰는 사람의 오늘 밤 할 두 가지
+
+    @ViewBuilder
+    private var firstLoopGuide: some View {
+        if bedtimeManager.selectedPeriod == .day,
+           bedtimeManager.isCountdownActive,
+           FirstLoopGuide.isNeeded(everWrote: !reflectionManager.reflections.isEmpty,
+                                   everBlew: !fragmentManager.fragments.isEmpty) {
+            FirstLoopGuide(
+                wroteToday: reflectionManager.hasReflectionToday,
+                blewTonight: tonightFragment != nil,
+                canBlow: bedtimeManager.isInBlowOutWindow,
+                blowFrom: bedtimeManager.currentBedDate.addingTimeInterval(-BedtimeManager.blowOutWindowSeconds),
+                onWrite: { openReflections(withInput: true) },
+                onBlow: { showBlowOut = true })
+            .padding(.horizontal, 24)
+            .padding(.top, 4)
         }
     }
 

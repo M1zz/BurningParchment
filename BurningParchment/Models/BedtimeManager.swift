@@ -668,7 +668,8 @@ class BedtimeManager: ObservableObject {
 
         let content = UNMutableNotificationContent()
         content.title = String(localized: "불타는 내인생 🔥")
-        content.body = String(localized: "취침 1시간 전입니다. 오늘 하루도 수고했어요!")
+        // 수고했다는 인사보다 할 일 하나 — 한 줄 남기기. 30분 전부터는 불도 끌 수 있다.
+        content.body = String(localized: "잠들기 1시간 전이에요. 오늘을 한 줄 남겨 둘까요?")
         content.sound = .default
 
         let comps = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: notifDate)

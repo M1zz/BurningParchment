@@ -67,6 +67,7 @@
 		AADDC2A8274E40C560008BC6 /* TogetherDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A218CE090ECA5735E4811 /* TogetherDays.swift */; };
 		AD6BA0F21F9CD9310AC410E1 /* NightRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD8D8DFF8C62FA2A43633E /* NightRecord.swift */; };
 		B61900F783977AF0FACBD854 /* FragmentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7C882DDF6E2D2BC9B409B /* FragmentCollectionView.swift */; };
+		B79F3CB9E7F4599F2EB07A1A /* FirstLoopGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D3051F864955A32C58ED0A /* FirstLoopGuide.swift */; };
 		B9BCE1B8D659A9E12E61D435 /* FreeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B159E43B8E19147CFD9439 /* FreeTime.swift */; };
 		BED64C54CEEFF93F8863FAC5 /* PaywallArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23477F5274E9B70CCEAC1BAB /* PaywallArt.swift */; };
 		BF273D2C3055A69F0063A9F9 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 50EA88CCDD9479885FECAA93 /* InfoPlist.xcstrings */; };
@@ -225,6 +226,7 @@
 		DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionUrnView.swift; sourceTree = "<group>"; };
 		DC4C4CD0312C057C3C4838AA /* UrnPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnPeriod.swift; sourceTree = "<group>"; };
 		DFC8D295881CB50E153E0C7B /* AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLog.swift; sourceTree = "<group>"; };
+		E5D3051F864955A32C58ED0A /* FirstLoopGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLoopGuide.swift; sourceTree = "<group>"; };
 		EB5F9CE2CDF41F7BBB187DBD /* MorningCheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningCheckInView.swift; sourceTree = "<group>"; };
 		EBCD73BA3FB29FEB20A91785 /* BedtimeExcuseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeExcuseManager.swift; sourceTree = "<group>"; };
 		EEC577EC675B374BA1DCFF27 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				013E19F9D93C46B4D2716F04 /* DeadlineDetailView.swift */,
 				2DFEB5E574EC12EF713BF687 /* DeadlineListView.swift */,
 				53C8C2F8587E612AECC9AF3E /* EmberCalendarView.swift */,
+				E5D3051F864955A32C58ED0A /* FirstLoopGuide.swift */,
 				1FAEE27D929F93CF66867152 /* FlameKindPicker.swift */,
 				26057CCAD4F499DC8A82C653 /* FlameView.swift */,
 				298FE2E945D497EDC4B7F18B /* FragmentBackView.swift */,
@@ -700,6 +703,7 @@
 				C717015209552BF12C67244B /* DebugLaunch.swift in Sources */,
 				D8F6FDFB567230E79269A46A /* EmberCalendarView.swift in Sources */,
 				8D03A9304999EBE1A2BC1300 /* FireShader.metal in Sources */,
+				B79F3CB9E7F4599F2EB07A1A /* FirstLoopGuide.swift in Sources */,
 				E703459A046502471C286D06 /* FlameKind.swift in Sources */,
 				2C517BB4D73F941915C2D8C5 /* FlameKindPicker.swift in Sources */,
 				98629562D444AC378164E110 /* FlameView.swift in Sources */,

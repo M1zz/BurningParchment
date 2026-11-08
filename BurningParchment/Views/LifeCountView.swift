@@ -343,7 +343,7 @@ struct LifeInputForm: View {
             }
             Text(hint)
                 .font(.system(.body, design: .serif))
-                .foregroundColor(.inkMuted.opacity(0.7))
+                .foregroundColor(.inkSoft)
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -369,7 +369,7 @@ struct LifeInputSheet: View {
                     LifeInputForm(pastYears: $pastYears, remainingYears: $remainingYears)
                     Text("기대 수명은 짐작일 뿐이에요. 숫자보다 다음 한 번을 어떻게 보낼지 생각해 보세요.")
                         .font(.system(.body, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.7))
+                        .foregroundColor(.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(20)

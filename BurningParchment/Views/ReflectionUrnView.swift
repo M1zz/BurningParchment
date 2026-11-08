@@ -138,10 +138,10 @@ struct ReflectionUrnView: View {
 
             Text("아직 담긴 재가 없어요")
                 .scaledFont(size: 17, weight: .medium, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.55))
+                .foregroundColor(.inkSoft)
             Text("항아리는 이미 준비돼 있어요.\n첫 재는 \(period.title) 항아리에 담깁니다.")
                 .scaledFont(size: 12, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.4))
+                .foregroundColor(.inkSoft)
                 .multilineTextAlignment(.center)
 
             Button {
@@ -187,7 +187,7 @@ struct ReflectionUrnView: View {
 
                 Text("\(rangeLabel(gap)) — 아직 어느 항아리에도 담기지 않은 시간이에요.")
                     .scaledFont(size: 11, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
 
                 // 흩어져 있는 재 더미 — 날려버리면 이게 날아간다.
@@ -207,7 +207,7 @@ struct ReflectionUrnView: View {
                             Text("날려버리기")
                         }
                         .scaledFont(size: 13, weight: .medium)
-                        .foregroundColor(.inkMuted.opacity(0.75))
+                        .foregroundColor(.inkSoft)
                         .padding(.vertical, 9)
                         .frame(maxWidth: .infinity)
                         .background(
@@ -329,7 +329,7 @@ struct ReflectionUrnView: View {
                             .multilineTextAlignment(.leading)
                         Text("이 주는 당신에게 어떤 의미였나요?")
                             .scaledFont(size: 12, design: .serif)
-                            .foregroundColor(.inkMuted.opacity(0.6))
+                            .foregroundColor(.inkSoft)
                     }
                     Spacer(minLength: 0)
                     Image(systemName: "square.and.pencil")
@@ -405,7 +405,7 @@ struct ReflectionUrnView: View {
             if !subtitle.isEmpty {
                 Text(subtitle)
                     .scaledFont(size: 11, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.45))
+                    .foregroundColor(.inkSoft)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -434,12 +434,12 @@ struct ReflectionUrnView: View {
                 if let meaning {
                     Text(meaning.displayName)
                         .scaledFont(size: 12, design: .serif)
-                        .foregroundColor(.inkMuted.opacity(0.65))
+                        .foregroundColor(.inkSoft)
                         .lineLimit(1)
                 } else {
                     Text("아직 이름 없는 재")
                         .scaledFont(size: 12, design: .serif)
-                        .foregroundColor(.inkMuted.opacity(0.4))
+                        .foregroundColor(.inkSoft)
                 }
             }
 
@@ -448,10 +448,10 @@ struct ReflectionUrnView: View {
             VStack(alignment: .trailing, spacing: 6) {
                 Text("재 \(count)톨")
                     .scaledFont(size: 11, design: .monospaced)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
                 Image(systemName: "chevron.right")
                     .scaledFont(size: 11, weight: .semibold)
-                    .foregroundColor(.ember.opacity(0.5))
+                    .foregroundColor(.ember)
             }
         }
         .padding(14)
@@ -540,13 +540,13 @@ struct AshInsightsView: View {
         VStack(spacing: 12) {
             Image(systemName: "chart.dots.scatter")
                 .scaledFont(size: 48)
-                .foregroundColor(.ember.opacity(0.22))
+                .foregroundColor(.ember)
             Text("아직 흘러간 재가 없어요")
                 .scaledFont(size: 16, weight: .medium, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.55))
+                .foregroundColor(.inkSoft)
             Text("재를 몇 톨 담으면\n분포와 잔불 달력이 여기에 나타나요.")
                 .scaledFont(size: 12, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.4))
+                .foregroundColor(.inkSoft)
                 .multilineTextAlignment(.center)
         }
     }
@@ -579,7 +579,7 @@ struct ReflectionRow: View {
                     if let periodLabel {
                         Text(periodLabel)
                             .scaledFont(size: 10, weight: .medium)
-                            .foregroundColor(.ember.opacity(0.65))
+                            .foregroundColor(.ember)
                     }
                     if item.category != .uncategorized {
                         Text(item.category.shortLabel)
@@ -588,7 +588,7 @@ struct ReflectionRow: View {
                     }
                     Text(item.dateString)
                         .scaledFont(size: 10)
-                        .foregroundColor(.inkMuted.opacity(0.45))
+                        .foregroundColor(.inkSoft)
                     if let kw = item.keyword, !kw.isEmpty {
                         Text("#\(kw)")
                             .scaledFont(size: 10, weight: .medium)

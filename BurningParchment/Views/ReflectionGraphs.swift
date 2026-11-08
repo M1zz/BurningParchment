@@ -119,13 +119,15 @@ struct ClassificationGraph: View {
 
 struct ClassificationGraphBackground: View {
     let size: CGFloat
+    /// 사분면 이름을 바탕에 깔지. 점이 많이 찍히는 분포 그래프는 이름표를 점 위에 따로 세우므로 끈다.
+    var showsQuadrantLabels = true
 
     private static let cellsPerAxis: Int = 4
 
     var body: some View {
         ZStack {
             quadrants
-            quadrantLabels
+            if showsQuadrantLabels { quadrantLabels }
             axisLines
             axisLabels
         }
@@ -226,23 +228,23 @@ struct ClassificationGraphBackground: View {
         ZStack {
             Text("시간을 들였다")
                 .scaledFont(size: 10, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.7))
+                .foregroundColor(.inkSoft)
                 .position(x: size / 2, y: 12)
 
             Text("시간을 안 들였다")
                 .scaledFont(size: 10, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.7))
+                .foregroundColor(.inkSoft)
                 .position(x: size / 2, y: size - 12)
 
             Text("의지\n없음")
                 .scaledFont(size: 10, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.7))
+                .foregroundColor(.inkSoft)
                 .multilineTextAlignment(.center)
                 .position(x: 22, y: size / 2)
 
             Text("의지\n있음")
                 .scaledFont(size: 10, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.7))
+                .foregroundColor(.inkSoft)
                 .multilineTextAlignment(.center)
                 .position(x: size - 22, y: size / 2)
         }
@@ -283,7 +285,7 @@ struct ReflectionDistributionView: View {
             if plotted.isEmpty {
                 Text("아직 분류된 재가 없어요. 회고를 쓸 때 그래프에 콕 찍어보세요.")
                     .scaledFont(size: 12, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.45))
+                    .foregroundColor(.inkSoft)
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity, alignment: .center)
             } else {
@@ -378,7 +380,7 @@ struct ReflectionDistributionView: View {
             HStack(spacing: 6) {
                 Image(systemName: "chart.dots.scatter")
                     .scaledFont(size: 11)
-                    .foregroundColor(.ember.opacity(0.6))
+                    .foregroundColor(.ember)
                 Text("재의 분포")
                     .scaledFont(size: 14, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
@@ -393,7 +395,7 @@ struct ReflectionDistributionView: View {
                     } label: {
                         Text(s.title)
                             .scaledFont(size: 11, weight: scope == s ? .semibold : .regular)
-                            .foregroundColor(scope == s ? .ember : .inkMuted.opacity(0.55))
+                            .foregroundColor(scope == s ? .ember : .inkSoft)
                             .padding(.vertical, 5)
                             .padding(.horizontal, 10)
                             .background(
@@ -415,7 +417,7 @@ struct ReflectionDistributionView: View {
         GeometryReader { geo in
             let s = min(geo.size.width, geo.size.height)
             ZStack {
-                ClassificationGraphBackground(size: s)
+                ClassificationGraphBackground(size: s, showsQuadrantLabels: false)
                 dotCanvas(size: s)
                 quadrantPercentages(size: s)
 
@@ -457,35 +459,48 @@ struct ReflectionDistributionView: View {
         .allowsHitTesting(false)
     }
 
+    /// 사분면마다 이름 · 퍼센트를 한 장의 이름표로 점 위에 세운다 — 점이 빽빽해도 글자가 묻히지 않는다.
     private func quadrantPercentages(size: CGFloat) -> some View {
         let counts = quadrantCounts
         let total = max(1, plotted.count)
         func pct(_ n: Int) -> String { "\(Int(round(Double(n) / Double(total) * 100)))%" }
 
         return ZStack {
-            percentLabel(pct(counts.tl), rgb: (0.95, 0.78, 0.42),
-                         at: CGPoint(x: size * 0.26, y: size * 0.42), count: counts.tl)
-            percentLabel(pct(counts.tr), rgb: (0.92, 0.55, 0.25),
-                         at: CGPoint(x: size * 0.74, y: size * 0.42), count: counts.tr)
-            percentLabel(pct(counts.bl), rgb: (0.72, 0.70, 0.66),
-                         at: CGPoint(x: size * 0.26, y: size * 0.58), count: counts.bl)
-            percentLabel(pct(counts.br), rgb: (0.78, 0.66, 0.46),
-                         at: CGPoint(x: size * 0.74, y: size * 0.58), count: counts.br)
+            quadrantTag(String(localized: "어쩌다 하게 됐어"), pct(counts.tl), rgb: (0.95, 0.78, 0.42),
+                        at: CGPoint(x: size * 0.26, y: size * 0.27))
+            quadrantTag(String(localized: "마음먹은 대로 했어"), pct(counts.tr), rgb: (0.92, 0.55, 0.25),
+                        at: CGPoint(x: size * 0.74, y: size * 0.27))
+            quadrantTag(String(localized: "그냥 흘러갔어"), pct(counts.bl), rgb: (0.72, 0.70, 0.66),
+                        at: CGPoint(x: size * 0.26, y: size * 0.73))
+            quadrantTag(String(localized: "하려 했는데 못 했어"), pct(counts.br), rgb: (0.78, 0.66, 0.46),
+                        at: CGPoint(x: size * 0.74, y: size * 0.73))
         }
         .allowsHitTesting(false)
     }
 
-    @ViewBuilder
-    private func percentLabel(_ text: String,
-                              rgb: (Double, Double, Double),
-                              at: CGPoint,
-                              count: Int) -> some View {
-        if count > 0 {
-            Text(text)
+    /// 사분면 빛깔은 작은 점으로만 보이고, 글자는 바탕색 이름표 위에 짙은 잉크로 쓴다.
+    private func quadrantTag(_ name: String, _ percent: String,
+                             rgb: (Double, Double, Double), at: CGPoint) -> some View {
+        VStack(spacing: 1) {
+            HStack(spacing: 4) {
+                Circle()
+                    .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
+                    .frame(width: 6, height: 6)
+                Text(name)
+                    .scaledFont(size: 10, weight: .semibold, design: .serif)
+                    .foregroundColor(.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+            }
+            Text(percent)
                 .scaledFont(size: 15, weight: .bold, design: .serif)
-                .foregroundColor(Color(red: rgb.0, green: rgb.1, blue: rgb.2).opacity(0.50))
-                .position(at)
+                .foregroundColor(.ink)
+                .monospacedDigit()
         }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 4)
+        .background(RoundedRectangle(cornerRadius: 8).fill(Color.appBackgroundWarm.opacity(0.88)))
+        .position(at)
     }
 
     private var centroidMarker: some View {
@@ -521,7 +536,7 @@ struct ReflectionDistributionView: View {
             }
         }
         .scaledFont(size: 10, design: .serif)
-        .foregroundColor(.inkMuted.opacity(0.4))
+        .foregroundColor(.inkSoft)
     }
 
     private var accessibilitySummary: String {

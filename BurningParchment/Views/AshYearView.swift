@@ -64,7 +64,7 @@ struct AshYearView: View {
                     .foregroundColor(.ember.opacity(0.9))
                 Text("지난 12개월, 달마다 어디로 흘렀나")
                     .scaledFont(size: 11, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
             }
             Spacer()
             if !storeManager.hasPlus {
@@ -106,13 +106,13 @@ struct AshYearView: View {
         .chartXAxis {
             AxisMarks(values: .stride(by: .month)) { value in
                 AxisValueLabel(format: .dateTime.month(.narrow), centered: true)
-                    .foregroundStyle(Color.inkMuted.opacity(0.6))
+                    .foregroundStyle(Color.inkSoft)
             }
         }
         .chartYAxis {
             AxisMarks(position: .leading) { _ in
                 AxisGridLine().foregroundStyle(Color.ink.opacity(0.06))
-                AxisValueLabel().foregroundStyle(Color.inkMuted.opacity(0.5))
+                AxisValueLabel().foregroundStyle(Color.inkSoft)
             }
         }
         .accessibilityLabel("지난 12개월 달별 재")
@@ -126,7 +126,7 @@ struct AshYearView: View {
                     Circle().fill(color(for: cat)).frame(width: 7, height: 7)
                     Text(cat.shortLabel)
                         .scaledFont(size: 10)
-                        .foregroundColor(.inkMuted.opacity(0.65))
+                        .foregroundColor(.inkSoft)
                 }
             }
         }
@@ -162,7 +162,7 @@ struct AshYearView: View {
                 .frame(width: 18)
             Text(title)
                 .scaledFont(size: 13, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.75))
+                .foregroundColor(.inkSoft)
             Spacer()
             Text(value)
                 .scaledFont(size: 13, weight: .medium, design: .serif)

@@ -85,7 +85,7 @@ struct ReflectionInputView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("날짜")
                                     .scaledFont(size: 12, weight: .medium)
-                                    .foregroundColor(.inkMuted.opacity(0.55))
+                                    .foregroundColor(.inkSoft)
                                 DatePicker("", selection: $date, displayedComponents: [.date])
                                     .datePickerStyle(.compact)
                                     .tint(.ember)
@@ -131,7 +131,7 @@ struct ReflectionInputView: View {
             } label: {
                 Image(systemName: "xmark")
                     .scaledFont(size: 16, weight: .semibold)
-                    .foregroundColor(.inkMuted.opacity(0.75))
+                    .foregroundColor(.inkSoft)
                     .frame(width: 38, height: 38)
             }
             .accessibilityLabel("닫기 — 지금까지 적은 내용은 저장됩니다")
@@ -162,7 +162,7 @@ struct ReflectionInputView: View {
                 Text("자동 저장")
                     .scaledFont(size: 11, design: .serif)
             }
-            .foregroundColor(.inkMuted.opacity(0.35))
+            .foregroundColor(.inkSoft)
             .accessibilityLabel("아직 적힌 내용이 없습니다")
 
         case .scheduled:
@@ -236,7 +236,7 @@ struct ReflectionInputView: View {
                 Image(systemName: nextIcon)
                     .scaledFont(size: 11, weight: .semibold)
             }
-            .foregroundColor(canAdvance ? .white : .inkMuted.opacity(0.4))
+            .foregroundColor(canAdvance ? .white : .inkSoft)
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
             .background(
@@ -260,7 +260,7 @@ struct ReflectionInputView: View {
                 Text("새 회고")
                     .scaledFont(size: 14, weight: .semibold, design: .serif)
             }
-            .foregroundColor(canAdvance ? .ember.opacity(0.9) : .inkMuted.opacity(0.4))
+            .foregroundColor(canAdvance ? .ember.opacity(0.9) : .inkSoft)
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
             .background(
@@ -416,7 +416,7 @@ struct ReflectionInputView: View {
                 Spacer()
                 Button("다음") { if canAdvance { advance() } }
                     .scaledFont(size: 15, weight: .semibold)
-                    .foregroundColor(canAdvance ? .ember : .inkMuted.opacity(0.4))
+                    .foregroundColor(canAdvance ? .ember : .inkSoft)
                     .disabled(!canAdvance)
             }
         }
@@ -435,7 +435,7 @@ struct ReflectionInputView: View {
                 .scaledFont(size: 12, weight: .medium, design: .serif)
                 .lineLimit(1)
         }
-        .foregroundColor(.ember.opacity(0.6))
+        .foregroundColor(.ember)
         .padding(.horizontal, 10)
         .padding(.vertical, 5)
         .background(
@@ -474,7 +474,7 @@ struct ReflectionInputView: View {
         } else {
             Text("오늘은 어떤 하루였나요? — 콕 찍어보세요")
                 .scaledFont(size: 12, weight: .medium)
-                .foregroundColor(.inkMuted.opacity(0.6))
+                .foregroundColor(.inkSoft)
         }
     }
 
@@ -504,7 +504,7 @@ struct ReflectionInputView: View {
         Button(action: action) {
             Text(label)
                 .scaledFont(size: 13, weight: isOn ? .semibold : .regular)
-                .foregroundColor(isOn ? .ember : .inkMuted.opacity(0.65))
+                .foregroundColor(isOn ? .ember : .inkSoft)
                 .padding(.vertical, 8)
                 .padding(.horizontal, 14)
                 .background(
@@ -519,7 +519,7 @@ struct ReflectionInputView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("키워드 (선택)")
                 .scaledFont(size: 12, weight: .medium)
-                .foregroundColor(.inkMuted.opacity(0.55))
+                .foregroundColor(.inkSoft)
 
             TextField("", text: $keyword)
                 .scaledFont(size: 14)
@@ -538,7 +538,7 @@ struct ReflectionInputView: View {
                         Button { keyword = s } label: {
                             Text("#\(s)")
                                 .scaledFont(size: 12, weight: .medium)
-                                .foregroundColor(keyword == s ? .ember : .inkMuted.opacity(0.6))
+                                .foregroundColor(keyword == s ? .ember : .inkSoft)
                                 .padding(.vertical, 5)
                                 .padding(.horizontal, 10)
                                 .background(
@@ -563,7 +563,7 @@ struct ReflectionInputView: View {
                     .foregroundColor(.ember.opacity(0.7))
                 Text(tomorrowQuestion)
                     .scaledFont(size: 12, weight: .medium)
-                    .foregroundColor(.inkMuted.opacity(0.65))
+                    .foregroundColor(.inkSoft)
             }
 
             TextField(tomorrowPlaceholder, text: $tomorrowIntent)
@@ -582,7 +582,7 @@ struct ReflectionInputView: View {
 
             Text("내일 아침, 양피지 상단에 띠로 떠올라 하루와 함께 타들어가요.")
                 .scaledFont(size: 10)
-                .foregroundColor(.inkMuted.opacity(0.45))
+                .foregroundColor(.inkSoft)
         }
     }
 

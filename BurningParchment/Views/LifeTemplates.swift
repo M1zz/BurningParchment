@@ -255,7 +255,7 @@ struct LifeTemplatePage: View {
                         .foregroundColor(.ink)
                     Text(detail)
                         .font(.system(.body, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.75))
+                        .foregroundColor(.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 0)
@@ -338,7 +338,7 @@ private struct LifeTemplateForm: View {
                         .padding(.top, 8)
                     Text(template.why)
                         .font(.system(.body, design: .serif))
-                        .foregroundColor(.inkMuted.opacity(0.7))
+                        .foregroundColor(.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 .accessibilityElement(children: .combine)
@@ -362,7 +362,7 @@ private struct LifeTemplateForm: View {
 
                 Text("사람마다 달라요. 저장한 뒤 고치기에서 구간과 1년에 쓰는 양을 내 삶에 맞게 바꿀 수 있어요.")
                     .font(.system(.body, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.7))
+                    .foregroundColor(.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
 
                 Button { save(item) } label: {

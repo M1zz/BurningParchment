@@ -100,12 +100,12 @@ struct AshMorningBanner: View {
                             .foregroundColor(.ember)
                         Text("재 항아리에서 볼 수 있어요")
                             .font(.caption2)
-                            .foregroundColor(.inkMuted.opacity(0.7))
+                            .foregroundColor(.inkSoft)
                     }
                     Spacer(minLength: 8)
                     Image(systemName: "chevron.right")
                         .font(.caption.weight(.semibold))
-                        .foregroundColor(.ember.opacity(0.6))
+                        .foregroundColor(.ember)
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal, 14)
@@ -116,7 +116,7 @@ struct AshMorningBanner: View {
             VStack(alignment: .leading, spacing: 6) {
                 HStack(spacing: 8) {
                     Image(systemName: "wind")
-                        .foregroundColor(.inkMuted.opacity(0.7))
+                        .foregroundColor(.inkSoft)
                     Text(days == 1 ? String(localized: "어제는 재가 되어 바람에 날아갔어요")
                                    : String(localized: "지난 \(days)일은 재가 되어 바람에 날아갔어요"))
                         .font(.system(.footnote, design: .serif).weight(.semibold))
@@ -128,7 +128,7 @@ struct AshMorningBanner: View {
                     .accessibilityHidden(true)
                 Text("한 줄 남긴 날만 항아리에 담겨요")
                     .font(.caption2)
-                    .foregroundColor(.inkMuted.opacity(0.6))
+                    .foregroundColor(.inkSoft)
             }
             .padding(12)
             .background(RoundedRectangle(cornerRadius: 14).fill(Color.ink.opacity(0.04)))

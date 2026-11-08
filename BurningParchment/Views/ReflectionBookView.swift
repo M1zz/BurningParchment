@@ -55,7 +55,7 @@ struct ReflectionBookView: View {
                     HStack(spacing: 14) {
                         Text("\(currentPage + 1) / \(pages.count)")
                             .scaledFont(size: 12, design: .monospaced)
-                            .foregroundColor(.ember.opacity(0.6))
+                            .foregroundColor(.ember)
                         Button {
                             if storeManager.hasPlus { showExport = true } else { showPaywall = true }
                         } label: {
@@ -97,12 +97,12 @@ struct ReflectionBookView: View {
                     .foregroundColor(.inkMuted.opacity(0.8))
             } icon: {
                 Image(systemName: "book.closed")
-                    .foregroundColor(.ember.opacity(0.35))
+                    .foregroundColor(.ember)
             }
         } description: {
             Text("회고를 하나라도 담으면\n이 책이 채워져요.")
                 .font(.system(.subheadline, design: .serif))
-                .foregroundColor(.inkMuted.opacity(0.7))
+                .foregroundColor(.inkSoft)
         }
     }
 
@@ -119,7 +119,7 @@ struct ReflectionBookView: View {
             if pages.count > 30 {
                 Text("…")
                     .scaledFont(size: 10)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
             }
         }
     }

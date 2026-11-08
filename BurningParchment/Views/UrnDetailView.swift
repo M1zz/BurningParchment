@@ -68,7 +68,7 @@ struct UrnDetailView: View {
 
             Text(period.rangeLabel)
                 .scaledFont(size: 12, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.5))
+                .foregroundColor(.inkSoft)
         }
     }
 
@@ -114,11 +114,11 @@ struct UrnDetailView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("아직은 그냥 재예요")
                     .scaledFont(size: 15, weight: .semibold, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.7))
+                    .foregroundColor(.inkSoft)
 
                 Text("여기 담긴 것들은 당신이 이름을 붙이기 전까진 그냥 재예요.")
                     .scaledFont(size: 12, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
 
                 Text(meaningQuestion)
@@ -180,7 +180,7 @@ struct UrnDetailView: View {
                         .foregroundColor(.ember.opacity(hasMeaning ? 0.85 : 0.45))
                     Text(cat.shortLabel)
                         .scaledFont(size: 10)
-                        .foregroundColor(.inkMuted.opacity(0.55))
+                        .foregroundColor(.inkSoft)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
@@ -266,7 +266,7 @@ struct UrnDetailView: View {
         if items.isEmpty {
             Text("이 항아리는 비어 있어요.")
                 .scaledFont(size: 13, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.5))
+                .foregroundColor(.inkSoft)
                 .padding(.top, 12)
         } else {
             VStack(alignment: .leading, spacing: 8) {
@@ -386,10 +386,10 @@ struct UrnMeaningEditView: View {
                     .foregroundColor(.ember.opacity(0.9))
                 Text(period.rangeLabel)
                     .scaledFont(size: 11, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
                 Text("재 \(count)톨")
                     .scaledFont(size: 11, design: .monospaced)
-                    .foregroundColor(.inkMuted.opacity(0.5))
+                    .foregroundColor(.inkSoft)
             }
             Spacer(minLength: 0)
         }
@@ -405,7 +405,7 @@ struct UrnMeaningEditView: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("이 항아리에 남은 것들")
                     .scaledFont(size: 12, weight: .medium)
-                    .foregroundColor(.inkMuted.opacity(0.55))
+                    .foregroundColor(.inkSoft)
 
                 ForEach(items.prefix(6)) { item in
                     HStack(alignment: .top, spacing: 8) {
@@ -415,7 +415,7 @@ struct UrnMeaningEditView: View {
                             .padding(.top, 6)
                         Text(item.text)
                             .scaledFont(size: 13, design: .serif)
-                            .foregroundColor(.inkMuted.opacity(0.75))
+                            .foregroundColor(.inkSoft)
                             .fixedSize(horizontal: false, vertical: true)
                             // 지난 회고를 길게 눌러 골라 복사할 수 있게 한다
                             .textSelection(.enabled)
@@ -426,7 +426,7 @@ struct UrnMeaningEditView: View {
                 if items.count > 6 {
                     Text("외 \(items.count - 6)톨")
                         .scaledFont(size: 11, design: .serif)
-                        .foregroundColor(.inkMuted.opacity(0.4))
+                        .foregroundColor(.inkSoft)
                         .padding(.leading, 13)
                 }
             }
@@ -450,7 +450,7 @@ struct UrnMeaningEditView: View {
 
             Text("항아리에 새길 한 마디")
                 .scaledFont(size: 12, weight: .medium)
-                .foregroundColor(.inkMuted.opacity(0.55))
+                .foregroundColor(.inkSoft)
 
             TextField("예: 버텨낸 주", text: $name)
                 .scaledFont(size: 17, design: .serif)
@@ -473,7 +473,7 @@ struct UrnMeaningEditView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("조금 더 적어두고 싶다면 (선택)")
                 .scaledFont(size: 12, weight: .medium)
-                .foregroundColor(.inkMuted.opacity(0.55))
+                .foregroundColor(.inkSoft)
 
             TextField("여기 쌓인 재가 나에게 무엇이었는지…", text: $text, axis: .vertical)
                 .lineLimit(3...10)

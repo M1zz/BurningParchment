@@ -38,7 +38,7 @@ struct FirstLoopGuide: View {
                     } label: {
                         Image(systemName: "xmark")
                             .font(.caption.weight(.semibold))
-                            .foregroundColor(.inkMuted.opacity(0.6))
+                            .foregroundColor(.inkSoft)
                             .frame(width: 28, height: 28)
                     }
                     .buttonStyle(.plain)
@@ -74,13 +74,13 @@ struct FirstLoopGuide: View {
                         .strikethrough(done, color: .ink.opacity(0.3))
                     Text(note)
                         .font(.caption)
-                        .foregroundColor(.inkMuted.opacity(0.7))
+                        .foregroundColor(.inkSoft)
                 }
                 Spacer(minLength: 0)
                 if !done && enabled {
                     Image(systemName: "chevron.right")
                         .font(.caption.weight(.semibold))
-                        .foregroundColor(.ember.opacity(0.6))
+                        .foregroundColor(.ember)
                 }
             }
             .contentShape(Rectangle())

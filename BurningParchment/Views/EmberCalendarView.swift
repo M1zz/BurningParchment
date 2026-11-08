@@ -75,7 +75,7 @@ struct EmberCalendarView: View {
             HStack(spacing: 6) {
                 Image(systemName: "flame")
                     .scaledFont(size: 11)
-                    .foregroundColor(.ember.opacity(0.6))
+                    .foregroundColor(.ember)
                 Text(monthTitle)
                     .scaledFont(size: 14, weight: .semibold, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
@@ -96,7 +96,7 @@ struct EmberCalendarView: View {
                 Button { moveMonth(1) } label: {
                     Image(systemName: "chevron.right")
                         .scaledFont(size: 12, weight: .semibold)
-                        .foregroundColor(canGoNext ? .ember.opacity(0.7) : .inkMuted.opacity(0.25))
+                        .foregroundColor(canGoNext ? .ember.opacity(0.7) : .inkSoft)
                         .frame(width: 30, height: 30)
                         .background(Circle().fill(Color.ink.opacity(0.04)))
                 }
@@ -128,7 +128,7 @@ struct EmberCalendarView: View {
             ForEach(weekdaySymbols, id: \.self) { symbol in
                 Text(symbol)
                     .scaledFont(size: 10, design: .serif)
-                    .foregroundColor(.inkMuted.opacity(0.45))
+                    .foregroundColor(.inkSoft)
                     .frame(maxWidth: .infinity)
             }
         }
@@ -254,7 +254,7 @@ struct EmberCalendarView: View {
                 if items.isEmpty {
                     Text("이 날의 재는 남아 있지 않아요")
                         .scaledFont(size: 12, design: .serif)
-                        .foregroundColor(.inkMuted.opacity(0.45))
+                        .foregroundColor(.inkSoft)
                         .padding(.vertical, 4)
                 } else {
                     ForEach(items) { item in
@@ -284,7 +284,7 @@ struct EmberCalendarView: View {
         } else {
             Text("잔불을 탭하면 그날의 회고가 나와요")
                 .scaledFont(size: 11, design: .serif)
-                .foregroundColor(.inkMuted.opacity(0.4))
+                .foregroundColor(.inkSoft)
         }
     }
 

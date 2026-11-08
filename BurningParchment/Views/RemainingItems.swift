@@ -322,7 +322,7 @@ struct CountSetupForm: View {
                     } label: {
                         Image(systemName: "minus.circle.fill")
                             .font(.body)
-                            .foregroundColor(.inkMuted.opacity(0.5))
+                            .foregroundColor(.inkSoft)
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel("구간 지우기")
@@ -391,7 +391,7 @@ struct CountSetupForm: View {
                 content()
                 Text(hint)
                     .font(.system(.body, design: .serif))
-                    .foregroundColor(.inkMuted.opacity(0.7))
+                    .foregroundColor(.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
         }
@@ -644,7 +644,7 @@ struct RemainingListView: View {
                     Spacer()
                     Text(value)
                         .font(.system(.body, design: .serif).weight(.semibold))
-                        .foregroundColor(remainingShare == nil ? .inkMuted.opacity(0.7) : .ember)
+                        .foregroundColor(remainingShare == nil ? .inkSoft : .ember)
                         .monospacedDigit()
                 }
                 if let remainingShare {

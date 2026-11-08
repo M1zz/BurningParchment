@@ -106,6 +106,17 @@ extension Color {
         darkHighContrast:  rgb(0.86, 0.86, 0.88)
     )
 
+    /// 흐린 보조 글자 — 날짜 · 개수 · 축 이름 · 설명처럼 한 단계 물러선 글자.
+    ///
+    /// `inkMuted.opacity(0.4~0.6)` 으로 흐리게 얹으면 미색 위에서도 검정 위에서도 사라졌다(대비 2:1 안팎).
+    /// 바탕(미색 · 검정 · 그 위의 카드) 어디에 놓여도 4.5:1 을 넘도록 불투명한 값으로 둔다.
+    static let inkSoft = dynamic(
+        light: rgb(0.40, 0.355, 0.30),
+        dark:  rgb(0.62, 0.60, 0.57),
+        lightHighContrast: rgb(0.20, 0.16, 0.11),
+        darkHighContrast:  rgb(0.84, 0.84, 0.86)
+    )
+
     // MARK: 강조 (불씨)
 
     /// 예전의 `.orange` 자리. 다크에서는 SwiftUI 의 orange 를 그대로 되돌려 주므로

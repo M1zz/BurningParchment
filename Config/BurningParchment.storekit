@@ -10,23 +10,21 @@
     ]
   },
   "identifier" : "6A1F2C3E",
-  "nonRenewingSubscriptions" : [
-
-  ],
+  "nonRenewingSubscriptions" : [],
   "products" : [
     {
-      "displayPrice" : "9.99",
+      "displayPrice" : "29.99",
       "familyShareable" : false,
       "internalID" : "6758995391",
       "localizations" : [
         {
-          "description" : "데드라인을 제한 없이 세워요. 한 번 결제로 평생 이용해요.",
-          "displayName" : "불타는 내인생 프로",
+          "description" : "Plus 전부와 세어 둘 것 무제한. 한 번 결제로 평생.",
+          "displayName" : "불타는 내인생 Pro 평생",
           "locale" : "ko"
         },
         {
-          "description" : "Unlimited deadlines. Pay once, keep it forever.",
-          "displayName" : "Burning Parchment Pro",
+          "description" : "Everything in Plus, unlimited counts. Pay once.",
+          "displayName" : "Burning Parchment Pro Lifetime",
           "locale" : "en_US"
         }
       ],
@@ -35,18 +33,38 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "9.99",
+      "displayPrice" : "12.99",
+      "familyShareable" : false,
+      "internalID" : "08C27B5D-C909-49EA-BF33-44ADB696C78E",
+      "localizations" : [
+        {
+          "description" : "테마, 조각 카드, 회고 책 PDF, 데드라인 무제한.",
+          "displayName" : "불타는 내인생 Plus 평생",
+          "locale" : "ko"
+        },
+        {
+          "description" : "Themes, cards, book PDF, unlimited deadlines.",
+          "displayName" : "Burning Parchment Plus Lifetime",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.burningparchment.app.plus",
+      "referenceName" : "Plus Lifetime",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "29.99",
       "familyShareable" : false,
       "internalID" : "AFEB19F2-9B7C-439B-BF15-5999FDD46930",
       "localizations" : [
         {
-          "description" : "다른 사람에게 프로를 선물해요. 코드를 보내 주세요.",
-          "displayName" : "불타는 내인생 프로 선물",
+          "description" : "다른 사람에게 Pro 평생을 선물해요.",
+          "displayName" : "Pro 선물",
           "locale" : "ko"
         },
         {
-          "description" : "Give Pro to someone else with a gift code.",
-          "displayName" : "Gift Burning Parchment Pro",
+          "description" : "Give Pro Lifetime to someone.",
+          "displayName" : "Pro Gift",
           "locale" : "en_US"
         }
       ],
@@ -55,7 +73,27 @@
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "12.99",
+      "familyShareable" : false,
+      "internalID" : "AF2C0242-5371-4371-A47A-8DE2FF5F9E23",
+      "localizations" : [
+        {
+          "description" : "다른 사람에게 Plus 평생을 선물해요.",
+          "displayName" : "Plus 선물",
+          "locale" : "ko"
+        },
+        {
+          "description" : "Give Plus Lifetime to someone.",
+          "displayName" : "Plus Gift",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.burningparchment.app.gift.plus",
+      "referenceName" : "Gift Plus",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
       "familyShareable" : false,
       "internalID" : "63AF64DB-0173-4056-A742-CD7FEB62BAA3",
       "localizations" : [
@@ -75,7 +113,7 @@
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "4.99",
+      "displayPrice" : "2.99",
       "familyShareable" : false,
       "internalID" : "BE22C3D9-7922-4C4D-9BD6-F771175FD961",
       "localizations" : [
@@ -121,12 +159,70 @@
     "_failTransactionsEnabled" : false,
     "_locale" : "ko",
     "_storefront" : "KOR",
-    "_storeKitErrors" : [
-
-    ]
+    "_storeKitErrors" : []
   },
   "subscriptionGroups" : [
-
+    {
+      "id" : "BP000001",
+      "localizations" : [],
+      "name" : "Burning Parchment",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6819BE2C-7547-433C-B137-AB7C71DA710F",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "1년 동안 Pro 기능을 써요.",
+              "displayName" : "Pro 연 구독",
+              "locale" : "ko"
+            },
+            {
+              "description" : "Pro features for one year.",
+              "displayName" : "Pro Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.burningparchment.app.pro.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "BP000001",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "D27AC492-9841-4F6C-A8A9-401F4C68548A",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "1년 동안 Plus 기능을 써요.",
+              "displayName" : "Plus 연 구독",
+              "locale" : "ko"
+            },
+            {
+              "description" : "Plus features for one year.",
+              "displayName" : "Plus Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.burningparchment.app.plus.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Plus Yearly",
+          "subscriptionGroupID" : "BP000001",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : []
+        }
+      ]
+    }
   ],
   "version" : {
     "major" : 4,

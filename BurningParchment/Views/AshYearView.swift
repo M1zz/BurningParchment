@@ -35,10 +35,10 @@ struct AshYearView: View {
 
             ZStack {
                 content
-                    .blur(radius: storeManager.isPro ? 0 : 6)
-                    .allowsHitTesting(storeManager.isPro)
-                    .accessibilityHidden(!storeManager.isPro)
-                if !storeManager.isPro { lockOverlay }
+                    .blur(radius: storeManager.hasPlus ? 0 : 6)
+                    .allowsHitTesting(storeManager.hasPlus)
+                    .accessibilityHidden(!storeManager.hasPlus)
+                if !storeManager.hasPlus { lockOverlay }
             }
         }
         .padding(14)
@@ -67,8 +67,8 @@ struct AshYearView: View {
                     .foregroundColor(.inkMuted.opacity(0.5))
             }
             Spacer()
-            if !storeManager.isPro {
-                Text("프로")
+            if !storeManager.hasPlus {
+                Text(verbatim: "Plus")
                     .scaledFont(size: 10, weight: .semibold)
                     .foregroundColor(.onEmber)
                     .padding(.horizontal, 6)
@@ -176,7 +176,7 @@ struct AshYearView: View {
             VStack(spacing: 8) {
                 Image(systemName: "lock.fill")
                     .scaledFont(size: 18)
-                Text("프로에서 한 해의 흐름을 열어요")
+                Text("Plus에서 한 해의 흐름을 열어요")
                     .scaledFont(size: 14, weight: .medium, design: .serif)
             }
             .foregroundColor(.ember)

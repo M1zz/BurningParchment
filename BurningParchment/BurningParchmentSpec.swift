@@ -11,6 +11,8 @@ enum BurningParchmentSpec: LeeoAppSpec {
     /// 무료 한도를 거는 기능 키. StoreManager 의 한도 판정과 아래 게이트 선언이 같은 값을 보게 한다.
     enum GateKey {
         static let deadline = "deadline"
+        /// 인생의 시간 — 세어 둔 것(자유시간 제외)
+        static let count = "count"
     }
 
     // 개인정보 처리방침·지원 페이지는 GitHub Pages(docs/)로 서비스한다.
@@ -21,22 +23,38 @@ enum BurningParchmentSpec: LeeoAppSpec {
         termsURL: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")
     )
 
-    // 부분유료 — 무료로 쓰다가 프로 일회성 구매로 영구 해제(구독 아님).
-    // 페이월 구성(약관·개인정보 링크 포함)은 이 선언에서 LeeoKit 이 유도한다.
-    static let monetization = LeeoMonetization.freemium(
-        LeeoPurchaseConfig(
-            productIDs: [StoreManager.proProductID],
-            gate: LeeoGatePolicy(freeLimits: [GateKey.deadline: 1]),
+    // 세 칸(무료 · Plus · Pro), 유료 칸마다 연 구독과 평생 (2026-11 개편).
+    // 칸마다 무엇이 열리는지와 한도는 `StoreManager.Plan` 이 정한다. 게이트는 무료 한도의 선언이다.
+    // ⚠️ `entitlementIDs` 는 **Pro 전체**를 주는 상품만이다(pro 평생 · pro 연 구독). Plus 를 넣으면
+    //    LeeoStore 의 `hasPro` 가 Plus 구매자를 Pro 로 본다. Plus 는 StoreManager 가 따로 센다.
+    // ⚠️ 선물 · 팁 상품은 productIDs · entitlementIDs 어디에도 넣지 않는다. 넣으면 산 사람 자신이 열린다.
+    // ⚠️ 상품 ID 는 App Store Connect 계약이다 — 바꾸지 않는다. 기존 프로(pro)를 산 사람은 그대로 Pro 전체다.
+    static let monetization = LeeoMonetization.freemiumSubscription(
+        LeeoSubscriptionConfig(
+            productIDs: StoreManager.ProductID.allCases.map(\.rawValue),
+            termsURL: legal.termsURL!,
+            entitlementIDs: StoreManager.fullProductIDs,
+            gate: LeeoGatePolicy(freeLimits: [GateKey.deadline: StoreManager.Plan.free.deadlineLimit ?? 1,
+                                              GateKey.count: StoreManager.Plan.free.countLimit ?? 1]),
             cacheSuiteName: "group.com.burningparchment.app",
-            // 프로 선물하기. 보내는 사람은 소모성 선물 상품을 사고, 받는 사람은 프로를 산 것과 같아진다.
-            // 선물 기록은 피드백과 같은 허브 컨테이너의 공개 DB 에 둔다. entitlements 에 이미 있다.
-            // ⚠️ 선물 상품은 productIDs · entitlementIDs 에 넣지 않는다. 넣으면 선물을 산 사람이 프로가 된다.
+            // 선물: 산 사람에게는 아무것도 열리지 않고, 허브의 묶음에서 App Store 오퍼 코드 한 장을 꺼내 링크로 보낸다.
+            // 받는 사람은 App Store 에서 "사용" 한 번 — 여는 것은 App Store 다(지침 3.1.1). 앱이 만든 코드로 열지 않는다.
             gift: LeeoGiftConfig(
                 productID: StoreManager.giftProductID,
-                grantsProductID: StoreManager.proProductID,
-                containerIdentifier: "iCloud.com.Ysoup.FeedbackHub"
+                grantsProductID: StoreManager.ProductID.pro.rawValue,
+                containerIdentifier: "iCloud.com.Ysoup.FeedbackHub",
+                sellsGifts: true
             ),
-            // 팁(응원). 이미 프로인 사람이 더 보태고 싶을 때. 선물과 같은 이유로 productIDs 에 넣지 않는다.
+            // Plus 선물. 묶음은 Pro 와 따로다 — 열쇠는 허브(FeedbackHub `GiftCodePool.tierPools`)와 같다.
+            moreGifts: [LeeoGiftConfig(
+                productID: StoreManager.plusGiftProductID,
+                grantsProductID: StoreManager.ProductID.plus.rawValue,
+                containerIdentifier: "iCloud.com.Ysoup.FeedbackHub",
+                sellsGifts: true,
+                tierName: "Plus",
+                poolKey: StoreManager.plusGiftPoolKey
+            )],
+            // 팁(응원). 아무것도 열지 않는다.
             tipJar: LeeoTipJarConfig(productIDs: StoreManager.tipProductIDs)
         )
     )

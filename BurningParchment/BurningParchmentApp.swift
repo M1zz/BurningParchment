@@ -64,9 +64,9 @@ struct BurningParchmentApp: App {
                 .environmentObject(nightManager)
                 .environmentObject(freeTimeManager)
                 .environment(\.parchmentStyle,
-                             ParchmentStyle.effective(raw: parchmentStyleRaw, isPro: storeManager.isPro))
+                             ParchmentStyle.effective(raw: parchmentStyleRaw, isPro: storeManager.hasPlus))
                 .environment(\.flameKind,
-                             FlameKind.effective(raw: flameKindRaw, isPro: storeManager.isPro))
+                             FlameKind.effective(raw: flameKindRaw, isPro: storeManager.hasPlus))
                 .environment(\.flameSize, FlameSize(rawValue: flameSizeRaw) ?? .small)
                 .preferredColorScheme(appTheme.colorScheme)
                 // 아이폰 듀오: 시트 · 알림창이 접힌 선을 비킨다. 접혀 있으면 아무것도 바뀌지 않는다.

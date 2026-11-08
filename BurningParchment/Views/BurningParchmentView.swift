@@ -49,7 +49,7 @@ struct BurningParchmentView: View {
 
     /// 자유시간 탭에서 양피지 대신 소개·잠금 카드를 보일 때
     private var showsFreeTimeIntro: Bool {
-        bedtimeManager.selectedPeriod == .freeTime && (!storeManager.isPro || !freeTimeManager.isConfigured)
+        bedtimeManager.selectedPeriod == .freeTime && (!storeManager.hasPlus || !freeTimeManager.isConfigured)
     }
 
     /// 불이 붙어 있는지. 자유시간 탭은 자유시간이 지나가는 동안에만 탄다.

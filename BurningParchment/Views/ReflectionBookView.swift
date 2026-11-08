@@ -57,7 +57,7 @@ struct ReflectionBookView: View {
                             .scaledFont(size: 12, design: .monospaced)
                             .foregroundColor(.ember.opacity(0.6))
                         Button {
-                            if storeManager.isPro { showExport = true } else { showPaywall = true }
+                            if storeManager.hasPlus { showExport = true } else { showPaywall = true }
                         } label: {
                             Image(systemName: "square.and.arrow.up")
                                 .foregroundColor(.ember)

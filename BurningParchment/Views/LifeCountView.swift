@@ -302,6 +302,8 @@ struct RemainingPage: View {
     @AppStorage(LifeSettings.expectancyKey) private var expectancy: Int = LifeSettings.defaultExpectancy
     @AppStorage(RemainingItemStore.key) private var itemsData = Data()
     @State private var newDraft = 0
+    /// 새로 세어 볼 때 템플릿 대신 빈 세어 보기를 골랐는지
+    @State private var blankDraft = false
 
     private var items: [RemainingItem] { RemainingItemStore.decode(itemsData) }
     private var age: Int { LifeSettings.age(birthdayStamp: birthdayStamp) }
@@ -312,8 +314,14 @@ struct RemainingPage: View {
             if selection == RemainingKind.list {
                 RemainingListView(selection: $selection)
             } else if selection == RemainingKind.new {
-                CountSetupPage(item: .template(pastYears: age, remainingYears: remainingLife), nameEditable: true) {
-                    selection = $0.selectionID
+                Group {
+                    if blankDraft {
+                        CountSetupPage(item: .template(pastYears: age, remainingYears: remainingLife), nameEditable: true) {
+                            selection = $0.selectionID
+                        }
+                    } else {
+                        LifeTemplatePage(onBlank: { blankDraft = true }, onSave: { selection = $0.selectionID })
+                    }
                 }
                 .id(newDraft)
             } else if selection == RemainingKind.freeTime {
@@ -338,7 +346,7 @@ struct RemainingPage: View {
                     .onAppear { selection = RemainingKind.list }
             }
         }
-        .onChange(of: selection) { _, s in if s == RemainingKind.new { newDraft += 1 } }
+        .onChange(of: selection) { _, s in if s == RemainingKind.new { newDraft += 1; blankDraft = false } }
     }
 }
 
@@ -438,6 +446,7 @@ struct CustomCountPage: View {
             detail: String(localized: "지나온 \(item.unit.format(past))"),
             burned: String(localized: "벌써 \(spent)%를 보냈어요"),
             past: past, remaining: remaining, columns: nil,
+            curve: item.phases.count > 1 ? item : nil,
             footerLink: String(localized: "\(elapsed)년 보냄 · \(max(0, Int(item.spanYears.rounded()) - elapsed))년 남음"),
             onFooterLink: { editing = true },
             onEditItem: { editing = true }
@@ -461,6 +470,8 @@ struct CountDetailView: View {
     let remaining: Int
     /// nil 이면 자리에 맞춰 정한다
     let columns: Int?
+    /// 구간마다 1년에 쓰는 양이 다르면 그 곡선을 점 격자 위에 그린다
+    var curve: RemainingItem? = nil
     /// 아래 오른쪽 밑줄 글자. nil 이면 "만 N세 · 기대 수명 M세" 로 나이를 고친다.
     var footerLink: String? = nil
     var onFooterLink: (() -> Void)? = nil
@@ -478,6 +489,11 @@ struct CountDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             summary
+            if let curve {
+                CountCurveChart(item: curve)
+                    .frame(height: 96)
+                    .padding(.top, 12)
+            }
             LifeDotGrid(past: past, remaining: remaining, columns: columns, glow: glow)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .accessibilityHidden(true)

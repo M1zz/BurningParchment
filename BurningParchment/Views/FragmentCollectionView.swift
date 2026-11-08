@@ -62,7 +62,7 @@ struct FragmentCollectionView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     if !fragmentManager.fragments.isEmpty {
                         Button {
-                            if storeManager.isPro { showPoster = true } else { showPaywall = true }
+                            if storeManager.hasPlus { showPoster = true } else { showPaywall = true }
                         } label: {
                             Label("포스터", systemImage: "square.grid.3x3.square")
                         }
@@ -209,7 +209,7 @@ private struct FragmentDetailView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    if storeManager.isPro { showCard = true } else { showPaywall = true }
+                    if storeManager.hasPlus { showCard = true } else { showPaywall = true }
                 } label: {
                     Image(systemName: "square.and.arrow.up")
                 }

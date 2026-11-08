@@ -255,6 +255,8 @@ struct ContentView: View {
                 Task { await DeadlineEntity.reindex() }
             }
             if phase == .active {
+                // App Store 에서 코드를 쓰거나 다른 기기에서 산 뒤 돌아왔을 수 있다 — 권한을 다시 읽는다
+                Task { await storeManager.refresh() }
                 bedtimeManager.recalculate()
                 WidgetCenter.shared.reloadAllTimelines()
                 if bedtimeManager.selectedPeriod == .deadline &&

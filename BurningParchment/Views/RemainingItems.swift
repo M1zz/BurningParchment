@@ -161,6 +161,14 @@ enum RemainingItemStore {
     static func remove(_ id: UUID, in data: Data) -> Data {
         encode(decode(data).filter { $0.id != id })
     }
+
+    /// 이 저장이 세어 둔 것(자유시간 제외)을 **새로** 하나 더하는가. 그렇다면 지금 개수를, 아니면 nil.
+    /// 한도는 새로 만들 때만 건다 — 이미 있는 것을 고치는 건 누구든 그대로 된다.
+    static func countBeforeAdding(_ item: RemainingItem, in data: Data) -> Int? {
+        let items = decode(data)
+        guard !item.isFreeTime, !items.contains(where: { $0.id == item.id }) else { return nil }
+        return items.filter { !$0.isFreeTime }.count
+    }
 }
 
 // MARK: - 세어 보기 (세 가지 질문)
@@ -314,15 +322,22 @@ struct CountSetupForm: View {
     private var preview: some View {
         var draft = item
         draft.set(pastYears: pastYears, remainingYears: remainingYears)
-        return HStack {
+        return VStack(spacing: 10) {
+            if draft.phases.count > 1 && draft.spanYears > 0 {
+                CountCurveChart(item: draft)
+                    .frame(height: 96)
+                    .padding(.top, 14)
+            }
+            HStack {
             Text("지나온 \(item.unit.format(draft.past))")
                 .foregroundColor(.inkMuted)
             Spacer()
             Text("남은 \(item.unit.format(draft.remaining))")
                 .foregroundColor(.ember)
+            }
+            .font(.system(.body, design: .serif).weight(.medium))
+            .monospacedDigit()
         }
-        .font(.system(.body, design: .serif).weight(.medium))
-        .monospacedDigit()
         .padding(.horizontal, 4)
     }
 
@@ -355,7 +370,9 @@ struct CountSetupForm: View {
 
 /// 페이지 안에서 바로 세어 보기. 저장하면 같은 자리에 그림이 선다.
 struct CountSetupPage: View {
+    @EnvironmentObject var storeManager: StoreManager
     @AppStorage(RemainingItemStore.key) private var itemsData = Data()
+    @State private var showPaywall = false
     @State private var item: RemainingItem
     @State private var pastYears: Int
     @State private var remainingYears: Int
@@ -395,9 +412,17 @@ struct CountSetupPage: View {
             .padding(.vertical, 8)
         }
         .scrollDismissesKeyboard(.interactively)
+        .sheet(isPresented: $showPaywall) {
+            PaywallView(reason: .count).environmentObject(storeManager)
+        }
     }
 
     private func save() {
+        if let count = RemainingItemStore.countBeforeAdding(item, in: itemsData),
+           !storeManager.canAddCount(currentCount: count) {
+            showPaywall = true
+            return
+        }
         item.name = item.name.trimmingCharacters(in: .whitespaces)
         item.normalize()
         item.set(pastYears: pastYears, remainingYears: remainingYears)

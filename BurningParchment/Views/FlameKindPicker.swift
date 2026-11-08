@@ -110,7 +110,7 @@ struct FlameKindPicker: View, Equatable {
         .buttonStyle(.plain)
         .accessibilityLabel(kind.label)
         .accessibilityHint(kind.tagline)
-        .accessibilityValue(locked ? String(localized: "프로에서 열려요") : "")
+        .accessibilityValue(locked ? String(localized: "Plus에서 열려요") : "")
         .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
     }
 
@@ -125,7 +125,7 @@ struct FlameKindPicker: View, Equatable {
                 .foregroundStyle(.white)
             Group {
                 if locked {
-                    Label("프로", systemImage: "lock.fill")
+                    Label { Text(verbatim: "Plus") } icon: { Image(systemName: "lock.fill") }
                 } else if isSelected {
                     Label("사용 중", systemImage: "checkmark")
                 } else {

@@ -1,9 +1,12 @@
 // SettingsView.swift
-// 설정 — 시간 · 페이지 · 화면 · 양피지와 불꽃 · 프로 · 지원.
+// 설정 — 클립키보드와 같은 차례: 요금제와 응원 → 시간 → 매일 쓰는 것 → 데이터와 도움말 → 의견 보내기(맨 끝).
+// 첫 화면에는 갈래 이름만 세우고 행은 한 칸 안쪽에 둔다. 시간만은 첫 화면에 있다 — 설정을 여는 가장 큰 까닭이고,
+// [완료]를 눌러야 저장되기 때문이다.
 // 묶음은 모두 같은 카드(SettingsGroup)와 같은 행(SettingsRow)으로 그린다 (IndicatorSettingsPage.swift).
 // 시간은 [완료]를 눌러야 저장되고, 나머지는 고르는 즉시 반영된다.
 
 import SwiftUI
+import Combine
 import LeeoKit
 
 struct SettingsView: View {
@@ -11,11 +14,12 @@ struct SettingsView: View {
     @EnvironmentObject var storeManager: StoreManager
     @Environment(\.dismiss) private var dismiss
 
-    @State private var showPaywall = false
     @State private var restoreMessage: String?
     @State private var showThemePaywall = false
     @State private var showOnboarding = false
     @State private var showWhatsNew = false
+    @State private var showManageSubscriptions = false
+    @AppStorage(RemainingItemStore.key) private var itemsData = Data()
     @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
     @AppStorage(ParchmentStyle.storageKey) private var parchmentStyleRaw = ParchmentStyle.classic.rawValue
     @Environment(\.parchmentStyle) private var currentStyle
@@ -42,15 +46,13 @@ struct SettingsView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 28) {
-                    timeGroup
-                    pageGroup
-                    liveActivityGroup
-                    if NightManager.isEnabled && SleepHealth.isAvailable { sleepRecordGroup }
-                    appearanceGroup
-                    flameSizeGroup
-                    parchmentGroup
+                    // 무료 · Plus · Pro 중 어디인지가 설정에서 가장 먼저 보인다
                     proGroup
-                    supportGroup
+                    timeGroup
+                    everydayGroup
+                    helpGroup
+                    // 사용자가 보는 설정의 맨 끝
+                    feedbackGroup
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 8)
@@ -86,10 +88,6 @@ struct SettingsView: View {
             selWakeH = bedtimeManager.wakeHour
             selWakeM = bedtimeManager.wakeMinute
         }
-        .sheet(isPresented: $showPaywall) {
-            PaywallView()
-                .environmentObject(storeManager)
-        }
         .sheet(isPresented: $showThemePaywall) {
             PaywallView(reason: .theme)
                 .environmentObject(storeManager)
@@ -98,6 +96,7 @@ struct SettingsView: View {
             BurningOnboardingView { showOnboarding = false }
                 .foldConfined()
         }
+        .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
         .sheet(isPresented: $showWhatsNew) {
             WhatsNewView { showWhatsNew = false }
                 .presentationDragIndicator(.visible)
@@ -367,7 +366,7 @@ struct SettingsView: View {
 
     private var parchmentGroup: some View {
         SettingsGroup(title: String(localized: "양피지와 불꽃"),
-                      badge: storeManager.isPro ? nil : String(localized: "프로"),
+                      badge: storeManager.hasPlus ? nil : "Plus",
                       footer: String(localized: "빛깔은 종이 색과 불꽃 색을, 불꽃 종류는 어떤 불로 탈지를 정해요. 둘은 따로 고를 수 있어요")) {
             VStack(alignment: .leading, spacing: 10) {
                 subheading(String(localized: "빛깔"))
@@ -385,8 +384,8 @@ struct SettingsView: View {
                 subheading(String(localized: "불꽃 종류"))
                     .padding(.horizontal, 14)
                     .padding(.top, 14)
-                FlameKindPicker(current: currentFlameKind, style: currentStyle, isPro: storeManager.isPro) { kind in
-                    if kind.isPro && !storeManager.isPro {
+                FlameKindPicker(current: currentFlameKind, style: currentStyle, isPro: storeManager.hasPlus) { kind in
+                    if kind.isPro && !storeManager.hasPlus {
                         showThemePaywall = true
                     } else {
                         flameKindRaw = kind.rawValue
@@ -408,7 +407,7 @@ struct SettingsView: View {
 
     private func styleTile(_ style: ParchmentStyle) -> some View {
         let isSelected = currentStyle == style
-        let locked = style.isPro && !storeManager.isPro
+        let locked = style.isPro && !storeManager.hasPlus
         return Button {
             if locked {
                 showThemePaywall = true
@@ -458,34 +457,72 @@ struct SettingsView: View {
         }
         .buttonStyle(.plain)
         .accessibilityLabel(style.label)
-        .accessibilityValue(locked ? String(localized: "프로에서 열려요") : "")
+        .accessibilityValue(locked ? String(localized: "Plus에서 열려요") : "")
         .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
     }
 
-    // MARK: - 프로
+    // MARK: - 요금제와 응원
+    // 돈 이야기는 한 칸에: 요금제 → 응원 → 선물하기 → 구매 복원 (두번알림 · 클립키보드와 같다).
+
+    private var planName: String {
+        switch storeManager.plan {
+        case .free: return String(localized: "무료")
+        case .plus: return "Plus"
+        case .pro:  return "Pro"
+        }
+    }
 
     private var proGroup: some View {
-        SettingsGroup(title: String(localized: "프로"),
-                      footer: storeManager.isPro ? nil
+        SettingsGroup(title: String(localized: "요금제와 응원"),
+                      footer: storeManager.hasPlus ? nil
                         : String(localized: "불타는 자유시간, 빛깔과 불꽃 종류, 조각 카드, 회고 책 PDF, 한 해의 재 흐름, 데드라인 무제한을 이용해보세요.")) {
-            if storeManager.isPro {
-                SettingsRow(icon: "checkmark.seal", title: String(localized: "프로 이용 중이에요. 감사합니다 🔥"))
-            } else {
-                Button { showPaywall = true } label: {
-                    SettingsRow(icon: "sparkles", title: String(localized: "프로로 업그레이드")) {
+            // 요금제 — 화면으로 넘어간다. 이미 Pro 면 지금 자리를 보러 간다.
+            NavigationLink {
+                PaywallView(embedded: true)
+                    .environmentObject(storeManager)
+            } label: {
+                SettingsRow(icon: storeManager.hasPlus ? "checkmark.seal" : "sparkles", title: String(localized: "요금제")) {
+                    HStack(spacing: 6) {
+                        Text(planName)
+                            .scaledFont(size: 14, weight: .semibold)
+                            .foregroundColor(.ember)
+                        SettingsChevron()
+                    }
+                }
+            }
+            .buttonStyle(.plain)
+
+            remainingCountRow
+
+            // 구독 중일 때만: 구독 관리. 구독에 묶였다고 느끼는 사람이 늘 나갈 길이다(문구는 LeeoKit 카탈로그).
+            if !storeManager.subscriptionMarks.isEmpty {
+                SettingsDivider()
+                Button { showManageSubscriptions = true } label: {
+                    SettingsRow(icon: "calendar.badge.clock", title: LeeoLadderText.manageSubscription) {
                         SettingsChevron()
                     }
                 }
                 .buttonStyle(.plain)
+            }
 
+            // 개발자 응원하기(팁) — 후원 단계 배지가 줄 안에 선다. 판매 중인 팁이 있어야 선다(문구는 LeeoKit 카탈로그).
+            if let tipJar = storeManager.tipJar {
+                LeeoTipJarLink<BurningParchmentSpec>(tipJar: tipJar)
+                    .modifier(LeeoRowFit(fontSize: rowFontSize))
+            }
+
+            // 선물하기 — Plus · Pro 를 골라 보낸다. 상품이 App Store 에서 와야 선다.
+            GiftRow(storeManager: storeManager)
+
+            // 평생을 가진 사람은 되돌릴 구매가 없다. 나머지는 칸 끝에 복원을 둔다.
+            if !storeManager.isPro {
                 SettingsDivider()
-
                 Button {
                     Task {
                         let restored = await storeManager.restorePurchases()
                         if !restored {
                             restoreMessage = storeManager.lastError
-                                ?? String(localized: "이 Apple 계정으로 프로를 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
+                                ?? String(localized: "이 Apple 계정으로 산 기록을 찾지 못했어요. 구매할 때 쓴 계정으로 로그인했는지 확인해주세요.")
                         }
                     }
                 } label: {
@@ -496,39 +533,54 @@ struct SettingsView: View {
                 .buttonStyle(.plain)
                 .disabled(storeManager.purchaseInProgress)
             }
+        }
+    }
 
-            // 프로 선물하기 · 선물 코드 넣기 — 프로 카드 안, 맨 아래 (→ GiftRows).
-            if let gift = storeManager.gift {
-                GiftRows(gift: gift, isPro: storeManager.isPro)
+    /// 인생의 시간을 몇 개 더 만들 수 있는가 — 요금제 바로 아래(클립키보드의 남은 칸 줄과 같다).
+    /// 만들다 막혀서야 한도를 알게 되면 늦다. 설정을 열면 먼저 보이고, 바로 위에 그 칸을 늘리는 길이 있다.
+    /// ⚠️ 저장을 막는 관문(`StoreManager.canAddCount`)과 같은 숫자를 센다 — 자유시간은 빼고.
+    /// ⚠️ 겁을 주지 않는다. 0이어도 몇 개 중 몇 개인지만 말한다. 한도가 없는 사람(Pro · 창단 후원자)에게는 없다.
+    @ViewBuilder
+    private var remainingCountRow: some View {
+        if !storeManager.isFounder, let limit = storeManager.plan.countLimit {
+            let used = RemainingItemStore.decode(itemsData).filter { !$0.isFreeTime }.count
+            SettingsDivider()
+            SettingsRow(icon: "hourglass", title: String(localized: "인생의 시간 \(max(0, limit - used))개 남았어요")) {
+                Text(verbatim: "\(min(used, limit))/\(limit)")
+                    .scaledFont(size: 14, weight: .semibold)
+                    .foregroundColor(used >= limit ? .ember : .inkMuted)
+                    .monospacedDigit()
             }
+            .accessibilityElement(children: .combine)
+        }
+    }
 
-            // 개발자 응원하기(팁) — 선물 바로 아래. 판매 중인 팁이 있어야 선다(문구는 LeeoKit 카탈로그).
-            // 아래 지원 카드의 LeeoKit 행과 같은 모양을 입힌다.
-            if let tipJar = storeManager.tipJar {
-                LeeoTipJarLink<BurningParchmentSpec>(tipJar: tipJar)
-                    .labelStyle(SettingsLabelStyle())
-                    .font(.system(size: rowFontSize))
-                    .foregroundStyle(Color.inkMuted.opacity(0.8))
-                    .tint(.ember)
-                    .buttonStyle(.plain)
-                    .padding(.horizontal, 14)
-                    .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
-                    .contentShape(Rectangle())
-                    .overlay(alignment: .top) { SettingsDivider() }
+    // MARK: - 갈래
+    // 첫 화면에는 갈래 이름만 세우고, 행은 한 칸 안쪽 화면에 둔다(클립키보드와 같다).
+
+    /// 매일 손대는 것 — 페이지, 화면과 불꽃.
+    private var everydayGroup: some View {
+        SettingsGroup(title: String(localized: "매일 쓰는 것")) {
+            categoryRow(String(localized: "페이지"), icon: "rectangle.stack") {
+                pageGroup
+                liveActivityGroup
+            }
+            SettingsDivider()
+            categoryRow(String(localized: "화면과 불꽃"), icon: "flame") {
+                appearanceGroup
+                flameSizeGroup
+                parchmentGroup
             }
         }
     }
 
-    // MARK: - 지원 (문의 · 피드백 · 리뷰 · 정책 · 버전)
-
-    private var supportGroup: some View {
-        SettingsGroup(title: String(localized: "지원"),
-                      footer: String(localized: "버그 제보와 기능 제안을 환영합니다.")) {
-            contactRow(title: String(localized: "이메일로 문의하기"), icon: "envelope", url: "mailto:leeo@kakao.com")
-            SettingsDivider()
-            contactRow(title: String(localized: "인스타그램 DM (@lee25_ios)"), icon: "paperplane",
-                       url: "https://instagram.com/lee25_ios")
-            SettingsDivider()
+    /// 가끔 여는 것 — 수면 기록, 새로 생긴 것, 처음 안내, 함께 쓰면 좋은 앱.
+    private var helpGroup: some View {
+        SettingsGroup(title: String(localized: "데이터와 도움말")) {
+            if NightManager.isEnabled && SleepHealth.isAvailable {
+                categoryRow(String(localized: "수면 기록"), icon: "bed.double") { sleepRecordGroup }
+                SettingsDivider()
+            }
             Button { showWhatsNew = true } label: {
                 SettingsRow(icon: "sparkles", title: String(localized: "새로 생긴 것")) {
                     SettingsChevron()
@@ -542,6 +594,22 @@ struct SettingsView: View {
                 }
             }
             .buttonStyle(.plain)
+
+            // 같은 개발자가 만든 다른 앱 — 목록과 소개 글은 LeeoKit(LeeoFamilyCatalog)에 있다
+            LeeoFamilySettingsRow<BurningParchmentSpec>()
+                .modifier(LeeoRowFit(fontSize: rowFontSize))
+        }
+    }
+
+    /// 의견 보내기 — 첫 화면의 **맨 끝**. 갈래를 다 훑고 난 자리에 둔다(클립키보드와 같다).
+    /// 버전은 LeeoKit 행들(피드백 · 리뷰 · 정책 · 버전)의 끝에 늘 보인다.
+    private var feedbackGroup: some View {
+        SettingsGroup(title: String(localized: "의견 보내기"),
+                      footer: String(localized: "버그 제보와 기능 제안을 환영합니다.")) {
+            contactRow(title: String(localized: "이메일로 문의하기"), icon: "envelope", url: "mailto:leeo@kakao.com")
+            SettingsDivider()
+            contactRow(title: String(localized: "인스타그램 DM (@lee25_ios)"), icon: "paperplane",
+                       url: "https://instagram.com/lee25_ios")
             SettingsDivider()
             // 앞으로 만들 것 — 원본은 BurningParchmentRoadmap.swift.
             NavigationLink {
@@ -553,31 +621,30 @@ struct SettingsView: View {
             }
             .buttonStyle(.plain)
 
-            // 같은 개발자가 만든 다른 앱 — 목록과 소개 글은 LeeoKit(LeeoFamilyCatalog)에 있다
-            LeeoFamilySettingsRow<BurningParchmentSpec>()
-                .labelStyle(SettingsLabelStyle())
-                .font(.system(size: rowFontSize))
-                .foregroundStyle(Color.inkMuted.opacity(0.8))
-                .tint(.ember)
-                .buttonStyle(.plain)
-                .padding(.horizontal, 14)
-                .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
-                .contentShape(Rectangle())
-                .overlay(alignment: .top) { SettingsDivider() }
-
             // LeeoKit 의 행들(피드백·리뷰·정책 링크·버전)은 Form 용이라 테두리가 없다.
             // 행마다 같은 높이와 위쪽 구분선을 입혀 위의 행들과 맞춘다.
             LeeoSupportSection<BurningParchmentSpec>()
-                .labelStyle(SettingsLabelStyle())
-                .font(.system(size: rowFontSize))
-                .foregroundStyle(Color.inkMuted.opacity(0.8))
-                .tint(.ember)
-                .buttonStyle(.plain)
-                .padding(.horizontal, 14)
-                .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
-                .contentShape(Rectangle())
-                .overlay(alignment: .top) { SettingsDivider() }
+                .modifier(LeeoRowFit(fontSize: rowFontSize))
         }
+    }
+
+    /// 갈래 한 줄. 누르면 그 갈래의 묶음들이 한 화면에 선다.
+    private func categoryRow<Content: View>(_ title: String, icon: String,
+                                            @ViewBuilder _ content: () -> Content) -> some View {
+        NavigationLink {
+            ScrollView {
+                VStack(spacing: 28) { content() }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 8)
+                    .padding(.bottom, 32)
+            }
+            .background(Color.appBackgroundWarm.ignoresSafeArea())
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+        } label: {
+            SettingsRow(icon: icon, title: title) { SettingsChevron() }
+        }
+        .buttonStyle(.plain)
     }
 
     @ViewBuilder
@@ -593,62 +660,70 @@ struct SettingsView: View {
     }
 }
 
+// MARK: - LeeoKit 행 맞춤
+
+/// LeeoKit 의 행들은 Form 용이라 테두리가 없다. 설정 카드의 다른 행과 같은 높이 · 글자 · 위쪽 구분선을 입힌다.
+private struct LeeoRowFit: ViewModifier {
+    let fontSize: CGFloat
+
+    func body(content: Content) -> some View {
+        content
+            .labelStyle(SettingsLabelStyle())
+            .font(.system(size: fontSize))
+            .foregroundStyle(Color.inkMuted.opacity(0.8))
+            .tint(.ember)
+            .buttonStyle(.plain)
+            .padding(.horizontal, 14)
+            .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+            .contentShape(Rectangle())
+            .overlay(alignment: .top) { SettingsDivider() }
+    }
+}
+
 // MARK: - 선물
 
-/// 설정 ▸ 프로 카드의 **선물** 줄.
-///
-/// - 받기: 받은 App Store 코드(오퍼 코드 · 프로모션 코드)를 넣는다. 예전의 "프로모션 코드 사용" 줄도 이것 하나로 합쳤다.
-/// - 보내기: 판매를 연 뒤에만(`LeeoGiftConfig.sellsGifts`) 프로를 다른 사람에게 보낸다. 지금은 닫혀 있다.
-///
-/// ⚠️ 보내기는 `isAvailable`(판매가 열렸고 상품이 왔다), 받기는 `canRedeem` 을 본다.
-///    판매가 닫혀 있어도 이미 결제했거나 보낸 선물이 있는 사람에게는 보내기 줄이 남는다 —
-///    코드를 다시 보거나 문의까지 갈 길이 있어야 한다.
-/// ⚠️ 문구는 LeeoKit 카탈로그(`LeeoGiftText`)에 있다 — 24개 언어가 이미 들어 있다.
-/// ⚠️ 엔진(`LeeoGiftStore`)은 따로 관찰해야 한다. 상품은 앱이 뜬 뒤에 오는데 `StoreManager` 는
-///    그 변화를 알리지 않는다.
-private struct GiftRows: View {
-    @ObservedObject var gift: LeeoGiftStore
-    let isPro: Bool
+/// 설정 ▸ 요금제와 응원의 **선물하기** 줄. 누르면 등급(Plus · Pro)을 골라 보내는 한 화면이다(LeeoKit `LeeoGiftPickerView`).
+/// 선물을 사면 App Store 오퍼 코드 링크가 나오고, 받은 사람은 App Store 에서 "사용" 한 번으로 열린다 —
+/// 여는 것은 우리 코드가 아니라 App Store 다(지침 3.1.1).
+/// ⚠️ 선물 엔진은 따로 관찰해야 한다. 상품은 앱이 뜬 뒤에 오는데 `StoreManager` 는 그 변화를 알리지 않는다.
+/// ⚠️ 문구는 LeeoKit 카탈로그(`LeeoGiftText`)에 있다.
+private struct GiftRow: View {
+    @ObservedObject var storeManager: StoreManager
     @State private var showSupport = false
+    /// 선물 엔진이 바뀔 때마다 다시 그리게 하는 눈금
+    @State private var tick = 0
+
+    /// 보낼 수 있는 선물, 싼 것(Plus)부터. 상품이 왔거나 이미 보낸 · 준비 중인 결제가 있으면 선다.
+    private var senders: [LeeoGiftStore] {
+        storeManager.gifts.filter { $0.isAvailable || $0.pendingCount > 0 || !$0.sentGifts.isEmpty }.reversed()
+    }
 
     var body: some View {
-        let sends = gift.isAvailable || gift.pendingCount > 0 || !gift.sentGifts.isEmpty
-        // 이미 프로인 사람은 받을 것이 없다 — 받은 적이 있으면 그 기록을 볼 수 있게만 남긴다.
-        let receives = gift.canRedeem && (!isPro || gift.redeemed != nil)
-        if sends || receives {
-            // 카드 안의 다른 줄과 같은 간격(0)으로 쌓는다.
-            VStack(spacing: 0) {
-                if sends {
-                    SettingsDivider()
-                    NavigationLink {
-                        // 선물이 안 되면 결제 번호·코드를 붙여 문의하게 한다 — 막힌 사람을 놓치지 않게.
-                        LeeoGiftView<BurningParchmentSpec>(gift: gift, showsRedeemLink: false,
-                                                           onContactSupport: { showSupport = true })
-                    } label: {
-                        SettingsRow(icon: "gift.fill", title: LeeoGiftText.sendEntry) {
-                            SettingsChevron()
-                        }
+        let senders = senders
+        VStack(spacing: 0) {
+            if !senders.isEmpty {
+                SettingsDivider()
+                NavigationLink {
+                    LeeoGiftPickerView<BurningParchmentSpec>(gifts: senders,
+                                                             showsRedeemLink: !storeManager.isPro,
+                                                             onContactSupport: { showSupport = true })
+                } label: {
+                    SettingsRow(icon: "gift.fill", title: String(localized: "선물하기")) {
+                        SettingsChevron()
                     }
-                    .buttonStyle(.plain)
                 }
-                if receives {
-                    SettingsDivider()
-                    NavigationLink {
-                        LeeoGiftRedeemView<BurningParchmentSpec>(gift: gift,
-                                                                 onContactSupport: { showSupport = true })
-                    } label: {
-                        SettingsRow(icon: "giftcard", title: LeeoGiftText.redeemEntry) {
-                            SettingsChevron()
-                        }
-                    }
-                    .buttonStyle(.plain)
-                }
+                .buttonStyle(.plain)
             }
-            .sheet(isPresented: $showSupport) {
-                NavigationStack {
-                    LeeoFeedbackView<BurningParchmentSpec>(initialType: .bug, extraInfo: gift.supportLines,
-                                                           initialCategory: .purchase)
-                }
+        }
+        .id(tick)
+        .onReceive(Publishers.MergeMany(storeManager.gifts.map(\.objectWillChange))) { _ in
+            Task { @MainActor in tick += 1 }
+        }
+        .sheet(isPresented: $showSupport) {
+            NavigationStack {
+                LeeoFeedbackView<BurningParchmentSpec>(initialType: .bug,
+                                                       extraInfo: storeManager.gifts.flatMap(\.supportLines),
+                                                       initialCategory: .purchase)
             }
         }
     }

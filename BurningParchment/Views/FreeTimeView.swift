@@ -173,8 +173,8 @@ struct FreeTimeIntroView: View {
                 }
 
                 VStack(spacing: 10) {
-                    if freeTimeManager.isConfigured && !storeManager.isPro {
-                        primaryButton(String(localized: "프로로 자유시간만 태우기"), icon: "flame.fill") {
+                    if freeTimeManager.isConfigured && !storeManager.hasPlus {
+                        primaryButton(String(localized: "Plus로 자유시간만 태우기"), icon: "flame.fill") {
                             showPaywall = true
                         }
                         Button("자유시간 고치기", action: onEdit)
@@ -182,8 +182,8 @@ struct FreeTimeIntroView: View {
                             .foregroundColor(.ember.opacity(0.8))
                     } else {
                         primaryButton(String(localized: "나의 자유시간 정하기"), icon: "plus", action: onEdit)
-                        if !storeManager.isPro {
-                            Text("정해 보고 셈을 보는 건 무료예요. 그 시간만 태우는 건 프로예요.")
+                        if !storeManager.hasPlus {
+                            Text("정해 보고 셈을 보는 건 무료예요. 그 시간만 태우는 건 Plus예요.")
                                 .scaledFont(size: 11)
                                 .foregroundColor(.inkMuted.opacity(0.5))
                                 .multilineTextAlignment(.center)
@@ -249,7 +249,7 @@ struct FreeTimeEditorView: View {
 
                         if freeTimeManager.isConfigured { blockList }
 
-                        if !storeManager.isPro { proBanner }
+                        if !storeManager.hasPlus { proBanner }
                     }
                     .padding(20)
                 }
@@ -420,7 +420,7 @@ struct FreeTimeEditorView: View {
                     .scaledFont(size: 18)
                     .foregroundColor(.ember)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("프로에서 이 시간만 양피지가 타요")
+                    Text("Plus에서 이 시간만 양피지가 타요")
                         .scaledFont(size: 14, weight: .semibold, design: .serif)
                         .foregroundColor(.ember.opacity(0.9))
                     Text("자유시간이 지나갈 때만 불이 붙고, 밖에서는 꺼진 채 기다려요")

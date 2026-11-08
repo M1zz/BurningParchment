@@ -14,6 +14,9 @@
 //   -period week|month|year 그 기간 페이지로 연다
 //   debugScreen 에 urn(재 항아리) · year · blowout · freeTime(자유시간 정하기) · flames(불꽃 종류 캐러셀) 도 있다
 //   -freeTimeDemo YES       자유시간이 비어 있으면 평일 저녁·주말 오후 예시를 넣고 자유시간 탭을 연다
+//   -reviewShot <상품 ID>   인앱 상품 **심사 이미지**. 선물 상품이면 선물 화면을 결제 없이 그리고
+//   -reviewShotPrice '$9.99' (값은 이것), 그 밖의 상품이면 그 칸이 앞에 선 페이월을 띄운다(-forcePro NO 와 함께).
+//                          예) -reviewShot com.burningparchment.app.gift.plus -reviewShotPrice '$12.99'
 //
 // 예) xcrun simctl launch booted com.burningparchment.app -forcePro YES -seedDemo YES -debugScreen insights
 
@@ -267,7 +270,7 @@ struct DebugLaunchModifier: ViewModifier {
                 case "year":  bedtimeManager.selectedPeriod = .year
                 default:      break
                 }
-                screen = DebugLaunch.screen
+                screen = UserDefaults.standard.string(forKey: "reviewShot") != nil ? "reviewShot" : DebugLaunch.screen
             }
             .sheet(isPresented: Binding(get: { screen != nil }, set: { if !$0 { screen = nil } })) {
                 destination
@@ -284,6 +287,7 @@ struct DebugLaunchModifier: ViewModifier {
     private var destination: some View {
         switch screen {
         case "paywall":    PaywallView()
+        case "reviewShot": ReviewShotView(productID: UserDefaults.standard.string(forKey: "reviewShot") ?? "")
         case "settings":   SettingsView()
         case "fragments":  FragmentCollectionView()
         case "poster":     FragmentShareSheet(content: .poster(fragmentManager.fragments))
@@ -340,3 +344,27 @@ extension View {
         #endif
     }
 }
+
+#if DEBUG
+import LeeoKit
+
+/// 인앱 상품 심사 이미지 — 시뮬레이터에는 StoreKit 상품이 오지 않을 수 있어, 선물은 LeeoKit `LeeoGiftView(previewPrice:)` 로
+/// 결제 없이 그린다. 판매 상품(Plus · Pro)은 그 칸이 앞에 선 페이월이다(`.storekit` 구성으로 값이 뜬다).
+private struct ReviewShotView: View {
+    let productID: String
+    @EnvironmentObject var storeManager: StoreManager
+
+    var body: some View {
+        if let gift = storeManager.gifts.first(where: { $0.config.productID == productID }) {
+            NavigationStack {
+                LeeoGiftView<BurningParchmentSpec>(previewPrice: UserDefaults.standard.string(forKey: "reviewShotPrice") ?? "$9.99",
+                                                   gift: gift)
+                    .navigationTitle(String(localized: "선물하기"))
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+        } else {
+            PaywallView(start: StoreManager.plusProductIDs.contains(productID) ? .plus : .pro)
+        }
+    }
+}
+#endif

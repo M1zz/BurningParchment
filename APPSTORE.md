@@ -8,7 +8,7 @@
 
 ### 부제
 
-남은 시간이 타들어가는 양피지
+타는 하루, 끄는 밤, 쌓이는 재
 
 ### 키워드
 
@@ -65,7 +65,7 @@ Burning Parchment: Bedtime
 
 ### 부제
 
-Your day is burning down
+Burn the day, keep the ash
 
 ### 키워드
 
@@ -122,7 +122,7 @@ https://m1zz.github.io/BurningParchment/en/
 
 ### 부제
 
-あなたの今日が燃えていく
+燃える一日、消す夜、積もる灰
 
 ### 키워드
 
@@ -179,7 +179,7 @@ Burning Parchment: Bedtime
 
 ### 부제
 
-Your day is burning down
+Burn the day, keep the ash
 
 ### 키워드
 
@@ -236,7 +236,7 @@ Pergamino en Llamas: Tu día
 
 ### 부제
 
-Tu tiempo arde hasta dormir
+Arde el día, guarda la ceniza
 
 ### 키워드
 
@@ -293,7 +293,7 @@ Brennendes Pergament: Bettzeit
 
 ### 부제
 
-Dein Tag brennt langsam ab
+Tag verbrennt, Asche bleibt
 
 ### 키워드
 
@@ -350,7 +350,7 @@ https://m1zz.github.io/BurningParchment/de/
 
 ### 부제
 
-你的今天，正在燃烧
+燃烧的白天，吹熄的夜，积起的灰
 
 ### 키워드
 
@@ -407,7 +407,7 @@ https://m1zz.github.io/BurningParchment/zh-hans/
 
 ### 부제
 
-你的今天，正在燃燒
+燃燒的白天，吹熄的夜，積起的灰
 
 ### 키워드
 
@@ -464,7 +464,7 @@ https://m1zz.github.io/BurningParchment/zh-hant/
 
 ### 부제
 
-Ваш день сгорает на глазах
+День сгорает, пепел остаётся
 
 ### 키워드
 
@@ -521,7 +521,7 @@ Parchemin en flammes : coucher
 
 ### 부제
 
-Votre journée brûle doucement
+Le jour brûle, la cendre reste
 
 ### 키워드
 
@@ -578,7 +578,7 @@ Pergamena in fiamme: riposo
 
 ### 부제
 
-La tua giornata brucia piano
+Brucia il giorno, resta cenere
 
 ### 키워드
 
@@ -635,7 +635,7 @@ Pergaminho em Chamas: dormir
 
 ### 부제
 
-Seu dia queimando até dormir
+O dia queima, a cinza fica
 
 ### 키워드
 
@@ -692,7 +692,7 @@ https://m1zz.github.io/BurningParchment/pt-br/
 
 ### 부제
 
-วันของคุณกำลังไหม้ลง
+วันมอดไหม้ คืนดับไฟ เถ้าสะสม
 
 ### 키워드
 
@@ -749,7 +749,7 @@ Giấy Da Cháy: đến giờ ngủ
 
 ### 부제
 
-Ngày của bạn đang cháy dần
+Ngày cháy dần, tro ở lại
 
 ### 키워드
 
@@ -806,7 +806,7 @@ Hořící pergamen: před spaním
 
 ### 부제
 
-Váš den pomalu dohořívá
+Den hoří, popel zůstává
 
 ### 키워드
 
@@ -863,7 +863,7 @@ Brændende Pergament: sengetid
 
 ### 부제
 
-Din dag brænder langsomt ned
+Dagen brænder, asken bliver
 
 ### 키워드
 
@@ -920,7 +920,7 @@ https://m1zz.github.io/BurningParchment/da/
 
 ### 부제
 
-Η μέρα σας καίγεται σιγά σιγά
+Καίγεται η μέρα, μένει στάχτη
 
 ### 키워드
 
@@ -977,7 +977,7 @@ Palava Pergamentti: nukkumaan
 
 ### 부제
 
-Päiväsi palaa hiljalleen
+Päivä palaa, tuhka jää
 
 ### 키워드
 
@@ -1034,7 +1034,7 @@ Perkamen Terbakar: Waktu Tidur
 
 ### 부제
 
-Sisa harimu terbakar perlahan
+Hari terbakar, abu tersimpan
 
 ### 키워드
 
@@ -1091,7 +1091,7 @@ Brennende Pergament: leggetid
 
 ### 부제
 
-Dagen din brenner sakte ned
+Dagen brenner, asken blir
 
 ### 키워드
 
@@ -1148,7 +1148,7 @@ Brandend Perkament: bedtijd
 
 ### 부제
 
-Je dag brandt langzaam op
+De dag brandt, de as blijft
 
 ### 키워드
 
@@ -1205,7 +1205,7 @@ Płonący Pergamin: pora snu
 
 ### 부제
 
-Twój dzień powoli się dopala
+Dzień płonie, popiół zostaje
 
 ### 키워드
 
@@ -1262,7 +1262,7 @@ Brinnande Pergament: läggdags
 
 ### 부제
 
-Din dag brinner sakta ner
+Dagen brinner, askan stannar
 
 ### 키워드
 
@@ -1319,7 +1319,7 @@ Yanan Parşömen: Uyku Saati
 
 ### 부제
 
-Günün yavaş yavaş yanıyor
+Gün yanar, kül kalır
 
 ### 키워드
 

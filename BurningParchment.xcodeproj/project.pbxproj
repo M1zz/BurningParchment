@@ -16,6 +16,7 @@
 		11EB49DE39479727E3195650 /* UrnShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA71511EFDBE88B00C4EAD /* UrnShapes.swift */; };
 		14A8922B9B8A28BCF24DD1C5 /* FreeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA803F32C074CC7EB61D866 /* FreeTimeView.swift */; };
 		15540253227E69CAD81A04F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FF55A9F8274D79054D076A4 /* PrivacyInfo.xcprivacy */; };
+		164D24604879F0FE4C45C55C /* AshMorningBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BBD450251BFE9984A87A4 /* AshMorningBanner.swift */; };
 		1B273FC340456458C80B16EC /* DayReflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B5CD9701830C1165EDE4C /* DayReflection.swift */; };
 		1F521ADAB0DC4F051433A917 /* ReflectionUrnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D23ECD20748EFC15F8251 /* ReflectionUrnView.swift */; };
 		2B299B0E070DB70F2D6FB5AD /* BedtimeActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD949FE7F65A018336D2A2 /* BedtimeActivityAttributes.swift */; };
@@ -198,6 +199,7 @@
 		916E0DEA4D4FEE77171661E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		92793D17E30FD0433FA70BC3 /* BurningParchment.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BurningParchment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D60B5770EF62427A47B171 /* FireShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FireShader.metal; sourceTree = "<group>"; };
+		A33BBD450251BFE9984A87A4 /* AshMorningBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshMorningBanner.swift; sourceTree = "<group>"; };
 		A9E108371E99FC1B2998C2CF /* BedtimeHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeHomeWidget.swift; sourceTree = "<group>"; };
 		AC700E65FDA28935E4EB72B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6A5099CCB69537514A0210 /* UrnDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrnDetailView.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 		74D32DA31306A16309580D06 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A33BBD450251BFE9984A87A4 /* AshMorningBanner.swift */,
 				BA18C9F87D3BC53327719A3C /* AshYearView.swift */,
 				24A88C8DFC794CBF1BDA5D34 /* BlowOutView.swift */,
 				C772FC8BFE2A0273E79C5141 /* BurningParchmentView.swift */,
@@ -671,6 +674,7 @@
 			files = (
 				DCB523B99902BB7F4EB17A8C /* AppLaunch.swift in Sources */,
 				ED706969CC398989E1B8E644 /* AppLog.swift in Sources */,
+				164D24604879F0FE4C45C55C /* AshMorningBanner.swift in Sources */,
 				CF6D6055058226ABC1B35A78 /* AshYearView.swift in Sources */,
 				2B299B0E070DB70F2D6FB5AD /* BedtimeActivityAttributes.swift in Sources */,
 				A4F57456B157A1096EA9BCA9 /* BedtimeExcuse.swift in Sources */,

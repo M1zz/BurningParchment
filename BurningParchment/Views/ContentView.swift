@@ -182,6 +182,8 @@ struct ContentView: View {
                             .environmentObject(nightManager)
                     }
                     blowOutPrompt
+                    AshMorningBanner(covered: isParchmentCovered) { openReflections(withInput: false) }
+                        .environmentObject(reflectionManager)
                     reflectionNudgeBanner
                     pageIndicator
                 }

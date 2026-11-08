@@ -19967,156 +19967,6 @@
         }
       }
     },
-    "남은 시간이 눈앞에서 타들어가요" : {
-      "comment" : "Onboarding page 1 title",
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sledujte, jak váš čas hoří"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se din tid brænde ned"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sieh deine Zeit verbrennen"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Δείτε τον χρόνο σας να καίγεται"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Watch your time burn away"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Watch your time burn away"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mira cómo arde tu tiempo"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Katso aikasi palavan"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regardez votre temps brûler"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lihat waktumu terbakar"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guarda il tuo tempo bruciare"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "残り時間が目の前で燃えていきます"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "남은 시간이 눈앞에서 타들어가요"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se tiden din brenne ned"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zie je tijd opbranden"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zobacz, jak płonie Twój czas"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Veja seu tempo queimar"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Смотрите, как сгорает ваше время"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se din tid brinna ner"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ดูเวลาของคุณไหม้ไป"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zamanının yanışını izle"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Xem thời gian của bạn cháy dần"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "剩余时间在眼前燃烧"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "剩餘時間在眼前燃燒"
-          }
-        }
-      }
-    },
     "남은 조각은 모아 둘게요.\n오늘은 이대로 푹 자요" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -31183,156 +31033,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "需要開啟麥克風才能吹滅火"
-          }
-        }
-      }
-    },
-    "마이크에 대고 후 불면 불이 꺼지고 남은 조각을 모아 둬요. 입김의 세기만 확인하고 소리는 녹음하지 않아요." : {
-      "comment" : "Onboarding page 2 detail",
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Foukněte do mikrofonu, uhaste oheň a uschovejte zbytek. Kontroluje se jen síla dechu, nic se nenahrává."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pust ind i mikrofonen for at slukke ilden og gemme det, der er tilbage. Kun styrken af dit åndedræt tjekkes; intet optages."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puste ins Mikrofon, um das Feuer zu löschen und den Rest aufzubewahren. Nur die Stärke deines Atems wird geprüft, es wird nichts aufgenommen."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Φυσήξτε στο μικρόφωνο για να σβήσει η φωτιά και να κρατήσετε ό,τι απομένει. Ελέγχεται μόνο η ένταση της πνοής· δεν καταγράφεται τίποτα."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Blow into the microphone to put out the fire and keep what's left. Only the strength of your breath is checked; nothing is recorded."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Blow into the microphone to put out the fire and keep what's left. Only the strength of your breath is checked; nothing is recorded."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sopla en el micrófono para apagar el fuego y guardar lo que queda. Solo se mide la intensidad de tu soplido; no se graba nada."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puhalla mikrofoniin sammuttaaksesi tulen ja säästääksesi jäljelle jääneen. Vain hengityksesi voimakkuus tarkistetaan; mitään ei tallenneta."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Soufflez dans le micro pour éteindre le feu et garder ce qu’il reste. Seule la force de votre souffle est vérifiée ; rien n’est enregistré."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tiup mikrofon untuk memadamkan api dan menyimpan yang tersisa. Hanya kekuatan napasmu yang diperiksa; tidak ada yang direkam."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Soffia nel microfono per spegnere il fuoco e conservare ciò che resta. Viene controllata solo la forza del soffio; non viene registrato nulla."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "マイクに向かって吹くと火が消え、残ったかけらをしまっておけます。息の強さを確かめるだけで、音は録音しません。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "마이크에 대고 후 불면 불이 꺼지고 남은 조각을 모아 둬요. 입김의 세기만 확인하고 소리는 녹음하지 않아요."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Blås i mikrofonen for å slukke ilden og ta vare på det som er igjen. Bare styrken på pusten sjekkes; ingenting tas opp."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Blaas in de microfoon om het vuur te doven en te bewaren wat er over is. Alleen de kracht van je adem wordt gecontroleerd; er wordt niets opgenomen."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dmuchnij w mikrofon, aby zgasić ogień i zachować to, co zostało. Sprawdzana jest tylko siła oddechu; nic nie jest nagrywane."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sopre no microfone para apagar o fogo e guardar o que sobrou. Só a força do sopro é verificada; nada é gravado."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Подуйте в микрофон, чтобы погасить огонь и сохранить остаток. Проверяется только сила дыхания, звук не записывается."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Blås i mikrofonen för att släcka elden och spara det som blev kvar. Bara styrkan i din andning kontrolleras; inget spelas in."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เป่าใส่ไมโครโฟนเพื่อดับไฟและเก็บส่วนที่เหลือไว้ ตรวจเฉพาะแรงลมเป่า ไม่มีการบันทึกเสียง"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ateşi söndürüp kalanı saklamak için mikrofona üfle. Sadece nefesinin gücü kontrol edilir; hiçbir şey kaydedilmez."
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Thổi vào micro để tắt lửa và giữ lại phần còn lại. Chỉ kiểm tra sức thổi, không ghi âm gì."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "对着麦克风吹一口气，火就熄灭，剩下的碎片会被收起。只检测吹气的力度，不会录音。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "對著麥克風吹一口氣，火就熄滅，剩下的碎片會被收起。只檢測吹氣的力度，不會錄音。"
           }
         }
       }
@@ -57194,156 +56894,6 @@
         }
       }
     },
-    "오늘 한 일을 한 줄로 남기면 그 주의 재 항아리에 쌓여요. 기상과 취침 시간은 설정에서 바꿀 수 있어요." : {
-      "comment" : "Onboarding page 3 detail",
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Napište o svém dni jeden řádek a usadí se v urně s popelem toho týdne. Čas vstávání a spaní změníte v Nastavení."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv en linje om din dag, så lægger den sig i ugens askeurne. Skift tidspunkt for opvågning og sengetid i Indstillinger."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schreib eine Zeile über deinen Tag, und sie sammelt sich in der Ascheurne dieser Woche. Aufsteh- und Schlafenszeit änderst du in den Einstellungen."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Γράψτε μία γραμμή για τη μέρα σας και θα κατακαθίσει στο τεφροδοχείο στάχτης εκείνης της εβδομάδας. Αλλάξτε τις ώρες ξυπνήματος και ύπνου στις Ρυθμίσεις."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write one line about your day and it settles into that week's ash urn. Change your wake and bedtimes in Settings."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write one line about your day and it settles into that week's ash urn. Change your wake and bedtimes in Settings."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escribe una línea sobre tu día y se asentará en la urna de ceniza de esa semana. Cambia tus horas de despertar y de dormir en Ajustes."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kirjoita päivästäsi yksi rivi, ja se laskeutuu kyseisen viikon tuhkauurnaan. Vaihda herätys- ja nukkumaanmenoaikasi Asetuksissa."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Écrivez une ligne sur votre journée et elle se dépose dans l’urne de cendres de la semaine. Changez vos heures de réveil et de coucher dans les Réglages."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tulis satu baris tentang harimu dan ia mengendap di guci abu minggu itu. Ubah waktu bangun dan tidur di Pengaturan."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scrivi una riga sulla tua giornata e si deposita nell’urna di cenere di quella settimana. Cambia gli orari di sveglia e riposo nelle Impostazioni."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今日したことをひとこと残すと、その週の灰の壺に積もっていきます。起床と就寝の時間は設定で変えられます。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "오늘 한 일을 한 줄로 남기면 그 주의 재 항아리에 쌓여요. 기상과 취침 시간은 설정에서 바꿀 수 있어요."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv en linje om dagen din, så legger den seg i askeurnen for den uken. Endre oppvåknings- og leggetid i Innstillinger."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schrijf één regel over je dag en die daalt neer in de asurn van die week. Wijzig je wek- en bedtijden in Instellingen."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Napisz o swoim dniu jedną linijkę, a osiądzie w urnie z popiołem tamtego tygodnia. Godziny budzenia i snu zmienisz w Ustawieniach."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escreva uma linha sobre o seu dia e ela assenta na urna de cinzas daquela semana. Mude os horários de acordar e dormir nos Ajustes."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Напишите о дне одну строку — и она осядет в урне пепла этой недели. Время подъёма и сна меняется в настройках."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv en rad om din dag så lägger den sig i veckans askurna. Ändra väcknings- och läggtid i Inställningar."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เขียนวันของคุณหนึ่งบรรทัด แล้วมันจะตกลงในโถเถ้าของสัปดาห์นั้น เปลี่ยนเวลาตื่นและเวลานอนได้ในการตั้งค่า"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gününle ilgili bir satır yaz, o haftanın kül kavanozuna çöksün. Uyanma ve uyuma saatlerini Ayarlar’dan değiştir."
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Viết một dòng về ngày của bạn và nó sẽ lắng vào bình tro của tuần đó. Đổi giờ thức và giờ ngủ trong Cài đặt."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用一句话记下今天做的事，它就会落进当周的灰罐。起床和就寝时间可在设置中更改。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用一句話記下今天做的事，它就會落進當週的灰罐。起床和就寢時間可在設定中更改。"
-          }
-        }
-      }
-    },
     "오늘 한 줄, 남기고 잘까요?" : {
       "localizations" : {
         "cs" : {
@@ -65655,156 +65205,6 @@
         }
       }
     },
-    "일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 옆으로 밀면 이번 주, 이번 달, 올해도 볼 수 있어요." : {
-      "comment" : "Onboarding page 1 detail",
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Od vstávání do usnutí pergamen pomalu hoří. Přejetím do strany uvidíte týden, měsíc a rok."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fra du står op til sengetid brænder pergamentet langsomt ned. Stryg til siden for at se uge, måned og år."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vom Aufwachen bis zur Schlafenszeit brennt das Pergament langsam ab. Wische zur Seite, um diese Woche, diesen Monat und dieses Jahr zu sehen."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Από το ξύπνημα ως την ώρα του ύπνου, η περγαμηνή καίγεται σιγά σιγά. Σύρετε προς τα πλάγια για να δείτε την εβδομάδα, τον μήνα και το έτος."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "From the moment you wake up until bedtime, the parchment slowly burns. Swipe sideways to see this week, month, and year."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "From the moment you wake up until bedtime, the parchment slowly burns. Swipe sideways to see this week, month, and year."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desde que despiertas hasta que te duermes, el pergamino arde poco a poco. Desliza hacia los lados para ver esta semana, este mes y este año."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Herätyksestä nukkumaanmenoon pergamentti palaa hitaasti. Pyyhkäise sivulle nähdäksesi viikon, kuukauden ja vuoden."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du réveil au coucher, le parchemin brûle lentement. Balayez sur le côté pour voir la semaine, le mois et l’année."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dari saat bangun hingga waktu tidur, perkamen terbakar perlahan. Gesek ke samping untuk melihat minggu, bulan, dan tahun."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dalla sveglia al riposo la pergamena brucia lentamente. Scorri di lato per vedere settimana, mese e anno."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "起きた瞬間から寝る時間まで、羊皮紙がゆっくり燃えていきます。横にスワイプすると今週・今月・今年も見られます。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 옆으로 밀면 이번 주, 이번 달, 올해도 볼 수 있어요."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fra du står opp til leggetid brenner pergamentet sakte ned. Sveip til siden for å se uke, måned og år."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Van opstaan tot bedtijd brandt het perkament langzaam op. Veeg zijwaarts om de week, maand en het jaar te zien."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Od pobudki do pory snu pergamin powoli się spala. Przesuń w bok, aby zobaczyć tydzień, miesiąc i rok."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Do acordar até a hora de dormir, o pergaminho queima devagar. Deslize para o lado para ver a semana, o mês e o ano."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "От подъёма до отхода ко сну пергамент медленно горит. Листайте вбок, чтобы увидеть неделю, месяц и год."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Från uppvaknandet till läggdags brinner pergamentet långsamt ner. Svep åt sidan för att se vecka, månad och år."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ตั้งแต่ตื่นจนถึงเวลานอน กระดาษหนังจะค่อย ๆ ไหม้ ปัดไปทางข้างเพื่อดูสัปดาห์ เดือน และปี"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uyanmaktan uyku saatine kadar parşömen yavaşça yanar. Haftayı, ayı ve yılı görmek için yana kaydır."
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Từ lúc thức dậy đến giờ đi ngủ, giấy da cháy dần. Vuốt sang ngang để xem tuần, tháng và năm."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "从起床到入睡，羊皮纸慢慢燃烧。左右滑动，还能查看本周、本月和今年。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "從起床到入睡，羊皮紙慢慢燃燒。左右滑動，還能查看本週、本月和今年。"
-          }
-        }
-      }
-    },
     "일주일 나만의 시간" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -68274,156 +67674,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "入睡時間"
-          }
-        }
-      }
-    },
-    "잠들기 30분 전, 후 불어 끄세요" : {
-      "comment" : "Onboarding page 2 title",
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minut před spaním oheň sfoukněte"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutter før sengetid: puste ud"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 Minuten vor dem Schlafen auspusten"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 λεπτά πριν τον ύπνο, φυσήξτε να σβήσει"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutes before bed, blow it out"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutes before bed, blow it out"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutos antes de dormir, sopla para apagarlo"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minuuttia ennen nukkumaanmenoa, puhalla se sammuksiin"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutes avant le coucher, soufflez dessus"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 menit sebelum tidur, tiup hingga padam"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minuti prima di dormire, soffiaci sopra"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "寝る30分前、ふーっと吹いて消しましょう"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잠들기 30분 전, 후 불어 끄세요"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutter før leggetid, blås det ut"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minuten voor het slapen, blaas het uit"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minut przed snem zdmuchnij ogień"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minutos antes de dormir, sopre"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "За 30 минут до сна — задуйте огонь"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 minuter före läggdags, blås ut det"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 นาทีก่อนนอน เป่าให้ดับ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uykudan 30 dakika önce üfleyip söndür"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 phút trước khi ngủ, hãy thổi tắt"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "睡前 30 分钟，吹气熄火"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "睡前 30 分鐘，吹氣熄火"
           }
         }
       }
@@ -86358,156 +85608,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "想做卻沒做成的事"
-          }
-        }
-      }
-    },
-    "하루는 재로 남아요" : {
-      "comment" : "Onboarding page 3 title",
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Každý den se promění v popel"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hver dag bliver til aske"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jeder Tag wird zu Asche"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Κάθε μέρα γίνεται στάχτη"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Each day turns to ash"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Each day turns to ash"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cada día se vuelve ceniza"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jokainen päivä muuttuu tuhkaksi"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chaque jour devient cendre"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Setiap hari menjadi abu"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ogni giorno diventa cenere"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "一日は灰になって残ります"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "하루는 재로 남아요"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hver dag blir til aske"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elke dag wordt as"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Każdy dzień zamienia się w popiół"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cada dia vira cinza"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Каждый день становится пеплом"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Varje dag blir aska"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ทุกวันกลายเป็นเถ้า"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Her gün kül olur"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mỗi ngày hóa thành tro"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "每一天都会化为灰烬"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "每一天都會化為灰燼"
           }
         }
       }
@@ -111812,6 +110912,1634 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "離下一次已燃燒%lld%%"
+          }
+        }
+      }
+    },
+    "오늘이라는 종이가 타요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnešek je list, který hoří"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag er et ark, der brænder"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute ist ein Blatt, das brennt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το σήμερα είναι ένα φύλλο που καίγεται"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today is a sheet of paper, burning"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today is a sheet of paper, burning"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoy es una hoja que arde"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tämä päivä on palava paperiarkki"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aujourd'hui est une feuille qui brûle"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari ini adalah kertas yang terbakar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi è un foglio che brucia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日という紙が燃えていく"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘이라는 종이가 타요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag er et ark som brenner"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vandaag is een vel dat brandt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dzisiaj to kartka, która płonie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje é uma folha que queima"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня — лист, который горит"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dag är ett papper som brinner"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันนี้คือกระดาษที่กำลังไหม้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün yanan bir kâğıt"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay là trang giấy đang cháy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天是一张正在燃烧的纸"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天是一張正在燃燒的紙"
+          }
+        }
+      }
+    },
+    "일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 남은 만큼을 보면 지금 할 일이 보여요." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od probuzení až do spánku pergamen pomalu hoří. Když vidíte, kolik zbývá, víte, co dělat teď."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du vågner til sengetid, brænder pergamentet langsomt. Når du ser, hvad der er tilbage, ved du, hvad du skal nu."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vom Aufwachen bis zur Schlafenszeit brennt das Pergament langsam ab. Was übrig ist, zeigt dir, was jetzt zu tun ist."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από τη στιγμή που ξυπνάς ως την ώρα του ύπνου, η περγαμηνή καίγεται αργά. Βλέποντας τι απομένει, ξέρεις τι να κάνεις τώρα."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From the moment you wake until bedtime, the parchment slowly burns. Seeing what's left shows you what to do now."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From the moment you wake until bedtime, the parchment slowly burns. Seeing what's left shows you what to do now."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desde que te despiertas hasta la hora de dormir, el pergamino arde despacio. Ver lo que queda te muestra qué hacer ahora."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heräämisestä nukkumaanmenoon pergamentti palaa hitaasti. Kun näet, paljonko on jäljellä, tiedät mitä tehdä nyt."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du réveil jusqu'au coucher, le parchemin brûle lentement. Voir ce qui reste vous montre quoi faire maintenant."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sejak bangun hingga waktu tidur, perkamen terbakar perlahan. Melihat sisanya membuatmu tahu apa yang harus dilakukan sekarang."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dal risveglio all'ora di dormire la pergamena brucia piano. Vedere quanto resta ti mostra cosa fare adesso."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起きた瞬間から眠る時刻まで、羊皮紙がゆっくり燃えていきます。残りを見れば、今やることが見えてきます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일어난 순간부터 잠들 시각까지 양피지가 천천히 타요. 남은 만큼을 보면 지금 할 일이 보여요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra du våkner til leggetid brenner pergamentet sakte. Når du ser hva som er igjen, vet du hva du skal gjøre nå."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Van het moment dat je wakker wordt tot bedtijd brandt het perkament langzaam op. Zien wat er over is, laat zien wat je nu kunt doen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od przebudzenia do pory snu pergamin powoli płonie. Widząc, ile zostało, wiesz, co robić teraz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do momento em que você acorda até a hora de dormir, o pergaminho queima devagar. Ver o que resta mostra o que fazer agora."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С момента пробуждения до отхода ко сну пергамент медленно горит. Видя, сколько осталось, понимаешь, что делать сейчас."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från att du vaknar till läggdags brinner pergamentet sakta. När du ser vad som är kvar vet du vad du ska göra nu."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งแต่ตื่นจนถึงเวลานอน กระดาษจะค่อยๆ ไหม้ไป เห็นส่วนที่เหลือแล้วจะรู้ว่าตอนนี้ควรทำอะไร"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyandığın andan yatma saatine kadar parşömen yavaşça yanar. Kalanı görmek, şimdi ne yapacağını gösterir."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Từ lúc thức dậy đến giờ đi ngủ, tấm giấy da cháy dần. Nhìn phần còn lại, bạn sẽ thấy việc cần làm lúc này."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从醒来那一刻到入睡时刻，羊皮纸慢慢燃烧。看见还剩多少，就知道现在该做什么。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從醒來那一刻到入睡時刻，羊皮紙慢慢燃燒。看見還剩多少，就知道現在該做什麼。"
+          }
+        }
+      }
+    },
+    "밤에는 후 불어 불을 꺼요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V noci plamen sfoukněte"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om aftenen puster du flammen ud"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abends pustest du die Flamme aus"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το βράδυ, σβήσε τη φλόγα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At night, blow out the flame"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At night, blow out the flame"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por la noche, sopla la llama"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Illalla puhalla liekki sammuksiin"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le soir, soufflez la flamme"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malam hari, tiup padam apinya"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La sera, soffia sulla fiamma"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "夜はふっと吹いて火を消す"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "밤에는 후 불어 불을 꺼요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om kvelden blåser du ut flammen"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "'s Avonds blaas je de vlam uit"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wieczorem zdmuchnij płomień"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À noite, sopre a chama"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ночью задуйте пламя"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På kvällen blåser du ut lågan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตอนกลางคืน เป่าดับไฟ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece alevi üfleyip söndür"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đêm đến, hãy thổi tắt ngọn lửa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "夜里，吹熄火焰"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "夜裡，吹熄火焰"
+          }
+        }
+      }
+    },
+    "잠들기 30분 전, 마이크에 대고 후 불면 불이 꺼져요. 입김의 세기만 확인하고 소리는 녹음하지 않아요." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od 30 minut před spaním foukněte do mikrofonu a plamen zhasne. Měří se jen síla dechu, nic se nenahrává."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra 30 minutter før sengetid puster du i mikrofonen, og flammen går ud. Kun styrken af dit pust måles; intet optages."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ab 30 Minuten vor dem Schlafen pustest du ins Mikrofon, und die Flamme geht aus. Nur die Stärke des Atems zählt, nichts wird aufgenommen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από 30 λεπτά πριν τον ύπνο, φύσηξε στο μικρόφωνο και η φλόγα σβήνει. Μετριέται μόνο η δύναμη της ανάσας, δεν ηχογραφείται τίποτα."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From 30 minutes before bed, blow into the microphone to put out the flame. Only the strength of your breath is checked; nothing is recorded."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From 30 minutes before bed, blow into the microphone to put out the flame. Only the strength of your breath is checked; nothing is recorded."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desde 30 minutos antes de dormir, sopla al micrófono para apagar la llama. Solo se mide la fuerza del soplido; no se graba nada."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoli tuntia ennen nukkumaanmenoa puhalla mikrofoniin, niin liekki sammuu. Vain puhalluksen voimakkuus mitataan, mitään ei äänitetä."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dès 30 minutes avant le coucher, soufflez dans le micro pour éteindre la flamme. Seule la force du souffle est mesurée, rien n'est enregistré."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai 30 menit sebelum tidur, tiup ke mikrofon untuk memadamkan api. Hanya kekuatan napas yang diperiksa; tidak ada yang direkam."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da 30 minuti prima di dormire, soffia nel microfono e la fiamma si spegne. Si misura solo la forza del soffio, non si registra nulla."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "眠る30分前から、マイクにふっと吹くと火が消えます。息の強さだけを確かめ、音は録音しません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠들기 30분 전, 마이크에 대고 후 불면 불이 꺼져요. 입김의 세기만 확인하고 소리는 녹음하지 않아요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra 30 minutter før leggetid blåser du i mikrofonen, og flammen slukker. Bare styrken i pusten måles; ingenting tas opp."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vanaf 30 minuten voor bedtijd blaas je in de microfoon en gaat de vlam uit. Alleen de kracht van je adem telt; er wordt niets opgenomen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od 30 minut przed snem dmuchnij w mikrofon, a płomień zgaśnie. Mierzona jest tylko siła oddechu, nic nie jest nagrywane."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A partir de 30 minutos antes de dormir, sopre no microfone para apagar a chama. Só a força do sopro é medida; nada é gravado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "За 30 минут до сна подуйте в микрофон, и пламя погаснет. Проверяется только сила дыхания, звук не записывается."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från 30 minuter före läggdags blåser du i mikrofonen så slocknar lågan. Bara styrkan i andetaget mäts; inget spelas in."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งแต่ 30 นาทีก่อนนอน เป่าใส่ไมโครโฟนแล้วไฟจะดับ ตรวจเพียงแรงลมหายใจ ไม่มีการบันทึกเสียง"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yatmadan 30 dakika önce mikrofona üfleyince alev söner. Yalnızca nefesin gücü ölçülür, hiçbir şey kaydedilmez."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Từ 30 phút trước khi ngủ, thổi vào micro để tắt lửa. Chỉ đo độ mạnh hơi thở, không ghi âm."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "睡前30分钟起，对着麦克风吹一口气，火就会熄灭。只检测气息强弱，不会录音。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "睡前30分鐘起，對著麥克風吹一口氣，火就會熄滅。只偵測氣息強弱，不會錄音。"
+          }
+        }
+      }
+    },
+    "한 줄 남긴 날은 재로 쌓여요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dny zapsané jednou větou zůstanou jako popel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dage med en linje bliver til aske, der bliver"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tage mit einer Zeile bleiben als Asche"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι μέρες με μια γραμμή μένουν ως στάχτη"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Days you keep in a line become ash"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Days you keep in a line become ash"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los días que guardas en una línea se vuelven ceniza"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päivät, joista jätät rivin, jäävät tuhkaksi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les jours notés d'une ligne restent en cendre"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari yang kamu tulis satu baris menjadi abu yang tersimpan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I giorni segnati con una riga restano come cenere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一行残した日は灰として積もる"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한 줄 남긴 날은 재로 쌓여요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dager med en linje blir til aske som blir"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dagen met een regel blijven als as"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dni zapisane jednym zdaniem zostają jako popiół"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os dias guardados numa linha viram cinza"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дни, о которых вы написали строку, остаются пеплом"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dagar med en rad blir aska som stannar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันที่เขียนไว้หนึ่งบรรทัดจะสะสมเป็นเถ้า"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir satır bıraktığın günler kül olarak birikir"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày được ghi một dòng sẽ đọng thành tro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "留下一句话的日子会积成灰"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "留下一句話的日子會積成灰"
+          }
+        }
+      }
+    },
+    "오늘을 한 줄로 남기면 재 항아리에 쌓여요. 남기지 않은 날은 바람에 날아가요." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napište o dnešku jednu větu a usadí se ve vaší urně s popelem. Dny bez věty odnese vítr."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en linje om i dag, så lægger den sig i din askeurne. Dage uden en linje blæser væk med vinden."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schreib eine Zeile über heute, dann sammelt sie sich in deiner Aschenurne. Tage ohne Zeile trägt der Wind davon."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψε μια γραμμή για το σήμερα και θα κατακαθίσει στη λάρνακα με τη στάχτη. Τις μέρες χωρίς γραμμή τις παίρνει ο άνεμος."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write one line about today and it settles in your ash urn. Days you don't keep blow away on the wind."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write one line about today and it settles in your ash urn. Days you don't keep blow away on the wind."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe una línea sobre hoy y se posará en tu urna de ceniza. Los días que no guardas se los lleva el viento."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjoita tästä päivästä rivi, niin se laskeutuu tuhkauurnaasi. Päivät ilman riviä tuuli vie mennessään."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrivez une ligne sur aujourd'hui et elle se dépose dans votre urne de cendres. Les jours non notés s'envolent au vent."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tulis satu baris tentang hari ini dan ia mengendap di guci abumu. Hari yang tidak ditulis terbang tertiup angin."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivi una riga su oggi e si poserà nella tua urna di cenere. I giorni senza riga li porta via il vento."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日を一行で残すと灰の壺に積もります。残さなかった日は風に飛んでいきます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘을 한 줄로 남기면 재 항아리에 쌓여요. 남기지 않은 날은 바람에 날아가요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en linje om i dag, så legger den seg i askeurnen din. Dager uten en linje blåser bort med vinden."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schrijf één regel over vandaag en die bezinkt in je asurn. Dagen zonder regel waaien weg met de wind."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisz jedno zdanie o dzisiejszym dniu, a osiądzie w twojej urnie z popiołem. Dni bez zapisu porywa wiatr."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escreva uma linha sobre hoje e ela se assenta na sua urna de cinzas. Os dias que você não guarda o vento leva."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напишите строку о сегодняшнем дне, и она осядет в урне с пеплом. Дни без строки уносит ветер."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv en rad om i dag så lägger den sig i din askurna. Dagar utan rad blåser bort med vinden."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนถึงวันนี้หนึ่งบรรทัด แล้วจะสะสมอยู่ในโถเถ้า วันที่ไม่ได้เขียนไว้จะปลิวไปกับลม"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün için bir satır yaz, kül küpüne yerleşsin. Satır bırakmadığın günleri rüzgâr alıp götürür."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghi một dòng về hôm nay, nó sẽ đọng lại trong hũ tro. Những ngày không ghi sẽ bay theo gió."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用一句话留下今天，它会积在灰烬罐里。没有留下的日子，会随风飘散。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用一句話留下今天，它會積在灰燼罐裡。沒有留下的日子，會隨風飄散。"
+          }
+        }
+      }
+    },
+    "어제가 재로 쌓였어요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Včerejšek se usadil jako popel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I går blev til aske, der bliver"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestern ist zu Asche geworden, die bleibt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το χθες έμεινε στάχτη"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yesterday settled as ash"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yesterday settled as ash"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayer se quedó como ceniza"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eilinen jäi tuhkaksi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier s'est déposé en cendre"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kemarin tersimpan jadi abu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ieri si è posato come cenere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨日が灰として積もりました"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "어제가 재로 쌓였어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I går ble til aske som blir"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gisteren is als as bewaard"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wczoraj osiadło jako popiół"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontem virou cinza guardada"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вчерашний день остался пеплом"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I går blev aska som stannar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อวานสะสมเป็นเถ้าแล้ว"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dün kül olarak birikti"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm qua đã đọng thành tro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨天积成了灰"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨天積成了灰"
+          }
+        }
+      }
+    },
+    "재 항아리에서 볼 수 있어요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Najdete ho v urně s popelem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan se den i din askeurne"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du findest es in deiner Aschenurne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θα το βρεις στη λάρνακα με τη στάχτη"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See it in your ash urn"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See it in your ash urn"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puedes verlo en tu urna de ceniza"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näet sen tuhkauurnassa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À voir dans votre urne de cendres"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat di guci abumu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lo trovi nella tua urna di cenere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "灰の壺で見られます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "재 항아리에서 볼 수 있어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du finner den i askeurnen"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekijk het in je asurn"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobaczysz je w urnie z popiołem"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja na sua urna de cinzas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Её можно увидеть в урне с пеплом"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hittar den i din askurna"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูได้ในโถเถ้า"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kül küpünde görebilirsin"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem trong hũ tro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可以在灰烬罐里看到"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可以在灰燼罐裡看到"
+          }
+        }
+      }
+    },
+    "어제는 재가 되어 바람에 날아갔어요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Včerejšek se proměnil v popel a odvál ho vítr"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I går blev til aske og blæste væk"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestern wurde zu Asche und ist verweht"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το χθες έγινε στάχτη και το πήρε ο άνεμος"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yesterday turned to ash and blew away"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yesterday turned to ash and blew away"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayer se hizo ceniza y se lo llevó el viento"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eilinen muuttui tuhkaksi ja lensi tuulen mukana"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier est devenu cendre et s'est envolé"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kemarin menjadi abu dan terbang tertiup angin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ieri è diventato cenere ed è volato via"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨日は灰になって風に飛んでいきました"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "어제는 재가 되어 바람에 날아갔어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I går ble til aske og blåste bort"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gisteren werd as en woei weg"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wczoraj zamieniło się w popiół i odleciało z wiatrem"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontem virou cinza e o vento levou"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вчерашний день стал пеплом и улетел с ветром"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I går blev aska och blåste bort"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อวานกลายเป็นเถ้าและปลิวไปกับลม"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dün kül oldu ve rüzgârla uçup gitti"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm qua đã thành tro và bay theo gió"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨天化成灰，随风飘散了"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨天化成灰，隨風飄散了"
+          }
+        }
+      }
+    },
+    "지난 %lld일은 재가 되어 바람에 날아갔어요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posledních %lld dní se proměnilo v popel a odvál je vítr"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De sidste %lld dage blev til aske og blæste væk"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die letzten %lld Tage wurden zu Asche und sind verweht"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι τελευταίες %lld μέρες έγιναν στάχτη και τις πήρε ο άνεμος"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The last %lld days turned to ash and blew away"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The last %lld days turned to ash and blew away"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los últimos %lld días se hicieron ceniza y se los llevó el viento"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viimeiset %lld päivää muuttuivat tuhkaksi ja lensivät tuulen mukana"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les %lld derniers jours sont devenus cendre et se sont envolés"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld hari terakhir menjadi abu dan terbang tertiup angin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli ultimi %lld giorni sono diventati cenere e sono volati via"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この%lld日は灰になって風に飛んでいきました"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지난 %lld일은 재가 되어 바람에 날아갔어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De siste %lld dagene ble til aske og blåste bort"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De afgelopen %lld dagen werden as en woeien weg"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostatnie dni (%lld) zamieniły się w popiół i odleciały z wiatrem"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os últimos %lld dias viraram cinza e o vento levou"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последние дни (%lld) стали пеплом и улетели с ветром"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De senaste %lld dagarna blev aska och blåste bort"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld วันที่ผ่านมากลายเป็นเถ้าและปลิวไปกับลม"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son %lld gün kül oldu ve rüzgârla uçup gitti"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ngày qua đã thành tro và bay theo gió"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "过去%lld天化成灰，随风飘散了"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "過去%lld天化成灰，隨風飄散了"
+          }
+        }
+      }
+    },
+    "한 줄 남긴 날만 항아리에 담겨요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V urně zůstanou jen dny, o kterých napíšete větu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun dage med en linje kommer i urnen"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur Tage mit einer Zeile kommen in die Urne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μόνο οι μέρες με μια γραμμή μένουν στη λάρνακα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only days you write a line about stay in the urn"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only days you write a line about stay in the urn"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo los días con una línea se quedan en la urna"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vain päivät, joista jätät rivin, jäävät uurnaan"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuls les jours notés d'une ligne restent dans l'urne"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanya hari yang ditulis satu baris yang masuk ke guci"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo i giorni con una riga restano nell'urna"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一行残した日だけが壺に入ります"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한 줄 남긴 날만 항아리에 담겨요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bare dager med en linje havner i urnen"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen dagen met een regel blijven in de urn"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W urnie zostają tylko dni, o których coś zapiszesz"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Só os dias com uma linha ficam na urna"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В урне остаются только дни, о которых вы написали"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bara dagar med en rad hamnar i urnan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เฉพาะวันที่เขียนไว้หนึ่งบรรทัดเท่านั้นที่อยู่ในโถ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca bir satır bıraktığın günler küpe girer"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ những ngày có một dòng ghi mới ở lại trong hũ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只有留下一句话的日子才会装进罐里"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只有留下一句話的日子才會裝進罐裡"
           }
         }
       }

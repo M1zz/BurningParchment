@@ -328,3 +328,41 @@ final class LifeRhythmTests: XCTestCase {
         XCTAssertEqual(PeriodType.pageOrder.last, .freeTime)
     }
 }
+
+final class AshMorningTests: XCTestCase {
+    private var cal: Calendar { var c = Calendar(identifier: .gregorian); c.timeZone = TimeZone(identifier: "UTC")!; return c }
+    private func day(_ y: Int, _ m: Int, _ d: Int, _ h: Int = 0) -> Date { cal.date(from: DateComponents(year: y, month: m, day: d, hour: h))! }
+
+    private func decide(_ days: [Date], swept: Date? = nil, firstSeen: Date, lastShown: Date? = nil,
+                        lastBlown: Date? = nil, kept: Int = 0, now: Date) -> AshMorning? {
+        AshMorning.decide(reflectionDays: days, sweptUntil: swept, firstSeen: firstSeen, lastShown: lastShown,
+                          lastBlownShown: lastBlown, keptShownCount: kept, now: now, calendar: cal)
+    }
+
+    func testKeptYesterdayShowsAshOnlyFirstFewTimes() {
+        let now = day(2026, 11, 8, 8)
+        XCTAssertEqual(decide([day(2026, 11, 7, 22)], firstSeen: day(2026, 11, 1), now: now), .kept)
+        XCTAssertNil(decide([day(2026, 11, 7, 22)], firstSeen: day(2026, 11, 1), kept: 3, now: now))
+    }
+
+    func testUnkeptDaysBlowAway() {
+        let now = day(2026, 11, 8, 8)
+        // 4일에 남기고 5 · 6 · 7일은 남기지 않았다
+        XCTAssertEqual(decide([day(2026, 11, 4, 22)], firstSeen: day(2026, 11, 1), now: now),
+                       .blown(start: day(2026, 11, 5), end: day(2026, 11, 7), days: 3))
+        // 한 번도 남기지 않은 새 사용자는 처음 연 날부터 센다
+        XCTAssertEqual(decide([], firstSeen: day(2026, 11, 7), now: now),
+                       .blown(start: day(2026, 11, 7), end: day(2026, 11, 7), days: 1))
+        // 처음 연 날 당일에는 아무것도 없다
+        XCTAssertNil(decide([], firstSeen: day(2026, 11, 8), now: now))
+    }
+
+    func testBlownIsOnlySometimesAndOncePerDay() {
+        let now = day(2026, 11, 8, 8)
+        XCTAssertNil(decide([], firstSeen: day(2026, 11, 1), lastBlown: day(2026, 11, 6), now: now))
+        XCTAssertNotNil(decide([], firstSeen: day(2026, 11, 1), lastBlown: day(2026, 11, 5), now: now))
+        XCTAssertNil(decide([], firstSeen: day(2026, 11, 1), lastShown: day(2026, 11, 8, 7), now: now))
+        // 이미 날아간 날(정리됨)은 다시 날리지 않는다
+        XCTAssertNil(decide([], swept: day(2026, 11, 7), firstSeen: day(2026, 11, 1), now: now))
+    }
+}

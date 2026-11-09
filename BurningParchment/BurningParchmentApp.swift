@@ -54,6 +54,8 @@ struct BurningParchmentApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
+                .leeoFeedbackReplyNotice(BurningParchmentSpec.self)
                 .debugLaunch()
                 .environmentObject(bedtimeManager)
                 .environmentObject(deadlineManager)

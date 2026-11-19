@@ -76,7 +76,7 @@ Burn the day, keep the ash
 
 ### 키워드
 
-wind,deadline,live,activity,remaining,hours,countdown,sleep,lockscreen,reflection,routine,curfew
+countdown,curfew,lights out,procrastination,night routine,unwind,late night,evening,gratitude,hours
 
 ### 프로모션 텍스트
 
@@ -140,7 +140,7 @@ https://m1zz.github.io/BurningParchment/en/
 
 ### 키워드
 
-時間管理,睡眠,タイマー,日記,ふりかえり,習慣,ルーティン,夜更かし,早寝,寝落ち,睡眠改善,ウィジェット,ロック画面,締め切り,一日,自己管理,生産性,マインドフルネス,ナイトルーティン,夜
+残り時間,睡眠習慣,寝る前,寝る時間,タイムリミット,おやすみ,日記アプリ,早寝,夜更かし,ふりかえり,睡眠改善,締め切り,自己管理,ナイトルーティン,生産性,習慣,ルーティン,マインドフルネス,睡眠
 
 ### 프로모션 텍스트
 
@@ -396,7 +396,7 @@ https://m1zz.github.io/BurningParchment/de/
 
 ### 키워드
 
-时间管理,睡眠,计时器,日记,复盘,习惯,作息,熬夜,早睡,睡眠改善,小组件,锁屏,截止日期,自律,效率,正念,夜间习惯,仪式感,放松,晚安,健康作息,专注,打卡,目标,待办,提醒,生活记录,夜晚
+早睡,睡眠改善,截止日期,夜间习惯,仪式感,睡前仪式,熬夜提醒,戒熬夜,早睡打卡,就寝,复盘,晚安,夜晚,熬夜,放松,正念,作息,健康作息,习惯,睡眠,专注,锁屏,目标,自律,时间管理,待办,生活记录
 
 ### 프로모션 텍스트
 

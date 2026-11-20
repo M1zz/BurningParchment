@@ -1,5 +1,151 @@
 # 릴리즈 노트
 
+## 1.2.4
+
+### 앱스토어 (한국어)
+
+보낸 의견에 답장이 오면 앱에서 바로 보여요
+앱이 더 안정적으로 열려요
+작은 오류들을 고쳤어요
+
+### App Store (English)
+
+See replies to your feedback in the app
+The app opens more reliably
+Fixed a few small bugs
+
+### 앱스토어 (일본어)
+
+送ったご意見への返信がアプリにすぐ表示されます
+アプリがより安定して起動します
+細かな不具合を直しました
+
+### App Store (en-GB)
+
+See replies to your feedback in the app
+The app opens more reliably
+Fixed a few small bugs
+
+### 앱스토어 (스페인어)
+
+Respuestas a tus comentarios en la app
+La app se abre de forma más fiable
+Hemos corregido pequeños errores
+
+### 앱스토어 (독일어)
+
+Antworten auf Feedback direkt in der App
+Die App startet zuverlässiger
+Kleine Fehler behoben
+
+### 앱스토어 (zh-Hans)
+
+你的反馈收到回复时，会直接在应用中显示
+应用启动更稳定
+修复了一些小问题
+
+### 앱스토어 (zh-Hant)
+
+你的意見收到回覆時，會直接在 App 中顯示
+App 啟動更穩定
+修正了一些小問題
+
+### 앱스토어 (러시아어)
+
+Ответы на ваши отзывы видны в приложении
+Приложение открывается стабильнее
+Исправили мелкие ошибки
+
+### 앱스토어 (프랑스어)
+
+Les réponses à vos retours dans l'app
+L'app s'ouvre de façon plus fiable
+Quelques petits bugs corrigés
+
+### 앱스토어 (이탈리아어)
+
+Le risposte ai tuoi feedback nell'app
+L'app si apre in modo più affidabile
+Abbiamo corretto piccoli errori
+
+### 앱스토어 (pt-BR)
+
+Veja no app as respostas ao seu feedback
+O app abre de forma mais estável
+Corrigimos pequenos erros
+
+### 앱스토어 (태국어)
+
+เห็นคำตอบความคิดเห็นของคุณในแอปได้ทันที
+แอปเปิดได้เสถียรขึ้น
+แก้ไขข้อผิดพลาดเล็กน้อย
+
+### 앱스토어 (베트남어)
+
+Xem phản hồi góp ý ngay trong ứng dụng
+Ứng dụng mở ổn định hơn
+Đã sửa một số lỗi nhỏ
+
+### 앱스토어 (체코어)
+
+Odpovědi na vaše podněty jsou v aplikaci
+Aplikace se spouští spolehlivěji
+Opravili jsme drobné chyby
+
+### 앱스토어 (덴마크어)
+
+Svar på din feedback vises nu i appen
+Appen åbner mere pålideligt
+Små fejl er rettet
+
+### 앱스토어 (그리스어)
+
+Απαντήσεις στα σχόλιά σας στην εφαρμογή
+Η εφαρμογή ανοίγει πιο αξιόπιστα
+Διορθώσαμε μικρά σφάλματα
+
+### 앱스토어 (핀란드어)
+
+Näet palautteen vastaukset sovelluksessa
+Sovellus avautuu luotettavammin
+Pieniä virheitä korjattu
+
+### 앱스토어 (인도네시아어)
+
+Balasan masukan Anda tampil di aplikasi
+Aplikasi kini terbuka lebih andal
+Beberapa bug kecil diperbaiki
+
+### 앱스토어 (노르웨이어(보크말))
+
+Svar på tilbakemeldinger vises i appen
+Appen åpner mer pålitelig
+Små feil er rettet
+
+### 앱스토어 (네덜란드어)
+
+Antwoord op je feedback zie je in de app
+De app opent betrouwbaarder
+Kleine foutjes opgelost
+
+### 앱스토어 (폴란드어)
+
+Odpowiedzi na opinie widać w aplikacji
+Aplikacja uruchamia się stabilniej
+Poprawiliśmy drobne błędy
+
+### 앱스토어 (스웨덴어)
+
+Svar på din feedback syns direkt i appen
+Appen startar mer pålitligt
+Små buggar har åtgärdats
+
+### 앱스토어 (튀르키예어)
+
+Geri bildirim yanıtları artık uygulamada
+Uygulama artık daha sorunsuz açılıyor
+Küçük hatalar giderildi
+
 ## 1.2.3
 
 ### 앱스토어 (한국어)

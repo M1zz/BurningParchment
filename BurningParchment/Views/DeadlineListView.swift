@@ -150,7 +150,7 @@ struct DeadlineRow: View {
                         .foregroundColor(.inkMuted.opacity(0.45))
                 } else {
                     Text(deadline.remainingString(at: now))
-                        .scaledFont(size: 13, weight: .medium, design: .monospaced)
+                        .scaledFont(size: 13, weight: .medium, design: .digits)
                         .foregroundColor(.ember)
                         .lineLimit(1)
                     Text("남음")

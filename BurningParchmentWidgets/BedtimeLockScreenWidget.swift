@@ -29,7 +29,7 @@ struct BedtimeLockScreenWidgetView: View {
                 Image(systemName: "flame.fill")
             } currentValueLabel: {
                 Text("\(entry.percentRemaining)%")
-                    .font(.system(size: 14, weight: .semibold, design: .monospaced))
+                    .font(.system(size: 14, weight: .semibold, design: .digits))
                     .minimumScaleFactor(0.7)
             }
             .gaugeStyle(.accessoryCircular)
@@ -42,7 +42,7 @@ struct BedtimeLockScreenWidgetView: View {
                     Image(systemName: "moon.zzz.fill")
                         .font(.system(size: 16))
                     Text(entry.shortTimeString)
-                        .font(.system(size: 10, weight: .semibold, design: .monospaced))
+                        .font(.system(size: 10, weight: .semibold, design: .digits))
                         .minimumScaleFactor(0.7)
                 }
             }
@@ -55,7 +55,7 @@ struct BedtimeLockScreenWidgetView: View {
                     Image(systemName: "sunrise.fill")
                         .font(.system(size: 14))
                     Text(entry.shortTimeString)
-                        .font(.system(size: 11, weight: .semibold, design: .monospaced))
+                        .font(.system(size: 11, weight: .semibold, design: .digits))
                         .minimumScaleFactor(0.7)
                 }
             }
@@ -81,7 +81,7 @@ struct BedtimeLockScreenWidgetView: View {
 
                 // 1분마다 만든 항목의 문구 — .timer 는 시계 숫자로 나오고 취침 뒤엔 거꾸로 세어 올라갔다
                 Text(entry.remainingText)
-                .font(.system(size: 21, weight: .semibold, design: .monospaced))
+                .font(.system(size: 21, weight: .semibold, design: .digits))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
                 .multilineTextAlignment(.leading)
@@ -104,7 +104,7 @@ struct BedtimeLockScreenWidgetView: View {
                 .widgetAccentable()
 
                 Text(entry.shortTimeString)
-                    .font(.system(size: 21, weight: .semibold, design: .monospaced))
+                    .font(.system(size: 21, weight: .semibold, design: .digits))
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
 
@@ -126,7 +126,7 @@ struct BedtimeLockScreenWidgetView: View {
                 .widgetAccentable()
 
                 Text(entry.shortTimeString)
-                    .font(.system(size: 21, weight: .semibold, design: .monospaced))
+                    .font(.system(size: 21, weight: .semibold, design: .digits))
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
 

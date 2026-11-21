@@ -761,6 +761,8 @@ struct LifeDotGrid: View {
                     ctx.fill(Path(ellipseIn: rect), with: .color(color))
                 }
             }
+            // 아랍어에서는 오른쪽 위부터 채운다 — 아래 빛나는 점(.position)도 함께 뒤집힌다
+            .flipsForRightToLeftLayoutDirection(true)
             if remaining > 0 {
                 // 바로 다음 하나는 숨 쉬듯 빛난다
                 Circle()

@@ -4,6 +4,7 @@
 // 앱·위젯 모두 이 헬퍼를 통해 시각 문자열을 만든다.
 
 import Foundation
+import SwiftUI
 
 enum TimeFormat {
     private static let formatters = NSCache<NSString, DateFormatter>()
@@ -56,4 +57,25 @@ enum TimeFormat {
             year: 2000, month: 1, day: 1, hour: hour, minute: minute
         ))
     }
+}
+
+extension LayoutDirection {
+    /// 화면에 실제로 쓰인 앱 언어의 글 방향. ImageRenderer 처럼 화면 밖에서 그리는 곳은
+    /// 환경을 물려받지 못해 언제나 왼쪽에서 오른쪽이 된다 — 그런 곳에 직접 넘긴다.
+    static var ofAppLanguage: LayoutDirection {
+        let shown = Bundle.main.preferredLocalizations.first ?? "en"
+        return Locale.Language(identifier: shown).characterDirection == .rightToLeft ? .rightToLeft : .leftToRight
+    }
+}
+
+extension TimeFormat {
+    /// 두 값을 잇는 " · ". 아랍어 숫자(٠)가 가운뎃점과 같은 모양이라 "١٤٤٨ هـ · ٩" 가 "٠" 로 읽힌다.
+    /// 오른쪽에서 왼쪽으로 쓰는 언어에서는 쉼표로 잇는다.
+    static var separator: String { LayoutDirection.ofAppLanguage == .rightToLeft ? "، " : " · " }
+}
+
+extension Font.Design {
+    /// 숫자 · 남은 시간 칸의 글꼴. 고정폭(SF Mono)에는 아랍 글자가 없어 "ذرتا رماد" 같은 글이
+    /// 낱자로 떨어져 나온다. 오른쪽에서 왼쪽으로 쓰는 언어에서는 기본 글꼴을 쓴다.
+    static var digits: Font.Design { LayoutDirection.ofAppLanguage == .rightToLeft ? .default : .monospaced }
 }

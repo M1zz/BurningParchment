@@ -142,7 +142,7 @@ enum ReflectionBookPDF {
 
     @MainActor
     private static func measure<V: View>(_ view: V, width: CGFloat) -> CGFloat {
-        let renderer = ImageRenderer(content: view.frame(width: width))
+        let renderer = ImageRenderer(content: view.frame(width: width).environment(\.layoutDirection, .ofAppLanguage))
         renderer.proposedSize = ProposedViewSize(width: width, height: nil)
         var height: CGFloat = 0
         renderer.render { size, _ in height = size.height }
@@ -152,7 +152,8 @@ enum ReflectionBookPDF {
     /// view 를 쪽 맨 위에서 top 만큼 내려온 자리에 그린다. (PDF 좌표는 아래가 0 이다)
     @MainActor
     private static func draw<V: View>(_ view: V, width: CGFloat, atTop top: CGFloat, in pdf: CGContext) {
-        let renderer = ImageRenderer(content: view.frame(width: width).environment(\.colorScheme, .light))
+        let renderer = ImageRenderer(content: view.frame(width: width).environment(\.colorScheme, .light)
+                                                   .environment(\.layoutDirection, .ofAppLanguage))
         renderer.proposedSize = ProposedViewSize(width: width, height: nil)
         renderer.render { size, render in
             pdf.saveGState()
@@ -223,7 +224,7 @@ private struct BookDayHeaderBlock: View {
                     .foregroundColor(ReflectionBookPDF.inkSoft)
                 Spacer()
                 Text("\(count)개")
-                    .font(.system(size: 9, design: .monospaced))
+                    .font(.system(size: 9, design: .digits))
                     .foregroundColor(ReflectionBookPDF.inkSoft.opacity(0.6))
             }
             Rectangle()
@@ -259,7 +260,7 @@ private struct BookReflectionBlock: View {
                 }
                 Spacer()
                 Text(timeString)
-                    .font(.system(size: 8, design: .monospaced))
+                    .font(.system(size: 8, design: .digits))
                     .foregroundColor(ReflectionBookPDF.inkSoft.opacity(0.45))
             }
             Text(item.text)

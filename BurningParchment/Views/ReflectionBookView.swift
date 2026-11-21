@@ -54,7 +54,7 @@ struct ReflectionBookView: View {
                 if !pages.isEmpty {
                     HStack(spacing: 14) {
                         Text("\(currentPage + 1) / \(pages.count)")
-                            .scaledFont(size: 12, design: .monospaced)
+                            .scaledFont(size: 12, design: .digits)
                             .foregroundColor(.ember)
                         Button {
                             if storeManager.hasPlus { showExport = true } else { showPaywall = true }
@@ -144,7 +144,7 @@ struct ReflectionBookView: View {
                     .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16))
                 Spacer()
                 Text("\(page.items.count)개")
-                    .scaledFont(size: 10, design: .monospaced)
+                    .scaledFont(size: 10, design: .digits)
                     .foregroundColor(Color(red: 0.42, green: 0.28, blue: 0.16).opacity(0.6))
             }
 
@@ -189,7 +189,7 @@ struct ReflectionBookView: View {
             }
             Spacer()
             Text(timeString(item.createdAt))
-                .scaledFont(size: 9, design: .monospaced)
+                .scaledFont(size: 9, design: .digits)
                 .foregroundColor(BookInk.brown.opacity(0.45))
         }
     }

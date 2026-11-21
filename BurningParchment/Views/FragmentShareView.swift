@@ -265,7 +265,8 @@ struct FragmentShareSheet: View {
         case .poster(let fragments):
             view = AnyView(FragmentPosterImage(fragments: fragments, backdrop: backdrop))
         }
-        let renderer = ImageRenderer(content: view.environment(\.parchmentStyle, style))
+        let renderer = ImageRenderer(content: view.environment(\.parchmentStyle, style)
+                                                   .environment(\.layoutDirection, .ofAppLanguage))
         renderer.scale = 3
         rendered = renderer.uiImage
     }

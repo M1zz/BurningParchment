@@ -174,7 +174,7 @@ struct EmberCalendarView: View {
         } label: {
             VStack(spacing: 4) {
                 Text("\(cal.component(.day, from: day))")
-                    .scaledFont(size: 9, design: .monospaced)
+                    .scaledFont(size: 9, design: .digits)
                     .foregroundColor(isToday
                         ? .ember.opacity(0.95)
                         : .inkMuted.opacity(isFuture ? 0.2 : 0.5))

@@ -219,7 +219,7 @@ struct MorningCheckInView: View {
                     Label("이번 주에도 있었어요", systemImage: "clock.arrow.circlepath")
                         .font(.body.weight(.medium))
                         .foregroundColor(.ember.opacity(0.75))
-                    Text(verbatim: "\(recent.dateString) · \(recent.reason)")
+                    Text(verbatim: recent.dateString + TimeFormat.separator + recent.reason)
                         .font(.system(.body, design: .serif))
                         .foregroundColor(.inkMuted.opacity(0.8))
                         .lineLimit(2)

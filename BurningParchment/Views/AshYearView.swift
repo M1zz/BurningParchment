@@ -144,12 +144,12 @@ struct AshYearView: View {
             if let busiest {
                 highlightRow(icon: "archivebox",
                              title: String(localized: "재가 가장 많이 쌓인 달"),
-                             value: monthName(busiest.start) + " · " + String(localized: "재 \(busiest.total)톨"))
+                             value: monthName(busiest.start) + TimeFormat.separator + String(localized: "재 \(busiest.total)톨"))
             }
             if let forgedBest {
                 highlightRow(icon: "hammer",
                              title: String(localized: "마음먹은 대로 가장 많이 한 달"),
-                             value: monthName(forgedBest.start) + " · " + String(localized: "\(forgedBest.counts[.forged] ?? 0)번"))
+                             value: monthName(forgedBest.start) + TimeFormat.separator + String(localized: "\(forgedBest.counts[.forged] ?? 0)번"))
             }
         }
     }

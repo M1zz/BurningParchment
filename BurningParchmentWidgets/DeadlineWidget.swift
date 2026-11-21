@@ -149,7 +149,7 @@ struct DeadlineWidgetView: View {
                     .frame(width: side, height: side)
 
                 Text(entry.remainingText)
-                    .font(.system(size: 12, weight: .medium, design: .monospaced))
+                    .font(.system(size: 12, weight: .medium, design: .digits))
                     .foregroundColor(.orange)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)

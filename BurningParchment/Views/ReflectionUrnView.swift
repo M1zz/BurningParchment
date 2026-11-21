@@ -119,7 +119,8 @@ struct ReflectionUrnView: View {
 
     @ViewBuilder
     private var tipAsk: some View {
-        if storeManager.isPro, let tipJar = storeManager.tipJar {
+        // 스크린샷 · UI 시험(-hideTips YES)에서는 세우지 않는다
+        if storeManager.isPro, !UserDefaults.standard.bool(forKey: "hideTips"), let tipJar = storeManager.tipJar {
             LeeoTipAskSlot<BurningParchmentSpec>(
                 tipJar: tipJar,
                 reached: BurningParchmentTipMoments.reached(reflections: reflectionManager.totalReflectionCount))
@@ -447,7 +448,7 @@ struct ReflectionUrnView: View {
 
             VStack(alignment: .trailing, spacing: 6) {
                 Text("재 \(count)톨")
-                    .scaledFont(size: 11, design: .monospaced)
+                    .scaledFont(size: 11, design: .digits)
                     .foregroundColor(.inkSoft)
                 Image(systemName: "chevron.forward")
                     .scaledFont(size: 11, weight: .semibold)

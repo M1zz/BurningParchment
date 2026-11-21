@@ -314,7 +314,7 @@ private struct SmallWidgetContent: View {
                     // 1분마다 만든 타임라인 항목의 문구를 그대로 쓴다. .timer 는 '5:23:41' 같은 시계 숫자로 나오고
                     // 취침 시각이 지나면 거꾸로 세어 올라가 타임스탬프처럼 보였다.
                     Text(entry.remainingText)
-                    .font(.system(size: 19, weight: .medium, design: .monospaced))
+                    .font(.system(size: 19, weight: .medium, design: .digits))
                     .foregroundColor(.orange)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
@@ -459,7 +459,7 @@ private struct MediumWidgetContent: View {
                 .font(.system(size: 18, weight: .medium))
                 .foregroundColor(.yellow)
             Text(entry.shortTimeString)
-                .font(.system(size: 28, weight: .light, design: .monospaced))
+                .font(.system(size: 28, weight: .light, design: .digits))
                 .foregroundColor(.white)
             Text("새로운 하루가 시작돼요")
                 .font(.system(size: 12))
@@ -576,7 +576,7 @@ private struct LargeWidgetContent: View {
                 .font(.system(size: 22, weight: .medium))
                 .foregroundColor(.yellow)
             Text(entry.shortTimeString)
-                .font(.system(size: 36, weight: .light, design: .monospaced))
+                .font(.system(size: 36, weight: .light, design: .digits))
                 .foregroundColor(.white)
             Text("새로운 하루가 시작돼요")
                 .font(.system(size: 14))

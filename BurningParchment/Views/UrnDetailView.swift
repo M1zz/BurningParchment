@@ -176,7 +176,7 @@ struct UrnDetailView: View {
                         .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                         .frame(width: 10, height: 10)
                     Text("\(counts[cat] ?? 0)")
-                        .scaledFont(size: 14, weight: .semibold, design: .monospaced)
+                        .scaledFont(size: 14, weight: .semibold, design: .digits)
                         .foregroundColor(.ember.opacity(hasMeaning ? 0.85 : 0.45))
                     Text(cat.shortLabel)
                         .scaledFont(size: 10)
@@ -388,7 +388,7 @@ struct UrnMeaningEditView: View {
                     .scaledFont(size: 11, design: .serif)
                     .foregroundColor(.inkSoft)
                 Text("재 \(count)톨")
-                    .scaledFont(size: 11, design: .monospaced)
+                    .scaledFont(size: 11, design: .digits)
                     .foregroundColor(.inkSoft)
             }
             Spacer(minLength: 0)

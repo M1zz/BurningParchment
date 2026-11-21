@@ -22,7 +22,7 @@ locale_of() {
   case $1 in
     en) echo en_US;; en-GB) echo en_GB;; ja) echo ja_JP;; ko) echo ko_KR;; zh-Hans) echo zh_CN;; zh-Hant) echo zh_TW;;
     pt-BR) echo pt_BR;; cs) echo cs_CZ;; da) echo da_DK;; el) echo el_GR;; nb) echo nb_NO;; sv) echo sv_SE;;
-    vi) echo vi_VN;; ar) echo ar_SA;; *) echo "$1_${(U)1}";;
+    vi) echo vi_VN;; ar) echo "ar_SA@calendar=gregorian";; *) echo "$1_${(U)1}";;
   esac
 }
 

@@ -27,6 +27,12 @@ struct ClassificationGraph: View {
     }
 
     var body: some View {
+        // 두 축 그래프는 글 방향과 상관없는 공간이다. 아랍어에서도 축과 사분면, 찍은 자리를 다른 언어와 같게 둔다
+        // (그렇지 않으면 손가락 자리와 핀, Canvas 의 점과 이름표가 서로 거울처럼 어긋난다).
+        graphBody.environment(\.layoutDirection, .leftToRight)
+    }
+
+    private var graphBody: some View {
         GeometryReader { geo in
             let s = min(geo.size.width, geo.size.height)
             ZStack {
@@ -413,7 +419,12 @@ struct ReflectionDistributionView: View {
 
     // MARK: Graph
 
+    /// 입력 그래프(ClassificationGraph)와 같이 글 방향과 상관없이 왼쪽에서 오른쪽으로 둔다
     private var graph: some View {
+        graphContent.environment(\.layoutDirection, .leftToRight)
+    }
+
+    private var graphContent: some View {
         GeometryReader { geo in
             let s = min(geo.size.width, geo.size.height)
             ZStack {

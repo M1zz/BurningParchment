@@ -40,7 +40,7 @@ case $L in
   pl)      LOC=pl_PL ;;
   sv)      LOC=sv_SE ;;
   tr)      LOC=tr_TR ;;
-  ar)      LOC=ar_SA ;;
+  ar)      LOC="ar_SA@calendar=gregorian" ;;   # 날짜는 양력(사우디 기기도 대부분 양력으로 쓴다), 숫자는 지역 기본(٠١٢)
   *)       LOC=ko_KR ;;
 esac
 mkdir -p $OUT

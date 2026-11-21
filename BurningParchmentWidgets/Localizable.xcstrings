@@ -5873,7 +5873,7 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🌅 الاستيقاظ قريبًا · %@"
+            "value" : "🌅 الاستيقاظ قريبًا: %@"
           }
         }
       }

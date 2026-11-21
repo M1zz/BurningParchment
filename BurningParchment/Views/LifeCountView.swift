@@ -514,7 +514,7 @@ struct LifeCountPage: View {
         let overLife = remaining == 0 && now >= lifeEnd
         CountDetailView(
             title: moment.remainingTitle,
-            remainingText: "\(remaining)",
+            remainingText: remaining.formatted(),
             detail: overLife ? String(localized: "기대 수명을 넘었어요. 이제부터는 모두 덤이에요")
                              : String(localized: "지나온 \(past)번"),
             burned: String(localized: "삶의 \(burnedPercent)%가 탔어요"),

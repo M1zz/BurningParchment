@@ -337,7 +337,7 @@ class BedtimeManager: ObservableObject {
         let h = Int(remainingSeconds) / 3600
         let m = (Int(remainingSeconds) % 3600) / 60
         let s = Int(remainingSeconds) % 60
-        return String(format: "%02d:%02d:%02d", h, m, s)
+        return [h, m, s].map(TimeFormat.twoDigits).joined(separator: ":")
     }
 
     /// 후 불어 불을 끌 수 있는 시간 — 취침 30분 전부터. 취침 이후에는 내일의 양피지를 끈다.

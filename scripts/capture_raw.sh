@@ -40,6 +40,7 @@ case $L in
   pl)      LOC=pl_PL ;;
   sv)      LOC=sv_SE ;;
   tr)      LOC=tr_TR ;;
+  ar)      LOC=ar_SA ;;
   *)       LOC=ko_KR ;;
 esac
 mkdir -p $OUT

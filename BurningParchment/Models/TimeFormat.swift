@@ -23,7 +23,7 @@ enum TimeFormat {
     /// "오전 7:00" (ko) / "7:00 AM" (en) / "07:00" (24시간제 설정)
     static func short(hour: Int, minute: Int) -> String {
         guard let date = date(hour: hour, minute: minute) else {
-            return String(format: "%02d:%02d", hour, minute)
+            return "\(twoDigits(hour)):\(twoDigits(minute))"
         }
         return date.formatted(.dateTime.hour().minute())
     }
@@ -38,11 +38,17 @@ enum TimeFormat {
     static func hourLabel(_ hour: Int) -> String {
         let f = formatter("j")
         guard f.dateFormat?.contains("a") == true else {
-            return String(format: "%02d", hour)
+            return twoDigits(hour)
         }
         let h12 = hour > 12 ? hour - 12 : (hour == 0 ? 12 : hour)
         let symbol = hour >= 12 ? (f.pmSymbol ?? "PM") : (f.amSymbol ?? "AM")
-        return "\(symbol) \(h12)"
+        return "\(symbol) \(h12.formatted())"
+    }
+
+    /// "07" 처럼 두 자리로 채운 숫자. `String(format:)` 은 언제나 0~9 를 쓰므로, 아랍어 기기에서
+    /// 같은 화면의 다른 숫자(٠٧)와 섞이지 않게 기기의 숫자 체계로 쓴다.
+    static func twoDigits(_ n: Int) -> String {
+        n.formatted(.number.precision(.integerLength(2...)).grouping(.never))
     }
 
     private static func date(hour: Int, minute: Int) -> Date? {

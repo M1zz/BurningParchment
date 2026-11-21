@@ -78,7 +78,7 @@ struct FirstLoopGuide: View {
                 }
                 Spacer(minLength: 0)
                 if !done && enabled {
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "chevron.forward")
                         .font(.caption.weight(.semibold))
                         .foregroundColor(.ember)
                 }

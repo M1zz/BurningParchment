@@ -85,7 +85,7 @@ struct EmberCalendarView: View {
 
             HStack(spacing: 4) {
                 Button { moveMonth(-1) } label: {
-                    Image(systemName: "chevron.left")
+                    Image(systemName: "chevron.backward")
                         .scaledFont(size: 12, weight: .semibold)
                         .foregroundColor(.ember.opacity(0.7))
                         .frame(width: 30, height: 30)
@@ -94,7 +94,7 @@ struct EmberCalendarView: View {
                 .accessibilityLabel("이전 달")
 
                 Button { moveMonth(1) } label: {
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "chevron.forward")
                         .scaledFont(size: 12, weight: .semibold)
                         .foregroundColor(canGoNext ? .ember.opacity(0.7) : .inkSoft)
                         .frame(width: 30, height: 30)

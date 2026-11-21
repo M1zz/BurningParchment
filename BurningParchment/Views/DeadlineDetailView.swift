@@ -182,7 +182,7 @@ struct DeadlineDetailView: View {
 
             HStack(spacing: 6) {
                 Text(deadline.startDateString)
-                Text("→")
+                Image(systemName: "arrow.forward")   // 글 방향을 따라 아랍어에서는 왼쪽을 가리킨다
                 Text(deadline.targetDateString)
             }
             .scaledFont(size: 11, design: .serif)

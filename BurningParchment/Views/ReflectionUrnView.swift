@@ -449,7 +449,7 @@ struct ReflectionUrnView: View {
                 Text("재 \(count)톨")
                     .scaledFont(size: 11, design: .monospaced)
                     .foregroundColor(.inkSoft)
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .scaledFont(size: 11, weight: .semibold)
                     .foregroundColor(.ember)
             }

@@ -3,6 +3,12 @@
   "strings" : {
     "How much time is left in ${applicationName}" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كم بقي من الوقت في ${applicationName}"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -145,6 +151,12 @@
     },
     "${applicationName} time left" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName} الوقت المتبقي"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",

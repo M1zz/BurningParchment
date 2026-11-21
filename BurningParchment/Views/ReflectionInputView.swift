@@ -307,7 +307,7 @@ struct ReflectionInputView: View {
     }
 
     private var nextIcon: String {
-        currentStep == .tomorrow ? "plus.circle" : "arrow.right"
+        currentStep == .tomorrow ? "plus.circle" : "arrow.forward"
     }
 
     private var nextHint: String {
@@ -467,7 +467,10 @@ struct ReflectionInputView: View {
                 Circle()
                     .fill(Color(red: rgb.0, green: rgb.1, blue: rgb.2))
                     .frame(width: 9, height: 9)
-                Text("→ \(cat.title)")
+                Image(systemName: "arrow.forward")
+                    .scaledFont(size: 11, weight: .semibold)
+                    .foregroundColor(.ember.opacity(0.85))
+                Text(cat.title)
                     .scaledFont(size: 13, weight: .medium, design: .serif)
                     .foregroundColor(.ember.opacity(0.85))
             }

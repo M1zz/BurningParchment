@@ -103,7 +103,7 @@ struct AshMorningBanner: View {
                             .foregroundColor(.inkSoft)
                     }
                     Spacer(minLength: 8)
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "chevron.forward")
                         .font(.caption.weight(.semibold))
                         .foregroundColor(.ember)
                 }

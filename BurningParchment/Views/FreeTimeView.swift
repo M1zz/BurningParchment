@@ -34,7 +34,7 @@ struct FreeTimeSummary: View {
             stat(value: BurningParchmentView.durationString(TimeInterval(weeklyMinutes * 60)),
                  caption: String(localized: "일주일 나만의 시간"))
             divider
-            stat(value: "\(share)%", caption: String(localized: "깨어 있는 시간 중"))
+            stat(value: (Double(share) / 100).formatted(.percent.precision(.fractionLength(0))), caption: String(localized: "깨어 있는 시간 중"))
             divider
             stat(value: String(localized: "약 \(yearDays)일"), caption: String(localized: "한 해로 치면"))
         }
@@ -429,7 +429,7 @@ struct FreeTimeEditorView: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 0)
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .scaledFont(size: 12)
                     .foregroundColor(.inkMuted.opacity(0.4))
             }

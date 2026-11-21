@@ -4,6 +4,12 @@
     "CFBundleDisplayName" : {
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الورقة المشتعلة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,6 +159,12 @@
     "CFBundleName" : {
       "comment" : "Bundle name",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الورقة المشتعلة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -303,6 +315,12 @@
       "comment" : "Privacy - Microphone Usage Description",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُستخدم الميكروفون فقط لقياس قوة نفَسك حين تنفخ على الورقة لإطفائها قبل النوم بثلاثين دقيقة. لا يُسجَّل أي صوت ولا يُحفظ."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",

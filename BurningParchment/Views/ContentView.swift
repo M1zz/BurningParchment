@@ -17,6 +17,7 @@ struct ContentView: View {
     @EnvironmentObject var nightManager:      NightManager
     @EnvironmentObject var freeTimeManager:   FreeTimeManager
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.layoutDirection) private var layoutDirection
     @State private var showSettings    = false
     @State private var showDeadlines   = false
     @State private var showReflections = false
@@ -204,7 +205,8 @@ struct ContentView: View {
                 DragGesture(minimumDistance: 30, coordinateSpace: .named(Self.mainSpace))
                     .onEnded { value in
                         guard !remainingPickerFrame.contains(value.startLocation) else { return }
-                        let dx = value.translation.width
+                        // 쓸기는 화면 그대로의 방향으로 온다. 오른쪽에서 왼쪽으로 읽는 언어는 다음 쪽이 왼쪽에 있으므로 뒤집는다.
+                        let dx = layoutDirection == .rightToLeft ? -value.translation.width : value.translation.width
                         let dy = value.translation.height
                         guard abs(dx) > abs(dy) * 1.5 else { return }
                         swipeTip.invalidate(reason: .actionPerformed)
@@ -528,7 +530,7 @@ struct ContentView: View {
                         Image(systemName: "sunrise")
                         Text("어젯밤은 어땠나요?")
                             .font(.system(.body, design: .serif).weight(.medium))
-                        Image(systemName: "chevron.right")
+                        Image(systemName: "chevron.forward")
                             .font(.body)
                     }
                     .foregroundColor(.inkMuted.opacity(0.85))
@@ -544,7 +546,7 @@ struct ContentView: View {
                             .scaledFont(size: 12)
                         Text("불을 껐어요 · 모은 조각 보기")
                             .font(.system(.footnote, design: .serif).weight(.medium))
-                        Image(systemName: "chevron.right")
+                        Image(systemName: "chevron.forward")
                             .scaledFont(size: 10, weight: .semibold)
                     }
                     .foregroundColor(.inkMuted.opacity(0.75))
@@ -601,7 +603,7 @@ struct ContentView: View {
                             .foregroundColor(.inkMuted.opacity(0.6))
                     }
                     Spacer(minLength: 8)
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "chevron.forward")
                         .scaledFont(size: 11, weight: .semibold)
                         .foregroundColor(.ember.opacity(0.55))
                 }

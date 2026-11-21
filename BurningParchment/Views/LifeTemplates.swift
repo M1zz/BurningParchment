@@ -303,7 +303,7 @@ private struct LifeTemplateForm: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 Button(action: onBack) {
-                    Label("인생의 시간", systemImage: "chevron.left")
+                    Label("인생의 시간", systemImage: "chevron.backward")
                         .font(.system(.body, design: .serif))
                         .foregroundColor(.ember)
                 }

@@ -463,7 +463,7 @@ struct ReflectionDistributionView: View {
     private func quadrantPercentages(size: CGFloat) -> some View {
         let counts = quadrantCounts
         let total = max(1, plotted.count)
-        func pct(_ n: Int) -> String { "\(Int(round(Double(n) / Double(total) * 100)))%" }
+        func pct(_ n: Int) -> String { (Double(n) / Double(total)).formatted(.percent.precision(.fractionLength(0))) }
 
         return ZStack {
             quadrantTag(String(localized: "어쩌다 하게 됐어"), pct(counts.tl), rgb: (0.95, 0.78, 0.42),

@@ -161,7 +161,7 @@ struct SettingsView: View {
 
             Picker("분", selection: minute) {
                 ForEach(0..<12, id: \.self) { idx in
-                    Text(String(format: "%02d", idx * 5)).tag(idx * 5)
+                    Text(TimeFormat.twoDigits(idx * 5)).tag(idx * 5)
                 }
             }
             .pickerStyle(.wheel)
@@ -546,7 +546,7 @@ struct SettingsView: View {
             let used = RemainingItemStore.decode(itemsData).filter { !$0.isFreeTime }.count
             SettingsDivider()
             SettingsRow(icon: "hourglass", title: String(localized: "인생의 시간 \(max(0, limit - used))개 남았어요")) {
-                Text(verbatim: "\(min(used, limit))/\(limit)")
+                Text(verbatim: "\(min(used, limit).formatted())/\(limit.formatted())")
                     .scaledFont(size: 14, weight: .semibold)
                     .foregroundColor(used >= limit ? .ember : .inkMuted)
                     .monospacedDigit()

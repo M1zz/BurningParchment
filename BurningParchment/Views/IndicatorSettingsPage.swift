@@ -262,7 +262,7 @@ struct SettingsDivider: View {
 struct SettingsChevron: View {
     var external = false
     var body: some View {
-        Image(systemName: external ? "arrow.up.right" : "chevron.right")
+        Image(systemName: external ? "arrow.up.right" : "chevron.forward")
             .scaledFont(size: 12, weight: .semibold)
             .foregroundColor(.inkMuted.opacity(0.4))
     }

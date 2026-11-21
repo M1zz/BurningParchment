@@ -162,7 +162,7 @@ struct TimeDigitView: View {
     let label: String
 
     var body: some View {
-        Text(String(format: "%02d", value))
+        Text(TimeFormat.twoDigits(value))
             .font(.system(.largeTitle, design: .serif).weight(.ultraLight))
             .foregroundColor(.ember.opacity(0.9))
             .monospacedDigit()

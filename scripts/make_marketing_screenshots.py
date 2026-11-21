@@ -338,6 +338,20 @@ SHOTS = {
   ("09-year-light.png", "top-crop", False, "Bir yıllık<br>kül", "Pro, on iki ayın nereye gittiğini gösterir", 0.62),
   ("10-book-pdf.png", "pages", False, "Değerlendirmelerin<br>bir kitap olsun", "Pro: günde bir sayfalık PDF", None),
  ],
+ # 아랍어는 오른쪽에서 왼쪽으로 놓는다(RTL_CSS). 테마 · 포스터 · 한 해 · PDF 는 Plus 부터 열린다.
+ "ar": [
+  ("01-week-dark.png",     "hero-bleed",  False, "ما تبقى من وقتك<br>يحترق أمامك",  "اليوم والأسبوع والشهر والعام",        None),
+  ("02-month-light.png",   "hero-bleed",  True,  "فاتح أو داكن",                    "اتبع إعداد جهازك أو اختر بنفسك",        None),
+  ("03-urn-dark.png",      "left-text",   False, "كل يوم ينتهي<br>رمادًا",           "ما تكتبه يستقر في جرّة أسبوعه",          None),
+  ("04-flow-light.png",    "hero-bleed",  True,  "أين ذهب<br>وقتك",                 "رسم للتوزيع وتقويم للجمر",              None),
+  ("05-book-dark.png",     "top-crop",    False, "اقرأ رمادك من جديد",              "السطور التي تركتها على الورقة",          0.58),
+  ("06-settings-dark.png", "flat-rotate", False, "من موعد النوم<br>إلى المظهر",      "اضبطه كما يناسبك",                      None),
+  # ── Plus ──
+  ("07-theme-dark.png",    "hero-bleed",  True,  "اختر لون<br>لهبك",                 "مع Plus: ضوء القمر والسيلادون والغروب",  None),
+  ("08-poster-dark.png",   "text-bottom", False, "كل لياليك<br>في صفحة واحدة",        "Plus يحوّل قصاصاتك إلى ملصقات",          None),
+  ("09-year-light.png",    "top-crop",    False, "عام كامل<br>من الرماد",            "Plus يُريك أين مضت اثنا عشر شهرًا",       0.62),
+  ("10-book-pdf.png",      "pages",       False, "تأملاتك<br>في كتاب واحد",          "Plus: ملف PDF بصفحة لكل يوم",            None),
+ ],
 }
 
 FONTS = {
@@ -365,9 +379,10 @@ FONTS = {
     "pl": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "sv": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
     "tr": '-apple-system, "SF Pro Display", Helvetica, sans-serif',
+    "ar": '-apple-system, "SF Arabic", "Geeza Pro", sans-serif',
 }
-HEAD_SIZE = {"en-GB": 96, "es": 90, "de": 86, "zh-Hans": 84, "ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84, "fi": 88, "id": 90, "nb": 88, "nl": 90, "pl": 86, "sv": 88, "tr": 88}
-SUB_SIZE  = {"en-GB": 44, "es": 42, "de": 40, "zh-Hans": 40, "ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40, "fi": 42, "id": 42, "nb": 42, "nl": 42, "pl": 40, "sv": 42, "tr": 42}
+HEAD_SIZE = {"en-GB": 96, "es": 90, "de": 86, "zh-Hans": 84, "ko": 88, "en": 96, "ja": 84, "zh-Hant": 84, "ru": 88, "fr": 92, "it": 92, "pt-BR": 90, "th": 80, "vi": 88, "cs": 88, "da": 88, "el": 84, "fi": 88, "id": 90, "nb": 88, "nl": 90, "pl": 86, "sv": 88, "tr": 88, "ar": 92}
+SUB_SIZE  = {"en-GB": 44, "es": 42, "de": 40, "zh-Hans": 40, "ko": 42, "en": 44, "ja": 40, "zh-Hant": 40, "ru": 42, "fr": 43, "it": 43, "pt-BR": 42, "th": 38, "vi": 42, "cs": 42, "da": 42, "el": 40, "fi": 42, "id": 42, "nb": 42, "nl": 42, "pl": 40, "sv": 42, "tr": 42, "ar": 44}
 
 
 def base_css(lang, dark):
@@ -438,10 +453,30 @@ LAYOUTS = {
 """,
 }
 
+# 오른쪽에서 왼쪽으로 읽는 언어는 배치를 거울처럼 뒤집는다 — 글은 오른쪽에, 기기는 반대로 기운다.
+# 아랍 글자는 이어 쓰는 글씨라 자간을 줄이면 끊어진다. 자간을 0 으로 둔다.
+RTL_LANGS = {"ar"}
+RTL_CSS = {
+    "_all": ".headline, .sub { letter-spacing:0; }",
+    "left-text": """
+.headline { text-align:right; margin:260px 100px 0 0; }
+.sub { text-align:right; margin:44px 104px 0 100px; }
+.wrap { left:auto; right:250px; perspective-origin:70% 30%; }
+.phone { transform:rotateY(-16deg) rotateX(2deg); }
+""",
+    "text-bottom": ".phone { transform:rotateY(10deg) rotateX(2deg); }",
+    "flat-rotate": ".wrap { left:auto; right:225px; } .phone { transform:rotate(5deg); }",
+    "pages": """
+.p2 { left:auto; right:400px; transform:rotate(-8deg); }
+.p1 { left:auto; right:220px; transform:rotate(1deg); }
+.p0 { left:auto; right:40px;  transform:rotate(9deg); }
+""",
+}
+
 TEXT_FIRST  = '<div class="headline">{h}</div><div class="sub">{s}</div><div class="wrap"><div class="phone"><img src="{img}"></div></div>'
 PHONE_FIRST = '<div class="wrap"><div class="phone"><img src="{img}"></div></div><div class="headline">{h}</div><div class="sub">{s}</div>'
 PAGES       = '<div class="headline">{h}</div><div class="sub">{s}</div><div class="pages">{imgs}</div>'
-HTML = '<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
+HTML = '<!doctype html><html{attrs}><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
 
 
 def main(lang, only=None):
@@ -474,8 +509,11 @@ def main(lang, only=None):
             tpl = PHONE_FIRST if layout == "text-bottom" else TEXT_FIRST
             body = tpl.format(h=head, s=sub, img=shot.as_uri())
         css = base_css(lang, dark) + LAYOUTS[layout]
+        if lang in RTL_LANGS:
+            css += RTL_CSS["_all"] + RTL_CSS.get(layout, "")
         html = work / f"{lang}-{fname.replace('.png','.html')}"
-        html.write_text(HTML.format(css=css, body=body), encoding="utf-8")
+        attrs = f' lang="{lang}" dir="rtl"' if lang in RTL_LANGS else ""
+        html.write_text(HTML.format(attrs=attrs, css=css, body=body), encoding="utf-8")
         png = out / fname
         png.unlink(missing_ok=True)
         # 그림을 다 쓰고 나서 끝내다가 죽는 일이 잦아(종료 코드 ≠ 0) 종료 코드 대신 파일이 생겼는지를 본다

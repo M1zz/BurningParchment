@@ -59,6 +59,7 @@ SEARCH = {
     "pl": ('Pozostały czas', 'Zobacz, jak twój czas<br>się spala', 'Dzień, tydzień, miesiąc i rok'),
     "sv": ('Tid kvar', 'Se din tid<br>brinna ner', 'Dag, vecka, månad och år'),
     "tr": ('Kalan süre', 'Zamanının yanışını<br>izle', 'Gün, hafta, ay ve yıl'),
+    "ar": ('الوقت المتبقي', 'ما تبقى من وقتك<br>يحترق أمامك', 'اليوم والأسبوع والشهر والعام'),
 }
 
 # 헤더는 한 가지 약속만: 자기 전에 후 불어 불을 끄면 오늘이 끝난다 (1.1.4 부터 앱의 중심 의식).
@@ -89,7 +90,11 @@ HEADER = {
     "pl": ('Płonący Pergamin', 'Zdmuchnij płomień,<br>zakończ dzień'),
     "sv": ('Brinnande Pergament', 'Blås ut lågan,<br>avsluta dagen'),
     "tr": ('Yanan Parşömen', 'Alevi üfle,<br>günü kapat'),
+    "ar": ('الورقة المشتعلة', 'انفخ على اللهب<br>واختم يومك'),
 }
+
+# 오른쪽에서 왼쪽으로 읽는 언어: 검색 결과는 글을 오른쪽에, 기기를 왼쪽에 둔다(거울 배치).
+RTL_LANGS = {"ar"}
 
 # ⚠️ 바탕 · 글자색은 마케팅 스크린샷(make_marketing_screenshots.py)과 같다:
 #    양피지 크림 바탕, 짙은 갈색 글, 잿빛 갈색 보조문, 눈썹글은 앱의 불씨 색.
@@ -97,13 +102,14 @@ BASE_CSS = """
 * { margin:0; padding:0; box-sizing:border-box; }
 html,body { width:%(W)dpx; height:%(H)dpx; overflow:hidden; }
 body { background:#f5efe2; position:relative;
-  font-family:-apple-system, "SF Pro Display", "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", sans-serif; }
+  font-family:-apple-system, "SF Pro Display", "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", "SF Arabic", "Geeza Pro", sans-serif; }
 .glow { position:absolute; border-radius:50%%; filter:blur(170px); pointer-events:none; }
 .text { position:absolute; display:flex; flex-direction:column; justify-content:center; }
 .eyebrow { font-weight:700; color:#b5541c; letter-spacing:-0.01em; line-height:1.15; }
 .headline { font-weight:800; color:#241c12; letter-spacing:-0.03em; line-height:1.15; text-wrap:balance; }
 .sub { font-weight:500; color:#7a6a55; letter-spacing:-0.01em; line-height:1.35; text-wrap:balance; }
 :lang(ko) .headline, :lang(ko) .sub, :lang(ko) .eyebrow { word-break:keep-all; }
+:lang(ar) .headline, :lang(ar) .sub, :lang(ar) .eyebrow { letter-spacing:0; }
 .phone { position:absolute; background:#17140f; border:6px solid #3b332a; padding:40px; border-radius:190px;
   box-shadow: 50px 80px 160px rgba(60,40,20,.28), 16px 26px 60px rgba(60,40,20,.16); }
 .phone img { width:100%%; display:block; border-radius:152px; }
@@ -165,7 +171,10 @@ def shot(lang, name):
     return (ROOT / "docs" / "screenshots" / f"raw-{lang}" / name).as_uri()
 
 
-def phone(img, left, top, width, rotate=0):
+def phone(img, left, top, width, rotate=0, mirror_w=None):
+    """mirror_w: 캔버스 폭을 주면 좌우를 뒤집은 자리에 놓는다(RTL)."""
+    if mirror_w:
+        left, rotate = mirror_w - left - width, -rotate
     return (f'<div class="phone" style="left:{left}px;top:{top}px;width:{width}px;'
             f'transform:rotate({rotate}deg)"><img src="{img}"></div>')
 
@@ -177,12 +186,14 @@ def search_html(lang):
     col = int(sw * 0.58)
     ph_w = 1000
     ph_left = l + col + int(sw * 0.03)
+    m = W if lang in RTL_LANGS else None
+    x = (lambda left, width: W - left - width) if m else (lambda left, width: left)
     return f"""
-<div class="glow" style="left:{ph_left - 250}px;top:700px;width:1600px;height:1600px;background:rgba(214,120,44,.26)"></div>
-<div class="glow" style="left:{l - 700}px;top:{t - 500}px;width:1400px;height:1000px;background:rgba(214,120,44,.08)"></div>
-{phone(shot(lang, "07-theme-dark.png"), ph_left + 760, t - 200, 860, 10)}
-{phone(shot(lang, "01-week-dark.png"), ph_left, t - 360, ph_w, 0)}
-<div class="text" style="left:{l}px;top:{t}px;width:{col}px;height:{sh}px">
+<div class="glow" style="left:{x(ph_left - 250, 1600)}px;top:700px;width:1600px;height:1600px;background:rgba(214,120,44,.26)"></div>
+<div class="glow" style="left:{x(l - 700, 1400)}px;top:{t - 500}px;width:1400px;height:1000px;background:rgba(214,120,44,.08)"></div>
+{phone(shot(lang, "07-theme-dark.png"), ph_left + 760, t - 200, 860, 10, m)}
+{phone(shot(lang, "01-week-dark.png"), ph_left, t - 360, ph_w, 0, m)}
+<div class="text" style="left:{x(l, col)}px;top:{t}px;width:{col}px;height:{sh}px">
   <div class="eyebrow" style="font-size:92px">{eyebrow}</div>
   <div class="headline" data-max="220" data-min="120" style="margin-top:36px">{headline}</div>
   <div class="sub" style="font-size:80px;margin-top:52px">{sub}</div>
@@ -212,7 +223,8 @@ def header_html(lang):
 def render(lang, kind):
     W, H, _ = SPEC[kind]
     body = search_html(lang) if kind == "search" else header_html(lang)
-    page = (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>'
+    dir_attr = ' dir="rtl"' if lang in RTL_LANGS else ""
+    page = (f'<!doctype html><html lang="{lang}"{dir_attr}><head><meta charset="utf-8"><style>'
             f'{BASE_CSS % {"W": W, "H": H}}</style></head><body>{body}{FIT_JS}</body></html>')
     html_path = pathlib.Path(tempfile.gettempdir()) / f"burningparchment-creative-{lang}-{kind}.html"
     html_path.write_text(page, encoding="utf-8")

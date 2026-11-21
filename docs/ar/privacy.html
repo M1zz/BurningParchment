@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية · الورقة المشتعلة</title>
+  <style>
+    :root {
+      --bg: #0f0d0a;
+      --surface: #1a1510;
+      --border: #2e2218;
+      --orange: #f97316;
+      --orange-dim: #c2570e;
+      --text: #e8d5b0;
+      --text-dim: #8a7560;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 3px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fbbf24, #ea580c, #7c2d12);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--orange-dim);
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+    }
+
+    .card + .card { margin-top: 10px; }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card p { font-size: 14px; color: var(--text-dim); }
+
+    .card ul {
+      padding-inline-start: 18px;
+      margin-top: 8px;
+    }
+
+    .card li {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--orange);
+      background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange-dim); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+  <link rel="canonical" href="https://m1zz.github.io/BurningParchment/ar/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/BurningParchment/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/BurningParchment/en/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/BurningParchment/ja/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/BurningParchment/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/BurningParchment/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/BurningParchment/de/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/BurningParchment/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/BurningParchment/ru/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/BurningParchment/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/BurningParchment/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/BurningParchment/pt-br/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/BurningParchment/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/BurningParchment/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/BurningParchment/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/BurningParchment/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/BurningParchment/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/BurningParchment/fi/privacy.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/BurningParchment/id/privacy.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/BurningParchment/nb/privacy.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/BurningParchment/nl/privacy.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/BurningParchment/pl/privacy.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/BurningParchment/sv/privacy.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/BurningParchment/tr/privacy.html">
+  <link rel="alternate" hreflang="ar" href="https://m1zz.github.io/BurningParchment/ar/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/BurningParchment/privacy.html">
+</head>
+<body>
+<nav class="langs" aria-label="Language" style="text-align:left;padding:12px 24px 0;font-size:13px"><a href="../privacy.html" hreflang="ko" lang="ko" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">English</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">日本語</a><a href="../zh-hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">简体中文</a><a href="../es/privacy.html" hreflang="es" lang="es" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Español</a><a href="../de/privacy.html" hreflang="de" lang="de" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Deutsch</a><a href="../zh-hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">繁體中文</a><a href="../ru/privacy.html" hreflang="ru" lang="ru" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Русский</a><a href="../fr/privacy.html" hreflang="fr" lang="fr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Français</a><a href="../it/privacy.html" hreflang="it" lang="it" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Italiano</a><a href="../pt-br/privacy.html" hreflang="pt-BR" lang="pt-BR" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Português</a><a href="../th/privacy.html" hreflang="th" lang="th" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">ไทย</a><a href="../vi/privacy.html" hreflang="vi" lang="vi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Tiếng Việt</a><a href="../cs/privacy.html" hreflang="cs" lang="cs" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Čeština</a><a href="../da/privacy.html" hreflang="da" lang="da" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Dansk</a><a href="../el/privacy.html" hreflang="el" lang="el" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Ελληνικά</a><a href="../fi/privacy.html" hreflang="fi" lang="fi" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Suomi</a><a href="../id/privacy.html" hreflang="id" lang="id" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Bahasa Indonesia</a><a href="../nb/privacy.html" hreflang="nb" lang="nb" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Norsk</a><a href="../nl/privacy.html" hreflang="nl" lang="nl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Nederlands</a><a href="../pl/privacy.html" hreflang="pl" lang="pl" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Polski</a><a href="../sv/privacy.html" hreflang="sv" lang="sv" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Svenska</a><a href="../tr/privacy.html" hreflang="tr" lang="tr" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">Türkçe</a><a href="privacy.html" hreflang="ar" lang="ar" aria-current="true" style="color:var(--orange-dim);text-decoration:none;margin-left:14px">العربية</a></nav>
+
+<div class="topbar"></div>
+
+<header>
+  <a href="index.html">→ العودة إلى الدعم</a>
+  <h1>سياسة الخصوصية</h1>
+  <p>آخر تحديث: 18 أغسطس 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>الخلاصة</h2>
+    <div class="card">
+      <h3>لا يجمع تطبيق الورقة المشتعلة أي معلومات تكشف هويتك</h3>
+      <p>كل ما تنشئه في التطبيق (وقت الاستيقاظ وموعد النوم والمواعيد النهائية والتأملات والجرار) يبقى على جهازك. ولا يصل إلى المطوّر إلا الإحصاءات المجهولة وتشخيصات الأعطال الموضحة أدناه، والملاحظات التي ترسلها بنفسك.</p>
+      <span class="highlight">🔒 تأملاتك لا تغادر جهازك أبدًا · بلا إعلانات ولا تتبّع</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>ما يُحفظ على جهازك فقط</h2>
+    <div class="card">
+      <h3>ما تنشئه في التطبيق</h3>
+      <p>تُحفظ البيانات التالية على جهازك فقط (في UserDefaults):</p>
+      <ul>
+        <li>وقت الاستيقاظ وموعد النوم</li>
+        <li>المواعيد النهائية</li>
+        <li>التأملات والجرار</li>
+      </ul>
+      <p style="margin-top: 10px;">لا تُشارَك هذه البيانات بين التطبيق وأدواته إلا عبر مساحة App Group على جهازك، وتُحذف عند حذف التطبيق.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ما يُرسل إلى المطوّر</h2>
+    <div class="card">
+      <h3>إحصاءات استخدام مجهولة</h3>
+      <p>لتحسين التطبيق، تُرسل البيانات التالية إلى مساحة iCloud (CloudKit) الخاصة بالمطوّر:</p>
+      <ul>
+        <li>معرّف تثبيت يُولَّد عشوائيًا (UUID)</li>
+        <li>إصدار التطبيق، والمنصة وإصدار نظام التشغيل، وإعداد اللغة</li>
+        <li>عدد مرات الفتح، وأيام الاستخدام، وأسماء أحداث الميزات الرئيسية</li>
+      </ul>
+      <p style="margin-top: 10px;">لا علاقة لمعرّف التثبيت بمعرّفات الجهاز (IDFA أو IDFV) ولا بحساب Apple الخاص بك، ويُنشأ معرّف جديد إذا حذفت التطبيق وأعدت تثبيته.</p>
+    </div>
+    <div class="card">
+      <h3>تشخيصات الأعطال والتجمّد</h3>
+      <p>إذا تعطّل التطبيق أو تجمّد، يُرسل تقرير التشخيص الذي يُنشئه iOS (MetricKit): نوع المشكلة، وتتبّع المكدس، وإصدار التطبيق والنظام، وطراز الجهاز. ولا يتضمن أي شيء أدخلته في التطبيق مثل تأملاتك.</p>
+    </div>
+    <div class="card">
+      <h3>الملاحظات التي ترسلها</h3>
+      <p>لا تُرسل الملاحظات إلا حين ترسلها بنفسك من شاشة الإعدادات. وتتضمن ما كتبته مع إصدار جهازك والتطبيق، ولا يُضاف اسمك وبريدك الإلكتروني إلا إذا أدخلتهما بنفسك لتتلقى ردًّا.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ما لا نجمعه</h2>
+    <div class="card">
+      <h3>لا نجمع أبدًا ما يلي</h3>
+      <ul>
+        <li>أي شيء تدخله في التطبيق مثل التأملات أو المواعيد النهائية (إلا إن كتبته بنفسك في ملاحظاتك)</li>
+        <li>البيانات الشخصية مثل الاسم أو البريد الإلكتروني أو رقم الهاتف (إلا إن أدخلتها بنفسك في ملاحظاتك)</li>
+        <li>الموقع</li>
+        <li>جهات الاتصال أو الصور</li>
+        <li>معرّفات الجهاز (IDFA وIDFV وغيرها)</li>
+        <li>بيانات الإعلانات</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>الأطراف الثالثة</h2>
+    <div class="card">
+      <h3>لا نشارك بياناتك</h3>
+      <p>لا يستخدم التطبيق أي شبكات إعلانية ولا أي أدوات تحليل من أطراف ثالثة. الإحصاءات والتشخيصات والملاحظات الموضحة أعلاه تذهب فقط إلى مساحة iCloud الخاصة بالمطوّر، ولا تُدمج أبدًا مع بيانات شركات أخرى ولا تُستخدم لتتبّعك لأغراض إعلانية.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>الشراء داخل التطبيق</h2>
+    <div class="card">
+      <h3>Apple هي من تتولى الدفع</h3>
+      <p>تتولى Apple الدفع عبر App Store. لا يتلقى المطوّر أبدًا بيانات الدفع مثل رقم بطاقتك أو حساب Apple. ويحتفظ التطبيق على جهازك فقط بسجل يوضح هل اشتريت، ليفتح لك الميزات المدفوعة.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>الإشعارات</h2>
+    <div class="card">
+      <h3>إشعارات محلية فقط</h3>
+      <p>التذكير قبل موعد النوم بساعة إشعار محلي يُجدوَل على جهازك ولا يمر أبدًا عبر خادم خارجي. يمكنك تغيير إذن الإشعارات في أي وقت من إعدادات iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>الميكروفون</h2>
+    <div class="card">
+      <h3>يقيس قوة نفَسك فقط</h3>
+      <p>لا يُستخدم الميكروفون إلا حين تنفخ على الورقة لإطفاء النار، قبل موعد النوم بنصف ساعة. يقيس التطبيق قوة نفَسك فقط على جهازك، ولا يسجّل أي صوت ولا يحفظه ولا يرسله. يمكنك تغيير إذن الميكروفون في أي وقت من إعدادات iOS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>خصوصية الأطفال</h2>
+    <div class="card">
+      <h3>الأطفال دون الرابعة عشرة</h3>
+      <p>هذا التطبيق غير موجّه للأطفال دون الرابعة عشرة، ولا نجمع عن علم أي معلومات شخصية من الأطفال.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>التغييرات على هذه السياسة</h2>
+    <div class="card">
+      <h3>ننشر أي تغيير في هذه الصفحة</h3>
+      <p>إذا تغيّرت سياسة الخصوصية هذه، نحدّث محتواها وتاريخ «آخر تحديث» في هذه الصفحة. وقد نخبرك بالتغييرات المهمة أيضًا في ملاحظات إصدار التطبيق.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>التواصل</h2>
+    <div class="card">
+      <h3>أسئلة حول الخصوصية</h3>
+      <p>إن كانت لديك أي أسئلة حول سياسة الخصوصية هذه، راسلنا على العنوان أدناه.</p>
+      <p style="margin-top: 10px;">📧 <a href="mailto:leeo@kakao.com" style="color: var(--orange); text-decoration: none;">leeo@kakao.com</a></p>
+      <p style="margin-top: 10px;">هذه السياسة متاحة بعدة لغات. وإذا اختلفت النسخ، تُعتمد <a href="../privacy.html" style="color: var(--orange); text-decoration: none;">النسخة الكورية</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Burning Parchment &nbsp;·&nbsp; <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+</footer>
+
+</body>
+</html>

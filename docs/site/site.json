@@ -22,7 +22,8 @@
     "nl": "Brandend Perkament",
     "pl": "Płonący Pergamin",
     "sv": "Brinnande Pergament",
-    "tr": "Yanan Parşömen"
+    "tr": "Yanan Parşömen",
+    "ar": "الورقة المشتعلة"
   },
   "url": "https://m1zz.github.io/BurningParchment/",
   "appStoreId": "6758995390",
@@ -184,6 +185,12 @@
       "path": "tr/",
       "shots": "raw-tr",
       "name": "Türkçe"
+    },
+    {
+      "code": "ar",
+      "path": "ar/",
+      "shots": "raw-ar",
+      "name": "العربية"
     }
   ]
 }

@@ -21,7 +21,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.48.0
+    from: 3.49.1
 
 schemes:
   BurningParchment:

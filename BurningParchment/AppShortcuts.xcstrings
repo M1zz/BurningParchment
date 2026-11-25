@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "How much time is left in ${applicationName}" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -150,6 +151,7 @@
       }
     },
     "${applicationName} time left" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {

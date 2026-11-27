@@ -5,8 +5,8 @@
 import SwiftUI
 
 struct BurningOnboardingView: View {
-    /// 끝까지 보거나 건너뛰면 불린다
-    let onFinish: () -> Void
+    /// 끝까지 보거나(false) 건너뛰면(true) 불린다
+    let onFinish: (_ skipped: Bool) -> Void
 
     @State private var page = 0
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -43,7 +43,7 @@ struct BurningOnboardingView: View {
                 HStack {
                     Spacer()
                     if !isLast {
-                        Button("건너뛰기") { onFinish() }
+                        Button("건너뛰기") { onFinish(true) }
                             .foregroundColor(.inkMuted)
                             .padding(.horizontal, 20)
                             .frame(minHeight: 44)
@@ -62,7 +62,7 @@ struct BurningOnboardingView: View {
 
                 Button {
                     if isLast {
-                        onFinish()
+                        onFinish(false)
                     } else {
                         withAnimation(reduceMotion ? nil : .easeInOut) { page += 1 }
                     }
@@ -108,5 +108,5 @@ struct BurningOnboardingView: View {
 }
 
 #Preview {
-    BurningOnboardingView {}
+    BurningOnboardingView { _ in }
 }

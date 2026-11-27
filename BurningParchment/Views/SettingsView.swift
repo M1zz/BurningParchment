@@ -93,7 +93,7 @@ struct SettingsView: View {
                 .environmentObject(storeManager)
         }
         .fullScreenCover(isPresented: $showOnboarding) {
-            BurningOnboardingView { showOnboarding = false }
+            BurningOnboardingView { _ in showOnboarding = false }
                 .foldConfined()
         }
         .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)

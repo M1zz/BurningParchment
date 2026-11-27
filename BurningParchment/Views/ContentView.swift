@@ -320,7 +320,13 @@ struct ContentView: View {
             Text("가벼운 불꽃은 불꽃을 덜 자주 그려서 배터리와 발열을 줄여요. 설정 ▸ 불꽃 크기에서 언제든 바꿀 수 있어요")
         }
         .fullScreenCover(isPresented: $showOnboarding) {
-            BurningOnboardingView {
+            BurningOnboardingView { skipped in
+                // 처음 안내를 마친 자리 — 설정에서 다시 본 것은 세지 않는다
+                if skipped {
+                    LeeoAnalyticsCenter.track(.custom(name: "onboarding_skipped", parameters: [:]))
+                } else {
+                    LeeoAnalyticsCenter.track(.custom(name: "onboarding_completed", parameters: [:]))
+                }
                 hasCompletedOnboarding = true
                 showOnboarding = false
             }

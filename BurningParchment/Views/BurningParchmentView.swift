@@ -12,6 +12,26 @@ extension EnvironmentValues {
     @Entry var parchmentAnimationPaused = false
 }
 
+/// 불꽃이 매 프레임 바꾸는 값. 이것을 읽는 뷰만 다시 그려진다.
+@Observable
+private final class FlameClock {
+    var phase: Double = 0
+    var embers: [Ember] = []
+    var ashes: [Ash] = []
+}
+
+/// 매 프레임 다시 그리는 칸. 불꽃 · 입자 · 탄 경계처럼 시계를 읽는 그림만 이 안에 둔다.
+private struct FlameFrame<Content: View>: View {
+    let clock: FlameClock
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        // 안쪽 Canvas 는 그릴 때 시계를 읽어 의존이 잡히지 않는다 — 여기서 읽어 프레임마다 다시 그리게 한다.
+        let _ = clock.phase
+        ZStack { content() }
+    }
+}
+
 struct BurningParchmentView: View {
     @EnvironmentObject var bedtimeManager: BedtimeManager
     @EnvironmentObject var deadlineManager: DeadlineManager
@@ -20,9 +40,12 @@ struct BurningParchmentView: View {
     @EnvironmentObject var freeTimeManager: FreeTimeManager
     @EnvironmentObject var storeManager: StoreManager
     @State private var showFreeTimeEditor = false
-    @State private var phase: Double = 0
-    @State private var embers: [Ember] = []
-    @State private var ashes: [Ash] = []
+    /// 초당 30번 가는 불꽃 시계. 이 화면의 상태로 두면 매 프레임 화면 전체(타이머 글 · 게이지 ·
+    /// 관리자 읽기)를 다시 계산했다 — 시계를 읽는 그림은 FlameFrame 안에만 둔다.
+    @State private var clock = FlameClock()
+    private var phase: Double { clock.phase }
+    private var embers: [Ember] { clock.embers }
+    private var ashes: [Ash] { clock.ashes }
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.parchmentStyle) private var style
     @Environment(\.flameKind) private var flameKind
@@ -106,7 +129,7 @@ struct BurningParchmentView: View {
                 if lightFlame, frameSkip.skipThisTick() { return }
                 let moveParticles = ((bedtimeManager.isCountdownActive || !isDayPeriod) && blownOut == nil && isLit) || night?.isBurning == true
                 for _ in 0..<(lightFlame ? 2 : 1) {
-                    phase += 0.05
+                    clock.phase += 0.05
                     if moveParticles { updateParticles(pw: pw, ph: ph, ox: ox, oy: oy) }
                 }
             }
@@ -131,30 +154,32 @@ struct BurningParchmentView: View {
                              charred: NightRecord? = nil) -> some View {
         let lit = isLit
         return ZStack {
-            if lit {
-                particleCanvas(items: ashes, withGlow: false)
+            FlameFrame(clock: clock) {
+                if lit {
+                    particleCanvas(items: ashes, withGlow: false)
+                        .accessibilityHidden(true)
+                }
+
+                parchmentGroup(pw: pw, ph: ph, progress: progress, charred: charred?.charredFraction ?? 0)
+                    .position(x: size.width / 2, y: oy + ph / 2)
                     .accessibilityHidden(true)
-            }
 
-            parchmentGroup(pw: pw, ph: ph, progress: progress, charred: charred?.charredFraction ?? 0)
-                .position(x: size.width / 2, y: oy + ph / 2)
-                .accessibilityHidden(true)
+                if let charred { charredNote(charred, pw: pw, ph: ph, ox: ox, oy: oy, progress: progress) }
 
-            if let charred { charredNote(charred, pw: pw, ph: ph, ox: ox, oy: oy, progress: progress) }
-
-            ashPileCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
-                .accessibilityHidden(true)
-
-            if lit && progress > 0.005 && progress < 0.995 {
-                diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
-                    .flameTint(style)
+                ashPileCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
                     .accessibilityHidden(true)
-            }
 
-            if lit {
-                particleCanvas(items: embers, withGlow: true)
-                    .flameTint(style)
-                    .accessibilityHidden(true)
+                if lit && progress > 0.005 && progress < 0.995 {
+                    diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: progress)
+                        .flameTint(style)
+                        .accessibilityHidden(true)
+                }
+
+                if lit {
+                    particleCanvas(items: embers, withGlow: true)
+                        .flameTint(style)
+                        .accessibilityHidden(true)
+                }
             }
 
             VStack {
@@ -251,10 +276,12 @@ struct BurningParchmentView: View {
 
     private func bedtimeReachedView(size: CGSize) -> some View {
         ZStack {
-            bedtimeGlow
+            FlameFrame(clock: clock) {
+                bedtimeGlow
 
-            // 하트 불씨 파티클 (Canvas)
-            heartEmberCanvas(size: size)
+                // 하트 불씨 파티클 (Canvas)
+                heartEmberCanvas(size: size)
+            }
 
             // 아주 큰 글씨에서는 하트 아래 글이 화면을 넘을 수 있다 — 넘칠 때만 스크롤된다
             ScrollView(.vertical) {
@@ -262,7 +289,7 @@ struct BurningParchmentView: View {
                 Spacer()
 
                 // 불타는 하트
-                burningHeart
+                FlameFrame(clock: clock) { burningHeart }
 
                 sleepTexts
 
@@ -566,24 +593,26 @@ struct BurningParchmentView: View {
     private func tomorrowParchmentView(size: CGSize, pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat,
                                        night: NightState) -> some View {
         ZStack {
-            if night.isBurning {
-                particleCanvas(items: ashes, withGlow: false)
-                    .accessibilityHidden(true)
-            }
+            FlameFrame(clock: clock) {
+                if night.isBurning {
+                    particleCanvas(items: ashes, withGlow: false)
+                        .accessibilityHidden(true)
+                }
 
-            parchmentGroup(pw: pw, ph: ph, progress: night.progress,
-                           edgePhase: night.isBurning ? nil : 0)
-                .opacity(night.isBurning ? 1 : 0.85)
-                .position(x: size.width / 2, y: oy + ph / 2)
-                .accessibilityHidden(true)
+                parchmentGroup(pw: pw, ph: ph, progress: night.progress,
+                               edgePhase: night.isBurning ? nil : 0)
+                    .opacity(night.isBurning ? 1 : 0.85)
+                    .position(x: size.width / 2, y: oy + ph / 2)
+                    .accessibilityHidden(true)
 
-            if night.isBurning && night.progress > 0.005 {
-                diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: night.progress)
-                    .flameTint(style)
-                    .accessibilityHidden(true)
-                particleCanvas(items: embers, withGlow: true)
-                    .flameTint(style)
-                    .accessibilityHidden(true)
+                if night.isBurning && night.progress > 0.005 {
+                    diagonalFlameCanvas(pw: pw, ph: ph, ox: ox, oy: oy, progress: night.progress)
+                        .flameTint(style)
+                        .accessibilityHidden(true)
+                    particleCanvas(items: embers, withGlow: true)
+                        .flameTint(style)
+                        .accessibilityHidden(true)
+                }
             }
 
             VStack(spacing: 10) {
@@ -1253,13 +1282,17 @@ struct BurningParchmentView: View {
     private func initParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
         let p = currentDisplayProgress
         let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
-        embers = (0..<25).map { _ in Ember.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
-        ashes  = (0..<30).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
+        clock.embers = (0..<25).map { _ in Ember.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
+        clock.ashes  = (0..<30).map { _ in Ash.spawn(on: pts, ox: ox, oy: oy, pw: pw, ph: ph) }
     }
 
     private func updateParticles(pw: CGFloat, ph: CGFloat, ox: CGFloat, oy: CGFloat) {
         let p = currentDisplayProgress
         let pts = Self.burnLinePoints(pw: pw, ph: ph, progress: p, phase: phase)
+        // 한 벌로 고쳐서 한 번에 넣는다 — 입자 하나하나를 시계에 쓰면 그만큼 변경 알림이 나간다
+        var embers = clock.embers
+        var ashes = clock.ashes
+        defer { clock.embers = embers; clock.ashes = ashes }
 
         let nLen = sqrt(Double(ph * ph + pw * pw))
         let nx = Double(ph) / nLen

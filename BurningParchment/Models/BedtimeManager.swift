@@ -125,6 +125,8 @@ class BedtimeManager: ObservableObject {
     private(set) var lastNight: DateInterval?
     private var liveActivity: Activity<BedtimeActivityAttributes>?
     private var lastLiveActivityUpdate: Date = .distantPast
+    /// 실시간 현황을 띄워 본 취침 시각. 꺼 두었거나 거절되면 매초 다시 묻지 않고 그 밤은 그대로 둔다.
+    private var liveActivityTriedFor: Date?
 
     private let sharedDefaults = UserDefaults(suiteName: "group.com.burningparchment.app")
 
@@ -553,16 +555,13 @@ class BedtimeManager: ObservableObject {
             } else {
                 // 수면 구간: 어제 취침 ~ 오늘 기상
                 setNight(DateInterval(start: bd, end: todayWake))
-                isBeforeWakeTime = true
-                isCountdownActive = false
-                sleepProgress = 0
-                progress = 0
-                remainingSeconds = todayWake.timeIntervalSince(now)
-                totalSeconds = 0
+                set(\.isBeforeWakeTime, true)
+                set(\.isCountdownActive, false)
+                set(\.progress, 0)
+                set(\.remainingSeconds, todayWake.timeIntervalSince(now))
+                set(\.totalSeconds, 0)
                 let totalSleep = todayWake.timeIntervalSince(bd)
-                if totalSleep > 0 {
-                    sleepProgress = min(max(now.timeIntervalSince(bd) / totalSleep, 0), 1)
-                }
+                set(\.sleepProgress, totalSleep > 0 ? min(max(now.timeIntervalSince(bd) / totalSleep, 0), 1) : 0)
                 return
             }
         }
@@ -573,25 +572,25 @@ class BedtimeManager: ObservableObject {
 
         if remaining <= 0 {
             // 수면 구간: 오늘 취침 ~ 내일 기상
-            isCountdownActive = false
-            isBeforeWakeTime = false
-            progress = 1.0
-            remainingSeconds = 0
-            totalSeconds = total
+            set(\.isCountdownActive, false)
+            set(\.isBeforeWakeTime, false)
+            set(\.progress, 1.0)
+            set(\.remainingSeconds, 0)
+            set(\.totalSeconds, total)
             let nextWake = cal.date(byAdding: .day, value: 1, to: wakeDate)!
             setNight(DateInterval(start: bedDate, end: max(nextWake, bedDate.addingTimeInterval(1))))
             let totalSleep = nextWake.timeIntervalSince(bedDate)
-            sleepProgress = totalSleep > 0 ? min(max(now.timeIntervalSince(bedDate) / totalSleep, 0), 1) : 0
+            set(\.sleepProgress, totalSleep > 0 ? min(max(now.timeIntervalSince(bedDate) / totalSleep, 0), 1) : 0)
             endLiveActivity()
         } else {
             setNight(nil)
             lastNight = previousNight(endingAt: wakeDate, cal: cal)
-            isCountdownActive = true
-            isBeforeWakeTime = false
-            sleepProgress = 0
-            remainingSeconds = remaining
-            totalSeconds = max(total, 1)
-            progress = min(max(1.0 - (remaining / total), 0.0), 1.0)
+            set(\.isCountdownActive, true)
+            set(\.isBeforeWakeTime, false)
+            set(\.sleepProgress, 0)
+            set(\.remainingSeconds, remaining)
+            set(\.totalSeconds, max(total, 1))
+            set(\.progress, min(max(1.0 - (remaining / total), 0.0), 1.0))
 
             if scheduledNotifBedDate != bedDate {
                 scheduleNotification(bedDate: bedDate)
@@ -606,6 +605,11 @@ class BedtimeManager: ObservableObject {
             }
         }
 
+    }
+
+    /// 같은 값이면 쓰지 않는다. @Published 는 같은 값을 써도 알려서, 매초 앱 전체가 다시 그려졌다.
+    private func set<T: Equatable>(_ keyPath: ReferenceWritableKeyPath<BedtimeManager, T>, _ value: T) {
+        if self[keyPath: keyPath] != value { self[keyPath: keyPath] = value }
     }
 
     private func setNight(_ night: DateInterval?) {
@@ -686,8 +690,9 @@ class BedtimeManager: ObservableObject {
         #endif
         // 원격으로 꺼 두었거나, 지난 실행들이 연달아 끝나지 못해 세이프 모드로 열렸으면 띄우지 않는다
         guard BurningFlag.liveActivity.isEnabled, !AppLaunch.isSafeMode else { return }
+        guard liveActivity == nil, liveActivityTriedFor != bedDate else { return }
+        liveActivityTriedFor = bedDate
         guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
-        guard liveActivity == nil else { return }
 
         let attrs = BedtimeActivityAttributes(bedtimeString: bedtimeString)
         let state = BedtimeActivityAttributes.ContentState(
@@ -727,6 +732,7 @@ class BedtimeManager: ObservableObject {
     private func endLiveActivity(immediately: Bool = false) {
         if immediately {
             liveActivity = nil
+            liveActivityTriedFor = nil   // 다시 보일 때가 되면 한 번 더 띄운다
             let all = Activity<BedtimeActivityAttributes>.activities
             guard !all.isEmpty else { return }
             Task { for activity in all { await activity.end(nil, dismissalPolicy: .immediate) } }

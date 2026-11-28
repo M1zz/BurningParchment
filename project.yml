@@ -21,7 +21,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.50.0
+    from: 3.54.0
 
 schemes:
   BurningParchment:
@@ -117,6 +117,7 @@ targets:
       - path: BurningParchment/Models/BedtimeActivityAttributes.swift
       - path: BurningParchment/Models/Deadline.swift
       - path: BurningParchment/Models/TimeFormat.swift
+      - path: BurningParchment/Views/MiniParchmentView.swift
     info:
       path: BurningParchmentWidgets/Info.plist
       properties:

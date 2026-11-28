@@ -141,8 +141,13 @@ class BedtimeManager: ObservableObject {
     var bedtimeString: String { formatTime(hour: bedtimeHour, minute: bedtimeMinute) }
     var wakeTimeString: String { formatTime(hour: wakeHour, minute: wakeMinute) }
 
-    var periodProgress: Double {
-        switch selectedPeriod {
+    var periodProgress: Double { progress(for: selectedPeriod) }
+
+    var periodRemainingString: String { remainingString(for: selectedPeriod) }
+
+    /// 그 기간의 양피지가 얼마나 탔는지 — 큰 화면과 한눈에 보기가 같은 값을 쓴다
+    func progress(for period: PeriodType) -> Double {
+        switch period {
         case .day: return progress
         case .week: return weekProgress
         case .month: return monthProgress
@@ -151,8 +156,8 @@ class BedtimeManager: ObservableObject {
         }
     }
 
-    var periodRemainingString: String {
-        switch selectedPeriod {
+    func remainingString(for period: PeriodType) -> String {
+        switch period {
         case .day: return remainingTimeString
         case .week: return formatRemainingDays(weekRemainingDays)
         case .month: return formatRemainingDays(monthRemainingDays)

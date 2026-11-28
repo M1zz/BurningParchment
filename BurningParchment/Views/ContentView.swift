@@ -67,6 +67,8 @@ struct ContentView: View {
     @AppStorage(LaunchAudience.onboardingKey) private var hasCompletedOnboarding = false
     @AppStorage(LaunchAudience.whatsNewKey) private var lastSeenWhatsNew = ""
     private let swipeTip = SwipePeriodsTip()
+    /// 한 장씩 크게 보지 않고 모든 양피지를 한눈에 늘어놓는다
+    @AppStorage(MainLayout.storageKey) private var showsOverview = false
 
     /// 머리 줄 아이콘의 불투명도. 대비 증가에서는 흐리게 두지 않는다.
     private var headerIconOpacity: Double { contrast == .increased ? 0.95 : 0.6 }
@@ -156,7 +158,7 @@ struct ContentView: View {
             ZStack {
                 Color.appBackground.ignoresSafeArea()
 
-                if bedtimeManager.selectedPeriod != .day || bedtimeManager.isCountdownActive {
+                if !showsOverview, bedtimeManager.selectedPeriod != .day || bedtimeManager.isCountdownActive {
                     fullScreenGlow
                         .accessibilityHidden(true)
                 }
@@ -164,22 +166,30 @@ struct ContentView: View {
                 VStack(spacing: 0) {
                     headerBar
                     // 안내는 한 번에 하나만 — 아침의 재 > 저녁의 한 줄 > 오늘 밤 할 두 가지 > 옆으로 밀기
-                    if activeGuide == .swipe {
+                    if !showsOverview, activeGuide == .swipe {
                         TipView(swipeTip, arrowEdge: .top)
                             .tipBackground(Color.appBackgroundWarm)
                             .padding(.horizontal, 20)
                     }
                     tomorrowIntentStrip
                     if activeGuide == .firstLoop { firstLoopGuide }
-                    if bedtimeManager.selectedPeriod == .freeTime {
+                    if showsOverview {
+                        ParchmentOverview(periods: pages, title: title(for:)) { period in
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                bedtimeManager.selectedPeriod = period
+                                showsOverview = false
+                            }
+                        }
+                        .environmentObject(bedtimeManager)
+                        .environmentObject(deadlineManager)
+                        .frame(maxHeight: .infinity, alignment: .top)
+                    } else if bedtimeManager.selectedPeriod == .freeTime {
                         RemainingKindPicker(selection: $remainingKind)
                             .padding(.bottom, 4)
                             .onGeometryChange(for: CGRect.self) { $0.frame(in: .named(Self.mainSpace)) } action: {
                                 remainingPickerFrame = $0
                             }
                             .onDisappear { remainingPickerFrame = .zero }
-                    }
-                    if bedtimeManager.selectedPeriod == .freeTime {
                         // 남은 시간 페이지는 양피지 대신 세어 보기 — 자유시간도 그 한 종류다
                         RemainingPage(selection: $remainingKind)
                             .environment(\.parchmentAnimationPaused, isParchmentCovered)
@@ -193,7 +203,7 @@ struct ContentView: View {
                     AshMorningBanner(covered: isParchmentCovered, showing: $ashBannerShowing) { openReflections(withInput: false) }
                         .environmentObject(reflectionManager)
                     reflectionNudgeBanner
-                    pageIndicator
+                    if showsOverview { Spacer().frame(height: 16) } else { pageIndicator }
                 }
                 // iPad 에서는 양피지가 화면 폭만큼 납작하게 늘어나지 않도록 아이폰과 비슷한 폭의 기둥으로 세운다
                 .frame(maxWidth: 600)
@@ -204,7 +214,7 @@ struct ContentView: View {
             .simultaneousGesture(
                 DragGesture(minimumDistance: 30, coordinateSpace: .named(Self.mainSpace))
                     .onEnded { value in
-                        guard !remainingPickerFrame.contains(value.startLocation) else { return }
+                        guard !showsOverview, !remainingPickerFrame.contains(value.startLocation) else { return }
                         // 쓸기는 화면 그대로의 방향으로 온다. 오른쪽에서 왼쪽으로 읽는 언어는 다음 쪽이 왼쪽에 있으므로 뒤집는다.
                         let dx = layoutDirection == .rightToLeft ? -value.translation.width : value.translation.width
                         let dy = value.translation.height
@@ -836,13 +846,13 @@ struct ContentView: View {
     }
 
     private var headerTitle: some View {
-        Text(periodTitle)
+        Text(showsOverview ? String(localized: "한눈에") : title(for: bedtimeManager.selectedPeriod))
             // 큰 제목 스타일(34pt) — 글자 크기 설정을 따른다
             .font(.system(.largeTitle, design: .serif).weight(.bold))
             .foregroundColor(.ember.opacity(0.9))
             .animation(reduceMotion ? nil : .easeInOut(duration: 0.2), value: bedtimeManager.selectedPeriod)
             .accessibilityAddTraits(.isHeader)
-            .accessibilityValue("페이지 \(currentIndex + 1) / \(pages.count)")
+            .accessibilityValue(showsOverview ? Text(verbatim: "") : Text("페이지 \(currentIndex + 1) / \(pages.count)"))
             .accessibilityHint("위아래로 스와이프해 페이지 이동")
             .accessibilityAdjustableAction { direction in
                 let idx = currentIndex
@@ -873,6 +883,17 @@ struct ContentView: View {
                 .accessibilityInputLabels([Text("모은 조각"), Text("조각")])
             }
 
+            Button {
+                withAnimation(.easeInOut(duration: 0.2)) { showsOverview.toggle() }
+            } label: {
+                Image(systemName: showsOverview ? "rectangle.portrait" : "list.bullet")
+                    .scaledFont(size: 18)
+                    .foregroundColor(.ember.opacity(headerIconOpacity))
+            }
+            .accessibilityLabel(showsOverview ? Text("크게 보기") : Text("한눈에 보기"))
+            .accessibilityHint("모든 양피지를 한 화면에 늘어놓거나 한 장씩 크게 봅니다")
+            .accessibilityInputLabels([Text("한눈에 보기"), Text("목록"), Text("크게 보기")])
+
             AshUrnButton { openReflections(withInput: false) }
                 .environmentObject(reflectionManager)
 
@@ -901,8 +922,8 @@ struct ContentView: View {
         }
     }
 
-    private var periodTitle: String {
-        switch bedtimeManager.selectedPeriod {
+    private func title(for period: PeriodType) -> String {
+        switch period {
         case .day:      return String(localized: "오늘")
         case .week:     return String(localized: "이번 주")
         case .month:    return String(localized: "이번 달")
